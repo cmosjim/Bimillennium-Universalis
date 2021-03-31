@@ -1,0 +1,148 @@
+﻿#2018.9.10 change log
+#...........................................................
+##file : et_countries.txt
+#...........................................................
+##Russia :
+#change SRM	= "countries/Sarmatians.txt" = > SRT = "countries/Sarmatians.txt"
+#...........................................................
+##Central Asia add :
+#KAP = "countries/Kapisa.txt"
+#KSA = "countries/KushanoSasanians.txt"
+#...........................................................
+##Far East add:
+#TSO = "countries/Tsongkha.txt"
+#...........................................................
+##India
+#ALV = "countries/Alvakheda.txt"
+#ARJ = "countries/Arjunayanas.txt"
+#KHS = "countries/Khasa.txt"
+#PAD = "countries/Padmavati.txt"
+#PTN = "countries/Patan.txt"
+#RAN = "countries/Ranastambhapura.txt"
+#VAJ = "countries/Vajji.txt"
+#...........................................................
+#change KAL	= "countries/Kalinga.txt" = > KLI	= "countries/Kalinga.txt"
+#change PAN	= "countries/Pandya.txt" => PND	= "countries/Pandya.txt"
+#2018.11.18 
+#1.26 => 1.27 
+
+#France 
+#DMO = "countries/Domnonia.txt"
+#Arabia	
+#ISR = "countries/Israel.txt"
+#delete HDR = "countries/Hadramut.txt"
+##Maghreb
+#AUR = "countries/Aures.txt"
+#OUA = "countries/Ouarsenis.txt"
+#Far East
+#OKJ = "countries/Okjeo.txt"
+
+#2018.12.22
+#et 1.27=>1.28 change
+#delete
+#CLF = "countries/California.txt" (1.28 CAL)
+#ASR = "countries/Asturias.txt" (1.28 ASU)
+#MLL = "countries/Mallorca.txt" (1.28 MJO)
+#TOR = "countries/Tortosa.txt"<- TTS
+#PRY = "countries/Pereyaslav.txt"<- PEY
+#LIB = "countries/Libya.txt"<- LBY
+#CAL = "countries/Calakmul.txt"<- CLK
+#MIS = "countries/Mississippi.txt"<- (province 838) MSS
+#TEO = "countries/Teotihuacan.txt"<- province 2648 4730 TTH
+#GAM = "countries/Gambia.txt"<- 2661 4791 4793 GMB
+#SLE = "countries/SierraLeone.txt"<- SRA
+#TON = "countries/Tonga.txt"<- 2658 2913 4788 TGA
+#
+#modify:
+#MJR = "countries/Majorca.txt" =>MJR = "countries/Baleares.txt"
+#
+#add:
+#Spain:
+#MLG = "countries/Malaga.txt"
+#STS = "countries/Saltes.txt"
+#TTS = "countries/Tortosa.txt"<-
+
+#Russia:
+#PEY = "countries/Pereyaslav.txt"<-
+
+#Maghreb:
+#ATL = "countries/Atlas.txt"
+#CYR = "countries/Cyrenaica.txt"
+#GBS = "countries/Gabes.txt"
+#LBY = "countries/Libya.txt"<-
+#MHD = "countries/Mahdia.txt"
+
+
+#Central Asia
+#GRB = "countries/GrecoBactria.txt"
+#
+
+#Americas
+#CLK = "countries/Calakmul.txt"<-
+#CLL = "countries/Cholula.txt"
+#KNJ = "countries/Kaminaljuyu.txt"
+#MSS = "countries/Mississippi.txt"<-
+#TTH = "countries/Teotihuacan.txt"<-
+#YAX = "countries/Yaxchilan.txt"
+#YUC = "countries/Yucatan.txt"
+
+#Africa
+#GMB = "countries/Gambia.txt"<-
+#SRA = "countries/SierraLeone.txt"<-
+
+#Oceania
+#TGA = "countries/Tonga.txt"<-
+#
+#no care 
+#TUY:0 "Tuyuhun"
+#GYI = "countries/Guiyi.txt" RVIN›Q
+#KRE = "countries/Kereits.txt" KQR
+#MKT = "countries/Merkits.txt" …?Q^N
+#CEG: "Cheng"
+#TIE = "countries/Tiele.txt" Á”ÒR
+l_english:
+ ATL:0 "?–yrÉb¯e"
+ ATL_ADJ:0 "?–yrÉb¯e"
+ CLK:0 "aSÉbKQFzS"
+ CLK_ADJ:0 "aSÉbKQFzS"
+ CLL:0 "TNbSÉb"
+ CLL_ADJ:0 "TNbSÉb" 
+ CYR:0 "fpQ<S R"
+ CYR_ADJ:0 "fpQ<S R"
+ GNJ:0 "u R"
+ GNJ_ADJ:0 "u R"
+ GRB:0 "ôTKQyrÌ‘šN"
+ GRB_ADJ:0 "ôTKQyrÌ‘šN"
+ GBS:0 " R¯e"
+ GBS_ADJ:0 " R¯e"
+ KNJ:0 "aSs|³uáw2S"
+ KNJ_ADJ:0 "aSs|³uáw2S" 
+ MHD:0 "lškê6w"
+ MHD_ADJ:0 "lškê6w"
+ MLG:0 "lšÉb R"
+ MLG_ADJ:0 "lšÉb R"
+ RIO:0 "WSÌ‘eY<hpQ·V"
+ RIO_ADJ:0 "WSÌ‘eY<hpQ·V"
+ STS:0 "(„Syr¯e"
+ STS_ADJ:0 "(„Syr¯e"
+ YAX:0 "šN¯eGYpQ"
+ YAX_ADJ:0 "šN¯eGYpQ"
+ YUC:0 "¹raSfW"
+ YUC_ADJ:0 "¹raSfW"
+ et_fra.1.t:0 "^g<hS›QZÁwqQŒTSO6R"
+ et_fra.1.d:0 "bìN„vS›Q0TN»l.„S…Q¯eyr.^g<h0gÑŠegŠ×S0RºNìN„v1r4bÿÖNO(u†NÀoÛ„vlÏeININŠº‹ÿ^g<hck(WZÁwbìN„vqQŒTýVÿàV:NÖN=ecb`YÕlýV†SòSßu»l‹sg - âlÁe‹sgÿâlÿbôTŒTeYSo‚‹sg„vó`Õl0ôfÍ‘‰„v=fÿ^g<h^gSúWcwYejO:NýV¶RegZÁwbìN„vN×OININ0gTÿN›NãNhˆÅbÃVÿ‚Yœg^g<hNðSgb?eÿÖN1SOÌwÛSÖN„vTINININ=ecwv^:NêñT:YÖSNRCg›R0"
+ et_fra.1.a:0 "bìNÅV‰˜MckSqQŒTýVùR—bÙ*N‹q¨Rwÿ"
+ et_fra.1.b:0 "bìNÙuÖNCg›R'TÿmN¸‹ýwMQgOW„vÅ`µQ"
+ et_fra.2.t:0 "^g<h„vbŸR?eØS"
+ et_fra.2.d:0 "°s(W0TN»l.„S…Q¯eyr.^g<h0òTÏu:YÖS†NCg›Rÿ°s(W=föePZPúQ	éb0‚YœgbìNNÝOc°s¶rÿ±HNbìNSN—VN³QšRbìNó`‰Ç„v9ei—0"
+ et_fra.2.a:0 "©‹bìNb`YÕlýVTIN6Rÿ"
+ et_fra.2.b:0 "^g<h”^å‹:NêñT:YÖSCg›Rÿ"
+ et_fra.2.d:0 "°s(W0TN»l.„S…Q¯eyr.^g<h0òTÏu:YÖS†NCg›Rÿ°s(W=föePZPúQ	éb0‚YœgbìNNÝOc°s¶rÿ±HNbìNSN—VN³QšRbìNó`‰Ç„v9ei—0"
+ et_fra.3.t:0 "TIN6R„vb`Y"
+ et_fra.3.d:0 "ýV‹sNSÿÕlýVTIN6RòTÏub`YÿÙ—VÊvŽN^g<h„vªR›RåNÊS†SòSNÕlýV‡v²R‹sg„vTÔˆPW(WRµ^N0°s(W=föeP©‹bìNeg³QšRÀNHN‰|‹W„vbìN‰ú^Ëz„v?eœ^0"
+ et_fra.3.a:0 "ÝuùRTIN6R0"
+ et_fra.3.b:0 "TINËzªR6R"0
+ et_fra.4.t:0 "^g<h‹sgßu»lÕlýV"
+ et_fra.4.d:0 "1uŽN‹sgßu»lÕlýV„v	N*NTINININÐ¨RKNô•ÀoÈp„v©º‹àeÕlŒb0Rã‰³QžRÕlÿ^g<h³QšR±RðyêñT=fÕlýV„vßu»lw0ZwÆ–(W–™ýÿºN²-NBoulanger„v=ecw(W±R^Boulanger:YÖSCg›R„vöePÑSúQ†N0k|TðXÿ'Boulanger=fbìN—‰„vºNÿ'°s(WBoulangerŒcCg†Nÿ°s(W=fbìN³QšRú^ËzÀNHN‰|‹W„v?eœ^„vöeP†N0"
+ et_fra.4.a:0 "TIN6R"
+ et_fra.4.b:0 "ìrÁˆ?eSO"
