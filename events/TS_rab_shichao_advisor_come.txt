@@ -1,0 +1,51 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = shichao_advisor_come
+
+#fkS–gÕyagˆNN˙Q∞s
+#id = 1 : shichao : ÛwÖç0fkS0
+
+country_event = {
+	id = shichao_advisor_come.1
+	title = "shichao_advisor_come.1.t"
+	desc = "shichao_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#˙Q∞sˆeÙï
+	trigger = {
+		is_year = 275	
+		NOT = { is_year = 305 }
+		owns = 680
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = shichao_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = shichao
+				name = "ÛwÖç0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "ÛwÖç0fkS0"
+				fire = 4
+				shock = 4
+				manuever = 4
+				siege = 3
+			}
+		}
+	}
+}
+

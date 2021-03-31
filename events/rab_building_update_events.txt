@@ -1,0 +1,62 @@
+namespace = rab_building_update
+
+country_event = {
+	id = rab_building_update.1
+	title = "rab_building_update.NAME1"
+	desc = "rab_building_update.DESC1"
+	picture = water_works_eventPicture
+    
+	trigger = {
+		adm_tech = 82
+		any_owned_province = {
+			has_building = windmill
+		}	
+		
+		NOT = {
+			OR = {
+				has_country_flag = flg_update_building 
+				has_country_flag = flg_start_waterplant
+			}	
+		}
+	}	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	immediate = {
+		set_country_flag = flg_update_building
+	}		
+	
+	option = {
+		name = "rab_building_update.OPTA1"
+		add_treasury = -500
+		every_owned_province = {
+			limit = {
+				has_building = windmill	
+			}	
+				remove_building = windmill
+				add_building = waterplant
+		}
+		set_country_flag = flg_start_waterplant
+		clr_country_flag = flg_update_building
+	}			
+
+	option = {
+		name = "rab_building_update.OPTB1"
+		every_owned_province = {
+			limit = {
+				has_building = windmill	
+			}	
+				remove_building = windmill
+		}	
+		set_country_flag = flg_start_waterplant	
+		clr_country_flag = flg_update_building		
+    }	
+}   
+    
+    
+ 
+
+
+

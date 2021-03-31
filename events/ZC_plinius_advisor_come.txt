@@ -1,0 +1,43 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = plinius_advisor_come
+
+#fkSS??.0o?:N??8?
+#id = 1 : plinius : ??X?GY0fkS0
+#
+country_event = {
+	id = plinius_advisor_come.1
+	title = "plinius_advisor_come.1.t"
+	desc = "plinius_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		is_year = 23
+		NOT = { is_year = 79 }
+		OR = {
+			tag = ROM
+			AND = {
+				NOT = { exists = ROM }
+				owns = 4925
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = plinius_advisor_come.OPTA1
+		define_advisor = {
+			type = plinius
+			name = "÷vLNØe ^XTR˝êØe0jO∂R0"
+			discount = yes	
+			skill = 3
+		}
+	}
+}

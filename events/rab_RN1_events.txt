@@ -1,0 +1,48 @@
+
+namespace = rab_RN1_events
+#2018.12.31 fit to 1.28
+country_event = {
+	id = rab_RN1_events.1
+	title = "rab_RN1_events.NAME1"
+	desc = "rab_RN1_events.DESC1"
+	picture = WAR_FAIL_eventPicture
+  
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_RN1_events.OPTA1"
+		#六夷胡人敢持兵器者一律斬
+			add_country_modifier = {
+				name = "md_RN1_kill_hu"
+				duration = 3800
+			}
+			
+	}
+	option = {
+		name = "rab_RN1_events.OPTB1"
+		#無差別格殺
+		add_country_modifier = {
+			name = "md_RN1_kill_hu"
+			duration = 3800
+		}		
+		add_legitimacy = 20
+		add_treasury = 1500
+		add_prestige = -10
+		every_country = {
+			limit = { 
+				OR = {
+					primary_culture = qiang
+					primary_culture = beidi
+					primary_culture = donghu
+					primary_culture = di
+					primary_culture = mongol
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = op_kill_hu_hate
+			}
+		}
+	}
+}
+

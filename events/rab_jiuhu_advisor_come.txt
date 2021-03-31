@@ -1,0 +1,48 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = jiuhu_advisor_come
+
+#1W·V*YPRÐgÍyagöNNúQ°s
+#id = 1 : jiuhu : ©S7b01W·V*YPR0
+
+country_event = {
+	id = jiuhu_advisor_come.1
+	title = "jiuhu_advisor_come.1.t"
+	desc = "jiuhu_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+		
+	immediate = {
+		hidden_effect = {
+			if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = jiuhu
+					name = "©S7b01W·V*YPR0"
+					discount = yes	
+					skill = 3
+				}
+			}
+			if = { 
+				limit = { ai = yes }
+				define_general = {
+					name = "©S7b01W·V*YPR0"
+					fire = 2
+					shock = 2
+					manuever = 2
+					siege = 2
+				}
+			}
+		}
+	}
+	option = {
+		name = jiuhu_advisor_come.OPTA1
+	}
+}
+

@@ -1,0 +1,61 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = zhang_lingfu_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : zhang_lingfu : .Vup+u0S›Q0
+
+country_event = {
+	id = zhang_lingfu_advisor_come.1
+	title = "zhang_lingfu_advisor_come.1.t"
+	desc = "zhang_lingfu_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 1933	
+		NOT = { is_year = 1947 }
+		OR = {
+			AND = {
+				tag = ROC	
+				exists = ROC 
+			}	
+			AND = {
+				culture_group = east_asian				
+				NOT = { exists = ROC }
+			}	
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = zhang_lingfu_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = zhang_lingfu
+				name = ".Vup+u0S›Q0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = ".Vup+u0S›Q0"
+				fire = 7
+				shock = 7
+				manuever = 4
+				siege = 6
+				trait = master_of_arms_personality
+			}
+		}
+	}
+}
+

@@ -1,0 +1,1442 @@
+#2019.08.11 fit to 1.28
+namespace = china_liuhan_events 
+## error Nb	g„vnamespaceNıw(u ıV¶R„vTAG SVjOV4YbÓu>S
+#Bon Harmonization
+
+##‘NğSŒNASkQSKN4TIl?wVeg•b mV RRVz˜RÀy
+country_event = {
+	id = china_liuhan_events.001
+	title = "china_liuhan_events.EVTNAME1"
+	desc = "china_liuhan_events.EVTDESC1"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = LX2					   #=fRÀy›Q
+        PO1 = { was_player = no }      #å‹ıVN=f©s¶Rµc6R
+        exists = PO1
+		is_year = 24
+		is_month = 1
+		NOT = { is_year = 25 }
+	}
+	
+	option = {
+		name = "china_liuhan_events.EVTOPTA1"
+		add_treasury = 5000                 #·ƒ—VÑ‘^
+		define_general = {
+			name = "4TIl"
+			fire = 4
+			shock = 4
+			manuever = 6
+			siege = 6
+		}
+		define_general = {
+			name = "?w©c"
+			fire = 3
+			shock = 6
+			manuever = 5
+			siege = 3
+		}
+		capital_scope = {
+			build_to_forcelimit = {
+				infantry = 0.6
+				cavalry = 0.4
+			}
+		}
+        vassalize = PO1                 #mV R›Qb:ND–¸^
+    }
+}
+
+##›Q¨‹uIl‹sf
+country_event = {
+	id = china_liuhan_events.002
+	title = "china_liuhan_events.EVTNAME2"
+	desc = "china_liuhan_events.EVTDESC2"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = LX2					#=fRÀy›Q
+        is_at_war = NO
+        exists = WA1
+		WA1 = { ai = yes }      #å‹ıVN=f©s¶Rµc6R
+		is_year = 24
+		is_month = 5
+		NOT = { is_year = 25 }
+	}
+    #is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 } 
+    
+	option = {
+		name = "china_liuhan_events.EVTOPTA2"
+        every_province = {						        # ûm R‹sÎ(‹sf)›Q„v8hÃV
+			limit = {
+				owned_by = WA1
+			}
+			add_core = PREV
+		}
+		WA1 = {											#‹sÎ(‹sf)›QTRÀyVb
+			declare_war_with_cb = {
+				who = LX2
+				casus_belli = cb_chinese_unification
+			}
+		}
+    }
+}
+
+##RÀyUS‘šÛLe%„NŠM–gÜ”lš›Q
+country_event = {
+	id = china_liuhan_events.003
+	title = "china_liuhan_events.EVTNAME3"
+	desc = "china_liuhan_events.EVTDESC3"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = LX2					#=fRÀy›Q
+        TM3 = { ai = yes }        #å‹ıVN=f©s¶Rµc6R
+        exists = TM3
+		is_year = 24
+		is_month = 10
+		NOT = { is_year = 25 }
+		ai = yes
+	}
+    #is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 } 
+    
+	option = {
+		name = "china_liuhan_events.EVTOPTA3"       #Ù=eyrŠkè–,g`—«R c:NuÿÈubNIl:YÖS)YN„v‹sLr›Q
+        ai_chance = { factor = 60 }             #AI	g60%„vïSıw	ébå‹	y˜
+		every_province = {						#Tv^ıV¶R  RÀyTv^Ü”lš 
+			limit = {
+				owned_by = TM3
+			}
+			add_core = PREV
+			cede_province = PREV
+		}
+#		every_province = {						#hQıVµNuekuQ
+#			limit = {
+#				owned_by = LX2
+#			}
+#			infantry = LX2 
+#		}
+		shanxi_north_area = { infantry = LX2 }	#0W:SµNuekuQ
+		shanxi_east_area = { infantry = LX2 }	#0W:SµNuekuQ
+		south_hebei_area = { infantry = LX2 }	#0W:SµNuekuQ
+    }
+    option = {
+		name = "china_liuhan_events.EVTOPTB3"       #1uNZPÕlÇN’Qi–«ˆSëXìNI–æbNegÿFOßu^ÇRfkLˆ:NOhQ›QëXlzzMRØš¨m
+        ai_chance = { factor = 10 }             #AI	g10%„vïSıw	ébå‹	y˜
+        add_country_modifier = {
+			name = heiljsf_lujunqianghua
+			duration = 7300
+		}
+    }
+    option = {
+		name = "china_liuhan_events.EVTOPTC3"       #êán„v²‹:NÿwzÇRN³:Nç`ÿmpKNÿdk>NÀo`†NÜ”lš›QÿÉbNTßvNKNùR—b
+        ai_chance = { factor = 30 }             #AI	g30%„vïSıw	ébå‹	y˜
+        WX2 = { set_country_flag = flg_ever_heiljsf_liuhan_jingong_tongma }     #RÀyÛIeÜ”lšflg
+        TM3 = {                                                                              
+            capital_scope = {   
+                build_to_forcelimit = {
+                    infantry = 1.6
+                    cavalry = 1.4
+                }
+            }
+            if = {
+                limit = {
+                    exists = CH1            #d	wXR(W 
+                }
+                create_alliance = CH1       #Nd	w›QTßv
+            }
+        }
+        declare_war_with_cb = {                 #(ußuN-NıV:NPãS±Rb
+			who = TM3
+			casus_belli = cb_chinese_unification   
+		}
+    }
+}
+
+##d	w›QÛIeôfËY‡v^
+country_event = {
+	id = china_liuhan_events.004
+	title = "china_liuhan_events.EVTNAME4"
+	desc = "china_liuhan_events.EVTDESC4"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+        tag = WX2					                #=fôfËY‡v^
+        exists = CH1
+        NOT = { has_country_flag = flg_ever_heiljsf_liuhan_jingong_tongma }    #¡l	gRÀyÛIeÜ”lšflg
+		is_year = 25
+		NOT = { is_year = 26 }
+	}
+    #is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 } 
+    
+	option = {
+		name = "china_liuhan_events.EVTOPTA4"           #IlgmlqSQ!kqS(WæeY
+        ai_chance = { factor = 80 }                 #AI	g80%„vïSıw	ébå‹	y˜
+        set_country_flag = flg_ever_heiljsf_gengshi_hunluan     #ôfËY‹sg÷mqNflg
+		WX2 = { 
+            kill_ruler = yes                        #ôfËY‡v^«ˆNg
+            add_country_modifier = {
+				name = heiljsf_shuaibai_wangchao    #pˆ%debuff
+				duration = 18250
+			}
+        }  
+        if = {
+			limit = {
+				WX2 = { 
+					has_country_modifier = md_chuanguoyuxi  #åb	g.OıV‰sºs
+				}
+			}	
+			WX2 = { remove_country_modifier = md_chuanguoyuxi }
+            CH1 = {
+                add_country_modifier = {
+                    name = md_chuanguoyuxi          #—V0R.OıV‰sºs
+                    duration = -1
+                }
+            }
+		}
+		central_shaanxi_area = {					#Tv^U–‰-Nè
+			add_core = CH1
+			cede_province = CH1
+		}
+		huguang_west_area = {						#Tv^0W:S
+			add_core = CH1
+			cede_province = CH1
+		}
+		4865 = {									#Tv^wıN
+			add_core = CH1
+			cede_province = CH1
+		}
+		2491 = {									#Tv^wıN
+			add_core = TI1
+			cede_province = TI1
+		}
+    }
+    option = {
+		name = "china_liuhan_events.EVTOPTB4"           #ôfËY‡v^«ˆNgKNTÿ«ˆsQ¼b„v2ãNgÑm«ˆ>eúQÑvbrÿ:Nã‰d–qS:gÍ‘°eNûN›Q^S›QNÛS›QhTËe
+        ai_chance = { factor = 20 }                 #AI	g20%„vïSıw	ébå‹	y˜
+		WX2 = { kill_ruler = yes}					#ôfËY‡v^«ˆNg
+		 define_general = {
+			name = "NgÑm"
+			fire = 2
+			shock = 3
+			manuever = 4
+			siege = 3
+		}
+    }
+}
+
+##ø‹¯Ov^w
+country_event = {
+	id = china_liuhan_events.005
+	title = "china_liuhan_events.EVTNAME5"
+	desc = "china_liuhan_events.EVTDESC5"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+        tag = WX2					#=fôfËY‡v^
+        exists = CH1
+        exists = KU2
+        exists = CH2
+        OR = {
+            exists = LX2
+            exists = HND
+        }
+        has_country_flag = flg_ever_heiljsf_gengshi_hunluan      #	gôfËY‹sg÷mqNflg
+		is_year = 25
+		is_month = 4
+		NOT = { is_year = 26 }
+	}
+    #is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 } 
+    
+	option = {
+		name = "china_liuhan_events.EVTOPTA5"
+        ai_chance = { factor = 80 }             #AI	g80%„vïSıw	ébå‹	y˜
+        ordos_east_area = {                     #bS³‚›QìrËzv^·ƒ—V³lWY0W:S
+            add_core = LU2
+            cede_province = LU2
+        }
+        shaanxi_north_area  = {					#bS³‚›QìrËzv^·ƒ—VU–‰Sè
+			add_core = LU2
+			cede_province = LU2
+		}
+        gansu_area = {							#Tv^0W:S
+			add_core = KU2
+			cede_province = KU2
+		}
+        central_gansu_area = {					#Tv^0W:S
+			add_core = KU2
+			cede_province = KU2
+		}
+        gansu_eastnorth_area = {				#Tv^0W:S
+			add_core = KU2
+			cede_province = KU2
+		}
+        chuanbei_area = {			            #Tv^0W:S
+			add_core = CH2
+			cede_province = CH2
+		}
+        chuanbei_east_area = {		            #Tv^0W:S
+			add_core = CH2
+			cede_province = CH2
+		}
+        chuannan_area = {			            #Tv^0W:S
+			add_core = CH2
+			cede_province = CH2
+		}
+        shaanxi_area = {						#Tv^0W:S
+			add_core = CH2
+			cede_province = CH2
+		}
+        if = {
+            limit = {
+                exists = LX2                    #RÀy›QXR(W
+            }
+            shanxi_west_area = {				#Tv^0W:S
+                add_core = LX2
+                cede_province = LX2
+            }
+        }
+		if = {
+            limit = {
+                exists = LX2                    #RÀy›QXR(W
+            }
+            shanxi_area = {						#Tv^0W:S
+                add_core = LX2
+                cede_province = LX2
+            }
+        }
+		if = {
+            limit = {
+                exists = LX2                    #RÀy›QXR(W
+            }
+            henan_west_area = {					#Tv^0W:S
+                add_core = LX2
+                cede_province = LX2
+            }
+        }
+        if = {
+            limit = {
+                exists = LX2                    #RÀy›QXR(W
+            }
+            2549 = {							#Tv^wıN
+                add_core = LX2
+                cede_province = LX2
+            }
+        }
+		
+        if = {
+            limit = {
+                exists = HND                    #'YIlXR(W
+            }
+            shanxi_west_area = {				#Tv^0W:S
+                add_core = HND
+                cede_province = HND
+            }
+        }
+		if = {
+            limit = {
+                exists = HND                    #'YIlXR(W
+            }
+            shanxi_area = {						#Tv^0W:S
+                add_core = HND
+                cede_province = HND
+            }
+        }
+		if = {
+            limit = {
+                exists = HND                    #'YIlXR(W
+            }
+            henan_west_area = {					#Tv^0W:S
+                add_core = HND
+                cede_province = HND
+            }
+        }
+        if = {
+            limit = {
+                exists = HND                    #'YIlXR(W
+            }
+            2549 = {							#Tv^wıN
+                add_core = HND
+                cede_province = HND
+            }
+        }
+        
+        hunan_west_area = {						    #Tv^0W:S
+			add_core = TI1
+			cede_province = TI1
+		}
+        yun_gui_area = {						    #Tv^0W:S
+			add_core = WQ1
+			cede_province = WQ1
+		}
+        
+		CH1 = {											#d	w›QTôfËY‡v^Vb
+			declare_war_with_cb = {
+				who = WX2
+				casus_belli = cb_chinese_unification
+			}
+		}
+		DO1 = {											#Tø‹¯O›QTôfËY‡v^Vb
+			declare_war_with_cb = {
+				who = WX2
+				casus_belli = cb_chinese_unification
+			}
+		}
+		KU2 = {											#Tø‹¯O›QTôfËY‡v^Vb
+			declare_war_with_cb = {
+				who = WX2
+				casus_belli = cb_chinese_unification
+			}
+		}
+		CH2 = {											#Tø‹¯O›QTôfËY‡v^Vb
+			declare_war_with_cb = {
+				who = WX2
+				casus_belli = cb_chinese_unification
+			}
+		}
+		TI1 = {											#Tø‹¯O›QTôfËY‡v^Vb
+			declare_war_with_cb = {
+				who = WX2
+				casus_belli = cb_chinese_unification
+			}
+		}
+    } 
+    option = {
+		name = "china_liuhan_events.EVTOPTB5"
+        ai_chance = { factor = 20 }             #AI	g10%„vïSıw	ébå‹	y˜
+        CH1 = {									#d	w›QTôfËY‡v^Vb
+			declare_war_with_cb = {
+				who = WX2
+				casus_belli = cb_chinese_unification
+			}
+		}
+    }
+}
+
+##šRım3–
+country_event = {
+	id = china_liuhan_events.006
+	title = "china_liuhan_events.EVTNAME6"
+	desc = "china_liuhan_events.EVTDESC6"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = LX2					#=fRÀy›Q	
+			tag = HND					#=fIl›Q
+		}
+        owns = 2492
+        2492 = { is_capital = no }
+		is_year = 25
+		is_month = 9
+		NOT = { is_year = 100 }
+	}
+    #is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 } 
+    
+	option = {
+		name = "china_liuhan_events.EVTOPTA6"
+		2492 = {move_capital_effect = yes}
+    }
+}
+
+##kbs^sQN
+country_event = {
+	id = china_liuhan_events.007
+	title = "china_liuhan_events.EVTNAME7"
+	desc = "china_liuhan_events.EVTDESC7"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = LX2								#=fRÀy›Q
+				NOT = { LX2 = { is_at_war = yes }}		#å‹ıV¡lb‰N
+			}
+			AND = {
+				tag = HND								#=fIl›Q
+				NOT = { HND = { is_at_war = yes }}		#å‹ıV¡lb‰N
+			}		
+		}
+        exists = CH1                               #d	w›QØXR(W
+		CH1 = { was_player = no }      #å‹ıVN=f©s¶Rµc6R
+		LY1 = { was_player = no }      #å‹ıVN=f©s¶Rµc6R
+		CH2 = { was_player = no }      #å‹ıVN=f©s¶Rµc6R
+		KU2 = { was_player = no }      #å‹ıVN=f©s¶Rµc6R
+		is_year = 25
+		is_month = 10
+		NOT = { is_year = 70 }
+		ai = yes
+	}
+    #is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 } 
+    
+	option = {
+		name = "china_liuhan_events.EVTOPTA7"
+        every_province = {						#Tv^ıV¶R  RÀyTv^R8l›Q
+			limit = {
+				owned_by = LY1
+			}
+			add_core = PREV
+			cede_province = PREV
+		}
+        #define_general = {
+		#	name = "¯QV"
+		#	fire = 4
+		#	shock = 5
+		#	manuever = 4
+		#	siege = 5
+		#}
+        central_shaanxi_area = {			#Tv^0W:S
+			add_core = CH2
+			cede_province = CH2
+		}
+        4886 = {						   #Tv^wıN
+			add_core = KU2
+			cede_province = KU2
+		}
+        4887 = {						   #Tv^wıN
+			add_core = KU2
+			cede_province = KU2
+		}
+        3225 = {						   #Tv^wıN
+			add_core = KU2
+			cede_province = KU2
+		}
+        if = {
+            limit = {
+                exists = LX2            #RÀy›QXR(W
+            }
+            CH1 = {											#d	w›QTRÀyVb
+                declare_war_with_cb = {
+                    who = LX2
+                    casus_belli = cb_chinese_unification
+                }
+            }
+        }
+        if = {
+            limit = {
+                exists = HND            #Il›QXR(W
+            }
+            CH1 = {											#d	w›QTIl›QVb
+                declare_war_with_cb = {
+                    who = HND
+                    casus_belli = cb_chinese_unification
+                }
+            }
+        }
+    }
+}
+
+##mV RÍSÛS êSÕq‹s
+country_event = {
+	id = china_liuhan_events.008
+	title = "china_liuhan_events.EVTNAME8"
+	desc = "china_liuhan_events.EVTDESC8"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HND								#=fIl›Q
+		NOT = { HND = { is_at_war = yes }}		#å‹ıV¡lb‰N	
+        exists = PO1            #mV R›QXR(W
+		PO1 = { was_player = no }      #å‹ıVN=f©s¶Rµc6R
+		is_year = 26
+		is_month = 9
+		NOT = { is_year = 50 }
+	}
+    #is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 } 
+    
+    option = {
+		name = "china_liuhan_events.EVTOPTA8A"
+        ai_chance = { factor = 25 }             #AI	g25%„vïSıw	ébå‹	y˜
+        add_prestige = -5                       #—V0RZg
+		add_trust = {                           #ĞcGSáOûN
+            who = PO1
+            value = 20
+            mutual = yes
+        }
+    }
+	option = {
+		name = "china_liuhan_events.EVTOPTA8B"
+        ai_chance = { factor = 75 }             #AI	g75%„vïSıw	ébå‹	y˜
+        if = {
+            limit = {
+                exists = HND                    #Il›QXR(W
+            }
+            PO1 = {								#mV R›QTIl›QVb
+                declare_war_with_cb = {
+                    who = HND
+                    casus_belli = cb_chinese_unification
+                }
+            }
+        }
+    }
+}
+
+##RObS³‚
+country_event = {
+	id = china_liuhan_events.009
+	title = "china_liuhan_events.EVTNAME9"
+	desc = "china_liuhan_events.EVTDESC9"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HND								#=fIl›Q
+		NOT = { HND = { is_at_war = yes }}		#å‹ıV¡lb‰N
+        exists = LU2                            #bS³‚XR(W
+		HND = { was_player = no }      #å‹ıVN=f©s¶Rµc6R
+		is_year = 28
+		is_month = 0
+		NOT = { is_year = 50 }
+		ai = yes
+	}
+    #is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 } 
+    
+	option = {
+		name = "china_liuhan_events.EVTOPTA9"
+		shaanxi_north_area  = {						   #Tv^0W:S
+			add_core = HND
+			cede_province = HND
+		}
+    }
+}
+
+##NIls^G–‰KNb
+country_event = {
+	id = china_liuhan_events.010
+	title = "china_liuhan_events.EVTNAME10"
+	desc = "china_liuhan_events.EVTDESC10"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HND								#=fIl›Q
+        NOT = { HND = { is_at_war = yes }}		#å‹ıV¡lb‰N
+        exists = KU2                            #—–±V›QXR(W
+		KU2 = { was_player = no }      #å‹ıVN=f©s¶Rµc6R
+        is_neighbor_of = KU2                    #—–±V›Q=f»ıV
+		is_year = 32
+		is_month = 0
+		NOT = { is_year = 50 }
+		ai = yes
+	}
+    #is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 } 
+    
+	option = {
+		name = "china_liuhan_events.EVTOPTA10"
+		if = {
+            limit = {
+                exists = DO1                    #¦z‡›QXR(W
+				DO1 = { was_player = no }      #å‹ıVN=f©s¶Rµc6R
+            }
+            vassalize = DO1                     #¦z‡›Qb:ND–¸^
+        }
+        HND = {										#Il›Q›QT—–±VVb
+            declare_war_with_cb = {
+                who = KU2
+                casus_belli = cb_chinese_unification
+            }
+        }
+    }
+}
+
+##mpæy0N0ub
+country_event = {
+	id = china_liuhan_events.011
+	title = "china_liuhan_events.EVTNAME11"
+	desc = "china_liuhan_events.EVTDESC11"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HND								    #=fIl›Q
+		war_with = QI3                              #Næy0N›QVb-N
+		QI3 = { was_player = no }      				#å‹ıVN=f©s¶Rµc6R
+        QI3 = { NOT = {total_development = 20}}     #æy0N›QÑSUSSN100
+        exists = TI1                                #0ub›QXR(W
+		is_year = 28
+		NOT = { is_year = 50 }
+		ai = yes
+	}
+    #is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 } 
+    
+	option = {
+		name = "china_liuhan_events.EVTOPTA11"
+		every_province = {						#Tv^ıV¶R  RÀyTv^æy0N
+			limit = {
+				owned_by = QI3
+			}
+			add_core = PREV
+			cede_province = PREV
+		}
+        every_province = {						#Tv^ıV¶R  RÀyTv^0ub
+			limit = {
+				owned_by = TI1
+			}
+			add_core = PREV
+			cede_province = PREV
+		}
+        2491 = {							#Tv^wıN
+                add_core = CH2
+                cede_province = CH2
+        }
+    }
+}
+
+
+##4·ƒ.OıV‰sºs
+#country_event = {
+#	id = china_liuhan_events.012
+#	title = "china_liuhan_events.EVTNAME12"
+#	desc = "china_liuhan_events.EVTDESC12"
+#	picture = CITY_DEVELOPMENT_eventPicture
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		tag = HND								    #=fIl›Q
+#		war_with = CH1                              #Nd	w›QVb-N
+#        CH1 = { 
+#            NOT = {total_development = 100}         #d	w›QÑSUSSN100
+#            has_country_modifier = md_chuanguoyuxi  #åb	g.OıV‰sºs
+#        }    
+#	}
+#    #is_triggered_only = yes
+#	
+#	mean_time_to_happen = { days = 1 } 
+#    
+#	option = {
+#		name = "china_liuhan_events.EVTOPTA12"
+#        CH1 = { remove_country_modifier = md_chuanguoyuxi }
+#        HND = {
+#            add_country_modifier = {
+#                name = md_chuanguoyuxi          #—V0R.OıV‰sºs
+#                duration = -1
+#            }
+#        }
+#        every_province = {					#Tv^ıV¶R  RÀyTv^d	w›Q
+#             limit = {
+#                owned_by = CH1
+#            }
+#            add_core = PREV
+#            cede_province = PREV
+#        }
+#    }
+#}
+#
+
+#—fNgRÀy
+#9hnc‹NöNÙSğÇ‘ÖScknx„v	y˜ïSåNbŸR
+
+
+country_event = {
+	id = china_liuhan_events.013
+	title = "china_liuhan_events.EVTNAME13"
+	desc = "china_liuhan_events.EVTDESC13"
+	picture = CITY_DEVELOPMENT_eventPicture
+	#^N?è•´Rÿ`—NwRÀyùRbìN„váOûNÛLˆ—fNg¡‹Iuÿ
+	#9hnc¿u¥b—VåwÿÙ!kRÀyMReg&^†N'YÏ‘„v²bkS–ÿúW,gNˆV¾–Ñ«ÛLˆ«RNg0
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "china_liuhan_events.OPTA13"
+	#ôv¥cOuQlxN
+		hidden_effect = {
+			country_event = {
+				id = china_liuhan_events.016
+			}	
+		}	
+	}
+	option = {
+	name = "china_liuhan_events.OPTB13"
+	#V­rKb(WØšY…V‹T
+		hidden_effect = {
+			country_event = {
+				id = china_liuhan_events.017
+			}	
+		}	
+	}
+	option = {
+	name = "china_liuhan_events.OPTC13"
+	#Nß˜ir-NNÒk
+		hidden_effect = {
+			country_event = {
+				id = china_liuhan_events.018
+			}	
+		}	
+	}
+}
+
+country_event = {
+	id = china_liuhan_events.014
+	title = "china_liuhan_events.EVTNAME14"
+	desc = "china_liuhan_events.EVTDESC14"
+	picture = CITY_DEVELOPMENT_eventPicture
+	#^N?è•´Rÿ`—NwRÀyùRbìN„váOûNÛLˆ—fNg¡‹Iuÿ
+	#9hnc¿u¥b—VåwÿÙ!kRÀyMReg&^†NSÏ‘„v²bkS–ÿFO*N*Nı=fÂSŒzfwÿmÛp:gHQ0ùRNirÁTb=fÛVhT„vÎ˜9TIƒ¨RˆV	gf‹É‰'`0FOckb—ùR³QÖNìN¡l	gÜw—r„v0
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "china_liuhan_events.OPTA14"
+		#ôv¥cOuQlxN
+		hidden_effect = {
+			country_event = {
+				id = china_liuhan_events.019
+			}	
+		}		
+	}
+	option = {
+	name = "china_liuhan_events.OPTB14"
+	#V­rKb(WØšY…V‹T
+		hidden_effect = {
+			country_event = {
+				id = china_liuhan_events.020
+			}	
+		}	
+	}
+	option = {
+	name = "china_liuhan_events.OPTC14"
+	#Nß˜ir-NNÒk
+		hidden_effect = {
+			country_event = {
+				id = china_liuhan_events.021
+			}	
+		}	
+	}
+}
+
+
+country_event = {
+	id = china_liuhan_events.015
+	title = "china_liuhan_events.EVTNAME15"
+	desc = "china_liuhan_events.EVTDESC15"
+	picture = CITY_DEVELOPMENT_eventPicture
+	#^N?è•´RÿåNqQFUıV¶R'Y‹N:N1uÿíQPNwRÀyùRbìN„váOûNÛLˆ—fNg¡‹IuÿÖN1k6qt¦u†N0
+	#9hnc¿u¥b—VåwÿÙ!kRÀy‹NMR<ONNòTÏuùRß˜irŒTÛVhT	g›Nf‹Õ`ÿ‹†6q–HbgSÿFO=fµ^‘ššlšÿ5uIQówkpÿ¾uLˆ‚YÎ˜0
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "china_liuhan_events.OPTA15"
+	#ôv¥cOuQlxN
+		hidden_effect = {
+			country_event = {
+				id = china_liuhan_events.022
+			}	
+		}		
+	}
+	option = {
+	name = "china_liuhan_events.OPTB15"
+	#V­rKb(WØšY…V‹T
+		hidden_effect = {
+			country_event = {
+				id = china_liuhan_events.023
+			}	
+		}		
+	}
+	option = {
+	name = "china_liuhan_events.OPTC15"
+	#Nß˜ir-NNÒk
+		hidden_effect = {
+			country_event = {
+				id = china_liuhan_events.024
+			}	
+		}		
+	}
+}
+
+country_event = {
+	id = china_liuhan_events.016
+	title = "china_liuhan_events.EVTNAME16"
+	desc = "china_liuhan_events.EVTDESC16"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+	name = "china_liuhan_events.OPTA16"
+		if = {
+			limit = {
+				exists = HND
+				HND = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = HND
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = HND
+					modifier = opinion_good_friend
+				}	
+			}			
+			HND = {
+				declare_war = ROOT
+			}	
+		}	
+		if = {
+			limit = {
+				exists = LX2
+				LX2 = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = LX2
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = LX2
+					modifier = opinion_good_friend
+				}	
+			}			
+			LX2 = {
+				declare_war = ROOT
+			}	
+		}		
+	}
+}
+
+country_event = {
+	id = china_liuhan_events.017
+	title = "china_liuhan_events.EVTNAME17"
+	desc = "china_liuhan_events.EVTDESC17"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+	name = "china_liuhan_events.OPTA17"
+		if = {
+			limit = {
+				exists = HND
+				HND = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = HND
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = HND
+					modifier = opinion_good_friend
+				}	
+			}			
+			HND = {
+				declare_war = ROOT
+			}	
+		}	
+		if = {
+			limit = {
+				exists = LX2
+				LX2 = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = LX2
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = LX2
+					modifier = opinion_good_friend
+				}	
+			}			
+			LX2 = {
+				declare_war = ROOT
+			}	
+		}			
+	}
+}
+
+country_event = {
+	id = china_liuhan_events.018
+	title = "china_liuhan_events.EVTNAME18"
+	desc = "china_liuhan_events.EVTDESC18"
+	picture = CITY_DEVELOPMENT_eventPicture
+#bŸR—fNgRÀy
+	is_triggered_only = yes
+	
+	option = {
+	name = "china_liuhan_events.OPTA18"
+		if = {
+			limit = {
+				exists = HND
+				HND = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = HND
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = HND
+					modifier = opinion_good_friend
+				}	
+			}			
+			HND = {
+				kill_ruler = yes
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_father_bekilled
+				}
+			}	
+		}	
+		if = {
+			limit = {
+				exists = LX2
+				LX2 = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = LX2
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = LX2
+					modifier = opinion_good_friend
+				}	
+			}			
+			LX2 = {
+				kill_ruler = yes
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_father_bekilled
+				}
+			}	
+		}				
+	}
+}
+
+
+country_event = {
+	id = china_liuhan_events.019
+	title = "china_liuhan_events.EVTNAME19"
+	desc = "china_liuhan_events.EVTDESC19"
+	picture = CITY_DEVELOPMENT_eventPicture
+#bŸR—fNgRÀy
+	is_triggered_only = yes
+	
+	option = {
+	name = "china_liuhan_events.OPTA19"
+		if = {
+			limit = {
+				exists = HND
+				HND = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = HND
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = HND
+					modifier = opinion_good_friend
+				}	
+			}			
+			HND = {
+				kill_ruler = yes
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_father_bekilled
+				}
+			}	
+		}	
+		if = {
+			limit = {
+				exists = LX2
+				LX2 = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = LX2
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = LX2
+					modifier = opinion_good_friend
+				}	
+			}			
+			LX2 = {
+				kill_ruler = yes
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_father_bekilled
+				}
+			}	
+		}
+	}
+}
+
+country_event = {
+	id = china_liuhan_events.020
+	title = "china_liuhan_events.EVTNAME20"
+	desc = "china_liuhan_events.EVTDESC20"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+	name = "china_liuhan_events.OPTA20"
+		if = {
+			limit = {
+				exists = HND
+				HND = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = HND
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = HND
+					modifier = opinion_good_friend
+				}	
+			}			
+			HND = {
+				declare_war = ROOT
+			}	
+		}	
+		if = {
+			limit = {
+				exists = LX2
+				LX2 = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = LX2
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = LX2
+					modifier = opinion_good_friend
+				}	
+			}			
+			LX2 = {
+				declare_war = ROOT
+			}	
+		}			
+	}
+}
+
+country_event = {
+	id = china_liuhan_events.021
+	title = "china_liuhan_events.EVTNAME21"
+	desc = "china_liuhan_events.EVTDESC21"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+	name = "china_liuhan_events.OPTA21"
+		if = {
+			limit = {
+				exists = HND
+				HND = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = HND
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = HND
+					modifier = opinion_good_friend
+				}	
+			}			
+			HND = {
+				declare_war = ROOT
+			}	
+		}	
+		if = {
+			limit = {
+				exists = LX2
+				LX2 = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = LX2
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = LX2
+					modifier = opinion_good_friend
+				}	
+			}			
+			LX2 = {
+				declare_war = ROOT
+			}	
+		}				
+	}
+}
+
+
+country_event = {
+	id = china_liuhan_events.022
+	title = "china_liuhan_events.EVTNAME22"
+	desc = "china_liuhan_events.EVTDESC22"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+	name = "china_liuhan_events.OPTA22"
+		if = {
+			limit = {
+				exists = HND
+				HND = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = HND
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = HND
+					modifier = opinion_good_friend
+				}	
+			}				
+			HND = {
+				declare_war = ROOT
+			}	
+		}	
+		if = {
+			limit = {
+				exists = LX2
+				LX2 = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = LX2
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = LX2
+					modifier = opinion_good_friend
+				}	
+			}				
+			LX2 = {
+				declare_war = ROOT
+			}	
+		}			
+	}
+}
+
+country_event = {
+	id = china_liuhan_events.023
+	title = "china_liuhan_events.EVTNAME23"
+	desc = "china_liuhan_events.EVTDESC23"
+	picture = CITY_DEVELOPMENT_eventPicture
+#bŸR—fNgRÀy
+	is_triggered_only = yes
+	
+	option = {
+	name = "china_liuhan_events.OPTA23"
+		if = {
+			limit = {
+				exists = HND
+				HND = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = HND
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = HND
+					modifier = opinion_good_friend
+				}	
+			}				
+			HND = {
+				kill_ruler = yes
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_father_bekilled
+				}
+			}	
+		}	
+		if = {
+			limit = {
+				exists = LX2
+				LX2 = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = LX2
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = LX2
+					modifier = opinion_good_friend
+				}	
+			}				
+			LX2 = {
+				kill_ruler = yes
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_father_bekilled
+				}
+			}	
+		}		
+	}
+}
+
+country_event = {
+	id = china_liuhan_events.024
+	title = "china_liuhan_events.EVTNAME24"
+	desc = "china_liuhan_events.EVTDESC24"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+	name = "china_liuhan_events.OPTA24"
+		if = {
+			limit = {
+				exists = HND
+				HND = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = HND
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = HND
+					modifier = opinion_good_friend
+				}	
+			}			
+			HND = {
+				declare_war = ROOT
+			}	
+		}	
+		if = {
+			limit = {
+				exists = LX2
+				LX2 = {
+					has_ruler = "RÀy"
+				}	
+			}
+			if = {
+				limit = {
+					reverse_has_opinion_modifier = {
+						who = LX2
+						modifier = opinion_good_friend
+					}					
+				}
+				reverse_remove_opinion = {
+					who = LX2
+					modifier = opinion_good_friend
+				}	
+			}				
+			LX2 = {
+				declare_war = ROOT
+			}	
+		}
+	}
+}

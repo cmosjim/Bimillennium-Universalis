@@ -1,0 +1,323 @@
+########################
+#ZIX Flavor Events
+########################
+#rab_ZIX_events.1# when get more than 20 core , get debuff -1
+#rab_ZIX_events.2# (hidden), only triggered by delete core (4) and not war ZIX ever, consider to alarm event(6) / start to war (3)
+#rab_ZIX_events.3# WAR to start below 15 , country flag setting , only once happend.
+#rab_ZIX_events.4# Have chance to eliminate core of ZIX => call (2) 
+#rab_ZIX_events.5# complete get rid of ZIX effect when below 10 core provinces.
+#rab_ZIX_events.6# alarm event when below 17 
+namespace = rab_ZIX_events
+
+#Any country get the more than 20 core-province has ZIX core
+#2018.12.31 there is no need to update , fit to 1.28
+country_event = {
+	id = rab_ZIX_events.1
+	title = "rab_ZIX_events.NAME1"
+	desc = "rab_ZIX_events.DESC1"
+	picture = VISIT_LOCAL_EASTATE_eventPicture
+  
+  
+	 
+	trigger = {
+		NOT = { exists = ZIX }
+		NOT = { exists = PHO }
+		NOT = { 
+				OR = {
+					has_country_modifier = md_ZIX_TAX_10_OFF_EFFECT
+					has_country_modifier = md_ZIX_TAX_20_OFF_EFFECT
+					has_country_modifier = md_ZIX_TAX_30_OFF_EFFECT
+					has_country_modifier = md_ZIX_TAX_40_OFF_EFFECT
+				}
+		}
+		NOT = { has_country_flag = ZIX_EVER_WAR }
+		num_of_owned_provinces_with = {
+				value = 20
+				is_core = ZIX
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 200
+	}
+
+	option = {
+		name = "rab_ZIX_events.OPTA1"
+		
+			if = {
+				limit = { 
+					num_of_cities = 200
+				}
+				add_country_modifier = {
+				name = "md_ZIX_TAX_10_OFF_EFFECT"
+				duration = -1
+				}
+			}
+			if = {
+				limit = { 
+					num_of_cities = 100
+					NOT = { num_of_cities = 200 }
+				}
+				add_country_modifier = {
+				name = "md_ZIX_TAX_20_OFF_EFFECT"
+				duration = -1
+				}
+			}			
+			if = {
+				limit = { 
+					num_of_cities = 50
+					NOT = { num_of_cities = 100 }
+				}
+				add_country_modifier = {
+				name = "md_ZIX_TAX_30_OFF_EFFECT"
+				duration = -1
+				}
+			}
+			if = {
+				limit = { 
+					NOT = { num_of_cities = 50 }
+				}
+				add_country_modifier = {
+				name = "md_ZIX_TAX_40_OFF_EFFECT"
+				duration = -1
+				}
+			}			
+	}
+}
+
+# Ever got the ZIX_EFFECT , decrease the core num will cause the alarm from ZIX
+country_event = {
+	id = rab_ZIX_events.2
+	title = "rab_ZIX_events.NAME2"
+	desc = "rab_ZIX_events.DESC2"
+	picture = ACCUSATION_eventPicture
+   
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = {
+		NOT = { exists = ZIX }
+		NOT = { exists = PHO }
+		OR = {
+				has_country_modifier = md_ZIX_TAX_10_OFF_EFFECT
+				has_country_modifier = md_ZIX_TAX_20_OFF_EFFECT
+				has_country_modifier = md_ZIX_TAX_30_OFF_EFFECT
+				has_country_modifier = md_ZIX_TAX_40_OFF_EFFECT
+		}
+		NOT = { has_country_flag = ZIX_EVER_WAR }		
+	}
+	
+	option = {
+		name = "rab_ZIX_events.OPTA2"
+		if = { 
+			limit = { 
+				NOT = {
+					num_of_owned_provinces_with = {
+						value = 17
+						is_core = ZIX
+					}
+				}
+				NOT = { has_country_modifier = alarm_by_ZIX }
+			}
+			#alarm by ZIX
+			country_event = {
+				id = rab_ZIX_events.6
+			}
+			
+		}
+		if = { 
+			limit = { 
+				NOT = {
+					num_of_owned_provinces_with = {
+						value = 15
+						is_core = ZIX
+					}
+				}
+				has_country_modifier = alarm_by_ZIX
+			}
+			#war start
+			country_event = {
+				id = rab_ZIX_events.3
+			}
+		}
+	}	
+}
+
+# Ever got the ZIX_EFFECT , decrease the core below xx 15  will cause ZIX fight out in core provinces
+country_event = {
+	id = rab_ZIX_events.3
+	title = "rab_ZIX_events.NAME3"
+	desc = "rab_ZIX_events.DESC3"
+	picture = ARMY_START_1_eventPicture
+   
+	is_triggered_only = yes
+ 
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ZIX_EVER_WAR
+			remove_country_modifier = alarm_by_ZIX
+			every_owned_province = {
+				limit = {
+					is_core = ZIX
+				}
+				cede_province = ZIX
+			}
+		
+			ZIX = {
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_chinese_unification
+				}
+				random_owned_province = {
+					infantry = ZIX
+					infantry = ZIX
+					infantry = ZIX
+					infantry = ZIX
+					infantry = ZIX
+					infantry = ZIX
+					cavalry = ZIX
+					cavalry = ZIX
+				}
+				random_owned_province = {
+					infantry = ZIX
+					infantry = ZIX
+					infantry = ZIX
+					infantry = ZIX
+					cavalry = ZIX
+					cavalry = ZIX
+				}
+				add_treasury = 5000
+			}
+
+		}
+	}
+		
+	option = {
+		name = "rab_ZIX_events.OPTA3"
+	
+	}
+}
+# event for remove_core = ZIX
+country_event = {
+	id = rab_ZIX_events.4
+	title = "rab_ZIX_events.NAME4"
+	desc = "rab_ZIX_events.DESC4"
+	picture = KILL_GENERAL_eventPicture
+     
+	trigger = {
+		NOT = { exists = ZIX }
+		NOT = { exists = PHO }
+		NOT = { has_country_modifier = dont_care_ZIX }
+		num_of_owned_provinces_with = {
+			value = 8
+			is_core = ZIX
+		}
+		OR = {
+			has_country_modifier = md_ZIX_TAX_10_OFF_EFFECT
+			has_country_modifier = md_ZIX_TAX_20_OFF_EFFECT
+			has_country_modifier = md_ZIX_TAX_30_OFF_EFFECT
+			has_country_modifier = md_ZIX_TAX_40_OFF_EFFECT
+		
+		}				
+	}
+	
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "rab_ZIX_events.OPTA4"
+		ai_chance = { factor = 100 }
+		add_treasury = -30
+		add_adm_power = -4
+		random_owned_province = {
+			limit = { is_core = ZIX }
+			remove_core = ZIX
+		}
+		hidden_effect = {
+			country_event = {
+				id = rab_ZIX_events.2
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = "rab_ZIX_events.OPTB4"
+		ai_chance = { factor = 0 }
+	}
+	option = {
+		name = "rab_ZIX_events.OPTC4"
+		
+		ai_chance = { factor = 0 }
+		
+		add_country_modifier = {
+			name = "dont_care_ZIX"
+			duration = 3650
+		}
+	}	
+}
+
+country_event = {
+	id = rab_ZIX_events.5
+	title = "rab_ZIX_events.NAME5"
+	desc = "rab_ZIX_events.DESC5"
+	picture = ARMY_HAPPY_eventPicture
+  
+	 
+	trigger = {
+		NOT = { exists = ZIX }
+		NOT = { exists = PHO }
+		
+				OR = {
+					has_country_modifier = md_ZIX_TAX_10_OFF_EFFECT
+					has_country_modifier = md_ZIX_TAX_20_OFF_EFFECT
+					has_country_modifier = md_ZIX_TAX_30_OFF_EFFECT
+					has_country_modifier = md_ZIX_TAX_40_OFF_EFFECT
+				}	
+		NOT = {
+			num_of_owned_provinces_with = {
+					value = 10
+					is_core = ZIX
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	immediate = {
+	
+			remove_country_modifier = md_ZIX_TAX_10_OFF_EFFECT
+			remove_country_modifier = md_ZIX_TAX_20_OFF_EFFECT
+			remove_country_modifier = md_ZIX_TAX_30_OFF_EFFECT
+			remove_country_modifier = md_ZIX_TAX_40_OFF_EFFECT
+	
+	}
+	
+	option = {
+		name = "rab_ZIX_events.OPTA5"
+		
+	}
+}
+
+#alarm by ZIX
+country_event = {
+	id = rab_ZIX_events.6
+	title = "rab_ZIX_events.NAME6"
+	desc = "rab_ZIX_events.DESC6"
+	picture = ACCUSATION_eventPicture
+
+	is_triggered_only = yes 
+	
+	option = {
+		name = "rab_ZIX_events.OPTA6"
+		if = { limit = { NOT = { has_country_modifier = alarm_by_ZIX } } 
+			add_country_modifier = {
+				name = "alarm_by_ZIX"
+				duration = -1
+			}
+		}
+	}
+}	

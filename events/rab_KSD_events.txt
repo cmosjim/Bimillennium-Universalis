@@ -1,0 +1,55 @@
+########################
+#KSD Flavor Events
+########################
+#rab_KSD_events.1# when 
+#		
+#		tag = GUG	
+#		tag = ZB2	
+#		tag = GR1	
+#		tag = DG2
+#		tag = ZHA	
+#		tag = AL1	
+#		tag = LS1	
+#		tag = DO2	
+#		tag = SP1	
+#		tag = LDK	
+#		tag = NW1	
+#		tag = TS1	
+#		years = 1618 ~ 1855 
+######################################
+## 2018.12.30 fit to 1.28 
+namespace = rab_KSD_events
+
+country_event = {
+	id = rab_KSD_events.1
+	title = "rab_KSD_events.NAME1"
+	desc = "rab_KSD_events.DESC1"
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_KSD_events.OPTA1"
+		change_tag = KSD
+		swap_free_idea_group = yes
+		swap_non_generic_missions = yes
+		if = {
+			limit = { NOT = { government_rank = 3 } }
+			set_government_rank = 3
+		}
+		every_country = {
+			limit = { primary_culture = mongol }
+			add_opinion = {
+				who = ROOT
+				modifier = op_culture_togher
+			}
+		}
+		add_prestige = 25		
+		add_country_modifier = {
+			name = "md_recovery_KSD"
+			duration = 7200
+		}
+		set_country_flag = formed_tibet_flag
+	}			
+}
+

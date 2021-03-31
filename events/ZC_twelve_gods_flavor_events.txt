@@ -1,0 +1,193 @@
+namespace = twelve_gods_flavor
+country_event = {
+	id = twelve_gods_flavor.1
+	title = twelve_gods_flavor.1.t
+	desc = twelve_gods_flavor.1.d
+	picture = twelve_gods_eventPicture
+
+	trigger = {
+		religion = hellenism
+		NOT = { has_ruler_modifier = zeus_god }
+		NOT = { has_ruler_modifier = hera_god }
+		NOT = { has_ruler_modifier = poseidon_god }
+		NOT = { has_ruler_modifier = demeter_god }
+		NOT = { has_ruler_modifier = athena_god }
+		NOT = { has_ruler_modifier = apollo_god }
+		NOT = { has_ruler_modifier = artemis_god }
+		NOT = { has_ruler_modifier = ares_god }
+		NOT = { has_ruler_modifier = aphrodite_god }
+		NOT = { has_ruler_modifier = hephaestus_god }
+		NOT = { has_ruler_modifier = hermes_god }
+		NOT = { has_ruler_modifier = hestia_god }
+	}
+		
+	option = {
+		name = twelve_gods_flavor.1.a
+		ai_chance = {
+			factor = 1
+            modifier = {
+            	factor = 1.5
+            	ADM_power = 6
+            }
+			modifier = {
+				factor = 3
+				personality = ai_balanced
+			}
+		}		
+		add_ruler_modifier = {
+			name = "zeus_god"
+		}
+
+	}
+
+	option = {
+		name = twelve_gods_flavor.1.b
+		ai_chance = {
+			factor = 0.5
+		}		
+		add_ruler_modifier = {
+			name = "hera_god"
+		}
+	}
+
+	option = {
+		name = twelve_gods_flavor.1.c
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				personality = ai_capitalist
+			}
+		}		
+		add_ruler_modifier = {
+			name = poseidon_god
+		}
+	}
+
+	option = {
+		name = twelve_gods_flavor.1.m
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				ADM = 5
+			}
+		}		
+		add_ruler_modifier = {
+			name = "demeter_god"
+		}
+
+	}
+
+	option = {
+		name = twelve_gods_flavor.1.e
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				consort_mil = 5
+			}
+			modifier = {
+				factor = 2
+				has_consort_regency = yes
+			}
+		}		
+		add_ruler_modifier = {
+			name = athena_god
+		}
+	}
+
+	option = {
+		name = twelve_gods_flavor.1.f
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 3
+				consort_mil = 5
+			}
+		}		
+		add_ruler_modifier = {
+			name = "apollo_god"
+		}
+	}
+
+	option = {
+		name = twelve_gods_flavor.1.g
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				MIL_power = 5
+			}
+		}		
+		add_ruler_modifier = {
+			name = "artemis_god"
+		}
+	}
+
+	option = {
+		name = twelve_gods_flavor.1.h
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				MIL_power = 6
+			}
+			modifier = {
+				factor = 2.5
+				personality = ai_militarist
+			}
+		}		
+		add_ruler_modifier = {
+			name = ares_god
+		}
+	}
+
+	option = {
+		name = twelve_gods_flavor.1.i
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				DIP_power = 6
+			}
+			modifier = {
+				factor = 2
+				personality = ai_diplomat
+			}
+		}		
+		add_ruler_modifier = {
+			name = aphrodite_god
+		}
+	}
+
+	option = {
+		name = twelve_gods_flavor.1.j
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = hephaestus_god
+		}
+	}
+
+	option = {
+		name = twelve_gods_flavor.1.k
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = hermes_god
+		}
+	}
+
+	option = {
+		name = twelve_gods_flavor.1.l
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = hestia_god
+		}
+	}
+}

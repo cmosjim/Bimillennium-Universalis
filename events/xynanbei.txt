@@ -1,0 +1,198 @@
+namespace = xy_nanbei
+country_event = {
+    id = xy_nanbei.1
+    title = "xy_nanbei.NAME1"
+    desc = "xy_nanbei.DESC1"
+    picture = BAD_ARMY_eventPicture
+    trigger = {
+			NOT = { tag = HND }
+			NOT = { tag = SHU }
+			has_global_flag = shizushidaixy 
+			has_country_flag = tianchaodaguo
+			OR = {
+			NOT = { adm = 6 }
+			NOT = { mil = 4 }
+			}
+			NOT = { has_ruler_modifier = shizurangli }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    immediate = {
+        if = {
+		limit = { 
+		NOT = { 
+		check_variable = {
+            which = num_of_fenquandu
+            value = 10
+        }
+		} 
+		} 
+        set_variable = {
+            which = num_of_fenquandu
+            value = 10
+        }
+		}
+    }
+    option = {
+	name = "xy_nanbei.OPTA1"
+	add_ruler_modifier = {
+				name = "shizurangli"
+				duration = -1
+			} 
+    }
+}
+country_event = {
+    id = xy_nanbei.2
+    title = "xy_nanbei.NAME2"
+    desc = "xy_nanbei.DESC2"
+    picture = BAD_ARMY_eventPicture
+    trigger = {
+		check_variable = {
+            which = num_of_fenquandu
+            value = 10
+        }
+		 has_ruler_modifier = shizurangli 
+		NOT = { mil = 3 }
+		calc_true_if = {
+            all_subject_country = {
+                is_subject_of_type = difang_vassal
+            }
+            amount = 3
+        }
+    }
+    mean_time_to_happen = {
+        months = 1000
+    }
+    immediate = {
+	  random_subject_country = { save_event_target_as = cuanwei_gl_country set_country_flag = cuanwei_glfl  }
+	  random_subject_country = { 
+	  limit = { NOT = { has_country_flag = cuanwei_glfl } } 
+      event_target:cuanwei_gl_country = {
+	  inherit = PREV
+	  }
+	  }
+	  if = {
+	  limit = {
+	  NOT = { mil = 2 }
+	  }
+	  random_list = {
+			50 = {  }
+			50 = { 
+			 random_subject_country = { 
+	  limit = { NOT = { has_country_flag = cuanwei_glfl } } 
+      event_target:cuanwei_gl_country = {
+	  inherit = PREV
+	  }
+	  }
+			}
+		}
+	  }
+	  if = {
+	  limit = {
+	  NOT = { mil = 1 }
+	  }
+	  random_list = {
+			50 = {  }
+			50 = { 
+			 random_subject_country = { 
+	  limit = { NOT = { has_country_flag = cuanwei_glfl } } 
+      event_target:cuanwei_gl_country = {
+	  inherit = PREV
+	  }
+	  }
+			}
+		}
+	  }
+    }
+    option = {
+	name = "xy_nanbei.OPTA2"
+	every_subject_country = { limit = { has_country_flag = cuanwei_glfl }
+	every_owned_province = { add_core = ROOT }
+    change_government = ancient_chinese_warlord #rab_test
+            add_government_reform = ancient_chinese_warlord_reform
+            restore_country_name = yes
+            overlord = {
+                free_vassal = PREV
+            }
+			every_country = { limit = { war_with = PREV } white_peace = PREV }
+            declare_war_with_cb = {
+                who = ROOT
+                casus_belli = cb_chinese_unification
+            }
+	}
+	 capital_scope = { set_province_flag = nanbeimubiaofg }  
+    }
+}
+
+country_event = {
+    id = xy_nanbei.3
+    title = "xy_nanbei.NAME3"
+    desc = "xy_nanbei.DESC3"
+    picture = BAD_ARMY_eventPicture
+   is_triggered_only = yes
+    option = {
+	name = "xy_nanbei.OPTA3"
+	clr_global_flag = shizushidaixy
+    }
+}
+country_event = {
+    id = xy_nanbei.4
+    title = "xy_nanbei.NAME4"
+    desc = "xy_nanbei.DESC4"
+    picture = BAD_ARMY_eventPicture
+	major = yes
+   trigger = {
+   has_country_flag = was_difangguanliao
+   any_country = { war_with = ROOT
+   capital_scope = { has_province_flag = nanbeimubiaofg
+   controlled_by = ROOT
+   }  
+   }
+   }
+    mean_time_to_happen = {
+        months = 1
+    }
+   immediate = {
+   every_country = { limit = { war_with = ROOT
+   capital_scope = { has_province_flag = nanbeimubiaofg
+   controlled_by = ROOT }  
+   }
+   every_subject_country = { limit = { 
+   OR = {
+	is_subject_of_type = difang_vassal
+	is_subject_of_type = duhufu_state
+	is_subject_of_type = duhufu_state_color
+	} }
+    ROOT = { inherit = PREV }
+	}
+	ROOT = { inherit = PREV }
+	
+   }
+   
+   }
+ 
+    option = {
+	name = "xy_nanbei.OPTA4"
+	every_owned_province = { limit = { has_province_flag = nanbeimubiaofg } clr_province_flag = nanbeimubiaofg }
+    }
+}
+
+country_event = {
+    id = xy_nanbei.5
+    title = "xy_nanbei.NAME5"
+    desc = "xy_nanbei.DESC5"
+    picture = BAD_ARMY_eventPicture
+	hidden = yes
+   trigger = {
+   any_owned_province = { has_province_flag = nanbeimubiaofg }
+   is_at_war = no
+   }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+	name = "xy_nanbei.OPTA5"
+	every_owned_province = { limit = { has_province_flag = nanbeimubiaofg } clr_province_flag = nanbeimubiaofg }
+    }
+}

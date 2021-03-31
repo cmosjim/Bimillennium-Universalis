@@ -1,0 +1,1168 @@
+namespace = recruit_special_units
+
+#############################################################
+#招募维京龙船#tmp_recruit_viking_dragon_boat	
+#############################################################
+country_event = {
+	id = recruit_special_units.18
+	title = "recruit_special_units.NAME18"
+	desc = "recruit_special_units.DESC18"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA18"	
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				navy_size_percentage = 0.5
+			}
+		}
+		if = {
+			limit = {
+				OR = {	
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							variable_name = var_navy_forcelimit
+							value = naval_forcelimit
+						}
+						export_to_variable = {
+							variable_name = var_navy_size
+							value = navy_size
+						}
+						change_variable = {
+							which = var_navy_size
+							which = var_recruit_num
+						}
+						check_variable = {
+							which = var_navy_size
+							which = var_navy_forcelimit
+						}
+					}
+					NOT = { sailors = 100 }
+				}
+			}		
+			country_event = {
+				id = recruit_special_units.998
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_port = yes
+						has_building = special_navy_research
+					}	
+					add_unit_construction = {
+						type = special_ZC_viking_dragon_boat
+						amount = 1
+						speed = 1
+						cost = 4.5
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_sailors = -100
+					country_event = {
+						id = recruit_special_units.118
+					}					
+				}				
+			}	
+		}
+
+	}
+	option = {
+		name = "recruit_special_units.OPTB18"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_viking_dragon_boat
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.118
+	title = "recruit_special_units.NAME118"
+	desc = "recruit_special_units.DESC118"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA118"		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				navy_size_percentage = 0.5
+			}
+		}	
+		if = {
+			limit = {
+				OR = {	
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							variable_name = var_navy_forcelimit
+							value = naval_forcelimit
+						}
+						export_to_variable = {
+							variable_name = var_navy_size
+							value = navy_size
+						}
+						change_variable = {
+							which = var_navy_size
+							which = var_recruit_num
+						}
+						check_variable = {
+							which = var_navy_size
+							which = var_navy_forcelimit
+						}
+					}
+					NOT = { sailors = 100 }
+				}
+			}
+			country_event = {
+				id = recruit_special_units.998
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_port = yes
+						has_building = special_navy_research
+					}	
+					add_unit_construction = {
+						type = special_ZC_viking_dragon_boat
+						amount = 1
+						speed = 1
+						cost = 4.5
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_sailors = -100
+					country_event = {
+						id = recruit_special_units.18
+					}
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB118"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_viking_dragon_boat
+		}		
+	}	
+}
+
+#############################################################
+#招募属珊军#tmp_recruit_shushanjun	
+#############################################################
+country_event = {
+	id = recruit_special_units.19
+	title = "recruit_special_units.NAME19"
+	desc = "recruit_special_units.DESC19"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA19"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			}
+			modifier = {
+				factor = 0
+				army_size_percentage = 0.5
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_ZC_shushanjun
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.119
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_ZC_shushanjun }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.219
+							days = 20
+						}
+					}						
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB19"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_ZC_shushanjun
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.119
+	title = "recruit_special_units.NAME119"
+	desc = "recruit_special_units.DESC119"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA119"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			}
+			modifier = {
+				factor = 0
+				army_size_percentage = 0.5
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_ZC_shushanjun
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.19
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_ZC_shushanjun }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.219
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB119"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_ZC_shushanjun
+		}		
+	}	
+}
+
+#############################################################
+#招募皮室军#tmp_recruit_pishijun	
+#############################################################
+country_event = {
+	id = recruit_special_units.20
+	title = "recruit_special_units.NAME20"
+	desc = "recruit_special_units.DESC20"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA20"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			}
+			modifier = {
+				factor = 0
+				army_size_percentage = 0.5
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_ZC_pishijun
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.120
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_ZC_pishijun }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.220
+							days = 20
+						}
+					}						
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB20"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_ZC_pishijun
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.120
+	title = "recruit_special_units.NAME120"
+	desc = "recruit_special_units.DESC120"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA120"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			}
+			modifier = {
+				factor = 0
+				army_size_percentage = 0.5
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_ZC_pishijun
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.20
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_ZC_pishijun }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.220
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB120"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_ZC_pishijun
+		}		
+	}	
+}
+
+#############################################################
+#招募英格兰长弓兵#tmp_recruit_special_ZC_england_longbowman	
+#############################################################
+country_event = {
+	id = recruit_special_units.21
+	title = "recruit_special_units.NAME21"
+	desc = "recruit_special_units.DESC21"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA21"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			}
+			modifier = {
+				factor = 0
+				army_size_percentage = 0.5
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_ZC_england_longbowman
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.121
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_ZC_england_longbowman }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.221
+							days = 20
+						}
+					}						
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB21"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_ZC_england_longbowman
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.121
+	title = "recruit_special_units.NAME121"
+	desc = "recruit_special_units.DESC121"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA121"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			}
+			modifier = {
+				factor = 0
+				army_size_percentage = 0.5
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_ZC_england_longbowman
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.21
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_ZC_england_longbowman }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.221
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB121"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_ZC_england_longbowman
+		}		
+	}	
+}
+
+#############################################################
+#招募马穆鲁克骑兵#tmp_recruit_special_ZC_mamluk_cavalry
+#############################################################
+country_event = {
+	id = recruit_special_units.22
+	title = "recruit_special_units.NAME22"
+	desc = "recruit_special_units.DESC22"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA22"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			}
+			modifier = {
+				factor = 0
+				army_size_percentage = 0.5
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_ZC_mamluk_cavalry
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.122
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_ZC_mamluk_cavalry }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.222
+							days = 20
+						}
+					}						
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB22"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_ZC_mamluk_cavalry
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.122
+	title = "recruit_special_units.NAME122"
+	desc = "recruit_special_units.DESC122"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA122"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			}
+			modifier = {
+				factor = 0
+				army_size_percentage = 0.5
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_ZC_mamluk_cavalry
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.22
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_ZC_mamluk_cavalry }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.222
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB122"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_ZC_mamluk_cavalry
+		}		
+	}	
+}
+
+#############################################################
+#招募诺曼骑士#tmp_recruit_special_ZC_norman_cavalry
+#############################################################
+country_event = {
+	id = recruit_special_units.23
+	title = "recruit_special_units.NAME23"
+	desc = "recruit_special_units.DESC23"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA23"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			}
+			modifier = {
+				factor = 0
+				army_size_percentage = 0.5
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_ZC_norman_cavalry
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.123
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_ZC_norman_cavalry }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.223
+							days = 20
+						}
+					}						
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB23"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_ZC_norman_cavalry
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.123
+	title = "recruit_special_units.NAME123"
+	desc = "recruit_special_units.DESC123"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA123"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			}
+			modifier = {
+				factor = 0
+				army_size_percentage = 0.5
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_ZC_norman_cavalry
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.23
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_ZC_norman_cavalry }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.223
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB123"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_ZC_norman_cavalry
+		}		
+	}	
+}

@@ -1,0 +1,199 @@
+namespace = xy_colony
+
+country_event = {
+	id = xy_colony.1
+	title = "xy_colony.NAME1"
+	desc = "xy_colony.DESC1"
+	picture = CONQUEST_eventPicture
+
+	major = yes
+
+	trigger = {
+		ai = yes
+		OR = { is_subject = no
+        AND = { is_subject = yes 
+        overlord = { has_country_flag = colony_xy11 }
+		}
+		}
+	    NOT = {
+			has_country_flag = colony_xy11 
+		}
+		has_idea_group = exploration_ideas
+		OR = { 
+			AND = {
+				OR = {
+				tag = POR
+				tag = CAS
+				tag = SPA
+				}
+				is_year = 1476
+			}
+			AND = {
+				OR = {
+					tag = ENG
+					tag = GBR
+					tag = FRA
+				}
+					is_year = 1520
+			}
+			AND = {
+				OR = {
+				tag = HOL
+				tag = NED
+				}
+				is_year = 1550
+			}
+			AND = {
+				is_year = 1700
+			}
+		}
+		
+	}
+    mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_colony.OPTA1"
+		ai_chance = {
+			factor = 100
+		}
+		add_government_reform = early_gov_reform_5c
+		add_government_reform = early_gov_reform_6c
+		set_country_flag = colony_xy11
+	}
+	option = {
+		name = "xy_colony.OPTB1"
+        set_country_flag = colony_xy11
+	}
+}
+country_event = {
+	id = xy_colony.2
+	title = "xy_colony.NAME2"
+	desc = "xy_colony.DESC2"
+	picture = CONQUEST_eventPicture
+
+	major = yes
+
+	trigger = {
+     is_year = 1800
+		any_country = { is_colonial_nation_of = ROOT
+		 NOT = { is_subject_of_type = maoyigongsi_asia }
+    variable_arithmetic_trigger = {
+	custom_tooltip = check_our_development_2times_tothem
+	export_to_variable = {
+		which = their_total_development
+		value = trigger_value:total_development
+	}
+	export_to_variable = {
+		which = our_total_development
+		value = trigger_value:total_development
+		who = ROOT
+	}
+	multiply_variable = { which = their_total_development value = 2  }
+	check_variable = { which = their_total_development which = our_total_development }
+    }
+		}
+    NOT = { check_variable = {
+                which = num_of_industrialindex
+                value = 70
+            } }
+			OR = { NOT = {  has_country_flag = zhimindiduliyundong_fl }
+		had_country_flag = { flag = zhimindiduliyundong_fl days = 7300 }
+		}	
+	}
+    mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		set_country_flag = zhimindiduliyundong_fl
+	}
+	option = {
+		name = "xy_colony.OPTA2"
+    every_country = {
+	limit = {
+	 is_colonial_nation_of = ROOT
+	 NOT = { is_subject_of_type = maoyigongsi_asia }
+    variable_arithmetic_trigger = {
+	custom_tooltip = check_our_development_2times_tothem
+	export_to_variable = {
+		which = their_total_development
+		value = trigger_value:total_development
+	}
+	export_to_variable = {
+		which = our_total_development
+		value = trigger_value:total_development
+		who = ROOT
+	}
+	multiply_variable = { which = their_total_development value = 2  }
+	check_variable = { which = their_total_development which = our_total_development }
+    }
+	}
+	add_liberty_desire = 50
+	}
+	}
+}
+
+country_event = {
+	id = xy_colony.3
+	title = "xy_colony.NAME3"
+	desc = "xy_colony.DESC3"
+	picture = CONQUEST_eventPicture
+
+	major = yes
+
+	trigger = {
+		IND = {
+		is_subject_of_type = maoyigongsi_asia
+		is_subject_of = ROOT
+		}
+		OR = {  any_owned_province = { superregion = india_superregion } 
+		 any_subject_country = { NOT = { tag = IND } capital_scope = { OR = { superregion = india_superregion region = burma_region region = khorasan_region } } } 
+		}
+	}
+    mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_colony.OPTA3"
+   if = { limit = {  any_owned_province = { OR = { superregion = india_superregion region = burma_region region = khorasan_region }  }  }  every_owned_province = { limit = { OR = { superregion = india_superregion region = burma_region region = khorasan_region }  } cede_province = IND add_core = IND  }     }
+   if = { limit = {  any_subject_country = { NOT = { tag = IND } capital_scope = { OR = { superregion = india_superregion region = burma_region region = khorasan_region }  } } }   every_subject_country = { limit = { NOT = { tag = IND } capital_scope = { OR = { superregion = india_superregion region = burma_region region = khorasan_region }  } } IND = { inherit = PREV }  } }
+	}
+}
+
+country_event = {
+	id = xy_colony.4
+	title = "xy_colony.NAME4"
+	desc = "xy_colony.DESC4"
+	picture = CONQUEST_eventPicture
+
+	major = yes
+
+	trigger = {
+		is_at_war = no 
+		IND = {
+		is_subject_of_type = maoyigongsi_asia
+		is_subject_of = ROOT
+		}
+		OR = {
+        AND = { religion = liberalism
+		any_country = { has_country_flag = ziyoulingxiu }
+		}
+		AND = { religion = communism
+		any_country = { has_country_flag = gongchanlingxiu }
+		}
+		}
+	}
+    mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "xy_colony.OPTA4"
+		ai_chance = {
+			factor = 100
+		}
+    free_vassal = IND 
+	 IND = { every_owned_province = { limit = { region = burma_region } cede_province = BRM add_core = BRM  }  
+	 every_owned_province = { limit = { religion_group = muslim } cede_province = PAK add_core = PAK  } 
+     }	 
+	}
+}

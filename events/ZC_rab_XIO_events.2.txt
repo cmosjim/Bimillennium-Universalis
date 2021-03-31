@@ -1,0 +1,113 @@
+namespace = xiongnu_flavor
+
+country_event = {
+	id = xiongnu_flavor.7
+	title = xiongnu_flavor.7.t
+	desc = xiongnu_flavor.7.d
+	picture = ARCHER_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = xiongnu_flavor.7.a
+		add_treasury = 500
+		shaanxi_north_area = {
+			add_province_modifier = {
+				name = destroy_Great_Wall
+				duration = 3650
+			}
+		}
+		shanxi_west_area = {
+			add_province_modifier = {
+				name = destroy_Great_Wall
+				duration = 3650
+			}
+		}
+		shanxi_north_area = {
+			add_province_modifier = {
+				name = destroy_Great_Wall
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = xiongnu_flavor.7.b
+		shaanxi_north_area = {
+			add_nationalism = -5
+		}
+		shanxi_west_area = {
+			add_nationalism = -5
+		}
+		shanxi_north_area = {
+			add_nationalism = -5
+		}
+	}
+}
+
+country_event = {
+	id = xiongnu_flavor.8
+	title = xiongnu_flavor.8.t
+	desc = xiongnu_flavor.8.d
+	picture = liuxiu_skill_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = xiongnu_flavor.8.a
+		add_treasury = -100
+		add_manpower = -5
+		add_ruler_modifier = {
+			name = snap_calvary
+		}
+		add_country_modifier = {
+			name = restablish_relationship
+			duration = 14600
+		}
+	}
+	
+	option = {
+		name = xiongnu_flavor.8.b
+		add_country_modifier = {
+			name = China_nightmare
+			duration = 7300
+		}
+	}
+}
+
+country_event = {
+	id = xiongnu_flavor.9
+	title = xiongnu_flavor.9.t
+	desc = xiongnu_flavor.9.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = xiongnu_flavor.9.a
+		XIO = {
+			add_opinion = {
+				who = NEW
+				modifier = sun_xi_pei_chang
+			}
+		}
+		ai_chance = { factor = 75 }
+	}
+
+	option = {
+		name = xiongnu_flavor.9.b
+		ROOT = {
+			declare_war_with_cb = {
+                    			who = NEW
+                   		 	casus_belli = cb_super_badboy
+			}
+		}
+		add_country_modifier = {
+			name = unfaithful_new
+			duration = 1095
+		}
+		ai_chance = { factor = 25 }
+	}
+}

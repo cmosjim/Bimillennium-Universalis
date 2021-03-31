@@ -1,0 +1,440 @@
+##############################
+#Addition Japan Flavor Events#
+##############################
+#2018.12.31 fit to 1.28
+namespace = rab_JAP_events
+
+#
+country_event = {
+	id = rab_JAP_events.1
+	title = "rab_JAP_events.NAME1"
+	desc = "rab_JAP_events.DESC1"
+	picture = JAP_FLAG_eventPicture
+  
+	fire_only_once = yes
+	 
+	trigger = {
+		tag = JAP		
+		is_year = 1858
+		NOT = { is_year = 1946 }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	immediate = {
+		
+			change_tag = JA1
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+			set_global_flag = formed_japan_flag #rab_ add 20200107		
+			
+	}
+	option = {
+		name = "rab_JAP_events.OPTA1"
+
+	}		
+}
+
+#country_event = {
+#	id = rab_JAP_events.2
+#	title = "rab_JAP_events.NAME2"
+#	desc = "rab_JAP_events.DESC2"
+#	picture = BAD_WITH_MONARCH_eventPicture
+#  
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "rab_JAP_events.OPTA2"
+#		if = {
+#			limit = { has_disaster =  meiji_reform } 
+#			end_disaster = meiji_reform
+#		}
+#	}	
+#}	
+ 
+##大政奉还与否
+#country_event = {
+#	id = rab_JAP_events.2
+#	title = "rab_JAP_events.NAME2"
+#	desc = "rab_JAP_events.DESC2"
+#	picture = JAP_FLAG_eventPicture
+#  
+#	trigger = {
+#		tag = JAP		
+#		is_year = 1867
+#		NOT = { is_year = 1868 }
+#		NOT = { has_country_flag = flg_jap_meiji_rebels }
+#		government = shogunate
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 10
+#	}
+#
+#	immediate = {
+#		set_country_flag = flg_jap_meiji_rebels
+#	}	
+#	
+#	option = {
+#		name = "rab_JAP_events.OPTA2"
+#		change_government = feudal_monarchy
+#		government_rank = 3
+#		define_ruler = {
+#			name = "睦仁"
+#			age = 16
+#			#dynasty = "大和"
+#			adm = 5
+#			dip = 6
+#			mil = 6
+#		}	
+#		clr_country_flag = flg_jap_meiji_rebels
+#	}		
+#	option = {
+#		name = "rab_JAP_events.OPTB2"
+#		#爆发战争
+#		#倒幕派的兴起
+#		
+#		random_owned_province = {
+#			spawn_rebels = {
+#				type = meiji_pretender_rebels
+#				leader = "睦仁"
+#				size = 5
+#			}
+#			change_siege = 20
+#			every_neighbor_province = {
+#				limit = { 
+#					owned_by = ROOT
+#				}
+#				spawn_rebels = {
+#					type = meiji_pretender_rebels
+#					size = 5
+#				}
+#				change_siege = 20
+#			}
+#		}		
+#	}	
+#}
+#################################################
+##
+##  倒幕派的成功, that means the rebel's requets accept.
+##
+##################################################
+#country_event = {
+#	id = rab_JAP_events.3
+#	title = "rab_JAP_events.NAME3"
+#	desc = "rab_JAP_events.DESC3"
+#	picture = COUNTRY_COLLAPSE_eventPicture
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		clr_country_flag = flg_jap_meiji_rebels
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 10
+#	}
+#	option = {
+#		name = "rab_JAP_events.OPTA3"	
+#		change_government = despotic_monarchy
+#		set_government_rank = 3 
+#		
+#	}
+#}
+#
+#################################################
+##
+##  幕府的成功, that means the rebel's requets accept.
+##
+##################################################
+#country_event = {
+#	id = rab_JAP_events.4
+#	title = "rab_JAP_events.NAME4"
+#	desc = "rab_JAP_events.DESC4"
+#	picture = COUNTRY_COLLAPSE_eventPicture
+#	
+#	trigger = {
+#		NOT = { has_spawned_rebels = meiji_pretender_rebels }
+#		has_country_flag = flg_jap_meiji_rebels
+#	}	
+#
+#	mean_time_to_happen = {
+#		days = 5
+#	}
+#	
+#	immediate = {
+#		clr_country_flag = flg_jap_meiji_rebels
+#	}
+#	
+#	option = {
+#		name = "rab_JAP_events.OPTA4"	
+#		change_government = despotic_monarchy
+#		set_government_rank = 3 
+#		
+#	}
+#}
+#
+################################################
+#
+# 明治维新开始
+#
+#################################################
+country_event = {
+	id = rab_JAP_events.5
+	title = "rab_JAP_events.NAME5"
+	desc = "rab_JAP_events.DESC5"
+	picture = MEIJI_REVOLUTION_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_process_meiji_reform"
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = "rab_JAP_events.OPTA5"	
+		#country_event = {
+		#	id = rab_JAP_events.6
+		#}
+	}
+}
+
+################################################
+#
+# 明治维新process 困境md_process_meiji_reform
+#
+#################################################
+country_event = {
+	id = rab_JAP_events.6
+	title = "rab_JAP_events.NAME6"
+	desc = "rab_JAP_events.DESC6"
+	picture = ANGRY_MOB_eventPicture
+	
+	
+	trigger = {
+		has_country_modifier = md_process_meiji_reform
+		NOT = { has_country_flag = flg_meiji_reform_lose }
+		NOT = { num_of_rebel_armies = 1 }
+	}	
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = "rab_JAP_events.OPTA6"	
+		random_owned_province = {
+			spawn_rebels = {
+				type = meiji_against_rebels
+				size = 4
+			}
+			change_siege = 20
+			every_neighbor_province = {
+				limit = { 
+					owned_by = ROOT
+				}
+				spawn_rebels = {
+					type = meiji_against_rebels
+					size = 2
+				}
+				change_siege = 20
+			}
+		}
+	}
+}
+
+
+################################################
+#
+# 明治维新process 困境md_process_meiji_reform
+#
+#################################################
+country_event = {
+	id = rab_JAP_events.7
+	title = "rab_JAP_events.NAME7"
+	desc = "rab_JAP_events.DESC7"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		has_country_modifier = md_process_meiji_reform
+		NOT = { num_of_rebel_armies = 1 }
+		
+	}	
+	
+	mean_time_to_happen = {
+		days = 100
+	}
+
+	option = {
+		name = "rab_JAP_events.OPTA7"
+		random_list = {
+			25 = { add_adm_power = -10 }
+			25 = { add_dip_power = -10 }
+			25 = { add_mil_power = -10 }
+			25 = { add_treasury = -10 }
+		}		
+	}
+}
+
+#################################################
+##
+## 明治维新process 困境md_process_meiji_reform
+##
+##################################################
+#country_event = {
+#	id = rab_JAP_events.8
+#	title = "rab_JAP_events.NAME8"
+#	desc = "rab_JAP_events.DESC8"
+#	picture = COUNTRY_COLLAPSE_eventPicture
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		add_country_modifier = {
+#			name = "md_process_meiji_reform"
+#			duration = 1200
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 10
+#	}
+#	option = {
+#		name = "rab_JAP_events.OPTA8"	
+#		clr_country_flag = flg_start_meiji_reform
+#	}
+#}
+#
+#
+#################################################
+##
+## 明治维新process 困境md_process_meiji_reform
+##
+##################################################
+#country_event = {
+#	id = rab_JAP_events.9
+#	title = "rab_JAP_events.NAME9"
+#	desc = "rab_JAP_events.DESC9"
+#	picture = COUNTRY_COLLAPSE_eventPicture
+#	
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		add_country_modifier = {
+#			name = "md_process_meiji_reform"
+#			duration = 1200
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 10
+#	}
+#	option = {
+#		name = "rab_JAP_events.OPTA5"	
+#		clr_country_flag = flg_start_meiji_reform
+#	}
+#}
+#
+################################################
+#
+# 明治维新process 成功/失敗
+#
+#################################################
+country_event = {
+	id = rab_JAP_events.10
+	title = "rab_JAP_events.NAME10"
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { has_country_modifier = md_process_meiji_reform }
+			remove_country_modifier = md_process_meiji_reform
+		}
+	}
+	
+	desc = {
+		trigger = {
+			NOT = { has_country_flag = flg_meiji_reform_lose }
+		}
+		desc = rab_JAP_events.DESC10a 
+	}
+	desc = {
+		trigger = {
+			has_country_flag = flg_meiji_reform_lose #from rebel request.
+		}
+		desc = rab_JAP_events.DESC10b
+	}	
+
+	picture = {
+		trigger = {
+			NOT = { has_country_flag = flg_meiji_reform_lose }
+		}
+		picture = GOOD_WITH_MONARCH_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_meiji_reform_lose
+		}
+		picture = BAD_WITH_MONARCH_eventPicture
+	}
+
+	option = {
+		name = "rab_JAP_events.OPTA10"
+		trigger = {
+			NOT = { has_country_flag = flg_meiji_reform_lose }
+		}	
+		add_country_modifier = {
+				name = "md_meiji_reform"
+				duration = 36500
+		}
+		set_country_flag = flg_meiji_reform_ever
+		change_unit_type = western	
+		change_technology_group = western
+		#民族主义 帝国主义 工业革命 institution = 100%
+		#nationalism_institution ancient_imperialism imperialism industrialization 
+		every_owned_province = {
+			limit = {
+				NOT = { nationalism_institution = 100 }
+			}	
+			add_institution_embracement = {
+				value = 100
+				which = nationalism_institution
+			}			
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { imperialism = 100 }
+			}	
+			add_institution_embracement = {
+				value = 100
+				which = imperialism
+			}			
+		}	
+		every_owned_province = {
+			limit = {
+				NOT = { industrialization = 100 }
+			}	
+			add_institution_embracement = {
+				value = 100
+				which = industrialization
+			}			
+		}			
+	}	
+	option = {
+		name = "rab_JAP_events.OPTB10"
+		trigger = {
+			has_country_flag = flg_meiji_reform_lose 
+		}	
+	}
+}
+
+
+
+
+

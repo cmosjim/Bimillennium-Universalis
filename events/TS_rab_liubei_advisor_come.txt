@@ -1,0 +1,46 @@
+########################
+#Advisor  entry  Events#
+#########################
+##
+##namespace = liubei_advisor_come
+##
+###fkSĞgÍyagöNNúQ°s
+###id = 1 : liubei : RY0øSzz0
+##
+##country_event = {
+##	id = liubei_advisor_come.1
+##	title = "liubei_advisor_come.1.t"
+##	desc = "liubei_advisor_come.1.d"
+##	picture = NEW_ADVISOR_eventPicture
+##	
+##	is_triggered_only = yes
+##	hidden = yes
+##	
+##	#The girl will work when her father die.
+##
+##	option = {
+##		name = liubei_advisor_come.OPTA1
+##		
+##		if = { 
+##		limit = { ai = no }
+##			define_advisor = {
+##				type = liubei
+##				name = "RY0øSzz0"
+##				discount = yes	
+##				skill = 3
+##			}
+##		}
+##		if = { 
+##		limit = { ai = yes }
+##			define_general = {
+##				name = "RY0øSzz0"
+##				fire = 8
+##				shock = 9
+##				manuever = 5
+##				siege = 4
+##			}
+##		}
+##	}
+##}
+##
+##

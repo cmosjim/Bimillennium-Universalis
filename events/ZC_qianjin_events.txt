@@ -1,0 +1,77 @@
+namespace = qianjin_flavor
+
+country_event = {
+	id = qianjin_flavor.1
+	title = qianjin_flavor.1.t
+	desc = qianjin_flavor.1.d
+	picture = khitan4_eventPicture
+
+	trigger = {
+		tag = QJ1
+		OR = {
+			has_ruler = "NgKQ(u"
+			has_ruler = "NgXRÖR"
+		}
+		ZU1 = {
+			has_ruler = "1g)n"
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = qianjin_flavor.1.a
+		trigger = {
+			OR = {
+				exists = KHT 
+				exists = LIO
+			}
+		}
+		ai_chance = { factor = 50 }
+		if = {
+			limit = { exists = KHT }
+			KHT = { 
+				country_event = { id = khitan_flavor.6 }
+			}
+			else = {
+				LIO = { 
+					country_event = { id = khitan_flavor.6 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = qianjin_flavor.1.b
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = qianjin_flavor.2
+	title = qianjin_flavor.2.t
+	desc = qianjin_flavor.2.d
+	picture = khitan4_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = qianjin_flavor.2.a
+		if = {
+			limit = { exists = KHT }
+			KHT = { add_treasury = 100 }
+			add_historical_rival = KHT
+			else = {
+				limit = { exists = LIO }
+				LIO = { add_treasury = 100 }
+				add_historical_rival = LIO
+			}
+		}
+	}
+}

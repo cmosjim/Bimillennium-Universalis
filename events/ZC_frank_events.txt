@@ -1,0 +1,198 @@
+namespace = frank_flavor
+
+country_event = {
+	id = frank_flavor.1
+	title = frank_flavor.1.t
+	desc = frank_flavor.1.d
+	picture = ARGUE_WITH_EMPEROR_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = frank_flavor.1.a
+		guyenne_area = {
+			type = all
+			add_core = AQT
+		}
+		pyrenees_area = {
+			type = all
+			add_core = AQT
+		}
+		196 = {
+			add_core = AQT
+		}
+	}
+
+	option = {
+		name = frank_flavor.1.b
+		guyenne_area = {
+			type = all
+			add_core = AQT
+			cede_province = AQT
+		}
+		pyrenees_area = {
+			type = all
+			add_core = AQT
+			cede_province = AQT
+		}
+		196 = {
+			add_core = AQT
+			cede_province = AQT
+		}
+		FRK = {
+			create_union = AQT
+		}
+		AQT = {
+			set_capital = 196
+			add_country_modifier = {
+				name = frenkish_defender_of_pyrenees
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = frank_flavor.2
+	title = frank_flavor.2.t
+	desc = frank_flavor.2.d
+	picture = NOBLE_ESTATE_eventPicture
+	
+	trigger = {
+		FRK = { 
+			OR = {
+				NOT = { legitimacy = 20 }
+				NOT = { prestige = -50 }
+			}
+		}
+		tag = FRK
+		AQT = { junior_union_with = FRK }
+		NOT = { has_country_flag = AQT_liberty_desire }
+	}
+
+	fire_only_once = yes
+			
+	option = {
+		name = frank_flavor.2.a
+		AQT = {
+			add_liberty_desire = 50
+		}
+		set_country_flag = AQT_liberty_desire
+	}
+}
+
+country_event = {
+	id = frank_flavor.3
+	title = frank_flavor.3.t
+	desc = frank_flavor.3.d
+	picture = CIVIL_WAR_eventPicture
+	
+	trigger = {
+		tag = FRK
+		AQT = { 
+			junior_union_with = FRK 
+			liberty_desire = 100
+		}
+		NOT = { has_country_flag = union_AQT }
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = frank_flavor.3.a
+		AQT = {
+			break_union = FRK
+		}
+		set_country_flag = union_AQT
+	}
+	
+	option = {
+		name = frank_flavor.3.b
+		FRK = {
+			declare_war_with_cb = {
+                    			who = AQT
+                   		 	casus_belli = cb_restore_personal_union
+			}
+		}
+		set_country_flag = union_AQT
+	}
+}
+
+country_event = {
+	id = frank_flavor.4
+	title = frank_flavor.4.t
+	desc = frank_flavor.4.d
+	picture = FORT_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = frank_flavor.4.a
+		set_capital = 183
+		add_stability = 1
+	}
+	
+	option = {
+		name = frank_flavor.4.b
+		set_capital = 1878
+		1878 = {
+			add_base_tax = 5
+			add_base_production = 4
+			add_base_manpower = 3
+			add_province_modifier = {
+				name = european_centre
+				duration = -1
+			}
+		}
+	}
+}
+		
+country_event = {
+	id = frank_flavor.5
+	title = frank_flavor.5.t
+	desc = frank_flavor.5.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = frank_flavor.5.a
+		add_legitimacy = 10
+		central_italy_area = {
+			type = all
+			add_core = PAP
+			cede_province = PAP
+		}
+		4921 = {
+
+			add_core = PAP
+			cede_province = PAP
+		}
+		PAP = {
+			add_opinion = {
+				who = FRK
+				modifier = pi_ping_xian_tu
+			}
+		}
+		add_country_modifier = {
+			name = welcome_pope
+			duration = 3650
+		}
+	}
+}	
+
+country_event = {
+	id = frank_flavor.6
+	title = frank_flavor.6.t
+	desc = frank_flavor.6.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = frank_flavor.6.a
+		add_prestige = 100
+	}
+}

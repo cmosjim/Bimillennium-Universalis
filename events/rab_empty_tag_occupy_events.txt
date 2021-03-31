@@ -1,0 +1,26 @@
+
+namespace = rab_empty_tag_occupy_events
+
+#这是军团内的讯息，自己省分被他國占领了
+province_event = {
+	id = rab_empty_tag_occupy_events.1
+	title = "rab_empty_tag_occupy_events.NAME1"
+	desc = "rab_empty_tag_occupy_events.DESC1"
+	picture = SIEGE_eventPicture
+	
+	hidden = yes
+    is_triggered_only = yes
+	
+	trigger = {
+		owner = {
+			tag = ZZ3	
+		}	
+	}	
+	option = {
+ 	name = "rab_empty_tag_occupy_events.OPTA1"
+		controller = { 
+			add_core = ROOT
+			ROOT = { cede_province = PREV } 
+		}
+	}
+}

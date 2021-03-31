@@ -1,0 +1,52 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = yuzhujian_advisor_come
+
+#fkSĞgÍyagöNNúQ°s
+#id = 1 : yuzhujian : ÁQrú^0fkS0
+
+country_event = {
+	id = yuzhujian_advisor_come.1
+	title = "yuzhujian_advisor_come.1.t"
+	desc = "yuzhujian_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 218	
+		NOT = { is_year = 235 }
+		exists = XIB
+		tag = XIB
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = yuzhujian_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = yuzhujian
+				name = "ÁQrú^0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "ÁQrú^0fkS0"
+				fire = 6
+				shock = 5
+				manuever = 4
+				siege = 2
+			}
+		}
+	}
+}
+

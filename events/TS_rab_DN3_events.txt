@@ -1,0 +1,116 @@
+#fit to 1.28
+namespace = rab_DN3_events
+
+country_event = {
+	id = rab_DN3_events.1
+	title = "rab_DN3_events.NAME1"
+	desc = "rab_DN3_events.DESC1"
+	picture = CONQUEST_eventPicture
+  
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { tag = MNG } 
+		NOT = { 
+			OR = {
+				owns = 738
+				owns = 3217
+				owns = 2857
+				owns = 2858
+				owns = 4164
+			}
+			is_year = 1910
+		}
+		NOT = {
+			has_global_flag = flg_ever_MNG_over						
+		}	
+		is_year = 1600
+	}
+	
+	immediate = {
+		set_global_flag = flg_ever_MNG_over
+	}						 
+	option = {
+		name = "rab_DN3_events.OPTA1"
+		if = { 
+			limit = {
+				OR = {
+					738 =  { owner = { ai = yes } }
+					738 =  { is_empty = yes }
+				}	
+			}	
+			738 = {
+				add_core = DN3
+				cede_province = DN3					
+			}
+		}
+		if = { 
+			limit = {
+				OR = {
+					2857 =  { owner = { ai = yes } }
+					2857 =  { is_empty = yes }
+				}	
+			}	
+			2857 = {
+				add_core = DN3
+				cede_province = DN3					
+			}
+		}		
+		if = { 
+			limit = {
+				OR = {
+					2858 =  { owner = { ai = yes } }
+					2858 =  { is_empty = yes }
+				}	
+			}	
+			2858 = {
+				add_core = DN3
+				cede_province = DN3					
+			}
+		}
+		if = { 
+			limit = {
+				OR = {
+					3217 =  { owner = { ai = yes } }
+					3217 =  { is_empty = yes }
+				}	
+			}	
+			3217 = {
+				add_core = DN3
+				cede_province = DN3					
+			}
+		}
+		if = { 
+			limit = {
+				OR = {
+					4164 =  { owner = { ai = yes } }
+					4164 =  { is_empty = yes }
+				}	
+			}	
+			4164 = {
+				add_core = DN3
+				cede_province = DN3					
+			}
+		}
+		DN3 = {
+			define_ruler = {
+				name = "—êbüR"
+				adm = 4
+				dip = 4
+				mil = 5
+				fixed = yes
+				age = 35
+				
+			}
+			define_heir = {
+				name = "—êœu"
+				adm = 6
+				dip = 4
+				mil = 4				
+				fixed = yes
+			}
+			add_ruler_personality = conqueror_personality
+		}		
+	}
+}
+

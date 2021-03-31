@@ -1,0 +1,2736 @@
+#2018-12-31 fit to 1.28
+#2019-05-05 add uçëN
+#2019-12-12 modify ïñÛwåT^yÌäéb˝w
+namespace = rab_skills
+########################
+# 1. .V“â
+#######################
+country_event = {
+	id = rab_skills.1
+	title = "rab_skills.NAME1"
+	desc = "rab_skills.DESC1"
+	picture = CONFUSED_SKILL_eventPicture
+	
+    trigger = {
+		has_leader = ".V“â"
+		is_at_war = yes
+		any_country = {
+			war_with = ROOT 
+			NOT = { has_country_modifier = md_confused_skill }
+		}
+	}	
+	mean_time_to_happen = {
+		days = 175
+	}
+	option = {
+			name = "rab_skills.OPTA1"
+			hidden_effect = {
+			random_list = { 
+				90 = {
+				random_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						NOT = { has_country_modifier = md_confused_skill }
+						}
+							country_event = {
+								id = rab_skills.2
+								days = 1
+							}
+				}
+					country_event = {
+					id = rab_skills.3
+					days = 1
+					}	
+				}
+				10 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+country_event = {
+	id = rab_skills.2
+	title = "rab_skills.NAME2"
+	desc = "rab_skills.DESC2"
+	picture = CONFUSED_SKILL_eventPicture
+	
+     is_triggered_only = yes
+	 
+ 
+	option = {
+		name = "rab_skills.OPTA2"
+		
+		add_country_modifier = {
+		name = "md_confused_skill"
+		duration = 60
+		}
+	}
+}
+
+country_event = {
+	id = rab_skills.3
+	title = "rab_skills.NAME3"
+	desc = "rab_skills.DESC3"
+	picture = CONFUSED_SKILL_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA3"
+	
+	}
+}
+#fail skills spread.
+country_event = {
+	id = rab_skills.4
+	title = "rab_skills.NAME4"
+	desc = "rab_skills.DESC4"
+	picture = SKILL_FAIL_eventPicture
+
+	  is_triggered_only = yes
+	  
+		option = {
+		name = "rab_skills.OPTA4"
+		}
+}  
+	  
+
+########################
+# 2. .VùR0fkS0
+#######################
+country_event = {
+	id = rab_skills.5
+	title = "rab_skills.NAME5"
+	desc = "rab_skills.DESC5"
+	picture = CONFUSED_SKILL_eventPicture
+	
+	trigger = {
+	
+				has_leader = ".VùR0fkS0"	  
+				is_at_war = yes
+				any_country = {
+					war_with = ROOT 
+					NOT = { has_country_modifier = md_confused_skill }
+				}
+	}	
+	mean_time_to_happen = {
+		days = 175
+	}
+	option = {
+			name = "rab_skills.OPTA1"
+			hidden_effect = {
+			random_list = { 
+				90 = {
+				random_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						NOT = { has_country_modifier = md_confused_skill }
+						}
+							country_event = {
+								id = rab_skills.6
+								days = 1
+							}
+				}
+					country_event = {
+					id = rab_skills.7
+					days = 1
+					}	
+				}
+				10 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+country_event = {
+	id = rab_skills.6
+	title = "rab_skills.NAME6"
+	desc = "rab_skills.DESC6"
+	picture = CONFUSED_SKILL_eventPicture
+	
+     is_triggered_only = yes
+	 
+ 
+	option = {
+		name = "rab_skills.OPTA6"
+		
+		add_country_modifier = {
+		name = "md_confused_skill"
+		duration = 60
+		}
+	}
+}
+
+country_event = {
+	id = rab_skills.7
+	title = "rab_skills.NAME7"
+	desc = "rab_skills.DESC7"
+	picture = CONFUSED_SKILL_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA7"
+	
+	}
+}
+	
+########################
+# 3. 1g O0fkS0
+#######################
+
+country_event = {
+	id = rab_skills.8
+	title = "rab_skills.NAME8"
+	desc = "rab_skills.DESC8"
+	picture = INSPIRE_SOLDIERS_eventPicture
+		
+   	
+	trigger = {
+	
+				has_leader = "1g O0fkS0"
+				is_at_war = yes
+				NOT = { has_country_modifier = md_Inspiration_skill }
+	}	
+	mean_time_to_happen = {
+		days = 175
+	}
+	option = {
+			name = "rab_skills.OPTA8"
+			hidden_effect = {
+			random_list = { 
+				85 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+							country_event = {
+								id = rab_skills.9
+								days = 1
+							}
+				}
+					country_event = {
+					id = rab_skills.10
+					days = 1
+					}	
+				}
+				15 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+country_event = {
+	id = rab_skills.9
+	title = "rab_skills.NAME9"
+	desc = "rab_skills.DESC9"
+	picture = INSPIRE_SOLDIERS_eventPicture
+	
+     is_triggered_only = yes
+	 
+ 
+	option = {
+		name = "rab_skills.OPTA9"
+
+	}
+}
+
+country_event = {
+	id = rab_skills.10
+	title = "rab_skills.NAME10"
+	desc = "rab_skills.DESC10"
+	picture = INSPIRE_SOLDIERS_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA10"
+			
+		add_country_modifier = {
+		name = "md_Inspiration_skill"
+		duration = 60
+		}
+	}
+}
+	
+########################
+# 4. áv+uiT0fkS0
+#######################
+
+country_event = {
+	id = rab_skills.11
+	title = "rab_skills.NAME11"
+	desc = "rab_skills.DESC11"
+	picture = INSPIRE_SOLDIERS_eventPicture
+		
+    	
+	trigger = {
+	
+				has_leader = "áv+uiT0fkS0"
+				is_at_war = yes
+				NOT = { has_country_modifier = md_Inspiration_skill }
+	}	
+	mean_time_to_happen = {
+		days = 175
+	}
+	option = {
+			name = "rab_skills.OPTA8"
+			hidden_effect = {
+			random_list = { 
+				75 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+							country_event = {
+								id = rab_skills.9
+								days = 1
+							}
+				}
+					country_event = {
+					id = rab_skills.10
+					days = 1
+					}	
+				}
+				25 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}	
+
+########################
+# 5. >çÈã0õQ^0
+#######################
+
+country_event = {
+	id = rab_skills.12
+	title = "rab_skills.NAME12"
+	desc = "rab_skills.DESC12"
+	picture = ARCHER_eventPicture
+		
+  	
+	trigger = {
+		has_leader = ">çÈã0õQ^0"
+		is_at_war = yes
+		NOT = { army_size_percentage = 0.7 }
+		NOT = { war_exhaustion = 4 }
+	}	
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+			name = "rab_skills.OPTA12"
+			hidden_effect = {
+			random_list = { 
+				70 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+							country_event = {
+								id = rab_skills.13
+								days = 1
+							}
+				}
+					country_event = {
+					id = rab_skills.14
+					days = 1
+					}	
+				}
+				30 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#13 = > ŸuLeπeêÂwÀeLàÜNOuQVreu
+country_event = {
+	id = rab_skills.13
+	title = "rab_skills.NAME13"
+	desc = "rab_skills.DESC13"
+	picture = ARCHER_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA13"
+			
+	}
+}
+
+#14 = > ŸuÍÅÒTêÂwÀeLàÜNOuQVreubüR
+country_event = {
+	id = rab_skills.14
+	title = "rab_skills.NAME14"
+	desc = "rab_skills.DESC14"
+	picture = ARMY_HAPPY_eventPicture
+	
+     is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		capital_scope = {
+			ROOT = {
+				infantry = PREV
+				infantry = PREV
+			}
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA14"
+	
+	}
+}
+########################
+# 6. NgQ0õQ^0
+#######################
+country_event = {
+	id = rab_skills.15
+	title = "rab_skills.NAME15"
+	desc = "rab_skills.DESC15"
+	picture = ARCHER_eventPicture
+		
+  	
+	trigger = {
+		has_leader = "NgQ0õQ^0"
+		is_at_war = yes
+		NOT = { army_size_percentage = 0.7 }
+		NOT = { war_exhaustion = 4 }
+	}	
+	mean_time_to_happen = {
+		months = 13
+	}
+	option = {
+			name = "rab_skills.OPTA15"
+			hidden_effect = {
+			random_list = { 
+				80 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+							country_event = {
+								id = rab_skills.16
+								days = 1
+							}
+				}
+					country_event = {
+					id = rab_skills.17
+					days = 1
+					}	
+				}
+				20 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#16 = > ŸuLeπeêÂwÀeLàÜNOuQVreu
+country_event = {
+	id = rab_skills.16
+	title = "rab_skills.NAME16"
+	desc = "rab_skills.DESC16"
+	picture = ARCHER_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA16"
+			
+	}
+}
+
+#17 = > ŸuÍÅÒTêÂwÀeLàÜNOuQVreubüR
+country_event = {
+	id = rab_skills.17
+	title = "rab_skills.NAME17"
+	desc = "rab_skills.DESC17"
+	picture = ARMY_HAPPY_eventPicture
+	
+     is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		capital_scope = {
+			ROOT = {
+				infantry = PREV
+				infantry = PREV
+			}
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA17"
+	
+	}
+}
+########################
+# 7. z1f0õQ^0
+#######################
+#18 
+country_event = {
+	id = rab_skills.18
+	title = "rab_skills.NAME18"
+	desc = "rab_skills.DESC18"
+	picture = convert_outwar_eventPicture
+		
+   	
+	trigger = {
+	
+				has_leader = "z1f0õQ^0"
+				is_at_war = yes
+				NOT = { has_country_modifier = md_strong_decipline_lv1_skill }
+
+	}	
+	mean_time_to_happen = {
+		days = 175
+	}
+	option = {
+			name = "rab_skills.OPTA18"
+			hidden_effect = {
+			random_list = { 
+				80 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+							country_event = {
+								id = rab_skills.19
+								days = 1
+							}
+				}
+								
+					country_event = {
+					id = rab_skills.20
+					days = 1
+					}	
+				}
+				20 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#19 = > ŸuLeπeêÂwÀeLàÜNVreu
+country_event = {
+	id = rab_skills.19
+	title = "rab_skills.NAME19"
+	desc = "rab_skills.DESC19"
+	picture = ARMY_HAPPY_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA19"
+			
+	}
+}
+
+#20 = > ŸuÍÅÒTêÂwÀeLàÜNVreubüR
+country_event = {
+	id = rab_skills.20
+	title = "rab_skills.NAME20"
+	desc = "rab_skills.DESC20"
+	picture = ARMY_HAPPY_eventPicture
+	
+     is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_strong_decipline_lv1_skill"
+			duration = 60
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA20"
+	
+	}
+}
+########################
+# 8. ÇåIá0õQ^0
+#######################
+
+country_event = {
+	id = rab_skills.21
+	title = "rab_skills.NAME21"
+	desc = "rab_skills.DESC21"
+	picture = INSPIRE_SOLDIERS_DIAO_CHAN_eventPicture
+		
+   	
+	trigger = {
+	
+				has_leader = "ÇåIá0õQ^0"
+				is_at_war = yes
+				NOT = { has_country_modifier = md_strong_inspire_lv2_skill }
+	}	
+	mean_time_to_happen = {
+		days = 175
+	}
+	option = {
+			name = "rab_skills.OPTA21"
+			hidden_effect = {
+			random_list = { 
+				90 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+							country_event = {
+								id = rab_skills.22
+								days = 1
+							}
+				}
+								
+					country_event = {
+					id = rab_skills.23
+					days = 1
+					}	
+				}
+				10 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#22 = > ŸuLeπeêÂwÀeLàÜNVreu
+country_event = {
+	id = rab_skills.22
+	title = "rab_skills.NAME22"
+	desc = "rab_skills.DESC22"
+	picture = INSPIRE_SOLDIERS_DIAO_CHAN_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA22"
+			
+	}
+}
+
+#23 = > ŸuÍÅÒTêÂwÀeLàÜNVreubüR
+country_event = {
+	id = rab_skills.23
+	title = "rab_skills.NAME23"
+	desc = "rab_skills.DESC23"
+	picture = INSPIRE_SOLDIERS_DIAO_CHAN_eventPicture
+	
+     is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_strong_inspire_lv2_skill"
+			duration = 60
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA23"
+	
+	}
+}
+########################
+# 9. hTjt0õQ^0
+#######################
+#24 
+country_event = {
+	id = rab_skills.24
+	title = "rab_skills.NAME24"
+	desc = "rab_skills.DESC24"
+	picture = zhou_yu_skills_eventPicture
+		
+   	
+	trigger = {
+		has_leader = "hTjt0õQ^0"
+		is_at_war = yes
+		NOT = { has_country_modifier = md_strong_navyfire_lv3_skill }
+	}	
+	mean_time_to_happen = {
+		days = 175
+	}
+	option = {
+			name = "rab_skills.OPTA24"
+			hidden_effect = {
+			random_list = { 
+				90 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+							country_event = {
+								id = rab_skills.25
+								days = 1
+							}
+				}
+								
+					country_event = {
+					id = rab_skills.26
+					days = 1
+					}	
+				}
+				10 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#30 = > ŸuLeπeêÂwÀeLàÜNVreu
+country_event = {
+	id = rab_skills.25
+	title = "rab_skills.NAME25"
+	desc = "rab_skills.DESC25"
+	picture = zhou_yu_skills_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA25"
+			
+	}
+}
+
+#26 = > ŸuÍÅÒTêÂwÀeLàÜNVreubüR
+country_event = {
+	id = rab_skills.26
+	title = "rab_skills.NAME26"
+	desc = "rab_skills.DESC26"
+	picture = zhou_yu_skills_eventPicture
+	
+     is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_strong_navyfire_lv3_skill"
+			duration = 60
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA26"
+	
+	}
+}
+########################
+# 10. T^0fkS0
+#######################
+#27 
+country_event = {
+	id = rab_skills.27
+	title = "rab_skills.NAME27"
+	desc = "rab_skills.DESC27"
+	picture = WU_SUAN_LU_BU_eventPicture
+		
+   	
+	trigger = {
+		OR = {
+				has_leader = "T^0fkS0"
+				has_leader = "T^"
+		}		
+				is_at_war = yes
+				NOT = { has_country_modifier = md_fire_lv3_skill }
+
+	}	
+	mean_time_to_happen = {
+		days = 175
+	}
+	option = {
+			name = "rab_skills.OPTA27"
+			hidden_effect = {
+			random_list = { 
+				90 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+							country_event = {
+								id = rab_skills.28
+								days = 1
+							}
+				}
+								
+					country_event = {
+					id = rab_skills.29
+					days = 1
+					}	
+				}
+				10 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#28 = > ŸuLeπeêÂwÀeLàÜNVreu
+country_event = {
+	id = rab_skills.28
+	title = "rab_skills.NAME28"
+	desc = "rab_skills.DESC28"
+	picture = WU_SUAN_LU_BU_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA28"
+			
+	}
+}
+
+#29 = > ŸuÍÅÒTêÂwÀeLàÜNVreubüR
+country_event = {
+	id = rab_skills.29
+	title = "rab_skills.NAME29"
+	desc = "rab_skills.DESC29"
+	picture = WU_SUAN_LU_BU_eventPicture
+	
+     is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_fire_lv3_skill"
+			duration = 60
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA29"
+	
+	}
+}
+########################
+# 11. ¯ãiÑÆN0õQ^0
+#######################
+country_event = {
+	id = rab_skills.30
+	title = "rab_skills.NAME30"
+	desc = "rab_skills.DESC30"
+	picture = FIRE_ATTACK_eventPicture
+		
+    	trigger = {
+	
+				has_leader = "¯ãiÑÆN0õQ^0"
+				is_at_war = yes
+				any_country = {
+					war_with = ROOT 
+					NOT = { has_country_modifier = md_be_fire_att_lv3 }
+				}
+	}	
+	mean_time_to_happen = {
+		days = 175
+	}
+	option = {
+			name = "rab_skills.OPTA30"
+			hidden_effect = {
+			random_list = { 
+				90 = {
+				random_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						NOT = { has_country_modifier = md_be_fire_att_lv3 }
+						}
+							country_event = {
+								id = rab_skills.31
+								days = 1
+							}
+				}
+					country_event = {
+					id = rab_skills.32
+					days = 1
+					}	
+				}
+				10 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+# succeed to enemy
+country_event = {
+	id = rab_skills.31
+	title = "rab_skills.NAME31"
+	desc = "rab_skills.DESC31"
+	picture = FIRE_ATTACK_eventPicture
+	
+     is_triggered_only = yes
+	 
+ 
+	option = {
+		name = "rab_skills.OPTA31"
+		
+		add_country_modifier = {
+		name = "md_be_fire_att_lv3"
+		duration = 60
+		}
+	}
+}
+# to us succeed to enemy
+country_event = {
+	id = rab_skills.32
+	title = "rab_skills.NAME32"
+	desc = "rab_skills.DESC32"
+	picture = FIRE_ATTACK_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA32"
+	
+	}
+}
+########################
+# 12. .VÀè0fkS0
+#######################
+#33 
+country_event = {
+	id = rab_skills.33
+	title = "rab_skills.NAME33"
+	desc = "rab_skills.DESC33"
+	picture = ZHANG_LIAO_SKILL1_eventPicture
+		
+   	
+	trigger = {
+			has_leader = ".VÀè0fkS0"
+			is_at_war = yes
+			NOT = { has_country_modifier = md_force_army_lv2_skill }
+	}	
+	mean_time_to_happen = {
+		days = 175
+	}
+	option = {
+			name = "rab_skills.OPTA33"
+			hidden_effect = {
+			random_list = { 
+				80 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+							country_event = {
+								id = rab_skills.34
+								days = 1
+							}
+				}
+								
+					country_event = {
+					id = rab_skills.35
+					days = 1
+					}	
+				}
+				20 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#34 = > ŸuLeπeêÂwÀeLàÜNVreu
+country_event = {
+	id = rab_skills.34
+	title = "rab_skills.NAME34"
+	desc = "rab_skills.DESC34"
+	picture = ZHANG_LIAO_SKILL1_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA34"
+			
+	}
+}
+
+#35 = > ŸuÍÅÒTêÂwÀeLàÜNVreubüR
+country_event = {
+	id = rab_skills.35
+	title = "rab_skills.NAME35"
+	desc = "rab_skills.DESC35"
+	picture = ZHANG_LIAO_SKILL1_eventPicture
+	
+     is_triggered_only = yes
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_force_army_lv2_skill"
+			duration = 60
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA35"
+	
+	}
+}
+########################
+# 13. ∏ãâ0fkS0
+#######################
+#xu_chu: "∏ãâ0fkS0"
+#36
+country_event = {
+	id = rab_skills.36
+	title = "rab_skills.NAME36"
+	desc = "rab_skills.DESC36"
+	picture = XU_CHU_SKILL1_eventPicture
+		
+   	
+	trigger = {
+			has_leader = "∏ãâ0fkS0"
+			is_at_war = yes
+			NOT = { has_country_modifier = md_force_army_lv3_skill }
+	}	
+	mean_time_to_happen = {
+		days = 190
+	}
+	option = {
+			name = "rab_skills.OPTA36"
+			hidden_effect = {
+			random_list = { 
+				90 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+							country_event = {
+								id = rab_skills.37
+								days = 1
+							}
+				}
+								
+					country_event = {
+					id = rab_skills.38
+					days = 1
+					}	
+				}
+				10 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#37 = > ŸuLeπeêÂwÀeLàÜNVreu
+country_event = {
+	id = rab_skills.37
+	title = "rab_skills.NAME37"
+	desc = "rab_skills.DESC37"
+	picture = XU_CHU_SKILL1_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA37"
+			
+	}
+}
+
+#38 = > ŸuÍÅÒTêÂwÀeLàÜNVreubüR
+country_event = {
+	id = rab_skills.38
+	title = "rab_skills.NAME38"
+	desc = "rab_skills.DESC38"
+	picture = XU_CHU_SKILL1_eventPicture
+	
+     is_triggered_only = yes
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_force_army_lv3_skill"
+			duration = 60
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA38"
+	
+	}
+}
+########################
+# 14.sima_yi: "¯Slöˇa0õQ^0
+#######################
+#39
+country_event = {
+	id = rab_skills.39
+	title = "rab_skills.NAME39"
+	desc = "rab_skills.DESC39"
+	picture = SIMA_YI_BAGUA_ZHEN_eventPicture
+		
+   	
+	trigger = {
+			has_leader = "¯Slöˇa0õQ^0"
+			is_at_war = yes
+			NOT = { has_country_modifier = md_bagua_zhen_skill }
+	}	
+	mean_time_to_happen = {
+		days = 220
+	}
+	option = {
+			name = "rab_skills.OPTA39"
+			hidden_effect = {
+			random_list = { 
+				90 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+							country_event = {
+								id = rab_skills.40
+								days = 1
+							}
+				}
+								
+					country_event = {
+					id = rab_skills.41
+					days = 1
+					}	
+				}
+				10 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#40 = > ŸuLeπeêÂwÀeLàÜNVreu
+country_event = {
+	id = rab_skills.40
+	title = "rab_skills.NAME40"
+	desc = "rab_skills.DESC40"
+	picture = SIMA_YI_BAGUA_ZHEN_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA40"
+			
+	}
+}
+
+#41 = > ŸuÍÅÒTêÂwÀeLàÜNVreubüR
+country_event = {
+	id = rab_skills.41
+	title = "rab_skills.NAME41"
+	desc = "rab_skills.DESC41"
+	picture = SIMA_YI_BAGUA_ZHEN_eventPicture
+	
+     is_triggered_only = yes
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_bagua_zhen_skill"
+			duration = 90
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA41"
+	
+	}
+}
+
+########################
+# 15.sima_yi: "Fñê0õQ^0
+#######################
+country_event = {
+	id = rab_skills.42
+	title = "rab_skills.NAME42"
+	desc = "rab_skills.DESC42"
+	picture = FIRE_ATTACK_eventPicture
+		
+    	trigger = {
+	
+				has_leader = "Fñê0õQ^0"
+				is_at_war = yes
+				any_country = {
+					war_with = ROOT 
+					NOT = { has_country_modifier = md_be_fire_att_lv2 }
+				}
+	}	
+	mean_time_to_happen = {
+		days = 175
+	}
+	option = {
+			name = "rab_skills.OPTA42"
+			hidden_effect = {
+			random_list = { 
+				90 = {
+				random_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						NOT = { has_country_modifier = md_be_fire_att_lv2 }
+						}
+							country_event = {
+								id = rab_skills.43
+								days = 1
+							}
+				}
+					country_event = {
+					id = rab_skills.44
+					days = 1
+					}	
+				}
+				10 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+# succeed to enemy
+country_event = {
+	id = rab_skills.43
+	title = "rab_skills.NAME43"
+	desc = "rab_skills.DESC43"
+	picture = FIRE_ATTACK_eventPicture
+	
+     is_triggered_only = yes
+	 
+ 
+	option = {
+		name = "rab_skills.OPTA43"
+		
+		add_country_modifier = {
+		name = "md_be_fire_att_lv2"
+		duration = 60
+		}
+	}
+}
+# to us succeed to enemy
+country_event = {
+	id = rab_skills.44
+	title = "rab_skills.NAME44"
+	desc = "rab_skills.DESC44"
+	picture = FIRE_ATTACK_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA44"
+	
+	}
+}
+########################
+# 16. RY
+#######################
+country_event = {
+	id = rab_skills.45
+	title = "rab_skills.NAME45"
+	desc = "rab_skills.DESC45"
+	picture = ARMY_START_eventPicture
+		
+  	
+	trigger = {
+		OR = {
+				has_leader = "RY"
+				has_leader = "RY0fkS0"
+				has_leader = "RY0¯Szz0"
+		}
+		is_at_war = yes
+		NOT = { army_size_percentage = 0.7 }
+		NOT = { war_exhaustion = 4 }
+	}	
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+			name = "rab_skills.OPTA45"
+			hidden_effect = {
+			random_list = { 
+				75 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+							country_event = {
+								id = rab_skills.46
+								days = 1
+							}
+				}
+					country_event = {
+					id = rab_skills.47
+					days = 1
+					}	
+				}
+				25 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#46 = > ŸuLeπeêÂwÀeLàÜN€b∆ñIN«R
+country_event = {
+	id = rab_skills.46
+	title = "rab_skills.NAME46"
+	desc = "rab_skills.DESC46"
+	picture = ARMY_START_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA46"
+			
+	}
+}
+
+#47 = > ŸuÍÅÒTêÂwÀeLàÜN€b∆ñIN«RbüR
+country_event = {
+	id = rab_skills.47
+	title = "rab_skills.NAME47"
+	desc = "rab_skills.DESC47"
+	picture = ARMY_START_eventPicture
+	
+     is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		capital_scope = {
+			ROOT = {
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+			}
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA47"
+	
+	}
+}
+
+
+########################
+# 17. guan_yu: "sQÀ0fkS0"
+#######################
+#48
+country_event = {
+	id = rab_skills.48
+	title = "rab_skills.NAME48"
+	desc = "rab_skills.DESC48"
+	picture = GUAN_YU_SKILL1_eventPicture
+		
+   	
+	trigger = {
+			has_leader = "sQÀ0fkS0"
+			is_at_war = yes
+			NOT = { has_country_modifier = md_force_army_lv3_skill }
+	}	
+	mean_time_to_happen = {
+		days = 180
+	}
+	option = {
+			name = "rab_skills.OPTA48"
+			hidden_effect = {
+			random_list = { 
+				85 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+							country_event = {
+								id = rab_skills.49
+								days = 1
+							}
+				}
+								
+					country_event = {
+					id = rab_skills.50
+					days = 1
+					}	
+				}
+				15 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#49 = > ŸuLeπeêÂwÀeLàÜNVreu
+country_event = {
+	id = rab_skills.49
+	title = "rab_skills.NAME49"
+	desc = "rab_skills.DESC49"
+	picture = GUAN_YU_SKILL1_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA49"
+			
+	}
+}
+
+#50 = > ŸuÍÅÒTêÂwÀeLàÜNVreubüR
+country_event = {
+	id = rab_skills.50
+	title = "rab_skills.NAME50"
+	desc = "rab_skills.DESC50"
+	picture = GUAN_YU_SKILL1_eventPicture
+	
+     is_triggered_only = yes
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_force_army_lv3_skill"
+			duration = 60
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA50"
+	
+	}
+}
+
+#################
+#18  €k˝lN     #
+#################
+country_event = {
+	id = rab_skills.51
+	title = "rab_skills.NAME51"
+	desc = "rab_skills.DESC51"
+	picture = DICTATORSHIP_OF_PROLETARIAT_eventPicture
+		
+  	
+	trigger = {
+		OR = {
+				has_leader = "€k˝lN"
+				has_leader = "€k˝lN0õQòR0"
+		}
+		is_at_war = yes
+		NOT = { army_size_percentage = 0.7 }
+		NOT = { war_exhaustion = 4 }
+	}	
+	mean_time_to_happen = {
+		months = 8
+	}
+	option = {
+			name = "rab_skills.OPTA51"
+			hidden_effect = {
+			random_list = { 
+				85 = {
+					every_country = {
+					limit = {
+							war_with = ROOT
+							NOT = { tag = PIR }
+							NOT = { tag = NAT }
+							NOT = { tag = REB }
+							}
+								country_event = {
+									id = rab_skills.52
+									days = 1
+								}
+					}
+						country_event = {
+						id = rab_skills.53
+						days = 1
+					}	
+				}
+				15 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#52 = > ŸuLeπeêÂwÀeLàÜN€b∆ñIN«R
+country_event = {
+	id = rab_skills.52
+	title = "rab_skills.NAME52"
+	desc = "rab_skills.DESC52"
+	picture = DICTATORSHIP_OF_PROLETARIAT_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA52"
+			
+	}
+}
+
+#53 = > ŸuÍÅÒTêÂwÀeLàÜN€b∆ñIN«RbüR
+country_event = {
+	id = rab_skills.53
+	title = "rab_skills.NAME53"
+	desc = "rab_skills.DESC53"
+	picture = DICTATORSHIP_OF_PROLETARIAT_eventPicture
+	
+     is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		capital_scope = {
+			ROOT = {
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+			}
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA53"
+	
+	}
+}
+#####################
+#19 O®XES!k0õQ^0
+#####################
+country_event = {
+	id = rab_skills.54
+	title = "rab_skills.NAME54"
+	desc = "rab_skills.DESC54"
+	picture = INSPIRE_SOLDIERS_YIMOJUCI_eventPicture
+		
+   	
+	trigger = {
+	
+				has_leader = "O®XES!k0õQ^0"
+				is_at_war = yes
+				NOT = { has_country_modifier = md_strong_inspire_lv3_skill }
+	}	
+	mean_time_to_happen = {
+		days = 180
+	}
+	option = {
+			name = "rab_skills.OPTA54"
+			hidden_effect = {
+			random_list = { 
+			#Ÿu˘RbóÑvIubó(büR)
+				90 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+						
+							country_event = {
+								id = rab_skills.55
+								days = 1
+							}
+				}
+								
+					country_event = {
+					id = rab_skills.56
+					days = 1
+					}	
+				}
+			#ÍÅÒTÑvIubó(1Y%ç)	
+				10 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#55 = > ŸuLeπeêÂwÀeLàÜNVreu
+country_event = {
+	id = rab_skills.55
+	title = "rab_skills.NAME55"
+	desc = "rab_skills.DESC55"
+	picture = INSPIRE_SOLDIERS_YIMOJUCI_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA55"
+			
+	}
+}
+
+#56 = > ŸuÍÅÒTêÂwÀeLàÜNVreubüR
+country_event = {
+	id = rab_skills.56
+	title = "rab_skills.NAME56"
+	desc = "rab_skills.DESC56"
+	picture = INSPIRE_SOLDIERS_YIMOJUCI_eventPicture
+	
+     is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_strong_inspire_lv3_skill"
+			duration = 60
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA56"
+	
+	}
+}
+
+#####################
+#20 0åâR0õQ^0
+#####################
+
+country_event = {
+	id = rab_skills.57
+	title = "rab_skills.NAME57"
+	desc = "rab_skills.DESC57"
+	picture = FAKE_SKILL_XIEAN_eventPicture
+		
+    	trigger = {
+	
+				has_leader = "0åâR0õQ^0"
+				is_at_war = yes
+				any_country = {
+					war_with = ROOT 
+					NOT = { has_country_modifier = md_fake_skill }
+				}
+	}	
+	mean_time_to_happen = {
+		days = 170
+	}
+	option = {
+		name = "rab_skills.OPTA57"
+		hidden_effect = {
+			random_list = { 
+				90 = {
+					random_country = {
+					limit = {
+							war_with = ROOT
+							NOT = { tag = PIR }
+							NOT = { tag = NAT }
+							NOT = { tag = REB }
+							NOT = { has_country_modifier = md_fake_skill }
+					}
+						country_event = {
+							id = rab_skills.58
+							days = 1
+						}
+					}
+	
+				}
+				10 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+country_event = {
+	id = rab_skills.58
+	title = "rab_skills.NAME58"
+	desc = "rab_skills.DESC58"
+	picture = FAKE_SKILL_XIEAN_eventPicture
+	
+     is_triggered_only = yes
+	 
+ 
+	option = {
+		name = "rab_skills.OPTA58"
+		
+		add_country_modifier = {
+		name = "md_fake_skill"
+		duration = 60
+		}
+		
+		FROM = {
+			country_event = {
+				id = rab_skills.59
+				days = 1
+			}
+		}				
+	}
+}
+
+country_event = {
+	id = rab_skills.59
+	title = "rab_skills.NAME59"
+	desc = "rab_skills.DESC59"
+	picture = FAKE_SKILL_XIEAN_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA59"
+	
+	}
+}
+
+#####################
+#21 Oõˆ^0fkS0
+#####################
+country_event = {
+	id = rab_skills.60
+	title = "rab_skills.NAME60"
+	desc = "rab_skills.DESC60"
+	picture = WEIYAN_SKILL_eventPicture
+		
+   	
+	trigger = {
+	
+				has_leader = "Oõˆ^0fkS0"
+				is_at_war = yes
+				NOT = { has_country_modifier = md_force_army_skill }
+	}	
+	mean_time_to_happen = {
+		days = 180
+	}
+	option = {
+			name = "rab_skills.OPTA60"
+			hidden_effect = {
+			random_list = { 
+			#Ÿu˘RbóÑvIubó(büR)
+				80 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+						
+							country_event = {
+								id = rab_skills.61
+								days = 1
+							}
+				}
+								
+					country_event = {
+					id = rab_skills.62
+					days = 1
+					}	
+				}
+			#ÍÅÒTÑvIubó(1Y%ç)	
+				20 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#61 = > ŸuLeπeêÂwÀeLàÜNVreu
+country_event = {
+	id = rab_skills.61
+	title = "rab_skills.NAME61"
+	desc = "rab_skills.DESC61"
+	picture = WEIYAN_SKILL_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA61"
+			
+	}
+}
+
+#62 = > ŸuÍÅÒTêÂwÀeLàÜNVreubüR
+country_event = {
+	id = rab_skills.62
+	title = "rab_skills.NAME62"
+	desc = "rab_skills.DESC62"
+	picture = WEIYAN_SKILL_eventPicture
+	
+     is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_force_army_skill"
+			duration = 60
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA62"
+	
+	}
+}
+
+
+#####################
+#22 HñÜ^KN0fkS0
+#####################
+country_event = {
+	id = rab_skills.63
+	title = "rab_skills.NAME63"
+	desc = "rab_skills.DESC63"
+	picture = CHEN_QINGZHI_eventPicture
+		
+   	
+	trigger = {
+	
+				has_leader = "HñÜ^KN0fkS0"
+				is_at_war = yes
+				NOT = { has_country_modifier = md_chenqingzhi_skill }
+	}	
+	mean_time_to_happen = {
+		days = 180
+	}
+	option = {
+			name = "rab_skills.OPTA63"
+			hidden_effect = {
+			random_list = { 
+			#Ÿu˘RbóÑvIubó(büR)
+				90 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+						
+							country_event = {
+								id = rab_skills.64
+								days = 1
+							}
+				}
+								
+					country_event = {
+					id = rab_skills.65
+					days = 1
+					}	
+				}
+			#ÍÅÒTÑvIubó(1Y%ç)	
+				10 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#64 = > ŸuLeπeêÂwÀeLàÜNVreu
+country_event = {
+	id = rab_skills.64
+	title = "rab_skills.NAME64"
+	desc = "rab_skills.DESC64"
+	picture = CHEN_QINGZHI_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA64"
+			
+	}
+}
+
+#65 = > ŸuÍÅÒTêÂwÀeLàÜNVreubüR
+country_event = {
+	id = rab_skills.65
+	title = "rab_skills.NAME65"
+	desc = "rab_skills.DESC65"
+	picture = CHEN_QINGZHI_eventPicture
+	
+     is_triggered_only = yes
+	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_chenqingzhi_skill"
+			duration = 60
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA65"
+	
+	}
+}
+
+#####################
+#23  NgXRkR0fkS0
+#####################
+country_event = {
+	id = rab_skills.66
+	title = "rab_skills.NAME66"
+	desc = "rab_skills.DESC66"
+	picture = li_cunxiao_eventPicture
+		
+   	
+	trigger = {
+	
+				has_leader = "NgXRkR0fkS0"
+				is_at_war = yes
+				NOT = { has_country_modifier = md_licunxiao_skill }
+	}	
+	mean_time_to_happen = {
+		days = 180
+	}
+	option = {
+			name = "rab_skills.OPTA66"
+			hidden_effect = {
+			random_list = { 
+			#Ÿu˘RbóÑvIubó(büR)
+				90 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+						
+							country_event = {
+								id = rab_skills.67
+								days = 1
+							}
+				}
+								
+					country_event = {
+					id = rab_skills.68
+					days = 1
+					}	
+				}
+			#ÍÅÒTÑvIubó(1Y%ç)	
+				10 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#64 = > ŸuLeπeêÂwÀeLàÜNVreu
+country_event = {
+	id = rab_skills.67
+	title = "rab_skills.NAME67"
+	desc = "rab_skills.DESC67"
+	picture = li_cunxiao_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA67"
+			
+	}
+}
+
+#65 = > ŸuÍÅÒTêÂwÀeLàÜNVreubüR
+country_event = {
+	id = rab_skills.68
+	title = "rab_skills.NAME68"
+	desc = "rab_skills.DESC68"
+	picture = li_cunxiao_eventPicture
+	
+     is_triggered_only = yes
+	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_licunxiao_skill"
+			duration = 60
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA68"
+	
+	}
+}
+
+#####################
+#24  zhao_yunuçëN0fkS0
+#####################
+country_event = {
+	id = rab_skills.69
+	title = "rab_skills.NAME69"
+	desc = "rab_skills.DESC69"
+	picture = zhao_yun_eventPicture
+		
+   	
+	trigger = {
+		has_leader = "uçëN0fkS0"
+		is_at_war = yes
+		NOT = { has_country_modifier = md_zhao_yun_skill }
+	}	
+	mean_time_to_happen = {
+		days = 220
+	}
+	option = {
+		name = "rab_skills.OPTA69"
+		hidden_effect = {
+			random_list = { 
+				#Ÿu˘RbóÑvIubó(büR)
+				90 = {
+					every_country = {
+						limit = {
+							war_with = ROOT
+							NOT = { tag = PIR }
+							NOT = { tag = NAT }
+							NOT = { tag = REB }
+						}
+						country_event = {
+							id = rab_skills.70
+							days = 1
+						}
+					}
+					country_event = {
+							id = rab_skills.71
+							days = 1
+					}	
+				}
+				#ÍÅÒTÑvIubó(1Y%ç)	
+				10 = {
+					country_event = {
+						id = rab_skills.4
+						days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#64 = > ŸuLeπeêÂwÀeLàÜNVreu
+country_event = {
+	id = rab_skills.70
+	title = "rab_skills.NAME70"
+	desc = "rab_skills.DESC70"
+	picture = zhao_yun_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA70"
+			
+	}
+}
+
+#65 = > ŸuÍÅÒTêÂwÀeLàÜNVreubüR
+country_event = {
+	id = rab_skills.71
+	title = "rab_skills.NAME71"
+	desc = "rab_skills.DESC71"
+	picture = zhao_yun_eventPicture
+	
+     is_triggered_only = yes
+	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_zhao_yun_skill"
+			duration = 120
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA71"
+	
+	}
+}
+
+#####################
+# no.25
+# ruler = "R¿y"
+#####################
+# must add below :
+# 1. rab_event_modifier = md_liuxiu_skill
+# 2. localistation.
+#
+ #rab_skills.NAME72:0 "R¿yÀeUSÜNhñÛwKNVr!"
+ #rab_skills.DESC72:0 "bÏNÑvMObóKNPR(Wb:WN’ã˛VÀeUShñÛw=gˇbÏN›OQOŸè*NVreu˝wYbüR0"
+ #rab_skills.OPTA72:0 "ÀeUShñÛw=g0büR:gás50 %0" 
+ #rab_skills.NAME73:0 "R¿y˘RbÏNÀeUSÜNhñÛwKNVr!"
+ #rab_skills.DESC73:0 "'YãNNôYˇ˘RπeSÜò¯ãR¿y˘RbÏNÀeUShñÛw=gˇ(Wb:WNÑvÎXuQÀzsSmê◊SûREñÑvâk°N!"
+ #rab_skills.OPTA73:0 "bÑv)Y!"
+ 
+
+ 
+country_event = {
+	id = rab_skills.72
+	title = "rab_skills.NAME72"
+	desc = "rab_skills.DESC72"
+	picture = liuxiu_skill_eventPicture
+   	
+	trigger = {
+		has_leader = "R¿y"
+		is_at_war = yes
+	}	
+	mean_time_to_happen = {
+		days = 240
+	}
+	option = {
+		name = "rab_skills.OPTA72"
+		hidden_effect = {
+			random_list = { 
+				50 = {
+					random_country = {
+						limit = {
+							war_with = ROOT
+							NOT = { tag = PIR }
+							NOT = { tag = NAT }
+							NOT = { tag = REB }
+							
+						}
+						country_event = {
+							id = rab_skills.73
+							days = 1
+						}
+					}
+				}
+				50 = {
+					country_event = {
+						id = rab_skills.4
+						days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#73 = > enemy war with countries
+country_event = {
+	id = rab_skills.73
+	title = "rab_skills.NAME73"
+	desc = "rab_skills.DESC73"
+	picture = liuxiu_skill_eventPicture
+	
+	major = yes
+	major_trigger = {
+		OR = {
+			war_with = LX2
+			war_with = HND
+		}	
+	}	
+
+    is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA73"
+		if = {
+			limit = {
+				num_of_infantry = 2
+			}
+			random_province = {
+				limit = {
+					num_of_units_in_province = {
+						who = ROOT
+						type = infantry
+						amount = 2
+					}
+				}
+				hidden_effect = {				
+					save_global_event_target_as = tg_liuxiu_kill_infantry_province 
+				}	
+				kill_units = {
+					who = ROOT
+					type = infantry
+					amount = 1
+				}			
+			}
+			hidden_effect = {
+				FROM = {
+					country_event = {
+						id =  rab_skills.7401
+					}	
+				}
+			}			
+		}
+		if = {
+			limit = {
+				num_of_cavalry = 2
+			}
+			random_province = {
+				limit = {
+					num_of_units_in_province = {
+						who = ROOT
+						type = cavalry
+						amount = 2
+					}
+				}
+				hidden_effect = {				
+					save_global_event_target_as = tg_liuxiu_kill_cavalry_province 	
+				}	
+				kill_units = {
+					who = ROOT
+					type = cavalry
+					amount = 1
+				}
+			}
+			hidden_effect = {					
+				FROM = {
+					country_event = {
+						id =  rab_skills.7402
+					}
+				}				
+			}			
+		}			
+	}
+}
+
+
+country_event = {
+	id = rab_skills.7401
+	title = "rab_skills.NAME7401"
+	desc = "rab_skills.DESC7401"
+	picture = liuxiu_skill_eventPicture
+	
+    is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = flg_none_liuxiu_kill }
+	}	
+	
+	option = {
+		name = "rab_skills.OPTA7401"
+			
+	}
+	option = {
+		name = "rab_skills.OPTB7401"
+			set_country_flag = flg_none_liuxiu_kill
+	}	
+}	
+
+
+country_event = {
+	id = rab_skills.7402
+	title = "rab_skills.NAME7402"
+	desc = "rab_skills.DESC7402"
+	picture = liuxiu_skill_eventPicture
+	
+    is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = flg_none_liuxiu_kill }
+	}
+	option = {
+		name = "rab_skills.OPTA7402"
+			
+	}	
+	option = {
+		name = "rab_skills.OPTB7402"
+			set_country_flag = flg_none_liuxiu_kill			
+	}
+}	
+	
+	
+
+#####################
+# no.26
+# ruler = "ûå∑V"
+#####################
+# must add below :
+# 1. rab_event_modifier = md_jeanne_skill
+# 2. localistation.
+#
+ #rab_skills.NAME75:0 "ûå∑VÀeUSÜN^yÌäKNVr!"
+ #rab_skills.DESC75:0 "'Y)YOÑv„Nä∫NˇbPÑvVwsYûå∑V(Wb:WN’ã˛VÀeUS^yÌäKNSàˇbÏN›OQOŸè*NVreu˝wYbüR0"
+ #rab_skills.OPTA75:0 "VwsYûå∑VÀeUS^yÌäKNSà0büR:gás75 %0" 
+ #rab_skills.NAME76:0 "VwsYûå∑V˘RbÏNÀeUSÜN^yÌäKNSà!"
+ #rab_skills.DESC76:0 "'YãNNôYˇ˘RπeSÜòûå∑VVwsY˘RbÏNÀeUS^yÌäKNSàˇyYÍÅ1zÍÅÒT=f'Y)YO>mÜO˜WLà^yÌäˇSºeb:WNÑv·OíVÎXuQ0uuàV'YÑv√VtZÅˇ	gàVYÎXuQ‡Vdkƒh2uê—çÜNˇbuﬂz∞ämNNÛ`N0WDsÈR2R0"
+ #rab_skills.OPTA76:0 "bÑv)Y!"
+ #rab_skills.NAME77:0 "VwsYûå∑VbüR0WÀeUSÜN^yÌä!"
+ #rab_skills.DESC77:0 "w=f*NãYàmo`ˇVwsYûå∑VbüRÑvÀeUS^yÌäˇwNw˘RπeÑvõQñÇYT `LaqNúzÑvw.üˇûR(W«è>v?ñ0"
+ #rab_skills.OPTA77:0 "*YãYÜN!"
+ #tooltip_rab_skills.OPTA77:0 "àmmpÜNLeπeèñ:g1K∫Nlö"
+
+
+country_event = {
+	id = rab_skills.75
+	title = "rab_skills.NAME75"
+	desc = "rab_skills.DESC75"
+	picture = JEANNE_WAR_2_eventPicture
+   	
+	trigger = {
+		has_leader = "ç∑V01WsY0"
+		is_at_war = yes
+		NOT = { has_country_modifier = md_jeanne_skill }
+	}	
+	mean_time_to_happen = {
+		days = 90
+	}
+	option = {
+		name = "rab_skills.OPTA75"
+		hidden_effect = {
+			random_list = { 
+				85 = {
+					random_country = {
+						limit = {
+							war_with = ROOT
+							NOT = { tag = PIR }
+							NOT = { tag = NAT }
+							NOT = { tag = REB }
+						}
+						country_event = {
+							id = rab_skills.76
+							days = 1
+						}
+					}
+					if = { 
+						limit = {
+							NOT = { has_country_modifier = md_jeanne_skill }
+						}	
+						add_country_modifier = {
+							name = "md_jeanne_skill"
+							duration = 360
+						}
+					}						
+				}
+				15 = {
+					country_event = {
+						id = rab_skills.4
+						days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#76 = > enemy war with countries
+country_event = {
+	id = rab_skills.76
+	title = "rab_skills.NAME76"
+	desc = "rab_skills.DESC76"
+	picture = JEANNE_WAR_2_eventPicture
+	
+    is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA76"
+		if = {
+			limit = {
+				num_of_infantry = 4
+			}
+			random_province = {
+				limit = {
+					num_of_units_in_province = {
+						who = ROOT
+						type = infantry
+						amount = 4
+					}
+				}
+				hidden_effect = {				
+					save_global_event_target_as = tg_jeanne_kill_infantry_province 
+				}	
+				kill_units = {
+					who = ROOT
+					type = infantry
+					amount = 4
+				}			
+			}
+			hidden_effect = {
+				FROM = {
+					country_event = {
+						id =  rab_skills.7701
+					}	
+				}
+			}			
+		}
+		if = {
+			limit = {
+				num_of_cavalry = 3
+			}
+			random_province = {
+				limit = {
+					num_of_units_in_province = {
+						who = ROOT
+						type = cavalry
+						amount = 3
+					}
+				}
+				hidden_effect = {				
+					save_global_event_target_as = tg_jeanne_kill_cavalry_province 	
+				}	
+				kill_units = {
+					who = ROOT
+					type = cavalry
+					amount = 3
+				}
+			}
+			hidden_effect = {					
+				FROM = {
+					country_event = {
+						id =  rab_skills.7702
+					}
+				}				
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = rab_skills.7701
+	title = "rab_skills.NAME7701"
+	desc = "rab_skills.DESC7701"
+	picture = JEANNE_WAR_2_eventPicture
+	
+    is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = flg_none_jeanne_kill }
+	}	
+	
+	option = {
+		name = "rab_skills.OPTA7701"
+		#event_target:tg_jeanne_kill_infantry_province = {
+		#	kill_units = {
+		#		who = FROM
+		#		type = infantry
+		#		amount = 4
+		#	}				
+		#}	
+	}
+	option = {
+		name = "rab_skills.OPTB7701"
+		#event_target:tg_jeanne_kill_infantry_province = {
+		#	kill_units = {
+		#		who = FROM
+		#		type = infantry
+		#		amount = 4
+		#	}				
+		#}			
+		set_country_flag = flg_none_jeanne_kill
+	}	
+}	
+
+
+country_event = {
+	id = rab_skills.7702
+	title = "rab_skills.NAME7702"
+	desc = "rab_skills.DESC7702"
+	picture = JEANNE_WAR_2_eventPicture
+	
+    is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = flg_none_jeanne_kill }
+	}
+	option = {
+		name = "rab_skills.OPTA7702"
+		#event_target:tg_jeanne_kill_cavalry_province = {
+		#	kill_units = {
+		#		who = FROM
+		#		type = cavalry
+		#		amount = 3
+		#	}
+		#}				
+	}	
+	option = {
+		name = "rab_skills.OPTB7702"
+		#event_target:tg_jeanne_kill_cavalry_province = {
+		#	kill_units = {
+		#		who = FROM
+		#		type = cavalry
+		#		amount = 3
+		#	}
+		#}	
+			set_country_flag = flg_none_jeanne_kill			
+	}
+}	
+	
+########################
+# 27. NgÑUwï0õQ^0
+#######################
+
+country_event = {
+	id = rab_skills.78
+	title = "rab_skills.NAME78"
+	desc = "rab_skills.DESC78"
+	picture = ARCHER_eventPicture
+
+	trigger = {
+		has_leader = "NgÑUï0õQ^0"
+		is_at_war = yes
+		NOT = { army_size_percentage = 0.7 }
+		NOT = { war_exhaustion = 4 }
+	}	
+	
+	mean_time_to_happen = {
+		#months = 6
+		days = 5
+	}
+	option = {
+			name = "rab_skills.OPTA12"
+			hidden_effect = {
+			random_list = { 
+				75 = {
+				every_country = {
+				limit = {
+						war_with = ROOT
+						NOT = { tag = PIR }
+						NOT = { tag = NAT }
+						NOT = { tag = REB }
+						}
+							country_event = {
+								id = rab_skills.79
+								days = 1
+							}
+				}
+					country_event = {
+					id = rab_skills.80
+					days = 1
+					}	
+				}
+				25 = {
+				
+					country_event = {
+					id = rab_skills.4
+					days = 1
+					}	
+				}		
+			}
+		}
+	}		
+}
+
+#79 = > ŸuLeπeêÂwÀeLàÜNOuQVreu
+country_event = {
+	id = rab_skills.79
+	title = "rab_skills.NAME79"
+	desc = "rab_skills.DESC79"
+	picture = ARCHER_eventPicture
+	
+     is_triggered_only = yes
+	
+	option = {
+		name = "rab_skills.OPTA79"
+			
+	}
+}
+
+#80 = > ŸuÍÅÒTêÂwÀeLàÜNOuQVreubüR
+country_event = {
+	id = rab_skills.80
+	title = "rab_skills.NAME80"
+	desc = "rab_skills.DESC80"
+	picture = ARMY_HAPPY_eventPicture
+	
+     is_triggered_only = yes
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		capital_scope = {
+			ROOT = {
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+			}
+		}
+	}
+	
+	option = {
+		name = "rab_skills.OPTA80"
+	
+	}
+}	
+	

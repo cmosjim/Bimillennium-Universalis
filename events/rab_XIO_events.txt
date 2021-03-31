@@ -1,0 +1,235 @@
+########################
+#XIO Flavor Events#
+########################
+#科技并非中华 所成立的大漠帝国
+#1#
+#1#
+########################
+#科技中华 所成立的大翼帝国
+#2#
+#2#
+########################
+#2018.12.31 fit to 1.28
+namespace = rab_XIO_events
+#单纯成立大漠帝国
+country_event = {
+	id = rab_XIO_events.1
+	title = "rab_XIO_events.NAME1"
+	desc = "rab_XIO_events.DESC1"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_XIO_events.OPTA1"
+		change_tag = DM2
+		swap_free_idea_group = yes
+		swap_non_generic_missions = yes
+		clr_country_flag = tmp_XIO_build_DM2
+	}
+}
+# XIB and others
+country_event = {
+	id = rab_XIO_events.2
+	title = "rab_XIO_events.NAME2"
+	desc = "rab_XIO_events.DESC2"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_XIO_events.OPTA2"
+		change_tag = DM3
+		swap_free_idea_group = yes
+		swap_non_generic_missions = yes		
+		clr_country_flag = tmp_XIO_build_DM3
+	}
+}
+
+# 成立汉匈帝国
+country_event = {
+	id = rab_XIO_events.3
+	title = "rab_XIO_events.NAME3"
+	desc = "rab_XIO_events.DESC3"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_XIO_events.OPTA3"
+		#宗教不改
+
+		change_government = gov_celestial_empire
+		add_government_reform = celestial_empire
+		set_government_rank = 3		
+		country_event = {
+			id = rab_XIO_events.4
+		}			
+	}
+	option = {
+		name = "rab_XIO_events.OPTB3"
+		#宗教改为道教
+		change_religion = daoism
+		#swap_free_idea_group = yes
+		change_government = gov_celestial_empire
+		add_government_reform = celestial_empire
+		set_government_rank = 3
+		country_event = {
+			id = rab_XIO_events.4
+		}			
+	}	
+	option = {
+		name = "rab_XIO_events.OPTC3"
+		#宗教改为儒教
+		change_religion = confucianism
+		#swap_free_idea_group = yes
+		change_government = gov_celestial_empire
+		add_government_reform = celestial_empire
+		set_government_rank = 3
+		country_event = {
+			id = rab_XIO_events.4
+		}	
+	}
+	option = {
+		name = "rab_XIO_events.OPTD3"
+		#容我再思考
+		clr_country_flag = tmp_XIO_build_DM456
+	}
+}
+#选择姓氏
+country_event = {
+	id = rab_XIO_events.4
+	title = "rab_XIO_events.NAME4"
+	desc = "rab_XIO_events.DESC4"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_XIO_events.OPTA4"
+		#姓刘
+		hidden_effect = {
+			change_tag = DM4
+			swap_free_idea_group = yes
+			clr_country_flag = tmp_XIO_build_DM456
+			chane_rulername_effect = yes	
+		}
+	}
+	option = {
+		name = "rab_XIO_events.OPTB4"
+		#姓高
+		hidden_effect = {
+			change_tag = DM5
+			swap_free_idea_group = yes
+			clr_country_flag = tmp_XIO_build_DM456
+			chane_rulername_effect = yes
+		}
+	}
+	option = {
+		name = "rab_XIO_events.OPTC4"
+		#姓郭
+		hidden_effect = {
+			change_tag = DM6
+			swap_free_idea_group = yes
+			clr_country_flag = tmp_XIO_build_DM456
+			chane_rulername_effect = yes
+		}
+	}	
+}
+
+# 成立漢燕帝国
+country_event = {
+	id = rab_XIO_events.5
+	title = "rab_XIO_events.NAME5"
+	desc = "rab_XIO_events.DESC5"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_XIO_events.OPTA5"
+		#宗教不改
+		#change_tag = DM2
+		swap_free_idea_group = yes
+		change_government = gov_celestial_empire
+		add_government_reform = celestial_empire
+		set_government_rank = 3		
+		country_event = {
+			id = rab_XIO_events.6
+		}			
+	}
+	option = {
+		name = "rab_XIO_events.OPTB3"
+		#宗教改为道教
+		change_religion = daoism
+		#change_tag = DM2
+		swap_free_idea_group = yes
+		change_government = gov_celestial_empire
+		add_government_reform = celestial_empire
+		set_government_rank = 3
+		country_event = {
+			id = rab_XIO_events.6
+		}			
+	}	
+	option = {
+		name = "rab_XIO_events.OPTC3"
+		#宗教改为儒教
+		change_religion = confucianism
+		#change_tag = DM2
+		swap_free_idea_group = yes
+		change_government = gov_celestial_empire
+		add_government_reform = celestial_empire
+		set_government_rank = 3
+		country_event = {
+			id = rab_XIO_events.6
+		}	
+	}
+	option = {
+		name = "rab_XIO_events.OPTD3"
+		#容我再思考
+		clr_country_flag = tmp_XIO_build_DM789
+	}
+}
+#选择姓氏
+country_event = {
+	id = rab_XIO_events.6
+	title = "rab_XIO_events.NAME6"
+	desc = "rab_XIO_events.DESC6"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_XIO_events.OPTA6"
+		#姓刘
+		hidden_effect = {
+			change_tag = DM7
+			swap_free_idea_group = yes
+			clr_country_flag = tmp_XIO_build_DM789
+			chane_rulername_effect = yes	
+		}
+	}
+	option = {
+		name = "rab_XIO_events.OPTB6"
+		#姓高
+		hidden_effect = {
+			change_tag = DM8
+			swap_free_idea_group = yes
+			clr_country_flag = tmp_XIO_build_DM789
+			chane_rulername_effect = yes
+		}
+	}
+	option = {
+		name = "rab_XIO_events.OPTC6"
+		#姓郭
+		hidden_effect = {
+			change_tag = DM9
+			swap_free_idea_group = yes
+			clr_country_flag = tmp_XIO_build_DM789
+			chane_rulername_effect = yes
+		}
+	}	
+}
+
+
+

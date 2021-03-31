@@ -1,0 +1,302 @@
+namespace = okinawa_navy_base_galley
+country_event = {
+	id = okinawa_navy_base_galley.2
+	title = "okinawa_navy_base_galley.NAME2"
+	desc = "okinawa_navy_base_galley.DESC2"
+	picture = navy_base_eventPicture
+	
+	is_triggered_only = yes
+	# attched 10 units of galleys
+	option = {
+		name = "okinawa_navy_base_galley.OPTA2"
+		trigger = {
+			any_owned_province = {
+				galleys_in_province = 1
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_okinawa_galley
+					value = 200
+				}
+			}
+			
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = yes
+				factor = 0
+			}	
+		}			
+		random_owned_province = {
+			limit = {
+				galleys_in_province = 1
+			}
+			kill_units = {
+				who = ROOT
+				type = galley
+				amount = 1
+			}
+		}		
+		change_variable = {
+			which = num_of_okinawa_galley
+			value = 1
+		}
+		country_event = {
+			id = okinawa_navy_base_galley.3
+		}	
+	}
+	#release 10 units galley
+	option = {
+		name ="okinawa_navy_base_galley.OPTB2"
+		trigger = {
+			check_variable = {
+				which = num_of_okinawa_galley
+				value = 10
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = no
+				factor = 0
+			}	
+		}				
+		subtract_variable = {
+			which = num_of_okinawa_galley
+			value = 10
+		}
+		1015 = {
+			ROOT = {
+				galley = PREV
+				galley = PREV
+				galley = PREV
+				galley = PREV
+				galley = PREV
+				galley = PREV
+				galley = PREV
+				galley = PREV
+				galley = PREV
+				galley = PREV
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_galley.3
+		}		
+	}	
+	#release 1 units galley
+	option = {
+		name ="okinawa_navy_base_galley.OPTC2"
+		trigger = {
+			check_variable = {
+				which = num_of_okinawa_galley
+				value = 1
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = no
+				factor = 0
+			}	
+		}	
+		
+		subtract_variable = {
+			which = num_of_okinawa_galley
+			value = 1
+		}
+		1015 = {
+			ROOT = {
+				galley = PREV
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_galley.3
+		}		
+	}
+	option = {
+		name ="okinawa_navy_base_galley.OPTD2"
+		trigger = {
+			is_at_war = no
+			1015 = {
+				galleys_in_province = 1
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = yes
+				factor = 0
+			}	
+		}		
+		change_variable = {
+			which = num_of_okinawa_galley
+			value = 1
+		}
+		1015 = {
+			kill_units = {
+				who = ROOT
+				type = galley
+				amount = 1
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_galley.3
+		}		
+	}	
+	option = {
+		name = "okinawa_navy_base_galley.OPTE2"
+		clr_country_flag = tmp_check_okinawa_navy_base_galley
+	}	
+}
+
+country_event = {
+	id = okinawa_navy_base_galley.3
+	title = "okinawa_navy_base_galley.NAME3"
+	desc = "okinawa_navy_base_galley.DESC3"
+	picture = navy_base_eventPicture
+	
+	is_triggered_only = yes
+	# attched 10 units of galleys
+	option = {
+		name = "okinawa_navy_base_galley.OPTA3"
+		trigger = {
+			any_owned_province = {
+				galleys_in_province = 1
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_okinawa_galley
+					value = 200
+				}
+			}
+			
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = yes
+				factor = 0
+			}	
+		}			
+		random_owned_province = {
+			limit = {
+				galleys_in_province = 1
+			}
+			kill_units = {
+				who = ROOT
+				type = galley
+				amount = 1
+			}
+		}		
+		change_variable = {
+			which = num_of_okinawa_galley
+			value = 1
+		}
+		country_event = {
+			id = okinawa_navy_base_galley.2
+		}	
+	}
+	#release 10 units galley
+	option = {
+		name ="okinawa_navy_base_galley.OPTB3"
+		trigger = {
+			check_variable = {
+				which = num_of_okinawa_galley
+				value = 10
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = no
+				factor = 0
+			}	
+		}			
+		subtract_variable = {
+			which = num_of_okinawa_galley
+			value = 10
+		}
+		1015 = {
+			ROOT = {
+				galley = PREV
+				galley = PREV
+				galley = PREV
+				galley = PREV
+				galley = PREV
+				galley = PREV
+				galley = PREV
+				galley = PREV
+				galley = PREV
+				galley = PREV
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_galley.2
+		}		
+	}	
+	#release 1 units galley
+	option = {
+		name ="okinawa_navy_base_galley.OPTC3"
+		trigger = {
+			check_variable = {
+				which = num_of_okinawa_galley
+				value = 1
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = no
+				factor = 0
+			}	
+		}		
+		
+		subtract_variable = {
+			which = num_of_okinawa_galley
+			value = 1
+		}
+		1015 = {
+			ROOT = {
+				galley = PREV
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_galley.2
+		}		
+	}
+	option = {
+		name ="okinawa_navy_base_galley.OPTD3"
+		trigger = {
+			is_at_war = no
+			1015 = {
+				galleys_in_province = 1
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = yes
+				factor = 0
+			}	
+		}		
+		change_variable = {
+			which = num_of_okinawa_galley
+			value = 1
+		}
+		1015 = {
+			kill_units = {
+				who = ROOT
+				type = galley
+				amount = 1
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_galley.2
+		}		
+	}	
+	option = {
+		name = "okinawa_navy_base_galley.OPTE3"
+		clr_country_flag = tmp_check_okinawa_navy_base_galley
+	}	
+}

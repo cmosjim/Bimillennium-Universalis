@@ -1,0 +1,163 @@
+namespace = GYDT_events_namespace
+
+#不再是困兽了
+country_event = {
+	id = GYDT_events_namespace.1
+	title = "GYDT_events_1_title"
+	desc = "GYDT_events_1_desc"
+	picture = ARMY_START_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "GYDT_events_1_OPTA"
+		add_country_modifier = {
+				name = "nolonger_imprisoned"
+				duration = 3650
+			}
+		create_general = { 
+			tradition = 100
+			add_shock = 2
+			add_siege = 2
+		}
+	}	
+}
+
+#归义大唐政府改革事件
+country_event = { 
+	id = GYDT_events_namespace.2
+	title = "GYDT_events_2_title"
+	desc = "GYDT_events_2_desc"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "GYDT_events_2_OPTA"	#新朝雅政
+		add_treasury = -5000
+		add_stability = -3
+		add_country_modifier = {
+			name = "xinchao_yazheng"
+			duration = -1
+		}
+		add_country_modifier = {
+			name = "dongdang_zhengzhi"
+			duration = 1825
+		}
+	}
+	
+	option = {
+		name = "GYDT_events_2_OPTB"	#还是稳妥点比较好
+		add_country_modifier = {
+			name = "baoshou_zhengfu"
+			duration = 1825
+		}
+	}
+}
+
+#收编女真各部
+country_event = { 
+	id = GYDT_events_namespace.3
+	title = "GYDT_events_3_title"
+	desc = "GYDT_events_3_desc"
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "GYDT_events_3_OPTA"	#不顾反对，坚决收编
+		add_stability = -1
+		set_country_flag = shoubian_nvzhen 
+		727 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 30
+			}
+		}
+		capital_scope = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 30
+			}
+		}
+	}
+	option = {
+		name = "GYDT_events_3_OPTB"	#那就依诸位爱卿的意思办吧
+		add_stability = 1
+	}
+}
+
+#归义大唐军事改革
+country_event = { 
+	id = GYDT_events_namespace.4
+	title = "GYDT_events_4_title"
+	desc = "GYDT_events_4_desc"
+	picture = BAN_CHAO_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	#大炮兵主义
+		name = "GYDT_events_4_OPTA"
+		trigger = {
+			NOT = { has_country_modifier = artillery_zhuyi }
+		}
+		add_country_modifier = {
+			name = "artillery_zhuyi"
+			duration = -1
+		}
+	}
+	
+	option = {	#贵族化陆军
+		name = "GYDT_events_4_OPTB"
+		add_country_modifier = {
+			name = "guizuhua_lujun"
+			duration = 3650
+		}
+		remove_country_modifier = "pingminhua_lujun"
+	}
+	
+	option = {	#平民化陆军
+		name = "GYDT_events_4_OPTC"
+		add_country_modifier = {
+			name = "pingminhua_lujun"
+			duration = 3650
+		}
+		remove_country_modifier = "guizuhua_lujun"
+	}
+}
+
+#回鹘人的警惕
+country_event = { 
+	id = GYDT_events_namespace.5
+	title = "GYDT_events_5_title"
+	desc = "GYDT_events_5_desc"
+	picture = CIVIL_WAR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {	#抵抗入侵
+		name = "GYDT_events_5_OPTA"
+		if = {
+			limit = {
+				exists = GA3
+			}
+			GA3 = {
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_annex
+				}
+			}
+			GA2 = {
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_annex
+				}
+			}
+		}
+	}
+	option = {	#回鹘化
+		name = "GYDT_events_5_OPTB"
+		change_primary_culture = uyghur
+	}
+}
+

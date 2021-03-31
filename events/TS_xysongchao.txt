@@ -1,0 +1,2094 @@
+#2019-07-05 add new areas.
+#2019-07-22 MODIFY BY 9tÇåTpãÑvò0W
+#2019-07-28 delete mean_time_to_happen when using is_triggered_only
+#2019-09-07 modify picture link
+#2019-11-04 xy:
+#		1816 = { controlled_by = ROOT }
+#		4877 = { controlled_by = ROOT }
+#		726 = {controlled_by = ROOT }
+#					   
+#		3201 = { controlled_by = ROOT } 
+#
+#
+#2021-01-28 RAB: xy_songchao.38
+#		1816 = { controlled_by = ROOT }
+#		4877 = { controlled_by = ROOT }
+#		726 = {controlled_by = ROOT }
+#					   
+#		3201 = { controlled_by = ROOT } 
+#
+#
+#		1821 = {
+#			OR = {
+#				controlled_by = ROOT 
+#				NOT = {
+#					owned_by = SNG 
+#				} 
+#				NOT = {
+#					controlled_by = SNG 
+#				} 				
+#			} 
+#		}
+#		684 = {
+#			OR = {
+#				controlled_by = ROOT 
+#				NOT = {
+#					owned_by = SNG 
+#				} 
+#				NOT = {
+#					controlled_by = SNG 
+#				} 				
+#			} 
+#		}
+#
+#		679 = {
+#			OR = {
+#				controlled_by = ROOT 
+#				NOT = {
+#					owned_by = SNG 
+#				} 
+#				NOT = {
+#					controlled_by = SNG 
+#				} 				
+#			} 
+#		}
+#
+#		667 = {
+#			OR = {
+#				controlled_by = ROOT 
+#				NOT = {
+#					owned_by = SNG 
+#				} 
+#				NOT = {
+#					controlled_by = SNG 
+#				} 				
+#			} 
+#		}
+#
+#		xy_songchao.30
+#
+#		1816 = {
+#			OR = {
+#				controlled_by = ROOT
+#				NOT = {
+#					owned_by = GNN 
+#				}
+#				NOT = {
+#					controlled_by = GNN 
+#				} 				
+#			} 
+#		}
+#		4877 = {
+#			OR = {
+#				controlled_by = ROOT
+#				NOT = {
+#					owned_by = GNN 
+#				}
+#				NOT = {
+#					controlled_by = GNN 
+#				} 				
+#			} 
+#		}
+#		726 = {
+#			OR = {
+#				controlled_by = ROOT
+#				NOT = {
+#					owned_by = GNN 
+#				}
+#				NOT = {
+#					controlled_by = GNN 
+#				} 				
+#			} 
+#		}
+#		3201 = {
+#			OR = {
+#				controlled_by = ROOT
+#				NOT = {
+#					owned_by = GNN 
+#				}
+#				NOT = {
+#					controlled_by = GNN 
+#				} 				
+#			} 
+#		}
+
+namespace = xy_songchao
+
+country_event = {
+	id = xy_songchao.1
+	title = "xy_songchao.NAME1"
+	desc = "xy_songchao.DESC1"
+	picture = QNG_EMPIRE_eventPicture
+   major = yes
+	trigger = {
+		tag = SNG
+		has_country_flag = jipinjiruo
+		NOT = { has_ruler_flag = zhongwenqingwu }
+		NOT = { mil = 5  }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+
+	option = {
+		name = "xy_songchao.OPTA1"
+		set_ruler_flag = zhongwenqingwu
+			change_variable = {
+			which = num_of_wenwuzhi
+			value = 5
+		}
+	}
+}
+country_event = {
+	id = xy_songchao.2
+	title = "xy_songchao.NAME2"
+	desc = "xy_songchao.DESC2"
+	picture = BATTLE_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+			NOT = { has_global_flag = beihanyiwan }
+			tag = SNG
+			has_ruler_flag = zhaoguangyi
+			war_with = BH1
+			war_score_against = {
+				who = BH1
+				value = 10
+			}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+
+	option = {
+		name = "xy_songchao.OPTA2"
+		BH1 = { every_owned_province = { cede_province = ROOT } }
+		add_country_modifier = {
+			name = "zhulijinsang"
+				duration = 36500 
+		}
+			set_global_flag = beihanyiwan
+	}
+}
+
+country_event = {
+	id = xy_songchao.3
+	title = "xy_songchao.NAME3"
+	desc = "xy_songchao.DESC3"
+	picture = ARMY_START_1_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		NOT = {  has_country_flag = fushengzhuying }
+		has_ruler_flag = zhaokuangyin
+		tag = SNG
+		is_at_war = no
+		exists = JGN
+		JGN = {
+			ai = yes 
+		}
+		has_country_flag = wudailsjs
+		OR = {
+			JGN = { 
+				is_neighbor_of = ROOT
+				is_neighbor_of = WP1
+			}
+			AND = {
+				OR = {
+					owns = 2490 
+					owns = 3209
+				}
+				OR = {
+					3240 = { owned_by = JGN }
+					3265 = { owned_by = JGN }
+				}
+				OR = {
+					672 = { owned_by = WP1 }
+					2491 = { owned_by = WP1 }
+				}	
+			}			
+		}	
+		exists = WP1
+		WP1 = { has_country_modifier = wudaigeju }
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	immediate = {
+	hidden_effect = {
+			WP1 = { kill_ruler = yes }
+		}
+	}
+
+	option = {
+		name = "xy_songchao.OPTA3"
+     add_stability_or_adm_power = yes
+	}
+	option = {
+		name = "xy_songchao.OPTB3"
+		set_global_flag = snggongmiejinghu
+		ai_chance = {
+			factor = 100
+		}
+		JGN = { every_owned_province = { cede_province = ROOT add_core = ROOT } }
+		if = {
+			limit = {
+				NOT = { has_ruler_modifier = wudaixingqi } 
+			}
+			add_ruler_modifier = {
+				name = "wudaixingqi"
+				duration = -1 
+			} 
+		}
+		WP1 = {
+			add_country_modifier = {
+				name = "wudaishuailuo"
+				duration = 3650 
+			}  
+			add_country_modifier = {
+				name = "sngtongyijiekou"
+				duration = 30
+			}  
+		}
+		SNG = {
+			country_event = { id = xy_songchao.333 days = 2 }
+			}
+	}
+}
+country_event = {
+	id = xy_songchao.333
+	title = "xy_songchao.NAME333"
+	desc = "xy_songchao.DESC333"
+	picture = CONQUEST_eventPicture
+
+	hidden = yes
+
+    is_triggered_only = yes
+	option = {
+		name = "xy_songchao.NAME333"
+		 declare_war_with_cb = {
+			who = WP1
+			casus_belli = cb_imperial
+		}
+ }
+}
+
+
+country_event = {
+	id = xy_songchao.4
+	title = "xy_songchao.NAME4"
+	desc = "xy_songchao.DESC4"
+	picture = receives_commands_mil_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = snggongmiejinghu
+		SNG = { has_ruler_flag = zhaokuangyin
+		NOT = {  has_country_flag = fushengzhuying }
+		has_country_flag = wudailsjs
+		is_neighbor_of = ROOT }
+		is_at_war = no
+		has_country_modifier = wudaigeju
+		NOT = { exists = WP1 }
+		NOT = { exists = JGN }
+		tag = HS1
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "xy_songchao.OPTA4"
+		ai_chance = {
+			factor = 30
+		}
+		SNG = {
+			set_country_flag = songmiehoushu 
+		}
+		every_owned_province = { cede_province = SNG add_core = SNG } 
+	}
+	option = {
+		name = "xy_songchao.OPTB4"
+		ai_chance = {
+			factor = 70
+		}
+		if = { limit = { ai = yes }  
+			SNG = { 
+			country_event = {
+					id =  xy_songchao.5
+				}
+			
+			}  
+		}
+		if = { limit = { ai = no }
+			random_list = {
+				50 = {  
+					SNG = { 
+						country_event = {
+							id =  xy_songchao.5
+						}	
+					}  
+				}
+				50 = {
+					BH1 = {
+						create_alliance = ROOT
+						set_ai_attitude = {
+						who = ROOT
+						attitude = attitude_friendly
+						} 
+					}
+					#add_opinion = {
+					#	who = BH1
+					#	modifier = attitude_friendly
+					#} 
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = xy_songchao.5
+	title = "xy_songchao.NAME5"
+	desc = "xy_songchao.DESC5"
+	picture = WARLORD_FOUNDATION_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "xy_songchao.OPTA5"
+		ai_chance = {
+			factor = 0
+		}
+		BH1 = { create_alliance = HS1
+			set_ai_attitude = {
+				who = HS1
+				attitude = attitude_friendly
+			} 
+		}
+	}
+	option = {
+		name = "xy_songchao.OPTB5"
+		ai_chance = {
+			factor = 100
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_modifier = wudaixingqi 
+				} 
+			}
+			add_ruler_modifier = {
+				name = "wudaixingqi"
+				duration = -1 
+			} 
+		}
+		HS1 = {
+			add_country_modifier = {
+				name = "wudaishuailuo"
+				duration = 3650 
+			}  
+			add_country_modifier = {
+				name = "sngtongyijiekou"
+				duration = 30
+			}  
+		}
+		SNG = {
+			country_event = { id = xy_songchao.55 days = 2 }
+			}
+		set_country_flag = songmiehoushu
+	}
+}
+country_event = {
+	id = xy_songchao.55
+	title = "xy_songchao.NAME55"
+	desc = "xy_songchao.DESC55"
+	picture = CONQUEST_eventPicture
+
+	hidden = yes
+
+    is_triggered_only = yes
+	option = {
+		name = "xy_songchao.NAME55"
+		 declare_war_with_cb = {
+			who = HS1
+			casus_belli = cb_imperial
+		}
+ }
+}
+
+country_event = {
+	id = xy_songchao.6
+	title = "xy_songchao.NAME6"
+	desc = "xy_songchao.DESC6"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		NOT = { exists = HS1 }
+		tag = SNG
+		NOT = {  has_country_flag = fushengzhuying }
+		has_ruler_flag = zhaokuangyin
+		has_country_flag = wudailsjs
+		is_at_war = no
+		HNH = {
+			is_neighbor_of = ROOT 
+			has_country_modifier = wudaigeju
+			NOT = { ADM = 2 }
+		}
+
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "xy_songchao.OPTA6"
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = -20
+	}
+	option = {
+		name = "xy_songchao.OPTB6"
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = nanhanyiping
+
+		if = {
+			limit = {
+				NOT = {
+					has_ruler_modifier = wudaixingqi 
+				} 
+			}
+			add_ruler_modifier = {
+				name = "wudaixingqi"
+				duration = -1 
+			} 
+		}
+		HNH = {
+			add_country_modifier = {
+				name = "wudaishuailuo"
+				duration = 3650 
+			}  
+			add_country_modifier = {
+				name = "sngtongyijiekou"
+				duration = 30
+			}  
+		}
+		SNG = {
+			country_event = { id = xy_songchao.66 days = 2 }
+			}
+	}
+}
+country_event = {
+	id = xy_songchao.66
+	title = "xy_songchao.NAME66"
+	desc = "xy_songchao.DESC66"
+	picture = CONQUEST_eventPicture
+
+	hidden = yes
+
+    is_triggered_only = yes
+	option = {
+		name = "xy_songchao.NAME66"
+		 declare_war_with_cb = {
+				who = HNH
+				casus_belli = cb_imperial
+		} 
+ }
+}
+#≥QöRÅV®ãWSU
+country_event = {
+	id = xy_songchao.7
+	title = "xy_songchao.NAME7"
+	desc = "xy_songchao.DESC7"
+	picture = WARLORD_FOUNDATION_eventPicture
+	major = yes
+	trigger = {
+		NOT = {
+			has_country_flag = juedinggongdanantang 
+		}
+		NOT = {
+			has_country_flag = fushengzhuying 
+		}
+		tag = SNG
+		is_at_war = no
+		has_ruler_flag = zhaokuangyin		
+		has_country_flag = wudailsjs
+		NOT = {
+			exists = HNH 
+		}
+		NT1 = {
+			is_neighbor_of = ROOT
+			has_country_modifier = wudaigeju 
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+		modifier = {
+			factor = 5
+			has_country_flag = sngshounagongjin
+		}
+		modifier = {
+			factor = 0.2
+			has_country_flag = ntbujing
+		}
+	}
+	option = {
+	name = "xy_songchao.OPTA7"
+		trigger = {
+			OR = {
+				ai = no
+				NOT = {
+					is_year = 974 
+				} 
+			} 
+		}
+	}
+	option = {
+	name = "xy_songchao.OPTB7"
+		set_country_flag = juedinggongdanantang
+		ai_chance = {
+			factor = 60
+		}
+		JGN = {
+			every_owned_province = {
+				cede_province = ROOT
+				add_core = ROOT 
+			} 
+		}
+		if = {
+			limit = {
+				NOT = { has_ruler_modifier = wudaixingqi } 
+			}
+			add_ruler_modifier = {
+				name = "wudaixingqi"
+				duration = -1 
+			} 
+		}
+	NT1 = {
+		add_country_modifier = {
+			name = "wudaishuailuo"
+			duration = 3650 
+		}  
+        add_country_modifier = {
+			name = "sngtongyijiekou"
+			duration = 30
+		}  
+	}
+		SNG = {
+			country_event = { id = xy_songchao.77 days = 2 }
+			}
+	}
+}
+country_event = {
+	id = xy_songchao.77
+	title = "xy_songchao.NAME77"
+	desc = "xy_songchao.DESC77"
+	picture = CONQUEST_eventPicture
+
+	hidden = yes
+
+    is_triggered_only = yes
+	option = {
+		name = "xy_songchao.NAME77"
+		 declare_war_with_cb = {
+					who = NT1
+					casus_belli = cb_imperial
+				} 
+ }
+}
+
+#WSU≥QöR=f&T€è!ç
+country_event = {
+	id = xy_songchao.8
+	title = "xy_songchao.NAME8"
+	desc = "xy_songchao.DESC8"
+	picture = TRIBUTARY_eventPicture
+	trigger = {
+	tag = NT1
+	SNG = {
+		has_ruler_flag = zhaokuangyin
+		NOT = {
+			has_country_flag = fushengzhuying 
+		}
+		is_at_war = no
+		has_country_flag = wudailsjs  } 
+		is_neighbor_of = SNG
+		has_country_modifier = wudaigeju 
+
+	}
+	mean_time_to_happen = {
+		months = 9
+	}
+	immediate = {
+		hidden_effect = {
+			SNG = { clr_country_flag = sngshounagongjin }
+			SNG = { clr_country_flag = ntbujing }
+		}
+	}
+
+	option = {
+		name = "xy_songchao.OPTA8"
+		ai_chance = {
+			factor = 80
+		}
+		add_treasury = -300
+ SNG = {  country_event = {
+				id =  xy_songchao.9
+                         days = 3
+			} }
+	}
+   option = {
+		name = "xy_songchao.OPTB8"
+
+ai_chance = {
+			factor = 20
+		}
+ SNG = { set_country_flag = ntbujing }
+
+    
+	}
+}
+
+#ãRg≥QöR=f&T6e<y
+country_event = {
+	id = xy_songchao.9
+	title = "xy_songchao.NAME9"
+	desc = "xy_songchao.DESC9"
+	picture = TRIBUTARY_eventPicture
+	is_triggered_only = yes
+
+
+	option = {
+		name = "xy_songchao.OPTA9"
+		ai_chance = {
+			factor = 70
+		}
+		add_treasury = 300
+		SNG = { set_country_flag = sngshounagongjin }
+	}
+
+   option = {
+		name = "xy_songchao.OPTB9"
+
+		ai_chance = {
+			factor = 30
+		}
+		NT1 = {
+			country_event = {
+				id =  xy_songchao.10
+				days = 3
+			} 
+		}
+    }
+}
+#ê±î
+country_event = {
+	id = xy_songchao.10
+	title = "xy_songchao.NAME10"
+	desc = "xy_songchao.DESC10"
+	picture = ACCUSATION_eventPicture
+	is_triggered_only = yes
+
+
+	option = {
+		name = "xy_songchao.OPTA10"
+  add_treasury = 300
+
+}
+}
+
+country_event = {
+	id = xy_songchao.11
+	title = "xy_sognchao.NAME11"
+	desc = "xy_songchao.DESC11"
+	picture = HAPPY_MONARCH_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+       tag = SNG        
+        NOT = { exists = NT1 }
+		has_country_flag = wudailsjs
+		has_country_flag = juedinggongdanantang
+		OR = {
+			AND = {
+				exists = WUY 
+				WUY = {
+					has_country_modifier = wudaigeju 
+					is_neighbor_of = ROOT  
+				} 
+			} 
+			AND = {
+				exists = QU1 
+				QU1 = {
+					has_country_modifier = wudaigeju 
+					is_neighbor_of = ROOT  
+				} 
+			}  
+		}
+		NOT = {
+			WUY = { ai = no }
+			QU1 = { ai = no } 
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "xy_songchao.OPTA11"
+       if = { limit = { WUY = { ai = yes } exists = WUY  } WUY = { every_owned_province = { cede_province = ROOT add_core = ROOT } }   }
+        if = { limit = { QU1 = { ai = yes } exists = QU1  } QU1 = { every_owned_province = { cede_province = ROOT add_core = ROOT } }   }
+		add_treasury = 2000
+	}
+}
+
+
+
+country_event = {
+	id = xy_songchao.12
+	title = "xy_sognchao.NAME12"
+	desc = "xy_songchao.DESC12"
+	picture = HAPPY_MONARCH_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+			tag = SNG        
+			NOT = { exists = NT1 }
+			has_country_flag = wudailsjs
+			NOT = { exists = HNH }
+			NOT = { exists = HS1 }
+			QQ1 = { is_neighbor_of = ROOT ai = yes }
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "xy_songchao.OPTA12"
+		QQ1 = {
+			every_owned_province = {
+				cede_province = ROOT 
+				add_core = ROOT add_local_autonomy = 100 
+			} 
+		}   
+	}
+	option = {
+		name = "xy_songchao.OPTB12"
+			trigger = {
+				NOT = { has_country_flag = zhaokuangyin } 
+			}
+			add_prestige = -20
+			every_owned_province = { add_local_autonomy = -25 }
+	}
+}
+
+
+country_event = {
+	id = xy_songchao.13
+	title = "xy_sognchao.NAME13"
+	desc = "xy_songchao.DESC13"
+	picture = PARLIAMENT_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+       tag = SNG        
+       has_ruler_flag = zhaokuangyin
+       NOT = {  has_country_flag = fushengzhuying }
+		has_country_flag = wudailsjs
+
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	option = {
+		name = "xy_songchao.OPTA13"
+   add_country_modifier = {
+					name = "sngshoucai"
+					duration = 36500
+				} 
+
+	}
+
+	
+}
+
+country_event = {
+	id = xy_songchao.14
+	title = "xy_sognchao.NAME14"
+	desc = "xy_songchao.DESC14"
+	picture = NORMAL_PEOPLE_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SNG        
+		has_ruler_flag = zhaokuangyin
+		NOT = {  has_country_flag = fushengzhuying }
+		has_country_flag = wudailsjs
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	option = {
+		name = "xy_songchao.OPTA14"
+		add_ruler_modifier = {
+			name = "sngfengzhuangku"
+			duration = -1
+		} 
+	}
+}
+
+
+country_event = {
+	id = xy_songchao.15
+	title = "xy_sognchao.NAME15"
+	desc = "xy_songchao.DESC15"
+	picture = STREET_SPEECH_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SNG        
+		has_ruler_flag = zhaokuangyin
+		NOT = {  has_country_flag = fushengzhuying }
+		has_country_flag = wudailsjs
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	option = {
+		name = "xy_songchao.OPTA15"
+		add_country_modifier = {
+			name = "sngfanfubai"
+			duration = 36500
+		} 
+	}
+}
+
+country_event = {
+	id = xy_songchao.16
+	title = "xy_sognchao.NAME16"
+	desc = "xy_songchao.DESC16"
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SNG        
+		NOT = {
+			has_ruler_flag = zhaokuangyin 
+		}
+		has_country_flag = fushengzhuying 
+		has_country_flag = wudailsjs
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_songchao.OPTA16"
+			add_country_modifier = {
+				name = "sngshibei"
+				duration = -1
+			} 
+	}
+}
+
+country_event = {
+	id = xy_songchao.17
+	title = "xy_sognchao.NAME17"
+	desc = "xy_songchao.DESC17"
+	picture = FLOOD_PIC_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SNG        
+		is_year = 1040
+		north_henan_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}	
+		west_shandong_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}	
+		shandong_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		shandong_south_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		
+		any_owned_province = { area = south_hebei_area owned_by = ROOT }
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	option = {
+		name = "xy_songchao.OPTA17"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 60
+				}
+			}
+		}
+            add_stability = -3
+	}
+        option = {
+		name = "xy_songchao.OPTB17"
+         random_list = {
+			1 = { add_stability_or_adm_power = yes }
+            99 = {  country_event = { id = xy_songchao.18 }  }
+		}
+
+	}
+}
+
+country_event = {
+	id = xy_songchao.18
+	title = "xy_sognchao.NAME18"
+	desc = "xy_songchao.DESC18"
+	picture = FLOOD_PIC_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "xy_songchao.OPTA18"
+		set_ruler_flag = yihuiheshibai
+		set_country_flag = sanyihuihe111
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = north_henan_area
+					area = west_shandong_area
+					area = shandong_area 
+					area = south_hebei_area
+					area = shandong_south_area
+				}
+			}
+			add_province_modifier = {
+				name = "sanyihuihe1"
+					duration = 36500  
+			}
+		}
+	}
+}
+
+country_event = {
+	id = xy_songchao.19
+	title = "xy_sognchao.NAME19"
+	desc = "xy_songchao.DESC19"
+	picture = FLOOD_PIC_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SNG        
+		is_year = 1040
+		NOT = { has_ruler_flag = yihuiheshibai  }
+		has_country_flag = sanyihuihe111
+		shandong_south_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}	
+		north_henan_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}	
+		west_shandong_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}	
+		shandong_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		any_owned_province = {
+			area = south_hebei_area
+			owned_by = ROOT 
+		}
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	option = {
+		name = "xy_songchao.OPTA19"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 60
+				}
+			} 
+		}
+           add_stability = -3
+	}
+        option = {
+		name = "xy_songchao.OPTB19"
+         random_list = { 1 = {    add_stability_or_adm_power = yes }
+                  99 = {  country_event = { id = xy_songchao.20 }  }
+
+	}
+
+	}
+}
+
+country_event = {
+	id = xy_songchao.20
+	title = "xy_sognchao.NAME20"
+	desc = "xy_songchao.DESC20"
+	picture = FLOOD_PIC_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "xy_songchao.OPTA20"
+		set_ruler_flag = yihuiheshibai
+		set_country_flag = sanyihuihe222
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = north_henan_area
+					area = west_shandong_area
+					area = shandong_area 
+					area = south_hebei_area
+					area = shandong_south_area
+				}
+			}
+			add_province_modifier = {
+				name = "sanyihuihe2"
+				duration = 36500  
+			}
+		}
+	}
+}
+
+country_event = {
+	id = xy_songchao.21
+	title = "xy_sognchao.NAME21"
+	desc = "xy_songchao.DESC21"
+	picture = FLOOD_PIC_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+       tag = SNG        
+    is_year = 1040
+ NOT = { has_ruler_flag = yihuiheshibai  }
+ has_country_flag = sanyihuihe222
+    north_henan_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}	
+	west_shandong_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+	}	
+	shandong_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+	}
+	shandong_south_area= {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+	}
+	any_owned_province = { area = south_hebei_area owned_by = ROOT }
+
+
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	option = {
+		name = "xy_songchao.OPTA21"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 60
+				}
+			}
+		}
+            add_stability = -3
+	}
+	option = {
+		name = "xy_songchao.OPTB21"
+		random_list = {
+			1 = {	add_stability_or_adm_power = yes }
+			99 = {
+				country_event = { id = xy_songchao.22 }  
+			}
+		}
+	}
+}
+
+country_event = {
+	id = xy_songchao.22
+	title = "xy_sognchao.NAME22"
+	desc = "xy_songchao.DESC22"
+	picture = FLOOD_PIC_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "xy_songchao.OPTA22"
+		set_global_flag = sanyihuihe
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = north_henan_area
+					area = west_shandong_area
+					area = shandong_area 
+					area = south_hebei_area
+					area = shandong_south_area
+				}
+			}
+			add_province_modifier = {
+				name = "sanyihuihe3"
+				duration = 36500  
+			}
+		}
+
+	}
+}
+
+country_event = {
+	id = xy_songchao.23
+	title = "xy_sognchao.NAME23"
+	desc = "xy_songchao.DESC23"
+	picture = BAD_ARMY_eventPicture
+	
+	major = yes
+		
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SNG
+		NOT = { is_year = 1125 }
+		check_variable = {
+			which = num_of_wenwuzhi
+			value = 60
+		}
+		exists = LIO
+		NOT = { exists = XIA }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					3223 = {
+						NOT = { owned_by = DN2 } 
+						OR = {
+							owned_by = SNG
+							owned_by = LIO
+						} 
+					}
+				}
+				cede_province = DN2 add_core = DN2  
+			}
+			if = {
+				limit = {
+					3192 = {
+						NOT = { owned_by = DN2 } 
+						OR = {
+							owned_by = SNG
+							owned_by = LIO
+						} 
+					}
+				}
+				cede_province = DN2 add_core = DN2  
+			}
+		}
+	}
+	option = {
+		name = "xy_songchao.OPTA23"
+		DN2 = {
+		define_ruler = {
+			name = "NgÁu¡è"
+
+			age = 22
+			adm = 5
+			dip = 6
+			mil = 5
+			fixed = yes			
+		}		
+		}
+  every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 3224
+					province_id = 698
+					province_id = 3191
+				}
+			}
+			cede_province = DN2  add_core = DN2  remove_core = ROOT 
+		}	
+		every_province = {
+limit = {
+area = ordos_area
+NOT = { owned_by = LIO }
+}
+cede_province = DN2  add_core = DN2
+		}
+		every_province = {
+limit = {
+area = gansu_area
+NOT = { owned_by = LIO }
+}
+  add_core = DN2
+		}
+		every_province = {
+limit = {
+area = west_gansu_area
+NOT = { owned_by = LIO }
+}
+  add_core = DN2
+		}
+ DN2 = {
+add_country_modifier = {
+			name = "dangxiangjueqi1"
+			duration = 7300
+			} 
+ }
+ if = { limit = { LIO = { ai = yes } }
+  LIO = { create_subject = {
+
+				subject_type = tributary_state
+	
+				subject = DN2
+
+			}
+			}
+ }
+ }
+
+	}
+
+country_event = {
+	id = xy_songchao.24
+	title = "xy_sognchao.NAME24"
+	desc = "xy_songchao.DESC24"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+	   NOT = { has_ruler_modifier = shuiwangjing }
+       tag = LIO   
+	   NOT = { has_global_flag = liaojinzhanyi }
+    NOT = { MIL = 3 }
+	any_owned_province = { culture = manchu  is_state = yes }
+	NOT = { ADM = 3 }
+	NOT = { check_variable = {
+				which = num_of_wenwuzhi
+				value = 40
+			} }
+      NOT = { is_year = 1200 }
+	}
+	mean_time_to_happen = {
+		months = 600
+                modifier = {
+			factor = 0.8
+			is_year = 1000
+		}
+		
+		modifier = {
+			factor = 0.8
+			is_year = 1050
+		}
+		
+		modifier = {
+			factor = 0.5
+			is_year = 1100
+		}
+                              modifier = {
+			factor = 0
+			is_year = 1120
+		}
+		
+	}
+	option = {
+		name = "xy_songchao.OPTA24"
+		set_global_flag = liaojinzhanyi
+      every_owned_province = { limit = { culture = manchu }  cede_province = GNN add_core = GNN  }
+	  GNN = {
+	  add_country_modifier = {
+			name = "nvzhenjueqi1"
+			duration = 7300
+			} 
+		define_ruler = {
+			name = "åRúò?ñ®öSb"
+
+			age = 47
+			adm = 4
+			dip = 6
+			mil = 6
+			fixed = yes			
+		}		
+		define_heir = {
+			name = "åRúò4T^NpN"
+			age = 40
+			adm = 3
+			dip = 3
+			mil = 6
+			fixed = yes	
+		}
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		 add_treasury = 3000
+		}
+		declare_war_with_cb = {
+			who = GNN
+			casus_belli = cb_imperial
+		}  
+
+	}
+}
+
+country_event = {
+	id = xy_songchao.25
+	title = "xy_sognchao.NAME25"
+	desc = "xy_songchao.DESC25"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = GNN
+		war_with = LIO
+		exists = SNG
+		has_global_flag = liaojinzhanyi
+		LIO = { 
+			is_neighbor_of = SNG
+			any_owned_province = {
+				OR = {
+					area = liaoning_area
+					area = hebei_area
+					area = hebei_west_area
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_songchao.OPTA25"
+		ai_chance = {
+			factor = 100
+		}
+      SNG = { country_event = { id = xy_songchao.26 } }
+
+	}
+    option = {
+		name = "xy_songchao.OPTB25"
+     add_prestige = 20
+  
+	}
+}
+
+country_event = {
+	id = xy_songchao.26
+	title = "xy_sognchao.NAME26"
+	desc = "xy_songchao.DESC26"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = "xy_songchao.OPTA26"
+      ai_chance = {
+			factor = 100
+		}
+		declare_war_with_cb = {
+			who = LIO
+			casus_belli = cb_imperial
+		}  
+	}
+    option = {
+		name = "xy_songchao.OPTB26"
+     add_prestige = -20
+
+	}
+}
+
+country_event = {
+	id = xy_songchao.27
+	title = "xy_sognchao.NAME27"
+	desc = "xy_songchao.DESC27"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	trigger = {
+	tag = LIO
+	war_with = GNN
+	has_global_flag = liaojinzhanyi
+		1816 = { NOT = { controlled_by = ROOT } }
+		726 = { NOT = { controlled_by = ROOT } }
+		3201 = { NOT = { controlled_by = ROOT } }
+		697 = { NOT = { controlled_by = ROOT } }
+		722 = { NOT = { controlled_by = ROOT } }
+		OR = {
+			NOT = {
+				war_score_against = {
+					who = GNN
+					value = -40
+				}
+			}
+			AND = {
+			war_with = SNG
+			NOT = {
+				war_score_against = {
+					who = SNG
+					value = -40
+				} 
+			}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_songchao.OPTA27"
+		 clr_global_flag = liaojinzhanyi
+	every_owned_province = { limit = { controlled_by = GNN } cede_province = GNN add_core = GNN  }
+	white_peace = GNN
+	if = {
+		 limit = {
+			OR = {
+				NOT = {
+					war_score_against = {
+						who = SNG
+						value = -20
+					}
+				} 
+				NOT = {
+					check_variable = {
+						which = num_of_wenwuzhi
+						value = 70
+					}
+				}
+			}
+			SNG = {
+				ai = no
+				war_with = LIO	
+			}   
+		}  
+		GNN = {
+			country_event = { id = xy_songchao.28 } 
+		}	
+	}
+		else = { GNN = { country_event = { id = xy_songchao.29 } }  }
+
+	}
+}
+
+country_event = {
+	id = xy_songchao.28
+	title = "xy_sognchao.NAME28"
+	desc = "xy_songchao.DESC28"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "xy_songchao.OPTA28"
+		LIO = {
+     every_owned_province = { limit = { controlled_by = SNG } cede_province = SNG add_core = SNG  }
+	 }
+	 white_peace = SNG
+
+	}
+   
+	
+}
+country_event = {
+	id = xy_songchao.29
+	title = "xy_sognchao.NAME29"
+	desc = "xy_songchao.DESC29"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "xy_songchao.OPTA29"
+		LIO = {
+			every_owned_province = {
+				limit = {
+					controlled_by = SNG 
+				}
+				cede_province = SNG add_core = SNG  
+			}
+			white_peace = SNG
+		}
+	}
+	option = {
+		name = "xy_songchao.OPTB29"
+		ai_chance = {
+			factor = 100
+		}
+		LIO = {
+			every_owned_province = {
+				limit = {
+					controlled_by = SNG 
+				}
+				cede_province = GNN
+				add_core = GNN  
+			}
+			white_peace = SNG
+		}
+		set_global_flag = songjinzhanyi
+		add_treasury = 3000
+		add_manpower = 50
+		add_war_exhaustion = -20
+		subtract_variable = {
+			which = num_of_wenwuzhi
+			value = -20
+		}
+		add_mil_power = 999
+		declare_war_with_cb = {
+			who = SNG
+			casus_belli = cb_imperial
+		}  
+	}
+}
+
+country_event = {
+	id = xy_songchao.30
+	title = "xy_sognchao.NAME30"
+	desc = "xy_songchao.DESC30"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	trigger = {
+		tag = LIO
+		war_with = GNN
+		has_global_flag = liaojinzhanyi
+		1816 = {
+			OR = {
+				controlled_by = ROOT
+				NOT = {
+					owned_by = GNN 
+				}
+				NOT = {
+					controlled_by = GNN 
+				} 				
+			} 
+		}
+		4877 = {
+			OR = {
+				controlled_by = ROOT
+				NOT = {
+					owned_by = GNN 
+				}
+				NOT = {
+					controlled_by = GNN 
+				} 				
+			} 
+		}
+		726 = {
+			OR = {
+				controlled_by = ROOT
+				NOT = {
+					owned_by = GNN 
+				}
+				NOT = {
+					controlled_by = GNN 
+				} 				
+			} 
+		}
+		3201 = {
+			OR = {
+				controlled_by = ROOT
+				NOT = {
+					owned_by = GNN 
+				}
+				NOT = {
+					controlled_by = GNN 
+				} 				
+			} 
+		}		
+		war_score_against = {
+			who = GNN
+			value = 40
+		} 
+		GNN = {
+			capital_scope = {
+				controlled_by = ROOT 
+			}
+		}
+		OR = {
+			NOT = { war_with = SNG }
+			war_score_against = {
+				who = SNG
+				value = 0
+			} 
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_songchao.OPTA30"
+		clr_global_flag = liaojinzhanyi
+		white_peace = SNG
+		GNN = {
+			every_owned_province = {
+				cede_province = LIO add_core = LIO 
+			} 
+		}
+	}
+}
+
+country_event = {
+	id = xy_songchao.31
+	title = "xy_sognchao.NAME31"
+	desc = "xy_songchao.DESC31"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+      tag = LIO
+	  is_year = 966
+	  has_ruler_modifier = shuiwangjing
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "xy_songchao.OPTA25"
+        kill_ruler = yes
+		define_ruler = {
+			name = "6wãV2ç"
+            #birth_date = 948.9.1
+			adm = 4
+			dip = 3
+			mil = 3
+			fixed = yes			
+		}		
+
+	}
+
+}
+
+country_event = {
+	id = xy_songchao.32
+	title = "xy_sognchao.NAME32"
+	desc = "xy_songchao.DESC32"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	trigger = {
+      tag = SNG 
+	  has_global_flag = songjinzhanyi
+	  war_with = GNN
+	  war_score_against = {
+				who = GNN
+				value = 20
+			}  
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_songchao.OPTA32"
+		every_province = { 
+			limit = {
+				owned_by = GNN
+				OR = {
+					region = north_china_region
+					area = liaoning_area
+					area = liaoning_east_area
+				} 
+			}
+			cede_province = SNG add_core = SNG
+		}
+		GNN = {
+			add_prestige = -50
+			add_stability = -3
+ 		}
+		white_peace = GNN
+		clr_global_flag = songjinzhanyi
+	}
+}
+
+country_event = {
+	id = xy_songchao.33
+	title = "xy_sognchao.NAME33"
+	desc = "xy_songchao.DESC33"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	trigger = {
+		tag = GNN
+		has_global_flag = songjinzhanyi
+		war_with = SNG
+		war_score_against = {
+			who = SNG
+			value = 20
+		}  
+		688 = { owned_by = SNG controlled_by = GNN }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_songchao.OPTA33"
+			  add_country_modifier = {
+			name = "nvzhenjueqi1"
+			duration = 7300
+			} 
+		every_province = { 
+			limit = {
+				owned_by = SNG
+				OR = {
+					AND = { 
+						region = north_china_region
+					}
+					area = liaoning_area
+					area = liaoning_east_area
+				} 
+			}
+			cede_province = GNN add_core = GNN
+		}
+        clr_global_flag = songjinzhanyi
+		white_peace = SNG
+		declare_war_with_cb = {
+			who = SNG
+			casus_belli = cb_imperial
+		}  
+		set_global_flag = songjinzhanyi222
+		set_global_flag = songjinduizhi
+		if = {
+			limit = {
+				owns = 1816 
+			}
+			set_capital = 1816  
+		}
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		 add_treasury = 3000
+		SNG = {
+			kill_heir = yes
+            kill_ruler = yes	
+			country_event = { id = xy_songchao.34 }
+		}
+	}	
+}
+
+country_event = {
+	id = xy_songchao.34
+	title = "xy_sognchao.NAME34"
+	desc = "xy_songchao.DESC34"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+
+	option = {
+		name = "xy_songchao.OPTA34"
+		set_capital = 684
+		if = {
+			limit = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 50
+				} 
+			}
+			set_variable = {
+				which = num_of_wenwuzhi
+				value = 41
+			}   
+		}
+		define_general = {
+			name = "≥Sﬁò"
+			fire = 10
+			shock = 10
+			manuever = 7
+			siege = 6
+		}
+		define_general = {
+			name = "ÈóN‡V"
+			fire = 6
+			shock = 5
+			manuever = 5
+			siege = 2
+		}
+		define_general = {
+			name = ".V O"
+			fire = 3
+			shock = 5
+			manuever = 4
+			siege = 1
+		}
+		define_general = {
+			name = "RIQN"
+			fire = 3
+			shock = 3
+			manuever = 6
+			siege = 1
+		}
+		define_ruler = {
+			name = "uçÑg"
+
+			age = 20
+			adm = 3
+			dip = 3
+			mil = 3
+			fixed = yes			
+		}
+		
+	}	
+}
+
+country_event = {
+	id = xy_songchao.35
+	title = "xy_sognchao.NAME35"
+	desc = "xy_songchao.DESC35"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	trigger = {
+      tag = GNN
+	  has_global_flag = songjinzhanyi222
+	  war_with = SNG
+	NOT = {  war_score_against = {
+				who = SNG
+				value = -30
+			}   }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_songchao.OPTA35"
+		SNG = { country_event = { id = xy_songchao.36 } }
+	}	
+	option = {
+		name = "xy_songchao.OPTB35"
+		trigger = { ai = no }
+		clr_global_flag = songjinzhanyi222
+	}	
+}
+country_event = {
+	id = xy_songchao.36
+	title = "xy_sognchao.NAME36"
+	desc = "xy_songchao.DESC36"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "xy_songchao.OPTA36"
+		SNG = { country_event = { id = xy_songchao.37 } }
+	}	
+	option = {
+		name = "xy_songchao.OPTB36"
+		trigger = { ai = no }
+		clr_global_flag = songjinzhanyi222
+	}	
+}
+
+country_event = {
+	id = xy_songchao.37
+	title = "xy_sognchao.NAME37"
+	desc = "xy_songchao.DESC37"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "xy_songchao.OPTA37"
+		white_peace = GNN
+		kill_leader = { type = "≥Sﬁò" }
+		add_treasury = -5000
+		set_emperor_of_china = GNN
+		GNN = { add_treasury = 5000 }
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 3232
+					province_id = 3231
+					province_id = 2463
+					province_id = 4893
+					province_id = 4888
+					province_id = 699
+					province_id = 3229
+					province_id = 4865
+					province_id = 4862
+					province_id = 4863
+					province_id = 1836
+					province_id = 687
+
+				}
+			}
+			cede_province = GNN add_core = GNN
+		}	
+		GNN = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						
+						province_id = 4892
+						province_id = 4833
+						province_id = 2464
+						province_id = 4832
+						province_id = 679
+						province_id = 689
+						province_id = 4836
+						province_id = 3174
+	
+					}
+				}
+				cede_province = SNG add_core = SNG remove_core = GNN
+			}
+		}
+		clr_global_flag = songjinzhanyi222
+	}	
+	
+}
+
+country_event = {
+	id = xy_songchao.38
+	title = "xy_sognchao.NAME38"
+	desc = "xy_songchao.DESC38"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	trigger = {
+		tag = GNN
+		has_global_flag = songjinzhanyi222
+		war_with = SNG
+		war_score_against = {
+			who = SNG
+			value = 40
+		}   
+		1821 = {
+			OR = {
+				controlled_by = ROOT 
+				NOT = {
+					owned_by = SNG 
+				} 
+				NOT = {
+					controlled_by = SNG 
+				} 				
+			} 
+		}
+		684 = {
+			OR = {
+				controlled_by = ROOT 
+				NOT = {
+					owned_by = SNG 
+				} 
+				NOT = {
+					controlled_by = SNG 
+				} 				
+			} 
+		}
+
+		679 = {
+			OR = {
+				controlled_by = ROOT 
+				NOT = {
+					owned_by = SNG 
+				} 
+				NOT = {
+					controlled_by = SNG 
+				} 				
+			} 
+		}
+
+		667 = {
+			OR = {
+				controlled_by = ROOT 
+				NOT = {
+					owned_by = SNG 
+				} 
+				NOT = {
+					controlled_by = SNG 
+				} 				
+			} 
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_songchao.OPTA38"
+		set_emperor_of_china = GNN
+		SNG = {
+			every_owned_province = {
+					cede_province = GNN 
+					add_core = GNN   
+			}  
+		}
+		clr_global_flag = songjinzhanyi222
+	}	
+	
+}
+
+country_event = {
+	id = xy_songchao.39
+	title = "xy_sognchao.NAME39"
+	desc = "xy_songchao.DESC39"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "xy_songchao.OPTA39"
+		add_government_reform = early_gov_reform_5c
+		add_government_reform = early_gov_reform_6c
+		add_stability = -2
+		add_adm_power = 200
+		add_dip_power = 200
+		add_mil_power = 200
+		add_treasury = 800
+	}	
+}

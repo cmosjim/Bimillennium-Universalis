@@ -1,0 +1,33 @@
+########################
+#TO1 Flavor Events
+########################
+#rab_TO1_events.1# when ZHA AL1 LS1 DO2 SP1 LDK GUG NW1 TS1 occupy tibet_region all provinces
+#2018.12.30 fit to 1.28
+namespace = rab_TO1_events
+
+country_event = {
+	id = rab_TO1_events.1
+	title = "rab_TO1_events.NAME1"
+	desc = "rab_TO1_events.DESC1"
+	picture = RELIGION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_TO1_events.OPTA1"
+		change_tag = TO1
+		swap_free_idea_group = yes
+		swap_non_generic_missions = yes
+		if = {
+			limit = { NOT = { government_rank = 3 } }
+			set_government_rank = 3
+		}
+		add_prestige = 25		
+		add_country_modifier = {
+			name = "md_recovery_TO1"
+			duration = 7200
+		}
+		set_country_flag = formed_tibet_flag
+	}			
+}
+

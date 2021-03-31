@@ -1,0 +1,2545 @@
+#2021-1-1
+#rab_talk_queen_plus.3 => consort will tell you ”NãNASWárMO„vOUL˜
+namespace = rab_talk_queen_plus
+
+country_event = {
+	id = rab_talk_queen_plus.1
+	title = "rab_talk_queen_plus.NAME1"
+	
+	desc = {
+		trigger = {
+			has_reform = celestial_empire
+		}	
+		desc = "rab_talk_queen_plus.DESC1.em"		
+	}
+	desc = {
+		trigger = {
+			NOT = { has_reform = celestial_empire }
+		}	
+		desc = "rab_talk_queen_plus.DESC1.nem"		
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic1
+		}
+		picture = CHOICES_QUEENS_1_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic2
+		}
+		picture = CHOICES_QUEENS_2_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic3
+		}
+		picture = CHOICES_QUEENS_3_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic4
+		}
+		picture = CHOICES_QUEENS_4_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic5
+		}
+		picture = CHOICES_QUEENS_5_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic6
+		}
+		picture = CHOICES_QUEENS_6_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic7
+		}
+		picture = CHOICES_QUEENS_7_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic8
+		}
+		picture = CHOICES_QUEENS_8_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic9
+		}
+		picture = CHOICES_QUEENS_9_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic10
+		}
+		picture = CHOICES_QUEENS_10_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic11
+		}
+		picture = CHOICES_QUEENS_11_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic12
+		}
+		picture = CHOICES_QUEENS_12_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic13
+		}
+		picture = CHOICES_QUEENS_13_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic14
+		}
+		picture = CHOICES_QUEENS_14_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic15
+		}
+		picture = CHOICES_QUEENS_15_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic16
+		}
+		picture = CHOICES_QUEENS_16_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic17
+		}
+		picture = CHOICES_QUEENS_17_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic18
+		}
+		picture = CHOICES_QUEENS_18_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic19
+		}
+		picture = CHOICES_QUEENS_19_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic20
+		}
+		picture = CHOICES_QUEENS_20_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic21
+		}
+		picture = CHOICES_QUEENS_21_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic22
+		}
+		picture = CHOICES_QUEENS_22_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic23
+		}
+		picture = CHOICES_QUEENS_23_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic24
+		}
+		picture = CHOICES_QUEENS_24_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic25
+		}
+		picture = CHOICES_QUEENS_25_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic26
+		}
+		picture = CHOICES_QUEENS_26_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic27
+		}
+		picture = CHOICES_QUEENS_27_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic28
+		}
+		picture = CHOICES_QUEENS_28_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic29
+		}
+		picture = CHOICES_QUEENS_29_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic30
+		}
+		picture = CHOICES_QUEENS_30_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic31
+		}
+		picture = CHOICES_QUEENS_31_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic32
+		}
+		picture = CHOICES_QUEENS_32_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic33
+		}
+		picture = CHOICES_QUEENS_33_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic34
+		}
+		picture = CHOICES_QUEENS_34_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic35
+		}
+		picture = CHOICES_QUEENS_35_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic36
+		}
+		picture = CHOICES_QUEENS_36_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic37
+		}
+		picture = CHOICES_QUEENS_37_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic38
+		}
+		picture = CHOICES_QUEENS_38_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic39
+		}
+		picture = CHOICES_QUEENS_39_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic40
+		}
+		picture = CHOICES_QUEENS_40_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic41
+		}
+		picture = CHOICES_QUEENS_41_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic42
+		}
+		picture = CHOICES_QUEENS_42_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic43
+		}
+		picture = CHOICES_QUEENS_43_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic44
+		}
+		picture = CHOICES_QUEENS_44_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic45
+		}
+		picture = CHOICES_QUEENS_45_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic46
+		}
+		picture = CHOICES_QUEENS_46_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic47
+		}
+		picture = CHOICES_QUEENS_47_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic48
+		}
+		picture = CHOICES_QUEENS_48_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic49
+		}
+		picture = CHOICES_QUEENS_49_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic50
+		}
+		picture = CHOICES_QUEENS_50_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic51
+		}
+		picture = CHOICES_QUEENS_51_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic52
+		}
+		picture = CHOICES_QUEENS_52_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic53
+		}
+		picture = CHOICES_QUEENS_53_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic54
+		}
+		picture = CHOICES_QUEENS_54_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic55
+		}
+		picture = CHOICES_QUEENS_55_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic56
+		}
+		picture = CHOICES_QUEENS_56_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic57
+		}
+		picture = CHOICES_QUEENS_57_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic58
+		}
+		picture = CHOICES_QUEENS_58_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic59
+		}
+		picture = CHOICES_QUEENS_59_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic60
+		}
+		picture = CHOICES_QUEENS_60_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic61
+		}
+		picture = CHOICES_QUEENS_61_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic62
+		}
+		picture = CHOICES_QUEENS_62_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic63
+		}
+		picture = CHOICES_QUEENS_63_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic64
+		}
+		picture = CHOICES_QUEENS_64_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic65
+		}
+		picture = CHOICES_QUEENS_65_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic66
+		}
+		picture = CHOICES_QUEENS_66_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic67
+		}
+		picture = CHOICES_QUEENS_67_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic68
+		}
+		picture = CHOICES_QUEENS_68_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic69
+		}
+		picture = CHOICES_QUEENS_69_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic70
+		}
+		picture = CHOICES_QUEENS_70_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic71
+		}
+		picture = CHOICES_QUEENS_71_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic72
+		}
+		picture = CHOICES_QUEENS_72_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic73
+		}
+		picture = CHOICES_QUEENS_73_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic74
+		}
+		picture = CHOICES_QUEENS_74_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic75
+		}
+		picture = CHOICES_QUEENS_75_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic76
+		}
+		picture = CHOICES_QUEENS_76_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic77
+		}
+		picture = CHOICES_QUEENS_77_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic78
+		}
+		picture = CHOICES_QUEENS_78_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic79
+		}
+		picture = CHOICES_QUEENS_79_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic80
+		}
+		picture = CHOICES_QUEENS_80_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic81
+		}
+		picture = CHOICES_QUEENS_81_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic82
+		}
+		picture = CHOICES_QUEENS_82_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic83
+		}
+		picture = CHOICES_QUEENS_83_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic84
+		}
+		picture = CHOICES_QUEENS_84_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic85
+		}
+		picture = CHOICES_QUEENS_85_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic86
+		}
+		picture = CHOICES_QUEENS_86_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic87
+		}
+		picture = CHOICES_QUEENS_87_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic88
+		}
+		picture = CHOICES_QUEENS_88_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic89
+		}
+		picture = CHOICES_QUEENS_89_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic90
+		}
+		picture = CHOICES_QUEENS_90_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic91
+		}
+		picture = CHOICES_QUEENS_91_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic92
+		}
+		picture = CHOICES_QUEENS_92_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic93
+		}
+		picture = CHOICES_QUEENS_93_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic94
+		}
+		picture = CHOICES_QUEENS_94_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic95
+		}
+		picture = CHOICES_QUEENS_95_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic96
+		}
+		picture = CHOICES_QUEENS_96_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic97
+		}
+		picture = CHOICES_QUEENS_97_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic98
+		}
+		picture = CHOICES_QUEENS_98_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic99
+		}
+		picture = CHOICES_QUEENS_99_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic100
+		}
+		picture = CHOICES_QUEENS_100_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic101
+		}
+		picture = CHOICES_QUEENS_101_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic102
+		}
+		picture = CHOICES_QUEENS_102_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic103
+		}
+		picture = CHOICES_QUEENS_103_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic104
+		}
+		picture = CHOICES_QUEENS_104_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic105
+		}
+		picture = CHOICES_QUEENS_105_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic106
+		}
+		picture = CHOICES_QUEENS_106_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic107
+		}
+		picture = CHOICES_QUEENS_107_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic108
+		}
+		picture = CHOICES_QUEENS_108_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic109
+		}
+		picture = CHOICES_QUEENS_109_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic110
+		}
+		picture = CHOICES_QUEENS_110_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic111
+		}
+		picture = CHOICES_QUEENS_111_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic112
+		}
+		picture = CHOICES_QUEENS_112_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic113
+		}
+		picture = CHOICES_QUEENS_113_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic114
+		}
+		picture = CHOICES_QUEENS_114_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic115
+		}
+		picture = CHOICES_QUEENS_115_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic116
+		}
+		picture = CHOICES_QUEENS_116_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic117
+		}
+		picture = CHOICES_QUEENS_117_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic118
+		}
+		picture = CHOICES_QUEENS_118_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic119
+		}
+		picture = CHOICES_QUEENS_119_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic120
+		}
+		picture = CHOICES_QUEENS_120_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic121
+		}
+		picture = CHOICES_QUEENS_121_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic122
+		}
+		picture = CHOICES_QUEENS_122_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic123
+		}
+		picture = CHOICES_QUEENS_123_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic124
+		}
+		picture = CHOICES_QUEENS_124_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic125
+		}
+		picture = CHOICES_QUEENS_125_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic126
+		}
+		picture = CHOICES_QUEENS_126_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic127
+		}
+		picture = CHOICES_QUEENS_127_eventPicture 
+	}		
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic200
+		}
+		picture = CHOICES_QUEENS_200_eventPicture 
+	}   
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic201
+		}
+		picture = CHOICES_QUEENS_201_eventPicture 
+	}
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic202
+		}
+		picture = CHOICES_QUEENS_202_eventPicture 
+	}	
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic203
+		}
+		picture = CHOICES_QUEENS_203_eventPicture 
+	}
+	
+	fire_only_once = yes
+	
+	trigger = {
+		already_define_consort_type = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}	
+	
+	option = {
+		name = "rab_talk_queen_plus.OPTA1"
+			
+	}
+}	
+
+###########################################################
+#
+# b¥crab_talk_queen.601 set_country_flag = flg_liuxiu_invest
+#
+###########################################################
+
+country_event = {
+	id = rab_talk_queen_plus.2
+	title = "rab_talk_queen_plus.NAME2"
+	
+	desc = {
+		trigger = {
+			has_reform = celestial_empire
+		}	
+		desc = "rab_talk_queen_plus.DESC2.em"		
+	}
+	desc = {
+		trigger = {
+			NOT = { has_reform = celestial_empire }
+		}	
+		desc = "rab_talk_queen_plus.DESC2.nem"		
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic1
+		}
+		picture = CHOICES_QUEENS_1_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic2
+		}
+		picture = CHOICES_QUEENS_2_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic3
+		}
+		picture = CHOICES_QUEENS_3_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic4
+		}
+		picture = CHOICES_QUEENS_4_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic5
+		}
+		picture = CHOICES_QUEENS_5_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic6
+		}
+		picture = CHOICES_QUEENS_6_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic7
+		}
+		picture = CHOICES_QUEENS_7_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic8
+		}
+		picture = CHOICES_QUEENS_8_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic9
+		}
+		picture = CHOICES_QUEENS_9_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic10
+		}
+		picture = CHOICES_QUEENS_10_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic11
+		}
+		picture = CHOICES_QUEENS_11_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic12
+		}
+		picture = CHOICES_QUEENS_12_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic13
+		}
+		picture = CHOICES_QUEENS_13_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic14
+		}
+		picture = CHOICES_QUEENS_14_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic15
+		}
+		picture = CHOICES_QUEENS_15_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic16
+		}
+		picture = CHOICES_QUEENS_16_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic17
+		}
+		picture = CHOICES_QUEENS_17_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic18
+		}
+		picture = CHOICES_QUEENS_18_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic19
+		}
+		picture = CHOICES_QUEENS_19_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic20
+		}
+		picture = CHOICES_QUEENS_20_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic21
+		}
+		picture = CHOICES_QUEENS_21_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic22
+		}
+		picture = CHOICES_QUEENS_22_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic23
+		}
+		picture = CHOICES_QUEENS_23_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic24
+		}
+		picture = CHOICES_QUEENS_24_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic25
+		}
+		picture = CHOICES_QUEENS_25_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic26
+		}
+		picture = CHOICES_QUEENS_26_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic27
+		}
+		picture = CHOICES_QUEENS_27_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic28
+		}
+		picture = CHOICES_QUEENS_28_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic29
+		}
+		picture = CHOICES_QUEENS_29_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic30
+		}
+		picture = CHOICES_QUEENS_30_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic31
+		}
+		picture = CHOICES_QUEENS_31_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic32
+		}
+		picture = CHOICES_QUEENS_32_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic33
+		}
+		picture = CHOICES_QUEENS_33_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic34
+		}
+		picture = CHOICES_QUEENS_34_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic35
+		}
+		picture = CHOICES_QUEENS_35_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic36
+		}
+		picture = CHOICES_QUEENS_36_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic37
+		}
+		picture = CHOICES_QUEENS_37_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic38
+		}
+		picture = CHOICES_QUEENS_38_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic39
+		}
+		picture = CHOICES_QUEENS_39_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic40
+		}
+		picture = CHOICES_QUEENS_40_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic41
+		}
+		picture = CHOICES_QUEENS_41_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic42
+		}
+		picture = CHOICES_QUEENS_42_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic43
+		}
+		picture = CHOICES_QUEENS_43_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic44
+		}
+		picture = CHOICES_QUEENS_44_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic45
+		}
+		picture = CHOICES_QUEENS_45_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic46
+		}
+		picture = CHOICES_QUEENS_46_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic47
+		}
+		picture = CHOICES_QUEENS_47_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic48
+		}
+		picture = CHOICES_QUEENS_48_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic49
+		}
+		picture = CHOICES_QUEENS_49_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic50
+		}
+		picture = CHOICES_QUEENS_50_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic51
+		}
+		picture = CHOICES_QUEENS_51_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic52
+		}
+		picture = CHOICES_QUEENS_52_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic53
+		}
+		picture = CHOICES_QUEENS_53_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic54
+		}
+		picture = CHOICES_QUEENS_54_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic55
+		}
+		picture = CHOICES_QUEENS_55_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic56
+		}
+		picture = CHOICES_QUEENS_56_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic57
+		}
+		picture = CHOICES_QUEENS_57_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic58
+		}
+		picture = CHOICES_QUEENS_58_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic59
+		}
+		picture = CHOICES_QUEENS_59_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic60
+		}
+		picture = CHOICES_QUEENS_60_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic61
+		}
+		picture = CHOICES_QUEENS_61_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic62
+		}
+		picture = CHOICES_QUEENS_62_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic63
+		}
+		picture = CHOICES_QUEENS_63_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic64
+		}
+		picture = CHOICES_QUEENS_64_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic65
+		}
+		picture = CHOICES_QUEENS_65_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic66
+		}
+		picture = CHOICES_QUEENS_66_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic67
+		}
+		picture = CHOICES_QUEENS_67_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic68
+		}
+		picture = CHOICES_QUEENS_68_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic69
+		}
+		picture = CHOICES_QUEENS_69_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic70
+		}
+		picture = CHOICES_QUEENS_70_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic71
+		}
+		picture = CHOICES_QUEENS_71_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic72
+		}
+		picture = CHOICES_QUEENS_72_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic73
+		}
+		picture = CHOICES_QUEENS_73_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic74
+		}
+		picture = CHOICES_QUEENS_74_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic75
+		}
+		picture = CHOICES_QUEENS_75_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic76
+		}
+		picture = CHOICES_QUEENS_76_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic77
+		}
+		picture = CHOICES_QUEENS_77_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic78
+		}
+		picture = CHOICES_QUEENS_78_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic79
+		}
+		picture = CHOICES_QUEENS_79_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic80
+		}
+		picture = CHOICES_QUEENS_80_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic81
+		}
+		picture = CHOICES_QUEENS_81_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic82
+		}
+		picture = CHOICES_QUEENS_82_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic83
+		}
+		picture = CHOICES_QUEENS_83_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic84
+		}
+		picture = CHOICES_QUEENS_84_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic85
+		}
+		picture = CHOICES_QUEENS_85_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic86
+		}
+		picture = CHOICES_QUEENS_86_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic87
+		}
+		picture = CHOICES_QUEENS_87_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic88
+		}
+		picture = CHOICES_QUEENS_88_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic89
+		}
+		picture = CHOICES_QUEENS_89_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic90
+		}
+		picture = CHOICES_QUEENS_90_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic91
+		}
+		picture = CHOICES_QUEENS_91_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic92
+		}
+		picture = CHOICES_QUEENS_92_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic93
+		}
+		picture = CHOICES_QUEENS_93_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic94
+		}
+		picture = CHOICES_QUEENS_94_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic95
+		}
+		picture = CHOICES_QUEENS_95_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic96
+		}
+		picture = CHOICES_QUEENS_96_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic97
+		}
+		picture = CHOICES_QUEENS_97_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic98
+		}
+		picture = CHOICES_QUEENS_98_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic99
+		}
+		picture = CHOICES_QUEENS_99_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic100
+		}
+		picture = CHOICES_QUEENS_100_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic101
+		}
+		picture = CHOICES_QUEENS_101_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic102
+		}
+		picture = CHOICES_QUEENS_102_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic103
+		}
+		picture = CHOICES_QUEENS_103_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic104
+		}
+		picture = CHOICES_QUEENS_104_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic105
+		}
+		picture = CHOICES_QUEENS_105_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic106
+		}
+		picture = CHOICES_QUEENS_106_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic107
+		}
+		picture = CHOICES_QUEENS_107_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic108
+		}
+		picture = CHOICES_QUEENS_108_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic109
+		}
+		picture = CHOICES_QUEENS_109_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic110
+		}
+		picture = CHOICES_QUEENS_110_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic111
+		}
+		picture = CHOICES_QUEENS_111_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic112
+		}
+		picture = CHOICES_QUEENS_112_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic113
+		}
+		picture = CHOICES_QUEENS_113_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic114
+		}
+		picture = CHOICES_QUEENS_114_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic115
+		}
+		picture = CHOICES_QUEENS_115_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic116
+		}
+		picture = CHOICES_QUEENS_116_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic117
+		}
+		picture = CHOICES_QUEENS_117_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic118
+		}
+		picture = CHOICES_QUEENS_118_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic119
+		}
+		picture = CHOICES_QUEENS_119_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic120
+		}
+		picture = CHOICES_QUEENS_120_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic121
+		}
+		picture = CHOICES_QUEENS_121_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic122
+		}
+		picture = CHOICES_QUEENS_122_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic123
+		}
+		picture = CHOICES_QUEENS_123_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic124
+		}
+		picture = CHOICES_QUEENS_124_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic125
+		}
+		picture = CHOICES_QUEENS_125_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic126
+		}
+		picture = CHOICES_QUEENS_126_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic127
+		}
+		picture = CHOICES_QUEENS_127_eventPicture 
+	}		
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic200
+		}
+		picture = CHOICES_QUEENS_200_eventPicture 
+	}   
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic201
+		}
+		picture = CHOICES_QUEENS_201_eventPicture 
+	}
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic202
+		}
+		picture = CHOICES_QUEENS_202_eventPicture 
+	}	
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic203
+		}
+		picture = CHOICES_QUEENS_203_eventPicture 
+	}
+	
+	trigger = {
+		has_country_flag = flg_liuxiu_invest
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}	
+	
+	immediate = {
+		clr_country_flag = flg_liuxiu_invest
+		set_country_flag = flg_liuxiu_invest_a
+	}
+	
+	option = {
+		name = "rab_talk_queen_plus.OPTA2"
+		
+		if = {
+			limit = {
+				exists = HND
+				HND = {
+					has_ruler = "RÀy"
+				}
+			}
+			reverse_add_opinion = {
+				who = HND
+				modifier = opinion_good_friend
+			}
+			random_owned_province ={
+				cede_province = HND
+				add_core = HND
+			}			
+		}
+		if = {
+			limit = {
+				exists = LX2
+				LX2 = {
+					has_ruler = "RÀy"
+				}
+			}
+			reverse_add_opinion = {
+				who = LX2
+				modifier = opinion_good_friend
+			}	
+			random_owned_province ={
+				cede_province = LX2
+				add_core = LX2
+			}
+		}
+	}
+	option = {
+		name = "rab_talk_queen_plus.OPTB2"
+		clr_country_flag = flg_liuxiu_invest_a
+	}		
+}	
+
+##########################################################
+		#Ðc’‘”NãNASWrRÚd?ekárMO„vïSýw'`
+
+##########################################################
+country_event = {
+	id = rab_talk_queen_plus.3
+	title = "rab_talk_queen_plus.NAME3"
+	
+	desc = {
+		trigger = {
+			has_reform = celestial_empire
+		}	
+		desc = "rab_talk_queen_plus.DESC3.em"		
+	}
+	desc = {
+		trigger = {
+			NOT = { has_reform = celestial_empire }
+		}	
+		desc = "rab_talk_queen_plus.DESC3.nem"		
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic1
+		}
+		picture = CHOICES_QUEENS_1_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic2
+		}
+		picture = CHOICES_QUEENS_2_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic3
+		}
+		picture = CHOICES_QUEENS_3_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic4
+		}
+		picture = CHOICES_QUEENS_4_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic5
+		}
+		picture = CHOICES_QUEENS_5_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic6
+		}
+		picture = CHOICES_QUEENS_6_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic7
+		}
+		picture = CHOICES_QUEENS_7_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic8
+		}
+		picture = CHOICES_QUEENS_8_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic9
+		}
+		picture = CHOICES_QUEENS_9_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic10
+		}
+		picture = CHOICES_QUEENS_10_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic11
+		}
+		picture = CHOICES_QUEENS_11_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic12
+		}
+		picture = CHOICES_QUEENS_12_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic13
+		}
+		picture = CHOICES_QUEENS_13_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic14
+		}
+		picture = CHOICES_QUEENS_14_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic15
+		}
+		picture = CHOICES_QUEENS_15_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic16
+		}
+		picture = CHOICES_QUEENS_16_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic17
+		}
+		picture = CHOICES_QUEENS_17_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic18
+		}
+		picture = CHOICES_QUEENS_18_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic19
+		}
+		picture = CHOICES_QUEENS_19_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic20
+		}
+		picture = CHOICES_QUEENS_20_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic21
+		}
+		picture = CHOICES_QUEENS_21_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic22
+		}
+		picture = CHOICES_QUEENS_22_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic23
+		}
+		picture = CHOICES_QUEENS_23_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic24
+		}
+		picture = CHOICES_QUEENS_24_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic25
+		}
+		picture = CHOICES_QUEENS_25_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic26
+		}
+		picture = CHOICES_QUEENS_26_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic27
+		}
+		picture = CHOICES_QUEENS_27_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic28
+		}
+		picture = CHOICES_QUEENS_28_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic29
+		}
+		picture = CHOICES_QUEENS_29_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic30
+		}
+		picture = CHOICES_QUEENS_30_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic31
+		}
+		picture = CHOICES_QUEENS_31_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic32
+		}
+		picture = CHOICES_QUEENS_32_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic33
+		}
+		picture = CHOICES_QUEENS_33_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic34
+		}
+		picture = CHOICES_QUEENS_34_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic35
+		}
+		picture = CHOICES_QUEENS_35_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic36
+		}
+		picture = CHOICES_QUEENS_36_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic37
+		}
+		picture = CHOICES_QUEENS_37_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic38
+		}
+		picture = CHOICES_QUEENS_38_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic39
+		}
+		picture = CHOICES_QUEENS_39_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic40
+		}
+		picture = CHOICES_QUEENS_40_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic41
+		}
+		picture = CHOICES_QUEENS_41_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic42
+		}
+		picture = CHOICES_QUEENS_42_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic43
+		}
+		picture = CHOICES_QUEENS_43_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic44
+		}
+		picture = CHOICES_QUEENS_44_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic45
+		}
+		picture = CHOICES_QUEENS_45_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic46
+		}
+		picture = CHOICES_QUEENS_46_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic47
+		}
+		picture = CHOICES_QUEENS_47_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic48
+		}
+		picture = CHOICES_QUEENS_48_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic49
+		}
+		picture = CHOICES_QUEENS_49_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic50
+		}
+		picture = CHOICES_QUEENS_50_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic51
+		}
+		picture = CHOICES_QUEENS_51_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic52
+		}
+		picture = CHOICES_QUEENS_52_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic53
+		}
+		picture = CHOICES_QUEENS_53_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic54
+		}
+		picture = CHOICES_QUEENS_54_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic55
+		}
+		picture = CHOICES_QUEENS_55_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic56
+		}
+		picture = CHOICES_QUEENS_56_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic57
+		}
+		picture = CHOICES_QUEENS_57_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic58
+		}
+		picture = CHOICES_QUEENS_58_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic59
+		}
+		picture = CHOICES_QUEENS_59_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic60
+		}
+		picture = CHOICES_QUEENS_60_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic61
+		}
+		picture = CHOICES_QUEENS_61_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic62
+		}
+		picture = CHOICES_QUEENS_62_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic63
+		}
+		picture = CHOICES_QUEENS_63_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic64
+		}
+		picture = CHOICES_QUEENS_64_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic65
+		}
+		picture = CHOICES_QUEENS_65_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic66
+		}
+		picture = CHOICES_QUEENS_66_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic67
+		}
+		picture = CHOICES_QUEENS_67_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic68
+		}
+		picture = CHOICES_QUEENS_68_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic69
+		}
+		picture = CHOICES_QUEENS_69_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic70
+		}
+		picture = CHOICES_QUEENS_70_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic71
+		}
+		picture = CHOICES_QUEENS_71_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic72
+		}
+		picture = CHOICES_QUEENS_72_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic73
+		}
+		picture = CHOICES_QUEENS_73_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic74
+		}
+		picture = CHOICES_QUEENS_74_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic75
+		}
+		picture = CHOICES_QUEENS_75_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic76
+		}
+		picture = CHOICES_QUEENS_76_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic77
+		}
+		picture = CHOICES_QUEENS_77_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic78
+		}
+		picture = CHOICES_QUEENS_78_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic79
+		}
+		picture = CHOICES_QUEENS_79_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic80
+		}
+		picture = CHOICES_QUEENS_80_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic81
+		}
+		picture = CHOICES_QUEENS_81_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic82
+		}
+		picture = CHOICES_QUEENS_82_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic83
+		}
+		picture = CHOICES_QUEENS_83_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic84
+		}
+		picture = CHOICES_QUEENS_84_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic85
+		}
+		picture = CHOICES_QUEENS_85_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic86
+		}
+		picture = CHOICES_QUEENS_86_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic87
+		}
+		picture = CHOICES_QUEENS_87_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic88
+		}
+		picture = CHOICES_QUEENS_88_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic89
+		}
+		picture = CHOICES_QUEENS_89_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic90
+		}
+		picture = CHOICES_QUEENS_90_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic91
+		}
+		picture = CHOICES_QUEENS_91_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic92
+		}
+		picture = CHOICES_QUEENS_92_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic93
+		}
+		picture = CHOICES_QUEENS_93_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic94
+		}
+		picture = CHOICES_QUEENS_94_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic95
+		}
+		picture = CHOICES_QUEENS_95_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic96
+		}
+		picture = CHOICES_QUEENS_96_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic97
+		}
+		picture = CHOICES_QUEENS_97_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic98
+		}
+		picture = CHOICES_QUEENS_98_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic99
+		}
+		picture = CHOICES_QUEENS_99_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic100
+		}
+		picture = CHOICES_QUEENS_100_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic101
+		}
+		picture = CHOICES_QUEENS_101_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic102
+		}
+		picture = CHOICES_QUEENS_102_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic103
+		}
+		picture = CHOICES_QUEENS_103_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic104
+		}
+		picture = CHOICES_QUEENS_104_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic105
+		}
+		picture = CHOICES_QUEENS_105_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic106
+		}
+		picture = CHOICES_QUEENS_106_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic107
+		}
+		picture = CHOICES_QUEENS_107_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic108
+		}
+		picture = CHOICES_QUEENS_108_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic109
+		}
+		picture = CHOICES_QUEENS_109_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic110
+		}
+		picture = CHOICES_QUEENS_110_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic111
+		}
+		picture = CHOICES_QUEENS_111_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic112
+		}
+		picture = CHOICES_QUEENS_112_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic113
+		}
+		picture = CHOICES_QUEENS_113_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic114
+		}
+		picture = CHOICES_QUEENS_114_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic115
+		}
+		picture = CHOICES_QUEENS_115_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic116
+		}
+		picture = CHOICES_QUEENS_116_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic117
+		}
+		picture = CHOICES_QUEENS_117_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic118
+		}
+		picture = CHOICES_QUEENS_118_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic119
+		}
+		picture = CHOICES_QUEENS_119_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic120
+		}
+		picture = CHOICES_QUEENS_120_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic121
+		}
+		picture = CHOICES_QUEENS_121_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic122
+		}
+		picture = CHOICES_QUEENS_122_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic123
+		}
+		picture = CHOICES_QUEENS_123_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic124
+		}
+		picture = CHOICES_QUEENS_124_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic125
+		}
+		picture = CHOICES_QUEENS_125_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic126
+		}
+		picture = CHOICES_QUEENS_126_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic127
+		}
+		picture = CHOICES_QUEENS_127_eventPicture 
+	}		
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic200
+		}
+		picture = CHOICES_QUEENS_200_eventPicture 
+	}   
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic201
+		}
+		picture = CHOICES_QUEENS_201_eventPicture 
+	}
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic202
+		}
+		picture = CHOICES_QUEENS_202_eventPicture 
+	}	
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic203
+		}
+		picture = CHOICES_QUEENS_203_eventPicture 
+	}
+	
+	fire_only_once = yes
+	
+	trigger = {
+		already_define_consort_type = yes
+		has_country_modifier = wudaigeju
+		ai = no
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}	
+	
+	option = {
+		name = "rab_talk_queen_plus.OPTA3"
+			
+	}
+}	
+

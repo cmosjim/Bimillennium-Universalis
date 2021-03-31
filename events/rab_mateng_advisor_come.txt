@@ -1,0 +1,54 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = mateng_advisor_come
+
+#fkSĞgÍyhöNNúQşs
+#id = 1 : mateng : lšŒ0fkS0
+#
+country_event = {
+	id = mateng_advisor_come.1
+	title = "mateng_advisor_come.1.t"
+	desc = "mateng_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		#ÙÌ‘=ffkSúQ°s(WêTÌ‘„vagöN
+		is_year = 180
+		NOT = { is_year = 212 }
+		NOT = { exists = MTN }
+		tag = CL2
+	
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = mateng_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = mateng
+				name = "lšŒ0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "lšŒ0fkS0"
+				fire = 7
+				shock = 7
+				manuever = 6
+				siege = 4
+			}
+		}
+	}
+}
+

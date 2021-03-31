@@ -1,0 +1,61 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = akashi_advisor_come
+
+#fkS–gÕyùhˆNN˙Q˛s
+#id = 1 : akashi : fÛwhQâv0fkS0
+#
+country_event = {
+	id = akashi_advisor_come.1
+	title = "akashi_advisor_come.1.t"
+	desc = "akashi_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		is_year = 1603
+		NOT = { is_year = 1628 }
+		OR = {
+		   AND = {
+		      exists = ODA 
+		      tag = ODA
+		   }		
+		   AND = {
+		      NOT = {exists = ODA}		
+		      owns = 1017
+		   }
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = akashi_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = akashi
+				name = "fÛwhQâv0fkS0"
+				discount = yes	
+				skill = 3
+				culture = japanese
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "fÛwhQâv0fkS0"
+				fire = 5
+				shock = 5
+				manuever = 3
+				siege = 3
+			}
+		}
+	}
+}
+

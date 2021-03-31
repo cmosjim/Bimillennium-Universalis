@@ -1,0 +1,94 @@
+namespace = xy_alx
+country_event = {
+    id = xy_alx.1
+    title = "xy_alx.NAME1"
+    desc = "xy_alx.DESC1"
+    picture = BAD_ARMY_eventPicture
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    immediate = {
+        set_country_flag = formed_alexander_empire_flag
+
+    }
+    option = {
+        name = "xy_alx.OPTA1"
+        if = {
+            limit = {
+                OR = {
+                    tag = BYZ
+                    tag = ROM
+                }
+            }
+            add_stability = -3
+        }
+        change_tag = ALX
+        change_government = monarchy
+        add_government_reform = autocracy_reform
+        if = {
+            limit = {
+                NOT = {
+                    government_rank = 2
+                }
+            }
+            set_government_rank = 2
+        }
+        country_event = {
+            id = ideagroups.1
+        }
+        #Swap Ideas
+        add_prestige = 25
+        change_religion = hellenism
+        every_owned_province = {
+            limit = {
+                culture = greek
+            }
+            change_religion = hellenism
+        }
+        override_country_name = MCD_NAME
+        set_capital = 4910
+        add_country_modifier = {
+            name = "macedonia_kindm"
+            duration = -1
+        }
+    }
+    option = {
+        name = "xy_alx.OPTB1"
+        add_stability = 3
+    }
+}
+
+country_event = {
+    id = xy_alx.2
+    title = "xy_alx.NAME2"
+    desc = "xy_alx.DESC2"
+    picture = BAD_ARMY_eventPicture
+    trigger = {
+        has_country_modifier = macedonia_kindm
+        tag = ALX
+        total_development = 1000
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "xy_alx.OPTA2"
+        change_tag = ALX
+        if = {
+            limit = {
+                NOT = {
+                    government_rank = 3
+                }
+            }
+            set_government_rank = 3
+        }
+        remove_country_modifier = macedonia_kindm
+        add_country_modifier = {
+            name = "macedonia_kindm2"
+            duration = -1
+        }
+        restore_country_name = yes
+    }
+}

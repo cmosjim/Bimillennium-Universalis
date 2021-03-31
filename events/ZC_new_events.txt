@@ -1,0 +1,117 @@
+namespace = new_flavor
+
+country_event = {
+	id = new_flavor.1
+	title = new_flavor.1.t
+	desc = new_flavor.1.d
+	picture = ACCUSATION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = new_flavor.1.a
+		add_prestige = 30
+		add_ADM_power = 400
+		remove_advisor = "Liu Xin"
+		700 = {
+			spawn_rebels = {
+				type = noble_rebels 
+         				size = 7
+			}
+			every_neighbor_province = {
+				spawn_rebels = {
+					type = noble_rebels 
+         					size = 7
+				}
+			}
+		}
+	}
+
+	option = {
+		name = new_flavor.1.b
+		add_stability = 1
+		remove_advisor = "Liu Xin"
+		add_country_modifier = {
+			name = exile_liu_xin
+			duration = 1825
+		}
+	}
+
+	option = {
+		name = new_flavor.1.c
+		trigger = {
+			NOT = { exists = HND }
+		}
+		change_tag = HND
+		define_ruler = {
+			name = "RtZ"
+			adm = 2
+			dip = 2
+			mil = 2
+			fixed = yes
+		}
+		swap_free_idea_group = yes
+		swap_non_generic_missions = yes
+	}
+}
+	
+country_event = {
+	id = new_flavor.2
+	title = new_flavor.2.t
+	desc = new_flavor.2.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = new_flavor.2.a
+		add_treasury = -500
+		XIO = { 
+			add_treasury = 500 
+			country_event = { id = xiongnu_flavor.9 }
+		}
+	}
+
+	option = {
+		name = new_flavor.2.b
+		NEW = {
+			declare_war_with_cb = {
+                    			who = XIO
+                   		 	casus_belli = cb_super_badboy
+			}
+		}
+		XIO = {
+			add_country_modifier = {
+				name = unfaithful_new
+				duration = 1095
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = new_flavor.3
+	title = new_flavor.3.t
+	desc = new_flavor.3.d
+	picture = FAMINE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = NEW
+	}
+	
+	mean_time_to_happen = {
+		days = 90
+	}
+
+	major = yes
+
+	option = {
+		name = new_flavor.3.a
+		add_country_modifier = {
+			name = population_explosion
+			duration = -1
+		}
+	}
+}

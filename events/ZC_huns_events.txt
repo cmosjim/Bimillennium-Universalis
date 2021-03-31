@@ -1,0 +1,15 @@
+namespace = huns_flavor
+country_event = {
+	id = huns_flavor.1
+	title = huns_flavor.1.t
+	desc = huns_flavor.1.d
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+		
+	option = {
+		name = huns_flavor.1.a
+		add_prestige = 25
+		add_MIL_power = 100
+	}
+}

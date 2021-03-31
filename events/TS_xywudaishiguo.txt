@@ -1,0 +1,3602 @@
+#2018-12-28 modify to fit 1.28 format and translated okay
+#2019-02-26 #1g)n·rU only in ai = yes
+#2019-03-25 xy_wudaishiguo.18 add kill_heir
+#2019-07-07 add new areas #NEW
+#2019-07-10 modify add province_id bcs new areas 
+#2021-01-06 fixed the bug for ÙgcÉ repeat appear 
+namespace = xy_wudaishiguo
+
+#1g)n·rU
+country_event = {
+	id = xy_wudaishiguo.1
+	title = "xy_wudaishiguo.NAME1"
+	desc = "xy_wudaishiguo.DESC1"
+	picture = BAD_ARMY_eventPicture
+	
+    major = yes
+    fire_only_once = yes
+	
+	trigger = {
+	NOT = { has_global_flag = wdluanshikaishi }
+		ai = yes
+		tag = TNG
+		is_year = 900
+        NOT = {
+			OR = {
+				adm = 3
+                dip = 3
+                mil = 3 
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	immediate = {
+		kill_ruler = yes
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA1"
+        change_tag = ZU1
+		set_global_flag = wdluanshikaishi
+        swap_free_idea_group = yes
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 2549
+					province_id = 3189
+					province_id = 3190
+					province_id = 3191
+					province_id = 3252
+					province_id = 3253
+					province_id = 4876
+					province_id = 4877
+					province_id = 4882
+					province_id = 4883
+					province_id = 696 
+					province_id = 697 
+					province_id = 701 
+				}
+			}
+			cede_province = QJ1 add_core = QJ1 remove_core = ROOT 
+		}	
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 1816
+					province_id = 1845
+					province_id = 2020
+					province_id = 2509
+					province_id = 2510
+					province_id = 2513
+					province_id = 2552
+					province_id = 3186
+					province_id = 3187
+					province_id = 3188
+					province_id = 3314
+					province_id = 4324
+					province_id = 4875
+					province_id = 704 
+					province_id = 726 
+				}
+			}
+			cede_province = LU1 add_core = LU1 remove_core = ROOT 
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 2507
+					province_id = 699 
+					province_id = 3195
+					province_id = 2506
+					province_id = 3194
+					province_id = 3172
+					province_id = 698 
+					province_id = 3224
+					province_id = 4890
+					province_id = 4891
+					province_id = 4893
+					province_id = 4888
+				}
+			}
+			cede_province = QG1 add_core = QG1 remove_core = ROOT 
+		}		
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 2463
+					province_id = 2464
+					province_id = 2508
+					province_id = 3174
+					province_id = 3176
+					province_id = 3177
+					province_id = 3178
+					province_id = 3208
+					province_id = 3211
+					province_id = 3225
+					province_id = 4328
+					province_id = 4829
+					province_id = 4830
+					province_id = 4831
+					province_id = 4832
+					province_id = 4833
+					province_id = 4886
+					province_id = 4887
+					province_id = 4892
+					province_id = 679 
+					province_id = 689 
+
+				}
+			}
+			cede_province = QH1 add_core = QH1 remove_core = ROOT 
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 1840
+					province_id = 2485
+					province_id = 2486
+					province_id = 2491
+					province_id = 3164
+					province_id = 3227
+					province_id = 3228
+					province_id = 3259
+					province_id = 3260
+					province_id = 4638
+					province_id = 4816
+					province_id = 4818
+					province_id = 4820
+					province_id = 4821
+					province_id = 4822
+					province_id = 4823
+					province_id = 4824
+					province_id = 4825
+					province_id = 4826
+					province_id = 664 
+					province_id = 671 
+					province_id = 672 
+
+				}
+			}
+			cede_province = CUU add_core = CUU remove_core = ROOT 
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 1821
+					province_id = 1833
+					province_id = 1838
+					province_id = 2482
+					province_id = 2483
+					province_id = 2484
+					province_id = 2494
+					province_id = 2496
+					province_id = 2497
+					province_id = 2498
+					province_id = 3162
+					province_id = 3163
+					province_id = 3165
+					province_id = 3166
+					province_id = 3219
+					province_id = 3220
+					province_id = 3221
+					province_id = 3239
+					province_id = 3258
+					province_id = 4327
+					province_id = 4637
+					province_id = 4810
+					province_id = 4811
+					province_id = 4812
+					province_id = 4813
+					province_id = 4814
+					province_id = 4827
+					province_id = 4840
+					province_id = 4841
+					province_id = 4844
+					province_id = 4845
+					province_id = 4846
+					province_id = 4847
+					province_id = 4848
+					province_id = 4849
+					province_id = 4850
+					province_id = 4851
+					province_id = 4860
+					province_id = 4861
+					province_id = 670 
+					province_id = 681 
+					province_id = 682 
+					province_id = 683 
+					province_id = 685 
+					province_id = 686 
+					province_id = 687 
+  				}
+			}
+			cede_province = YW1 add_core = YW1 remove_core = ROOT 
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 2014
+					province_id = 2469
+					province_id = 2471
+					province_id = 2472
+					province_id = 2473
+					province_id = 2474
+					province_id = 2475
+					province_id = 2476
+					province_id = 3235
+					province_id = 4801
+					province_id = 4802
+					province_id = 4803
+					province_id = 4804
+					province_id = 4805
+					province_id = 4806
+					province_id = 4815
+					province_id = 4817
+					province_id = 4819
+					province_id = 4842
+					province_id = 663 
+					province_id = 665 
+					province_id = 666 
+					province_id = 667 
+					province_id = 668 
+  
+					
+				}
+			}
+			cede_province = HNH add_core = HNH remove_core = ROOT 
+		}					
+		every_owned_province = {
+			limit = {
+				OR = {		
+					province_id = 1829
+					province_id = 2477
+					province_id = 2478
+					province_id = 3216
+					province_id = 3234
+					province_id = 3237
+					province_id = 3238
+					province_id = 4807
+					province_id = 4808
+					province_id = 4809
+					province_id = 669  
+				}
+			}
+			cede_province = MN1 add_core = MN1 remove_core = ROOT 
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 1822
+					province_id = 1824
+					province_id = 2479
+					province_id = 2480
+					province_id = 2481
+					province_id = 3233
+					province_id = 3257
+					province_id = 3263
+					province_id = 4837
+					province_id = 4838
+					province_id = 4839
+					province_id = 684 
+
+				}
+			}
+			cede_province = WUY add_core = WUY remove_core = ROOT 
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 3265 
+					province_id = 3240 
+					province_id = 4828
+				}
+			}
+			cede_province = JGN add_core = JGN remove_core = ROOT 
+		}
+			set_global_flag = wudaishiguokaishi  
+			every_owned_province = {
+				limit = {
+					culture_group = burman 
+				}
+				cede_province = CDL
+				add_core = CDL
+				remove_core = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					is_core = DAI 
+				}
+				cede_province = DAI
+				remove_core = ROOT  
+			}
+			add_country_modifier = { 
+				name = "wudaigeju"
+				duration = -1 
+			}
+	MN1 = {
+		add_country_modifier = {
+			name = "wudaigeju"
+			duration = -1 
+		}
+		define_ruler = {
+			name = "ãs°RÂw"
+
+			age = 45
+			adm = 3
+			dip = 4
+			mil = 3
+			fixed = yes			
+		}		
+	}	
+	east_china_sea_region = {
+		discover_country = MN1
+	}
+	south_china_sea_region = {
+		discover_country = MN1
+	}
+	indo_china_region = {
+		discover_country = MN1
+	}
+	south_china_region = {
+		discover_country = MN1
+	}
+	north_china_region = {
+		discover_country = MN1
+	}			
+	tibet_region = {
+		discover_country = MN1
+	}			
+	xinan_region = {
+		discover_country = MN1
+	}			
+	LU1 = {
+		add_country_modifier = {
+			name = "wudaigeju"
+			duration = -1 
+		}
+		define_ruler = {
+			name = "R¡Nm`"
+
+			age = 45
+			adm = 2
+			dip = 1
+			mil = 3
+			fixed = yes			
+		} 
+	}
+	east_china_sea_region = {
+		discover_country = LU1
+	}
+	south_china_sea_region = {
+		discover_country = LU1
+	}
+	indo_china_region = {
+		discover_country = LU1
+	}
+	south_china_region = {
+		discover_country = LU1
+	}
+	north_china_region = {
+		discover_country = LU1
+	}			
+	tibet_region = {
+		discover_country = LU1
+	}			
+	xinan_region = {
+		discover_country = LU1
+	}			
+		ZU1 = {			
+			set_capital = 2492
+			
+			define_ruler = {
+				name = "1g)n"
+
+			#	birth_date = 852.12.9
+				age = 55
+				adm = 2
+				dip = 3
+				mil = 5
+				fixed = yes				
+				leader = { 
+					name = "1g)n"	
+					fire = 3	
+					shock = 4	
+					manuever = 2
+					siege = 1
+				}
+			}
+			set_country_flag = liangzhuwen
+		}
+		QH1 = {
+			add_country_modifier = {
+				name = "wudaigeju"
+				duration = -1
+			}
+			define_ruler = {
+					name = "ãs˙^"
+				#	birth_date = 877.1.14        age = 60
+
+					adm = 4
+					dip = 3
+					mil = 4
+					fixed = yes					
+			}	
+		}	
+	east_china_sea_region = {
+		discover_country = QH1
+	}
+	south_china_sea_region = {
+		discover_country = QH1
+	}
+	indo_china_region = {
+		discover_country = QH1
+	}
+	south_china_region = {
+		discover_country = QH1
+	}
+	north_china_region = {
+		discover_country = QH1
+	}			
+	tibet_region = {
+		discover_country = QH1
+	}			
+	xinan_region = {
+		discover_country = QH1
+	}			
+    
+	CUU = {
+		add_country_modifier = {
+			name = "wudaigeju"
+			duration = -1 
+		}
+			
+		define_ruler = {
+	
+			
+			name = "lö∑k"
+			age = 55
+			adm = 4
+			dip = 3
+			mil = 4
+			fixed = yes			
+		} 
+		set_ruler_flag = mayin11
+		add_country_modifier = {
+			name = "wudaishijiansha"
+			duration = 14000 
+		}
+	}
+			east_china_sea_region = {
+				discover_country = CUU
+			}
+			south_china_sea_region = {
+				discover_country = CUU
+			}
+			indo_china_region = {
+				discover_country = CUU
+			}
+			south_china_region = {
+				discover_country = CUU
+			}
+			north_china_region = {
+				discover_country = CUU
+			}			
+			tibet_region = {
+				discover_country = CUU
+			}			
+			xinan_region = {
+				discover_country = CUU
+			}
+		YW1 = {
+			add_country_modifier = {
+				name = "wudaigeju"
+				duration = -1
+			}
+			define_ruler = {
+			#	birth_date = 873.1.1 
+				age = 34
+				name = "Rêñ"
+
+				adm = 3
+				dip = 3
+				mil = 3
+				fixed = yes				
+			}
+			define_heir = {
+				birth_date = 897.1.1
+				#age = 11
+				name = "hgÜño"
+				adm = 5
+				dip = 3
+				mil = 3
+				#fixed = yes				
+			}		
+		}
+			east_china_sea_region = {
+				discover_country = YW1
+			}
+			south_china_sea_region = {
+				discover_country = YW1
+			}
+			indo_china_region = {
+				discover_country = YW1
+			}
+			south_china_region = {
+				discover_country = YW1
+			}
+			north_china_region = {
+				discover_country = YW1
+			}			
+			tibet_region = {
+				discover_country = YW1
+			}			
+			xinan_region = {
+				discover_country = YW1
+			}		
+		HNH = {
+			add_country_modifier = {
+				name = "wudaigeju"
+				duration = -1 
+			}
+		}
+				east_china_sea_region = {
+					discover_country = HNH
+				}
+				south_china_sea_region = {
+					discover_country = HNH
+				}
+				indo_china_region = {
+					discover_country = HNH
+				}
+				south_china_region = {
+					discover_country = HNH
+				}
+				north_china_region = {
+					discover_country = HNH
+				}			
+				tibet_region = {
+					discover_country = HNH
+				}			
+				xinan_region = {
+					discover_country = HNH
+				}			
+
+				WUY = { 
+					add_country_modifier = {
+						name = "wudaigeju"
+						duration = -1 
+					}
+					define_ruler = {
+					#	birth_date = 852.1.1
+							age = 55
+							name = "±î`ï"
+							fixed = yes
+							adm = 6
+							dip = 6
+							mil = 2
+					} 
+					east_china_sea_region = {
+						discover_country = WUY
+					}
+					south_china_sea_region = {
+						discover_country = WUY
+					}
+					indo_china_region = {
+						discover_country = WUY
+					}
+					south_china_region = {
+						discover_country = WUY
+					}
+					north_china_region = {
+						discover_country = WUY
+					}			
+					tibet_region = {
+						discover_country = WUY
+					}			
+					xinan_region = {
+						discover_country = WUY
+					} 
+				}
+				MN1 = {
+					add_country_modifier = {
+						name = "wudaigeju"
+						duration = -1 
+					}
+					define_ruler = {
+						name = "ãs°RÂw"
+						fixed = yes
+						age = 45
+						adm = 3
+						dip = 4
+						mil = 3
+					} 
+				}
+				east_china_sea_region = {
+					discover_country = MN1
+				}
+				south_china_sea_region = {
+					discover_country = MN1
+				}
+				indo_china_region = {
+					discover_country = MN1
+				}
+				south_china_region = {
+					discover_country = MN1
+				}
+				north_china_region = {
+					discover_country = MN1
+				}			
+				tibet_region = {
+					discover_country = MN1
+				}			
+				xinan_region = {
+					discover_country = MN1
+				}
+
+
+				JGN = { 
+					add_country_modifier = {
+						name = "wudaigeju"
+						duration = -1 
+					}
+					define_ruler = {
+						name = "ÿöcRtQ"
+						fixed = yes
+					#	birth_date = 858.1.1              
+						age = 49
+						adm = 4
+						dip = 3
+						mil = 4
+					}
+				}
+				east_china_sea_region = {
+					discover_country = JGN
+				}
+				south_china_sea_region = {
+					discover_country = JGN
+				}
+				indo_china_region = {
+					discover_country = JGN
+				}
+				south_china_region = {
+					discover_country = JGN
+				}
+				north_china_region = {
+					discover_country = JGN
+				}			
+				tibet_region = {
+					discover_country = JGN
+				}			
+				xinan_region = {
+					discover_country = JGN
+				}
+			QG1 = {
+				add_country_modifier = {
+					name = "wudaigeju"
+					duration = -1 
+				}
+				define_ruler = {
+					name = "NgÉç"
+
+				#	birth_date = 856.1.1               
+					age = 51
+					adm = 4
+					dip = 3
+					mil = 2
+					fixed = yes					
+				}
+			}
+				east_china_sea_region = {
+					discover_country = QG1
+				}
+				south_china_sea_region = {
+					discover_country = QG1
+				}
+				indo_china_region = {
+					discover_country = QG1
+				}
+				south_china_region = {
+					discover_country = QG1
+				}
+				north_china_region = {
+					discover_country = QG1
+				}			
+				tibet_region = {
+					discover_country = QG1
+				}			
+				xinan_region = {
+					discover_country = QG1
+				} 
+				QJ1 = {  
+						add_country_modifier = {
+							name = "wudaigeju"
+							duration = -1 
+						}
+					define_ruler = {
+						name = "NgXR÷R"
+
+					#	birth_date = 885.12.2
+						age = 22
+						adm = 5
+						dip = 4
+						mil = 5
+						fixed = yes						
+						leader = { 
+							name = "NgXR÷R"	
+							fire = 7	
+							shock = 7	
+							manuever = 3
+							siege = 3
+						}
+					} 
+				}
+ 				east_china_sea_region = {
+					discover_country = TNG
+				}
+				south_china_sea_region = {
+					discover_country = TNG
+				}
+				indo_china_region = {
+					discover_country = TNG
+				}
+				south_china_region = {
+					discover_country = TNG
+				}
+				north_china_region = {
+					discover_country = TNG
+				}			
+				tibet_region = {
+					discover_country = TNG
+				}			
+				xinan_region = {
+					discover_country = TNG
+				}
+	}
+}
+
+#country_event = {
+#	id = xy_wudaishiguo.2
+#	title = "xy_wudaishiguo.NAME2"
+#	desc = "xy_wudaishiguo.DESC2"
+#	picture = BAD_ARMY_eventPicture
+#   
+#	
+#	trigger = {
+#		tag = MN1
+#	}
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#	option = {
+#		name = "xy_wudaishiguo.OPTA2"
+#		add_country_modifier = {
+#			name = "wudaigeju"
+#			duration = -1 
+#		}
+#		define_ruler = {
+#			name = "ãs°RÂw"
+#			fixed = yes
+#			age = 45
+#			adm = 3
+#			dip = 4
+#			mil = 3
+#		}
+#	}
+#}
+
+
+province_event = {
+	id = xy_wudaishiguo.3
+	title = "xy_wudaishiguo.NAME3"
+	desc = "xy_wudaishiguo.DESC3"
+	picture = ARMY_HAPPY_eventPicture
+ 
+	trigger = {
+		owner = { has_global_flag = wudaishiguokaishi }
+		NOT = {	
+			owner = {
+			had_global_flag = {
+					flag = wudaishiguokaishi
+					days = 730
+				}
+			}
+		}
+		NOT = {
+			region = south_china_region 
+		}
+		NOT = {
+			region = north_china_region 
+		}	
+		owned_by = ZU1  
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "xy_wudaishiguo.OPTA3"
+		ai_chance = { factor = 100 }
+		remove_core = owner
+		set_province_flag = wrkgwudai
+		random_neighbor_province = {
+			limit = {
+				owner = {
+					NOT = { tag = ZU1 }
+				}
+			} 
+			owner = {
+				country_event = {
+					id = xy_wudaishiguo.4 
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = xy_wudaishiguo.4
+	title = "xy_wudaishiguo.NAME4"
+	desc = "xy_wudaishiguo.DESC4"
+	picture = LAND_MILITARY_eventPicture
+   
+	
+	is_triggered_only = yes
+	
+	#mean_time_to_happen = {
+	#	days = 1
+	#}
+
+	option = {
+		name = "xy_wudaishiguo.OPTA4"
+		ai_chance = { factor = 100 }
+		every_province = { limit = { has_province_flag = wrkgwudai  } cede_province = ROOT add_core = ROOT clr_province_flag = wrkgwudai  }
+
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTB4"
+		ai_chance = { factor = 0 }
+		every_province = { limit = { has_province_flag = wrkgwudai  } clr_province_flag = wrkgwudai   }
+
+	}
+	
+}
+
+country_event = {
+	id = xy_wudaishiguo.5
+	title = "xy_wudaishiguo.NAME5"
+	desc = "xy_wudaishiguo.DESC5"
+	picture = KILL_GENERAL_eventPicture
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LU1
+		has_country_modifier = wudaigeju
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA5"
+		ai_chance = { factor = 80 }
+		define_ruler = {
+			name = "RàRIQ"
+			fixed = yes
+			adm = 1
+			dip = 1
+			mil = 2
+		}
+		every_province = {
+			limit = {
+				is_core = LU1
+			}
+				add_core = DY1
+				remove_core = LU1
+		}
+		change_tag = DY1
+		change_government = gov_celestial_empire
+		add_government_reform = celestial_empire
+		set_government_rank = 3
+		
+		country_event = {
+			id = rab_acient_a.5
+		}	
+		QJ1 = {
+			country_event = {
+				id = xy_wudaishiguo.6
+			}	
+		}
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTB5"
+		add_stability_or_adm_power = yes
+	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.6
+	title = "xy_wudaishiguo.NAME6"
+	desc = "xy_wudaishiguo.DESC6"
+	picture = ARMY_START_eventPicture
+   
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "xy_wudaishiguo.OPTA6"
+		ai_chance = { factor = 100 }
+		add_ruler_modifier = {
+			name = "wudaixingqi"
+			duration = 7300 
+		}
+		DY1 = {
+			add_country_modifier = {
+			name = "wudaishuailuo"
+			duration = 3650 
+			}  
+		}
+			declare_war_with_cb = {
+				who = DY1
+				casus_belli = cb_chinese_unification
+			}  
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTB6"
+		add_stability_or_adm_power = yes
+	}
+}
+#7ˇ îN„NyräkTv^:g6RãNˆN
+country_event = {
+	id = xy_wudaishiguo.7
+	title = "xy_wudaishiguo.NAME7"
+	desc = "xy_wudaishiguo.DESC7"
+	picture = WARLORD_FOUNDATION_eventPicture
+    major = yes
+	
+	trigger = {
+		has_ruler_modifier = wudaixingqi
+		any_country = {
+			war_with = ROOT
+			capital_scope = { controlled_by = ROOT }
+			OR = {
+				is_subject_of_type = tributary_state
+				is_subject = no
+			}
+			has_country_modifier = wudaishuailuo
+			NOT = {
+					war_score_against = {
+					who = ROOT
+					value = -20
+				} 
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA7"
+		every_country = {
+			limit = {
+				war_with = ROOT
+				capital_scope = { controlled_by = ROOT }
+				has_country_modifier = wudaishuailuo
+				NOT = {
+					war_score_against = {
+					who = ROOT
+					value = -20
+					}
+				}  
+			}
+			every_owned_province = { cede_province = ROOT add_core = ROOT }   
+		}
+	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.8
+	title = "xy_wudaishiguo.NAME8"
+	desc = "xy_wudaishiguo.DESC8"
+	picture = ARMY_START_1_eventPicture
+    major = yes
+	fire_only_once = yes
+	trigger = {
+		NOT = { has_global_flag = liaoguojueqi }
+		is_year = 907
+		NOT = { exists = LIO }
+		OR = {
+			tag = KHT 
+			AND = {
+				NOT = { exists = KHT }
+				has_country_modifier = wudaigeju 
+			}
+		}
+		NOT = { exists = TNG }
+		any_country = { has_country_modifier = wudaigeju }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = "xy_wudaishiguo.OPTA8"
+		every_province = {
+			limit = {
+				culture_group = altaic
+				OR = {
+					province_id = 2551	
+					province_id = 3201
+					province_id = 722 
+					province_id = 3200
+					province_id = 3199
+					province_id = 725 
+					province_id = 2556
+					province_id = 2555
+					province_id = 726 
+					province_id = 2552
+					province_id = 2510
+					province_id = 2509
+					province_id = 2020
+					province_id = 2513
+					province_id = 1845
+					province_id = 3314
+	
+				}	
+			}
+			cede_province = KHT
+			add_core = KHT	
+		}	
+		KHT = { 
+			define_ruler = {
+				name = "6wãV?ñ›O:g"
+
+				#age = 35
+				adm = 5
+				dip = 4
+				mil = 6
+				fixed = yes				
+				leader = { 
+					name = "6wãV?ñ›O:g"	
+					fire = 4	
+					shock = 9	
+					manuever = 4
+					siege = 1
+				}
+			}
+		set_country_flag = liaoguojueqi 
+		add_country_modifier = {
+			name = "liaoguojueqi11"
+				duration = 18250 
+			}
+		}
+	}	
+}
+#9ˇ QY9N|Qv^hTÙVËêKÑ
+province_event = {
+	id = xy_wudaishiguo.9
+	title = "xy_wudaishiguo.NAME9"
+	desc = "xy_wudaishiguo.DESC9"
+	picture = CIVIL_WAR_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		culture_group = altaic
+		owner = {
+			is_nomad = yes
+			NOT = { tag = LIO }
+			NOT = { tag = KHT }
+		}
+		any_neighbor_province = {
+		owner = {
+			OR = {
+				tag = LIO
+				tag = KHT 
+			}
+			has_country_modifier = liaoguojueqi11 }
+		}
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = "xy_wudaishiguo.OPTA9"
+		random_country = { limit ={ has_country_modifier = liaoguojueqi11 } ROOT = { cede_province = PREV }   }
+	}	
+}
+
+country_event = {
+	id = xy_wudaishiguo.10
+	title = "xy_wudaishiguo.NAME10"
+	desc = "xy_wudaishiguo.DESC10"
+	picture = WARLORD_FOUNDATION_eventPicture
+    major = yes
+	fire_only_once = yes
+	trigger = {
+		is_year = 907
+		NOT = { is_year = 910 }
+		has_country_modifier = wudaigeju 
+		NOT = { exists = DN2 }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = "xy_wudaishiguo.OPTA10"
+		3223 = {  cede_province = DN2 add_core = DN2 change_culture = tangut  }
+		3192 = {  cede_province = DN2 add_core = DN2 change_culture = tangut }
+	}
+}
+country_event = {
+	id = xy_wudaishiguo.11
+	title = "xy_wudaishiguo.NAME11"
+	desc = "xy_wudaishiguo.DESC11"
+	picture = DEATH_EUNUCH_eventPicture
+	
+    major = yes
+	
+	trigger = {
+		NOT = { is_year = 960 }
+        NOT = { has_ruler = "1g)n" }
+		tag = ZU1
+		has_country_flag = liangzhuwen #rab_ add avoid define_ruler trigger the monarch_death
+		has_country_modifier = wudaigeju 
+		NOT = { has_country_modifier = zhuwenyisi }	
+		NOT = { has_country_flag = zhuwenyisi11 }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA11"
+			define_ruler = {
+			name = "1gÀSç"
+			fixed = yes
+			adm = 0
+			dip = 3
+			mil = 3
+			} 
+				add_country_modifier = { name = "wudaishijiansha"
+				duration = 10950 }
+				add_stability = -3
+				set_country_flag = zhuwenyisi11
+				add_country_modifier = { name = "zhuwenyisi"
+				duration = 10950 } 
+
+	}
+}
+#12ˇNgXR÷RWSN
+country_event = {
+	id = xy_wudaishiguo.12
+	title = "xy_wudaishiguo.NAME12"
+	desc = "xy_wudaishiguo.DESC12"
+	picture = ARMY_START_eventPicture
+    major = yes
+	trigger = {
+		tag = QJ1
+		has_country_modifier = wudaigeju 
+		owns = 1816
+		OR = {
+			is_at_war = no
+			war_with = ZU1 
+		}
+		ZU1 = { has_country_modifier = zhuwenyisi }
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+	name = "xy_wudaishiguo.OPTA12"
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				ZU1 = { ai = yes } 
+			}  
+			ZU1 = {
+				every_owned_province = {
+					cede_province = QJ1 
+					add_core = QJ1 
+				} 
+			}   
+		}
+		if = {
+			limit = {
+				ZU1 = {
+					ai = no 
+				} 
+			} 
+			ZU1 = { 
+				add_country_modifier = {
+					name = "wudaishuailuo"
+					duration = 3650 
+				} 
+			}
+			add_ruler_modifier = {
+				name = "wudaixingqi"
+				duration = 3650 
+			}
+			declare_war_with_cb = {
+				who = ZU1
+				casus_belli = cb_chinese_unification
+			}    
+		}
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTB12"
+		add_prestige = -5
+	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.13
+	title = "xy_wudaishiguo.NAME13"
+	desc = "xy_wudaishiguo.DESC13"
+	picture = ARMY_START_eventPicture
+    major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = QJ1
+		has_country_modifier = wudaigeju 
+		NOT = { exists = ZU1 }
+		NOT = { exists = HT1 }
+			owns = 700
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = "xy_wudaishiguo.OPTA13"
+	every_province = {
+		limit = {
+			is_core = QJ1
+		}
+		add_core = HT1
+		remove_core = QJ1
+	}
+	change_tag = HT1
+	change_government = gov_celestial_empire
+	add_government_reform = celestial_empire
+	set_government_rank = 3
+	
+	country_event = {
+		id = rab_acient_a.5
+	}	
+	inherit = QG1
+	
+	if = {
+		limit = {
+			exists = KHT 
+			NOT = {
+				exists = LIO 
+			} 
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					
+				}	
+			}	
+		}
+		every_owned_province = {
+			limit = {
+				province_id = 3187
+				province_id = 3188
+				province_id = 704 
+				province_id = 703 
+				province_id = 3189
+				province_id = 3253
+				province_id = 2549
+				province_id = 3190
+				province_id = 2550
+			}
+			cede_province = KHT
+			add_core = KHT
+			remove_core = ROOT 
+		}	
+		#3187 = { limit = { owned_by = ROOT } cede_province = KHT add_core = KHT remove_core = ROOT }
+		#3188 = { limit = { owned_by = ROOT } cede_province = KHT add_core = KHT remove_core = ROOT }
+		#704 = { limit = { owned_by = ROOT } cede_province = KHT add_core = KHT remove_core = ROOT }
+		#703 = { limit = { owned_by = ROOT } cede_province = KHT add_core = KHT remove_core = ROOT }
+		#3189 = { limit = { owned_by = ROOT } cede_province = KHT add_core = KHT remove_core = ROOT }
+		#3253 = { limit = { owned_by = ROOT } cede_province = KHT add_core = KHT remove_core = ROOT }
+		#2549 = { limit = { owned_by = ROOT } cede_province = KHT add_core = KHT remove_core = ROOT }
+		#3190 = { limit = { owned_by = ROOT } cede_province = KHT add_core = KHT remove_core = ROOT }
+		#2550 = { limit = { owned_by = ROOT } cede_province = KHT add_core = KHT remove_core = ROOT }
+	} 
+		if = {
+			limit = {
+				exists = LIO  
+			}
+			every_owned_province = {
+				limit = {
+				province_id = 3187
+				province_id = 3188
+				province_id = 704 
+				province_id = 703 
+				province_id = 3189
+				province_id = 3253
+				province_id = 2549
+				province_id = 3190
+				province_id = 2550
+				}
+				cede_province = LIO add_core = LIO remove_core = ROOT 
+			}	
+			# 3187 = { limit = { owned_by = ROOT } cede_province = LIO add_core = LIO remove_core = ROOT }
+			# 3188 = { limit = { owned_by = ROOT } cede_province = LIO add_core = LIO remove_core = ROOT }
+			# 704 = { limit = { owned_by = ROOT } cede_province = LIO add_core = LIO remove_core = ROOT }
+			# 703 = { limit = { owned_by = ROOT } cede_province = LIO add_core = LIO remove_core = ROOT }
+			# 3189 = { limit = { owned_by = ROOT } cede_province = LIO add_core = LIO remove_core = ROOT }
+			# 3253 = { limit = { owned_by = ROOT } cede_province = LIO add_core = LIO remove_core = ROOT }
+			# 2549 = { limit = { owned_by = ROOT } cede_province = LIO add_core = LIO remove_core = ROOT }
+			# 3190 = { limit = { owned_by = ROOT } cede_province = LIO add_core = LIO remove_core = ROOT }
+			# 2550 = { limit = { owned_by = ROOT } cede_province = LIO add_core = LIO remove_core = ROOT }
+		} 
+	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.14
+	title = "xy_wudaishiguo.NAME14"
+	desc = "xy_wudaishiguo.DESC14"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+    major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HT1
+		has_country_modifier = wudaigeju 
+		exists = QH1
+		is_neighbor_of = QH1
+		NOT = { exists = ZU1 }
+		owns = 700
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+
+
+	option = {
+		name = "xy_wudaishiguo.OPTA14"
+		ai_chance = { factor = 100 }
+		set_country_flag = tangpingqianshu
+		QH1 = {
+			add_country_modifier = {
+			name = "wudaishuailuo"
+			duration = 3650 
+			}
+		}
+		add_ruler_modifier = {
+			name = "wudaixingqi"
+			duration = 3650 
+		}
+		declare_war_with_cb = {
+				who = QH1
+				casus_belli = cb_chinese_unification
+		}
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTB14"
+		add_prestige = -5
+
+	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.15
+	title = "xy_wudaishiguo.NAME15"
+	desc = "xy_wudaishiguo.DESC15"
+	picture = BAD_ARMY_eventPicture
+	
+    major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = HT1
+		has_country_modifier = wudaigeju 
+		NOT = { has_country_flag = mingzongzhizhi  }
+		NOT = { exists = QH1 }
+		NOT = { exists = ZU1 }
+		owns = 700
+		owns = 2502
+		OR = {
+			has_country_flag = tangpingqianshu 
+			NOT = { has_ruler_flag = wudaixingqi }
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	
+	option = {
+	name = "xy_wudaishiguo.OPTA15"
+	ai_chance = { factor = 100 }
+		kill_ruler = yes
+		add_stability = -1
+		define_ruler = {
+			name = "Ng„Uên"
+
+			age = 59
+			adm = 5
+			dip = 5
+			mil = 5
+			fixed = yes			
+			leader = { 
+				name = "Ng„Uên"	
+				fire = 7	
+				shock = 7	
+				manuever = 5
+				siege = 1
+			}
+		}
+		define_general = {
+			name = "Ûwlemt"
+			fire = 4
+			shock = 6
+			manuever = 5
+			siege = 3
+		}
+			set_ruler_flag = lisiyuan
+			set_country_flag = mingzongzhizhi
+			add_country_modifier = {
+				name = "wudaishijiansha"
+				duration = 10950 
+			}
+	}
+	option = {
+	name = "xy_wudaishiguo.OPTB15"
+	2502 = {
+			spawn_rebels = {
+				type = eastern_pretender_rebels
+				size = 10
+				leader = "áv+uVf"
+			}
+		}
+	}
+ }
+
+  
+country_event = {
+	id = xy_wudaishiguo.16
+	title = "xy_wudaishiguo.NAME16"
+	desc = "xy_wudaishiguo.DESC16"
+	picture = REFORM_eventPicture
+    major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = HT1
+		NOT = { exists = HS1 }
+		NOT = { has_ruler_flag = lisiyuan }
+		has_country_flag = mingzongzhizhi
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+	name = "xy_wudaishiguo.OPTA16"
+		set_country_flag = houshuduli
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 2463
+					province_id = 2464
+					province_id = 2489
+					province_id = 2508
+					province_id = 3172
+					province_id = 3174
+					province_id = 3176
+					province_id = 3177
+					province_id = 3178
+					province_id = 3210
+					province_id = 4328
+					province_id = 4829
+					province_id = 4830
+					province_id = 4831
+					province_id = 4832
+					province_id = 4833
+					province_id = 4835
+					province_id = 4836
+					province_id = 4886
+					province_id = 4888
+					province_id = 4892
+					province_id = 679 
+					province_id = 680 
+					province_id = 689 
+				}	
+			}
+			cede_province = HS1 add_core = HS1 remove_core = ROOT remove_core = QH1
+		}	
+#3232 = { limit = { owned_by = ROOT } cede_province = HS1 add_core = HS1 remove_core = ROOT remove_core = QH1 }
+#2463 = { limit = { owned_by = ROOT } cede_province = HS1 add_core = HS1 remove_core = ROOT remove_core = QH1 }
+#2508 = { limit = { owned_by = ROOT } cede_province = HS1 add_core = HS1 remove_core = ROOT remove_core = QH1 }
+#3178 = { limit = { owned_by = ROOT } cede_province = HS1 add_core = HS1 remove_core = ROOT remove_core = QH1 }
+#689 = { limit = { owned_by = ROOT } cede_province = HS1 add_core = HS1 remove_core = ROOT remove_core = QH1 }
+#3208 = { limit = { owned_by = ROOT } cede_province = HS1 add_core = HS1 remove_core = ROOT remove_core = QH1 }
+#2464 = { limit = { owned_by = ROOT } cede_province = HS1 add_core = HS1 remove_core = ROOT remove_core = QH1 }
+#3174 = { limit = { owned_by = ROOT } cede_province = HS1 add_core = HS1 remove_core = ROOT remove_core = QH1 }
+#679 = { limit = { owned_by = ROOT } cede_province = HS1 add_core = HS1 remove_core = ROOT remove_core = QH1 }
+#3176 = { limit = { owned_by = ROOT } cede_province = HS1 add_core = HS1 remove_core = ROOT remove_core = QH1 }
+#3177 = { limit = { owned_by = ROOT } cede_province = HS1 add_core = HS1 remove_core = ROOT remove_core = QH1 }
+		HS1 = {
+			define_ruler = {
+					name = "mRÂwey"
+
+					age = 60
+					adm = 5
+					dip = 3
+					mil = 3
+					fixed = yes					
+			}
+			define_heir = {
+					name = "mR6f"
+					age = 15
+					adm = 5
+					dip = 1
+					mil = 1
+					#fixed = yes					
+			}
+		}
+	}
+}
+
+province_event = {
+	id = xy_wudaishiguo.17
+	title = "xy_wudaishiguo.NAME17"
+	desc = "xy_wudaishiguo.DESC17"
+	picture = BAD_ARMY_eventPicture
+	
+	#always = no   
+    major = yes
+	trigger = {
+		owner = { 
+			OR = { 
+				is_year = 976
+				NOT = { has_country_flag = zhaokuangyin }
+			}   #°l	gƒûçà†R´éÑvÔS˝w
+			NOT = { has_country_modifier = wudaishijiansha } #°l	gãNˆNNgÔS˝w
+			NOT = { has_ruler_flag = meiyoufanzhen }  #°l	gèñ:g0R‡eÈÖGïÑvflag
+			NOT = { has_ruler_flag = fanzhencuanwei1  }  #ÚTœu·rMO«èÑvN˝wçQ·rMOÜN
+			has_country_modifier = wudaigeju   #=frRnc?eCg
+			government_rank = 3
+			OR = {
+				AND = {
+					NOT = { mil = 5 }
+					NOT = { adm = 5 }
+					NOT = { dip = 5 }
+					NOT = { ruler_age = 21 }
+				}
+			has_regency = yes
+			}
+		}
+		culture_group = east_asian
+		OR = {
+			area = shandong_area
+			area = west_shandong_area
+			area = shandong_south_area #NEW
+			area = liaoning_area   
+			area = liaoning_east_area
+			area = hebei_area       #’q
+			area = hebei_mid_area
+			area = hebei_west_area		#NEW
+			area = south_hebei_area 
+			area = henan_area      #Åh
+			area = henan_west_area
+			area = henan_east_area #NEW
+			area = north_henan_area
+			area = shanxi_area     #Kf
+			area = shanxi_north_area
+			area = shanxi_east_area	#NEW
+			area = shanxi_west_area	#NEW			
+			area = shaanxi_area    #Êy
+			area = shaanxi_north_area
+			area = central_shaanxi_area
+			area = central_gansu_area	#NEW	
+			area = gansu_area
+			area = gansu_eastnorth_area
+			area = west_gansu_area #y˘
+			area = westnorth_gansu_area
+			region = xinan_region  #á
+			area = huguang_area  
+			area = huguang_mid_area
+			area = huguang_west_area
+			area = jiangxi_area 
+			area = hunan_area     #Zi
+			area = hunan_south_area
+			area = guangzhou_area
+			area = west_guangdong_area
+			area = guangdong_area   #≤|
+			area = anhui_area
+			area = central_anhui_area	#NEW
+			area = south_anhui_area #ñv
+			area = zhejiang_area
+			area = zhejiang_north_area
+			area = jiangsu_area
+			area = south_jiangsu_area
+			area = jiangsu_mid_area #äç
+		}
+	}
+	mean_time_to_happen = {
+		months = 200
+	}
+	immediate = {
+		hidden_effect = {
+		random_list = {
+			30 = { owner = { set_country_flag = fanzhencuanwei } }
+			30 = { owner = { set_country_flag = fanzhenzhigeju } }
+			40 = { owner = { set_ruler_flag = meiyoufanzhen } }
+		}
+		if = {
+			limit = {
+				NOT = { has_ruler_flag = meiyoufanzhen } 
+			} 
+			if = {
+				limit = {
+					OR = {
+						area = shandong_area 
+						area = west_shandong_area
+						area = shandong_south_area	#NEW
+					}
+				}
+			owner = { set_country_flag = gejuqi }  
+			}    #Pü
+			if = {
+				limit = {
+					OR = {
+						area = liaoning_area
+						area = liaoning_east_area
+						area = hebei_area       #’q
+						area = hebei_mid_area
+						area = hebei_west_area		#NEW
+						area = south_hebei_area 
+					}
+				}
+			owner = { set_country_flag = gejuyan }   
+			}           #’q
+			if = {
+				limit = {
+					OR = {
+						area = henan_area
+						area = henan_west_area
+						area = north_henan_area
+						area = henan_east_area		#NEW
+					}
+				}
+				owner = { set_country_flag = gejuliang }  
+			}  #Åh
+			if = {
+				limit = { 
+					OR = {
+						area = shanxi_area 
+						area = shanxi_north_area
+						area = shanxi_east_area	#NEW
+						area = shanxi_west_area	#NEW		
+					} 
+				}
+				owner = { set_country_flag = gejujin } 
+			}  #Kf
+			if = {
+				limit = {  
+					OR = {
+						area = shaanxi_area    
+						area = shaanxi_north_area
+						area = central_shaanxi_area	#NEW	
+					}	
+				} 
+				owner = { set_country_flag = gejuqin }  
+			} #Êy
+			if = {
+				limit = {
+					OR = {
+						area = gansu_area
+						area = west_gansu_area
+						area = gansu_eastnorth_area
+						area = westnorth_gansu_area
+						area = central_gansu_area	#NEW
+					}
+				}
+			owner = { set_country_flag = gejuliangg  } 
+			}   #y˘
+			if = {
+				limit = {
+					region = xinan_region
+				} 
+				owner = {
+					set_country_flag = gejushu 
+				}
+			} #á
+			if = {
+				limit = {
+					OR = {
+						area = huguang_area
+						area = huguang_mid_area
+						area = huguang_west_area						
+						area = jiangxi_area 
+						area = hunan_area
+						area = hunan_south_area
+						area = hunan_west_area		#NEW
+					}
+				}
+				owner = { set_country_flag = gejuchu }  
+			}   #Zi
+			if = {
+				limit = {
+					OR = {
+						area = guangdong_area
+						area = west_guangdong_area
+						area = hainan_area						
+						area = guangzhou_area
+						area = guangxi_area
+						area = guangxi_west_area
+						area = guangxi_center_area		#NEW						
+					}
+				}
+				owner = { set_country_flag = gejuyue }  
+			}   #≤|
+			if = {
+				limit = {
+					OR = {
+						area = anhui_area
+						area = south_anhui_area
+						area = central_anhui_area	#NEW
+					}
+				}
+				owner = { set_country_flag = gejuwan }  
+			}   #ñv
+			if = {
+				limit = {
+					OR = {
+						area = zhejiang_area
+						area = zhejiang_north_area
+						area = jiangsu_area
+						area = south_jiangsu_area
+						area = jiangsu_mid_area #äç
+					}
+				}
+				owner = { set_country_flag = gejuyuee }  
+			}   #äç
+		}
+	}
+}
+
+	option = {
+		name = "xy_wudaishiguo.OPTA17"
+		if = { limit = { owner = { has_country_flag = fanzhencuanwei  } }
+			owner = {  country_event = { id = xy_wudaishiguo.18 } }  #·rMO'YPü
+		}
+		if = { limit = { owner = { has_country_flag = fanzhenzhigeju  } }#rRnc'YPü
+			owner = {  country_event = { id = xy_wudaishiguo.19 } }
+		}
+	}
+}
+
+
+  
+country_event = {
+	id = xy_wudaishiguo.18
+	title = "xy_wudaishiguo.NAME18"
+	desc = "xy_wudaishiguo.DESC18"
+	picture = LOST_A_CITY_eventPicture
+    major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = { has_country_flag = gejuqi }
+			clr_country_flag = gejuqi
+			random_list = {
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DAQ }
+							NOT = { exists = DAQ }
+						}
+						change_tag = DAQ
+						kill_ruler = yes
+						kill_heir = yes
+						swap_free_idea_group = yes
+					}
+                    if = {
+						limit = {  tag = DAQ   }
+						kill_ruler = yes 
+					}
+					clr_country_flag = fanzhencuanwei 
+					set_ruler_flag = fanzhencuanwei1
+				}
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DQ1 }
+							NOT = { exists = DQ1 }
+						}
+						change_tag = DQ1
+						kill_ruler = yes
+						kill_heir = yes
+						swap_free_idea_group = yes
+					}
+                    if = {
+						limit = {  tag = DQ1   }
+						kill_ruler = yes 
+					}
+					clr_country_flag = fanzhencuanwei 
+					set_ruler_flag = fanzhencuanwei1
+				}
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DQ2 }
+							NOT = { exists = DQ2 }
+						}
+						change_tag = DQ2
+						kill_ruler = yes
+						kill_heir = yes
+						swap_free_idea_group = yes
+					}
+                    if = {
+						limit = {  tag = DQ2   }
+						kill_ruler = yes 
+					}
+					clr_country_flag = fanzhencuanwei 
+					set_ruler_flag = fanzhencuanwei1
+				}
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DQI }
+							NOT = { exists = DQI }
+						}
+						change_tag = DQI
+						kill_ruler = yes
+						kill_heir = yes
+						swap_free_idea_group = yes
+					}
+                    if = {
+						limit = {  tag = DQI   }
+						kill_ruler = yes 
+					}
+					clr_country_flag = fanzhencuanwei 
+					set_ruler_flag = fanzhencuanwei1
+				}				
+			}
+		}  
+		
+		#####################·rMO'Y’q#################
+		if = {
+			limit = { has_country_flag = gejuyan }
+			clr_country_flag = gejuyan
+			random_list = {
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DY5 }
+							NOT = { exists = DY5 }
+						}
+						change_tag = DY5
+						kill_ruler = yes
+						kill_heir = yes
+						swap_free_idea_group = yes
+					}
+                    if = {
+						limit = {  tag = DY5   }
+						kill_ruler = yes 
+					}
+					clr_country_flag = fanzhencuanwei 
+					set_ruler_flag = fanzhencuanwei1
+				}
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DY6 }
+							NOT = { exists = DY6 }
+						}
+						change_tag = DY6
+						kill_ruler = yes
+						kill_heir = yes
+						swap_free_idea_group = yes
+					}
+                    if = {
+						limit = {  tag = DY6   }
+						kill_ruler = yes 
+					}
+					clr_country_flag = fanzhencuanwei 
+					set_ruler_flag = fanzhencuanwei1
+				}
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DY7 }
+							NOT = { exists = DY7 }
+						}
+						change_tag = DY7
+						kill_ruler = yes
+						kill_heir = yes
+						swap_free_idea_group = yes
+					}
+                    if = {
+						limit = {  tag = DY7   }
+						kill_ruler = yes 
+					}
+					clr_country_flag = fanzhencuanwei 
+					set_ruler_flag = fanzhencuanwei1
+				}
+			}
+		}
+
+		##gejuliang
+		if = {
+			limit = { has_country_flag = gejuliang }
+			clr_country_flag = gejuliang
+			random_list = {
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DL3 }
+							NOT = { exists = DL3 }
+						}
+						change_tag = DL3
+						kill_ruler = yes
+						kill_heir = yes
+						swap_free_idea_group = yes
+					}
+                    if = {
+						limit = {  tag = DL3   }
+						kill_ruler = yes 
+					}
+					clr_country_flag = fanzhencuanwei 
+					set_ruler_flag = fanzhencuanwei1
+				}
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DL4 }
+							NOT = { exists = DL4 }
+						}
+						change_tag = DL4
+						kill_ruler = yes
+						kill_heir = yes
+						swap_free_idea_group = yes
+					}
+                    if = {
+						limit = {  tag = DL4   }
+						kill_ruler = yes 
+					}
+					clr_country_flag = fanzhencuanwei 
+					set_ruler_flag = fanzhencuanwei1
+				}
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DL5 }
+							NOT = { exists = DL5 }
+						}
+						change_tag = DL5
+						kill_ruler = yes
+						kill_heir = yes
+						swap_free_idea_group = yes
+					}
+                    if = {
+						limit = {  tag = DL5   }
+						kill_ruler = yes 
+					}
+					clr_country_flag = fanzhencuanwei 
+					set_ruler_flag = fanzhencuanwei1
+				}
+			}
+		}
+	}
+	option = {
+	name = "xy_wudaishiguo.OPTA18"
+  }
+}
+#rRnc
+country_event = {
+	id = xy_wudaishiguo.19
+	title = "xy_wudaishiguo.NAME19"
+	desc = "xy_wudaishiguo.DESC19"
+	picture = BAD_ARMY_eventPicture
+    major = yes
+ 
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = gejuqi 
+			}
+			clr_country_flag = gejuqi
+			random_list = {
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DAQ } 
+							NOT = { exists = DAQ } 
+						}
+						every_owned_province = {
+							limit = {
+								OR = {
+									area = shandong_area
+									area = west_shandong_area 
+									area = shandong_south_area	#NEW
+								}
+						}
+							add_core = DAQ cede_province = DAQ  
+						} 
+						DAQ = {
+							add_country_modifier = {
+								name = "wudaigeju"
+								duration = -1
+							}
+						}
+					}
+				}    #ŸèÃëSÇiás∆bVÔSÂN˚m†RvQ÷N”YlÑv'YPü
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DQ1 } 
+							NOT = { exists = DQ1 } 
+						}
+						every_owned_province = {
+							limit = {
+								OR = {
+									area = shandong_area
+									area = west_shandong_area
+									area = shandong_south_area	#NEW									
+								}
+						}
+							add_core = DQ1 cede_province = DQ1  
+						} 
+						DQ1 = {
+							add_country_modifier = {
+								name = "wudaigeju"
+								duration = -1
+							}
+						}
+					}
+				}    #ŸèÃëSÇiás∆bVÔSÂN˚m†RvQ÷N”YlÑv'YPü
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DQ2 } 
+							NOT = { exists = DQ2 } 
+						}
+						every_owned_province = {
+							limit = {
+								OR = {
+									area = shandong_area
+									area = west_shandong_area
+									area = shandong_south_area	#NEW									
+								}
+						}
+							add_core = DQ2 cede_province = DQ2  
+						} 
+						DQ2 = {
+							add_country_modifier = {
+								name = "wudaigeju"
+								duration = -1
+							}
+						}
+					}
+				}    #ŸèÃëSÇiás∆bVÔSÂN˚m†RvQ÷N”YlÑv'YPü
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DQ3 } 
+							NOT = { exists = DQ3 } 
+						}
+						every_owned_province = {
+							limit = {
+								OR = {
+									area = shandong_area
+									area = west_shandong_area
+									area = shandong_south_area	#NEW
+								}
+						}
+							add_core = DQ3 cede_province = DQ3  
+						} 
+						DQ3 = {
+							add_country_modifier = {
+								name = "wudaigeju"
+								duration = -1
+							}
+						}
+					}
+				}    #ŸèÃëSÇiás∆bVÔSÂN˚m†RvQ÷N”YlÑv'YPü
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DQI } 
+							NOT = { exists = DQI } 
+						}
+						every_owned_province = {
+							limit = {
+								OR = {
+									area = shandong_area
+									area = west_shandong_area 
+									area = shandong_south_area	#NEW									
+								}
+						}
+							add_core = DQI cede_province = DQI  
+						} 
+						DQI = {
+							add_country_modifier = {
+								name = "wudaigeju"
+								duration = -1
+							}
+						}
+					}
+				}    #ŸèÃëSÇiás∆bVÔSÂN˚m†RvQ÷N”YlÑv'YPü				
+			}
+		}   #rRnc'YPü
+####################################################
+		if = {
+			limit = {
+				has_country_flag = gejuyan 
+			}
+			clr_country_flag = gejuyan
+			random_list = {
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DY5 } 
+							NOT = { exists = DY5 } 
+						}
+						every_owned_province = {
+							limit = {
+							OR = {
+								area = liaoning_area   
+								area = liaoning_east_area
+								area = liaoning_area
+								area = liaoning_east_area
+								area = hebei_area       #’q
+								area = hebei_mid_area
+								area = hebei_west_area		#NEW
+								area = south_hebei_area 
+							}
+						}
+							add_core = DY5 cede_province = DY5  
+						} 
+						DY5 = {
+							add_country_modifier = {
+								name = "wudaigeju"
+								duration = -1
+							}
+						}
+					}
+				}    #ŸèÃëSÇiás∆bVÔSÂN˚m†RvQ÷N”YlÑv'YPü
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DY6 } 
+							NOT = { exists = DY6 } 
+						}
+						every_owned_province = {
+							limit = {
+							OR = {
+								area = liaoning_area   
+								area = liaoning_east_area
+								area = liaoning_area
+								area = liaoning_east_area
+								area = hebei_area       #’q
+								area = hebei_mid_area
+								area = hebei_west_area		#NEW
+								area = south_hebei_area
+							}
+						}
+							add_core = DY6 cede_province = DY6  
+						} 
+						DY6 = {
+							add_country_modifier = {
+								name = "wudaigeju"
+								duration = -1
+							}
+						}
+					}
+				}    #ŸèÃëSÇiás∆bVÔSÂN˚m†RvQ÷N”YlÑv'YPü
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DY7 } 
+							NOT = { exists = DY7 } 
+						}
+						every_owned_province = {
+							limit = {
+							OR = {
+								area = liaoning_area   
+								area = liaoning_east_area
+								area = liaoning_area
+								area = liaoning_east_area
+								area = hebei_area       #’q
+								area = hebei_mid_area
+								area = south_hebei_area 
+								area = hebei_west_area		#NEW								
+							}
+						}
+							add_core = DY7 cede_province = DY7  
+						} 
+						DY7 = {
+							add_country_modifier = {
+								name = "wudaigeju"
+								duration = -1
+							}
+						}
+					}
+				}    #ŸèÃëSÇiás∆bVÔSÂN˚m†RvQ÷N”YlÑv'YPü
+			}
+		}
+##########################'Y’q###################################
+		if = {
+			limit = {
+				has_country_flag = gejuliang 
+			}
+			clr_country_flag = gejuliang
+			random_list = {
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DL3 } 
+							NOT = { exists = DL3 } 
+						}
+						every_owned_province = {
+							limit = {
+								OR = {
+									area = henan_area
+									area = henan_west_area
+									area = north_henan_area
+									area = henan_east_area		#NEW
+								}
+							}
+							add_core = DL3 cede_province = DL3  
+						} 
+						DL3 = {
+							add_country_modifier = {
+								name = "wudaigeju"
+								duration = -1
+							}
+						}
+					}
+				}   
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DL4 } 
+							NOT = { exists = DL4 } 
+						}
+						every_owned_province = {
+							limit = {
+								OR = {
+									area = henan_area
+									area = henan_west_area
+									area = north_henan_area
+									area = henan_east_area		#NEW									
+								}
+							}
+							add_core = DL4 cede_province = DL4  
+						} 
+						DL4 = {
+							add_country_modifier = {
+								name = "wudaigeju"
+								duration = -1
+							}
+						}
+					}
+				}    #
+				100 = {
+					if = {
+						limit = {
+							NOT = { tag = DL5 } 
+							NOT = { exists = DL5 } 
+						}
+						every_owned_province = {
+							limit = {
+								OR = {
+									area = henan_area
+									area = henan_west_area
+									area = north_henan_area
+									area = henan_east_area		#NEW									
+								}
+							}
+							add_core = DL5 cede_province = DL5  
+						} 
+						DL5 = {
+							add_country_modifier = {
+								name = "wudaigeju"
+								duration = -1
+							}
+						}
+					}
+				}    #
+			}
+		}
+
+	clr_country_flag = fanzhenzhigeju
+	}
+
+	option = {
+		name = "xy_wudaishiguo.OPTA19"
+	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.20
+	title = "xy_wudaishiguo.NAME20"
+	desc = "xy_wudaishiguo.DESC20"
+	picture = LOST_A_CITY_eventPicture
+    major = yes
+	
+	fire_only_once = yes
+	trigger = {
+		has_country_modifier = wudaigeju 
+		tag = HT1
+		has_leader = "Ûwlemt"
+		has_country_flag = houshuduli
+		OR = {
+			LIO = { is_neighbor_of = ROOT }
+			KHT = { is_neighbor_of = ROOT } 
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "xy_wudaishiguo.OPTA20"
+		add_country_modifier = {
+			name = "houtangneiluan"
+			duration = 1825 
+		} 
+		kill_leader = { type = "Ûwlemt" }
+		if = {
+			limit = {
+				exists = LIO
+				LIO = { is_neighbor_of = ROOT } 
+			}
+			LIO ={ country_event = { id = xy_wudaishiguo.21 }  } 
+		}
+		if = {
+			limit = {
+				OR = {
+					NOT = { exists = LIO }
+					NOT = {
+						LIO = { is_neighbor_of = ROOT } 
+					}
+				} 
+			}
+			KHT ={ country_event = { id = xy_wudaishiguo.21 }  } 
+		}
+	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.21
+	title = "xy_wudaishiguo.NAME21"
+	desc = "xy_wudaishiguo.DESC21"
+	picture = PARLIAMENT_eventPicture
+    major = yes
+	
+	is_triggered_only = yes
+	option = {
+		name = "xy_wudaishiguo.OPTA21"
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0.2
+				is_at_war = yes
+			}
+		}
+		
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		cavalry = capital
+		
+		declare_war_with_cb = {
+			who = HT1
+			casus_belli = cb_imperial
+		} 
+		HT1 = {
+			every_owned_province = {
+			limit = {
+				OR = {
+					area = shanxi_area 
+					area = shanxi_north_area
+					area = shanxi_east_area	#NEW
+					area = shanxi_west_area	#NEW					
+				} 
+			}	
+				change_controller = ROOT  
+			}
+			define_general = {
+				name = "Ûwlemt"
+				fire = 4
+				shock = 6
+				manuever = 5
+				siege = 3
+			}
+		}
+	}	
+	option = {
+	name = "xy_wudaishiguo.OPTB21"
+		add_prestige = -10
+	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.22
+	title = "xy_wudaishiguo.NAME22"
+	desc = "xy_wudaishiguo.DESC22"
+	picture = receives_commands_mil_eventPicture
+    major = yes
+    fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = LIO
+			tag = KHT
+		}
+		war_with = HT1
+		HT1 = {
+			NOT = {
+				war_score_against = {
+					who = ROOT
+					value = -20
+				}
+	
+			}
+			capital_scope = { controlled_by = ROOT }
+			has_country_modifier = houtangneiluan
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		kill_leader = { type = "Ûwlemt" }
+		HT1 = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						province_id = 697 		
+						province_id = 696 
+						province_id = 1816
+						province_id = 3186
+						province_id = 4324
+						province_id = 4875
+						province_id = 4883
+						province_id = 4882
+					}	
+				}
+				cede_province = ROOT add_core = ROOT remove_core = HT1 			
+			}
+			every_owned_province = {
+				cede_province = HJ1 add_core = HJ1 remove_core = HT1 			
+			}			
+		}		
+		
+		#697 = { limit = { owned_by = HT1 } cede_province = ROOT add_core = ROOT remove_core = HT1 }
+		#696 = { limit = { owned_by = HT1 } cede_province = ROOT add_core = ROOT remove_core = HT1 }
+		#1816 = { limit = { owned_by = HT1 } cede_province = ROOT add_core = ROOT remove_core = HT1 }
+		#3186 = { limit = { owned_by = HT1 } cede_province = ROOT add_core = ROOT remove_core = HT1 }
+		#4324 = { limit = { owned_by = HT1 } cede_province = ROOT add_core = ROOT remove_core = HT1 }
+		#HT1 = { every_owned_province = {  cede_province = HJ1 add_core = HJ1 remove_core = HT1   } }
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA22"
+		HJ1 = {
+			define_ruler = {
+				name = "Ûwlemt"
+
+				age = 44
+				adm = 2
+				dip = 0
+				mil = 5
+				fixed = yes				
+				leader = {
+					name = "Ûwlemt"
+					fire = 4
+					shock = 6
+					manuever = 5
+					siege = 3
+				}
+			}
+			set_capital = 2492
+			set_ruler_flag = shijingtang				
+		}
+		HJ1 = {
+			define_heir = {
+					name = "ÛwÕë5ç"
+					fixed = yes					
+					age = 23
+					adm = 1 
+					dip = 1
+					mil = 1
+
+			}
+		}
+	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.23
+	title = "xy_wudaishiguo.NAME23"
+	desc = "xy_wudaishiguo.DESC23"
+	picture = ENJOY_FESTIVAL_eventPicture
+    major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_modifier = wudaigeju 
+		tag = HJ1
+		NOT = { has_ruler_flag = shijingtang }	
+		NOT = { mil = 2 }
+		NOT = { dip = 2 }
+		NOT = { adm = 2 }
+		OR = { LIO = { is_neighbor_of = ROOT }
+		KHT = { is_neighbor_of = ROOT } }
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	immediate = {
+		add_ruler_modifier = {
+			name = "houjinbaojun"
+			duration = -1 
+		} 
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA23"
+		add_prestige = 20
+		ai_chance = {
+			factor = 100
+		}
+		if = {
+			limit = {
+				exists = LIO
+				LIO = { is_neighbor_of = ROOT } 
+			}
+			LIO = {
+				country_event = {
+					id = xy_wudaishiguo.24 
+				}
+			} 
+		}
+		if = {
+			limit = {
+				OR = {
+					NOT = { exists = LIO }
+					NOT = { LIO = { is_neighbor_of = ROOT } }
+				} 
+			}
+			KHT ={ country_event = { id = xy_wudaishiguo.24 }  } 
+		}
+	}
+	option = {
+	name = "xy_wudaishiguo.OPTA23"
+		add_prestige = -20
+		add_stability = -6
+	}
+}
+
+
+country_event = {
+	id = xy_wudaishiguo.24
+	title = "xy_wudaishiguo.NAME24"
+	desc = "xy_wudaishiguo.DESC24"
+	picture = FAKE_SKILL_XIEAN_eventPicture
+    major = yes
+	
+	is_triggered_only = yes
+		option = {
+			name = "xy_wudaishiguo.OPTA24"
+			ai_chance = {
+			factor = 100
+				modifier = {
+					factor = 0.2
+					is_at_war = yes
+				}
+			}
+			cavalry = capital
+			cavalry = capital
+			cavalry = capital
+			cavalry = capital
+			cavalry = capital
+			cavalry = capital
+			cavalry = capital
+			cavalry = capital
+			cavalry = capital
+			cavalry = capital
+			declare_war_with_cb = {
+				who = HJ1
+				casus_belli = cb_imperial
+			} 
+		}
+		option = {
+		name = "xy_wudaishiguo.OPTB24"
+			add_prestige = -10
+		}
+}
+
+country_event = {
+	id = xy_wudaishiguo.25
+	title = "xy_wudaishiguo.NAME25"
+	desc = "xy_wudaishiguo.DESC25"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = LIO
+			tag = KHT 
+		}
+		war_with = HJ1
+		HJ1 = {
+			NOT = {
+				war_score_against = {
+					who = ROOT
+					value = -20
+				}
+			}
+			capital_scope = { controlled_by = ROOT }
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA25"
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = 500
+		add_dip_power = 500
+		add_mil_power = 500
+		add_treasury = 5000
+		HJ1 = { every_owned_province = {  cede_province = HH1 add_core = HH1 remove_core = HJ1   } }
+		HH1 = {
+			add_country_modifier = {
+				name = "wudaishijiansha"
+				duration = 3650 
+			}
+			set_capital = 688
+			define_ruler = {
+				name = "RÂw‹è"
+
+				age = 52
+				adm = 4
+				dip = 5
+				mil = 5
+				fixed = yes				
+				leader = {
+						name = "RÂw‹è"
+						fire = 7
+						shock = 7
+						manuever = 4
+						siege = 3
+				}
+			}
+			define_heir = {
+					name = "Rb≠ã"
+					fixed = yes					
+					age = 26
+					adm = 4
+					dip = 5
+					mil = 4
+
+			}
+			set_ruler_flag = liuzhiyuan
+			define_general = {
+					name = "ÌêZ"
+					fire = 5
+					shock = 7
+					manuever = 4
+					siege = 5
+			}				
+		}
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTB25"
+		HJ1 = { every_owned_province = {  cede_province = ROOT add_core = HH1 remove_core = HJ1   } }
+		add_adm_power = -400
+	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.26
+	title = "xy_wudaishiguo.NAME26"
+	desc = "xy_wudaishiguo.DESC26"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = wudaigeju }
+		culture_group = east_asian
+		any_neighbor_country = { has_country_modifier = wudaigeju }
+		NOT = { has_global_flag = wudaigejujieshu }	
+		NOT = { has_country_flag = wudailsjs }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+
+	option = {
+		name = "xy_wudaishiguo.OPTA26"
+		add_country_modifier = {
+			name = "wudaigeju"
+			duration = -1 
+		} 
+		east_china_sea_region = {
+			discover_country = ROOT
+		}
+		south_china_sea_region = {
+			discover_country = ROOT
+		}
+		indo_china_region = {
+			discover_country = ROOT
+		}
+		south_china_region = {
+			discover_country = ROOT
+		}
+		north_china_region = {
+			discover_country = ROOT
+		}			
+		tibet_region = {
+			discover_country = ROOT
+		}			
+		xinan_region = {
+			discover_country = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.27
+	title = "xy_wudaishiguo.NAME27"
+	desc = "xy_wudaishiguo.DESC27"
+	picture = BAD_ARMY_eventPicture
+   major = yes
+	trigger = {
+		tag = HH1
+		has_country_modifier = wudaigeju 
+		has_ruler_flag = liuzhiyuan
+		has_heir = yes
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA27"
+		add_years_of_income = -0.2
+		trigger = { ai = no }
+		random_list = {
+			50 = { 
+				kill_heir = yes
+				hidden_effect = {
+						define_heir = {
+						name = "RbPy"
+						fixed = yes		
+						age = 18
+						adm = 2
+						dip = 1
+						mil = 3
+
+					}
+					country_event = { id = xy_wudaishiguo.28 }
+				}
+			}
+			50 = {
+				add_legitimacy = 5
+				add_horde_unity = 5
+			}
+		}
+	}
+	
+	option = {
+		name = "xy_wudaishiguo.OPTB27"
+		trigger = { ai = no }
+		random_list = {
+			75 = {
+				kill_heir = yes
+				hidden_effect = {
+					define_heir = {
+					name = "RbPy"
+					fixed = yes					
+					age = 18
+					adm = 2
+					dip = 1
+					mil = 3
+
+					}
+				}
+				country_event = { id = xy_wudaishiguo.28 }
+			}	
+			25 = {
+				add_legitimacy = 30
+				add_horde_unity = 30
+			}
+		}
+	}
+   option = {
+	name = "xy_wudaishiguo.OPTC27"
+		
+		trigger = { ai = yes }
+		kill_heir = yes
+		hidden_effect = {
+			define_heir = {
+				name = "RbPy"
+				fixed = yes				
+				age = 18
+				adm = 2
+				dip = 1
+				mil = 3
+				
+			}
+			country_event = { id = xy_wudaishiguo.28 }
+		}
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTD27"
+		highlight = yes
+		trigger = {
+			check_variable = {
+				which = num_of_tianshanlotus
+				value = 1
+			}		
+		}
+		custom_tooltip = tp_lost_tianshanlotus
+		hidden_effect = {
+			subtract_variable = {
+				which = num_of_tianshanlotus
+				value = 1
+			}
+		}
+	}	
+}	
+
+
+country_event = {
+	id = xy_wudaishiguo.28
+	title = "xy_wudaishiguo.NAME28"
+	desc = "xy_wudaishiguo.DESC28"
+	picture = EMPEROR_ASCENDED_THRONE_eventPicture
+    major = yes
+		is_triggered_only = yes
+		option = {
+			name = "xy_wudaishiguo.OPTA28"
+				kill_ruler = yes
+				add_stability = -6 
+				set_country_flag = youzhuchanruohh
+		}
+}
+
+country_event = {
+	id = xy_wudaishiguo.29
+	title = "xy_wudaishiguo.NAME29"
+	desc = "xy_wudaishiguo.DESC29"
+	picture = KILL_GENERAL_eventPicture
+	
+	major = yes
+	trigger = {
+		tag = HH1
+		has_country_flag = youzhuchanruohh
+		has_leader = "ÌêZ"
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA29"
+		change_tag = HZ1
+		swap_free_idea_group = yes
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 693 
+					province_id = 3170
+					province_id = 3171
+					province_id = 2505
+				}	
+			}
+			cede_province = BH1 add_core = BH1 remove_core = ROOT 
+		}	
+			#693 = { limit = { owned_by = ROOT } cede_province = BH1 add_core = BH1 remove_core = ROOT }
+			#3170 = { limit = { owned_by = ROOT } cede_province = BH1 add_core = BH1 remove_core = ROOT }
+			#3171 = { limit = { owned_by = ROOT } cede_province = BH1 add_core = BH1 remove_core = ROOT }
+			#2505 = { limit = { owned_by = ROOT } cede_province = BH1 add_core = BH1 remove_core = ROOT }
+			define_ruler = {
+				name = "ÌêZ"
+				fixed = yes				
+				age = 46
+				adm = 5
+				dip = 4
+				mil = 6
+				
+				attach_leader = "ÌêZ"
+			}
+			set_country_flag = guowei
+            set_ruler_flag = guowei11	
+		BH1 = {
+			define_ruler = {
+				name = "RT"
+				fixed = yes				
+				age = 56
+				adm = 3
+				dip = 3
+				mil = 3
+				
+			}
+			define_heir = {
+				name = "Rµî"
+				fixed = yes				
+				age = 25
+				adm = 3
+				dip = 2
+				mil = 3
+				
+			}
+		}
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTB29"
+		add_corruption = 20
+	}
+}
+
+
+
+country_event = {
+	id = xy_wudaishiguo.30
+	title = "xy_wudaishiguo.NAME30"
+	desc = "xy_wudaishiguo.DESC30"
+	picture = GOOD_WITH_MONARCH_eventPicture
+    major = yes
+	
+	trigger = {
+		has_country_flag = wudaidiguozhizheng
+		any_country = {
+			war_with = ROOT
+			capital_scope = { controlled_by = ROOT }
+			is_subject = no
+			has_country_flag = wudaidiguozhizheng
+			NOT = {
+				war_score_against = {
+					who = ROOT
+					value = -20
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = "xy_wudaishiguo.OPTA30"
+		every_country = {
+			limit = {
+				war_with = ROOT
+				capital_scope = { controlled_by = ROOT }
+				has_country_flag = wudaidiguozhizheng
+                NOT = {
+					war_score_against = {
+						who = ROOT
+						value = -20
+					}
+				}
+			}
+			every_owned_province = { cede_province = ROOT add_core = ROOT }   
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_modifier = wudaidiguo 
+				}
+			}
+			add_country_modifier = {
+				name = "wudaidiguo"
+				duration = -1 
+			}
+			set_emperor_of_china = ROOT
+		}
+	}
+}
+country_event = {
+	id = xy_wudaishiguo.31
+	title = "xy_wudaishiguo.NAME31"
+	desc = "xy_wudaishiguo.DESC31"
+	picture = GOOD_WITH_MONARCH_eventPicture
+    major = yes
+	
+	trigger = {
+		has_country_modifier = wudaiguangai
+		has_country_modifier = wudaiwugai
+		has_country_modifier = wudaiwengai	
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = "xy_wudaishiguo.OPTA31"
+		remove_country_modifier = wudaigeju
+		remove_country_modifier = wudaiguangai
+		remove_country_modifier = wudaiwugai
+		remove_country_modifier = wudaiwengai
+		remove_country_modifier = wudaidiguo
+		set_country_flag = wudailsjs
+		set_global_flag = wudaigejujieshu
+		# # # rab add # # #
+		complete_mission = wudaixuanchengdi_mission
+		complete_mission = wudaigaigewu1_mission
+		complete_mission = wudaigaigewen_mission
+		complete_mission = wudaigaigeguan_mission
+		
+	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.32
+	title = "xy_wudaishiguo.NAME32"
+	desc = "xy_wudaishiguo.DESC32"
+	picture = HAPPY_MONARCH_eventPicture
+	major = yes
+	trigger = {
+		tag = HZ1
+		had_country_flag = {
+				flag = guowei
+				days = 365
+		}
+		has_ruler_flag = guowei11
+		NOT = { has_ruler = "ÙgcÉ" } #rab_ add
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA32"
+		kill_ruler = yes
+		define_ruler = {
+			name = "ÙgcÉ"
+			fixed = yes			
+			age = 30
+			adm = 6
+			dip = 6
+			mil = 6
+			
+			leader = {
+				name = "ÙgcÉ"
+				fire = 8
+				shock = 4
+				manuever = 5
+				siege = 2
+			}
+		}
+		set_ruler_flag = chairong
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { 
+				add_ruler_personality = just_personality 
+				add_ruler_personality = conqueror_personality
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = xy_wudaishiguo.33
+	title = "xy_wudaishiguo.NAME33"
+	desc = "xy_wudaishiguo.DESC33"
+	picture = convert_outwar_eventPicture
+	major = yes
+	trigger = {
+		has_country_modifier = wudaidiguo
+		NOT = { tag = SNG }
+		NOT = { any_country = { NOT = { tag = ROOT } has_country_modifier = wudaidiguo } }
+		is_year = 948
+		NOT = { is_year = 976 }
+		NOT = { has_country_flag = zhaokuangyin }
+		NOT = { has_country_flag = kill_zhaokuangyin }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA33"
+		 define_general = {
+				name = "uç!S‰w"
+				fire = 11
+				shock = 11
+				manuever = 7
+				siege = 4
+			}
+      set_country_flag = zhaokuangyin
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTB33"
+		add_country_modifier = {
+			name = "daiyagonchun"
+			duration = 1860
+		}
+		set_country_flag = kill_zhaokuangyin
+	}	
+}
+
+country_event = {
+	id = xy_wudaishiguo.34
+	title = "xy_wudaishiguo.NAME34"
+	desc = "xy_wudaishiguo.DESC34"
+	picture = convert_outwar_eventPicture
+   major = yes
+   fire_only_once = yes
+	trigger = {
+		NOT = { is_year = 976 }
+		owns = 688
+		OR = { 
+			NOT = { mil = 5 }
+			NOT = { adm = 5 }
+		}
+		OR = {
+			NOT = { ruler_age = 25 }
+			has_regency = yes
+		}
+		has_country_flag = zhaokuangyin
+		NOT = { has_country_modifier = wudaishijiansha }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+
+	option = {
+		name = "xy_wudaishiguo.OPTA34"
+		every_province = {
+				limit = {
+					is_core = ROOT
+				}
+					add_core = SNG
+					remove_core = ROOT
+			}
+				change_tag = SNG
+				swap_free_idea_group = yes
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire
+				set_government_rank = 3
+				set_capital = 688
+		if = {
+			limit = {
+				NOT = {  has_leader = "uç!S‰w" } 
+			}
+			define_ruler = {
+			name = "uç!S‰w"
+				fixed = yes				
+				age = 33
+				adm = 6
+				dip = 6
+				mil = 6
+				
+				leader = {
+					name = "uç!S‰w"
+					fire = 11
+					shock = 11
+					manuever = 7
+					siege = 4
+				}
+			}
+		}
+		if = {
+			limit = {   has_leader = "uç!S‰w"  }
+			define_ruler = {
+				name = "uç!S‰w"
+
+				age = 33
+				adm = 6
+				dip = 6
+				mil = 6
+				fixed = yes				
+				attach_leader = "uç!S‰w"
+			}
+		}
+		if = {
+		limit = {
+			has_dlc = "Rights of Man" 
+		}
+			hidden_effect = { 
+				add_ruler_personality = well_advised_personality
+				add_ruler_personality = benevolent_personality
+				add_ruler_personality = lawgiver_personality
+			}
+		}
+		set_ruler_flag = zhaokuangyin
+	}
+}
+country_event = {
+	id = xy_wudaishiguo.35
+	title = "xy_wudaishiguo.NAME35"
+	desc = "xy_wudaishiguo.DESC35"
+	picture = LIBERUM_VETO_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = HZ1
+		1816 = {
+			OR = {
+				owned_by = KHT
+				owned_by = LIO 
+			} 
+		}
+		had_country_flag = {
+			flag = chairong
+			days = 1825
+		}
+		has_ruler_flag = chairong
+		is_at_war = no
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA35"
+		set_country_flag = jingongqidan
+        add_prestige = 20
+		ai_chance = {
+			factor = 100
+		}
+	}
+  option = {
+		name = "xy_wudaishiguo.OPTA35"
+		add_prestige = -20
+	}
+}
+country_event = {
+	id = xy_wudaishiguo.36
+	title = "xy_wudaishiguo.NAME36"
+	desc = "xy_wudaishiguo.DESC36"
+	picture = BAD_ARMY_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = HZ1
+		1816 = { NOT = { owned_by = ROOT } }
+		692 = { owned_by = ROOT }
+		3182 = { owned_by = ROOT }
+		had_country_flag = {
+			flag = chairong
+			days = 1825
+		}
+		has_country_flag = jingongqidan
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+
+
+	option = {
+		name = "xy_wudaishiguo.OPTA36"
+        3182 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2 
+		}
+		692 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2 
+		}
+		define_heir = {
+			name = "ÙgóR≠ã"
+			fixed = yes			
+			age = 6
+			adm = 2
+			dip = 2
+			mil = 2
+			
+		}
+		kill_ruler = yes
+	}
+}
+country_event = {
+	id = xy_wudaishiguo.37
+	title = "xy_wudaishiguo.NAME37"
+	desc = "xy_wudaishiguo.DESC37"
+	picture = FEAST_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SNG
+		owns = 2492
+		has_ruler_flag = zhaokuangyin
+		NOT = {
+			any_country = {
+				NOT = { tag = WUY } 
+				NOT = { tag = BH1 } 
+				has_country_modifier = wudaigeju 
+			} 
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA37"
+        kill_ruler = yes
+		define_ruler = {
+			name = "uçIQIN"
+
+			age = 37
+			adm = 6
+			dip = 4
+			mil = 0
+			fixed = yes			
+		}
+		set_country_flag = jipinjiruo
+		set_ruler_flag = zhaoguangyi
+	}
+   option = {
+		name = "xy_wudaishiguo.OPTB37"
+		add_stability = -1
+		set_capital = 2492
+		define_heir = {
+			name = "uç∑V-f"
+			fixed = yes			
+			age = 25
+			adm = 4
+			dip = 4
+			mil = 5
+			
+		}
+	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.38
+	title = "xy_wudaishiguo.NAME38"
+	desc = "xy_wudaishiguo.DESC38"
+	picture = COURT_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = YW1
+		has_country_modifier = wudaigeju
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	option = {
+	name = "xy_wudaishiguo.OPTA38"
+		change_tag = NT1
+		swap_free_idea_group = yes
+		define_ruler = {
+			name = "Ng*f"
+
+			age = 48
+			adm = 5
+			dip = 4
+			mil = 4
+			fixed = yes			
+		}
+		define_heir = {
+			name = "Ngüt"
+			fixed = yes			
+			age = 20
+			adm = 3
+			dip = 4
+			mil = 5
+			
+		}
+  	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.39
+	title = "xy_wudaishiguo.NAME39"
+	desc = "xy_wudaishiguo.DESC39"
+	picture = BAD_ARMY_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CUU
+		has_country_modifier = wudaigeju
+		NOT = {
+			has_ruler_flag = mayin11 
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA39"
+		kill_ruler = yes
+        add_country_modifier = {
+			name = "wudaishijiansha"
+			duration = 7300 
+		}
+		add_country_modifier = {
+			name = "nanchuneiluan"
+			duration = 7300 
+		}
+		add_stability = -1
+  	}
+}
+
+country_event = {
+	id = xy_wudaishiguo.40
+	title = "xy_wudaishiguo.NAME40"
+	desc = "xy_wudaishiguo.DESC40"
+	picture = BATTLE_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		tag = CUU
+		has_country_modifier = wudaigeju
+		has_country_modifier = nanchuneiluan
+		any_neighbor_country = { has_country_modifier = wudaigeju mil = 5 }  #hTπè˝V∂R	grRncøRõRTINõQãN'YéN5
+		NOT = { stability = 1 }  #3zöR°l–c0R1ÂNN
+		is_at_war = no
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	option = {
+		name = "xy_wudaishiguo.OPTA40"
+		set_country_flag = flg_swap_WP1
+		if = {
+			limit = {
+				exists = QH1 
+			}
+			every_owned_province = {
+				limit = {
+					OR = {	
+						province_id = 680 	
+                        province_id = 3210
+						province_id = 3211
+						province_id = 4835
+						is_core = QH1
+					}
+				}
+				cede_province = QH1 add_core = QH1 remove_core = ROOT
+			}	
+			#680 = { limit = { owned_by = ROOT } cede_province = QH1 add_core = QH1 remove_core = ROOT }
+			#3210 = { limit = { owned_by = ROOT } cede_province = QH1 add_core = QH1 remove_core = ROOT }
+			#2489 = { limit = { owned_by = ROOT } cede_province = QH1 add_core = QH1 remove_core = ROOT }
+			#every_owned_province = { limit = { is_core = QH1 } cede_province = QH1 add_core = QH1 remove_core = ROOT }
+		}
+		if = {
+			limit = { exists = HS1 } 
+			every_owned_province = {
+				limit = {
+					OR = {	
+						province_id = 680 	
+                        province_id = 3210
+						province_id = 2489
+						is_core = HS1
+					}
+				}
+				cede_province = HS1 add_core = HS1 remove_core = ROOT
+			}			
+			#680 = { limit = { owned_by = ROOT } cede_province = HS1 add_core = HS1 remove_core = ROOT }
+			#3210 = { limit = { owned_by = ROOT } cede_province = HS1 add_core = HS1 remove_core = ROOT }
+			#2489 = { limit = { owned_by = ROOT } cede_province = HS1 add_core = HS1 remove_core = ROOT }
+			#every_owned_province = { is_core = HS1 cede_province = HS1 add_core = HS1 remove_core = ROOT }
+		}	                   #ÇYúg	gMRáRäb›TSÑv‡QWW0WŸuMRáˇTˆe	gMRá8h√VÑvRVÿèˇMRáNXR(WR˘RTá€èLàT7hÕdjO
+		if = {
+			limit = { exists = NAN }
+			every_owned_province = {
+				limit = {
+					OR = {	
+					province_id = 675 
+                    province_id = 2488
+                    province_id = 3212
+                    province_id = 674 
+					province_id = 673
+					is_core = NAN					
+					}
+				}
+				cede_province = NAN add_core = NAN remove_core = ROOT
+			}	
+			#675 = { limit = { owned_by = ROOT } cede_province = NAN add_core = NAN remove_core = ROOT }
+			#2488 = { limit = { owned_by = ROOT } cede_province = NAN add_core = NAN remove_core = ROOT }
+			#3212 = { limit = { owned_by = ROOT } cede_province = NAN add_core = NAN remove_core = ROOT }
+			#674 = { limit = { owned_by = ROOT } cede_province = NAN add_core = NAN remove_core = ROOT }
+			#673 = { limit = { owned_by = ROOT } cede_province = NAN add_core = NAN remove_core = ROOT }
+			#every_owned_province = { limit = { is_core = NAN } cede_province = NAN add_core = NAN remove_core = ROOT }
+		}
+		if = {
+			limit = {
+				exists = CDL 
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						is_core = CDL
+						province_id = 675 
+					    province_id = 2488
+					    province_id = 3212
+					    province_id = 674 
+                        province_id = 673 
+					}
+				}
+				cede_province = CDL add_core = CDL remove_core = ROOT 
+			}
+		}	
+	}
+}
+
+#country_event = {
+#	id = xy_wudaishiguo.41
+#	title = "xy_wudaishiguo.NAME41"
+#	desc = "xy_wudaishiguo.DESC41"
+#	picture = BAD_ARMY_eventPicture
+#	major = yes
+#	fire_only_once = yes
+#	trigger = {
+#		has_country_flag = wudailsjs
+#		WUY = { ai = yes  NOT = { any_neighbor_country = {  has_country_modifier = wudaigeju  } } }
+#	}
+#	mean_time_to_happen = {
+#		months = 12
+#	}
+#	option = {
+#		name = "xy_wudaishiguo.OPTA41"
+#		SNG = { inherit = WUY }
+#		add_treasury = 2000
+#	}
+#}
+
+country_event = {
+	id = xy_wudaishiguo.42
+	title = "xy_wudaishiguo.NAME42"
+	desc = "xy_wudaishiguo.DESC42"
+	picture = shangchao_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				tag = LIO
+				NOT = { exists = KHT } 
+			}
+			AND = {
+				tag = KHT
+				NOT = { exists = LIO } 
+			} 
+		}
+		any_neighbor_country = { tag = BH1  has_country_modifier = wudaigeju }
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+
+
+	option = {
+		name = "xy_wudaishiguo.OPTA42"
+		create_alliance = BH1
+		ai_chance = {
+			factor = 100
+		}
+		set_ai_attitude = {
+			who = BH1
+			attitude = attitude_friendly
+		}
+		BH1 = {
+			add_opinion = {
+				who = ROOT
+				modifier = supported_independence
+			}
+		}
+	}
+	option = {
+                 name = "xy_wudaishiguo.OPTB42"
+         add_prestige = -20
+	}
+}

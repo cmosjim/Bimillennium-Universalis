@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = lidaoyuan_advisor_come
+
+#fkSĞgÍyagöNNúQ°s
+#id = 1 : lidaoyuan : æSCQ0ŒëX0
+
+country_event = {
+	id = lidaoyuan_advisor_come.1
+	title = "lidaoyuan_advisor_come.1.t"
+	desc = "lidaoyuan_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 480	
+		NOT = { is_year = 530 }
+		OR = {
+			AND = {
+				exists = NWE
+				tag = NWE
+			}
+			AND = {
+				NOT = { exists = NWE }
+				owns = 3266
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = lidaoyuan_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = lidaoyuan
+				name = "æSCQ0ŒëX0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "æSCQ0ŒëX0"
+				fire = 1
+				shock = 1
+				manuever = 0
+				siege = 0
+			}
+		}
+	}
+}
+

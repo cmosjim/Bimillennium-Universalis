@@ -1,0 +1,596 @@
+########################
+#Hellenic Flavor Events#
+########################
+#2019.01.14 fit to 1.28 
+namespace = rab_events
+
+#more than 3 provinces , delete the modifier of country.
+country_event = {
+	id = rab_events.1
+	title = "rab_events.NAME1"
+	desc = "rab_events.DESC1"
+	picture = COURT_eventPicture
+   
+	trigger = {
+		has_country_modifier = md_tiny_country_develop
+		num_of_cities = 4
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = "rab_events.OPTA1"
+		remove_country_modifier = md_tiny_country_develop
+
+	}
+
+}
+
+##1YªSâﬂWcw≤bú^
+#
+#country_event = {
+#	id = rab_events.2
+#	title = "rab_events.NAME2"
+#	desc = "rab_events.DESC2"
+#	picture = MILITARY_CAMP_eventPicture
+#   
+#	trigger = {
+#	    
+#		has_country_modifier = md_Western_Regions_Frontier_Command
+#		
+#		OR = {
+#			NOT = { 
+#			
+#				owns = 2884
+#				owns = 2881
+#				owns = 2883
+#				owns = 710
+#				owns = 711
+#				owns = 712
+#				owns = 739
+#				owns = 2459
+#				owns = 707
+#				owns = 1786
+#				
+#			}
+#			
+#			NOT = { num_of_cities = 35 }
+#	
+#		}
+#			NOT = { government = celestial_empire }
+#			NOT = { government = celestial_empire_2 }
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 20
+#	}
+#	immediate = {
+#		hidden_effect = {
+#			remove_country_modifier = md_Western_Regions_Frontier_Command
+#		
+#		}
+#	}
+#	option = {
+#		name = "rab_events.OPTA2"
+#		
+#	}
+#}
+
+#1YªSÓP∆N˝ê	S
+
+country_event = {
+	id = rab_events.3
+	title = "rab_events.NAME3"
+	desc = "rab_events.DESC3"
+	picture = MILITARY_CAMP_eventPicture
+   
+	trigger = {
+	    
+		has_country_modifier = md_Servants_Du_Wei
+		
+		OR = {
+			NOT = { 
+				owns = 2884
+				owns = 2881
+				owns = 2883
+				owns = 710
+				owns = 711
+				owns = 712
+				owns = 739
+				owns = 2459
+				owns = 707
+				owns = 1786
+				num_of_cities = 25	
+			}
+		}
+		
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier = md_Servants_Du_Wei
+		
+		}
+	}
+	option = {
+		name = "rab_events.OPTA3"
+		
+	}
+}
+
+#âﬂW≤bcwú^ÌsÖçãNˆN
+
+country_event = {
+	id = rab_events.4
+	title = "rab_events.NAME4"
+	desc = "rab_events.DESC4"
+	picture = convert_outwar_eventPicture
+   
+   
+   fire_only_once = yes
+   
+	trigger = {
+		
+		has_ruler = "ÌsÖç0fkS0"
+		tag = XIY
+		
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_events.OPTA4"
+		add_mil_power = 200
+	}
+	option = {
+		name = "rab_events.OPTB4"
+		add_dip_power = 200
+	}
+	option = {
+		name = "rab_events.OPTC4"
+		add_adm_power = 200
+	}
+}
+#145 t^ ﬂuªlw≈VbcbIl(ç^
+country_event = {
+	id = rab_events.5
+	title = "rab_events.NAME5"
+	desc = "rab_events.DESC5"
+	picture = EMPEROR_ASCENDED_THRONE_eventPicture
+   
+   
+   fire_only_once = yes
+   
+	trigger = {
+		OR = { 
+			tag = HND
+			tag = DH1
+			tag = WX2
+		}	
+		is_emperor_of_china = yes
+		num_of_cities = 155
+		is_year = 145
+		NOT = { is_year = 146 }
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	immediate = {
+		hidden_effect = {
+			define_ruler = {
+				name = "R5"
+				claim = 100
+				adm = 3
+				dip = 3
+				mil = 3
+				fixed = yes
+			}
+		}
+	}
+
+	option = {
+		name = "rab_events.OPTA5"
+	}
+}
+#146 t^ ÅhéQ“kNgáv^ R5
+country_event = {
+	id = rab_events.6
+	title = "rab_events.NAME6"
+	desc = "rab_events.DESC6"
+	picture = DEATH_MONARCH_eventPicture
+   
+   
+   fire_only_once = yes
+   
+	trigger = {
+		num_of_cities = 155
+		OR = { 
+			tag = HND
+			tag = DH1
+			tag = WX2
+		}
+		is_year = 146
+		NOT = { is_year = 147 }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	#YbÂe€v
+	option = {
+		name = "rab_events.OPTA6"
+		custom_tooltip = "tp_chinese_relationship_party_power"
+		kill_ruler = yes
+		add_country_modifier = {
+				name = "md_chinese_relationship_party_power"
+				duration = -1
+		}		
+	}
+}
+
+
+#159 t^TwT¶RòRNgÜNÅhéQ
+#
+country_event = {
+	id = rab_events.7
+	title = "rab_events.NAME7"
+	desc = "rab_events.DESC7"
+	picture = EUNUCH_POWER_eventPicture
+   
+   
+   fire_only_once = yes
+   
+	trigger = {
+		OR = { 
+			tag = HND
+			tag = DH1
+			tag = WX2
+		}
+		is_year = 159
+		NOT = { is_year = 160 }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	# >e˚NÅhéQ
+	option = {
+		name = "rab_events.OPTA7"
+			hidden_effect = {
+			set_country_flag = LIL_CREATED
+			set_global_flag = SMALL_YELLOW_TURBAN
+			if = { 
+				limit = {
+					has_country_modifier = md_chinese_relationship_party_power 
+				}
+					remove_country_modifier = md_chinese_relationship_party_power
+			}
+			
+			every_province = {
+					limit = {
+						owned_by = ROOT
+						province_id = 700
+					}
+					add_core = LIL
+					cede_province = LIL
+					change_controller = LIL
+					
+			}
+				every_country = {
+					limit = { tag = LIL }
+					
+					set_ai_attitude = {
+					who = ROOT
+					attitude = attitude_hostile
+				locked = yes
+					}	
+			}
+				
+				country_event = { 
+					id = rab_events.701
+					
+				}
+			}
+	}
+	# TwT¶RòRSb˚QÅhéQ
+	option = {
+		name = "rab_events.OPTB7"
+		hidden_effect = {
+			country_event = {
+				id = rab_events.8
+			}
+		}
+	}
+}
+
+
+#œcè1uéNÅhéQ€SÿSÍS˝wê—ç
+country_event = {
+	id = rab_events.701
+	title = "rab_events.NAME7a"
+	desc = "rab_events.DESC7a"
+	picture = CIVIL_WAR_eventPicture
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "rab_events.OPTA7a"
+		add_stability = -1
+	}
+	
+}
+
+#ÅhéQ€SÿS.êbóRlRkåÂN SRúÑÑvtQwç
+country_event = {
+	id = rab_events.702
+	title = "rab_events.NAME7b"
+	desc = "rab_events.DESC7b"
+	picture = CIVIL_WAR_eventPicture
+	
+	fire_only_once = yes
+	
+		trigger = {
+		OR = { 
+			tag = HND
+			tag = DH1
+			tag = WX2
+		}
+		is_year = 159
+		has_country_flag = LIL_CREATED
+	}
+	mean_time_to_happen = {
+		days = 90
+	}
+	immediate = {
+		hidden_effect = {
+			random_province = {
+				limit = {
+					owned_by = ROOT
+				}
+					add_core = LZO
+					cede_province = LZO
+					change_controller = LZO
+					
+			}
+			random_province = {
+				limit = {
+					owned_by = ROOT
+				}
+					add_core = HJJ
+					cede_province = HJJ
+					change_controller = HJJ
+			}			
+		}
+	}
+	option = {
+		name = "rab_events.OPTA7b"
+	}
+	
+}
+
+
+#161 t^ Hó^heir age = 5
+#country_event = {
+#	id = rab_events.703
+#	title = "rab_events.NAME7c"
+#	desc = "rab_events.DESC7c"
+#	picture = NEW_HEIR_eventPicture
+#	
+#	fire_only_once = yes
+#	
+#		trigger = {
+#		OR = { 
+#			tag = HND
+#			tag = DH1
+#			tag = WX2
+#		}
+#		is_year = 161
+#		NOT = { is_year = 163 }
+#		NOT = { has_heir = "RèR" }
+#	}
+#	mean_time_to_happen = {
+#		days = 10
+#	}
+#	immediate = {
+#		define_heir = {
+#			name = "RèR"	
+#			age = 5
+#			claim = 100
+#			adm = 0
+#			dip = 1
+#			mil = 1
+#			#fixed = yes
+#		}
+#	}
+#	option = {
+#		name = "rab_events.OPTA7c"
+#		
+#	}
+#}
+
+
+#¶RòRÀz'YüR NgÜNÅhéQ
+
+country_event = {
+	id = rab_events.8
+	title = "rab_events.NAME8"
+	desc = "rab_events.DESC8"
+	picture = KILL_GENERAL_eventPicture
+     
+    is_triggered_only = yes
+	
+ 	option = {
+		name = "rab_events.OPTA8"
+		custom_tooltip = "tp_chinese_enuchs_party_power"
+		hidden_effect = {
+			#add_faction_influence = { faction = relationship_party  influence = -80 }
+			# 
+			subtract_wenhuan_50_effect = yes
+			subtract_wuqi_50_effect = yes
+			add_wenwu_50_effect = yes
+			set_country_flag = enuchs_kill_lian
+			if = { 
+				limit = {
+					NOT = { has_country_modifier = md_chinese_enuchs_party_power }
+				}
+					add_country_modifier = {
+						name = "md_chinese_enuchs_party_power"
+						duration = -1
+					}
+			}
+			if = { 
+				limit = {
+					has_country_modifier = md_chinese_relationship_party_power 
+				}
+					remove_country_modifier = md_chinese_relationship_party_power
+			}				
+			
+		}
+	
+	}	
+}
+
+
+#146-159 ÂÇ=fYbøRõRæè0R90
+# R	qÏrÀz
+
+country_event = {
+	id = rab_events.9
+	title = "rab_events.NAME9"
+	desc = "rab_events.DESC9"
+	picture = WARLORD_FOUNDATION_eventPicture
+   
+   
+   fire_only_once = yes
+   
+	trigger = {
+		OR = { 
+			tag = HND
+			tag = DH1
+			tag = WX2
+		}
+		is_year = 146
+		NOT = { is_year = 159 }
+		faction_in_maxpower_relationship = yes
+		NOT = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 10
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+		
+		hidden_effect = {
+		set_global_flag = LiuYan_Come
+					every_province = {
+					limit = { 
+					owned_by = ROOT
+						OR = {
+						province_id = 662
+						province_id = 663
+						province_id = 664
+						province_id = 673
+						province_id = 674
+						province_id = 675
+						province_id = 679
+						province_id = 2487
+						province_id = 2488
+						province_id = 3212						
+						province_id = 3176
+						province_id = 3177
+						province_id = 3212						
+						
+						}
+					}
+					add_core = LOE
+					cede_province = LOE
+					change_controller = LOE
+					
+			}
+				remove_advisor = liuyan
+				kill_leader = { type = "R	q0fkS0" }				
+		}			
+	}
+	option = {
+		name = "rab_events.OPTA9"
+		set_global_flag = HND_email_insult
+	}
+	option = {
+		name = "rab_events.OPTB9"
+		set_global_flag = HND_email_agree
+	}	
+	option = {
+		name = "rab_events.OPTC9"
+	}	
+}
+
+#Player entry 160-168 ÜSœu«èÜNTwT¶RòRNgÅhéQÑvãNˆN 162Ëû˙V
+country_event = {
+	id = rab_events.10
+	title = "rab_events.NAME10"
+	desc = "rab_events.DESC10"
+	picture = KILL_GENERAL_eventPicture
+   
+     fire_only_once = yes
+	
+	trigger = {
+		OR = { 
+			tag = HND
+			tag = DH1
+			tag = WX2
+		}
+		has_country_flag = enuchs_kill_lian
+		has_country_modifier = md_chinese_enuchs_party_power
+		NOT = { has_country_flag = LIL_CREATED }
+		is_year = 160
+		NOT = { is_year = 168 }
+		
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "rab_events.OPTA10"
+		
+		subtract_wenhuan_10_effect = yes
+		subtract_wuqi_10_effect = yes
+		add_wenwu_10_effect = yes		
+			
+		hidden_effect = {
+				
+				if = { 
+					limit = {
+						NOT = { has_country_modifier = md_chinese_enuchs_party_power }
+					}
+						add_country_modifier = { 
+							name = "md_chinese_enuchs_party_power"
+							duration = -1
+						}
+				}
+				if = { 
+					limit = {
+						has_country_modifier = md_chinese_relationship_party_power 
+					}
+						remove_country_modifier = md_chinese_relationship_party_power
+				}				
+
+		}
+	}	
+}
+

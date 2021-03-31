@@ -1,0 +1,61 @@
+########################
+#Hellenic Flavor Events#
+########################
+#2018.12.31 fit to 1.28
+namespace = rab_HEB_events
+
+country_event = {
+	id = rab_HEB_events.1
+	title = "rab_HEB_events.NAME1"
+	desc = "rab_HEB_events.DESC1"
+	picture = GREAT_BUILDING_eventPicture
+  
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_HEB_events.OPTA1"
+		change_tag = HEB
+		swap_free_idea_group = yes
+		swap_non_generic_missions = yes
+		add_prestige = 5
+	}	
+	option = {
+		name = "rab_HEB_events.OPTB1"
+		
+		change_tag = HEB
+		swap_free_idea_group = yes
+		add_prestige = 30
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					NOT = { continent = north_america }
+				}
+				add_core = GBR
+				cede_province = GBR
+			}
+		}
+		define_ruler = {
+			name = "ågt·DI"
+			dynasty = "^Ì‘TX<SšN"
+			age = 33
+			claim = 100
+			adm = 6
+			dip = 6
+			mil = 6
+			fixed = yes
+		}		
+		define_heir = {
+			name = "œïîO·pQiOmúW"
+			dynasty = "^Ì‘TX<SšN"
+			
+			claim = 100
+			adm = 6
+			dip = 6
+			mil = 6
+			
+		}
+		set_country_flag = flg_HEB_init
+		set_capital = 953
+		
+	}		
+}

@@ -1,0 +1,37 @@
+namespace = nabataean_flavor
+
+country_event = {
+	id = nabataean_flavor.2
+	title = nabataean_flavor.2.t
+	desc = nabataean_flavor.2.d
+	picture = PRAYING_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = nabataean_flavor.2.a
+		add_ADM_power = 200
+		add_country_modifier = {
+			name = emphasize_on_Greece_decorations	
+			duration = -1
+		}
+	}
+
+	option = {
+		name = nabataean_flavor.2.b
+		add_DIP_power = 200
+		add_country_modifier = {
+			name = emphasize_on_Egypt_decorations	
+			duration = -1
+		}
+	}
+
+	option = {
+		name = nabataean_flavor.2.c
+		add_MIL_power = 200
+		add_country_modifier = {
+			name = emphasize_on_Rome_decorations	
+			duration = -1
+		}
+	}
+}

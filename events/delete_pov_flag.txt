@@ -1,0 +1,61 @@
+namespace = delete_pov
+
+country_event = {
+	id = delete_pov.1
+	title = "delete_pov.NAME1"
+	desc = "delete_pov.DESC1"
+	picture = INDUSTRIAL_CAR_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "delete_pov.OPTA1"
+		every_province = {
+			limit = {
+				base_tax = 1 
+			}	
+			clr_province_flag = flg_a_special_terrain	
+			clr_province_flag = flg_b_special_terrain	
+			clr_province_flag = flg_a_farmlands_terrain	
+			clr_province_flag = flg_b_farmlands_terrain	
+			clr_province_flag = flg_a_coastline_terrain	
+			clr_province_flag = flg_b_coastline_terrain	
+			clr_province_flag = flg_a_forest_terrain	
+			clr_province_flag = flg_b_forest_terrain	
+			clr_province_flag = flg_a_hills_terrain	
+			clr_province_flag = flg_b_hills_terrain	
+			clr_province_flag = flg_a_woods_terrain	
+			clr_province_flag = flg_b_woods_terrain	
+			clr_province_flag = flg_a_mountain_terrain	
+			clr_province_flag = flg_b_mountain_terrain	
+			clr_province_flag = flg_a_grasslands_terrain	
+			clr_province_flag = flg_b_grasslands_terrain	
+			clr_province_flag = flg_a_plains_terrain	
+			clr_province_flag = flg_b_plains_terrain	
+			clr_province_flag = flg_a_jungle_terrain	
+			clr_province_flag = flg_b_jungle_terrain	
+			clr_province_flag = flg_a_marsh_terrain	
+			clr_province_flag = flg_b_marsh_terrain	
+			clr_province_flag = flg_a_desert_terrain	
+			clr_province_flag = flg_b_desert_terrain	
+			clr_province_flag = flg_a_coastal_desert_terrain	
+			clr_province_flag = flg_b_coastal_desert_terrain	
+			clr_province_flag = flg_a_glacier_terrain	
+			clr_province_flag = flg_b_glacier_terrain	
+			clr_province_flag = flg_a_drylands_terrain	
+			clr_province_flag = flg_b_drylands_terrain	
+			clr_province_flag = flg_a_steppe_terrain	
+			clr_province_flag = flg_b_steppe_terrain	
+			clr_province_flag = flg_a_savannah_terrain	
+			clr_province_flag = flg_b_savannah_terrain	
+			clr_province_flag = flg_a_highlands_terrain	
+			clr_province_flag = flg_b_highlands_terrain	
+			clr_province_flag = flg_a_hekouzhognzhen_terrain	
+			clr_province_flag = flg_b_hekouzhognzhen_terrain	
+			clr_province_flag = flg_a_tianxian_terrain	
+			clr_province_flag = flg_b_tianxian_terrain	
+			clr_province_flag = flg_a_putongguanai_terrain	
+			clr_province_flag = flg_b_putongguanai_terrain	
+		}
+	}
+}	

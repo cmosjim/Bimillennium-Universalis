@@ -1,0 +1,20 @@
+
+namespace = rab_on_action_events
+
+##ma_loan
+country_event = {
+	id = rab_on_action_events.1
+	title = "rab_on_action_events.NAME1"
+	desc = "rab_on_action_events.DESC1"
+	picture = MERCHANTS_TALKING_eventPicture
+			
+	is_triggered_only = yes
+
+	trigger = {
+		ai = no			
+	}	
+			
+	option = {
+		name = "rab_on_action_events.OPTA1"
+	}
+}

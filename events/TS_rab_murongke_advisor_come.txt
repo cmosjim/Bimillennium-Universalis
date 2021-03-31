@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = murongke_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : murongke : Ua¹Rj` 0fkS0
+
+country_event = {
+	id = murongke_advisor_come.1
+	title = "murongke_advisor_come.1.t"
+	desc = "murongke_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 335	
+		NOT = { is_year = 370 }
+		OR = {
+			AND = {
+				exists = CCY
+				tag = CCY
+			}
+			AND = {
+				NOT = { exists = CCY }
+				owns = 704
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = murongke_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = murongke
+				name = "Ua¹Rj` 0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "Ua¹Rj` 0fkS0"
+				fire = 7
+				shock = 7
+				manuever = 6
+				siege = 3
+			}
+		}
+	}
+}
+

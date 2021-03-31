@@ -1,0 +1,45 @@
+namespace = xy_sov
+
+country_event = {
+	id = xy_sov.1
+	title = "xy_sov.NAME1"
+	desc = "xy_sov.DESC1"
+	picture = GERMAN_EMPIRE_eventPicture
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = suliancunzai
+		set_global_flag = sueneizhan1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+			}
+	name = "xy_sov.OPTA1"
+			change_tag = SOV
+			change_religion = communism
+			swap_free_idea_group = yes
+		    swap_non_generic_missions = yes
+			every_owned_province = { limit = { religion = conservatism } change_religion = communism }
+			every_owned_province = { limit = { NOT = { continent = europe } } cede_province = RUS add_core = RUS }
+			RUS = { change_religion = conservatism add_treasury = 5000	}
+			declare_war = RUS
+	}
+	option = {
+		ai_chance = {
+			factor = 0
+			}
+	name = "xy_sov.OPTB1"
+			swap_free_idea_group = yes
+		    swap_non_generic_missions = yes
+			every_owned_province = { limit = { continent = europe  } cede_province = SOV add_core = SOV }
+			SOV = { change_religion = communism
+			every_owned_province = { limit = { religion = conservatism } change_religion = communism }
+            swap_free_idea_group = yes
+		    swap_non_generic_missions = yes
+			add_treasury = 5000
+			}
+			declare_war = SOV
+	}
+}
+

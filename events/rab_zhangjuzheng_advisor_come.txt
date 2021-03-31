@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = zhangjuzheng_advisor_come
+
+#‡e˜RÐgÍyagöNNúQ°s
+#id = 1 : zhangjuzheng : .VESck0‡e˜R0
+
+country_event = {
+	id = zhangjuzheng_advisor_come.1
+	title = "zhangjuzheng_advisor_come.1.t"
+	desc = "zhangjuzheng_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 1547	
+		NOT = { is_year = 1595 }
+		OR = {
+			AND = {
+				exists = MNG
+				tag = MNG
+			}
+			AND = {
+				NOT = { exists = MNG }
+				owns = 671
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = zhangjuzheng_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = zhangjuzheng
+				name = ".VESck0‡e˜R0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = ".VESck0‡e˜R0"
+				fire = 2
+				shock = 2
+				manuever = 2
+				siege = 2
+			}
+		}
+	}
+}
+

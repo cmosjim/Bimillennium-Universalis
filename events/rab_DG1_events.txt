@@ -1,0 +1,33 @@
+#appearing in world
+#fit to 1.28
+namespace = rab_DG1_events
+country_event = {
+	id = rab_DG1_events.1
+	title = "rab_DG1_events.NAME1"
+	desc = "rab_DG1_events.DESC1"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		owns = 689
+		is_year = 1300
+		3149 = { is_empty = yes }
+	}
+	mean_time_to_happen = {
+		months = 10
+	}
+	
+	option = {
+		name = "rab_DG1_events.OPTA1"
+		if = {
+			limit = { 3149 = { is_empty = yes } }
+			3149 = { 
+				cede_province = DG1 
+				add_core = DG1
+				change_trade_goods = grain
+			}
+		}
+	}
+}

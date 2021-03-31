@@ -1,0 +1,170 @@
+#################################
+#This sections define outoff general 
+#move to another provinces .
+#################################
+
+#id = 1 : IN˚|qt-U^åV˜WLàÑv
+#id = 2 : (gQgÕëb0fkS0€kBêÍÅ¶Ö 
+
+namespace = kimurashi_prov_move_events
+
+
+province_event = {
+	id = kimurashi_prov_move_events.1
+	title = "kimurashi_prov_move_events.NAME1"
+	desc = "kimurashi_prov_move_events.DESC1"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+	#uP,nw˝NgQ=f&T	gräpov_xxxx
+	#ÍSÅâ	g∞eûXÑvfkSˇäóV†ReQräpov_xxxx ºe OR vQ-N
+		has_province_modifier = pov_kimurashi
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "kimurashi_prov_move_events.OPTA1"
+###########################(gQgÕëb0fkS0pov_kimurashi#################################		
+		if = {
+			limit = { has_province_modifier = pov_kimurashi }
+			if = {
+			#zlöR(WŒëfkSÑv˝XãTÓÙ
+				limit = { 
+					NOT = { is_year = 1622  }
+				}
+			#GPÇYräW∂RÑvTãsyrÍå&rT   #1S€kBêÍÅ¶Ö	
+				if = { 
+					limit = {
+						owner = { 
+							NOT = {
+								OR = {
+									tag = TKG
+								}
+							} 
+								OR = {
+									has_ruler_modifier = ra_ch1		
+									has_ruler_modifier = ra_ch2
+									has_ruler_modifier = ra_ch4
+									has_ruler_modifier = ra_ch5
+									has_ruler_modifier = ra_ch7
+									has_ruler_modifier = ra_ch8
+									has_ruler_modifier = rb_ch5
+									has_ruler_modifier = rb_ch6
+									has_ruler_modifier = rb_ch7					
+								}
+							}
+						}
+			
+					remove_province_modifier = pov_kimurashi
+					owner = {
+						country_event = {
+							id = kimurashi_prov_move_events.2
+						}
+					}
+				}
+				#GPÇYräW∂RÑvTãsyrÍåN&rT1S0R0ë—èÑvwR						
+				if = { 
+					limit = { 
+						owner = {
+							NOT = {
+								OR = {
+									tag = TKG
+								}
+							} 
+							NOT = { 
+								OR = {
+									has_ruler_modifier = ra_ch1		
+									has_ruler_modifier = ra_ch2
+									has_ruler_modifier = ra_ch4
+									has_ruler_modifier = ra_ch5
+									has_ruler_modifier = ra_ch7
+									has_ruler_modifier = ra_ch8
+									has_ruler_modifier = rb_ch5
+									has_ruler_modifier = rb_ch6
+									has_ruler_modifier = rb_ch7	
+								}
+							}
+						}		
+					}
+					remove_province_modifier = pov_kimurashi
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_kimurashi"
+							duration = -1
+						}					
+					}
+				}
+				if = { 
+					limit = { 
+						owner = {
+							OR = {
+								tag = TKG
+							}
+						} 
+					}
+					remove_province_modifier = pov_kimurashi
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_kimurashi"
+							duration = -1
+						}					
+					}								
+				}
+			}	
+			if = {
+			#ÇYúgt^˝NÖçNêdkPñˇ(WŒëfkS‚ñN
+				limit = { 
+					is_year = 1622
+				}	
+				remove_province_modifier = pov_kimurashi		
+			}
+		}
+	}
+}
+	
+############################################################################
+#	(gQgÕëb0fkS0€kBêÍÅ¶Ö
+#
+############################################################################
+
+
+country_event = {
+	id = kimurashi_prov_move_events.2
+	title = "kimurashi_prov_move_events.NAME2"
+	desc = "kimurashi_prov_move_events.DESC2"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "kimurashi_prov_move_events.OPTA2"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = kimurashi
+					name = "(gQgÕëb0fkS0"
+					discount = yes	
+					skill = 3
+					culture = japanese
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+				define_general = {
+				name = "(gQgÕëb0fkS0"
+				fire = 7
+				shock = 5
+				manuever = 3
+				siege = 3
+			}
+		}
+	}
+}

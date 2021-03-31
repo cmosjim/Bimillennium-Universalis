@@ -1,0 +1,981 @@
+########################
+#Hellenic Flavor Events#
+########################
+#0 10WS¬N
+#0 20Í‘†^
+#0 30™™=n
+#0 40‡e‰v
+#0 50)Y%m
+#0 60juºy^S0W
+#0 70³oè•
+#0 80Nwm
+#0 90±‚N
+#0100œRpQ
+#0110ğSS
+#0120ğS-N
+#0130ØšOS
+#0140‘N	V
+#0150‚qS
+#01608^qS
+#0170ˆl3–
+#0180'YŞ
+#019-240S¬N
+#0200Il3–
+#0210‰RŞT
+namespace = rab_hidden_pov_name_events
+
+#212t^MRãyu–
+#212t^Tú^N
+#282t^9eú^NHNú^º
+#313t^9eú^·^
+#937t^Ñ‘u–
+#975t^mlR
+#1127t^ú^·^
+#1329t^Æ–†^
+#1358”^)Y
+#*Ys^›QIew–mlRTšRıÿ÷S0)Y¬N
+#1911 WS¬N
+
+#/country_event = {
+#/	id = rab_hidden_pov_name_events.1
+#/	title = "rab_hidden_pov_name_events.t"
+#/	desc = "rab_hidden_pov_name_events.d"
+#/	picture = EUNUCH_POWER_eventPicture
+#/   
+#/    hidden = yes
+#/	fire_only_once = yes
+#/   
+#/	trigger = {
+#/		is_year = 1
+#/	}
+#/
+#/	mean_time_to_happen = {
+#/		days = 5
+#/	}
+#/	
+#/	option = {
+#/		name = "rab_hidden_pov_name_events.a"
+#/		if = { 
+#/				limit = { 
+#/				NOT = { is_year = 212 }		
+#/				
+#/				}
+#/		1821 = { change_province_name = "ãyu–" }
+#/		}
+#/		if = { 
+#/				limit = { 
+#/					is_year = 212
+#/					NOT = { is_year = 282 }		
+#/
+#/				}
+#/		1821 = { change_province_name = "ú^N" }
+#/		}	
+#/		if = { 
+#/				limit = { 
+#/					is_year = 282
+#/					NOT = { is_year = 313 }		
+#/				}
+#/		1821 = { change_province_name = "ú^º" }
+#/		}	
+#/		if = { 
+#/				limit = { 
+#/					is_year = 313
+#/					NOT = { is_year = 937 }		
+#/				}
+#/		1821 = { change_province_name = "ú^·^" }
+#/		}	
+#/		if = { 
+#/				limit = { 
+#/					is_year = 937
+#/					NOT = { is_year = 975 }		
+#/				}
+#/		1821 = { change_province_name = "Ñ‘u–" }
+#/		}
+#/		if = { 
+#/				limit = { 
+#/					is_year = 975
+#/					NOT = { is_year = 1127 }		
+#/				}
+#/		1821 = { change_province_name = "mlR" }
+#/		}	
+#/		if = { 
+#/				limit = { 
+#/					is_year = 1127
+#/					NOT = { is_year = 1329 }		
+#/				}
+#/		1821 = { change_province_name = "ú^·^" }
+#/		}
+#/		if = { 
+#/				limit = { 
+#/					is_year = 1329
+#/					NOT = { is_year = 1358 }		
+#/				}
+#/		1821 = { change_province_name = "Æ–†^" }
+#/		}	
+#/		if = { 
+#/				limit = { 
+#/					is_year = 1358
+#/					NOT = { is_year = 1911 }		
+#/				}
+#/		1821 = { change_province_name = "”^)Y" }
+#/		}
+#/	}
+#/}
+#/
+#/country_event = {
+#/	id = rab_hidden_pov_name_events.2
+#/	title = "rab_hidden_pov_name_events.t"
+#/	desc = "rab_hidden_pov_name_events.d"
+#/	picture = EUNUCH_POWER_eventPicture
+#/   
+#/    hidden = yes
+#/	fire_only_once = yes
+#/   
+#/	trigger = {
+#/		is_year = 1
+#/	}
+#/
+#/	mean_time_to_happen = {
+#/		days = 5
+#/	}
+#/	
+#/	option = {
+#/		name = "rab_hidden_pov_name_events.a"
+#/		if = { 
+#/				limit = { 
+#/				NOT = { is_year = 1100 }		
+#/				}
+#/		680 = { change_province_name = "nŞT" }
+#/		}
+#/		if = { 
+#/				limit = { 
+#/					is_year = 1100
+#/				}
+#/		680 = { change_province_name = "Í‘†^" }
+#/		}		
+#/	}
+#/}
+#/
+#/#juºy#1921t^2g15åe#^ŞT
+#/
+#/country_event = {
+#/	id = rab_hidden_pov_name_events.3
+#/	title = "rab_hidden_pov_name_events.3t"
+#/	desc = "rab_hidden_pov_name_events.3d"
+#/	picture = EUNUCH_POWER_eventPicture
+#/   
+#/    hidden = yes
+#/	fire_only_once = yes
+#/	
+#/	trigger = {
+#/		NOT = { is_year = 1921 }
+#/	}
+#/
+#/	mean_time_to_happen = {
+#/		days = 5
+#/	}
+#/	
+#/	option = {
+#/		name = "rab_hidden_pov_name_events.3a"
+#/		667 = { change_province_name = "juºy" }
+#/	}
+#/}
+#/
+#/
+#/country_event = {
+#/	id = rab_hidden_pov_name_events.3003
+#/	title = "rab_hidden_pov_name_events.3003t"
+#/	desc = "rab_hidden_pov_name_events.3003d"
+#/	picture = EUNUCH_POWER_eventPicture
+#/   
+#/    hidden = yes
+#/	fire_only_once = yes
+#/	
+#/	trigger = {
+#/		is_year = 1921
+#/	}
+#/
+#/	mean_time_to_happen = {
+#/		days = 5
+#/	}
+#/	
+#/	option = {
+#/		name = "rab_hidden_pov_name_events.3a"
+#/		667 = { change_province_name = "^ŞT" }
+#/	}
+#/}
+#/
+#/
+#/#NY(original)
+#/#Â‰3–(226.1.1)
+#/#‡e‰v(550.1.1)
+#/country_event = {
+#/	id = rab_hidden_pov_name_events.4
+#/	title = "rab_hidden_pov_name_events.4t"
+#/	desc = "rab_hidden_pov_name_events.4d"
+#/	picture = EUNUCH_POWER_eventPicture
+#/   
+#/    hidden = yes
+#/	fire_only_once = yes
+#/   
+#/	trigger = {
+#/		 is_year = 226 
+#/	}
+#/
+#/	mean_time_to_happen = {
+#/		days = 5
+#/	}
+#/	
+#/	option = {
+#/		name = "rab_hidden_pov_name_events.4a"
+#/
+#/		if = { 
+#/				limit = { 
+#/					is_year = 226
+#/				}
+#/		3184 = { change_province_name = "Â‰3–" }
+#/		}
+#/		if = { 
+#/				limit = { 
+#/					is_year = 550
+#/				}
+#/		3184 = { change_province_name = "‡e‰v" }
+#/		}
+#/		
+#/	}
+#/}
+#/#1115.3.1 ôvËlèR
+#/#1316.1.1 wm%m
+#/#1404.1.1 )Y%m
+#/
+#/country_event = {
+#/	id = rab_hidden_pov_name_events.5
+#/	title = "rab_hidden_pov_name_events.5t"
+#/	desc = "rab_hidden_pov_name_events.5d"
+#/	picture = EUNUCH_POWER_eventPicture
+#/   
+#/    hidden = yes
+#/	fire_only_once = yes
+#/   
+#/	trigger = {
+#/		 is_year = 1115 
+#/	}
+#/
+#/	mean_time_to_happen = {
+#/		days = 5
+#/	}
+#/	
+#/	option = {
+#/		name = "rab_hidden_pov_name_events.5a"
+#/
+#/		if = { 
+#/				limit = { 
+#/					is_year = 1115
+#/					NOT = { is_year = 1316 }
+#/				}
+#/		695 = { change_province_name = "ôvËlèR" }
+#/		}
+#/		if = { 
+#/				limit = { 
+#/					is_year = 1316
+#/					NOT = { is_year = 1404 }					
+#/				}
+#/		695 = { change_province_name = "wm%m" }
+#/		}
+#/		if = { 
+#/				limit = { 
+#/					is_year = 1404
+#/				}
+#/		695 = { change_province_name = ")Y%m" }
+#/		}		
+#/	}
+#/}
+#/
+#/#2014 - Hongkong
+#/country_event = {
+#/	id = rab_hidden_pov_name_events.6
+#/	title = "rab_hidden_pov_name_events.6t"
+#/	desc = "rab_hidden_pov_name_events.6d"
+#/	picture = EUNUCH_POWER_eventPicture
+#/   
+#/    hidden = yes
+#/	fire_only_once = yes
+#/   
+#/	trigger = {
+#/		NOT = { is_year = 1841 }
+#/	}
+#/
+#/	mean_time_to_happen = {
+#/		days = 5
+#/	}
+#/	
+#/	option = {
+#/		name = "rab_hidden_pov_name_events.6a"
+#/
+#/		2014 = { change_province_name = "juºy^S0W" }
+#/		
+#/	}
+#/}
+#/#668 - Macau
+#/country_event = {
+#/	id = rab_hidden_pov_name_events.7
+#/	title = "rab_hidden_pov_name_events.1t"
+#/	desc = "rab_hidden_pov_name_events.1d"
+#/	picture = EUNUCH_POWER_eventPicture
+#/   
+#/    hidden = yes
+#/	fire_only_once = yes
+#/   
+#/	trigger = {
+#/		NOT = { is_year = 1533 }
+#/	}
+#/
+#/	mean_time_to_happen = {
+#/		days = 5
+#/	}
+#/	
+#/	option = {
+#/		name = "rab_hidden_pov_name_events.7a"
+#/
+#/		668 = { change_province_name = "àoj•" }
+#/		
+#/	}
+#/}
+#/
+#/#3257 - Shanghai
+#/#961.1.1
+#/
+#/#3149 - Beinan
+#/country_event = {
+#/	id = rab_hidden_pov_name_events.9
+#/	title = "rab_hidden_pov_name_events.1t"
+#/	desc = "rab_hidden_pov_name_events.1d"
+#/	picture = EUNUCH_POWER_eventPicture
+#/   
+#/    hidden = yes
+#/	fire_only_once = yes
+#/   
+#/	trigger = {
+#/		is_year = 1901
+#/	}
+#/
+#/	mean_time_to_happen = {
+#/		days = 5
+#/	}
+#/	
+#/	option = {
+#/		name = "rab_hidden_pov_name_events.9a"
+#/
+#/		3149 = { change_province_name = "±‚N" }
+#/		
+#/	}
+#/}
+#/#3218 - Ilan
+#/#years 1875
+#/country_event = {
+#/	id = rab_hidden_pov_name_events.10
+#/	title = "rab_hidden_pov_name_events.1t"
+#/	desc = "rab_hidden_pov_name_events.1d"
+#/	picture = EUNUCH_POWER_eventPicture
+#/   
+#/    hidden = yes
+#/	fire_only_once = yes
+#/   
+#/	trigger = {
+#/		is_year = 1875
+#/	}
+#/
+#/	mean_time_to_happen = {
+#/		days = 5
+#/	}
+#/	
+#/	option = {
+#/		name = "rab_hidden_pov_name_events.10a"
+#/
+#/		3218 = { change_province_name = "œRpQ" }
+#/		
+#/	}
+#/
+#/}
+#2858 - ğSS
+#years 1875
+country_event = {
+	id = rab_hidden_pov_name_events.11
+	title = "rab_hidden_pov_name_events.1t"
+	desc = "rab_hidden_pov_name_events.1d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+	fire_only_once = yes
+   
+	trigger = {
+		is_year = 1875
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "rab_hidden_pov_name_events.11a"
+
+		2858 = { change_province_name = "ğSS" }
+		
+	}
+}
+
+##////#2857 - ğS-N
+##////#years 1875
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.12
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////		is_year = 1875
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.12a"
+##////
+##////		2857 = { change_province_name = "ğS-N" }
+##////		
+##////	}
+##////}
+##////
+##////#2857 - ğS-N
+##////#years 1875
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.13
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////		is_year = 1875
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.13a"
+##////
+##////		738 = { change_province_name = "ØšOS" }
+##////		
+##////	}
+##////}
+##////
+##////
+##////#3217 - ‘N	V
+##////#years 1875
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.14
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////		is_year = 1875
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.14a"
+##////
+##////		3217 = { change_province_name = "‘N	V" }
+##////		
+##////	}
+##////}
+##////#3263 - ,uN
+##////#
+##////#738 year - ÁqS
+##////#1073 year - fıV
+##////#1688t^9eTHNšRwm¿S
+##////#1953t^3gÏu?e¡Rb–ybÆQÿšRwm¿S–HSRHNšRwm0±SqS2¿SÿÎNmlÏ‚wReQJT×l¿SÿbËz‚qSNHS0
+##////
+##////
+##////#3181 8^qS
+##////# year 1535 = ów¶R„^
+##////
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.16
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////		is_year = 1535
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.16a"
+##////
+##////		3181 = { change_province_name = "ów¶R„^" }
+##////		
+##////	}
+##////}
+##////#726 ˆl3–
+##////#Ë3–
+##////#nŞT916t^3g17åe
+##////#1296t^ÿCQÍ‘ú^WÎW[êT*NÿêT›Nÿ]ÿ9enŞTHNˆl3–ï
+##////#1634t^ÿn*Y—R‡v*Yg9eˆl3–HNÛv¬Nv^N1636t^(Wˆl3–ğy^0
+##////#1644t^ÿngÁıS¬NTÿ9eˆl3–HNj–ıÿ
+##////#1932t^3g1åeÿán2mıVbËzÿKNTˆl3–^TğyQ!k9eHNIY)Y^ÿ
+##////#1946 end
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.17
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////		is_year = 1
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.17a"
+##////
+##////		if = { 
+##////				limit = { 
+##////					is_year = 2
+##////					NOT = { is_year = 916 }		
+##////
+##////				}
+##////		726 = { change_province_name = "Ë3–" }
+##////		}	
+##////		if = { 
+##////				limit = { 
+##////					is_year = 916
+##////					NOT = { is_year = 1296 }		
+##////				}
+##////		726 = { change_province_name = "nŞT" }
+##////		}	
+##////		if = { 
+##////				limit = { 
+##////					is_year = 1296
+##////					NOT = { is_year = 1634 }		
+##////				}
+##////		726 = { change_province_name = "ˆl3–ï" }
+##////		}	
+##////		if = { 
+##////				limit = { 
+##////					is_year = 1634
+##////					NOT = { is_year = 1644 }		
+##////				}
+##////		726 = { change_province_name = "Ûv¬N" }
+##////		}
+##////		if = { 
+##////				limit = { 
+##////					is_year = 1932
+##////					NOT = { is_year = 1946 }		
+##////				}
+##////		726 = { change_province_name = "IY)Y^" }
+##////		}		
+##////	}
+##////}
+##////# - 266 “l¿S
+##////# 266 - 581 6.6 	NqS
+##////# 581 - 916 6 6 	NqSfm
+##////# 916 -  1115 R—ålfm
+##////# 1115 - 1368t^1g23åe Ñ‘ŞT
+##////# 1368t^1g23åe  R—ål<m
+##////# 1905~ 1950 'YŞ
+##////# -N1950t^~-N1981t^	Åe'Y(^)
+##////# 1981~ 'YŞ
+##////
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.18
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////		is_year = 1
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.18a"
+##////
+##////		if = { 
+##////				limit = { 
+##////					is_year = 2
+##////					NOT = { is_year = 226 }		
+##////				}
+##////		2020 = { change_province_name = "“l¿S" }
+##////		}	
+##////		if = { 
+##////				limit = { 
+##////					is_year = 226
+##////					NOT = { is_year = 581 }		
+##////				}
+##////		2020 = { change_province_name = "	NqS" }
+##////		}	
+##////		if = { 
+##////				limit = { 
+##////					is_year = 581
+##////					NOT = { is_year = 916 }		
+##////				}
+##////		2020 = { change_province_name = "	NqSfm" }
+##////		}	
+##////		if = { 
+##////				limit = { 
+##////					is_year = 916
+##////					NOT = { is_year = 1115 }		
+##////				}
+##////		2020 = { change_province_name = "R—ålfm" }
+##////		}
+##////		if = { 
+##////				limit = { 
+##////					is_year = 1115
+##////					NOT = { is_year = 1368 }		
+##////				}
+##////		2020 = { change_province_name = "Ñ‘ŞT" }
+##////		}
+##////		if = { 
+##////				limit = { 
+##////					is_year = 1368
+##////					NOT = { is_year = 1905 }		
+##////				}
+##////		2020 = { change_province_name = "R—ål<m" }
+##////		}
+##////		if = { 
+##////				limit = { 
+##////					is_year = 1905
+##////					NOT = { is_year = 1950 }		
+##////				}
+##////		2020 = { change_province_name = "'YŞ" }
+##////		}
+##////		if = { 
+##////				limit = { 
+##////					is_year = 1950
+##////					NOT = { is_year = 1981 }		
+##////				}
+##////		2020 = { change_province_name = "Åe'Y" }
+##////		}
+##////		if = { 
+##////				limit = { 
+##////					is_year = 1981
+##////				}
+##////		2020 = { change_province_name = "'YŞ" }
+##////		}		
+##////	}
+##////}
+##////
+##////
+##////#019-240S¬N
+##////#ß„ÎW
+##////#1153t^ÿCQCQt^	ÿÿÑ‘g‡v^wmu–‹sŒRœ˜®NckVú^ıNS¬NÿğyHN-Nı
+##////#1368t^ÿ*mfkCQt^	ÿÿ1gCQ‹t(W”^)Yœ^ú^ËzfgÿTt^>mc'Y›QSNÿCQ^ÎN'YıVNı01gCQ‹tNäN7Ys^CQg«R¿k[1]ÿkQg9eHNSs^œ^
+##////#Õq‹s1gãhÿfbVy	ÿÑS¨RV—¾–KNyV0HY—V‡vMOTÿN1403t^GSHNS¬Nz˜)Yœ^ÿğyHN0Lˆ(W0
+##////#ôvólıV	Nt^1914ÿ9ez˜)Yœ^HN0¬NFQ0W¹e0ÿôv–NSm?eœ^0
+##////#1930t^6gÿSs^«ˆM–HN³lSw–^0Ss^^0ÿTt^12gYGSHNb––^0Ss^^00
+##////#1949t^9g27åe-NıVºNl?e»lOSFUO®‹,rNJShQSOO®‹Ç0sQN-NNSºNlqQŒTıVıVı0ªut^0ıVLk0ıV×e„v³Q®‹0ÿSs^Í‘°eôfTHNS¬N0
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.19
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////			is_year = 1153
+##////			NOT = { is_year = 1368 }		
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.19a"
+##////
+##////
+##////		1816 = { change_province_name = "-Nı" }
+##////		}
+##////}		
+##////
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.20
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////
+##////					is_year = 1368
+##////					NOT = { is_year = 1403 }		
+##////
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.20a"
+##////
+##////
+##////		1816 = { change_province_name = "Ss^œ^" }
+##////		}
+##////}
+##////
+##////
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.21
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////
+##////					is_year = 1403
+##////					NOT = { is_year = 1914 }		
+##////
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.21a"
+##////
+##////
+##////		1816 = { change_province_name = "z˜)Yœ^" }
+##////		}
+##////}
+##////
+##////	
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.22
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////		
+##////					is_year = 1914
+##////					NOT = { is_year = 1931 }		
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.22a"
+##////
+##////
+##////		1816 = { change_province_name = "¬NFQ0W¹e" }
+##////		}
+##////}
+##////
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.23
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////		
+##////					is_year = 1931
+##////					NOT = { is_year = 1949 }			
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.23a"
+##////
+##////
+##////		1816 = { change_province_name = "Ss^" }
+##////		}
+##////}
+##////
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.24
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////		is_year = 1949		
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.23a"
+##////
+##////
+##////		1816 = { change_province_name = "S¬N" }
+##////		}
+##////}
+##////
+##////
+##////
+##////#025-260Il3– ™l¡
+##////#0	NıVöe4TNœqS‰WSQrœqSÎW
+##////# ‹–RHNIl%m¿SÿTôfTHNIl3–¿S
+##////#
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.25
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////		is_year = 220
+##////		NOT = { is_year = 582 }			
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.25a"
+##////
+##////			681 = { change_province_name = "œqSÎW" }
+##////	}
+##////}
+##////
+##////
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.26
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////		is_year = 582
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.26a"
+##////			681 = { change_province_name = "Il3–" }
+##////	}
+##////}
+##////	
+##////#0270‰RŞT
+##////country_event = {
+##////	id = rab_hidden_pov_name_events.27
+##////	title = "rab_hidden_pov_name_events.1t"
+##////	desc = "rab_hidden_pov_name_events.1d"
+##////	picture = EUNUCH_POWER_eventPicture
+##////   
+##////    hidden = yes
+##////	fire_only_once = yes
+##////   
+##////	trigger = {
+##////		is_year = 598
+##////	}
+##////
+##////	mean_time_to_happen = {
+##////		days = 5
+##////	}
+##////	
+##////	option = {
+##////		name = "rab_hidden_pov_name_events.27a"
+##////			2470 = { change_province_name = "¦”ŞT" }
+##////	}
+##////}
+##////
+##////##028-290šRŞT->Vİ->šRŞT
+##////#country_event = {
+##////#	id = rab_hidden_pov_name_events.28
+##////#	title = "rab_hidden_pov_name_events.1t"
+##////#	desc = "rab_hidden_pov_name_events.1d"
+##////#	picture = EUNUCH_POWER_eventPicture
+##////#   
+##////#    hidden = yes
+##////#	fire_only_once = yes
+##////#   
+##////#	trigger = {
+##////#		is_year = 384
+##////#	}
+##////#
+##////#	mean_time_to_happen = {
+##////#		days = 5
+##////#	}
+##////#	
+##////#	option = {
+##////#		name = "rab_hidden_pov_name_events.27a"
+##////#			3339 = { change_province_name = "Vİ }
+##////#	}
+##////#}
+##////#
+##////#
+##////#
+##////

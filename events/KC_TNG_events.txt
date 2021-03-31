@@ -1,0 +1,502 @@
+namespace = KC_TNG_events
+#æy‹sNgNl
+country_event = {
+	id = KC_TNG_events.0
+	title = "KC_TNG_events.0.title"
+	desc = "KC_TNG_events.0.desc"
+	picture = EMPEROR_LISHIMIN_eventPicture
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = TNG
+			tag = LY2
+		}
+		has_ruler = "Ngn"
+		has_country_flag = TNG_Emperor_LiYuan
+		NOT = {
+			has_ruler = "NgNl"
+		}
+		NOT = {
+			has_country_flag = TNG_Emperor_LiShimin
+		}
+	}
+	mean_time_to_happen = {
+		days = 15
+	}
+	option = {
+		name = "KC_TNG_events.0.option.a"
+		ai_chance = {
+			factor = 1
+		}
+		define_general = {
+			name = "NgNl0æy‹s0"
+			fire = 7
+			shock = 7
+			manuever = 5
+			siege = 5
+		}
+	}
+}
+
+#„sfkè•KNØS
+country_event = {
+	id = KC_TNG_events.1
+	title = "KC_TNG_events.1.title"
+	desc = "KC_TNG_events.1.desc"
+	picture = XUANWUGATE_INCIDENT_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = TNG
+		is_year = 626
+		has_ruler = "Ngn"
+		has_country_flag = TNG_Emperor_LiYuan
+		has_leader = "NgNl0æy‹s0"
+		NOT = {
+			has_ruler = "NgNl"
+		}
+		NOT = {
+			has_country_flag = TNG_Emperor_LiShimin
+		}
+	}
+	mean_time_to_happen = {
+		days = 15
+	}
+	immediate = {
+		kill_leader = {
+			type = "NgNl0æy‹s0"
+		}
+		hidden_effect = {
+			define_ruler = {
+				name = "NgNl"
+				#dynasty = ""
+				adm = 6
+				dip = 6
+				mil = 6
+				age = 27
+				fixed = yes
+			}
+			add_ruler_personality = strict_personality
+			add_ruler_personality = conqueror_personality
+			define_ruler_to_general = {
+				fire = 7
+				shock = 7
+				manuever = 5
+				siege = 5
+			}
+			set_country_flag = TNG_Open_Zhenguan
+		}
+	}
+	option = {
+		name = "KC_TNG_events.1.option.a"
+		ai_chance = {
+			factor = 1
+		}
+		define_consort = {
+			name = "•YRàe¢W"
+			#dynasty = ""
+			adm = 5
+			dip = 6
+			mil = 4
+			age = 25
+			female = yes
+		}
+		hidden_effect = {
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic36
+			set_country_flag = flg_marry_finished
+			remove_country_modifier = md_no_consort
+			add_country_modifier = {
+				name = "more_heir_chance_8"
+				duration = -1
+			}
+			set_variable = {
+				which = num_of_talking_wife
+				value = 27
+			}
+		}
+		define_heir = {
+			name = "NgbŒN"
+			age = 8
+			adm = 5
+			dip = 4
+			mil = 3
+			male = yes
+		}
+	}
+}
+
+#Â‰KN»l
+country_event = {
+	id = KC_TNG_events.2
+	title = "KC_TNG_events.2.title"
+	desc = "KC_TNG_events.2.desc"
+	picture = ZHENGUAN_REIGN_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "KC_TNG_events.2.option.a"
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+			set_country_flag = TNG_Event_Zhenguan
+		}
+		add_stability = 1
+		add_corruption = -5
+		add_treasury = 1500
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_mandate = 10
+		add_ruler_modifier = {
+			name = md_TNG_zhenguan
+			duration = -1
+		}
+	}
+	option = {
+		name = "KC_All_Cancel.option"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#NgbŒNŒÍS
+country_event = {
+	id = KC_TNG_events.3
+	title = "KC_TNG_events.3.title"
+	desc = "KC_TNG_events.3.desc"
+	picture = TAIJI_PALACE_eventPicture
+	trigger = {
+		tag = TNG
+		is_year = 642		# òSžR:N 642 t^
+		has_ruler = "NgNl"
+		has_heir = "NgbŒN"
+		has_country_flag = TNG_Emperor_LiShimin
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = "KC_TNG_events.3.option.a"
+		ai_chance = {
+			factor = 1
+		}
+		custom_tooltip = KC_TNG_events.3.option.a.tooltip
+		add_prestige = -50
+		hidden_effect = {
+			set_variable = {
+				which = TNG_Heir_Value
+				value = 0
+			}
+		}
+	}
+	option = {
+		name = "KC_TNG_events.3.option.b"
+		ai_chance = {
+			factor = 80
+		}
+		custom_tooltip = KC_TNG_events.3.option.b.tooltip
+		define_heir = {
+			name = "Ngj`"
+			birth_date = 619.1.1
+			claim = 50
+			adm = 5
+			dip = 5
+			mil = 6
+			male = yes
+		}
+		hidden_effect = {
+			add_heir_personality = strict_personality
+			set_variable = {
+				which = TNG_Heir_Value
+				value = 1
+			}
+		}
+	}
+	option = {
+		name = "KC_TNG_events.3.option.c"
+		ai_chance = {
+			factor = 50
+		}
+		custom_tooltip = KC_TNG_events.3.option.c.tooltip
+		define_heir = {
+			name = "Ngðl"
+			birth_date = 620.1.1
+			adm = 5
+			dip = 4
+			mil = 3
+			male = yes
+		}
+		hidden_effect = {
+			add_heir_personality = scholar_personality
+			set_variable = {
+				which = TNG_Heir_Value
+				value = 2
+			}
+		}
+	}
+	option = {
+		name = "KC_TNG_events.3.option.d"
+		ai_chance = {
+			factor = 100
+		}
+		custom_tooltip = KC_TNG_events.3.option.d.tooltip
+		define_heir = {
+			name = "Ng»l"
+			birth_date = 628.7.21
+			adm = 5
+			dip = 5
+			mil = 3
+			male = yes
+		}
+		hidden_effect = {
+			add_heir_personality = benevolent_personality
+			set_variable = {
+				which = TNG_Heir_Value
+				value = 3
+			}
+		}
+	}
+}
+
+#	gsYšZZ
+country_event = {
+	id = KC_TNG_events.4
+	title = "KC_TNG_events.4.title"
+	desc = "KC_TNG_events.4.desc"
+	picture = QUEEN_WUZETIAN_eventPicture
+	trigger = {
+		tag = TNG
+		has_country_flag = TNG_Emperor_Third
+		has_consort = no
+		NOT = {
+			has_country_flag = TNG_Queen_WuZetian
+		}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = "KC_TNG_events.4.option.a"
+		ai_chance = {
+			factor = 1
+		}
+		custom_tooltip = KC_TNG_events.4.option.a.tooltip
+		define_consort = {
+			name = "fkšZZ"
+			age = 20
+			female = yes
+			adm = 5
+			dip = 4
+			mil = 5
+		}
+		hidden_effect = {
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic203
+			set_country_flag = flg_marry_finished
+			set_variable = {
+				which = num_of_talking_wife
+				value = 18
+			}
+			set_country_flag = TNG_Queen_WuZetian
+		}
+	}
+	option = {
+		name = "KC_TNG_events.4.option.b"
+		ai_chance = {
+			factor = 0
+		}
+		custom_tooltip = KC_TNG_events.4.option.b.tooltip
+	}
+}
+
+#fkhTãNU sYIN)YN
+country_event = {
+	id = KC_TNG_events.5
+	title = "KC_TNG_events.5.title"
+	desc = "KC_TNG_events.5.desc"
+	picture = WUZHOU_BUILD_eventPicture
+	trigger = {
+		tag = TNG
+		has_country_flag = TNG_Queen_WuZetian
+		has_country_flag = TNG_Emperor_4th
+		NOT = {
+			has_country_flag = TNG_Emperor_Third
+		}
+		OR = {
+			NOT = {
+				adm = 5
+			}
+			NOT = {
+				mil = 5
+			}
+		}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = "KC_TNG_events.5.option.a"
+		ai_chance = {
+			factor = 1
+		}
+		custom_tooltip = KC_TNG_events.5.option.a.tooltip
+		define_ruler = {
+			name = "fkÌf"
+			age = 50
+			female = yes
+			adm = 5
+			dip = 4
+			mil = 5
+			fixed = yes
+		}
+		hidden_effect = {
+			set_country_flag = WuZhou_Build
+			clr_country_flag = TNG_Queen_WuZetian
+			remove_heir = yes
+		}
+		change_tag = WZ1
+		hidden_effect = {
+			swap_free_idea_group = yes
+		}
+	}
+}
+
+#	NPRîOck Rb
+country_event = {
+	id = KC_TNG_events.6
+	title = "KC_TNG_events.6.title"
+	desc = "KC_TNG_events.6.desc"
+	picture = CHURCH_ESTATE_2_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "KC_TNG_events.6.option.a"
+		if = {
+			limit = {
+				check_variable = {
+					which = TNG_Heir_Value
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = TNG_Heir_Value
+						value = 2
+					}
+				}
+			}
+			add_ruler_modifier = {
+				name = md_TNG_LiKe
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = TNG_Heir_Value
+					value = 2
+				}
+				NOT = {
+					check_variable = {
+						which = TNG_Heir_Value
+						value = 3
+					}
+				}
+			}
+			add_ruler_modifier = {
+				name = md_TNG_LiTai
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = TNG_Heir_Value
+					value = 3
+				}
+				NOT = {
+					check_variable = {
+						which = TNG_Heir_Value
+						value = 4
+					}
+				}
+			}
+			add_ruler_modifier = {
+				name = md_TNG_LiZhi
+				duration = -1
+			}
+		}
+	}
+}
+
+#Ø?eŽNNg
+country_event = {
+	id = KC_TNG_events.7
+	title = "KC_TNG_events.7.title"
+	desc = {
+		trigger = {
+			tag = WZ1			#fkhT
+		}
+		desc = "KC_TNG_events.7.desc.a"
+	}
+	desc = {
+		trigger = {
+			tag = TG1			#'YU RVIN›Q
+		}
+		desc = "KC_TNG_events.7.desc.b"
+	}
+	picture = IMPERIAL_EDICT_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "KC_TNG_events.7.option.a"
+		custom_tooltip = KC_TNG_events.7.option.a.tooltip
+		if = {
+			limit = {
+				tag = WZ1
+			}
+			define_ruler = {
+				name = "Ng>f"
+				age = 50
+				adm = 2
+				dip = 1
+				mil = 3
+				fixed = yes
+			}
+			define_heir = {
+				name = "NgÍ‘ƒ"
+				birth_date = 695.1.1
+				adm = 1
+				dip = 1
+				mil = 2
+			}
+		}
+		if = {
+			limit = {
+				tag = WZ1
+				owns = 700
+			}
+			700 = {
+				move_capital_effect = yes
+			}
+		}
+		if = {
+			limit = {
+				tag = TG1
+			}
+			define_ruler = {
+				name = "NgY"
+				age = 20
+				adm = 3
+				dip = 3
+				mil = 3
+				fixed = yes
+			}
+		}
+		hidden_effect = {
+			change_tag = TNG
+			swap_free_idea_group = yes
+		}
+	}
+}

@@ -1,0 +1,297 @@
+namespace = rab_war_accidential
+
+#infantry
+country_event = {
+	id = rab_war_accidential.1
+	title = "rab_war_accidential.NAME1"
+	desc = "rab_war_accidential.DESC1"
+	picture = highland_ice_eventPicture
+
+	trigger = {
+		NOT =  {
+			mil_tech = 83	
+		}	
+		NOT = { 
+			has_country_flag = flg_no_display_tibet
+		}		
+		NOT = { 
+			has_country_flag = flg_snowshoes_eq
+		}
+		NOT = {
+			OR = {
+				culture = tibetan
+				tag = CIN
+				tag = KSD
+				tag = GAS
+				tag = TUG
+				tag = RO1
+				capital_scope = {
+					region = tibet_region				
+				}				
+			}	
+		}	
+		is_at_war = yes
+		any_province = {
+			region = tibet_region
+			num_of_units_in_province = {
+				who = ROOT
+				type = infantry
+				amount = 2
+			}
+			owner = { war_with = ROOT }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}	
+	
+	immediate = {
+		every_province = {
+			limit = {
+				region = tibet_region
+				num_of_units_in_province = {
+					who = ROOT
+					type = infantry
+					amount = 2
+				}
+				owner = { war_with = ROOT }				
+			}	
+			kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 1
+			}			
+		}
+		
+	}
+	
+	option = {
+	name = "rab_war_accidential.OPTA1"
+
+
+	}
+	option = {
+	name = "rab_war_accidential.OPTB1"
+		set_country_flag = flg_no_display_tibet
+
+	}	
+}	
+	
+
+#cavalry
+country_event = {
+	id = rab_war_accidential.2
+	title = "rab_war_accidential.NAME2"
+	desc = "rab_war_accidential.DESC2"
+	picture = highland_ice_eventPicture
+
+	trigger = {
+		NOT =  {
+			mil_tech = 83	
+		}		
+		NOT = { 
+			has_country_flag = flg_no_display_tibet
+		}			
+		NOT = { 
+			has_country_flag = flg_snowshoes_eq
+		}
+		NOT = {
+			OR = {
+				culture = tibetan
+				tag = CIN
+				tag = KSD
+				tag = GAS
+				tag = TUG
+				tag = RO1
+			}	
+		}	
+		is_at_war = yes
+		any_province = {
+			region = tibet_region
+			num_of_units_in_province = {
+				who = ROOT
+				type = infantry
+				amount = 2
+			}
+			owner = { war_with = ROOT }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}	
+	
+	immediate = {
+		every_province = {
+			limit = {
+				region = tibet_region
+				num_of_units_in_province = {
+					who = ROOT
+					type = infantry
+					amount = 2
+				}
+				owner = { war_with = ROOT }			
+			}	
+			kill_units = {
+				who = ROOT
+				type = cavalry
+				amount = 1
+			}			
+		}	
+
+	}
+	
+	option = {
+	name = "rab_war_accidential.OPTA2"
+
+
+	}
+	option = {
+	name = "rab_war_accidential.OPTB2"
+		set_country_flag = flg_no_display_tibet
+
+	}	
+}
+
+
+#infantry
+country_event = {
+	id = rab_war_accidential.3
+	title = "rab_war_accidential.NAME3"
+	desc = "rab_war_accidential.DESC3"
+	picture = highland_ice_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		has_country_flag = flg_no_display_tibet
+		NOT =  {
+			mil_tech = 83	
+		}		
+		NOT = { 
+			has_country_flag = flg_snowshoes_eq
+		}
+		NOT = {
+			OR = {
+				culture = tibetan
+				tag = CIN
+				tag = KSD
+				tag = GAS
+				tag = TUG
+				tag = RO1
+			}	
+		}	
+		is_at_war = yes
+		any_province = {
+			region = tibet_region
+			num_of_units_in_province = {
+				who = ROOT
+				type = infantry
+				amount = 2
+			}
+			owner = { war_with = ROOT }		
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}	
+	
+	immediate = {
+		every_province = {
+			limit = {
+				region = tibet_region
+				num_of_units_in_province = {
+					who = ROOT
+					type = infantry
+					amount = 2
+				}
+				owner = { war_with = ROOT }						
+			}	
+			kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 1
+			}			
+
+		}	
+	}
+	
+	option = {
+	name = "rab_war_accidential.OPTA3"
+
+
+	}
+}	
+	
+
+#cavalry
+country_event = {
+	id = rab_war_accidential.4
+	title = "rab_war_accidential.NAME4"
+	desc = "rab_war_accidential.DESC4"
+	picture = highland_ice_eventPicture
+
+	hidden = yes
+		
+	trigger = {
+		has_country_flag = flg_no_display_tibet
+		NOT =  {
+			mil_tech = 83	
+		}		
+		NOT = { 
+			has_country_flag = flg_snowshoes_eq
+		}
+		NOT = {
+			OR = {
+				culture = tibetan
+				tag = CIN
+				tag = KSD
+				tag = GAS
+				tag = TUG
+				tag = RO1
+			}	
+		}	
+		is_at_war = yes
+		any_province = {
+			region = tibet_region
+			num_of_units_in_province = {
+				who = ROOT
+				type = infantry
+				amount = 2
+			}
+			owner = { war_with = ROOT }		
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}	
+	
+	immediate = {
+		every_province = {
+			limit = {
+				region = tibet_region
+				num_of_units_in_province = {
+					who = ROOT
+					type = infantry
+					amount = 2
+				}
+				owner = { war_with = ROOT }						
+			}	
+			kill_units = {
+				who = ROOT
+				type = cavalry
+				amount = 1
+			}			
+
+		}	
+	}
+	
+	option = {
+	name = "rab_war_accidential.OPTA4"
+
+	}
+}	
+	

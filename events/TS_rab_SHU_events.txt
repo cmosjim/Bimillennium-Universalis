@@ -1,0 +1,286 @@
+########################
+#Hellenic Flavor Events#
+########################
+
+########################
+#Hellenic Flavor Events#
+########################
+
+namespace = rab_SHU_LUP_events
+
+#Any country get the more than 35 province has ZIX core
+country_event = {
+	id = rab_SHU_LUP_events.1
+	title = "rab_SHU_LUP_events.NAME1"
+	desc = "rab_SHU_LUP_events.DESC1"
+	picture = zhuge_liang_a_eventPicture
+  
+	major = yes
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 207 
+		NOT = { is_year = 225 }
+		OR = { 
+			AND = {
+			
+				
+				LUP = { has_opinion = { who = SNC value = 0 } }
+				SNC = { has_opinion = { who = LUP value = 0 } }
+				WEI = { army_size = LUP }
+				WEI = { army_size = SNC }
+				WEI = { num_of_cities = 40 }	
+				WEI = { num_of_cities = SNC }
+				WEI = { num_of_cities = LUP }
+			
+			}
+			AND = {
+				
+				
+				LUP = { has_opinion = { who = SNJ value = 0 } }
+				SNJ = { has_opinion = { who = LUP value = 0 } }			
+				WEI = { army_size = LUP }
+				WEI = { army_size = SNJ }
+				WEI = { num_of_cities = 40 }	
+				WEI = { num_of_cities = SNJ }
+				WEI = { num_of_cities = LUP }
+			
+			}
+			AND = {
+				
+			
+				LUP = { has_opinion = { who = SNC value = 0 } }
+				SNC = { has_opinion = { who = LUP value = 0 } }				
+				TS2 = { army_size = LUP }
+				TS2 = { army_size = SNC }
+				TS2 = { num_of_cities = 40 }	
+				TS2 = { num_of_cities = SNC }
+				TS2 = { num_of_cities = LUP }
+			
+			}
+			AND = {
+			
+			
+				LUP = { has_opinion = { who = SNJ value = 0 } }
+				SNJ = { has_opinion = { who = LUP value = 0 } }						
+				TS2 = { army_size = LUP }
+				TS2 = { army_size = SNJ }
+				TS2 = { num_of_cities = 40 }	
+				TS2 = { num_of_cities = SNJ }
+				TS2 = { num_of_cities = LUP }
+			}
+			AND = {
+			
+				
+				SHU = { has_opinion = { who = SNC value = 0 } }
+				SNC = { has_opinion = { who = SHU value = 0 } }
+				WEI = { army_size = SHU }
+				WEI = { army_size = SNC }
+				WEI = { num_of_cities = 40 }	
+				WEI = { num_of_cities = SNC }
+				WEI = { num_of_cities = SHU }
+			
+			}
+			AND = {
+				
+				
+				SHU = { has_opinion = { who = SNJ value = 0 } }
+				SNJ = { has_opinion = { who = SHU value = 0 } }			
+				WEI = { army_size = SHU }
+				WEI = { army_size = SNJ }
+				WEI = { num_of_cities = 40 }	
+				WEI = { num_of_cities = SNJ }
+				WEI = { num_of_cities = SHU }
+			
+			}
+			AND = {
+				
+			
+				SHU = { has_opinion = { who = SNC value = 0 } }
+				SNC = { has_opinion = { who = SHU value = 0 } }				
+				TS2 = { army_size = SHU }
+				TS2 = { army_size = SNC }
+				TS2 = { num_of_cities = 40 }	
+				TS2 = { num_of_cities = SNC }
+				TS2 = { num_of_cities = SHU }
+			
+			}
+			AND = {
+			
+			
+				SHU = { has_opinion = { who = SNJ value = 0 } }
+				SNJ = { has_opinion = { who = SHU value = 0 } }						
+				TS2 = { army_size = SHU }
+				TS2 = { army_size = SNJ }
+				TS2 = { num_of_cities = 40 }	
+				TS2 = { num_of_cities = SNJ }
+				TS2 = { num_of_cities = SHU }
+			}
+			AND = {
+			
+				
+				LUP = { has_opinion = { who = WUU value = 0 } }
+				WUU = { has_opinion = { who = LUP value = 0 } }
+				WEI = { army_size = LUP }
+				WEI = { army_size = WUU }
+				WEI = { num_of_cities = 40 }	
+				WEI = { num_of_cities = WUU }
+				WEI = { num_of_cities = LUP }
+			
+			}
+			AND = {
+				
+				
+				SHU = { has_opinion = { who = WUU value = 0 } }
+				WUU = { has_opinion = { who = SHU value = 0 } }			
+				WEI = { army_size = SHU }
+				WEI = { army_size = WUU }
+				WEI = { num_of_cities = 40 }	
+				WEI = { num_of_cities = WUU }
+				WEI = { num_of_cities = SHU }
+			
+			}	
+			AND = {
+			
+				
+				LUP = { has_opinion = { who = WUU value = 0 } }
+				WUU = { has_opinion = { who = LUP value = 0 } }
+				TS2 = { army_size = LUP }
+				TS2 = { army_size = WUU }
+				TS2 = { num_of_cities = 40 }	
+				TS2 = { num_of_cities = WUU }
+				TS2 = { num_of_cities = LUP }
+			
+			}
+			AND = {
+				
+				
+				SHU = { has_opinion = { who = WUU value = 0 } }
+				WUU = { has_opinion = { who = SHU value = 0 } }			
+				TS2 = { army_size = SHU }
+				TS2 = { army_size = WUU }
+				TS2 = { num_of_cities = 40 }	
+				TS2 = { num_of_cities = WUU }
+				TS2 = { num_of_cities = SHU }
+			
+			}			
+			
+		}
+			
+		OR = { 
+			has_leader = "ø‹i„®N0›Q^0"
+			advisor = zhuge_liang
+		}
+		OR = { 
+			tag = LUP
+			tag = SHU
+		}
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_SHU_LUP_events.OPTA1"
+		if = { 
+			limit = { exists = SNC }
+			SNC = {
+				country_event = {
+					id = rab_SHU_LUP_events.2
+				}
+			}
+		}
+		if = { 
+			limit = { exists = SNJ }
+			SNJ = {
+				country_event = {
+					id = rab_SHU_LUP_events.2
+				}			
+			}
+		}
+		if = { 
+			limit = { exists = WUU }
+			WUU = {
+				country_event = {
+					id = rab_SHU_LUP_events.2
+				}			
+			}
+		}		
+	}
+	option = {
+		name = "rab_SHU_LUP_events.OPTB1"
+	
+	}
+}
+#WUU
+country_event = {
+	id = rab_SHU_LUP_events.2
+	title = "rab_SHU_LUP_events.NAME2"
+	desc = "rab_SHU_LUP_events.DESC2"
+	picture = zhuge_liang_a_eventPicture
+  
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_SHU_LUP_events.OPTA2"
+		ai_chance = {
+			factor = 90
+		}
+		add_opinion = {
+			who = FROM
+			modifier = shen_liu_alliance
+		}
+		FROM = {
+			country_event = {
+				id = rab_SHU_LUP_events.3
+			}			
+		}
+	}	
+	option = {
+		name = "rab_SHU_LUP_events.OPTB2"
+		ai_chance = {
+			factor = 10
+		}
+		FROM = {
+			country_event = {
+				id = rab_SHU_LUP_events.4
+			}			
+		}		
+		
+	}
+}	
+
+
+country_event = {
+	id = rab_SHU_LUP_events.3
+	title = "rab_SHU_LUP_events.NAME3"
+	desc = "rab_SHU_LUP_events.DESC3"
+	picture = zhuge_liang_a_eventPicture
+  
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_SHU_LUP_events.OPTA3"
+		create_alliance = FROM
+		add_opinion = {
+			who = FROM
+			modifier = shen_liu_alliance
+		}		
+	}
+}
+
+country_event = {
+	id = rab_SHU_LUP_events.4
+	title = "rab_SHU_LUP_events.NAME4"
+	desc = "rab_SHU_LUP_events.DESC4"
+	picture = zhuge_liang_a_eventPicture
+  
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_SHU_LUP_events.OPTA4"
+		FROM = {
+			add_prestige = -30				
+		}
+	}
+}

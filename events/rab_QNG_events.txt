@@ -1,0 +1,111 @@
+namespace = rab_QNG_events
+#############################################
+#大清在1852年3month必然向太平天国宣战(AI)	#
+#############################################
+#2018.12.28 seems nothing need to update to 1.28
+country_event = {
+    id = rab_QNG_events.1
+	title = "rab_QNG_events.NAME1"
+	desc = "rab_QNG_events.DESC1"
+	picture = TAIPING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = QNG
+		num_of_cities = TP1
+		exists = TP1
+		is_year = 1852
+		is_month = 2
+    }
+       mean_time_to_happen = {
+			days = 5
+       }
+    	option = {
+		   name = "rab_QNG_events.OPTA1" 
+			ai_chance = { 
+				factor = 100
+			}		   
+			declare_war_with_cb = {
+				who = TP1
+				casus_belli = cb_chinese_unification
+			}
+		}
+    	option = {
+		   name = "rab_QNG_events.OPTB1" 
+		   	ai_chance = { 
+				factor = 0
+			}
+		   add_prestige = -20
+		}
+		
+}
+#爆出太平天国
+country_event = {
+    id = rab_QNG_events.2
+	title = "rab_QNG_events.NAME2"
+	desc = "rab_QNG_events.DESC2"
+	picture = TAIPING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = QNG
+		num_of_cities = 55
+		NOT = { exists = TP1 }
+		NOT = { has_global_flag = TAIPING_EVER_EXISTS }
+		is_year = 1852
+		NOT = { is_year = 1853 }
+    }
+     mean_time_to_happen = {
+			days = 5
+     }
+    option = {
+	   name = "rab_QNG_events.OPTA2"
+		random_owned_province = {
+			add_core = TP1
+			cede_province = TP1		
+			remove_core = QNG
+			change_religion = worship_god
+		}
+		TP1 = { 
+			add_country_modifier = {
+				name = "TP1_extend"
+				duration = 75
+			}	
+		}
+	}
+}
+
+#東寧要反清復明
+country_event = {
+    id = rab_QNG_events.3
+	title = "rab_QNG_events.NAME3"
+	desc = "rab_QNG_events.DESC3"
+	picture = TAIPING_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { war_with = DN3 }
+	}	
+
+    option = {
+	   name = "rab_QNG_events.OPTA3"
+		#決意開戰
+		declare_war_with_cb = {
+			who = DN3
+			casus_belli = cb_chinese_unification
+		}
+		
+	}
+    option = {
+	   name = "rab_QNG_events.OPTB3"
+			#無視
+			ai_chance = {
+				factor = 0
+			}
+			add_prestige = -30
+	}	
+}
+

@@ -1,0 +1,113 @@
+#2018.12.31 fit to 1.28
+namespace = rab_SUI_events
+# ãñg SOrR˙QNËêRb∫p'YU
+country_event = {
+	id = rab_SUI_events.1
+	title = "rab_SUI_events.NAME1"
+	desc = "rab_SUI_events.DESC1"
+	picture = ARMY_START_1_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = SUI
+		NOT = {
+			exists = LY2
+		}
+		NOT = {
+			exists = TNG
+		}
+		OR = {
+			AND = {
+				ai = yes
+				is_year = 617
+				num_of_cities = 100
+			}
+			AND = {
+				ai = no
+				is_year = 600
+				NOT = {
+					DIP = 3
+				}
+				NOT = {
+					MIL = 3
+				}
+				NOT = {
+					ADM = 4
+				}
+				num_of_cities = 175
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name = "rab_SUI_events.OPTA1"
+		add_ruler_modifier = {
+			name = md_unstable_state
+		}
+		#divide to TNG
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			add_core = TNG
+			cede_province = TNG
+			change_controller = TNG
+		}
+		TNG = {
+			# set_country_flag = NEVER_PEACE
+			add_country_modifier = {
+				name = "LL1_extend"
+				duration = 120
+			}
+			east_china_sea_region = {
+				discover_country = TNG
+			}
+			south_china_sea_region = {
+				discover_country = TNG
+			}
+			indo_china_region = {
+				discover_country = TNG
+			}
+			south_china_region = {
+				discover_country = TNG
+			}
+			north_china_region = {
+				discover_country = TNG
+			}
+			tibet_region = {
+				discover_country = TNG
+			}
+			xinan_region = {
+				discover_country = TNG
+			}
+		}
+		if = {
+			limit = {
+				TNG = {
+					is_at_war = no
+				}
+			}
+			TNG = {
+				declare_war_with_cb = {
+					who = SUI
+					casus_belli = cb_chinese_unification
+				}
+				define_ruler = {
+					name = "Ngn"
+					adm = 5
+					dip = 5
+					mil = 6
+					fixed = yes
+					leader = {
+						name = "Ngn"
+						fire = 7
+						shock = 7
+						manuever = 3
+						siege = 3
+					}
+				}
+			}
+		}
+	}
+}

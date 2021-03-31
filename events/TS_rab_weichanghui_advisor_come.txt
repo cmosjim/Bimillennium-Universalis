@@ -1,0 +1,65 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = weichanghui_advisor_come
+
+#fkSĞgÍyagöNNúQ°s
+#id = 1 : weichanghui : æ—f‰0fkS0
+
+country_event = {
+	id = weichanghui_advisor_come.1
+	title = "weichanghui_advisor_come.1.t"
+	desc = "weichanghui_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	#:N†NMQßu»løv²QzZP†Ncheck ruler¨RjO
+	trigger = {
+	
+		is_year = 1848	
+		NOT = { is_year = 1856 }
+
+		OR = {
+				AND = {
+					exists = TP1 
+					tag = TP1
+				}
+				
+				AND = {
+				
+					NOT = { exists = TP1 }
+					exists = QNG
+					tag = QNG
+				}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = weichanghui_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = weichanghui
+				name = "æ—f‰0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "æ—f‰0fkS0"
+				fire = 5
+				shock = 5
+				manuever = 3
+				siege = 2
+			}
+		}
+	}
+}
+

@@ -1,0 +1,43 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = stpaul_advisor_come
+
+#fkSS?Š0o‚–N	y8?
+#id = 1 : stpaul : ??X?GY0fkS0
+#
+country_event = {
+	id = stpaul_advisor_come.1
+	title = "stpaul_advisor_come.1.t"
+	desc = "stpaul_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		is_year = 5
+		NOT = { is_year = 67 }
+		OR = {
+			tag = ROM
+			AND = {
+				NOT = { exists = ROM }
+				owns = 327
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = stpaul_advisor_come.OPTA1
+		define_advisor = {
+			type = stpaul
+			name = "1W ÝOW0^yfR¶R0"
+			discount = yes	
+			skill = 3
+		}
+	}
+}

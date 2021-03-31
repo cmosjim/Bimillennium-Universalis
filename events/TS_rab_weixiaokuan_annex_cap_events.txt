@@ -1,0 +1,199 @@
+namespace = weixiaokuan_annex_cap_events
+
+country_event = {
+	id = weixiaokuan_annex_cap_events.1
+	title = "weixiaokuan_annex_cap_events.NAME1"
+	desc = "weixiaokuan_annex_cap_events.DESC1"
+	picture = SIEGE_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = { 
+			OR = {
+			 	advisor = weixiaokuan
+				has_leader = "ÊókRÀR0fkS0"
+			}
+		}
+	}	
+	option = {
+		name = "weixiaokuan_annex_cap_events.OPTA1"
+		country_event = {
+			id = weixiaokuan_annex_cap_events.2
+			days = 1
+		}
+	}
+}
+
+
+country_event = {
+	id = weixiaokuan_annex_cap_events.2
+	title = "weixiaokuan_annex_cap_events.NAME2"
+	desc = "weixiaokuan_annex_cap_events.DESC2"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = "weixiaokuan_annex_cap_events.OPTA2"
+		############################################
+		## This table defined by rab_event_modifiers
+		##------------------------------------------
+		## ÖR√V¡NöS ra_ch1    ## Õë∆âÖQ?e rb_ch1
+		##------------------------------------------
+		## HgOe«è∫N ra_ch2    ## Õë∆âõQãN rb_ch2
+		##------------------------------------------
+		## '`<h¥fPÜ ra_ch3    ## Õë∆â—SUS rb_ch3
+		##------------------------------------------
+		## Êa1V∆wS ra_ch4    ## Õë∆âTX rb_ch4
+		##------------------------------------------
+		## *ç˛V´NPN ra_ch5    ## Õë∆âóRYe rb_ch5
+		##------------------------------------------
+		## ƒñ√VÓX◊V ra_ch6    ## Õë∆âY≤N rb_ch6
+		##------------------------------------------
+		## O‘g·R≠e ra_ch7    ## Õë∆â∫Náe rb_ch7
+		##------------------------------------------
+		## (u∫N=UMb ra_ch8    ## Õë∆âFUN rb_ch8
+		##------------------------------------------
+		## ≤Q®RÅúÀÉ ra_ch9    ##
+		##------------------------------------------
+		##AI ÂÇ=fTãsagˆNN&rTˇ1SNO	êÈbâv(u
+		##AI ÂÇ=fTãsagˆN&rTˇ1S	g70%Hgás	êÈbKN
+		############################################		
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0 #N&rTÂNNÑvagˆNˇÙv•cŒN70%âc0R0%
+				NOT = {
+					OR = {
+					    has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch4
+						
+					}
+				}
+			}
+			modifier = {
+				factor = 0 #&rTÂNNÑvagˆNˇÙv•cŒN70%âc0R0%
+				tag = JAP
+			}	
+		}
+		#©s∂R	êÜNâv(uˇNTãsor otheragˆN&rT
+		#SÂãfkS˙^ÀzéN∞eÑv˝V∂R
+		
+		if = {
+			limit = {
+			 NOT = { tag = JAP }
+			 OR = {
+					    has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch4
+						
+						
+						
+				}
+			}
+			
+			if = { 
+				limit = { ai = no }
+					define_advisor = {
+						type = weixiaokuan
+						name = "ÊókRÀR0fkS0"
+						discount = yes	
+						skill = 3
+					}
+			}
+			if = { 
+				limit = { ai = yes }
+					define_general = {
+					name = "ÊókRÀR0fkS0"
+					fire = 5
+					shock = 5
+					manuever = 5
+					siege = 3
+				}
+			}
+		}
+		#©s∂R	êÜNâv(uˇFO=fTãsor otheragˆNN&rT
+		#Ûç0R fkS“b›uÑvIubó
+		
+		if = {
+			limit = {
+				NOT = { tag = JAP }
+				NOT = {
+					OR = {
+					    has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch4
+						
+						
+					}
+				}
+			}
+				country_event = {
+					id = weixiaokuan_annex_cap_events.3
+				}
+		}
+		if = {
+			limit = {
+				tag = JAP
+			}
+			country_event = {
+				id = weixiaokuan_annex_cap_events.3
+			}
+		}		
+	}
+		#©s∂R	êÜN©eñô
+	option = {
+		name = "weixiaokuan_annex_cap_events.OPTB2"
+		ai_chance = { factor = 10 }	
+		add_prestige = -2
+		add_treasury = 100
+	}	
+		#©s∂R	êÜNAm>e
+		#(W˝VÖQèñaÑvN*NwRˇ˙^Àzpov_xxx ∞eÑvw˝Nmodifier 
+	option = {
+		name = "weixiaokuan_annex_cap_events.OPTC2"
+		ai_chance = { factor = 20 }
+		add_prestige = 2
+		hidden_effect = { 
+			random_owned_province = {
+				add_province_modifier = {
+					name = "pov_weixiaokuan"
+					duration = -1
+				}
+			}
+		}
+	}	
+}
+
+######################fkS“b›uÑvIubó#####################################
+
+country_event = {
+	id = weixiaokuan_annex_cap_events.3
+	title = "weixiaokuan_annex_cap_events.NAME3"
+	desc = "weixiaokuan_annex_cap_events.DESC3"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+	#ﬁV0RKNMRÑv ">fHyìb0RSÜòTÑvIubó	êÈb"
+	option = {
+		name = "weixiaokuan_annex_cap_events.OPTA3"
+		country_event = {
+				id = weixiaokuan_annex_cap_events.2
+		}
+	}
+}
+

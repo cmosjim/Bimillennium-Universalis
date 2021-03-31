@@ -1,0 +1,81 @@
+#fit to 1.28
+namespace = rab_USA_events
+#id : 1 ~ 2 : choose which province in jap should be att by Atomic bomb
+country_event = {
+	id = rab_USA_events.1
+	title = "rab_USA_events.NAME1"
+	desc = "rab_USA_events.DESC1"
+	picture = nuclear_weapons_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "rab_USA_events.OPTA1"
+		JA1 = {
+			random_owned_province = {
+				limit = {
+					region = japan_region
+				}
+				save_global_event_target_as = tg_bomb_province
+			}
+			set_country_flag = flg_been_bomb
+		}
+		event_target:tg_bomb_province = {
+			add_province_modifier = {
+				name = "mp_bomb_province"	
+				duration = 3650
+			}
+			add_devastation = 99			
+		}	
+	}	
+	option = {
+	name = "rab_USA_events.OPTB1"
+		country_event = {
+			id = rab_USA_events.2
+		}	
+	}		
+	option = {
+	name = "rab_USA_events.OPTC1"
+		clr_country_flag = tmp_USA_bomb_JA1
+	}			
+}
+	
+country_event = {
+	id = rab_USA_events.2
+	title = "rab_USA_events.NAME2"
+	desc = "rab_USA_events.DESC2"
+	picture = nuclear_weapons_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "rab_USA_events.OPTA2"
+		JA1 = {
+			random_owned_province = {
+				limit = {
+					region = japan_region
+				}
+				save_global_event_target_as = tg_bomb_province
+			}
+			set_country_flag = flg_been_bomb
+		}
+		event_target:tg_bomb_province = {
+			add_province_modifier = {
+				name = "mp_bomb_province"	
+				duration = 3650
+			}
+			add_devastation = 50			
+		}	
+	}	
+	option = {
+	name = "rab_USA_events.OPTB1"
+		country_event = {
+			id = rab_USA_events.1
+		}	
+	}		
+	option = {
+	name = "rab_USA_events.OPTC1"
+		clr_country_flag = tmp_USA_bomb_JA1
+	}			
+}
+

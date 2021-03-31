@@ -1,0 +1,55 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = banhuanzensilan_advisor_come
+
+#fkSĞgÍyhöNNúQşs
+#id = 1 : banhuanzensilan : g±WVÛVÎ0S›Q0
+#
+country_event = {
+	id = banhuanzensilan_advisor_come.1
+	title = "banhuanzensilan_advisor_come.1.t"
+	desc = "banhuanzensilan_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		#ÙÌ‘=ffkSúQ°s(WêTÌ‘„vagöN
+		is_year = 1904
+		NOT = { is_year = 1955 }
+		OR = {
+			tag = JAP
+			tag = JA1
+		}	
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = banhuanzensilan_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = banhuanzensilan
+				name = "g±WVÛVÎ0S›Q0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "g±WVÛVÎ0S›Q0"
+				fire = 8
+				shock = 8
+				manuever = 5
+				siege = 5
+			}
+		}
+	}
+}
+

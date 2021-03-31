@@ -1,0 +1,51 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = yangxiuqing_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : yangxiuqing : hgÀyn0fkS0
+
+country_event = {
+	id = yangxiuqing_advisor_come.1
+	title = "yangxiuqing_advisor_come.1.t"
+	desc = "yangxiuqing_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+
+	trigger = {
+		OR = {
+			AND = {
+				is_year = 1852
+				NOT = { is_year = 1856 }
+				exists = TP1
+				tag = TP1
+			}
+			AND = {
+				is_year = 1852
+				NOT = { is_year = 1856 }
+				NOT = { exists = TP1 }
+				tag = QNG
+			}
+		}	
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = yangxiuqing_advisor_come.OPTA1
+		
+		define_advisor = {
+				type = yangxiuqing
+				name = "hgÀyn0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+

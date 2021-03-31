@@ -1,0 +1,336 @@
+namespace = build_special_events
+###############################
+#######JUST TEST ONLY			#
+###############################
+#地方上的視察(normal)
+province_event = {
+    id = build_special_events.1
+	title = "build_special_events.NAME1"
+	desc = "build_special_events.DESC1"
+	picture = INSPECT_eventPicture
+	
+	trigger = {
+		has_building = bomb
+		NOT = {
+			OR = {
+				has_province_flag = flg_pov_event_2_immortality 
+				has_province_modifier = pov_info_chuanguoyuxi
+				has_province_modifier = pov_WangMongSon
+			}
+		}
+		#related to \TS_rab_missions_events.txt
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "build_special_events.OPTA1"
+		remove_building = bomb
+	}
+	option = {
+		name = "build_special_events.OPTB1"
+		remove_building = bomb
+		owner = {
+			country_event = {
+				id = build_special_events.4
+			}
+		}		
+	}	
+}
+#
+country_event = {
+    id = build_special_events.4
+	title = "build_special_events.NAME4"
+	desc = "build_special_events.DESC4"
+	picture = POV_DEV_TABLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "build_special_events.OPTA4"
+
+	}	
+}
+
+
+ #地方上的視察=>chuanguoyuxi
+province_event = {
+    id = build_special_events.2
+	title = "build_special_events.NAME2"
+	desc = {
+		trigger = {
+			is_year = 1913
+		}	
+		desc = "build_special_events.DESC2.a"
+	}
+	desc = {
+		trigger = {
+			NOT = { is_year = 1913 }
+			OR = {
+				owner = { has_reform = celestial_empire }
+				owner = { has_reform = ancient_chinese_warlord_reform }
+				owner = { has_reform = ancient_chinese_togofu_reform }
+				owner = { has_reform = chinese_feudatory_reform }
+				tag = TP1
+			}
+		}	
+		desc = "build_special_events.DESC2.b"
+	}
+	desc = {
+		trigger = {
+			NOT = { is_year = 1913 }
+			NOT = {
+				OR = {
+					owner = { has_reform = celestial_empire }
+					owner = { has_reform = ancient_chinese_warlord_reform }
+					owner = { has_reform = ancient_chinese_togofu_reform }
+					owner = { has_reform = chinese_feudatory_reform }
+					tag = TP1
+				}
+			}	
+		}	
+		desc = "build_special_events.DESC2.c"
+	}
+	picture = {
+		trigger = {
+			is_year = 1913
+		}
+		picture = chuanguoyuxi_eventPicture 
+	}
+	picture = {
+		trigger = {
+			NOT = { is_year = 1913 }
+		}
+		picture = povinfo_chuanguoyuxi_eventPicture 
+	}
+	
+	
+	trigger = {
+		has_building = bomb
+		has_province_modifier = pov_info_chuanguoyuxi
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "build_special_events.OPTA2" 
+		trigger = {
+			is_year = 1913
+		}
+		owner = {
+			country_event = {
+				id = rab_treasury_events.36
+			}
+		}
+		hidden_effect = {
+			remove_building = bomb
+			remove_province_modifier = pov_info_chuanguoyuxi
+		}
+	}		
+	option = {
+		name = "build_special_events.OPTB2"
+		trigger = {
+			NOT = { is_year = 1913 }
+			OR = {
+				owner = { has_reform = celestial_empire }
+				owner = { has_reform = ancient_chinese_warlord_reform }
+				owner = { has_reform = ancient_chinese_togofu_reform }
+				owner = { has_reform = chinese_feudatory_reform }
+				tag = TP1				
+			}
+		}
+		owner = {
+			add_country_modifier = {
+				name = "md_chuanguoyuxi"
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_building = bomb
+			remove_province_modifier = pov_info_chuanguoyuxi
+		}	
+	}	
+	option = {
+		name = "build_special_events.OPTC2"
+		trigger = {
+			NOT = { is_year = 1913 }
+			NOT = {
+				OR = {
+					owner = { has_reform = celestial_empire }
+					owner = { has_reform = ancient_chinese_warlord_reform }
+					owner = { has_reform = ancient_chinese_togofu_reform }
+					owner = { has_reform = chinese_feudatory_reform }
+					tag = TP1							
+				}
+			}	
+		}
+		owner = {
+			add_country_modifier = {
+				name = "md_chuanguoyuxi"
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_building = bomb
+			remove_province_modifier = pov_info_chuanguoyuxi
+		}	
+	}		
+}
+# from on_siege_lost_province =  {
+# root = location, from = winning country
+# 藉由戰爭獲得的
+province_event = {
+    id = build_special_events.3
+	title = "build_special_events.NAME2"
+	desc = {
+		trigger = {
+			is_year = 1913
+		}	
+		desc = "build_special_events.DESC2.a"
+	}
+	desc = {
+		trigger = {
+			NOT = { is_year = 1913 }
+			OR = {
+				FROM = { has_reform = celestial_empire }
+				FROM = { has_reform = ancient_chinese_warlord_reform }
+				FROM = { has_reform = ancient_chinese_togofu_reform } 
+				FROM = { has_reform = chinese_feudatory_reform } 
+				tag = TP1
+			}
+		}	
+		desc = "build_special_events.DESC2.b"
+	}
+	desc = {
+		trigger = {
+			NOT = { is_year = 1913 }
+			NOT = {
+				OR = {
+					FROM = { has_reform = celestial_empire } 
+					FROM = { has_reform = ancient_chinese_warlord_reform } 
+					FROM = { has_reform = ancient_chinese_togofu_reform } 
+					FROM = { has_reform = chinese_feudatory_reform }
+					tag = TP1
+				}
+			}	
+		}	
+		desc = "build_special_events.DESC2.c"
+	}
+	picture = {
+		trigger = {
+			is_year = 1913
+		}
+		picture = chuanguoyuxi_eventPicture 
+	}
+	picture = {
+		trigger = {
+			NOT = { is_year = 1913 }
+		}
+		picture = povinfo_chuanguoyuxi_eventPicture 
+	}
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_province_modifier = pov_info_chuanguoyuxi	
+	}
+	
+	option = {
+		name = "build_special_events.OPTA3"
+		trigger = {
+			is_year = 1913
+		}
+		FROM = {
+			country_event = {
+				id = rab_treasury_events.36
+			}
+		}
+		hidden_effect = {
+			remove_province_modifier = pov_info_chuanguoyuxi
+		}
+	}		
+	option = {
+		name = "build_special_events.OPTB3"
+		trigger = {
+			NOT = { is_year = 1913 }
+			OR = {
+				FROM = { has_reform = celestial_empire }
+				FROM = { has_reform = ancient_chinese_warlord_reform }
+				FROM = { has_reform = ancient_chinese_togofu_reform }
+				FROM = { has_reform = chinese_feudatory_reform }
+				FROM = { tag = TP1 }				
+			}
+		}
+		FROM = {
+			country_event = {
+				id = build_special_events.5
+			}	
+			add_country_modifier = {
+				name = "md_chuanguoyuxi"
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_province_modifier = pov_info_chuanguoyuxi
+		}	
+	}	
+	option = {
+		name = "build_special_events.OPTC3"
+		trigger = {
+			NOT = { is_year = 1913 }
+			NOT = {
+				OR = {
+					FROM = { has_reform = celestial_empire }
+					FROM = { has_reform = ancient_chinese_warlord_reform }
+					FROM = { has_reform = ancient_chinese_togofu_reform }
+					FROM = { has_reform = chinese_feudatory_reform }
+					FROM = { tag = TP1 }			
+				}
+			}	
+		}
+		FROM = {
+			country_event = {
+				id = build_special_events.6
+			}	
+			add_country_modifier = {
+				name = "md_chuanguoyuxi"
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			remove_province_modifier = pov_info_chuanguoyuxi
+		}	
+	}		
+}
+
+#天朝
+country_event = {
+    id = build_special_events.5
+	title = "build_special_events.NAME5"
+	desc = "build_special_events.DESC5"
+	picture = povinfo_chuanguoyuxi_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "build_special_events.OPTA5"
+		
+	}
+}
+#非天朝
+country_event = {
+    id = build_special_events.6
+	title = "build_special_events.NAME6"
+	desc = "build_special_events.DESC6"
+	picture = povinfo_chuanguoyuxi_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "build_special_events.OPTA6"
+		
+	}
+}

@@ -1,0 +1,51 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = jikang_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : jikang : GT·^ 0z‚=g¶R0
+
+country_event = {
+	id = jikang_advisor_come.1
+	title = "jikang_advisor_come.1.t"
+	desc = "jikang_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 240	
+		NOT = { is_year = 270 }
+				owns = 1838
+			}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = jikang_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = jikang
+				name = "GT·^ 0z‚=g¶R0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "GT·^ 0z‚=g¶R0"
+				fire = 1
+				shock = 1
+				manuever = 1
+				siege = 1
+			}
+		}
+	}
+}
+

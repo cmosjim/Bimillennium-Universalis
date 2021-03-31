@@ -1,0 +1,61 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = yimojuci_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : yimojuci : O¨XES!k0›Q^0
+
+country_event = {
+	id = yimojuci_advisor_come.1
+	title = "yimojuci_advisor_come.1.t"
+	desc = "yimojuci_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 2	
+		NOT = { is_year = 24 }
+		OR = {
+			AND = {
+				exists = XIO
+				tag = XIO
+			}
+			AND = {
+				NOT = { exists = XIO }
+				owns = 721
+			}			
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = yimojuci_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = yimojuci
+				name = "O¨XES!k0›Q^0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "O¨XES!k0›Q^0"
+				female = yes
+				fire = 6
+				shock = 6
+				manuever = 5
+				siege = 4
+			}
+		}
+	}
+}
+

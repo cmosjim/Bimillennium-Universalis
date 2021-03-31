@@ -1,0 +1,64 @@
+namespace = rab_modern_warlord_events
+
+#When modern_warlord ruler more than 1 year , will occur a event for heir.
+country_event = {
+	id = rab_modern_warlord_events.1
+	title = "rab_modern_warlord_events.NAME1"
+	desc = "rab_modern_warlord_events.DESC1"
+	picture = MODERN_CHINESE_WARLORD_A_eventPicture
+	
+	trigger = {
+		has_reform = modern_chinese_warlord_reform
+		has_heir = no
+	}
+
+	mean_time_to_happen = {
+		days = 365
+	}
+	
+	option = {
+		name = "rab_modern_warlord_events.OPTA1"
+		hidden_effect = {
+			define_heir = {
+				male = yes
+				claim = 100
+				max_random_mil = 3 
+				max_random_dip = 3 
+				adm = 5
+			}
+		}
+	}
+	option = {
+		name = "rab_modern_warlord_events.OPTB1"
+		hidden_effect = {
+			define_heir = {
+				male = yes
+				claim = 100
+				max_random_mil = 3 
+				max_random_adm = 3 
+				dip = 5
+			}
+		}		
+	}
+	option = {
+		name = "rab_modern_warlord_events.OPTC1"
+		hidden_effect = {
+			define_heir = {
+				male = yes
+				claim = 100
+				max_random_dip = 3 
+				max_random_adm = 3 
+				mil = 5
+			}
+		}		
+	}
+	option = {
+		name = "rab_modern_warlord_events.OPTD1"
+		hidden_effect = {
+			define_heir = {
+				male = yes
+				claim = 100
+			}
+		}		
+	}	
+}

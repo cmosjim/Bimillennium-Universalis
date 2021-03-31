@@ -1,0 +1,3160 @@
+namespace = xy_industry
+
+country_event = {
+	id = xy_industry.1
+	title = "xy_industry.NAME1"
+	desc = "xy_industry.DESC1"
+	picture = INDUSTRIAL_CAR_eventPicture
+	trigger = {
+		is_year = 1790
+		NOT = { has_country_flag = industrial_indexzhi1  }
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = num_of_industrialindex
+				value = 0
+			}
+			 #history_industry
+			 #Europe
+			if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1800
+				technology_group = western
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 61
+				}
+			}	
+           if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1836
+				technology_group = western
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 70
+				}
+			}		
+           if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1860
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}	
+             if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1900
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 90
+				}
+			}
+            if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1920
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 61
+				}
+			}	
+			 if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1921
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 71
+				}
+			}	
+			if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1922
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 81
+				}
+			}	
+			if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1924
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 91
+				}
+			}	
+			if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1926
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 101
+				}
+			}	
+			if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1928
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 111
+				}
+			}	
+			if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1930
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 81
+				}
+			}
+			if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1933
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 71
+				}
+			}
+            if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1940
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 71
+				}
+			}	
+			if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1960
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 85
+				}
+			}	
+            if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1985
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}	
+            if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 2000
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 62
+				}
+			}			
+           if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 2010
+				religion_group = ideology
+				capital_scope = { continent = europe }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 52
+				}
+			}					
+	#Muslim
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1836
+				religion_group = muslim
+				has_institution = industrialization
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 20
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1870
+				religion_group = muslim
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 30
+				}
+			}
+			if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1910
+				religion_group = muslim
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 40
+				}
+			}
+			if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1980
+				religion_group = muslim
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 30
+				}
+			}
+    #Asia
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1860
+				NOT = {
+				religion_group = muslim
+				}
+				capital_scope = { continent = asia }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 20
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1920
+				NOT = {
+				religion_group = muslim
+				}
+				capital_scope = { continent = asia }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 25
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1950
+				NOT = {
+				religion_group = muslim
+				}
+				capital_scope = { continent = asia }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 30
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1975
+				NOT = {
+				religion_group = muslim
+				}
+				capital_scope = { continent = asia }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 50
+				}
+			}
+    #New_world 
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1800
+				religion_group = ideology
+				capital_scope = { NOT = { continent = europe }
+                NOT = { continent = africa		}
+				NOT = { continent = asia }
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 20
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1836
+				religion_group = ideology
+				capital_scope = { NOT = { continent = europe }
+                NOT = { continent = africa		}
+				NOT = { continent = asia }
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 30
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1850
+				religion_group = ideology
+				capital_scope = { NOT = { continent = europe }
+                NOT = { continent = africa		}
+				NOT = { continent = asia }
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 40
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1900
+				religion_group = ideology
+				capital_scope = { NOT = { continent = europe }
+                NOT = { continent = africa		}
+				NOT = { continent = asia }
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 50
+				}
+			}
+	#China
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1865
+				OR = {
+				tag = QNG
+				culture_group = east_asian
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 25
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1870  #陕甘
+				OR = {
+				tag = QNG
+				culture_group = east_asian
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 40
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1875  #新疆
+				OR = {
+				tag = QNG
+				culture_group = east_asian
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 45
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1886  #中法条约左宗棠去世
+				OR = {
+				tag = QNG
+				culture_group = east_asian
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 30
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1895 #甲午战争
+				OR = {
+				tag = QNG
+				culture_group = east_asian
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 10
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1912  #清亡
+				OR = {
+				tag = QNG
+				culture_group = east_asian
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 20
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1924  #军阀割据
+				culture_group = east_asian
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 20
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1924  
+				culture_group = east_asian
+                tag = FX1     #张作霖
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 40
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1924  
+				culture_group = east_asian
+                tag = GJ1    #国民革命军
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 40
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1924  
+				culture_group = east_asian
+                tag = ROC   #民国北伐
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 40
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1931  #918事变
+				culture_group = east_asian
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 22
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1941  #西方援助正式宣战
+				culture_group = east_asian
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 30
+				}
+			}
+			#CHN
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1950  #内战结束
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 5
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1950.10.19  #内战结束
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 45
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1954
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 50
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1955
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 55
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1956
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 60
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1957  #一五计划
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 75
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1958  #苏联撤资
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 50
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1962  #大跃进及调整
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 53
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1978  #改开
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 55
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1991  #80年代发展
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 70
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1995  
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 75
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 2000  
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 2008 #美国经济危机
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 95
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 2012 
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 110
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 2014 #增长极限
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 120
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 2015 #去产能去杠杆
+				culture_group = east_asian
+				tag = CHN
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 110
+				}
+			}
+			#ROC
+    if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1950  #内战结束
+				culture_group = east_asian
+				tag = ROC
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 30
+				}
+			}
+	 if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1955  #美国
+				culture_group = east_asian
+				OR = { 
+				tag = ROC
+				tag = TWN
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 50
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1965  
+				culture_group = east_asian
+				OR = { 
+				tag = ROC
+				tag = TWN
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 60
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1975  
+				culture_group = east_asian
+				OR = { 
+				tag = ROC
+				tag = TWN
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 70
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1985  
+				culture_group = east_asian
+				OR = { 
+				tag = ROC
+				tag = TWN
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1985  
+				culture_group = east_asian
+				OR = { 
+				tag = ROC
+				tag = TWN
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1997
+				culture_group = east_asian
+				OR = { 
+				tag = ROC
+				tag = TWN
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 70
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 2015
+				culture_group = east_asian
+				OR = { 
+				tag = ROC
+				tag = TWN
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 62
+				}
+			}
+	#Germany
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1850
+				OR = {
+				tag = PRU
+				tag = GER
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1860  #二次工业革命
+				OR = {
+				tag = PRU
+				tag = GER
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 90
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1870  #二次工业革命
+				OR = {
+				tag = PRU
+				tag = GER
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 100
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1890  
+				OR = {
+				tag = PRU
+				tag = GER
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 110
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1917  #一战失败
+				OR = {
+				tag = PRU
+				tag = GER
+				tag = NZ1
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 90
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1920  
+				OR = {
+				tag = PRU
+				tag = GER
+				tag = NZ1
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 111
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1930
+				OR = {
+				tag = PRU
+				tag = GER
+				tag = NZ1
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 101
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1936
+				OR = {
+				tag = PRU
+				tag = GER
+				tag = NZ1
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 140
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1939  #二战
+				OR = {
+				tag = PRU
+				tag = GER
+				tag = NZ1
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 160
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1945  #二战结束
+				OR = {
+				tag = PRU
+				tag = GER
+				tag = EGE
+				tag = WGE
+				tag = NZ1
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 50
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1955  #马歇尔计划
+				OR = {
+				tag = PRU
+				tag = GER
+				tag = EGE
+				tag = WGE
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1975
+				OR = {
+				tag = PRU
+				tag = GER
+				tag = EGE
+				tag = WGE
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 90
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1991
+				OR = {
+				tag = PRU
+				tag = GER
+				tag = EGE
+				tag = WGE
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 100
+				}
+			}
+	#Great Britian
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1800
+				OR = {
+				tag = ENG
+				tag = GBR
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 70
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1836
+				OR = {
+				tag = ENG
+				tag = GBR
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 90
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1860
+				OR = {
+				tag = ENG
+				tag = GBR
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 100
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1918
+				OR = {
+				tag = ENG
+				tag = GBR
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1922
+				OR = {
+				tag = ENG
+				tag = GBR
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 101
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1924
+				OR = {
+				tag = ENG
+				tag = GBR
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 113
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1930
+				OR = {
+				tag = ENG
+				tag = GBR
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 90
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1934
+				OR = {
+				tag = ENG
+				tag = GBR
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1945
+				OR = {
+				tag = ENG
+				tag = GBR
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 75
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1966
+				OR = {
+				tag = ENG
+				tag = GBR
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 70
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 2000
+				OR = {
+				tag = ENG
+				tag = GBR
+				}
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 60
+				}
+			}
+	#Russia
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1800
+				culture_group = east_slavic
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 20
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1836
+				culture_group = east_slavic
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 40
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1860
+				culture_group = east_slavic
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 50
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1918
+				culture_group = east_slavic
+				NOT = { tag = SOV }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 40
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1991
+				culture_group = east_slavic
+				NOT = { tag = SOV }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 30
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 2008
+				culture_group = east_slavic
+				NOT = { tag = SOV }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 50
+				}
+			}
+		#Soviet
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1918
+				culture_group = east_slavic
+				 tag = SOV 
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 30
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1922  #斯大林
+				culture_group = east_slavic
+				 tag = SOV 
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 50
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1934
+				culture_group = east_slavic
+				 tag = SOV 
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 70
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1940
+				culture_group = east_slavic
+				 tag = SOV 
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 90
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1942
+				culture_group = east_slavic
+				 tag = SOV 
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 100
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1946
+				culture_group = east_slavic
+				 tag = SOV 
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 110
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1966
+				culture_group = east_slavic
+				 tag = SOV 
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 120
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1976
+				culture_group = east_slavic
+				 tag = SOV 
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 110
+				}
+			}
+	#USA
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1848 #淘金热
+				 tag = USA
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 60
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1918 #一战
+				 tag = USA
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1922 #一战
+				 tag = USA
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 100
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1930 #一战
+				 tag = USA
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 90
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1934 
+				 tag = USA
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 70
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1939 
+				 tag = USA
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 90
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1941 #二战
+				 tag = USA
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 110
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1946 #二战
+				 tag = USA
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 110
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1991 #解体后金融资产崛起
+				 tag = USA
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 100
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 2008 #金融危机
+				 tag = USA
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 2010 #危机结束
+				 tag = USA
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 90
+				}
+			}
+	if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 2016 #特朗普
+				 tag = USA
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}
+	#Japan
+		if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1868
+				OR = {
+				 tag = JA1
+				 tag = JAP
+				 }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 50
+				}
+			}
+		if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1878
+				OR = {
+				 tag = JA1
+				 tag = JAP
+				 }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 60
+				}
+			}
+		if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1888
+				OR = {
+				 tag = JA1
+				 tag = JAP
+				 }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}
+		if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1894
+				OR = {
+				 tag = JA1
+				 tag = JAP
+				 }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 90
+				}
+			}
+		if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1926
+				OR = {
+				 tag = JA1
+				 tag = JAP
+				 }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 100
+				}
+			}
+		if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1937
+				OR = {
+				 tag = JA1
+				 tag = JAP
+				 }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 110
+				}
+			}
+		if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1945
+				OR = {
+				 tag = JA1
+				 tag = JAP
+				 }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 50
+				}
+			}
+		if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1956
+				OR = {
+				 tag = JA1
+				 tag = JAP
+				 }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 70
+				}
+			}
+		if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1966
+				OR = {
+				 tag = JA1
+				 tag = JAP
+				 }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}
+		if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1976
+				OR = {
+				 tag = JA1
+				 tag = JAP
+				 }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 80
+				}
+			}
+		if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1985 #广场协议
+				OR = {
+				 tag = JA1
+				 tag = JAP
+				 }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 90
+				}
+			}
+		if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 1989 #泡沫破灭
+				OR = {
+				 tag = JA1
+				 tag = JAP
+				 }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 70
+				}
+			}
+		if = {
+				limit = {
+				started_in = 1800.1.1
+				is_year = 2010
+				OR = {
+				 tag = JA1
+				 tag = JAP
+				 }
+				}
+				set_variable = {
+					which = num_of_industrialindex
+					value = 66
+				}
+			}
+    #End			
+			set_country_flag = industrial_indexzhi1				
+		}		
+	}
+	option = {
+	name = "xy_industry.OPTA1"
+	custom_tooltip = tp_st_of_industrial_indexzhi
+	if = { limit = { 
+	check_variable = {
+			which = num_of_industrialindex
+			value = 20
+		}
+	}
+	capital_scope = { add_building = factory }
+	}
+	if = { limit = { num_of_cities = 15
+	check_variable = {
+			which = num_of_industrialindex
+			value = 30
+		}
+	}
+	random_owned_province = { limit = { NOT = { has_building = factory } is_state = yes development = 15 } add_building = factory }
+	}
+	if = { limit = { num_of_cities = 20
+	check_variable = {
+			which = num_of_industrialindex
+			value = 40
+		}
+	}
+	random_owned_province = { limit = { NOT = { has_building = factory } is_state = yes development = 20 } add_building = factory }
+	}
+	if = { limit = { num_of_cities = 35
+	check_variable = {
+			which = num_of_industrialindex
+			value = 50
+		}
+	}
+	random_owned_province = { limit = { NOT = { has_building = factory } is_state = yes development = 20 } add_building = factory }
+	}
+	if = { limit = { num_of_cities = 40
+	check_variable = {
+			which = num_of_industrialindex
+			value = 60
+		}
+	}
+	random_owned_province = { limit = { NOT = { has_building = factory } is_state = yes development = 20 } add_building = factory }
+	}
+	if = { limit = { num_of_cities = 45
+	check_variable = {
+			which = num_of_industrialindex
+			value = 70
+		}
+	}
+	random_owned_province = { limit = { NOT = { has_building = factory } is_state = yes development = 20 } add_building = factory }
+	}
+	if = { limit = { num_of_cities = 50
+	check_variable = {
+			which = num_of_industrialindex
+			value = 80
+		}
+	}
+	random_owned_province = { limit = { NOT = { has_building = factory } is_state = yes development = 20 } add_building = factory }
+	}
+	if = { limit = { num_of_cities = 55
+	check_variable = {
+			which = num_of_industrialindex
+			value = 90
+		}
+	}
+	random_owned_province = { limit = { NOT = { has_building = factory } is_state = yes development = 20 } add_building = factory }
+	}
+	if = { limit = { num_of_cities = 60
+	check_variable = {
+			which = num_of_industrialindex
+			value = 100
+		}
+	}
+	random_owned_province = { limit = { NOT = { has_building = factory } is_state = yes development = 20 } add_building = factory }
+	}
+	if = { limit = { num_of_cities = 65
+	check_variable = {
+			which = num_of_industrialindex
+			value = 110
+		}
+	}
+	random_owned_province = { limit = { NOT = { has_building = factory } is_state = yes development = 20 } add_building = factory }
+	}
+	}
+}
+country_event = {
+	id = xy_industry.2
+	title = "xy_industry.NAME2"
+	desc = "xy_industry.DESC2"
+	picture = INDUSTRIAL_FACTORY_eventPicture
+	
+	is_triggered_only = yes
+
+	#leave
+	option = {
+		name = "xy_industry.OPTA2"
+		clr_country_flag = industrial_indexzhi2
+	}
+}
+
+country_event = {
+	id = xy_industry.3
+	title = "xy_industry.NAME3"
+	desc = "xy_industry.DESC3"
+	picture = INDUSTRIAL_FACTORY_eventPicture
+	trigger = {
+	has_institution = industrialization
+		any_owned_province = {
+			has_building = factory
+			is_state = yes 
+		}
+		NOT = {
+		check_variable = {
+			which = num_of_industrialindex
+			value = 60
+		}
+		}
+		has_country_flag = industrial_indexzhi1  
+		OR = {
+		NOT = {
+			has_country_flag = qiyediaocha1 }
+			had_country_flag = { flag = qiyediaocha1 days = 365 }
+		}
+	}
+    mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		set_country_flag = qiyediaocha1
+	}
+	option = {
+		name = "xy_industry.OPTA3"
+		if = {
+			limit = {
+				calc_true_if = {
+					all_owned_province = {
+						has_building = factory
+						is_state = yes
+					}
+					amount = 1
+				}
+				NOT = {
+					calc_true_if = {
+						all_owned_province = {
+							has_building = factory
+							is_state = yes
+						}
+						amount = 2
+					}
+				}
+			}
+			change_variable = {
+				which = num_of_industrialindex
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_owned_province = {
+						has_building = factory
+						is_state = yes
+					}
+					amount = 2
+				}
+				NOT = {
+					calc_true_if = {
+						all_owned_province = {
+							has_building = factory
+							is_state = yes
+						}
+					amount = 3
+					}
+				}
+			}
+			change_variable = {
+				which = num_of_industrialindex
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_owned_province = {
+						has_building = factory
+						is_state = yes
+					}
+					amount = 3
+				}
+				NOT = {
+					calc_true_if = {
+						all_owned_province = {
+							has_building = factory
+							is_state = yes
+						}
+						amount = 4
+					}
+				}
+			}
+			change_variable = {
+				which = num_of_industrialindex
+				value = 3
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_owned_province = {
+						has_building = factory
+						is_state = yes
+					}
+					amount = 4
+				}
+				NOT = {
+					calc_true_if = {
+						all_owned_province = {
+							has_building = factory
+							is_state = yes
+						}
+						amount = 5
+					}
+				}
+			}
+			change_variable = {
+				which = num_of_industrialindex
+				value = 4
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_owned_province = {
+						has_building = factory
+						is_state = yes
+					}
+					amount = 5
+				}
+				NOT = {
+					calc_true_if = {
+						all_owned_province = {
+							has_building = factory
+							is_state = yes
+						}
+						amount = 6
+					}
+				}
+			}
+			change_variable = {
+				which = num_of_industrialindex
+				value = 5
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_owned_province = {
+						has_building = factory
+						is_state = yes
+					}
+					amount = 6
+				}
+				NOT = {
+					calc_true_if = {
+						all_owned_province = {
+							has_building = factory
+							is_state = yes
+						}
+						amount = 7
+					}
+				}
+			}
+			change_variable = {
+				which = num_of_industrialindex
+				value = 6
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_owned_province = {
+						has_building = factory
+						is_state = yes
+					}
+					amount = 7
+				}
+				NOT = {
+					calc_true_if = {
+						all_owned_province = {
+							has_building = factory
+							is_state = yes
+						}
+						amount = 8
+					}
+				}
+			}
+			change_variable = {
+				which = num_of_industrialindex
+				value = 7
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_owned_province = {
+						has_building = factory
+						is_state = yes
+					}
+					amount = 8
+				}
+				NOT = {
+					calc_true_if = {
+						all_owned_province = {
+							has_building = factory
+							is_state = yes
+						}
+						amount = 9
+					}
+				}
+			}
+			change_variable = {
+				which = num_of_industrialindex
+				value = 8
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_owned_province = {
+						has_building = factory
+						is_state = yes
+					}
+					amount = 9
+				}
+				NOT = {
+					calc_true_if = {
+						all_owned_province = {
+							has_building = factory
+							is_state = yes
+						}
+						amount = 10
+					}
+				}
+			}
+			change_variable = {
+				which = num_of_industrialindex
+				value = 9
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_owned_province = {
+						has_building = factory
+						is_state = yes
+					}
+					amount = 10
+				}
+			}
+			change_variable = {
+				which = num_of_industrialindex
+				value = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = xy_industry.4
+	title = "xy_industry.NAME4"
+	desc = "xy_industry.DESC4"
+	picture = INDUSTRIAL_EDUCATION_eventPicture
+	
+	is_triggered_only = yes
+	option = {
+		name = "xy_industry.OPTA4"
+		ai_chance = {
+			factor = 100
+		}
+				add_country_modifier = {
+			name = "cujinjiaoyu11"
+			duration = 365
+		}     
+			add_corruption = 1
+			add_treasury = -1500
+			clr_country_flag = queren_cujinjiaoyu1
+	}
+		option = {
+		name = "xy_industry.OPTB4"
+			add_country_modifier = {
+			name = "cujinjiaoyu11"
+			duration = 730
+		}     
+			add_corruption = 2
+			add_treasury = -3000
+			clr_country_flag = queren_cujinjiaoyu1
+	}
+		option = {
+		name = "xy_industry.OPTC4"
+		add_country_modifier = {
+			name = "cujinjiaoyu11"
+			duration = 1095
+		}     
+			add_corruption = 3
+			add_treasury = -4500
+			clr_country_flag = queren_cujinjiaoyu1
+	}
+		option = {
+		name = "xy_industry.OPTD4"
+		add_country_modifier = {
+			name = "cujinjiaoyu11"
+			duration = 1460
+		}
+		add_corruption = 4
+		add_treasury = -6000
+		clr_country_flag = queren_cujinjiaoyu1
+	}
+		option = {
+		name = "xy_industry.OPTE4"
+         add_country_modifier = {
+			name = "cujinjiaoyu11"
+			duration = 1825
+		}
+		add_corruption = 5
+		add_treasury = -7500
+		clr_country_flag = queren_cujinjiaoyu1
+	}
+	option = {
+		name = "xy_industry.OPTF4"
+        clr_country_flag = queren_cujinjiaoyu1
+	}
+}
+province_event = {
+	id = xy_industry.5
+	title = "xy_industry.NAME5"
+	desc = "xy_industry.DESC5"
+	picture = INDUSTRIAL_OBSOLETE_eventPicture
+	
+	trigger = {
+		owner = {
+			has_country_flag = industrial_indexzhi1 
+			NOT = {
+				has_country_modifier = cujinjiaoyu11 
+			}
+			check_variable = {
+				which = num_of_industrialindex
+				value = 10
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_industrialindex
+					value = 60
+				}
+			}
+		}
+		has_building = factory
+	}
+    mean_time_to_happen = {
+		months = 120
+	}
+	option = {
+		name = "xy_industry.OPTA5"
+		ai_chance = {
+			factor = 100
+			modifier = {
+			factor = 0.1
+			num_of_loans = 2
+			}
+		}
+		owner = {
+    subtract_variable = {
+			which = num_of_industrialindex
+			value = 3
+			}
+		add_years_of_income = -0.2
+		}
+	}
+		option = {
+		name = "xy_industry.OPTB5"
+		ai_chance = {
+			factor = 10
+		}
+		owner = {
+    subtract_variable = {
+			which = num_of_industrialindex
+			value = 5
+			}
+			}
+	}
+}
+
+country_event = {
+	id = xy_industry.6
+	title = "xy_industry.NAME6"
+	desc = "xy_industry.DESC6"
+	picture = INDUSTRIAL_FACTORY_eventPicture
+	
+	is_triggered_only = yes
+	option = {
+		name = "xy_industry.OPTA6"
+		ai_chance = {
+			factor = 100
+		}
+		 change_variable = {
+				which = num_of_industrialindex
+				value = 2
+			}
+			add_corruption = 1
+			add_treasury = -1500
+			clr_country_flag = queren_tuijingongyehua
+	}
+		option = {
+		name = "xy_industry.OPTB6"
+		 change_variable = {
+				which = num_of_industrialindex
+				value = 4
+			}
+			add_corruption = 2
+			add_treasury = -3000
+			clr_country_flag = queren_tuijingongyehua
+	}
+		option = {
+		name = "xy_industry.OPTC6"
+		 change_variable = {
+				which = num_of_industrialindex
+				value = 6
+			}
+			add_corruption = 3
+			add_treasury = -4500
+			clr_country_flag = queren_tuijingongyehua
+	}
+		option = {
+		name = "xy_industry.OPTD6"
+		 change_variable = {
+				which = num_of_industrialindex
+				value = 8
+			}
+			add_corruption = 4
+			add_treasury = -6000
+			clr_country_flag = queren_tuijingongyehua
+	}
+		option = {
+		name = "xy_industry.OPTE6"
+		 change_variable = {
+				which = num_of_industrialindex
+				value = 10
+			}
+			add_corruption = 5
+			add_treasury = -7500
+			clr_country_flag = queren_tuijingongyehua
+	}
+	option = {
+		name = "xy_industry.OPTF6"
+        clr_country_flag = queren_tuijingongyehua
+	}
+}
+
+country_event = {
+	id = xy_industry.7
+	title = "xy_industry.NAME7"
+	desc = "xy_industry.DESC7"
+	picture = INDUSTRIAL_FACTORY_eventPicture
+	
+	is_triggered_only = yes
+	option = {
+		name = "xy_industry.OPTA7"
+		ai_chance = {
+			factor = 100
+		}
+		 change_variable = {
+				which = num_of_industrialindex
+				value = 2
+			}
+			add_corruption = 2
+			add_treasury = -5000
+			clr_country_flag = queren_qianghuagongye
+	}
+		option = {
+		name = "xy_industry.OPTB7"
+		 change_variable = {
+				which = num_of_industrialindex
+				value = 4
+			}
+			add_corruption = 4
+			add_treasury = -10000
+			clr_country_flag = queren_qianghuagongye
+	}
+		option = {
+		name = "xy_industry.OPTC7"
+		 change_variable = {
+				which = num_of_industrialindex
+				value = 6
+			}
+			add_corruption = 6
+			add_treasury = -15000
+			clr_country_flag = queren_qianghuagongye
+	}
+		option = {
+		name = "xy_industry.OPTD7"
+		 change_variable = {
+				which = num_of_industrialindex
+				value = 8
+			}
+			add_corruption = 8
+			add_treasury = -20000
+			clr_country_flag = queren_qianghuagongye
+	}
+		option = {
+		name = "xy_industry.OPTE7"
+		 change_variable = {
+				which = num_of_industrialindex
+				value = 10
+			}
+			add_corruption = 10
+			add_treasury = -25000
+			clr_country_flag = queren_qianghuagongye
+	}
+	option = {
+		name = "xy_industry.OPTF7"
+        clr_country_flag = queren_qianghuagongye
+	}
+}
+
+country_event = {
+	id = xy_industry.8
+	title = "xy_industry.NAME8"
+	desc = "xy_industry.DESC8"
+	picture = INDUSTRIAL_FACTORY_eventPicture
+	trigger = {
+		has_country_flag = industrial_indexzhi1 
+		NOT = {
+			has_country_modifier = mybhzy_industry 
+		}
+		check_variable = {
+			which = num_of_industrialindex
+			value = 60
+		}
+		any_country = {
+			tech_difference = 5
+			check_variable = {
+				which = num_of_industrialindex
+				value = 80
+			}
+		} 
+	}
+    mean_time_to_happen = {
+		months = 120
+		 modifier = {
+			factor = 0.8
+			religion = liberalism
+		}
+		 modifier = {
+			factor = 2
+			religion = communism
+		}
+	}
+	option = {
+		name = "xy_industry.OPTA8"
+		ai_chance = {
+			factor = 100
+			modifier = {
+			factor = 0.1
+			num_of_loans = 2
+			}
+		}
+    subtract_variable = {
+			which = num_of_industrialindex
+			value = 3
+			}
+		add_years_of_income = -0.3
+	}
+		option = {
+		name = "xy_industry.OPTB8"
+		ai_chance = {
+			factor = 10
+		}
+    subtract_variable = {
+			which = num_of_industrialindex
+			value = 5
+			}
+	}
+}
+
+country_event = {
+	id = xy_industry.9
+	title = "xy_industry.NAME9"
+	desc = "xy_industry.DESC9"
+	picture = INDUSTRIAL_FACTORY_eventPicture
+	trigger = {
+	 has_country_flag = industrial_indexzhi1 
+			check_variable = {
+				which = num_of_industrialindex
+				value = 70
+			}
+			NOT = {
+			check_variable = {
+				which = num_of_industrialindex
+				value = 120
+			}
+			}
+		OR = { NOT = {  has_country_flag = industry_dec_py }
+		had_country_flag = { flag = industry_dec_py days = 365 }
+		}	
+	}
+    mean_time_to_happen = {
+     days = 1
+	}
+    immediate = {
+		set_country_flag = industry_dec_py
+	}
+	option = {
+		name = "xy_industry.OPTA9"
+		if = {
+			limit = {
+					current_age = industrial_age 
+			} 
+			subtract_variable = {
+				which = num_of_industrialindex
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				current_age = great_war_age 
+			}
+			subtract_variable = {
+				which = num_of_industrialindex
+				value = 2
+			}
+		}
+		if = {
+			limit = {
+				current_age = information_age 
+			}
+			subtract_variable = {
+				which = num_of_industrialindex
+				value = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = xy_industry.10
+	title = "xy_industry.NAME10"
+	desc = "xy_industry.DESC10"
+	picture = INDUSTRIAL_BATTLE_eventPicture
+	trigger = {
+		has_country_flag = industrial_indexzhi1 
+		has_institution = industrialization
+		any_country = {
+			war_with = ROOT
+			check_variable = {
+				which = num_of_industrialindex
+				value = 30
+			}
+			any_owned_province = {
+				is_state = yes 
+				has_building = factory 
+				NOT = { controlled_by = PREV } 
+				controlled_by = ROOT
+				NOT = { has_province_modifier = wbjl_industry }	 
+			}	 
+		}
+	}
+    mean_time_to_happen = {
+     months = 6
+	}
+	immediate = {
+		random_country = {
+			limit = {
+				war_with = ROOT
+				check_variable = {
+				which = num_of_industrialindex
+				value = 30
+			}
+				any_owned_province = {
+					is_state = yes 
+					has_building = factory  
+					NOT = { controlled_by = PREV } 
+					controlled_by = ROOT
+					NOT = { has_province_modifier = wbjl_industry } 
+				}  
+			}
+				save_event_target_as = factory_enemy_country	 
+		}
+		event_target:factory_enemy_country = {
+			random_owned_province = {
+				limit = {
+					is_state = yes 
+					has_building = factory  
+					NOT = { controlled_by = PREV } 
+					controlled_by = ROOT
+					NOT = { has_province_modifier = wbjl_industry } 
+				} 
+			save_event_target_as = factory_enemy_province	 }
+		}
+	}
+	option = {
+		name = "xy_industry.OPTA10"
+		ai_chance = {
+			factor = 50
+		}
+		 event_target:factory_enemy_province = {
+			remove_building = factory
+		 }
+		if = {
+			limit = { 
+			event_target:factory_enemy_country = {
+				NOT = {
+					check_variable = {
+						which = num_of_industrialindex
+						value = 60
+					}
+				}
+			}
+		 }
+		 event_target:factory_enemy_country = {
+			subtract_variable = {
+				which = num_of_industrialindex
+				value = 10
+			}
+		}
+	    change_variable = {
+				which = num_of_industrialindex
+				value = 5
+			}
+		}	
+		if = {
+			limit = { 
+				event_target:factory_enemy_country = {
+					check_variable = {
+						which = num_of_industrialindex
+						value = 60
+					}
+				}
+			}
+		event_target:factory_enemy_country = {
+			subtract_variable = {
+				which = num_of_industrialindex
+				value = 20
+			}
+		}
+	    change_variable = {
+				which = num_of_industrialindex
+				value = 10
+			}
+		}
+     event_target:factory_enemy_country = {    
+	 country_event = {
+				id = xy_industry.11
+			}  }
+	}
+		option = {
+		name = "xy_industry.OPTB10"
+		 event_target:factory_enemy_province = {
+		 remove_building = factory
+		 }
+		 ai_chance = {
+			factor = 50
+			modifier = {
+			factor = 3
+			num_of_loans = 2
+			}
+		}
+		if = { limit = { 
+         event_target:factory_enemy_country = {
+		 NOT = {
+		 	check_variable = {
+				which = num_of_industrialindex
+				value = 60
+			}
+		 }
+		 }
+		 }
+		 event_target:factory_enemy_country = {
+		 subtract_variable = {
+			which = num_of_industrialindex
+			value = 10
+			}
+			}
+	    add_treasury = 1000
+		}	
+		if = { limit = { 
+         event_target:factory_enemy_country = {
+		 	check_variable = {
+				which = num_of_industrialindex
+				value = 60
+			}
+		 }
+		 }
+		 event_target:factory_enemy_country = {
+		 subtract_variable = {
+			which = num_of_industrialindex
+			value = 20
+			}
+			}
+	    add_treasury = 2000
+		}
+     event_target:factory_enemy_country = {    
+	 country_event = {
+				id = xy_industry.11
+			}  }
+	}
+	option = {
+		name = "xy_industry.OPTC10"
+		ai_chance = {
+			factor = 0
+		}
+		event_target:factory_enemy_province = {
+		add_province_modifier = {
+			name = "wbjl_industry"
+			duration = 365
+		}  
+		}
+		}
+ }
+ country_event = {
+	id = xy_industry.11
+	title = "xy_industry.NAME11"
+	desc = "xy_industry.DESC11"
+	picture = INDUSTRIAL_BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	option = {
+		name = "xy_industry.OPTA11"
+		
+   }
+}
+
+country_event = {
+	id = xy_industry.12
+	title = "xy_industry.NAME12"
+	desc = "xy_industry.DESC12"
+	picture = INDUSTRIAL_BATTLE_eventPicture									 
+	hidden = yes
+	trigger = {
+		OR = {
+			ai = no
+			AND = {
+			    ai = yes
+				NOT = {
+					any_country = { exists = yes ai = no } 
+				}
+				NOT = { great_power_rank = 2 }
+			}
+		}	
+		is_year = 1800
+		any_country = {
+			check_variable = {
+				which = num_of_industrialindex
+				value = 70
+			}  
+		}
+	}
+    mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = "xy_industry.OPTA12"
+		set_variable = {
+			which = sum_of_economycrisis
+			value = 0
+		}
+		while = {
+			limit = {
+				any_country = {
+					check_variable = {
+						which = num_of_industrialindex
+						value = 75
+					} 
+					NOT = { has_country_flag = had_jjwjdc }
+				
+			}	 
+			}
+			random_country = {
+				limit = {
+				check_variable = {
+					which = num_of_industrialindex
+					value = 75
+				}
+				NOT = { has_country_flag = had_jjwjdc }
+				}
+				set_country_flag = had_jjwjdc
+				if = {
+					limit = {
+						NOT = {
+							total_development = 1000 
+						} 
+					}
+					ROOT = {
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 1
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 1000 
+						NOT = { total_development = 2000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 2
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 2000 
+						NOT = { total_development = 3000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 3
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 3000 
+						NOT = { total_development = 4000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 4
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 4000 
+						NOT = { total_development = 5000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 5
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 5000 
+						NOT = { total_development = 6000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 6
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 6000 
+						NOT = { total_development = 7000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 7
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 7000 
+						NOT = { total_development = 8000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 8
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 8000 
+						NOT = { total_development = 9000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 9
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 9000   
+					}
+					ROOT = {
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 10
+						} 
+					}
+				}
+			}
+		}
+		ROOT = { if = {
+				limit = {
+				check_variable = {
+					which = num_of_industrialindex
+					value = 75
+				}
+				NOT = { has_country_flag = had_jjwjdc }
+				}
+				set_country_flag = had_jjwjdc
+				if = {
+					limit = {
+						NOT = {
+							total_development = 1000 
+						} 
+					}
+					ROOT = {
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 1
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 1000 
+						NOT = { total_development = 2000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 2
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 2000 
+						NOT = { total_development = 3000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 3
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 3000 
+						NOT = { total_development = 4000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 4
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 4000 
+						NOT = { total_development = 5000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 5
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 5000 
+						NOT = { total_development = 6000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 6
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 6000 
+						NOT = { total_development = 7000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 7
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 7000 
+						NOT = { total_development = 8000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 8
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 8000 
+						NOT = { total_development = 9000 }  
+					}
+					ROOT = { 
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 9
+						} 
+					}
+				}
+				if = {
+					limit = {
+						total_development = 9000   
+					}
+					ROOT = {
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 10
+						} 
+					}
+				}
+			}
+			}
+		while = {
+			limit = {
+				any_country = {
+					check_variable = {
+						which = num_of_industrialindex
+						value = 95
+					} 
+					NOT = { has_country_flag = had_jjwjdc100 }
+				
+			}	 
+			}
+			random_country = {
+				limit = {
+				check_variable = {
+					which = num_of_industrialindex
+					value = 95
+				}
+				NOT = { has_country_flag = had_jjwjdc100 }
+				}
+				set_country_flag = had_jjwjdc100
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 5
+						} 
+			}
+		}
+		ROOT = { if = {
+				limit = {
+				check_variable = {
+					which = num_of_industrialindex
+					value = 95
+				}
+				NOT = { has_country_flag = had_jjwjdc100 }
+				}
+				set_country_flag = had_jjwjdc100
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 5
+						} 
+			}
+			}
+		while = { 
+			limit = {
+				any_country = {
+					check_variable = {
+						which = num_of_industrialindex
+						value = 115
+					} 
+					NOT = { has_country_flag = had_jjwjdc120 }
+				
+			}	 
+			}
+			random_country = {
+				limit = {
+				check_variable = {
+					which = num_of_industrialindex
+					value = 115
+				}
+				NOT = { has_country_flag = had_jjwjdc120 }
+				}
+				set_country_flag = had_jjwjdc120
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 10
+						} 
+			}
+		}
+		ROOT = { if = {
+				limit = {
+				check_variable = {
+					which = num_of_industrialindex
+					value = 115
+				}
+				NOT = { has_country_flag = had_jjwjdc120 }
+				}
+				set_country_flag = had_jjwjdc120
+						change_variable = {
+							which = sum_of_economycrisis
+							value = 10
+						} 
+			}
+			}
+			ROOT = {
+			clr_country_flag = had_jjwjdc
+			clr_country_flag = had_jjwjdc100 
+			clr_country_flag = had_jjwjdc120 
+			}
+		every_country = {
+			limit = {
+				has_country_flag = had_jjwjdc 
+			}
+			clr_country_flag = had_jjwjdc  
+		}
+		every_country = {
+			limit = {
+				has_country_flag = had_jjwjdc100 
+			}
+			clr_country_flag = had_jjwjdc100 
+		}
+		every_country = {
+			limit = {
+				has_country_flag = had_jjwjdc120 
+			}
+			clr_country_flag = had_jjwjdc120 
+		}
+	}
+}
+
+country_event = {
+	id = xy_industry.13
+	title = "xy_industry.NAME13"
+	desc = "xy_industry.DESC13"
+	picture = INDUSTRIAL_FACTORY_eventPicture
+	
+	trigger = {
+	 has_country_flag = industrial_indexzhi1 
+			check_variable = {
+				which = num_of_industrialindex
+				value = 120
+			}
+		OR = { NOT = {  has_country_flag = industry_dec_py }
+		had_country_flag = { flag = industry_dec_py days = 365 }
+		}	
+	}
+    mean_time_to_happen = {
+     days = 1
+	}
+    immediate = {
+		set_country_flag = industry_dec_py
+	}
+	option = {
+		name = "xy_industry.OPTA13"
+		if = { limit = {
+		current_age = industrial_age } 
+    subtract_variable = {
+			which = num_of_industrialindex
+			value = 2
+			}
+			}
+		if = { limit = { current_age = great_war_age }
+    subtract_variable = {
+			which = num_of_industrialindex
+			value = 3
+			}
+			}
+		if = { limit = { current_age = information_age }
+    subtract_variable = {
+			which = num_of_industrialindex
+			value = 4
+			}
+			}
+	}
+
+}
+
+country_event = {
+	id = xy_industry.14
+	title = "xy_industry.NAME14"
+	desc = "xy_industry.DESC14"
+	picture = INDUSTRIAL_CRISIS_eventPicture
+	
+	is_triggered_only = yes
+	option = {
+		name = "xy_industry.OPTA14"
+		 subtract_variable = {
+				which = num_of_industrialindex
+				value = 10
+			}
+			add_corruption = 10
+			add_treasury = -2000
+			add_stability = -1
+	}
+	option = {
+		name = "xy_industry.OPTB14"
+		 subtract_variable = {
+				which = num_of_industrialindex
+				value = 20
+			}
+			add_corruption = 5
+			add_treasury = -1000
+			add_stability = -2
+	}
+		option = {
+		name = "xy_industry.OPTC14"
+		 subtract_variable = {
+				which = num_of_industrialindex
+				value = 40
+			}
+			add_stability = -3
+	}
+		
+}
+
+country_event = {
+	id = xy_industry.15
+	title = "xy_industry.NAME15"
+	desc = "xy_industry.DESC15"
+	picture = INDUSTRIAL_ECOM_BETTER_eventPicture
+	
+	is_triggered_only = yes
+	option = {
+		name = "xy_industry.OPTA15"
+			add_stability_or_adm_power = yes 
+	}	
+}
+
+country_event = {
+	id = xy_industry.16
+	title = "xy_industry.NAME16"
+	desc = "xy_industry.DESC16"
+	picture = INDUSTRIAL_BUSINESS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "xy_industry.OPTA16"
+		set_variable = {
+			which = num_of_industrialindex
+			value = 70
+		}
+	}	
+}
+country_event = {
+	id = xy_industry.17
+	title = "xy_industry.NAME17"
+	desc = "xy_industry.DESC17"
+	picture = INDUSTRIAL_BUSINESS_eventPicture
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "xy_industry.OPTA17"
+	}	
+}

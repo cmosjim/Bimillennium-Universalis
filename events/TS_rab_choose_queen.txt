@@ -1,0 +1,6561 @@
+#appearing in world
+#2018-09-02 modify / when var_seeds over 105 , then next choose will the same pic
+#2019-01-13 --use flg_temp / tmp_celestial_empire_choose_queens to control occur choose queens event / 
+#			because only this way could enable random_list function.
+#			--make consort's adm/dip/mil up to 7 points limit.
+#
+#2019-07-12 diao_chan vs events.
+namespace = rab_choose_queen
+# ÍS	gêÂw©s∂RÅâIrNµkBfìïÑvüR˝w
+
+
+
+country_event = {
+	id = rab_choose_queen.2001
+	title = "rab_choose_queen.NAME2001"
+	desc = "rab_choose_queen.DESC2001"
+	picture = diao_chan_unhappy_eventPicture
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = flg_temp
+	}
+		#has_country_flag = tmp_celestial_empire_choose_queens
+		#NOT = { has_country_flag = flg_temp }	
+		
+	option = {
+		name = "rab_choose_queen.OPTA2001"
+		# agree diao_chan be a queen.
+		clr_country_flag = tmp_celestial_empire_choose_queens
+		clr_country_flag = flg_temp
+		set_country_flag = flg_ban_diao_chan
+		
+		clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic200
+			define_consort = {
+				name = "ÇåIá"
+				adm = 6
+				dip = 7
+				mil = 7
+				female = yes
+			}		
+	}                                                         
+	option = {                                                
+		name = "rab_choose_queen.OPTB2001"
+		#decline the request from diao_chan
+		clr_country_flag = tmp_celestial_empire_choose_queens
+		clr_country_flag = flg_temp		
+		set_country_flag = flg_ban_diao_chan
+		if = { 
+		limit = { ai = no }
+			country_event = {
+				id = rab_choose_queen.2002
+			}	
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				female = yes
+				name = "ÇåIá0õQ^0"
+				fire = 6
+				shock = 5
+				manuever = 5
+				siege = 5
+			}
+		}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.2002
+	title = "rab_choose_queen.NAME2002"
+	desc = "rab_choose_queen.DESC2002"
+	picture = diao_chan_unhappy_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA2002"
+			define_advisor = {
+				type = diao_chan
+				name = "ÇåIá0õQ^0"
+				discount = yes	
+				skill = 3
+				female = yes
+			}		
+	} 
+}
+	
+country_event = {
+	id = rab_choose_queen.1001
+	title = "rab_choose_queen.NAME1001"
+	desc = "rab_choose_queen.DESC1001"
+	picture = receives_commands_adm_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA1001"
+		
+	}
+}
+
+country_event = {
+	id = rab_choose_queen.999
+	title = "rab_choose_queen.NAME999"
+	#desc = "rab_choose_queen.DESC999"
+	picture = CHOICES_QUEENS_eventPicture
+	desc = {
+		trigger = { 
+			OR = {
+				has_reform = ancient_chinese_warlord_reform
+				has_reform = chinese_feudatory_reform
+			}	
+		}
+		desc = "rab_choose_queen.DESC999"
+	}
+	
+	desc = {
+		trigger = { 
+			OR = {
+				has_reform = celestial_empire 
+				tag = TP1
+			}	
+		}
+		desc = "rab_choose_queen.DESC999"
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA999"
+		clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+		clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+	}
+}	
+
+country_event = {
+	id = rab_choose_queen.1000
+	title = "rab_choose_queen.NAME1000"
+	#desc = "rab_choose_queen.DESC1000"
+	picture = CHOICES_QUEENS_eventPicture
+	desc = {
+		trigger = {
+			OR = {
+				has_reform = celestial_empire 
+				tag = TP1
+			}	
+		}
+		desc = "rab_choose_queen.DESC1000a"
+	}
+	
+	desc = {
+		trigger = { 
+			OR = {
+				has_reform = ancient_chinese_warlord_reform
+				has_reform = chinese_feudatory_reform
+			}
+		}
+		desc = "rab_choose_queen.DESC1000b"
+	}
+
+	
+	trigger = {
+		has_country_flag = tmp_celestial_empire_choose_queens
+		NOT = { has_country_flag = flg_temp }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	
+	immediate = {
+		set_country_flag = flg_temp
+	}
+	
+	option = {
+		name = "rab_choose_queen.OPTA1000"
+		hidden_effect = {
+			change_variable = {
+				which = choice_num
+				value = 1
+			}
+			random_list = {
+				
+				10 = { country_event = { id = rab_choose_queen.1 } }
+				10 = { country_event = { id = rab_choose_queen.2 } }
+				10 = { country_event = { id = rab_choose_queen.3 } }
+				10 = { country_event = { id = rab_choose_queen.4 } }
+				10 = { country_event = { id = rab_choose_queen.5 } }
+				10 = { country_event = { id = rab_choose_queen.6 } }
+				10 = { country_event = { id = rab_choose_queen.7 } }
+				10 = { country_event = { id = rab_choose_queen.8 } }
+				10 = { country_event = { id = rab_choose_queen.9 } }
+				10 = { country_event = { id = rab_choose_queen.10 } }
+				10 = { country_event = { id = rab_choose_queen.11 } }
+				10 = { country_event = { id = rab_choose_queen.12 } }
+				10 = { country_event = { id = rab_choose_queen.13 } }
+				10 = { country_event = { id = rab_choose_queen.14 } }
+				10 = { country_event = { id = rab_choose_queen.15 } }
+				10 = { country_event = { id = rab_choose_queen.16 } }
+				10 = { country_event = { id = rab_choose_queen.17 } }
+				10 = { country_event = { id = rab_choose_queen.18 } }
+				10 = { country_event = { id = rab_choose_queen.19 } }
+				10 = { country_event = { id = rab_choose_queen.20 } }
+				10 = { country_event = { id = rab_choose_queen.21 } }
+				10 = { country_event = { id = rab_choose_queen.22 } }
+				10 = { country_event = { id = rab_choose_queen.23 } }
+				10 = { country_event = { id = rab_choose_queen.24 } }
+				10 = { country_event = { id = rab_choose_queen.25 } }
+				10 = { country_event = { id = rab_choose_queen.26 } }
+				10 = { country_event = { id = rab_choose_queen.27 } }
+				10 = { country_event = { id = rab_choose_queen.28 } }
+				10 = { country_event = { id = rab_choose_queen.29 } }
+				10 = { country_event = { id = rab_choose_queen.30 } }
+				10 = { country_event = { id = rab_choose_queen.31 } }
+				10 = { country_event = { id = rab_choose_queen.32 } }
+				10 = { country_event = { id = rab_choose_queen.33 } }
+				10 = { country_event = { id = rab_choose_queen.34 } }
+				10 = { country_event = { id = rab_choose_queen.35 } }
+				10 = { country_event = { id = rab_choose_queen.36 } }
+				10 = { country_event = { id = rab_choose_queen.37 } }
+				10 = { country_event = { id = rab_choose_queen.38 } }
+				10 = { country_event = { id = rab_choose_queen.39 } }
+				10 = { country_event = { id = rab_choose_queen.40 } }
+				10 = { country_event = { id = rab_choose_queen.41 } }
+				10 = { country_event = { id = rab_choose_queen.42 } }
+				10 = { country_event = { id = rab_choose_queen.43 } }
+				10 = { country_event = { id = rab_choose_queen.44 } }
+				10 = { country_event = { id = rab_choose_queen.45 } }
+				10 = { country_event = { id = rab_choose_queen.46 } }
+				10 = { country_event = { id = rab_choose_queen.47 } }
+				10 = { country_event = { id = rab_choose_queen.48 } }
+				10 = { country_event = { id = rab_choose_queen.49 } }
+				10 = { country_event = { id = rab_choose_queen.50 } }
+				10 = { country_event = { id = rab_choose_queen.51 } }
+				10 = { country_event = { id = rab_choose_queen.52 } }
+				10 = { country_event = { id = rab_choose_queen.53 } }
+				10 = { country_event = { id = rab_choose_queen.54 } }
+				10 = { country_event = { id = rab_choose_queen.55 } }
+				10 = { country_event = { id = rab_choose_queen.56 } }
+				10 = { country_event = { id = rab_choose_queen.57 } }
+				10 = { country_event = { id = rab_choose_queen.58 } }
+				10 = { country_event = { id = rab_choose_queen.59 } }
+				10 = { country_event = { id = rab_choose_queen.60 } }
+				10 = { country_event = { id = rab_choose_queen.61 } }
+				10 = { country_event = { id = rab_choose_queen.62 } }
+				10 = { country_event = { id = rab_choose_queen.63 } }
+				10 = { country_event = { id = rab_choose_queen.64 } }
+				10 = { country_event = { id = rab_choose_queen.65 } }
+				10 = { country_event = { id = rab_choose_queen.66 } }
+				10 = { country_event = { id = rab_choose_queen.67 } }
+				10 = { country_event = { id = rab_choose_queen.68 } }
+				10 = { country_event = { id = rab_choose_queen.69 } }
+				10 = { country_event = { id = rab_choose_queen.70 } }
+				10 = { country_event = { id = rab_choose_queen.71 } }
+				10 = { country_event = { id = rab_choose_queen.72 } }
+				10 = { country_event = { id = rab_choose_queen.73 } }
+				10 = { country_event = { id = rab_choose_queen.74 } }
+				10 = { country_event = { id = rab_choose_queen.75 } }
+				10 = { country_event = { id = rab_choose_queen.76 } }
+				10 = { country_event = { id = rab_choose_queen.77 } }
+				10 = { country_event = { id = rab_choose_queen.78 } }
+				10 = { country_event = { id = rab_choose_queen.79 } }
+				10 = { country_event = { id = rab_choose_queen.80 } }
+				10 = { country_event = { id = rab_choose_queen.81 } }
+				10 = { country_event = { id = rab_choose_queen.82 } }
+				10 = { country_event = { id = rab_choose_queen.83 } }
+				10 = { country_event = { id = rab_choose_queen.84 } }
+				10 = { country_event = { id = rab_choose_queen.85 } }
+				10 = { country_event = { id = rab_choose_queen.86 } }
+				10 = { country_event = { id = rab_choose_queen.87 } }
+				10 = { country_event = { id = rab_choose_queen.88 } }
+				10 = { country_event = { id = rab_choose_queen.89 } }
+				10 = { country_event = { id = rab_choose_queen.90 } }
+				10 = { country_event = { id = rab_choose_queen.91 } }
+				10 = { country_event = { id = rab_choose_queen.92 } }
+				10 = { country_event = { id = rab_choose_queen.93 } }
+				10 = { country_event = { id = rab_choose_queen.94 } }
+				10 = { country_event = { id = rab_choose_queen.95 } }
+				10 = { country_event = { id = rab_choose_queen.96 } }
+				10 = { country_event = { id = rab_choose_queen.97 } }
+				10 = { country_event = { id = rab_choose_queen.98 } }
+				10 = { country_event = { id = rab_choose_queen.99 } }				
+				10 = { country_event = { id = rab_choose_queen.100 } }	
+				10 = { country_event = { id = rab_choose_queen.101 } }
+				10 = { country_event = { id = rab_choose_queen.102 } }
+				10 = { country_event = { id = rab_choose_queen.103 } }
+				10 = { country_event = { id = rab_choose_queen.104 } }
+				10 = { country_event = { id = rab_choose_queen.105 } }
+				10 = { country_event = { id = rab_choose_queen.106 } }
+				10 = { country_event = { id = rab_choose_queen.107 } }
+				10 = { country_event = { id = rab_choose_queen.108 } }
+				10 = { country_event = { id = rab_choose_queen.109 } }
+				10 = { country_event = { id = rab_choose_queen.110 } }
+				10 = { country_event = { id = rab_choose_queen.111 } }
+				10 = { country_event = { id = rab_choose_queen.112 } }
+				10 = { country_event = { id = rab_choose_queen.113 } }
+				10 = { country_event = { id = rab_choose_queen.114 } }
+				10 = { country_event = { id = rab_choose_queen.115 } }
+				10 = { country_event = { id = rab_choose_queen.116 } }
+				10 = { country_event = { id = rab_choose_queen.117 } }
+				10 = { country_event = { id = rab_choose_queen.118 } }
+				10 = { country_event = { id = rab_choose_queen.119 } }
+				10 = { country_event = { id = rab_choose_queen.120 } }
+				10 = { country_event = { id = rab_choose_queen.121 } }
+				10 = { country_event = { id = rab_choose_queen.122 } }				
+				10 = { country_event = { id = rab_choose_queen.123 } }				
+				10 = { country_event = { id = rab_choose_queen.124 } }				
+				10 = { country_event = { id = rab_choose_queen.125 } }				
+				10 = { country_event = { id = rab_choose_queen.126 } }				
+				10 = { country_event = { id = rab_choose_queen.127 } }				
+			}			
+		}
+	}
+}	
+
+
+
+
+country_event = {
+	id = rab_choose_queen.1
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_1_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA1"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic1
+			define_consort = {
+				name = "u≈ñÔñ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp 
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.2
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_2_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA2"
+			
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic2
+			define_consort = {
+				name = "RùÇ.f"
+				#dynasty = " "
+				max_random_adm = 4
+				max_random_dip = 7
+				max_random_mil = 7
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}			
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.3
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_3_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA3"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic3
+			define_consort = {
+				name = ".VSf∞î"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.4
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_4_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA4"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic4
+			define_consort = {
+				name = "NgËñó"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 6
+				max_random_mil = 7
+				#adm = 1
+				#dip = 2
+				#mil = 5
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.5
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_5_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA5"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic5
+			define_consort = {
+				name = "NgqrwZ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 3
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.6
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_6_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA6"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic6
+			define_consort = {
+				name = "4TˇYñò"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 4
+				#mil = 1
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}						
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.7
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_7_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA7"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic7
+			define_consort = {
+				name = "ãsT3t"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 4
+				#mil = 5
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}						
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.8
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_8_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA8"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic8
+			define_consort = {
+				name = "ƒûáe¿y"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}						
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.9
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_9_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA9"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic9
+			define_consort = {
+				name = "NgqrwZ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 3
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}						
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.10
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_10_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA10"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic10
+			define_consort = {
+				name = "óg≤w¡É"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.11
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_11_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA11"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic11
+			define_consort = {
+				name = ".V—mOe"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}						
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.12
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_12_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA12"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic12
+			define_consort = {
+				name = "Ìê<tga"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 4
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}						
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.13
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_13_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA13"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic13
+			define_consort = {
+				name = "ƒûIZﬂ`"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}						
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.14
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_14_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA14"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic14
+			define_consort = {
+				name = "ƒû◊ã6q"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 4
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}						
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.15
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_15_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA15"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic15
+			define_consort = {
+				name = "ÖP‡`Z"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}						
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.16
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_16_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA16"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic16
+			define_consort = {
+				name = "óg≈ñ≤s"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 5
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}						
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.17
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_17_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA17"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic17
+			define_consort = {
+				name = "HñsO≥Ç"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 1
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}						
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.18
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_18_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA18"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic18
+			define_consort = {
+				name = "'ÑsOga"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}						
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.19
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_19_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA19"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic19
+			define_consort = {
+				name = "zéZ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}						
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.20
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_20_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA20"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic20
+			define_consort = {
+				name = ".V≥ÇÍN"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 2
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}						
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.21
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_21_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA21"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic21
+			define_consort = {
+				name = "4T≈ñõl"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.22
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_22_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA22"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic22
+			define_consort = {
+				name = "Ìê^t‰Q"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 5
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.23
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_23_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA23"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic23
+			define_consort = {
+				name = "0åYóÇY"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+		hidden_effect = {
+			clr_country_flag = flg_temp
+		}         
+		country_event = {
+			id = rab_choose_queen.1000
+		}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.24
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_24_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA24"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic24
+			define_consort = {
+				name = "€k—mwZ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 5
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.25
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_25_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA25"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic25
+			define_consort = {
+				name = "∏ã s¡É"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.26
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_26_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA26"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic26
+			define_consort = {
+				name = "HñXn≈ñ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.27
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_27_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA27"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic27
+			define_consort = {
+				name = "NgsO…Ñ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.28
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_28_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA28"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic28
+			define_consort = {
+				name = "YR≈ñÔñ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 5
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+	
+country_event = {
+	id = rab_choose_queen.29
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_29_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA29"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic29
+			define_consort = {
+				name = "0åKN≤s"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 1
+				#dip = 5
+				#mil = 1
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.30
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_30_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA30"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic30
+			define_consort = {
+				name = "!Ö¿y≤s"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 5
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.31
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_31_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA31"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic31
+			define_consort = {
+				name = "ﬁè!`T"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.32
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_32_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA32"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic32
+			define_consort = {
+				name = "YO˘zZ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 6
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.33
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_33_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA33"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic33
+			define_consort = {
+				name = "Åh≥ÇÍN"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 4
+				#dip = 5
+				#mil = 4
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.34
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_34_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA34"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic34
+			define_consort = {
+				name = ".VXnó"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.35
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_35_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA35"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic35
+			define_consort = {
+				name = "∑k≈ñÔñ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 5
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.36
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_36_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA36"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic36
+			define_consort = {
+				name = "NgõR≤s"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 4
+				#dip = 4
+				#mil = 4
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.37
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_37_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA37"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic37
+			define_consort = {
+				name = "HñóRñò"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 3
+				#dip = 3
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.38
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_38_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA38"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic38
+			define_consort = {
+				name = "ÇmRZ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 6
+				#dip = 5
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.39
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_39_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA39"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic39
+			define_consort = {
+				name = "˛f—mjt"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 1
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+		
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.40
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_40_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA40"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic40
+			define_consort = {
+				name = "ógYóıV"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 1
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.41
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_41_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA41"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic41
+			define_consort = {
+				name = "Hñ◊ã≈ñ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 5
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.42
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_42_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA42"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic42
+			define_consort = {
+				name = "hgiO s"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 5
+				#mil = 5
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.43
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_43_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA43"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic43
+			define_consort = {
+				name = ".V^töN"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 4
+				#dip = 3
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.44
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_44_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA44"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic44
+			define_consort = {
+				name = "érR`‡`"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 3
+				#mil = 5
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.45
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_45_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA45"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic45
+			define_consort = {
+				name = "·w—m‡`"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.46
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_46_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA46"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic46
+			define_consort = {
+				name = "RIZ≤s"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 4
+				#dip = 1
+				#mil = 1
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.47
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_47_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA47"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic47
+			define_consort = {
+				name = "∏ã®ôÍN"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.48
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_48_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA48"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic48
+			define_consort = {
+				name = "4TiOT"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.49
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_49_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA49"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic49
+			define_consort = {
+				name = "ãsSTN"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.50
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_50_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA50"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic50
+			define_consort = {
+				name = "YRYóÔñ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 4
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.51
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_51_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA51"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic51
+			define_consort = {
+				name = "ãRgawZ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 4
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.52
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_52_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA52"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic52
+			define_consort = {
+				name = "ƒûiO≥Ç"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 5
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.53
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_53_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA53"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic53
+			define_consort = {
+				name = "NgiOªl"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 5
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.54
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_54_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA54"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic54
+			define_consort = {
+				name = "hTsO*t"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 4
+				#dip = 2
+				#mil = 1
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.55
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_55_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA55"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic55
+			define_consort = {
+				name = "âËï∏ÇÂÇ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 4
+				#dip = 2
+				#mil = 2
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.56
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_56_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA56"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic56
+			define_consort = {
+				name = "O%f‘g"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 1
+				#dip = 5
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.57
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_57_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA57"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic57
+			define_consort = {
+				name = "÷^%f’q"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 6
+				#dip = 6
+				#mil = 3
+				female = yes
+			}
+hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+	
+country_event = {
+	id = rab_choose_queen.58
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_58_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA58"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic58
+			define_consort = {
+				name = "	V≤s≤s"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 5
+				#mil = 5
+				female = yes
+			}
+hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+}					
+		
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+	
+country_event = {
+	id = rab_choose_queen.59
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_59_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA59"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic59
+			define_consort = {
+				name = "éj`3t"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.60
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_60_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA60"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic60
+			define_consort = {
+				name = "éQUa¡ñ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 3
+				#dip = 5
+				#mil = 3
+				female = yes
+			}
+hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.61
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_61_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA61"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic61
+			define_consort = {
+				name = "’káeYó"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 1
+				female = yes
+			}
+hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.62
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_62_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA62"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic62
+			define_consort = {
+				name = "ÎXÓu4t"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 2
+				female = yes
+			}
+hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.63
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_63_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA63"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic63
+			define_consort = {
+				name = "ìêWS2ó"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 1
+				#dip = 2
+				#mil = 2
+				female = yes
+			}
+hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.64
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_64_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA64"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic64
+			define_consort = {
+				name = "Yuwmñò"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 1
+				female = yes
+			}
+hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.65
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_65_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA65"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic65
+			define_consort = {
+				name = "mV∑^ñò"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 5
+				#mil = 3
+				female = yes
+			}
+hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.66
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_66_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA66"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic66
+			define_consort = {
+				name = "0åkRÆY"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 1
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+}					
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.67
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_67_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA67"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic67
+			define_consort = {
+				name = "mVõR‡s"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 1
+				#dip = 1
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.68
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_68_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA68"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic68
+			define_consort = {
+				name = "ãs‡`T"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 5
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.69
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_69_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA69"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic69
+			define_consort = {
+				name = "ƒû—mæy"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 3
+				#mil = 4
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.70
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_70_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA70"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic70
+			define_consort = {
+				name = "RTN‡s"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 3
+				#dip = 2
+				#mil = 5
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.71
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_71_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA71"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic71
+			define_consort = {
+				name = "RùÇ+t"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 1
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.72
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_72_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA72"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic72
+			define_consort = {
+				name = "RYÖáe"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 1
+				#mil = 2
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.73
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_73_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA73"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic73
+			define_consort = {
+				name = "Xo…ÑπR"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 6
+				#dip = 6
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.74
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_74_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA74"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic74
+			define_consort = {
+				name = "ãsıóT"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 2
+				#mil = 5
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.75
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_75_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA75"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic75
+			define_consort = {
+				name = "!ÖùOÑ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 5
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.76
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_76_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA76"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic76
+			define_consort = {
+				name = "T—m≥Ç"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 3
+				#dip = 3
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.77
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_77_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA77"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic77
+			define_consort = {
+				name = "HñfV+t"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.78
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_78_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA78"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic78
+			define_consort = {
+				name = "˘f`µm"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 4
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.79
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_79_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA79"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic79
+			define_consort = {
+				name = "Ngáe*t"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 1
+				#dip = 2
+				#mil = 5
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.80
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_80_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA80"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic80
+			define_consort = {
+				name = "ƒû—mÚN"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 6
+				#dip = 4
+				#mil = 6
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.81
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_81_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA81"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic81
+			define_consort = {
+				name = "hg¡NwZ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 1
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.82
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_82_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA82"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic82
+			define_consort = {
+				name = "ÈóiOQ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.83
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_83_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA83"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic83
+			define_consort = {
+				name = ".V≠^"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.84
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_84_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA84"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic84
+			define_consort = {
+				name = "RKN≤s"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 4
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.85
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_85_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA85"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic85
+			define_consort = {
+				name = "Ng1kç"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 5
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.86
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_86_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA86"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic86
+			define_consort = {
+				name = "Hñ‡`±R"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 1
+				#dip = 2
+				#mil = 1
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+	
+country_event = {
+	id = rab_choose_queen.87
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_87_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA87"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic87
+			define_consort = {
+				name = "HñúRi`"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 5
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+	
+country_event = {
+	id = rab_choose_queen.88
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_88_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA88"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic88
+			define_consort = {
+				name = "ÌêéZ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 6
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.89
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_89_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA89"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic89
+			define_consort = {
+				name = "hTùR:N"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.90
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_90_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA90"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic90
+			define_consort = {
+				#name = "4TévQ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.91
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_91_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA91"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic91
+			define_consort = {
+				name = ".VùÇ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 5
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.92
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_92_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA92"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic92
+			define_consort = {
+				name = "Àe!`Yó"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.93
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_93_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA93"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic93
+			define_consort = {
+				name = "&rOwZ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.94
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_94_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA94"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic94
+			define_consort = {
+				name = "NgGSÆY"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.95
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_95_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA95"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic95
+			define_consort = {
+				#name = "*m!`"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 5
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.96
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_96_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA96"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic96
+			define_consort = {
+				name = "0åZ*t"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.97
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_97_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA97"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic97
+			define_consort = {
+				#name = "âÉ…Ñ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 3
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.98
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_98_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA98"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic98
+			define_consort = {
+				name = "—êsO≥Ç"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 4
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+country_event = {
+	id = rab_choose_queen.99
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_99_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA99"
+				clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic99
+			define_consort = {
+				#name = "ãvvQ‰Q"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 1
+				#dip = 2
+				#mil = 3
+				female = yes
+			}
+	hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+			set_variable = {
+				which = choice_num
+				value = 0
+			}
+	}				
+	}
+	option = {
+		name = "rab_choose_queen.OPTB1"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.100
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC100" #must be 100 only this one
+	picture = CHOICES_QUEENS_100_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA100"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic100
+			define_consort = {
+				name = "ÇY±Ç"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB100"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.101
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_101_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA101"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic101
+			define_consort = {
+				name = "ógg"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB101"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.102
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_102_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA102"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic102
+			define_consort = {
+				name = "—êOfHa"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB102"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.103
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_103_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA103"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic103
+			define_consort = {
+				name = "´É›Ñ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB103"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.104
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_104_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA104"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic104
+			define_consort = {
+				name = "ÌêfN%Z"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB104"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.105
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_105_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA105"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic105
+			define_consort = {
+				name = "Hñ≥SÍN"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB105"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.106
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_106_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA106"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic106
+			define_consort = {
+				name = "4T˜^âs"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB106"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.107
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_107_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA107"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic107
+			define_consort = {
+				name = "hg8êHa"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB107"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.108
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_108_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA108"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic108
+			define_consort = {
+				name = "ãs«ug"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB108"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.109
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_109_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA109"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic109
+			define_consort = {
+				name = "·w≤sHa"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB109"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.110
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_110_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA110"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic110
+			define_consort = {
+				name = "hgÑo"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB110"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.111
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_111_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA111"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic111
+			define_consort = {
+				name = "löµmf"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB111"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.112
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_112_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA112"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic112
+			define_consort = {
+				name = "ÈóÍñtf"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB112"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.113
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_113_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA113"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic113
+			define_consort = {
+				name = "ÂÇÌãπÇ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB113"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.114
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_114_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA114"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic114
+			define_consort = {
+				name = "¯Slö9Nvá"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB114"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.115
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_115_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA115"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic115
+			define_consort = {
+				name = "CQıVÃS"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB115"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.116
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_116_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA116"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic116
+			define_consort = {
+				name = "ÌêÍñpQ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB116"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.117
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_117_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA117"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic117
+			define_consort = {
+				name = "HñSfup"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB117"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.118
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_118_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA118"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic118
+			define_consort = {
+				name = "moƒRvt"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB118"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.119
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_119_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA119"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic119
+			define_consort = {
+				name = "uç∑Çvá"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB119"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.120
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_120_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA120"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic120
+			define_consort = {
+				name = "´É∞QÕs"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB120"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.121
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_121_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA121"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic121
+			define_consort = {
+				#name = "Hñ≈ñ“R"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB121"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.122
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_122_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA122"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic122
+			define_consort = {
+				name = ".V∑ÇÍñ"
+				#dynasty = " "
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB122"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.123
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_123_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA123"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic123
+			define_consort = {
+
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB123"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+
+country_event = {
+	id = rab_choose_queen.124
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_124_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA124"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic124
+			define_consort = {
+				
+				
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				#adm = 2
+				#dip = 1
+				#mil = 5
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB124"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.125
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_125_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA125"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic125
+			define_consort = {
+	
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB125"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.126
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_126_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA126"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic126
+			define_consort = {
+	
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB126"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+
+country_event = {
+	id = rab_choose_queen.127
+	title = "rab_choose_queen.NAME1"
+	desc = "rab_choose_queen.DESC1"
+	picture = CHOICES_QUEENS_127_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_choose_queen.OPTA127"
+			clr_previous_consort_type = yes
+			set_country_flag = flg_has_concert_pic127
+			define_consort = {
+	
+				max_random_adm = 7
+				max_random_dip = 7
+				max_random_mil = 7
+				female = yes
+			}
+		hidden_effect = {
+	clr_country_flag = tmp_celestial_empire_choose_queens clr_country_flag = flg_temp
+				set_variable = {
+					which = choice_num
+					value = 0
+				}
+		}				
+	}		
+	option = {
+		name = "rab_choose_queen.OPTB127"
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = choice_num
+					value = 4
+				}
+			}
+		}
+        hidden_effect = {
+            clr_country_flag = flg_temp
+        }        
+        country_event = {
+		id = rab_choose_queen.1000
+	}
+	}	
+}
+

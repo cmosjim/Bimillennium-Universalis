@@ -1,0 +1,661 @@
+########################
+#Hellenic Flavor Events#
+########################
+#ID1 - ‹„ËNówNÎ‘
+#ID2 -
+#ID3 - 
+#ID4 -
+#ID4 -
+namespace = rab_ROC_events
+
+# 1931‹„ËNówNÎ‘
+# 1942
+# —gîhNðS
+# 2018.12.30 fit to 1.28
+country_event = {
+	id = rab_ROC_events.1
+	title = "rab_ROC_events.NAME1"
+	desc = "rab_ROC_events.DESC1"
+	picture = COLONIZATION_eventPicture
+  
+  
+	 
+	trigger = {
+		tag = ROC
+		is_year = 1932
+		NOT = { is_year = 1942 }
+		has_ruler = "‹„ËNów"
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = "rab_ROC_events.OPTA1"
+		define_ruler = {
+			name = "—gîh"
+				adm = 4
+				dip = 2
+				mil = 2
+
+			}
+		hidden_effect = {		
+			set_country_flag = anti_general_chiang_kai_shek
+		}
+	}
+	option = {
+		name = "rab_ROC_events.OPTB1"
+			define_ruler = {
+			name = "—gîh"
+				adm = 4
+				dip = 2
+				mil = 2
+				fixed = yes
+			}
+		
+	}
+	option = {
+		name = "rab_ROC_events.OPTC1"
+			add_stability = -1
+	}	
+}
+
+###########ùRåe—bb
+###########åN4lãNuQ
+
+country_event = {
+	id = rab_ROC_events.2
+	title = "rab_ROC_events.NAME2"
+	desc = "rab_ROC_events.DESC2"
+	picture = COLONIZATION_eventPicture
+  
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_ROC_events.OPTA2"
+	#ml‰ ‰RËV yú^ Ymml
+		country_event = {
+			id = rab_ROC_events.3
+		}
+	}
+	option = {
+		name = "rab_ROC_events.OPTB2"
+	#³lS ³lWS mlÏ‚	
+		country_event = {
+			id = rab_ROC_events.4
+		}
+	}
+	option = {
+		name = "rab_ROC_events.OPTC2"
+	#Vn^ ^‰ ^N	
+		country_event = {
+			id = rab_ROC_events.5
+		}
+	}
+	option = {
+		name = "rab_ROC_events.OPTD2"
+		hidden_effect = {
+			clr_country_flag = make_yellow_river_flood_done
+		}
+	}
+	
+}
+
+country_event = {
+	id = rab_ROC_events.3
+	title = "rab_ROC_events.NAME3"
+	desc = "rab_ROC_events.DESC3"
+	picture = FLOOD_AREAS_1_eventPicture
+  
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_ROC_events.OPTA3"
+		#ml‰ ‰RËV yú^ Ymml
+		
+		add_prestige = -50
+		
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = fujian_area
+					area = fujian_north_area
+					area = jiangxi_area
+					area = anhui_area
+					area = south_anhui_area
+					area = zhejiang_area
+					area = zhejiang_north_area
+				}
+			}
+			
+			add_province_modifier = {
+				name = "pov_flood"
+				duration = 735
+			}
+			add_base_tax = -5
+		}
+		country_event = {
+			id = rab_ROC_events.6
+		}
+		
+	}
+	option = {
+		name = "rab_ROC_events.OPTB3"
+		country_event = {
+			id = rab_ROC_events.2
+		}
+	}	
+}
+
+country_event = {
+	id = rab_ROC_events.4
+	title = "rab_ROC_events.NAME4"
+	desc = "rab_ROC_events.DESC4"
+	picture = FLOOD_AREAS_2_eventPicture
+  
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_ROC_events.OPTA4"
+	
+		#³lS ³lWS mlÏ‚
+		add_prestige = -50
+		every_owned_province = {
+			limit = {
+				OR = {			
+					area = jiangsu_area
+					area = jiangsu_mid_area
+					area = south_jiangsu_area
+					area = hebei_area
+					area = hebei_mid_area
+					area = south_hebei_area
+					area = henan_area
+				}
+			}
+			
+			add_province_modifier = {
+				name = "pov_flood"
+				duration = 735
+			}
+			add_base_tax = -5
+		}
+		country_event = {
+			id = rab_ROC_events.6
+		}
+		
+	}
+	option = {
+		name = "rab_ROC_events.OPTB4"
+		country_event = {
+			id = rab_ROC_events.2
+		}
+	}	
+}
+
+country_event = {
+	id = rab_ROC_events.5
+	title = "rab_ROC_events.NAME5"
+	desc = "rab_ROC_events.DESC5"
+	picture = FLOOD_AREAS_3_eventPicture
+  
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_ROC_events.OPTA5"
+		#Vn^ ^‰ ^N	
+		add_prestige = -50
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = huguang_area
+					area = huguang_mid_area
+					area = huguang_west_area
+					area = guangxi_area
+					area = guangxi_west_area
+					area = guangdong_area
+					area = west_guangdong_area
+			
+				}
+			}
+			
+			add_province_modifier = {
+				name = "pov_flood"
+				duration = 735
+			}
+			add_base_tax = -5
+		}
+		country_event = {
+			id = rab_ROC_events.6
+		}
+	}
+	option = {
+		name = "rab_ROC_events.OPTB5"
+		country_event = {
+			id = rab_ROC_events.2
+		}
+	}	
+}
+
+############>fHyùm4lIub—only#####################
+
+country_event = {
+	id = rab_ROC_events.6
+	title = "rab_ROC_events.NAME6"
+	desc = "rab_ROC_events.DESC6"
+	picture = FLOOD_PIC_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "rab_ROC_events.OPTA6"
+
+	}	  
+}  
+############>NLˆ—båeO®‹#####################
+#
+#	YRËzºNú^®‹ñ‹LeñmeQ
+#
+############>NLˆ—båeO®‹######################
+country_event = {
+	id = rab_ROC_events.7
+	title = "rab_ROC_events.NAME7"
+	picture = ROC_MEETING_1_eventPicture
+	desc = {
+		trigger = {
+			OR = {
+				has_leader = "‹„ËNów0øSäN˜R0"
+				advisor = ‹„ËNów0øSäN˜R0
+			}			
+		}
+		desc = rab_ROC_events.DESC7a 
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_leader = "‹„ËNów0øSäN˜R0"
+					advisor = ‹„ËNów0øSäN˜R0
+				}		
+			}	
+		}
+		desc = rab_ROC_events.DESC7b
+	}	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "rab_ROC_events.OPTA7"
+		#bìNÇ‘ÖS*b­eeˆÙu„v¹eV
+		ai_chance = {
+			factor = 10
+		}		
+		country_event = {
+			id = rab_ROC_events.8
+		}
+	}	  
+	#option = {
+	#	name = "rab_ROC_events.OPTB7"
+	#	#bìNÇ‘ÖS&qWjOb„v¹eV
+	#	ai_chance = {
+	#		factor = 0
+	#	}
+	#	country_event = {
+	#		id =  rab_ROC_events.9
+	#	}
+	#	#clr_country_flag = already_hold_meeting_against_japan		
+	#}
+	option = {
+		name = "rab_ROC_events.OPTC7"
+		#—r†N
+		ai_chance = {
+			factor = 0
+		}
+		clr_country_flag = already_hold_meeting_against_japan
+	}	
+}  
+############>NLˆ—båeO®‹##########################################
+#
+#	Ta=>.Vup+uD–®‹(SVåe›Q`S†˜35*NwRT O	g2N!k„vcHy)
+#
+############>NLˆ—båeO®‹###########################################
+country_event = {
+	id = rab_ROC_events.8
+	title = "rab_ROC_events.NAME8"
+	desc = "rab_ROC_events.DESC8"
+	picture = TALKING_A_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "rab_ROC_events.OPTA8"
+		set_country_flag = against_meeting_planA
+			
+	}	  
+}  
+############>NLˆ—båeO®‹##########################################
+#
+#	zjo0›Q˜R0hˆHy^T åe›QT0R&qWremove three months buff
+#
+############>NLˆ—båeO®‹###########################################
+#country_event = {
+#	id = rab_ROC_events.9
+#	title = "rab_ROC_events.NAME9"
+#	desc = "rab_ROC_events.DESC9"
+#	picture = TALKING_B_eventPicture
+#	
+#	is_triggered_only = yes 
+#	
+#	option = {
+#		name = "rab_ROC_events.OPTA9"
+#		set_country_flag = against_meeting_planB
+#		#clr_country_flag = already_hold_meeting_against_japan		
+#	}	
+#}  
+#######################################################
+#
+#	# speech for against japan
+#
+######################################################
+
+country_event = {
+	id = rab_ROC_events.10
+	title = "rab_ROC_events.NAME10"
+
+	desc = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_leader = "‹„ËNów0øSäN˜R0" 
+					advisor = chiang_kai_shek 
+				}
+			}			
+		}
+		desc = rab_ROC_events.DESC10a 
+	}
+	desc = {
+		trigger = {
+			#NOT = {
+				OR = {
+					has_leader = "‹„ËNów0øSäN˜R0" 
+					advisor = chiang_kai_shek 
+				}
+			#}			
+		}
+		desc = rab_ROC_events.DESC10b
+	}	
+
+	picture = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_leader = "‹„ËNów0øSäN˜R0" 
+					advisor = chiang_kai_shek 
+				}
+			}			
+		}
+		picture = TALKING_D_eventPicture
+	}
+	picture = {
+		trigger = {
+			#NOT = {
+				OR = {
+					has_leader = "‹„ËNów0øSäN˜R0" 
+					advisor = chiang_kai_shek 
+				}
+			#}			
+		}
+		picture = TALKING_C_eventPicture
+	}
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "rab_ROC_events.OPTA10"
+		add_country_modifier = {
+			name = "md_against_JAP"
+			duration = 3650
+		}
+		clr_country_flag = tmp_hold_spech_against_japan
+		set_country_flag = flg_hold_spech_against_japan #let's never happen again.
+	}	
+	option = {
+		name = "rab_ROC_events.OPTB10"
+		clr_country_flag = tmp_hold_spech_against_japan
+	}		
+}
+
+country_event = {
+	id = rab_ROC_events.11
+	title = "rab_ROC_events.NAME11"
+	desc = "rab_ROC_events.DESC11"
+	#picture = ROC_MEETING_1_eventPicture
+
+	picture = {
+		trigger = {
+			culture_group = east_asian
+		}
+		picture = ROC_MEETING_1_eventPicture
+	}
+	picture = {
+		trigger = {
+			NOT = { culture_group = east_asian }
+		}
+		picture = USA_MEETING_1_eventPicture
+	}	
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "rab_ROC_events.OPTA11"
+		clr_country_flag = tmp_description_against_japan
+		if = {
+			limit = {
+				NOT = { has_country_flag = flg_done_occupy_into_muddy_1 }
+			}	
+			set_country_flag = flg_done_occupy_into_muddy_1 
+		}
+	}	
+} 
+
+#country_event = {
+#	id = rab_ROC_events.12
+#	title = "rab_ROC_events.NAME12"
+#	desc = "rab_ROC_events.DESC12"
+#	picture = {
+#		trigger = {
+#			culture_group = east_asian
+#		}
+#		picture = ROC_MEETING_1_eventPicture
+#	}
+#	picture = {
+#		trigger = {
+#			NOT = { culture_group = east_asian }
+#		}
+#		picture = USA_MEETING_1_eventPicture
+#	}	
+#	
+#	
+#	is_triggered_only = yes 
+#	
+#	option = {
+#		name = "rab_ROC_events.OPTA12"
+#		clr_country_flag = tmp_description_against_japan
+#		iif = {
+#			limit = {
+#				NOT = { has_country_flag = flg_done_table_check_planB }
+#			}	
+#		set_country_flag = flg_done_table_check_planB
+#		}		
+#	}	
+#} 
+
+country_event = {
+	id = rab_ROC_events.13
+	title = "rab_ROC_events.NAME13"
+	desc = "rab_ROC_events.DESC13"
+	picture = {
+		trigger = {
+			culture_group = east_asian
+		}
+		picture = ROC_MEETING_1_eventPicture
+	}
+	picture = {
+		trigger = {
+			NOT = { culture_group = east_asian }
+		}
+		picture = USA_MEETING_1_eventPicture
+	}	
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "rab_ROC_events.OPTA13"
+		clr_country_flag = tmp_description_against_japan
+		if = {
+			limit = {
+				NOT = { has_country_flag = flg_done_occupy_into_muddy_1 }
+			}
+			set_country_flag = flg_done_occupy_into_muddy_1 
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = flg_done_occupy_into_muddy_2 }
+			}
+			set_country_flag = flg_done_occupy_into_muddy_2 	
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = flg_done_occupy_into_muddy_3 }
+			}
+			set_country_flag = flg_done_occupy_into_muddy_3
+		}
+	}	
+} 
+
+country_event = {
+	id = rab_ROC_events.14
+	title = "rab_ROC_events.NAME14"
+	desc = {
+		trigger = {
+			culture_group = east_asian
+		}
+		desc = "rab_ROC_events.DESC14a"
+	}
+	desc = {
+		trigger = {
+			NOT = { culture_group = east_asian }
+		}
+		desc = "rab_ROC_events.DESC14b"
+	}		
+	picture = {
+		trigger = {
+			culture_group = east_asian
+		}
+		picture = ROC_MEETING_1_eventPicture
+	}
+	picture = {
+		trigger = {
+			NOT = { culture_group = east_asian }
+		}
+		picture = USA_MEETING_1_eventPicture
+	}	
+	
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "rab_ROC_events.OPTA14"
+		clr_country_flag = tmp_description_against_japan
+		if = {
+			limit = {
+				NOT = { has_country_flag = flg_done_occupy_into_muddy_1 }
+			}
+			set_country_flag = flg_done_occupy_into_muddy_1 
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = flg_done_occupy_into_muddy_2 }
+			}
+			set_country_flag = flg_done_occupy_into_muddy_1 	
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = flg_done_occupy_into_muddy_3 }
+			}
+			set_country_flag = flg_done_occupy_into_muddy_3
+		}		
+		if = {
+			limit = {
+				NOT = { has_country_flag = flg_done_occupy_into_muddy_4 }
+			}
+			set_country_flag = flg_done_occupy_into_muddy_4
+		}	
+	}	
+}   
+#flg_done_occupy_into_muddy_2 for mission to enable mission 2 
+country_event = {
+	id = rab_ROC_events.15
+	title = "rab_ROC_events.NAME15"
+	desc = "rab_ROC_events.DESC15"
+	picture = {
+		trigger = {
+			culture_group = east_asian
+		}
+		picture = ROC_MEETING_1_eventPicture
+	}
+	picture = {
+		trigger = {
+			NOT = { culture_group = east_asian }
+		}
+		picture = USA_MEETING_1_eventPicture
+	}	
+	
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "rab_ROC_events.OPTA15"
+		clr_country_flag = tmp_description_against_japan
+		if = {
+			limit = {
+				NOT = { has_country_flag = flg_done_occupy_into_muddy_1 }
+			}
+			set_country_flag = flg_done_occupy_into_muddy_1 
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = flg_done_occupy_into_muddy_2 }
+			}
+			set_country_flag = flg_done_occupy_into_muddy_2
+		}
+	}	
+}  
+#jap 
+country_event = {
+	id = rab_ROC_events.16
+	title = "rab_ROC_events.NAME16"
+	desc = "rab_ROC_events.DESC16"
+	picture = m_BATTLE_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "rab_ROC_events.OPTA15"
+		
+	}	
+}
+  
+country_event = {
+	id = rab_ROC_events.17
+	title = "rab_ROC_events.NAME17"
+	desc = "rab_ROC_events.DESC17"
+	picture = ROC_MEETING_1_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "rab_ROC_events.OPTA17"
+		
+	}	
+}  
+

@@ -1,0 +1,51 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = fangla_advisor_come
+
+#fkSĞgÍyagöNNúQ°s
+#id = 1 : fangla : ¹eJ0fkS0
+#
+country_event = {
+	id = fangla_advisor_come.1
+	title = "fangla_advisor_come.1.t"
+	desc = "fangla_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+	#úQ°söeô•
+	trigger = {
+		is_year = 1100
+		NOT = { is_year = 1126 }
+		tag = SNG
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = fangla_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = fangla
+				name = "¹eJ0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "¹eJ0fkS0"
+				fire = 9
+				shock = 8
+				manuever = 4
+				siege = 5
+			}
+		}
+	}
+}
+

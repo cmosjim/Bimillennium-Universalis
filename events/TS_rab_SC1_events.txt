@@ -1,0 +1,44 @@
+########################
+#Hellenic Flavor Events#
+########################
+
+namespace = rab_SC1_events
+
+#
+# ROOT: NZ1 
+# The initial war start
+# 2018.12.30 fit to 1.28
+# 2020-01-06 for xy new religion
+country_event = {
+	id = rab_SC1_events.1
+	title = "rab_SC1_events.NAME1"
+	desc = "rab_SC1_events.DESC1"
+	picture = COLDWAR_6_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SC1
+	}	
+	
+	mean_time_to_happen = {
+		days = 10
+	}	
+	
+	immediate = {
+		change_tag = NOK
+		change_religion = communism
+		define_ruler = {
+			name = "Ñ‘åeb"
+			birth_date = 1912.4.15
+			adm = 3
+			dip = 3
+			mil = 4			
+			
+		}	
+	}	
+	
+	option = {
+		name = "rab_SC1_events.OPTA1"
+	}
+}

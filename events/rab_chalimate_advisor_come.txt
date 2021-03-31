@@ -1,0 +1,48 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = chalimate_advisor_come
+
+#Á”2?ågtÐgÍyagöNNúQ°s
+#id = 1 : chalimate : ågt-l?yr0Á”2?ågt0
+
+country_event = {
+	id = chalimate_advisor_come.1
+	title = "chalimate_advisor_come.1.t"
+	desc = "chalimate_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+		
+	option = {
+		name = chalimate_advisor_come.OPTA1
+	}
+	immediate = {
+		hidden_effect = {
+			if = { 
+				limit = { ai = no }
+				define_advisor = {
+					type = chalimate
+					name = "ågt-lšyr0Á”2•ågt0"
+					discount = yes	
+					skill = 3
+				}
+			}
+			if = { 
+				limit = { ai = yes }
+				define_general = {
+					name = "ågt-lšyr0Á”2•ågt0"
+					fire = 6
+					shock = 7
+					manuever = 5
+					siege = 4
+				}
+			}
+		}
+	}
+}
+

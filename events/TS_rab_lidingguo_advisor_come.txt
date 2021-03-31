@@ -1,0 +1,61 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = aaa_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : lidingguo : NgšRýV0fkS0
+
+country_event = {
+	id = aaa_advisor_come.1
+	title = "aaa_advisor_come.1.t"
+	desc = "aaa_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+
+	trigger = {
+		OR = {
+			AND = {
+				is_year = 1649
+				NOT = { is_year = 1658 }
+				tag = CXI
+			}
+			AND = {
+				is_year = 1658
+				NOT = { is_year = 1666 }
+				tag = MNG
+			}
+		}	
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	option = {
+		name = aaa_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = lidingguo
+				name = "NgšRýV0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "NgšRýV0fkS0"
+				fire = 11
+				shock = 8
+				manuever = 4
+				siege = 4
+			}
+		}		
+	}
+}
+

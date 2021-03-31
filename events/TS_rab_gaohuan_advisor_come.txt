@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = gaohuan_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : gaohuan : Øš0k0fkS0
+
+country_event = {
+	id = gaohuan_advisor_come.1
+	title = "gaohuan_advisor_come.1.t"
+	desc = "gaohuan_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 510	
+		NOT = { is_year = 550 }
+		OR = {
+			AND = {
+				exists = DWE
+				tag = DWE
+			}
+			AND = {
+				NOT = { exists = DWE }
+				owns = 3190
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = gaohuan_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = gaohuan
+				name = "Øš0k0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "Øš0k0fkS0"
+				fire = 6
+				shock = 6
+				manuever = 3
+				siege = 3
+			}
+		}
+	}
+}
+

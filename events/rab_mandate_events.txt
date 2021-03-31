@@ -1,0 +1,53 @@
+namespace = rab_mandate_events
+
+country_event = {
+	id = rab_mandate_events.1
+	title = "rab_mandate_events.NAME1"
+	desc = "rab_mandate_events.DESC1"
+	picture = EMPEROR_UP_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "rab_mandate_events.OPTA1"
+	
+		set_emperor_of_china = ROOT
+		clr_country_flag = tmp_positive_get_mandate_decision
+		clr_global_flag = empire_of_china_dismantled
+	}
+	#instructing mod installing 
+	option = {
+		name = "rab_mandate_events.OPTB1"
+
+		clr_country_flag = tmp_positive_get_mandate_decision
+		clr_country_flag = flg_positive_get_mandate
+	}	
+}
+
+country_event = {
+	id = rab_mandate_events.2
+	title = "rab_mandate_events.NAME2"
+	desc = "rab_mandate_events.DESC2"
+	picture = EMPEROR_UP_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "rab_mandate_events.OPTA2"
+	
+		if = {
+			limit = { has_global_flag = empire_of_china_dismantled
+			}	
+			clr_global_flag = empire_of_china_dismantled
+		}	
+		dismantle_empire_of_china = yes
+		
+	}
+	#instructing mod installing 
+	option = {
+		name = "rab_mandate_events.OPTB2"
+
+		clr_country_flag = tmp_positive_dismantle_mandate_decision
+		
+	}	
+}

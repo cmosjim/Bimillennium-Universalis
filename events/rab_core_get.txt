@@ -1,0 +1,2576 @@
+###########################
+#2017.1.8 update 
+#自动用点数或是金钱获得中华地区的核心
+#id = 1~2 : Chinese regions which turn on country decision = chinese_turn_on_core_get_flg (2017/5/5 update)
+#id = 3~4 : jap (in wii) regions which turn on country decision = jap_turn_on_core_get_flg
+#id = 7~8 : barbarian regions which turn on country decision = barbarian_turn_on_core_get_flg #櫐烿2018/02/22
+#id = 9~10 : nomadic no limit regions which turn on country decision = nomadic_turn_on_core_get_flg
+#id = 11~12 : mongol or MGE regions which turn on country decision = mongol_turn_on_core_get_flg
+#id = 13~14 : NZ1 (in wii) regions which turn on country decision = nz1_turn_on_core_get_flg
+###########################
+#2017-09-01 : chinese areas had already updated , so the trigger need to follow up.
+#2017-09-06 : delete barbarian get core event because they have soon get core mechanism
+#2017-12-03 : create NZ1 job.
+#2018-12-30 : fit to 1.28 okay
+namespace = rab_core_get_events
+
+##############################
+# only clear rab_core_get_events_flg
+##############################
+
+country_event = {
+	id = rab_core_get_events.99
+	title = "rab_core_get_events.NAME1000"
+	desc = "rab_core_get_events.DESC1000"
+	picture = GREAT_BUILDING_eventPicture
+	
+	hidden = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "rab_core_get_events.OPTA99"
+
+		
+			clr_country_flag = rab_core_get_events_flg
+			clr_country_flag = rab_core_get_events_flg
+			clr_country_flag = rab_core_get_events_flg_2
+			clr_country_flag = rab_core_get_events_flg_2
+			clr_country_flag = rab_core_get_events_flg_3
+			clr_country_flag = rab_core_get_events_flg_3
+			clr_country_flag = rab_core_get_events_flg_4
+			clr_country_flag = rab_core_get_events_flg_4
+			clr_country_flag = rab_core_get_events_flg_5
+			clr_country_flag = rab_core_get_events_flg_5				
+			
+	}			
+}
+
+#國家決議 has turn_on_core_get_flg [中華地區]
+#
+country_event = {
+	id = rab_core_get_events.1
+	title = "rab_core_get_events.NAME1"
+	desc = "rab_core_get_events.DESC1"
+	picture = GREAT_BUILDING_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		NOT = { has_disaster = yuanwajie }
+		NOT = { has_country_flag = rab_core_get_events_flg }
+		has_country_flag = chinese_turn_on_core_get_flg
+		any_owned_province = {
+			NOT = { is_core = owner }
+			OR = {
+				################################
+				area = west_guangdong_area	
+				area = guangzhou_area	
+				area = guangdong_area 
+				################################
+				area = hunan_area
+				area = hunan_south_area
+				area = hunan_west_area #//NEW 7.6
+				################################
+				area = fujian_area
+				area = fujian_north_area
+				################################
+				area = zhejiang_area
+				area = zhejiang_north_area
+				################################
+				area = jiangsu_area
+				area = jiangsu_mid_area
+				area = south_jiangsu_area
+				################################
+				area = guangxi_area
+				area = guangxi_west_area
+				area = guangxi_center_area  #//NEW 7.6
+				################################
+				area = jiangxi_area
+				area = jiangxi_south_area #//NEW 7.6
+				################################
+				area = huguang_area
+				area = huguang_mid_area
+				area = huguang_west_area
+				################################
+				area = yun_gui_area 	
+				area = yun_gui_borderland_area
+				area = yun_gui_west_area
+				################################
+				area = sichuan_area 	
+				area = chuannan_area
+				area = chuanbei_area
+				area = chuanbei_east_area
+				################################
+				area = anhui_area 		
+				area = south_anhui_area 
+				area = central_anhui_area  #//NEW 7.6	
+				################################
+				area = henan_area 		
+				area = north_henan_area
+				area = henan_west_area
+				area = henan_east_area  #//NEW 7.6
+				area = central_henan_area  #//NEW 7.6				
+				################################
+				area = shandong_area 	
+				area = west_shandong_area
+				area = shandong_mid_area
+				area = shandong_south_area #//NEW 7.6
+				################################
+				area = shaanxi_area 		
+				area = shaanxi_north_area
+				area = central_shaanxi_area #//NEW 7.6
+				################################
+				area = gansu_area 		
+				area = gansu_eastnorth_area
+				area = westnorth_gansu_area
+				area = west_gansu_area
+				area = central_gansu_area #//NEW 7.6	
+				################################
+				area = shanxi_area
+				area = shanxi_north_area
+				area = shanxi_east_area #//NEW 7.6
+				area = shanxi_west_area #//NEW 7.6
+				################################
+				area = hebei_area		
+				area = hebei_mid_area
+				area = south_hebei_area
+				area = hebei_west_area #//NEW 7.6
+				################################
+				area = liaoning_area
+				area = liaoning_east_area
+				################################
+				area = hainan_area #//NEW  7.6
+			}			
+		}
+	}	
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	immediate = {
+		set_country_flag = rab_core_get_events_flg
+	}
+	
+	
+	option = {
+			name = "rab_core_get_events.OPTA1"
+			
+		random_owned_province = {
+			limit = {
+				NOT = { is_core = owner } 
+					OR = {
+						################################
+						area = west_guangdong_area	
+						area = guangzhou_area	
+						area = guangdong_area 
+						################################
+						area = hunan_area
+						area = hunan_south_area
+						area = hunan_west_area #//NEW 7.6
+						################################
+						area = fujian_area
+						area = fujian_north_area
+						################################
+						area = zhejiang_area
+						area = zhejiang_north_area
+						################################
+						area = jiangsu_area
+						area = jiangsu_mid_area
+						area = south_jiangsu_area
+						################################
+						area = guangxi_area
+						area = guangxi_west_area
+						area = guangxi_center_area  #//NEW 7.6
+						################################
+						area = jiangxi_area
+						area = jiangxi_south_area #//NEW 7.6
+						################################
+						area = huguang_area
+						area = huguang_mid_area
+						area = huguang_west_area
+						################################
+						area = yun_gui_area 	
+						area = yun_gui_borderland_area
+						area = yun_gui_west_area
+						################################
+						area = sichuan_area 	
+						area = chuannan_area
+						area = chuanbei_area
+						area = chuanbei_east_area
+						################################
+						area = anhui_area 		
+						area = south_anhui_area 
+						area = central_anhui_area  #//NEW 7.6	
+						################################
+						area = henan_area 		
+						area = north_henan_area
+						area = henan_west_area
+						area = henan_east_area  #//NEW 7.6
+						area = central_henan_area  #//NEW 7.6				
+						################################
+						area = shandong_area 	
+						area = west_shandong_area
+						area = shandong_mid_area
+						area = shandong_south_area #//NEW 7.6
+						################################
+						area = shaanxi_area 		
+						area = shaanxi_north_area
+						area = central_shaanxi_area #//NEW 7.6
+						################################
+						area = gansu_area 		
+						area = gansu_eastnorth_area
+						area = westnorth_gansu_area
+						area = west_gansu_area
+						area = central_gansu_area #//NEW 7.6	
+						################################
+						area = shanxi_area
+						area = shanxi_north_area
+						area = shanxi_east_area #//NEW 7.6
+						area = shanxi_west_area #//NEW 7.6
+						################################
+						area = hebei_area		
+						area = hebei_mid_area
+						area = south_hebei_area
+						area = hebei_west_area #//NEW 7.6
+						################################
+						area = liaoning_area
+						area = liaoning_east_area
+						################################
+						area = hainan_area #//NEW  7.6
+					}	
+			}
+			province_event = {
+				id = rab_core_get_events.2
+			}
+		}
+	}			
+}
+
+province_event = {
+	id = rab_core_get_events.2
+	title = "rab_core_get_events.NAME2"
+	desc = "rab_core_get_events.DESC2"
+	picture = GREAT_BUILDING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { adm_power = 55 }
+		#	}
+		#}
+		
+		name = "rab_core_get_events.OPTA2"	
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_adm_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_adm_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_adm_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_adm_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_adm_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_adm_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_adm_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_adm_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_adm_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_adm_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_adm_power = -60 }
+		}
+		
+		add_core = owner
+		#omit_empire_core_effect = yes
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTB2"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { dip_power = 55 }
+		#	}
+		#}		
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_dip_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_dip_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_dip_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_dip_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_dip_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_dip_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_dip_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_dip_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_dip_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_dip_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_dip_power = -60 }
+		}
+		add_core = owner
+		#omit_empire_core_effect = yes
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTC2"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { mil_power = 55 }
+		#	}
+		#}			
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_mil_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_mil_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_mil_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_mil_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_mil_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_mil_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_mil_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_mil_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_mil_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_mil_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_mil_power = -60 }
+		}
+		add_core = owner
+		#omit_empire_core_effect = yes
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg }
+		}
+	}	
+	option = {	
+		name = "rab_core_get_events.OPTD2"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { treasury = 250 }
+		#	}
+		#}			
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_treasury = -25 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_treasury = -40 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_treasury = -55 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_treasury = -70 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_treasury = -100 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_treasury = -125 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_treasury = -150 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_treasury = -175 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_treasury = -200 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_treasury = -225 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_treasury = -255 }
+		}
+		add_core = owner
+		#omit_empire_core_effect = yes
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTE2"	
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		OR = {
+		#		
+		#			 treasury = 250 
+		#			 mil_power = 55 
+		#			 dip_power = 55 
+		#			 adm_power = 55 
+		#		}
+		#		
+		#	}
+		#}
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg }
+		}		
+	}
+}	
+
+###########################
+#2017.1.10 add
+#自动用点数或是金钱获得核心
+#日本使用(狂熱十年當中所使用)
+###########################
+country_event = {
+	id = rab_core_get_events.3
+	title = "rab_core_get_events.NAME3"
+	desc = "rab_core_get_events.DESC3"
+	picture = GREAT_BUILDING_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		any_owned_province = {
+			NOT = { is_core = owner }	
+		}
+		NOT = { has_country_flag = rab_core_get_events_flg_2 }
+		has_country_flag = jap_turn_on_core_get_flg
+	}	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	immediate = {
+		set_country_flag = rab_core_get_events_flg_2
+	}
+	option = {
+			name = "rab_core_get_events.OPTA3"
+			
+			random_owned_province = {
+			limit = {
+				NOT = { is_core = owner } 
+		    
+			}
+			
+			province_event = {
+				id = rab_core_get_events.4
+			}
+		}
+	}			
+}
+
+province_event = {
+	id = rab_core_get_events.4
+	title = "rab_core_get_events.NAME4"
+	desc = "rab_core_get_events.DESC4"
+	picture = GREAT_BUILDING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	#	ai_chance = { 
+	#		factor = 20
+	#		modifier = { 
+	#			factor = 0
+	#			NOT = { adm_power = 55 }
+	#		}
+	#	}
+		
+		name = "rab_core_get_events.OPTA4"	
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_adm_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_adm_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_adm_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_adm_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_adm_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_adm_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_adm_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_adm_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_adm_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_adm_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_adm_power = -60 }
+		}
+		
+		add_core = owner
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_2 }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTB4"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { dip_power = 55 }
+		#	}
+		#}		
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_dip_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_dip_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_dip_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_dip_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_dip_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_dip_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_dip_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_dip_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_dip_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_dip_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_dip_power = -60 }
+		}
+		add_core = owner
+		
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_2 }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTC4"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { mil_power = 55 }
+		#	}
+		#}			
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_mil_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_mil_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_mil_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_mil_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_mil_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_mil_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_mil_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_mil_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_mil_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_mil_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_mil_power = -60 }
+		}
+		add_core = owner
+		
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_2 }
+		}
+	}	
+	option = {	
+		name = "rab_core_get_events.OPTD4"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { treasury = 250 }
+		#	}
+		#}			
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_treasury = -25 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_treasury = -40 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_treasury = -55 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_treasury = -70 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_treasury = -100 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_treasury = -125 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_treasury = -150 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_treasury = -175 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_treasury = -200 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_treasury = -225 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_treasury = -255 }
+		}
+		add_core = owner
+		
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_2 }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTE4"	
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		OR = {
+		#			 treasury = 250 
+		#			 mil_power = 55 
+		#			 dip_power = 55 
+		#			 adm_power = 55 
+		#		}
+		#		
+		#	}
+		#}
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_2 }
+		}		
+	}
+}	
+
+###########################
+#2017.4.8 add
+#自动用点数或是金钱获得核心
+#野蛮人入侵使用
+#rab_core_get_events_flg_3
+# [ no used any more ]
+###########################
+
+#################################################################################
+#2017.4.8 add
+#自动用点数或是金钱获得核心
+#上帝之鞭使用 no limit regions depend on modifier = nomadic_conquest
+#rab_core_get_events_flg_4
+#################################################################################
+
+country_event = {
+	id = rab_core_get_events.9
+	title = "rab_core_get_events.NAME9"
+	desc = "rab_core_get_events.DESC9"
+	picture = GREAT_BUILDING_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		has_country_modifier = nomadic_conquest
+		
+		any_owned_province = {
+			NOT = { is_core = owner }
+			NOT = {
+				OR = {
+					area = ordos_area
+					area = inner_mongolia_area
+					area = outer_mongolia_area
+					area = altai_sayan_area
+					area = buryatia_area
+					area = irkutsk_area
+					area = heilongjiang_area
+				}
+			}			
+		}
+		
+		NOT = { has_country_flag = rab_core_get_events_flg_4 }
+		has_country_flag = nomadic_turn_on_core_get_flg
+	}	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	immediate = {
+		set_country_flag = rab_core_get_events_flg_4
+	}
+	option = {
+		name = "rab_core_get_events.OPTA9"
+		random_owned_province = {
+			limit = {
+				NOT = { is_core = owner } 
+				NOT = {
+					OR = {
+						area = ordos_area
+						area = inner_mongolia_area
+						area = outer_mongolia_area
+						area = altai_sayan_area
+						area = buryatia_area
+						area = irkutsk_area
+						area = heilongjiang_area
+					}
+				}
+			}
+			
+			province_event = {
+				id = rab_core_get_events.10
+			}
+		}
+	}			
+}
+
+province_event = {
+	id = rab_core_get_events.10
+	title = "rab_core_get_events.NAME10"
+	desc = "rab_core_get_events.DESC10"
+	picture = GREAT_BUILDING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_core_get_events.OPTA10"	
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_adm_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_adm_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_adm_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_adm_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_adm_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_adm_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_adm_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_adm_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_adm_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_adm_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_adm_power = -60 }
+		}
+		
+		add_core = owner
+		
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_4 }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTB10"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { dip_power = 55 }
+		#	}
+		#}		
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_dip_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_dip_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_dip_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_dip_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_dip_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_dip_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_dip_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_dip_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_dip_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_dip_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_dip_power = -60 }
+		}
+		add_core = owner
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_4 }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTC10"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { mil_power = 55 }
+		#	}
+		#}			
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_mil_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_mil_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_mil_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_mil_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_mil_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_mil_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_mil_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_mil_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_mil_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_mil_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_mil_power = -60 }
+		}
+		add_core = owner
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_4 }
+		}
+	}	
+	option = {	
+		name = "rab_core_get_events.OPTD10"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { treasury = 250 }
+		#	}
+		#}			
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_treasury = -25 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_treasury = -40 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_treasury = -55 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_treasury = -70 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_treasury = -100 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_treasury = -125 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_treasury = -150 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_treasury = -175 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_treasury = -200 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_treasury = -225 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_treasury = -255 }
+		}
+		add_core = owner
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_4 }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTE10"	
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		OR = {
+		#		
+		#			 treasury = 250 
+		#			 mil_power = 55 
+		#			 dip_power = 55 
+		#			 adm_power = 55 
+		#		}
+		#		
+		#	}
+		#}
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_4 }
+		}		
+	}
+}	
+
+
+###########################
+#2017.1.15 update 
+#自动用点数或是金钱获得蒙古地区的核心
+#適用: 蒙古諸部落
+#
+#
+#	################Tribes of MGE vs Tribes of MGE##############	
+#			AND = {
+#				FROM = {
+#					OR = {
+#						tag = MGE
+#						tag = MG1
+#						tag = KMO
+#						government = mongol_steppe_horde
+#					}
+#				}
+#				owner = {
+#					OR = {
+#						tag = MGE
+#						tag = MG1
+#						tag = KMO
+#						government = mongol_steppe_horde
+#					}
+#				}
+#			}
+#	rab_core_get_events_flg_5
+############################
+country_event = {
+	id = rab_core_get_events.11
+	title = "rab_core_get_events.NAME11"
+	desc = "rab_core_get_events.DESC11"
+	picture = GREAT_BUILDING_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+				tag = MGE
+				tag = MG1
+				tag = KMO
+				has_reform = mongol_steppe_horde_reform
+		}	
+		any_owned_province = {
+			NOT = { is_core = owner }
+			OR = {
+				area = ordos_area
+				area = inner_mongolia_area
+				area = outer_mongolia_area
+				area = altai_sayan_area
+				area = buryatia_area
+				area = irkutsk_area
+				area = heilongjiang_area
+			}
+		}
+		NOT = { has_country_flag = rab_core_get_events_flg_5 }
+		has_country_flag = mongol_turn_on_core_get_flg
+	}	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	immediate = {
+		set_country_flag = rab_core_get_events_flg_5
+	}
+	option = {
+		name = "rab_core_get_events.OPTA11"
+		random_owned_province = {
+			limit = {
+				NOT = { is_core = owner } 
+				OR = {
+					area = ordos_area
+					area = inner_mongolia_area
+					area = outer_mongolia_area
+					area = altai_sayan_area
+					area = buryatia_area
+					area = irkutsk_area
+					area = heilongjiang_area
+				}
+			}
+			
+			province_event = {
+				id = rab_core_get_events.12
+			}
+						
+		}
+	}			
+}
+
+province_event = {
+	id = rab_core_get_events.12
+	title = "rab_core_get_events.NAME12"
+	desc = "rab_core_get_events.DESC12"
+	picture = GREAT_BUILDING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { adm_power = 55 }
+		#	}
+		#}
+		
+		name = "rab_core_get_events.OPTA12"	
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_adm_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_adm_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_adm_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_adm_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_adm_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_adm_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_adm_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_adm_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_adm_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_adm_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_adm_power = -60 }
+		}
+		
+		add_core = owner
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_5 }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTB12"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { dip_power = 55 }
+		#	}
+		#}		
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_dip_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_dip_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_dip_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_dip_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_dip_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_dip_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_dip_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_dip_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_dip_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_dip_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_dip_power = -60 }
+		}
+		add_core = owner
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_5 }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTC12"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { mil_power = 55 }
+		#	}
+		#}			
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_mil_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_mil_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_mil_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_mil_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_mil_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_mil_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_mil_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_mil_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_mil_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_mil_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_mil_power = -60 }
+		}
+		add_core = owner
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_5 }
+		}
+	}	
+	option = {	
+		name = "rab_core_get_events.OPTD12"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { treasury = 250 }
+		#	}
+		#}			
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_treasury = -25 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_treasury = -40 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_treasury = -55 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_treasury = -70 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_treasury = -100 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_treasury = -125 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_treasury = -150 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_treasury = -175 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_treasury = -200 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_treasury = -225 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_treasury = -255 }
+		}
+		add_core = owner
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_5 }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTE12"	
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		OR = {
+		#		
+		#			 treasury = 250 
+		#			 mil_power = 55 
+		#			 dip_power = 55 
+		#			 adm_power = 55 
+		#		}
+		#		
+		#	}
+		#}
+		hidden_effect = {
+			owner = { clr_country_flag = rab_core_get_events_flg_5 }
+		}		
+	}
+}	
+
+###########################
+#
+#自动用点数或是金钱获得核心
+#NZ1使用(狂熱十年當中所使用)
+###########################
+country_event = {
+	id = rab_core_get_events.13
+	title = "rab_core_get_events.NAME13"
+	desc = "rab_core_get_events.DESC13"
+	picture = GREAT_BUILDING_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		any_owned_province = {
+			NOT = { is_core = owner }	
+		}
+		NOT = { has_country_flag = nz1_core_get_events_flg_2 }
+		has_country_flag = nz1_turn_on_core_get_flg
+	}	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	immediate = {
+		set_country_flag = nz1_core_get_events_flg_2 #temp
+	}
+	option = {
+			name = "rab_core_get_events.OPTA13"
+			
+			random_owned_province = {
+			limit = {
+				NOT = { is_core = owner } 
+			}
+			province_event = {
+				id = rab_core_get_events.14
+			}
+		}
+	}			
+}
+
+province_event = {
+	id = rab_core_get_events.14
+	title = "rab_core_get_events.NAME14"
+	desc = "rab_core_get_events.DESC14"
+	picture = GREAT_BUILDING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { adm_power = 55 }
+		#	}
+		#}
+		
+		name = "rab_core_get_events.OPTA14"	
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_adm_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_adm_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_adm_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_adm_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_adm_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_adm_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_adm_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_adm_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_adm_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_adm_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_adm_power = -60 }
+		}
+		
+		add_core = owner
+		hidden_effect = {
+			owner = { clr_country_flag = nz1_core_get_events_flg_2 }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTB14"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { dip_power = 55 }
+		#	}
+		#}		
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_dip_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_dip_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_dip_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_dip_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_dip_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_dip_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_dip_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_dip_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_dip_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_dip_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_dip_power = -60 }
+		}
+		add_core = owner
+		hidden_effect = {
+			owner = { clr_country_flag = nz1_core_get_events_flg_2 }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTC14"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { mil_power = 55 }
+		#	}
+		#}			
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_mil_power = -5 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_mil_power = -10 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_mil_power = -15 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_mil_power = -20 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_mil_power = -25 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_mil_power = -30 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_mil_power = -35 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_mil_power = -40 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_mil_power = -45 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_mil_power = -50 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_mil_power = -60 }
+		}
+		add_core = owner
+		hidden_effect = {
+			owner = { clr_country_flag = nz1_core_get_events_flg_2 }
+		}
+	}	
+	option = {	
+		name = "rab_core_get_events.OPTD14"
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		NOT = { treasury = 250 }
+		#	}
+		#}			
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_treasury = -25 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_treasury = -40 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    
+			owner = { add_treasury = -55 }
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+    
+			owner = { add_treasury = -70 }
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+    
+			owner = { add_treasury = -100 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+    
+			owner = { add_treasury = -125 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+    
+			owner = { add_treasury = -150 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    
+			owner = { add_treasury = -175 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_treasury = -200 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+				NOT = { development = 50 } 
+			}
+    
+			owner = { add_treasury = -225 }
+		}
+		if = {
+			limit = { 
+				development = 50 
+			}
+    
+			owner = { add_treasury = -255 }
+		}
+		add_core = owner
+		hidden_effect = {
+			owner = { clr_country_flag = nz1_core_get_events_flg_2 }
+		}
+	}
+	option = {	
+		name = "rab_core_get_events.OPTE14"	
+		#ai_chance = { 
+		#	factor = 20
+		#	modifier = { 
+		#		factor = 0
+		#		OR = {
+		#			 treasury = 250 
+		#			 mil_power = 55 
+		#			 dip_power = 55 
+		#			 adm_power = 55 
+		#		}
+		#	}
+		#}
+		hidden_effect = {
+			owner = { clr_country_flag = nz1_core_get_events_flg_2 }
+		}		
+	}
+}	
+

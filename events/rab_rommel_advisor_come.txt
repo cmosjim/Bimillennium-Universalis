@@ -1,0 +1,58 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = rommel_advisor_come
+
+#fkSĞgÍyhöNNúQşs
+#id = 1 : rommel : †–S0CQ^0
+#1891t^11g15åeÿ1944t^10g14åe	ÿ
+country_event = {
+	id = rommel_advisor_come.1
+	title = "rommel_advisor_come.1.t"
+	desc = "rommel_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+#ÿ614t^ÿ683t^3g24åe	ÿ
+	trigger = {
+		#ÙÌ‘=ffkSúQ°s(WêTÌ‘„vagöN
+		OR = {
+			tag = NZ1
+			AND = {
+				NOT = { exists = NZ1 }
+				owns = 77
+			}	
+		}		
+		is_year = 1911
+		NOT = { is_year = 1944 }
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = rommel_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = rommel
+				name = "†–S0CQ^0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "†–S0CQ^0"
+				fire = 8
+				shock = 10
+				manuever = 9
+				siege = 8
+			}
+		}
+	}
+}
+

@@ -1,0 +1,271 @@
+#2019.08.19 create for navy base
+namespace = okinawa_navy_base_events
+country_event = {
+	id = okinawa_navy_base_events.1
+	title = "okinawa_navy_base_events.NAME1"
+	desc = "okinawa_navy_base_events.DESC1"
+	picture = navy_base_eventPicture	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "okinawa_navy_base_events.OPTA1"
+		ai_chance = {
+			factor = 100
+		}
+		1015 = {
+			add_province_modifier = {
+				name = "pov_okinawa_navy_base"
+				duration = -1
+			}	
+		}
+		#tag_okinawa_navy_base_from => means 被強去租借的國家
+		save_global_event_target_as = tag_okinawa_navy_base_from 
+		set_global_flag = flg_tag_okinawa_navy_base_done	
+		FROM = {
+			country_event = {
+				id = okinawa_navy_base_events.100
+			}	
+		}	
+	}
+	option = {
+		name = "okinawa_navy_base_events.OPTB1"
+		ai_chance = {
+			factor = 0
+		}
+		add_opinion = {
+			who = FROM
+			modifier = refuse_navy_base
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = refuse_navy_base
+		}
+	}	
+}
+
+country_event = {
+	id = okinawa_navy_base_events.100
+	title = "okinawa_navy_base_events.NAME100"
+	desc = "okinawa_navy_base_events.DESC100"
+	picture = navy_base_eventPicture	
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			save_global_event_target_as = tag_okinawa_navy_base
+			set_global_flag = flg_tag_okinawa_navy_base_done				
+		}	
+	}	
+	
+	option = {
+		name = "okinawa_navy_base_events.OPTA100"
+		add_treasury = -500
+		add_dip_power = -100
+		add_prestige = 10
+		1015 ={
+			add_building = fort_17th 
+			#add_core = ROOT
+		}	
+		clr_country_flag = tmp_build_okinawa_navy_base
+	}
+}
+
+#要求歸還1015
+#ROOT = event_target:tag_okinawa_navy_base:租借者
+country_event = {
+	id = okinawa_navy_base_events.4
+	title = "okinawa_navy_base_events.NAME4"
+	desc = "okinawa_navy_base_events.DESC4"
+	picture = navy_base_eventPicture
+	
+	trigger = {
+		event_target:tag_okinawa_navy_base = {
+			is_at_war = no
+		}
+		event_target:tag_okinawa_navy_base_from = {
+			is_at_war = no
+		}	
+		1015 = {
+			has_province_modifier = pov_okinawa_navy_base
+		}
+		tag = event_target:tag_okinawa_navy_base
+		
+		NOT = { has_country_flag = self_okinawa_navy_base }
+		
+		owns = 1015 #2019-10-06 bug fixed
+		
+		NOT = { has_country_flag  = flg_feedback_okinawa_navy_base }
+			
+		has_global_flag = flg_tag_okinawa_navy_base_done			
+	}
+
+	mean_time_to_happen = {
+		days = 365 #jim_test
+	}
+
+	immediate = {
+		set_country_flag = flg_feedback_okinawa_navy_base
+	}	
+	
+	option = {
+		name = "okinawa_navy_base_events.OPTA4"
+		ai_chance = { 
+			factor = 0
+		}
+		1015 = {
+			cede_province = event_target:tag_okinawa_navy_base_from
+			add_province_modifier = { 
+				name = "pov_okinawa_navy_base"
+				duration = -1
+			}	
+		}
+		clr_country_flag = flg_feedback_okinawa_navy_base
+	}	
+	option = {
+		name = "okinawa_navy_base_events.OPTB4"
+		ai_chance = { 
+			factor = 1
+		}
+		add_prestige = -10
+	}	
+}	
+
+###要求歸還1015 x 2 repeat
+#country_event = {
+#	id = okinawa_navy_base_events.5
+#	title = "okinawa_navy_base_events.NAME5"
+#	desc = "okinawa_navy_base_events.DESC5"
+#	picture = navy_base_eventPicture
+#	
+#	is_triggered_only = yes
+#
+#	trigger = {
+#		event_target:tag_okinawa_navy_base = {
+#			is_at_war = no
+#		}
+#		event_target:tag_okinawa_navy_base_from = {
+#			is_at_war = no
+#		}	
+#		1015 = {
+#			has_province_modifier = pov_okinawa_navy_base
+#		}
+#		tag = event_target:tag_okinawa_navy_base
+#		
+#		NOT = { has_country_flag = self_okinawa_navy_base }
+#		
+#		owns = 1015 
+#		
+#		NOT = { has_country_flag  = flg_feedback_okinawa_navy_base }
+#				
+#	}
+#	
+#	option = {
+#		name = "okinawa_navy_base_events.OPTA5"
+#		ai_chance = { 
+#			factor = 90
+#		}
+#		1015 = {
+#			cede_province = event_target:tag_okinawa_navy_base_from
+#			add_province_modifier = {
+#				name = "pov_okinawa_navy_base"
+#				duration = -1
+#			}	
+#		}
+#		clr_country_flag = flg_feedback_okinawa_navy_base
+#	}	
+#	option = {
+#		name = "okinawa_navy_base_events.OPTB5"
+#		ai_chance = { 
+#			factor = 10
+#		}
+#		add_prestige = -20
+#		country_event = {
+#			id = okinawa_navy_base_events.6
+#			days = 365 #jim_test
+#		}		
+#	}	
+#}
+##
+##
+###要求歸還1015 x 2 repeat
+#country_event = {
+#	id = okinawa_navy_base_events.6
+#	title = "okinawa_navy_base_events.NAME6"
+#	desc = "okinawa_navy_base_events.DESC6"
+#	picture = navy_base_eventPicture
+#	
+#	is_triggered_only = yes
+#
+#	trigger = {
+#		event_target:tag_okinawa_navy_base = {
+#			is_at_war = no
+#		}
+#		event_target:tag_okinawa_navy_base_from = {
+#			is_at_war = no
+#		}	
+#		1015 = {
+#			has_province_modifier = pov_okinawa_navy_base
+#		}
+#		tag = event_target:tag_okinawa_navy_base
+#		
+#		NOT = { has_country_flag = self_okinawa_navy_base }
+#		
+#		owns = 1015 
+#		
+#		NOT = { has_country_flag  = flg_feedback_okinawa_navy_base }
+#				
+#	}
+#	
+#	option = {
+#		name = "okinawa_navy_base_events.OPTA6"
+#		ai_chance = { 
+#			factor = 99
+#		}
+#		1015 = {
+#			cede_province = event_target:tag_okinawa_navy_base_from
+#			add_province_modifier = {
+#				name = "pov_okinawa_navy_base"
+#				duration = -1
+#			}	
+#		}
+#		clr_country_flag = flg_feedback_okinawa_navy_base
+#	}	
+#	option = {
+#		name = "okinawa_navy_base_events.OPTB6"
+#		ai_chance = { 
+#			factor = 1
+#		}
+#		add_prestige = -20
+#		country_event = {
+#			id = okinawa_navy_base_events.5
+#			days = 365 #jim_test
+#		}		
+#	}	
+#}
+
+#自家摧毀沖繩海軍基地
+country_event = {
+	id = okinawa_navy_base_events.7
+	title = "okinawa_navy_base_events.NAME7"
+	desc = "okinawa_navy_base_events.DESC7"
+	picture = navy_base_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "okinawa_navy_base_events.OPTA7"
+		1015 = {
+			remove_province_modifier = pov_okinawa_navy_base
+		}	
+		clear_global_event_target = tag_okinawa_navy_base
+		clear_global_event_target = tag_okinawa_navy_base_from
+		clr_country_flag = tmp_destroy_okinawa_navy_base
+	}	
+	option = {
+		name = "okinawa_navy_base_events.OPTB7"
+		clr_country_flag = tmp_destroy_okinawa_navy_base
+	}	
+}
+

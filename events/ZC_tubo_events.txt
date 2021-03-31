@@ -1,0 +1,89 @@
+namespace = tubo_flavor
+
+country_event = {
+	id = tubo_flavor.1
+	title = tubo_flavor.1.t
+	desc = tubo_flavor.1.d
+	picture = FORT_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = tubo_flavor.1.a
+		if = {
+			limit = { NOT = { religion = vajrayana } }
+			change_religion = vajrayana
+		}
+		add_ruler_modifier = {		
+			name = highland_vajrayana
+		}
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				factor = 0 
+				NOT = { is_year = 600 }
+			}
+		}	
+	}
+
+	option = {
+		name = tubo_flavor.1.b
+		if = {
+			limit = { NOT = { religion = vajrayana } }
+			change_religion = vajrayana
+		}
+		add_ruler_modifier = {
+			name = highland_tibetan_bon
+		}
+		ai_chance = { 
+			factor = 1 
+			modifier = {
+				factor = 0 
+				NOT = { is_year = 600 }
+			}
+		}	
+	}
+
+	option = {
+		name = tubo_flavor.1.c
+		if = {
+			limit = { NOT = { religion = tibetan_bon } }
+			change_religion = tibetan_bon
+		}
+	}
+}
+
+country_event = {
+	id = tubo_flavor.2
+	title = tubo_flavor.2.t
+	desc = tubo_flavor.2.d
+	picture = FORT_eventPicture
+
+	trigger = {
+		OR = {
+			religion = vajrayana
+			religion = mahayana
+			religion = buddhism
+			religion = tibetan_bon
+		}
+		primary_culture = tibetan
+		is_year = 800
+		NOT = { is_year = 1200 }
+	}
+
+	mean_time_to_happen = {
+    		months = 120
+  	}
+
+	option = {
+		name = tubo_flavor.2.a
+		add_stability = -1
+	}
+
+	option = {
+		name = tubo_flavor.2.b
+		change_religion = tibetan_buddhism
+	}
+}

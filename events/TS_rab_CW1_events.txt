@@ -1,0 +1,62 @@
+########################
+#Hellenic Flavor Events#
+########################
+#2018.12.31 fit to 1.28
+namespace = rab_CW1_events
+
+country_event = {
+	id = rab_CW1_events.1
+	title = "rab_CW1_events.NAME1"
+	desc = "rab_CW1_events.DESC1"
+	picture = DICTATORSHIP_OF_PROLETARIAT_eventPicture
+  
+	fire_only_once = yes
+	 
+	trigger = {
+	OR = {
+		tag = CW1
+		tag = CHN
+	}	
+		has_ruler = "ÛkýlN"
+		NOT = { num_of_cities = 200 }
+		is_year = 1946
+		NOT = { is_year = 1950 }
+		war_with = ROC
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	option = {
+		name = "rab_CW1_events.OPTA1"
+		add_country_modifier = {
+			name = "md_dictatorship_of_proletariat_war"
+			duration = 3650
+		}
+	}
+}
+#cancel the buff
+country_event = {
+	id = rab_CW1_events.2
+	title = "rab_CW1_events.NAME2"
+	desc = "rab_CW1_events.DESC2"
+	picture = FARMING_eventPicture
+  
+	fire_only_once = yes
+	 
+	trigger = {
+		num_of_cities = 150
+		has_country_modifier = md_dictatorship_of_proletariat_war
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	option = {
+		name = "rab_CW1_events.OPTA2"
+			remove_country_modifier = md_dictatorship_of_proletariat_war
+		}
+}
+

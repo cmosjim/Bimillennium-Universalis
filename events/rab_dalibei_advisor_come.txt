@@ -1,0 +1,51 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = dalibei_advisor_come
+
+#fkSĞgÍyhöNNúQşs
+#id = 1 : dalibei : TrÌ‘iR0fkS0
+#
+country_event = {
+	id = dalibei_advisor_come.1
+	title = "dalibei_advisor_come.1.t"
+	desc = "dalibei_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		is_year = 1000
+		NOT = { is_year = 1128 }
+		tag = LIO
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = dalibei_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = dalibei
+				name = "TrÌ‘iR0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "TrÌ‘iR0fkS0"
+				fire = 5
+				shock = 6
+				manuever = 3
+				siege = 3
+			}
+		}
+	}
+}
+

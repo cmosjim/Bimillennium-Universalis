@@ -1,0 +1,147 @@
+namespace = rab_WA2_events
+
+country_event = {
+	id = rab_WA2_events.1
+	title = "rab_WA2_events.NAME1"
+	desc = "rab_WA2_events.DESC1"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_WA2_events.OPTA1"
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_siege = no	
+				}
+				add_province_modifier = {
+					name = "pov_WangMongSon"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+
+province_event = {
+	id = rab_WA2_events.2
+	title = "rab_WA2_events.NAME2"
+	desc = "rab_WA2_events.DESC2"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	trigger = {
+		has_building = bomb 
+		has_province_modifier = pov_WangMongSon
+		NOT = {
+			OR = {
+				has_province_flag = flg_pov_event_2_immortality #This is the japan region
+				has_province_modifier = pov_info_chuanguoyuxi
+			}
+		}
+	}
+	
+	immediate = {
+		remove_building = bomb
+		remove_province_modifier = pov_WangMongSon
+	}
+	
+	option = {
+		name = "rab_WA2_events.OPTA2"
+		owner = {
+			remove_country_modifier = md_no_leader_debuff
+			change_tag = WA4
+			define_ruler = {
+				name = "‹s!S"
+				fixed = yes
+				adm = 3
+				dip = 4
+				mil = 4
+				min_age = 25
+				max_age = 35
+			}		
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			set_country_flag = huge_chinese_empire_flg
+			set_country_flag = flg_chinese_empire_create
+			swap_free_idea_group = yes
+		}
+	}
+}
+
+
+#province_event = {
+#	id = rab_WA2_events.3
+#	title = "rab_WA2_events.NAME3"
+#	desc = "rab_WA2_events.DESC3"
+#	picture = CITY_DEVELOPMENT_eventPicture
+#
+#
+#	is_triggered_only = yes
+#	
+#
+#	
+#	option = {
+#		name = "rab_WA2_events.OPTA2"
+#		
+#		if = {
+#			limit = {
+#				FROM = { num_of_cities = 1 }
+#			}
+#			FROM = {
+#				random_owned_province = {
+#					limit = {
+#						has_siege = no	 
+#					}
+#					add_province_modifier = {
+#						name = "pov_WangMongSon"
+#						duration = -1
+#					}				
+#				}
+#			}
+#		}		
+#	}		
+#}
+
+#for ai only 
+country_event = {
+	id = rab_WA2_events.4
+	title = "rab_WA2_events.NAME4"
+	desc = "rab_WA2_events.DESC4"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		ai = yes
+		tag = WA2
+		NOT = { num_of_cities = 25 }
+	}
+	mean_time_to_happen = {
+		days = 60
+	}	
+	option = {
+		name = "rab_WA2_events.OPTA2"
+
+			remove_country_modifier = md_no_leader_debuff
+			change_tag = WA4
+			define_ruler = {
+				name = "‹s!S"
+				fixed = yes
+				adm = 3
+				dip = 4
+				mil = 4
+				min_age = 25
+				max_age = 35
+			}		
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			set_country_flag = huge_chinese_empire_flg
+			set_country_flag = flg_chinese_empire_create
+			swap_free_idea_group = yes
+
+	}
+}

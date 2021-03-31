@@ -1,0 +1,55 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = macarthur_advisor_come
+
+#fkSĞgÍyhöNNúQşs
+#id = 1 : macarthur : ¦KQ?–mt0S›Q0
+#
+country_event = {
+	id = macarthur_advisor_come.1
+	title = "macarthur_advisor_come.1.t"
+	desc = "macarthur_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		#ÙÌ‘=ffkSúQ°s(WêTÌ‘„vagöN
+		is_year = 1920
+		NOT = { is_year = 1960 }
+		OR = {
+			tag = USA
+			tag = US1
+		}	
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = macarthur_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = macarthur
+				name = "¦KQ?–mt0S›Q0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "¦KQ?–mt0S›Q0"
+				fire = 8
+				shock = 9
+				manuever = 6
+				siege = 5
+			}
+		}
+	}
+}
+

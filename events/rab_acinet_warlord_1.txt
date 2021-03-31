@@ -1,0 +1,270 @@
+namespace = rab_acient_a
+######################TST_TGG_fihger_starter###################
+country_event = {
+	id = rab_acient_a.1
+	title = "rab_acient_a.NAME1"
+	desc = "rab_acient_a.DESC1"
+	picture = ARMY_START_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+	
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		is_at_war = no
+		exists = TS2
+		NOT = { reverse_has_opinion = { who = TS2 value = 0 } }
+		NOT = { alliance_with = TS2 }
+		NOT = { truce_with = TS2 }
+		NOT = { tag = TS2 }
+		num_of_cities = 38 
+		TS2 = { NOT = { num_of_cities = 36 } }
+	}
+
+	mean_time_to_happen = {
+		days = 200
+	}
+	
+	option = {
+		name = "rab_acient_a.OPTA1"
+		hidden_effect = {
+			every_country = {
+				limit = {
+					reverse_has_opinion = { who = TS2 value = 0 }
+					NOT = { num_of_cities = 38 }
+					NOT = { truce_with = ROOT }
+					NOT = { alliance_with = ROOT }
+					NOT = { has_opinion = { who = ROOT value = 50 } }
+					OR = {
+						has_reform = ancient_chinese_warlord_reform
+						has_reform = celestial_empire
+			
+					}
+					is_at_war = no
+				}
+				country_event = {
+					id = rab_acient_a.2
+				}
+			}
+		#last , 羚紱樓統桵	
+			country_event = {
+				id = rab_acient_a.3
+				days = 15
+			}	
+		}
+	}
+}
+
+
+###################got the info from TS2 , then choose entry the war or demands money 
+
+
+country_event = {
+	id = rab_acient_a.2
+	title = "rab_acient_a.NAME2"
+	desc = "rab_acient_a.DESC2"
+	picture = ARMY_START_eventPicture
+	
+	is_triggered_only = yes
+	
+	# agree with TS2 to war with ROOT
+	option = {
+		name = "rab_acient_a.OPTA2"
+		ai_chance = { 
+			factor = 90
+		}
+		reverse_add_opinion = {
+			who = TS2
+			modifier = op_fight_togher
+		}				
+		declare_war_with_cb = {
+			who = FROM
+			casus_belli = cb_chinese_unification
+		}
+		remove_fow = 8
+		set_country_flag = agree_war_with_TST
+	}
+	option = {
+		name = "rab_acient_a.OPTB2"
+		ai_chance = { 
+			factor = 10
+		}
+		reverse_add_opinion = {
+			who = TS2
+			modifier = op_refuse_fight_togher
+		}		
+	}
+}
+
+
+######################_TST_fihger_starter-1002###################
+country_event = {
+	id = rab_acient_a.3
+	title = "rab_acient_a.NAME3"
+	desc = "rab_acient_a.DESC3"
+	picture = ARMY_START_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	 exists = TS2
+	 any_country = {
+		has_country_flag = agree_war_with_TST
+	 }
+	}
+	
+	option = {
+		name = "rab_acient_a.OPTA3"
+		TS2 = {
+			declare_war_with_cb = {
+			who = FROM
+			casus_belli = cb_chinese_unification
+			}
+		}
+	}
+}
+
+
+######when player formation the empire_2 , AI will attack togther .
+
+country_event = {
+	id = rab_acient_a.4
+	title = "rab_acient_a.NAME4"
+	desc = "rab_acient_a.DESC4"
+	picture = ARMY_START_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 190
+		NOT = { is_year = 220 }
+		ai = no 
+		num_of_cities = 52
+		has_reform = celestial_empire
+		NOT = { 
+			any_country = { 
+				ai = yes
+				has_reform = celestial_empire	
+				num_of_cities = ROOT	
+				army_size = ROOT
+				num_of_cities = 40
+			}
+		}
+	}
+	##	exists = DIT
+	##	exists = DIL
+	##	exists = DIG
+	##	exists = DIM
+	##	exists = DAX
+	##	exists = DAD
+	##	exists = DAB
+	##	exists = DAA
+	##	exists = WEI
+	##	exists = SHU
+	##	exists = WUU
+	##	exists = DAQ
+	##	exists = DAE
+	##	exists = DAG
+	##	exists = CGG
+	##	exists = MIN	
+    ##   exists = CGY
+    ##   exists = HNH
+    ##   exists = ZMG
+    ##   exists = DLL
+	##	exists = PHO
+	##   exists = CEN
+	##	tat = DCU
+	
+
+	 
+	mean_time_to_happen = {
+		days = 365
+	}	
+
+	
+	option = {
+		name = "rab_acient_a.OPTA4"
+		every_country = {
+			limit = { 
+				ai = yes
+				has_reform = ancient_chinese_warlord_reform
+				NOT = { truce_with = ROOT }
+				NOT = { alliance_with = ROOT }
+				NOT = { has_opinion = {	who = ROOT value = 25 } }
+			}		
+			declare_war_with_cb = {
+				who = PREV
+				casus_belli = cb_chinese_unification
+			}
+		}
+	}
+}
+
+######################From_Capital_Choose_When_Build_New_Country###################
+country_event = {
+	id = rab_acient_a.5
+	title = "rab_acient_a.NAME5"
+	desc = "rab_acient_a.DESC5"
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "rab_acient_a.OPTA5"
+		trigger = {
+			owns = 700
+		}
+		add_core = 700
+		set_capital = 700
+		
+		country_event = {
+			id = ideagroups.1
+		}	
+	}
+	option = {
+		name = "rab_acient_a.OPTB5"
+		trigger = {
+			owns = 679
+		}
+
+		add_core = 679
+		set_capital = 679
+		country_event = {
+			id = ideagroups.1
+		}		
+	}
+	option = {
+		name = "rab_acient_a.OPTC5"
+		trigger = {
+			owns = 1821
+		}
+		add_core = 1821
+		set_capital = 1821
+		country_event = {
+			id = ideagroups.1
+		}		
+	}
+	option = {
+		name = "rab_acient_a.OPTD5"
+		#trigger = {
+		#	NOT = {
+		#		OR = {
+		#			owns = 1821
+		#			owns = 679
+		#			owns = 700	
+		#		}
+		#	}			
+		#}
+		country_event = {
+			id = ideagroups.1
+		}		
+	}	
+}
+
+

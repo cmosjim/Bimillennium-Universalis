@@ -1,0 +1,1162 @@
+#2018.12.31 fit to 1.28 no change
+##ma_loan
+namespace = Advisor_cap	
+	
+country_event = {
+	id = Advisor_cap.10001
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA1"
+		country_event = {
+				id = Advisor_cap.1
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10002
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA2"
+		country_event = {
+				id = Advisor_cap.2
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10003
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA3"
+		country_event = {
+				id = Advisor_cap.3
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10004
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA4"
+		country_event = {
+				id = Advisor_cap.4
+		}
+	}
+}		
+
+
+
+country_event = {
+	id = Advisor_cap.10005
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA5"
+		country_event = {
+				id = Advisor_cap.5
+		}
+	}
+}		
+
+country_event = {
+	id = Advisor_cap.10006
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA6"
+		country_event = {
+				id = Advisor_cap.6
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10007
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA7"
+		country_event = {
+				id = Advisor_cap.7
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10008
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA8"
+		country_event = {
+				id = Advisor_cap.8
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10009
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA9"
+		country_event = {
+				id = Advisor_cap.9
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10010
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA10"
+		country_event = {
+				id = Advisor_cap.10
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10011
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA11"
+		country_event = {
+				id = Advisor_cap.11
+		}
+	}
+}		
+
+country_event = {
+	id = Advisor_cap.10012
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA12"
+		country_event = {
+				id = Advisor_cap.12
+		}
+	}
+}		
+
+
+
+
+country_event = {
+	id = Advisor_cap.10014
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA14"
+		country_event = {
+				id = Advisor_cap.14
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10016
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA16"
+		country_event = {
+				id = Advisor_cap.16
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10017
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA17"
+		country_event = {
+				id = Advisor_cap.17
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10018
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA18"
+		country_event = {
+				id = Advisor_cap.18
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10019
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA19"
+		country_event = {
+				id = Advisor_cap.19
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10020
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA20"
+		country_event = {
+				id = Advisor_cap.20
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10021
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA21"
+		country_event = {
+				id = Advisor_cap.21
+		}
+	}
+}		
+
+##jim
+country_event = {
+	id = Advisor_cap.10022
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA22"
+		country_event = {
+				id = Advisor_cap.22
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10023
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA23"
+		country_event = {
+				id = Advisor_cap.23
+		}
+	}
+}		
+
+country_event = {
+	id = Advisor_cap.10024
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA24"
+		country_event = {
+				id = Advisor_cap.24
+		}
+	}
+}		
+
+country_event = {
+	id = Advisor_cap.10025
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA25"
+		country_event = {
+				id = Advisor_cap.25
+		}
+	}
+}		
+
+country_event = {
+	id = Advisor_cap.10026
+
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA26"
+		country_event = {
+				id = Advisor_cap.26
+		}
+	}
+}		
+
+country_event = {
+	id = Advisor_cap.10027
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA27"
+		country_event = {
+				id = Advisor_cap.27
+		}
+	}
+}		
+
+country_event = {
+	id = Advisor_cap.10028
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA28"
+		country_event = {
+				id = Advisor_cap.28
+		}
+	}
+}		
+
+country_event = {
+	id = Advisor_cap.10029
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA29"
+		country_event = {
+				id = Advisor_cap.29
+		}
+	}
+}		
+
+country_event = {
+	id = Advisor_cap.10031
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA31"
+		country_event = {
+				id = Advisor_cap.31
+		}
+	}
+}		
+
+country_event = {
+	id = Advisor_cap.10032
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA32"
+		country_event = {
+				id = Advisor_cap.32
+		}
+	}
+}		
+
+country_event = {
+	id = Advisor_cap.10033
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA33"
+		country_event = {
+				id = Advisor_cap.33
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10034
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA34"
+		country_event = {
+				id = Advisor_cap.34
+		}
+	}
+}		
+
+
+country_event = {
+	id = Advisor_cap.10035
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA35"
+		country_event = {
+				id = Advisor_cap.35
+		}
+	}
+}		
+
+	
+country_event = {
+	id = Advisor_cap.10037
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA37"
+		country_event = {
+				id = Advisor_cap.37
+		}
+	}
+}		
+
+country_event = {
+	id = Advisor_cap.10038
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA38"
+		country_event = {
+				id = Advisor_cap.38
+		}
+	}
+}		
+
+#张宝-player
+country_event = {
+	id = Advisor_cap.10039
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA39"
+		country_event = {
+				id = Advisor_cap.39
+		}
+	}
+}		
+
+
+#张梁【武将】-player
+country_event = {
+	id = Advisor_cap.10041
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA41"
+		country_event = {
+				id = Advisor_cap.41
+		}
+	}
+}		
+
+#马元义【武将】-mayuan_yi
+country_event = {
+	id = Advisor_cap.10042
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA42"
+		country_event = {
+				id = Advisor_cap.42
+		}
+	}
+}		
+
+#张曼成【武将】
+country_event = {
+	id = Advisor_cap.10044
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA44"
+		country_event = {
+				id = Advisor_cap.44
+		}
+	}
+}		
+
+#管亥【武将】
+country_event = {
+	id = Advisor_cap.10045
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA45"
+		country_event = {
+				id = Advisor_cap.45
+		}
+	}
+}		
+
+#夏侯渊【武将】
+country_event = {
+	id = Advisor_cap.10046
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA46"
+		country_event = {
+				id = Advisor_cap.46
+		}
+	}
+}		
+
+#夏侯惇【武将】
+country_event = {
+	id = Advisor_cap.10047
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA47"
+		country_event = {
+				id = Advisor_cap.47
+		}
+	}
+}		
+
+#关羽【武将】
+country_event = {
+	id = Advisor_cap.10048
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA48"
+		country_event = {
+				id = Advisor_cap.48
+		}
+	}
+}		
+
+#张飞【武将】
+country_event = {
+	id = Advisor_cap.10049
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA49"
+		country_event = {
+				id = Advisor_cap.49
+		}
+	}
+}		
+
+#高顺【武将】
+country_event = {
+	id = Advisor_cap.10050
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA50"
+		country_event = {
+				id = Advisor_cap.50
+		}
+	}
+}		
+
+#马超【武将】
+country_event = {
+	id = Advisor_cap.10051
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA51"
+		country_event = {
+				id = Advisor_cap.51
+		}
+	}
+}		
+
+
+#孙乾【文官】
+country_event = {
+	id = Advisor_cap.10052
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA52"
+		country_event = {
+				id = Advisor_cap.52
+		}
+	}
+}		
+
+#周瑜【武将】
+country_event = {
+	id = Advisor_cap.10053
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA53"
+		country_event = {
+				id = Advisor_cap.53
+		}
+	}
+}		
+
+#程普【武将】
+country_event = {
+	id = Advisor_cap.10054
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA54"
+		country_event = {
+				id = Advisor_cap.54
+		}
+	}
+}		
+
+
+#颜良【武将】
+country_event = {
+	id = Advisor_cap.10055
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA55"
+		country_event = {
+				id = Advisor_cap.55
+		}
+	}
+}		
+
+
+#文丑【武将】
+country_event = {
+	id = Advisor_cap.10056
+	title = "Advisor_cap.100056.t"
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA56"
+		country_event = {
+				id = Advisor_cap.56
+		}
+	}
+}		
+
+#荀或【军师】
+country_event = {
+	id = Advisor_cap.10057
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA57"
+		country_event = {
+				id = Advisor_cap.57
+		}
+	}
+}		
+
+
+#吕布【武将】
+country_event = {
+	id = Advisor_cap.10058
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA58"
+		country_event = {
+				id = Advisor_cap.58
+		}
+	}
+}		
+
+#贾诩【军师】
+country_event = {
+	id = Advisor_cap.10059
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA59"
+		country_event = {
+				id = Advisor_cap.59
+		}
+	}
+}		
+
+#李儒【军师】
+country_event = {
+	id = Advisor_cap.10060
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA60"
+		country_event = {
+				id = Advisor_cap.60
+		}
+	}
+}		
+
+#程昱【军师】
+country_event = {
+	id = Advisor_cap.10061
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA61"
+		country_event = {
+				id = Advisor_cap.61
+		}
+	}
+}		
+
+#张勋【武将】
+country_event = {
+	id = Advisor_cap.10062
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA62"
+		country_event = {
+				id = Advisor_cap.62
+		}
+	}
+}		
+
+#貂蝉【军师】
+country_event = {
+	id = Advisor_cap.10063
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_F_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA63"
+		country_event = {
+				id = Advisor_cap.63
+		}
+	}
+}		
+
+#王允【文官】
+country_event = {
+	id = Advisor_cap.10064
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA64"
+		country_event = {
+				id = Advisor_cap.64
+		}
+	}
+}		
+
+#杨奉【武将】
+country_event = {
+	id = Advisor_cap.10065
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA65"
+		country_event = {
+				id = Advisor_cap.65
+		}
+	}
+}		
+
+
+#诸葛亮【军师】
+country_event = {
+	id = Advisor_cap.10066
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA66"
+		country_event = {
+				id = Advisor_cap.66
+		}
+	}
+}		
+
+
+#黄忠【武将】
+country_event = {
+	id = Advisor_cap.10067
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA67"
+		country_event = {
+				id = Advisor_cap.67
+		}
+	}
+}		
+
+#张昭【文官】
+country_event = {
+	id = Advisor_cap.10068
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA68"
+		country_event = {
+				id = Advisor_cap.68
+		}
+	}
+}		
+
+#zhao_yun
+#赵云【武将】
+country_event = {
+	id = Advisor_cap.10069
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA69"
+		country_event = {
+				id = Advisor_cap.69
+		}
+	}
+}		
+
+#zhang_liao
+#name = "张辽【武将】"
+country_event = {
+	id = Advisor_cap.10070
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA70"
+		country_event = {
+				id = Advisor_cap.70
+		}
+	}
+}
+
+#xu_chu
+#name = "许褚【武将】"
+country_event = {
+	id = Advisor_cap.10071
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA71"
+		country_event = {
+				id = Advisor_cap.71
+		}
+	}
+}
+
+#name = "司马懿【军师】"
+country_event = {
+	id = Advisor_cap.10072
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA72"
+		country_event = {
+				id = Advisor_cap.72
+		}
+	}
+}
+
+#name = "陆逊【军师】"
+country_event = {
+	id = Advisor_cap.10073
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA73"
+		country_event = {
+				id = Advisor_cap.73
+		}
+	}
+}
+
+
+#name = "太史慈【武将】"
+country_event = {
+	id = Advisor_cap.10074
+	title = "Advisor_cap.10001.t"
+	desc = "Advisor_cap.10001.d"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Advisor_cap.1000OPTA74"
+		country_event = {
+				id = Advisor_cap.74
+		}
+	}
+}

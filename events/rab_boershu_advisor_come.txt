@@ -1,0 +1,74 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = boershu_advisor_come
+
+#fkS–gÕyùhˆNN˙Q˛s
+#id = 1 : boershu : ZSS.g0fkS0
+#
+country_event = {
+	id = boershu_advisor_come.1
+	title = "boershu_advisor_come.1.t"
+	desc = "boershu_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+#571t^ˇ649t^7g2Âe
+	trigger = {
+		#ŸèÃë=ffkS˙Q∞s(WÍTÃëÑvagˆN
+		is_year = 1189
+		NOT = { is_year = 1231 }
+		OR = {
+			AND = {
+				exists = MGE
+				tag = MGE
+			}			
+			AND = {
+				NOT = { exists = MGE }
+				exists = QY1
+				tag = QY1
+			}
+			AND = {
+				NOT = { exists = MGE }
+				NOT = { exists = QY1 }
+				exists = KHA
+				tag = KHA
+			}
+			AND = {
+				NOT = { exists = MGE }
+				NOT = { exists = QY1 }
+				NOT = { exists = KHA }
+				owns = 1058	
+			}			
+		}
+	}
+	mean_time_to_happen = {
+		days = 10
+	}		
+	option = {
+		name = boershu_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = boershu
+				name = "ZSS.g0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "ZSS.g0fkS0"
+				fire = 7
+				shock = 7
+				manuever = 6
+				siege = 6
+			}
+		}
+	}
+}
+

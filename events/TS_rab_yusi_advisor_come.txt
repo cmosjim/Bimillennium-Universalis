@@ -1,0 +1,51 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = yusi_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : yusi : ^†jl0fkS0
+
+country_event = {
+	id = yusi_advisor_come.1
+	title = "yusi_advisor_come.1.t"
+	desc = "yusi_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 238	
+		NOT = { is_year = 262 }
+		owns = 2471
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = yusi_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = yusi
+				name = "^†jl0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "^†jl0fkS0"
+				fire = 5
+				shock = 5
+				manuever = 3
+				siege = 5
+			}
+		}
+	}
+}
+

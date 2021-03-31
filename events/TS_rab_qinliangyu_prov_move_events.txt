@@ -1,0 +1,146 @@
+#################################
+#This sections define outoff general 
+#move to another provinces .
+#################################
+
+#id = 1 : ýÿýÿõ?ýÿy-Iýÿýÿýÿýÿ5Cýÿ
+#id = 2 : ýÿýÿýÿýÿýÿýÿýÿkOýÿýÿëýÿýÿýÿýÿýÿ] 
+
+namespace = qinliangyu_prov_move_events
+
+
+province_event = {
+	id = qinliangyu_prov_move_events.1
+	title = "qinliangyu_prov_move_events.NAME1"
+	desc = "qinliangyu_prov_move_events.DESC1"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+	#ýÿj%y¡*ýÿCtýÿýÿ÷ýÿýÿýÿQpov_xxxx
+	#»RªJýÿýÿýÿýÿýÿýÿýÿýÿýÿ0CýÿýÿÛMýÿüýÿýÿýÿQpov_xxxx ýÿ OR ýÿýÿýÿýÿ
+		has_province_modifier = pov_qinliangyu
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "qinliangyu_prov_move_events.OPTA1"
+###########################ýÿýÿýÿýÿýÿýÿýÿkOýÿýÿpov_qinliangyu#################################		
+		if = {
+			limit = { has_province_modifier = pov_qinliangyu }
+			if = {
+			#ýÿQýÿýÿýÿýÿ°Kýÿ0Cýÿ	ýÿýÿýÿ
+				limit = { 
+					is_year = 1599
+					NOT = { is_year = 1648  }
+				}
+			#ýÿýÿýÿýÿQýÿýÿýÿµK>ýÿýÿýÿýÿýÿýÿ|ýÿýÿýÿýÿ	
+			#ýÿýÿëýÿýÿýÿýÿýÿ]	
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+							has_ruler_modifier = ra_ch1
+							has_ruler_modifier = ra_ch6
+							has_ruler_modifier = ra_ch8
+							has_ruler_modifier = rb_ch1
+							has_ruler_modifier = rb_ch2
+							has_ruler_modifier = rb_ch4
+							has_ruler_modifier = rb_ch7
+							}
+						}
+					}
+			
+					remove_province_modifier = pov_qinliangyu
+					owner = {
+						country_event = {
+							id = qinliangyu_prov_move_events.2
+						}
+					}
+				}
+					#ýÿýÿýÿýÿQýÿýÿýÿµK>ýÿýÿýÿýÿýÿýÿ|ýÿýÿýÿýÿýÿþ?u7ýÿýÿýÿýÿýÿýÿýÿ¡*ýÿýÿ						
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+									has_ruler_modifier = ra_ch1
+									has_ruler_modifier = ra_ch6
+									has_ruler_modifier = ra_ch8
+									has_ruler_modifier = rb_ch1
+									has_ruler_modifier = rb_ch2
+									has_ruler_modifier = rb_ch4
+									has_ruler_modifier = rb_ch7
+								}
+							}
+						}		
+					}
+					remove_province_modifier = pov_qinliangyu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_qinliangyu"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = {
+			#ýÿýÿýÿýÿýÿswýÿýÿ^ýÿýÿýÿ±zýÿýÿýÿ°Kýÿ0Cýÿxýÿýÿ
+				limit = { 
+					is_year = 1648
+				}	
+				remove_province_modifier = pov_qinliangyu		
+			}
+		}
+	}
+}
+	
+############################################################################
+#	ýÿýÿýÿýÿýÿýÿýÿkOýÿýÿëýÿýÿýÿýÿýÿ]
+#
+############################################################################
+
+
+country_event = {
+	id = qinliangyu_prov_move_events.2
+	title = "qinliangyu_prov_move_events.NAME2"
+	desc = "qinliangyu_prov_move_events.DESC2"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "qinliangyu_prov_move_events.OPTA2"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					female = yes
+					type = qinliangyu
+					name = "ýÿýÿýÿýÿýÿýÿýÿkOýÿýÿ"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+				define_general = {
+				female = yes
+				name = "ýÿýÿýÿýÿýÿýÿýÿkOýÿýÿ"
+				fire = 8
+				shock = 8
+				manuever = 5
+				siege = 4
+			}
+		}
+	}
+}
+
+	
+	

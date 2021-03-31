@@ -1,0 +1,70 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = chengqian_advisor_come
+
+#fkSĞgÍyagöNNúQ°s
+#id = 1 : chengqian : zjo0›Q˜R0
+
+country_event = {
+	id = chengqian_advisor_come.1
+	title = "chengqian_advisor_come.1.t"
+	desc = "chengqian_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	#:N†NMQßu»løv²QzZP†Ncheck ruler¨RjO
+	trigger = {
+		is_year = 1913	
+		NOT = { is_year = 1955 }
+		OR = { 
+			AND = { 
+				exists = GJ1
+				tag = GJ1
+			}
+			AND = { 
+				NOT = { exists = GJ1 }
+				NOT = { exists = CHN }
+				NOT = { exists = TWN }
+				exists = ROC
+				tag = ROC
+			}
+			AND = { 
+				NOT = { exists = GJ1 }
+				exists = CHN 
+				exists = TWN
+				tag = CHN
+			}
+		}
+	}	
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = chengqian_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = chengqian
+				name = "zjo0›Q˜R0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "zjo0›Q˜R0"
+				fire = 6
+				shock = 5
+				manuever = 7
+				siege = 5
+			}
+		}
+	}
+}
+

@@ -1,0 +1,132 @@
+#################################
+#This sections define outoff general 
+#move to another provinces .
+#################################
+
+#id = 1 : IN˚|qt-U^åV˜WLàÑv
+#id = 2 : .Vup+u0SõQ0 €kBêÍÅ¶Ö 
+
+namespace = zhang_lingfu_prov_move_events
+
+
+province_event = {
+	id = zhang_lingfu_prov_move_events.1
+	title = "zhang_lingfu_prov_move_events.NAME1"
+	desc = "zhang_lingfu_prov_move_events.DESC1"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+	#uP,nw˝NgQ=f&T	gräpov_xxxx
+	#ÍSÅâ	g∞eûXÑvfkSˇäóV†ReQräpov_xxxx ºe OR vQ-N
+		has_province_modifier = pov_zhang_lingfu
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "zhang_lingfu_prov_move_events.OPTA1"
+###########################.Vup+u0SõQ0pov_zhang_lingfu#################################		
+		if = {
+			limit = { has_province_modifier = pov_zhang_lingfu }
+			if = {
+			#zlöR(WŒëfkSÑv˝XãT
+				limit = { 
+					NOT = { is_year = 1955  }
+				}
+			#GPÇYräW∂RÑvTãsyrÍå&rT	
+			#1S€kBêÍÅ¶Ö	
+				if = { 
+					limit = {
+						owner = { 
+							NOT = {
+								OR = {
+									tag = JAP 
+									tag = JA1
+								}
+							}
+						}
+					}	
+					remove_province_modifier = pov_zhang_lingfu
+					owner = {
+						country_event = {
+							id = zhang_lingfu_prov_move_events.2
+						}
+					}
+				}
+					#GPÇYräW∂RÑvTãsyrÍåN&rT1S0R0ë—èÑvwR						
+				if = { 
+					limit = { 
+						owner = {
+							OR = {
+								tag = JA1
+								tag = JAP
+							}	
+						}		
+					}
+					remove_province_modifier = pov_zhang_lingfu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhang_lingfu"
+							duration = -1
+						}					
+					}
+				}
+			}	
+			if = {
+			#ÇYúgt^˝NÖçNêdkPñˇ(WŒëfkS‚ñN
+				limit = { 
+					is_year = 1955 
+				}	
+				remove_province_modifier = pov_zhang_lingfu		
+			}
+		}
+	}
+}
+	
+############################################################################
+#	.Vup+u0SõQ0€kBêÍÅ¶Ö
+#
+############################################################################
+
+
+country_event = {
+	id = zhang_lingfu_prov_move_events.2
+	title = "zhang_lingfu_prov_move_events.NAME2"
+	desc = "zhang_lingfu_prov_move_events.DESC2"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "zhang_lingfu_prov_move_events.OPTA2"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = zhang_lingfu
+					name = ".Vup+u0SõQ0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+				define_general = {
+				name = ".Vup+u0SõQ0"
+				fire = 7
+				shock = 7
+				manuever = 4
+				siege = 6
+			}
+		}
+	}
+}
+
+	
+	

@@ -1,0 +1,1372 @@
+namespace = wangmang_dis
+#100 start : 
+#1  LL1: "ˇuógõQ"
+#2  CH1: "dç	wõQ"
+#3  CH2: "lQYRè"
+#4  DO1: "¶zçáõQ"
+#5  DX4: "cÑ™RõQ"
+#6  DZ1: "RPR˝ê"
+#7  KU2: "óñ±VõQ"
+#8  LU2: "bS∂RõQ"
+#9  LX1: "Ng™RõQ"
+#10 LX2: "R¿yõQ"
+#11 LY1: "R8lõQ"
+#12 PO1: "mV†RõQ"
+#13 QI3: "Êy0NõQ"
+#14 WA1: "ãsŒêõQ"
+#15 WD1: "ãsåõQ"
+#16 WQ1: "áePüõQ"
+#17 TI1: "0ubõQ"
+#18 TM3: "‹îlöõQ"
+#19 ZB1: ".VekõQ"
+#200 end :  
+#2018.12.31 fit to 1.28
+#2019.03.25 if you abandon the wangmang revoution , you will not face to ãsëê anymore
+ country_event = {
+	id = wangmang_dis.100
+	title = "wangmang_dis.NAME100"
+	desc = "wangmang_dis.DESC100"
+	picture = SHOCK_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+		
+	
+	option = {
+		name = "wangmang_dis.OPTA1"
+		#=T®Rd∆ñ xxx_dis Ñv˝V∂R≥QÆã
+		set_country_flag = wangmang_dis_unrest
+	}			
+}
+
+#############-Nêæèb[call from rab_hidden_events.74 ]########
+ country_event = {
+	id = wangmang_dis.101
+	title = "wangmang_dis.NAME101"
+	desc = "wangmang_dis.DESC101"
+	picture = ARMY_HAPPY_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "wangmang_dis.OPTA101"
+		hidden_effect = {
+			country_event = {
+				id = wangmang_dis.102
+				days = 90
+			}
+		}
+	}			
+}
+###############################
+#
+#	102 ãsëê€èg
+#
+##############################
+ country_event = {
+	id = wangmang_dis.102
+	title = "wangmang_dis.NAME102"
+	desc = "wangmang_dis.DESC102"
+	picture = shangchao_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = flg_wangmong_reform #//if you abandon the wangmang revolution , you should no need to occur the event
+	}
+	option = {
+		name = "wangmang_dis.OPTA102"
+		#ZWcÒT¡â
+		ai_chance = {
+			factor = 98
+		}
+		hidden_effect = {
+			country_event = {
+				id = wangmang_dis.103
+			}
+		}
+	}
+	option = {
+		name = "wangmang_dis.OPTB102"
+		ai_chance = {
+			factor = 1
+		}
+		
+		#ÍÅ®RêMO
+		country_event = {
+			id = wangmang_dis.107
+		}		
+	}
+	option = {
+		name = "wangmang_dis.OPTC102"
+		ai_chance = {
+			factor = 1
+		}
+		
+		#>eV?eVr
+		country_event = {
+			id = wangmang_dis.104
+		}		
+	}	
+}
+
+###############################
+#
+#	103 ãsëêuQlöåmeQ [`ONTajÒTœãmNN7h]
+#
+##############################			
+
+ country_event = {
+	id = wangmang_dis.103
+	title = "wangmang_dis.NAME103"
+	desc = "wangmang_dis.DESC103"
+	picture = KILL_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "wangmang_dis.OPTA103"
+		ai_chance = { 
+			factor = 100
+			modifier = { 
+				factor = 0
+				NOT = { has_country_flag = front_door_thru }
+			}
+		}
+		#êéVMR´R
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = front_door_thru	}
+				#is okay
+				country_event = {
+					id = wangmang_dis.106
+				}
+			}
+			if = {
+				limit = { has_country_flag = mid_door_thru	}
+				#is not
+				country_event = {
+					id = wangmang_dis.105
+				}			
+				
+			}
+			if = {
+				limit = { has_country_flag = back_door_thru	}
+				#is not
+				country_event = {
+					id = wangmang_dis.105
+				}				
+			}
+		}
+	}
+	option = {
+		name = "wangmang_dis.OPTB103"
+		ai_chance = { 
+			factor = 100
+			modifier = { 
+				factor = 0
+				NOT = { has_country_flag = mid_door_thru }
+			}
+		}		
+		#êéVnS
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = front_door_thru	}
+				#is not
+				country_event = {
+					id = wangmang_dis.105
+				}	
+			}
+			if = {
+				limit = { has_country_flag = mid_door_thru	}
+				#is okay
+				country_event = {
+					id = wangmang_dis.106
+				}				
+			}
+			if = {
+				limit = { has_country_flag = back_door_thru	}
+				#is not
+				country_event = {
+					id = wangmang_dis.105
+				}				
+			}
+		}
+	}
+	option = {
+		name = "wangmang_dis.OPTC103"
+		ai_chance = { 
+			factor = 100
+			modifier = { 
+				factor = 0
+				NOT = { has_country_flag = back_door_thru }
+			}
+		}		
+		#êéVT´R
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = front_door_thru	}
+				#is not
+				country_event = {
+					id = wangmang_dis.105
+				}				
+			}
+			if = {
+				limit = { has_country_flag = mid_door_thru	}
+				#is not
+				country_event = {
+					id = wangmang_dis.105
+				}				
+			}
+			if = {
+				limit = { has_country_flag = back_door_thru	}
+				#is okay
+				country_event = {
+					id = wangmang_dis.106
+				}				
+			}
+		}
+	}		
+}
+
+###############################
+#
+#	104 ãsëêÅâ`OjÒTœã0 [>eV?eVrKNT]
+#
+##############################			
+
+ country_event = {
+	id = wangmang_dis.104
+	title = "wangmang_dis.NAME104"
+	desc = "wangmang_dis.DESC104"
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+	#	
+	option = {
+		name = "wangmang_dis.OPTA104"
+		#áv^'Y`ˇﬁV0R103
+		country_event = {
+			id =  wangmang_dis.103
+		}
+	}
+	option = {
+		name = "wangmang_dis.OPTB104"
+		#Ta>eV9eió
+		clr_country_flag = flg_wangmong_reform
+		add_country_modifier = {
+			name = "md_ruler_shame"
+			duration = 3650
+		}
+	}	
+}
+###############################
+#
+#	105 ê—ç1Y%ç / be killed 
+#
+##############################	
+
+
+ country_event = {
+	id = wangmang_dis.105
+	title = "wangmang_dis.NAME105"
+	desc = "wangmang_dis.DESC105"
+	picture = CAPTURE_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "wangmang_dis.OPTA105"
+		clr_country_flag = flg_wangmong_reform
+		add_stability = -2
+		#ê©ãMOPR
+		define_ruler = {
+			name = "ãsëê"
+			adm = 3
+			dip = 4
+			mil = 3
+			fixed = yes
+			age = 50
+			claim = 75
+			
+		}		
+		kill_heir  = yes
+		add_country_modifier = {
+			name = "legitimacy_wars"
+			duration = 3650
+		}			
+	}	
+}
+
+
+
+###############################
+#
+#	106  ê—çbüR / WA3 R¬à˝V∂R
+#
+##############################	
+  country_event = {
+	id = wangmang_dis.106
+	title = "wangmang_dis.NAME106"
+	desc = "wangmang_dis.DESC106"
+	picture = shangchao_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "wangmang_dis.OPTA106"
+		set_country_flag = flg_WA3_NE2_LL1_WX2_create
+		add_stability = -1
+		#˝V∂RçQ!kR¬à
+		#ãsëêTwõQˇcapital
+		random_owned_province = {
+			limit = {
+				is_capital = yes
+			}		
+			add_core = WA3
+			cede_province = WA3
+			change_controller = WA3
+		}
+		#S+TuÉw0W:Sgansu_area
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = gansu_area
+					area = central_gansu_area
+					area = westnorth_gansu_area
+					area = west_gansu_area
+					area = shaanxi_area
+					area = shanxi_area
+					area = henan_area
+					area = central_henan_area
+				}
+			}
+			add_core = WA3
+			cede_province = WA3
+			change_controller = WA3
+		}		
+		east_china_sea_region = {
+			discover_country = WA3
+		}
+			south_china_sea_region = {
+			discover_country = WA3
+		}
+			indo_china_region = {
+			discover_country = WA3
+		}
+			south_china_region = {
+			discover_country = WA3
+		}
+			north_china_region = {
+			discover_country = WA3
+		}			
+			tibet_region = {
+			discover_country = WA3
+		}			
+			xinan_region = {
+			discover_country = WA3
+		}		
+		
+		WA3 = {
+			define_ruler = {
+					name = "ãsëê"
+					claim = 100
+					adm = 3
+					dip = 4
+					mil = 3
+					fixed = yes
+			}
+			add_country_modifier= {
+				name = "LL1_extend"
+				duration = 90
+			}
+			#add_country_modifier= {
+			#	name = "md_warlord_fanaticism_war"
+			#	duration = 780
+			#}			
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}
+		}	
+		country_event = {
+			id = wangmang_dis.1
+			days = 5
+		}
+	}		
+}	
+
+###############################
+#
+#	107 ÍÅ®Rê©ã
+#
+##############################	
+
+  country_event = {
+	id = wangmang_dis.107
+	title = "wangmang_dis.NAME107"
+	desc = "wangmang_dis.DESC107"
+	picture = HAPPY_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "wangmang_dis.OPTA107"
+		clr_country_flag = flg_wangmong_reform
+		add_stability = -1
+		#ê©ãMOPR
+		define_ruler = {
+				name = "ãsëê"
+				adm = 3
+				dip = 4
+				mil = 3
+				fixed = yes
+				age = 50
+				claim = 75				
+		}
+		kill_heir = yes
+	}		
+}	
+
+###############################
+#
+#	108 ,råN6ñµkÚîdñÜNãsëêõQ
+#	Nrab_events.84T7h
+#	From on_action event annex_country
+##############################	
+
+  country_event = {
+	id = wangmang_dis.108
+	title = "rab_events.NAME84"
+	desc = "rab_events.DESC84"
+	picture = ARMY_START_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "wangmang_dis.OPTA108"
+		#add_country_modifier= {
+		#	name = "wang_mang_golden_age"
+		#	duration = 22100
+		#}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_prestige = 10		
+		clr_country_flag = flg_wangmong_reform	
+		set_country_flag = flg_NEW_conquest_warlords		
+	}		
+}	
+
+
+
+
+
+##############################	
+
+ country_event = {
+	id = wangmang_dis.200
+	title = "wangmang_dis.NAME200"
+	desc = "wangmang_dis.DESC200"
+	picture = TASK_FAIL_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "wangmang_dis.OPTA200"
+
+	}			
+}
+
+
+
+
+country_event = {
+	id = wangmang_dis.1
+	title = "wangmang_dis.NAME1"
+	desc = "wangmang_dis.DESC1"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		NOT = {
+			OR = {
+				exists = LL1
+				has_country_flag = LL1_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA1"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			add_core = LL1
+			cede_province = LL1
+			change_controller = LL1
+		}
+		LL1 = {
+				define_ruler = {
+					name = "ãs!S"
+					adm = 1
+					dip = 4
+					mil = 5
+					fixed = yes
+				}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}		
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.2
+	title = "wangmang_dis.NAME2"
+	desc = "wangmang_dis.DESC2"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+	#NbÂNGP-ä(Wãp„ñ|vuMRÚTìt˙Q˛sN´ààm≈nÑvgçQ˙Q˛sN!k
+	trigger = {
+		NOT = {
+			OR = {
+				exists = CH1
+				has_country_flag = CH1_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA2"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = CH1
+			cede_province = CH1
+			change_controller = CH1
+		}
+		CH1 = {
+				define_ruler = {
+					name = "jT"
+					adm = 1
+					dip = 4
+					mil = 5
+					fixed = yes
+				}				
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}		
+	}			
+}
+country_event = {
+	id = wangmang_dis.3
+	title = "wangmang_dis.NAME3"
+	desc = "wangmang_dis.DESC3"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		NOT = {
+			OR = {
+				exists = CH2
+				has_country_flag = CH2_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA3"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = CH2
+			cede_province = CH2
+			change_controller = CH2
+		}
+		CH2 = {
+				define_ruler = {
+					name = "lQYRè"
+					adm = 3
+					dip = 4
+					mil = 5
+					fixed = yes
+				}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}			
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.4
+	title = "wangmang_dis.NAME4"
+	desc = "wangmang_dis.DESC4"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		NOT = {
+			OR = {
+				exists = DO1
+				has_country_flag = DO1_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA4"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = DO1
+			cede_province = DO1
+			change_controller = DO1
+		}
+		DO1 = {
+				define_ruler = {
+					name = "¶zçá"
+					adm = 5
+					dip = 5
+					mil = 3
+					fixed = yes
+				}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}			
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.5
+	title = "wangmang_dis.NAME5"
+	desc = "wangmang_dis.DESC5"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		ai = yes
+		NOT = {
+			OR = {
+				exists = DX4
+				has_country_flag = DX4_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA5"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = DX4
+			cede_province = DX4
+			change_controller = DX4
+		}
+		DX4 = {
+				define_ruler = {
+					name = "cÑ™R"
+					adm = 3
+					dip = 3
+					mil = 5
+					fixed = yes
+				}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}			
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.6
+	title = "wangmang_dis.NAME6"
+	desc = "wangmang_dis.DESC6"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+	ai = yes
+		NOT = {
+			OR = {
+				exists = DZ1
+				has_country_flag = DZ1_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA6"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = DZ1
+			cede_province = DZ1
+			change_controller = DZ1
+		}
+		DZ1 = {
+				define_ruler = {
+					name = "RPR˝ê"
+					adm = 2
+					dip = 2
+					mil = 3
+					fixed = yes
+				}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}				
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.7
+	title = "wangmang_dis.NAME7"
+	desc = "wangmang_dis.DESC7"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		NOT = {
+			OR = {
+				exists = KU2
+				has_country_flag = KU2_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA7"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = KU2
+			cede_province = KU2
+			change_controller = KU2
+		}
+		KU2 = {
+				define_ruler = {
+					name = "óñ±V"
+					adm = 4
+					dip = 2
+					mil = 3
+					fixed = yes
+				}			
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}				
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.8
+	title = "wangmang_dis.NAME8"
+	desc = "wangmang_dis.DESC8"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		NOT = {
+			OR = {
+				exists = LU2
+				has_country_flag = LU2_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA8"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+				region = north_china_region
+			}		
+			add_core = LU2
+			cede_province = LU2
+			change_controller = LU2
+		}
+		LU2 = {
+				define_ruler = {
+					name = "bS≥Ç"
+					adm = 2
+					dip = 5
+					mil = 4
+					fixed = yes
+				}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}		
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.9
+	title = "wangmang_dis.NAME9"
+	desc = "wangmang_dis.DESC9"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		NOT = {
+			OR = {
+				exists = LX1
+				has_country_flag = LX1_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA9"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = LX1
+			cede_province = LX1
+			change_controller = LX1
+		}
+		LX1 = {
+				define_ruler = {
+					name = "Ng™R"
+					adm = 3
+					dip = 3
+					mil = 2
+					fixed = yes
+				}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}			
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.10
+	title = "wangmang_dis.NAME10"
+	desc = "wangmang_dis.DESC10"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		NOT = {
+			OR = {
+				exists = LX2
+				has_country_flag = LX2_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA10"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = LX2
+			cede_province = LX2
+			change_controller = LX2
+		}
+		LX2 = {
+			define_ruler = {
+				name = "R¿y"
+		
+				adm = 6
+				dip = 6
+				mil = 6
+				fixed = yes
+			}	
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}			
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.11
+	title = "wangmang_dis.NAME11"
+	desc = "wangmang_dis.DESC11"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		ai = yes
+		NOT = {
+			OR = {
+				exists = LY1
+				has_country_flag = LY1_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA11"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = LY1
+			cede_province = LY1
+			change_controller = LY1
+		}
+		LY1 = {
+			define_ruler = {
+				name = "R8l"
+		
+				adm = 4
+				dip = 5
+				mil = 3
+				leader = { name = "R8l"		fire = 5	shock = 4	manuever = 4	siege = 3 }
+			}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}			
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.12
+	title = "wangmang_dis.NAME12"
+	desc = "wangmang_dis.DESC12"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+	ai = yes
+		NOT = {
+			OR = {
+				exists = PO1
+				has_country_flag = PO1_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA12"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = PO1
+			cede_province = PO1
+			change_controller = PO1
+		}
+		PO1 = {
+				define_ruler = {
+					name = "mV†R"
+			
+					adm = 3
+					dip = 5
+					mil = 3
+					fixed = yes
+					
+				}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}			
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.13
+	title = "wangmang_dis.NAME13"
+	desc = "wangmang_dis.DESC13"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+	ai = yes
+		NOT = {
+			OR = {
+				exists = QI3
+				has_country_flag = QI3_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA13"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = QI3
+			cede_province = QI3
+			change_controller = QI3
+		}
+		QI3 = {
+				define_ruler = {
+					name = "Êy0N"
+					claim = 100
+					dip = 3
+					adm = 3
+					mil = 3
+					fixed = yes
+				}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}				
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.14
+	title = "wangmang_dis.NAME14"
+	desc = "wangmang_dis.DESC14"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		NOT = {
+			OR = {
+				exists = WA1
+				has_country_flag = WA1_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA14"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = WA1
+			cede_province = WA1
+			change_controller = WA1
+		}
+		WA1 = {
+			define_ruler = {
+				name = "ãsg"
+				DIP = 3
+				ADM = 3
+				MIL = 4
+				age = 55
+				fixed = yes
+			}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}			
+	}			
+}
+
+
+country_event = {
+	id = wangmang_dis.15
+	title = "wangmang_dis.NAME15"
+	desc = "wangmang_dis.DESC15"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		NOT = {
+			OR = {
+				exists = WD1
+				has_country_flag = WD1_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA15"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = WD1
+			cede_province = WD1
+			change_controller = WD1
+		}
+		WD1 = {
+			define_ruler = {
+				name = "ãså"
+				adm = 4
+				dip = 4
+				mil = 3
+				fixed = yes
+			}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}			
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.16
+	title = "wangmang_dis.NAME16"
+	desc = "wangmang_dis.DESC16"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		NOT = {
+			OR = {
+				exists = WQ1
+				has_country_flag = WQ1_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA16"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = WQ1
+			cede_province = WQ1
+			change_controller = WQ1
+		}
+		WQ1 = {
+			define_ruler = {
+				name = "áePü"
+				
+				adm = 6
+				dip = 4
+				mil = 4
+				fixed = yes
+			}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}				
+	}			
+}
+
+
+country_event = {
+	id = wangmang_dis.17
+	title = "wangmang_dis.NAME17"
+	desc = "wangmang_dis.DESC17"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		ai = yes
+		NOT = {
+			OR = {
+				exists = TI1
+				has_country_flag = TI1_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA17"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = TI1
+			cede_province = TI1
+			change_controller = TI1
+		}
+		TI1 = {
+			define_ruler = {
+				name = "0ub"
+		
+				adm = 3
+				dip = 4
+				mil = 4
+				fixed = yes
+			}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}			
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.18
+	title = "wangmang_dis.NAME18"
+	desc = "wangmang_dis.DESC18"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		NOT = {
+			OR = {
+				exists = TM3
+				has_country_flag = TM3_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA18"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = TM3
+			cede_province = TM3
+			change_controller = TM3
+		}
+		TM3 = {
+
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}			
+	}			
+}
+
+country_event = {
+	id = wangmang_dis.19
+	title = "wangmang_dis.NAME19"
+	desc = "wangmang_dis.DESC19"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		NOT = {
+			OR = {
+				exists = ZB1
+				has_country_flag = ZB1_dis
+			}
+		}
+	}	
+	
+	option = {
+		name = "wangmang_dis.OPTA19"
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}		
+			add_core = ZB1
+			cede_province = ZB1
+			change_controller = ZB1
+		}
+		ZB1 = {
+			define_ruler = {
+				name = ".Vek"
+				DIP = 4
+				ADM = 3
+				MIL = 3
+			}		
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}	
+		}				
+	}			
+}
+
+##############################
+## This not in monthly disaster
+## ãsëêõQ
+##############################
+#country_event = {
+#	id = wangmang_dis.20
+#	title = "wangmang_dis.NAME20"
+#	desc = "wangmang_dis.DESC20"
+#	picture = WARLORD_FOUNDATION_eventPicture
+#	
+#	hidden = yes
+#	is_triggered_only = yes
+#	
+#		
+#	trigger = {
+#		NOT = {	exists = WA3 }
+#	}	
+#	
+#	option = {
+#		name = "wangmang_dis.OPTA20"
+#		random_owned_province = {
+#			limit = {
+#				is_capital = yes
+#			}		
+#			add_core = WA3
+#			cede_province = WA3
+#			change_controller = WA3
+#		}
+#		east_china_sea_region = {
+#			discover_country = WA3
+#		}
+#			south_china_sea_region = {
+#			discover_country = WA3
+#		}
+#			indo_china_region = {
+#			discover_country = WA3
+#		}
+#			south_china_region = {
+#			discover_country = WA3
+#		}
+#			north_china_region = {
+#			discover_country = WA3
+#		}			
+#			tibet_region = {
+#			discover_country = WA3
+#		}			
+#			xinan_region = {
+#			discover_country = WA3
+#		}		
+#		
+#		WA3 = {
+#			add_country_modifier= {
+#				name = "LL1_extend"
+#				duration = 90
+#			}		
+#			declare_war_with_cb = {
+#				who = NEW
+#				casus_belli = cb_chinese_unification
+#			}	
+#		}			
+#	}			
+#}
+#
+#

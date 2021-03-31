@@ -1,0 +1,282 @@
+namespace = rab_ruler_character
+#2018.12.31 fit to 1.28 
+country_event = {
+	id = rab_ruler_character.1
+	title = "rab_ruler_character.NAME1"
+	desc = "rab_ruler_character.DESC1"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { tag = PIR }
+		NOT = { tag = NAT }	
+		NOT = { tag = REB }
+	}
+		
+	option = {
+		name = "rab_ruler_character.OPTA1"
+	
+			set_country_flag = play_ever_once_ruler
+			set_country_flag = flg_recycle_1
+			
+			if = { 
+			limit = { has_ruler = "ÅhéQ" } 
+				add_ruler_modifier = { name = "ra_ch3" hidden = yes duration = -1 } 
+			}
+			if = { 
+			limit = { has_ruler = "R	q" } 
+				add_ruler_modifier = { name = "ra_ch7" hidden = yes duration = -1 } 
+			}
+			if = { 
+			limit = { has_ruler = ".V©ã" } 
+				add_ruler_modifier = { name = "ra_ch5" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "cÑSS" } 
+				add_ruler_modifier = { name = "ra_ch3" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "ÅàÕu" } 
+				add_ruler_modifier = { name = "ra_ch7" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "TRçá" } 
+				add_ruler_modifier = { name = "ra_ch1" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "˘fÕd" } 
+				add_ruler_modifier = { name = "ra_ch6" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "Åà=g" } 
+				add_ruler_modifier = { name = "ra_ch5" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "lQYR“t" } 
+				add_ruler_modifier = { name = "ra_ch8" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "T^" } 
+				add_ruler_modifier = { name = "ra_ch9" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "RY" } 
+				add_ruler_modifier = { name = "ra_ch1" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "Rhà" } 
+				add_ruler_modifier = { name = "ra_ch7" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "YRVr" } 
+				add_ruler_modifier = { name = "ra_ch6" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "1g&r" } 
+				add_ruler_modifier = { name = "ra_ch5" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "vñ&å" } 
+				add_ruler_modifier = { name = "ra_ch1" hidden = yes duration = -1 } 
+			}
+			if = { 
+			limit = { has_ruler = "löåÅ" } 
+				add_ruler_modifier = { name = "ra_ch6" hidden = yes duration = -1 } 
+			}
+			if = { 
+			limit = { has_ruler = "%NãvNÜ" } 
+				add_ruler_modifier = { name = "ra_ch3" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "Ng¨P" } 
+				add_ruler_modifier = { name = "ra_ch3" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "Ìêjl" } 
+				add_ruler_modifier = { name = "ra_ch3"  hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "YRCg" } 
+				add_ruler_modifier = { name = "ra_ch8" hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = ".V“â" } 
+				add_ruler_modifier = { name = "ra_ch9"  hidden = yes duration = -1 } 
+			}
+
+			if = { 
+			limit = { has_ruler = "˘fN" } 
+				add_ruler_modifier = { name = "ra_ch2"  hidden = yes duration = -1 } 
+			}
+			if = { 
+			limit = { has_ruler = "R¿y" } 
+				add_ruler_modifier = { name = "ra_ch6"  hidden = yes duration = -1 } 
+			}
+			if = { 
+			limit = { has_ruler = "RÑ^" } 
+				add_ruler_modifier = { name = "ra_ch6"  hidden = yes duration = -1 } 
+			}			
+			if = { 
+			limit = { has_ruler = "Rüp" } 
+				add_ruler_modifier = { name = "ra_ch8"  hidden = yes duration = -1 } 
+			}	
+			if = { 
+			limit = { has_ruler = "ROS" } 
+				add_ruler_modifier = { name = "ra_ch4"  hidden = yes duration = -1 } 
+			}
+			if = { 
+			limit = { has_ruler = "RèR" } 
+				add_ruler_modifier = { name = "ra_ch5"  hidden = yes duration = -1 } 
+			}	
+			if = { 
+			limit = { has_ruler = "€k˝lN" } 
+				add_ruler_modifier = { name = "ra_ch6"  hidden = yes duration = -1 } 
+			}
+			if = { 
+			limit = { has_ruler = "ìêSs^" } 
+				add_ruler_modifier = { name = "ra_ch2"  hidden = yes duration = -1 } 
+			}
+			if = { 			
+			limit = { has_ruler = "ml˝ll" } 
+				add_ruler_modifier = { name = "ra_ch2"  hidden = yes duration = -1 } 
+			}	
+			if = { 						
+			limit = { has_ruler = "ãÑÀNÛw" } 
+				add_ruler_modifier = { name = "ra_ch2" hidden = yes duration = -1 } 
+			}
+			if = { 						
+			limit = { has_ruler = "!ÖÒÇáe" } 
+				add_ruler_modifier = { name = "ra_ch8"  hidden = yes duration = -1 } 
+			}
+			if = { 						
+			limit = { has_ruler = "NgˇR" } 
+				add_ruler_modifier = { name = "ra_ch5"  hidden = yes duration = -1 } 
+			}
+			if = { 						
+			limit = { has_ruler = "NgøR" } 
+				add_ruler_modifier = { name = "ra_ch3"  hidden = yes duration = -1 } 
+			}			
+		if = { 
+			limit = {
+				 
+					NOT = { has_ruler = "ÅhéQ" }   
+					NOT = { has_ruler = "R	q" } 
+					NOT = { has_ruler = ".V©ã" } 
+					NOT = { has_ruler = "cÑSS" } 
+					NOT = { has_ruler = "ÅàÕu" } 
+					NOT = { has_ruler = "TRçá" } 
+					NOT = { has_ruler = "˘fÕd" } 
+					NOT = { has_ruler = "Åà=g" } 
+					NOT = { has_ruler = "lQYR“t" } 
+					NOT = { has_ruler = "T^" } 
+					NOT = { has_ruler = "RY" } 
+					NOT = { has_ruler = "Rhà" } 
+					NOT = { has_ruler = "YRVr" } 
+					NOT = { has_ruler = "1g&r" } 
+					NOT = { has_ruler = "vñ&å" } 
+					NOT = { has_ruler = "löåÅ" } 
+					NOT = { has_ruler = "%NãvNÜ" } 				
+					NOT = { has_ruler = "Ng¨P" } 					
+					NOT = { has_ruler = "Ìêjl" } 	
+					NOT = { has_ruler = "YRCg" } 					
+					NOT = { has_ruler = ".V“â" } 
+					NOT = { has_ruler = "˘fN" } 
+					NOT = { has_ruler = "R¿y" } 
+					NOT = { has_ruler = "RÑ^" } 
+					NOT = { has_ruler = "Rüp" } 
+					NOT = { has_ruler = "ROS" } 
+					NOT = { has_ruler = "RèR" } 
+					NOT = { has_ruler = "€k˝lN" } 
+					NOT = { has_ruler = "ìêSs^" } 
+					NOT = { has_ruler = "ml˝ll" } 
+					NOT = { has_ruler = "ãÑÀNÛw" }
+					NOT = { has_ruler = "NgˇR" } 
+					NOT = { has_ruler = "NgøR" }					
+			}
+
+			random_list = {
+				25 = {
+				#ÖR√V¡NöS
+					add_ruler_modifier = { name = "ra_ch1"  hidden = yes duration = -1 }
+				}
+				25 = {
+				#:gOe«è∫N
+					add_ruler_modifier = { name = "ra_ch2"  hidden = yes duration = -1 } 
+				}
+				25 = {
+				#'`<h¥fPÜ
+					add_ruler_modifier = { name = "ra_ch3"  hidden = yes duration = -1 } 
+				}
+				25 = {
+				#Êa1V∆wS
+					add_ruler_modifier = { name = "ra_ch4"  hidden = yes duration = -1 } 
+				}		
+				25 = {
+				#*ç˛V´NPN
+					add_ruler_modifier = { name = "ra_ch5" hidden = yes duration = -1 }
+				}
+				25 = {
+				#ƒñ√VÓX◊V
+					add_ruler_modifier = { name = "ra_ch6" hidden = yes duration = -1 } 
+				}
+				25 = {
+				#O‘g·R≠e
+					add_ruler_modifier = { name = "ra_ch7" hidden = yes duration = -1 } 
+				}
+				25 = {
+				#(u∫N=UMb
+					add_ruler_modifier = { name = "ra_ch8" hidden = yes duration = -1 } 
+				}	
+				25 = {
+				#≤Q®RÅúÀÉ
+					add_ruler_modifier = { name = "ra_ch9" hidden = yes duration = -1 } 
+				}				
+			}
+		}
+			random_list = {
+				10 = {
+					add_ruler_modifier = { name = "rb_ch1"  hidden = yes duration = -1 }
+				}
+				10 = {
+					add_ruler_modifier = { name = "rb_ch2"  hidden = yes duration = -1 } 
+				}
+				10 = {
+					add_ruler_modifier = { name = "rb_ch3"  hidden = yes duration = -1 } 
+				}
+				10 = {
+					add_ruler_modifier = { name = "rb_ch4"  hidden = yes duration = -1 } 
+				}		
+				10 = {
+					add_ruler_modifier = { name = "rb_ch5"  hidden = yes duration = -1 }
+				}
+				10 = {
+					add_ruler_modifier = { name = "rb_ch6"  hidden = yes duration = -1 } 
+				}
+				10 = {
+					add_ruler_modifier = { name = "rb_ch7"  hidden = yes duration = -1 } 
+				}
+				10 = {
+					add_ruler_modifier = { name = "rb_ch8"  hidden = yes duration = -1 } 
+				}						
+			}
+	}	
+}
+

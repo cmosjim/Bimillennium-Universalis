@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = xiedaoyun_advisor_come
+
+#fkSĞgÍyagöNNúQ°s
+#id = 1 : xiedaoyun : 0ŒSë— 0›Q^0
+
+country_event = {
+	id = xiedaoyun_advisor_come.1
+	title = "xiedaoyun_advisor_come.1.t"
+	desc = "xiedaoyun_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 330	
+		NOT = { is_year = 370 }
+		OR = {
+			AND = {
+				exists = JN1
+				tag = JN1
+			}
+			AND = {
+				NOT = { exists = JN1 }
+				owns = 3168
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = xiedaoyun_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = xiedaoyun
+				name = "0ŒSë— 0›Q^0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "0ŒSë— 0›Q^0"
+				fire = 2
+				shock = 2
+				manuever = 3
+				siege = 3
+			}
+		}
+	}
+}
+

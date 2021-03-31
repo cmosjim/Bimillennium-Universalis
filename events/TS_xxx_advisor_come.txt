@@ -1,0 +1,161 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = xxx_advisor_come
+
+#fkSĞgÍyagöNNúQ°s
+#id = 1 : chiang_kai_shek : ‹„ËNów0øSäN˜R0
+#id = 2 : he_yingqin : UO”^¦”0›Q˜R0
+#id = 3 : yue_fei : ³SŞ˜0fkS0
+country_event = {
+	id = xxx_advisor_come.1
+	title = "xxx_advisor_come.1.t"
+	desc = "xxx_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	#:N†NMQßu»løv²QzZP†Ncheck ruler¨RjO
+	trigger = {
+		OR = {
+		
+			AND = {
+				tag = ROC
+				is_year = 1932
+				NOT = { is_year = 1943 }
+				has_ruler = "—gîh"
+				NOT = { has_country_flag = anti_general_chiang_kai_shek }
+			}
+			
+			AND = {
+				tag = GJ1
+				is_year = 1924
+				NOT = { is_year = 1932 }
+				NOT = { has_ruler = "‹„ËNów" }
+			}
+		}	
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	option = {
+		name = xxx_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = chiang_kai_shek
+				name = "‹„ËNów0øSäN˜R0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "‹„ËNów0øSäN˜R0"
+				fire = 8
+				shock = 7
+				manuever = 4
+				siege = 4
+			}
+		}
+	}
+}
+#################################################
+country_event = {
+	id = xxx_advisor_come.2
+	title = "xxx_advisor_come.NAME2"
+	desc = "xxx_advisor_come.DESC2"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	#úQ°söeô•
+	
+	trigger = {
+		OR = {
+			tag = GJ1
+			tag = ROC
+			tag = TWN
+		}	
+			is_year = 1920
+			NOT = { is_year = 1974 }
+			NOT = { has_ruler = "UO”^¦”" }
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	option = {
+		name = xxx_advisor_come.OPTA2
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = he_yingqin
+				name = "UO”^¦”0›Q˜R0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "UO”^¦”0›Q˜R0"
+				fire = 7
+				shock = 7
+				manuever = 2
+				siege = 5
+			}
+		}
+	}
+}
+#################################################
+#country_event = {
+#	id = xxx_advisor_come.3
+#	title = "xxx_advisor_come.NAME3"
+#	desc = "xxx_advisor_come.DESC3"
+#	picture = NEW_ADVISOR_eventPicture
+#	
+#	fire_only_once = yes
+#	hidden = yes
+#	
+#	#úQ°söeô•
+#	
+#	trigger = {
+#				is_year = 1117
+#				NOT = { is_year = 1142 }
+#				owns = 683
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 15
+#	}
+#	option = {
+#		name = xxx_advisor_come.OPTA3
+#		if = { 
+#		limit = { ai = no }
+#			define_advisor = {
+#				type = yue_fei
+#				name = "³SŞ˜0fkS0"
+#				discount = yes	
+#				skill = 3
+#			}
+#		}
+#		if = { 
+#		limit = { ai = yes }
+#			define_general = {
+#				name = "³SŞ˜0fkS0"
+#				fire = 10
+#				shock = 11
+#				manuever = 3
+#				siege = 3
+#			}
+#		}
+#	}
+#}

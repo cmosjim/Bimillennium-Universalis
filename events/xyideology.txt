@@ -1,0 +1,1076 @@
+#2020-10-17 modify change_tag 後的體制
+namespace = xy_ideology
+
+country_event = {
+	id = xy_ideology.1
+	title = "xy_ideology.NAME1"
+	desc = "xy_ideology.DESC1"
+	picture = GERMAN_EMPIRE_eventPicture
+	trigger = {
+		OR = {
+			government = monarchy
+			government = republic
+		}
+		NOT = {
+			has_country_flag = xuanzeyishixingtai
+		}
+		NOT = {
+			religion_group = ideology
+		}
+		has_institution = industrialization
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		set_country_flag = xuanzeyishixingtai
+	}
+
+	option = {
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.05
+				government = monarchy
+			}
+			modifier = {
+				factor = 1000
+				capital_scope = {
+					OR = {
+						continent = north_america
+						continent = south_america
+						continent = oceania
+						continent = new_world
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				NOT = {
+					num_of_cities = 2
+				}
+				is_subject = no
+			}
+		}
+		name = "xy_ideology.OPTA1"
+		change_religion = liberalism
+		capital_scope = {
+			change_religion = liberalism
+		}
+	}
+	option = {
+		name = "xy_ideology.OPTB1"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				government = monarchy
+				has_reform = english_monarchy
+			}
+			modifier = {
+				factor = 0.1
+				tag = FRA
+			}
+		}
+		trigger = {
+			OR = {
+				government = monarchy
+				AND = {
+					government = republic
+					has_reform = presidential_despot_reform
+				}
+			}
+		}
+		change_religion = conservatism
+		capital_scope = {
+			change_religion = conservatism
+		}
+		if = {
+			limit = {
+				government = republic
+				has_reform = presidential_despot_reform
+			}
+			change_government = monarchy
+		}
+	}
+	option = {
+		name = "xy_ideology.OPTC1"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1000
+				religion_group = muslim
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					religion_group = muslim
+				}
+				capital_scope = {
+					continent = europe
+				}
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					AND = {
+						government_rank = 3
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 100
+								culture_group = ROOT
+								is_state = yes
+							}
+						}
+					}
+					AND = {
+						NOT = {
+							government_rank = 3
+						}
+						government_rank = 2
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 50
+								culture_group = ROOT
+								is_state = yes
+							}
+						}
+					}
+					AND = {
+						NOT = {
+							government_rank = 2
+						}
+						government_rank = 1
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 25
+								culture_group = ROOT
+								is_state = yes
+							}
+						}
+					}
+				}
+				any_owned_province = {
+					NOT = {
+						culture_group = ROOT
+					}
+					ROOT = {
+						dominant_culture = PREV
+					}
+				}
+			}
+			modifier = {
+				factor = 0.1
+				religion_group = eastern
+			}
+			modifier = {
+				factor = 0.1
+				religion_group = christian
+			}
+		}
+	}
+}
+#信仰是自由主義 但是政體
+country_event = {
+	id = xy_ideology.2
+	title = "xy_ideology.NAME2"
+	desc = "xy_ideology.DESC2"
+	picture = GERMAN_EMPIRE_eventPicture
+	trigger = {
+		is_subject = no
+		religion = liberalism
+		NOT = {
+			has_reform = modern_chinese_warlord_reform
+		}
+		NOT = {
+			has_reform = ancient_chinese_togofu_reform
+		}
+		NOT = {
+			has_reform = ancient_chinese_warlord_reform
+		}
+		NOT = {
+			has_reform = chinese_feudatory_reform
+		}
+		NOT = {
+			has_reform = chinese_parliament_monarchy
+		}
+		NOT = {
+			has_reform = revolutionary_republic_reform 
+		}	
+		OR = {
+			AND = {
+				NOT = {
+					government = republic
+				}
+				NOT = {
+					has_reform = english_monarchy
+				}
+			}
+			NOT = {
+				OR = {
+					has_reform = democracy_reform
+					has_reform = oligarchic_reform
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.3
+				government = monarchy
+			}
+		}
+		name = "xy_ideology.OPTA2"
+		change_government = republic
+		add_government_reform = multi_party_system
+		add_government_reform = democracy_reform
+	}
+	option = {
+		name = "xy_ideology.OPTB2"
+		ai_chance = {
+			factor = 50
+		}
+		trigger = { NOT = { government = republic } }
+		change_government = monarchy
+		add_government_reform = english_monarchy
+		add_government_reform = multi_party_system
+		add_government_reform = democracy_reform
+	}
+
+}
+
+country_event = {
+	id = xy_ideology.3
+	title = "xy_ideology.NAME3"
+	desc = "xy_ideology.DESC3"
+	picture = GERMAN_EMPIRE_eventPicture
+
+	trigger = {
+		is_subject = no
+		NOT = {
+			has_reform = modern_chinese_warlord_reform
+		}
+		NOT = {
+			has_reform = ancient_chinese_togofu_reform
+		}
+		NOT = {
+			has_reform = ancient_chinese_warlord_reform
+		}
+		NOT = {
+			has_reform = chinese_feudatory_reform
+		}
+		NOT =  {
+			has_reform = chinese_parliament_monarchy
+		}
+		NOT = {
+			has_reform = revolutionary_republic_reform 
+		}		
+		OR = {
+			NOT = {
+				government = monarchy
+			}
+			NOT = {
+				OR = {
+					has_reform = military_government
+					has_reform = oligarchic_reform
+				}
+			}
+		}
+		religion = conservatism
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_ideology.OPTA3"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.1
+				total_development = 2000
+			}
+		}
+		change_government = monarchy
+		add_government_reform = military_government
+	}
+	option = {
+		ai_chance = {
+			factor = 150
+			modifier = {
+				factor = 0
+				OR = {
+					tag = PRU
+					tag = GER
+					culture_group = japanese_g
+				}
+			}
+		}
+		name = "xy_ideology.OPTB3"
+		change_government = monarchy
+		add_government_reform = oligarchic_reform
+	}
+}
+
+country_event = {
+	id = xy_ideology.4
+	title = "xy_ideology.NAME4"
+	desc = "xy_ideology.DESC4"
+	picture = GERMAN_EMPIRE_eventPicture
+
+	trigger = {
+		religion = communism
+		NOT = {
+			has_reform = communist_government
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "xy_ideology.OPTA4"
+		if = {
+			limit = {
+				government = monarchy
+				NOT = {
+					has_reform = modern_chinese_warlord_reform
+				}
+			}
+			kill_heir = yes
+			kill_ruler = yes
+		}
+		if = {
+			limit = {
+				NOT = {
+					government = republic
+				}
+				NOT = {
+					has_reform = modern_chinese_warlord_reform
+				}
+			}
+			change_government = republic
+		}
+		add_government_reform = single_party_system
+		add_government_reform = communist_government
+	}
+}
+
+country_event = {
+	id = xy_ideology.5
+	title = "xy_ideology.NAME5"
+	desc = "xy_ideology.DESC5"
+	picture = GERMAN_EMPIRE_eventPicture
+
+	trigger = {
+		religion = fascism
+		NOT = {
+			has_reform = fascist_government
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "xy_ideology.OPTA5"
+		if = {
+			limit = {
+				government = republic
+			}
+			add_government_reform = single_party_system
+			add_government_reform = fascist_government
+		}
+		else = {
+			if = {
+				limit = {
+					government = monarchy
+				}
+				add_government_reform = authoritarian_rule
+				add_government_reform = fascist_government
+			}
+			else = {
+				change_government = republic
+				add_government_reform = single_party_system
+				add_government_reform = fascist_government
+			}
+		}
+	}
+}
+
+province_event = {
+	id = xy_ideology.6
+	title = "xy_ideology.NAME6"
+	desc = "xy_ideology.DESC6"
+	picture = GERMAN_EMPIRE_eventPicture
+	trigger = {
+		NOT = {
+			religion = liberalism
+		}
+		owner = {
+			religion_group = ideology
+			OR = {
+				war_exhaustion = 3
+				num_of_loans = 2
+				NOT = {
+					stability = 0
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			owner = {
+				war_exhaustion = 5
+			}
+			factor = 0.8
+		}
+
+		modifier = {
+			factor = 0.5
+			owner = {
+				war_exhaustion = 10
+			}
+		}
+
+		modifier = {
+			factor = 0.5
+			owner = {
+				num_of_loans = 5
+			}
+		}
+		modifier = {
+			factor = 5
+			owner = {
+				culture_group = ROOT
+			}
+		}
+		modifier = {
+			factor = 5
+			religion = conservatism
+		}
+		modifier = {
+			factor = 10
+			religion = communism
+		}
+		modifier = {
+			factor = 100
+			owner = { religion = communism }
+		}
+		modifier = {
+			factor = 10
+			religion = fascism
+		}
+		modifier = {
+			factor = 100
+			owner = { religion = fascism }
+		}
+		modifier = {
+			factor = 0.5
+			has_estate = estate_burghers
+		}
+		modifier = {
+			factor = 0.8
+			unrest = 5
+		}
+	}
+	option = {
+		name = "xy_ideology.OPTA6"
+		change_religion = liberalism
+
+	}
+}
+
+province_event = {
+	id = xy_ideology.7
+	title = "xy_ideology.NAME7"
+	desc = "xy_ideology.DESC7"
+	picture = GERMAN_EMPIRE_eventPicture
+	trigger = {
+		NOT = {
+			religion = liberalism
+		}
+		owner = {
+			has_institution = nationalism_institution
+		}
+		owner = {
+			OR = {
+				religion = conservatism
+				religion = liberalism
+			}
+			OR = {
+				war_exhaustion = 3
+				num_of_loans = 2
+				NOT = {
+					stability = 0
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 3600
+		modifier = {
+			owner = {
+				war_exhaustion = 5
+			}
+			factor = 0.8
+		}
+
+		modifier = {
+			factor = 0.5
+			owner = {
+				war_exhaustion = 10
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				corruption = 10
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				num_of_loans = 5
+			}
+		}
+		modifier = {
+			factor = 4
+			religion = conservatism
+		}
+		modifier = {
+			factor = 2
+			religion = liberalism
+		}
+		modifier = {
+			factor = 2
+			has_estate = yes
+		}
+		modifier = {
+			factor = 10
+			religion = fascism
+		}
+		modifier = {
+			factor = 5
+			owner = {
+				religion = liberalism
+			}
+		}
+		modifier = {
+			factor = 0.5
+			is_year = 1875
+		}
+		modifier = {
+			factor = 0.5
+			is_year = 1900
+		}
+		modifier = {
+			factor = 0.5
+			unrest = 0
+		}
+	}
+	option = {
+		name = "xy_ideology.OPTA7"
+		change_religion = communism
+		spawn_rebels = {
+			type = communism_rebels
+			size = 3
+		}
+	}
+}
+
+province_event = {
+	id = xy_ideology.8
+	title = "xy_ideology.NAME8"
+	desc = "xy_ideology.DESC8"
+	picture = GERMAN_EMPIRE_eventPicture
+	trigger = {
+		owner = {
+			has_institution = nationalism_institution
+		}
+		NOT = {
+			religion = fascism
+		}
+		owner = {
+			religion_group = ideology
+			culture_group = ROOT
+			OR = {
+				any_province = {
+					is_core = PREV
+					NOT = {
+						owned_by = PREV
+					}
+					owner = {
+						NOT = {
+							is_subject_of = ROOT
+						}
+					}
+				}
+				has_reform = military_government
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2000
+		modifier = {
+			revanchism = 10
+			factor = 0.8
+		}
+        modifier = {
+			owner = { religion = communism }
+			factor = 2000
+		}
+		modifier = {
+			owner = { religion = communism }
+			factor = 2000
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				num_of_loans = 3
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = {
+					total_development = 1000
+				}
+			}
+		}
+	}
+	option = {
+		name = "xy_ideology.OPTA8"
+		change_religion = fascism
+
+	}
+}
+
+province_event = {
+	id = xy_ideology.9
+	title = "xy_ideology.NAME9"
+	desc = "xy_ideology.DESC9"
+	picture = GERMAN_EMPIRE_eventPicture
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = guanbibaoshoutishi
+			}
+		}
+		NOT = {
+			religion = conservatism
+		}
+		owner = {
+			OR = {
+				religion = conservatism
+				religion = liberalism
+			}
+			has_country_modifier = baoshouzhuyijueqi
+		}
+	}
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			owner = {
+				religion = liberalism
+			}
+			factor = 3
+		}
+		modifier = {
+			owner = {
+				religion = communism
+			}
+			factor = 300
+		}
+		modifier = {
+			owner = {
+				religion = fascism
+			}
+			factor = 300
+		}
+		modifier = {
+			religion = liberalism
+			factor = 2
+		}
+		modifier = {
+			owner = {
+				culture_group = ROOT
+			}
+			factor = 0.5
+		}
+		modifier = {
+			religion = communism
+			factor = 8
+		}
+		modifier = {
+			religion = fascism
+			factor = 8
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				religion = conservatism
+			}
+			is_great_power = yes
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = conservatism
+			}
+			great_power_rank = 3
+		}
+	}
+	option = {
+		name = "xy_ideology.OPTA9"
+		change_religion = conservatism
+
+	}
+}
+province_event = {
+	id = xy_ideology.99
+	title = "xy_ideology.NAME9"
+	desc = "xy_ideology.DESC9"
+	picture = GERMAN_EMPIRE_eventPicture
+	hidden = yes
+	trigger = {
+		owner = {
+			has_country_flag = guanbibaoshoutishi
+		}
+		NOT = {
+			religion = conservatism
+		}
+		owner = {
+			OR = {
+				religion = conservatism
+				religion = liberalism
+			}
+			has_country_modifier = baoshouzhuyijueqi
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			owner = {
+				religion = liberalism
+			}
+			factor = 3
+		}
+		modifier = {
+			religion = liberalism
+			factor = 8
+		}
+		modifier = {
+			owner = {
+				culture_group = ROOT
+			}
+			factor = 0.5
+		}
+		modifier = {
+			religion = communism
+			factor = 8
+		}
+		modifier = {
+			owner = {
+				religion = communism
+			}
+			factor = 8
+		}
+		modifier = {
+			religion = fascism
+			factor = 8
+		}
+		modifier = {
+			owner = {
+				religion = fascism
+			}
+			factor = 8
+		}
+		modifier = {
+			factor = 0.8
+			owner = {
+				religion = conservatism
+			}
+			is_great_power = yes
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				religion = conservatism
+			}
+			great_power_rank = 3
+		}
+	}
+	option = {
+		name = "xy_ideology.OPTA9"
+		change_religion = conservatism
+
+	}
+}
+# 中国意识形态换tag
+country_event = {
+	id = xy_ideology.10
+	title = "xy_ideology.NAME10"
+	desc = "xy_ideology.DESC10"
+	picture = GERMAN_EMPIRE_eventPicture
+
+	trigger = {
+		NOT = {
+			has_reform = modern_chinese_warlord_reform
+		}
+		NOT = {
+			has_reform = ancient_chinese_togofu_reform
+		}
+		NOT = {
+			has_reform = ancient_chinese_warlord_reform
+		}
+		NOT = {
+			has_reform = chinese_feudatory_reform
+		}
+		NOT = {
+			has_reform = chinese_parliament_monarchy
+		}
+		NOT = {
+			has_reform = revolutionary_republic_reform 
+		}		
+		NOT = {
+			tag = BNN
+		}
+		NOT = {
+			tag = AK1
+		}
+		NOT = { 
+			has_country_flag = flg_CHINESE_EMPIRE_TAG
+		}	
+		culture_group = east_asian
+		government_rank = 3
+		OR = {
+			religion = conservatism
+			religion = fascism
+		}
+		check_chinese_empire_not_exists = yes 
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_ideology.OPTA10"
+		country_event = {
+			id = rab_modern_empire_events.1
+		}
+
+	}
+}
+country_event = {
+	id = xy_ideology.11
+	title = "xy_ideology.NAME11"
+	desc = "xy_ideology.DESC11"
+	picture = GERMAN_EMPIRE_eventPicture
+	trigger = {
+		NOT = {
+			has_reform = modern_chinese_warlord_reform
+		}
+		NOT = {
+			has_reform = ancient_chinese_togofu_reform
+		}
+		NOT = {
+			has_reform = ancient_chinese_warlord_reform
+		}
+		NOT = {
+			has_reform = chinese_feudatory_reform
+		}
+		NOT = {
+			has_reform = revolutionary_republic_reform 
+		}		
+		NOT = {
+			tag = BNN
+		}
+		NOT = {
+			tag = CHN
+		}
+		culture_group = east_asian
+		government_rank = 3
+		religion = communism
+		NOT = {
+			exists = CHN
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_ideology.OPTA11"
+		change_tag = CHN
+		swap_free_idea_group = yes
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = {
+	id = xy_ideology.12
+	title = "xy_ideology.NAME12"
+	desc = "xy_ideology.DESC12"
+	picture = GERMAN_EMPIRE_eventPicture
+	trigger = {
+		NOT = {
+			has_reform = modern_chinese_warlord_reform
+		}
+		NOT = {
+			has_reform = ancient_chinese_togofu_reform
+		}
+		NOT = {
+			has_reform = ancient_chinese_warlord_reform
+		}
+		NOT = {
+			has_reform = chinese_feudatory_reform
+		}
+		NOT = {
+			has_reform = revolutionary_republic_reform 
+		}		
+		NOT = {
+			tag = BNN
+		}
+		NOT = {
+			tag = ROC
+		}
+		NOT = {
+			tag = AK2
+		}
+		culture_group = east_asian
+		government_rank = 3
+		religion = liberalism
+		NOT = {
+			exists = AK2
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_ideology.OPTA12"
+		change_tag = AK2
+		swap_free_idea_group = yes
+		swap_non_generic_missions = yes
+		add_government_reform = parliamentary_reform
+		add_government_reform = universal_suffrage_reform
+		add_government_reform = reinforce_republican_values_reform
+		add_government_reform = multi_party_system
+		add_government_reform = democracy_reform
+		add_government_reform = ceremonial_president
+		set_legacy_government = presidental_republic		
+	}
+}
+
+# 俄罗斯
+country_event = {
+	id = xy_ideology.13
+	title = "xy_ideology.NAME13"
+	desc = "xy_ideology.DESC13"
+	picture = GERMAN_EMPIRE_eventPicture
+	trigger = {
+		NOT = {
+			tag = SOV
+		}
+		culture_group = east_slavic
+		government_rank = 3
+		religion = communism
+		NOT = {
+			exists = SOV
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_ideology.OPTA13"
+		change_tag = SOV
+		swap_free_idea_group = yes
+		swap_non_generic_missions = yes
+	}
+}
+country_event = {
+	id = xy_ideology.14
+	title = "xy_ideology.NAME14"
+	desc = "xy_ideology.DESC14"
+	picture = GERMAN_EMPIRE_eventPicture
+	trigger = {
+		tag = SOV
+		culture_group = east_slavic
+		NOT = {
+			religion = communism
+		}
+		NOT = {
+			exists = RUS
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_ideology.OPTA14"
+		change_tag = RUS
+		swap_free_idea_group = yes
+		swap_non_generic_missions = yes
+	}
+}
+
+# 德国
+country_event = {
+	id = xy_ideology.15
+	title = "xy_ideology.NAME15"
+	desc = "xy_ideology.DESC15"
+	picture = GERMAN_EMPIRE_eventPicture
+	trigger = {
+		tag = GER
+		culture_group = germanic
+		government_rank = 3
+		religion = fascism
+		NOT = {
+			exists = NZ2
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_ideology.OPTA15"
+		change_tag = NZ2
+		swap_free_idea_group = yes
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = {
+	id = xy_ideology.16
+	title = "xy_ideology.NAME16"
+	desc = "xy_ideology.DESC16"
+	picture = GERMAN_EMPIRE_eventPicture
+
+	trigger = {
+		tag = NZ2
+		culture_group = germanic
+		government_rank = 3
+		NOT = {
+			religion = fascism
+		}
+		NOT = {
+			exists = GER
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "xy_ideology.OPTA16"
+		change_tag = GER
+		swap_free_idea_group = yes
+		swap_non_generic_missions = yes
+	}
+}

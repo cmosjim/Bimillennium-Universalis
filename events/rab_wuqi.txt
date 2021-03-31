@@ -1,0 +1,477 @@
+
+#
+#num_of_wenhuan 文宦值 : 此值越大代表文官升任 反之為宦官
+#num_of_wuqizhi 武戚值 : 此值越大代表武官升任 反之為外戚
+#
+############################################
+#
+# 武戚值
+#
+############################################
+namespace = rab_wuqi
+#请在开局直接触发一次该事件
+country_event = {
+	id = rab_wuqi.1
+	title = "rab_wuqi.NAME1"
+	desc = "rab_wuqi.DESC1"
+	picture = wu_partydesc_eventPicture
+	trigger = {
+		has_reform = celestial_empire
+		NOT = { has_country_modifier = wudaigeju }
+		NOT = { has_country_flag = wuqizhi1  }
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = num_of_wuqizhi
+				value = 50
+			}
+			set_variable = {
+				which = qi_value
+				value = 50
+			}			
+			if = {
+				limit = {
+					is_year = 976 
+					NOT = { is_year = 1279 } 
+					tag = SNG 
+				}
+				set_variable = {
+					which = num_of_wuqizhi
+					value = 40
+				}
+				set_variable = {
+					which = qi_value
+					value = 60
+				}				
+			}			
+		}		
+	}
+	option = {
+	name = "rab_wuqi.OPTA1"
+		custom_tooltip = tp_st_of_wuqizhi
+		set_country_flag = wuqizhi1				
+	}
+}
+#查看武戚值wuqi
+country_event = {
+	id = rab_wuqi.2
+	title = "rab_wuqi.NAME2"
+	#desc = "rab_wuqi.DESC2"
+	
+	picture = {
+		trigger = {
+
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 6
+				}				
+			}	
+		}
+		picture = wuqi_process_0_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 6
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 16
+				}				
+			}	
+		}
+		picture = wuqi_process_10_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 16
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 26
+				}				
+			}	
+		}
+		picture = wuqi_process_20_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 26
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 36
+				}				
+			}	
+		}
+		picture = wuqi_process_30_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 36
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 46
+				}				
+			}	
+		}
+		picture = wuqi_process_40_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 46
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 56
+				}				
+			}	
+		}
+		picture = wuqi_process_50_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 56
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 66
+				}				
+			}	
+		}
+		picture = wuqi_process_60_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 66
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 76
+				}				
+			}	
+		}
+		picture = wuqi_process_70_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 76
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 86
+				}				
+			}	
+		}
+		picture = wuqi_process_80_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 86
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 96
+				}				
+			}	
+		}
+		picture = wuqi_process_90_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 96
+			}
+		}
+		picture = wuqi_process_100_eventPicture 
+	}
+	#desc start
+	desc = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}			
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 50
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 60
+				}				
+			}
+		}
+		desc = "rab_wuqi.DESC2a"
+	}
+	desc = {
+		trigger = { 
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}		
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 60
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 90
+				}				
+			}
+		}
+		desc = "rab_wuqi.DESC2b"
+	}	
+	desc = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}			
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 90
+			}
+		}
+		desc = "rab_wuqi.DESC2c"
+	}	
+	desc = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}			
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 40
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 50
+				}				
+			}
+		}
+		desc = "rab_wuqi.DESC2d"
+	}	
+	desc = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}			
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 10
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 40
+				}				
+			}
+		}
+		desc = "rab_wuqi.DESC2e"
+	}	
+	desc = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 10
+				}
+			}
+		}
+		desc = "rab_wuqi.DESC2f"
+	}
+####################################
+	desc = {
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 50
+				}
+			}			
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 50
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 60
+				}				
+			}
+		}
+		desc = "rab_wuqi.DESC2g"
+		
+	}
+	desc = {
+		trigger = { 
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 50
+				}
+			}			
+		
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 60
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 90
+				}				
+			}
+		}
+		desc = "rab_wuqi.DESC2h"
+	}	
+	desc = {
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 50
+				}
+			}			
+		
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 90
+			}
+		}
+		desc = "rab_wuqi.DESC2i"
+	}	
+	desc = {
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 50
+				}
+			}			
+			
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 40
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 50
+				}				
+			}
+		}
+		desc = "rab_wuqi.DESC2j"
+	}	
+	desc = {
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 50
+				}
+			}			
+		
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 10
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 40
+				}				
+			}
+		}
+		desc = "rab_wuqi.DESC2k"
+	}	
+	desc = {
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 50
+				}
+			}			
+
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 10
+				}
+			}
+		}
+		desc = "rab_wuqi.DESC2l"
+	}
+	is_triggered_only = yes
+	#leave
+	option = {
+		name = "rab_wuqi.OPTA2"
+		clr_country_flag = wenwuzhi2
+	}
+}	
+ 
+ #checkwwz_title: "查看文武值"
+ #checkwwz_desc: "可以通?此??查看目前?有的文武值"
+ #wuqi55_59: "文武值55-59影?"
+ #wuqi60_64: "文武值60-64影?"
+ #wuqi65_69: "文武值65-69影?"
+ #wuqi70_74: "文武值70-74影?"
+ #wuqi75_79: "文武值75-79影?"
+ #wuqi80_84: "文武值80-84影?"
+ #wuqi85_89: "文武值85-89影?"
+ #wuqi90_94: "文武值90-94影?"
+ #wuqi95_100: "文武值96以上影?"
+ #num_of_wuqizhi: "文武值"
+ #wuqi41-45: "文武值41-45影?"
+ #wuqi36-40: "文武值36-40影?"
+ #wuqi31-35: "文武值31-35影?"
+ #wuqi26-30: "文武值26-30影?"
+ #wuqi21-25: "文武值21-25影?"
+ #wuqi16-20: "文武值16-20影?"
+ #wuqi11-15: "文武值11-15影?"
+ #wuqi6-10: "文武值6-10影?"
+ #wuqi0-5: "文武值低于5影?"

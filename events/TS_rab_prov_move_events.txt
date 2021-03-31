@@ -1,0 +1,3776 @@
+#################################
+#This sections define outoff general 
+#move to another provinces .
+#
+#################################
+namespace = rab_prov_move
+
+province_event = {
+	id = rab_prov_move.1
+	title = "rab_prov_move.NAME1"
+	desc = "rab_prov_move.DESC1"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	hidden = yes
+		
+	trigger = {
+		OR = {
+				has_province_modifier = pov_ban_chao
+				has_province_modifier = pov_ban_zho
+				has_province_modifier = pov_cai_lun
+				has_province_modifier = pov_cai_yong
+				has_province_modifier = pov_cao_teng
+				has_province_modifier = pov_chen_fan
+				has_province_modifier = pov_cheng_pu
+				has_province_modifier = pov_cheng_yu
+				has_province_modifier = pov_chou_lan
+				has_province_modifier = pov_dan_chao
+				has_province_modifier = pov_deng_rang
+				has_province_modifier = pov_deng_sui
+				has_province_modifier = pov_deng_xun
+				has_province_modifier = pov_deng_zhi
+				has_province_modifier = pov_diao_chan
+				has_province_modifier = pov_dou_xian
+				has_province_modifier = pov_fon_ho
+				has_province_modifier = pov_gao_shun
+				has_province_modifier = pov_geng_bing
+				has_province_modifier = pov_guan_hai
+				has_province_modifier = pov_guan_yu
+				has_province_modifier = pov_he_chang
+				has_province_modifier = pov_hoang_chung
+				has_province_modifier = pov_hu_guang
+				has_province_modifier = pov_huang_fu_gui
+				has_province_modifier = pov_huang_fu_song
+				has_province_modifier = pov_jia_fu
+				has_province_modifier = pov_jia_xu
+				has_province_modifier = pov_jiang_ge
+				has_province_modifier = pov_jiang_shi
+				has_province_modifier = pov_li_lu
+				has_province_modifier = pov_liu_xin
+				has_province_modifier = pov_liu_yan
+				has_province_modifier = pov_lu_bu
+				has_province_modifier = pov_ma_chao
+				has_province_modifier = pov_ma_loan
+				has_province_modifier = pov_mayuan_yi
+				has_province_modifier = pov_pen_ho
+				has_province_modifier = pov_pu_nu
+				has_province_modifier = pov_sun_qian
+				has_province_modifier = pov_u_fu_ro
+				has_province_modifier = pov_wang_fu
+				has_province_modifier = pov_wang_uan
+				has_province_modifier = pov_wen_chou
+				has_province_modifier = pov_xia_hou_dun
+				has_province_modifier = pov_xia_hou_yuan
+				has_province_modifier = pov_xun_yu
+				has_province_modifier = pov_yan_liang
+				has_province_modifier = pov_yang_feng
+				has_province_modifier = pov_yu_xu
+				has_province_modifier = pov_zhang_bao
+				has_province_modifier = pov_zhang_fei
+				has_province_modifier = pov_zhang_heng
+				has_province_modifier = pov_zhang_lian
+				has_province_modifier = pov_zhang_man_cheng
+				has_province_modifier = pov_zhang_rang
+				has_province_modifier = pov_zhang_xun
+				has_province_modifier = pov_zhang_zhao
+				has_province_modifier = pov_zhao_yun
+				has_province_modifier = pov_zhen_chong
+				has_province_modifier = pov_zhou_yu
+				has_province_modifier = pov_zhu_jun
+				has_province_modifier = pov_zhuge_liang
+				has_province_modifier = pov_zhang_liao
+				has_province_modifier = pov_xu_chu
+				has_province_modifier = pov_sima_yi
+				has_province_modifier = pov_lu_xun
+				has_province_modifier = pov_taishi_ci
+			}
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "rab_prov_move.OPTA1"
+			if = {
+				limit = { has_province_modifier = pov_ma_loan }
+					if = {
+						limit = { 
+							is_year = 99
+							NOT = { is_year = 166  }
+						}
+							if = { 
+								limit = {
+									owner = { 
+										OR = {
+											has_ruler_modifier = ra_ch1
+											has_ruler_modifier = ra_ch2
+											has_ruler_modifier = ra_ch5
+											has_ruler_modifier = ra_ch6
+											has_ruler_modifier = ra_ch8
+											has_ruler_modifier = rb_ch3
+										}
+									}
+								}
+								remove_province_modifier = pov_ma_loan
+								owner = {
+									country_event = {
+											id = pov_come_event.1
+									}
+								}
+							}
+							if = { 
+								limit = { 
+									NOT = { 
+										owner = { 
+											OR = {
+												has_ruler_modifier = ra_ch1
+												has_ruler_modifier = ra_ch2
+												has_ruler_modifier = ra_ch5
+												has_ruler_modifier = ra_ch6
+												has_ruler_modifier = ra_ch8
+												has_ruler_modifier = rb_ch3
+											}
+										}
+									}		
+								}
+							#move to neighbor province_event
+								remove_province_modifier = pov_ma_loan
+								random_neighbor_province = {
+									add_province_modifier = {
+										name = "pov_ma_loan"
+										duration = -1
+									}					
+								}
+							}
+						}
+					if = {
+						limit = { 
+							is_year = 166  
+						}	
+						remove_province_modifier = pov_ma_loan		
+					}
+			}
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_cai_lun }
+				if = {
+					limit = { 
+					NOT = { is_year = 121  }
+				}
+					if = { 
+						limit = {
+							owner = { 
+								OR = {
+							has_ruler_modifier = ra_ch1
+							has_ruler_modifier = ra_ch2
+							has_ruler_modifier = ra_ch5
+							has_ruler_modifier = ra_ch6
+							has_ruler_modifier = ra_ch8
+							has_ruler_modifier = rb_ch3
+								}
+							}
+						}
+						remove_province_modifier = pov_cai_lun
+						owner = {
+						country_event = {
+								id = pov_come_event.2
+						}
+						}
+					}
+					if = { 
+						limit = { 
+							NOT = { 
+								owner = { 
+									OR = {
+							has_ruler_modifier = ra_ch1
+							has_ruler_modifier = ra_ch2
+							has_ruler_modifier = ra_ch5
+							has_ruler_modifier = ra_ch6
+							has_ruler_modifier = ra_ch8
+							has_ruler_modifier = rb_ch3
+									}
+								}
+							}		
+						}
+					#move to neighbor province_event
+						remove_province_modifier = pov_cai_lun
+						random_neighbor_province = {
+							add_province_modifier = {
+								name = "pov_cai_lun"
+								duration = -1
+							}					
+						}
+					}
+					
+				}
+				if = {
+					limit = { 
+					 is_year = 121  
+					}				
+					remove_province_modifier = pov_cai_lun
+				}	
+			}
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_deng_rang }
+				if = {
+					limit = { NOT = { is_year = 121  } }		
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+							}
+						}
+					}
+					remove_province_modifier = pov_deng_rang
+					owner = {
+					country_event = {
+							id = pov_come_event.3
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_deng_rang
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_deng_rang"
+							duration = -1
+						}					
+					}
+				}
+			}
+				if = {
+					limit = { is_year = 121 }
+					remove_province_modifier = pov_deng_rang	
+				}		
+		}	
+
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_jiang_shi }
+				if = { limit = { NOT = { is_year = 69  } }				
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch3
+							}
+						}
+					}
+					remove_province_modifier = pov_jiang_shi
+					owner = {
+					country_event = {
+							id = pov_come_event.4
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch3
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_jiang_shi
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_jiang_shi"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit = { is_year = 69 }
+				remove_province_modifier = pov_jiang_shi
+			}				
+		}
+
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_jiang_ge }
+			if = { limit = { NOT = { is_year = 77  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch3
+							}
+						}
+					}
+					remove_province_modifier = pov_jiang_ge
+					owner = {
+					country_event = {
+							id = pov_come_event.5
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch3
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_jiang_ge
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_jiang_ge"
+							duration = -1
+						}					
+					}
+				}
+			}
+		if = { limit =  { is_year = 77  } remove_province_modifier = pov_jiang_ge }
+	}
+
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_liu_xin }
+			if = { limit = { NOT = { is_year = 87  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+							}
+						}
+					}
+					remove_province_modifier = pov_liu_xin
+					owner = {
+					country_event = {
+							id = pov_come_event.6
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_liu_xin
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_liu_xin"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 87  } remove_province_modifier = pov_liu_xin }
+	}		
+
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_chou_lan }
+			if = { limit = { NOT = { is_year = 176  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch3
+							}
+						}
+					}
+					remove_province_modifier = pov_chou_lan
+					owner = {
+					country_event = {
+							id = pov_come_event.7
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch3
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_chou_lan
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_chou_lan"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 176  } remove_province_modifier = pov_chou_lan }
+	}
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_hu_guang }
+			if = { limit = { NOT = { is_year = 172  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+							}
+						}
+					}
+					remove_province_modifier = pov_hu_guang
+					owner = {
+					country_event = {
+							id = pov_come_event.8
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_hu_guang
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_hu_guang"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 172  } remove_province_modifier = pov_hu_guang }
+	}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_zhang_rang }
+			if = { limit = { NOT = { is_year = 189  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = ra_ch7
+							}
+						}
+					}
+					remove_province_modifier = pov_zhang_rang
+					owner = {
+					country_event = {
+							id = pov_come_event.9
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = ra_ch7
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_zhang_rang
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhang_rang"
+							duration = -1
+						}					
+					}
+				}
+			}
+		if = { limit =  { is_year = 189  } remove_province_modifier = pov_zhang_rang }	
+	}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_zhen_chong }
+			if = { limit = { NOT = { is_year = 114  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = ra_ch7
+							}
+						}
+					}
+					remove_province_modifier = pov_zhen_chong
+					owner = {
+					country_event = {
+							id = pov_come_event.10
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = ra_ch7
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_zhen_chong
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhen_chong"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 114  } remove_province_modifier = pov_zhen_chong }	
+	}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_huang_fu_gui }
+			if = { limit = { NOT = { is_year = 174  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+							}
+						}
+					}
+					remove_province_modifier = pov_huang_fu_gui
+					owner = {
+					country_event = {
+							id = pov_come_event.11
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_huang_fu_gui
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_huang_fu_gui"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 174  } remove_province_modifier = pov_huang_fu_gui }	
+		}		
+
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_cao_teng }
+			if = { limit = { NOT = { is_year = 159  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = rb_ch7
+							}
+						}
+					}
+					remove_province_modifier = pov_cao_teng
+					owner = {
+					country_event = {
+							id = pov_come_event.12
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = rb_ch7
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_cao_teng
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_cao_teng"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 159  } remove_province_modifier = pov_cao_teng }	
+		}					
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_dou_xian }
+			if = { limit = { NOT = { is_year = 92  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch6
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+							}
+						}
+					}
+					remove_province_modifier = pov_dou_xian
+					owner = {
+					country_event = {
+							id = pov_come_event.14
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch6
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_dou_xian
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_dou_xian"
+							duration = -1
+						}					
+					}
+				}
+			}			
+			if = { limit =  { is_year = 92  } remove_province_modifier = pov_dou_xian }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_dan_chao }
+			if = { limit = { NOT = { is_year = 160  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch8
+							}
+						}
+					}
+					remove_province_modifier = pov_dan_chao
+					owner = {
+					country_event = {
+							id = pov_come_event.16
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch8
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_dan_chao
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_dan_chao"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 160  } remove_province_modifier = pov_dan_chao }	
+		}					
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_cai_yong }
+			if = { limit = { NOT = { is_year = 194  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch4
+						has_ruler_modifier = rb_ch5
+						has_ruler_modifier = rb_ch6
+						has_ruler_modifier = rb_ch7
+							}
+						}
+					}
+					remove_province_modifier = pov_cai_yong
+					owner = {	
+					country_event = {
+							id = pov_come_event.17
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch4
+						has_ruler_modifier = rb_ch5
+						has_ruler_modifier = rb_ch6
+						has_ruler_modifier = rb_ch7
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_cai_yong
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_cai_yong"
+							duration = -1
+						}					
+					}
+				}
+			}			
+			if = { limit =  { is_year = 194  } remove_province_modifier = pov_cai_yong }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_geng_bing }
+			if = { limit = { NOT = { is_year = 91  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+							}
+						}
+					}
+					remove_province_modifier = pov_geng_bing
+					owner = {	
+					country_event = {
+							id = pov_come_event.18
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_geng_bing
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_geng_bing"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 91  } remove_province_modifier = pov_geng_bing }	
+		}					
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_he_chang }
+			if = { limit = { NOT = { is_year = 105  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch7
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch6
+							}
+						}
+					}
+					remove_province_modifier = pov_he_chang
+					owner = {	
+					country_event = {
+							id = pov_come_event.19
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch7
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch6
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_he_chang
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_he_chang"
+							duration = -1
+						}					
+					}
+				}
+			}			
+			if = { limit =  { is_year = 105  } remove_province_modifier = pov_he_chang }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_jia_fu }
+			if = { limit = { NOT = { is_year = 55  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+							}
+						}
+					}
+					remove_province_modifier = pov_jia_fu
+					owner = {	
+					country_event = {
+							id = pov_come_event.20
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_jia_fu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_jia_fu"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 55  } remove_province_modifier = pov_jia_fu }	
+		}					
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_ban_chao }
+			if = { limit = { NOT = { is_year = 102  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch6
+						has_ruler_modifier = rb_ch4
+						has_ruler_modifier = rb_ch2
+							}
+						}
+					}
+					remove_province_modifier = pov_ban_chao
+					owner = {	
+					country_event = {
+							id = pov_come_event.21
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch6
+						has_ruler_modifier = rb_ch4
+						has_ruler_modifier = rb_ch2
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_ban_chao
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_ban_chao"
+							duration = -1
+						}					
+					}
+				}
+			}			
+			if = { limit =  { is_year = 102  } remove_province_modifier = pov_ban_chao }	
+		}					
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_ban_zho }
+			if = { limit = { NOT = { is_year = 117  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch4
+						has_ruler_modifier = rb_ch7
+						has_ruler_modifier = rb_ch8
+							}
+						}
+					}
+					remove_province_modifier = pov_ban_zho
+					owner = {	
+					country_event = {
+							id = pov_come_event.22
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch4
+						has_ruler_modifier = rb_ch7
+						has_ruler_modifier = rb_ch8
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_ban_zho
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_ban_zho"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 117  } remove_province_modifier = pov_ban_zho }	
+		}					
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_yu_xu }
+			if = { limit = { NOT = { is_year = 137  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+							}
+						}
+					}
+					remove_province_modifier = pov_yu_xu
+					owner = {	
+					country_event = {
+							id = pov_come_event.23
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_yu_xu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_yu_xu"
+							duration = -1
+						}					
+					}
+				}
+			}			
+			if = { limit =  { is_year = 137  } remove_province_modifier = pov_yu_xu }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_zhang_heng }
+			if = { limit = { NOT = { is_year = 139  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch7
+							}
+						}
+					}
+					remove_province_modifier = pov_zhang_heng
+					owner = {	
+					country_event = {
+							id = pov_come_event.24
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch7
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_zhang_heng
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhang_heng"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 139  } remove_province_modifier = pov_zhang_heng }	
+		}					
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_liu_yan }
+			if = { limit = { NOT = { is_year = 188  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch4
+							}
+						}
+					}
+					remove_province_modifier = pov_liu_yan
+					owner = {	
+					country_event = {
+							id = pov_come_event.25
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch4
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_liu_yan
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_liu_yan"
+							duration = -1
+						}					
+					}
+				}
+			}			
+			if = { limit =  { is_year = 188  } remove_province_modifier = pov_liu_yan }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_deng_zhi }
+			if = { limit = { NOT = { is_year = 121  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch6
+							}
+						}
+					}
+					remove_province_modifier = pov_deng_zhi
+					owner = {	
+					country_event = {
+							id = pov_come_event.26
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch6
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_deng_zhi
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_deng_zhi"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 121  } remove_province_modifier = pov_deng_zhi }	
+		}					
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_deng_xun }
+			if = { limit = { NOT = { is_year = 92  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch6
+							}
+						}
+					}
+					remove_province_modifier = pov_deng_xun
+					owner = {	
+					country_event = {
+							id = pov_come_event.27
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch6
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_deng_xun
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_deng_xun"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 92 } remove_province_modifier = pov_deng_xun }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_deng_sui }
+			if = { limit = { NOT = { is_year = 121  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch6
+							}
+						}
+					}
+					remove_province_modifier = pov_deng_sui
+					owner = {	
+					country_event = {
+							id = pov_come_event.28
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch6
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_deng_sui
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_deng_sui"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 121  } remove_province_modifier = pov_deng_sui }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_wang_fu }
+			if = { limit = { NOT = { is_year = 170  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = rb_ch5
+						has_ruler_modifier = rb_ch6
+							}
+						}
+					}
+					remove_province_modifier = pov_wang_fu
+					owner = {	
+					country_event = {
+							id = pov_come_event.29
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = rb_ch5
+						has_ruler_modifier = rb_ch6
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_wang_fu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_wang_fu"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 170  } remove_province_modifier = pov_wang_fu }	
+		}		
+############################################################################
+		if = {
+			limit = { has_province_modifier = pov_huang_fu_song }
+			if = { limit = { NOT = { is_year = 195  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+								has_ruler_modifier = ra_ch1
+								has_ruler_modifier = ra_ch2
+								has_ruler_modifier = ra_ch4
+								has_ruler_modifier = ra_ch6
+								has_ruler_modifier = ra_ch8
+								has_ruler_modifier = rb_ch2
+								has_ruler_modifier = ra_ch9
+								has_ruler_modifier = rb_ch4
+							}
+						}
+					}
+					remove_province_modifier = pov_huang_fu_song
+					owner = {	
+						if = {
+						limit = { ai = yes }
+							define_general = {
+							name = "‡v+uiT0fkS0"
+							fire = 7
+							shock = 6
+							manuever = 4
+							siege = 6
+							}
+						}
+						if = { 
+							limit = { ai = no }
+							define_advisor = {
+								type = huang_fu_song
+								name = "‡v+uiT0fkS0"
+								skill = 3
+								discount = yes
+							}
+						}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = {
+								OR = {
+								has_ruler_modifier = ra_ch1
+								has_ruler_modifier = ra_ch2
+								has_ruler_modifier = ra_ch4
+								has_ruler_modifier = ra_ch6
+								has_ruler_modifier = ra_ch8
+								has_ruler_modifier = rb_ch2
+								has_ruler_modifier = ra_ch9
+								has_ruler_modifier = rb_ch4
+								}
+								}
+							}
+						}		
+					
+				#move to neighbor province_event
+					remove_province_modifier = pov_huang_fu_song
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_huang_fu_song"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 195  } remove_province_modifier = pov_huang_fu_song }	
+		}		
+############################################################################
+		if = {
+			limit = { has_province_modifier = pov_zhu_jun }
+			if = { limit = { NOT = { is_year = 191  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+							}
+						}
+					}
+					remove_province_modifier = pov_zhu_jun
+					owner = {	
+					country_event = {
+							id = pov_come_event.32
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_zhu_jun
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhu_jun"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 191  } remove_province_modifier = pov_zhu_jun }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_u_fu_ro }
+			if = { limit = { NOT = { is_year = 190  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+							}
+						}
+					}
+					remove_province_modifier = pov_u_fu_ro
+					owner = {	
+					country_event = {
+							id = pov_come_event.33
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_u_fu_ro
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_u_fu_ro"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 190  } remove_province_modifier = pov_u_fu_ro }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_pu_nu }
+			if = { limit = { NOT = { is_year = 47  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+							}
+						}
+					}
+					remove_province_modifier = pov_pu_nu
+					owner = {	
+					country_event = {
+							id = pov_come_event.34
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_pu_nu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_pu_nu"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 47  } remove_province_modifier = pov_pu_nu }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_fon_ho }
+			if = { limit = { NOT = { is_year = 93  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch6
+							}
+						}
+					}
+					remove_province_modifier = pov_fon_ho
+					owner = {	
+					country_event = {
+							id = pov_come_event.35
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch6
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_fon_ho
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_fon_ho"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 93  } remove_province_modifier = pov_fon_ho }	
+		}					
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_chen_fan }
+			if = { limit = { NOT = { is_year = 170  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch1
+							}
+						}
+					}
+					remove_province_modifier = pov_chen_fan
+					owner = {	
+					country_event = {
+							id = pov_come_event.37
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch1
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_chen_fan
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_chen_fan"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 170  } remove_province_modifier = pov_chen_fan }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_pen_ho }
+			if = { limit = { NOT = { is_year = 46  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+							}
+						}
+					}
+					remove_province_modifier = pov_pen_ho
+					owner = {	
+					country_event = {
+							id = pov_come_event.38
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_pen_ho
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_pen_ho"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 46  } remove_province_modifier = pov_pen_ho }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_zhang_bao }
+			if = { limit = { NOT = { is_year = 200  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch5
+							}
+						}
+					}
+					remove_province_modifier = pov_zhang_bao
+					owner = {	
+					country_event = {
+							id = pov_come_event.39
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch5
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_zhang_bao
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhang_bao"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 200  } remove_province_modifier = pov_zhang_bao }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_zhang_lian }
+			if = { limit = { NOT = { is_year = 200  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch5
+							}
+						}
+					}
+					remove_province_modifier = pov_zhang_lian
+					owner = {	
+					country_event = {
+							id = pov_come_event.41
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch5
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_zhang_lian
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhang_lian"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 200  } remove_province_modifier = pov_zhang_lian }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_mayuan_yi }
+			if = { limit = { NOT = { is_year = 200  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch5
+						has_ruler_modifier = rb_ch7
+							}
+						}
+					}
+					remove_province_modifier = pov_mayuan_yi
+					owner = {	
+					country_event = {
+							id = pov_come_event.42
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch5
+						has_ruler_modifier = rb_ch7
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_mayuan_yi
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_mayuan_yi"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 200  } remove_province_modifier = pov_mayuan_yi }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_zhang_man_cheng }
+			if = { limit = { NOT = { is_year = 200  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = rb_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+							}
+						}
+					}
+					remove_province_modifier = pov_zhang_man_cheng
+					owner = {	
+					country_event = {
+							id = pov_come_event.44
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = rb_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_zhang_man_cheng
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhang_man_cheng"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 200  } remove_province_modifier = pov_zhang_man_cheng }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_guan_hai }
+			if = { limit = { NOT = { is_year = 200  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch5
+							}
+						}
+					}
+					remove_province_modifier = pov_guan_hai
+					owner = {	
+					country_event = {
+							id = pov_come_event.45
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch5
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_guan_hai
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_guan_hai"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 200  } remove_province_modifier = pov_guan_hai }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_xia_hou_yuan }
+			if = { limit = { NOT = { is_year = 216  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+						tag = WEI
+						tag = TS2
+							}
+						}
+					}
+					remove_province_modifier = pov_xia_hou_yuan
+					owner = {
+					country_event = {
+							id = pov_come_event.46
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+						tag = WEI
+						tag = TS2
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_xia_hou_yuan
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_xia_hou_yuan"
+							duration = -1
+						}					
+					}
+				}
+			}			
+			if = { limit =  { is_year = 216  } remove_province_modifier = pov_xia_hou_yuan }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_xia_hou_dun }
+			if = { limit = { NOT = { is_year = 216  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+						tag = WEI
+						tag = TS2
+							}
+						}
+					}
+					remove_province_modifier = pov_xia_hou_dun
+					owner = {	
+					country_event = {
+							id = pov_come_event.47
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+						tag = WEI
+						tag = TS2
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_xia_hou_dun
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_xia_hou_dun"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 216  } remove_province_modifier = pov_xia_hou_dun }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_guan_yu }
+			if = { limit = { NOT = { is_year = 220  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						tag = LUP
+						tag = HND
+						tag = SHU
+							}
+						}
+					}
+					remove_province_modifier = pov_guan_yu
+					owner = {	
+					country_event = {
+							id = pov_come_event.48
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						tag = LUP
+						tag = HND
+						tag = SHU
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_guan_yu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_guan_yu"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 220  } remove_province_modifier = pov_guan_yu }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_zhang_fei }
+			if = { limit = { NOT = { is_year = 220  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						tag = LUP
+						tag = HND
+						tag = SHU
+							}
+						}
+					}
+					remove_province_modifier = pov_zhang_fei
+					owner = {	
+					country_event = {
+							id = pov_come_event.49
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						tag = LUP
+						tag = HND
+						tag = SHU
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_zhang_fei
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhang_fei"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 220  } remove_province_modifier = pov_zhang_fei }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_gao_shun }
+			if = { limit = { NOT = { is_year = 195  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+							}
+						}
+					}
+					remove_province_modifier = pov_gao_shun
+					owner = {	
+					country_event = {
+							id = pov_come_event.50
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_gao_shun
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_gao_shun"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 195  } remove_province_modifier = pov_gao_shun }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_ma_chao }
+			if = { limit = { NOT = { is_year = 222  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+							}
+						}
+					}
+					remove_province_modifier = pov_ma_chao
+					owner = {	
+					country_event = {
+							id = pov_come_event.51
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_ma_chao
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_ma_chao"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 222  } remove_province_modifier = pov_ma_chao }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_sun_qian }
+			if = { limit = { NOT = { is_year = 210  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch6
+							}
+						}
+					}
+					remove_province_modifier = pov_sun_qian
+					owner = {	
+					country_event = {
+							id = pov_come_event.52
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch6
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_sun_qian
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_sun_qian"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 210  } remove_province_modifier = pov_sun_qian }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_zhou_yu }
+			if = { limit = { NOT = { is_year = 210  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch4
+						tag = WUU
+						tag = SNJ
+						tag = SNC
+							}
+						}
+					}
+					remove_province_modifier = pov_zhou_yu
+					owner = {	
+					country_event = {
+							id = pov_come_event.53
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch4
+						tag = WUU
+						tag = SNJ
+						tag = SNC
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_zhou_yu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhou_yu"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 210  } remove_province_modifier = pov_zhou_yu }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_cheng_pu }
+			if = { limit = { NOT = { is_year = 220  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch7
+						tag = WUU
+						tag = SNJ
+						tag = SNC
+							}
+						}
+					}
+					remove_province_modifier = pov_cheng_pu
+					owner = {	
+					country_event = {
+							id = pov_come_event.54
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch7
+						tag = WUU
+						tag = SNJ
+						tag = SNC
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_cheng_pu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_cheng_pu"
+							duration = -1
+						}					
+					}
+				}
+			}			
+			if = { limit =  { is_year = 220  } remove_province_modifier = pov_cheng_pu }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_yan_liang }
+			if = { limit = { NOT = { is_year = 199  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch3
+							}
+						}
+					}
+					remove_province_modifier = pov_yan_liang
+					owner = {	
+					country_event = {
+							id = pov_come_event.55
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch3
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_yan_liang
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_yan_liang"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 199  } remove_province_modifier = pov_yan_liang }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_wen_chou }
+			if = { limit = { NOT = { is_year = 210  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+						tag = UAN
+							}
+						}
+					}
+					remove_province_modifier = pov_wen_chou
+					owner = {	
+					country_event = {
+							id = pov_come_event.56
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+						tag = UAN
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_wen_chou
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_wen_chou"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 210  } remove_province_modifier = pov_wen_chou }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_xun_yu }
+			if = { limit = { NOT = { is_year = 205  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch4
+						tag = TS2
+						tag = HND
+							}
+						}
+					}
+					remove_province_modifier = pov_xun_yu
+					owner = {	
+					country_event = {
+							id = pov_come_event.57
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch4
+						tag = TS2
+						tag = HND
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_xun_yu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_xun_yu"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 205  } remove_province_modifier = pov_xun_yu }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_lu_bu }
+			if = { limit = { NOT = { is_year = 210  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+							}
+						}
+					}
+					remove_province_modifier = pov_lu_bu
+					owner = {	
+					country_event = {
+							id = pov_come_event.58
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_lu_bu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_lu_bu"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 210  } remove_province_modifier = pov_lu_bu }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_jia_xu }
+			if = { limit = { NOT = { is_year = 210  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch1
+							}
+						}
+					}
+					remove_province_modifier = pov_jia_xu
+					owner = {	
+					country_event = {
+							id = pov_come_event.59
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch1
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_jia_xu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_jia_xu"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 210  } remove_province_modifier = pov_jia_xu }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_li_lu }
+			if = { limit = { NOT = { is_year = 200  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+						tag = TGG
+							}
+						}
+					}
+					remove_province_modifier = pov_li_lu
+					owner = {	
+					country_event = {
+							id = pov_come_event.60
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch3
+						tag = TGG
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_li_lu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_li_lu"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 200  } remove_province_modifier = pov_li_lu }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_cheng_yu }
+			if = { limit = { NOT = { is_year = 210  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch3
+						tag = TS2
+						tag = WEI
+							}
+						}
+					}
+					remove_province_modifier = pov_cheng_yu
+					owner = {
+					country_event = {
+							id = pov_come_event.61
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch3
+						tag = TS2
+						tag = WEI
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_cheng_yu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_cheng_yu"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 210  } remove_province_modifier = pov_cheng_yu }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_zhang_xun }
+			if = { limit = { NOT = { is_year = 210  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+						tag = UAZ
+							}
+						}
+					}
+					remove_province_modifier = pov_zhang_xun
+					owner = {	
+					country_event = {
+							id = pov_come_event.62
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+						tag = UAZ
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_zhang_xun
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhang_xun"
+							duration = -1
+						}					
+					}
+				}
+			}			
+			if = { limit =  { is_year = 210  } remove_province_modifier = pov_zhang_xun }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_diao_chan }
+			if = { limit = { NOT = { is_year = 210  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch4
+						has_ruler_modifier = rb_ch5
+						tag = LB1
+							}
+						}
+					}
+					remove_province_modifier = pov_diao_chan
+					owner = {	
+					country_event = {
+							id = pov_come_event.63
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch4
+						has_ruler_modifier = rb_ch5
+						tag = LB1
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_diao_chan
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_diao_chan"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 210  } remove_province_modifier = pov_diao_chan }	
+		}		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_wang_uan }
+			if = { limit = { NOT = { is_year = 190  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch4
+						has_ruler_modifier = rb_ch7
+						tag = HND
+							}
+						}
+					}
+					remove_province_modifier = pov_wang_uan
+					owner = {	
+					country_event = {
+							id = pov_come_event.64
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch4
+						has_ruler_modifier = rb_ch7
+						tag = HND
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_wang_uan
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_wang_uan"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 190  } remove_province_modifier = pov_wang_uan }	
+		}	
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_yang_feng }
+			if = { limit = { NOT = { is_year = 203  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch8
+							}
+						}
+					}
+					remove_province_modifier = pov_yang_feng
+					owner = {	
+					country_event = {
+							id = pov_come_event.65
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch8
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_yang_feng
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_yang_feng"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 203  } remove_province_modifier = pov_yang_feng }	
+		}	
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_zhuge_liang }
+			if = { limit = { NOT = { is_year = 230  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch6
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch4
+						has_ruler_modifier = rb_ch7
+						tag = HND
+						tag = SHU
+						tag = LUP
+							}
+						}
+					}
+					remove_province_modifier = pov_zhuge_liang
+					owner = {	
+					country_event = {
+							id = pov_come_event.66
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch6
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch4
+						has_ruler_modifier = rb_ch7
+						tag = HND
+						tag = SHU
+						tag = LUP
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_zhuge_liang
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhuge_liang"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 230  } remove_province_modifier = pov_zhuge_liang }	
+		}	
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_hoang_chung }
+			if = { limit = { NOT = { is_year = 220  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+						tag = LBB
+						tag = LUP
+							}
+						}
+					}
+					remove_province_modifier = pov_hoang_chung
+					owner = {	
+					country_event = {
+							id = pov_come_event.67
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch2
+						tag = LBB
+						tag = LUP
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_hoang_chung
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_hoang_chung"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 220  } remove_province_modifier = pov_hoang_chung }	
+		}	
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_zhang_zhao }
+			if = { limit = { NOT = { is_year = 226  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch1
+						tag = WUU
+						tag = SNJ
+						tag = SNC
+							}
+						}
+					}
+					remove_province_modifier = pov_zhang_zhao
+					owner = {	
+					country_event = {
+							id = pov_come_event.68
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch1
+						tag = WUU
+						tag = SNJ
+						tag = SNC
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_zhang_zhao
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhang_zhao"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 226  } remove_province_modifier = pov_zhang_zhao }	
+		}	
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_zhao_yun }
+			if = { limit = { NOT = { is_year = 227  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch4
+						tag = LUP
+						tag = SHU
+						tag = HND
+							}
+						}
+					}
+					remove_province_modifier = pov_zhao_yun
+					owner = {	
+					country_event = {
+							id = pov_come_event.69
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch4
+						tag = LUP
+						tag = SHU
+						tag = HND
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_zhao_yun
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhao_yun"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 227  } remove_province_modifier = pov_zhao_yun }	
+		}				
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_zhang_liao }
+			if = { limit = { NOT = { is_year = 222  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch4
+						tag = TS2
+						tag = LB1
+							}
+						}
+					}
+					remove_province_modifier = pov_zhang_liao
+					owner = {	
+					country_event = {
+							id = pov_come_event.70
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = ra_ch9
+						has_ruler_modifier = rb_ch1
+						has_ruler_modifier = rb_ch4
+						tag = TS2
+						tag = LB1
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_zhang_liao
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_zhang_liao"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 222  } remove_province_modifier = pov_zhang_liao }	
+		}				
+		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_xu_chu }
+			if = { limit = { NOT = { is_year = 225  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch7
+						tag = TS2
+						tag = WEI	
+							}
+						}
+					}
+					remove_province_modifier = pov_xu_chu
+					owner = {	
+					country_event = {
+							id = pov_come_event.71
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch7
+						tag = TS2
+						tag = WEI	
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_xu_chu
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_xu_chu"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 225  } remove_province_modifier = pov_xu_chu }	
+		}				
+		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_sima_yi }
+			if = { limit = { NOT = { is_year = 250  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						tag = TS2
+						tag = WEI				
+							}
+						}
+					}
+					remove_province_modifier = pov_sima_yi
+					owner = {	
+					country_event = {
+							id = pov_come_event.72
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch3
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch5
+						has_ruler_modifier = ra_ch6
+						tag = TS2
+						tag = WEI				
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_sima_yi
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_sima_yi"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 250  } remove_province_modifier = pov_sima_yi }	
+		}				
+		
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_lu_xun }
+			if = { limit = { NOT = { is_year = 245  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch4
+						tag = WUU
+						tag = SNJ
+						tag = SNC			
+							}
+						}
+					}
+					remove_province_modifier = pov_lu_xun
+					owner = {	
+					country_event = {
+							id = pov_come_event.73
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch2
+						has_ruler_modifier = rb_ch3
+						has_ruler_modifier = rb_ch4
+						tag = WUU
+						tag = SNJ
+						tag = SNC	
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_lu_xun
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_lu_xun"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 245  } remove_province_modifier = pov_lu_xun }	
+		}
+############################################################################
+			if = {
+			limit = { has_province_modifier = pov_taishi_ci }
+			if = { limit = { NOT = { is_year = 215  } }
+				if = { 
+					limit = {
+						owner = { 
+							OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch4
+						tag = WUU
+						tag = SNJ
+						tag = SNC
+							}
+						}
+					}
+					remove_province_modifier = pov_taishi_ci
+					owner = {	
+					country_event = {
+							id = pov_come_event.74
+					}
+					}
+				}
+				if = { 
+					limit = { 
+						NOT = { 
+							owner = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch4
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch8
+						has_ruler_modifier = rb_ch4
+						tag = WUU
+						tag = SNJ
+						tag = SNC
+								}
+							}
+						}		
+					}
+				#move to neighbor province_event
+					remove_province_modifier = pov_taishi_ci
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_taishi_ci"
+							duration = -1
+						}					
+					}
+				}
+			}
+			if = { limit =  { is_year = 215  } remove_province_modifier = pov_taishi_ci }	
+		}
+############################################################################		
+	}
+}
+	
+	

@@ -1,0 +1,511 @@
+#2019.12.08 fit to 1.29
+namespace = daqin_empire_events
+## error Nb	gÑvnamespaceN˝w(u ˝V∂RÑvTAG SVjOV4Yb”u>S
+#Bon Harmonization
+
+##Êy0WY’l
+country_event = {
+	id = daqin_empire_events.1
+	title = "daqin_empire_events_title1"
+	picture = BAN_CHAO_ADVISOR_eventPicture
+	desc = "daqin_empire_events_desc1"
+	
+	fire_only_once = yes
+	
+	trigger = {
+       owns_core_province = 3172 
+		not = { 3172 = { religion = legalist } }
+		is_subject = no
+		NOT = { is_year = 36 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "daqin_empire_events_name1"
+		3172 = {
+           change_religion = legalist
+		}
+	}
+}
+
+##Êy∫NY˝V
+country_event = {
+	id = daqin_empire_events.2
+	title = "daqin_empire_events_title2"
+	picture = ARMY_START_1_eventPicture
+	desc = "daqin_empire_events_desc2"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CH2
+		not = { exists = NEW } 
+		not = { exists = DC2 }
+		not = { exists = DQN }
+		not = { exists = DQE }
+       owns_core_province = 3172 
+	   3172 = { religion = legalist }
+		num_of_cities = 2
+		is_subject = no
+		NOT = { is_year = 36 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		# modifiers
+	}
+	
+	option = { # play as the pirates
+		name = "daqin_empire_events_name2a"
+		# play as DQN
+        hidden_effect = {
+            3172 = {
+				discover_country = DQN
+				add_core = DQN
+                remove_core = CH2
+			}
+			4328 = {
+				discover_country = DQN
+				add_core = DQN
+                remove_core = CH2
+			}
+			4886 = {
+				discover_country = DQN
+				add_core = DQN
+                remove_core = CH2
+			}
+            4887 = {
+				discover_country = DQN
+				add_core = DQN
+                remove_core = CH2
+			}
+            3225 = {
+				discover_country = DQN
+				add_core = DQN
+                remove_core = CH2
+			}
+		}
+		3172 = {
+			add_base_tax = 2
+			add_base_manpower = 2
+            change_religion = legalist
+		}
+		4328 = {
+          change_religion = legalist
+		}
+		4886 = {
+          change_religion = legalist
+		}
+		release = DQN
+		create_guarantee = DQN
+		DQN = {
+			change_government = ancient_chinese_warlord
+			add_government_reform = ancient_chinese_warlord_reform
+			adopt_reform_progress = ROOT
+			add_republican_tradition = 50
+			change_religion = legalist
+			change_primary_culture = ROOT
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.9
+				}
+			}
+			define_ruler = {
+				name = "4RY" 
+				
+				fixed = yes
+				adm = 1
+				dip = 1
+				mil = 4
+			}
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+			set_ruler_flag = heiljsf_Daqin_Empire_flag
+		}
+		if = {
+			limit = {
+				ai = no
+			}	
+			switch_tag = DQN
+		}
+	}
+    option = { # play as the pirates
+		name = "daqin_empire_events_name2b"
+		trigger = {
+			ai = no
+		}
+		# play as QG2
+        hidden_effect = {
+            3172 = {
+				discover_country = QG2
+				add_core = QG2
+                remove_core = CH2
+			}
+			4328 = {
+				discover_country = QG2
+				add_core = QG2
+                remove_core = CH2
+			}
+			4886 = {
+				discover_country = QG2
+				add_core = QG2
+                remove_core = CH2
+			}
+            4887 = {
+				discover_country = QG2
+				add_core = QG2
+                remove_core = CH2
+			}
+            3225 = {
+				discover_country = QG2
+				add_core = QG2
+                remove_core = CH2
+			}
+		}
+		3172 = {
+			add_base_tax = 2
+			add_base_manpower = 2
+            change_religion = legalist
+		}
+		4328 = {
+          change_religion = legalist
+		}
+		4886 = {
+          change_religion = legalist
+		}
+		release = QG2
+		create_guarantee = QG2
+		QG2 = {
+			change_government = ancient_chinese_warlord
+			add_government_reform = ancient_chinese_warlord_reform
+			adopt_reform_progress = ROOT
+			add_republican_tradition = 50
+			change_religion = legalist
+			change_primary_culture = ROOT
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.9
+				}
+			}
+			define_ruler = {
+				name = "ÊyﬁV" 
+				
+				fixed = yes
+				adm = 3
+				dip = 2
+				mil = 1
+			}
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+			set_ruler_flag = heiljsf_Daqin_Empire_flag
+		}
+		if = {
+			limit = {
+				ai = no
+			}	
+			switch_tag = QG2
+		}
+	}
+    
+	option = { # pirates get released as a march
+		name = "daqin_empire_events_name2c"
+		3172 = {
+            spawn_rebels = {
+                type = noble_rebels
+                size = 40
+            }
+		}
+        4328 = {
+            spawn_rebels = {
+                type = noble_rebels
+                size = 40
+            }
+		}
+	}
+}
+
+##Êy˝VNlQYRè”uﬂv
+country_event = {
+	id = daqin_empire_events.3
+	title = "daqin_empire_events_title3"
+	picture = ANCIENT_WARLORD_eventPicture
+	desc = "daqin_empire_events_desc3"
+	
+	fire_only_once = yes
+	
+	trigger = {
+	OR = {
+		tag = DQN
+		tag = QG2
+	}
+		exists = CH2
+		is_subject = no
+		NOT = { is_year = 36 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "daqin_empire_events_name3"
+		if = {
+			limit = {
+				tag = DQN
+			}
+		create_alliance = CH2
+       }
+		if = {
+			limit = {
+				tag = QG2
+			}
+		create_alliance = CH2
+       }
+	}
+}
+
+##’l∂R1YøR
+country_event = {
+	id = daqin_empire_events.4
+	title = "daqin_empire_events_title4"
+	picture = DROUGHT_eventPicture
+	desc = "daqin_empire_events_desc4"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = QG2
+		QG2 = { religion = legalist }
+		owns_core_province = 3172 
+		num_of_provinces_in_states = 10
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "daqin_empire_events_name4a"
+		ai_chance = { factor = 80 }  
+		QG2 = {
+			change_religion = confucianism
+			add_harmonized_religion = legalist
+		}
+	}
+	option = { # pirates get released as a march
+		name = "daqin_empire_events_name4b"
+		ai_chance = { factor = 20 }  
+		3172 = {
+            spawn_rebels = {
+                type = confucianism_rebels #Q∂R€SõQ
+                size = 40
+            }
+		}
+		
+	}
+}
+
+##Êy˝VDñ∏^lQYRè
+country_event = {
+	id = daqin_empire_events.5
+	title = "daqin_empire_events_title5"
+	picture = ACCUSATION_eventPicture
+	desc = "daqin_empire_events_desc5"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = DQN
+			tag = QG2
+		}
+		alliance_with = CH2
+		CH2 = {
+			has_opinion = {
+				who = ROOT
+				value = 150
+			}
+		}
+		is_great_power = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "daqin_empire_events_name5a"
+		ai_chance = { factor = 50 }  
+		if = {
+			limit = {
+				tag = DQN
+			}
+			vassalize = CH2
+			add_trust = {
+				who = CH2
+				value = -10
+				mutual = yes
+			}
+       }
+		if = {
+			limit = {
+				tag = QG2
+			}
+			vassalize = CH2
+			add_trust = {
+				who = CH2
+				value = -10
+				mutual = yes
+			}
+       }
+	}
+
+	option = { # pirates get released as a march
+		name = "daqin_empire_events_name5b"
+		ai_chance = { factor = 50 }  
+		if = {
+			limit = {
+				tag = DQN
+			}
+			add_opinion = {
+				who = CH2
+				modifier = friendly_government		
+			}
+			CH2 = {
+				add_opinion = {
+					who = DQN
+					modifier = friendly_government		
+				}
+			}
+			add_trust = {
+				who = CH2
+				value = 50
+				mutual = yes
+			}
+		}
+		if = {
+			limit = {
+				tag = QG2
+			}
+			add_opinion = {
+				who = CH2
+				modifier = friendly_government		
+			}
+			CH2 = {
+				add_opinion = {
+					who = QG2
+					modifier = friendly_government		
+				}
+			}
+			add_trust = {
+				who = CH2
+				value = 50
+				mutual = yes
+			}
+		}
+	}
+}
+
+
+
+##Êy’l.O≠d
+country_event = {
+	id = daqin_empire_events.6
+	title = "daqin_empire_events_title6"
+	picture = ADVISOR_eventPicture
+	desc = "daqin_empire_events_desc6"
+	
+	fire_only_once = yes
+	
+	trigger = {
+        OR = {
+            tag = DQN
+            tag = DQE
+        }
+		religion = legalist
+        OR = {
+            AND = {
+                num_of_provinces_in_states = 10
+                num_of_religion = {
+                    religion = legalist
+                    value = 0.3
+                }
+            }
+            AND = {
+                num_of_cities = 100
+                num_of_religion = {
+                    religion = legalist
+                    value = 0.1
+                }
+            }
+            AND = {
+                num_of_cities = 200
+                num_of_religion = {
+                    religion = legalist
+                    value = 0.01
+                }
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "daqin_empire_events_name6a"
+		add_country_modifier = {
+			name = heiljsf_qinfa_chuanbozhongxin          
+			duration = -1
+        }
+	}
+	option = { # pirates get released as a march
+		name = "daqin_empire_events_name6b"
+		add_country_modifier = {
+			name = heiljsf_faru_hexie          
+			duration = 10950
+        }
+	}
+}
+
+##Êy’lMê)YN
+country_event = {
+	id = daqin_empire_events.7
+	title = "daqin_empire_events_title7"
+	picture = ARMY_START_eventPicture
+	desc = "daqin_empire_events_desc7"
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_country_flag = fajia_flag_off }
+		had_country_flag = { flag = fajia_flag days = 1825 }#ïªlENâR˚N°RåRb5t^KNT
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fajia_flag_off
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		
+	}
+	
+	option = { # pirates get released as a march
+		name = "daqin_empire_events_name7"
+        add_prestige = 10
+        clr_country_flag = fajia_flag
+		add_country_modifier = {
+			name = heiljsf_qinfa_yizhi          
+			duration = -1
+        }
+	}
+}
+
+
+

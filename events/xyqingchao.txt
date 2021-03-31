@@ -1,0 +1,163 @@
+namespace = xy_qingchao
+
+country_event = {
+	id = xy_qingchao.1
+	title = "xy_qingchao.NAME1"
+	desc = "xy_qingchao.DESC1"
+	picture = BAD_ARMY_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = {
+	is_year = 1115
+    tag = MCH
+	is_neighbor_of = MNG
+	MNG = {  is_emperor_of_china = yes }
+	any_country = {
+	NOT = { tag = MNG }
+    capital_scope = { superregion = china_superregion  }
+	total_development = 500
+      has_reform = celestial_empire
+	}
+	NOT = { has_country_flag = manchu_dynasty_formed }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+
+	option = {
+		name = "xy_qingchao.OPTA1"
+     every_province = { limit = {
+     OR = {
+     area = liaoning_area
+	 area = liaoning_east_area
+	 }
+	 }
+     cede_province = MCH
+	 }
+	change_tag = QNG
+			south_china_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = QNG
+			}
+			xinan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = QNG
+			}
+			north_china_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = QNG
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+	change_government = gov_celestial_empire
+	add_government_reform = celestial_empire
+	set_government_rank = 3
+			if = {
+				limit = {
+					technology_group = nomad_group
+				}
+				change_technology_group = chinese
+				change_unit_type = chinese
+			}
+			if = {
+				limit = {
+					NOT = { religion = confucianism }
+				}
+				change_religion = confucianism
+				add_harmonized_religion = tengri_pagan_reformed
+			}
+			add_prestige = 10
+			set_country_flag = manchu_dynasty_formed
+			swap_non_generic_missions = yes
+	}
+		option = {
+		name = "xy_qingchao.OPTB1"
+	}
+}
+
+country_event = {
+	id = xy_qingchao.2
+	title = "xy_qingchao.NAME2"
+	desc = "xy_qingchao.DESC2"
+	picture = BAD_ARMY_eventPicture
+    major = yes
+	trigger = {
+    tag = QNG
+	exists = MNG
+	NOT = { is_year = 1700 }
+	any_country = { war_with = ROOT
+    culture_group = east_asian
+    NOT = { tag = MNG }
+	NOT = { war_score_against = {
+				who = ROOT
+				value = -20
+			} 
+	}
+	}
+	} 
+	mean_time_to_happen = {
+		months = 1
+	}
+
+
+	option = {
+		name = "xy_qingchao.OPTA2"
+       random_country = {
+       limit = {
+       has_reform = celestial_empire
+	   war_with = ROOT
+                 NOT  = { tag = MNG }
+				NOT = { war_score_against = {
+				who = ROOT
+				value = -20
+			} 
+	}
+	}
+	every_owned_province = { cede_province = ROOT add_core = ROOT }
+	   }
+	  }
+	   
+}
+country_event = {
+	id = xy_qingchao.3
+	title = "xy_qingchao.NAME3"
+	desc = "xy_qingchao.DESC3"
+	picture = BAD_ARMY_eventPicture
+    major = yes
+	trigger = {
+    tag = QNG
+	exists = MNG
+	war_with = MNG
+    MNG = { war_with = ROOT
+	NOT = { total_development = 1000 }
+    NOT = { war_score_against = {
+				who = ROOT
+				value = -60
+			} 
+	}
+	capital_scope = { controlled_by = ROOT }
+	}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+
+	option = {
+		name = "xy_qingchao.OPTA3"
+    MNG = { 
+	every_owned_province = { cede_province = ROOT add_core = ROOT }
+	   }
+	   add_prestige = 100
+	   set_emperor_of_china = QNG
+	   }
+}

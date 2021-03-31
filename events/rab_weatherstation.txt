@@ -1,0 +1,1472 @@
+namespace = weatherstation
+#2018.12.31 fit to 1.28
+################################
+########JUST TEST ONLY			#
+################################
+##		500 = weatherstation.1 #sahel_region + horn_of_africa_region
+##############################################################################
+#
+# sahel_region + horn_of_africa_region
+#
+##############################################################################
+#2019-02-06 there is no region "chile_region" , so it change to upper_peru_region
+#2020-05-06 WHEN YEAR IS 
+country_event = {
+   id = weatherstation.1
+	title = "weatherstation.NAME1"
+	desc = "weatherstation.DESC1"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = sahel_region
+				region = horn_of_africa_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}
+		NOT = { is_year = 1950 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA1" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = sahel_region
+						region = horn_of_africa_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+##		500 = weatherstation.2 #sahel_region + arabia_region
+##############################################################################
+#
+# sahel_region + arabia_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.2
+	title = "weatherstation.NAME2"
+	desc = "weatherstation.DESC2"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = sahel_region
+				region = horn_of_africa_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}	
+		NOT = { is_year = 1950 }				
+	}
+
+    option = {
+	   name = "weatherstation.OPTA2" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = sahel_region
+						region = horn_of_africa_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+##		500 = weatherstation.3 #arabia_region + horn_of_africa_region
+##############################################################################
+#
+# arabia_region + horn_of_africa_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.3
+	title = "weatherstation.NAME3"
+	desc = "weatherstation.DESC3"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = arabia_region
+				region = horn_of_africa_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}	
+		NOT = { is_year = 1950 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA3" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = arabia_region
+						region = horn_of_africa_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 730
+				}
+			}
+		}
+	}
+}
+##		150 = weatherstation.4 #tibet_region + central_asia_region
+##############################################################################
+#
+# tibet_region + central_asia_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.4
+	title = "weatherstation.NAME4"
+	desc = "weatherstation.DESC4"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = tibet_region
+				region = central_asia_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}	
+		NOT = { is_year = 1950 }
+	}
+
+    option = {
+	   name = "weatherstation.OPTA4" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = tibet_region
+						region = central_asia_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+##		100 = weatherstation.5 #tibet_region + sahel_region
+##############################################################################
+#
+# tibet_region + sahel_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.5
+	title = "weatherstation.NAME5"
+	desc = "weatherstation.DESC5"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = tibet_region
+				region = sahel_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}
+		NOT = { is_year = 1950 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA5" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = tibet_region
+						region = sahel_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+##		100 = weatherstation.6 #mongolia_region + arabia_region
+##############################################################################
+#
+# mongolia_region + arabia_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.6
+	title = "weatherstation.NAME6"
+	desc = "weatherstation.DESC6"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = mongolia_region
+				region = arabia_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}
+		NOT = { is_year = 1950 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA6" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = mongolia_region
+						region = arabia_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.7 #mongolia_region + east_siberia_region 
+##############################################################################
+#
+# mongolia_region + east_siberia_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.7
+	title = "weatherstation.NAME7"
+	desc = "weatherstation.DESC7"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = mongolia_region
+				region = east_siberia_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}	
+		NOT = { is_year = 1950 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA7" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = mongolia_region
+						region = east_siberia_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.8 #east_siberia_region + west_siberia_region
+##############################################################################
+#
+# east_siberia_region + west_siberia_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.8
+	title = "weatherstation.NAME8"
+	desc = "weatherstation.DESC8"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = east_siberia_region
+				region = west_siberia_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}	
+		NOT = { is_year = 1950 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA8" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = east_siberia_region
+						region = west_siberia_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.9 #khorasan_region + west_siberia_region
+##############################################################################
+#
+# khorasan_region + west_siberia_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.9
+	title = "weatherstation.NAME9"
+	desc = "weatherstation.DESC9"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = khorasan_region
+				region = west_siberia_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}		
+		NOT = { is_year = 1950 }
+	}
+
+    option = {
+	   name = "weatherstation.OPTA9" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = khorasan_region
+						region = west_siberia_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.10 #khorasan_region + north_china_region
+##############################################################################
+#
+# khorasan_region + north_china_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.10
+	title = "weatherstation.NAME10"
+	desc = "weatherstation.DESC10"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = khorasan_region
+				region = north_china_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}	
+		NOT = { is_year = 1920 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA10" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = khorasan_region
+						region = north_china_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.11 #sahel_region + central_asia_region
+##############################################################################
+#
+# central_asia_region + sahel_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.11
+	title = "weatherstation.NAME11"
+	desc = "weatherstation.DESC11"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = central_asia_region
+				region = sahel_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}		
+		NOT = { is_year = 1950 }
+	}
+
+    option = {
+	   name = "weatherstation.OPTA11" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = central_asia_region
+						region = sahel_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.12 #korea_region + manchuria_region
+##############################################################################
+#
+# korea_region + manchuria_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.12
+	title = "weatherstation.NAME12"
+	desc = "weatherstation.DESC12"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = korea_region
+				region = manchuria_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}	
+		NOT = { is_year = 1920 }	
+	}
+
+    option = {
+	   name = "weatherstation.OPTA12" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = korea_region
+						region = manchuria_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.13 #manchuria_region + persia_region
+##############################################################################
+#
+# manchuria_region + persia_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.13
+	title = "weatherstation.NAME13"
+	desc = "weatherstation.DESC13"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = manchuria_region
+				region = persia_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}
+		NOT = { is_year = 1920 }			
+	}
+
+    option = {
+	   name = "weatherstation.OPTA13" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = manchuria_region
+						region = persia_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.14 #arabia_region + persia_region 
+##############################################################################
+#
+# arabia_region + persia_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.14
+	title = "weatherstation.NAME14"
+	desc = "weatherstation.DESC14"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = arabia_region
+				region = persia_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}	
+		NOT = { is_year = 1950 }			
+	}
+
+    option = {
+	   name = "weatherstation.OPTA14" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = arabia_region
+						region = persia_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.15 #persia_region + great_plains_region
+##############################################################################
+#
+# persia_region + great_plains_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.15
+	title = "weatherstation.NAME15"
+	desc = "weatherstation.DESC15"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = persia_region
+				region = great_plains_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}
+		NOT = { is_year = 1920 }					
+	}
+
+    option = {
+	   name = "weatherstation.OPTA15" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = persia_region
+						region = great_plains_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.16 #great_plains_region + central_asia_region
+##############################################################################
+#
+# great_plains_region + central_asia_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.16
+	title = "weatherstation.NAME16"
+	desc = "weatherstation.DESC16"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = great_plains_region
+				region = central_asia_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}	
+		NOT = { is_year = 1920 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA16" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = great_plains_region
+						region = central_asia_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.17 #australia_region + horn_of_africa_region
+##############################################################################
+#
+# australia_region + horn_of_africa_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.17
+	title = "weatherstation.NAME17"
+	desc = "weatherstation.DESC17"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = australia_region
+				region = horn_of_africa_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}	
+		NOT = { is_year = 1920 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA17" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = australia_region
+						region = horn_of_africa_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.18 #upper_peru_region + khorasan_region		
+##############################################################################
+#
+# upper_peru_region + khorasan_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.18
+	title = "weatherstation.NAME18"
+	desc = "weatherstation.DESC18"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = upper_peru_region
+				region = khorasan_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}		
+		NOT = { is_year = 1920 }
+	}
+
+    option = {
+	   name = "weatherstation.OPTA18" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = upper_peru_region
+						region = khorasan_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.19 #australia_region + maghreb_region
+##############################################################################
+#
+# australia_region + maghreb_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.19
+	title = "weatherstation.NAME19"
+	desc = "weatherstation.DESC19"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = australia_region
+				region = maghreb_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}		
+		NOT = { is_year = 1920 }
+	}
+
+    option = {
+	   name = "weatherstation.OPTA19" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = australia_region
+						region = maghreb_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.20 #maghreb_region + upper_peru_region
+##############################################################################
+#
+# maghreb_region + upper_peru_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.20
+	title = "weatherstation.NAME20"
+	desc = "weatherstation.DESC20"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = maghreb_region
+				region = upper_peru_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}		
+		NOT = { is_year = 1920 }
+	}
+
+    option = {
+	   name = "weatherstation.OPTA20" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = maghreb_region
+						region = upper_peru_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.21 #egypt_region + horn_of_africa_region
+##############################################################################
+#
+# egypt_region + horn_of_africa_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.21
+	title = "weatherstation.NAME21"
+	desc = "weatherstation.DESC21"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = egypt_region
+				region = horn_of_africa_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}		
+		NOT = { is_year = 1950 }
+	}
+
+    option = {
+	   name = "weatherstation.OPTA21" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = egypt_region
+						region = horn_of_africa_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.22 #egypt_region + central_asia_region		
+##############################################################################
+#
+# egypt_region + central_asia_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.22
+	title = "weatherstation.NAME22"
+	desc = "weatherstation.DESC22"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = egypt_region
+				region = central_asia_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}
+		NOT = { is_year = 1950 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA22" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = egypt_region
+						region = central_asia_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.23 #australia_region + maghreb_region
+##############################################################################
+#
+# australia_region + maghreb_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.23
+	title = "weatherstation.NAME23"
+	desc = "weatherstation.DESC23"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = australia_region
+				region = maghreb_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}	
+		NOT = { is_year = 1920 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA23" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = australia_region
+						region = maghreb_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.24 #sahel_region + upper_peru_region
+##############################################################################
+#
+# sahel_region + upper_peru_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.24
+	title = "weatherstation.NAME24"
+	desc = "weatherstation.DESC24"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = sahel_region
+				region = upper_peru_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}
+		NOT = { is_year = 1920 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA24" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = sahel_region
+						region = upper_peru_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.25 #persia_region + egypt_region
+##############################################################################
+#
+# persia_region + egypt_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.25
+	title = "weatherstation.NAME25"
+	desc = "weatherstation.DESC25"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = persia_region
+				region = egypt_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}
+		NOT = { is_year = 1930 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA25" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = persia_region
+						region = egypt_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.26 #south_africa_region + egypt_region	
+##############################################################################
+#
+# south_africa_region + egypt_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.26
+	title = "weatherstation.NAME26"
+	desc = "weatherstation.DESC26"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = south_africa_region
+				region = egypt_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}	
+		NOT = { is_year = 1920 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA26" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = south_africa_region
+						region = egypt_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.27 #horn_of_africa_region + sahel_region	
+##############################################################################
+#
+# horn_of_africa_region + sahel_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.27
+	title = "weatherstation.NAME27"
+	desc = "weatherstation.DESC27"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = horn_of_africa_region
+				region = sahel_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}		
+		NOT = { is_year = 1950 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA27" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = horn_of_africa_region
+						region = sahel_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.28 #horn_of_africa_region + south_africa_region
+##############################################################################
+#
+# horn_of_africa_region + south_africa_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.28
+	title = "weatherstation.NAME28"
+	desc = "weatherstation.DESC28"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = horn_of_africa_region
+				region = south_africa_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}		
+		NOT = { is_year = 1950 }
+	}
+
+    option = {
+	   name = "weatherstation.OPTA28" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = horn_of_africa_region
+						region = south_africa_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.29 #egypt_region + hudson_bay_region	
+##############################################################################
+#
+# egypt_region + hudson_bay_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.29
+	title = "weatherstation.NAME29"
+	desc = "weatherstation.DESC29"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = egypt_region
+				region = hudson_bay_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}	
+		NOT = { is_year = 1920 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA29" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = egypt_region
+						region = hudson_bay_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+
+##		100 = weatherstation.30 #central_asia_region + mongolia_region	
+##############################################################################
+#
+# central_asia_region + mongolia_region
+#
+##############################################################################
+country_event = {
+   id = weatherstation.30
+	title = "weatherstation.NAME30"
+	desc = "weatherstation.DESC30"
+	picture = DROUGHT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = central_asia_region
+				region = mongolia_region
+			}	
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_no_rain
+			}	
+		}	
+		NOT = { is_year = 1920 }		
+	}
+
+    option = {
+	   name = "weatherstation.OPTA30" 
+	   	hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = central_asia_region
+						region = mongolia_region
+					}
+					NOT = { has_province_modifier = pov_no_rain }
+				}
+				add_province_modifier = {
+					name = "pov_no_rain"
+					duration = 710
+				}
+			}
+		}
+	}
+}
+

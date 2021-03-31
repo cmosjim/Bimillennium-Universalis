@@ -1,0 +1,72 @@
+namespace = rab_HH2_events
+	
+country_event = {
+	id = rab_HH2_events.1
+	title = "rab_HH2_events.NAME1"
+	desc = "rab_HH2_events.DESC1"
+	picture = EMPEROR_ASCENDED_THRONE_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "rab_HH2_events.OPTA1"
+	}
+}		
+
+
+country_event = {
+	id = rab_HH2_events.2
+	title = "rab_HH2_events.NAME2"
+	desc = "rab_HH2_events.DESC2"
+	picture = EMPEROR_ASCENDED_THRONE_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "rab_HH2_events.OPTA2"
+		if = {
+			limit = {
+				owns = 680
+			}			
+			set_capital = 680
+		}
+		define_ruler = {
+			name = "f‰sÍs"
+			adm = 5
+			dip = 4
+			mil = 4
+			fixed = yes
+			age = 20
+			claim = 95
+		}	
+	}
+}		
+	
+
+country_event = {
+	id = rab_HH2_events.3
+	title = "rab_HH2_events.NAME3"
+	desc = "rab_HH2_events.DESC3"
+	picture = EMPEROR_ASCENDED_THRONE_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = "rab_HH2_events.OPTA3"
+		change_tag = CH4
+		change_government = gov_celestial_empire
+		add_government_reform = celestial_empire
+		set_government_rank = 3		
+		set_capital = 4810
+		define_ruler = {
+			name = "H–ËSŒ"
+			adm = 3
+			dip = 3
+			mil = 4
+			fixed = yes
+			age = 20
+			claim = 95
+		}		
+	}
+}		
+

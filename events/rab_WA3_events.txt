@@ -1,0 +1,40 @@
+########################
+#TO1 Flavor Events
+########################
+#rab_WA3_events.1# 
+#
+#must is_year = 30 after , random province will 
+#
+#2018.12.31 fit to 1.28
+namespace = rab_WA3_events
+
+country_event = {
+	id = rab_WA3_events.1
+	title = "rab_WA3_events.NAME1"
+	desc = "rab_WA3_events.DESC1"
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WA3
+		is_year = 30 
+	}
+	option = {
+		name = "rab_TO1_events.OPTA1"
+		change_tag = TO1
+		swap_free_idea_group = yes
+		swap_non_generic_missions = yes
+			
+		if = {
+			limit = { NOT = { government_rank = 3 } }
+			set_government_rank = 3
+		}
+		add_prestige = 25		
+		add_country_modifier = {
+			name = "md_recovery_TO1"
+			duration = 7200
+		}
+	}			
+}
+

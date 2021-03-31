@@ -1,0 +1,6673 @@
+########################
+#Hellenic Flavor Events#
+########################
+# HAVE CHINESE NAME  =  YES
+# 2017-08-26 kill_leader change to add type = who
+# 2018-09-05 let choose queens more random from 0
+# 2018-12-14 fit to 1.28 
+# 2019-01-05 delete auto add_faction function.
+# 2019-01-13 delete 127 events / modify 126 events , bcs we no need var_seeds auto +1 
+# 2019-01-19 add events for auto delete or increase the value of wenhuanzhi & wuqizhi
+# 2019-02-13 add auto adjust the wuqi for AI
+# 2019-03-14 fixed auto delete md_building_andonduhufu when andon duhufu not existed
+# 2019-03-17 add auto-detect new country without celestial_empire reform
+# 2019-03-18 add auto-detect new client-vassal from celestial empire , it will turn to gov = ancient_chinese_warlord
+# 2019-04-05 add id = 112 ~ 114 , 1000 , 1001 check flg_overlord_abandon_alliance whether exists , if they are free of vassals must del this.
+# 2019-04-08 delete id61,60 bcs conflict with occupy_with_rc_warlord id64
+# 2019-04-20 fix the bug for undiscovery for qing_chinese
+# 2019-06-08 Üò¸RwÂÇ=fRãtSÿSbRãtõQ(only is_year = 250 KNMR)
+# 2019-08-17 delete id 112~114 1000 , 1001
+# 2019-10-11 add event to detect whether the country has cb = cb_destory_okinawa_navy_base
+# 2019-10-17 detect the .O˝Vâs∫sÑvÂb	gw=få
+# 2019-10-29 rab_hidden_events.136 .O˝Vâs∫s˙Q∞s:g6R
+# 2019-11-05 rab_hidden_events.137 when KHA from 1260 to 1271 years , immediately change to YUA
+# 2020-01-19 delete rab_hidden_events.128 , this will auto check the check_gov_celestial_empire without celestial reform , but we already give bararian reform to avoid release out country by war-diplomacy . 
+# 2020-03-07 when player (ROC = ai) to fighter JA1 , always put 1K army onto the province jap_support_province
+# 2020-04-25 fixed random of seeds not include in DN3 and TP1 bugs
+# 2020-05-02 add event 128 fixed md_no_consort still existes when celestial_empire/ancient_chinese_warlord/chinese_feudatory_reform not any more.
+# 2020-05-04 add ¶OKmÂTNióãTKNTÑvwRNPñÓïòò
+# 2020-07-09 add duhufu_state_color related events
+# 2020-09-01 add auto random variable change every 120 days +-/1 wenwu wuqi 
+# 2020-10-04 add duhufu_is_hegemon against the original is_hegemon descrease opinion towards to overloard -100
+# 2021-01-20 é˝VÂÇ	êÈbYZQ?eªl(xyÑvÌê)ˇSéNpeÂeTÍÅ®R9eb2NZQ?eªl(qQåT/lIN)
+# 2021-01-23 twnÂÇ	êÈbYZQ?eªl(xyÑvÌê)ˇSéNpeÂeTÍÅ®R9eb2NZQ?eªl
+# 2021-02-01 rab_hidden_events.129 judge to split by 1910 or not
+# 2021-03-27 rab_hidden_events.126 add western wife , so add var_seeds on western
+# 2021-03-27 add  rab_hidden_events.146 to clear the threaten_near_country when the items doesn't match any more.
+namespace = rab_hidden_events
+#
+#
+# When md_chinese_enuchs_party_power country modify has , 
+# every meantime will add enuchs value / also add wenwuzhi 
+
+country_event = {
+	id = rab_hidden_events.1
+	title = "rab_hidden_events.1.t"
+	desc = "rab_hidden_events.1.d"
+	picture = EUNUCH_POWER_eventPicture
+
+    hidden = yes
+   
+	trigger = {
+		OR = { 
+			tag = HND
+			tag = DH1
+			tag = WX2
+		}
+		has_country_modifier = md_chinese_enuchs_party_power
+	}
+
+	mean_time_to_happen = {
+		days = 120
+	}
+	
+	immediate = {
+		subtract_wenhuan_1_effect = yes
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = num_of_wenwuzhi
+						value = 90
+					}
+				}			
+			}
+			add_wenwu_1_effect = yes
+		}	
+	}
+	option = {
+		name = "rab_hidden_events_1.a"
+		
+	}
+}
+
+# When md_chinese_relationship_party_power country modify has , 
+# every meantime will subtract num_of_wuqizhi value / also subtract wenwuzhi 
+country_event = {
+	id = rab_hidden_events.2
+	title = "rab_hidden_events.2.t"
+	desc = "rab_hidden_events.2.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+   
+    hidden = yes
+   
+	trigger = {
+		OR = { 
+			tag = HND
+			tag = DH1
+			tag = WX2
+		}
+		has_country_modifier = md_chinese_relationship_party_power
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+	immediate = {
+		subtract_wuqi_1_effect = yes
+		if = {
+			limit = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 10
+				}
+			}
+			subtract_wenwu_1_effect = yes
+		}		
+	}
+	option = {
+		name = "rab_hidden_events_2.a"
+	
+	}
+}
+# ILL will extend lands until 15 provinces
+country_event = {
+	id = rab_hidden_events.3
+	title = "rab_hidden_events.3.t"
+	desc = "rab_hidden_events.3.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+   
+	trigger = {
+		tag = LIL
+		NOT = { num_of_cities = 15 }
+		has_country_modifier = LIL_extend
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		random_owned_province = {
+			every_neighbor_province = { 
+				limit = {
+					OR = { 
+						owned_by = HND
+						owned_by = DH1
+						owned_by = WX2
+					}
+				}
+				add_core = LIL
+				cede_province = LIL
+				
+			}
+		}
+	}
+	option = {
+		name = "rab_hidden_events_2.a"
+	
+	}
+}
+
+##¶OKmÅhéQ˙Qeg1SŸuàN100 days ib.Vg
+
+country_event = {
+	id = rab_hidden_events.4
+	title = "rab_hidden_events.4.t"
+	desc = "rab_hidden_events.4.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+   
+    fire_only_once = yes
+   
+	trigger = {
+		tag = LIL
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+				add_country_modifier = {
+				name = "LIL_extend"
+					duration = 100
+				}
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+			random_owned_province = {
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT	
+			}
+			add_opinion = {
+				who = HND
+				modifier = op_HND_LIL_HATE
+			}						
+	}
+	option = {
+		name = "rab_hidden_events_4.a"
+		add_treasury = 2500
+	}
+}
+
+# LOE and HND relation
+
+country_event = {
+	id = rab_hidden_events.5
+	title = "rab_hidden_events.5.t"
+	desc = "rab_hidden_events.5.d"
+	picture = EUNUCH_POWER_eventPicture
+    
+	hidden = yes
+	fire_only_once = yes
+		
+	
+   
+	trigger = {
+		tag = LOE
+		exists = HND
+		has_global_flag = HND_email_insult
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+			east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}			
+			set_ai_attitude = {
+				who = HND
+				attitude = attitude_hostile
+			}	
+					add_opinion = {
+						who = HND
+						modifier = op_HND_email_insult
+			}
+				define_ruler = {
+					name = "R	q"
+					age = 33
+					claim = 100
+					adm = 3
+					dip = 4
+					mil = 3
+					fixed = yes
+				}
+				
+				define_heir = { 
+					name = "Rãt"
+					claim = 100
+					age = 4
+					adm = 2
+					dip = 2
+					mil = 2
+				
+				}
+				
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}			
+	}
+	option = {
+		name = "rab_hidden_events_5.a"
+	
+	}
+}
+
+country_event = {
+	id = rab_hidden_events.501
+	title = "rab_hidden_events.5a.t"
+	desc = "rab_hidden_events.5a.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LOE
+		exists = HND
+		has_global_flag = HND_email_agree
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}							
+		
+			set_ai_attitude = {
+				who = HND
+				attitude = attitude_friendly
+			}	
+					add_opinion = {
+						who = HND
+						modifier = op_HND_email_agree
+			}
+	}
+	option = {
+		name = "rab_hidden_events_5a.a"
+	
+	}
+}
+
+
+# LIL and HND relation
+
+
+country_event = {
+	id = rab_hidden_events.6
+	title = "rab_hidden_events.6.t"
+	desc = "rab_hidden_events.6.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	fire_only_once = yes
+		
+    hidden = yes
+   
+	trigger = {
+		tag = LIL
+		exists = HND
+
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+			set_ai_attitude = {
+				who = HND
+				attitude = attitude_hostile
+				
+			}	
+					add_opinion = {
+						who = HND
+						modifier = op_HND_LIL_HATE
+					}
+				define_ruler = {
+					name = "ÅhéQ"
+					age = 32
+					claim = 100
+					adm = 1
+					dip = 1
+					mil = 4
+					fixed = yes
+					
+				}
+				define_heir = { 
+					name = "Åh=Oâs"
+					claim = 100
+					age = 10
+					adm = 4
+					dip = 2
+					mil = 2
+				
+				}		
+					
+		}
+		
+	option = {
+		name = "rab_hidden_events_6.a"
+	
+	}
+}
+
+
+
+
+# NOT (ç^ Sh^ up^ delete no heir chance
+
+country_event = {
+	id = rab_hidden_events.701
+	title = "rab_hidden_events.701a.t"
+	desc = "rab_hidden_events.701a.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+		
+    hidden = yes
+   
+	trigger = {
+		 has_country_modifier = no_heir_chance 
+		NOT = {
+			has_ruler = "R5"
+		}
+	}
+		
+	immediate = {
+		remove_country_modifier = no_heir_chance
+	}
+	
+
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	option = {
+		name = "rab_hidden_events_701a.a"
+	}
+}
+
+country_event = {
+	id = rab_hidden_events.702
+	title = "rab_hidden_events.7a.t"
+	desc = "rab_hidden_events.7a.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+		
+    hidden = yes
+   
+	trigger = {
+			has_country_modifier = no_heir_chance 
+			has_reform = ancient_chinese_togofu_reform
+			
+		NOT = {
+			OR = {
+				vassal_of = NEW
+				vassal_of = HND
+			}
+		}		
+	}
+		
+	immediate = {
+		remove_country_modifier = no_heir_chance
+	}
+	
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_hidden_events_702a.a"
+	}
+}
+
+
+
+country_event = {
+	id = rab_hidden_events.9
+	title = "rab_hidden_events.9.t"
+	desc = "rab_hidden_events.9.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = LZO
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+					add_country_modifier = {
+					name = "LZO_extend"
+					duration = 100
+					}	
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}			
+				define_ruler = {
+					name = "Rkå"
+					age = 32
+					claim = 100
+					adm = 4
+					dip = 5
+					mil = 4
+					fixed = yes
+					attach_leader = "Rkå"
+				}
+				define_heir = { 
+					name = "Rfç"
+					claim = 100
+					age = 3
+					adm = 3
+					dip = 3
+					mil = 5
+				
+				}	
+							
+	}
+	option = {
+		name = "rab_hidden_events_9.a"
+		add_treasury = 2500
+	}
+}
+
+country_event = {
+	id = rab_hidden_events.901
+	title = "rab_hidden_events.9.t"
+	desc = "rab_hidden_events.9.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = HJJ
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+					add_country_modifier = {
+					name = "HJJ_extend"
+					duration = 100
+					}	
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}			
+		define_ruler = {
+			name = "RúÑ"
+			age = 32
+			claim = 100
+			adm = 4
+			dip = 5
+			mil = 4
+			fixed = yes
+			attach_leader = "RúÑ"
+		}
+							
+	}
+	option = {
+		name = "rab_hidden_events_9.a"
+		add_treasury = 2500
+	}
+}
+
+#liuzho's land auto-add until 25 provinces
+country_event = {
+	id = rab_hidden_events.10
+	title = "rab_hidden_events.10.t"
+	desc = "rab_hidden_events.10.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+   
+	trigger = {
+		tag = LZO
+		NOT = { num_of_cities = 25 }
+		has_country_modifier = LZO_extend
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		random_owned_province = {
+			every_neighbor_province = { 
+				limit = {
+					OR = { 
+						owned_by = HND
+						owned_by = DH1
+						owned_by = WX2
+					}
+				}
+				add_core = LZO
+				cede_province = LZO
+				
+			}
+		
+		}
+	}
+	option = {
+		name = "rab_hidden_events_10.a"
+	
+	}
+}
+
+#RúÑÑvHr˛VûX†R until 25 provinces 
+#
+country_event = {
+	id = rab_hidden_events.1001
+	title = "rab_hidden_events.10.t"
+	desc = "rab_hidden_events.10.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+   
+	trigger = {
+		tag = HJJ
+		NOT = { num_of_cities = 25 }
+		has_country_modifier = HJJ_extend
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		random_owned_province = {
+			every_neighbor_province = { 
+				limit = {
+					OR = { 
+						owned_by = HND
+						owned_by = DH1
+						owned_by = WX2
+					}
+				}
+				add_core = HJJ
+				cede_province = HJJ
+				
+			}
+		
+		}
+	}
+	option = {
+		name = "rab_hidden_events_10.a"
+	
+	}
+}
+
+
+##¶OKm0Rãs+u˙Qeg1SŸuàN100 days extended duration
+
+country_event = {
+	id = rab_hidden_events.11
+	title = "rab_hidden_events.11.t"
+	desc = "rab_hidden_events.11.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = WNF
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+					add_country_modifier = {
+					name = "WNF_extend"
+					duration = 100
+					}
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}			
+				define_ruler = {
+					name = "ãs+u"
+					age = 32
+					claim = 100
+					adm = 4
+					dip = 5
+					mil = 4
+					fixed = yes
+				}
+					
+	
+			add_opinion = {
+				who = HND
+				modifier = op_HND_LIL_HATE
+			}
+	}		
+	option = {
+		name = "rab_hidden_events_11.a"
+		add_treasury = 2500
+	}
+}
+
+#WangFu's land auto-extend until 30 provinces
+
+country_event = {
+	id = rab_hidden_events.12
+	title = "rab_hidden_events.12.t"
+	desc = "rab_hidden_events.12.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+   
+	trigger = {
+		tag = WNF
+		NOT = { num_of_cities = 40 }
+		has_country_modifier = WNF_extend
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		random_owned_province = {
+			every_neighbor_province = { 
+				limit = {
+						OR = { 
+							owned_by = HND
+							owned_by = DH1
+							owned_by = WX2
+						}
+				}
+							add_core = WNF
+							cede_province = WNF
+						
+			}
+		
+		}
+	}
+	option = {
+		name = "rab_hidden_events_12.a"
+	
+	}
+}
+
+
+##Û100 days extended duration
+country_event = {
+	id = rab_hidden_events.13
+	title = "rab_hidden_events.13.t"
+	desc = "rab_hidden_events.13.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = TSU
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+					add_country_modifier = {
+					name = "TSU_extend"
+					duration = 100
+					}
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}			
+				define_ruler = {
+					name = ".V©ã"
+					age = 24
+					claim = 100
+					adm = 4
+					dip = 4
+					mil = 2
+					fixed = yes
+				}
+					
+	
+			add_opinion = {
+				who = HND
+				modifier = op_HND_LIL_HATE
+			}
+	}		
+	option = {
+		name = "rab_hidden_events_13.a"
+		add_treasury = 2500
+	}
+}
+
+#Chojey until 30 provinces
+country_event = {
+	id = rab_hidden_events.14
+	title = "rab_hidden_events.14.t"
+	desc = "rab_hidden_events.14.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+   
+	trigger = {
+		tag = TSU
+		NOT = { num_of_cities = 30 }
+		has_country_modifier = TSU_extend
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+			random_owned_province = {
+					every_neighbor_province = { 
+						limit = {
+							OR = {
+								owned_by = HND
+								owned_by = WX2
+								owned_by = DH1
+							}							
+						}
+						add_core = TSU
+						cede_province = TSU
+						
+					}
+		
+			}
+	}
+	option = {
+		name = "rab_hidden_events_14.a"
+	
+	}
+}
+
+##
+country_event = {
+	id = rab_hidden_events.15
+	title = "rab_hidden_events.15.t"
+	desc = "rab_hidden_events.15.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = DOG
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+					add_country_modifier = {
+					name = "DOG_extend"
+					duration = 100
+					}
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}			
+				define_ruler = {
+					name = "¶zfk"
+					age = 35
+					claim = 100
+					adm = 4
+					dip = 5
+					mil = 6
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_15.a"
+		add_treasury = 2500
+	}
+}
+
+#¶zfkÑvHr˛VûX†Runtil 30 provinces
+country_event = {
+	id = rab_hidden_events.16
+	title = "rab_hidden_events.16.t"
+	desc = "rab_hidden_events.16.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+   
+	trigger = {
+		tag = DOG
+		NOT = { num_of_cities = 30 }
+		has_country_modifier = DOG_extend
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		random_owned_province = {
+			every_neighbor_province = { 
+				limit = {
+					OR = { 
+						owned_by = HND
+						owned_by = DH1
+						owned_by = WX2
+					}
+				}
+				add_core = DOG
+				cede_province = DOG
+				
+			}
+		}
+	}
+	option = {
+		name = "rab_hidden_events_16.a"
+	
+	}
+}
+#¶zfk˙^˝VN'YIlÑvsQ˚|
+
+country_event = {
+	id = rab_hidden_events.17
+	title = "rab_hidden_events.15a.t"
+	desc = "rab_hidden_events.15a.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+    hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = DOG
+		exists = HND
+		has_global_flag = dou_wu_unrest_hate
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+			set_ai_attitude = {
+				who = HND
+				attitude = attitude_hostile
+			}	
+				add_opinion = {
+					who = HND
+					modifier = op_HND_DOG_HATE
+			}
+	}
+	option = {
+		name = "rab_hidden_events_17.a"
+	
+	}
+}
+
+##¶OKm0R˘fiT˙Qeg1SŸuàN30 days extended duration
+country_event = {
+	id = rab_hidden_events.18
+	title = "rab_hidden_events.17.t"
+	desc = "rab_hidden_events.17.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = TSS
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+			add_country_modifier = {
+			name = "TSS_extend"
+			duration = 100
+			}	
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}							
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}			
+				define_ruler = {
+					name = "˘fiT"
+					age = 35
+					claim = 100
+					adm = 4
+					dip = 4
+					mil = 3
+					fixed = yes
+				}
+				define_heir = {
+					claim = 100
+					name = "˘fiT"
+					adm = 6
+					dip = 6
+					mil = 5
+					fixed = yes
+				}
+			add_opinion = {
+						who = HND
+						modifier = op_HND_LIL_HATE
+			}		
+	}
+	option = {
+		name = "rab_hidden_events_18.a"
+		add_treasury = 2500
+	}
+}
+
+#˘fiTÑvHr˛VûX†R until 30 provinces
+country_event = {
+	id = rab_hidden_events.19
+	title = "rab_hidden_events.18.t"
+	desc = "rab_hidden_events.18.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+   
+	trigger = {
+		tag = TSS
+		NOT = { num_of_cities = 30 }
+		has_country_modifier = TSS_extend
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+			random_owned_province = {
+					every_neighbor_province = { 
+						limit = {
+						owned_by = HND
+						owned_by = DH1
+						owned_by = WX2
+						}
+									add_core = TSS
+									cede_province = TSS
+									
+					}
+		
+			}
+	}
+	option = {
+		name = "rab_hidden_events_18.a"
+	
+	}
+}
+
+#ƒû˛T<çN˙Qeg1SŸuàN'YœëÑvõQñx1 -19
+#ƒû˛T<çN˙Qeg1SŸuàN'YœëÑvõQñx2 -20
+
+
+country_event = {
+	id = rab_hidden_events.20
+	title = "rab_hidden_events.19.t"
+	desc = "rab_hidden_events.19.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = WHG
+		exists = HND
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}			
+		add_treasury = 5000	
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = ".V“â"
+					age = 28
+					claim = 100
+					adm = 3
+					dip = 3
+					mil = 5
+					fixed = yes
+					attach_leader = ".V“â"
+				}
+			set_ai_attitude = {
+				who = HND
+				attitude = attitude_hostile
+			}	
+					add_opinion = {
+						who = HND
+						modifier = op_HND_LIL_HATE
+			}				
+	}
+	option = {
+		name = "rab_hidden_events_19.a"
+	
+	}
+}
+
+country_event = {
+	id = rab_hidden_events.22
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = TSU
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "cÑSS"
+					age = 24
+					claim = 100
+					adm = 3
+					dip = 3
+					mil = 4
+					fixed = yes
+				}
+			add_opinion = {
+						who = HND
+						modifier = op_HND_LIL_HATE
+			}				
+					
+	}
+	option = {
+		name = "rab_hidden_events_22.a"
+	
+	}
+}
+
+country_event = {
+	id = rab_hidden_events.23
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = TOC
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "vñ&å"
+					age = 56
+					claim = 100
+					adm = 3
+					dip = 3
+					mil = 2
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_23.a"
+	
+	}
+}
+
+#Rhà
+country_event = {
+	id = rab_hidden_events.24
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = LBB
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "Rhà"
+					age = 45
+					claim = 100
+					adm = 3
+					dip = 3
+					mil = 3
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_24.a"
+	
+	}
+}
+
+#löåÅ
+country_event = {
+	id = rab_hidden_events.25
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+		tag = MTN
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "löåÅ"
+					adm = 3
+					dip = 3
+					mil = 5
+					fixed = yes
+				}
+				
+				define_heir = {
+					name = "löO"
+					claim = 100
+					adm = 3
+					dip = 4
+					mil = 3
+					
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_25.a"
+	
+	}
+}
+
+
+#R	q
+country_event = {
+	id = rab_hidden_events.26
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = LOE
+		NOT = { has_global_flag = HND_email_agree }
+		NOT = { has_global_flag = HND_email_insult }
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "R	q"
+					age = 55
+					claim = 100
+					adm = 3
+					dip = 4
+					mil = 3
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_26.a"
+	
+	}
+}
+
+
+#Åà=g
+country_event = {
+	id = rab_hidden_events.27
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = UAZ
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "Åà=g"
+					age = 30
+					claim = 100
+					adm = 1
+					dip = 1
+					mil = 3
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_27.a"
+	
+	}
+}
+
+
+country_event = {
+	id = rab_hidden_events.28
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = ZON
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = ".Vlb"
+					age = 28
+					claim = 100
+					adm = 4
+					dip = 3
+					mil = 5
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_28.a"
+	
+	}
+}
+
+
+country_event = {
+	id = rab_hidden_events.29
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = TS2
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "˘fÕd"
+					age = 29
+					claim = 100
+					adm = 6
+					dip = 5
+					mil = 6
+					fixed = yes
+				}
+				define_heir = {
+					name = "˘fN"
+					claim = 100
+					adm = 5
+					dip = 3
+					mil = 3
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_29.a"
+	
+	}
+}
+
+
+country_event = {
+	id = rab_hidden_events.30
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = CNW
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "Hñ)n"
+					age = 40
+					claim = 100
+					adm = 3
+					dip = 3
+					mil = 4
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_30.a"
+	
+	}
+}
+
+
+country_event = {
+	id = rab_hidden_events.31
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = ZOF
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "1g&r"
+					age = 40
+					claim = 100
+					adm = 3
+					dip = 3
+					mil = 2
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_31.a"
+	
+	}
+}
+
+
+country_event = {
+	id = rab_hidden_events.32
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = ZOF
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "ÅàÕu"
+					age = 30
+					claim = 100
+					adm = 3
+					dip = 2
+					mil = 5
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_32.a"
+	
+	}
+}
+
+
+
+country_event = {
+	id = rab_hidden_events.33
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = LUP
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "RY"
+					age = 30
+					claim = 100
+					adm = 5
+					dip = 5
+					mil = 3
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_33.a"
+	
+	}
+}
+
+#T^
+country_event = {
+	id = rab_hidden_events.34
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = LUP
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "T^"
+					age = 30
+					claim = 100
+					adm = 3
+					dip = 3
+					mil = 6
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_34.a"
+	
+	}
+}
+
+
+country_event = {
+	id = rab_hidden_events.35
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = LUO
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "RGu"
+					age = 44
+					claim = 100
+					adm = 2
+					dip = 2
+					mil = 3
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_13.a"
+	
+	}
+}
+
+
+
+country_event = {
+	id = rab_hidden_events.36
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+		tag = YNB
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "%NãvNÜ"
+					age = 35
+					claim = 100
+					adm = 3
+					dip = 2
+					mil = 3
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_36.a"
+	
+	}
+}
+
+
+
+country_event = {
+	id = rab_hidden_events.37
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+		tag = WLN
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "ãsg"
+					age = 45
+					claim = 100
+					adm = 3
+					dip = 3
+					mil = 1
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_37.a"
+	
+	}
+}
+
+country_event = {
+	id = rab_hidden_events.38
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = LIZ
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "Ng¨P"
+					age = 33
+					claim = 100
+					adm = 0
+					dip = 1
+					mil = 4
+					fixed = yes
+				}
+			add_opinion = {
+				who = HND
+				modifier = op_HND_LIL_HATE
+			}						
+	}
+	option = {
+		name = "rab_hidden_events_38.a"
+	
+	}
+}
+
+
+# GUO:
+
+country_event = {
+	id = rab_hidden_events.39
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = GUO
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "Ìêjl"
+					age = 33
+					claim = 100
+					adm = 0
+					dip = 1
+					mil = 4
+					fixed = yes
+				}
+			add_opinion = {
+						who = HND
+						modifier = op_HND_LIL_HATE
+			}			
+					
+	}
+	option = {
+		name = "rab_hidden_events_39.a"
+	
+	}
+}
+
+#ZGL: 
+
+country_event = {
+	id = rab_hidden_events.40
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		tag = ZGL
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = ".VÅú"
+					age = 35
+					claim = 100
+					adm = 5
+					dip = 3
+					mil = 4
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_40.a"
+	
+	}
+}
+
+# ZIX: 
+
+country_event = {
+	id = rab_hidden_events.41
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+		tag = ZIX
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "ÎXÓq"
+					age = 35
+					claim = 100
+					adm = 3
+					dip = 3
+					mil = 4
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_41.a"
+	
+	}
+}
+
+# LUD: 
+
+country_event = {
+	id = rab_hidden_events.42
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		OR = {
+		has_global_flag = YELLOW_TURBAN_LOSE
+		has_global_flag = YELLOW_TURBAN_WIN
+		}
+		tag = LUD
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		random_owned_province = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+				define_ruler = {
+					name = "R±S"
+					age = 35
+					claim = 100
+					adm = 2
+					dip = 3
+					mil = 2
+					fixed = yes
+				}
+					
+	}
+	option = {
+		name = "rab_hidden_events_42.a"
+	
+	}
+}
+
+#super lucky no WHG occur ... after 200
+country_event = {
+	id = rab_hidden_events.43
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		is_year = 200 
+		
+		OR = {
+			has_country_modifier = md_chinese_enuchs_party_power
+			has_country_modifier = md_chinese_relationship_party_power 
+		 }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+		 remove_country_modifier = md_chinese_enuchs_party_power
+		 remove_country_modifier = md_chinese_relationship_party_power 
+	}
+	option = {
+		name = "rab_hidden_events_43.a"
+	
+	}
+}
+
+#lubu_no_ai_exist
+
+country_event = {
+	id = rab_hidden_events.44
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		has_global_flag = lubu_no_ai_exist
+		ai = yes
+		OR = {
+		advisor = lu_bu
+		has_leader = "T^0fkS0"
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				kill_leader = {
+					type = "T^0fkS0"
+				}	
+		remove_advisor = lu_bu
+		
+	}
+	option = {
+		name = "rab_hidden_events_44.a"
+	
+	}
+}
+
+country_event = {
+	id = rab_hidden_events.45
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		has_global_flag = diao_chan_no_ai_exist
+		ai = yes
+		OR = {
+		advisor = diao_chan
+		has_leader = "ÇåIá0õQ^0"
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+				kill_leader = {
+					type = "ÇåIá0õQ^0"
+				}	
+		kill_advisor = diao_chan
+		
+	}
+	option = {
+		name = "rab_hidden_events_45.a"
+	
+	}
+}
+
+
+country_event = {
+	id = rab_hidden_events.46
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+	fire_only_once = yes
+   
+	trigger = {
+		is_year = 215
+		NOT = { is_year = 250 }
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	immediate = {
+	
+			1833 = {
+			add_province_modifier = {
+				name = "MYE_BASE"
+				duration = -1
+			}
+			add_core = MYE
+			change_religion = animism
+			}
+			2478 = {
+			add_province_modifier = {
+				name = "MYE_BASE"
+				duration = -1
+			}
+			add_core = MYE	
+			change_religion = animism
+			}
+			2484 = {
+			add_province_modifier = {
+				name = "MYE_BASE"
+				duration = -1
+			}
+			add_core = MYE	
+			change_religion = animism
+			}
+			669 = {
+			add_province_modifier = {
+				name = "MYE_BASE"
+				duration = -1
+			}
+			add_core = MYE
+			change_religion = animism
+			}
+			1829 = {
+			add_province_modifier = {
+				name = "MYE_BASE"
+				duration = -1
+			}
+			add_core = MYE	
+			change_religion = animism
+			}
+			2477 = {
+			add_province_modifier = {
+				name = "MYE_BASE"
+				duration = -1
+			}
+			add_core = MYE	
+			change_religion = animism
+			}
+			670 = {
+			add_province_modifier = {
+				name = "MYE_BASE"
+				duration = -1
+			}
+			add_core = MYE	
+			change_religion = animism
+			}
+			2479 = {
+			add_province_modifier = {
+				name = "MYE_BASE"
+				duration = -1
+			}
+			add_core = MYE
+			change_religion = animism
+			}
+			3216 = {
+			add_province_modifier = {
+				name = "MYE_BASE"
+				duration = -1
+			}
+			add_core = MYE
+			change_religion = animism
+			}			
+	}
+	option = {
+		name = "rab_hidden_events_46.a"
+	
+	}
+}
+
+# dynamic province name 
+country_event = {
+	id = rab_hidden_events.47
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+	fire_only_once = yes
+   
+	trigger = {
+		is_year = 2
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "rab_hidden_events_47.a"
+		if = { 
+				limit = { 
+				NOT = { is_year = 780 }		
+				
+				}
+		1829 = { change_province_name = "∞eŒW" }
+		}
+		
+		if = { 
+				limit = { 
+				NOT = { is_year = 857 }		
+				is_year = 780
+				}
+		1829 = { change_province_name = "	VæyÃë" }
+		}
+		if = { 
+				limit = { 
+				NOT = { is_year = 984 }		
+				is_year = 857
+				}
+		1829 = { change_province_name = "	VæyS" }
+		}	
+		if = { 
+				limit = { 
+				NOT = { is_year = 1394 }		
+				is_year = 984
+				}
+		1829 = { change_province_name = "-NÊTNb" }
+		}	
+		if = { 
+				limit = { 
+				NOT = { is_year = 1680 }		
+				is_year = 1655
+				}
+		1829 = { change_province_name = "`fﬁT" }
+		}	
+	}
+}
+
+# b∑V dynamic province name 
+country_event = {
+	id = rab_hidden_events.48
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+	fire_only_once = yes
+   
+	trigger = {
+		is_year = 2
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "rab_hidden_events_48.a"
+		if = { 
+				limit = { 
+				NOT = { is_year = 1733 }		
+				
+				}
+		703 = { change_province_name = "Ìp≥l" }
+		}
+	}
+}
+
+#clr global flag for yellow turban 
+country_event = {
+	id = rab_hidden_events.49
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+	fire_only_once = yes
+   
+	trigger = {
+		 is_year = 194
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "rab_hidden_events_49.a"
+			clr_global_flag = SMALL_YELLOW_TURBAN
+			clr_global_flag = BIG_YELLOW_TURBAN
+		}
+}
+
+##################
+
+country_event = {
+	id = rab_hidden_events.50
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		has_reform = mongol_steppe_horde_reform
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}
+				east_siberia_region = {
+				discover_country = ROOT
+			}				
+
+	}
+	option = {
+		name = "rab_hidden_events_50.a"
+	
+	}
+}
+#########w0R◊Çœeb=fkVœe9hncvQt^RŸuàNNTÑv?eSO#########
+#########
+# when CMI country occur it will translate to modern_chinese_warlord or ancient_chinese_warlord depend on 1912 or etc.
+country_event = {
+	id = rab_hidden_events.51
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		exists = CMI
+		tag = CMI
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}
+				east_siberia_region = {
+				discover_country = ROOT
+			}				
+
+	}
+	option = {
+		name = "rab_hidden_events_51.a"
+		if = {
+			limit = { is_year = 1945 } 
+			change_government = monarchy
+			add_government_reform = parliamentary_monarchy 
+		}
+		if = {
+			limit = { 
+				is_year = 1912
+				NOT = { is_year = 1945 }
+			}
+			change_government = modern_chinese_warlord
+			add_government_reform = modern_chinese_warlord_reform			
+		}
+		if = {
+			
+			limit = { NOT = { is_year = 1912 }}
+			change_government = ancient_chinese_warlord
+			add_government_reform = ancient_chinese_warlord_reform			
+		}
+	}
+}
+#########w0R◊Çœeb=fkVœe9hncvQt^RŸuàNNTÑv?eSO#########
+country_event = {
+	id = rab_hidden_events.52
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+	fire_only_once = yes
+   
+	trigger = {
+		exists = CYI
+		tag = CYI
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}
+				east_siberia_region = {
+				discover_country = ROOT
+			}				
+
+	}
+	option = {
+		name = "rab_hidden_events_52.a"
+		if = {
+			limit = { is_year = 1945 } 
+			change_government = monarchy
+			add_government_reform = parliamentary_monarchy 
+		}
+		if = {
+			limit = { 
+				is_year = 1912
+				NOT = { is_year = 1945 }
+			}
+			change_government = modern_chinese_warlord
+			add_government_reform = modern_chinese_warlord_reform			
+		}
+		if = {
+			
+			limit = { NOT = { is_year = 1912 }}
+			change_government = ancient_chinese_warlord
+			add_government_reform = ancient_chinese_warlord_reform			
+		}
+	}
+}
+
+####################
+country_event = {
+	id = rab_hidden_events.53
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+   
+	trigger = {
+		OR = {
+			AND = {
+				exists = TP1
+				tag = TP1
+				NOT = { has_country_modifier = md_warlord_specified_a }	
+			}
+			AND = {
+				NOT = { tag = TP1 }
+				has_country_modifier = md_warlord_specified_a
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = "rab_hidden_events_53.a"
+		if = {
+			limit = {
+				exists = TP1
+				tag = TP1
+				NOT = { has_country_modifier = md_warlord_specified_a }	
+			}
+			add_country_modifier = {
+				name = "md_warlord_specified_a"
+				duration = -1
+			}				
+		}
+		if = {
+			limit = {
+				NOT = { tag = TP1 }
+				has_country_modifier = md_warlord_specified_a
+			}
+			remove_country_modifier = md_warlord_specified_a
+									
+		}
+	}
+}
+##########)Yg˝V∂Ràî˘R*Ys^)Y˝V`SÜò S`S	g6R¶^##############################
+#)YgÔSÂNÙv•c`SÜò*Ys^)Y˝Vˇdñ^ó*Ys^)Y˝VÿS´é OR )Ygbc?eSOÜN
+#md_TP1_warlord_specified_a => only for celestrial empire >f:y
+##########################################################################
+country_event = {
+	id = rab_hidden_events.54
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+  
+	trigger = {
+			NOT = { has_country_modifier = md_TP1_warlord_specified_a }	
+			exists = TP1
+			has_reform = celestial_empire
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+		add_country_modifier = { 
+			name = "md_TP1_warlord_specified_a"
+			duration = -1
+		}	
+	}
+	option = {
+		name = "rab_hidden_events_54.a"
+
+	}
+}
+#########)Yg˝V∂Ràî˘R*Ys^)Y˝V`SÜò S`S	g6R¶^àm1Y##########
+country_event = {
+	id = rab_hidden_events.55
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+   
+	trigger = {
+		has_country_modifier = md_TP1_warlord_specified_a
+		OR = {
+			NOT = { exists = TP1 }
+			NOT = {
+				has_reform = celestial_empire
+			}
+		}
+	}	
+	
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+		remove_country_modifier = md_TP1_warlord_specified_a
+	}
+	option = {
+		name = "rab_hidden_events_55.a"
+
+	}
+}
+##################################################
+#md_celestial_empire_warlord_a = ONLY display or not 
+##################################################
+country_event = {
+	id = rab_hidden_events.56
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	
+   
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { has_country_modifier = md_celestial_empire_warlord_a }			
+					has_reform = celestial_empire
+			}	
+			AND = {
+				has_country_modifier = md_celestial_empire_warlord_a
+				NOT = {
+						has_reform = celestial_empire
+				}	
+			}	
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "rab_hidden_events_56.a"
+		if = {
+			limit = {
+				NOT = { has_country_modifier = md_celestial_empire_warlord_a }			
+					has_reform = celestial_empire		
+			}
+			add_country_modifier = {
+				name = "md_celestial_empire_warlord_a"
+				duration = -1
+			}			
+		}
+		if = {
+			limit = {
+				has_country_modifier = md_celestial_empire_warlord_a
+				NOT = {
+					has_reform = celestial_empire
+				}				
+			}
+			remove_country_modifier = md_celestial_empire_warlord_a
+		}		
+	}
+}
+##########‰S„NõQñ˘RéN)YgåT˝ê≤bú^Ñv`SÜò S`S	g6R¶^/÷Sàm##########
+# md_ancient_chinese_warlord_a = ONLY >f:y
+##########################################################
+country_event = {
+	id = rab_hidden_events.57
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+   
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { has_country_modifier = md_ancient_chinese_warlord_a }	
+					OR = {
+						has_reform = ancient_chinese_warlord_reform
+						has_reform = ancient_chinese_togofu_reform
+					}				
+			}	
+			AND = {
+				has_country_modifier = md_ancient_chinese_warlord_a
+				NOT = {
+					OR = {
+						has_reform = ancient_chinese_warlord_reform
+						has_reform = ancient_chinese_togofu_reform
+					}	
+				}
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "rab_hidden_events_57.a"
+		if = {
+			limit = {
+				NOT = { has_country_modifier = md_ancient_chinese_warlord_a }	
+				OR = {
+					has_reform = ancient_chinese_warlord_reform
+					has_reform = ancient_chinese_togofu_reform
+				}	
+			}
+			add_country_modifier = {
+				name = "md_ancient_chinese_warlord_a"
+				duration = -1
+			}		
+		}
+		if = {
+			limit = {
+				has_country_modifier = md_ancient_chinese_warlord_a
+				NOT = {
+					OR = {
+						has_reform = ancient_chinese_warlord_reform
+						has_reform = ancient_chinese_togofu_reform
+					}	
+				}
+			}
+			remove_country_modifier = md_ancient_chinese_warlord_a
+		}	
+	}
+}
+
+
+##########àî˘RmodernõQñ`SÜò S`S	g6R¶^>f:y/÷Sàm˝V∂RÓOck##########
+country_event = {
+	id = rab_hidden_events.58
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+   
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { has_country_modifier = md_modern_chinese_warlord_a }
+				has_reform = modern_chinese_warlord_reform
+			}
+			AND = {
+				has_country_modifier = md_modern_chinese_warlord_a
+				NOT = { has_reform = modern_chinese_warlord_reform }
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+
+	}
+	option = {
+		name = "rab_hidden_events_58.a"
+		if = { 
+			limit = {
+				NOT = { has_country_modifier = md_modern_chinese_warlord_a }
+				has_reform = modern_chinese_warlord_reform
+			}
+			add_country_modifier = {
+			name = "md_modern_chinese_warlord_a"
+			duration = -1
+			}			
+		}
+		if = { 
+			limit = {
+				has_country_modifier = md_modern_chinese_warlord_a
+				NOT = { has_reform = modern_chinese_warlord_reform }
+			}
+			remove_country_modifier = md_modern_chinese_warlord_a
+		}
+	}
+}
+##########àî˘RôÑ‰S`SÜò S`S	g6R¶^##########
+country_event = {
+	id = rab_hidden_events.59
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+   
+	trigger = {
+		NOT = { has_country_modifier = md_mongol_steppe_horde_a }
+		OR = {
+			has_reform = mongol_steppe_horde_reform
+			tag = MGE 
+			tag = MG1 
+			tag = KMO 
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+		add_country_modifier = { 
+			name = "md_mongol_steppe_horde_a"
+			duration = -1
+		}	
+	}
+	option = {
+		name = "rab_hidden_events_59.a"
+
+	}
+}
+##########àî˘RROC vs CHN KNÙïÑvbâN#############
+#country_event = {
+#	id = rab_hidden_events.60
+#	title = "rab_hidden_events.21.t"
+#	desc = "rab_hidden_events.21.d"
+#	picture = EUNUCH_POWER_eventPicture
+#   
+#    hidden = yes
+#   
+#	trigger = {
+#		
+#		exists = ROC
+#		exists = CHN
+#		tag = ROC
+#		NOT = { has_country_modifier = occupy_with_CHN }
+#		
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 10
+#	}
+#	immediate = {
+#		add_country_modifier = { 
+#			name = "occupy_with_CHN"
+#			duration = -1
+#		}	
+#	}
+#	option = {
+#		name = "rab_hidden_events_60.a"
+#
+#	}
+#}
+
+#country_event = {
+#	id = rab_hidden_events.61
+#	title = "rab_hidden_events.21.t"
+#	desc = "rab_hidden_events.21.d"
+#	picture = EUNUCH_POWER_eventPicture
+#   
+#	
+#    hidden = yes
+#   
+#	trigger = {
+#		exists = ROC
+#		tag = CHN
+#		NOT = { has_country_modifier = occupy_with_ROC }
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 10
+#	}
+#	immediate = {
+#		add_country_modifier = { 
+#			name = "occupy_with_ROC"
+#			duration = -1
+#		}	
+#	}
+#	option = {
+#		name = "rab_hidden_events_61.a"
+#
+#	}
+#}
+
+#########when ROC change to TWN###############
+country_event = {
+	id = rab_hidden_events.62
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+   
+	trigger = {
+		exists = TWN
+		tag = TWN
+		has_country_modifier = occupy_with_CHN
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+		remove_country_modifier = occupy_with_CHN
+	}
+	option = {
+		name = "rab_hidden_events_62.a"
+
+	}
+}
+
+#########ROC/CHN vs modern_chinese_warlord 
+country_event = {
+	id = rab_hidden_events.63
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	hidden = yes
+   
+	trigger = {
+		any_known_country = {
+			OR = {
+				has_reform = modern_chinese_warlord_reform
+				has_reform = ancient_chinese_togofu_reform
+				has_reform = ancient_chinese_warlord_reform
+				has_reform = celestial_empire
+				has_reform = chinese_feudatory_reform
+				tag = TP1
+			}
+		}
+		OR = {
+			tag = ROC
+			tag = CHN
+		}	
+		NOT = { has_country_modifier = occupy_with_m_warlord }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+		add_country_modifier = { 
+			name = "occupy_with_m_warlord"
+			duration = -1
+		}	
+	}
+	option = {
+		name = "rab_hidden_events_63.a"
+
+	}
+}
+#
+#########ROC and CHN has show the occupy country modifier 
+#
+country_event = {
+	id = rab_hidden_events.64
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+   
+	trigger = {
+		exists = ROC
+		exists = CHN
+		OR = {
+			tag = ROC
+			tag = CHN
+		}	
+		NOT = { has_country_modifier = occupy_with_rc_warlord }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+		add_country_modifier = { 
+			name = "occupy_with_rc_warlord"
+			duration = -1
+		}	
+	}
+	option = {
+		name = "rab_hidden_events_64.a"
+
+	}
+}
+#
+# delete md_mongol_steppe_horde_a flag if not match 
+#
+country_event = {
+	id = rab_hidden_events.65
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+
+	trigger = {
+		has_country_modifier = md_mongol_steppe_horde_a
+		
+		NOT = {
+			OR = {
+				tag = MGE
+				tag = MG1
+				tag = KMO
+				has_reform = mongol_steppe_horde_reform
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}
+	immediate = {
+		remove_country_modifier = md_mongol_steppe_horde_a
+	}
+	option = {
+		name = "rab_hidden_events_65.a"
+
+	}
+}
+
+######### detect the TP1 exists once fire_only_once  , then give the whole global variable "TAIPING_EVER_EXISTS"
+country_event = {
+	id = rab_hidden_events.66
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+	fire_only_once = yes 
+	
+	trigger = {
+		exists = TP1
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+		set_global_flag = TAIPING_EVER_EXISTS
+	}
+	option = {
+		name = "rab_hidden_events_66.a"
+
+	}
+}
+
+##Before modifier "TP1_extend" disappear , the country will auto-extend its lands 
+country_event = {
+	id = rab_hidden_events.67
+	title = "rab_hidden_events.11.t"
+	desc = "rab_hidden_events.11.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+
+	trigger = {
+		tag = TP1
+		has_country_modifier = TP1_extend
+	}
+
+	mean_time_to_happen = {
+		days = 4
+	}
+	immediate = {
+
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		
+	}		
+	option = {
+		name = "rab_hidden_events_67.a"
+		random_owned_province = {
+			every_neighbor_province = { 
+				limit = {
+					owned_by = QNG
+				}
+					add_core = TP1
+					cede_province = TP1
+					change_religion = worship_god
+					remove_core = QNG
+			}
+		}		
+	}
+}
+##Õë=TAmaÑvVÀY
+country_event = {
+	id = rab_hidden_events.68
+	title = "rab_hidden_events.11.t"
+	desc = "rab_hidden_events.11.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+
+	trigger = {
+	# When global flag exists more than 100 years , then find any country has poor medician condition , it will delete the global variable rab_influenza_events_done
+	# rab_influenza_events.txt id = rab_influenza_events.1000 will occur 
+		had_global_flag = {
+			flag = rab_influenza_events_done
+			days = 36500		# 100 years
+		}
+		any_country = {
+			has_poor_medician_condition = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+			clr_global_flag = rab_influenza_events_done
+	}		
+	option = {
+		name = "rab_hidden_events_68.a"
+	
+	}
+}
+
+#########àî˘R)YgÑv¶OKm , :NÜNâST›Oc-NNS≥QÆã#########  
+country_event = {
+	id = rab_hidden_events.69
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+		
+	trigger = {
+		has_reform = celestial_empire
+		NOT = {	has_country_flag = ever_celestial_empire }
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+	immediate = {
+		set_country_flag = ever_celestial_empire
+	}
+	option = {
+		name = "rab_hidden_events_69.a"
+
+	}
+}
+
+
+########Nπe8ngråå<O<wÚv
+country_event = {
+	id = rab_hidden_events.70
+	title = "rab_hidden_events.21.t"
+	desc = "rab_hidden_events.21.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+    hidden = yes
+	
+	trigger = {
+		technology_group = eastern_nomad_group
+		NOT = { has_country_flag = fix_discover }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "rab_hidden_events_70.a"
+		
+		set_country_flag = fix_discover
+        
+		mongolia_region = {
+			discover_country = ROOT
+		}
+		central_asia_region = {
+			discover_country = ROOT
+		}
+		manchuria_region = {
+			discover_country = ROOT
+		}				
+		north_china_region = {
+			discover_country = ROOT
+		}			
+		east_siberia_region = {
+			discover_country = ROOT
+		}			
+		west_siberia_region = {
+			discover_country = ROOT
+		}			
+	}
+}
+##########¶OKmZZ1 (◊v<ç) 	gextendib.VÜò0W
+country_event = {
+	id = rab_hidden_events.71
+	title = "rab_hidden_events.11.t"
+	desc = "rab_hidden_events.11.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+
+	trigger = {
+		tag = ZZ1
+		has_country_modifier = ZZ1_extend
+	}
+
+	mean_time_to_happen = {
+		days = 4
+	}
+	immediate = {
+
+				east_china_sea_region = {
+				discover_country = ROOT
+			}
+				south_china_sea_region = {
+				discover_country = ROOT
+			}
+				indo_china_region = {
+				discover_country = ROOT
+			}
+				south_china_region = {
+				discover_country = ROOT
+			}
+				north_china_region = {
+				discover_country = ROOT
+			}			
+				tibet_region = {
+				discover_country = ROOT
+			}			
+				xinan_region = {
+				discover_country = ROOT
+			}								
+		
+	}		
+	option = {
+		name = "rab_hidden_events_71.a"
+			random_owned_province = {
+					every_neighbor_province = { 
+						limit = {
+							NOT = {	owned_by = ROOT }
+						}
+									add_core = ROOT
+									cede_province = ROOT
+					}
+			}		
+	}
+}
+
+
+
+#1  LL1: "ˇuógõQ"
+#2  CH1: "dç	wõQ"
+#3  CH2: "lQYRè"
+#4  DO1: "¶zçáõQ"
+#5  DX4: "cÑ™RõQ"
+#6  DZ1: "RPR˝ê"
+#7  KU2: "óñ±VõQ"
+#8  LU2: "bS∂RõQ"
+#9  LX1: "Ng™RõQ"
+#10 LX2: "R¿yõQ"
+#11 LY1: "R8lõQ"
+#12 PO1: "mV†RõQ"
+#13 QI3: "Êy0NõQ"
+#14 WA1: "ãsŒêõQ"
+#15 WD1: "ãsåõQ"
+#16 WQ1: "áePüõQ"
+#17 TI1: "0ubõQ"
+#18 TM3: "‹îlöõQ"
+#19 ZB1: ".VekõQ"
+
+###########¶OKm∞eÀÉ+gt^extendib.VÜò0W
+
+country_event = {
+	id = rab_hidden_events.73
+	title = "rab_hidden_events.11.t"
+	desc = "rab_hidden_events.11.d"
+	picture = EUNUCH_POWER_eventPicture
+  	
+    hidden = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				OR = {
+					tag = LL1
+					tag = CH1
+					tag = CH2
+					tag = DO1
+					tag = DX4
+					tag = DZ1
+					tag = KU2
+					tag = LU2
+					tag = LX1
+					tag = LX2
+					tag = LY1
+					tag = PO1
+					tag = QI3
+					tag = WA1
+					tag = WD1
+					tag = WQ1
+					tag = TI1
+					tag = TM3
+					tag = ZB1
+					tag = WA3
+				}	
+				NOT = { num_of_cities = 12 }
+			}	
+			AND = {
+				tag = ZZ2
+				NOT = { num_of_cities = 10 }
+			}
+			AND = {
+				tag = WA3
+				NOT = { num_of_cities = 96 }
+			}			
+		}
+		has_country_modifier = LL1_extend
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "rab_hidden_events_73.a"
+		random_owned_province = {
+			every_neighbor_province = { 
+				limit = {
+					NOT = { owned_by = ROOT }
+					is_capital = no
+					owned_by = NEW
+				}
+					add_core = ROOT
+					cede_province = ROOT
+			}
+		}
+		if = { 
+			limit = { NOT = { war_with = NEW } }
+			declare_war_with_cb = {
+				who = NEW
+				casus_belli = cb_chinese_unification
+			}			
+		}
+		#2019.02.13 add
+		if =  {
+			limit = {
+				tag = ZZ2
+				ZZ2 = { NOT = { has_country_flag = NEVER_PEACE } }
+			}
+			ZZ2 = {
+				set_country_flag = NEVER_PEACE
+			}	
+		}		
+	}
+}
+
+################################
+#
+# Call from on_actions . ¿hÂgÅVgKN˝V∂R	g‡eS+TõQñˇ	gRŸuàNxx_dis flag
+#
+###############################
+#2017/07/18 AI åT ©s∂RÑvVæñ¶^NT
+country_event = {
+	id = rab_hidden_events.74
+	title = "rab_hidden_events.NAME1"
+	desc = "rab_hidden_events.DESC1"
+	picture = SIEGE_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		exists = NEW
+		OR = {                 
+			FROM = { tag = LL1 }
+			FROM = { tag = CH1 }
+			FROM = { tag = CH2 }
+			FROM = { tag = DO1 }
+			FROM = { tag = DX4 }
+			FROM = { tag = DZ1 }
+			FROM = { tag = KU2 }
+			FROM = { tag = LU2 }
+			FROM = { tag = LX1 }
+			FROM = { tag = LX2 }
+			FROM = { tag = LY1 }
+			FROM = { tag = PO1 }
+			FROM = { tag = QI3 }
+			FROM = { tag = WA1 }
+			FROM = { tag = WA3 }
+			FROM = { tag = WD1 }
+			FROM = { tag = WQ1 }
+			FROM = { tag = TI1 }
+			FROM = { tag = TM3 }
+			FROM = { tag = ZB1 }
+			FROM = { tag = ZZ2 }
+			
+		}
+	}
+	option = {
+		name = "rab_hidden_events.OPTA74"
+		
+		if = {
+			limit = {
+				FROM = { tag = LL1 }
+				NEW = { 
+					NOT = { has_country_flag = LL1_dis }
+				}
+			}
+			NEW = {
+				set_country_flag = LL1_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = CH1 }
+				NEW = { 
+					NOT = { has_country_flag = CH1_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = CH1_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = CH2 }
+				NEW = { 
+					NOT = { has_country_flag = CH2_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = CH2_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = DO1 }
+				NEW = { 
+					NOT = { has_country_flag = DO1_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = DO1_dis
+			}
+		}		
+		if = {
+			limit = {
+				FROM = { tag = DX4 }
+				NEW = {
+					ai = no 
+					NOT = { has_country_flag = DX4_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = DX4_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = DZ1 }
+				NEW = { 
+					NOT = { has_country_flag = DZ1_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = DZ1_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = KU2 }
+				NEW = { 
+					NOT = { has_country_flag = KU2_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = KU2_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = LU2 }
+				NEW = { 
+					NOT = { has_country_flag = LU2_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = LU2_dis
+			}
+		}		
+		if = {
+			limit = {
+				FROM = { tag = LX1 }
+				NEW = { 
+					NOT = { has_country_flag = LX1_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = LX1_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = LX2 }
+				NEW = { 
+					NOT = { has_country_flag = LX2_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = LX2_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = LY1 }
+				NEW = { 
+					NOT = { has_country_flag = LY1_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = LY1_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = PO1 }
+				NEW = { 
+					ai = no 
+					NOT = { has_country_flag = PO1_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = PO1_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = QI3 }
+				NEW = { 
+					NOT = { has_country_flag = QI3_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = QI3_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = WA1 }
+				NEW = { 
+					NOT = { has_country_flag = WA1_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = WA1_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = WD1 }
+				NEW = { 
+					NOT = { has_country_flag = WD1_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = WD1_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = WQ1 }
+				NEW = { 
+					NOT = { has_country_flag = WQ1_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = WQ1_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = TI1 }
+				NEW = { 
+					NOT = { has_country_flag = TI1_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = TI1_dis
+			}
+		}		
+		if = {
+			limit = {
+				FROM = { tag = TM3 }
+				NEW = { 
+					NOT = { has_country_flag = TM3_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = TM3_dis
+			}
+		}
+		if = {
+			limit = {
+				FROM = { tag = ZB1 }
+				NEW = { 
+					NOT = { has_country_flag = ZB1_dis }
+				}				
+			}
+			NEW = {
+				set_country_flag = ZB1_dis
+			}
+		}
+		#(WgPñÖQàmmpÜNÎXœeõQ[,rN6ñµk]
+		if = {
+			limit = {
+				FROM = { tag = ZZ2 }
+				NEW = { has_country_flag = flg_wangmong_reform }
+				NOT = { has_disaster = wangmang_disaster } 
+			}
+			NEW = {
+				# clr_country_flag = flg_wangmong_reform
+				end_disaster = wangmang_disaster
+				country_event = {
+					id = wangmang_dis.101
+				}
+			}
+		}
+		#àmmpÜNãsëêõQõQ[,råN6ñµk]
+		if = {
+			limit = {
+				OR = {
+					FROM = { tag = WA3 }
+					FROM = { tag = NE2 }
+				}	
+				NEW = { has_country_flag = flg_wangmong_reform }
+			}
+			NEW = {
+				clr_country_flag = flg_wangmong_reform
+				country_event = {
+					id = wangmang_dis.108
+				}
+			}
+		}		
+	}
+}
+
+###################################################
+#
+#	Il<çN2NÀz
+#
+###################################################
+country_event = {
+	id = rab_hidden_events.75
+	title = "rab_hidden_events.11.t"
+	desc = "rab_hidden_events.11.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+	
+    hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+	
+		tag = SHU
+		
+		OR = {
+			exists = TS2
+			exists = WEI
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	option = {
+		name = "rab_hidden_events_75.a"
+		if = {
+			limit = { exists = TS2 }
+			SHU = {
+				add_opinion = {
+					who = TS2
+					modifier = op_han_hate
+				}
+			}			
+		}	
+		if = {
+			limit = { exists = WEI }
+			SHU = {
+				add_opinion = {
+					who = WEI
+					modifier = op_han_hate
+				}
+			}			
+		}			
+	}
+}
+
+###################################################
+#
+#	WA2 DEBUFF "there is no ruler" 
+#
+###################################################
+country_event = {
+	id = rab_hidden_events.76
+	title = "rab_hidden_events.11.t"
+	desc = "rab_hidden_events.11.d"
+	picture = EUNUCH_POWER_eventPicture
+   
+
+	
+	fire_only_once = yes
+	
+    hidden = yes	
+	
+	trigger = {
+	
+		tag = WA2
+		
+	}
+
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	option = {
+		name = "rab_hidden_events_76.a"
+			add_country_modifier = {
+			name = "md_no_leader_debuff"
+			duration = -1
+		}
+	}
+}
+
+
+country_event = {
+   id = rab_hidden_events.97
+	title = "rab_hidden_events.NAME97"
+	desc = "rab_hidden_events.DESC97"
+	picture = PRAYING_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = JMN
+	}
+	
+    option = {
+	   name = "rab_hidden_events.97.a" 
+		define_heir = {
+			dynasty = ROOT
+			claim = 100
+			female = no
+		}
+	}
+}
+
+country_event = {
+  id = rab_hidden_events.98
+	title = "rab_hidden_events.NAME98"
+	desc = "rab_hidden_events.DESC98"
+	picture = PRAYING_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		tag = JMN
+		NOT = { ruler_has_personality = immortal_personality }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}	
+    option = {
+	   name = "rab_hidden_events.98.a" 
+		add_ruler_personality = immortal_personality
+	}
+}
+# AI CZH will auto change to SUI
+country_event = {
+   id = rab_hidden_events.99
+	title = "rab_hidden_events.NAME99"
+	desc = "rab_hidden_events.DESC99"
+	picture = PRAYING_eventPicture
+	
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 581
+		tag = CZH
+		ai = yes
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}	
+    	option = {
+		   name = "rab_hidden_events.99.a" 
+			add_prestige = 10
+			change_tag = SUI
+			swap_free_idea_group = yes	
+		}
+}
+#SUI provinces.
+country_event = {
+	id = rab_hidden_events.100
+	title = "rab_hidden_events.11.t"
+	desc = "rab_hidden_events.11.d"
+	picture = EUNUCH_POWER_eventPicture
+  	
+    hidden = yes
+	
+	trigger = {
+		tag = TNG
+		has_country_modifier = LL1_extend
+		NOT = { num_of_cities = 50 }
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = "rab_hidden_events_100.a"
+		random_owned_province = {
+			every_neighbor_province = { 
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_capital = yes }
+					owned_by = SUI
+				}
+				add_core = ROOT
+				cede_province = ROOT
+			}
+		}
+	}
+}
+
+
+
+#
+# GV1_ADJ: "lQYR∑^"
+# GV2_ADJ: "lQYRm`"	
+# GV3: "lQYRnõQ"
+country_event = {
+	id = rab_hidden_events.102
+	title = "rab_hidden_events.11.t"
+	desc = "rab_hidden_events.11.d"
+	picture = EUNUCH_POWER_eventPicture
+  	
+	fire_only_once = yes
+    hidden = yes
+		
+	trigger = {
+		has_ruler = "lQYR∑^"
+		NOT = { tag = GV1 }
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "rab_hidden_events_102.a"
+
+			change_tag = GV1
+			
+	}
+}
+
+country_event = {
+	id = rab_hidden_events.103
+	title = "rab_hidden_events.11.t"
+	desc = "rab_hidden_events.11.d"
+	picture = EUNUCH_POWER_eventPicture
+  	
+	fire_only_once = yes
+    hidden = yes
+		
+	trigger = {
+		has_ruler = "lQYRm`"
+		NOT = { tag = GV2 }
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "rab_hidden_events_103.a"
+		change_tag = GV2
+			
+	}
+}
+
+country_event = {
+	id = rab_hidden_events.104
+	title = "rab_hidden_events.11.t"
+	desc = "rab_hidden_events.11.d"
+	picture = EUNUCH_POWER_eventPicture
+  	
+	fire_only_once = yes
+    hidden = yes
+		
+	trigger = {
+		has_ruler = "lQYRn"
+		NOT = { tag = GV3 }
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = "rab_hidden_events_104.a"
+			#.^êV<w
+			change_tag = GV3
+		
+	}
+}
+
+
+
+	# NEVER PEACE only support ancient_chinese_warlord if it growth to celestial_empire
+	# must be omited.
+	country_event = {
+		id = rab_hidden_events.107
+		title = "rab_hidden_events.11.t"
+		desc = "rab_hidden_events.11.d"
+		picture = EUNUCH_POWER_eventPicture
+		
+		hidden = yes 
+		
+		trigger = {
+			has_country_flag = NEVER_PEACE
+			NOT = { has_reform = ancient_chinese_warlord_reform }
+		}
+	
+		mean_time_to_happen = {
+			days = 10
+		}
+		
+		option = {
+			name = "rab_hidden_events_107.a"
+				clr_country_flag = NEVER_PEACE
+		}
+	}	
+	#duhufu no ruler , will let overlord re-choose ruler 
+	country_event = {
+		id = rab_hidden_events.108
+		title = "rab_hidden_events.108.t"
+		desc = "rab_hidden_events.108.d"
+		picture = EUNUCH_POWER_eventPicture
+		
+		hidden = yes 
+		
+		trigger = {
+			OR = {
+				is_subject_of_type = duhufu_state
+				is_subject_of_type = duhufu_state_color
+			}	
+			NOT = { war_with = overlord }
+			has_regency = yes
+		}
+	
+		mean_time_to_happen = {
+			days = 20
+		}
+		
+		option = {
+			name = "rab_hidden_events_108.a"
+			country_event = {
+				id = rab_canonized.5
+			}				
+		}
+	}
+	
+	country_event = {
+		id = rab_hidden_events.109
+		title = "rab_hidden_events.109.t"
+		desc = "rab_hidden_events.109.d"
+		picture = EUNUCH_POWER_eventPicture
+		
+		hidden = yes 
+		
+		trigger = {
+			OR = {
+				is_subject_of_type = duhufu_state
+				is_subject_of_type = duhufu_state_color
+			}	
+			NOT = { has_country_modifier = md_duhufu_no_heir }
+		}
+	
+		mean_time_to_happen = {
+			days = 10
+		}
+		
+		option = {
+			name = "rab_hidden_events_109.a"
+			add_country_modifier = {
+					name = "md_duhufu_no_heir"
+					duration = -1
+			}	
+		}
+	}
+	
+################for îN„NAS˝V xy_wudaishiguo.NAME40 ##########################
+
+	country_event = {
+		id = rab_hidden_events.111
+		title = "rab_hidden_events.111.t"
+		desc = "rab_hidden_events.111.d"
+		picture = EUNUCH_POWER_eventPicture
+		
+		fire_only_once = yes
+		hidden = yes 
+		
+		trigger = {
+			has_country_flag = flg_swap_WP1
+		}
+	
+		mean_time_to_happen = {
+			days = 10
+		}
+		
+		option = {
+			name = "rab_hidden_events_111.a"
+			if = {
+				limit = { exists = WP1 }
+				WP1 = { inherit = ROOT }
+				switch_tag = WP1
+				kill_ruler = yes
+			}	
+			if = {
+				limit = { NOT = { exists = WP1 } }
+				change_tag = WP1
+				swap_free_idea_group = yes
+				kill_ruler = yes
+			}
+			define_ruler = {
+				name = "hTLà0ê"
+				age = 33
+				adm = 4
+				dip = 4
+				mil = 4
+				fixed = yes
+			}			
+		}
+	}
+	
+
+	
+	##############################
+	country_event = {
+		id = rab_hidden_events.115
+		title = "rab_hidden_events.115.t"
+		desc = "rab_hidden_events.115.d"
+		picture = EUNUCH_POWER_eventPicture
+		
+		hidden = yes 	
+
+		trigger = {
+			is_year = 1912
+			any_province = {
+				NOT = { has_discovered = ROOT }
+				NOT = { province_id = 3148 }
+			}	
+		}
+		mean_time_to_happen = {
+			days = 5
+		}
+		option = {
+			name = "rab_hidden_events_115.a"		
+				europe = {
+					discover_country = ROOT
+				}	
+				asia = {
+					discover_country = ROOT
+				}	
+				
+				africa = {
+					discover_country = ROOT
+				}	
+				
+				north_america = {
+					discover_country = ROOT
+				}	
+				
+				south_america = {
+					discover_country = ROOT
+				}	
+				oceania = {
+					discover_country = ROOT
+				}	
+								
+				#Sea Regions
+				baltic_sea_region = {
+					discover_country = ROOT
+				}
+				
+				north_atlantic_region = {
+					discover_country = ROOT
+				}
+				
+				american_east_coast_region = {
+					discover_country = ROOT
+				}
+				
+				mediterrenean_region = {
+					discover_country = ROOT
+				}
+				
+				caribbean_sea_region = {
+					discover_country = ROOT
+				}
+				
+				west_african_sea_region = {
+					discover_country = ROOT
+				}
+				
+				west_indian_ocean_region = {
+					discover_country = ROOT
+				}
+				
+				arabian_sea_region = {
+					discover_country = ROOT
+				}
+				
+				east_indian_ocean_region = {
+					discover_country = ROOT
+				}
+				
+				south_indian_ocean_region = {
+					discover_country = ROOT
+				}
+				
+				south_china_sea_region = {
+					discover_country = ROOT
+				}
+				
+				east_china_sea_region = {
+					discover_country = ROOT
+				}
+				
+				north_east_pacific_region = {
+					discover_country = ROOT
+				}
+				
+				south_east_pacific_region = {
+					discover_country = ROOT
+				}
+				
+				south_west_pacific_region = {
+					discover_country = ROOT
+				}
+				
+				north_west_pacific_region = {
+					discover_country = ROOT
+				}
+				
+				pacific_south_america_region = {
+					discover_country = ROOT
+				}
+				
+				atlantic_south_america_region = {
+					discover_country = ROOT
+				}
+				
+				south_atlantic_region = {
+					discover_country = ROOT
+				}
+		}
+	}	
+	
+	#id = 116 and 117NJAPåNb˘RNÑv˝V∂Rˇ>f:yvQyräk`SÜò:g6Rmodifier
+	
+country_event = {
+	id = rab_hidden_events.116
+	title = "rab_hidden_events.11.t"
+	desc = "rab_hidden_events.11.d"
+	picture = EUNUCH_POWER_eventPicture
+   	
+    hidden = yes
+	
+	trigger = {
+		war_with = JA1
+		JA1 = {
+			has_country_modifier = md_fanaticism_war
+			is_at_war = yes
+		}	
+		NOT = { has_country_modifier = md_war_with_JA1 }
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = "rab_hidden_events_116.a"
+		add_country_modifier = {
+			name = "md_war_with_JA1"
+			duration = -1
+		}	
+	}
+}
+
+country_event = {
+	id = rab_hidden_events.117
+	title = "rab_hidden_events.11.t"
+	desc = "rab_hidden_events.11.d"
+	picture = EUNUCH_POWER_eventPicture
+   	
+    hidden = yes
+	
+	trigger = {
+		NOT = { war_with = JA1 }
+		has_country_modifier = md_war_with_JA1
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = "rab_hidden_events_117.a"
+		remove_country_modifier = md_war_with_JA1
+	}
+}	
+
+#118	
+#######################################################################	
+#ê(uÉÙV: Âe,g ÑvåN!k'Yb ¬rÌpÑvbâN 0ê(u0W:S:°l	gPñöR
+# jap_turn_on_core_get_flg Ñv”umg:N md_fanaticism_war T€èê
+# 
+######################################################################
+#119
+######################################################################	
+#ê(uÉÙV: NZ1 ÑvåN!k'Yb ¬rÌpÑvbâN 0ê(u0W:S:°l	gPñöR
+#			  country flag : nz1_turn_on_core_get_flg
+#			  nz1_turn_on_core_get_flg Ñv”umg:N md_fanaticism_war_GER T€èê
+#######################################################################  
+#120  
+######################################################################	
+#ê(uÉÙV: 8ngrlœeÑvµOeu ê(u0W:S:°l	gPñöR
+# nomadic_turn_on_core_get_flg N nomadic_conquest T€èê
+######################################################################
+
+country_event = {
+	id = rab_hidden_events.118
+	title = "rab_hidden_events.118.t"
+	desc = "rab_hidden_events.118.d"
+	picture = EUNUCH_POWER_eventPicture
+   	
+    hidden = yes
+	
+	trigger = {
+		has_country_flag = jap_turn_on_core_get_flg
+		NOT = { has_country_modifier = md_fanaticism_war }
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+		clr_country_flag = jap_turn_on_core_get_flg
+	}	
+	option = {
+		name = "rab_hidden_events_118.a"
+
+	}
+}	
+
+country_event = {
+	id = rab_hidden_events.119
+	title = "rab_hidden_events.119.t"
+	desc = "rab_hidden_events.119.d"
+	picture = EUNUCH_POWER_eventPicture
+   	
+    hidden = yes
+	
+	trigger = {
+		has_country_flag = nz1_turn_on_core_get_flg
+		NOT = { has_country_modifier = md_fanaticism_war_GER }
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+		clr_country_flag = nz1_turn_on_core_get_flg
+	}	
+	option = {
+		name = "rab_hidden_events_118.a"
+
+	}
+}	
+#define the most threaten country in side.
+country_event = {
+	id = rab_hidden_events.120
+	title = "rab_hidden_events.120.t"
+	desc = "rab_hidden_events.120.d"
+	picture = EUNUCH_POWER_eventPicture
+   	
+    hidden = yes
+	
+	trigger = {
+		any_neighbor_country = {
+			OR = {
+				army_size = ROOT
+				num_of_cities = ROOT
+				years_of_income = ROOT			
+			}	
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = {
+				ai_attitude = {
+					who = ROOT
+					attitude = attitude_friendly
+				}
+			}			
+		}	
+		ai = no
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+		every_country = {
+			limit = {
+				has_country_flag = flg_threaten_near_country
+			}
+				clr_country_flag = flg_threaten_near_country
+		}	
+	}	
+	option = {
+	name = "rab_hidden_events_120.a"
+		random_neighbor_country = {
+			limit = {
+				OR = {
+					army_size = ROOT
+					num_of_cities = ROOT
+					years_of_income = ROOT			
+				}		
+				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				NOT = {
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_friendly
+					}
+				}			
+			}
+			save_global_event_target_as = threaten_near_country
+			set_country_flag = flg_threaten_near_country
+		}
+	}
+}
+
+
+
+
+#global event target gt_pov_tianshanlotus
+province_event = {
+	id = rab_hidden_events.121
+	title = "rab_hidden_events.121.t"
+	desc = "rab_hidden_events.121.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		NOT = { has_province_modifier = md_tianshanlotus }
+		has_province_flag = flg_tianshanlotus
+	}	
+	
+	mean_time_to_happen = {
+			days = 10
+	}	
+	
+	option = {
+		name = "rab_hidden_events_121.a"
+		clear_global_event_target = gt_pov_tianshanlotus
+		clr_province_flag = flg_tianshanlotus
+	}
+}	
+# calculate which the unrest >10 province 
+country_event = {
+	id = rab_hidden_events.122
+	title = "rab_hidden_events.122.t"
+	desc = "rab_hidden_events.122.d"
+	picture = EUNUCH_POWER_eventPicture
+   	
+    hidden = yes
+	
+	trigger = {
+		any_owned_province = {
+			unrest = 10
+		}	
+		ai = no
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_province_flag = flg_over_unrest_province
+			}
+				clr_country_flag = flg_over_unrest_province
+		}
+		clear_global_event_target = gt_over_unrest_province
+	}	
+	option = {
+	name = "rab_hidden_events_122.a"
+		random_owned_province = {
+			limit = {
+				unrest = 10
+				NOT = { has_province_flag = flg_over_unrest_province }
+			}
+			save_global_event_target_as = gt_over_unrest_province
+			set_province_flag = flg_over_unrest_province
+		}
+	}
+}
+# clear which the unrest <10 province 
+province_event = {
+	id = rab_hidden_events.123
+	title = "rab_hidden_events.123.t"
+	desc = "rab_hidden_events.123.d"
+	picture = EUNUCH_POWER_eventPicture
+   	
+    hidden = yes
+	
+	trigger = {
+		has_province_flag = flg_over_unrest_province
+		NOT = { unrest = 10 }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+		clear_global_event_target = gt_over_unrest_province
+		clr_province_flag = flg_over_unrest_province
+	}	
+	option = {
+	name = "rab_hidden_events_123.a"
+
+	}
+}
+#
+country_event = {
+	id = rab_hidden_events.124
+	title = "rab_hidden_events.124.t"
+	desc = "rab_hidden_events.124.d"
+	picture = EUNUCH_POWER_eventPicture
+   	
+    hidden = yes
+	
+	trigger = {
+		has_country_modifier = md_confucianism_covert
+		NOT = { religion = confucianism }
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+		remove_country_modifier = md_confucianism_covert
+	}	
+	option = {
+	name = "rab_hidden_events_124.a"
+
+	}
+}
+#
+# When you are not being duhufu anymore , then still has the debuff - no heir 
+# 
+country_event = {
+	id = rab_hidden_events.125
+	title = "rab_hidden_events.125.t"
+	desc = "rab_hidden_events.125.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+	hidden = yes 
+	
+	trigger = {
+		NOT = {
+			OR = {
+				is_subject_of_type = duhufu_state
+				is_subject_of_type = duhufu_state_color
+			}	
+		}
+		has_country_modifier = md_duhufu_no_heir
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "rab_hidden_events_125.a"
+		remove_country_modifier = md_duhufu_no_heir
+	}
+}	
+
+#
+# For random seed bcs the fuck of eu4 always broken it's program operation.
+# Ÿè=fvar seeds µN˙Qèñ:gpeÑv0Wπe
+# var_seeds qVÕTNgåT+Y∫N˘R›ã
+
+country_event = {
+	id = rab_hidden_events.126
+	title = "rab_hidden_events.126.t"
+	desc = "rab_hidden_events.126.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+	hidden = yes 
+	
+	trigger = {
+		#has_dlc = "Rights of Man"
+		OR = {
+			has_reform = celestial_empire
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = chinese_feudatory_reform
+			tag = TP1
+			tag = DN3
+			AND = {
+				ai =  no
+				has_country_flag = flg_define_western_done #That means player has 
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 4
+	}
+	
+	immediate = {
+		random_var_seeds_effect = yes
+		random_var_seeds_plus_effect = yes
+		random_var_seeds_plusplus_effect = yes
+	}
+	
+	option = {
+		name = "rab_hidden_events_126.a"		
+		#log = "var_seeds: [Root.var_seeds.GetValue]"
+	}
+}
+
+# # 2019-02-13 add auto adjust the wuqi for AI
+# # 2019-11-17 more set variable 50
+# # 2020-09-01 modify by monarch's 3 points 
+country_event = {
+	id = rab_hidden_events.127
+	title = "rab_hidden_events.127.t"
+	desc = "rab_hidden_events.127.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+	hidden = yes 
+	
+	trigger = {
+		ai = yes
+		has_reform = celestial_empire
+		has_country_flag = wenwuzhi1
+		has_country_flag = wuqizhi1
+		has_country_flag = wenhuanzhi1
+		NOT = { has_country_modifier = md_chinese_enuchs_party_power }
+		NOT = { has_country_modifier = md_chinese_relationship_party_power }
+		adm = 1
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			adm = 6
+		}		
+		modifier = {
+			factor = 0.5
+			adm = 5
+		}	
+		modifier = {
+			factor = 5
+			NOT = { adm = 2 }
+		}		
+		modifier = {
+			factor = 5
+			NOT = { adm = 1 }
+		}	
+		modifier = {
+			factor = 2
+			has_ruler_flag = zhongwenqingwu
+		}		
+	}
+	option = {
+		name = "rab_hidden_events_127.a"
+		
+		if = {
+			limit = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 65
+				}
+			}
+			subtract_wenwu_1_effect = yes
+		}
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = num_of_wenwuzhi
+						value = 35
+					}
+				}
+			}
+			add_wenwu_1_effect = yes
+		}	
+		if = {
+			limit = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 65
+				}
+			}
+			subtract_wenhuan_1_effect = yes
+		}
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = num_of_wenhuanzhi
+						value = 35
+					}
+				}
+			}
+			add_wenhuan_1_effect = yes
+		}		
+		if = {
+			limit = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 65
+				}
+			}
+			subtract_wuqi_1_effect = yes
+		}
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = num_of_wuqizhi
+						value = 35
+					}
+				}
+			}
+			add_wuqi_1_effect = yes
+		}		
+	}
+}
+#ÇYúg?eSOÚTœu°l	g)Ygb=fÔSÂN	êÉYÑvagˆN?eSO
+country_event = {
+	id = rab_hidden_events.128
+	title = "rab_hidden_events.128.t"
+	desc = "rab_hidden_events.128.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+	hidden = yes 
+	
+	trigger = {
+		check_md_no_consort = no
+		OR = {
+			has_country_modifier = md_no_consort
+			has_country_modifier = more_heir_chance_0
+			has_country_modifier = more_heir_chance_1
+			has_country_modifier = more_heir_chance_2
+			has_country_modifier = more_heir_chance_3
+			has_country_modifier = more_heir_chance_4
+			has_country_modifier = more_heir_chance_5
+			has_country_modifier = more_heir_chance_6
+			has_country_modifier = more_heir_chance_7
+			has_country_modifier = more_heir_chance_8
+			has_country_modifier = more_heir_chance_9
+			has_country_modifier = more_heir_chance_10
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = "rab_hidden_events_128.a"		
+		remove_country_modifier = md_no_consort
+		remove_country_modifier = more_heir_chance_0
+		remove_country_modifier = more_heir_chance_1
+		remove_country_modifier = more_heir_chance_2
+		remove_country_modifier = more_heir_chance_3
+		remove_country_modifier = more_heir_chance_4
+		remove_country_modifier = more_heir_chance_5
+		remove_country_modifier = more_heir_chance_6
+		remove_country_modifier = more_heir_chance_7
+		remove_country_modifier = more_heir_chance_8
+		remove_country_modifier = more_heir_chance_9
+		remove_country_modifier = more_heir_chance_10		
+	}
+}
+
+ # 2019-03-17 add auto-detect new country without ancient_chinese_warlord reform
+country_event = {
+	id = rab_hidden_events.129
+	title = "rab_hidden_events.129.t"
+	desc = "rab_hidden_events.129.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+	hidden = yes 
+	
+	trigger = {
+		check_chinese_warlord = yes
+		NOT = {
+			OR = {
+				has_reform = ancient_chinese_warlord_reform 
+				has_reform = modern_chinese_warlord_reform
+			}			
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = "rab_hidden_events_129.a"		
+		if = {
+			limit = {
+				government = monarchy
+				NOT = { is_year = 1910 }
+			}	
+			add_government_reform = ancient_chinese_warlord_reform
+		}	
+		if = {
+			limit = {
+				government = public
+				NOT = { is_year = 1910 }
+			}	
+			change_government = monarchy
+			add_government_reform = ancient_chinese_warlord_reform
+			
+		}			
+		if = {
+			limit = {
+				is_year = 1910
+			}	
+			
+			set_government_rank = 3
+			add_government_reform = chinese_parliament_monarchy
+			add_government_reform = parliamentary_reform
+			add_government_reform = regional_representation_reform
+			add_government_reform = legislative_houses_reform
+			add_government_reform = multi_party_system
+			add_government_reform = democracy_reform
+			add_government_reform = ceremonial_monarch
+			swap_free_idea_group = yes
+		}
+	
+	}
+}
+##
+### 2019-03-18 add auto-detect client-vassal country without specified reform
+country_event = {
+	id = rab_hidden_events.130
+	title = "rab_hidden_events.NAME130"
+	desc = "rab_hidden_events.DESC130"
+	picture = HAN_SHEING_DE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_subject_of_type = client_vassal
+		NOT  = {
+			OR  = {
+				has_reform = celestial_empire 
+				has_reform = ancient_chinese_warlord_reform
+				has_reform = mongol_steppe_horde_reform 				
+			}
+		}
+		OR = {
+			overlord = { has_reform = celestial_empire }
+			overlord = { has_reform = ancient_chinese_warlord_reform }
+			overlord = { has_reform = mongol_steppe_horde_reform }
+		}	
+	}	
+	
+	mean_time_to_happen = {
+		days = 10
+	}	
+
+	option = {
+		name = "rab_hidden_events_130.a"
+		if = {
+			limit = {
+				overlord = {
+					OR = {
+						has_reform = ancient_chinese_warlord_reform 
+						has_reform = celestial_empire 
+						has_reform = chinese_feudatory_reform
+					}	
+				} 
+			}	
+			change_government = ancient_chinese_warlord
+			add_government_reform = ancient_chinese_warlord_reform							
+		}
+		if = {
+			limit = {
+				overlord = {
+					OR = {
+						has_reform = mongol_steppe_horde_reform 
+						tag = MGE
+					}
+				}	
+			}	
+			change_government = mongol_steppe_horde
+			add_government_reform = mongol_steppe_horde_reform
+		}
+		if = {
+			limit = {
+				overlord = {
+					has_reform = dalailama_monastic_reform 
+				}
+			}		
+			change_government = dalailama_monastic
+			add_government_reform = dalailama_monastic_reform
+		}
+	}		
+}		
+
+# # 2019-03-17 add auto-detect new country without celestial_empire reform
+country_event = {
+	id = rab_hidden_events.131
+	title = "rab_hidden_events.131.t"
+	desc = "rab_hidden_events.131.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+	hidden = yes 
+	
+	trigger = {
+		any_owned_province = { has_building = anti_nuclear }
+		OR = { 
+			has_country_modifier = keep_1_anti_nuclear_building
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+	option = {
+		name = "rab_hidden_events_131.a"		
+		update_anti_nuclear_modifier = yes
+	}
+}
+
+#Discovery fix for qing_chinese
+country_event = {
+	id = rab_hidden_events.132
+	title = "rab_hidden_events.132.t"
+	desc = "rab_hidden_events.132.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+	hidden = yes 
+	trigger = {
+		technology_group = qing_chinese	
+		NOT = { has_country_flag = flg_discover_done }
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		set_country_flag = flg_discover_done	
+	}	
+	
+	option = {
+		name = "rab_hidden_events_132.a"
+		
+		east_china_sea_region = {
+			discover_country = ROOT
+		}
+		south_china_sea_region = {
+			discover_country = ROOT
+		}
+		indo_china_region = {
+			discover_country = ROOT
+		}
+		south_china_region = {
+			discover_country = ROOT
+		}
+		north_china_region = {
+			discover_country = ROOT
+		}			
+		tibet_region = {
+			discover_country = ROOT
+		}			
+		xinan_region = {
+			discover_country = ROOT
+		}
+		central_asia_region = {
+			discover_country = ROOT
+		}	
+	}
+}
+
+country_event = {
+	id = rab_hidden_events.133
+	title = "rab_hidden_events.133.t"
+	desc = "rab_hidden_events.133.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LOE
+		has_ruler = "Rãt"
+		NOT = { is_year = 280 }
+		is_year = 160
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = "rab_hidden_events_133.a"
+		change_tag = LZ1				
+	}
+}
+
+country_event = {
+	id = rab_hidden_events.134
+	title = "rab_hidden_events.134.t"
+	desc = "rab_hidden_events.134.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+	hidden = yes 
+	trigger = {
+		is_in_war = {
+			attacker_leader = ROOT
+			casus_belli = cb_destory_okinawa_navy_base
+		}
+		NOT = { has_country_flag = flg_cb_destory_okinawa_navy_base }
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	immediate = {
+		set_country_flag = flg_cb_destory_okinawa_navy_base			
+	}	
+	option = {
+		name = "rab_hidden_events_134.a"
+	
+	}
+}
+
+
+country_event = {
+	id = rab_hidden_events.135
+	title = "rab_hidden_events.135.t"
+	desc = "rab_hidden_events.135.d"
+	picture = EUNUCH_POWER_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		has_country_modifier = md_chuanguoyuxi
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+		save_global_event_target_as = tag_has_chuanguoyuxi
+	}
+	option = {
+		name = "rab_hidden_events_135.a"
+	
+	}	
+}
+
+
+country_event = {
+	id = rab_hidden_events.136
+	title = "rab_hidden_events.136.t"
+	desc = "rab_hidden_events.136.d"
+	picture = EUNUCH_POWER_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		NOT = { 
+			any_country = {
+				has_country_modifier = md_chuanguoyuxi
+				exists = yes
+			}
+		}
+		NOT = {
+			any_province = {
+				has_province_modifier = pov_info_chuanguoyuxi
+			}		
+		}	
+		NOT = { is_year = 1913 }
+		ai = no
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	immediate = {
+		if = {
+			limit = {
+				#Åà=g
+				exists = UAZ
+				tag = UAZ
+			}
+			random_province = {
+				limit = {
+					owned_by = UAZ
+					controlled_by = UAZ
+				}	
+				add_province_modifier = {
+					name = "pov_info_chuanguoyuxi"
+					duration = -1
+				}	
+			}	
+		}
+		if = {
+			limit = {
+				#Åà=g
+				exists = UAZ
+				NOT = { tag = UAZ }
+			}
+			UAZ = {
+				add_country_modifier = {
+					name = "md_chuanguoyuxi"
+					duration = -1
+				}					
+			}	
+		}		
+		if = {
+			limit = {
+				#Åà=g
+				NOT = { exists = UAZ }
+			}
+			random_list = {
+				50 = {
+					random_neighbor_country = {
+						limit = {
+							ai = yes
+						}	
+						add_country_modifier = {
+							name = "md_chuanguoyuxi"
+							duration = -1
+						}	
+					}	
+				}
+				50 = {
+					random_owned_province = {
+						limit = {
+							owned_by = ROOT
+							controlled_by = ROOT 
+						}						
+						add_province_modifier = {
+							name = "pov_info_chuanguoyuxi"
+							duration = -1
+						}
+						save_global_event_target_as = tg_pov_chuanguoyuxi
+					}
+				}	
+			}	
+		}		
+	}	
+	option = {
+		name = "rab_hidden_events_136.a"
+		
+	}	
+}
+
+country_event = {
+	id = rab_hidden_events.137
+	title = "rab_hidden_events.NAME137"
+	desc = "rab_hidden_events.DESC137"
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = {
+			is_year = 1272
+		}
+		is_year = 1259
+		tag = KHA
+		NOT = { exists = YUA }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "rab_hidden_events.OPTA137"
+			if = { 
+				limit = {
+					owns = 1816
+				}	
+				1816 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+					change_province_name = "CQ'Y˝ê"
+					rename_capital = "CQ'Y˝ê"
+					move_capital_effect = yes
+				}
+			}	
+			723 = {
+				change_province_name = "N˝ê"
+				rename_capital = "N˝ê"
+			}
+			2136 = {
+				change_province_name = "—ë-N˝ê"
+				rename_capital = "—ë-N˝ê"
+			}
+			change_tag = YUA
+			remove_non_electors_emperors_from_empire_effect = yes
+			set_country_flag = formed_yuan_flag			
+			china_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = YUA
+			}
+			manchuria_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = YUA
+			}
+			mongolia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = YUA
+			}
+			tibet_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = YUA
+			}
+			add_prestige = 20
+
+			if = { 
+				limit = {
+					OR = {
+						exists = WK1		
+						exists = GLH		
+						exists = CHG		
+						exists = ILK
+					}
+				}
+				set_country_flag = split_YUA_done
+			}
+			if = {
+				limit = {
+					has_reform = mongol_steppe_horde_reform
+				}
+					remove_government_reform = mongol_steppe_horde_reform
+			}			
+			if = {
+				limit = {
+					NOT = { has_reform = celestial_empire }
+				}
+					change_government = gov_celestial_empire
+					add_government_reform = celestial_empire
+			}	
+	}	
+}
+# check the player use disable old one
+country_event = {
+	id = rab_hidden_events.138
+	title = "rab_hidden_events.NAME138"
+	desc = "rab_hidden_events.DESC138"
+	picture = CITY_VIEW_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		has_country_modifier = heiljsf_shuaibai_wangchao
+		NOT = { has_country_flag = flg_ever_heiljsf_shuaibai_wangchao }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}	
+	
+	immediate = {
+		remove_country_modifier = heiljsf_shuaibai_wangchao
+	}	
+	
+	option = {
+		name = "rab_hidden_events_138.a"
+		
+	}
+}
+
+country_event = {
+	id = rab_hidden_events.139
+	title = "rab_hidden_events.NAME139"
+	desc = "rab_hidden_events.DESC139"
+	picture = CITY_VIEW_eventPicture
+
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	
+	trigger = {
+		tag = HH2
+		exists = CH4
+		is_year = 1360
+		NOT = { is_year = 1363 }
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}	
+	
+	
+	option = {
+		name = "rab_hidden_events_139.a"
+		change_tag = XA1
+		change_government = gov_celestial_empire
+		add_government_reform = celestial_empire
+		set_government_rank = 3
+		swap_free_idea_group = yes		
+		country_event = {
+			id = rab_HH2_events.2
+		}	
+	}
+}
+
+#country_event = {
+#	id = rab_hidden_events.140
+#	title = "rab_hidden_events.NAME140"
+#	desc = "rab_hidden_events.DESC140"
+#	picture = CITY_VIEW_eventPicture
+#
+#	hidden = yes
+#		
+#	trigger = {
+#		tag = ROC
+#		JA1 = { 
+#			has_country_flag = flg_army_supported_occur
+#			has_country_modifier = md_three_months 
+#		}
+#		war_with = JA1
+#		is_year = 1360
+#		NOT = { is_year = 1363 }
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 5 #rab_test
+#	}	
+#	
+#	immediate = {
+#		event_target:jap_support_province = {
+#			ROOT = {
+#				infantry = PREV
+#				infantry = PREV
+#			}
+#		}		
+#	}	
+#	
+#	option = {
+#		name = "rab_hidden_events_140.a"
+#	
+#	}
+#}
+
+province_event = {
+	id = rab_hidden_events.141
+	title = "rab_hidden_events.141.t"
+	desc = "rab_hidden_events.141.d"
+	picture = CONFUSED_SKILL_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_province_flag = flg_industry_low
+		NOT = { has_province_flag = flg_industry_high }
+		industrialization = 90 
+	}			
+	
+	mean_time_to_happen = {
+		days = 10
+	}	
+	
+	immediate = {
+		pov_initialize_population_effect = yes
+	}	
+	option = {
+		name = "rab_hidden_events_1.a"
+		
+	}
+}
+
+# it vs. rab_hidden_events.127
+country_event = {
+	id = rab_hidden_events.142
+	title = "rab_hidden_events.142.t"
+	desc = "rab_hidden_events.142.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+	hidden = yes 
+	
+	trigger = {
+		has_reform = celestial_empire
+		has_country_flag = wenwuzhi1
+		has_country_flag = wuqizhi1
+		has_country_flag = wenhuanzhi1
+		NOT = { has_country_modifier = md_chinese_enuchs_party_power }
+		NOT = { has_country_modifier = md_chinese_relationship_party_power }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			ai = yes
+		}			
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				is_at_war = yes
+			}
+			random_list = {	
+				1 = { add_wenwu_1_effect = yes }
+				5 = { subtract_wenwu_1_effect = yes }
+				25 = { add_wenhuan_1_effect = yes }
+				25 = { subtract_wenhuan_1_effect = yes }
+				50 = { add_wuqi_1_effect = yes }
+				50 = { subtract_wuqi_1_effect = yes }
+				5 = { add_wuqi_2_effect = yes }
+				5 = { subtract_wuqi_2_effect = yes }			
+			}			
+		}
+		if = {
+			limit = {
+				is_at_war = no
+			}
+			random_list = {	
+				5 = { add_wenwu_1_effect = yes }
+				1 = { subtract_wenwu_1_effect = yes }
+				50 = { add_wenhuan_1_effect = yes }
+				50 = { subtract_wenhuan_1_effect = yes }
+				25 = { add_wuqi_1_effect = yes }
+				25 = { subtract_wuqi_1_effect = yes }
+				5 = { add_wenhuan_2_effect = yes }
+				5 = { subtract_wenhuan_2_effect = yes }
+			}			
+		}		
+	}	
+	
+	option = {
+		name = "rab_hidden_events_127.a"
+			
+	}
+}
+
+#ÂÇ=fóRIN˝VÂb	g8óCgˇcw7bú^ÑvqVÕT
+country_event = {
+	id = rab_hidden_events.143
+	title = "rab_hidden_events.143.t"
+	desc = "rab_hidden_events.143.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+	hidden = yes 
+	
+	trigger = {
+		is_hegemon = yes
+		any_country = {
+			OR = {
+				is_subject_of_type = duhufu_state
+				is_subject_of_type = duhufu_state_color
+			}	
+			is_subject_of = ROOT
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = duhufu_is_hegemon
+				}
+			}			
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	immediate = {
+
+	}
+	option = {
+		name = "rab_hidden_events_143.a"
+		every_country = {
+			limit = {
+				OR = {
+					is_subject_of_type = duhufu_state
+					is_subject_of_type = duhufu_state_color
+				}	
+				is_subject_of = ROOT
+				NOT = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = duhufu_is_hegemon
+					}
+				}			
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = duhufu_is_hegemon	
+			}
+		}		
+	}
+}
+#american's multi_party_system shit
+country_event = {
+	id = rab_hidden_events.144
+	title = "rab_hidden_events.144.t"
+	desc = "rab_hidden_events.144.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+	hidden = yes 
+	
+	trigger = {
+		has_reform = multi_party_system
+		has_reform = american_republic
+		NOT = { 
+			OR = {
+				has_faction = Democratic_Party
+				has_faction = Republican_Party
+			}
+		}
+		tag = USA
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		remove_multi_party_government_reforms = yes
+		if = {
+			limit = {
+				NOT = { has_faction = Democratic_Party }
+			}
+			add_faction = Democratic_Party	
+		}
+		if = {
+			limit = {
+				NOT = { has_faction = Republican_Party }
+			}
+			add_faction = Republican_Party	
+		}
+	}
+	option = {
+		name = "rab_hidden_events_144.a"	
+	
+	}
+}	
+
+country_event = {
+	id = rab_hidden_events.145
+	title = "rab_hidden_events.145.t"
+	desc = "rab_hidden_events.145.d"
+	picture = EUNUCH_POWER_eventPicture
+	
+	hidden = yes 
+	
+	
+	
+	trigger = {
+		has_reform = multi_party_system
+		has_reform = taiwan_republic
+		NOT = { 
+			OR = {
+				has_faction = TWN_DPP_party
+				has_faction = TWN_KMT_party
+			}
+		}
+		tag = TWN
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		remove_multi_party_government_reforms= yes
+		if = {
+			limit = {
+				NOT = { has_faction = TWN_DPP_party }
+			}
+			add_faction = TWN_DPP_party	
+		}
+		if = {
+			limit = {
+				NOT = { has_faction = TWN_KMT_party }
+			}
+			add_faction = TWN_KMT_party	
+		}
+	}
+	option = {
+		name = "rab_hidden_events_145.a"	
+	
+	}
+}	
+
+country_event = {
+	id = rab_hidden_events.146
+	title = "rab_hidden_events.146.t"
+	desc = "rab_hidden_events.146.d"
+	picture = EUNUCH_POWER_eventPicture
+   	
+    hidden = yes
+	
+	trigger = {
+		any_neighbor_country = {
+			has_country_flag = flg_threaten_near_country
+			OR = {
+				AND = {
+					NOT = { army_size = ROOT }
+					NOT = { num_of_cities = ROOT }
+					NOT = { years_of_income = ROOT }			
+				}
+				alliance_with = ROOT 
+				is_subject_of = ROOT
+				ai_attitude = {
+					who = ROOT
+					attitude = attitude_friendly
+				}
+			}
+	
+		}	
+		ai = no
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	immediate = {
+	
+	}	
+	option = {
+		name = "rab_hidden_events_146.a"
+		random_neighbor_country = {
+			limit = {
+				has_country_flag = flg_threaten_near_country
+				OR = {
+					AND = {
+						NOT = { army_size = ROOT }
+						NOT = { num_of_cities = ROOT }
+						NOT = { years_of_income = ROOT }			
+					}
+					alliance_with = ROOT 
+					is_subject_of = ROOT
+					ai_attitude = {
+						who = ROOT
+						attitude = attitude_friendly
+					}
+				}		
+			}
+			clear_global_event_target = threaten_near_country
+			clr_country_flag = flg_threaten_near_country
+		}
+	}
+}
+	
+	
+#country_event = {
+#	id = rab_hidden_events.143
+#	title = "rab_hidden_events.143.t"
+#	desc = "rab_hidden_events.143.d"
+#	picture = EUNUCH_POWER_eventPicture
+#	
+#	hidden = yes 
+#	
+#	trigger = {
+#		overlord = {
+#			is_hegemon = yes
+#		}
+#		OR = {
+#			is_subject_of_type = duhufu_state
+#			is_subject_of_type = duhufu_state_color
+#		}	
+#		overlord = {
+#			reverse_has_opinion_modifier = {
+#				who = ROOT
+#				modifier = duhufu_is_hegemon
+#			}
+#		}			
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 30
+#	}
+#	immediate = {
+#
+#	}
+#	option = {
+#		name = "rab_hidden_events_143.a"
+#		every_country = {
+#			limit = {
+#				OR = {
+#					is_subject_of_type = duhufu_state
+#					is_subject_of_type = duhufu_state_color
+#				}	
+#				is_subject_of = ROOT
+#				NOT = {
+#					has_opinion_modifier = {
+#						who = ROOT
+#						modifier = duhufu_is_hegemon
+#					}
+#				}			
+#			}
+#			add_opinion = {
+#				who = ROOT
+#					
+#			}
+#		}		
+#	}
+#}

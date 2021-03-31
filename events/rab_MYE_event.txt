@@ -1,0 +1,99 @@
+########################
+#Advisor  entry  Events#
+#########################
+#2018.12.31 fit to 1.28
+namespace = rab_MYE_event
+
+##ma_loan
+country_event = {
+	id = rab_MYE_event.1
+	title = rab_MYE_event.NAME1
+	desc = rab_MYE_event.DESC1
+	picture = ROBBER_THIEF_eventPicture
+	
+	
+	
+	trigger = {
+		NOT = { has_country_flag = MYE_BASE_info_once }
+		any_owned_province = {
+			has_province_modifier = MYE_BASE
+		}	
+	}
+	immediate = {
+			set_country_flag = MYE_BASE_info_once
+	}
+	
+	mean_time_to_happen = {
+		days = 20
+	}
+	option = {
+		name = rab_MYE_event.OPTA1
+		
+	}
+}
+
+country_event = {
+	id = rab_MYE_event.2
+	title = rab_MYE_event.NAME2
+	desc = rab_MYE_event.DESC2
+	picture = MARRIAGE_ASIAN_ANCIENT_eventPicture
+	
+	trigger = {
+		is_at_war = no
+		has_country_flag = MYE_BASE_info_once
+		any_owned_province = {
+			has_province_modifier = MYE_BASE
+		}	
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = rab_MYE_event.OPTA1
+		
+		add_treasury = -10
+		add_mil_power = -5
+		random_list = {
+			60 = {
+			
+					random_owned_province = {
+					limit = {
+						has_province_modifier = MYE_BASE
+					}
+						remove_province_modifier = MYE_BASE
+						remove_core = MYE
+					}
+			
+			}
+			
+			40 = {
+				random_owned_province = {
+					limit = {
+						has_province_modifier = MYE_BASE
+					}
+					remove_province_modifier = MYE_BASE
+					cede_province = MYE
+					
+					MYE = {
+						declare_war_with_cb = {
+							who = ROOT
+							casus_belli = cb_core
+						}
+					}
+					infantry = MYE
+					infantry = MYE
+					infantry = MYE
+					infantry = MYE
+					infantry = MYE
+					infantry = MYE
+					infantry = MYE
+					infantry = MYE
+					cavalry = MYE
+					cavalry = MYE
+				}
+			}
+		}
+	}
+}
+

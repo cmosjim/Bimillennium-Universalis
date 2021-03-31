@@ -1,0 +1,61 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = morikachi_advisor_come
+
+#fkS–gÕyùhˆNN˙Q˛s
+#id = 1 : morikachi : ïóRbËê€v≤N0fkS0
+#
+country_event = {
+	id = morikachi_advisor_come.1
+	title = "morikachi_advisor_come.1.t"
+	desc = "morikachi_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		is_year = 1614
+		NOT = { is_year = 1622 }
+		OR = {
+		   AND = {
+		      exists = ODA 
+		      tag = ODA
+		   }		
+		   AND = {
+		      NOT = {exists = ODA}		
+		      owns = 1835
+		   }
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = morikachi_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = morikachi
+				name = "ïóRbËê€v≤N0fkS0"
+				discount = yes	
+				skill = 2
+				culture = japanese
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "ïóRbËê€v≤N0fkS0"
+				fire = 3
+				shock = 2
+				manuever = 2
+				siege = 3
+			}
+		}
+	}
+}
+

@@ -1,0 +1,175 @@
+########################
+#Hellenic Flavor Events#
+########################
+#1#见缝插针的南匈奴:我们的附庸国南匈奴，知道我们与北方的鲜卑厮杀不得不借用他们的力量，所以态度转变了
+#1#他们遣使表明要提供以下的金钱援助，否则就会倒戈相向。
+########################
+#2#见缝插针的南匈奴:我们的附庸国南匈奴，知道我们与北方的匈奴厮杀不得不借用他们的力量，所以态度转变了
+#2#他们遣使表明要提供以下的金钱援助，否则就会倒戈相向。
+########################
+#2018.12.31 fit to 1.28
+namespace = rab_SXI_events
+
+country_event = {
+	id = rab_SXI_events.1
+	title = "rab_SXI_events.NAME1"
+	desc = "rab_SXI_events.DESC1"
+	picture = DIPLOMACY_eventPicture
+  
+	fire_only_once = yes
+	 
+	trigger = {
+	
+		SXI = {
+			OR = {
+				has_ruler_modifier = ra_ch9
+				has_ruler_modifier = ra_ch3
+				has_ruler_modifier = ra_ch7
+			}
+		is_subject_of = ROOT
+		}
+		
+			war_with = XIB
+
+		NOT = { num_of_cities = 300 }
+	}	
+
+	mean_time_to_happen = {
+		days = 15
+	}
+	option = {
+		name = "rab_SXI_events.OPTA1"
+		trigger = {
+			NOT = { num_of_cities = 60 }
+		}
+		add_treasury = -100
+		SXI = {
+			add_treasury = 100
+		}
+	}
+	option = {
+		name = "rab_SXI_events.OPTB1"
+		trigger = {
+			num_of_cities = 60 
+			NOT = { num_of_cities = 120 }
+		}
+		add_treasury = -200
+		SXI = {
+			add_treasury = 200
+		}	
+	}
+
+	option = {
+		name = "rab_SXI_events.OPTC1"
+		trigger = {
+			num_of_cities = 120 
+			NOT = { num_of_cities = 250 }
+		}
+		add_treasury = -300
+		SXI = {
+			add_treasury = 300
+		}	
+		
+	}
+	option = {
+		name = "rab_SXI_events.OPTD1"
+		trigger = {
+			num_of_cities = 250 
+		}
+		add_treasury = -500
+		SXI = {
+			add_treasury = 500
+		}	
+	}
+	option = {
+		name = "rab_SXI_events.OPTE1"
+		SXI = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}	
+}
+
+country_event = {
+	id = rab_SXI_events.2
+	title = "rab_SXI_events.NAME2"
+	desc = "rab_SXI_events.DESC2"
+	picture = DIPLOMACY_eventPicture
+  
+	fire_only_once = yes
+	 
+	trigger = {
+	
+		SXI = {
+			OR = {
+				has_ruler_modifier = ra_ch9
+				has_ruler_modifier = ra_ch3
+				has_ruler_modifier = ra_ch7
+			}
+		is_subject_of = ROOT
+		}
+		
+			war_with = XIO
+
+		NOT = { num_of_cities = 300 }
+	}	
+
+	mean_time_to_happen = {
+		days = 15
+	}
+	option = {
+		name = "rab_SXI_events.OPTA2"
+		trigger = {
+			NOT = { num_of_cities = 60 }
+		}
+		add_treasury = -100
+		SXI = {
+			add_treasury = 100
+		}
+	}
+	option = {
+		name = "rab_SXI_events.OPTB2"
+		trigger = {
+			num_of_cities = 60 
+			NOT = { num_of_cities = 120 }
+		}
+		add_treasury = -200
+		SXI = {
+			add_treasury = 200
+		}	
+	}
+
+	option = {
+		name = "rab_SXI_events.OPTC2"
+		trigger = {
+			num_of_cities = 120 
+			NOT = { num_of_cities = 250 }
+		}
+		add_treasury = -300
+		SXI = {
+			add_treasury = 300
+		}	
+		
+	}
+	option = {
+		name = "rab_SXI_events.OPTD2"
+		trigger = {
+			num_of_cities = 250 
+		}
+		add_treasury = -500
+		SXI = {
+			add_treasury = 500
+		}	
+	}
+	option = {
+		name = "rab_SXI_events.OPTE2"
+		SXI = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}	
+}

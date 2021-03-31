@@ -1,0 +1,536 @@
+#2019-04-15 fit to 1.28
+#2020-03-11 delete china_PRC_events.050 replace in xy's coldwar
+namespace = china_PRC_events 
+## error 所有的namespace不能用 国家的TAG 当作开头或结尾
+#Bon Harmonization
+
+#改革开放
+country_event = {
+	id = china_PRC_events.001
+	title = "china_PRC_events.EVTNAME1"
+	desc = "china_PRC_events.EVTDESC1"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = CHN
+		is_year = 1979
+		NOT = { is_year = 1980 }
+	}
+    #is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 } 
+    
+	option = {
+		name = "china_PRC_events.EVTOPTA1"
+		add_country_modifier = {
+			name = "heiljsf_gaigekaifang"
+			duration = 36500
+		}
+		add_mercantilism = 20
+    }
+}
+
+#南巡讲话
+country_event = {
+	id = china_PRC_events.002
+	title = "china_PRC_events.EVTNAME2"
+	desc = "china_PRC_events.EVTDESC2"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = CHN
+		is_year = 1992
+		NOT = { is_year = 1995 }
+	}
+    #is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1} 
+    
+	option = {
+		name = "china_PRC_events.EVTOPTA2"
+		add_country_modifier = {
+			name = "heiljsf_nanxunjianghua"
+			duration = 18250
+		}
+		add_mercantilism = 10
+    }
+}
+
+#加入WTO
+country_event = {
+	id = china_PRC_events.003
+	title = "china_PRC_events.EVTNAME3"
+	desc = "china_PRC_events.EVTDESC3"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = CHN
+		is_year = 2002
+	}
+    #is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1} 
+    
+	option = {
+		name = "china_PRC_events.EVTOPTA3"
+		add_country_modifier = {
+			name = "heiljsf_jiaru_WTO"
+			duration = -1
+		}
+		add_mercantilism = 20
+    }
+}
+
+#一带一路
+country_event = {
+	id = china_PRC_events.004
+	title = "china_PRC_events.EVTNAME4"
+	desc = "china_PRC_events.EVTDESC4"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = CHN
+		is_year = 2014
+	}
+    #is_triggered_only = yes
+	
+	mean_time_to_happen = {days = 1} 
+    
+	option = {
+		name = "china_PRC_events.EVTOPTA4"
+		add_country_modifier = {
+			name = "heiljsf_yidaiyilu"
+			duration = 3650
+		}
+		country_event = {					#触发事件5 配合is_triggered_only使用
+			id = china_PRC_events.005				#该事件会在多天后触发
+			days = 3600						#10年后可以被触发
+			random = 1095					#随机修正天数 最大修正天数为3年
+		}
+		add_mercantilism = 20
+    }
+}
+
+#蒙古国经济崩溃
+country_event = { 
+    id = china_PRC_events.005
+	title = "china_PRC_events.EVTNAME5"
+	desc = "china_PRC_events.EVTDESC5"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	#fire_only_once = yes
+	
+	is_triggered_only = yes				#必须由其它事件触发
+	
+	trigger = {
+		tag = CHN
+		is_year = 2018
+		ai = no
+	}
+    
+	
+	mean_time_to_happen = {days = 1} 
+	
+	option = {
+		name = "china_PRC_events.EVTOPTA5"
+		add_casus_belli = {					#添加宣战理由
+			target = KHA
+			type = cb_loan_cancelled		#借款
+			months = 12 # error 不能用duration.
+		}
+		country_event = {
+			id = china_PRC_events.006				#该事件会在60天后发生
+			days = 730						#两年
+			random = 730					#随机修正天数 两年
+		}
+    }
+}
+
+#蒙古国的归顺
+country_event = { 
+    id = china_PRC_events.006
+	title = "china_PRC_events.EVTNAME6"
+	desc = "china_PRC_events.EVTDESC6"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes					#必须由其它事件触发
+
+	trigger = {
+		tag = CHN
+		is_year = 2018
+		ai = no
+	}
+    
+	
+	mean_time_to_happen = {days = 1} 
+	
+	option = {
+		name = "china_PRC_events.EVTOPTA6"
+		vassalize = KHA
+    }
+}
+
+#告台湾同胞书40周年讲话
+#country_event = { 
+#    id = china_PRC_events.007
+#	title = "china_PRC_events.EVTNAME7"
+#	desc = "china_PRC_events.EVTDESC7"
+#	picture = CITY_DEVELOPMENT_eventPicture
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = CHN
+#		is_year = 2019
+#		exists = TWN
+#	}
+#    
+#	
+#	mean_time_to_happen = {days = 1} 
+#	
+#	option = {
+#		name = "china_PRC_events.EVTOPTA7"
+#		country_event = {					#触发事件5 配合is_triggered_only使用
+#			id = china_PRC_events.008				#该事件会在多天后触发
+#			days = 365							#1年后可以被触发
+#			random = 3285					#随机修正天数 最大修正天数为9年
+#		}
+#		country_event = {					#触发事件5 配合is_triggered_only使用
+#			id = china_PRC_events.009				#该事件会在多天后触发
+#			days = 370							#1年后可以被触发
+#			random = 3280					#随机修正天数 最大修正天数为9年
+#		}
+#    }
+#}
+
+#海基會海協會的成立
+#country_event = { 
+#    id = china_PRC_events.008
+#	title = "china_PRC_events.EVTNAME8"
+#	desc = "china_PRC_events.EVTDESC8"
+#	picture = CITY_DEVELOPMENT_eventPicture
+#	
+#	
+#	
+#}
+#一国两制和平统一
+country_event = { 
+    id = china_PRC_events.008
+	title = "china_PRC_events.EVTNAME8"
+	desc = "china_PRC_events.EVTDESC8"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes					#必须由其它事件触发
+
+	trigger = {
+		tag = CHN
+		exists = TWN
+		is_year = 2019
+		NOT = { has_country_flag = had_china_PRC_events.009 }
+	}
+    
+	
+	mean_time_to_happen = { days = 1 } 
+
+	immediate = {
+		set_country_flag = had_china_PRC_events.008	#设置flag
+	}
+	
+	
+	option = {
+		name = "china_PRC_events.EVTOPTA8"
+		ROOT = {
+			declare_war_with_cb  = {
+				who = TWN
+				casus_belli = cb_core
+				war_goal_province = 738
+			}
+		}
+    }
+}
+
+#消灭台独
+country_event = { 
+    id = china_PRC_events.009
+	title = "china_PRC_events.EVTNAME9"
+	desc = "china_PRC_events.EVTDESC9"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	#fire_only_once = yes
+	
+	is_triggered_only = yes					#必须由其它事件触发
+	
+
+	trigger = {
+		tag = CHN
+		exists = TWN
+		is_year = 2019
+		NOT = { has_country_flag = had_china_PRC_events.008 }
+	}
+    
+	
+	mean_time_to_happen = {days = 1} 
+	
+	immediate = {
+		set_country_flag = had_china_PRC_events.009	#设置flag
+	}
+
+	
+	option = {
+		name = "china_PRC_events.EVTOPTA9"
+		create_union = TWN
+    }
+}
+
+#香港回归
+country_event = { 
+    id = china_PRC_events.010
+	title = "china_PRC_events.EVTNAME10"
+	desc = "china_PRC_events.EVTDESC10"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+	
+	#is_triggered_only = yes					#必须由其它事件触发
+
+	trigger = {
+		tag = CHN
+		is_year = 1997
+		is_month = 6	
+		2014 = {
+			owned_by = GBR
+		}	
+		started_in = 1842.8.29
+		NOT = { started_in =  1997.7.1 }
+	}
+    
+	
+	mean_time_to_happen = {days = 1} 
+	
+	option = {
+		name = "china_PRC_events.EVTOPTA10"
+		2014 = {							
+			cede_province = ROOT
+			add_core = ROOT
+			remove_core = GBR
+		}
+    }
+}
+
+#澳门回归
+country_event = { 
+    id = china_PRC_events.011
+	title = "china_PRC_events.EVTNAME11"
+	desc = "china_PRC_events.EVTDESC11"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+	
+	#is_triggered_only = yes					#必须由其它事件触发
+
+	trigger = {
+		tag = CHN
+		is_year = 1999
+		is_month = 11							#12月
+		POR = { is_core = 668 }
+	}
+    
+	
+	mean_time_to_happen = {days = 1} 
+	
+	option = {
+		name = "china_PRC_events.EVTOPTA11"
+		
+		668 = {							
+			cede_province = ROOT
+			add_core = ROOT
+			remove_core = POR
+		}
+    }
+}
+
+#黄河第二次大徙时期
+country_event = { 
+    id = china_PRC_events.020
+	title = "china_PRC_events.EVTNAME20"
+	desc = "china_PRC_events.EVTDESC20"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 11
+		NOT = { is_year = 12 }
+		OR = {
+			owns = 3266
+			owns = 2500
+		}	
+	}
+    
+	mean_time_to_happen = {days = 1} 
+	
+	option = {
+		name = "china_PRC_events.EVTOPTA20"
+		add_stability = -1 
+		if = {
+			limit = {
+				3266 = { 
+					has_province_modifier = huang_he_estuary_modifier 
+				}
+			}	
+			3266 = { remove_province_modifier = huang_he_estuary_modifier }
+		}
+
+		2500 = {
+			add_permanent_province_modifier = {
+				name = huang_he_estuary_modifier
+				duration = -1
+			}
+		}
+	}
+}
+
+#黄河第三次大徙时期
+country_event = { 
+    id = china_PRC_events.021
+	title = "china_PRC_events.EVTNAME21"
+	desc = "china_PRC_events.EVTDESC21"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+	
+	#is_triggered_only = yes					#必须由其它事件触发
+
+	trigger = {
+		is_year = 1048
+		NOT = { is_year = 1128 }
+		OR = {
+			owns = 3266
+			owns = 2500
+			owns = 695
+		}	
+	}
+    
+	mean_time_to_happen = {days = 1} 
+	
+	option = {
+		name = "china_PRC_events.EVTOPTA21"
+		add_stability = -1 
+		if = {
+			limit = {
+				3266 = { 
+					has_province_modifier = huang_he_estuary_modifier 
+				}
+			}	
+			3266 = { remove_province_modifier = huang_he_estuary_modifier }
+		}
+		if = {
+			limit = {
+				2500 = { 
+					has_province_modifier = huang_he_estuary_modifier 
+				}
+			}	
+			2500 = { remove_province_modifier = huang_he_estuary_modifier }
+		}
+		
+
+		2500 = {
+			add_permanent_province_modifier = {
+				name = huang_he_estuary_modifier
+				duration = -1
+			}
+		}
+		695 = {
+			add_permanent_province_modifier = {
+				name = huang_he_estuary_modifier
+				duration = -1
+			}
+		}
+    }
+}
+
+country_event = { 
+    id = china_PRC_events.024
+	title = "china_PRC_events.EVTNAME24"
+	desc = "china_PRC_events.EVTDESC24"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+	
+	#is_triggered_only = yes					#必须由其它事件触发
+
+	trigger = {
+		is_year = 1855
+		NOT = { is_year = 1856 }
+		OR = {
+			owns = 3266
+			owns = 688
+			owns = 3207
+			owns = 3239
+			owns = 2500
+		}	
+	}
+    
+	mean_time_to_happen = {days = 1} 
+	
+	option = {
+		name = "china_PRC_events.EVTOPTA24"
+		add_stability = -1 
+		if = {
+			limit = {
+				3266 = { 
+					has_province_modifier = huang_he_estuary_modifier
+				}
+			}	
+			3266 = { remove_province_modifier = huang_he_estuary_modifier }
+		}
+		if = {
+			limit = {
+				688 = { 
+					has_province_modifier = huang_he_estuary_modifier
+				}
+			}	
+			688 = { remove_province_modifier = huang_he_estuary_modifier }
+		}
+		if = {
+			limit = {
+				3207 = { 
+					has_province_modifier = huang_he_estuary_modifier
+				}
+			}	
+			3207 = { remove_province_modifier = huang_he_estuary_modifier }
+		}
+		if = {
+			limit = {
+				3239 = { 
+					has_province_modifier = huang_he_estuary_modifier
+				}
+			}	
+			3239 = { remove_province_modifier = huang_he_estuary_modifier }
+		}
+		
+		688 = {
+			add_permanent_province_modifier = {
+				name = huang_he_estuary_modifier
+				duration = -1
+			}
+		}
+		2500 = {
+			add_permanent_province_modifier = {
+				name = huang_he_estuary_modifier
+				duration = -1
+			}
+		}
+    }
+}
+

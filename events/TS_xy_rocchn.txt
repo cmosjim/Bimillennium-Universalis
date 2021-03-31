@@ -1,0 +1,2028 @@
+namespace = xy_rocchn
+namespace = xy_rocchn
+
+country_event = {
+    id = xy_rocchn.1
+    title = "xy_rocchn.NAME1"
+    desc = "xy_rocchn.DESC1"
+    picture = WUCHANGCHIYI_eventPicture
+    is_triggered_only = yes
+    major = yes
+    immediate = {
+        hidden_effect = {
+            set_global_flag = xinhaigemingflag
+            dismantle_empire_of_china = yes
+            every_owned_province = {
+                kill_units = {
+                    who = owner
+                    amount = 1000
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        region = south_china_region
+                        region = xinan_region
+                    }
+                }
+                cede_province = ROC
+                add_core = ROC
+            }
+        }
+    }
+    option = {
+        name = "xy_rocchn.OPTA1"
+        trigger = {
+            NOT = {
+                has_global_flag = wanjia_convert_xhgm
+            }
+        }
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            change_government = republic
+            add_treasury = 5000
+            inherit = ROC
+            change_tag = BNN
+            swap_free_idea_group = yes
+            define_ruler = {
+                name = "ÅàNÔQ"
+                adm = 3
+                dip = 6
+                mil = 5
+                fixed = yes
+                age = 40
+                culture = chihan
+            }
+            set_ruler_flag = yuanshikai
+            change_religion = liberalism
+        }
+        custom_tooltip = tp_xinhaigeming1
+    }
+    option = {
+        name = "xy_rocchn.OPTB1"
+        trigger = {
+            NOT = {
+                has_global_flag = wanjia_convert_xhgm
+            }
+        }
+        hidden_effect = {
+            add_treasury = -15000
+            add_stability = -6
+            ROC = {
+                change_tag = GJ1
+                add_stability = -3
+                add_treasury = -5000
+                change_religion = liberalism
+                swap_free_idea_group = yes
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+                define_ruler = {
+                    name = "YR-NqS"
+                    adm = 4
+                    dip = 3
+                    mil = 4
+                    fixed = yes
+                    culture = chihan
+                    age = 33
+                }
+                declare_war_with_cb = {
+                    who = QNG
+                    casus_belli = cb_chinese_unification
+                }
+            }
+        }
+        custom_tooltip = tp_xinhaigeming2
+    }
+    option = {
+        name = "xy_rocchn.OPTC1"
+        set_global_flag = wanjia_convert_xhgm
+        trigger = {
+            NOT = {
+                has_global_flag = wanjia_convert_xhgm
+            }
+        }
+        hidden_effect = {
+            ROC = {
+                every_owned_province = {
+                    cede_province = ROOT remove_core = ROC
+                }
+            }
+            change_tag = GJ1
+            define_ruler = {
+                name = "YR-NqS"
+                adm = 4
+                dip = 3
+                mil = 4
+                age = 33
+                culture = chihan
+                fixed = yes
+            }
+            add_stability = -3
+            add_treasury = -5000
+            change_religion = liberalism
+            kill_heir = yes
+            swap_free_idea_group = yes
+            change_government = modern_chinese_warlord
+            add_government_reform = modern_chinese_warlord_reform
+            change_primary_culture = chihan
+            every_owned_province = {
+                limit = {
+                    NOT = {
+                        region = xinan_region
+                    }
+                    NOT = {
+                        region = south_china_region
+                    }
+                }
+                cede_province = QNG add_core = QNG
+            }
+            QNG = {
+                add_treasury = -15000
+                add_stability = -6
+            }
+            declare_war_with_cb = {
+                who = QNG
+                casus_belli = cb_chinese_unification
+            }
+        }
+        custom_tooltip = tp_xinhaigeming3
+    }
+    option = {
+        name = "xy_rocchn.OPTD1"
+        trigger = {
+            has_global_flag = wanjia_convert_xhgm
+        }
+    }
+
+}
+country_event = {
+    id = xy_rocchn.2
+    title = "xy_rocchn.NAME2"
+    desc = "xy_rocchn.DESC2"
+    picture = WUCHANGCHIYI_eventPicture
+    trigger = {
+        tag = BNN
+        NOT = {
+            has_ruler_flag = yuanshikai
+        }
+        NOT = {
+            has_global_flag = morden_warlordchina_happened
+        }
+    }
+    immediate = {
+        set_global_flag = morden_warlordchina_happened
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA2"
+        custom_tooltip = tp_junfahunzhan1
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = outer_mongolia_area
+                        area = outer_east_mongolia_area
+                        area = altai_sayan_area
+                        area = central_mongolia_area
+                        area = uliastai_area
+                        area = outer_west_mongolia_area
+                    }
+                }
+                cede_province = KHA
+                add_core = KHA
+            }
+
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        region = manchuria_region
+                        area = eastern_mongolia
+                        area = eastern_mid_mongolia
+                    }
+                }
+                cede_province = FX1
+                add_core = FX1
+            }
+            FX1 = {
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+            }
+
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = shanxi_area
+                        area = shanxi_north_area
+                        area = shanxi_east_area
+                        area = shanxi_west_area
+                    }
+                }
+                cede_province = JX1
+                add_core = JX1
+            }
+            JX1 = {
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+            }
+
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = chuanbei_east_area
+                        area = sichuan_area
+                        area = chuannan_area
+                        area = chuanbei_area
+                        province_id = 2457
+                        province_id = 2458
+                        province_id = 678
+                    }
+                }
+                cede_province = CJ1
+                add_core = CJ1
+            }
+            CJ1 = {
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+            }
+
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = yun_gui_borderland_area
+                        area = yun_gui_west_area
+                    }
+                }
+                cede_province = DX2
+                add_core = DX2
+            }
+            DX2 = {
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+            }
+
+            every_owned_province = {
+                limit = {
+                    area = yun_gui_area
+                }
+                cede_province = QX1
+                add_core = QX1
+            }
+            QX1 = {
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+            }
+
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = hunan_area
+                        area = hunan_west_area
+                        area = hunan_south_area
+                    }
+                }
+                cede_province = XX1
+                add_core = XX1
+            }
+            XX1 = {
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+            }
+
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = anhui_area
+                        area = central_anhui_area
+                        area = south_anhui_area
+                        area = south_jiangsu_area
+                        area = zhejiang_north_area
+                        area = zhejiang_area
+                    }
+                }
+                cede_province = WX1
+                add_core = WX1
+            }
+            WX1 = {
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+            }
+
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = west_guangdong_area
+                        area = guangzhou_area
+                    }
+                }
+                cede_province = GJ1
+                add_core = GJ1
+            }
+            GJ1 = {
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+            }
+
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = guangxi_west_area
+                        area = guangxi_center_area
+                        area = guangxi_area
+                    }
+                }
+                cede_province = GX1
+                add_core = GX1
+            }
+            GX1 = {
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+            }
+
+            every_owned_province = {
+                limit = {
+                    area = guangdong_area
+                }
+                cede_province = YX1
+                add_core = YX1
+            }
+            YX1 = {
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+            }
+
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = gansu_area
+                        area = central_gansu_area
+                        area = westnorth_gansu_area
+                        area = west_gansu_area
+                    }
+                }
+                cede_province = GJ2
+                add_core = GJ2
+            }
+            GJ2 = {
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+            }
+
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = shaanxi_north_area
+                        area = ordos_east_area
+                        area = gansu_eastnorth_area
+                        area = ordos_area
+                        area = west_gansu_area
+                    }
+                }
+                cede_province = NM1
+                add_core = NM1
+            }
+            NM1 = {
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+            }
+
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = amdo_area
+                        area = amdo_south_area
+                    }
+                }
+                cede_province = QM1
+                add_core = QM1
+            }
+            QM1 = {
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+            }
+
+            every_owned_province = {
+                limit = {
+                    region = central_asia_region
+                }
+                cede_province = JS1
+                add_core = JS1
+            }
+            JS1 = {
+                change_government = modern_chinese_warlord
+                add_government_reform = modern_chinese_warlord_reform
+            }
+
+            every_owned_province = {
+                limit = {
+                    region = tibet_region
+                }
+                cede_province = GAS
+                add_core = GAS
+            }
+
+            change_tag = ZX1
+            change_government = modern_chinese_warlord
+            add_government_reform = modern_chinese_warlord_reform
+            swap_free_idea_group = yes
+        }
+    }
+}
+
+country_event = {
+    id = xy_rocchn.3
+    title = "xy_rocchn.NAME3"
+    desc = "xy_rocchn.DESC3"
+    picture = COLDWAR_4_eventPicture
+    major = yes
+    trigger = {
+        has_reform = modern_chinese_warlord_reform
+        religion = communism
+        NOT = {
+            tag = BNN
+        }
+        NOT = {
+            exists = CHN
+        }
+        NOT = {
+            exists = CW1
+        }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA3"
+        change_tag = CW1
+		kill_heir = yes
+        swap_free_idea_group = yes
+        CW1 = {
+            define_ruler = {
+                name = "€k˝lN"
+                adm = 5
+                dip = 5
+                mil = 6
+                age = 30
+                religion = communism
+                culture = chihan
+                fixed = yes
+				leader = { 
+					name = "€k˝lN"	
+					fire = 9
+					shock = 9	
+					manuever = 5
+					siege = 4
+				}
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_rocchn.4
+    title = "xy_rocchn.NAME4"
+    desc = "xy_rocchn.DESC4"
+    picture = WUCHANGCHIYI_eventPicture
+    major = yes
+    trigger = {
+        is_year = 1927
+        NOT = {
+            any_country = {
+                has_reform = modern_chinese_warlord_reform
+                religion = communism
+            }
+        }
+        has_reform = modern_chinese_warlord_reform
+        NOT = {
+            religion = communism
+        }
+        calc_true_if = {
+            all_owned_province = {
+                owner = {
+                    has_reform = modern_chinese_warlord_reform
+                }
+                religion = communism
+            }
+            amount = 5
+        }
+        NOT = {
+            exists = CHN
+        }
+        NOT = {
+            exists = CW1
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+        modifier = {
+            ai = no
+            factor = 0
+        }
+    }
+    option = {
+        name = "xy_rocchn.OPTA4"
+        change_tag = CW1
+        swap_free_idea_group = yes
+        change_religion = communism
+		hidden_effect = {
+			every_owned_province = {  change_religion = communism }
+		}
+		kill_heir = yes
+        define_ruler = {
+            name = "€k˝lN"
+            adm = 5
+            dip = 5
+            mil = 6
+            age = 30
+            religion = communism
+            culture = chihan
+            fixed = yes
+			leader = { 
+                name = "€k˝lN"	
+                
+                fire = 9
+                shock = 9	
+                manuever = 5
+				siege = 4
+		}
+        }
+    }
+    option = {
+        name = "xy_rocchn.OPTB4"
+        ai_chance = {
+            factor = 100
+        }
+        every_province = {
+            limit = {
+                #owner = {
+                #    has_reform = modern_chinese_warlord_reform
+                #}
+                #religion = communism
+				owner = {
+					tag = FA1
+				}
+            }
+            cede_province = CW1
+        }
+        CW1 = {
+            change_religion = communism
+            define_ruler = {
+                name = "€k˝lN"
+                adm = 5
+                dip = 5
+                mil = 6
+                age = 30
+                religion = communism
+                culture = chihan
+                fixed = yes
+				leader = { 
+					name = "€k˝lN"	
+					fire = 9
+					shock = 9	
+					manuever = 5
+					siege = 4
+				}				
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_rocchn.5
+    title = "xy_rocchn.NAME5"
+    desc = "xy_rocchn.DESC5"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+	fire_only_once = yes
+    trigger = {
+        NOT = {
+            exists = ZZ3
+        }
+        has_global_flag = JA1_wii_fail
+        tag = ROC
+        NOT = {
+            war_with = CW1
+        }
+		exists = CW1
+        NOT = {
+            exists = CHN
+        }
+        NOT = {
+            any_country = {
+                NOT = {
+                    tag = CW1
+                }
+                has_reform = modern_chinese_warlord_reform
+                num_of_cities = ROOT
+            }
+        }
+        owns = 1821
+    }
+    mean_time_to_happen = {
+        months = 12
+        modifier = {
+            is_year = 1946
+            factor = 0
+        }
+    }
+    option = {
+        name = "xy_rocchn.OPTA5"
+        set_global_flag = guogongneizhan2
+        set_capital = 1821
+			country_event = { id = xy_rocchn.555 days = 2 }
+        add_country_modifier = {
+            name = "beiguli_neizhan"
+            duration = 380
+        }
+        CW1 = {
+            add_country_modifier = {
+                name = "beiguli_neizhan"
+                duration = 380
+            }
+        }
+        CW1 = {
+            country_event = {
+                id = xy_rocchn.6
+            }
+        }
+    }
+}
+country_event = {
+	id = xy_rocchn.555
+	title = "xy_rocchn.NAME555"
+	desc = "xy_rocchn.DESC555"
+	picture = CONQUEST_eventPicture
+
+	hidden = yes
+
+    is_triggered_only = yes
+	option = {
+		name = "xy_rocchn.NAME555"
+		declare_war_with_cb = {
+            who = CW1
+            casus_belli = cb_chinese_unification
+        }
+ }
+}
+country_event = {
+    id = xy_rocchn.6
+    title = "xy_rocchn.NAME6"
+    desc = "xy_rocchn.DESC6"
+    picture = COLDWAR_13_eventPicture
+    is_triggered_only = yes
+    major = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA6"
+
+    }
+}
+country_event = {
+    id = xy_rocchn.7
+    title = "xy_rocchn.NAME7"
+    desc = "xy_rocchn.DESC7"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA7"
+        custom_tooltip = tp_kaiguodadian
+        hidden_effect = {
+            every_country = {
+                limit = {
+                    has_reform = modern_chinese_warlord_reform
+                }
+                every_owned_province = {
+                    cede_province = CHN add_core = CHN
+                }
+            }
+            ROC = {
+                every_owned_province = {
+                    limit = {
+                        NOT = {
+                            area = taiwan_north_area
+                        }
+                        NOT = {
+                            area = taiwan_south_area
+                        }
+                    }
+                    cede_province = CHN add_core = CHN
+                }
+                every_owned_province = {
+                    limit = {
+                        OR = {
+                            area = taiwan_north_area area = taiwan_south_area
+                        }
+                    }
+                    add_core = CHN
+                }
+            }
+			every_owned_province = {
+                kill_units = {
+                    who = ROC
+                    amount = 1000
+                }
+            }
+            ROC = {
+                change_tag = TWN swap_free_idea_group = yes
+            }
+			set_global_flag = jfzz_jieshu
+            TWN = {
+                white_peace = ROOT
+            }
+            remove_country_modifier = cw1_neizhanfangong
+            remove_country_modifier = cw1_neizhanfangyu
+        }
+    }
+}
+
+province_event = {
+    id = xy_rocchn.8
+    title = "xy_rocchn.NAME8"
+    desc = "xy_rocchn.DESC8"
+    picture = BAD_ARMY_eventPicture
+    hidden = yes
+    trigger = {
+        owner = {
+            has_country_modifier = socialist_refrom
+            religion = communism
+        }
+        NOT = {
+            religion = communism
+        }
+        NOT = {
+            religion = sunni
+        }
+        NOT = {
+            region = tibet_region
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+    }
+    option = {
+        name = "xy_rocchn.OPTA8"
+        change_religion = communism
+    }
+} 
+#>yOININ9e.ê
+country_event = {
+    id = xy_rocchn.9
+    title = "xy_rocchn.NAME9"
+    desc = "xy_rocchn.DESC9"
+    picture = DICTATORSHIP_OF_PROLETARIAT_eventPicture
+    is_triggered_only = yes
+    major = yes
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA9"
+        add_country_modifier = {
+            name = "socialist_refrom"
+            duration = 7300
+        }
+    }
+}
+#˝VlZQbeu€èIe
+country_event = {
+    id = xy_rocchn.10
+    title = "xy_rocchn.NAME10"
+    desc = "xy_rocchn.DESC10"
+    picture = COLDWAR_14_eventPicture
+    major = yes
+    fire_only_once = yes
+    trigger = {
+        has_global_flag = guogongneizhan2
+        NOT = {
+            has_country_flag = roc_neizhanjingong_flg
+        }
+        tag = ROC
+        war_with = CW1
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA10"
+        set_country_flag = roc_neizhanjingong_flg
+        add_country_modifier = {
+            name = "roc_neizhanjingong"
+            duration = 365
+        }
+    }
+}
+#qQµNZQbeu2ñàR
+country_event = {
+    id = xy_rocchn.11
+    title = "xy_rocchn.NAME11"
+    desc = "xy_rocchn.DESC11"
+    picture = COLDWAR_4_eventPicture
+    is_triggered_only = yes
+    major = yes
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA11"
+        add_country_modifier = {
+            name = "cw1_neizhanfangyu"
+            duration = 3650
+        }
+    }
+}
+#qQµNZQbeuÕSIe
+country_event = {
+    id = xy_rocchn.12
+    title = "xy_rocchn.NAME12"
+    desc = "xy_rocchn.DESC12"
+    picture = COLDWAR_13_eventPicture
+    is_triggered_only = yes
+    major = yes
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA12"
+        add_country_modifier = {
+            name = "cw1_neizhanfangong"
+            duration = 3650
+        }
+    }
+}
+#˝VlZQÉn%ç
+country_event = {
+    id = xy_rocchn.13
+    title = "xy_rocchn.NAME13"
+    desc = "xy_rocchn.DESC13"
+    picture = COLDWAR_14_eventPicture
+    fire_only_once = yes
+    major = yes
+    trigger = {
+        tag = ROC
+        CW1 = {
+            has_country_modifier = cw1_neizhanfangong owns = 1816
+        }
+        NOT = {
+            any_province = {
+                OR = {
+                    region = manchuria_region area = hebei_area
+                }
+                owned_by = ROOT
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA13"
+        add_country_modifier = {
+            name = "roc_neizhankuibai"
+            duration = 3650
+        }
+    }
+}
+#!nmlbyV
+country_event = {
+    id = xy_rocchn.14
+    title = "xy_rocchn.NAME14"
+    desc = "xy_rocchn.DESC14"
+    picture = COLDWAR_14_eventPicture
+    major = yes
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA14"
+        if = {
+            limit = {
+                ai = no
+            }
+            1821 = {
+                change_controller = ROOT
+            }
+            682 = {
+                change_controller = ROOT
+            }
+        }
+        if = {
+            limit = {
+                ai = yes
+            }
+            1821 = {
+                cede_province = ROOT add_core = ROOT
+            }
+            682 = {
+                cede_province = ROOT add_core = ROOT
+            }
+            3166 = {
+                cede_province = ROOT add_core = ROOT
+            }
+            3162 = {
+                cede_province = ROOT add_core = ROOT
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_rocchn.15
+    title = "xy_rocchn.NAME15"
+    desc = "xy_rocchn.DESC15"
+    picture = COLDWAR_15_eventPicture
+	
+	major = yes
+	
+    is_triggered_only = yes
+	
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA15"
+        ai_chance = {
+            factor = 70
+            modifier = {
+                factor = 0.5
+                is_great_power = yes
+            }
+        }
+        every_owned_province = {
+            limit = {
+                has_province_flag = xizangjiefang
+            }
+            cede_province = CHN
+        }
+    }
+    option = {
+        name = "xy_rocchn.OPTB15"
+        ai_chance = {
+            factor = 30
+            modifier = {
+                factor = 0.1
+                CHN = {
+                    ai = yes
+                }
+            }
+        }
+        add_country_modifier = {
+            name = "beiguli_neizhan"
+            duration = 365
+        }
+        CHN = {
+            declare_war_with_cb = {
+                who = ROOT
+                casus_belli = cb_core
+            }
+        }
+    }
+}
+country_event = {
+    id = xy_rocchn.16
+    title = "xy_rocchn.NAME16"
+    desc = "xy_rocchn.DESC16"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    fire_only_once = yes
+    trigger = {
+        tag = NOK
+        exists = SKO
+		 NOT = {
+            started_in = 1953.1.1
+        }
+        SKO = {
+            is_neighbor_of = ROOT
+        }
+        SKO = {
+            owns = 735
+        }
+        NOT = {
+            has_global_flag = chaozhan_start
+        }
+        is_subject_of_type = ideology_union_state
+        is_subject_of = SOV
+        SKO = {
+            is_subject_of = USA
+        }
+        has_global_flag = jfzz_jieshu
+    }
+    mean_time_to_happen = {
+        months = 12
+        modifier = {
+            is_year = 1950
+            factor = 0
+        }
+    }
+    option = {
+        name = "xy_rocchn.OPTA16"
+        custom_tooltip = tp_chaozhankaishi
+        ai_chance = {
+            factor = 100
+        }
+        declare_war_with_cb = {
+            who = SKO
+            casus_belli = cb_core
+            war_goal_province = 735
+        }
+        hidden_effect = {
+            SKO = {
+                every_owned_province = {
+                    kill_units = {
+                        who = owner
+                        amount = 20
+                    }
+                }
+                every_owned_province = {
+                    limit = {
+                        OR = {
+                            area = western_korea_area
+                            area = eastern_korea_area
+                        }
+                    }
+                    change_controller = ROOT
+                }
+            }
+            set_global_flag = chaozhan_start
+        }
+    }
+    option = {
+        name = "xy_rocchn.OPTB16"
+    }
+}
+
+country_event = {
+    id = xy_rocchn.17
+    title = "xy_rocchn.NAME17"
+    desc = "xy_rocchn.DESC17"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    fire_only_once = yes
+    trigger = {
+        has_global_flag = jfzz_jieshu
+        tag = CHN
+        exists = TWN
+        NOT = {
+            started_in = 1950.1.1
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA17"
+        set_variable = {
+            which = num_of_industrialindex
+            value = 5
+        }
+        every_owned_province = {
+            limit = {
+                has_building = factory
+            }
+            remove_building = factory
+        }
+    }
+}
+
+country_event = {
+    id = xy_rocchn.18
+    title = "xy_rocchn.NAME18"
+    desc = {
+        trigger = {
+            CHN = {
+                has_opinion = {
+                    who = ROOT
+                    value = 50
+                }
+            }
+        }
+        desc = xy_rocchn.18.da
+    }
+    desc = {
+        trigger = {
+            CHN = {
+                NOT = {
+                    has_opinion = {
+                        who = ROOT
+                        value = 50
+                    }
+                }
+            }
+        }
+        desc = xy_rocchn.18.db
+    }
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    fire_only_once = yes
+    trigger = {
+        exists = SOV
+        exists = CHN
+        tag = NOK
+        war_with = USA
+        war_with = SKO
+        has_global_flag = chaozhan_start
+        NOT = {
+            any_province = {
+                area = south_korea_area 
+				NOT = {
+                    province_id = 2516
+                }
+                owned_by = SKO NOT = {
+                    controlled_by = NOK
+                }
+            }
+        }
+        SKO = {
+            capital_scope = {
+                controlled_by = ROOT
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA18"
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            if = {
+                limit = {
+                    USA = {
+                        any_owned_province = {
+                            same_continent = capital
+                            num_of_units_in_province = {
+                                who = owner
+                                amount = 50
+                            }
+                        }
+                    }
+                }
+                USA = {
+                    country_event = {
+                        id = xy_rocchn.19
+                    }
+                }
+            }
+        }
+    }
+    option = {
+        name = "xy_rocchn.OPTB18"
+        trigger = {
+            CHN = {
+                has_opinion = {
+                    who = ROOT
+                    value = 50
+                }
+            }
+        }
+        every_province = {
+            limit = {
+                owned_by = SKO
+				controlled_by = ROOT 
+				NOT = {
+                    province_id = 735
+                }
+            }
+            change_controller = SKO
+        }
+    }
+}
+country_event = {
+    id = xy_rocchn.19
+    title = "xy_rocchn.NAME19"
+    desc = "xy_rocchn.DESC19"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA19"
+        ai_chance = {
+            factor = 100
+        }
+        random_owned_province = {
+            limit = {
+                num_of_units_in_province = {
+                    who = owner
+                    amount = 50
+                }
+                same_continent = capital
+            }
+            kill_units = {
+                who = ROOT
+                amount = 50
+            }
+        }
+        SKO = {
+            capital_scope = {
+                ROOT = {
+                    set_variable = {
+                        which = transport_mil_ts
+                        value = 1
+                    }
+                }
+                while = {
+                    limit = {
+
+                        NOT = {
+                            ROOT = {
+                                check_variable = {
+                                    which = transport_mil_ts
+                                    value = 26
+                                }
+                            }
+                        }
+                    }
+                    infantry = ROOT
+                    ROOT = {
+                        change_variable = {
+                            which = transport_mil_ts
+                            value = 1
+                        }
+                    }
+                }
+                ROOT = {
+                    set_variable = {
+                        which = transport_mil_ts
+                        value = 1
+                    }
+                }
+                while = {
+                    limit = {
+
+                        NOT = {
+                            ROOT = {
+                                check_variable = {
+                                    which = transport_mil_ts
+                                    value = 11
+                                }
+                            }
+                        }
+                    }
+                    cavalry = ROOT
+                    ROOT = {
+                        change_variable = {
+                            which = transport_mil_ts
+                            value = 1
+                        }
+                    }
+                }
+                ROOT = {
+                    set_variable = {
+                        which = transport_mil_ts
+                        value = 1
+                    }
+                }
+                while = {
+                    limit = {
+
+                        NOT = {
+                            ROOT = {
+                                check_variable = {
+                                    which = transport_mil_ts
+                                    value = 16
+                                }
+                            }
+                        }
+                    }
+                    artillery = ROOT
+                    ROOT = {
+                        change_variable = {
+                            which = transport_mil_ts
+                            value = 1
+                        }
+                    }
+                }
+            }
+        }
+        735 = {
+            change_controller = ROOT
+        }
+        2512 = {
+            change_controller = ROOT
+        }
+        734 = {
+            change_controller = ROOT
+        }
+        3307 = {
+            change_controller = ROOT
+        }
+    }
+    option = {
+        name = "xy_rocchn.OPTB19"
+        white_peace = NOK
+        SKO = {
+            every_owned_province = {
+                cede_province = NOK
+            }
+        }
+        add_prestige = -20
+    }
+}
+
+country_event = {
+    id = xy_rocchn.20
+    title = "xy_rocchn.NAME20"
+    desc = "xy_rocchn.DESC20"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    trigger = {
+        exists = SOV
+        exists = CHN
+        owns = 3314
+        NOT = {
+            has_country_flag = kangmeiyuanchao1
+        }
+        tag = NOK
+        NOK = {
+            war_with = USA war_with = SKO
+        }
+        NOT = {
+            war_score_against = {
+                who = SKO
+                value = -3
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA20"
+        ai_chance = {
+            factor = 100
+        }
+        CHN = {
+            country_event = {
+				id = xy_rocchn.21
+				days = 1
+			}
+			set_country_flag = kangmeiyuanchao1
+		}
+	}
+    option = {
+        name = "xy_rocchn.OPTB20"
+        trigger = {
+            war_score_against = {
+                who = SKO
+                value = -30
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_rocchn.21
+    title = "xy_rocchn.NAME21"
+    desc = {
+        trigger = {
+            exists = TWN
+        }
+        desc = xy_rocchn.21.da
+    }
+    desc = {
+        trigger = {
+            NOT = {
+                exists = TWN
+            }
+        }
+        desc = xy_rocchn.21.db
+    }
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA21"
+        ai_chance = {
+            factor = 100
+        }
+        USA = {
+            country_event = {
+                id = xy_rocchn.22
+                days = 1
+			}
+			set_global_flag = kangmeiyuanchao2  # ÅybkjPb
+		}
+	}
+    option = {
+        name = "xy_rocchn.OPTB21"
+        add_prestige = -20
+    }
+}
+
+country_event = {
+    id = xy_rocchn.22
+    title = "xy_rocchn.NAME22"
+    desc = "xy_rocchn.DESC22"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA22"
+        ai_chance = {
+            factor = 100
+        }
+        CHN = {
+            country_event = {
+                id = xy_rocchn.23
+                days = 1
+			}
+		}
+	}
+    option = {
+        name = "xy_rocchn.OPTB22"
+        SKO = {
+            white_peace = NOK
+        }
+        USA = {
+            white_peace = NOK
+        }
+        clr_global_flag = kangmeiyuanchao2 # ÅybkjPb
+
+    }
+}
+
+country_event = {
+    id = xy_rocchn.23
+    title = "xy_rocchn.NAME23"
+    desc = "xy_rocchn.DESC23"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA23"
+        ai_chance = {
+            factor = 100
+        }
+        if = {
+            limit = {
+                war_with = TWN
+            }
+            white_peace = TWN
+        }
+        USA = {
+            create_subject = {
+                subject_type = ideology_union_state
+                subject = TWN
+            }
+        }
+        USA = {
+            vassalize = SKO
+        }
+        CHN = {
+            vassalize = NOK
+            add_country_modifier = {
+                name = "beiguli_neizhan"
+                duration = 30
+            }
+        }
+        SKO = {
+            declare_war_with_cb = {
+                who = NOK
+                casus_belli = cb_core
+                war_goal_province = 3314
+            }
+        }
+        if = {
+            limit = {
+                CHN = {
+                    ai = yes
+                }
+            }
+            NOK = {
+                every_owned_province = {
+                    ROOT = {
+                        set_variable = {
+                            which = transport_mil_ts
+                            value = 1
+                        }
+                    }
+                    while = {
+                        limit = {
+
+                            NOT = {
+                                ROOT = {
+                                    check_variable = {
+                                        which = transport_mil_ts
+                                        value = 26
+                                    }
+                                }
+                            }
+                        }
+                        infantry = ROOT
+                        ROOT = {
+                            change_variable = {
+                                which = transport_mil_ts
+                                value = 1
+                            }
+                        }
+                    }
+                    ROOT = {
+                        set_variable = {
+                            which = transport_mil_ts
+                            value = 1
+                        }
+                    }
+                    while = {
+                        limit = {
+
+                            NOT = {
+                                ROOT = {
+                                    check_variable = {
+                                        which = transport_mil_ts
+                                        value = 11
+                                    }
+                                }
+                            }
+                        }
+                        cavalry = ROOT
+                        ROOT = {
+                            change_variable = {
+                                which = transport_mil_ts
+                                value = 1
+                            }
+                        }
+                    }
+                    ROOT = {
+                        set_variable = {
+                            which = transport_mil_ts
+                            value = 1
+                        }
+                    }
+                    while = {
+                        limit = {
+
+                            NOT = {
+                                ROOT = {
+                                    check_variable = {
+                                        which = transport_mil_ts
+                                        value = 16
+                                    }
+                                }
+                            }
+                        }
+                        artillery = ROOT
+                        ROOT = {
+                            change_variable = {
+                                which = transport_mil_ts
+                                value = 1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+country_event = {
+    id = xy_rocchn.24
+    title = "xy_rocchn.NAME24"
+    desc = "xy_rocchn.DESC24"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA24"
+        ai_chance = {
+            factor = 100
+        }
+        add_treasury = -5000
+        CHN = {
+            country_event = {
+                id = xy_rocchn.25
+            }
+        }
+    }
+    option = {
+        name = "xy_rocchn.OPTB24"
+        add_stability = -3
+        add_prestige = -100
+    }
+}
+country_event = {
+    id = xy_rocchn.25
+    title = "xy_rocchn.NAME25"
+    desc = "xy_rocchn.DESC25"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA25"
+        ai_chance = {
+            factor = 100
+        }
+        set_country_flag = sulianyuanzhu2
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                        which = num_of_industrialindex
+                        value = 40
+                    }
+                }
+            }
+            set_variable = {
+                which = num_of_industrialindex
+                value = 45
+            }
+        }
+		if = {
+			limit = {
+				727 = {
+                    owned_by = CHN
+				}
+			}
+			727 = {
+				add_building = factory
+			}
+        }
+		if = {
+			limit = {
+				725 = {
+                    owned_by = CHN
+				}
+			}
+			725 = {
+				add_building = factory
+			}
+        }
+		if = {
+			limit = {
+				726 = {
+                    owned_by = CHN
+				}
+			}
+			726 = {
+				add_building = factory
+			}
+        }
+    }
+}
+country_event = {
+    id = xy_rocchn.26
+    title = "xy_rocchn.NAME26"
+    desc = "xy_rocchn.DESC26"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    trigger = {
+        tag = CHN
+		has_global_flag = kangmeiyuanchao2
+        OR = {
+            had_global_flag = {
+                flag = kangmeiyuanchao2
+                days = 730
+            }
+            is_year = 1953
+        }
+        NOT = {
+            any_province = {
+                NOT = {
+                    province_id = 2516
+                }
+                owned_by = SKO AND = {
+                    NOT = {
+                        controlled_by = NOK
+                    }
+                    NOT = {
+                        controlled_by = CHN
+                    }
+                }
+            }
+        }
+        NOT = {
+            any_province = {
+                owned_by = NOK OR = {
+                    controlled_by = SKO controlled_by = USA
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA26"
+        white_peace = USA
+        white_peace = SKO
+        USA = {
+            create_subject = {
+                subject_type = ideology_union_state
+                subject = SKO
+            }
+        }
+        SOV = {
+            create_subject = {
+                subject_type = ideology_union_state
+                subject = NOK
+            }
+        }
+        clr_global_flag = kangmeiyuanchao2
+    }
+}
+
+country_event = {
+    id = xy_rocchn.27
+    title = "xy_rocchn.NAME27"
+    desc = "xy_rocchn.DESC27"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    trigger = {
+        tag = USA
+		has_global_flag = kangmeiyuanchao2
+        OR = {
+            had_global_flag = {
+                flag = kangmeiyuanchao2
+                days = 365
+            }
+            is_year = 1953
+        }
+        NOT = {
+            any_province = {
+                owned_by = NOK AND = {
+                    NOT = {
+                        controlled_by = USA
+                    }
+                    NOT = {
+                        controlled_by = CHN
+                    }
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA27"
+        white_peace = CHN
+        white_peace = SKO
+        USA = {
+            create_subject = {
+                subject_type = ideology_union_state
+                subject = SKO
+            }
+        }
+        NOK = {
+            every_owned_province = {
+                cede_province = SKO
+            }
+        }
+        clr_global_flag = kangmeiyuanchao2
+    }
+}
+
+country_event = {
+    id = xy_rocchn.28
+    title = "xy_rocchn.NAME28"
+    desc = "xy_rocchn.DESC28"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    trigger = {
+        has_country_flag = sulianyuanzhu2
+        NOT = {
+            has_global_flag = kangmeiyuanchao2
+        }
+        tag = CHN
+		exists = SOV
+		NOT = { has_global_flag = zhongsujiaoe }
+		NOT = { started_in = 1958.1.1 }
+        NOT = {
+            check_variable = {
+                which = numof_yiwujihua
+                value = 5
+            }
+        }
+        OR = {
+            NOT = {
+                has_country_flag = sulianyuanzhu3
+            }
+            had_country_flag = {
+                flag = sulianyuanzhu3 days = 365
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    immediate = {
+        if = {
+            limit = {
+                NOT = {
+                    has_country_flag = sulianyuanzhu3
+                }
+            }
+            set_variable = {
+                which = numof_yiwujihua
+                value = 0
+            }
+        }
+        set_country_flag = sulianyuanzhu3
+    }
+    option = {
+        name = "xy_rocchn.OPTA28"
+        change_variable = {
+            which = num_of_industrialindex
+            value = 5
+        }
+        add_mil_power = 100
+        add_dip_power = 100
+        add_adm_power = 100
+        change_variable = {
+            which = numof_yiwujihua
+            value = 1
+        }
+    }
+}
+country_event = {
+    id = xy_rocchn.29
+    title = "xy_rocchn.NAME29"
+    desc = "xy_rocchn.DESC29"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+	fire_only_once = yes
+    trigger = {
+        tag = SOV
+		NOT = { has_global_flag = zhongsujiaoe }
+        CHN = {
+            has_country_flag = sulianyuanzhu2
+            check_variable = {
+                which = numof_yiwujihua
+                value = 5
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA29"
+        create_alliance = CHN
+    }
+    option = {
+        name = "xy_rocchn.OPTB29"
+        ai_chance = {
+            factor = 100
+        }
+        CHN = {
+            country_event = {
+                id = xy_rocchn.30
+            }
+        }
+
+    }
+}
+country_event = {
+    id = xy_rocchn.30
+    title = "xy_rocchn.NAME30"
+    desc = "xy_rocchn.DESC30"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_rocchn.OPTA30"
+        ai_chance = {
+            factor = 100
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    which = num_of_industrialindex
+                    value = 50
+                }
+            }
+            set_variable = {
+                which = num_of_industrialindex
+                value = 50
+            }
+        }
+        add_treasury = -25000
+        SOV = {
+            add_treasury = 25000
+        }
+        set_country_flag = ziranzaihai111
+		set_global_flag = zhongsujiaoe
+    }
+    option = {
+        name = "xy_rocchn.OPTB30"
+        SOV = {
+            create_subject = {
+                subject_type = ideology_union_state
+                subject = CHN
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_rocchn.31
+    title = "xy_rocchn.NAME31"
+    desc = "xy_rocchn.DESC31"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    fire_only_once = yes
+    trigger = {
+        tag = CHN
+        has_country_flag = ziranzaihai111
+        has_country_flag = hezuoshe1
+    }
+    mean_time_to_happen = {
+        months = 12
+    }
+    option = {
+        name = "xy_rocchn.OPTA31"
+        add_treasury = -20000
+        clr_country_flag = ziranzaihai111
+    }
+}
+country_event = {
+    id = xy_rocchn.32
+    title = "xy_rocchn.NAME32"
+    desc = "xy_rocchn.DESC32"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    fire_only_once = yes
+    trigger = {
+        tag = CHN
+        NOT = {
+            has_country_flag = hezuoshe1
+        }
+        has_country_flag = ziranzaihai111
+        check_variable = {
+            which = num_of_industrialindex
+            value = 10
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 70
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 6
+    }
+    option = {
+        name = "xy_rocchn.OPTA32"
+        add_adm_power = -500
+        set_country_flag = hezuoshe1
+    }
+    option = {
+        name = "xy_rocchn.OPTB32"
+        change_variable = {
+            which = num_of_industrialindex
+            value = -5
+        }
+    }
+}
+country_event = {
+    id = xy_rocchn.33
+    title = "xy_rocchn.NAME33"
+    desc = "xy_rocchn.DESC33"
+    picture = COLDWAR_13_eventPicture
+    major = yes
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = "xy_rocchn.OPTA33"
+        add_country_modifier = {
+            name = "shangshanxiaxiangmd"
+            duration = 365
+        }
+        add_treasury = 2500
+        clr_country_flag = shangshanxx_event
+    }
+}

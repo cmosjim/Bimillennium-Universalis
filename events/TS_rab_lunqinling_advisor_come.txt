@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = lunqinling_advisor_come
+
+#fkS–gÕyagˆNN˙Q∞s
+#id = 1 : lunqinling : vVS.¶îuñ^çSS0fkS0
+
+country_event = {
+	id = lunqinling_advisor_come.1
+	title = "lunqinling_advisor_come.1.t"
+	desc = "lunqinling_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#˙Q∞sˆeÙï
+	trigger = {
+		is_year = 622	
+		NOT = { is_year = 690 }
+		OR = {
+			AND = {
+				exists = TO1
+				tag = TO1
+			}
+			AND = {
+				NOT = { exists = TO1 }
+				owns = 3329
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = lunqinling_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = lunqinling
+				name = "vVS.¶îuñ^çSS0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "vVS.¶îuñ^çSS0fkS0"
+				fire = 7
+				shock = 8
+				manuever = 5
+				siege = 5
+			}
+		}
+	}
+}
+

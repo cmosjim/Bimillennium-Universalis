@@ -1,0 +1,241 @@
+namespace = MilitaryStrategy
+
+country_event = {
+	id = MilitaryStrategy.1
+	title = MilitaryStrategy.1.t
+	desc = MilitaryStrategy.1.desc
+	picture = treasury_milbook_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = MilitaryStrategy.1.a
+		add_MIL_power = -30
+		add_country_modifier = {
+			name = ji_ru_feng
+			duration = -1
+		}
+	}
+
+	option = {
+		name = MilitaryStrategy.1.b
+		add_MIL_power = -30
+		add_country_modifier = {
+			name = xu_ru_lin
+			duration = -1
+		}
+	}
+
+	option = {
+		name = MilitaryStrategy.1.c
+		add_MIL_power = -30
+		add_country_modifier = {
+			name = qin_lve_ru_huo
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = MilitaryStrategy.1.d
+		add_MIL_power = -30
+		add_country_modifier = {
+			name = bu_dong_ru_shan
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = MilitaryStrategy.1.e
+		add_MIL_power = -30
+		add_country_modifier = {
+			name = nan_zhi_ru_yin
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = MilitaryStrategy.1.f
+		add_MIL_power = -30
+		add_country_modifier = {
+			name = dong_ru_lei_ting
+			duration = -1
+		}
+	}
+
+	option = {
+		name = MilitaryStrategy.1.g
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = MilitaryStrategy.2
+	title = MilitaryStrategy.2.t
+	desc = MilitaryStrategy.2.desc
+	picture = treasury_milbook_eventPicture
+
+	trigger = {
+		OR = {
+			has_country_modifier = ji_ru_feng
+			has_country_modifier = xu_ru_lin
+			has_country_modifier = qin_lve_ru_huo
+			has_country_modifier = bu_dong_ru_shan
+			has_country_modifier = nan_zhi_ru_yin
+			has_country_modifier = dong_ru_lei_ting
+		}
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+
+	option = {
+		name = MilitaryStrategy.2.a
+		trigger = { 
+			has_country_modifier = ji_ru_feng
+			is_at_war = no
+		}
+		remove_country_modifier = ji_ru_feng
+	}
+
+	option = {
+		name = MilitaryStrategy.2.b
+		trigger = { 
+			has_country_modifier = xu_ru_lin
+			is_at_war = no
+		}
+		remove_country_modifier = xu_ru_lin
+	}
+
+	option = {
+		name = MilitaryStrategy.2.c
+		trigger = { 
+			has_country_modifier = qin_lve_ru_huo
+			is_at_war = no
+		}
+		remove_country_modifier = qin_lve_ru_huo
+	}
+
+	option = {
+		name = MilitaryStrategy.2.d
+		trigger = { 
+			has_country_modifier = bu_dong_ru_shan
+			is_at_war = no
+		}
+		remove_country_modifier = bu_dong_ru_shan
+	}
+
+	option = {
+		name = MilitaryStrategy.2.e
+		trigger = { 
+			has_country_modifier = nan_zhi_ru_yin
+			is_at_war = no
+		}
+		remove_country_modifier = nan_zhi_ru_yin
+	}
+
+	option = {
+		name = MilitaryStrategy.2.f
+		trigger = { 
+			has_country_modifier = dong_ru_lei_ting
+			is_at_war = no
+		}
+		remove_country_modifier = dong_ru_lei_ting
+	}
+	after = {
+		if = {
+			limit = {
+				has_country_modifier = ai_MilitaryStrategy
+			}
+				remove_country_modifier = ai_MilitaryStrategy
+		}
+	}
+}
+	
+country_event = {
+	id = MilitaryStrategy.3
+	title = MilitaryStrategy.3.t
+	desc = MilitaryStrategy.3.d
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		is_at_war = no
+		OR = {
+			has_country_modifier = Rome_square
+			has_country_modifier = testudo	
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = MilitaryStrategy.3.a
+		trigger = {
+			has_country_modifier = Rome_square
+			is_at_war = no
+		}
+		remove_country_modifier = Rome_square
+	}
+	
+	option = {
+		name = MilitaryStrategy.3.b
+		trigger = {
+			has_country_modifier = testudo
+			is_at_war = no
+		}
+		remove_country_modifier = testudo
+	}
+}
+
+country_event = {
+	id = MilitaryStrategy.4
+	title = MilitaryStrategy.4.t
+	desc = MilitaryStrategy.4.d
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		is_at_war = no
+		OR = {
+			has_country_modifier = hannibal_mercenaries
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = MilitaryStrategy.4.a
+		trigger = {
+			has_country_modifier = hannibal_mercenaries
+			is_at_war = no
+		}
+		remove_country_modifier = hannibal_mercenaries
+	}
+}
+
+country_event = {
+	id = MilitaryStrategy.5
+	title = MilitaryStrategy.5.t
+	desc = MilitaryStrategy.5.d
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		is_at_war = no
+		OR = {
+			has_country_modifier = macedonian_square
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = MilitaryStrategy.5.a
+		trigger = {
+			has_country_modifier = macedonian_square
+			is_at_war = no
+		}
+		remove_country_modifier = macedonian_square
+	}
+}

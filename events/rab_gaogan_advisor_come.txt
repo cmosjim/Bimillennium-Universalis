@@ -1,0 +1,91 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = gaogan_advisor_come
+
+#fkS–gÕyùhˆNN˙Q˛s
+#id = 1 : gaogan : ÿör^0fkS0
+#
+country_event = {
+	id = gaogan_advisor_come.1
+	title = "gaogan_advisor_come.1.t"
+	desc = "gaogan_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		#ŸèÃë=ffkS˙Q∞s(WÍTÃëÑvagˆN
+		NOT = { exists = GAO }
+		NOT = { is_year = 206 }	
+		OR = {
+			AND = {
+				is_year = 191
+				NOT = { is_year = 203 }
+				exists = UAN
+				tag = UAN
+			}
+			AND = {
+				is_year = 191
+				NOT = { is_year = 203 }
+				NOT = { exists = UAN }
+				exists = TS2
+				tag = TS2
+			}
+			AND = {
+				is_year = 191
+				NOT = { is_year = 203 }
+				NOT = { exists = TS2 }
+				NOT = { exists = UAN }
+				owns = 688
+			}			
+			AND = {
+				is_year = 203
+				exists = UAN
+				tag = UAN
+			}
+			AND = {
+				is_year = 203
+				NOT = { exists = UAN }
+				exists = TS2
+				tag = TS2
+			}
+			AND = {
+				is_year = 203
+				NOT = { exists = TS2 }
+				NOT = { exists = UAN }
+				owns = 688
+			}		
+		}	
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = gaogan_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = gaogan
+				name = "ÿör^0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "ÿör^0fkS0"
+				fire = 5
+				shock = 6
+				manuever = 3
+				siege = 4
+			}
+		}
+	}
+}
+
+

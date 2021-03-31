@@ -1,0 +1,319 @@
+ 
+ namespace = luosifu
+ 
+ country_event = {
+    id = luosifu.3
+    title = luosifu.3t
+    desc = luosifu.3d
+    picture = luosifu1_eventPicture
+    fire_only_once = yes
+    trigger = {
+    has_country_modifier = luosifu.9 
+	tag = USA
+	has_ruler = "ÃRpQKQóg.WØeèy"
+	}    
+	mean_time_to_happen = {
+        days = 30
+    }
+    option = {
+        name = "luosifu.3n"
+		remove_country_modifier = luosifu.9
+        add_country_modifier = { 
+        name = luosifu.11
+        duration = 3650
+        }
+        add_inflation = -5
+		add_adm_power = -200
+		country_event = { 
+            id = luosifu.4
+			days = 180
+	    }
+    }
+}
+
+
+country_event = {
+    id = luosifu.2
+    title = luosifu.2t
+    desc = luosifu.2d
+    picture = luosifu_eventPicture
+    fire_only_once = yes
+    trigger = {
+       is_year = 1929
+       NOT = { is_year = 1940 }
+       tag = USA
+	   religion = liberalism
+	   check_variable = {
+		    which = num_of_industrialindex
+					value = 80
+		}
+    }
+    option = {
+        name = "luosifu.10"
+        add_country_modifier = { 
+        name = luosifu.9
+        duration = 3650
+        }
+        add_inflation = 10
+    }
+}
+
+country_event = {
+    id = luosifu.4
+    title = luosifu.4t
+    desc = luosifu.4d
+    picture = luosifu1_eventPicture
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = "luosifu.4n"
+		remove_country_modifier = luosifu.11
+        add_country_modifier = { 
+        name = luosifu.12
+        duration = 3650
+        }
+        add_inflation = -2
+		add_adm_power = -200
+		country_event = { 
+            id = luosifu.5
+			days = 180
+	    }
+    }
+}
+
+country_event = {
+    id = luosifu.5
+    title = luosifu.5t
+    desc = luosifu.5d
+    picture = luosifu1_eventPicture
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = "luosifu.5n"
+		remove_country_modifier = luosifu.12
+        add_country_modifier = { 
+        name = luosifu.13
+        duration = 3650
+        }
+        add_inflation = -2
+		add_adm_power = -200
+		country_event = { 
+            id = luosifu.6
+			days = 180
+	    }
+    }
+}
+
+country_event = {
+    id = luosifu.6
+    title = luosifu.6t
+    desc = luosifu.6d
+    picture = luosifu1_eventPicture
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = "luosifu.6n"
+		remove_country_modifier = luosifu.13
+        add_country_modifier = { 
+        name = luosifu.14
+        duration = 3650
+        }
+        add_inflation = -2
+		add_adm_power = -200
+    }
+}
+
+namespace = wartwo
+ 
+country_event = {
+    id = wartwo.1
+    title = wartwo.t
+    desc = wartwo.d
+    picture = COLDWAR_14_eventPicture
+    fire_only_once = yes
+    trigger = {
+        AND = {
+            tag = NZ1
+            is_year = 1941
+            owns = 257
+        }
+    }
+    option = {
+        name = "wartwo.n"
+        ai_chance = {
+            factor = 1
+        }
+        declare_war_with_cb = {
+            who = SOV
+            casus_belli = cb_annex
+        }
+    }
+    option = {
+        name = "wartwo.n2"
+        ai_chance = {
+            factor = 0
+        }
+        add_stability = -1
+    }
+}
+
+ namespace = men_industry
+
+province_event = {
+    id = men_industry.1
+	title = "men_industry.1t"
+	desc = "men_industry.1d"
+	picture = INDUSTRIAL_ECOM_BETTER_eventPicture
+	
+	trigger = {
+		owner = {
+			dip_tech = 88
+			check_variable = {
+		    which = num_of_industrialindex
+					value = 80
+		    }
+		}
+		NOT = { development = 40 }
+		NOT = { pure_unrest = -10 }
+	}
+	mean_time_to_happen = {
+		months = 1600
+	}
+	
+	option = {
+		name = "men_industry.1n"
+		owner = {
+		    add_treasury = -100
+			add_adm_power = -5
+		}
+		add_base_tax = 5
+		add_base_production = 5
+		add_base_manpower = 5
+	}
+}
+
+province_event = {
+    id = men_industry.2
+	title = "men_industry.2t"
+	desc = "men_industry.2d"
+	picture = INDUSTRIAL_FACTORY_eventPicture
+	
+	trigger = {
+		owner = {
+			dip_tech = 88
+			check_variable = {
+		    which = num_of_industrialindex
+					value = 70
+		    }
+		}
+		    development = 40 
+		    NOT = { pure_unrest = -10 }
+		    NOT = { trade_goods = cars }
+		    NOT = { trade_goods = oil  }
+		    NOT = { trade_goods = coal }
+		    NOT = { trade_goods = uranium }
+		    NOT = { trade_goods = aluminum }
+		    NOT = { trade_goods = electronics }
+			NOT = {
+			calc_true_if = {
+				all_province = {
+					trade_goods = oil
+				}
+				amount = 100
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 2400
+	}
+	
+	option = {
+		name = "men_industry.2n"
+		owner = {
+			add_years_of_income = -0.02
+		}
+		change_trade_goods = oil
+		add_base_production = 2
+	}
+	option = {
+		name = "men_industry.2n2"
+	}
+}
+
+province_event = {
+    id = men_industry.3
+	title = "men_industry.3t"
+	desc = "men_industry.3d"
+	picture = INDUSTRIAL_FACTORY_eventPicture
+	
+	trigger = {
+		owner = {
+			dip_tech = 88
+			check_variable = {
+		    which = num_of_industrialindex
+					value = 70
+		    }
+	    }
+		    development = 40 
+		    NOT = { pure_unrest = -10 }
+		    NOT = { trade_goods = cars }
+		    NOT = { trade_goods = oil  }
+		    NOT = { trade_goods = coal }
+		    NOT = { trade_goods = uranium }
+		    NOT = { trade_goods = aluminum }
+		    NOT = { trade_goods = electronics }
+			NOT = {
+			calc_true_if = {
+				all_province = {
+					trade_goods = coal
+				}
+				amount = 150
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1800
+	}
+	
+	option = {
+		name = "men_industry.3n"
+		owner = {
+			add_years_of_income = -0.02
+		}
+		change_trade_goods = coal
+		add_base_production = 2
+	}
+	option = {
+		name = "men_industry.3n2"
+	}
+}
+
+province_event = {
+    id = men_industry.4
+	title = "men_industry.4t"
+	desc = "men_industry.4d"
+	picture = INDUSTRIAL_ECOM_BETTER_eventPicture
+	
+	trigger = {
+		owner = {
+			dip_tech = 89
+			check_variable = {
+		    which = num_of_industrialindex
+				value = 80
+			}
+		}
+		has_building = mass_transit_system
+		development = 25
+	}
+	mean_time_to_happen = {
+		months = 5600
+	}
+	
+	option = {
+		name = "men_industry.4n"
+		owner = {
+			add_years_of_income = 0.05
+			add_adm_power = 30
+		}
+	}
+}

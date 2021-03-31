@@ -1,0 +1,64 @@
+namespace = rab_haka_event
+country_event = {
+	id = rab_haka_event.1
+	title = "rab_haka_event.NAME1"
+	desc = "rab_haka_event.DESC1"
+	picture = COASTAL_VIEW_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 420
+		NOT = { is_year = 755 }
+		owns = 3235
+		NOT = { 3235 = { culture = hakka } }
+	}
+	
+	option = {
+		name = "rab_haka_event.OPTA1"		
+		3235 = {
+			change_culture = hakka
+		}	
+	}
+}
+
+
+country_event = {
+	id = rab_haka_event.2
+	title = "rab_haka_event.NAME2"
+	desc = "rab_haka_event.DESC2"
+	picture = CONFUSED_SKILL_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 755
+		owns = 3235
+		3235 = { culture = hakka }
+		NOT = {
+			OR = {
+				2474 = { culture = hakka }
+				2475 = { culture = hakka }
+				2477 = { culture = hakka }
+				3234 = { culture = hakka }
+				4803 = { culture = hakka }
+				4804 = { culture = hakka }
+				4813 = { culture = hakka }				
+			}
+		}
+	}
+	
+	option = {
+		name = "rab_haka_event.OPTA2"		
+		670 = { change_culture = hakka }
+		2474 = { change_culture = hakka }
+		2475 = { change_culture = hakka }
+		2477 = { change_culture = hakka }
+		3234 = { change_culture = hakka }
+		4803 = { change_culture = hakka }
+		4804 = { change_culture = hakka }
+		4813 = { change_culture = hakka }
+	}
+}
+	

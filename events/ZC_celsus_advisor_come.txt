@@ -1,0 +1,37 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = celsus_advisor_come
+
+#fkSS?Š0o‚–N	y8?
+#id = 1 : celsus : ??X?GY0fkS0
+#
+country_event = {
+	id = celsus_advisor_come.1
+	title = "celsus_advisor_come.1.t"
+	desc = "celsus_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		is_year = 2
+		NOT = { is_year = 50 }
+		tag = ROM
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = celsus_advisor_come.OPTA1
+		define_advisor = {
+			type = celsus
+			name = "ÖvÌ‘LN¯e ^XSÏ‚¯e0ISfR¶R0"
+			discount = yes	
+			skill = 3
+		}
+	}
+}

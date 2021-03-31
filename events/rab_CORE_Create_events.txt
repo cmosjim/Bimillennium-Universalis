@@ -1,0 +1,573 @@
+########################
+#CORE CREATE AUTO      #
+########################
+#2018.12.30 okay for 1.28
+namespace = rab_CORE_Create_events
+#
+# 建立蜀國CORE
+#
+country_event = {
+	id = rab_CORE_Create_events.1
+	title = "rab_CORE_Create_events.NAME1"
+	desc = "rab_CORE_Create_events.DESC1"
+	picture = STREET_SPEECH_eventPicture
+  
+	
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 900 
+		NOT = { is_year = 1400 }
+		NOT = { exists = SHU }
+		NOT = { exists = HND }
+		any_owned_province = {
+			OR = {
+				area = sichuan_area
+				area = chuannan_area
+				area = chuanbei_area
+			}
+		}
+		NOT = { stability = 0 }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_CORE_Create_events.OPTA1"
+			every_owned_province = {
+			limit = { 
+				OR = {
+					area = sichuan_area
+					area = chuannan_area
+					area = chuanbei_area
+				}
+			}
+				add_core = SHU
+			}
+	}
+}
+
+# 建立南唐CORE
+
+country_event = {
+	id = rab_CORE_Create_events.2
+	title = "rab_CORE_Create_events.NAME2"
+	desc = "rab_CORE_Create_events.DESC2"
+	picture = STREET_SPEECH_eventPicture
+
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 300 
+		NOT = { is_year = 700 }
+		NOT = { exists = NT1 }
+		any_owned_province = {
+			OR = {
+				area = anhui_area
+				area = south_anhui_area
+			}
+		}
+		NOT = { ADM = 1 }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_CORE_Create_events.OPTA2"
+		every_owned_province = {
+		limit = { 
+			OR = {
+				area = anhui_area
+				area = south_anhui_area
+			}
+		}
+			add_core = NT1
+		}
+	}
+}
+
+# 建立大吳CORE
+
+country_event = {
+	id = rab_CORE_Create_events.3
+	title = "rab_CORE_Create_events.NAME3"
+	desc = "rab_CORE_Create_events.DESC3"
+	picture = STREET_SPEECH_eventPicture
+
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 300 
+		NOT = { is_year = 700 }
+		NOT = { exists = YW1 }
+		any_owned_province = {
+			area = jiangxi_area
+		}
+		NOT = { DIP = 1 }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_CORE_Create_events.OPTA3"
+			every_owned_province = {
+			limit = { area = jiangxi_area }
+				add_core = YW1
+			}
+	}
+}
+#hebei_area
+# 建立前晉CORE
+
+country_event = {
+	id = rab_CORE_Create_events.4
+	title = "rab_CORE_Create_events.NAME4"
+	desc = "rab_CORE_Create_events.DESC4"
+	picture = STREET_SPEECH_eventPicture
+
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 300 
+		NOT = { is_year = 700 }
+		NOT = { exists = QJ1 }
+		any_owned_province = {
+			OR = {
+				area = hebei_area
+				area = hebei_mid_area
+				area = south_hebei_area
+			}	
+		}
+		NOT = { MIL = 1 }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_CORE_Create_events.OPTA4"
+			every_owned_province = {
+			limit = { 
+				OR = {
+					area = hebei_area
+					area = hebei_mid_area
+					area = south_hebei_area
+				}				
+			}
+				add_core = QJ1
+			}
+	}
+}
+#建立鮮背
+#gansu_area-TF1 
+country_event = {
+	id = rab_CORE_Create_events.5
+	title = "rab_CORE_Create_events.NAME5"
+	desc = "rab_CORE_Create_events.DESC5"
+	picture = STREET_SPEECH_eventPicture
+
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 300 
+		NOT = { is_year = 700 }
+		NOT = { exists = TF1 }
+		NOT = { exists = XIB }
+		any_owned_province = {
+			area = westnorth_gansu_area
+		}
+		NOT = { MIL = 1 }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_CORE_Create_events.OPTA5"
+			every_owned_province = {
+			limit = { area = westnorth_gansu_area }
+				add_core = TF1
+			}
+	}
+}
+
+#jilin_area
+#DX1 = "countries/Dongxia.txt东夏＃
+#gansu_area-TF1 
+country_event = {
+	id = rab_CORE_Create_events.6
+	title = "rab_CORE_Create_events.NAME6"
+	desc = "rab_CORE_Create_events.DESC6"
+	picture = STREET_SPEECH_eventPicture
+
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 1400 
+		NOT = { is_year = 1700 }
+		NOT = { exists = DX1 }
+		any_owned_province = {
+			OR = {
+				area = jilin_area
+				area = north_jilin_area
+			}	
+		}
+		OR = {
+		NOT = { MIL = 1 }
+		NOT = { ADM = 1 }
+		}
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_CORE_Create_events.OPTA6"
+			every_owned_province = {
+			limit = { 
+				OR = {
+					area = jilin_area
+					area = north_jilin_area
+				}				
+			}
+				add_core = DX1 
+			}
+	}
+}
+
+#HU1
+#gansu_area
+#500-900
+country_event = {
+	id = rab_CORE_Create_events.7
+	title = "rab_CORE_Create_events.NAME7"
+	desc = "rab_CORE_Create_events.DESC7"
+	picture = STREET_SPEECH_eventPicture
+
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 500 
+		NOT = { is_year = 900 }
+		NOT = { exists = HU1 }
+		any_owned_province = {
+			area = gansu_area
+		}
+		NOT = { MIL = 1 }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_CORE_Create_events.OPTA7"
+			every_owned_province = {
+			limit = { area = gansu_area }
+				add_core = HU1
+			}
+	}
+}
+#HO1 
+#henan_area
+#480-1000
+
+country_event = {
+	id = rab_CORE_Create_events.8
+	title = "rab_CORE_Create_events.NAME8"
+	desc = "rab_CORE_Create_events.DESC8"
+	picture = STREET_SPEECH_eventPicture
+
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 480 
+		NOT = { is_year = 1000 }
+		NOT = { exists = HO1 }
+		any_owned_province = {
+			OR = {
+				area = henan_area
+				area = henan_west_area
+				area = north_henan_area
+			}	
+		}
+		NOT = { MIL = 1 }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_CORE_Create_events.OPTA8"
+			every_owned_province = {
+			limit = { 
+				OR = {
+					area = henan_area
+					area = henan_west_area
+					area = north_henan_area
+				}
+			}
+				add_core = HO1
+			}
+	}
+}
+
+#TNG 
+#shaanxi_area
+#900-1200
+country_event = {
+	id = rab_CORE_Create_events.9
+	title = "rab_CORE_Create_events.NAME9"
+	desc = "rab_CORE_Create_events.DESC9"
+	picture = STREET_SPEECH_eventPicture
+
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 900 
+		NOT = { is_year = 1200 }
+		NOT = { exists = TNG }
+		any_owned_province = {
+			OR = {
+				area = shaanxi_area
+				area = shaanxi_north_area
+			}	
+		}
+		NOT = { MIL = 1 }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_CORE_Create_events.OPTA9"
+		every_owned_province = {
+		limit = { 
+			OR = {
+				area = shaanxi_area
+				area = shaanxi_north_area
+			}	
+		}
+			add_core = TNG
+		}
+	}
+}
+
+#NYN
+#shandong_area
+#500-1200
+country_event = {
+	id = rab_CORE_Create_events.10
+	title = "rab_CORE_Create_events.NAME10"
+	desc = "rab_CORE_Create_events.DESC10"
+	picture = STREET_SPEECH_eventPicture
+
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 500 
+		NOT = { is_year = 1200 }
+		NOT = { exists = NYN }
+		any_owned_province = {
+			OR = {
+				area = shandong_area 	
+				area = west_shandong_area
+				area = shandong_mid_area
+				area = shandong_south_area
+			}	
+		}
+		NOT = { MIL = 1 }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_CORE_Create_events.OPTA10"
+			every_owned_province = {
+			limit = { 
+				OR = {
+					area = shandong_area 	
+					area = west_shandong_area
+					area = shandong_mid_area
+					area = shandong_south_area
+				}
+			}
+				add_core = NYN
+			}
+	}
+}
+
+#NWE 
+#shandong_area
+#300-500
+#before 300
+country_event = {
+	id = rab_CORE_Create_events.11
+	title = "rab_CORE_Create_events.NAME11"
+	desc = "rab_CORE_Create_events.DESC11"
+	picture = STREET_SPEECH_eventPicture
+
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 300 
+		NOT = { is_year = 500 }
+		NOT = { exists = NWE  }
+		NOT = {
+			any_province = {
+				is_core = NWE
+			}
+		}		
+		any_owned_province = {
+		
+			area = shanxi_area
+		}
+		NOT = { MIL = 1 }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_CORE_Create_events.OPTA11"
+			every_owned_province = {
+			limit = { area = shanxi_area }
+				add_core = NWE 
+			}
+	}
+}
+
+#zhejiang
+#JN1
+#400-1100
+country_event = {
+	id = rab_CORE_Create_events.12
+	title = "rab_CORE_Create_events.NAME12"
+	desc = "rab_CORE_Create_events.DESC12"
+	picture = STREET_SPEECH_eventPicture
+
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 400 
+		NOT = { is_year = 1100 }
+		NOT = { exists = JN1  }
+		NOT = {
+			any_province = {
+				is_core = JN1
+			}
+		}		
+		any_owned_province = {
+			OR = {
+				area = zhejiang_area
+				area = zhejiang_north_area
+			}	
+		}
+		NOT = { MIL = 1 }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_CORE_Create_events.OPTA12"
+			every_owned_province = {
+			limit = { 
+				OR = {
+					area = zhejiang_area
+					area = zhejiang_north_area
+				}	
+			}
+				add_core = JN1 
+			}
+	}
+}
+#liaoning_area
+#CCY
+#480-1600
+country_event = {
+	id = rab_CORE_Create_events.13
+	title = "rab_CORE_Create_events.NAME13"
+	desc = "rab_CORE_Create_events.DESC13"
+	picture = STREET_SPEECH_eventPicture
+
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 480 
+		NOT = { is_year = 1600 }
+		NOT = { exists = CCY  }
+		NOT = {
+			any_province = {
+				is_core = CCY
+			}
+		}		
+		any_owned_province = {
+			OR = {
+				area = liaoning_area
+				area = liaoning_east_area
+			}	
+		}
+		NOT = { MIL = 2 }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_CORE_Create_events.OPTA13"
+			every_owned_province = {
+			limit = { 
+				OR = {
+					area = liaoning_area
+					area = liaoning_east_area
+				}	
+			}
+				add_core = CCY 
+			}
+	}
+}
+#LN1
+#620-1600
+#fujian_area
+country_event = {
+	id = rab_CORE_Create_events.14
+	title = "rab_CORE_Create_events.NAME14"
+	desc = "rab_CORE_Create_events.DESC14"
+	picture = STREET_SPEECH_eventPicture
+
+	fire_only_once = yes 
+	 
+	trigger = {
+		is_year = 620 
+		NOT = { is_year = 1600 }
+		NOT = { exists = LN1  }
+		
+		any_owned_province = {
+			OR = {
+				area = fujian_area
+				area = fujian_north_area
+			}	
+		}
+		NOT = { MIL = 2 }
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "rab_CORE_Create_events.OPTA13"
+			every_owned_province = {
+			limit = { 
+				OR = {
+					area = fujian_area
+					area = fujian_north_area
+				}	
+			}
+				add_core = LN1 
+			}
+	}
+}

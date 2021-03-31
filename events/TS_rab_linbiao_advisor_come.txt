@@ -1,0 +1,67 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = linbiao_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : linbiao : —gjV0›Q˜R0
+
+country_event = {
+	id = linbiao_advisor_come.1
+	title = "linbiao_advisor_come.1.t"
+	desc = "linbiao_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	#hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 1927	
+		NOT = { is_year = 1970 }
+		OR = {
+			AND = {
+				NOT = { exists = CHN }
+				exists = CW1
+				tag = CW1
+			}
+			AND = {
+				NOT = { exists = CW1 }
+				exists = CHN
+				tag = CHN
+			}			
+			AND = {
+				NOT = { exists = CW1 }
+				NOT = { exists = CHN }
+				owns = 682
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = "linbiao_advisor_come.OPTA1"
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = linbiao
+				name = "—gjV0›Q˜R0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "—gjV0›Q˜R0"
+				fire = 8
+				shock = 7
+				manuever = 4
+				siege = 4
+			}
+		}
+	}
+}
+

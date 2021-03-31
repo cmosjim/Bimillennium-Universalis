@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = cuihao_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : cuihao : Tim0›Q^0
+
+country_event = {
+	id = cuihao_advisor_come.1
+	title = "cuihao_advisor_come.1.t"
+	desc = "cuihao_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 410	
+		NOT = { is_year = 450 }
+		OR = {
+			AND = {
+				exists = NWE
+				tag = NWE
+			}
+			AND = {
+				NOT = { exists = NWE }
+				owns = 2019
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = cuihao_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = cuihao
+				name = "Tim0›Q^0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "Tim0›Q^0"
+				fire = 0
+				shock = 0
+				manuever = 3
+				siege = 3
+			}
+		}
+	}
+}
+

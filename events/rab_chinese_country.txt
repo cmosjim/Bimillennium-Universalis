@@ -1,0 +1,308 @@
+#建立年號
+#2019.1.1 fit to 1.28
+#2019.02.08 fix JIN bugs
+namespace = Reigntitle
+
+country_event = {
+	id = Reigntitle.1
+	title = Reigntitle.1.t
+	desc = Reigntitle.1.d
+	picture = COURT_eventPicture
+   
+	trigger = {
+		OR = {
+			is_emperor_of_china = yes
+			has_reform = celestial_empire
+			tag = HND
+			tag = YUA
+			tag = QIC
+			tag = MNN
+			tag = CXI
+			tag = QIN
+			tag = TNG
+			tag = QNG
+			tag = CZH
+			tag = CUU
+			tag = CSH
+			tag = CEN
+			tag = SHU
+			tag = WEI
+			tag = WUU
+			tag = LSO
+			tag = SNG
+			tag = JN1
+			tag = SUI
+			tag = MNG
+			AND = { 
+				tag = XIA
+				is_year = 1032 
+			}
+		}
+		NOT = { has_reform = constitutional_republic }
+		NOT = { has_reform = presidental_republic }
+		NOT = { has_reform = socialist_republic }
+		NOT = { has_reform = parliamentary_republic }
+		months_of_ruling = 0.1
+		has_regency = no
+		has_consort_regency = no 
+		NOT = { OR = {
+				has_ruler_modifier = Reigntitle_a_modifier
+				has_ruler_modifier = Reigntitle_b_modifier
+				has_ruler_modifier = Reigntitle_c_modifier
+				has_ruler_modifier = Reigntitle_d_modifier
+				has_ruler_modifier = Reigntitle_e_modifier
+				has_ruler_modifier = Reigntitle_f_modifier
+				has_ruler_modifier = Reigntitle_g_modifier
+				has_ruler_modifier = Reigntitle_h_modifier
+				has_ruler_modifier = Reigntitle_i_modifier
+				has_ruler_modifier = Reigntitle_j_modifier
+				has_ruler_modifier = Reigntitle_k_modifier
+				has_ruler_modifier = Reigntitle_l_modifier
+				has_ruler_modifier = Reigntitle_m_modifier
+				has_ruler_modifier = Reigntitle_o_modifier
+				has_ruler_modifier = Reigntitle_p_modifier
+				has_ruler_modifier = Reigntitle_q_modifier
+				has_ruler_modifier = Reigntitle_r_modifier
+				has_ruler_modifier = Reigntitle_s_modifier
+				}		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = Reigntitle.a
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = "Reigntitle_a_modifier"
+
+			duration = -1
+		}
+
+	}
+
+	option = {
+		name = Reigntitle.b
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = "Reigntitle_b_modifier"
+			
+			duration = -1
+		}
+
+	}
+
+	option = {
+		name = Reigntitle.c
+			ai_chance = {
+			factor = 1
+		}	
+		add_ruler_modifier = {
+			name = "Reigntitle_c_modifier"
+			
+			duration = -1
+		}
+
+	}
+	
+	option = {
+		name = Reigntitle.d
+			ai_chance = {
+			factor = 1
+		}	
+		add_ruler_modifier = {
+			name = "Reigntitle_d_modifier"
+			
+			duration = -1
+		}
+
+	}
+
+	option = {
+		name = Reigntitle.e
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = "Reigntitle_e_modifier"
+			
+			duration = -1
+		}
+
+	}
+
+	option = {
+		name = Reigntitle.f
+		ai_chance = {
+			factor = 100
+		}		
+		add_ruler_modifier = {
+			name = "Reigntitle_f_modifier"
+			
+			duration = -1
+		}
+
+	}
+
+	option = {
+		name = Reigntitle.g
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = "Reigntitle_g_modifier"
+			
+			duration = -1
+		}
+
+	}
+
+	option = {
+		name = Reigntitle.h
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = "Reigntitle_h_modifier"
+			
+			duration = -1
+		}
+
+	}
+
+	option = {
+		name = Reigntitle.i
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = "Reigntitle_i_modifier"
+			
+			duration = -1
+		}
+
+	}
+
+	option = {
+		name = Reigntitle.j
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = "Reigntitle_j_modifier"
+			
+			duration = -1
+		}
+
+	}
+
+	option = {
+		name = Reigntitle.k
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = "Reigntitle_k_modifier"
+			
+			duration = -1
+		}
+
+	}
+
+	option = {
+		name = Reigntitle.l
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = "Reigntitle_l_modifier"
+			
+			duration = -1
+		}
+
+	}
+
+	option = {
+		name = Reigntitle.m
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = "Reigntitle_m_modifier"
+			
+			duration = -1
+		}
+
+	}
+
+		option = {
+		name = Reigntitle.o
+		ai_chance = {
+			factor = 100
+		}
+		add_ruler_modifier = {
+			name = "Reigntitle_o_modifier"
+			
+			duration = -1
+		}
+
+	}
+		option = {
+		name = Reigntitle.p
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = "Reigntitle_p_modifier"
+			
+			duration = -1
+		}
+
+	}
+		option = {
+		name = Reigntitle.q
+		ai_chance = {
+			factor = 100
+		}
+		add_ruler_modifier = {
+			name = "Reigntitle_q_modifier"
+			
+			duration = -1
+		}
+
+	}
+		option = {
+		name = Reigntitle.r
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = "Reigntitle_r_modifier"
+			
+			duration = -1
+		}
+
+	}
+		option = {
+		name = Reigntitle.s
+		ai_chance = {
+			factor = 1
+		}		
+		add_ruler_modifier = {
+			name = "Reigntitle_s_modifier"
+		
+			duration = -1
+		}
+
+	}
+	
+	
+}
+
+
+

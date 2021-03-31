@@ -1,0 +1,277 @@
+#2019.01.05 modify okay to fit 1.28 rev.
+#2019-09-07 modify picture link 
+namespace = xy_caoyuanbuluo
+
+country_event = {
+	id = xy_caoyuanbuluo.1
+	title = "xy_caoyuanbuluo.NAME1"
+	desc = "xy_caoyuanbuluo.DESC1"
+	picture = FARMING_eventPicture
+ 
+	trigger = {
+		NOT = { culture_group = east_asian }
+		has_country_flag = caoyuanbuluo1 
+        has_reform = celestial_empire 
+		NOT = {
+			capital_scope = {
+				OR = {
+					region = north_china_region
+					region = xinan_region
+					region = south_china_region
+				}
+			}  
+		}
+		
+		OR = { 
+			any_owned_province = {
+				OR = {
+					culture_group = ROOT
+					culture_group = east_asian
+				}
+				NOT = {
+					OR = {
+						region = north_china_region
+						region = xinan_region
+						region = south_china_region
+					} 
+				}
+				NOT = {
+					OR = {
+						base_tax = 5
+						base_manpower = 5
+						base_production = 5
+					}
+				}
+				NOT = { has_province_modifier = caoyuanchengshi1 }
+			} 
+			any_owned_province = {
+				NOT = {
+					OR = {
+						culture_group = ROOT
+						culture_group = east_asian
+					}
+					NOT = {
+						OR = {
+								region = north_china_region
+								region = xinan_region
+								region = south_china_region
+							} 
+					}  
+				}
+				has_province_modifier = caoyuanchengshi1 
+			} 
+			any_owned_province = {
+				OR = {
+					region = north_china_region
+					region = xinan_region
+					region = south_china_region
+				}
+				NOT = { has_province_modifier = caoyuanchengshi2 }
+			}
+			any_owned_province = {
+				NOT = {
+					OR = {
+						region = north_china_region
+						region = xinan_region
+						region = south_china_region
+					} 
+				}
+					has_province_modifier = caoyuanchengshi2 
+			}
+		}
+		 
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "xy_caoyuanbuluo.OPTA1"
+		every_owned_province = {
+			limit = {
+				OR = {
+					culture_group = ROOT
+					culture_group = east_asian
+				}
+				NOT = {
+					OR = {
+						region = north_china_region
+						region = xinan_region
+						region = south_china_region
+					} 
+				}
+				NOT = {
+					OR = {
+						base_tax = 5
+						base_manpower = 5
+						base_production = 5
+					}
+				}
+				NOT = { has_province_modifier = caoyuanchengshi1 }
+			}
+			add_province_modifier = {
+				name = "caoyuanchengshi1"
+				duration = -1
+			} 
+		}
+		every_owned_province = {
+			limit = {
+				NOT = {
+					OR = {
+						culture_group = ROOT
+						culture_group = east_asian
+					}
+					NOT = {
+						OR = {
+							region = north_china_region
+							region = xinan_region
+							region = south_china_region
+						}	 
+					}
+				}
+				OR = {
+					base_tax = 5
+					base_manpower = 5
+					base_production = 5
+				}
+				has_province_modifier = caoyuanchengshi1 
+			}
+			remove_province_modifier = caoyuanchengshi1 
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					region = north_china_region
+					region = xinan_region
+					region = south_china_region
+				} 
+				 NOT = { has_province_modifier = caoyuanchengshi2 }
+			}
+			add_province_modifier = {
+				name = "caoyuanchengshi2"
+				duration = -1
+			} 
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { 
+					OR = {
+						region = north_china_region
+						region = xinan_region
+						region = south_china_region
+					} 
+				}
+                has_province_modifier = caoyuanchengshi2
+			}
+			remove_province_modifier = caoyuanchengshi2 
+		}
+	}
+}
+
+country_event = {
+	id = xy_caoyuanbuluo.2
+	title = "xy_caoyuanbuluo.NAME2"
+	desc = "xy_caoyuanbuluo.DESC2"
+	picture = BIG_BOOK_eventPicture
+ 
+	trigger = {
+
+		OR = {
+			any_owned_province = {
+				has_province_modifier = caoyuanchengshi1
+			}
+			any_owned_province = { 
+				has_province_modifier = caoyuanchengshi2
+			}
+		}
+		NOT = { has_country_flag = caoyuanbuluo1 }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "xy_caoyuanbuluo.OPTA2"
+		every_owned_province = { limit = {
+        has_province_modifier = caoyuanchengshi1
+		}
+		remove_province_modifier = caoyuanchengshi1
+		}
+		every_owned_province = { limit = {
+        has_province_modifier = caoyuanchengshi2
+		}
+		remove_province_modifier = caoyuanchengshi2
+		}
+		
+	}
+}
+
+country_event = {
+	id = xy_caoyuanbuluo.3
+	title = "xy_caoyuanbuluo.NAME3"
+	desc = "xy_caoyuanbuluo.DESC3"
+	picture = BIG_BOOK_eventPicture
+ 
+	trigger = {
+	NOT = {
+		NOT = { culture_group = east_asian }
+		NOT = { has_country_flag = caoyuanbuluo1 }
+		#OR = { 
+		#	government = celestial_empire_2
+		#	government = celestial_empire 
+		#}
+		has_reform = celestial_empire
+		NOT = {
+			capital_scope = {
+				OR = {
+					region = north_china_region
+					region = xinan_region
+					region = south_china_region
+				}
+			}
+		} 
+	}
+	
+		 has_country_flag = caoyuanbuluo1 
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "xy_caoyuanbuluo.OPTA3"
+		clr_country_flag = caoyuanbuluo1
+		
+	}
+}
+
+country_event = {
+	id = xy_caoyuanbuluo.4
+	title = "xy_caoyuanbuluo.NAME4"
+	desc = "xy_caoyuanbuluo.DESC4"
+	picture = TASK_FAIL_eventPicture
+ 
+	trigger = {
+		has_country_flag = caoyuanbuluo1 
+		OR = {
+			culture_group = east_asian
+			NOT = { has_reform = celestial_empire }
+			capital_scope = {
+				OR = {
+					region = north_china_region
+					region = xinan_region
+					region = south_china_region
+				}
+			}  			   
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "xy_caoyuanbuluo.OPTA4"
+		clr_country_flag = caoyuanbuluo1 
+		
+	}
+}

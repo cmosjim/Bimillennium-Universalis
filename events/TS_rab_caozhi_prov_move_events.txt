@@ -1,0 +1,158 @@
+#################################
+#This sections define outoff general 
+#move to another provinces .
+#################################
+
+#id = 1 : IN˚|ﬂu-U^TgbLàÑv
+#id = 2 : ˘fi 0'Yáejå0 €kBêÍÅPÉ 
+
+namespace = caozhi_prov_move_events
+
+
+province_event = {
+	id =caozhi_prov_move_events.1
+	title = "caozhi_prov_move_events.NAME1"
+	desc = "caozhi_prov_move_events.DESC1"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+	#¶OKmw˝NÖQ=f&T	gÂãpov_xxxx
+	#ÍSÅâ	g∞eûXÑvfkSˇ∞ãóV†ReQÂãpov_xxxx éN OR vQ-N
+		has_province_modifier = pov_caozhi
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "caozhi_prov_move_events.OPTA1"
+###########################˘fi 0'Yáejå0pov_caozhi#################################		
+		if = {
+			limit = { has_province_modifier = pov_caozhi }
+			if = {
+			#≥QöR(WŒëfkSÑvˇRãT
+				limit = { 
+					NOT = { is_year = 250  }
+				}
+			#GPÇYÂã˝V∂RÑvTãsyr(ç&rT
+			#1S€kBêÍÅPÉ	
+				if = { 
+					limit = {
+						owner = { 
+							NOT = { tag = JAP } 
+								OR = {
+									has_ruler_modifier = ra_ch1
+									has_ruler_modifier = ra_ch2
+									has_ruler_modifier = ra_ch6
+									has_ruler_modifier = ra_ch8
+									has_ruler_modifier = rb_ch4
+									has_ruler_modifier = rb_ch6
+														
+								}
+							}
+						}
+			
+					remove_province_modifier = pov_caozhi
+					owner = {
+						country_event = {
+							id =caozhi_prov_move_events.2
+						}
+					}
+				}
+					#GPÇYÂã˝V∂RÑvTãsyr(çN&rT1S0Rªê—èÑvwR						
+				if = { 
+					limit = { 
+						owner = {
+							NOT = { tag = JAP } 
+							NOT = { 
+								OR = {
+								    has_ruler_modifier = ra_ch1
+								    has_ruler_modifier = ra_ch2
+									has_ruler_modifier = ra_ch6
+									has_ruler_modifier = ra_ch8
+									has_ruler_modifier = rb_ch4
+									has_ruler_modifier = rb_ch6
+            
+								}
+							}
+						}		
+					}
+					remove_province_modifier = pov_caozhi
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_caozhi"
+							duration = -1
+						}					
+					}
+				}
+				#N=fgÖVÑv˝V∂R Ùv•c˚y0R+RÑvwR
+				if = { 
+					limit = { 
+						owner = { tag = JAP } 
+					}
+					remove_province_modifier = pov_caozhi
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_caozhi"
+							duration = -1
+						}					
+					}								
+				}
+			}	
+			if = {
+			#ÇYúgt^˝NÖç«èdkPñˇ(WŒëfkSªyN
+				limit = { 
+					is_year = 250
+				}	
+				remove_province_modifier = pov_caozhi		
+			}
+		}
+	}
+}
+	
+############################################################################
+#	˘fi 0'Yáejå0€kBêÍÅPÉ
+#
+############################################################################
+
+
+country_event = {
+	id =caozhi_prov_move_events.2
+	title = "caozhi_prov_move_events.NAME2"
+	desc = "caozhi_prov_move_events.DESC2"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "caozhi_prov_move_events.OPTA2"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type =caozhi
+					name = "˘fi0'Yáejå0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+				define_general = {
+				name = "˘fi0'Yáejå0"
+				fire = 3
+				shock = 3
+				manuever = 3
+				siege = 3
+			}
+		}
+	}
+}
+
+	
+	

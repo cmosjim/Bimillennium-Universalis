@@ -1,0 +1,1142 @@
+##############################
+#Addition Japan Flavor Events#
+##############################
+#2018.12.14 fit to 1.28
+#2019.02.26 add more modern chinese warlord declare war by JA1 
+#2019-03-23 add id=19 ai auto transport jap's army from japan to ROC land when wii , or they dont know to use transport boat !
+namespace = rab_JA1_events
+namespace = rab_JA1_events
+#　宣布这一天是值得我们大和民族高声庆祝的，集结在天皇的感召下，我们一定可以完成大东亚共荣圈的使命!"
+country_event = {
+	id = rab_JA1_events.1
+	title = "rab_JA1_events.NAME1"
+	desc = "rab_JA1_events.DESC1"
+	picture = GOOD_WITH_MONARCH_eventPicture
+  
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_JA1_events.OPTA1"
+		
+		change_religion = fascism
+		add_treasury = 5000
+		add_adm_power = 500
+		add_dip_power = 500
+		add_mil_power = 500
+		if = {
+			limit = {
+				NOT = { has_reform = fascist_government }
+			}
+			add_government_reform = fascist_government
+			set_government_rank = 3
+		}		
+		if = {
+			limit = { NOT = { has_country_modifier = md_three_months } }
+			add_country_modifier = {
+				name = "md_three_months"
+				duration = 5475
+			}			
+		}			
+		if = {
+			limit = { NOT = { has_country_modifier = md_fanaticism_war } }
+			add_country_modifier = {
+				name = "md_fanaticism_war"
+				duration = 5475
+			}			
+		}
+		if = {
+			limit = {
+				exists = CW1
+			}
+			declare_war_with_cb = {
+				who = CW1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}
+		if = {
+			limit = {
+				exists = CD1
+			}
+			declare_war_with_cb = {
+				who = CD1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}
+		if = {
+			limit = {
+				exists = CJ1
+			}
+			declare_war_with_cb = {
+				who = CJ1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}
+		if = {
+			limit = {
+				exists = BS1
+			}
+			declare_war_with_cb = {
+				who = BS1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}		
+		if = {
+			limit = {
+				exists = FX1
+			}
+			declare_war_with_cb = {
+				who = FX1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}	
+		if = {
+			limit = {
+				exists = GJ2
+			}
+			declare_war_with_cb = {
+				who = GJ2
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}	
+		if = {
+			limit = {
+				exists = GM1
+			}
+			declare_war_with_cb = {
+				who = GM1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}	
+		if = {
+			limit = {
+				exists = GX1
+			}
+			declare_war_with_cb = {
+				who = GX1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}	
+		if = {
+			limit = {
+				exists = JX1
+			}
+			declare_war_with_cb = {
+				who = JX1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}	
+		if = {
+			limit = {
+				exists = QM1
+			}
+			declare_war_with_cb = {
+				who = QM1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}	
+		if = {
+			limit = {
+				exists = QX1
+			}
+			declare_war_with_cb = {
+				who = QX1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}		
+		if = {
+			limit = {
+				exists = TM2
+			}
+			declare_war_with_cb = {
+				who = TM2
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}
+		if = {
+			limit = {
+				exists = WJ1
+			}
+			declare_war_with_cb = {
+				who = WJ1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}
+		if = {
+			limit = {
+				exists = WX1
+			}
+			declare_war_with_cb = {
+				who = WX1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}
+		if = {
+			limit = {
+				exists = XB1
+			}
+			declare_war_with_cb = {
+				who = XB1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}
+		if = {
+			limit = {
+				exists = XX1
+			}
+			declare_war_with_cb = {
+				who = XX1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}		
+		if = {
+			limit = {
+				exists = ZL2
+			}
+			declare_war_with_cb = {
+				who = ZL2
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}			
+		
+		if = {
+			limit = {
+				exists = ZX1
+			}
+			declare_war_with_cb = {
+				who = ZX1
+				casus_belli = cb_asia_coprosperity_sphere
+			}
+		}			
+		
+		declare_war_with_cb = {
+			who = ROC
+			casus_belli = cb_asia_coprosperity_sphere
+		}
+		
+		if = {
+			limit = {
+				NOT = { has_global_flag = wii_periods }		
+			}
+			every_country = {
+				limit = { 
+					ai = no 
+				}
+				country_event = {
+					id = rab_JA1_events.17
+				}
+			}			
+			set_global_flag = wii_periods
+		}
+			clr_country_flag = tmp_Greater_East_Asia_CoProsperity_Sphere
+	}
+}
+
+#承认战败只剩下25个省分
+#将失去所有在国外的核心
+
+country_event = {
+	id = rab_JA1_events.2
+	title = "rab_JA1_events.NAME2"
+	desc = "rab_JA1_events.DESC2"
+	picture = COUNTRY_COLLAPSE_eventPicture
+  
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JA1
+		calc_true_if = {
+			all_province = {
+				region = japan_region
+				owner = {
+					NOT = { primary_culture = japanese } 
+				}				
+			}
+			amount = 25
+		}		
+		NOT = { num_of_cities = 25 } #you should be more 25 province in start war.
+		has_country_modifier = md_fanaticism_war
+		is_at_war = yes
+	}
+	
+	immediate = {
+		remove_country_modifier = md_fanaticism_war
+	}
+	option = {
+		name = "rab_JA1_events.OPTA2"
+		every_country = {
+			limit = {
+				war_with = ROOT
+			}
+			white_peace = ROOT
+			country_event = {
+				id = rab_JA1_events.14
+			}			
+		}	
+		jap_wii_termless_surrender_effect = yes
+	}
+}
+################################################
+#
+# JAP若是占领了太多焦土，产生的debuff (region: china)jap_occupy_scorched
+#
+#################################################
+country_event = {
+	id = rab_JA1_events.3
+	title = "rab_JA1_events.NAME3"
+	desc = "rab_JA1_events.DESC3"
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JA1
+		has_country_modifier = md_three_months
+		calc_true_if = {
+			all_owned_province = {
+				has_province_flag = jap_occupy_scorched
+			}
+			#amount = 10		
+			amount = 4
+		}
+		war_with = ROC
+		ROC = { has_country_flag = against_meeting_planB }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_modifier = md_three_months
+				}
+					remove_country_modifier = md_three_months
+			}
+			every_province = {
+				limit = {
+					has_province_flag = jap_occupy_scorched
+				}
+					clr_province_flag = jap_occupy_scorched
+			}	
+			set_country_flag = flg_need_more_source
+		}
+	}
+	
+	option = {
+		name = "rab_JA1_events.OPTA3"	
+		#info other countries war with root
+		custom_tooltip = tp_none_three_months
+		
+		every_country = {
+			limit = {
+				war_with = ROOT
+			}
+			country_event = {
+				id = rab_JA1_events.4
+			}
+		}		
+	}
+}
+
+################################################
+#
+# JAP焦土通知各国
+#
+#################################################
+country_event = {
+	id = rab_JA1_events.4
+	title = "rab_JA1_events.NAME4"
+	desc = "rab_JA1_events.DESC4"
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_JA1_events.OPTA4"
+		custom_tooltip = tp_none_three_months
+		if = {
+			limit = {
+				has_country_flag = against_meeting_planB
+			}
+				clr_country_flag = against_meeting_planB
+		}	
+	}	
+}	
+################################################
+#
+# JAP若是占领超过20个领地，info JAP哪个省分是补给站
+#
+#################################################
+country_event = {
+	id = rab_JA1_events.5
+	title = "rab_JA1_events.NAME5"
+	desc = "rab_JA1_events.DESC5"
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JA1
+		has_country_modifier = md_three_months
+		calc_true_if = {
+			all_owned_province = {
+				OR = {
+					region = north_china_region
+					region = south_china_region
+					region = xinan_region
+				}
+			}
+			amount = 20			
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = "rab_JA1_events.OPTA5"	
+		random_owned_province = {
+			limit = {
+				OR = {
+					region = north_china_region
+					region = south_china_region
+					region = xinan_region
+				}
+				NOT = {
+					OR = {
+						area = taiwan_north_area 
+						area = taiwan_south_area 
+					}
+				}	
+			}
+			add_province_modifier = {
+				name = "army_supported_province"
+				duration = 7000
+			}
+			save_global_event_target_as = jap_support_province
+		}
+		set_country_flag = flg_army_supported_occur	
+		every_country = {
+			limit = { war_with = JA1 }
+			country_event = {
+				id = rab_JA1_events.6	
+			}			
+		}	
+	}
+}
+
+
+################################################
+#
+# 这是给ROC KNOW 哪个省份是补给站
+#
+#################################################
+country_event = {
+	id = rab_JA1_events.6
+	title = "rab_JA1_events.NAME6"
+	desc = "rab_JA1_events.DESC6"
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_JA1_events.OPTA6"	
+	
+	}
+}
+
+################################################
+#
+# 若是攻占补给站成功: from rab_siege: to let JAP know.
+#
+#################################################
+country_event = {
+	id = rab_JA1_events.7
+	title = "rab_JA1_events.NAME7"
+	desc = "rab_JA1_events.DESC7"
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = "rab_JA1_events.OPTA7"	
+		custom_tooltip = tp_none_three_months
+		clr_country_flag = flg_army_supported_occur #//If you no delete this , will not event change .
+		set_country_flag = flg_need_more_source
+		if = {
+			limit = {
+				has_country_modifier = md_three_months
+			}
+			remove_country_modifier = md_three_months
+		}
+		subtract_variable = {
+			which = num_of_industrialindex
+			value = 30
+		}		
+		every_country = {
+			limit = {
+				war_with = JA1
+			}
+			country_event = {
+				id = rab_JA1_events.8
+			}
+		}
+	}
+}
+
+################################################
+#
+# 通知各位
+#
+#################################################
+country_event = {
+	id = rab_JA1_events.8
+	title = "rab_JA1_events.NAME8"
+	desc = "rab_JA1_events.DESC8"
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes	
+		
+	option = {
+		name = "rab_JA1_events.OPTA8"	
+		custom_tooltip = tp_none_three_months
+		if = {
+			limit = {
+				has_country_flag = against_meeting_planA
+			}
+				clr_country_flag = against_meeting_planA
+		}
+	}
+}	
+
+
+	
+###美国对日本禁运石油
+###条件: flg_need_more_source has exists more than 3 months 
+###ROOT: JAP
+country_event = {
+	id = rab_JA1_events.9
+	title = "rab_JA1_events.NAME9"
+	desc = "rab_JA1_events.DESC9"
+	picture = MODERN_SOURCE_SHIP_eventPicture
+
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = JA1
+		had_country_flag = {
+				flag = flg_need_more_source
+				days = 185
+		}
+		#calc_true_if = {
+		#	all_owned_province = {
+		#		OR = {
+		#			region = south_china_region
+		#			region = xinan_region
+		#			region = north_china_region
+		#			region = indo_china_region
+		#			region = indonesia_region
+		#		}
+		#	}
+		#	amount = 10			
+		#}
+		is_at_war = yes
+		exists = USA
+	}	
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+		
+	immediate = {
+		clr_country_flag = flg_need_more_source
+		subtract_variable = {
+			which = num_of_industrialindex
+			value = 30
+		}			
+	}	
+	option = {
+		name = "rab_JA1_events.OPTA9"	
+		ai_chance = { factor = 100 }	
+		#偷袭珍珠港succeed.
+		hidden_effect = {
+			set_country_flag = flg_pearl_harbeor_success
+			
+			set_variable = {
+				which = var_total_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_FR2_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_USA_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_SOV_win_times
+				value = 0
+			}		
+			set_variable = {
+				which = var_ROC_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_GBR_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_others_win_times
+				value = 0
+			}
+		}
+		country_event = {
+			id = rab_JA1_events.15
+		}	
+		USA = {
+			country_event = {
+				id = rab_JA1_events.10
+			}	
+		}
+		every_country = {
+			limit = {
+				war_with = ROOT
+			}
+			country_event = {
+				id = rab_JA1_events.11
+			}	
+		}		
+	}	
+	option = {
+		name = "rab_JA1_events.OPTB9"		
+		ai_chance = { factor = 0 }	
+		add_prestige = -80 
+		#
+		#放弃战争归还领土
+		#accordint to province flag to feedback provinces.
+		#
+		every_country = {
+			limit = {
+				war_with = ROOT
+			}
+			white_peace = ROOT
+			country_event = {
+				id = rab_JA1_events.14
+			}
+		}		
+		jap_wii_termless_surrender_effect = yes			
+	}
+}
+####偷袭珍珠港(ROOT : USA)
+country_event = {
+	id = rab_JA1_events.10
+	title = "rab_JA1_events.NAME10"
+	desc = "rab_JA1_events.DESC10"
+	picture = MODERN_ATT_SHIP_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_JA1_events.OPTA10"
+		1240 = {
+			add_base_tax = -2
+		}
+		if = {
+			limit = {
+				exists = JA1
+				NOT = { war_with = JA1 }
+			}
+			declare_war = JA1
+		}
+		if = {
+			limit = {
+				exists = GBR
+				NOT = { GBR = { war_with = JA1 } }
+			}
+			GBR = { declare_war = JA1 }
+		}
+		if = {
+			limit = {
+				exists = FR2
+				NOT = { FR2 = { war_with = JA1 } }
+			}
+			FR2 = { declare_war = JA1 }
+		}
+		if = {
+			limit = {
+				exists = SOV				
+				NOT = { SOV = { war_with = JA1 } }
+			}
+			SOV = { declare_war = JA1 }
+			SOV = { declare_war = MCK }
+		}
+		wii_alliance_east_effect = yes
+	}
+}	
+########################################
+#偷袭珍珠港(ROOT : WAR WITH JAP )
+#Get treasury / mil / dip etc. 
+########################################
+country_event = {
+	id = rab_JA1_events.11
+	title = "rab_JA1_events.NAME11"
+	desc = "rab_JA1_events.DESC11"
+	picture = MODERN_ATT_SHIP_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_JA1_events.OPTA11"
+		if = {
+			limit = {  
+				tag = ROC
+				culture_group = east_asian
+			}
+			add_treasury = 30000
+			add_mil_power = 500
+			add_dip_power = 500
+			add_adm_power = 500
+			add_yearly_manpower = 0.5				
+		}	
+		if = {
+			limit = {  
+				NOT = { tag = ROC }
+				culture_group = east_asian
+			}
+			add_treasury = 5000
+			add_mil_power = 100
+			add_dip_power = 100
+			add_adm_power = 100
+			add_yearly_manpower = 0.5
+		}
+	}
+}
+
+###################################################
+#
+# 击败日本15次战争之后 - 原子弹 :root: JA1
+#
+##################################################
+country_event = {
+	id = rab_JA1_events.12
+	title = "rab_JA1_events.NAME12"
+	desc = "rab_JA1_events.DESC12"
+	picture = NUCLEAR_ATT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_at_war = yes
+		any_owned_province = {
+			has_province_modifier = mp_bomb_province
+		}
+		tag = JA1
+	}	
+	
+	mean_time_to_happen = {
+			days = 5
+	}	
+	option = {
+		name = "rab_JA1_events.OPTA12"	
+		add_prestige = -80 
+		custom_tooltip = tp_surrender_jap
+			every_country = {
+				limit = {
+					war_with = ROOT
+				}
+				white_peace = ROOT
+				country_event = {
+					id = rab_JA1_events.13
+				}				
+			}	
+			
+			set_variable = {
+				which = var_FR2_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_USA_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_ROC_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_GBR_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_others_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_SOV_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_total_win_times
+				value = 0
+			}		
+			
+			#clr_country_flag = flg_pearl_harbeor_success
+			jap_wii_termless_surrender_effect = yes
+			
+
+	}
+}
+
+###################################################
+#
+# 击败日本10次战争之后 - 原子弹 :root: other countries
+#
+##################################################
+country_event = {
+	id = rab_JA1_events.13
+	title = "rab_JA1_events.NAME13"
+	picture = NUCLEAR_ATT_eventPicture
+	
+	is_triggered_only = yes
+	
+	desc = {
+		trigger = {
+			NOT = { tag = USA }
+		}
+		desc = rab_JA1_events.DESC13a 
+	}
+	desc = {
+		trigger = {
+			tag = USA
+		}
+		desc = rab_JA1_events.DESC13b
+	}	
+	
+	option = {
+		name = "rab_JA1_events.OPTA13"	
+		country_event = {
+			id = rab_JA1_events.14
+		}
+	}
+}
+
+###################################################
+#
+# 日本投降画面
+#
+##################################################
+country_event = {
+	id = rab_JA1_events.14
+	title = "rab_JA1_events.NAME14"
+	desc = "rab_JA1_events.DESC14"
+	
+	picture = {
+		trigger = {
+			culture_group = east_asian
+		}
+		picture = JAP_SURRENDER_EASTERN_eventPicture 
+	}
+	picture = {
+		trigger = {
+			NOT = { culture_group = east_asian }
+		}
+		picture = JAP_SURRENDER_WESTERN_eventPicture
+	}	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_JA1_events.OPTA14"	
+		add_prestige = 50
+		if = {
+			limit = {
+				tag = USA
+			}
+			swap_free_idea_group = yes
+		}
+	}
+}
+########################################
+#偷袭珍珠港(ROOT : JAP )
+#
+########################################
+country_event = {
+	id = rab_JA1_events.15
+	title = "rab_JA1_events.NAME15"
+	desc = "rab_JA1_events.DESC15"
+	picture = MODERN_ATT_SHIP_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_JA1_events.OPTA15"
+		add_dip_power = 100
+	}
+}
+######################################
+#
+# 假如美國不存在
+#
+######################################
+
+country_event = {
+	id = rab_JA1_events.16
+	title = "rab_JA1_events.NAME16"
+	desc = "rab_JA1_events.DESC16"
+	picture = m_WOUNDED_SOLDIERS_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_country_modifier = md_fanaticism_war
+		tag = JA1
+		NOT = { has_country_flag = flg_been_bomb } 
+		is_at_war = yes
+		check_variable = {
+			which = var_total_win_times
+			value = 15
+		}
+		NOT = { exists = USA }	
+		NOT = { has_global_flag = JA1_wii_fail }
+	}		
+	
+	mean_time_to_happen = {
+		days = 5
+	}		
+	
+	option = {
+		name = "rab_JA1_events.OPTA12"	
+		add_prestige = -80 
+		custom_tooltip = tp_surrender_jap
+			every_country = {
+				limit = {
+					war_with = ROOT
+				}
+				white_peace = ROOT
+				country_event = {
+					id = rab_JA1_events.14
+				}				
+			}	
+			
+			set_variable = {
+				which = var_FR2_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_USA_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_ROC_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_GBR_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_others_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_SOV_win_times
+				value = 0
+			}
+			set_variable = {
+				which = var_total_win_times
+				value = 0
+			}		
+			
+			#clr_country_flag = flg_pearl_harbeor_success
+			jap_wii_termless_surrender_effect = yes	
+		
+	}
+}
+
+######################################
+#
+# wii Event Start from JA1 decision 
+# 
+#
+######################################
+
+country_event = {
+	id = rab_JA1_events.17
+	title = "rab_JA1_events.NAME17"
+	desc = "rab_JA1_events.DESC17"
+	picture = WII_OF_JAPAN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "rab_JA1_events.OPTA17"	
+	}
+}
+
+country_event = {
+	id = rab_JA1_events.18
+	title = "rab_JA1_events.NAME18"
+	desc = "rab_JA1_events.DESC18"
+	picture = m_WOUNDED_SOLDIERS_eventPicture
+
+	
+	trigger = {
+		has_global_flag = wii_periods
+		has_global_flag = JA1_wii_fail
+		NOT = {
+			any_country = {
+				has_country_modifier = md_fanaticism_war_GER
+			}
+		}
+		NOT = {
+			any_country = {
+				has_country_modifier = md_fanaticism_war
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 15
+	}
+	immediate = {
+		hidden_effect = {
+			clr_global_flag = wii_periods
+		}
+	}
+	
+	option = {
+		name = "rab_JA1_events.OPTA18"	
+	}	
+
+}
+
+#2019-03-23 enhance attack ability for JAP in wii
+country_event = {
+	id = rab_JA1_events.20
+	title = "rab_JA1_events.NAME132"
+	desc = "rab_JA1_events.DESC132"
+	picture = HAN_SHEING_DE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		tag = JA1
+		ai = yes
+		has_country_modifier = md_fanaticism_war
+		war_with = ROC
+		any_owned_province = {
+			region = japan_region
+			infantry_in_province = 20 
+		}
+		MCK = {
+			is_subject_of = ROOT
+			num_of_ports = 1
+		}
+		NOT = {
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						region = xinan_region
+						region = north_china_region
+						region = south_china_region
+					}	
+				}
+				amount = 100
+			}
+		}		
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = "rab_JA1_events.OPTA20"		
+		random_owned_province = {
+			limit = {
+				infantry_in_province = 20
+				region = japan_region				
+			}	
+			kill_units = {
+				who = ROOT
+				type = infantry
+				amount = 20
+			}
+		}
+		MCK = {
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}	
+				infantry = ROOT
+				infantry = ROOT				
+				infantry = ROOT
+				infantry = ROOT				
+				infantry = ROOT
+				infantry = ROOT				
+				infantry = ROOT
+				infantry = ROOT				
+				infantry = ROOT
+				infantry = ROOT				
+				infantry = ROOT
+				infantry = ROOT				
+				infantry = ROOT
+				infantry = ROOT				
+				infantry = ROOT
+				infantry = ROOT				
+				infantry = ROOT
+				infantry = ROOT				
+				infantry = ROOT
+				infantry = ROOT				
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = rab_JA1_events.19
+	title = "rab_JA1_events.NAME19"
+	desc = "rab_JA1_events.DESC19"
+	picture = m_WOUNDED_SOLDIERS_eventPicture
+
+	
+	trigger = {
+		has_global_flag = wii_periods
+		NOT = {
+			OR = {
+				has_global_flag = JA1_wii_fail
+				has_global_flag = NZ1_wii_fail
+			}	
+		}	
+		NOT = {
+			any_country = {
+				has_country_modifier = md_fanaticism_war_GER
+			}
+		}
+		NOT = {
+			any_country = {
+				has_country_modifier = md_fanaticism_war
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	immediate = {
+		hidden_effect = {
+			clr_global_flag = wii_periods
+		}
+	}
+	
+	option = {
+		name = "rab_JA1_events.OPTA19"	
+	}	
+
+}
+
+

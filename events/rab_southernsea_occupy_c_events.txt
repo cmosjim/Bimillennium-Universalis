@@ -1,0 +1,184 @@
+namespace = southernsea_occupy_c_events
+#
+#This is the first time to land mars!
+#
+##########################################################
+#
+#
+#save_global_event_target_as = tag_southernsea_c_opp
+#offense_war_southern_c : when war add flag
+#
+#########################################################
+#set_country_flag = flg_southernsea_c_occupy
+#save_global_event_target_as = tag_southernsea_c_occupy
+#defense_war_southern_c : when war add flag 
+#
+#
+##########################################################
+#2018.12.31 fit to 1.28
+country_event = {
+	id = southernsea_occupy_c_events.1
+	title = southernsea_occupy_c_events.NAME1
+	desc = southernsea_occupy_c_events.DESC1
+	picture = SouthernSea_c_00_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "southernsea_occupy_c_events.OPTA1"
+		if = {
+			limit = {
+				NOT = {
+					any_country = {
+						has_country_flag = flg_southernsea_c_occupy }
+					}
+				}
+			
+			add_treasury = -500
+			add_country_modifier = {
+				name = "md_had_occupy_southernsea"
+				duration = 1800
+			}			
+			hidden_effect = {
+				save_global_event_target_as = tag_southernsea_c_occupy
+				set_country_flag = flg_southernsea_c_occupy
+				set_variable = { which = pop_southernsea_c value = 0 }	
+				clr_country_flag = tmp_southernsea_c
+			}	
+		}
+		if = {
+			limit = { 
+				any_country = {
+					has_country_flag = flg_southernsea_c_occupy
+					NOT = { tag = ROOT }
+				}
+			}
+			country_event = {
+				id =  southernsea_occupy_c_events.5
+			}
+		}
+	}	
+	option = {
+		name = "southernsea_occupy_c_events.OPTB1"
+		clr_country_flag = tmp_southernsea_c
+	}	
+}
+
+#That has country occupied the area
+country_event = {
+	id = southernsea_occupy_c_events.2
+	title = southernsea_occupy_c_events.NAME2
+	desc = southernsea_occupy_c_events.DESC2
+	picture = SouthernSea_c_01_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "southernsea_occupy_c_events.OPTA2"
+		
+		hidden_effect = {
+			save_global_event_target_as = tag_southernsea_c_opp
+		}
+		set_country_flag = offense_war_southern_c
+		
+		event_target:tag_southernsea_c_occupy = {
+			set_country_flag = defense_war_southern_c	
+			country_event = {
+				id = southernsea_occupy_c_events.7
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = tmp_southernsea_c }
+				}
+				set_country_flag = tmp_southernsea_c
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = tmp_southernsea_c_view }	
+				}
+				set_country_flag = tmp_southernsea_c_view
+			}			
+		}
+		#add_casus_celli ={
+		#	target = event_target:tag_southernsea_c_occupy
+		#	type = cb_southernsea_c		
+		#	months = 10
+		#}
+		#declare_war_with_cb = {
+		#	who = event_target:tag_southernsea_c_occupy
+		#	casus_celli = cb_southernsea_c
+		#}
+		declare_war = event_target:tag_southernsea_c_occupy
+		
+		clr_country_flag = tmp_southernsea_c
+		
+	}
+	option = {
+		name = "southernsea_occupy_c_events.OPTB2"
+		clr_country_flag = tmp_southernsea_c
+	}	
+}
+
+#if you have occupy southernsea_c , you could view your southernsea_c terriorty report.
+#依照进度分出id3(正在兴建) id4(以达100%)
+country_event = {
+	id = southernsea_occupy_c_events.3
+	title = southernsea_occupy_c_events.NAME3
+	desc = southernsea_occupy_c_events.DESC3
+	picture = SouthernSea_c_01_eventPicture
+	
+	#显示正在兴建的进度
+	# ROOT.pop_southernsea_c
+	#
+	is_triggered_only = yes
+	option = {
+		name = "southernsea_occupy_c_events.OPTA3"
+		clr_country_flag = tmp_southernsea_c_view
+	}
+}
+
+#VIEW 100%
+country_event = {
+	id = southernsea_occupy_c_events.4
+	title = southernsea_occupy_c_events.NAME4
+	desc = southernsea_occupy_c_events.DESC4
+	picture = SouthernSea_c_02_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "southernsea_occupy_c_events.OPTA4"
+		clr_country_flag = tmp_southernsea_c_view
+	}
+}
+#原本没有的，在选择的时候，已经被人占领了
+country_event = {
+	id = southernsea_occupy_c_events.5
+	title = southernsea_occupy_c_events.NAME5
+	desc = southernsea_occupy_c_events.DESC5
+	picture = SouthernSea_c_01_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "southernsea_occupy_c_events.OPTA5"
+		clr_country_flag = tmp_southernsea_c
+	}
+}
+#显示所有南沙群岛现况
+
+#告知被攻击方战争开始的讯息
+country_event = {
+	id = southernsea_occupy_c_events.7
+	title = southernsea_occupy_c_events.NAME7
+	desc = southernsea_occupy_c_events.DESC7
+	picture = m_BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "southernsea_occupy_c_events.OPTA7"
+	clr_country_flag = tmp_southernsea_c
+	clr_country_flag = tmp_southernsea_c_view
+	}
+}

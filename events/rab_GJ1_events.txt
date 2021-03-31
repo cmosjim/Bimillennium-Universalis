@@ -1,0 +1,58 @@
+#2018.12.31 fit to 1.28
+namespace = rab_GJ1_events
+
+country_event = {
+	id = rab_GJ1_events.1
+	title = "rab_GJ1_events.NAME1"
+	desc = "rab_GJ1_events.DESC1"
+	picture = SUN_YAT_SEN_1_eventPicture
+  
+	fire_only_once = yes
+	 
+	trigger = {
+		tag = GJ1
+		NOT = { num_of_cities = 200 }
+		any_country = {
+			has_reform = modern_chinese_warlord_reform
+			war_with = ROOT
+		}
+		is_year = 1924
+		NOT = { is_year = 1928 }
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	option = {
+		name = "rab_GJ1_events.OPTA1"
+		add_country_modifier = {
+			name = "md_three_principles_of_the_people_war"
+			duration = 3650
+		}
+	}
+}
+#cancel the buff
+country_event = {
+	id = rab_GJ1_events.2
+	title = "rab_GJ1_events.NAME2"
+	desc = "rab_GJ1_events.DESC2"
+	picture = BAD_ARMY_eventPicture
+  
+	fire_only_once = yes
+	 
+	trigger = {
+		num_of_cities = 80
+		has_country_modifier = md_three_principles_of_the_people_war
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	option = {
+		name = "rab_GJ1_events.OPTA2"
+			remove_country_modifier = md_three_principles_of_the_people_war
+		}
+}
+ 

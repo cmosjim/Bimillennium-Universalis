@@ -1,0 +1,2232 @@
+#2021.02.03 fit to 1.30
+namespace = zaoqi_empire_events
+## error Nb	gÑvnamespaceN˝w(u ˝V∂RÑvTAG SVjOV4Yb”u>S
+#Bon Harmonization
+
+##^–cöNN'YglbâN
+country_event = {
+	id = zaoqi_empire_events.1
+	title = "zaoqi_empire_events_title1"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc1"
+	
+	trigger = {
+        tag = DY2
+        ai = yes
+        PRT = { ai = yes }       #Âã˝VN=f©s∂Rµc6R
+        OR = {
+            DY2 = {
+                defensive_war_with = PRT
+            } 
+            PRT = {
+                defensive_war_with = DY2
+            } 
+        }
+        OR = {
+            war_score_against = {
+                who = PRT
+                value = 5
+            }
+            NOT = {
+                war_score_against = {
+                    who = PRT
+                    value = -5
+                }
+            }
+        }
+        NOT = { is_year = 100 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name1"
+        add_treasury = 100
+        add_manpower = 5                #5000∫NõR
+        add_stability = 2
+		white_peace = PRT               #‡eagˆNjPb 
+	}
+}
+
+##NÔç¢gÀuídlöSU
+country_event = {
+	id = zaoqi_empire_events.2
+	title = "zaoqi_empire_events_title2"
+	picture = CITY_VIEW_eventPicture
+	desc = "zaoqi_empire_events_desc2"
+
+    fire_only_once = yes
+
+	trigger = {
+        is_year = 1
+        NOT = { is_year = 1100 }
+        owns = 454
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name2"
+        add_treasury = 1000
+		454 = {
+            add_permanent_province_modifier = {
+				name = heiljsf_silu_shuniu_modifier
+				duration = -1
+			}
+      add_base_tax = 3
+      add_base_production = 3
+      add_prosperity = 3
+			add_local_autonomy = -20
+    }
+	}
+}
+
+##N1StSÑvTwç
+country_event = {
+	id = zaoqi_empire_events.3
+	title = "zaoqi_empire_events_title3"
+	picture = BORDER_TENSION_eventPicture
+	desc = "zaoqi_empire_events_desc3"
+	
+	fire_only_once = yes
+	
+	trigger = {
+        tag = DY2
+        DY2 = {
+            truce_with = PRT
+        } 
+        NOT = { is_year = 75 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name3"
+        add_treasury = 1000
+        remove_idea_group = early_mil_ideas
+        add_idea_group = xingjun_ideas
+        add_idea = yuxuefenzhan_6
+		define_general = {
+			name = "N1StS Kadphises"       #N1StS Kadphises
+			fire = 1
+			shock = 6
+			manuever = 6
+			siege = 6
+			trait = goal_oriented_personality
+		}
+        capital_scope = {
+			build_to_forcelimit = {
+				infantry = 0.6
+				cavalry = 0.4
+			}
+		}
+        every_province = {						#  'Ygl ∑ÉóV pS¶^^JÅÑv8h√V
+            limit = {
+                owned_by = NST
+            }
+            add_core = PREV
+        }
+        every_province = {						#  'Ygl ∑ÉóV pS¶^^–cöNÑv±Ry
+            limit = {
+                owned_by = IPA
+            }
+            add_permanent_claim = PREV
+        }
+        every_province = {						#  'Ygl ∑ÉóV 8nóVâöNÑv±Ry
+            limit = {
+                owned_by = YAU
+            }
+            add_permanent_claim = PREV
+        }
+		every_province = {						#  'Ygl ∑ÉóV âZYFZÑv±Ry
+            limit = {
+                owned_by = WSA
+            }
+            add_permanent_claim = PREV
+        }
+		if = {                                   #Tv^Dñ∏^
+			limit = {
+                OR = {
+                    KSH = { vassal_of = DY2 }
+                    KSH = { march_of = DY2 }
+                }
+                KSH = { ai = yes }       #Âã˝VN=f©s∂Rµc6R
+			}
+            every_province = {						
+                limit = {
+                    owned_by = KSH
+                }
+                add_core = PREV
+                cede_province = PREV
+            }
+        }
+	}
+}
+
+##O∆R0ÃSaó05çó0∏wò0˝ê∆RîNËê’ØO
+country_event = {
+	id = zaoqi_empire_events.4
+	title = "zaoqi_empire_events_title4"
+	picture = PAINTER_ARTIST_eventPicture
+	desc = "zaoqi_empire_events_desc4"
+	
+	fire_only_once = yes
+	
+	trigger = {
+        tag = DY2
+        has_leader = "N1StS Kadphises"        #	gSÜòÎSN1StS Kadphises
+        num_of_cities = 26
+        NOT = { is_year = 75 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name4a"
+        ai_chance = { factor = 95 }  
+        add_prestige = 50
+        add_army_tradition = 100
+        add_adm_tech = 1
+        add_dip_tech = 1
+        add_mil_tech = 1
+		set_government_rank = 3
+        hidden_effect = {
+            kill_leader = {
+                type = "N1StS Kadphises"
+            }
+        }
+        define_ruler = {
+            name = "N1StS"
+            dynasty = "Kadphises"
+            adm = 2
+            dip = 1
+            mil = 4
+            age = 40
+            claim = 95
+        } 
+		if = {
+			limit = {
+                OR = {
+                    DX3 = { vassal_of = DY2 }       #'YY=f'YglÑvDñ∏^
+                    DX3 = { march_of = DY2 }        #'YY=f'YglÑvkSb
+                }
+                DX3 = { ai = yes }           #Âã˝VN=f©s∂Rµc6R
+			}
+            every_province = {						#Tv^˝V∂R  'YglTv^'YY 
+                limit = {
+                    owned_by = DX3
+                }
+                add_core = PREV
+                cede_province = PREV
+            }
+        }
+        if = {                                      #Tv^Dñ∏^
+			limit = {
+                OR = {
+                    KHW = { vassal_of = DY2 }
+                    KHW = { march_of = DY2 }
+                }
+                KHW = { ai = yes }           #Âã˝VN=f©s∂Rµc6R
+			}
+            every_province = {
+                limit = {
+                    owned_by = KHW
+                }
+                add_core = PREV
+                cede_province = PREV
+            }
+        }
+	}
+    option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name4b"
+        ai_chance = { factor = 5 }  
+        add_treasury = 500
+    }
+}
+
+##IeSbãæRåTfW…SÀYW
+country_event = {
+	id = zaoqi_empire_events.5
+	title = "zaoqi_empire_events_title5"
+	picture = SIEGE_eventPicture
+	desc = "zaoqi_empire_events_desc5"
+	
+	fire_only_once = yes
+	
+	trigger = {
+        OR ={
+            tag = DY2
+            tag = KUS
+        }
+        ai = NO
+        is_at_war = NO
+        exists = NST
+        is_year = 26
+        NOT = { truce_with = NST }
+		NOT = { NST = {is_vassal = yes } }
+		NOT = {	NST = {is_march = yes } }
+        NOT = { is_year = 100 }
+        OR ={
+			has_leader = "N1StS Kadphises"            #	gSÜòÎSN1StS Kadphises
+			has_ruler = "N1StS"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name5a"
+        ai_chance = { factor = 95 }  
+		if = {
+			limit = {
+                tag = DY2
+			}
+            NST = {
+                declare_war_with_cb = {                 #(u8ngr≤QÅzP„S±Rb
+                    who = DY2
+                    casus_belli = cb_tribal_feud
+                }
+            }
+        }
+        if = {
+			limit = {
+                tag = KUS
+			}
+            NST = {
+                declare_war_with_cb = {                 #(u8ngr≤QÅzP„S±Rb
+                    who = KUS
+                    casus_belli = cb_tribal_feud
+                }
+            }
+        }
+	}
+    option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name5b"
+        ai_chance = { factor = 5 }  
+        add_treasury = 500
+        add_truce_with = NST
+    }
+}
+
+##±Rlb'YXNiOYe
+country_event = {
+	id = zaoqi_empire_events.6
+	title = "zaoqi_empire_events_title6"
+	picture = BUDDHA_eventPicture
+	desc = "zaoqi_empire_events_desc6"
+	
+	fire_only_once = yes
+	
+	trigger = {
+        tag = KUS
+        is_year = 50
+        adm_tech = 4
+        NOT = { is_year = 200 }
+        #has_ruler = "N1StS Kadphises"            #˝VãsÎSN1StS Kadphises
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name6a"
+        ai_chance = { factor = 95 }
+        add_stability = 3
+        add_prestige = 50
+        KUS = { change_religion = mahayana }
+        remove_idea_group = early_adm_ideas
+        add_idea_group = shenquan_ideas
+        add_idea = zongjiaokuangre_5
+	}
+    option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name6b"
+        ai_chance = { factor = 5 }  
+        add_prestige = 20
+        add_treasury = 100
+	}
+}
+
+##IeSbpS¶^-^–cöNãs˝V
+country_event = {
+	id = zaoqi_empire_events.7
+	title = "zaoqi_empire_events_title7"
+	picture = SIEGE_eventPicture
+	desc = "zaoqi_empire_events_desc7"
+	
+	fire_only_once = yes
+	
+	trigger = {
+        OR ={
+            tag = DY2
+            tag = KUS
+        }
+        is_at_war = NO
+        exists = IPA
+        is_year = 35
+        NOT = { truce_with = IPA }
+		NOT = { IPA = {is_vassal = yes } }
+		NOT = {	IPA = {is_march = yes } }
+        NOT = { is_year = 100 }
+		OR ={
+			has_leader = "N1StS Kadphises"            #	gSÜòÎSN1StS Kadphises
+			has_ruler = "N1StS"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name7a"
+        ai_chance = { factor = 95 } 
+        if = {
+			limit = {
+                tag = DY2
+			}
+            IPA = {
+                declare_war_with_cb = {                 #(u8ngr≤QÅzP„S±Rb
+                    who = DY2
+                    casus_belli = cb_tribal_feud
+                }
+            }
+        }
+        if = {
+			limit = {
+                tag = KUS
+			}
+            IPA = {
+                declare_war_with_cb = {                 #(u8ngr≤QÅzP„S±Rb
+                    who = KUS
+                    casus_belli = cb_tribal_feud
+                }
+            }
+        }
+	}
+    option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name7b"
+        ai_chance = { factor = 5 }  
+        add_treasury = 500
+        add_truce_with = IPA
+    }
+}
+##IeSb8nóV^öN
+country_event = {
+	id = zaoqi_empire_events.8
+	title = "zaoqi_empire_events_title8"
+	picture = SIEGE_eventPicture
+	desc = "zaoqi_empire_events_desc8"
+	
+	fire_only_once = yes
+	
+	trigger = {
+        tag = KUS
+        ai = NO
+        is_at_war = NO
+        exists = YAU
+        is_year = 40
+        NOT = { truce_with = YAU }
+		NOT = { YAU = {is_vassal = yes } }
+		NOT = {	YAU = {is_march = yes } }
+        NOT = { is_year = 100 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name8a"
+        ai_chance = { factor = 95 }  
+        YAU = {
+            declare_war_with_cb = {                 #(u8ngr≤QÅzP„S±Rb
+                who =  KUS
+                casus_belli = cb_tribal_feud 
+            }
+        }
+	}
+    option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name8b"
+        ai_chance = { factor = 5 }  
+        add_treasury = 500
+        add_truce_with = YAU
+    }
+}
+##AIIeSbãæRåTfW…SÀYW
+country_event = {
+	id = zaoqi_empire_events.105
+	title = "zaoqi_empire_events_title5"
+	picture = SIEGE_eventPicture
+	desc = "zaoqi_empire_events_desc5"
+	
+	#fire_only_once = yes
+	
+	trigger = {
+        OR ={
+            tag = DY2
+            tag = KUS
+        }
+        ai = yes
+        is_at_war = NO
+        exists = NST
+        is_year = 26
+        NOT = { truce_with = NST }
+		NOT = { NST = {is_vassal = yes } }
+		NOT = {	NST = {is_march = yes } }
+        NOT = { is_year = 100 }
+         #OR ={
+		 #	has_leader = "N1StS Kadphises"            #	gSÜòÎSN1StS Kadphises
+		 #	has_ruler = "N1StS"
+		 #}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name5a"
+        ai_chance = { factor = 95 }  
+		if = {
+			limit = {
+                tag = DY2
+			}
+            NST = {
+                declare_war_with_cb = {                 #(u8ngr≤QÅzP„S±Rb
+                    who = DY2
+                    casus_belli = cb_tribal_feud
+                }
+            }
+        }
+        if = {
+			limit = {
+                tag = KUS
+			}
+            NST = {
+                declare_war_with_cb = {                 #(u8ngr≤QÅzP„S±Rb
+                    who = KUS
+                    casus_belli = cb_tribal_feud
+                }
+            }
+        }
+	}
+    option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name5b"
+        ai_chance = { factor = 5 }  
+        add_treasury = 500
+        add_truce_with = NST
+    }
+}
+##AIIeSb8nóV^öN
+country_event = {
+	id = zaoqi_empire_events.108
+	title = "zaoqi_empire_events_title8"
+	picture = SIEGE_eventPicture
+	desc = "zaoqi_empire_events_desc8"
+	
+	#fire_only_once = yes
+	
+	trigger = {
+        tag = KUS
+        ai = yes
+        is_at_war = NO
+        exists = YAU
+        is_year = 40
+        NOT = { truce_with = YAU }
+		NOT = { YAU = {is_vassal = yes } }
+		NOT = {	YAU = {is_march = yes } }
+        NOT = { is_year = 100 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name8a"
+        ai_chance = { factor = 95 }  
+        YAU = {
+            declare_war_with_cb = {                 #(u8ngr≤QÅzP„S±Rb
+                who =  KUS
+                casus_belli = cb_tribal_feud 
+            }
+        }
+	}
+    option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name8b"
+        ai_chance = { factor = 5 }  
+        add_treasury = 500
+        add_truce_with = YAU
+    }
+}
+##AIIeSbâZYFZ
+country_event = {
+	id = zaoqi_empire_events.109
+	title = "zaoqi_empire_events_title8"
+	picture = SIEGE_eventPicture
+	desc = "zaoqi_empire_events_desc8"
+	
+	#fire_only_once = yes
+	
+	trigger = {
+        tag = KUS
+        ai = yes
+        is_at_war = NO
+        exists = WSA
+        is_year = 50
+        NOT = { truce_with = WSA }
+		NOT = { WSA = {is_vassal = yes } }
+		NOT = {	WSA = {is_march = yes } }
+        NOT = { is_year = 100 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name8a"
+        ai_chance = { factor = 95 }  
+        WSA = {
+            declare_war_with_cb = {                 #(u8ngr≤QÅzP„S±Rb
+                who =  KUS
+                casus_belli = cb_tribal_feud 
+            }
+        }
+	}
+    option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name8b"
+        ai_chance = { factor = 5 }  
+        add_treasury = 500
+        add_truce_with = WSA
+    }
+}
+##^–cöNT'YglÉXÖQÑvpS¶^^JÅ∫NVb
+country_event = {
+	id = zaoqi_empire_events.10
+	title = "zaoqi_empire_events_title10"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc10"
+    
+    fire_only_once = yes
+	
+	trigger = {
+        tag = PRT
+        is_at_war = NO
+        exists = DY2
+        is_year = 25
+        NOT = { truce_with = DY2 }
+        NOT = { is_year = 100 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name10"
+        declare_war_with_cb = {                 #(uû±èâkLeP„S±Rb
+            who = DY2
+            casus_belli = cb_humiliate_rotw
+        }
+	}
+}
+
+
+##^–cöNN5çóbâN
+country_event = {
+	id = zaoqi_empire_events.11
+	title = "zaoqi_empire_events_title11"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc11"
+	
+	trigger = {
+        tag = KUS
+        ai = yes
+        PRT = { ai = yes }       #Âã˝VN=f©s∂Rµc6R
+        OR = {
+            KUS = {
+                defensive_war_with = PRT
+            } 
+            PRT = {
+                defensive_war_with = KUS
+            } 
+        }
+        OR = {
+            war_score_against = {
+                who = PRT
+                value = 20
+            }
+            NOT = {
+                war_score_against = {
+                    who = PRT
+                    value = -20
+                }
+            }
+        }
+        NOT = { is_year = 150 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name11"
+        add_manpower = 10               #1w∫NõR
+		white_peace = PRT               #‡eagˆNjPb 
+	}
+}
+
+##^–cöNNWlö^˝VbâN
+country_event = {
+	id = zaoqi_empire_events.12
+	title = "zaoqi_empire_events_title12"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc12"
+	
+	trigger = {
+        tag = PRT
+        ai = yes
+        ROM = { ai = yes }       #Âã˝VN=f©s∂Rµc6R
+        OR = {
+            ROM = {
+                defensive_war_with = PRT
+            } 
+            PRT = {
+                defensive_war_with = ROM
+            } 
+        }
+        OR = {
+            war_score_against = {
+                who = PRT
+                value = 25
+            }
+            NOT = {
+                war_score_against = {
+                    who = PRT
+                    value = -25
+                }
+            }
+        }
+        NOT = { is_year = 220 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name12"
+        add_treasury = 100
+        add_manpower = 10                #10000∫NõR
+        add_stability = 2
+		white_peace = ROM               #‡eagˆNjPb 
+	}
+}
+
+##Wlö∆QYTÒÇ&OVb
+country_event = {
+	id = zaoqi_empire_events.20
+	title = "zaoqi_empire_events_title20"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc20"
+    
+    fire_only_once = yes
+	
+	trigger = {
+        tag = ROM
+        is_year = 35
+        NOT = { is_year = 100 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name20"
+        british_isles_region = {            #Wlö˘RÒÇ&O±Ry
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+##WlöTÒÇ&OVb
+country_event = {
+	id = zaoqi_empire_events.21
+	title = "zaoqi_empire_events_title21"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc21"
+    
+    fire_only_once = yes
+	
+	trigger = {
+        tag = ROM
+        ai = NO
+        is_at_war = NO
+        exists = CTV
+        is_year = 43
+        NOT = { truce_with = CTV }
+        NOT = { is_year = 100 }
+        NOT = { owns = 236 }
+        CTV = { owns = 236 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name21"
+        declare_war_with_cb = {                 #(uÅVg&Ofe:NP„S±Rb
+            who = CTV
+            casus_belli = cb_conquest 
+            war_goal_province = 236
+        }
+	}
+}
+
+##AIWlöTÒÇ&OVb
+country_event = {
+	id = zaoqi_empire_events.121
+	title = "zaoqi_empire_events_title21"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc21"
+    
+    #fire_only_once = yes
+	
+	trigger = {
+        tag = ROM
+        ai = yes
+        is_at_war = NO
+        exists = CTV
+        is_year = 43
+        NOT = { truce_with = CTV }
+        NOT = { is_year = 100 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name21"
+        declare_war_with_cb = {                 #(u^˝VININ:NP„S±Rb
+            who = CTV
+            casus_belli = cb_imperial 
+        }
+	}
+}
+
+##ÔQSyr∫N%çÜN
+country_event = {
+	id = zaoqi_empire_events.022
+	title = "zaoqi_empire_events_title22"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc22"
+    
+    fire_only_once = yes
+	
+	trigger = {
+        tag = ROM
+        NOT = { is_year = 120 }
+        CTV = { ai = yes }               #Âã˝VN=f©s∂Rµc6R
+        OR = {
+            ROM = {
+                defensive_war_with = CTV
+            } 
+            CTV = {
+                defensive_war_with = ROM
+            } 
+        }
+        OR = {
+            war_score_against = {
+                who = CTV
+                value = 50
+            }
+        }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name22"
+        add_stability = 5
+        add_prestige = 50
+        every_province = {
+            limit = {
+                owned_by = CTV
+            }
+            add_core = PREV
+            cede_province = PREV
+        }
+	}
+}
+
+##AI'YIlÙf9e˝VVr:NÔyÅgœu%Ñ∆QYÕë∞eâN:YâﬂW
+country_event = {
+	id = zaoqi_empire_events.130
+	title = "zaoqi_empire_events_title130"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc130"
+    
+    fire_only_once = yes
+	
+	trigger = {
+        tag = HND
+        ai = yes
+        NOT = { great_power_rank = 3 }      #R:VícT≈VâòÿöéN3
+        num_of_cities = 250                 #'YIlÂb	g200*Nw˝NÂNN
+        mission_completed = donghan_tongyi  #ÚTœuåRb˚N°RNIlﬂuN
+        is_at_war = NO					    #N(WbâN
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name130"
+        tarim_basin_area = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+		tarim_basin_east_area = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+		east_altishahr_area = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+		east_south_altishahr_area = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+		hetian_area = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+		shanshan_area = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+		turpan_kumul_area = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+        if = {
+			limit = {
+                owns = 2492
+                2492 = { is_capital = no }
+			}
+            2492 = {move_capital_effect = yes}
+        }
+        if = {
+			limit = {
+                NOT = { mission_completed = toubi_congrong } #°l	gåRb˚N°RïbrŒNb
+			}
+            add_inflation = -20
+            add_stability = 3
+            add_war_exhaustion = -20
+            add_manpower = 85
+            set_meritocracy = 80
+        }
+	}
+}
+
+##AI'YIlTrRnc?eCg˙QuQ
+country_event = {
+	id = zaoqi_empire_events.131
+	title = "zaoqi_empire_events_title131"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc131"
+    
+    #fire_only_once = yes
+	
+	trigger = {
+        ai = yes
+        is_at_war = NO					#N(WbâN
+        exists = HND					#'YIlXR(W
+		NOT = {  tag = XIY }       		#N=fâﬂW˝ê≤bú^
+        NOT = {  tag = XI1 }            #N=fâﬂWïÚSú^
+        NOT = {  tag = WSZ }       		#N=f˝ê≤bLNØeœÖ˝ê¯S
+        NOT = {  tag = AN2 }       		#N=fâRS˝ê≤bú^
+        NOT = {  tag = AN3 }       		#N=fâRWS˝ê≤bú^
+        NOT = {  tag = ND1 }       		#N=fâRN˝ê≤bú^
+        NOT = {  tag = HS0 }       		#N=f—û4l˝ê≤bú^
+		NOT = { vassal_of = HND }		#N=f'YIlÑvDñ∏^	
+		any_owned_province = {			#¿hÂg,g˝VNb	gÂb	gÑvw˝N-N=f&T	g'YIlÑv8lEN±Ry(debug·Oo`V8^‡e’l>f:y)
+			is_permanent_claim = HND
+		}
+        OR = {
+            government = ancient_chinese_warlord        #=f‰S„NõQñ?eSO(debug·Oo`V8^>f:y:NTIN?eSO)
+            government = gov_celestial_empire           #=f)YgteSO(debug·Oo`V8^>f:y:NTIN?eSO)
+        }
+		HND ={
+			ai = yes				    #'YIlN=f©s∂Rµc6R
+			is_vassal = NO				#'YIlN=fDñ∏^˝V
+			is_march = NO				#'YIlN=fkSb˝V
+			is_at_war = NO				#'YIlN(WbâN
+            NOT = {war_exhaustion = 5}  #åSb¶^NOéN5
+		}
+        NOT = {
+            border_distance = {			#N'YIlπèLu›çªySéN1
+                who = HND
+                distance = 1
+            }
+		}
+        NOT = { truce_with = HND }		#˘R'YIlXR(WjPbOSÆã
+        is_year = 30
+        NOT = { is_year = 120 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name131"
+		declare_war_with_cb = {                 #(uﬂuN-N˝V:NP„S±Rb
+			who = HND
+			casus_belli = cb_chinese_unification   
+		}
+	}
+}
+##AI'YIlT8h√V0W&^˙QuQ
+country_event = {
+	id = zaoqi_empire_events.132
+	title = "zaoqi_empire_events_title132"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc132"
+    
+    #fire_only_once = yes
+	
+	trigger = {
+        ai = yes
+        is_at_war = NO					#N(WbâN
+        exists = HND					#'YIlXR(W
+		NOT = {  tag = XIY }       		#N=fâﬂW˝ê≤bú^
+        NOT = {  tag = XI1 }            #N=fâﬂWïÚSú^
+        NOT = {  tag = WSZ }       		#N=f˝ê≤bLNØeœÖ˝ê¯S
+        NOT = {  tag = AN2 }       		#N=fâRS˝ê≤bú^
+        NOT = {  tag = AN3 }       		#N=fâRWS˝ê≤bú^
+        NOT = {  tag = ND1 }       		#N=fâRN˝ê≤bú^
+        NOT = {  tag = HS0 }       		#N=f—û4l˝ê≤bú^
+		NOT = { vassal_of = HND }		#N=f'YIlÑvDñ∏^
+		HND ={
+			ai = yes				    #'YIlN=f©s∂Rµc6R
+			is_vassal = NO				#'YIlN=fDñ∏^˝V
+			is_march = NO				#'YIlN=fkSb˝V
+			is_at_war = NO				#'YIlN(WbâN
+            num_of_cities = 200         #'YIlÂb	g200*Nw˝NÂNN
+            NOT = {war_exhaustion = 6}  #åSb¶^NOéN5
+            core_claim = ROOT           #'YIl	g8h√V(W,g˝V
+		}
+        NOT = {
+            border_distance = {			#N'YIlπèLu›çªySéN1
+                who = HND
+                distance = 1
+            }
+		}
+        NOT = { truce_with = HND }		#˘R'YIlXR(WjPbOSÆã
+        NOT = { is_year = 120 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name132"
+		
+		declare_war_with_cb = {                 #(u^˝VININ:NP„S±Rb
+			who = HND
+			casus_belli = cb_tribal_feud  
+		}
+	}
+}
+
+##-NNS8h√V0W&^ÑvAIDñ∏^OIN®R†ReQ)YgMb˝wÙf:V'Y
+country_event = {
+	id = zaoqi_empire_events.133
+	title = "zaoqi_empire_events_title133"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc133"
+    
+    #fire_only_once = yes
+	
+	trigger = {
+        ai = yes
+        exists = HND					#'YIlXR(W
+        HND = { ai = yes }              #'YIl=fAI
+		NOT = {  tag = XIY }       		#N=fâﬂW˝ê≤bú^
+        NOT = {  tag = XI1 }            #N=fâﬂWïÚSú^
+        NOT = {  tag = WSZ }       		#N=f˝ê≤bLNØeœÖ˝ê¯S
+        NOT = {  tag = AN2 }       		#N=fâRS˝ê≤bú^
+        NOT = {  tag = AN3 }       		#N=fâRWS˝ê≤bú^
+        NOT = {  tag = ND1 }       		#N=fâRN˝ê≤bú^
+        NOT = {  tag = HS0 }       		#N=f—û4l˝ê≤bú^
+        vassal_of = HND                 #=f'YIlÑvDñ∏^
+        OR = {
+            government = ancient_chinese_warlord        #=f‰S„NõQñ?eSO(debug·Oo`V8^>f:y:NTIN?eSO)
+            government = gov_celestial_empire           #=f)YgteSO(debug·Oo`V8^>f:y:NTIN?eSO)
+			tag = WR1				#âﬂW¯ã˝V
+			tag = SL1
+			tag = KAS
+			tag = HOT
+			tag = QC1
+			tag = YN2
+			tag = JJ1
+			tag = QM2
+			tag = LO1
+			tag = CS1
+			tag = WWS
+        }
+        NOT = {
+            border_distance = {			#N'YIlπèLu›çªySéN1
+                who = HND
+                distance = 1
+            }
+		}
+        NOT = { is_year = 120 }
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name133"
+		every_province = {						
+            limit = {
+                owned_by = ROOT
+            }
+            add_core = HND
+            cede_province = HND
+        }
+	}
+}
+
+##AI'YIlSbór6eYüS	gÜuﬂW
+country_event = {
+	id = zaoqi_empire_events.134
+	title = "zaoqi_empire_events_title134"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc134"
+    
+    fire_only_once = yes
+	
+	trigger = {
+        tag = HND
+        ai = yes
+        mission_completed = weimian_zhizi  #ÚTœuåRb˚N°RMObóKNPR
+        is_at_war = NO					    #N(WbâN
+		NOT = { is_year = 150 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name134"
+        2886 = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+		liaoning_area = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+		liaoning_east_area = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+		pyongan_area = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+		3313 = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+		red_river_delta_area = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+		1016 = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+		2385 = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+		2383 = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+        ordos_east_area = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+        2549 = {                        
+			limit = {
+				NOT = { is_core = HND }
+				NOT = { owned_by = HND }
+			}
+			add_core = HND           #˚m†R8h√V
+		}
+	}
+}
+
+##AI'YIlTv^âRWSNâRN(N©ãAI4Y100t^Âb	gŸè2N*N˝ê≤b)
+country_event = {
+	id = zaoqi_empire_events.135
+	title = "zaoqi_empire_events_title135"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc135"
+    
+    #fire_only_once = yes
+	
+	trigger = {
+        tag = HND
+        ai = yes
+        OR = {
+            AND = {
+            exists = AN3
+                HND = {                                     #'YIl˘RâRWSÑv`¶^=fóRIN
+                    ai_attitude = {
+                        who = AN3
+                        attitude = attitude_overlord        #`¶^:óRIN
+                    }
+                }
+            }
+            AND = {
+                exists = ND1
+                ND1 = {                                     #âRN˘R'YIl`¶^=f‡V⁄ã
+                    ai_attitude = {
+                        who = FROM
+                        attitude = attitude_loyal           #`¶^:‡V⁄ã
+                    }
+                }
+            }
+        }
+		NOT = { is_year = 120 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name135"
+        if = {
+            limit = {
+                has_country_modifier = md_building_annanduhufu
+            }
+            every_province = {
+                limit = {
+                    owned_by = AN3
+                }
+                add_core = PREV
+                cede_province = PREV
+            }
+        }
+        if = {
+            limit = {
+                has_country_modifier = md_building_andonduhufu
+            }
+            every_province = {
+                limit = {
+                    owned_by = ND1
+                }
+                add_core = PREV
+                cede_province = PREV
+            }
+        } 
+    }
+}
+
+##’lpQKQTwçhQõRib.V
+country_event = {
+	id = zaoqi_empire_events.40
+	title = "zaoqi_empire_events_title40"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc40"
+    
+    fire_only_once = yes
+	
+	trigger = {
+        tag = FRK
+        is_year = 481
+        NOT = { is_year = 486 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name40"
+         define_ruler = {
+            name = "KQmÙu"
+            dynasty = "®Xm)n"
+            adm = 2
+            dip = 1
+            mil = 4
+            age = 15
+            claim = 95
+        }
+        change_religion = chalcedonism
+        add_adm_tech = 1
+        add_dip_tech = 1
+        add_mil_tech = 1
+        add_stability = 5
+        remove_idea_group = early_mil_ideas
+        add_idea_group = xingjun_ideas
+        add_idea = yuxuefenzhan_6
+        if = {
+            limit = {
+                AI = no
+            }
+            wallonia_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_permanent_claim = FRK           #˚m†R±Ry
+            }
+            flanders_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_permanent_claim = FRK						#˚m†R±Ry
+            }
+            picardy_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_permanent_claim = FRK           #˚m†R±Ry
+            }
+            champagne_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_permanent_claim = FRK           #˚m†R±Ry
+            }
+            lorraine_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_permanent_claim = FRK           #˚m†R±Ry
+            }
+            ile_de_france_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_permanent_claim = FRK           #˚m†R±Ry
+            }
+            orleans_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_permanent_claim = FRK           #˚m†R±Ry
+            }
+            loire_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_permanent_claim = FRK           #˚m†R±Ry
+            }
+            normandy_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_permanent_claim = FRK           #˚m†R±Ry
+            }
+        }
+        if = {
+            limit = {
+                AI = yes
+            }
+            add_country_modifier = { 
+                name = heiljsf_ai_fengkuangyoumu_modifier   #AI Øu¬r8ngr 50t^
+                duration = 18250
+            }
+            wallonia_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_core = FRK           #˚m†R8h√V
+            }
+            flanders_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_core = FRK           #˚m†R8h√V
+            }
+            picardy_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_core = FRK           #˚m†R8h√V
+            }
+            champagne_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_core = FRK           #˚m†R8h√V
+            }
+            lorraine_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_core = FRK           #˚m†R8h√V
+            }
+            ile_de_france_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_core = FRK           #˚m†R8h√V
+            }
+            orleans_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_core = FRK           #˚m†R8h√V
+            }
+            loire_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_core = FRK           #˚m†R8h√V
+            }
+            normandy_area = {                        
+                limit = {
+                    NOT = { is_core = FRK }
+                    NOT = { owned_by = FRK }
+                }
+                add_core = FRK           #˚m†R8h√V
+            }
+        }
+    }
+}
+##AI’lpQKQTÙTŒû˙QuQ
+country_event = {
+	id = zaoqi_empire_events.141
+	title = "zaoqi_empire_events_title141"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc141"
+    
+    #fire_only_once = yes
+	
+	trigger = {
+        ai = yes
+        NOT = { tag = FRK }             
+        exists = FRK					#’lpQKQXR(W
+        OR = {
+            owns = 178                      #Âb	gâR9É
+            owns = 183                      #Âb	gÙTŒû
+        } 
+		FRK ={
+			ai = yes				#’lpQKQN=f©s∂Rµc6R
+			is_vassal = NO				#’lpQKQN=fDñ∏^˝V
+			is_march = NO				#’lpQKQN=fkSb˝V
+			is_at_war = NO				#’lpQKQN(WbâN
+            NOT = {war_exhaustion = 2}  #åSb¶^NOéN2
+		}
+        NOT = {
+            border_distance = {			#N’lpQKQπèLu›çªySéN1
+                who = FRK
+                distance = 1
+            }
+		}
+        NOT = { truce_with = FRK }		#˘R’lpQKQNXR(WjPbOSÆã
+        is_year = 482
+        NOT = { is_year = 550 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name141"
+        FRK = {
+            add_army_tradition = 100
+            capital_scope = {
+                build_to_forcelimit = {
+                    infantry = 0.6
+                    cavalry = 0.4
+                }
+            }
+        }
+		declare_war_with_cb = {                 #(u8ngrµOpb:NP„S±Rb
+			who = FRK
+			casus_belli = cb_horde_vs_civ  
+		}
+	}
+}
+
+##‚lØe(Ñ sﬁãu
+country_event = {
+	id = zaoqi_empire_events.50
+	title = "zaoqi_empire_events_title50"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc50"
+    
+    fire_only_once = yes
+	
+	trigger = {
+        tag = PRT                       #=f^–cöN(âRo`)
+		NOT = {  exists = SAS }       	#(Ñ sNXR(W
+        owns = 4461                     #Âb	gw˝N
+        owns = 2288
+        farsistan_area = {              #Âb	g0W:S
+			type = all
+			owned_by = ROOT
+        }
+        persian_gulf_coast = {
+			type = all
+			owned_by = ROOT
+        }   
+        is_year = 200
+        NOT = { is_year = 300 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	
+	option = { # play as the pirates
+		name = "zaoqi_empire_events_name50a"
+        ai_chance = { factor = 95 }  
+		# play as SAS
+        hidden_effect = {
+            farsistan_area = {                        
+                limit = {
+                    NOT = { is_core = SAS }
+                    NOT = { owned_by = SAS }
+                }
+                discover_country = SAS              
+                add_core = SAS           #˚m†R8h√V
+                remove_core = ROOT
+            }
+            persian_gulf_coast = {                        
+                limit = {
+                    NOT = { is_core = SAS }
+                    NOT = { owned_by = SAS }
+                }
+                discover_country = SAS
+                add_core = SAS           #˚m†R8h√V
+                remove_core = ROOT
+            }
+            4461 = {
+				discover_country = SAS
+				add_core = SAS
+                remove_core = ROOT
+			}
+			2288 = {
+				discover_country = SAS
+				add_core = SAS
+                remove_core = ROOT
+			}
+		}
+		
+		release = SAS
+		create_guarantee = SAS
+		SAS = {
+			change_government = monarchy            #?eú^b:NTIN6R
+            set_government_rank = 2                 #?eú^æã:Nãs˝V
+			#add_government_reform = ROOT           #?eú^9eió
+			adopt_reform_progress = ROOT
+			add_republican_tradition = 50
+			change_religion = ROOT
+			change_primary_culture = ROOT
+			capital_scope = {
+                build_to_forcelimit = {
+                    infantry = 1.6
+                    cavalry = 1.4
+                }
+            }
+			define_ruler = {
+				name = "ÙTÙTKQ" 
+				dynasty = "(Ñ s"
+				fixed = yes
+				adm = 3
+				dip = 3
+				mil = 3
+			}
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+			set_ruler_flag = heiljsf_SAS_Empire_flag
+            430 = {
+                move_capital_effect = yes
+                add_base_tax = 2
+                add_base_manpower = 2
+            }
+		}
+        PRT = {
+            create_guarantee = SAS                  #›O¡ã(Ñ sÏrÀz
+            if = {
+                limit = {
+                    exists = ROM
+                    ROM = { ai = yes }
+                }
+                add_truce_with = ROM               #NWlöår¢ãN*NåTs^ag¶u
+            }
+            if = {
+                limit = {
+                    exists = KUS
+                    KUS = { ai = yes }
+                }
+                add_truce_with = KUS               #N5çóår¢ãN*NåTs^ag¶u
+            }
+        }
+		if = {
+			limit = {
+				ai = no
+			}	
+			switch_tag = SAS                        #©s∂R9eµc6R(Ñ s
+		}
+	}
+    
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name50b"
+        ai_chance = { factor = 5 }  
+		4461 = {
+            spawn_rebels = {
+                type = noble_rebels
+                size = 40
+            }
+		}
+        2288 = {
+            spawn_rebels = {
+                type = noble_rebels
+                size = 40
+            }
+		}
+	}
+}
+
+##(Ñ s?ñSæè^SNN
+country_event = {
+	id = zaoqi_empire_events.051
+	title = "zaoqi_empire_events_title51"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc51"
+    
+    fire_only_once = yes
+	
+	trigger = {
+        tag = SAS
+        is_year = 208
+        NOT = { is_year = 240 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name51"
+        set_government_rank = 3
+        if = {
+			limit = {
+				owns = 4449
+			}
+            4449 = {
+                move_capital_effect = yes
+                add_base_tax = 4
+                add_base_production = 4
+                add_base_manpower = 3
+				change_province_name = "?ñSæè^S-±Ç…b"
+				rename_capital = "Ardashir-Khwarrah"
+            }
+        }
+        define_ruler = {
+			name = "?ñSæè^S" 
+			dynasty = "(Ñ s"
+			fixed = yes
+			adm = 5
+			dip = 5
+			mil = 6
+		}
+        add_treasury = 1000
+        add_adm_tech = 1
+        add_dip_tech = 1
+        add_mil_tech = 1
+        add_stability = 5
+        remove_idea_group = early_mil_ideas
+        add_idea_group = xingjun_ideas
+        add_idea = yuxuefenzhan_6
+        PRT = {
+            if = {
+                limit = {
+                    exists = ROM
+                    ROM = { ai = yes }
+                }
+                add_truce_with = ROM               #NWlöår¢ãN*NåTs^ag¶u
+            }
+            if = {
+                limit = {
+                    exists = KUS
+                    KUS = { ai = yes }
+                }
+                add_truce_with = KUS               #N5çóår¢ãN*NåTs^ag¶u
+            }
+            if = {
+                limit = {
+                    PRT = { ai = yes }
+                }
+                add_treasury = -100000              #^–cöN4xµN
+            }
+        }
+        if = {
+			limit = {
+				ai = yes
+			}
+            every_province = {						#  (Ñ s ∑ÉóV ^–cöNÑv8h√V
+                limit = {
+                    owned_by = PRT
+                }
+                add_core = PREV
+            }
+        }
+        if = {
+			limit = {
+				ai = no
+			}
+            every_province = {						#  (Ñ s ∑ÉóV ^–cöNÑv±Ry
+                limit = {
+                    owned_by = PRT
+                }
+                add_permanent_claim = PREV
+            }
+        }
+	}
+}
+
+##AI(Ñ sT^–cöN˙QuQ
+country_event = {
+	id = zaoqi_empire_events.152
+	title = "zaoqi_empire_events_title152"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc152"
+    
+    #fire_only_once = yes
+	
+	trigger = {
+        ai = yes
+        tag = SAS					#(Ñ s        
+		is_vassal = NO				#(Ñ sN=fDñ∏^˝V
+		is_march = NO				#(Ñ sN=fkSb˝V
+		is_at_war = NO				#(Ñ sN(WbâN
+        exists = PRT				#^–cöNXR(W
+        PRT = { ai = yes }	        #^–cöNN=f©s∂Rµc6R
+        NOT = {war_exhaustion = 5}  #åSb¶^NOéN5
+        NOT = {
+            border_distance = {			#N^–cöNπèLu›çªySéN1
+                who = PRT
+                distance = 1
+            }
+		}
+        NOT = { truce_with = PRT }		#˘R^–cöNNXR(WjPbOSÆã
+        is_year = 209
+        NOT = { is_year = 550 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name152"
+        SAS = {
+            add_treasury = 1000
+            add_army_tradition = 100
+            capital_scope = {
+                build_to_forcelimit = {
+                    infantry = 1.6
+                    cavalry = 1.4
+                }
+            }
+            if = {
+                limit = {
+                    exists = ROM            #WlöXR(W 
+                }
+                create_alliance = ROM       #NWlöTﬂv
+            }
+			if = {
+                limit = {
+                    exists = KUS            #5çóXR(W 
+                }
+                create_alliance = KUS       #N5çóTﬂv
+            }
+        }
+        PRT = {
+            declare_war_with_cb = {                 #(u^˝VININ:NP„S±Rb
+                who = SAS
+                casus_belli = cb_imperial  
+            }
+        }
+	}
+}
+
+##S∫N∆QYTIeSb?ñpQ˝V
+country_event = {
+	id = zaoqi_empire_events.60
+	title = "zaoqi_empire_events_title60"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc60"
+    
+    fire_only_once = yes
+	
+	trigger = {
+        tag = HNS						#=fS∫N
+        is_at_war = NO
+        exists = ALN                    #XR(W?ñpQ˝V
+        is_year = 348
+        NOT = { is_year = 400 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name60"
+        add_adm_tech = 1
+        add_dip_tech = 1
+        add_mil_tech = 1
+		if = {
+			limit = {
+                ai = no
+			}
+            every_province = {						#  S∫N ∑ÉóV ?ñpQ˝VÑv±Ry
+                limit = {
+                    owned_by = ALN
+                }
+                add_permanent_claim = ROOT
+            }
+        }
+        if = {
+			limit = {
+                ai = yes
+			}
+            add_country_modifier = { 
+                name = heiljsf_ai_fengkuangyoumu_modifier   #AI Øu¬r8ngr 50t^
+                duration = 18250
+            }
+            every_province = {						#  AIS∫N ∑ÉóV ?ñpQ˝VÑv8h√V
+                limit = {
+                    owned_by = ALN
+                }
+                add_core = ROOT           
+            }
+            circassia_area = {                      #AIS∫N˘Rÿö†R0tSËê0W:S8h√V
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { owned_by = ROOT }
+                }
+                add_core = ROOT
+            }
+            dagestan_area = {                         #AIS∫N˘Rÿö†R0tSËê0W:S8h√V
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { owned_by = ROOT }
+                }
+                add_core = ROOT
+            }
+        }
+	}
+}
+
+##AIS∫N∆QYTN'k'YIÉüSNÿö†R0t0W:SøRõRVb
+country_event = {
+	id = zaoqi_empire_events.160
+	title = "zaoqi_empire_events_title160"
+	picture = ARMY_HAPPY_eventPicture
+	desc = "zaoqi_empire_events_desc160"
+    
+    fire_only_once = yes
+	
+	trigger = {
+        tag = HNS						#=fS∫N
+        ai = yes
+        is_year = 348
+        NOT = { is_year = 400 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name160"
+        crimea_region = {             #S∫N˘RN'k'YIÉüS±Ry
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+        circassia_area = {            #S∫N˘Rÿö†R0tSËê0W:S±Ry
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+        dagestan_area = {             #S∫N˘Rÿö†R0tSËê0W:S±Ry
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+##AIS∫NVÀYTIeSb?ñpQ˝V
+country_event = {
+	id = zaoqi_empire_events.161
+	title = "zaoqi_empire_events_title161"
+	picture = SIEGE_eventPicture
+	desc = "zaoqi_empire_events_desc161"
+	
+	#fire_only_once = yes
+	
+	trigger = {
+        tag = HNS						#=fS∫N
+        ai = yes
+        is_at_war = NO
+        exists = ALN                    #XR(W?ñpQ˝V
+        ALN = { ai = yes }              #?ñpQ˝VN=f©s∂Rµc6R
+        NOT = { truce_with = ALN }      #°l	gN?ñpQ˝VÑvjPbOSÆã
+        NOT = {ALN = { vassal_of = ROOT}} #?ñpQ˝VN=fS∫NÑvDñ∏^
+        is_neighbor_of = ALN            #=f?ñpQ˝VÑvÜò˝V
+        is_year = 350
+        is_month = 4
+        NOT = { is_year = 400 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name161"
+        ALN = {
+            declare_war_with_cb = {                 #(u8ngr≤QÅzP„S±Rb
+                who = HNS
+                casus_belli = cb_tribal_feud
+            }
+        }
+	}
+}
+
+##AIS∫NVÀYTIeSb^^tØe
+country_event = {
+	id = zaoqi_empire_events.162
+	title = "zaoqi_empire_events_title162"
+	picture = SIEGE_eventPicture
+	desc = "zaoqi_empire_events_desc162"
+	
+	#fire_only_once = yes
+	
+	trigger = {
+        tag = HNS						#=fS∫N
+        ai = yes
+        is_at_war = NO
+        exists = SIR                    #XR(W^^tØe
+        SIR = { ai = yes }              #^^tØeN=f©s∂Rµc6R
+        NOT = { truce_with = SIR }      #°l	gN^^tØeÑvjPbOSÆã
+        NOT = {SIR = { vassal_of = ROOT}} #^^tØeN=fS∫NÑvDñ∏^
+        is_neighbor_of = SIR            #=f^^tØeÑvÜò˝V
+        is_year = 354
+        is_month = 1
+        NOT = { is_year = 400 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name162"
+        SIR = {
+            declare_war_with_cb = {                 #(u8ngr≤QÅzP„S±Rb
+                who = HNS
+                casus_belli = cb_tribal_feud
+            }
+        }
+	}
+}
+
+##AIS∫NVÀYTIeSb(ÑSlö–cöN
+country_event = {
+	id = zaoqi_empire_events.163
+	title = "zaoqi_empire_events_title163"
+	picture = SIEGE_eventPicture
+	desc = "zaoqi_empire_events_desc163"
+	
+	#fire_only_once = yes
+	
+	trigger = {
+        tag = HNS						#=fS∫N
+        ai = yes
+        is_at_war = NO
+        exists = SRT                    #XR(W(ÑSlö–cöN
+        SRT = { ai = yes }              #(ÑSlö–cöNN=f©s∂Rµc6R
+        NOT = { truce_with = SRT }      #°l	gN(ÑSlö–cöNÑvjPbOSÆã
+        NOT = {SRT = { vassal_of = ROOT}} #(ÑSlö–cöNN=fS∫NÑvDñ∏^
+        is_neighbor_of = SRT            #=f(ÑSlö–cöNÑvÜò˝V
+        is_year = 357
+        is_month = 1
+        NOT = { is_year = 400 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name163"
+        SRT = {
+            declare_war_with_cb = {                 #(u8ngr≤QÅzP„S±Rb
+                who = HNS
+                casus_belli = cb_tribal_feud
+            }
+        }
+	}
+}
+
+##S∫NzjOteò ∆QYËç«èò≥l QRcÂTyr
+country_event = {
+	id = zaoqi_empire_events.64
+	title = "zaoqi_empire_events_title64"
+	picture = SIEGE_eventPicture
+	desc = "zaoqi_empire_events_desc64"
+	
+	fire_only_once = yes
+	
+	trigger = {
+        tag = HNS						#=fS∫N
+        is_at_war = NO
+        is_year = 365
+        is_month = 1
+        NOT = { is_year = 400 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name64"
+        add_splendor = 800
+        remove_idea_group = early_mil_ideas
+        add_idea_group = xingjun_ideas
+        add_idea = yuxuefenzhan_6
+        add_army_tradition = 50
+        add_army_professionalism = 0.1
+        if = {
+			limit = {
+                ai = yes
+                exists = OST                    #NÂTyrXR(W
+			}
+            every_province = {						#  AIS∫N ∑ÉóV NÂTyrÑv8h√V
+                limit = {
+                    owned_by = OST
+                }
+                add_core = ROOT           
+            }
+            add_adm_tech = 1
+            add_dip_tech = 1
+            add_mil_tech = 1
+        }
+        if = {
+			limit = {
+                ai = yes
+                exists = OST                    #NÂTyrXR(W
+			}
+            every_province = {						#  AIS∫N ∑ÉóV âÂTyrÑv±Ry
+                limit = {
+                    owned_by = GVI
+                }
+                add_permanent_claim = ROOT           
+            }
+        }
+	}
+}
+
+##AIS∫NVÀYTIeSbNÂTyr
+country_event = {
+	id = zaoqi_empire_events.164
+	title = "zaoqi_empire_events_title164"
+	picture = SIEGE_eventPicture
+	desc = "zaoqi_empire_events_desc164"
+	
+	#fire_only_once = yes
+	
+	trigger = {
+        tag = HNS						#=fS∫N
+        ai = yes
+        is_at_war = NO
+        exists = OST                    #XR(WNÂTyr
+        OST = { ai = yes }              #NÂTyrN=f©s∂Rµc6R
+        NOT = { truce_with = OST }      #°l	gNNÂTyrÑvjPbOSÆã
+        NOT = {OST = { vassal_of = ROOT}} #NÂTyrN=fS∫NÑvDñ∏^
+        is_neighbor_of = OST            #=fNÂTyrÑvÜò˝V
+        is_year = 374
+        is_month = 1
+        NOT = { is_year = 420 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name164"
+        OST = {
+            declare_war_with_cb = {                 #(u8ngr≤QÅzP„S±Rb
+                who = HNS
+                casus_belli = cb_tribal_feud
+            }
+        }
+	}
+}
+
+##AIS∫NVÀYTIeSbâÂTyr
+country_event = {
+	id = zaoqi_empire_events.165
+	title = "zaoqi_empire_events_title165"
+	picture = SIEGE_eventPicture
+	desc = "zaoqi_empire_events_desc165"
+	
+	#fire_only_once = yes
+	
+	trigger = {
+        tag = HNS						#=fS∫N
+        ai = yes
+        is_at_war = NO
+        exists = GVI                    #XR(WâÂTyr
+        GVI = { ai = yes }              #âÂTyrN=f©s∂Rµc6R
+        NOT = { truce_with = GVI }      #°l	gNâÂTyrÑvjPbOSÆã
+        NOT = {GVI = { vassal_of = ROOT}} #âÂTyrN=fS∫NÑvDñ∏^
+        is_neighbor_of = GVI            #=fâÂTyrÑvÜò˝V
+        is_year = 375
+        is_month = 1
+        NOT = { is_year = 420 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+		# modifiers
+	}
+	option = { # pirates get released as a march
+		name = "zaoqi_empire_events_name165"
+        every_province = {							#  AIS∫N ∑ÉóV âÂTyrÑv8h√V
+            limit = {
+                owned_by = GVI
+            }
+            add_core = ROOT           
+        }
+        GVI = {
+            declare_war_with_cb = {                 #(u8ngr≤QÅzP„S±Rb
+                who = HNS
+                casus_belli = cb_tribal_feud
+            }
+        }
+	}
+}

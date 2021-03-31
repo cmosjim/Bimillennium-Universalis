@@ -1,0 +1,3817 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = recruit_special_units
+
+
+country_event = {
+	id = recruit_special_units.999
+	title = "recruit_special_units.NAME999"
+	desc = "recruit_special_units.DESC999"
+	picture = SKILL_FAIL_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = recruit_special_units.OPTA999
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_haw_par_riding
+			clr_country_flag = tmp_recruit_special_xio_riding
+			clr_country_flag = tmp_recruit_special_xib_riding
+			clr_country_flag = tmp_recruit_special_hu_bijun
+			clr_country_flag = tmp_recruit_special_qiexueqi_riding
+			clr_country_flag = tmp_recruit_special_habayashi_riding
+			clr_country_flag = tmp_recruit_special_guanningtieqi_riding
+			clr_country_flag = tmp_recruit_special_feihu_riding
+			clr_country_flag = tmp_recruit_special_chnite
+			clr_country_flag = tmp_recruit_special_beifubing
+			clr_country_flag = tmp_recruit_special_barbarian_warrior
+			clr_country_flag = tmp_recruit_special_baiweiqi_riding
+			clr_country_flag = tmp_recruit_special_baiwei_jinbin
+			clr_country_flag = tmp_recruit_special_baierwei
+			clr_country_flag = tmp_recruit_special_xuanjia_riding
+			clr_country_flag = tmp_recruit_special_modao
+			#clr_country_flag = tmp_recruit_viking_dragon_boat
+			clr_country_flag = tmp_recruit_special_ZC_shushanjun
+			clr_country_flag = tmp_recruit_special_ZC_pishijun
+			#clr_country_flag = recruit_special_qiexueqi_bomb
+			#clr_country_flag = recruit_special_persian_elephant
+			clr_country_flag = tmp_recruit_special_ZC_england_longbowman
+			clr_country_flag = tmp_recruit_special_ZC_mamluk_cavalry
+			clr_country_flag = tmp_recruit_special_ZC_norman_cavalry
+		}			
+	}
+}
+
+#naval army special 
+country_event = {
+	id = recruit_special_units.998
+	title = "recruit_special_units.NAME998"
+	desc = "recruit_special_units.DESC998"
+	picture = SKILL_FAIL_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = recruit_special_units.OPTA999
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_viking_dragon_boat
+		}			
+	}
+}
+
+
+#id = 1 : 虎豹骑
+# base unit cost : 5 $
+country_event = {
+	id = recruit_special_units.1
+	title = "recruit_special_units.NAME1"
+	desc = "recruit_special_units.DESC1"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA1"		
+		trigger = {
+			manpower = 1
+		}		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.45
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}	
+			country_event = {
+				id = recruit_special_units.999
+			}				
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_haw_par_riding
+						amount = 1
+						speed = 1
+						cost = 10
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1					
+					country_event = {
+						id = recruit_special_units.101
+					}
+				
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_haw_par_riding }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.201
+							days = 20
+						}	
+					}	
+				}
+			}	
+		}
+	}
+	option = {
+		name = "recruit_special_units.OPTB1"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_haw_par_riding
+			# var_recruit_num = 0 
+			
+			
+			
+		}		
+	}	
+}
+
+
+country_event = {
+	id = recruit_special_units.101
+	title = "recruit_special_units.NAME101"
+	desc = "recruit_special_units.DESC101"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA101"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}	
+			country_event = {
+				id = recruit_special_units.999
+			}				
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_haw_par_riding
+						amount = 1
+						speed = 1
+						cost = 10
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1					
+					country_event = {
+						id = recruit_special_units.1
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_haw_par_riding }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.201
+							days = 20
+						}
+					}
+				}				
+			}	
+		}
+	}
+	option = {
+		name = "recruit_special_units.OPTB101"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_haw_par_riding
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.201
+	title = "recruit_special_units.NAME201"
+	desc = "recruit_special_units.DESC201"
+	picture = SKILL_FAIL_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_haw_par_riding }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_haw_par_riding"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA201
+	
+	}
+}	
+#id = 2 : 匈奴精锐游骑兵
+
+country_event = {
+	id = recruit_special_units.2
+	title = "recruit_special_units.NAME2"
+	desc = "recruit_special_units.DESC2"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA2"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_xio_riding
+						amount = 1
+						speed = 1
+						cost = 8
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1					
+					country_event = {
+						id = recruit_special_units.102
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_haw_par_riding }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.202
+							days = 20
+						}
+					}					
+				}					
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB2"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_xio_riding
+		}		
+	}	
+}
+
+
+country_event = {
+	id = recruit_special_units.102
+	title = "recruit_special_units.NAME102"
+	desc = "recruit_special_units.DESC102"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA102"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_xio_riding
+						amount = 1
+						speed = 1
+						cost = 8
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.2
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_xio_riding }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.202
+							days = 20
+						}
+					}						
+				}					
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB102"
+				ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_xio_riding
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.202
+	title = "recruit_special_units.NAME202"
+	desc = "recruit_special_units.DESC202"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_xio_riding }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_xio_riding"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA202
+	
+	}
+}
+
+########################
+#Advisor  entry  Events#
+#########################
+
+#id = 3 : 精锐鲜卑游骑兵
+
+country_event = {
+	id = recruit_special_units.3
+	title = "recruit_special_units.NAME3"
+	desc = "recruit_special_units.DESC3"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA3"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}
+		if = {
+			limit = {		
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {		
+			# buy 1 K
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_xib_riding
+						amount = 1
+						speed = 1
+						cost = 8
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.103
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_xib_riding }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.203
+							days = 20
+						}
+					}					
+				}
+			}		
+		}
+	}	
+	option = {
+		name = "recruit_special_units.OPTB3"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_xib_riding
+		}		
+	}	
+}
+
+
+country_event = {
+	id = recruit_special_units.103
+	title = "recruit_special_units.NAME103"
+	desc = "recruit_special_units.DESC103"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA103"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}
+		if = {
+			limit = {		
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {		
+			# buy 1 K
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_xib_riding
+						amount = 1
+						speed = 1
+						cost = 8
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.3
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_xib_riding }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.203
+							days = 20
+						}
+					}					
+				}
+			}		
+		}
+	}	
+	option = {
+		name = "recruit_special_units.OPTB103"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_xib_riding
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.203
+	title = "recruit_special_units.NAME203"
+	desc = "recruit_special_units.DESC203"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_xib_riding }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_xib_riding"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA203
+	
+	}
+}
+#id = 4 虎贲军
+country_event = {
+	id = recruit_special_units.4
+	title = "recruit_special_units.NAME4"
+	desc = "recruit_special_units.DESC4"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA4"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { cavalry_fraction = 0.33 }
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_hu_bijun
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.104
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_hu_bijun }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.204
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB4"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_hu_bijun
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.104
+	title = "recruit_special_units.NAME104"
+	desc = "recruit_special_units.DESC104"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA104"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { cavalry_fraction = 0.33 }
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_hu_bijun
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.4
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_hu_bijun }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.204
+							days = 20
+						}
+					}						
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB104"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_hu_bijun
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.204
+	title = "recruit_special_units.NAME204"
+	desc = "recruit_special_units.DESC204"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_hu_bijun }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_hu_bijun"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA204
+	
+	}
+}
+
+#北府军
+#id = 5
+country_event = {
+	id = recruit_special_units.5
+	title = "recruit_special_units.NAME5"
+	desc = "recruit_special_units.DESC5"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA5"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { cavalry_fraction = 0.33 }
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_beifubing
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.105
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_beifubing }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.205
+							days = 20
+						}
+					}						
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB5"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_beifubing
+		}		
+	}
+}
+
+
+#id = 5 北府军
+country_event = {
+	id = recruit_special_units.105
+	title = "recruit_special_units.NAME105"
+	desc = "recruit_special_units.DESC105"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA105"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { cavalry_fraction = 0.33 }
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_beifubing
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.5
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_beifubing }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.205
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB105"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_beifubing
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.205
+	title = "recruit_special_units.NAME205"
+	desc = "recruit_special_units.DESC205"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_beifubing }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_beifubing"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA205
+	
+	}
+}
+
+####################################################################
+#招募羽林骑
+#id = 6
+country_event = {
+	id = recruit_special_units.6
+	title = "recruit_special_units.NAME6"
+	desc = "recruit_special_units.DESC6"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA6"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_habayashi_riding
+						amount = 1
+						speed = 1
+						cost = 10
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.106
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_habayashi_riding }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.206
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB6"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_habayashi_riding
+		}		
+	}
+}
+
+
+#id = 6 招募羽林骑
+country_event = {
+	id = recruit_special_units.106
+	title = "recruit_special_units.NAME106"
+	desc = "recruit_special_units.DESC106"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA106"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_habayashi_riding
+						amount = 1
+						speed = 1
+						cost = 10
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.6
+					}
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB106"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_habayashi_riding
+		}		
+	}	
+}
+
+
+country_event = {
+	id = recruit_special_units.206
+	title = "recruit_special_units.NAME206"
+	desc = "recruit_special_units.DESC206"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_habayashi_riding }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_habayashi_riding"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA206
+	
+	}
+}
+
+####################################################################
+#招募白毦卫
+#id = 7
+country_event = {
+	id = recruit_special_units.7
+	title = "recruit_special_units.NAME7"
+	desc = "recruit_special_units.DESC7"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA7"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { cavalry_fraction = 0.33 }
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_baierwei
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.107
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_baierwei }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.207
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB7"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_baierwei
+		}		
+	}
+}
+
+
+#招募白毦卫
+country_event = {
+	id = recruit_special_units.107
+	title = "recruit_special_units.NAME107"
+	desc = "recruit_special_units.DESC107"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA107"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { cavalry_fraction = 0.33 }
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_baierwei
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.7
+					}
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB107"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_baierwei
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.207
+	title = "recruit_special_units.NAME207"
+	desc = "recruit_special_units.DESC207"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_baierwei }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_baierwei"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA207
+	
+	}
+}
+
+#############################################################
+
+country_event = {
+	id = recruit_special_units.8
+	title = "recruit_special_units.NAME8"
+	desc = "recruit_special_units.DESC8"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA8"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_xuanjia_riding
+						amount = 1
+						speed = 1
+						cost = 11
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.108
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_xuanjia_riding }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.208
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB8"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_xuanjia_riding
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.108
+	title = "recruit_special_units.NAME108"
+	desc = "recruit_special_units.DESC108"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA108"
+		trigger = {
+			NOT = { army_size_percentage = 1 }
+		}		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_xuanjia_riding
+						amount = 1
+						speed = 1
+						cost = 11
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.8
+					}
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB108"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_xuanjia_riding
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.208
+	title = "recruit_special_units.NAME208"
+	desc = "recruit_special_units.DESC208"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_xuanjia_riding }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_xuanjia_riding"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA208
+	
+	}
+}
+
+#############################################################
+#
+#############################################################
+country_event = {
+	id = recruit_special_units.9
+	title = "recruit_special_units.NAME9"
+	desc = "recruit_special_units.DESC9"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA9"
+		trigger = {
+			manpower = 1
+		}		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_baiweiqi_riding
+						amount = 1
+						speed = 1
+						cost = 11
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.109
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_baiweiqi_riding }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.209
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB9"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_baiweiqi_riding
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.109
+	title = "recruit_special_units.NAME109"
+	desc = "recruit_special_units.DESC109"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA109"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_baiweiqi_riding
+						amount = 1
+						speed = 1
+						cost = 11
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.9
+					}
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB109"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_baiweiqi_riding
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.209
+	title = "recruit_special_units.NAME209"
+	desc = "recruit_special_units.DESC209"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_baiweiqi_riding }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_baiweiqi_riding"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA209
+	
+	}
+}
+
+#############################################################
+#recruit_special_baiwei_jinbin
+#############################################################
+country_event = {
+	id = recruit_special_units.10
+	title = "recruit_special_units.NAME10"
+	desc = "recruit_special_units.DESC10"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA10"
+		trigger = {
+			manpower = 1
+		}		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { cavalry_fraction = 0.33 }
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_baiwei_jinbin
+						amount = 1
+						speed = 1
+						cost = 4.5
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.110
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_baiwei_jinbin }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.210
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB10"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_baiwei_jinbin
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.110
+	title = "recruit_special_units.NAME110"
+	desc = "recruit_special_units.DESC110"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA110"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { cavalry_fraction = 0.33 }
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_baiwei_jinbin
+						amount = 1
+						speed = 1
+						cost = 4.5
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.10
+					}
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB110"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_baiwei_jinbin
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.210
+	title = "recruit_special_units.NAME210"
+	desc = "recruit_special_units.DESC210"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_baiwei_jinbin }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_baiwei_jinbin"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA210
+	
+	}
+}
+
+#############################################################
+#招募怯薛骑 recruit_special_qiexueqi_riding
+#############################################################
+country_event = {
+	id = recruit_special_units.11
+	title = "recruit_special_units.NAME11"
+	desc = "recruit_special_units.DESC11"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA11"
+		trigger = {
+			manpower = 1
+		}		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_qiexueqi_riding
+						amount = 1
+						speed = 1
+						cost = 12
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.111
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_qiexueqi_riding }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.211
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB11"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_qiexueqi_riding
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.111
+	title = "recruit_special_units.NAME111"
+	desc = "recruit_special_units.DESC111"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA111"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_qiexueqi_riding
+						amount = 1
+						speed = 1
+						cost = 12
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.11
+					}
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB111"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_qiexueqi_riding
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.211
+	title = "recruit_special_units.NAME211"
+	desc = "recruit_special_units.DESC211"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_qiexueqi_riding }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_qiexueqi_riding"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA211
+	
+	}
+}
+
+
+#############################################################
+#招募飞虎骑 recruit_special_feihu_riding
+#############################################################
+country_event = {
+	id = recruit_special_units.12
+	title = "recruit_special_units.NAME12"
+	desc = "recruit_special_units.DESC12"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA12"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_feihu_riding
+						amount = 1
+						speed = 1
+						cost = 12
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.112
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_feihu_riding }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.212
+							days = 20
+						}
+					}						
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB12"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_feihu_riding
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.112
+	title = "recruit_special_units.NAME112"
+	desc = "recruit_special_units.DESC112"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA112"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_feihu_riding
+						amount = 1
+						speed = 1
+						cost = 12
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.12
+					}
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB112"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_feihu_riding
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.212
+	title = "recruit_special_units.NAME212"
+	desc = "recruit_special_units.DESC212"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_feihu_riding }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_feihu_riding"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA212
+	
+	}
+}
+
+
+#############################################################
+# 招募关宁铁骑 recruit_special_guanningtieqi_riding
+#############################################################
+country_event = {
+	id = recruit_special_units.13
+	title = "recruit_special_units.NAME13"
+	desc = "recruit_special_units.DESC13"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA13"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+		
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_guanningtieqi_riding
+						amount = 1
+						speed = 1
+						cost = 12
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.113
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_guanningtieqi_riding }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.213
+							days = 20
+						}
+					}					
+				}				
+			}
+		}		
+	}
+	option = {
+		name = "recruit_special_units.OPTB13"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_guanningtieqi_riding
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.113
+	title = "recruit_special_units.NAME113"
+	desc = "recruit_special_units.DESC113"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA113"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_guanningtieqi_riding
+						amount = 1
+						speed = 1
+						cost = 12
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.13
+					}
+					#every_neighbor_country = {
+					#	limit = {
+					#		NOT = { has_country_modifier = md_special_guanningtieqi_riding }
+					#		ai = no 
+					#	}	
+					#	country_event = {
+					#		id = recruit_special_units.213
+					#		days = 20
+					#	}
+					#}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB113"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_guanningtieqi_riding
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.213
+	title = "recruit_special_units.NAME213"
+	desc = "recruit_special_units.DESC213"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_guanningtieqi_riding }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_guanningtieqi_riding"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA213
+	
+	}
+}
+
+
+#############################################################
+# 招募蛮族狂战士 recruit_special_barbarian_warrior
+#############################################################
+country_event = {
+	id = recruit_special_units.14
+	title = "recruit_special_units.NAME14"
+	desc = "recruit_special_units.DESC14"
+	picture = ARMY_SOLDIER_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA14"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { cavalry_fraction = 0.33 }
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_barbarian_warrior
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.114
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_barbarian_warrior }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.214
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB14"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_barbarian_warrior
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.114
+	title = "recruit_special_units.NAME114"
+	desc = "recruit_special_units.DESC114"
+	picture = ARMY_SOLDIER_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA114"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { cavalry_fraction = 0.33 }
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_barbarian_warrior
+						amount = 1
+						speed = 1
+						cost = 4.3
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.14
+					}
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB114"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_barbarian_warrior
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.214
+	title = "recruit_special_units.NAME214"
+	desc = "recruit_special_units.DESC214"
+	picture = ARMY_SOLDIER_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_barbarian_warrior }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_barbarian_warrior"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA214
+	
+	}
+}
+
+
+#############################################################
+# 招募日耳曼精锐骑兵 recruit_special_chnite
+#############################################################
+country_event = {
+	id = recruit_special_units.15
+	title = "recruit_special_units.NAME15"
+	desc = "recruit_special_units.DESC15"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA15"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_chnite
+						amount = 1
+						speed = 1
+						cost = 10
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.115
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_chnite }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.215
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB15"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_chnite
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.115
+	title = "recruit_special_units.NAME115"
+	desc = "recruit_special_units.DESC115"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA115"
+		trigger = {
+			manpower = 1
+		}			
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				cavalry_fraction = 0.33
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_chnite
+						amount = 1
+						speed = 1
+						cost = 10
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.15
+					}
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB115"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_chnite
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.215
+	title = "recruit_special_units.NAME215"
+	desc = "recruit_special_units.DESC215"
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_chnite }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_chnite"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA215
+	
+	}
+}
+
+
+#############################################################
+#招募陌刀重兵#recruit_special_modao	
+#############################################################
+country_event = {
+	id = recruit_special_units.16
+	title = "recruit_special_units.NAME16"
+	desc = "recruit_special_units.DESC16"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA16"
+		trigger = {
+			manpower = 1
+		}	
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { cavalry_fraction = 0.33 }
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_modao
+						amount = 1
+						speed = 1
+						cost = 4.5
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.116
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_modao }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.216
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB16"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_modao
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.116
+	title = "recruit_special_units.NAME116"
+	desc = "recruit_special_units.DESC116"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA116"
+		trigger = {
+			manpower = 1
+		}		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { treasury = 60 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { cavalry_fraction = 0.33 }
+			}	
+			modifier = {
+				factor = 0
+				check_variable = {
+					which = var_recruit_num
+					value = 10
+				}	
+			}
+		}	
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = var_land_forcelimit
+						value = land_forcelimit
+					}
+					export_to_variable = {
+						variable_name = var_army_size
+						value = army_size
+					}
+					change_variable = {
+						which = var_army_size
+						which = var_recruit_num
+					}
+					check_variable = {
+						which = var_army_size
+						which = var_land_forcelimit
+					}
+				}				
+			}
+			country_event = {
+				id = recruit_special_units.999
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_modao
+						amount = 1
+						speed = 1
+						cost = 4.5
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.16
+					}
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB116"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_modao
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.216
+	title = "recruit_special_units.NAME216"
+	desc = "recruit_special_units.DESC216"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_modao }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_modao"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA216
+	
+	}
+}
+
+#############################################################
+#招募#tmp_recruit_special_primitive_transport	
+#############################################################
+country_event = {
+	id = recruit_special_units.17
+	title = "recruit_special_units.NAME17"
+	desc = "recruit_special_units.DESC17"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA17"
+		#trigger = {
+		#	sailors = 50
+		#}		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_transport = 20
+			}
+		}
+		if = {
+			limit = {
+				OR = {	
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							variable_name = var_navy_forcelimit
+							value = naval_forcelimit
+						}
+						export_to_variable = {
+							variable_name = var_navy_size
+							value = navy_size
+						}
+						change_variable = {
+							which = var_navy_size
+							which = var_recruit_num
+						}
+						check_variable = {
+							which = var_navy_size
+							which = var_navy_forcelimit
+						}
+					}
+					NOT = { sailors = 100 }
+				}
+			}		
+			country_event = {
+				id = recruit_special_units.998
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_port = yes
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_primitive_transport
+						amount = 1
+						speed = 1
+						cost = 4.5
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.117
+					}
+					every_neighbor_country = {
+						limit = {
+							NOT = { has_country_modifier = md_special_primitive_transport }
+							ai = no 
+						}	
+						country_event = {
+							id = recruit_special_units.217
+							days = 20
+						}
+					}					
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB17"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_primitive_transport
+		}		
+	}
+}
+
+country_event = {
+	id = recruit_special_units.117
+	title = "recruit_special_units.NAME117"
+	desc = "recruit_special_units.DESC117"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "recruit_special_units.OPTA117"
+		#trigger = {
+		#	NOT = { army_size_percentage = 1 }
+		#}		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				num_of_transport = 20
+			}
+		}	
+		if = {
+			limit = {
+				OR = {	
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							variable_name = var_navy_forcelimit
+							value = naval_forcelimit
+						}
+						export_to_variable = {
+							variable_name = var_navy_size
+							value = navy_size
+						}
+						change_variable = {
+							which = var_navy_size
+							which = var_recruit_num
+						}
+						check_variable = {
+							which = var_navy_size
+							which = var_navy_forcelimit
+						}
+					}
+					NOT = { sailors = 100 }
+				}
+			}
+			country_event = {
+				id = recruit_special_units.998
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_port = yes
+						has_building = special_mil_research
+					}	
+					add_unit_construction = {
+						type = special_primitive_transport
+						amount = 1
+						speed = 1
+						cost = 4.5
+					}
+				}
+				hidden_effect = {
+					change_variable = {
+						which = var_recruit_num
+						value = 1
+					}
+					add_manpower = -1
+					country_event = {
+						id = recruit_special_units.17
+					}
+				}				
+			}	
+		}			
+	}
+	option = {
+		name = "recruit_special_units.OPTB117"
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			clr_country_flag = tmp_recruit_special_primitive_transport
+		}		
+	}	
+}
+
+country_event = {
+	id = recruit_special_units.217
+	title = "recruit_special_units.NAME217"
+	desc = "recruit_special_units.DESC217"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = md_special_primitive_transport }
+	}	
+	
+	immediate = {
+		add_country_modifier = {
+			name = "md_special_primitive_transport"
+			duration = 700
+			hidden = yes
+		}		
+	}	
+	
+	option = {
+		name = recruit_special_units.OPTA217
+	
+	}
+}
+

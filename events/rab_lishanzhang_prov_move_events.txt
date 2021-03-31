@@ -1,0 +1,168 @@
+#################################
+#This sections define outoff general 
+#move to another provinces .
+#################################
+
+#id = 1 : IN˚|ﬂu-U^TgbLàÑv
+#id = 2 : NgÑUï0õQ^0€kBêÍÅPÉ 
+
+namespace = lishanzhang_prov_move_events
+
+
+province_event = {
+	id = lishanzhang_prov_move_events.1
+	title = "lishanzhang_prov_move_events.NAME1"
+	desc = "lishanzhang_prov_move_events.DESC1"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+	#¶OKmw˝NÖQ=f&T	gÂãpov_xxxx
+		has_province_modifier = pov_lishanzhang
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+			#NgÑUwïˇ1314t^ˇ1390t^7g6Âe	ˇˇ
+	option = {
+		name = "lishanzhang_prov_move_events.OPTA1"
+###########################NgÑUï0õQ^0pov_lishanzhang#################################		
+		if = {
+			limit = { has_province_modifier = pov_lishanzhang }
+			if = {
+			#≥QöR(WŒëfkSÑvˇRãTÓÙ
+				limit = { 
+					NOT = { is_year = 1390  }
+				}
+			#GPÇYÂã˝V∂RÑvTãsyr(ç&rT
+			#1S€kBêÍÅPÉ	
+				if = { 
+					limit = {
+						owner = { 
+							NOT = {
+								OR = {
+									tag = JAP 
+									tag = FRA
+								}
+							} 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = rb_ch4
+						has_ruler_modifier = rb_ch6
+						has_ruler_modifier = rb_ch8					
+								}
+							}
+						}
+			
+					remove_province_modifier = pov_lishanzhang
+					owner = {
+						country_event = {
+							id = lishanzhang_prov_move_events.2
+						}
+					}
+				}
+					#GPÇYÂã˝V∂RÑvTãsyr(çN&rT1S0Rªê—èÑvwR						
+				if = { 
+					limit = { 
+						owner = {
+							NOT = {
+								OR = {
+									tag = JAP 
+									tag = FRA
+								}
+							} 
+							NOT = { 
+								OR = {
+						has_ruler_modifier = ra_ch1
+						has_ruler_modifier = ra_ch2
+						has_ruler_modifier = ra_ch6
+						has_ruler_modifier = ra_ch7
+						has_ruler_modifier = rb_ch4
+						has_ruler_modifier = rb_ch6
+						has_ruler_modifier = rb_ch8		
+								}
+							}
+						}		
+					}
+					remove_province_modifier = pov_lishanzhang
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_lishanzhang"
+							duration = -1
+						}					
+					}
+				}
+				if = { 
+					limit = { 
+						owner = {
+							OR = {
+								tag = JAP 
+								tag = FRA
+							}
+						} 
+					}
+					remove_province_modifier = pov_lishanzhang
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_lishanzhang"
+							duration = -1
+						}					
+					}								
+				}
+			}	
+			if = {
+			#ÇYúgt^˝NÖç«èdkPñˇ(WŒëfkSªyN
+				limit = { 
+					is_year = 1390 
+				}	
+				remove_province_modifier = pov_lishanzhang		
+			}
+		}
+	}
+}
+	
+############################################################################
+#	NgÑUï0õQ^0€kBêÍÅPÉ
+#
+############################################################################
+
+
+country_event = {
+	id = lishanzhang_prov_move_events.2
+	title = "lishanzhang_prov_move_events.NAME2"
+	desc = "lishanzhang_prov_move_events.DESC2"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "lishanzhang_prov_move_events.OPTA2"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = lishanzhang
+					name = "NgÑUï0õQ^0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+				define_general = {
+				name = "NgÑUï0õQ^0"
+				fire = 7
+				shock = 7
+				manuever = 5
+				siege = 5
+			}
+		}
+	}
+}

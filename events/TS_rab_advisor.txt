@@ -1,0 +1,3194 @@
+########################
+#Advisor  entry  Events#
+#########################
+#2019.1.1 fit to 1.28
+#2019-1-14 øäteÌsÖçÑv˙Q˛sBfìïﬁû/Sfaction add fluence jO(uäãbÍÅ∂RÑvmj6R
+#2019-11-27 no faction any more
+namespace = Advisor_come
+
+##ma_loan
+country_event = {
+	id = Advisor_come.1
+	title = "Advisor_come.1.t"
+	desc = "Advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		owns = 689
+		is_year = 99
+		NOT = { is_year = 166 }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name = Advisor_come.a
+		
+		define_advisor = {
+				type = ma_loan
+				name = "löçá0áeòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+	option = {
+		name = Advisor_come.b
+			define_advisor = {
+				type = ma_loan
+				name = "löçá0áeòR0"
+				discount = yes
+				skill = 3
+			
+		}
+	}
+}
+
+country_event = {
+	id = Advisor_come.2
+	title = "Advisor_come.2.t"
+	desc = "Advisor_come.2.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		owns = 671
+		is_year = 83
+		NOT = { is_year = 121 }
+	}
+	
+	mean_time_to_happen = {
+		days = 35
+	}
+	option = {
+		name = Advisor_come.a
+
+		define_advisor = {
+				type = cai_lun
+				name = "!Ö&O0¶RòR0"
+				discount = yes	
+				skill = 3
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = cai_lun
+				name = "!Ö&O0¶RòR0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+}
+
+country_event = {
+	id = Advisor_come.3
+	title = "Advisor_come.3.t"
+	desc = "Advisor_come.3.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+	
+	
+	trigger = {
+		owns = 663
+		is_year = 29
+		NOT = { is_year = 69 }
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	option = {
+		name = Advisor_come.a
+		
+		define_advisor = {
+				type = deng_rang
+				name = "ìê©ã0fkS0"
+				skill = 3
+				discount = yes
+				
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = deng_rang
+				name = "ìê©ã0fkS0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.4
+	title = "Advisor_come.4.t"
+	desc = "Advisor_come.4.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 673
+		is_year = 33
+		NOT = { is_year = 77 }
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+	option = {
+		name = Advisor_come.a
+	
+		define_advisor = {
+				type = jiang_shi
+				name = "‹Y◊ã0¶RòR0"
+				skill = 3
+				discount = yes
+				
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = jiang_shi
+				name = "‹Y◊ã0¶RòR0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+
+country_event = {
+	id = Advisor_come.5
+	title = "Advisor_come.5.t"
+	desc = "Advisor_come.5.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 673
+		is_year = 44
+		NOT = { is_year = 87 }
+	}
+	
+	mean_time_to_happen = {
+		days = 50
+	}
+	option = {
+		name = Advisor_come.a
+	
+		define_advisor = {
+				type = jiang_ge
+				name = "mlió0áeòR0"
+				skill = 3
+				discount = yes
+				
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = jiang_ge
+				name = "mlió0áeòR0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.6
+	title = "Advisor_come.6.t"
+	desc = "Advisor_come.6.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 687
+		is_year = 44
+		NOT = { is_year = 87 }
+	}
+	
+	mean_time_to_happen = {
+		days = 75
+	}
+	option = {
+		name = Advisor_come.a
+		
+		define_advisor = {
+				type = liu_xin
+				name = "R·O0fkS0"
+				skill = 3
+				discount = yes
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = liu_xin
+				name = "R·O0fkS0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+
+country_event = {
+	id = Advisor_come.7
+	title = "Advisor_come.7.t"
+	desc = "Advisor_come.7.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 688
+		is_year = 158
+		NOT = { is_year = 176 }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = Advisor_come.a
+	
+		define_advisor = {
+				type = chou_lan
+				name = "«N»â0áeòR0"
+				skill = 3
+				discount = yes
+				
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = chou_lan
+				name = "«N»â0áeòR0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.8
+	title = "Advisor_come.8.t"
+	desc = "Advisor_come.8.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 681
+		is_year = 111
+		NOT = { is_year = 172 }
+	}
+	
+	mean_time_to_happen = {
+		days = 90
+	}
+	option = {
+		name = Advisor_come.a
+	
+		define_advisor = {
+				type = hu_guang
+				name = "·w^0áeòR0"
+				skill = 3
+				discount = yes
+				
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = hu_guang
+				name = "·w^0áeòR0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.9
+	title = "Advisor_come.9.t"
+	desc = "Advisor_come.9.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 687
+		is_year = 155
+		NOT = { is_year = 189 }
+	}
+	
+	mean_time_to_happen = {
+		days = 80
+	}
+	option = {
+		name = Advisor_come.a
+	
+		define_advisor = {
+				type = zhang_rang
+				name = ".V©ã0¶RòR0"
+				skill = 3
+				discount = yes
+				
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = zhang_rang
+				name = ".V©ã0¶RòR0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+
+country_event = {
+	id = Advisor_come.10
+	title = "Advisor_come.10.t"
+	desc = "Advisor_come.10.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 2492
+		is_year = 68
+		NOT = { is_year = 114 }
+	}
+	
+	mean_time_to_happen = {
+		days = 6
+	}
+	option = {
+		name = Advisor_come.a
+	
+		define_advisor = {
+				type = zhen_chong
+				name = "—êO0¶RòR0"
+				skill = 3
+				discount = yes
+				
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = zhen_chong
+				name = "—êO0¶RòR0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.11
+	title = "Advisor_come.11.t"
+	desc = "Advisor_come.11.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 2508
+		is_year = 124
+		NOT = { is_year = 174 }
+	}
+	
+	mean_time_to_happen = {
+		days = 95
+	}
+	option = {
+		name = Advisor_come.a
+	
+		define_advisor = {
+				type = huang_fu_gui
+				name = "áv+uƒâ0fkS0"
+				skill = 3
+				discount = yes
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = huang_fu_gui
+				name = "áv+uƒâ0fkS0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.12
+	title = "Advisor_come.12.t"
+	desc = "Advisor_come.12.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 2494
+		is_year = 120
+		NOT = { is_year = 159 }
+	}
+	
+	mean_time_to_happen = {
+		days = 65
+	}
+	option = {
+		name = Advisor_come.a
+	
+		define_advisor = {
+				type = cao_teng
+				name = "˘fåÅ0¶RòR0"
+				skill = 3
+				discount = yes
+				
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = cao_teng
+				name = "˘fåÅ0¶RòR0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.14
+	title = "Advisor_come.14.t"
+	desc = "Advisor_come.14.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		tag = HND
+		is_year = 52
+		NOT = { is_year = 92 }
+	}
+	
+	mean_time_to_happen = {
+		days = 67
+	}
+	option = {
+		name = Advisor_come.a
+	
+		define_advisor = {
+				type = dou_xian
+				name = "¶z™R0Yb0"
+				skill = 3
+				discount = yes
+				
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = dou_xian
+				name = "¶z™R0Yb0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+##talking about the doz not be took care
+#country_event = {
+#	id = Advisor_come.15
+#	title = "Advisor_come.15.t"
+#	desc = "Advisor_come.15.d"
+#	picture = NEW_ADVISOR_dou_zhi_eventPicture
+#		
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = HND
+#		is_year = 160
+#		NOT = { is_year = 162 }
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 2
+#	}
+#
+#	option = {
+#		name = Advisor_come.15a
+#		#define_consort = {
+#		#	name = "¶zôY0Yb0"
+#		#		adm = 4
+#		#		dip = 4
+#		#		mil = 3
+#		#	female = yes
+#		#}
+#	}
+#}	
+
+
+country_event = {
+	id = Advisor_come.16
+	title = "Advisor_come.16.t"
+	desc = "Advisor_come.16.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 2492
+		is_year = 102
+		NOT = { is_year = 160 }
+	}
+	
+	mean_time_to_happen = {
+		days = 79
+	}
+	option = {
+		name = Advisor_come.a
+		
+		define_advisor = {
+				type = dan_chao
+				name = "USÖç0¶RòR0"
+				skill = 3
+				discount = yes
+				
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = dan_chao
+				name = "USÖç0¶RòR0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.17
+	title = "Advisor_come.17.t"
+	desc = "Advisor_come.17.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 688
+		is_year = 153
+		NOT = { is_year = 189 }
+	}
+	
+	mean_time_to_happen = {
+		days = 92
+	}
+	option = {
+		name = Advisor_come.a
+		
+		define_advisor = {
+				type = cai_yong
+				name = "!Öïê0áeòR0"
+				skill = 3
+				discount = yes
+				
+		}
+	
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.18
+	title = "Advisor_come.18.t"
+	desc = "Advisor_come.18.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 700
+		is_year = 50
+		NOT = { is_year = 91 }
+	}
+	
+	mean_time_to_happen = {
+		days = 105
+	}
+	option = {
+		name = Advisor_come.a
+		
+		define_advisor = {
+				type = geng_bing
+				name = "?w…y0fkS0"
+				skill = 3
+				discount = yes
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = geng_bing
+				name = "?w…y0fkS0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+
+country_event = {
+	id = Advisor_come.19
+	title = "Advisor_come.19.t"
+	desc = "Advisor_come.19.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 2492
+		is_year = 65
+		NOT = { is_year = 105 }
+	}
+	
+	mean_time_to_happen = {
+		days = 92
+	}
+	option = {
+		name = Advisor_come.a
+		
+		define_advisor = {
+				type = he_chang
+				name = "UO^e0áeòR0"
+				skill = 3
+				discount = yes
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = he_chang
+				name = "UO^e0áeòR0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.20
+	title = "Advisor_come.20.t"
+	desc = "Advisor_come.20.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 2490
+		is_year = 29
+		NOT = { is_year = 55 }
+	}
+	
+	mean_time_to_happen = {
+		days = 33
+	}
+	option = {
+		name = Advisor_come.a
+		
+		define_advisor = {
+				type = jia_fu
+				name = ">çY0fkS0"
+				skill = 3
+				discount = yes
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = jia_fu
+				name = ">çY0fkS0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.21
+	title = "Advisor_come.21.t"
+	desc = "Advisor_come.21.d"
+	picture = BAN_CHAO_ADVISOR_eventPicture
+		
+	is_triggered_only = yes	
+
+	option = {
+		name = Advisor_come.OPTA21
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+					type = ban_chao
+					name = "ÌsÖç0fkS0"
+					discount = yes	
+					skill = 3
+					
+			}
+		}
+		if = { 
+			limit = { ai = yes }		
+			define_general = {
+			name = "ÌsÖç0fkS0"
+			fire = 7
+			shock = 7
+			manuever = 8
+			siege = 10
+			}
+		}
+		if = {
+			limit = { 
+				XI3 = {
+					has_ruler = "ÌsÖç"
+				}
+			}
+			XI3 = {
+				kill_ruler = yes
+			}	
+		}	
+	}
+}
+
+country_event = {
+	id = Advisor_come.22
+	title = "Advisor_come.22.t"
+	desc = "Advisor_come.22.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 700
+		is_year = 75
+		NOT = { is_year = 117 }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = Advisor_come.a
+		
+		define_advisor = {
+				type = ban_zho
+				name = "Ìs-f0áeòR0"
+				skill = 3
+				discount = yes
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = ban_zho
+				name = "Ìs-f0áeòR0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.23
+	title = "Advisor_come.23.t"
+	desc = "Advisor_come.23.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 2493
+		is_year = 87
+		NOT = { is_year = 137 }
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+	option = {
+		name = Advisor_come.a
+	
+		define_advisor = {
+				type = yu_xu
+				name = "^ÜÈã0fkS0"
+				skill = 3
+				discount = yes
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = yu_xu
+				name = "^ÜÈã0fkS0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.24
+	title = "Advisor_come.24.t"
+	desc = "Advisor_come.24.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 2490
+		is_year = 98
+		NOT = { is_year = 139 }
+	}
+	
+	mean_time_to_happen = {
+		days = 28
+	}
+	option = {
+		name = Advisor_come.a
+	
+		define_advisor = {
+				type = zhang_heng
+				name = ".Vaà0áeòR0"
+				skill = 3
+				discount = yes
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = zhang_heng
+				name = ".Vaà0áeòR0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.25
+	title = "Advisor_come.25.t"
+	desc = "Advisor_come.25.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 680
+		is_year = 159
+		NOT = { is_year = 188 }
+		NOT = { exists = LOE }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = Advisor_come.a
+		
+		define_advisor = {
+				type = liu_yan
+				name = "R	q0fkS0"
+				skill = 3
+				discount = yes
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = liu_yan
+				name = "R	q0fkS0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.26
+	title = "Advisor_come.26.t"
+	desc = "Advisor_come.26.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 2490
+		is_year = 82
+		NOT = { is_year = 121 }
+	}
+	
+	mean_time_to_happen = {
+		days = 67
+	}
+	option = {
+		name = Advisor_come.a
+		
+		define_advisor = {
+				type = deng_zhi
+				name = "ìêòö0Yb0"
+				skill = 3
+				discount = yes
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = deng_zhi
+				name = "ìêòö0Yb0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+
+country_event = {
+	id = Advisor_come.27
+	title = "Advisor_come.27.t"
+	desc = "Advisor_come.27.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 2490
+		is_year = 52
+		NOT = { is_year = 92 }
+	}
+	
+	mean_time_to_happen = {
+		days = 73
+	}
+	option = {
+		name = Advisor_come.a
+		
+		define_advisor = {
+				type = deng_xun
+				name = "ìê≠ã0Yb0"
+				discount = yes
+				skill = 3
+				
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = deng_xun
+				name = "ìê≠ã0Yb0"
+				discount = yes
+				skill = 3
+				
+		}
+		
+	}
+	
+}
+
+
+country_event = {
+	id = Advisor_come.28
+	title = "Advisor_come.28.t"
+	desc = "Advisor_come.28.d"
+	picture = NEW_ADVISOR_deng_sui_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 2490
+		is_year = 95
+		NOT = { is_year = 121 }
+	}
+	
+	mean_time_to_happen = {
+		days = 102
+	}
+	option = {
+		name = Advisor_come.c
+	
+		define_advisor = {
+				type = deng_sui
+				name = "ìêÂu0Yb0"
+				skill = 3
+				discount = yes
+		}
+	
+	}
+	option = {
+		name = Advisor_come.d
+		
+			define_advisor = {
+				type = deng_sui
+				name = "ìêÂu0Yb0"
+				skill = 3
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.29
+	title = "Advisor_come.29.t"
+	desc = "Advisor_come.29.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		tag = HND
+		is_year = 146
+		NOT = { is_year = 170 }
+	}
+	
+	mean_time_to_happen = {
+		days = 22
+	}
+	option = {
+		name = Advisor_come.a
+		
+		define_advisor = {
+				type = wang_fu
+				name = "ãs+u0¶RòR0"
+				skill = 3
+				discount = yes
+		}
+	set_country_flag = wang_fu_come
+	}
+	option = {
+		name = Advisor_come.b
+		
+			define_advisor = {
+				type = wang_fu
+				name = "ãs+u0¶RòR0"
+				skill = 3
+				discount = yes
+		}
+	set_country_flag = wang_fu_come	
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.31
+	title = "Advisor_come.31.t"
+	desc = "Advisor_come.31.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 2507
+		is_year = 154
+		NOT = { is_year = 195 }
+	}
+	
+	mean_time_to_happen = {
+		days = 88
+	}
+	option = {
+		name = Advisor_come.a
+		if = {
+		limit = { ai = yes }
+			define_general = {
+			name = "áv+uiT0fkS0"
+			fire = 7
+			shock = 6
+			manuever = 4
+			siege = 6
+			}
+		}
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+					type = huang_fu_song
+					name = "áv+uiT0fkS0"
+					skill = 3
+					discount = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = Advisor_come.32
+	title = "Advisor_come.32.t"
+	desc = "Advisor_come.32.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		tag = HND
+		is_year = 154
+		NOT = { is_year = 191 }
+	}
+	
+	mean_time_to_happen = {
+		days = 113
+	}
+	option = {
+		name = Advisor_come.a
+		if = {
+		limit = { ai = yes }
+			define_general = {
+			name = "1g O0fkS0"
+			fire = 4
+			shock = 5
+			manuever = 4
+			siege = 3
+			}
+		}		
+		if = { 
+		limit = { ai = no }
+		define_advisor = {
+				type = zhu_jun
+				name = "1g O0fkS0"
+				skill = 3
+				discount = yes
+		}
+		}
+	}
+		
+}
+
+country_event = {
+	id = Advisor_come.33
+	title = "Advisor_come.33.t"
+	desc = "Advisor_come.33.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 720
+		is_year = 170
+		NOT = { is_year = 190 }
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+	option = {
+		name = Advisor_come.a
+	
+		define_advisor = {
+				type = u_fu_ro
+				name = "éN+YW0fkS0"
+				skill = 2
+				location = 720
+				discount = yes
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+		define_advisor = {
+				type = u_fu_ro
+				name = "éN+YW0fkS0"
+				skill = 2
+				location = 720
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.34
+	title = "Advisor_come.34.t"
+	desc = "Advisor_come.34.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 2890
+		is_year = 20
+		NOT = { is_year = 47 }
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+	option = {
+		name = Advisor_come.a
+	
+		define_advisor = {
+				type = pu_nu
+				name = "≤ÑtY0fkS0"
+				skill = 2
+				location = 2890
+				discount = yes
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+		define_advisor = {
+				type = pu_nu
+				name = "≤ÑtY0fkS0"
+				skill = 2
+				location = 2890
+				discount = yes
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = Advisor_come.35
+	title = "Advisor_come.35.t"
+	desc = "Advisor_come.35.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		owns = 2890
+		is_year = 85
+		NOT = { is_year = 93 }
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+	option = {
+		name = Advisor_come.a
+		
+		define_advisor = {
+				type = fon_ho
+				name = "0êØO0fkS0"
+				skill = 1
+				location = 2890
+				discount = yes
+		}
+	
+	}
+	option = {
+		name = Advisor_come.b
+		
+		define_advisor = {
+				type = fon_ho
+				name = "0êØO0fkS0"
+				skill = 1
+				location = 2890
+				discount = yes
+		}
+		
+	}
+}	
+	country_event = {
+		id = Advisor_come.37
+		title = "Advisor_come.37.t"
+		desc = "Advisor_come.37.d"
+		picture = NEW_ADVISOR_eventPicture
+			hidden = yes
+			fire_only_once = yes
+		
+		trigger = {
+			tag = HND
+			is_year = 146
+			NOT = { is_year = 170 }
+		}
+		
+		mean_time_to_happen = {
+			days = 25
+		}
+		option = {
+			name = Advisor_come.a
+			define_advisor = {
+					type = chen_fan
+					name = "HñCÖ0áeòR0"
+					skill = 3
+					discount = yes
+			}
+		set_country_flag = chen_fan_come
+		}
+		option = {
+			name = Advisor_come.b
+			
+			define_advisor = {
+					type = chen_fan
+					name = "HñCÖ0áeòR0"
+					skill = 3
+					discount = yes
+			}
+		set_country_flag = chen_fan_come	
+		}
+	}
+
+country_event = {
+	id = Advisor_come.38
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		tag = XIB
+		is_year = 38
+		NOT = { is_year = 46 }
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	option = {
+		name = Advisor_come.a
+		define_advisor = {
+				type = pen_ho
+				name = "OPUO0fkS0"
+				discount = yes	
+				skill = 1
+				
+		}
+		
+	}
+}
+#.VùR-player
+country_event = {
+	id = Advisor_come.39
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 180
+		NOT = { is_year = 200 }
+		tag = WHG
+		ai = no
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	option = {
+		name = Advisor_come.a
+		define_advisor = {
+				type = zhang_bao
+				name = ".VùR0fkS0"
+				discount = yes	
+				skill = 3
+				
+		}
+		
+	}
+}
+
+#.VùR-AI
+country_event = {
+	id = Advisor_come.40
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 180
+		NOT = { is_year = 200 }	
+		tag = WHG
+		 ai = yes 
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	option = {
+		name = Advisor_come.a
+				define_general = {
+					name = ".VùR0fkS0"
+					
+					fire = 3
+					shock = 4
+					manuever = 3
+					siege = 2
+				}
+		
+	}
+
+	
+}
+
+#.VÅh0fkS0-player
+country_event = {
+	id = Advisor_come.41
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 180
+		NOT = { is_year = 200 }	
+		tag = WHG
+		NOT = { ai = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	option = {
+		name = Advisor_come.a
+		define_advisor = {
+				type = zhang_lian
+				name = ".VÅh0fkS0"
+				discount = yes	
+				skill = 3
+				
+		}
+		
+	}
+
+	
+}
+
+#.VÅh0fkS0-AI
+country_event = {
+	id = Advisor_come.42
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 180
+		NOT = { is_year = 200 }	
+		tag = WHG
+		 ai = yes 
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	option = {
+		name = Advisor_come.a
+				define_general = {
+					name = ".VÅh0fkS0"
+					
+					fire = 4
+					shock = 4
+					manuever = 3
+					siege = 3
+				}
+		
+	}
+
+}
+
+#löCQIN0fkS0
+country_event = {
+	id = Advisor_come.43
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 180
+		NOT = { is_year = 200 }		
+		tag = WHG
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+					type = zhang_man_cheng
+					name = "löCQIN0fkS0"
+					discount = yes	
+					skill = 3
+					
+			}
+		}
+		if = { 
+			limit = { ai = yes }		
+			define_general = {
+			name = "löCQIN0fkS0"
+			fire = 4
+			shock = 6
+			manuever = 4
+			siege = 2
+			}
+		}		
+	}
+}
+
+#.V¸fb0fkS0
+country_event = {
+	id = Advisor_come.44
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 180
+		NOT = { is_year = 200 }			
+		tag = WHG
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+					type = zhang_man_cheng
+					name = ".V¸fb0fkS0"
+					discount = yes	
+					skill = 3
+					
+			}
+		}
+		if = { 
+			limit = { ai = yes }		
+			define_general = {
+			name = ".V¸fb0fkS0"
+			fire = 4
+			shock = 4
+			manuever = 2
+			siege = 2
+			}
+		}		
+	}
+}
+
+#°r•N0fkS0
+country_event = {
+	id = Advisor_come.45
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 180
+		NOT = { is_year = 200 }		
+		tag = WHG
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	option = {
+		name = Advisor_come.a
+		define_advisor = {
+				type = guan_hai
+				name = "°r•N0fkS0"
+				discount = yes	
+				skill = 3
+				
+		}
+		
+	}
+
+}
+
+#YØOn0fkS0
+country_event = {
+	id = Advisor_come.46
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 180
+		NOT = { is_year = 216 }
+		OR = {
+			tag = WEI
+			tag = TS2
+		}	
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+					type = xia_hou_yuan
+					name = "YØOn0fkS0"
+					discount = yes	
+					skill = 3
+					
+			}
+		}
+		if = { 
+			limit = { ai = yes }		
+			define_general = {
+			name = "YØOn0fkS0"
+			fire = 4
+			shock = 6
+			manuever = 4
+			siege = 2
+			}
+		}		
+	}
+
+}
+#YØO«`0fkS0
+country_event = {
+	id = Advisor_come.47
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 180
+		NOT = { is_year = 216 }
+			OR = {
+				tag = WEI
+				tag = TS2
+			}	
+	}
+	
+	mean_time_to_happen = {
+		days = 25
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+						type = xia_hou_dun
+						name = "YØO«`0fkS0"
+						discount = yes	
+						skill = 3
+				
+				}
+		}
+		if = { 
+			limit = { ai = yes }		
+			define_general = {
+			name = "YØO«`0fkS0"
+			fire = 6
+			shock = 5
+			manuever = 4
+			siege = 4
+			}
+		}
+	}
+
+}
+
+#sQÀ0fkS0
+country_event = {
+	id = Advisor_come.48
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 190
+		NOT = { is_year = 220 }
+		OR = {
+			tag = LUP
+			tag = SHU
+		}	
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = { 
+			limit = { ai = no } 
+		
+			define_advisor = {
+				type = guan_yu
+				name = "sQÀ0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+			limit = { ai = yes } 		
+			define_general = {
+			name = "sQÀ0fkS0"
+			fire = 9
+			shock = 9
+			manuever = 7
+			siege = 5
+			}
+		}		
+	}
+}
+
+#.Vﬁò0fkS0
+country_event = {
+	id = Advisor_come.49
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 190
+		NOT = { is_year = 220 }
+		OR = {
+			tag = LUP
+			tag = SHU
+		}	
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	option = {
+		name = Advisor_come.a
+			if = { 
+			limit = { ai = no } 	
+					define_advisor = {
+							type = zhang_fei
+							name = ".Vﬁò0fkS0"
+							discount = yes	
+							skill = 1
+				
+					}
+			}
+			if = { 
+			limit = { ai = yes }
+			
+				define_general = {
+				name = ".Vﬁò0fkS0"
+				fire = 10
+				shock = 10
+				manuever = 3
+				siege = 2
+				}		
+			}
+	}
+}
+
+#ÿözò0fkS0
+country_event = {
+	id = Advisor_come.50
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 181
+		NOT = { is_year = 196 }	
+		tag = LB1
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = {
+		limit = { ai = no }
+			define_advisor = {
+					type = gao_shun
+					name = "ÿözò0fkS0"
+					discount = yes	
+					skill = 3
+			}
+		}
+		if = {
+		limit = { ai = yes }
+			define_general = {
+			name = "ÿözò0fkS0"
+			fire = 4
+			shock = 8
+			manuever = 8
+			siege = 6
+			}
+		}		
+	}
+}
+
+#löÖç0fkS0
+country_event = {
+	id = Advisor_come.51
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 195
+		NOT = { is_year = 222 }		
+		tag = MTN
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = {
+		limit = { ai = no }
+			define_advisor = {
+					type = ma_chao
+					name = "löÖç0fkS0"
+					discount = yes	
+					skill = 3
+			}
+		}
+		if = {
+		limit = { ai = yes }
+			define_general = {
+			name = "löÖç0fkS0"
+			fire = 8
+			shock = 9
+			manuever = 5
+			siege = 2
+			}
+		}			
+	}
+}
+
+#YRåN0áeòR0
+country_event = {
+	id = Advisor_come.52
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 190
+		NOT = { is_year = 210 }
+		OR = {
+			tag = LUP
+			tag = SHU
+		}	
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	option = {
+		name = Advisor_come.a
+		define_advisor = {
+				type = sun_qian
+				name = "YRåN0áeòR0"
+				discount = yes	
+				skill = 3
+				
+		}
+		
+	}
+
+}
+
+#hTjt0fkS0
+country_event = {
+	id = Advisor_come.53
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+	OR = {
+		tag = SNJ
+		tag = SNC
+		tag = WUU
+		}
+	is_year = 197
+	NOT = { is_year = 210 }
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = {
+		limit = { ai = no }
+		define_advisor = {
+				type = zhou_yu
+				name = "hTjt0õQ^0"
+				discount = yes	
+				skill = 3
+				
+		}
+		}
+		if = {
+		limit = { ai = yes }
+			define_general = {
+			name = "hTjt0õQ^0"
+			fire = 6
+			shock = 6
+			manuever = 8
+			siege = 6
+			}
+		}		
+	}
+
+}
+
+#znf0fkS0
+country_event = {
+	id = Advisor_come.54
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+	is_year = 190
+	NOT = { is_year = 220 }	
+	OR = {
+		tag = SNJ
+		tag = SNC
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = {
+		limit = { ai = no }
+			define_advisor = {
+					type = cheng_pu
+					name = "znf0fkS0"
+					discount = yes	
+					skill = 3
+			}
+		}
+		if = {
+		limit = { ai = yes }
+			define_general = {
+			name = "znf0fkS0"
+			fire = 4
+			shock = 6
+			manuever = 3
+			siege = 3
+			}
+		}		
+	}
+}
+
+
+#úòoÇ0fkS0
+country_event = {
+	id = Advisor_come.55
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 180
+		NOT = { is_year = 199 }
+		tag = UAN
+	}
+	
+	mean_time_to_happen = {
+
+		days = 2
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = {
+		limit = { ai = no }
+			define_advisor = {
+					type = yan_liang
+					name = "úòoÇ0fkS0"
+					discount = yes	
+					skill = 3
+			}
+		}
+		if = {
+		limit = { ai = yes }
+			define_general = {
+			name = "úòoÇ0fkS0"
+			fire = 7
+			shock = 7
+			manuever = 2
+			siege = 4
+			}
+		}
+		
+	}
+
+}
+
+#áeN0fkS0
+country_event = {
+	id = Advisor_come.56
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		tag = UAN
+		is_year = 180
+		NOT = { is_year = 210 }		
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = {
+		limit = { ai = no }
+		define_advisor = {
+				type = wen_chou
+				name = "áeN0fkS0"
+				discount = yes	
+				skill = 3
+				
+		}
+		}
+		if = {
+		limit = { ai = yes }
+			define_general = {
+			name = "áeN0fkS0"
+			fire = 7
+			shock = 7
+			manuever = 2
+			siege = 3
+			}
+		}		
+	}
+}
+
+#NÉb0õQ^0
+country_event = {
+	id = Advisor_come.57
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 183
+		NOT = { is_year = 205 }		
+		tag = TS2
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	option = {
+		name = Advisor_come.a
+		define_advisor = {
+				type = xun_yu
+				name = "NÉb0õQ^0"
+				discount = yes	
+				skill = 3
+				
+		}
+
+	}
+}
+
+#T^0fkS0
+country_event = {
+	id = Advisor_come.58
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		exists = TGG
+		tag = TGG
+		is_year = 183
+		NOT = { is_year = 199 }				
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = lu_bu
+				name = "T^0fkS0"
+				discount = yes	
+				skill = 3
+					
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "T^0fkS0"
+				fire = 10
+				shock = 11
+				manuever = 8
+				siege = 4
+			}
+		}		
+	}
+}
+
+#>çÈã0õQ^0
+country_event = {
+	id = Advisor_come.59
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 191
+		NOT = { is_year = 210 }
+		owns = 700
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = Advisor_come.a
+		define_advisor = {
+				type = jia_xu
+				name = ">çÈã0õQ^0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+#NgQ0õQ^0
+country_event = {
+	id = Advisor_come.60
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		is_year = 184
+		NOT = { is_year = 192 }
+		tag = TGG
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+		
+			define_advisor = {
+					type = li_lu
+					name = "NgQ0õQ^0"
+					discount = yes	
+					skill = 3
+					
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+		
+			define_general = {
+			name = "NgQ0õQ^0"
+			fire = 2
+			shock = 1
+			manuever = 2
+			siege = 3
+			}
+		}	
+	}
+}
+
+#z1f0õQ^0
+country_event = {
+	id = Advisor_come.61
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+	
+		is_year = 184
+		NOT = { is_year = 210 }
+		OR = {
+			AND = {
+				exists = TS2
+				NOT = { exists = HND }
+				tag = TS2
+			}
+			AND = {
+				exists = HND
+				NOT = { exists = TS2 }
+				tag = HND
+			}	
+			AND = {
+				NOT = { exists = HND }
+				NOT = { exists = TS2 }
+				owns = 2499
+			}
+			AND = {
+				exists = HND
+				exists = TS2
+				tag = TS2
+			}
+				tag = WEI
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = cheng_yu
+				name = "z1f0õQ^0"
+				discount = yes	
+				skill = 3
+					
+			}		
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+			name = "z1f0õQ^0"
+			fire = 2
+			shock = 2
+			manuever = 2
+			siege = 3
+			}		
+		}
+	}
+}
+
+#.VÀR0fkS0
+country_event = {
+	id = Advisor_come.62
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+	
+		is_year = 184
+		NOT = { is_year = 210 }
+		OR = {
+			AND = {
+				exists = UAZ
+				NOT = { exists = HND }
+				tag = UAZ
+			}
+			AND = {
+				exists = HND
+				NOT = { exists = UAZ }
+				tag = HND
+			}	
+			AND = {
+				NOT = { exists = HND }
+				NOT = { exists = UAZ }
+				owns = 686
+			}
+			AND = {
+				exists = HND
+				exists = UAZ
+				tag = UAZ
+			}
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = {
+		limit = { ai = no }
+		
+			define_advisor = {
+					type = zhang_xun
+					name = ".VÀR0fkS0"
+					discount = yes	
+					skill = 3
+					
+			}
+		}
+		
+		if = {
+		limit = { ai = yes }
+		
+			define_general = {
+			name = ".VÀR0fkS0"
+			fire = 5
+			shock = 4
+			manuever = 3
+			siege = 3
+			}
+		}
+	}
+}
+
+#ÇåIá0õQ^0
+country_event = {
+	id = Advisor_come.63
+	title = "Advisor_come.38.t"
+	desc = "Advisor_come.38.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		exists = TGG
+		tag = TGG
+		is_year = 183
+		NOT = { is_year = 199 }		
+	}
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	option = {
+		name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = diao_chan
+				name = "ÇåIá0õQ^0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				female = yes
+				name = "ÇåIá0õQ^0"
+				fire = 5
+				shock = 5
+				manuever = 5
+				siege = 5
+			}
+		}			
+	}
+}
+
+#ãsAQ0áeòR0
+country_event = {
+	id = Advisor_come.64
+	title = "Advisor_come.22.t"
+	desc = "Advisor_come.22.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+	
+		is_year = 176
+		NOT = { is_year = 190 }
+		OR = {
+			AND = {
+				exists = HND
+				NOT = { exists = TGG }
+				tag = HND
+			}
+			AND = {
+				exists = TGG
+				NOT = { exists = HND }
+				tag = TGG
+			}	
+			AND = {
+				NOT = { exists = TGG }
+				NOT = { exists = HND }
+				owns = 700
+			}
+			AND = {
+				exists = TGG
+				exists = HND
+				tag = HND
+			}
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 22
+	}
+	option = {
+		name = Advisor_come.a
+		define_advisor = {
+				type = wang_uan
+				name = "ãsAQ0áeòR0"
+				discount = yes	
+				skill = 3
+				
+		}
+	}
+}
+
+#hgIY0fkS0
+country_event = {
+	id = Advisor_come.65
+	title = "Advisor_come.22.t"
+	desc = "Advisor_come.22.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+	
+		is_year = 191
+		NOT = { is_year = 200 }
+		OR = {
+			AND = {
+				exists = HND
+				NOT = { exists = BBS }
+				tag = HND
+			}
+			AND = {
+				exists = BBS
+				NOT = { exists = HND }
+				tag = BBS
+			}	
+			AND = {
+				NOT = { exists = BBS }
+				NOT = { exists = HND }
+				owns = 3170
+			}
+			AND = {
+				exists = BBS
+				exists = HND
+				tag = BBS
+			}
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 22
+	}
+	option = {
+		name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = yang_feng
+				name = "hgIY0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				female = yes
+				name = "hgIY0fkS0"
+				fire = 5
+				shock = 4
+				manuever = 5
+				siege = 2
+			}
+		}			
+	}	
+}
+
+#¯ãiÑÆN0õQ^0
+country_event = {
+	id = Advisor_come.66
+	title = "Advisor_come.22.t"
+	desc = "Advisor_come.22.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+	
+		is_year = 206
+		NOT = { is_year = 230 }
+		
+		OR = {
+			tag = LUP
+			tag = SHU
+		}	
+	}
+	
+	mean_time_to_happen = {
+		days = 22
+	}
+	option = {
+		name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = zhuge_liang
+				name = "¯ãiÑÆN0õQ^0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "¯ãiÑÆN0õQ^0"
+				fire = 7
+				shock = 6
+				manuever = 7
+				siege = 5
+			}
+		}		
+	}
+}
+
+#ƒû‡V0fkS0
+country_event = {
+	id = Advisor_come.67
+	title = "Advisor_come.22.t"
+	desc = "Advisor_come.22.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+	
+		is_year = 190
+		NOT = { is_year = 220 }
+		OR = {
+			AND = {
+				exists = LBB
+				NOT = { exists = LUP }
+				tag = LBB
+			}
+			AND = {
+				exists = LUP
+				NOT = { exists = LBB }
+				tag = LUP
+			}	
+			AND = {
+				exists = LUP
+				exists = LBB
+				tag = LBB
+			}
+				tag = SHU
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 22
+	}
+	option = {
+		name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = hoang_chung
+				name = "ƒû‡V0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "ƒû‡V0fkS0"
+				fire = 8
+				shock = 6
+				manuever = 7
+				siege = 5
+			}
+		}		
+	}
+}
+#.V-f0áeòR0
+country_event = {
+	id = Advisor_come.68
+	title = "Advisor_come.22.t"
+	desc = "Advisor_come.22.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+	
+		is_year = 180
+		NOT = { is_year = 226 }
+		OR = {
+			tag = SNC
+			tag = SNJ
+			tag = WUU
+		}	
+	}
+	
+	mean_time_to_happen = {
+		days = 22
+	}
+	option = {
+		name = Advisor_come.a
+		define_advisor = {
+				type = zhang_zhao
+				name = ".V-f0áeòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+#zhao_yun
+#uçëN0fkS0
+country_event = {
+	id = Advisor_come.69
+	title = "Advisor_come.22.t"
+	desc = "Advisor_come.22.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+	
+		is_year = 180
+		NOT = { is_year = 226 }
+		OR = {
+			tag = LUP
+			tag = SHU
+		}	
+	}	
+	
+	
+	mean_time_to_happen = {
+		days = 22
+	}
+	option = {
+	name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = zhao_yun
+				name = "uçëN0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "uçëN0fkS0"
+				fire = 11
+				shock = 10
+				manuever = 4
+				siege = 5
+			}
+		}
+	}
+}
+
+#zhang_liao
+#.VÀè0fkS0
+country_event = {
+	id = Advisor_come.70
+	title = "Advisor_come.22.t"
+	desc = "Advisor_come.22.d"
+	picture = NEW_ADVISOR_eventPicture
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+	
+		is_year = 194
+		NOT = { is_year = 222 }
+		OR = {
+			AND = {
+				exists = TS2
+				NOT = { exists = WEI }
+				NOT = { exists = LB1 }
+				tag = TS2
+			}
+			AND = {
+				exists = LB1
+				NOT = { exists = WEI }
+				NOT = { exists = TS2 }
+				tag = LB1
+			}	
+			AND = {
+				exists = LB1
+				exists = TS2
+				tag = LB1
+			}
+			AND = {
+				NOT = { exists = LB1 }
+				NOT = { exists = TS2 }
+				exists = WEI
+				tag = WEI
+			}
+			AND = {
+				NOT = { exists = LB1 }
+				NOT = { exists = TS2 }
+				NOT = { exists = WEI }
+				owns = 2501
+			}			
+		}	
+	}	
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+	name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = zhang_liao
+				name = ".VÀè0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = ".VÀè0fkS0"
+				fire = 6
+				shock = 6
+				manuever = 4
+				siege = 3
+			}
+		}
+	}
+}
+
+#∏ãâ
+#xu_chu
+country_event = {
+	id = Advisor_come.71
+	title = "Advisor_come.22.t"
+	desc = "Advisor_come.22.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+	
+		is_year = 190
+		NOT = { is_year = 225 }
+		OR = {
+			AND = {
+				exists = TS2
+				tag = TS2
+			}
+			AND = {
+				exists = WEI
+				tag = WEI
+			}	
+			
+		}	
+	}	
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+	name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = xu_chu
+				name = "∏ãâ0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "∏ãâ0fkS0"
+				fire = 6
+				shock = 8
+				manuever = 3
+				siege = 4
+			}
+		}
+	}
+}
+
+country_event = {
+	id = Advisor_come.72
+	title = "Advisor_come.22.t"
+	desc = "Advisor_come.22.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+	
+		is_year = 198
+		NOT = { is_year = 245 }
+		OR = {
+			AND = {
+				exists = TS2
+				tag = TS2
+			}
+			AND = {
+				exists = WEI
+				tag = WEI
+			}	
+			
+		}	
+	}	
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+	name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = sima_yi
+				name = "¯Slöˇa0õQ^0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "¯Slöˇa0õQ^0"
+				fire = 7
+				shock = 6
+				manuever = 5
+				siege = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = Advisor_come.73
+	title = "Advisor_come.22.t"
+	desc = "Advisor_come.22.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+	
+		is_year = 219
+		NOT = { is_year = 245 }
+		OR = {
+			AND = {
+				exists = WUU
+				tag = WUU
+			}
+			AND = {
+				exists = SNC
+				tag = SNC
+			}	
+			
+		}	
+	}	
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+	name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = lu_xun
+				name = "Fñê0õQ^0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "Fñê0õQ^0"
+				fire = 6
+				shock = 6
+				manuever = 6
+				siege = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = Advisor_come.74
+	title = "Advisor_come.22.t"
+	desc = "Advisor_come.22.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+		hidden = yes
+		fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				is_year = 190
+				NOT = { is_year = 196 }
+				exists = LUO
+				tag = LUO
+			}
+			AND = {
+				is_year = 196
+				NOT = { is_year = 215 }
+				OR = {	
+					AND = { 
+						exists = SNC
+						tag = SNC
+					}
+					AND = { 
+						exists = SNJ
+						tag = SNJ
+					}
+				}
+			}	
+		}	
+	}	
+	
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+	name = Advisor_come.a
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = taishi_ci
+				name = "*YÚSHa0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "*YÚSHa0fkS0"
+				fire = 7
+				shock = 7
+				manuever = 6
+				siege = 6
+			}
+		}
+	}
+}
+

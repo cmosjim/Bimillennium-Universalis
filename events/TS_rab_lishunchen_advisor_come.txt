@@ -1,0 +1,53 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = lishunchen_advisor_come
+
+#fkSĞgÍyagöNNúQ°s
+#id = 1 : lishunchen : Ng‚ã0fkS0
+
+country_event = {
+	id = lishunchen_advisor_come.1
+	title = "lishunchen_advisor_come.1.t"
+	desc = "lishunchen_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	#:N†NMQßu»løv²QzZP†Ncheck ruler¨RjO
+	trigger = {
+		is_year = 1564	
+		NOT = { is_year = 1598 }
+		tag = KOR
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = lishunchen_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = lishunchen
+				name = "Ng‚ã0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "Ng‚ã0fkS0"
+				fire = 6
+				shock = 7
+				manuever = 5
+				siege = 4
+			}
+		}
+	}
+}
+

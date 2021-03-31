@@ -1,0 +1,156 @@
+namespace = nomad_tech_disaster
+#100 start : 
+#1  : "损钱
+#2  : "损adm
+#3  : "损mil
+#200 end : 
+#2018.12.31 fit to 1.28
+ country_event = {
+	id = nomad_tech_disaster.100
+	title = "nomad_tech_disaster.NAME100"
+	desc = "nomad_tech_disaster.DESC100"
+	picture = INVENTION_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		add_country_modifier = {
+			name = "tech_change_process"
+			duration = 10# rab_test
+		}
+	}
+	
+	option = {
+		name = "nomad_tech_disaster.OPTA100"
+		clr_country_flag = flg_reform_eastnomad	
+	}			
+}
+
+ country_event = {
+	id = nomad_tech_disaster.200
+	title = "nomad_tech_disaster.NAME200"
+	desc = "nomad_tech_disaster.DESC200"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	option = {
+		name = "nomad_tech_disaster.OPTA200"
+		#keep the government type
+		change_technology_group = early_chinese
+		change_unit_type = early_chinese	
+		clr_country_flag = flg_reform_eastnomad
+	}			
+
+	option = {
+		name = "nomad_tech_disaster.OPTB200"
+		trigger = {
+			NOT = {
+				has_reform = celestial_empire
+			}
+		}
+		#change the government type
+		change_technology_group = early_chinese
+		change_unit_type = early_chinese	
+		clr_country_flag = flg_reform_eastnomad
+		change_government = gov_celestial_empire
+		add_government_reform = celestial_empire
+		set_government_rank = 3
+		
+	}	
+}
+
+ country_event = {
+	id = nomad_tech_disaster.201
+	title = "nomad_tech_disaster.NAME201"
+	desc = "nomad_tech_disaster.DESC201"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "nomad_tech_disaster.OPTA201"
+		#keep the government type
+		change_technology_group = chinese
+		change_unit_type = chinese	
+	
+	}			
+
+	option = {
+		name = "nomad_tech_disaster.OPTB201"
+		trigger = {
+			NOT = {
+				has_reform = celestial_empire
+			}
+		}
+		#change the government type
+		change_technology_group = chinese
+		change_unit_type = chinese	
+		change_government = gov_celestial_empire
+		add_government_reform = celestial_empire
+		set_government_rank = 3
+	}	
+}
+
+
+########## 损钱 ###########
+ country_event = {
+	id = nomad_tech_disaster.1
+	title = "nomad_tech_disaster.NAME1"
+	desc = "nomad_tech_disaster.DESC1"
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "nomad_tech_disaster.OPTA1"
+			add_treasury = -20
+	}
+	#option = {
+	#	name = "nomad_tech_disaster.OPTB1"
+	#	remove_country_modifier = tech_change_process
+	#	clr_country_flag = flg_reform_eastnomad		
+	#	end_disaster = nomad_tech_disaster
+	#}	
+}
+########## 损adm ###########
+ country_event = {
+	id = nomad_tech_disaster.2
+	title = "nomad_tech_disaster.NAME2"
+	desc = "nomad_tech_disaster.DESC2"
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "nomad_tech_disaster.OPTA2"
+			add_adm_power  = -5
+	}
+	#option = {
+	#	name = "nomad_tech_disaster.OPTB2"	
+	#	remove_country_modifier = tech_change_process
+	#	clr_country_flag = flg_reform_eastnomad		
+	#	end_disaster = nomad_tech_disaster
+    #
+	#	}	
+	#}	
+}
+########## 损军事 ###########
+ country_event = {
+	id = nomad_tech_disaster.3
+	title = "nomad_tech_disaster.NAME3"
+	desc = "nomad_tech_disaster.DESC3"
+	picture = SKILL_FAIL_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "nomad_tech_disaster.OPTA3"
+			add_mil_power  = -5
+	}
+	#option = {
+	#	name = "nomad_tech_disaster.OPTB3"	
+	#	remove_country_modifier = tech_change_process
+	#	clr_country_flag = flg_reform_eastnomad		
+	#	end_disaster = nomad_tech_disaster	
+	#}	
+}

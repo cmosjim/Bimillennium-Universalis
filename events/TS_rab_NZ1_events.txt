@@ -1,0 +1,931 @@
+########################
+#Hellenic Flavor Events#
+########################
+
+namespace = rab_NZ1_events
+
+#
+# ROOT: NZ1 
+# The initial war start
+# 2018.12.30 fit to 1.28
+# 2020-01-06 for xy new religion
+country_event = {
+	id = rab_NZ1_events.1
+	title = "rab_NZ1_events.NAME1"
+	desc = "rab_NZ1_events.DESC1"
+	picture = NAZI_RULER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_NZ1_events.OPTA1"
+			ai_chance = { factor = 1 }
+			change_tag = NZ1
+			swap_free_idea_group = yes
+			set_country_flag = flg_new_build_nazi # this judge NZ1 and buff is created by event , not history.
+			add_country_modifier = {
+				name = "md_fanaticism_war_GER"
+				duration = 5475
+			}
+			add_country_modifier = {
+				name = "md_fanaticism_war_NZ1"
+				duration = 5475
+			}
+			add_treasury = 5000
+			change_religion = fascism 
+			if = {
+				limit = {
+					NOT = { has_reform = fascist_government }
+				}
+				add_government_reform = oligarchy_reform
+				add_government_reform = strengthen_executive_powers_reform
+				add_government_reform = dictatorial_rule
+				add_government_reform = fascist_government
+				add_government_reform = powerful_head_of_state
+				set_legacy_government = fascist_dictatorship 
+				set_government_rank = 3
+			}
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							capital_scope = {
+								continent = europe
+							}
+							NOT = { tag = ROOT }
+							NOT = { tag = HUN }
+							NOT = { tag = ITA }
+						}	
+						tag = USA
+						tag = SOV
+					}	
+				}	
+				country_event = {
+					id = rab_NZ1_events.10				
+				}	
+			}
+			HUN = {
+				country_event = { 
+					id =  rab_NZ1_events.11
+				}				
+			}
+			ITA = {
+				country_event = { 
+					id =  rab_NZ1_events.11
+				}				
+			}
+			JA1 = {
+				country_event = { 
+					id =  rab_NZ1_events.11
+				}				
+			}			
+			#save all owned province region , then will reback when lose the game.
+			if = {
+				limit = {
+					NOT = { has_global_flag = wii_periods }		
+				}
+				set_global_flag = wii_periods
+				every_country = {
+					limit = { 
+						ai = no 
+					}
+					country_event = {
+						id = rab_NZ1_events.14
+					}
+				}	
+			}	
+
+#save all owned province region , then will reback when lose the game.
+		every_owned_province = {
+			set_province_flag = flg_nz1_start_provinces
+		}	
+		clr_country_flag = tmp_rab_NZ1_events_1	
+		
+	}
+	option = {
+		name = "rab_NZ1_events.OPTB1"
+		ai_chance = { factor = 0 }
+		clr_country_flag = tmp_rab_NZ1_events_1
+	}	
+}
+
+#instruct of inital process
+#ROOT: for other country which war with NZ1
+country_event = {
+	id = rab_NZ1_events.2
+	title = "rab_NZ1_events.NAME2"
+	desc = "rab_NZ1_events.DESC2"
+	picture = USA_MEETING_1_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_NZ1_events.OPTA2"
+		
+		clr_country_flag = tmp_rab_NZ1_events_2
+	}
+}	
+#instruct of second process
+#ROOT: for other country which war with NZ1
+country_event = {
+	id = rab_NZ1_events.3
+	title = "rab_NZ1_events.NAME3"
+	desc = "rab_NZ1_events.DESC3"
+	picture = USA_MEETING_1_eventPicture
+  
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_NZ1_events.OPTA3"
+		
+		clr_country_flag = tmp_rab_NZ1_events_3
+	}
+}
+
+#∑VõQ1YªSÜNmd_fanaticism_war_NZ1
+#because 
+country_event = {
+	id = rab_NZ1_events.4
+	title = "rab_NZ1_events.NAME4"
+	desc = "rab_NZ1_events.DESC4"
+	picture = m_WOUNDED_SOLDIERS_eventPicture
+  
+	major = yes
+	fire_only_once = yes
+	 
+	trigger = {
+		is_at_war = yes
+		tag = NZ1
+		has_country_modifier = md_fanaticism_war_NZ1
+		50 = {
+			NOT = { owned_by = ROOT }
+		}	
+	}	
+	mean_time_to_happen = {
+		days = 5
+	}	
+	immediate = {
+		custom_tooltip = tp_lose_fanaticism_war_NZ1
+			remove_country_modifier = md_fanaticism_war_NZ1
+			if = {
+				limit = {
+					NOT = { has_country_flag = flg_had_been_occupy_capital } 
+				}
+				set_country_flag = flg_had_been_occupy_capital
+			}
+			set_variable = {
+				which = var_total_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_FR2_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_GBR_win_times_GER
+				value = 0
+			}			
+			set_variable = {
+				which = var_USA_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_SOV_win_times_GER
+				value = 0
+			}		
+			set_variable = {
+				which = var_POL_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_SWE_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_FIN_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_NOR_win_times_GER
+				value = 0
+			}				
+			set_variable = {
+				which = var_YUG_win_times_GER
+				value = 0
+			}				
+			set_variable = {
+				which = var_others_win_times_GER
+				value = 0
+			}
+
+	}	
+
+	option = {
+		name = "rab_NZ1_events.OPTA4"
+		every_country = {
+			limit ={
+				war_with = ROOT
+			}
+			country_event = {
+				id = rab_NZ1_events.6
+			}			
+		}	
+		
+	}
+}
+
+
+#∑VõQ1YªSÜNmd_fanaticism_war_NZ1
+#because wñeQœÇTwÑvâ=O)RöN
+country_event = {
+
+	id = rab_NZ1_events.5
+	title = "rab_NZ1_events.NAME5"
+	desc = "rab_NZ1_events.DESC5"
+	picture = m_WOUNDED_SOLDIERS_eventPicture
+  
+	major = yes
+	fire_only_once = yes
+	 
+	trigger = {
+		is_at_war = yes
+		tag = NZ1
+		has_country_modifier = md_fanaticism_war_NZ1
+		calc_true_if = {
+			all_owned_province = {
+				OR = {
+					region = west_siberia_region
+					region = east_siberia_region
+					region = ural_region
+				}
+			}
+			amount = 20
+		}		
+	}
+	mean_time_to_happen = {
+		days = 5
+	}	
+	immediate = {
+		hidden_effect = {
+		custom_tooltip = tp_lose_fanaticism_war_NZ1
+			remove_country_modifier = md_fanaticism_war_NZ1
+			if = {
+				limit = { NOT = { has_country_flag = flg_had_been_occupy_capital } }
+				set_country_flag = flg_had_been_occupy_capital
+			}
+			set_variable = {
+				which = var_total_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_FR2_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_USA_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_SOV_win_times_GER
+				value = 0
+			}		
+			set_variable = {
+				which = var_POL_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_SWE_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_FIN_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_NOR_win_times_GER
+				value = 0
+			}				
+			set_variable = {
+				which = var_YUG_win_times_GER
+				value = 0
+			}				
+			set_variable = {
+				which = var_others_win_times_GER
+				value = 0
+			}
+		}
+	}	
+
+	option = {
+		name = "rab_NZ1_events.OPTA5"
+		every_country = {
+			limit ={
+				war_with = ROOT
+			}
+			country_event = {
+				id = rab_NZ1_events.6
+			}			
+		}
+		
+	}
+}
+
+#info other wars with nz1 countries which already lose the buff
+
+country_event = {
+	id = rab_NZ1_events.6
+	title = "rab_NZ1_events.NAME6"
+	desc = "rab_NZ1_events.DESC6"
+	picture = m_ARMY_HAPPY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_NZ1_events.OPTA6"
+		custom_tooltip = tp_NZ1_lose_buff
+	}
+}
+# NZ1ìèÜNbâN
+# agˆN:I`qQìèÜN10:WbyV(after capital been occupy)
+# agˆN:w˝NÍSiRN75
+# ROOT : NZ1
+country_event = {
+	id = rab_NZ1_events.7
+	title = "rab_NZ1_events.NAME7"
+	desc = "rab_NZ1_events.DESC7"
+	picture = m_WOUNDED_SOLDIERS_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NZ1
+		is_at_war = yes
+		has_country_flag = flg_had_been_occupy_capital
+		has_country_modifier = md_fanaticism_war_GER
+		OR = {
+			check_variable = {
+				which = var_total_win_times_GER
+				value = 15
+			}	
+			NOT = { num_of_cities = 75 }
+		}		
+	}	
+	mean_time_to_happen = {
+		days = 5
+	}		
+	#immediate = {
+	#	#clr_country_flag = flg_had_been_occupy_capital
+	#}	
+	
+	option = {
+		name = "rab_NZ1_events.OPTA7"
+			custom_tooltip = tp_lose_wii_NZ1
+			clr_country_flag = flg_had_been_occupy_capital
+			set_variable = {
+				which = var_total_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_FR2_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_USA_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_SOV_win_times_GER
+				value = 0
+			}		
+			set_variable = {
+				which = var_POL_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_SWE_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_FIN_win_times_GER
+				value = 0
+			}
+			set_variable = {
+				which = var_NOR_win_times_GER
+				value = 0
+			}				
+			set_variable = {
+				which = var_YUG_win_times_GER
+				value = 0
+			}				
+			set_variable = {
+				which = var_others_win_times_GER
+				value = 0
+			}
+		#clr_country_flag = flg_had_been_occupy_capital
+		every_country = {
+			limit = {
+				war_with = ROOT
+			}
+			white_peace = ROOT
+			country_event = {
+				id = rab_NZ1_events.8
+			}			
+		}
+		change_tag = GER	
+		swap_free_idea_group = yes		
+		add_government_reform = parliamentary_reform
+		add_government_reform = universal_suffrage_reform
+		add_government_reform = reinforce_republican_values_reform
+		add_government_reform = multi_party_system
+		add_government_reform = democracy_reform
+		add_government_reform = ceremonial_president
+		set_legacy_government = presidental_republic
+		ger_wii_termless_surrender_effect = yes
+	}
+}
+# ∑V˝V‡eagˆNïbMñ ROOT: other countries
+country_event = {
+	id = rab_NZ1_events.8
+	title = "rab_NZ1_events.NAME8"
+	desc = "rab_NZ1_events.DESC8"
+	picture = m_ARMY_HAPPY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_NZ1_events.OPTA8"
+
+	}
+}
+
+country_event = {
+	id = rab_NZ1_events.9
+	title = "rab_NZ1_events.NAME9"
+	desc = "rab_NZ1_events.DESC9"
+	picture = NAZI_RULER_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		tag = GER
+		has_ruler = "?ñSê+Y∑^yr“R"
+		has_global_flag = NZ1_wii_fail
+	}
+	mean_time_to_happen = {
+		days = 5
+	}	
+	option = {
+		name = "rab_NZ1_events.OPTA9"
+			add_prestige = 20
+			kill_ruler = yes
+	}
+	option = {
+		name = "rab_NZ1_events.OPTB9"
+			set_country_flag = flg_let_crime_go
+			define_ruler = {
+			}	
+			add_prestige = -20
+	}	
+}
+# info other countries that NZ1 will occur wii war 
+country_event = {
+	id = rab_NZ1_events.10
+	title = "rab_NZ1_events.NAME10"
+	desc = "rab_NZ1_events.DESC10"
+	picture = NAZI_RULER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_NZ1_events.OPTA10"
+		if = {
+			limit = { 
+				NOT = {
+					war_with = NZ1 
+				}
+			}	
+			FROM = {
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_third_empire
+				}	
+			}
+		}		
+	}
+}
+
+# give positive opinion to NZ1 for allies wiht NZ1
+country_event = {
+	id = rab_NZ1_events.11
+	title = "rab_NZ1_events.NAME11"
+	desc = "rab_NZ1_events.DESC11"
+	picture = NAZI_RULER_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_NZ1_events.OPTA11"
+		if = { 
+			limit = { 
+				war_with = NZ1
+			}
+			white_peace = NZ1
+		}
+		add_opinion = { 
+			who = NZ1
+			modifier = op_same_enemy_atwar 
+		}
+		reverse_add_opinion = {
+			who = NZ1
+			modifier = op_same_enemy_atwar 
+		}
+		create_alliance = NZ1	
+	}	
+}
+################################################
+#
+# When start from the bookmarks , buff & NZ1 already been created 
+# But we hope to show more info to player.
+#
+################################################
+#country_event = {
+#	id = rab_NZ1_events.12
+#	title = "rab_NZ1_events.NAME1"
+#	desc = "rab_NZ1_events.DESC1"
+#	picture = NAZI_RULER_eventPicture
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		is_subject = no
+#		tag = NZ1
+#		NOT = { is_year = 1955 }
+#		NOT = { has_global_flag = NZ1_wii_fail }
+#		has_country_modifier = md_fanaticism_war_NZ1
+#		has_country_modifier = md_fanaticism_war_GER
+#		is_year = 1939
+#//		NOT = { has_country_flag = flg_new_build_nazi }
+#//	}
+#//
+#//	mean_time_to_happen = {
+#//		days = 5
+#//	}
+#//	immediate = {
+#//		set_country_flag = flg_new_build_nazi
+#//	}		
+#//	option = {
+#//		name = "rab_NZ1_events.OPTA12"
+#//		every_country = {
+#//			limit = { war_with = ROOT }
+#//			country_event = { 
+#//				id = rab_NZ1_events.10
+#//			}								
+#//		}
+#//		
+#//		if = {
+#//			limit = {
+#//				NOT = { has_reform = fascist_government }
+#//			}
+#//			add_government_reform = oligarchy_reform
+#//			add_government_reform = strengthen_executive_powers_reform
+#//			add_government_reform = dictatorial_rule
+#//			add_government_reform = fascist_government
+#//			add_government_reform = powerful_head_of_state
+#//			set_legacy_government = fascist_dictatorship 
+#//			set_government_rank = 3
+#//		}
+#//			if = {
+#//				limit = { 
+#//					exists = BEL
+#//					NOT = { war_with = BEL }
+#//				}
+#//				declare_war_with_cb = {
+#//					who = BEL
+#//					casus_belli = cb_third_empire
+#//				}
+#//				country_event = { 
+#//					id =  rab_NZ1_events.10
+#//				}
+#//			}			
+#//			if = {
+#//				limit = { 
+#//					exists = POL
+#//					NOT = { war_with = POL }
+#//				}
+#//				declare_war_with_cb = {
+#//					who = POL
+#//					casus_belli = cb_third_empire
+#//				}
+#//				country_event = { 
+#//					id =  rab_NZ1_events.10
+#//				}
+#//			}
+#//			if = {
+#//				limit = { 
+#//					exists = GBR
+#//					NOT = { war_with = GBR }
+#//				}
+#//				declare_war_with_cb = {
+#//					who = GBR
+#//					casus_belli = cb_third_empire
+#//				}
+#//				country_event = { 
+#//					id =  rab_NZ1_events.10
+#//				}				
+#//			}	
+#//			if = {
+#//				limit = { 
+#//					exists = FR2
+#//					NOT = { war_with = FR2 }
+#//				}
+#//				declare_war_with_cb = {
+#//					who = FR2
+#//					casus_belli = cb_third_empire
+#//				}
+#//				country_event = { 
+#//					id =  rab_NZ1_events.10
+#//				}				
+#//			}	
+#//			if = {
+#//				limit = { 
+#//					exists = SWE
+#//					NOT = { war_with = SWE }
+#//				}
+#//				declare_war_with_cb = {
+#//					who = SWE
+#//					casus_belli = cb_third_empire
+#//				}
+#//				country_event = { 
+#//					id =  rab_NZ1_events.10
+#//				}				
+#//			}
+#//			if = {
+#//				limit = { 
+#//					exists = SOV
+#//					NOT = { war_with = SOV }
+#//				}
+#//				declare_war_with_cb = {
+#//					who = SOV
+#//					casus_belli = cb_third_empire
+#//				}
+#//				country_event = { 
+#//					id =  rab_NZ1_events.10
+#//				}				
+#//			}
+#//			if = {
+#//				limit = { 
+#//					exists = USA
+#//					NOT = { war_with = USA }
+#//				}
+#//				declare_war_with_cb = {
+#//					who = USA
+#//					casus_belli = cb_third_empire
+#//				}
+#//				country_event = { 
+#//					id =  rab_NZ1_events.10
+#//				}				
+#//			}
+#//
+#//			if = {
+#//				limit = { 
+#//					exists = FIN
+#//					NOT = { war_with = FIN }
+#//				}
+#//				declare_war_with_cb = {
+#//					who = FIN
+#//					casus_belli = cb_third_empire
+#//				}
+#//				country_event = { 
+#//					id =  rab_NZ1_events.10
+#//				}				
+#//			}
+#//			if = {
+#//				limit = { 
+#//					exists = NOR
+#//					NOT = { war_with = NOR }
+#//				}
+#//				declare_war_with_cb = {
+#//					who = NOR
+#//					casus_belli = cb_third_empire
+#//				}
+#//				country_event = { 
+#//					id =  rab_NZ1_events.10
+#//				}				
+#//			}	
+#//			if = {
+#//				limit = { 
+#//					exists = YUG
+#//					NOT = { war_with = YUG }
+#//				}
+#//				declare_war_with_cb = {
+#//					who = YUG
+#//					casus_belli = cb_third_empire
+#//				}
+#//				country_event = { 
+#//					id =  rab_NZ1_events.10
+#//				}				
+#//			}
+#//
+#//
+#//		if = {
+#//			limit = {
+#//				exists = ITA
+#//			}
+#//			ITA = {
+#//				country_event = { 
+#//					id =  rab_NZ1_events.11
+#//				}					
+#//			}
+#//		}
+#//		if = {
+#//			limit = {
+#//				exists = HUN
+#//			}
+#//			HUN = {
+#//				country_event = { 
+#//					id =  rab_NZ1_events.11
+#//				}					
+#//			}					
+#//		}			
+#//	}
+#//}
+
+################################################################################
+#
+# 13 ÂÇ=f1934 ›OW.ØQ.tQâv!X SV?e, GERSÊâ—S^yr“RÕë∞e	ê>NÑvãNˆN
+#
+################################################################################
+country_event = {
+	id = rab_NZ1_events.13
+	title = "rab_NZ1_events.NAME13"
+	desc = "rab_NZ1_events.DESC13"
+	picture = Paul_von_Hindenburg_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		has_country_flag = flg_Hindenburg
+		num_of_cities = 35
+		NOT = { num_of_cities = 400 }
+		is_year = 1934
+		is_month = 8
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+			
+	option = {
+		name = "rab_NZ1_events.OPTA13"
+		kill_ruler = yes #let go to on_action 
+		#define_ruler = {
+		#	name = "?ñSê+Y∑^yr“R"
+		#	adm = 6
+		#	dip = 3
+		#	mil = 5
+		#	fixed = yes
+		#}
+		#add_ruler_personality = conqueror_personality 
+		#add_ruler_personality = expansionist_personality		
+	}
+}
+
+################################################################################
+#
+# 14 If still not occur wii_JA1_periods or wii_NZ1_periods , it willl show event for player to inform wii start , and related overextension events not happend.
+#
+################################################################################
+country_event = {
+	id = rab_NZ1_events.14
+	title = "rab_NZ1_events.NAME14"
+	desc = "rab_NZ1_events.DESC14"
+	picture = WII_OF_NAZI_eventPicture
+	
+	is_triggered_only = yes 
+	
+	
+	option = {
+	name = "rab_NZ1_events.OPTA14"
+
+	}
+}
+#
+# Show the fail on NZ1 war II 
+# for only player see this 
+country_event = {
+	id = rab_NZ1_events.15
+	title = "rab_NZ1_events.NAME15"
+	desc = "rab_NZ1_events.DESC15"
+	picture = WII_OF_NAZI_eventPicture
+	
+	trigger = {
+		has_global_flag = wii_periods
+		has_global_flag = NZ1_wii_fail
+		NOT = {
+			any_country = {
+				has_country_modifier = md_fanaticism_war_GER
+			}
+		}
+		NOT = {
+			any_country = {
+				has_country_modifier = md_fanaticism_war
+			}
+		}
+	}	
+	mean_time_to_happen = {
+		days = 15
+	}
+	immediate = {
+		hidden_effect = {
+			clr_global_flag = wii_periods
+		}
+	}	
+	option = {
+	name = "rab_NZ1_events.OPTA14"
+
+	}
+}
+
+
+################################################################################
+#
+# 16 ÂÇ=f1934 ›OW.ØQ.tQâv!X SV?e, GERSÊâ—S^yr“RÕë∞e	ê>NÑvãNˆN
+#
+################################################################################
+country_event = { #electtion!/ or dies in election term
+	id = rab_NZ1_events.16
+	title = "rab_NZ1_events.NAME16"
+	desc = "rab_NZ1_events.DESC16"
+	picture = NAZI_RULER_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GER
+		has_country_flag = flg_Hindenburg
+		NOT = { has_ruler = "?ñSê+Y∑^yr“R" }
+	}
+	
+	immediate = {
+		clr_ruler_flag = flg_Hindenburg
+
+	}	
+	
+	option = {
+		name = "rab_NZ1_events.OPTA16"
+		define_ruler = {
+			name = "?ñSê+Y∑^yr“R"
+			adm = 6
+			dip = 3
+			mil = 5
+			fixed = yes
+		}
+		add_ruler_personality = conqueror_personality 
+		add_ruler_personality = expansionist_personality		
+	}
+}
+
+################################################################################
+#
+# 17 ÂÇ=f1924.1.1 - 1934.1.1 Player has a chance to choose whether   "›OW ØQ tQâv!X" or maintain current stage. 
+#
+################################################################################
+country_event = {
+	id = rab_NZ1_events.17
+	title = "rab_NZ1_events.NAME17"
+	desc = "rab_NZ1_events.DESC17"
+	picture = Paul_von_Hindenburg_eventPicture
+	
+	trigger = {
+		is_year = 1924
+		tag = GER
+		NOT = { has_country_flag = flg_Hindenburg }
+		NOT = { has_global_flag = NZ1_wii_fail }
+		has_faction = conservative_party
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+	name = "rab_NZ1_events.OPTA17"
+
+	}
+	option = {
+		name = "rab_NZ1_events.OPTB17"
+		define_ruler = {
+				mil = 5
+				adm = 3
+				dip = 2
+				min_age = 60
+				max_age = 70
+				name = "›OW ØQ tQâv!X"		
+		}
+		set_country_flag = flg_Hindenburg
+		add_treasury = 2500
+	}	
+}	

@@ -1,0 +1,47 @@
+
+namespace = rab_LT1_events
+
+country_event = {
+	id = rab_LT1_events.1
+	title = "rab_LT1_events.NAME1"
+	desc = "rab_LT1_events.DESC1"
+	picture = CONQUEST_eventPicture
+  
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_LT1_events.OPTA1"
+		change_tag = HS2
+		change_government = gov_celestial_empire
+		add_government_reform = celestial_empire
+		set_government_rank = 3
+		add_prestige = 50
+		add_treasury = 2500
+		add_country_modifier = {
+			name = "md_white_lotus_inspiration"
+			duration = 3650
+		}	
+		define_ruler = {
+			name = "Èóóg?Q"
+			age = 20
+			claim = 100
+			adm = 2
+			dip = 4
+			mil = 4
+		}
+		define_general = {
+			name = "Rèyê"
+			fire = 5
+			shock = 5
+			manuever = 5
+			siege = 4	
+		}
+			
+		clr_country_flag = flg_temp_rab_LT1_events_1
+	}
+	option = {
+		name = "rab_LT1_events.OPTB1"
+		clr_country_flag = flg_temp_rab_LT1_events_1
+	}	
+}
+

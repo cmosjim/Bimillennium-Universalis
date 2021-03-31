@@ -1,0 +1,187 @@
+namespace = rab_population_effect
+	
+#	putongguanai
+#	tianxian
+#	hekouzhognzhen
+#	2499qingzhou
+#	4894dunhuang
+#	2480ningbo
+#	1838hefei
+#	691jinan
+#	683nanchang
+#	2490xiangyang
+#	682wuchang
+#	chengdu_t
+#	hangzhou_t
+#	petra
+#	stonehenge
+#	selcuk
+#	luoyang
+#	paris_city
+#	rome_city
+#	guangzhou
+#	hu_city
+#	changan
+#	shaoguan
+#	nanjing
+#	tajmahal
+#	firenze
+#	london
+#	cairo
+#	beijing
+
+#	glacier -- 
+#	farmlands --
+#	forest --
+#	hills --
+#	woods --
+#	mountain --
+#	impassable_mountains
+#	grasslands --
+#	jungle --
+#	marsh --
+#	desert -- 
+#	coastal_desert --
+#	coastline --
+#	drylands --
+#	highlands --
+#	savannah --
+#	steppe --
+#省分思潮/建築								高速公路	鐵路	mass_transit_system	醫院	大學		
+	
+#						adm/dip/mil	adm/dip/mil	tax	tax	tax	manpower	manpower	tax	
+#	special			20	20	20		45	45	40	+1	+2	+2	+1	+1	+1	特殊地形(如北京)
+#	farmlands			15	15	15		40	40	40	+1	+2	+2	+1	+1	+1 农田地形
+#	coastline			11	11	11		30	30	30	+1	+2	+2	+1	+1	+1	海岸? 
+#	forest 			10	10	10		25	30	25	+1	+2	+2	+1	+1	+1	森林地形
+#	hills 			12	12	10		28	25	25	+1	+2	+2	+1	+1	+1	丘陵地形
+#	woods				9	9	8		20	25	20	+1	+2	+2	+1	+1	+1	树林地形
+#	mountain			4	4	4		15	15	10	+1	+2	+2	+1	+1	+1	山脉地形
+#	grasslands		10	10	10		20	20	20	+1	+2	+2	+1	+1	+1 草原地形
+#	plains			14	14	14		35	45	40	+1	+2	+2	+1	+1	+1 平原地形
+#	jungle			8	8	8		25	25	20	+1	+2	+2	+1	+1	+1	丛林地形
+#	marsh				8	8	8		25	20	20	+1	+2	+2	+1	+1	+1 湿地地形
+#	desert			3	3	3		10	10	10	+1	+2	+2	+1	+1	+1	沙漠地形
+#	coastal_desert	4	4	4		15	15	15	+1	+2	+2	+1	+1	+1	沿海沙漠地形
+#	glacier			3	3	3		15	15	10	+1	+2	+2	+1	+1	+1	冰川
+#	drylands			8	8	8		20	15	20	+1	+2	+2	+1	+1	+1	干旱地形
+#	steppe			6	6	6		20	20	20	+1	+2	+2	+1	+1	+1	大草原地形
+#	savannah			6	6	6		20	20	20	+1	+2	+2	+1	+1	+1	稀树草原地形
+#	highlands 		4	4	4		20	20	15	+1	+2	+2	+1	+1	+1	高原地形
+#	hekouzhognzhen	14	16	16		40	35	35	+1	+2	+2	+1	+1	+1	河口重鎮
+#	tianxian			8	8	8		30	20	20	+1	+2	+2	+1	+1	+1	天險關隘
+#	putongguanai		10	10	10		35	20	20	+1	+2	+2	+1	+1	+1	普通關隘
+
+#country_event = {
+#	id = rab_population_effect.1
+#	title = "rab_population_effect.NAME1"
+#	desc = "rab_population_effect.DESC1"
+#	picture = CONFUSED_SKILL_eventPicture
+#	
+#	hidden = yes
+#	is_triggered_only = yes
+#	
+#	option = {
+#	name = "rab_test.OPTA1"
+#	#define the limit of develop for every provinces
+#		initialize_population_effect = yes
+#	}
+#}
+
+province_event = {
+	id = rab_population_effect.2
+	title = "rab_population_effect.NAME2"
+	desc = "rab_population_effect.DESC2"
+	picture = CONFUSED_SKILL_eventPicture
+	
+	hidden = yes	
+	trigger = {
+			#inital states
+		NOT = {
+			check_variable = {
+				which = var_dip_limit
+				value = 1
+			}	
+		}		
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+	name = "rab_test.OPTA2"	
+		pov_initialize_population_effect = yes
+	}
+}
+
+province_event = {
+	id = rab_population_effect.3
+	title = "rab_population_effect.NAME3"
+	desc = "rab_population_effect.DESC3"
+	picture = CONFUSED_SKILL_eventPicture
+	
+	hidden = yes	
+	
+	trigger = {
+		OR = {
+			has_province_flag = flg_add_university
+			has_province_flag = flg_clr_university
+			has_province_flag = flg_add_road
+			has_province_flag = flg_clr_road
+			has_province_flag = flg_add_highway
+			has_province_flag = flg_clr_highway
+			has_province_flag = flg_add_railroad
+			has_province_flag = flg_clr_railroad
+			has_province_flag = flg_add_mass
+			has_province_flag = flg_clr_mass
+			has_province_flag = flg_add_hospital
+			has_province_flag = flg_clr_hospital
+		}	
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+	name = "rab_test.OPTA3"	
+		building_adjust_pov_limit = yes
+	}
+}
+	
+#detect oil trade?	during game period
+province_event = {
+	id = rab_population_effect.4
+	title = "rab_population_effect.NAME4"
+	desc = "rab_population_effect.DESC4"
+	picture = CONFUSED_SKILL_eventPicture
+	
+	hidden = yes	
+	
+	trigger = {
+		trade_goods = oil
+		NOT = {
+			has_province_flag = flg_oil_done
+		}
+	}
+	mean_time_to_happen = {
+		days = 10
+	}
+	immediate = {
+		set_province_flag = flg_oil_done
+	}	
+	option = {
+	name = "rab_test.OPTA3"	
+		change_variable = {
+			which = var_adm_limit
+			value = 20
+		}
+		change_variable = {
+			which = var_dip_limit
+			value = 20
+		}	
+		change_variable = {
+			which = var_mil_limit
+			value = 20
+		}
+	}
+}	
+
+	

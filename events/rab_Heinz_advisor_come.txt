@@ -1,0 +1,52 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = Heinz_advisor_come
+
+#fkSĞgÍyhöNNúQşs
+#id = 1 : Heinz : wmàV(ƒ.äS·V—g0›Q˜R0
+#1891t^11g15åeÿ1944t^10g14åe	ÿ
+country_event = {
+	id = Heinz_advisor_come.1
+	title = "Heinz_advisor_come.1.t"
+	desc = "Heinz_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+#ÿ614t^ÿ683t^3g24åe	ÿ
+	trigger = {
+		#ÙÌ‘=ffkSúQ°s(WêTÌ‘„vagöN
+		tag = NZ1
+		is_year = 1907
+		NOT = { is_year = 1954 }
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = Heinz_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = Heinz
+				name = "wmàV(ƒ.äS·V—g0›Q˜R0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "wmàV(ƒ.äS·V—g0›Q˜R0"
+				fire = 9
+				shock = 8
+				manuever = 8
+				siege = 8
+			}
+		}
+	}
+}
+

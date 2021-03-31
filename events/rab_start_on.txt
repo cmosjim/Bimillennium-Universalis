@@ -1,0 +1,115 @@
+# 开头讯息
+# ===【update records】===
+# 2016.9.24 change to only show 协力人员
+# others to Game_Instructions_xxx_events
+# 2017.01.08 : add 中华地区核心取得解说
+# ===【id explain】===
+#1: set rab_influenza_events_done start ( for disease use and calculate 50 years )
+#4: check the base value , and 100 x base vale = initial population (K)
+# 2018.12.14 fit 1.28
+#
+#
+
+namespace = first_running_events
+
+country_event = {
+	id = first_running_events.1
+	title = "first_running_events.1.t"
+	desc = "first_running_events.1.d"
+	picture = start_message_on_eventPicture_1
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+		NOT = { has_global_flag = play_ever_once }
+	}
+	
+	immediate = {
+	
+		#This section make sure only once running in a game 
+		#Put initial values (only player) on this section . 	
+		
+		#50 years for influenza events.
+		hidden_effect = {
+			set_global_flag = rab_influenza_events_done 
+			#set the seed var 
+			set_variable = {
+				which = var_seeds
+				value = 0
+			}
+			#set the second seed var
+			set_variable = {
+				which = var_seeds_plus
+				value = 1
+			}			
+		}
+	}
+	
+	
+	#assistance 
+	option = {
+		name = "first_running_events.1opt2"
+		country_event = {
+		  id = first_running_events.3
+		}
+	}
+	#instructing mod installing 
+	option = {
+		name = "first_running_events.1opt4"
+		country_event = {
+		  id = first_running_events.4
+		}
+	}	
+	#start 
+	option = {
+		name = "first_running_events.1opt3"
+		set_global_flag = play_ever_once
+	}
+}
+
+#
+country_event = {
+	id = first_running_events.3
+	title = "first_running_events.3.t"
+	desc = "first_running_events.3.d"
+	picture = start_message_on_eventPicture_3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "first_running_events.3opt1"
+		country_event = {
+		  id = first_running_events.1
+		}
+	}
+	option = {
+		name = "first_running_events.3opt2"
+			set_global_flag = play_ever_once
+			
+	}
+}
+
+
+country_event = {
+	id = first_running_events.4
+	title = "first_running_events.4.t"
+	desc = "first_running_events.4.d"
+	picture = start_message_on_eventPicture_4
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "first_running_events.4opt1"
+		country_event = {
+		  id = first_running_events.1
+		}
+	}
+	option = {
+		name = "first_running_events.4opt2"
+			set_global_flag = play_ever_once
+			
+	}
+}
+
+

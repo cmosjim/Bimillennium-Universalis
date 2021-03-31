@@ -1,0 +1,33 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = erik_thorvaldsson_advisor_come
+
+country_event = {
+	id = erik_thorvaldsson_advisor_come.1
+	title = "erik_thorvaldsson_advisor_come.1.t"
+	desc = "erik_thorvaldsson_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_country_flag = erik_thorvaldsson_flag	
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = erik_thorvaldsson_advisor_come.OPTA1
+		
+		define_advisor = {
+				type = erik_thorvaldsson
+				name = "ÃWÌ‘KQ mtætS·Vîh0¢uÑS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}

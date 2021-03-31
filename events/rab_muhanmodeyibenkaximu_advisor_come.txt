@@ -1,0 +1,62 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = muhanmodeyibenkaximu_advisor_come
+
+#fkSĞgÍyhöNNúQşs
+#id = 1 : muhanmodeyibenkaximu : FzUØ·V.O,g.aS‰(g0I`cw0
+#695t^12g31åeÿ715t^7g18åe
+country_event = {
+	id = muhanmodeyibenkaximu_advisor_come.1
+	title = "muhanmodeyibenkaximu_advisor_come.1.t"
+	desc = "muhanmodeyibenkaximu_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		#ÙÌ‘=ffkSúQ°s(WêTÌ‘„vagöN
+		is_year = 710
+		NOT = { is_year = 725 }
+		OR = {
+			AND = {
+				tag = UMA
+				exists = UMA
+			}
+			AND = {
+				NOT = { exists = UMA }
+				religion_group = muslim
+				owns = 210
+			}
+		}	
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = muhanmodeyibenkaximu_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = muhanmodeyibenkaximu
+				name = "FzUØ·V.O,g.aS‰(g0I`cw0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "FzUØ·V.O,g.aS‰(g0I`cw0"
+				fire = 7
+				shock = 8
+				manuever = 5
+				siege = 4
+			}
+		}
+	}
+}
+

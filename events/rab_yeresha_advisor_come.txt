@@ -1,0 +1,61 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = yeresha_advisor_come
+
+#fkSĞgÍyhöNNúQşs
+#id = 1 : yeresha : 6w‹V™l0fkS0
+#
+country_event = {
+	id = yeresha_advisor_come.1
+	title = "yeresha_advisor_come.1.t"
+	desc = "yeresha_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+#571t^ÿ649t^7g2åe
+	trigger = {
+		#ÙÌ‘=ffkSúQ°s(WêTÌ‘„vagöN
+		is_year = 955
+		NOT = { is_year = 988 }
+		OR = {
+			AND = {
+				exists = LIO
+				tag = LIO
+			}
+			AND = {
+				NOT = { exists = LIO }
+				owns = 731
+			}	
+		}		
+	}
+	mean_time_to_happen = {
+		days = 10
+	}		
+	option = {
+		name = yeresha_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = yeresha
+				name = "6w‹V™l0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "6w‹V™l0fkS0"
+				fire = 9
+				shock = 8
+				manuever = 7
+				siege = 5
+			}
+		}
+	}
+}
+

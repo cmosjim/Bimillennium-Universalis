@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = qijiguang_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : qijiguang : bçuIQ0fkS0
+
+country_event = {
+	id = qijiguang_advisor_come.1
+	title = "qijiguang_advisor_come.1.t"
+	desc = "qijiguang_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 1550	
+		NOT = { is_year = 1590 }
+		OR = {
+			AND = {
+				exists = MNG
+				tag = MNG
+			}
+			AND = {
+				NOT = { exists = MNG }
+				owns = 2019
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = qijiguang_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = qijiguang
+				name = "bçuIQ0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "bçuIQ0fkS0"
+				fire = 8
+				shock = 6
+				manuever = 4
+				siege = 6
+			}
+		}
+	}
+}
+

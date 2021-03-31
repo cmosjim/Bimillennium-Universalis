@@ -1,0 +1,690 @@
+#2019.08.11 fit to 1.28
+namespace = heiljsf_shidaibiangen_events_mod
+## error 所有的namespace不能用 国家的TAG 当作开头或结尾
+#Bon Harmonization
+
+##罗马时代
+country_event = {
+	id = heiljsf_shidaibiangen_events_mod.001
+	title = "heiljsf_shidaibiangen_events_mod.EVTNAME1"
+	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC1"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ROM					#是罗马
+		is_year = 1
+		is_month = 1
+		NOT = { is_year = 235 }
+		NOT = { has_country_flag = heiljsf_shidaibiangen_events_flag.001 }
+	}
+	
+	
+	immediate = { set_country_flag = heiljsf_shidaibiangen_events_flag.001 }
+	
+	option = {
+		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA1"
+		ROM = {
+			add_country_modifier = {
+				name = heiljsf_shidai_wangzhe       #时代王者国家修正
+				duration = 77015
+			}
+		}
+    }
+}
+
+##帕提亚时代
+country_event = {
+	id = heiljsf_shidaibiangen_events_mod.002
+	title = "heiljsf_shidaibiangen_events_mod.EVTNAME2"
+	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC2"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PRT						#是帕提亚
+		is_year = 1
+		is_month = 1
+		NOT = { is_year = 190 }
+		NOT = { has_country_flag = heiljsf_shidaibiangen_events_flag.002 }
+	}
+	
+	
+	immediate = { set_country_flag = heiljsf_shidaibiangen_events_flag.002 }
+    
+	option = {
+		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA2"
+		PRT = {
+			add_country_modifier = {
+				name = heiljsf_shidai_wangzhe       #时代王者国家修正
+				duration = 54750
+			}
+		}
+    }
+}
+
+##大月氏时代
+country_event = {
+	id = heiljsf_shidaibiangen_events_mod.003
+	title = "heiljsf_shidaibiangen_events_mod.EVTNAME3"
+	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC3"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+            tag = DY2					#是大月氏
+            tag = KUS                   #是贵霜帝国
+        }
+		is_year = 1
+		is_month = 1
+		NOT = { is_year = 250 }
+		NOT = { has_country_flag = heiljsf_shidaibiangen_events_flag.003 }
+	}
+	
+	
+	immediate = { set_country_flag = heiljsf_shidaibiangen_events_flag.003 }
+	
+
+    
+	option = {
+		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA3"
+        if = {
+            limit = {
+                exists = DY2
+            }
+            DY2 = {
+                add_country_modifier = {
+                    name = heiljsf_shidai_wangzhe       #时代王者国家修正
+                    duration = 73000
+                }
+            }
+        }
+		if = {
+            limit = {
+                exists = KUS
+            }
+            KUS = {
+                add_country_modifier = {
+                    name = heiljsf_shidai_wangzhe       #时代王者国家修正
+                    duration = 109500
+                }
+            }
+        }
+    }
+}
+
+##东汉时代
+country_event = {
+	id = heiljsf_shidaibiangen_events_mod.004
+	title = "heiljsf_shidaibiangen_events_mod.EVTNAME4"
+	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC4"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = LX2					#是汉
+			tag = HND					#是汉
+		}
+		is_year = 24
+		is_month = 2
+		NOT = { is_year = 184 }
+		NOT = { has_country_flag = heiljsf_shidaibiangen_events_flag.004 }
+	}
+	
+	
+	immediate = { set_country_flag = heiljsf_shidaibiangen_events_flag.004 }
+	
+    
+	option = {
+		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA4"
+		if = {
+            limit = {
+                exists = LX2                    #刘秀存在
+            }
+			LX2 = {
+				add_country_modifier = {
+					name = heiljsf_shidai_wangzhe       #时代王者国家修正
+					duration = 58400
+				}
+			}
+        }
+		if = {
+            limit = {
+                exists = HND                    #东汉存在
+            }
+			HND = {
+				add_country_modifier = {
+					name = heiljsf_shidai_wangzhe       #时代王者国家修正
+					duration = 58400
+				}
+			}
+        }
+    }
+}
+
+##法兰克时代
+country_event = {
+	id = heiljsf_shidaibiangen_events_mod.005
+	title = "heiljsf_shidaibiangen_events_mod.EVTNAME5"
+	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC5"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRK						#是法兰克王国
+		is_year = 481
+		is_month = 1
+		NOT = { is_year = 842 }
+		NOT = { has_country_flag = heiljsf_shidaibiangen_events_flag.005 }
+	}
+	
+	immediate = { set_country_flag = heiljsf_shidaibiangen_events_flag.005 }
+    
+	option = {
+		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA5"
+		FRK = {
+			add_country_modifier = {
+				name = heiljsf_shidai_wangzhe       #时代王者国家修正
+				duration = 73000
+			}
+		}
+    }
+}
+##拜占庭时代
+country_event = {
+	id = heiljsf_shidaibiangen_events_mod.006
+	title = "heiljsf_shidaibiangen_events_mod.EVTNAME6"
+	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC6"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BYZ						#是拜占庭帝国
+		is_year = 200
+		is_month = 1
+		NOT = { is_year = 620 }
+		NOT = { has_country_flag = heiljsf_shidaibiangen_events_flag.006 }
+	}
+	
+	immediate = { set_country_flag = heiljsf_shidaibiangen_events_flag.006 }
+    
+	option = {
+		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA6"
+		BYZ = {
+			add_country_modifier = {
+				name = heiljsf_shidai_wangzhe       #时代王者国家修正
+				duration = 54750
+			}
+		}
+    }
+}
+
+##萨珊时代
+country_event = {
+	id = heiljsf_shidaibiangen_events_mod.007
+	title = "heiljsf_shidaibiangen_events_mod.EVTNAME7"
+	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC7"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAS						#是萨珊帝国
+		is_year = 208
+		is_month = 1
+		NOT = { is_year = 620 }
+		NOT = { has_country_flag = heiljsf_shidaibiangen_events_flag.007 }
+	}
+	
+	immediate = { set_country_flag = heiljsf_shidaibiangen_events_flag.007 }
+    
+	option = {
+		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA7"
+		SAS = {
+			add_country_modifier = {
+				name = heiljsf_shidai_wangzhe       #时代王者国家修正
+				duration = 54750
+			}
+		}
+    }
+}
+
+##匈人时代
+country_event = {
+	id = heiljsf_shidaibiangen_events_mod.008
+	title = "heiljsf_shidaibiangen_events_mod.EVTNAME8"
+	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC8"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HNS						#是匈人
+		is_year = 350
+		is_month = 1
+		NOT = { is_year = 450 }
+		NOT = { has_country_flag = heiljsf_shidaibiangen_events_flag.008 }
+	}
+	
+	immediate = { set_country_flag = heiljsf_shidaibiangen_events_flag.008 }
+    
+	option = {
+		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA8"
+		HNS = {
+			add_country_modifier = {
+				name = heiljsf_shidai_wangzhe       #时代王者国家修正
+				duration = 36500
+			}
+		}
+    }
+}
+
+##罗马时代落幕
+country_event = {
+	id = heiljsf_shidaibiangen_events_mod.011
+	title = "heiljsf_shidaibiangen_events_mod.EVTNAME11"
+	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC11"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ROM					#是罗马
+		is_year = 395
+		NOT = { is_year = 411 }
+		NOT = { has_country_flag = heiljsf_shidaibiangen_events_flag.011 }
+	}
+	
+	
+	immediate = { set_country_flag = heiljsf_shidaibiangen_events_flag.011 }
+	
+	option = {
+		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA11"
+        if = {
+            limit = {
+                ROM = { has_country_modifier = heiljsf_shidai_wangzhe }                 #如果该国有此修正
+            }
+            ROM = { remove_country_modifier = heiljsf_shidai_wangzhe }                  #移出此修正
+        }
+		#ROM = {
+		#	set_country_flag = flg_ever_heiljsf_shuaibai_wangchao
+		#	add_country_modifier = {
+		#		name = heiljsf_shuaibai_wangchao
+		#		duration = 18250
+		#	}
+		#}
+    }
+}
+
+##帕提亚时代落幕
+country_event = {
+	id = heiljsf_shidaibiangen_events_mod.012
+	title = "heiljsf_shidaibiangen_events_mod.EVTNAME12"
+	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC12"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PRT						#是帕提亚
+		is_year = 208
+		NOT = { is_year = 240 }
+		NOT = { has_country_flag = heiljsf_shidaibiangen_events_flag.012 }
+	}
+	
+	
+	immediate = { set_country_flag = heiljsf_shidaibiangen_events_flag.012 }
+    
+	option = {
+		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA12"
+        if = {
+            limit = {
+                PRT = { has_country_modifier = heiljsf_shidai_wangzhe }                 #如果该国有此修正
+            }
+            PRT = { remove_country_modifier = heiljsf_shidai_wangzhe }                  #移出此修正
+        }
+        if = {
+            limit = {
+                AI = no
+            }
+            PRT = {
+                set_country_flag = flg_ever_heiljsf_shuaibai_wangchao
+                add_country_modifier = {
+                    name = heiljsf_shuaibai_wangchao
+                    duration = 18250
+                }
+            }
+        }
+		if = {
+            limit = {
+                AI = yes
+            }
+            PRT = {
+                set_country_flag = flg_ever_heiljsf_shuaibai_wangchao
+                add_country_modifier = {
+                    name = heiljsf_shuaibai_wangchao
+                    duration = -1
+                }
+            }
+        }
+    }
+}
+
+#贵霜时代落幕
+country_event = {
+	id = heiljsf_shidaibiangen_events_mod.013
+	title = "heiljsf_shidaibiangen_events_mod.EVTNAME13"
+	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC13"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+        OR = {
+            tag = DY2					#是大月氏
+            tag = KUS                   #是贵霜帝国
+        }
+
+		is_year = 310
+		NOT = { is_year = 426 }
+		NOT = { has_country_flag = heiljsf_shidaibiangen_events_flag.013 }
+	}
+	
+	
+	immediate = { set_country_flag = heiljsf_shidaibiangen_events_flag.013 }
+	
+
+    
+	option = {
+		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA13"
+        if = {
+            limit = {
+                DY2 = { has_country_modifier = heiljsf_shidai_wangzhe }                 #如果该国有此修正
+            }
+            DY2 = { remove_country_modifier = heiljsf_shidai_wangzhe }                  #移出此修正
+        }
+        if = {
+            limit = {
+                exists = DY2
+            }
+            if = {
+                limit = {
+                    AI = no
+                }
+                DY2 = {
+                    set_country_flag = flg_ever_heiljsf_shuaibai_wangchao
+                    add_country_modifier = {
+                        name = heiljsf_shuaibai_wangchao
+                        duration = 18250
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    AI = yes
+                }
+                DY2 = {
+                    set_country_flag = flg_ever_heiljsf_shuaibai_wangchao
+                    add_country_modifier = {
+                        name = heiljsf_shuaibai_wangchao
+                        duration = -1
+                    }
+                }
+            }
+        }
+		
+        if = {
+            limit = {
+                KUS = { has_country_modifier = heiljsf_shidai_wangzhe }                 #如果该国有此修正
+            }
+            KUS = { remove_country_modifier = heiljsf_shidai_wangzhe }                  #移出此修正
+        }
+        if = {
+            limit = {
+                exists = KUS
+            }
+            if = {
+                limit = {
+                    AI = no
+                }
+                KUS = {
+                    set_country_flag = flg_ever_heiljsf_shuaibai_wangchao
+                    add_country_modifier = {
+                        name = heiljsf_shuaibai_wangchao
+                        duration = 18250
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    AI = yes
+                }
+                KUS = {
+                    set_country_flag = flg_ever_heiljsf_shuaibai_wangchao
+                    add_country_modifier = {
+                        name = heiljsf_shuaibai_wangchao
+                        duration = -1
+                    }
+                }
+            }
+        }
+    }
+}
+
+##匈人时代落幕
+country_event = {
+	id = heiljsf_shidaibiangen_events_mod.016
+	title = "heiljsf_shidaibiangen_events_mod.EVTNAME16"
+	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC16"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HNS						 	#是匈人
+		is_year = 453
+		NOT = { is_year = 500 }
+		NOT = { has_country_flag = heiljsf_shidaibiangen_events_flag.016 }
+	}
+	
+	
+	immediate = { set_country_flag = heiljsf_shidaibiangen_events_flag.016 }
+    
+	option = {
+		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA16"
+        if = {
+            limit = {
+                HNS = { has_country_modifier = heiljsf_shidai_wangzhe }                 #如果该国有此修正
+            }
+            HNS = { remove_country_modifier = heiljsf_shidai_wangzhe }                  #移出此修正
+        }
+        if = {
+            limit = {
+                AI = no
+            }
+            HNS = {
+                set_country_flag = flg_ever_heiljsf_shuaibai_wangchao
+                add_country_modifier = {
+                    name = heiljsf_shuaibai_wangchao
+                    duration = 18250
+                }
+            }
+        }
+		if = {
+            limit = {
+                AI = yes
+            }
+            HNS = {
+                set_country_flag = flg_ever_heiljsf_shuaibai_wangchao
+                add_country_modifier = {
+                    name = heiljsf_shuaibai_wangchao
+                    duration = -1
+                }
+            }
+        }
+    }
+}
+
+
+#vic age
+country_event = {
+	id = heiljsf_shidaibiangen_events_mod.014
+	title = "heiljsf_shidaibiangen_events_mod.EVTNAME14"
+	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC14"
+	picture = VIC_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GBR
+		is_year = 1802
+		NOT = { is_year = 1902 }
+		NOT = { has_country_flag = heiljsf_shidaibiangen_events_flag.014 }
+	}
+	
+	immediate = {
+		set_country_flag = 	heiljsf_shidaibiangen_events_flag.014
+	}
+	
+	option = {
+		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA14"
+		if = {
+			limit = {
+				ai = yes 
+			}	
+			if = { 
+				limit = {
+					NOT = { is_year = 1820 }
+				}	
+				add_country_modifier = {
+					name = heiljsf_vic_wangchao
+					duration = 52560
+				}
+			}
+			if = { 
+				limit = {
+					is_year = 1820
+					NOT = { is_year = 1840 }
+				}	
+				add_country_modifier = {
+					name = heiljsf_vic_wangchao
+					duration = 45260
+				}
+			}
+			if = { 
+				limit = {
+					is_year = 1840
+					NOT = { is_year = 1860 }
+				}	
+				add_country_modifier = {
+					name = heiljsf_vic_wangchao
+					duration = 37960
+				}
+			}
+			if = { 
+				limit = {
+					is_year = 1860
+					NOT = { is_year = 1880 }
+				}	
+				add_country_modifier = {
+					name = heiljsf_vic_wangchao
+					duration = 30660
+				}
+			}
+			if = { 
+				limit = {
+					is_year = 1880
+					NOT = { is_year = 1900 }
+				}	
+				add_country_modifier = {
+					name = heiljsf_vic_wangchao
+					duration = 23360
+				}
+			}
+			if = { 
+				limit = {
+					is_year = 1880
+					NOT = { is_year = 1902 }
+				}	
+				add_country_modifier = {
+					name = heiljsf_vic_wangchao
+					duration = 18000
+				}
+			}
+		}
+		if = {
+			limit = {
+				ai = no
+			}
+			add_country_modifier = {
+				name = heiljsf_vic_wangchao
+				duration = 10800
+			}			
+		}	
+	}
+}
+
+#vic age
+#country_event = {
+#	id = heiljsf_shidaibiangen_events_mod.015
+#	title = "heiljsf_shidaibiangen_events_mod.EVTNAME15"
+#	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC15"
+#	picture = VIC_eventPicture
+#
+#	hidden = yes
+#	fire_only_once = yes
+#
+#	trigger = {
+#		tag = GBR
+#		is_year = 1902
+#		NOT = { is_year = 1946 }
+#		NOT = { has_country_flag = heiljsf_shidaibiangen_events_flag.014 }
+#	}
+#	
+#	immediate = {
+#		set_country_flag = 	heiljsf_shidaibiangen_events_flag.014
+#	}	
+#	option = {
+#		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA14"
+#		add_country_modifier = {
+#			name = heiljsf_vic_wangchao
+#			duration = 10800
+#		}
+#	}
+#}
+
+#美國一次大戰之後1919.1.1
+#created by cmosjim
+country_event = {
+	id = heiljsf_shidaibiangen_events_mod.015
+	title = "heiljsf_shidaibiangen_events_mod.EVTNAME15"
+	desc = "heiljsf_shidaibiangen_events_mod.EVTDESC15"
+	picture = Statue_Liberty_National_Monument_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = USA
+			tag = US1
+		}	
+		is_year = 1919
+		num_of_cities = 230
+	}
+	
+	option = {
+		name = "heiljsf_shidaibiangen_events_mod.EVTOPTA15"
+		add_country_modifier = {
+			name = heiljsf_usa_wangchao
+			duration = -1
+		}
+	}
+}

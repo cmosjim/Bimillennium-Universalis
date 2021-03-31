@@ -1,0 +1,110 @@
+#################################
+#This sections define outoff general 
+#move to another provinces .
+#################################
+
+namespace = erik_thorvaldsson_prov_move_events
+
+province_event = {
+	id = erik_thorvaldsson_prov_move_events.1
+	title = "erik_thorvaldsson_prov_move_events.NAME1"
+	desc = "erik_thorvaldsson_prov_move_events.DESC1"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		has_province_modifier = pov_erik_thorvaldsson
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "erik_thorvaldsson_prov_move_events.OPTA1"		
+		if = {
+			limit = { has_province_modifier = pov_erik_thorvaldsson }
+			if = {
+				limit = { 
+					NOT = { is_year = 1003  }
+				}
+				if = { 
+					limit = {
+						owner = { 
+							NOT = {
+								OR = {
+									tag = JAP 
+									tag = JA1
+								}
+							}
+						}
+					}	
+					remove_province_modifier = pov_erik_thorvaldsson
+					owner = {
+						country_event = {
+							id = erik_thorvaldsson_prov_move_events.2
+						}
+					}
+				}					
+				if = { 
+					limit = { 
+						owner = {
+							OR = {
+								tag = JA1
+								tag = JAP
+							}	
+						}		
+					}
+					remove_province_modifier = pov_erik_thorvaldsson
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_erik_thorvaldsson"
+							duration = -1
+						}					
+					}
+				}
+			}	
+			if = {
+				limit = { 
+					is_year = 1003 
+				}	
+				remove_province_modifier = pov_erik_thorvaldsson		
+			}
+		}
+	}
+}
+
+country_event = {
+	id = erik_thorvaldsson_prov_move_events.2
+	title = "erik_thorvaldsson_prov_move_events.NAME2"
+	desc = "erik_thorvaldsson_prov_move_events.DESC2"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "erik_thorvaldsson_prov_move_events.OPTA2"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = erik_thorvaldsson
+					name = "ÃWÌ‘KQ mtætS·Vîh0¢uÑS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+				define_explorer = {
+				name = "ÃWÌ‘KQ mtætS·Vîh0¢uÑS0"
+				fire = 3
+				shock = 4
+				manuever = 8
+				siege = 2
+			}
+		}
+	}
+}

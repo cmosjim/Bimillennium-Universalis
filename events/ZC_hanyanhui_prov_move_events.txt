@@ -1,0 +1,98 @@
+#################################
+#This sections define outoff general 
+#move to another provinces .
+#################################
+
+namespace = hanyanhui_prov_move_events
+
+province_event = {
+	id = hanyanhui_prov_move_events.1
+	title = "hanyanhui_prov_move_events.NAME1"
+	desc = "hanyanhui_prov_move_events.DESC1"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+		has_province_modifier = pov_hanyanhui
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "hanyanhui_prov_move_events.OPTA1"	
+		if = {
+			limit = { has_province_modifier = pov_hanyanhui }
+			if = {
+				limit = { 
+					NOT = { is_year = 1004  }
+				}
+				if = { 
+					limit = {
+						owner = { 
+							NOT = {
+								OR = {
+									tag = JAP 
+									tag = JA1
+								}
+							}
+						}
+					}	
+					remove_province_modifier = pov_hanyanhui
+					owner = {
+						country_event = {
+							id = hanyanhui_prov_move_events.2
+						}
+					}
+				}					
+				if = { 
+					limit = { 
+						owner = {
+							OR = {
+								tag = JA1
+								tag = JAP
+							}	
+						}		
+					}
+					remove_province_modifier = pov_hanyanhui
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_hanyanhui"
+							duration = -1
+						}					
+					}
+				}
+			}	
+			if = {
+				limit = { 
+					is_year = 1004
+				}	
+				remove_province_modifier = pov_hanyanhui		
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hanyanhui_prov_move_events.2
+	title = "hanyanhui_prov_move_events.NAME2"
+	desc = "hanyanhui_prov_move_events.DESC2"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "hanyanhui_prov_move_events.OPTA2"
+		define_advisor = {
+			type = hanyanhui
+			name = "é—ö^ËV0ŒëX0"
+			discount = yes	
+			skill = 3
+		}
+	}
+}

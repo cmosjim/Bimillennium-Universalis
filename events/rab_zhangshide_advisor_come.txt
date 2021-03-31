@@ -1,0 +1,62 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = zhangshide_advisor_come
+
+#fkS–gÕyùhˆNN˙Q˛s
+#id = 1 : zhangshide : .VÎX∑V0fkS0
+#
+country_event = {
+	id = zhangshide_advisor_come.1
+	title = "zhangshide_advisor_come.1.t"
+	desc = "zhangshide_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+#¶u13221356
+	trigger = {
+		#ŸèÃë=ffkS˙Q∞s(WÍTÃëÑvagˆN
+		is_year = 1345
+		NOT = { is_year = 1360 }
+		NOT = { tag = YUA }
+		OR = {
+			AND = {
+				exists = ZO1
+				tag = ZO1
+			}
+			AND = {
+				NOT = { exists = ZO1 }
+				owns = 4841
+			}	
+		}		
+	}
+	mean_time_to_happen = {
+		days = 10
+	}		
+	option = {
+		name = zhangshide_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = zhangshide
+				name = ".VÎX∑V0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = ".VÎX∑V0fkS0"
+				fire = 8
+				shock = 8
+				manuever = 4
+				siege = 6
+			}
+		}
+	}
+}
+

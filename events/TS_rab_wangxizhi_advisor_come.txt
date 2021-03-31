@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = wangxizhi_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : wangxizhi : ‹s²KN 0z‚=g¶R0
+
+country_event = {
+	id = wangxizhi_advisor_come.1
+	title = "wangxizhi_advisor_come.1.t"
+	desc = "wangxizhi_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 318	
+		NOT = { is_year = 360 }
+		OR = {
+			AND = {
+				exists = JN1
+				tag = JN1
+			}
+			AND = {
+				NOT = { exists = JN1 }
+				owns = 3168
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = wangxizhi_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = wangxizhi
+				name = "‹s²KN 0z‚=g¶R0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "‹s²KN 0z‚=g¶R0"
+				fire = 1
+				shock = 1
+				manuever = 1
+				siege = 1
+			}
+		}
+	}
+}
+

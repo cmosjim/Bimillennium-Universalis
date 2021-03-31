@@ -1,0 +1,91 @@
+#游戏指南 外交篇
+#2016/9/24 init
+#OPTA1: 朝貢
+#Game_Instructions_dip_events.2 朝贡体系【第一页】
+#Game_Instructions_dip_events.3 朝贡体系【第二页】
+#Game_Instructions_dip_events.4 朝贡体系【第三页】
+#2018.12.31 none used now.
+namespace = Game_Instructions_dip_events
+country_event = {
+    id = Game_Instructions_dip_events.1
+	title = "Game_Instructions_dip_events.NAME1"
+	desc = "Game_Instructions_dip_events.DESC1"
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+		
+		option = {
+		   name = "Game_Instructions_dip_events.OPTA1" 
+		   country_event = {
+			id = Game_Instructions_dip_events.2
+		   }
+		}
+		option = {
+		   name = "Game_Instructions_dip_events.OPTB1" 
+		   clr_country_flag = flag_Game_Instructions
+		}		
+}
+
+country_event = {
+    id = Game_Instructions_dip_events.2
+	title = "Game_Instructions_dip_events.NAME2"
+	desc = "Game_Instructions_dip_events.DESC2"
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+		
+		option = {
+		   name = "Game_Instructions_dip_events.OPTA2" 
+		   country_event = {
+			id = Game_Instructions_dip_events.3
+		   }		   
+		}
+		option = {
+		   name = "Game_Instructions_dip_events.OPTB2" 
+		   country_event = {
+			id = Game_Instructions_dip_events.1
+		   }		   
+		}		
+}
+
+
+country_event = {
+    id = Game_Instructions_dip_events.3
+	title = "Game_Instructions_dip_events.NAME3"
+	desc = "Game_Instructions_dip_events.DESC3"
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+		
+		option = {
+		   name = "Game_Instructions_dip_events.OPTA3" 
+		   country_event = {
+			id = Game_Instructions_dip_events.4
+		   }		   
+		}
+		option = {
+		   name = "Game_Instructions_dip_events.OPTB3" 
+		   country_event = {
+			id = Game_Instructions_dip_events.1
+		   }		   
+		}		
+}
+
+
+country_event = {
+    id = Game_Instructions_dip_events.4
+	title = "Game_Instructions_dip_events.NAME4"
+	desc = "Game_Instructions_dip_events.DESC4"
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+		
+		option = {
+		   name = "Game_Instructions_dip_events.OPTA4" 
+		   country_event = {
+			id = Game_Instructions_dip_events.1
+		   }			   
+		}		
+}
+
+

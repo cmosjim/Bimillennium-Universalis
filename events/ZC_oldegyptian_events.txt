@@ -1,0 +1,35 @@
+namespace = pyramids_events
+
+province_event = {
+	id = pyramids_events.1
+	title = pyramids_events.1.t
+	desc = pyramids_events.1.d
+	picture = HARBOUR_eventPicture
+	goto = root
+	
+	fire_only_once = yes
+
+	trigger = {
+		has_great_project = egyptian_pyramids
+		NOT = { has_ruler_modifier = successful_construction }
+		NOT = { has_country_flag = stop_pyramids_construction_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = pyramids_events.1.a
+		owner = { 
+			add_prestige = 40
+			add_legitimacy = 40
+			change_adm = 3
+			add_ruler_modifier = {
+				name = successful_construction
+			}
+			custom_tooltip = next_build_pyramids_decision
+			set_country_flag = stop_pyramids_construction_flag 
+		}
+	}
+}

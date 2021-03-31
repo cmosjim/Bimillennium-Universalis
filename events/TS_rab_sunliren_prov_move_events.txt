@@ -1,0 +1,133 @@
+#################################
+#This sections define outoff general 
+#move to another provinces .
+#################################
+
+#id = 1 : INû|qt-U^ŒV÷WLˆ„v
+#id = 2 : YRËzºN0S›Q0 ÛkBê¦… 
+
+namespace = sunliren_prov_move_events
+
+
+province_event = {
+	id = sunliren_prov_move_events.1
+	title = "sunliren_prov_move_events.NAME1"
+	desc = "sunliren_prov_move_events.DESC1"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+	#uP,nwıNgQ=f&T	grŠpov_xxxx
+	#êS‰	g°eX„vfkSÿŠ—V ReQrŠpov_xxxx ¼e OR vQ-N
+		has_province_modifier = pov_sunliren
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "sunliren_prov_move_events.OPTA1"
+###########################YRËzºN0S›Q0pov_sunliren#################################		
+		if = {
+			limit = { has_province_modifier = pov_sunliren }
+			if = {
+			#zlšR(WÎ‘fkS„vıX‹T
+				limit = { 
+					NOT = { is_year = 1980  }
+				}
+			#GP‚YrŠW¶R„vT‹syrêŒ&rT	
+			#1SÛkBê¦…	
+				if = { 
+					limit = {
+						owner = { 
+							NOT = {
+								OR = {
+									tag = JAP 
+									tag = JA1
+								}	
+							} 
+						}
+					}
+			
+					remove_province_modifier = pov_sunliren
+					owner = {
+						country_event = {
+							id = sunliren_prov_move_events.2
+						}
+					}
+				}
+					#GP‚YrŠW¶R„vT‹syrêŒN&rT1S0R0‘Ñ„vwR						
+				if = { 
+					limit = { 
+						owner = {
+							OR = {
+								tag = JAP 
+								tag = JA1
+							}	
+						}
+					}
+					remove_province_modifier = pov_sunliren
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_sunliren"
+							duration = -1
+						}					
+					}
+				}
+			}	
+			if = {
+			#‚Yœgt^ıN…NdkP–ÿ(WÎ‘fkSâ–N
+				limit = { 
+					is_year = 1980 
+				}	
+				remove_province_modifier = pov_sunliren		
+			}
+		}
+	}
+}
+	
+############################################################################
+#	YRËzºN0S›Q0ÛkBê¦…
+#
+############################################################################
+
+
+country_event = {
+	id = sunliren_prov_move_events.2
+	title = "sunliren_prov_move_events.NAME2"
+	desc = "sunliren_prov_move_events.DESC2"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "sunliren_prov_move_events.OPTA2"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = sunliren
+					name = "YRËzºN0S›Q0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+				define_general = {
+				name = "YRËzºN0S›Q0"
+				fire = 7
+				shock = 7
+				manuever = 4
+				siege = 6
+			}
+		}
+	}
+}
+
+	
+	

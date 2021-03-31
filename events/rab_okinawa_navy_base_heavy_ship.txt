@@ -1,0 +1,301 @@
+namespace = okinawa_navy_base_heavy_ship
+country_event = {
+	id = okinawa_navy_base_heavy_ship.2
+	title = "okinawa_navy_base_heavy_ship.NAME2"
+	desc = "okinawa_navy_base_heavy_ship.DESC2"
+	picture = navy_base_eventPicture
+	
+	is_triggered_only = yes
+	# attched 10 units of heavy_ships
+	option = {
+		name = "okinawa_navy_base_heavy_ship.OPTA2"
+		trigger = {
+			any_owned_province = {
+				heavy_ships_in_province = 1
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_okinawa_heavy_ship
+					value = 200
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = yes
+				factor = 0
+			}	
+		}			
+		random_owned_province = {
+			limit = {
+				heavy_ships_in_province = 1
+			}
+			kill_units = {
+				who = ROOT
+				type = heavy_ship
+				amount = 1
+			}
+		}		
+		change_variable = {
+			which = num_of_okinawa_heavy_ship
+			value = 1
+		}
+		country_event = {
+			id = okinawa_navy_base_heavy_ship.3
+		}	
+	}
+	#release 10 units heavy_ship
+	option = {
+		name ="okinawa_navy_base_heavy_ship.OPTB2"
+		trigger = {
+			check_variable = {
+				which = num_of_okinawa_heavy_ship
+				value = 10
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = no
+				factor = 0
+			}	
+		}				
+		subtract_variable = {
+			which = num_of_okinawa_heavy_ship
+			value = 10
+		}
+		1015 = {
+			ROOT = {
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_heavy_ship.3
+		}		
+	}	
+	#release 1 units heavy_ship
+	option = {
+		name ="okinawa_navy_base_heavy_ship.OPTC2"
+		trigger = {
+			check_variable = {
+				which = num_of_okinawa_heavy_ship
+				value = 1
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = no
+				factor = 0
+			}	
+		}	
+		
+		subtract_variable = {
+			which = num_of_okinawa_heavy_ship
+			value = 1
+		}
+		1015 = {
+			ROOT = {
+				heavy_ship = PREV
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_heavy_ship.3
+		}		
+	}
+	option = {
+		name ="okinawa_navy_base_heavy_ship.OPTD2"
+		trigger = {
+			is_at_war = no
+			1015 = {
+				heavy_ships_in_province = 1
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = yes
+				factor = 0
+			}	
+		}		
+		change_variable = {
+			which = num_of_okinawa_heavy_ship
+			value = 1
+		}
+		1015 = {
+			kill_units = {
+				who = ROOT
+				type = heavy_ship
+				amount = 1
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_heavy_ship.3
+		}		
+	}	
+	option = {
+		name = "okinawa_navy_base_heavy_ship.OPTE2"
+		clr_country_flag = tmp_check_okinawa_navy_base_heavy_ship
+	}	
+}
+
+country_event = {
+	id = okinawa_navy_base_heavy_ship.3
+	title = "okinawa_navy_base_heavy_ship.NAME3"
+	desc = "okinawa_navy_base_heavy_ship.DESC3"
+	picture = navy_base_eventPicture
+	
+	is_triggered_only = yes
+	# attched 10 units of heavy_ships
+	option = {
+		name = "okinawa_navy_base_heavy_ship.OPTA3"
+		trigger = {
+			any_owned_province = {
+				heavy_ships_in_province = 1
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_okinawa_heavy_ship
+					value = 200
+				}
+			}
+			
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = yes
+				factor = 0
+			}	
+		}			
+		random_owned_province = {
+			limit = {
+				heavy_ships_in_province = 1
+			}
+			kill_units = {
+				who = ROOT
+				type = heavy_ship
+				amount = 1
+			}
+		}		
+		change_variable = {
+			which = num_of_okinawa_heavy_ship
+			value = 1
+		}
+		country_event = {
+			id = okinawa_navy_base_heavy_ship.2
+		}	
+	}
+	#release 10 units heavy_ship
+	option = {
+		name ="okinawa_navy_base_heavy_ship.OPTB3"
+		trigger = {
+			check_variable = {
+				which = num_of_okinawa_heavy_ship
+				value = 10
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = no
+				factor = 0
+			}	
+		}			
+		subtract_variable = {
+			which = num_of_okinawa_heavy_ship
+			value = 10
+		}
+		1015 = {
+			ROOT = {
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+				heavy_ship = PREV
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_heavy_ship.2
+		}		
+	}	
+	#release 1 units heavy_ship
+	option = {
+		name ="okinawa_navy_base_heavy_ship.OPTC3"
+		trigger = {
+			check_variable = {
+				which = num_of_okinawa_heavy_ship
+				value = 1
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = no
+				factor = 0
+			}	
+		}		
+		
+		subtract_variable = {
+			which = num_of_okinawa_heavy_ship
+			value = 1
+		}
+		1015 = {
+			ROOT = {
+				heavy_ship = PREV
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_heavy_ship.2
+		}		
+	}
+	option = {
+		name ="okinawa_navy_base_heavy_ship.OPTD3"
+		trigger = {
+			is_at_war = no
+			1015 = {
+				heavy_ships_in_province = 1
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = yes
+				factor = 0
+			}	
+		}		
+		change_variable = {
+			which = num_of_okinawa_heavy_ship
+			value = 1
+		}
+		1015 = {
+			kill_units = {
+				who = ROOT
+				type = heavy_ship
+				amount = 1
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_heavy_ship.2
+		}		
+	}	
+	option = {
+		name = "okinawa_navy_base_heavy_ship.OPTE3"
+		clr_country_flag = tmp_check_okinawa_navy_base_heavy_ship
+	}	
+}

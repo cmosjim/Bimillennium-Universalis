@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = cubahan_advisor_come
+
+#fkSĞgÍyagöNNúQ°s
+#id = 1 : cubahan : sËé—0fkS0
+
+country_event = {
+	id = cubahan_advisor_come.1
+	title = "cubahan_advisor_come.1.t"
+	desc = "cubahan_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 255	
+		NOT = { is_year = 285 }
+		OR = {
+			AND = {
+				exists = TF1
+				tag = TF1
+			}
+			AND = {
+				NOT = { exists = TF1 }
+				owns = 2891
+			}			
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = cubahan_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = cubahan
+				name = "sËé—0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "sËé—0fkS0"
+				fire = 5
+				shock = 5
+				manuever = 4
+				siege = 4
+			}
+		}
+	}
+}
+

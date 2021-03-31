@@ -1,0 +1,16 @@
+namespace = delete_flag
+
+country_event = {
+	id = delete_flag.1
+	title = "delete_flag.NAME1"
+	desc = "delete_flag.DESC1"
+	picture = BAD_ARMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "delete_flag.OPTA1"
+		clr_country_flag = flg_during_meeting_faction
+		clr_country_flag = flg_during_meeting_faction
+	}
+}

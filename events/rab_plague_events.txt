@@ -1,0 +1,563 @@
+namespace = rab_plague_events 
+#1: check the province 
+#2:
+#3:
+#4:
+#5: check the province ( has flg = dis_plague_feedback )
+#6:
+#7:
+#8:
+province_event = {
+#must associate with add new medical system by rab_
+	id = rab_plague_events.1
+	title = "rab_plague_events.NAME1"
+	desc = "rab_plague_events.DESC1"
+	picture = PLAGUE_eventPicture
+
+	trigger = {
+		NOT = { has_country_flag = dis_plague_feedback }
+		has_dlc = "Common Sense"
+		development = 20	
+		owner = { NOT = { adm_tech = 46 } }
+		OR = {
+			base_tax = 7
+			base_production = 7
+			base_manpower = 7
+		}
+		NOT = {
+			OR = {
+				has_province_modifier = rab_plague_0 # controlled fully 
+				has_province_modifier = rab_plague_1 # mild controlled
+				has_province_modifier = rab_plague_2 # no controlled.
+			}
+		}
+		continent = europe
+	}
+	mean_time_to_happen = {
+		months = 4500
+	
+		modifier = {
+			factor = 0.1
+			any_neighbor_province = { has_province_modifier = rab_plague_2 }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { development = 20 }
+		}
+		modifier = {
+			factor = 0.6
+			AND = {
+				development = 20
+				NOT = { development = 25 }
+			}
+			
+		}
+		modifier = {
+			factor = 0.5
+			AND = {
+				development = 25
+				NOT = { development = 30 }
+			}
+		}
+		modifier = {
+			factor = 0.4
+			AND = {
+				development = 30
+				NOT = { development = 35 }
+			}
+		}
+		modifier = {
+			factor = 0.3
+			AND = {
+				development = 35
+				NOT = { development = 40 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = { adm_tech = 10 }
+		}		
+		modifier = {
+			factor = 1.5
+			owner = { adm_tech = 18 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { adm_tech = 26 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { adm_tech = 36 }
+		}
+		modifier = {
+			factor = 10
+			NOT = { any_neighbor_province = { has_province_modifier = rab_plague_2 } }
+		}
+	}
+	
+	option = {
+		name = "rab_plague_events.OPTA1"
+		trigger = { 
+			
+			has_building = isolated_area 
+				
+			NOT = { 
+				OR = {
+					has_building = quarantine 
+					has_building = simple_hospital 
+					has_building = hospital  
+				}
+			}
+		}
+		ai_chance = { factor = 100 }
+		random_list = {
+			20 = {
+				province_event = {
+					id = rab_plague_events.2		
+				}	
+			}		
+			50 = {
+				province_event = {
+					id = rab_plague_events.3		
+				}	
+			}
+			30 = {
+				province_event = {
+					id = rab_plague_events.4	
+				}	
+			}
+		}
+	}	
+	option = {
+		name = "rab_plague_events.OPTB1"
+		trigger = { 
+			
+			has_building = quarantine 
+				
+			NOT = {
+				OR = {
+					has_building = simple_hospital 
+					has_building = hospital  
+				}	
+			}
+		}
+		ai_chance = { factor = 100 }
+		random_list = {
+			50 = {
+				province_event = {
+					id = rab_plague_events.2		
+				}	
+			}		
+			40 = {
+				province_event = {
+					id = rab_plague_events.3		
+				}	
+			}
+			10 = {
+				province_event = {
+					id = rab_plague_events.4	
+				}	
+			}
+		}
+		
+	}
+	option = {
+		name = "rab_plague_events.OPTC1"
+		trigger = { 
+			
+			has_building = simple_hospital 
+				
+			NOT = { 
+				has_building = hospital  
+			}
+		}
+		ai_chance = { factor = 100 }
+		random_list = {
+			80 = {
+				province_event = {
+					id = rab_plague_events.2		
+				}	
+			}		
+			20 = {
+				province_event = {
+					id = rab_plague_events.3		
+				}	
+			}
+		}
+	}
+
+	option = {
+		name = "rab_plague_events.OPTD1"
+		trigger = { 
+			has_building = hospital 
+		}
+		ai_chance = { factor = 100 }
+		
+			add_province_modifier = {
+				name = rab_plague_0
+				duration = 1825
+			}
+	}
+	
+	option = {
+		name = "rab_plague_events.OPTE1"
+		trigger = { 
+			NOT = { 
+				OR = {
+					has_building = isolated_area
+					has_building = quarantine 
+					has_building = simple_hospital
+					has_building = hospital  
+				}
+			}
+		}
+		add_base_tax = -3
+		add_base_production = -3
+		add_base_manpower = -3
+		add_province_modifier = {
+			name = rab_plague_2
+			duration = 1825
+		}
+	}
+}
+
+#full controlled
+
+province_event = {
+	id = rab_plague_events.2
+	title = "rab_plague_events.NAME2"
+	desc = "rab_plague_events.DESC2"
+	picture = PRAYING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "rab_plague_events.OPTA2"
+		add_province_modifier = {
+			name = rab_plague_0
+			duration = 1825
+		}
+	}
+}
+
+#mild controlled
+
+province_event = {
+	id = rab_plague_events.3
+	title = "rab_plague_events.NAME3"
+	desc = "rab_plague_events.DESC3"
+	picture = DEPRESSION_WALKING_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "rab_plague_events.OPTA3"
+	
+		add_province_modifier = {
+			name = rab_plague_1
+			duration = 1825
+		}
+	}
+}
+#no controlled
+province_event = {
+	id = rab_plague_events.4
+	title = "rab_plague_events.NAME4"
+	desc = "rab_plague_events.DESC4"
+	picture = PLAGUE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = "rab_plague_events.OPTA4"
+		add_base_tax = -3
+		add_base_production = -3
+		add_base_manpower = -3
+		add_province_modifier = {
+			name = rab_plague_2
+			duration = 1825
+		}
+	}
+}
+########################disable report#####################
+
+province_event = {
+	id = rab_plague_events.5
+	title = "rab_plague_events.NAME5"
+	desc = "rab_plague_events.DESC5"
+	picture = PLAGUE_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		has_country_flag = dis_plague_feedback
+		has_dlc = "Common Sense"
+		development = 12	
+		owner = { NOT = { adm_tech = 46 } }
+		OR = {
+			base_tax = 4
+			base_production = 5
+			base_manpower = 4
+		}
+		NOT = {
+			OR = {
+				has_province_modifier = rab_plague_0 # controlled fully 
+				has_province_modifier = rab_plague_1 # mild controlled
+				has_province_modifier = rab_plague_2 # no controlled.
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 4000
+	
+		modifier = {
+			factor = 0.5
+			any_neighbor_province = { has_province_modifier = rab_plague_2 }
+		}
+		modifier = {
+			factor = 0.6
+			NOT = { development = 20 }
+		}
+		modifier = {
+			factor = 0.4
+			AND = {
+				development = 20
+				NOT = { development = 25 }
+			}
+			
+		}
+		modifier = {
+			factor = 0.3
+			AND = {
+				development = 25
+				NOT = { development = 30 }
+			}
+		}
+		modifier = {
+			factor = 0.2
+			AND = {
+				development = 30
+				NOT = { development = 35 }
+			}
+		}
+		modifier = {
+			factor = 0.15
+			AND = {
+				development = 35
+				NOT = { development = 40 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			owner = { adm_tech = 10 }
+		}		
+		modifier = {
+			factor = 1.5
+			owner = { adm_tech = 18 }
+		}
+		modifier = {
+			factor = 1.5
+			owner = { adm_tech = 26 }
+		}
+		modifier = {
+			factor = 2.0
+			owner = { adm_tech = 36 }
+		}
+		modifier = {
+			factor = 10
+			NOT = { any_neighbor_province = { has_province_modifier = rab_plague_2 } }
+		}
+	}
+	
+	option = {
+		name = "rab_plague_events.OPTA1"
+		trigger = { 
+			
+			has_building = isolated_area 
+				
+			NOT = { 
+				OR = {
+					has_building = quarantine 
+					has_building = simple_hospital 
+					has_building = hospital  
+				}
+			}
+		}
+		ai_chance = { factor = 100 }
+		random_list = {
+			20 = {
+				province_event = {
+					id = rab_plague_events.6
+				}	
+			}		
+			50 = {
+				province_event = {
+					id = rab_plague_events.7		
+				}	
+			}
+			30 = {
+				province_event = {
+					id = rab_plague_events.8	
+				}	
+			}
+		}
+	}	
+	option = {
+		name = "rab_plague_events.OPTB1"
+		trigger = { 
+			
+			has_building = quarantine 
+				
+			NOT = {
+				OR = {
+					has_building = simple_hospital 
+					has_building = hospital  
+				}	
+			}
+		}
+		ai_chance = { factor = 100 }
+		random_list = {
+			50 = {
+				province_event = {
+					id = rab_plague_events.6		
+				}	
+			}		
+			40 = {
+				province_event = {
+					id = rab_plague_events.7		
+				}	
+			}
+			10 = {
+				province_event = {
+					id = rab_plague_events.8	
+				}	
+			}
+		}
+		
+	}
+	option = {
+		name = "rab_plague_events.OPTC1"
+		trigger = { 
+			
+			has_building = simple_hospital 
+				
+			NOT = { 
+				has_building = hospital  
+			}
+		}
+		ai_chance = { factor = 100 }
+		random_list = {
+			80 = {
+				province_event = {
+					id = rab_plague_events.6		
+				}	
+			}		
+			20 = {
+				province_event = {
+					id = rab_plague_events.7		
+				}	
+			}
+		}
+	}
+
+	option = {
+		name = "rab_plague_events.OPTD1"
+		trigger = { 
+			has_building = hospital 
+		}
+		ai_chance = { factor = 100 }
+		
+			add_province_modifier = {
+				name = rab_plague_0
+				duration = 1825
+			}
+	}
+	
+	option = {
+		name = "rab_plague_events.OPTE1"
+		trigger = { 
+			NOT = { 
+				OR = {
+					has_building = isolated_area
+					has_building = quarantine 
+					has_building = simple_hospital
+					has_building = hospital  
+				}
+			}
+		}
+		add_base_tax = -3
+		add_base_production = -3
+		add_base_manpower = -3
+		add_province_modifier = {
+			name = rab_plague_2
+			duration = 1825
+		}
+	}
+}
+
+
+#full controlled
+
+province_event = {
+	id = rab_plague_events.6
+	title = "rab_plague_events.NAME6"
+	desc = "rab_plague_events.DESC6"
+	picture = PRAYING_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	
+	option = {
+	name = "rab_plague_events.OPTA6"
+		add_province_modifier = {
+			name = rab_plague_0
+			duration = 1825
+		}
+	}
+}
+
+#mild controlled
+
+province_event = {
+	id = rab_plague_events.7
+	title = "rab_plague_events.NAME7"
+	desc = "rab_plague_events.DESC7"
+	picture = DEPRESSION_WALKING_eventPicture
+	
+	hidden = yes	
+	is_triggered_only = yes
+
+	
+	option = {
+	name = "rab_plague_events.OPTA7"
+	
+		add_province_modifier = {
+			name = rab_plague_1
+			duration = 1825
+		}
+	}
+}
+#no controlled
+province_event = {
+	id = rab_plague_events.8
+	title = "rab_plague_events.NAME8"
+	desc = "rab_plague_events.DESC8"
+	picture = PLAGUE_eventPicture
+	
+	hidden = yes	
+	is_triggered_only = yes
+
+	
+	option = {
+	name = "rab_plague_events.OPTA8"
+		add_base_tax = -3
+		add_base_production = -3
+		add_base_manpower = -3
+		add_province_modifier = {
+			name = rab_plague_2
+			duration = 1825
+		}
+	}
+}	
+	

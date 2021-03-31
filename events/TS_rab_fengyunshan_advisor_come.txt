@@ -1,0 +1,53 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = aab_advisor_come
+
+#fkSĞgÍyagöNNúQ°s
+#id = 1 : fengyunshan : ¯Q‘NqS0fkS0
+
+country_event = {
+	id = aab_advisor_come.1
+	title = "aab_advisor_come.1.t"
+	desc = "aab_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	#:N†NMQßu»løv²QzZP†Ncheck ruler¨RjO
+	trigger = {
+		is_year = 1835	
+		NOT = { is_year = 1853 }
+		tag = TP1
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	option = {
+		name = aab_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = fengyunshan
+				name = "¯Q‘NqS0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "¯Q‘NqS0fkS0"
+				fire = 7
+				shock = 7
+				manuever = 4
+				siege = 4
+			}
+		}
+	}
+}
+

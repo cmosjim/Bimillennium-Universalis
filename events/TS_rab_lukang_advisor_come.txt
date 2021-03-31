@@ -1,0 +1,68 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = lukang_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : lukang : F–—b0fkS0
+
+country_event = {
+	id = lukang_advisor_come.1
+	title = "lukang_advisor_come.1.t"
+	desc = "lukang_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 246	
+		NOT = { is_year = 278 }
+		OR = {
+			AND = {
+				NOT = { exists = SNC }
+				exists = WUU
+				tag = WUU
+			}
+			AND = {
+				NOT = { exists = WUU }
+				exists = SNC
+				tag = SNC
+			}
+			
+			AND = {
+				NOT = { exists = SNC }
+				NOT = { exists = WUU }
+				owns = 2482
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = lukang_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = lukang
+				name = "F–—b0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "F–—b0fkS0"
+				fire = 6
+				shock = 7
+				manuever = 4
+				siege = 4
+			}
+		}
+	}
+}
+

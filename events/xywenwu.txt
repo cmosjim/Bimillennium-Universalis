@@ -1,0 +1,1002 @@
+# 2018.8.28 FROM XY
+# 2018.9.1 wenwu value pictures.
+# 2018.12.27 fit to 1.28
+# 2019.01.05 xy_wenwu.2 add xy_wenwu.OPTA2 / xy_wenwu.OPTB2 显示文宦和武戚
+
+namespace = xy_wenwu
+
+
+#请在开局直接触发一次该事件
+country_event = {
+	id = xy_wenwu.1
+	title = "xy_wenwu.NAME1"
+	desc = "xy_wenwu.DESC1"
+	picture = BAD_ARMY_eventPicture
+	trigger = {
+		has_reform = celestial_empire
+		NOT = { has_country_modifier = wudaigeju }
+		NOT = { has_country_flag = wenwuzhi1  }
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}
+			if = {
+				limit = {
+					is_year = 976 
+					NOT = { is_year = 1127 } 
+					tag = SNG 
+				}
+				set_variable = {
+					which = num_of_wenwuzhi
+					value = 65
+				}
+			}		
+			if = {
+				limit = {
+					is_year = 1127
+					NOT = { is_year = 1141 } 
+					tag = SNG 
+				}
+				set_variable = {
+					which = num_of_wenwuzhi
+					value = 41
+				}
+			}	
+			if = {
+				limit = {
+					is_year = 1141
+					NOT = { is_year = 1279 } 
+					tag = SNG 
+				}
+				set_variable = {
+					which = num_of_wenwuzhi
+					value = 65
+				}
+			}
+                                              if = {
+				limit = {
+					NOT = { culture_group = east_asian }
+				}
+				set_variable = {
+					which = num_of_wenwuzhi
+					value = 36
+				}
+			}		
+			set_country_flag = wenwuzhi1				
+		}		
+	}
+	option = {
+	name = "xy_wenwu.OPTA1"
+	custom_tooltip = tp_st_of_wenwuzhi
+	}
+}
+#查看文武值
+country_event = {
+	id = xy_wenwu.2
+	title = "xy_wenwu.NAME2"
+	desc = "xy_wenwu.DESC2"
+	
+	picture = {
+		trigger = {
+			#check_variable = {
+			#	which = num_of_wenwuzhi
+			#	value = 0
+			#}
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 6
+				}				
+			}	
+		}
+		picture = wenwu_process_0_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 6
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 16
+				}				
+			}	
+		}
+		picture = wenwu_process_10_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 16
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 26
+				}				
+			}	
+		}
+		picture = wenwu_process_20_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 26
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 36
+				}				
+			}	
+		}
+		picture = wenwu_process_30_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 36
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 46
+				}				
+			}	
+		}
+		picture = wenwu_process_40_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 46
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 56
+				}				
+			}	
+		}
+		picture = wenwu_process_50_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 56
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 66
+				}				
+			}	
+		}
+		picture = wenwu_process_60_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 66
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 76
+				}				
+			}	
+		}
+		picture = wenwu_process_70_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 76
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 86
+				}				
+			}	
+		}
+		picture = wenwu_process_80_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 86
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 96
+				}				
+			}	
+		}
+		picture = wenwu_process_90_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 96
+			}
+		}
+		picture = wenwu_process_100_eventPicture 
+	}		
+	is_triggered_only = yes
+	#显示文派组成
+	option = {
+		name = "xy_wenwu.OPTA2"
+		custom_tooltip = tp_st_of_wenhuanzhi
+		country_event = {
+			id = rab_wenhuan.2
+		}	
+	}
+	#显示武派组成
+	option = {
+		name = "xy_wenwu.OPTB2"
+		custom_tooltip = tp_st_of_wuqizhi
+		country_event = {
+			id = rab_wuqi.2
+		}			
+	}
+	#leave
+	option = {
+		name = "xy_wenwu.OPTC2"
+		clr_country_flag = wenwuzhi2
+	}
+}
+
+#不符合条件时，移除影响
+country_event = {
+	id = xy_wenwu.3
+	title = "xy_wenwu.NAME3"
+	desc = "xy_wenwu.DESC3"
+	picture = BAD_ARMY_eventPicture
+	trigger = {
+		OR = { 
+			NOT = {
+				has_reform = celestial_empire
+			}
+			has_country_modifier = wudaigeju 
+		}
+			has_country_flag = wenwuzhi1
+			has_country_flag = wuqizhi1
+			has_country_flag = wenhuanzhi1   
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}
+		}
+	}
+	option = {
+	name = "xy_wenwu.OPTA3"
+		clr_country_flag = wenwuzhi1 	
+	}
+}
+
+
+#战争使文武值下降
+
+country_event = {
+	id = xy_wenwu.5
+	title = "xy_wenwu.NAME5"
+	desc = "xy_wenwu.DESC5"
+	picture = BAD_ARMY_eventPicture
+	trigger = {
+		is_at_war = yes
+		NOT = { has_country_modifier = wwzwurenbuman }
+		has_country_flag = wenwuzhi1
+		has_country_flag = wuqizhi1
+		has_country_flag = wenhuanzhi1 
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "xy_wenwu.OPTA5"
+		ai_chance = {
+		factor = 30
+			modifier = {
+			factor = 3
+			NOT = { culture_group = east_asian } 
+			}
+			modifier = {
+				factor = 3
+				NOT = { war_score = -10 }
+			}
+		}
+		#subtract_variable = {
+		#	which = num_of_wenwuzhi
+		#	value = 3
+		#	}
+		#}		
+		subtract_wenwu_3_effect = yes
+	}
+	option = {
+	name = "xy_wenwu.OPTB5"
+		ai_chance = {
+			factor = 40
+			modifier = {
+			factor = 0.1
+			num_of_loans = 1
+			}
+		}
+		add_years_of_income = -0.2
+	}
+	option = {
+	name = "xy_wenwu.OPTC5"
+		ai_chance = {
+		factor = 30
+			modifier = {
+			factor = 3
+				tag = SNG
+				NOT = {
+					has_ruler_flag = zhaokuangyin 
+				}
+			}
+			modifier = {
+				factor = 0.1
+				num_of_loans = 1
+			}
+		}
+			#change_variable = {
+			#	which = num_of_wenwuzhi
+			#	value = 1
+			#}		
+		add_wenwu_1_effect = yes 
+		
+		add_country_modifier = {
+			name = "wwzwurenbuman"
+			duration = 1825
+		}
+	}
+}
+
+
+#和平使文武值上升
+
+country_event = {
+	id = xy_wenwu.6
+	title = "xy_wenwu.NAME6"
+	desc = "xy_wenwu.DESC6"
+	picture = BAD_ARMY_eventPicture
+	trigger = {
+		is_at_war = no
+		NOT = { has_country_modifier = wwzwenrenbuman }
+		has_country_flag = wenwuzhi1
+		has_country_flag = wuqizhi1
+		has_country_flag = wenhuanzhi1 
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	option = {
+		name = "xy_wenwu.OPTA6"
+			#subtract_variable = {
+			#	which = num_of_wenwuzhi
+			#	value = 1
+			#}
+			subtract_wenwu_1_effect = yes
+			add_country_modifier = {
+				name = "wwzwenrenbuman"
+				duration = 1825
+			}
+		}
+	option = {
+		name = "xy_wenwu.OPTB6"
+		ai_chance = {
+			factor = 40
+		}
+	 add_prestige = -5
+	}
+	option = {
+		name = "xy_wenwu.OPTC6"
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2.5
+				tag = SNG
+				NOT = { has_ruler_flag = zhaokuangyin }
+			}
+		}
+			#change_variable = {
+			#	which = num_of_wenwuzhi
+			#	value = 2
+			#}		
+		add_wenwu_2_effect = yes
+		add_years_of_income = 0.1
+	}
+}
+#军事能力强的君主遇到武人掌权问题
+
+country_event = {
+	id = xy_wenwu.7
+	title = "xy_wenwu.NAME7"
+	desc = "xy_wenwu.DESC7"
+	picture = BAD_ARMY_eventPicture
+	trigger = {
+		mil = 5
+		NOT = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 30
+			}
+		}
+		OR = {
+			had_country_flag = { flag = wwzwrzq1 days = 3650 }
+			NOT = { has_country_flag = wwzwrzq1 }
+		}
+		has_country_flag = wenwuzhi1
+		has_country_flag = wuqizhi1
+		has_country_flag = wenhuanzhi1  
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		hidden_effect = {
+			set_country_flag = wwzwrzq1
+		}
+	}
+	option = {
+		name = "xy_wenwu.OPTA7"
+		ai_chance = {
+			factor = 0
+		}
+			#subtract_variable = {
+			#	which = num_of_wenwuzhi
+			#	value = 10
+			#}
+			
+		subtract_wenwu_10_effect = yes
+		
+		add_mil_power = -100
+		add_ruler_modifier = {
+			name = "wwzjiayuwuren"
+			duration = 3650
+		}
+	}
+	option = {
+		name = "xy_wenwu.OPTB7"
+		ai_chance = {
+			factor = 0
+		}
+			#subtract_variable = {
+			#	which = num_of_wenwuzhi
+			#	value = 5
+			#}		
+		subtract_wenwu_5_effect = yes
+		add_mil_power = -100
+		add_ruler_modifier = {
+			name = "wwzjiayuwuren"
+			duration = 3650
+		}
+	}
+	option = {
+		name = "xy_wenwu.OPTC7"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				NOT = { ruler_age = 30 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { adm = 3 }
+			}   
+		}
+		add_mil_power = -100
+		add_ruler_modifier = {
+			name = "wwzjiayuwuren"
+			duration = 3650
+		}
+	}
+	option = {
+			name = "xy_wenwu.OPTD7"
+			ai_chance = {
+				factor = 50
+				modifier = {
+					factor = 20
+					ruler_age = 50
+				}
+			}
+        #change_variable = {
+		#		which = num_of_wenwuzhi
+		#		value = 10
+		#	}
+		#}			
+	       add_wenwu_10_effect = yes
+	}
+}
+
+#军事能力弱的君主遇到武人掌权问题
+
+country_event = {
+	id = xy_wenwu.8
+	title = "xy_wenwu.NAME8"
+	desc = "xy_wenwu.DESC8"
+	picture = BAD_ARMY_eventPicture
+	
+	trigger = {
+	    NOT = {  mil = 3  }
+		NOT = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 30
+			}
+		}
+		OR = { had_country_flag = { flag = wwzwrzq2 days = 3650 }
+			NOT = { has_country_flag = wwzwrzq2 }
+		}
+		has_country_flag = wenwuzhi1
+		has_country_flag = wuqizhi1
+		has_country_flag = wenhuanzhi1 
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		hidden_effect = {
+			set_country_flag = wwzwrzq2
+		}
+	}
+	option = {
+		name = "xy_wenwu.OPTA8"
+		#subtract_variable = {
+		#	which = num_of_wenwuzhi
+		#	value = 10
+		#}		
+		subtract_wenwu_10_effect = yes
+		
+		add_country_modifier = {
+			name = "wwzwurenjiaoheng"
+			duration = 3650
+		}
+	}
+	option = {
+		name = "xy_wenwu.OPTB8"
+		add_country_modifier = {
+			name = "wwzwurenfennu"
+			duration = 3650
+		}
+	}
+	option = {
+		name = "xy_wenwu.OPTC8"
+		trigger = {
+			check_variable = {
+			which = num_of_wenwuzhi
+				value = 20
+			}
+		}
+			#change_variable = {
+			#	which = num_of_wenwuzhi
+			#	value = 10
+			#}		
+		add_wenwu_10_effect = yes
+		add_country_modifier = {
+				name = "wwzwurenlixin"
+				duration = 3650
+		}
+	}
+}
+
+#行政能力强的君主遇到文人掌权问题
+country_event = {
+	id = xy_wenwu.9
+	title = "xy_wenwu.NAME9"
+	desc = "xy_wenwu.DESC9"
+	picture = BAD_ARMY_eventPicture
+	trigger = {
+		adm = 5
+		check_variable = {
+			which = num_of_wenwuzhi
+			value = 70
+		}
+		OR = {
+			had_country_flag = {
+				flag = wwzwrzq3 days = 3650 
+			}
+			NOT = { has_country_flag = wwzwrzq3 }
+		}
+		has_country_flag = wenwuzhi1
+		has_country_flag = wuqizhi1
+		has_country_flag = wenhuanzhi1   
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		hidden_effect = {
+			set_country_flag = wwzwrzq3
+		}
+	}
+	option = {
+	name = "xy_wenwu.OPTA9"
+		ai_chance = {
+			factor = 0
+		}
+		#change_variable = {
+		#	which = num_of_wenwuzhi
+		#	value = 10
+		#}		
+		add_wenwu_10_effect = yes
+		add_ruler_modifier = {
+				name = "wwzjiayuwwenren"
+				duration = 3650
+			}
+		}
+  option = {
+		name = "xy_wenwu.OPTB9"
+		ai_chance = {
+			factor = 0
+		}
+			#change_variable = {
+			#	which = num_of_wenwuzhi
+			#	value = 5
+			#}		
+		add_wenwu_5_effect = yes
+		add_mil_power = -100
+		add_ruler_modifier = {
+				name = "wwzjiayuwwenren"
+				duration = 3650
+			}
+	}
+ option = {
+		name = "xy_wenwu.OPTC9"
+			ai_chance = {
+			factor = 50
+                    modifier = {
+				factor = 1.5
+				NOT = { mil = 3 }
+			}   
+}
+add_adm_power = -100
+  add_ruler_modifier = {
+				name = "wwzjiayuwwenren"
+				duration = 3650
+			}
+		}
+	option = {
+		name = "xy_wenwu.OPTD9"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 20
+				ruler_age = 50
+			}
+		}
+		#subtract_variable = {
+		#	which = num_of_wenwuzhi
+		#	value = 10
+		#}		
+		subtract_wenwu_10_effect = yes
+	}
+}
+#行政能力弱的君主遇到文人掌权的问题
+
+country_event = {
+	id = xy_wenwu.10
+	title = "xy_wenwu.NAME10"
+	desc = "xy_wenwu.DESC10"
+	picture = BAD_ARMY_eventPicture
+	trigger = {
+			
+		NOT = {  mil = 3  }
+		check_variable = {
+			which = num_of_wenwuzhi
+			value = 70
+		}
+	
+		OR = { 
+			had_country_flag = { flag = wwzwrzq4 days = 3650 }
+			NOT = { has_country_flag = wwzwrzq4 }
+		}
+		has_country_flag = wenwuzhi1
+		has_country_flag = wuqizhi1
+		has_country_flag = wenhuanzhi1  
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+		immediate = {
+			hidden_effect = {
+				set_country_flag = wwzwrzq4
+			}
+		}
+	option = {
+	name = "xy_wenwu.OPTA10"
+	
+		#change_variable = {
+		#	which = num_of_wenwuzhi
+		#	value = 5
+		#}
+		
+		add_wenwu_5_effect = yes
+		
+		add_country_modifier = {
+			name = "wwzwenrenfubai"
+			duration = 3650
+		}
+	}
+	option = {
+		name = "xy_wenwu.OPTB10"
+		ai_chance = {
+			factor = 100             #非特定的昏君不会选第一个选项
+		}
+       add_stability = -3
+	}
+}
+
+
+#非核心领土使文武值升降
+
+province_event = {
+	id = xy_wenwu.11
+	title = "xy_wenwu.NAME11"
+	desc = "xy_wenwu.DESC11"
+	picture = BAD_ARMY_eventPicture
+	trigger = {
+		owner = {
+			has_country_flag = wenwuzhi1
+			has_country_flag = wuqizhi1
+			has_country_flag = wenhuanzhi1   
+		}
+		NOT = { is_core = owner }
+		OR = {
+			had_province_flag = {
+				flag = wwzwrhxlt1
+				days = 7300 
+			}
+			NOT = { has_province_flag = wwzwrhxlt1 }
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			set_province_flag = wwzwrhxlt1
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	option = {
+		name = "xy_wenwu.OPTA11"
+			ai_chance = {
+			factor = 50
+				modifier = {
+					factor = 1.5
+					mil = 3
+				}
+				modifier = {
+			    factor = 1.5
+			NOT = { culture_group = east_asian } 
+			}
+			}
+      add_province_modifier = {
+			name = "wwzjlzz"
+			duration = 3650
+		}
+		owner = {
+			#subtract_variable = {
+			#		which = num_of_wenwuzhi
+			#		value = 1
+			#}
+			subtract_wenwu_1_effect = yes
+		}
+	}
+	option = {
+	name = "xy_wenwu.OPTB11"
+			ai_chance = {
+				factor = 50
+				modifier = {
+					factor = 1.5
+					adm = 3
+				}
+			}
+		owner = {
+			#change_variable = {
+			#	which = num_of_wenwuzhi
+			#		value = 1
+			#	}
+			#}
+			add_wenwu_1_effect = yes
+		}
+		add_province_modifier = {
+			name = "wwzwgzz"
+			duration = 3650
+		}
+	}
+}
+
+#非本文化直属州使文武值升降
+
+province_event = {
+	id = xy_wenwu.12
+	title = "xy_wenwu.NAME12"
+	desc = "xy_wenwu.DESC12"
+	picture = BAD_ARMY_eventPicture
+	trigger = {
+		owner = {
+			has_country_flag = wenwuzhi1
+			has_country_flag = wuqizhi1
+			has_country_flag = wenhuanzhi1 
+			NOT = { has_province_modifier = wwzjlzz }
+			NOT = { has_province_modifier = wwzwgzz }
+		}
+		unrest = 1
+		is_territory = yes
+		NOT = {
+			culture_group = ROOT 
+		} 
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			unrest = 3
+		}
+		modifier = {
+		factor = 0.5
+		 unrest = 6
+		}
+	}
+	option = {
+		name = "xy_wenwu.OPTA12"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				mil = 3
+			}
+			modifier = {
+			    factor = 1.5
+			NOT = { culture_group = east_asian } 
+			}
+		}
+	add_province_modifier = {
+		name = "wwzjlzz"
+		duration = 3650
+	}
+	owner = {
+		#subtract_variable = {
+		#	which = num_of_wenwuzhi
+		#	value = 1
+		#}
+		subtract_wenwu_1_effect = yes
+	}
+		}
+	option = {
+	name = "xy_wenwu.OPTB12"
+		ai_chance = {
+		factor = 50
+			modifier = {
+				factor = 1.5
+				adm = 3
+			}
+		}
+		owner = {
+		#	change_variable = {
+		#		which = num_of_wenwuzhi
+		#		value = 1
+		#	}
+			add_wenwu_1_effect = yes	
+		}
+	
+	add_province_modifier = {
+			name = "wwzwgzz"
+			duration = 3650
+		}
+	}
+}
+
+#高发展度直属州使文武值升降
+
+province_event = {
+	id = xy_wenwu.13
+	title = "xy_wenwu.NAME13"
+	desc = "xy_wenwu.DESC13"
+	picture = BAD_ARMY_eventPicture
+	trigger = {
+		owner = {
+			has_country_flag = wenwuzhi1
+			has_country_flag = wuqizhi1
+			has_country_flag = wenhuanzhi1  
+		}
+		is_state = yes
+		culture_group = ROOT 
+		total_development = 15
+	}
+  
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.8
+			total_development = 20
+		}
+		modifier = {
+			factor = 0.8
+			total_development = 30
+		}
+		modifier = {
+			factor = 0.8
+			total_development = 40
+		}
+		modifier = {
+			factor = 0.8
+			total_development = 50
+		}
+	}
+	option = {
+		name = "xy_wenwu.OPTA13"
+			ai_chance = {
+			factor = 33
+				modifier = {
+					factor = 1.5
+					mil = 3
+				}
+				modifier = {
+			    factor = 1.5
+			NOT = { culture_group = east_asian } 
+			}
+			}
+  
+			owner = {
+				#subtract_variable = {
+				#	which = num_of_wenwuzhi
+				#	value = 1
+				#}
+				subtract_wenwu_1_effect = yes
+				add_mil_power = 30
+			}
+		}
+	option = {
+	name = "xy_wenwu.OPTB13"
+		ai_chance = {
+		factor = 33
+			modifier = {
+				factor = 1.5
+				adm = 3
+			}
+		}
+		owner = {
+			#change_variable = {
+			#	which = num_of_wenwuzhi
+			#	value = 1
+			#}
+			add_wenwu_1_effect = yes	
+			add_adm_power = 30
+		}
+	}
+	option = {
+		name = "xy_wenwu.OPTC13"
+		owner = {
+			add_mil_power = 15
+			add_dip_power = 15
+		}
+	}
+}

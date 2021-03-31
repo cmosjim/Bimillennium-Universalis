@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = gaozhanggong_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : gaozhanggong : Øš•m`0fkS0
+
+country_event = {
+	id = gaozhanggong_advisor_come.1
+	title = "gaozhanggong_advisor_come.1.t"
+	desc = "gaozhanggong_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 555	
+		NOT = { is_year = 574 }
+		OR = {
+			AND = {
+				exists = BAQ
+				tag = BAQ
+			}
+			AND = {
+				NOT = { exists = BAQ }
+				owns = 695
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = gaozhanggong_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = gaozhanggong
+				name = "Øš•m`0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "Øš•m`0fkS0"
+				fire = 7
+				shock = 6
+				manuever = 3
+				siege = 3
+			}
+		}
+	}
+}
+

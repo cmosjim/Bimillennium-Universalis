@@ -1,0 +1,4401 @@
+namespace = rab_acient
+#rab_acient.1#IF TSS ˝V∂Rexistsˇ180 year , :V6R˙Q∞s˘fÕd/˘fN
+#rab_acient.2#IF TSS ˝V∂Rexistsˇ217 year , :V6R˙Q∞s˘fN/˘f·S
+#rab_acient.3#IF TSS ˝V∂Rexistsˇ226 year , :V6R˙Q∞s˘f·S/˘f≥Ç
+#rab_acient.4#˘R TGG :V6RVb
+#rab_acient.5#˘R ZOF :V6RVb
+#rab_acient.6#˘R UAZ :V6RVb
+#rab_acient.7#˘R CNW :V6RVb
+#rab_acient.8#˘R LUD :V6RVb
+#rab_acient.9#˘R GON :V6RVb
+#rab_acient.10#˘RMTN:V6RVb
+#rab_acient.11#˘RLUP:V6RVb
+#rab_acient.12#˘RTST:V6RVb
+#rab_acient.13#˘RZON:V6RVb
+#rab_acient.14#˘RLIL:V6RVb
+#rab_acient.15#˘RMLN:V6RVb
+#rab_acient.16#˘RSNJ:V6RVb
+#rab_acient.17#˘RSNC:V6RVb
+#rab_acient.18#˘RZIX:V6RVb
+#rab_acient.19#˘RTOC:V6RVb
+#rab_acient.20#˘RWHG:V6RVb
+#rab_acient.21#˘RYNB:V6RVb
+#rab_acient.22#˘RTSS:V6RVb
+#rab_acient.23#˘RTSU:V6RVb
+#rab_acient.24#˘RWNF:V6RVb
+#rab_acient.25#˘RWNF:V6RVb
+#rab_acient.26#˘RWNF:V6RVb
+#rab_acient.27#˘RWNF:V6RVb
+#rab_acient.28#˘RTSU:V6RVb
+#rab_acient.29#˘RWNF:V6RVb
+#rab_acient.30#˘RWNF:V6RVb
+#rab_acient.31#˘RWNF:V6RVb
+#rab_acient.32#˘RWNF:V6RVb
+#rab_acient.33-37# ˘fÕdåTvñ&åÑv≤QÅz
+#rab_acient.38-43# T^Ng˘fÕdorkQÔçTwõQ
+#rab_acient.44-70# ˘RXXXX:V6RVb
+# I type error on filename , it should be rab_ancient..
+#˘fiTÑv?QPR˘fÕd
+country_event = {
+	id = rab_acient.1
+	title = "rab_acient.NAME1"
+	desc = "rab_acient.DESC1"
+	picture = BAD_ARMY_eventPicture
+   
+     fire_only_once = yes
+	
+	trigger = {
+		tag = TSS
+		is_year = 180
+		
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	immediate = {
+		hidden_effect = {
+			define_ruler = {
+					name = "˘fÕd"
+					age = 25
+					claim = 100
+					adm = 6
+					dip = 5
+					mil = 4
+
+			}
+		define_heir = {
+					name = "˘fN"	
+					age = 1
+					claim = 100
+					adm = 4
+					dip = 4
+					mil = 4
+	
+		}
+		}
+	}
+	option = {
+		name = "rab_acient.OPTA1"
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.2
+	title = "rab_acient.NAME2"
+	desc = "rab_acient.DESC2"
+	picture = BAD_ARMY_eventPicture
+   
+     fire_only_once = yes
+	
+	trigger = {
+		tag = TSS
+		is_year = 217
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	immediate = {
+		hidden_effect = {
+		define_ruler = {
+		
+					name = "˘fN"
+					age = 30
+					claim = 100	
+					adm = 4
+					dip = 4
+					mil = 4
+	
+		}
+		define_heir = {
+					name = "˘f·S"	
+					age = 1
+					claim = 100
+					adm = 2
+					dip = 3
+					mil = 2
+	
+		}
+	}
+	}	
+	option = {
+		name = "rab_acient.OPTA2"
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.3
+	title = "rab_acient.NAME3"
+	desc = "rab_acient.DESC3"
+	picture = BAD_ARMY_eventPicture
+   
+     fire_only_once = yes
+	
+	trigger = {
+		tag = TSS
+		is_year = 226
+		
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	immediate = {
+		hidden_effect = {
+				define_ruler = {
+				
+								name = "˘f·S"
+								age = 20
+								claim = 100
+								adm = 2
+								dip = 3
+								mil = 2
+				}
+				define_heir = {
+								name = "˘f≥Ç"	
+								age = 1
+								claim = 100
+								adm = 1
+								dip = 3
+								mil = 2
+				
+				}	
+		}
+	}
+	option = {
+		name = "rab_acient.OPTA3"
+	}
+	
+}
+
+#Force them to fight ! 
+# id:4 ~ id :32
+##################################
+country_event = {
+	id = rab_acient.4
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+				
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { truce_with = TGG }
+		NOT = { alliance_with = TGG }
+		army_size = 7
+		army_size = TGG
+		is_neighbor_of = TGG
+		TGG = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "rab_acient.OPTA4"
+			declare_war_with_cb = {
+				who = TGG
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.5
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { tag = ZOF }
+		NOT = { truce_with = LOE }
+		NOT = { alliance_with = LOE }
+		army_size = 7
+		army_size = LOE
+		is_neighbor_of = LOE
+		LOE = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.OPTA5"
+			declare_war_with_cb = {
+				who = LOE
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+
+country_event = {
+	id = rab_acient.6
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = UAZ }
+		NOT = { alliance_with = UAZ }
+		army_size = 7
+		army_size = UAZ
+		is_neighbor_of = UAZ
+		UAZ = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.OPTA6"
+			declare_war_with_cb = {
+				who = UAZ
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+
+country_event = {
+	id = rab_acient.7
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { tag = ZOF }
+		NOT = { truce_with = CNW }
+		NOT = { alliance_with = CNW }
+		army_size = 7
+		army_size = CNW
+		is_neighbor_of = CNW
+		CNW = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.OPTA7"
+			declare_war_with_cb = {
+				who = CNW
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.8
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = LUD }
+		NOT = { alliance_with = LUD }
+		army_size = 7
+		army_size = LUD
+		is_neighbor_of = LUD
+		LUD = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.OPTA8"
+			declare_war_with_cb = {
+				who = LUD
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.9
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = GON }
+		NOT = { alliance_with = GON }
+		army_size = 7
+		army_size = GON
+		is_neighbor_of = GON
+		GON = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.OPTA9"
+			declare_war_with_cb = {
+				who = GON
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.10
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = MTN }
+		NOT = { alliance_with = MTN }
+		army_size = 7
+		army_size = MTN
+		is_neighbor_of = MTN
+		MTN = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.OPTA10"
+			declare_war_with_cb = {
+				who = MTN
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.11
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = LUP }
+		NOT = { alliance_with = LUP }
+		army_size = 7
+		army_size = LUP
+		is_neighbor_of = LUP
+		LUP = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.OPTA11"
+			declare_war_with_cb = {
+				who = LUP
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.12
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = TS2 }
+		NOT = { alliance_with = TS2 }
+		army_size = 7
+		army_size = TS2
+		is_neighbor_of = TS2
+		TS2 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.OPTA12"
+			declare_war_with_cb = {
+				who = TS2
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.13
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = ZON }
+		NOT = { alliance_with = ZON }
+		army_size = 7
+		army_size = ZON
+		is_neighbor_of = ZON
+		ZON = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.OPTA13"
+			declare_war_with_cb = {
+				who = ZON
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.14
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = LIL }
+		NOT = { alliance_with = LIL }
+		army_size = 7
+		army_size = LIL
+		is_neighbor_of = LIL
+		LIL = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.OPTA14"
+			declare_war_with_cb = {
+				who = LIL
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.15
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = WLN }
+		NOT = { alliance_with = WLN }
+		army_size = 7
+		army_size = WLN
+		is_neighbor_of = WLN
+		WLN = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.OPTA15"
+			declare_war_with_cb = {
+				who = WLN
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.16
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = SNJ }
+		NOT = { alliance_with = SNJ }
+		army_size = 7
+		army_size = SNJ
+		is_neighbor_of = SNJ
+		SNJ = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.OPTA16"
+			declare_war_with_cb = {
+				who = SNJ
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.17
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = SNC }
+		NOT = { alliance_with = SNC }
+		army_size = 7
+		army_size = SNC
+		is_neighbor_of = SNC
+		SNC = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = SNC
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.18
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = ZIX }
+		NOT = { alliance_with = ZIX }
+		army_size = 7
+		army_size = ZIX
+		is_neighbor_of = ZIX
+		ZIX = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = ZIX
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.19
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = TOC }
+		NOT = { alliance_with = TOC }
+		army_size = 7
+		army_size = TOC
+		is_neighbor_of = TOC
+		TOC = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = TOC
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.20
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = WHG }
+		NOT = { alliance_with = WHG }
+		army_size = 7
+		army_size = WHG
+		is_neighbor_of = WHG
+		WHG = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = WHG
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.21
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = YNB }
+		NOT = { alliance_with = YNB }
+		army_size = 7
+		army_size = YNB
+		is_neighbor_of = YNB
+		YNB = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = YNB
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.22
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = TSS }
+		NOT = { alliance_with = TSS }
+		army_size = 7
+		army_size = TSS
+		is_neighbor_of = TSS
+		TSS = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = TSS
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.23
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = TSU }
+		NOT = { alliance_with = TSU }
+		army_size = 7
+		army_size = TSU
+		is_neighbor_of = TSU
+		TSU = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = TSU
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.24
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = WNF }
+		NOT = { alliance_with = WNF }
+		army_size = 7
+		army_size = WNF
+		is_neighbor_of = WNF
+		WNF = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = WNF
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.25
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = LUO }
+		NOT = { alliance_with = LUO }
+		army_size = 7
+		army_size = LUO
+		is_neighbor_of = LUO
+		LUO = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = LUO
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.26
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = GUO }
+		NOT = { alliance_with = GUO }
+		army_size = 7
+		army_size = GUO
+		is_neighbor_of = GUO
+		GUO = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = GUO
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.27
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { truce_with = ZOF }
+		NOT = { alliance_with = ZOF }		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }		
+		army_size = 7
+		army_size = ZOF
+		is_neighbor_of = ZOF
+		ZOF = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = ZOF
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.28
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { tag = ZOF }
+		NOT = { truce_with = LBB }
+		NOT = { alliance_with = LBB }
+		army_size = 7
+		army_size = LBB
+		is_neighbor_of = LBB
+		LBB = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = LBB
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.29
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = COO }
+		NOT = { alliance_with = COO }
+		army_size = 7
+		army_size = COO
+		is_neighbor_of = COO
+		COO = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = COO
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.30
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = UAN }
+		NOT = { alliance_with = UAN }
+		army_size = 7
+		army_size = UAN
+		is_neighbor_of = UAN
+		UAN = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = UAN
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+
+country_event = {
+	id = rab_acient.31
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = LIZ }
+		NOT = { alliance_with = LIZ }
+		army_size = 7
+		army_size = LIZ
+		is_neighbor_of = LIZ
+		LIZ = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = LIZ
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+
+country_event = {
+	id = rab_acient.32
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = HA2 }
+		NOT = { alliance_with = HA2 }
+		army_size = 7
+		army_size = HA2
+		is_neighbor_of = HA2
+		HA2 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = HA2
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.3300
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = HND }
+		NOT = { alliance_with = HND }
+		army_size = 7
+		army_size = HND
+		is_neighbor_of = HND
+		HND = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = HND
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+#########################################################
+# Father death conflict with TS2 and TOC
+# 
+#########################################################
+
+country_event = {
+	id = rab_acient.33
+	title = "rab_acient.NAME33"
+	desc = "rab_acient.DESC33"
+	picture = DEATH_MONARCH_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		exists = TOC
+		tag = TS2
+		has_ruler = "˘fÕd"
+		NOT = { truce_with = TOC }
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+	
+	option = {
+		name = "rab_acient.OPTA33"
+		ai_chance = { factor = 20 }
+		declare_war_with_cb = {
+			who = TOC
+			casus_belli = cb_father_bekilled
+		}
+		TOC = {
+			country_event = {
+				id = rab_acient.36
+				days = 1
+			}
+		}		
+	}		
+	option = {		
+		name = "rab_acient.OPTB33"
+		ai_chance = { factor = 80 }
+		TOC = {
+			country_event = {
+				id = rab_acient.34
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = rab_acient.34
+	title = "rab_acient.NAME34"
+	desc = "rab_acient.DESC34"
+	picture = DEATH_MONARCH_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "rab_acient.OPTA34"
+		ai_chance = { factor = 50 }
+		add_treasury = -150
+		TS2 = {
+			country_event = {
+				id = rab_acient.35
+				days = 1
+			}
+		}
+	}
+			
+	option = {		
+		name = "rab_acient.OPTB34"
+		ai_chance = { factor = 50 }
+		TS2 = {
+			country_event = {
+				id = rab_acient.37
+				days = 1
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = rab_acient.35
+	title = "rab_acient.NAME35"
+	desc = "rab_acient.DESC35"
+	picture = KILL_GENERAL_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_acient.OPTA35"
+			declare_war_with_cb = {
+				who = TOC
+				casus_belli = cb_father_bekilled
+			}
+	}
+	option = {
+		name = "rab_acient.OPTB35"
+		add_treasury = 150
+		add_prestige = 5
+		add_truce_with = TOC 
+	}
+}
+
+country_event = {
+	id = rab_acient.36
+	title = "rab_acient.NAME36"
+	desc = "rab_acient.DESC36"
+	picture = DEATH_MONARCH_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "rab_acient.OPTA36"
+	
+	}
+}
+
+country_event = {
+	id = rab_acient.37
+	title = "rab_acient.NAME37"
+	desc = "rab_acient.DESC37"
+	picture = KILL_GENERAL_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_acient.OPTA37"
+		ai_chance = { factor = 95 }
+			declare_war_with_cb = {
+				who = TOC
+				casus_belli = cb_father_bekilled
+			}
+	}
+	option = {
+		name = "rab_acient.OPTB37"
+		ai_chance = { factor = 5 }
+		add_prestige = -50
+		add_stability = -1
+	}
+}
+
+#########################################################
+# kill_dong_zhug event
+# 
+#########################################################
+country_event = {
+	id = rab_acient.38
+	title = "rab_acient.NAME38"
+	desc = "rab_acient.DESC38"
+	picture = TGG_1_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_at_war = no
+		exists = TGG
+		NOT = { tag = TGG }
+		NOT = { exists = LB1 }
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+
+		}
+		TGG = {
+			has_ruler = "cÑSS"
+			ai = yes
+		}
+		ai = no
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "rab_acient.OPTA38"
+		hidden_effect = {
+		set_global_flag = lubu_no_ai_exist
+			TGG = {
+				kill_leader = {
+					type = "T^0fkS0"
+				}	
+				kill_advisor = lu_bu
+			}
+		}	
+		random_list = {
+			50 = {
+				TGG = {
+					set_ai_attitude = {
+						who = ROOT
+					attitude = attitude_hostile
+					}	
+						add_opinion = {
+							who = ROOT
+							modifier = op_enemy_kill_TGG_support
+					}
+				}
+				country_event = {
+					id = rab_acient.39
+				}
+			}
+			50 = {
+				TGG = {
+					change_tag = LB1
+					swap_free_idea_group = yes
+							every_province = {
+								limit = {
+									is_core = TGG
+								}
+									add_core = LB1
+									remove_core = TGG
+							}			
+						define_ruler = {
+								name = "T^"
+								age = 33
+								claim = 100
+								adm = 3
+								dip = 3
+								mil = 6
+								leader = { 
+									name = "T^"	
+									fire = 10	
+									shock = 10	
+									manuever = 5
+									siege = 2
+									}
+						} 
+					set_ai_attitude = {
+						who = ROOT
+						attitude = attitude_friendly
+					}	
+							add_opinion = {
+								who = ROOT
+								modifier = op_kill_TGG_support
+							}
+	    
+				}
+				country_event = {
+					id = rab_acient.41
+					days = 1
+				}
+			}	
+		}	
+		
+	}	
+	option = {		
+		name = "rab_acient.OPTB38"
+		trigger = { 
+			NOT = {
+				OR = {
+					truce_with = TGG
+					war_with = TGG
+				}	
+			}
+		}
+		hidden_effect = {
+		set_global_flag = kill_dong_zhug
+			every_country = {
+				limit = {
+					ai = yes
+					has_opinion = { who = ROOT value = 20 }
+					has_reform = ancient_chinese_warlord_reform
+					is_at_war = no
+					NOT = { tag = TGG }
+				}
+				create_alliance = ROOT
+					set_ai_attitude = {
+						who = ROOT
+						attitude = attitude_friendly
+					}	
+				country_event = {
+					id = rab_acient.42
+					days = 3
+				}
+			}
+			country_event = {
+				id = rab_acient.43
+				days = 22
+			}	
+		}
+	}
+	option = {		
+		name = "rab_acient.OPTC38"
+
+	}
+}
+
+# fail 
+country_event = {
+	id = rab_acient.39
+	title = "rab_acient.NAME39"
+	desc = "rab_acient.DESC39"
+	picture = KILL_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "rab_acient.OPTA39"
+		hidden_effect = {
+			country_event = {
+				id = rab_acient.40
+				days = 15
+			}
+			
+		}
+		
+	}
+}
+
+country_event = {
+	id = rab_acient.40
+	title = "rab_acient.NAME40"
+	desc = "rab_acient.DESC40"
+	picture = LU_BU_DIAO_CHAN_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_acient.OPTA40"
+				define_advisor = {
+				type = lu_bu
+				name = "T^0fkS0"
+				discount = yes	
+				skill = 3
+				
+				}
+				define_advisor = {
+				female = yes
+				type = diao_chan
+				name = "ÇåIá0õQ^0"
+				discount = yes	
+				skill = 3
+				}
+				hidden_effect = {
+					set_global_flag = lubu_no_ai_exist
+					set_global_flag = diao_chan_ai_exist				
+				}	
+	}
+}
+# succeed
+country_event = {
+	id = rab_acient.41
+	title = "rab_acient.NAME41"
+	desc = "rab_acient.DESC41"
+	picture = LU_BU_KILL_DONG_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "rab_acient.OPTA41"
+		
+	}
+}
+
+
+country_event = {
+	id = rab_acient.42
+	title = "rab_acient.NAME42"
+	desc = "rab_acient.DESC42"
+	picture = LU_BU_KILL_DONG_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+		
+	option = {
+		name = "rab_acient.OPTA42"
+		
+	}
+}
+
+country_event = {
+	id = rab_acient.43
+	title = "rab_acient.NAME43"
+	desc = "rab_acient.DESC43"
+	picture = ARMY_START_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		
+		NOT = { war_with = TGG }
+		NOT = { truce_with = TGG }
+	
+	}
+	
+		
+	option = {
+		name = "rab_acient.OPTA43"
+		trigger = { num_of_allies = 1 }
+			declare_war_with_cb = {
+				who = TGG
+				casus_belli = cb_chinese_unification
+			}
+			every_country = {
+			limit = { alliance_with = ROOT }			
+				declare_war_with_cb = {
+				who = TGG
+				casus_belli = cb_chinese_unification
+				}
+			}
+			remove_fow = 8
+	}
+	option = {
+		name = "rab_acient.OPTB43"
+		trigger = { NOT = { num_of_allies = 1 } }
+			declare_war_with_cb = {
+				who = TGG
+				casus_belli = cb_chinese_unification
+			}
+	}	
+}
+######################################################### 
+# below continue to force war !
+#
+#########################################################
+
+
+#Force them to fight ! 
+
+country_event = {
+	id = rab_acient.44
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = HJJ }
+		NOT = { alliance_with = HJJ }
+		army_size = 7
+		army_size = HJJ
+		is_neighbor_of = HJJ
+		HJJ = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = HJJ
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.45
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = BAQ }
+		NOT = { alliance_with = BAQ }
+		army_size = 7
+		army_size = BAQ
+		is_neighbor_of = BAQ
+		BAQ = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = BAQ
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.46
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DIT }
+		NOT = { alliance_with = DIT }
+		army_size = 7
+		army_size = DIT
+		is_neighbor_of = DIT
+		DIT = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = DIT
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.47
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DIL }
+		NOT = { alliance_with = DIL }
+		army_size = 7
+		army_size = DIL
+		is_neighbor_of = DIL
+		DIL = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = DIL
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.48
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DIM }
+		NOT = { alliance_with = DIM }
+		army_size = 7
+		army_size = DIM
+		is_neighbor_of = DIM
+		DIM = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = DIM
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.49
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DIG }
+		NOT = { alliance_with = DIG }
+		army_size = 7
+		army_size = DIG
+		is_neighbor_of = DIG
+		DIG = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = DIG
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.50
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DAX }
+		NOT = { alliance_with = DAX }
+		army_size = 7
+		army_size = DAX
+		is_neighbor_of = DAX
+		DAX = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = DAX
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.51
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DAA }
+		NOT = { alliance_with = DAA }
+		army_size = 7
+		army_size = DAA
+		is_neighbor_of = DAA
+		DAA = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = DAA
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.52
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DAD }
+		NOT = { alliance_with = DAD }
+		army_size = 7
+		army_size = DAD
+		is_neighbor_of = DAD
+		DAD = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = DAD
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.53
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DAQ }
+		NOT = { alliance_with = DAQ }
+		army_size = 7
+		army_size = DAQ
+		is_neighbor_of = DAQ
+		DAQ = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = DAQ
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.54
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DAE }
+		NOT = { alliance_with = DAE }
+		army_size = 7
+		army_size = DAE
+		is_neighbor_of = DAE
+		DAE = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = DAE
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.55
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DAG }
+		NOT = { alliance_with = DAG }
+		army_size = 7
+		army_size = DAG
+		is_neighbor_of = DAG
+		DAG = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = DAG
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.56
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = TWE }
+		NOT = { alliance_with = TWE }
+		army_size = 7
+		army_size = TWE
+		is_neighbor_of = TWE
+		TWE = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = TWE
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.57
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = CGG }
+		NOT = { alliance_with = CGG }
+		army_size = 7
+		army_size = CGG
+		is_neighbor_of = CGG
+		CGG = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = CGG
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.58
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = CGY }
+		NOT = { alliance_with = CGY }
+		army_size = 7
+		army_size = CGY
+		is_neighbor_of = CGY
+		CGY = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = CGY
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.59
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = HNH }
+		NOT = { alliance_with = HNH }
+		army_size = 7
+		army_size = HNH
+		is_neighbor_of = HNH
+		HNH = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = HNH
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.60
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = ZMG }
+		NOT = { alliance_with = ZMG }
+		army_size = 7
+		army_size = ZMG
+		is_neighbor_of = ZMG
+		ZMG = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = ZMG
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.61
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DLL }
+		NOT = { alliance_with = DLL }
+		army_size = 7
+		army_size = DLL
+		is_neighbor_of = DLL
+		DLL = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = DLL
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.62
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = PHO }
+		NOT = { alliance_with = PHO }
+		army_size = 7
+		army_size = PHO
+		is_neighbor_of = PHO
+		PHO = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = PHO
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.63
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = WDC }
+		NOT = { alliance_with = WDC }
+		army_size = 7
+		army_size = WDC
+		is_neighbor_of = WDC
+		WDC = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = WDC
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+country_event = {
+	id = rab_acient.64
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DQI }
+		NOT = { alliance_with = DQI }
+		army_size = 7
+		army_size = DQI
+		is_neighbor_of = DQI
+		DQI = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = DQI
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+#MYE
+country_event = {
+	id = rab_acient.65
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = MYE }
+		NOT = { alliance_with = MYE }
+		army_size = 7
+		army_size = MYE
+		is_neighbor_of = MYE
+		MYE = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = MYE
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+#TK1
+country_event = {
+	id = rab_acient.66
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = TK1 }
+		NOT = { alliance_with = TK1 }
+		army_size = 7
+		army_size = TK1
+		is_neighbor_of = TK1
+		TK1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = TK1
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+#ZBA
+country_event = {
+	id = rab_acient.67
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = ZBA }
+		NOT = { alliance_with = ZBA }
+		army_size = 7
+		army_size = ZBA
+		is_neighbor_of = ZBA
+		ZBA = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = ZBA
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+#LPP
+country_event = {
+	id = rab_acient.68
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = LPP }
+		NOT = { alliance_with = LPP }
+		army_size = 7
+		army_size = LPP
+		is_neighbor_of = LPP
+		LPP = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = LPP
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+#ZNS
+country_event = {
+	id = rab_acient.69
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = ZNS }
+		NOT = { alliance_with = ZNS }
+		army_size = 7
+		army_size = ZNS
+		is_neighbor_of = ZNS
+		ZNS = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = ZNS
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+#70
+country_event = {
+	id = rab_acient.70
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = GAO }
+		NOT = { alliance_with = GAO }
+		army_size = 7
+		army_size = GAO
+		is_neighbor_of = GAO
+		GAO = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA63"
+			declare_war_with_cb = {
+				who = GAO
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+# DZ1: "RPR˝ê"
+# LX2: "R¿yõQ"
+# LL1: "ˇuógõQ"
+# CH1: "dç	wõQ"
+# CH2: "lQYRè"
+# DO1: "¶zçáõQ"
+# DX4: "cÑ™RõQ"
+# KU2: "óñ±VõQ"
+# LU2: "bS∂RõQ"
+# LX1: "Ng™RõQ"
+# LY1: "R8lõQ"
+# PO1: "mV†RõQ"
+# QI3: "Êy0NõQ"
+# WA1: "ãsŒêõQ"
+# WD1: "ãsåõQ"
+# WQ1: "áePüõQ"
+# TI1: "0ubõQ"
+# TM3: "‹îlöõQ"
+# ZB1: ".VekõQ"
+
+#DZ1
+country_event = {
+	id = rab_acient.71
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DZ1 }
+		NOT = { alliance_with = DZ1 }
+		army_size = 7
+		army_size = DZ1
+		is_neighbor_of = DZ1
+		DZ1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA71"
+			declare_war_with_cb = {
+				who = DZ1
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+#LX2
+country_event = {
+	id = rab_acient.72
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = LX2 }
+		NOT = { alliance_with = LX2 }
+		army_size = 7
+		army_size = LX2
+		is_neighbor_of = LX2
+		LX2 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA72"
+			declare_war_with_cb = {
+				who = LX2
+				casus_belli = cb_chinese_unification
+			}
+	}
+	
+}
+
+#LL1
+country_event = {
+	id = rab_acient.73
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = LL1 }
+		NOT = { alliance_with = LL1 }
+		army_size = 7
+		army_size = LL1
+		is_neighbor_of = LL1
+		LL1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA73"
+			declare_war_with_cb = {
+				who = LL1
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+#CH1
+country_event = {
+	id = rab_acient.74
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = CH1 }
+		NOT = { alliance_with = CH1 }
+		army_size = 7
+		army_size = CH1
+		is_neighbor_of = CH1
+		CH1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA74"
+			declare_war_with_cb = {
+				who = CH1
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+#CH2
+country_event = {
+	id = rab_acient.75
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = CH2 }
+		NOT = { alliance_with = CH2 }
+		army_size = 7
+		army_size = CH2
+		is_neighbor_of = CH2
+		CH2 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA75"
+			declare_war_with_cb = {
+				who = CH2
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+#DO1
+country_event = {
+	id = rab_acient.76
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1		
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DO1 }
+		NOT = { alliance_with = DO1 }
+		army_size = 7
+		army_size = DO1
+		is_neighbor_of = DO1
+		DO1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA76"
+			declare_war_with_cb = {
+				who = DO1
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+#DX4
+country_event = {
+	id = rab_acient.77
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = DX4 }
+		NOT = { alliance_with = DX4 }
+		army_size = 7
+		army_size = DX4
+		is_neighbor_of = DX4
+		DX4 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA77"
+			declare_war_with_cb = {
+				who = DX4
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+#KU2
+country_event = {
+	id = rab_acient.78
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = KU2 }
+		NOT = { alliance_with = KU2 }
+		army_size = 7
+		army_size = KU2
+		is_neighbor_of = KU2
+		KU2 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA78"
+			declare_war_with_cb = {
+				who = KU2
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+#LU2
+country_event = {
+	id = rab_acient.79
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = LU2 }
+		NOT = { alliance_with = LU2 }
+		army_size = 7
+		army_size = LU2
+		is_neighbor_of = LU2
+		LU2 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA79"
+			declare_war_with_cb = {
+				who = LU2
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+#LX1
+country_event = {
+	id = rab_acient.799
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = LX1 }
+		NOT = { alliance_with = LX1 }
+		army_size = 7
+		army_size = LX1
+		is_neighbor_of = LX1
+		LX1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA799"
+			declare_war_with_cb = {
+				who = LX1
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+#LY1
+country_event = {
+	id = rab_acient.80
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = LY1 }
+		NOT = { alliance_with = LY1 }
+		army_size = 7
+		army_size = LY1
+		is_neighbor_of = LY1
+		LY1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA80"
+			declare_war_with_cb = {
+				who = LY1
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+#PO1
+country_event = {
+	id = rab_acient.81
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = PO1 }
+		NOT = { alliance_with = PO1 }
+		army_size = 7
+		army_size = PO1
+		is_neighbor_of = PO1
+		PO1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA81"
+			declare_war_with_cb = {
+				who = PO1
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+#QI3
+country_event = {
+	id = rab_acient.82
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = QI3 }
+		NOT = { alliance_with = QI3 }
+		army_size = 7
+		army_size = QI3
+		is_neighbor_of = QI3
+		QI3 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA82"
+			declare_war_with_cb = {
+				who = QI3
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+## WA1: "ãsŒêõQ"
+
+country_event = {
+	id = rab_acient.83
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = WA1 }
+		NOT = { alliance_with = WA1 }
+		army_size = 7
+		army_size = WA1
+		is_neighbor_of = WA1
+		WA1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA83"
+			declare_war_with_cb = {
+				who = WA1
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+# WD1: "ãsåõQ"
+country_event = {
+	id = rab_acient.84
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = WD1 }
+		NOT = { alliance_with = WD1 }
+		army_size = 7
+		army_size = WD1
+		is_neighbor_of = WD1
+		WD1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA84"
+			declare_war_with_cb = {
+				who = WD1
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+# WQ1:
+country_event = {
+	id = rab_acient.85
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = WQ1 }
+		NOT = { alliance_with = WQ1 }
+		army_size = 7
+		army_size = WQ1
+		is_neighbor_of = WQ1
+		WQ1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA85"
+			declare_war_with_cb = {
+				who = WQ1
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+# TI1:
+country_event = {
+	id = rab_acient.86
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = TI1 }
+		NOT = { alliance_with = TI1 }
+		army_size = 7
+		army_size = TI1
+		is_neighbor_of = TI1
+		TI1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA86"
+			declare_war_with_cb = {
+				who = TI1
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+### WQ1:
+##country_event = {
+##	id = rab_acient.87
+##	title = "et.EVTNAME63"
+##	desc = "et.EVTDESC63"
+##	picture = RELIGION_eventPicture
+##	
+##	hidden = yes
+##	
+##	trigger = {
+##	
+##		is_at_war = no
+##		is_subject = no
+##		ai = yes
+##		OR = {
+##		has_reform = ancient_chinese_warlord_reform
+##		
+##		has_reform = celestial_empire
+##		}
+##		NOT = { war_exhaustion = 8 }
+##		NOT = { num_of_rebel_armies = 1 }
+##		
+##		NOT = { truce_with = WQ1 }
+##		NOT = { alliance_with = WQ1 }
+##		army_size = 7
+##		army_size = WQ1
+##		is_neighbor_of = WQ1
+##		WQ1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+##	}
+##
+##	mean_time_to_happen = {
+##		days = 240
+##	}
+##	
+##	option = {
+##		name = "et.EVTOPTA87"
+##			declare_war_with_cb = {
+##				who = WQ1
+##				casus_belli = cb_chinese_unification
+##			}
+##	}
+##}
+
+# TI1:
+##country_event = {
+##	id = rab_acient.87
+##	title = "et.EVTNAME63"
+##	desc = "et.EVTDESC63"
+##	picture = RELIGION_eventPicture
+##	
+##	hidden = yes
+##	
+##	trigger = {
+##	
+##		is_at_war = no
+##		is_subject = no
+##		ai = yes
+##		OR = {
+##		has_reform = ancient_chinese_warlord_reform
+##		
+##		has_reform = celestial_empire
+##		}
+##		NOT = { war_exhaustion = 8 }
+##		NOT = { num_of_rebel_armies = 1 }
+##		
+##		NOT = { truce_with = TI1 }
+##		NOT = { alliance_with = TI1 }
+##		army_size = 7
+##		army_size = TI1
+##		is_neighbor_of = TI1
+##		TI1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+##	}
+##
+##	mean_time_to_happen = {
+##		days = 240
+##	}
+##	
+##	option = {
+##		name = "et.EVTOPTA87"
+##			declare_war_with_cb = {
+##				who = TI1
+##				casus_belli = cb_chinese_unification
+##			}
+##	}
+##}
+##
+# WQ1:
+##country_event = {
+##	id = rab_acient.87
+##	title = "et.EVTNAME63"
+##	desc = "et.EVTDESC63"
+##	picture = RELIGION_eventPicture
+##	
+##	hidden = yes
+##	
+##	trigger = {
+##	
+##		is_at_war = no
+##		is_subject = no
+##		ai = yes
+##		OR = {
+##		has_reform = ancient_chinese_warlord_reform
+##		
+##		has_reform = celestial_empire
+##		}
+##		mil_power = 50
+##		#core_percentage = 0.8
+##		num_of_cities = 4
+##		stability = 1		
+##		
+##		NOT = { war_exhaustion = 8 }
+##		NOT = { num_of_rebel_armies = 1 }
+##		
+##		NOT = { truce_with = WQ1 }
+##		NOT = { alliance_with = WQ1 }
+##		army_size = 7
+##		army_size = WQ1
+##		is_neighbor_of = WQ1
+##		WQ1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+##	}
+##
+##	mean_time_to_happen = {
+##		days = 240
+##	}
+##	
+##	option = {
+##		name = "et.EVTOPTA87"
+##			declare_war_with_cb = {
+##				who = WQ1
+##				casus_belli = cb_chinese_unification
+##			}
+##	}
+##}
+
+# TM3:
+country_event = {
+	id = rab_acient.88
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = TM3 }
+		NOT = { alliance_with = TM3 }
+		army_size = 7
+		army_size = TM3
+		is_neighbor_of = TM3
+		TM3 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA88"
+			declare_war_with_cb = {
+				who = TM3
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+# ZB1:
+country_event = {
+	id = rab_acient.688
+	title = "et.EVTNAME63"
+	desc = "et.EVTDESC63"
+	picture = RELIGION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	
+		is_at_war = no
+		is_subject = no
+		ai = yes
+		OR = {
+		has_reform = ancient_chinese_warlord_reform
+		
+		has_reform = celestial_empire
+		}
+		mil_power = 50
+		#core_percentage = 0.8
+		num_of_cities = 4
+		stability = 1
+		
+		NOT = { war_exhaustion = 8 }
+		NOT = { num_of_rebel_armies = 1 }
+		
+		NOT = { truce_with = ZB1 }
+		NOT = { alliance_with = ZB1 }
+		army_size = 7
+		army_size = ZB1
+		is_neighbor_of = ZB1
+		ZB1 = { NOT = { reverse_has_opinion = { who = ROOT value = 0 } } }	
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+	
+	option = {
+		name = "et.EVTOPTA688"
+			declare_war_with_cb = {
+				who = ZB1
+				casus_belli = cb_chinese_unification
+			}
+	}
+}
+
+

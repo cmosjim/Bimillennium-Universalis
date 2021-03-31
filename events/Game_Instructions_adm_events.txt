@@ -1,0 +1,127 @@
+#游戏指南 内政篇
+# ===【更新紀錄】===
+#2016/9/24 init
+#2017/01/08 add 中華地區的造核
+#2017/11/14 combine all instructions into single entry.
+#2018/12/31 fit to 1.28 okay
+#已經沒有君主特性 朝貢id = Game_Instructions_dip_events.1
+# ===【Event ID 說明】===
+# 起始於 decision => Game_Instructions_adm_events.100
+# Game_Instructions_adm_events.NAME1: "游戏指南【内政篇】"
+# Game_Instructions_adm_events.DESC1: "想了解甚么?"
+# Game_Instructions_adm_events.OPTA1: "君主特性" <-- none
+# Game_Instructions_adm_events.OPTB1: "特殊取得核心機制"
+# Game_Instructions_adm_events.OPTC1: "结束"
+#================================================================
+# Game_Instructions_adm_events.NAME2: "游戏指南【内政篇】"
+# Game_Instructions_adm_events.DESC2: "醫療體系的建築可以防範疾病的傳播，水井可以預防旱災，但一個省份只能建立一個水井或是醫療建築。"
+# Game_Instructions_adm_events.OPTA2: "返回前面"
+#
+#
+
+namespace = Game_Instructions_adm_events
+
+
+country_event = {
+    id = Game_Instructions_adm_events.100
+	title = "Game_Instructions_adm_events.NAME1"
+	desc = "Game_Instructions_adm_events.DESC1"
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+# 內政
+		option = {
+		   name = "Game_Instructions_adm_events.OPTA100" 
+		   country_event = {
+			id = Game_Instructions_adm_events.1
+		   }
+		}
+# 外交
+#		option = {
+#		   name = "Game_Instructions_adm_events.OPTB100" 
+#		   country_event = {
+#			id = Game_Instructions_dip_events.1
+#		   }
+#		}
+# 軍事
+		option = {
+		   name = "Game_Instructions_adm_events.OPTB100" 
+		   country_event = {
+			id = Game_Instructions_mil_events.1
+		   }
+		}
+# 其他		
+		option = {
+		   name = "Game_Instructions_adm_events.OPTC100" 
+		   country_event = {
+			id = Game_Instructions_base_events.1
+		   }
+		}	
+# END		
+		option = {
+		   name = "Game_Instructions_adm_events.OPTD100" 
+				clr_country_flag = flag_Game_Instructions
+		}		
+}		
+
+
+country_event = {
+    id = Game_Instructions_adm_events.1
+	title = "Game_Instructions_adm_events.NAME1"
+	desc = "Game_Instructions_adm_events.DESC1"
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+# Game_Instructions_adm_events.OPTA1: "君主特性"		
+#		option = {
+#		   name = "Game_Instructions_adm_events.OPTA1" 
+#		   country_event = {
+#			id = Game_Instructions_adm_events.2
+#		   }
+#		}
+# Game_Instructions_adm_events.OPTB1: "特殊取得核心機制"		
+		option = {
+		   name = "Game_Instructions_adm_events.OPTB1" 
+		   country_event = {
+			id = Game_Instructions_adm_events.3
+		   }
+		}
+# Game_Instructions_adm_events.OPTC1: "结束"		
+		option = {
+		   name = "Game_Instructions_adm_events.OPTC1" 
+		   clr_country_flag = flag_Game_Instructions
+		}		
+}
+#OPTA1 : 君主特性 : Game_Instructions_adm_events.2
+country_event = {
+    id = Game_Instructions_adm_events.2
+	title = "Game_Instructions_adm_events.NAME2"
+	desc = "Game_Instructions_adm_events.DESC2"
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+		
+		option = {
+		   name = "Game_Instructions_adm_events.OPTA2" 
+		   country_event = {
+			id = Game_Instructions_adm_events.1
+		   }		   
+		}
+}
+
+# Game_Instructions_adm_events.OPTB1: "特殊取得核心機制"	
+country_event = {
+    id = Game_Instructions_adm_events.3
+	title = "Game_Instructions_adm_events.NAME3"
+	desc = "Game_Instructions_adm_events.DESC3"
+	picture = ADM_2_eventPicture
+	
+	is_triggered_only = yes
+		
+		option = {
+		   name = "Game_Instructions_adm_events.OPTA3" 
+		   country_event = {
+			id = Game_Instructions_adm_events.1
+		   }		   
+		}
+}

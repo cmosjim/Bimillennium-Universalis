@@ -1,0 +1,570 @@
+# 2018-12-28 fit to 1.28
+# 2019-04-29 fix the bug of 被反擊的時候沒有任何anti-nuclear.但是擁有核武
+############
+#rab_nuclear_events Events#
+############
+#rab_nuclear_events.DESC1:0 "从我们的情报网所知，[gt_see_nuclear_weapons.GetName]的核武数量
+#目前有[gt_see_nuclear_weapons.num_of_nuclear_weapons.GetValue]个"
+
+
+#2019-03-19 released nuclear missile launch structure id2-id8
+
+
+
+namespace = rab_nuclear_events
+
+#Household Deities
+country_event = {
+	id = rab_nuclear_events.1
+	title = rab_nuclear_events.NAME1
+	desc = rab_nuclear_events.DESC1
+	picture = nuclear_weapons_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rab_nuclear_events.OPTA1
+		clr_country_flag = flg_see_num_nuclear
+	}
+}
+
+# When opposite enemy launch missile from diplo , then call this event (FROM)
+# event 2 
+#in hidden events , give num of FROM to anti_nuclear 
+
+country_event = {
+	id = rab_nuclear_events.2
+	title = rab_nuclear_events.NAME2
+	
+	picture = nuclear_weapons_eventPicture
+	
+	desc = {
+		trigger = {
+			any_owned_province = {
+				has_building = anti_nuclear	
+			}
+		}	
+		desc = "rab_nuclear_events.DESC2a"		
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				any_owned_province = {
+					has_building = anti_nuclear	
+				}
+			}	
+		}	
+		desc = "rab_nuclear_events.DESC2b"		
+	}	
+	
+	trigger = {
+		has_country_flag = flg_miss_nuclear_intercept_cut_2
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	immediate = {
+		clr_country_flag = flg_miss_nuclear_intercept_cut_2
+	}
+	
+	option = {
+		name = rab_nuclear_events.OPTA2
+		trigger = {
+			NOT = {
+				any_owned_province = {
+					has_building = anti_nuclear	
+				}
+			}
+		}
+		#we have no anti-nuclear bomb !
+		country_event = {
+			id = rab_nuclear_events.5
+		}		
+	}
+	option = {
+		name = rab_nuclear_events.OPTB2
+		trigger = {
+			any_owned_province = {
+				has_building = anti_nuclear	
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_building = anti_nuclear
+			}			
+			remove_building = anti_nuclear
+		}
+		update_anti_nuclear_modifier = yes	
+		random_list = {
+			20 = {
+				#Intercept cut
+				country_event = {
+					id = rab_nuclear_events.4
+				}	
+				#set_country_flag = flg_nuclear_intercept_cut
+			}			
+			80 = {
+				#fail 
+				country_event = {
+					id = rab_nuclear_events.3
+				}	
+				#set_country_flag = flg_miss_nuclear_intercept_cut_3				
+			}	
+		}	
+	}	
+}
+
+country_event = {
+	id = rab_nuclear_events.3
+	title = rab_nuclear_events.NAME3
+	
+	picture = nuclear_weapons_eventPicture
+	
+	desc = {
+		trigger = {
+			any_owned_province = {
+				has_building = anti_nuclear	
+			}
+		}	
+		desc = "rab_nuclear_events.DESC3a"		
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				any_owned_province = {
+					has_building = anti_nuclear	
+				}
+			}
+		}		
+		desc = "rab_nuclear_events.DESC3b"		
+	}	
+	
+	#trigger = {
+	#	has_country_flag = flg_miss_nuclear_intercept_cut_3
+	#}
+	#mean_time_to_happen = { days = 1 }
+	#
+	#immediate = {
+	#	clr_country_flag = flg_miss_nuclear_intercept_cut_3
+	#}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rab_nuclear_events.OPTA3
+		trigger = {
+			NOT = {
+				any_owned_province = {
+					has_building = anti_nuclear	
+				}
+			}
+		}
+		#we have no anti-nuclear bomb !
+		country_event = {
+			id = rab_nuclear_events.5
+		}		
+	}
+	option = {
+		name = rab_nuclear_events.OPTB3
+		trigger = {
+			any_owned_province = {
+				has_building = anti_nuclear	
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_building = anti_nuclear
+			}			
+			remove_building = anti_nuclear
+		}	
+		
+		update_anti_nuclear_modifier = yes	
+		
+		random_list = {
+			20 = {
+				#Intercept cut
+				country_event = {
+					id = rab_nuclear_events.4
+				}	
+				#set_country_flag = flg_nuclear_intercept_cut
+			}			
+			80 = {
+				#fail 
+				country_event = {
+					id = rab_nuclear_events.2
+				}				
+				#set_country_flag = flg_miss_nuclear_intercept_cut_2
+			}	
+		}	
+	}	
+}
+
+
+#######################################
+#id = 4 we succeed cut the missile 
+########################################
+country_event = {
+	id = rab_nuclear_events.4
+	title = rab_nuclear_events.NAME4
+	desc = rab_nuclear_events.DESC4
+	picture = nuclear_weapons_eventPicture
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rab_nuclear_events.OPTA4
+		clr_country_flag = flg_target_of_missile_attempt
+	}
+}
+
+########################################
+#id = 5 that is so sad, we didnt cut the missile
+########################################
+country_event = {
+	id = rab_nuclear_events.5
+	title = rab_nuclear_events.NAME5
+	desc = rab_nuclear_events.DESC5
+	picture = NUCLEAR_ATT_MODERN_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				remove_core = ROOT
+				add_devastation = 100
+				add_base_tax = -25
+				add_base_production = -25
+				add_base_manpower = -25				
+
+				kill_units = {
+					who = ROOT
+					type = infantry
+					amount = 100
+				}
+				kill_units = {
+					who = ROOT
+					type = cavalry
+					amount = 100
+				}
+				kill_units = {
+					who = ROOT
+					type = artillery
+					amount = 100
+				}
+				every_neighbor_province = {
+					add_province_modifier = {
+						name = "md_radiation_dust"
+						duration = 1820
+					}
+					add_devastation = 50
+					add_base_tax = -15
+					add_base_production = -15
+					add_base_manpower = -15
+					kill_units = {
+						type = infantry
+						amount = 45
+					}
+					kill_units = {
+						type = cavalry
+						amount = 45
+					}
+					kill_units = {
+						type = artillery
+						amount = 25
+					}					
+				}
+			}	
+		}
+	}	
+		
+	
+	option = {
+		name = rab_nuclear_events.OPTA5
+		clr_country_flag = flg_target_of_missile_attempt
+		capital_scope = {
+			cede_province = XXX				
+			add_province_modifier = {
+				name = "pov_nuclear_central_bomb"
+				duration = 1820
+			}
+			add_province_modifier = {
+				name = "md_radiation_dust"
+				duration = 1820
+			}				
+		}	
+	}
+}
+
+#id = 6  hidden @FROM
+country_event = {
+	id = rab_nuclear_events.6
+	title = rab_nuclear_events.NAME6
+	desc = rab_nuclear_events.DESC6 
+	picture = nuclear_weapons_eventPicture
+	
+	hidden = yes 
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = target_of_missile_attempt
+			set_country_flag = flg_target_of_missile_attempt #// This is avoid player suffer another nuclear missile during defensing nuclear .
+			FROM = {
+				country_event = {
+					id = rab_nuclear_events.7 #//ROOT
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = rab_nuclear_events.OPTA6
+			ai_chance = { factor = 100 }
+		
+	}
+}
+# ID6@FROM => ID7@ROOT 
+country_event = {
+	id = rab_nuclear_events.7
+	title = rab_nuclear_events.NAME7
+	desc = rab_nuclear_events.DESC7 #//show the num_of_nuclear_weapons
+	picture = nuclear_weapons_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = rab_nuclear_events.OPTA7 #//any negative events modifier must add here.
+		clr_country_flag = flg_launch_event #//check wehter the ROOT and FROM still under launch process
+		add_treasury = -1000
+		add_prestige = -50
+		add_country_modifier = {
+			name = "md_lanuch_nuclear_ever"
+			duration = 700
+		}
+		subtract_variable = {
+			which = num_of_nuclear_weapons	
+			value = 1
+		}	
+		event_target:target_of_missile_attempt = {#//FROM
+			country_event = {
+				id = rab_nuclear_events.8
+			}	
+		}
+	}
+	option = {
+		name = rab_nuclear_events.OPTB7
+		ai_chance = { factor = 0 } #//test
+		#cancel
+		clr_country_flag = flg_launch_event
+		FROM = { clr_country_flag = flg_target_of_missile_attempt }
+	}	
+}
+# ID6@FROM => ID7@ROOT => ID8@FROM
+country_event = { #//first trigger this event 
+	id = rab_nuclear_events.8
+	title = rab_nuclear_events.NAME8
+	
+	picture = nuclear_weapons_eventPicture
+	
+	desc = {
+		trigger = {
+			any_owned_province = {
+				has_building = anti_nuclear	
+			}
+		}	
+		desc = "rab_nuclear_events.DESC8a"	
+		#rab_nuclear_events.DESC8a:0 "該死的[From.Country.GetName]竟然向我們發射了核武，"
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				any_owned_province = {
+					has_building = anti_nuclear	
+				}	
+			}
+		}		
+		desc = "rab_nuclear_events.DESC8b"
+		#rab_nuclear_events.DESC8a:0 "該死的[From.Country.GetName]竟然向我們發射了核武，最要命的是我們境內沒有購置任何反導彈裝置，我們的命"		
+	}	
+	
+	is_triggered_only = yes
+	
+	# no anti_nuclear & no nuclear num
+	# rab_nuclear_events.OPTA8:0 "完蛋了"
+	option = {
+		name = rab_nuclear_events.OPTA8
+		trigger = {
+			NOT = {
+				any_owned_province = {
+					has_building = anti_nuclear	
+				}	
+			}
+		}
+		ai_chance = { factor = 10 }
+		#we have no anti-nuclear bomb !
+		country_event = {
+			id = rab_nuclear_events.5
+		}		
+	}
+	# no anti_nuclear & has nuclear num 必須不能是反擊的
+	# rab_nuclear_events.OPTB8:0 "同歸於盡【也用核彈反擊】"
+	option = {
+		name = rab_nuclear_events.OPTB8
+		trigger = {
+			NOT = {
+				any_owned_province = {
+					has_building = anti_nuclear	
+				}	
+			}
+			check_variable = {
+				which = num_of_nuclear_weapons	
+				value = 1
+			}
+			NOT = { has_country_modifier = md_lanuch_nuclear_ever } #//你若是之前用了核彈也無法反擊了
+		}
+		ai_chance = { factor = 100 }
+		FROM = {
+			country_event = { 
+				id = rab_nuclear_events.8
+			}
+		}	
+		#we have no anti-nuclear bomb !
+		country_event = {
+			id = rab_nuclear_events.5
+		}		
+	}	
+	option = {
+		#rab_nuclear_events.OPTC8:0 "發射反導彈攔截【不用核彈反擊】"
+		name = rab_nuclear_events.OPTC8
+		trigger = {
+			any_owned_province = {
+				has_building = anti_nuclear	
+			}
+		}
+		ai_chance = { factor = 10 }		
+		#delete random place for anti_nuclear and no response
+		random_owned_province = {
+			limit = {
+				has_building = anti_nuclear
+			}			
+			remove_building = anti_nuclear
+		}	
+		
+		custom_tooltip = tp_randomshows
+		
+		hidden_effect = { 
+		
+			update_anti_nuclear_modifier = yes
+		
+			random_list = {
+				20 = {
+					country_event = {
+						id = rab_nuclear_events.4
+					}		
+				}			
+				80 = {
+					set_country_flag = flg_miss_nuclear_intercept_cut_2		
+				}	
+			}
+		}
+	}
+	
+	option = {
+		#rab_nuclear_events.OPTD8:0 "發射反導彈攔截【也用核彈反擊】"
+		name = rab_nuclear_events.OPTD8
+		trigger = {
+			any_owned_province = {
+				has_building = anti_nuclear	
+			}
+			check_variable = {
+				which = num_of_nuclear_weapons	
+				value = 1
+			}			
+			NOT = { has_country_modifier = md_lanuch_nuclear_ever }			
+		}
+		ai_chance = { factor = 100 }				
+		#delete random place for anti_nuclear 
+		random_owned_province = {
+			limit = {
+				has_building = anti_nuclear
+			}			
+			remove_building = anti_nuclear
+		}	
+		subtract_variable = {
+			which = num_of_nuclear_weapons	
+			value = 1
+		}		
+		custom_tooltip = tp_randomshows #//tp_randomshows:0 攔截機率為20%
+		
+		hidden_effect = {
+		
+			update_anti_nuclear_modifier = yes
+			
+			FROM = {
+				country_event = { 
+					id = rab_nuclear_events.8
+				}
+			}		
+			random_list = {
+				20 = {
+					country_event = {
+						id = rab_nuclear_events.4
+					}	
+				}			
+				80 = {
+					set_country_flag = flg_miss_nuclear_intercept_cut_2
+				}	
+			}	
+		}
+	}	
+}
+
+#id9 enforce AI building the anti_nuclear building 
+country_event = {
+	id = rab_nuclear_events.9
+	title = rab_nuclear_events.NAME9
+	desc = rab_nuclear_events.DESC9
+	picture = nuclear_weapons_eventPicture
+	
+	hidden = yes 
+
+	trigger = {
+		treasury = 2000
+		num_of_cities = 10
+		mil_tech = 87
+		NOT = {
+			check_variable = {
+				which = num_of_anti_nuclear
+				value = 10
+			}
+		}	
+		ai = yes
+		any_country = {
+			NOT = {
+				has_opinion = {
+					who = ROOT
+					value = -150 
+				}	
+			}	
+		}	
+	}	
+
+	mean_time_to_happen = {
+		days = 120
+	}	
+	
+	option = {
+		name = rab_nuclear_events.OPTA9
+		random_owned_province = {
+			limit = {
+				NOT = { has_building = anti_nuclear }
+			}	
+			add_building = anti_nuclear
+		}
+		add_treasury = -450
+	}
+}
+

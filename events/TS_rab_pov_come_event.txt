@@ -1,0 +1,1931 @@
+namespace = pov_come_event
+
+country_event = {
+	id = pov_come_event.1
+	title = "pov_come_event.NAME1"
+	desc = "pov_come_event.DESC1"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA1"
+		define_advisor = {
+				type = ma_loan
+				name = "löçá0áeòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+country_event = {
+	id = pov_come_event.2
+	title = "pov_come_event.NAME2"
+	desc = "pov_come_event.DESC2"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA2"
+		define_advisor = {
+				type = cai_lun
+				name = "!Ö&O0¶RòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+country_event = {
+	id = pov_come_event.3
+	title = "pov_come_event.NAME3"
+	desc = "pov_come_event.DESC3"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA3"
+		define_advisor = {
+				type = deng_rang
+				name = "ìê©ã0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.4
+	title = "pov_come_event.NAME4"
+	desc = "pov_come_event.DESC4"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA4"
+		define_advisor = {
+				type = jiang_shi
+				name = "‹Y◊ã0¶RòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.5
+	title = "pov_come_event.NAME5"
+	desc = "pov_come_event.DESC5"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA5"
+		define_advisor = {
+				type = jiang_ge
+				name = "mlió0áeòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.6
+	title = "pov_come_event.NAME6"
+	desc = "pov_come_event.DESC6"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA6"
+		define_advisor = {
+				type = liu_xin
+				name = "R·O0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.7
+	title = "pov_come_event.NAME7"
+	desc = "pov_come_event.DESC7"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA7"
+		define_advisor = {
+				type = chou_lan
+				name = "«N»â0áeòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.8
+	title = "pov_come_event.NAME8"
+	desc = "pov_come_event.DESC8"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA8"
+		define_advisor = {
+				type = hu_guang
+				name = "·w^0áeòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.9
+	title = "pov_come_event.NAME9"
+	desc = "pov_come_event.DESC9"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA9"
+		define_advisor = {
+				type = zhang_rang
+				name = ".V©ã0¶RòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.10
+	title = "pov_come_event.NAME10"
+	desc = "pov_come_event.DESC10"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA10"
+		define_advisor = {
+				type = zhen_chong
+				name = "—êO0¶RòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.11
+	title = "pov_come_event.NAME11"
+	desc = "pov_come_event.DESC11"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA11"
+		if = { limit = { ai = no }
+		define_advisor = {
+				type = huang_fu_gui
+				name = "áv+uƒâ0fkS0"
+				discount = yes	
+				skill = 3
+		}
+		}
+		if = { limit = { ai = yes }
+			define_general = {
+			name = "áv+uƒâ0fkS0"
+			fire = 4
+			shock = 4
+			manuever = 3
+			siege = 3
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.12
+	title = "pov_come_event.NAME12"
+	desc = "pov_come_event.DESC12"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA12"
+		define_advisor = {
+				type = cao_teng
+				name = "˘fåÅ0¶RòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+country_event = {
+	id = pov_come_event.14
+	title = "pov_come_event.NAME14"
+	desc = "pov_come_event.DESC14"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA14"
+		if = { limit = { ai = no }
+			define_advisor = {
+					type = dou_xian
+					name = "¶z™R0Yb0"
+					discount = yes	
+					skill = 3
+			}
+		}
+		if = { limit = { ai = yes }
+			define_general = {
+			name = "¶z™R0Yb0"
+			fire = 8
+			shock = 8
+			manuever = 4
+			siege = 4
+			}
+		}		
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.15
+	title = "pov_come_event.NAME15"
+	desc = "pov_come_event.DESC15"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA15"
+		define_advisor = {
+				type = dan_chao
+				name = "˝ˇ˝ˇ˝ˇ˝ˇ˝ˇ˝ˇ˝ˇπaf˝ˇ"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.16
+	title = "pov_come_event.NAME16"
+	desc = "pov_come_event.DESC16"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA16"
+		define_advisor = {
+				type = dan_chao
+				name = "USÖç0¶RòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.17
+	title = "pov_come_event.NAME17"
+	desc = "pov_come_event.DESC17"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA17"
+		define_advisor = {
+				type = cai_yong
+				name = "!Öïê0áeòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.18
+	title = "pov_come_event.NAME18"
+	desc = "pov_come_event.DESC18"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA18"
+		define_advisor = {
+				type = geng_bing
+				name = "?w…y0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.19
+	title = "pov_come_event.NAME19"
+	desc = "pov_come_event.DESC19"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA19"
+		define_advisor = {
+				type = he_chang
+				name = "UO^e0áeòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.20
+	title = "pov_come_event.NAME20"
+	desc = "pov_come_event.DESC20"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA20"
+		define_advisor = {
+				type = jia_fu
+				name = ">çY0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.21
+	title = "pov_come_event.NAME21"
+	desc = "pov_come_event.DESC21"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA21"
+		define_advisor = {
+				type = ban_chao
+				name = "ÌsÖç0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.22
+	title = "pov_come_event.NAME22"
+	desc = "pov_come_event.DESC22"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA22"
+		define_advisor = {
+				type = ban_zho
+				name = "Ìs-f0áeòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.23
+	title = "pov_come_event.NAME23"
+	desc = "pov_come_event.DESC23"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA23"
+		define_advisor = {
+				type = yu_xu
+				name = "^ÜÈã0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+country_event = {
+	id = pov_come_event.24
+	title = "pov_come_event.NAME24"
+	desc = "pov_come_event.DESC24"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA24"
+		define_advisor = {
+				type = zhang_heng
+				name = ".Vaà0áeòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+country_event = {
+	id = pov_come_event.25
+	title = "pov_come_event.NAME25"
+	desc = "pov_come_event.DESC25"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA25"
+		define_advisor = {
+				type = liu_yan
+				name = "R	q0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.26
+	title = "pov_come_event.NAME26"
+	desc = "pov_come_event.DESC26"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA26"
+		define_advisor = {
+				type = deng_zhi
+				name = "ìêòö0Yb0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.27
+	title = "pov_come_event.NAME27"
+	desc = "pov_come_event.DESC27"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA27"
+		define_advisor = {
+				type = deng_xun
+				name = "ìê≠ã0Yb0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.28
+	title = "pov_come_event.NAME28"
+	desc = "pov_come_event.DESC28"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA28"
+		define_advisor = {
+				type = deng_sui
+				name = "ìêÂu0Yb0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.29
+	title = "pov_come_event.NAME29"
+	desc = "pov_come_event.DESC29"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA29"
+		define_advisor = {
+				type = wang_fu
+				name = "ãs+u0¶RòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.31
+	title = "pov_come_event.NAME31"
+	desc = "pov_come_event.DESC31"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA31"
+		define_advisor = {
+				type = huang_fu_song
+				name = "áv+uiT0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.32
+	title = "pov_come_event.NAME32"
+	desc = "pov_come_event.DESC32"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA32"
+		define_advisor = {
+				type = zhu_jun
+				name = "1g O0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.33
+	title = "pov_come_event.NAME33"
+	desc = "pov_come_event.DESC33"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA33"
+		define_advisor = {
+				type = u_fu_ro
+				name = "éN+YW0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.34
+	title = "pov_come_event.NAME34"
+	desc = "pov_come_event.DESC34"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA34"
+		define_advisor = {
+				type = pu_nu
+				name = "≤ÑtY0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.35
+	title = "pov_come_event.NAME35"
+	desc = "pov_come_event.DESC35"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA35"
+		define_advisor = {
+				type = fon_ho
+				name = "0êØO0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+country_event = {
+	id = pov_come_event.37
+	title = "pov_come_event.NAME37"
+	desc = "pov_come_event.DESC37"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA37"
+		define_advisor = {
+				type = chen_fan
+				name = "HñCÖ0áeòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+country_event = {
+	id = pov_come_event.38
+	title = "pov_come_event.NAME38"
+	desc = "pov_come_event.DESC38"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA38"
+		define_advisor = {
+				type = pen_ho
+				name = "OPUO0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.39
+	title = "pov_come_event.NAME39"
+	desc = "pov_come_event.DESC39"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA39"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = zhang_bao
+					name = ".VùR0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+				define_general = {
+				name = ".VùR0fkS0"
+				fire = 6
+				shock = 6
+				manuever = 4
+				siege = 5
+			}
+		}		
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.41
+	title = "pov_come_event.NAME41"
+	desc = "pov_come_event.DESC41"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA41"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = zhang_lian
+					name = ".VÅh0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+				define_general = {
+				name = ".VÅh0fkS0"
+				fire = 5
+				shock = 4
+				manuever = 4
+				siege = 4
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.42
+	title = "pov_come_event.NAME42"
+	desc = "pov_come_event.DESC42"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA42"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = mayuan_yi
+					name = "löCQIN0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "löCQIN0fkS0"
+			fire = 5
+			shock = 5
+			manuever = 6
+			siege = 5
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.44
+	title = "pov_come_event.NAME44"
+	desc = "pov_come_event.DESC44"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA44"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = zhang_man_cheng
+					name = ".V¸fb0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = ".V¸fb0fkS0"
+			fire = 4
+			shock = 6
+			manuever = 2
+			siege = 2
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.45
+	title = "pov_come_event.NAME45"
+	desc = "pov_come_event.DESC45"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA45"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = guan_hai
+					name = "°r•N0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "°r•N0fkS0"
+			fire = 4
+			shock = 4
+			manuever = 2
+			siege = 2
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.46
+	title = "pov_come_event.NAME46"
+	desc = "pov_come_event.DESC46"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA46"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = xia_hou_yuan
+					name = "YØOn0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "YØOn0fkS0"
+			fire = 7
+			shock = 8
+			manuever = 5
+			siege = 3
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.47
+	title = "pov_come_event.NAME47"
+	desc = "pov_come_event.DESC47"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA47"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = xia_hou_dun
+					name = "YØO«`0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "YØO«`0fkS0"
+			fire = 6
+			shock = 5
+			manuever = 4
+			siege = 4
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.48
+	title = "pov_come_event.NAME48"
+	desc = "pov_come_event.DESC48"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA48"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = guan_yu
+					name = "sQÀ0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "sQÀ0fkS0"
+			fire = 9
+			shock = 9
+			manuever = 7
+			siege = 5
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.49
+	title = "pov_come_event.NAME49"
+	desc = "pov_come_event.DESC49"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA49"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = zhang_fei
+					name = ".Vﬁò0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = ".Vﬁò0fkS0"
+			fire = 9
+			shock = 10
+			manuever = 3
+			siege = 2
+			}
+		}
+	}
+}
+
+
+
+
+
+country_event = {
+	id = pov_come_event.50
+	title = "pov_come_event.NAME50"
+	desc = "pov_come_event.DESC50"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA50"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = gao_shun
+					name = "ÿözò0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "ÿözò0fkS0"
+			fire = 4
+			shock = 8
+			manuever = 8
+			siege = 6
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = pov_come_event.51
+	title = "pov_come_event.NAME51"
+	desc = "pov_come_event.DESC51"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA51"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = ma_chao
+					name = "löÖç0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "löÖç0fkS0"
+			fire = 8
+			shock = 9
+			manuever = 5
+			siege = 2
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.52
+	title = "pov_come_event.NAME52"
+	desc = "pov_come_event.DESC52"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA52"
+		define_advisor = {
+				type = sun_qian
+				name = "YRåN0áeòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.53
+	title = "pov_come_event.NAME53"
+	desc = "pov_come_event.DESC53"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA53"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = zhou_yu
+					name = "hTjt0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "hTjt0fkS0"
+			fire = 6
+			shock = 6
+			manuever = 8
+			siege = 6
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.54
+	title = "pov_come_event.NAME54"
+	desc = "pov_come_event.DESC54"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA54"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = cheng_pu
+					name = "znf0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "znf0fkS0"
+			fire = 4
+			shock = 6
+			manuever = 3
+			siege = 3
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.55
+	title = "pov_come_event.NAME55"
+	desc = "pov_come_event.DESC55"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA55"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = yan_liang
+					name = "úòoÇ0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "úòoÇ0fkS0"
+			fire = 7
+			shock = 7
+			manuever = 2
+			siege = 4
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.56
+	title = "pov_come_event.NAME56"
+	desc = "pov_come_event.DESC56"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA56"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = wen_chou
+					name = "áeN0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "áeN0fkS0"
+			fire = 7
+			shock = 7
+			manuever = 2
+			siege = 3
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.57
+	title = "pov_come_event.NAME57"
+	desc = "pov_come_event.DESC57"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA57"
+		define_advisor = {
+				type = xun_yu
+				name = "NÉgV0õQ^0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.58
+	title = "pov_come_event.NAME58"
+	desc = "pov_come_event.DESC58"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA58"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = lu_bu
+					name = "T^0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "T^0fkS0"
+			fire = 10
+			shock = 11
+			manuever = 8
+			siege = 4
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.59
+	title = "pov_come_event.NAME59"
+	desc = "pov_come_event.DESC59"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA59"
+		define_advisor = {
+				type = jia_xu
+				name = ">çÈã0õQ^0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.60
+	title = "pov_come_event.NAME60"
+	desc = "pov_come_event.DESC60"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA60"
+					define_advisor = {
+						type = li_lu
+						name = "NgQ0õQ^0"
+						discount = yes	
+						skill = 3
+					}
+	}
+}
+
+
+
+
+
+country_event = {
+	id = pov_come_event.61
+	title = "pov_come_event.NAME61"
+	desc = "pov_come_event.DESC61"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA61"
+					define_advisor = {
+						type = cheng_yu
+						name = "z1f0õQ^0"
+						discount = yes	
+						skill = 3
+
+					}
+	}
+}
+
+
+country_event = {
+	id = pov_come_event.62
+	title = "pov_come_event.NAME62"
+	desc = "pov_come_event.DESC62"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA62"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = zhang_xun
+					name = ".VÀR0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = ".VÀR0fkS0"
+			fire = 5
+			shock = 4
+			manuever = 3
+			siege = 3
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.63
+	title = "pov_come_event.NAME63"
+	desc = "pov_come_event.DESC63"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA63"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					female = yes
+					type = diao_chan
+					name = "ÇåIá0õQ^0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "ÇåIá0õQ^0"
+			fire = 5
+			shock = 5
+			manuever = 5
+			siege = 5
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.64
+	title = "pov_come_event.NAME64"
+	desc = "pov_come_event.DESC64"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA64"
+		define_advisor = {
+				type = wang_uan
+				name = "ãsAQ0áeòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.65
+	title = "pov_come_event.NAME65"
+	desc = "pov_come_event.DESC65"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA65"
+		define_advisor = {
+				type = yang_feng
+				name = "hgIY0fkS0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.66
+	title = "pov_come_event.NAME66"
+	desc = "pov_come_event.DESC66"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA66"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = zhuge_liang
+					name = "¯ãiÑÆN0õQ^0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "¯ãiÑÆN0õQ^0"
+			fire = 7
+			shock = 6
+			manuever = 7
+			siege = 5
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.67
+	title = "pov_come_event.NAME67"
+	desc = "pov_come_event.DESC67"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA67"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = hoang_chung
+					name = "ƒû‡V0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "ƒû‡V0fkS0"
+			fire = 8
+			shock = 6
+			manuever = 7
+			siege = 5
+			}
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.68
+	title = "pov_come_event.NAME68"
+	desc = "pov_come_event.DESC68"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA68"
+		define_advisor = {
+				type = zhang_zhao
+				name = ".V-f0áeòR0"
+				discount = yes	
+				skill = 3
+		}
+	}
+}
+
+
+
+country_event = {
+	id = pov_come_event.69
+	title = "pov_come_event.NAME69"
+	desc = "pov_come_event.DESC69"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA69"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = zhao_yun
+					name = "uçëN0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "uçëN0fkS0"
+			fire = 11
+			shock = 10
+			manuever = 4
+			siege = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pov_come_event.70
+	title = "pov_come_event.NAME70"
+	desc = "pov_come_event.DESC70"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA70"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = zhang_liao
+					name = ".VÀè0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = ".VÀè0fkS0"
+				fire = 6
+				shock = 6
+				manuever = 4
+				siege = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pov_come_event.71
+	title = "pov_come_event.NAME71"
+	desc = "pov_come_event.DESC71"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA71"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = xu_chu
+					name = "∏ãâ0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "∏ãâ0fkS0"
+				fire = 6
+				shock = 8
+				manuever = 3
+				siege = 4
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = pov_come_event.72
+	title = "pov_come_event.NAME72"
+	desc = "pov_come_event.DESC72"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA72"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = sima_yi
+					name = "¯Slöˇa0õQ^0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "¯Slöˇa0õQ^0"
+				fire = 7
+				shock = 6
+				manuever = 5
+				siege = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pov_come_event.73
+	title = "pov_come_event.NAME73"
+	desc = "pov_come_event.DESC73"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA73"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = lu_xun
+					name = "Fñê0õQ^0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+			name = "Fñê0õQ^0"
+				fire = 6
+				shock = 6
+				manuever = 6
+				siege = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pov_come_event.74
+	title = "pov_come_event.NAME74"
+	desc = "pov_come_event.DESC74"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "pov_come_event.OPTA74"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type = taishi_ci
+					name = "*YÚSHa0fkS0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+			define_general = {
+				name = "*YÚSHa0fkS0"
+				fire = 7
+				shock = 7
+				manuever = 6
+				siege = 6
+			}
+		}
+	}
+}
+

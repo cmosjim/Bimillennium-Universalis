@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = caowenzhao_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : caowenzhao : ùf‡eÏ‹0fkS0
+
+country_event = {
+	id = caowenzhao_advisor_come.1
+	title = "caowenzhao_advisor_come.1.t"
+	desc = "caowenzhao_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 1604	
+		NOT = { is_year = 1654 }
+		OR = {
+			AND = {
+				exists = MNG
+				tag = MNG
+			}
+			AND = {
+				NOT = { exists = MNG }
+				owns = 697
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = caowenzhao_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = caowenzhao
+				name = "ùf‡eÏ‹0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "ùf‡eÏ‹0fkS0"
+				fire = 8
+				shock = 8
+				manuever = 5
+				siege = 3
+			}
+		}
+	}
+}
+

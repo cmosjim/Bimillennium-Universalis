@@ -1,0 +1,140 @@
+#2018.12.20 add myself values initial values (1.28)
+#2019.2.6 add option
+#2019.02.19/20 xy modify.
+namespace = et
+
+country_event = {
+	id = et.63
+	title = "et.EVTNAME1"
+	desc = "et.EVTDESC1"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = REB
+	}
+	
+	immediate = {
+		set_global_flag = rab_game_start
+		if = {
+			limit = {
+				NOT = { exists = EUR }
+				any_country = {
+					has_country_modifier = european_union
+				}
+			}
+			country_event = { id = european_union.6 days = 183 }
+		}
+		if = {
+			limit = { is_year = 1390 }
+			set_global_flag = timurids_exist_at_start
+		}
+		if = {
+			limit = { is_year = 1896 }
+			1775 = { 
+				add_great_project = kiel_canal 
+				add_construction_progress = 1
+			}	
+		}
+		if = {
+			limit = { is_year = 1870 }
+			363 = { 
+				add_great_project = suez_canal 
+				add_construction_progress = 1
+			}	
+		}
+		if = {
+			limit = { is_year = 1914 }
+			835 = { 
+				add_great_project = panama_canal 
+				add_construction_progress = 1
+			}	
+		}
+		# xy indicated to add 2019.02.20
+		if = {
+			limit = { 
+				is_year = 951 
+				NOT = { is_year = 969 }
+				exists = LIO
+			}
+			LIO = { 
+				add_ruler_modifier = {
+					name = "shuiwangjing"
+					duration = -1
+				}
+			}
+		}		
+		# xy indicated to add 2019.02.19
+		if = {
+			limit = { 
+				is_year = 960 
+				NOT = { is_year = 976 }
+			}
+			SNG = { set_ruler_flag = zhaokuangyin }
+		}		
+		
+		# rab_ add var_tianshanlotus = 0 initialize ===^===		
+		every_country = {
+			set_variable = {
+				which = num_of_tianshanlotus
+				value = 0
+			}
+			set_variable = {
+				which = num_of_snowshoes_plot
+				value = 0
+			}			
+			set_variable = {
+				which = num_of_stopwarflag
+				value = 0
+			}
+			set_variable = {
+				which = num_of_milbook
+				value = 0
+			}
+			set_variable = {
+				which = num_of_admbook
+				value = 0
+			}
+			set_variable = {
+				which = num_of_nuclear_weapons
+				value = 0
+			}	
+			set_variable = {
+				which = num_of_immortality			
+				value = 0
+			}
+			set_variable = {
+				which = num_of_amber
+				value = 0
+			}			
+		}
+		every_country = { #//This is for searching treasury event used.
+			limit = {
+				ai = no
+			}	
+			save_global_event_target_as = finder_player_tag
+		}
+		every_country = {
+			limit = {
+				OR = {
+					has_reform = ancient_chinese_warlord_reform
+					has_reform = celestial_empire
+					has_reform = chinese_feudatory_reform
+					tag = TP1
+				}
+				has_female_consort = yes
+				is_female = no
+			}
+			set_variable = {
+				which = num_of_talking_wife
+				value = 0
+			}
+		}
+	}
+	option = {
+		name = "et.EVTOPTA63"
+
+	}	
+}

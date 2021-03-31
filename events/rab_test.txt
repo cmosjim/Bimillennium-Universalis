@@ -1,0 +1,185 @@
+########################
+#Advisor  entry  Events#
+#########################
+#
+namespace = rab_test
+
+country_event = {
+	id = rab_test.1
+	title = "rab_test.NAME1"
+	desc = "rab_test.DESC1"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = rab_test.OPTA1
+		if = {
+			limit = {
+				exists = WA2
+				WA2 = {
+					has_country_flag = flg_done_Dasinshenzhi
+				}
+			}
+			WA2 = {
+				clr_country_flag = flg_done_Dasinshenzhi
+			}
+		}
+		every_province = {
+			limit = {
+				has_province_modifier = pov_WangMongSon
+			}
+			remove_province_modifier = pov_WangMongSon
+		}
+	}
+}
+
+
+country_event = {
+	id = rab_test.100
+	title = "rab_test.NAME100"
+	desc = "rab_test.DESC100"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = rab_test.OPTA1
+			random_owned_province = {
+				add_province_modifier = {
+					name = "test"
+					duration = -1
+				}
+			}
+	}
+}
+
+country_event = {
+	id = rab_test.2
+	title = "rab_test.NAME2"
+	desc = "rab_test.DESC2"
+	picture = NEW_ADVISOR_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = rab_test.OPTA2
+		capital_scope = {
+			ROOT = {
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				
+			}
+		}
+	}
+}	
+#
+#
+#country_event = {
+#	id = rab_test.3
+#	title = "rab_test.NAME3"
+#	desc = "rab_test.DESC3"
+#	picture = NEW_ADVISOR_eventPicture
+#
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		
+#		set_saved_name = {
+#			key = testvalue
+#			type = ruler
+#			scope = ROOT
+#		}	
+#		
+#	}
+#	
+#	option = {
+#		name = rab_test.OPTA3
+#		override_country_name = testvalue
+#	}
+#}
+#
+#country_event = {
+#	id = rab_test.4
+#	title = "rab_test.NAME4"
+#	desc = "rab_test.DESC4"
+#	picture = NEW_ADVISOR_eventPicture
+#
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		
+#		set_saved_name = {
+#			key = testvalue2
+#			type = advisor
+#			scope = ROOT
+#		}	
+#		
+#	}
+#	
+#	option = {
+#		name = rab_test.OPTA4
+#		override_country_name = testvalue2
+#	}
+#}
+#country_event = {
+#	id = rab_test.4
+#	title = "rab_test.NAME4"
+#	desc = "rab_test.DESC4"
+#	picture = NEW_ADVISOR_eventPicture
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = rab_test.OPTA4
+#		set_dynasty = BAV
+#	}
+#	option = {
+#		name = rab_test.OPTB4
+#		set_dynasty = NEW
+#	}	
+#	option = {
+#		name = rab_test.OPTC4
+#		set_dynasty = original_dynasty
+#	}	
+#}
+#
+#country_event = {
+#	id = rab_test.5
+#	title = "rab_test.NAME5"
+#	desc = "rab_test.DESC5"
+#	picture = NEW_ADVISOR_eventPicture
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = rab_test.OPTA5
+#		1821 = {
+#			cede_province = DQE
+#			add_core = DQE
+#		}
+#		1816 = {
+#			cede_province = DQN
+#			add_core = DQN
+#		}
+#		679 = {
+#			cede_province = QG2
+#			add_core = QG2
+#		}		
+#	}
+#}
+#

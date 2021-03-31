@@ -1,0 +1,302 @@
+namespace = okinawa_navy_base_transport
+country_event = {
+	id = okinawa_navy_base_transport.2
+	title = "okinawa_navy_base_transport.NAME2"
+	desc = "okinawa_navy_base_transport.DESC2"
+	picture = navy_base_eventPicture
+	
+	is_triggered_only = yes
+	# attched 10 units of transports
+	option = {
+		name = "okinawa_navy_base_transport.OPTA2"
+		trigger = {
+			any_owned_province = {
+				transports_in_province = 1
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_okinawa_transport
+					value = 200
+				}
+			}
+			
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = yes
+				factor = 0
+			}	
+		}			
+		random_owned_province = {
+			limit = {
+				transports_in_province = 1
+			}
+			kill_units = {
+				who = ROOT
+				type = transport
+				amount = 1
+			}
+		}		
+		change_variable = {
+			which = num_of_okinawa_transport
+			value = 1
+		}
+		country_event = {
+			id = okinawa_navy_base_transport.3
+		}	
+	}
+	#release 10 units transport
+	option = {
+		name ="okinawa_navy_base_transport.OPTB2"
+		trigger = {
+			check_variable = {
+				which = num_of_okinawa_transport
+				value = 10
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = no
+				factor = 0
+			}	
+		}				
+		subtract_variable = {
+			which = num_of_okinawa_transport
+			value = 10
+		}
+		1015 = {
+			ROOT = {
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_transport.3
+		}		
+	}	
+	#release 1 units transport
+	option = {
+		name ="okinawa_navy_base_transport.OPTC2"
+		trigger = {
+			check_variable = {
+				which = num_of_okinawa_transport
+				value = 1
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = no
+				factor = 0
+			}	
+		}	
+		
+		subtract_variable = {
+			which = num_of_okinawa_transport
+			value = 1
+		}
+		1015 = {
+			ROOT = {
+				transport = PREV
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_transport.3
+		}		
+	}
+	option = {
+		name ="okinawa_navy_base_transport.OPTD2"
+		trigger = {
+			is_at_war = no
+			1015 = {
+				transports_in_province = 1
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = yes
+				factor = 0
+			}	
+		}		
+		change_variable = {
+			which = num_of_okinawa_transport
+			value = 1
+		}
+		1015 = {
+			kill_units = {
+				who = ROOT
+				type = transport
+				amount = 1
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_transport.3
+		}		
+	}	
+	option = {
+		name = "okinawa_navy_base_transport.OPTE2"
+		clr_country_flag = tmp_check_okinawa_navy_base_transport
+	}	
+}
+
+country_event = {
+	id = okinawa_navy_base_transport.3
+	title = "okinawa_navy_base_transport.NAME3"
+	desc = "okinawa_navy_base_transport.DESC3"
+	picture = navy_base_eventPicture
+	
+	is_triggered_only = yes
+	# attched 10 units of transports
+	option = {
+		name = "okinawa_navy_base_transport.OPTA3"
+		trigger = {
+			any_owned_province = {
+				transports_in_province = 1
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_okinawa_transport
+					value = 200
+				}
+			}
+			
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = yes
+				factor = 0
+			}	
+		}			
+		random_owned_province = {
+			limit = {
+				transports_in_province = 1
+			}
+			kill_units = {
+				who = ROOT
+				type = transport
+				amount = 1
+			}
+		}		
+		change_variable = {
+			which = num_of_okinawa_transport
+			value = 1
+		}
+		country_event = {
+			id = okinawa_navy_base_transport.2
+		}	
+	}
+	#release 10 units transport
+	option = {
+		name ="okinawa_navy_base_transport.OPTB3"
+		trigger = {
+			check_variable = {
+				which = num_of_okinawa_transport
+				value = 10
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = no
+				factor = 0
+			}	
+		}			
+		subtract_variable = {
+			which = num_of_okinawa_transport
+			value = 10
+		}
+		1015 = {
+			ROOT = {
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_transport.2
+		}		
+	}	
+	#release 1 units transport
+	option = {
+		name ="okinawa_navy_base_transport.OPTC3"
+		trigger = {
+			check_variable = {
+				which = num_of_okinawa_transport
+				value = 1
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = no
+				factor = 0
+			}	
+		}		
+		
+		subtract_variable = {
+			which = num_of_okinawa_transport
+			value = 1
+		}
+		1015 = {
+			ROOT = {
+				transport = PREV
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_transport.2
+		}		
+	}
+	option = {
+		name ="okinawa_navy_base_transport.OPTD3"
+		trigger = {
+			is_at_war = no
+			1015 = {
+				transports_in_province = 1
+			}	
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				is_at_war = yes
+				factor = 0
+			}	
+		}		
+		change_variable = {
+			which = num_of_okinawa_transport
+			value = 1
+		}
+		1015 = {
+			kill_units = {
+				who = ROOT
+				type = transport
+				amount = 1
+			}
+		}
+		country_event = {
+			id = okinawa_navy_base_transport.2
+		}		
+	}	
+	option = {
+		name = "okinawa_navy_base_transport.OPTE3"
+		clr_country_flag = tmp_check_okinawa_navy_base_transport
+	}	
+}

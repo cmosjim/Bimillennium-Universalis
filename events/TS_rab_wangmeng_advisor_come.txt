@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = wangmeng_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : wangmeng : ‹ss 0›Q^0
+
+country_event = {
+	id = wangmeng_advisor_come.1
+	title = "wangmeng_advisor_come.1.t"
+	desc = "wangmeng_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 340	
+		NOT = { is_year = 375 }
+		OR = {
+			AND = {
+				exists = QIN
+				tag = QIN
+			}
+			AND = {
+				NOT = { exists = QIN }
+				owns = 3185
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = wangmeng_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = wangmeng
+				name = "‹ss 0›Q^0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "‹ss 0›Q^0"
+				fire = 8
+				shock = 4
+				manuever = 4
+				siege = 6
+			}
+		}
+	}
+}
+

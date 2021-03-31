@@ -1,0 +1,694 @@
+namespace = rab_influenza_events
+#find [random_event.23] , then delete that trigger source.
+#2017/03/01 add hidden the message if dis_plague_feedback enable on country decisions
+country_event = {
+	id = rab_influenza_events.1000
+	title = "rab_influenza_events.NAME1000"
+	desc = "rab_influenza_events.DESC1000"
+	picture = PLAGUE_eventPicture
+	
+	#rab_influenza_events_done will be delete by hidden_events for 100 years
+		
+	trigger = {
+		NOT = { has_global_flag = rab_influenza_events_done }
+		any_country = {
+			has_poor_medician_condition = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	#	
+	#	to resist trigger again , the flag will be canceled by hidden_event written another doc.
+	#	
+	#
+	
+	immediate = {
+		set_global_flag = rab_influenza_events_done 
+	}
+	
+	option = {
+		name = "rab_influenza_events.OPTA1000" 
+		random_country = {
+				limit = {
+					has_poor_medician_condition = yes
+					NOT = { tag = KBO }
+					NOT = { technology_group = north_american }					
+				}
+			country_event = {
+				id =  rab_influenza_events.1
+			}			
+		}
+	}
+}
+
+#self countryevent
+country_event = {
+	id = rab_influenza_events.1
+	title = "rab_influenza_events.NAME1"
+	desc = "rab_influenza_events.DESC1"
+	picture = PLAGUE_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "rab_influenza_events.OPTA1" # Quarantine the port and let them die!
+		random_owned_province = {
+			limit = {
+				NOT = {
+					OR = {
+						has_building = quarantine 
+						has_building = simple_hospital 
+						has_building = hospital  
+						has_building = isolated_area 
+						has_province_modifier = influenza						
+						has_province_modifier = influenza_controlled
+						has_province_modifier = influenza_already
+					}
+
+				}
+				
+			}
+			add_province_modifier = {
+				name = "influenza"
+				duration = 400
+			}
+			add_province_modifier = {
+				name = "influenza_already"
+				duration = 22000
+			}			
+		}
+		every_country = {
+			limit = { 
+				ai = no 
+			}
+			country_event = {
+				id = rab_influenza_events.5
+			}
+		}	
+	}	
+}
+
+#当世界上第一个省份有出现流感
+#此机制将会把感染送到别的省份
+
+province_event = {
+	id = rab_influenza_events.2
+	title = "rab_influenza_events.NAME2"
+	desc = "rab_influenza_events.DESC2"
+	picture = PLAGUE_eventPicture
+	
+	trigger = { 
+		NOT = {	owner = { has_country_flag = dis_plague_feedback } }
+		NOT = {
+			OR = {
+				 has_province_modifier = influenza
+				 has_province_modifier = influenza_already
+				 has_province_modifier = influenza_controlled
+			}
+		}
+		any_neighbor_province = {
+			has_province_modifier = influenza	
+		}
+	}		
+	mean_time_to_happen = {
+		days = 270
+	}	
+	
+	option = {
+		name = "rab_influenza_events.OPTA2" 
+		trigger = { 
+			NOT = {
+				OR = {
+					has_building = isolated_area 	
+					has_building = quarantine 
+					has_building = simple_hospital 
+					has_building = hospital  
+				}	
+			}
+		}
+		if = {
+			limit = { has_terrain = desert }
+			random_list = {
+			#传染出去
+				60 = {
+					
+					province_event = {
+						id = rab_influenza_events.3
+					}
+					
+				}
+			#隔离住了	
+				40 = {
+					province_event = {
+						id = rab_influenza_events.4
+			
+					}				
+				}	
+			}		
+		}
+		if = {
+			limit = { NOT = { has_terrain = desert } }
+			random_list = {
+			#传染出去
+				85 = {
+					#there are not any medical building 
+					province_event = {
+						id = rab_influenza_events.3
+					}
+					
+				}
+			#隔离住了		
+				15 = {
+					province_event = {
+						id = rab_influenza_events.4
+			
+					}				
+				}	
+			}		
+		}
+	}
+	option = {
+		name = "rab_influenza_events.OPTB2" # Quarantine the port and let them die!
+		trigger = { 
+			has_building = isolated_area 	
+			NOT = {
+				OR = {
+					has_building = quarantine 
+					has_building = simple_hospital 
+					has_building = hospital  
+				}	
+			}
+		}
+
+		if = {
+			limit = { has_terrain = desert }
+			random_list = {
+			
+				30 = {
+					#there are not any medical building 
+					province_event = {
+						id = rab_influenza_events.3
+					}
+					
+				}
+			
+				70 = {
+					province_event = {
+						id = rab_influenza_events.4
+			
+					}				
+				}	
+			}		
+		}
+		if = {
+			limit = { NOT = { has_terrain = desert } }
+			random_list = {
+			
+				40 = {
+					
+					province_event = {
+						id = rab_influenza_events.3
+					}
+					
+				}
+			
+				60 = {
+					province_event = {
+						id = rab_influenza_events.4
+			
+					}				
+				}	
+			}		
+		}
+	}
+	option = {
+		name = "rab_influenza_events.OPTC2" # Quarantine the port and let them die!
+		trigger = { 
+					has_building = quarantine	
+			NOT = {
+				OR = {
+					has_building = simple_hospital 
+					has_building = hospital  
+				}	
+			}
+		}		
+		if = {
+			limit = { has_terrain = desert }
+			random_list = {
+			
+				15 = {
+					
+					province_event = {
+						id = rab_influenza_events.3
+					}
+					
+				}
+			
+				85 = {
+					province_event = {
+						id = rab_influenza_events.4
+			
+					}				
+				}	
+			}		
+		}
+		if = {
+			limit = { NOT = { has_terrain = desert } }
+			random_list = {
+
+				25 = {
+					
+					province_event = {
+						id = rab_influenza_events.3
+					}
+					
+				}
+
+				75 = {
+					province_event = {
+						id = rab_influenza_events.4
+			
+					}				
+				}	
+			}		
+		}
+	}
+	option = {
+		name = "rab_influenza_events.OPTD2" # Quarantine the port and let them die!
+		trigger = { 
+					has_building = simple_hospital 	
+			NOT = {
+				has_building = hospital  
+			}
+		}		
+		if = {
+			limit = { has_terrain = desert }
+			random_list = {
+
+				10 = {
+					#there are not any medical building 
+					province_event = {
+						id = rab_influenza_events.3
+					}
+					
+				}
+
+				90 = {
+					province_event = {
+						id = rab_influenza_events.4
+			
+					}				
+				}	
+			}		
+		}
+		if = {
+			limit = { NOT = { has_terrain = desert } }
+			random_list = {
+
+				15 = {
+					#there are not any medical building 
+					province_event = {
+						id = rab_influenza_events.3
+					}
+					
+				}
+
+				85 = {
+					province_event = {
+						id = rab_influenza_events.4
+			
+					}				
+				}	
+			}		
+		}
+	}	
+	option = {
+		name = "rab_influenza_events.OPTE2" # Quarantine the port and let them die!
+		trigger = {
+					has_building = hospital  
+		}		
+		random_list = {
+			5 = {
+				#there are not any medical building 
+				province_event = {
+					id = rab_influenza_events.3
+				}
+				
+			}
+			95 = {
+				province_event = {
+					id = rab_influenza_events.4
+	
+				}				
+			}	
+		}
+	}	
+}
+# 显示该省粉隔离失败 ， 中标
+province_event = {
+	id = rab_influenza_events.3
+	title = "rab_influenza_events.NAME3"
+	desc = "rab_influenza_events.DESC3"
+	picture = PLAGUE_eventPicture
+	
+	is_triggered_only = yes
+		
+		option = {
+			name = "rab_influenza_events.OPTA3" #
+			add_province_modifier = {
+				name = "influenza"
+				duration = 400
+			}
+			add_province_modifier = {
+				name = "influenza_already"
+				duration = 22000
+			}			
+		}
+}
+# 显示该省粉防堵成功
+province_event = {
+	id = rab_influenza_events.4
+	title = "rab_influenza_events.NAME4"
+	desc = "rab_influenza_events.DESC4"
+	picture = PRAYING_eventPicture
+	
+	is_triggered_only = yes
+		
+		option = {
+			name = "rab_influenza_events.OPTA4" #
+			add_province_modifier = {
+				name = "influenza_controlled"
+				duration = 22000
+			}
+	}
+}
+#只显示给玩家看，表示有国家开始倒楣了
+province_event = {
+	id = rab_influenza_events.5
+	title = "rab_influenza_events.NAME5"
+	desc = "rab_influenza_events.DESC5"
+	picture = PRAYING_eventPicture
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = "rab_influenza_events.OPTA5" #
+	}
+}
+
+#####################################################################################
+#
+#####################################################################################
+
+
+#当世界上第一个省份有出现流感
+#此机制将会把感染送到别的省份
+# 
+province_event = {
+	id = rab_influenza_events.6
+	title = "rab_influenza_events.NAME6"
+	desc = "rab_influenza_events.DESC6"
+	picture = PLAGUE_eventPicture
+	
+	hidden = yes
+	
+	trigger = { 
+		owner = { has_country_flag = dis_plague_feedback }
+		NOT = {
+			OR = {
+				 has_province_modifier = influenza
+				 has_province_modifier = influenza_already
+				 has_province_modifier = influenza_controlled
+			}
+		}
+		any_neighbor_province = {
+			has_province_modifier = influenza	
+		}
+	}		
+	mean_time_to_happen = {
+		days = 270
+	}	
+	
+	option = {
+		name = "rab_influenza_events.OPTA6" 
+		trigger = { 
+			NOT = {
+				OR = {
+					has_building = isolated_area 	
+					has_building = quarantine 
+					has_building = simple_hospital 
+					has_building = hospital  
+				}	
+			}
+		}
+		if = {
+			limit = { has_terrain = desert }
+			random_list = {
+			#传染出去
+				60 = {
+					
+					province_event = {
+						id = rab_influenza_events.7
+					}
+					
+				}
+			#隔离住了		
+				40 = {
+					province_event = {
+						id = rab_influenza_events.8
+			
+					}				
+				}	
+			}		
+		}
+		if = {
+			limit = { NOT = { has_terrain = desert } }
+			random_list = {
+			#传染出去
+				85 = {
+					#there are not any medical building 
+					province_event = {
+						id = rab_influenza_events.7
+					}
+					
+				}
+			#隔离住了		
+				15 = {
+					province_event = {
+						id = rab_influenza_events.8
+			
+					}				
+				}	
+			}		
+		}
+	}
+	option = {
+		name = "rab_influenza_events.OPTB6" # Quarantine the port and let them die!
+		trigger = { 
+			has_building = isolated_area 	
+			NOT = {
+				OR = {
+					has_building = quarantine 
+					has_building = simple_hospital 
+					has_building = hospital  
+				}	
+			}
+		}
+
+		if = {
+			limit = { has_terrain = desert }
+			random_list = {
+
+				35 = {
+					#there are not any medical building 
+					province_event = {
+						id = rab_influenza_events.7
+					}
+					
+				}
+
+				65 = {
+					province_event = {
+						id = rab_influenza_events.8
+			
+					}				
+				}	
+			}		
+		}
+		if = {
+			limit = { NOT = { has_terrain = desert } }
+			random_list = {
+
+				50 = {
+					
+					province_event = {
+						id = rab_influenza_events.7
+					}
+					
+				}
+
+				50 = {
+					province_event = {
+						id = rab_influenza_events.8
+			
+					}				
+				}	
+			}		
+		}
+	}
+	option = {
+		name = "rab_influenza_events.OPTC6" # Quarantine the port and let them die!
+		trigger = { 
+					has_building = quarantine	
+			NOT = {
+				OR = {
+					has_building = simple_hospital 
+					has_building = hospital  
+				}	
+			}
+		}		
+		if = {
+			limit = { has_terrain = desert }
+			random_list = {
+
+				15 = {
+					
+					province_event = {
+						id = rab_influenza_events.7
+					}
+					
+				}
+
+				85 = {
+					province_event = {
+						id = rab_influenza_events.8
+			
+					}				
+				}	
+			}		
+		}
+		if = {
+			limit = { NOT = { has_terrain = desert } }
+			random_list = {
+
+				30 = {
+					
+					province_event = {
+						id = rab_influenza_events.7
+					}
+					
+				}
+
+				70 = {
+					province_event = {
+						id = rab_influenza_events.8
+			
+					}				
+				}	
+			}		
+		}
+	}
+	option = {
+		name = "rab_influenza_events.OPTD6" # Quarantine the port and let them die!
+		trigger = { 
+					has_building = simple_hospital 	
+			NOT = {
+				has_building = hospital  
+			}
+		}		
+		if = {
+			limit = { has_terrain = desert }
+			random_list = {
+
+				10 = {
+					#there are not any medical building 
+					province_event = {
+						id = rab_influenza_events.7
+					}
+					
+				}
+
+				90 = {
+					province_event = {
+						id = rab_influenza_events.8
+			
+					}				
+				}	
+			}		
+		}
+		if = {
+			limit = { NOT = { has_terrain = desert } }
+			random_list = {
+
+				15 = {
+					#there are not any medical building 
+					province_event = {
+						id = rab_influenza_events.7
+					}
+					
+				}
+
+				85 = {
+					province_event = {
+						id = rab_influenza_events.8
+			
+					}				
+				}	
+			}		
+		}
+	}	
+	option = {
+		name = "rab_influenza_events.OPTE6" # Quarantine the port and let them die!
+		trigger = {
+					has_building = hospital  
+		}		
+		random_list = {
+			5 = {
+				#there are not any medical building 
+				province_event = {
+					id = rab_influenza_events.7
+				}
+				
+			}
+			95 = {
+				province_event = {
+					id = rab_influenza_events.8
+	
+				}				
+			}	
+		}
+	}	
+}
+# 显示该省粉隔离失败 ， 中标
+province_event = {
+	id = rab_influenza_events.7
+	title = "rab_influenza_events.NAME7"
+	desc = "rab_influenza_events.DESC7"
+	picture = PLAGUE_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+		
+		option = {
+			name = "rab_influenza_events.OPTA7" #
+			add_province_modifier = {
+				name = "influenza"
+				duration = 400
+			}
+			add_province_modifier = {
+				name = "influenza_already"
+				duration = 22000
+			}			
+		}
+}
+# 显示该省粉防堵成功
+# ==> look previous id = rab_influenza_events.4
+
+#####################################################################################
+#
+#####################################################################################

@@ -1,0 +1,65 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = jiangwei_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : jiangwei : ÜYôu0›Q^0
+
+country_event = {
+	id = jiangwei_advisor_come.1
+	title = "jiangwei_advisor_come.1.t"
+	desc = "jiangwei_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 220	
+		NOT = { is_year = 264 }
+		OR = {
+			AND = {
+				exists = SHU
+				tag = SHU
+			}
+			AND = {
+				exists = LUP
+				tag = LUP
+			}
+			AND = {
+				NOT = { exists = LUP }
+				NOT = { exists = SHU }
+				owns = 699
+			}
+		} 
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = jiangwei_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = jiangwei
+				name = "ÜYôu0›Q^0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "ÜYôu0›Q^0"
+				fire = 4
+				shock = 5
+				manuever = 5
+				siege = 4
+			}
+		}
+	}
+}
+

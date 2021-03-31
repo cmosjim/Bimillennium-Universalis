@@ -1,0 +1,132 @@
+namespace = xy_japenese
+
+country_event = {
+    id = xy_japenese.1
+    title = "xy_japenese.NAME1"
+    desc = "xy_japenese.DESC1"
+    picture = MODERN_ARMY_OCCUPY_eventPicture
+    major = yes
+    trigger = {
+        NOT = {
+            adm_tech = 70
+        }
+        total_development = 150
+        num_of_cities = 10
+        any_subject_country = {
+            is_subject_of_type = daimyo_vassal
+			is_subject_of = ROOT
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+    }
+    immediate = {
+        set_country_flag = nochange_mufu
+    }
+    option = {
+        name = "xy_japenese.OPTA1"
+        ai_chance = {
+            factor = 100
+        }
+        every_subject_country = {
+            limit = {
+                is_subject_of_type = daimyo_vassal
+            }
+            set_country_flag = japandamoy222
+        }
+        give_estate_land_share_small = {
+            estate = estate_nobles
+        }
+        every_owned_province = {
+            set_province_flag = japandamoy
+        }
+        create_independent_estate = {
+            estate = estate_nobles
+            play_as = no
+        }
+        every_owned_province = {
+            clr_province_flag = japandamoy
+        }
+        every_country = {
+            limit = {
+                any_owned_province = {
+                    has_province_flag = japandamoy
+                }
+            }
+            set_country_flag = japandamoy222
+            add_government_reform = daimyo
+            every_owned_province = {
+                clr_province_flag = japandamoy
+            }
+            random_owned_province = {
+                limit = {
+                    NOT = {
+                        province_id = 1020
+                    }
+                }
+                set_province_flag = japandamoy111
+            }
+            root = {
+                create_subject = {
+                    subject_type = daimyo_vassal
+                    subject = PREV
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    NOT = {
+                        has_province_flag = japandamoy111
+                    }
+                }
+                remove_core = PREV
+				cede_province = ROOT
+				add_core = ROOT
+				clr_province_flag = japandamoy
+            }
+            every_owned_province = {
+                clr_province_flag = japandamoy111
+            }
+        }
+        set_capital = 1020
+        add_government_reform = shogunate
+        every_owned_province = {
+            clr_province_flag = japandamoy
+        }
+        hidden_effect = {
+            country_event = {
+                id = xy_japenese.2 days = 2
+            }
+        }
+    }
+    option = {
+        name = "xy_japenese.OPTB1"
+        every_country = {
+            limit = {
+                is_subject_of_type = daimyo_vassal
+            }
+            add_opinion = {
+                who = ROOT
+                modifier = refuse_separation_jap
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_japenese.2
+    title = "xy_japenese.NAME2"
+    desc = "xy_japenese.DESC2"
+    picture = MODERN_ARMY_OCCUPY_eventPicture
+    major = yes
+    hidden = yes
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        months = 4
+    }
+    option = {
+        name = "xy_japenese.OPTA2"
+        set_capital = 1020
+        add_government_reform = shogunate
+        clr_country_flag = nochange_mufu
+    }
+}

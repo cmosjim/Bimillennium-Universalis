@@ -1,0 +1,4616 @@
+########################
+# Treasury events
+########################
+# id = 1000 : treasury box from country decision
+# id = 1		: when army reach the specified province event (hidden)
+# id = 2		: when army reach the specified country event (target)
+# id = 3		: when see the specified treasury from id=1000 (hidden)
+
+# stopwarflag
+# id = 4		: when army reach the specified province event (hidden)
+# id = 5		: when army reach the specified country event (target)
+# id = 6		: when see the specified treasury from id=1000 (hidden)
+# id = 7 		: how it appear in the world.(hidden = yes , trigger_only from on_action random_events) 
+# id = 8		: If one year later , it still not get from player , it will be award to owner.
+# id = 9		: buy the treasury via diplomacy actions
+# id = 10		: when army reach the specified province event (hidden)
+
+# milbook
+# id = 11		: when army reach the specified province event (hidden)
+# id = 12		: when army reach the specified country event (target)
+# id = 13		: when see the specified treasury from id=1000 (hidden)
+# id = 14 		: how it appear in the world.(hidden = yes , trigger_only from on_action random_events) 
+# id = 15		: If one year later , it still not get from player , it will be award to owner.
+# id = 16		: buy the treasury via diplomacy actions
+# id = 17		: when army reach the specified province event (hidden)
+
+# admbook
+# id = 18		: when army reach the specified province event (hidden)
+# id = 19		: when army reach the specified country event (target)
+# id = 20		: when see the specified treasury from id=1000 (hidden)
+# id = 21		: how it appear in the world.(hidden = yes , trigger_only from on_action random_events) 
+# id = 22		: If one year later , it still not get from player , it will be award to owner.
+# id = 23		: buy the treasury via diplomacy actions
+# id = 24		: when army reach the specified province event (hidden)
+#
+
+# id = 25		:normal treasury`
+# id = 26		:snowshoes
+#flg_get_treasury : 
+#
+# id = 28    :show the immortal medician
+# This is from country decision to show whole treasury in list , and could to choose one to apply it.
+# NOTE! when add new treasury , must add option on below event .
+# 
+# id = 29		:get琥珀 
+# id = 30		:description of 琥珀
+#
+# id = 31		:when you give 長生不老藥 to your wife
+# id = 32		:when you give 長生不老藥 to your wife then your choose this is only a joke.
+#
+# id = 33		:only show the 傳國玉璽 from country decision.
+# id = 34		:when you receive 傳國玉璽 from conquest other country.
+
+#2018-12-30 fit to 1.28
+#2019-01-22 add id=25~26 for snowshoes
+#2019-01-31 add num_of_immortality
+#2019-10-12 add md_chuanguoyuxi event 傳國玉璽
+namespace = rab_treasury_events
+country_event = {
+	id = rab_treasury_events.1000
+	title = "rab_treasury_events.NAME1000"
+	desc = "rab_treasury_events.DESC1000"
+	picture = VISIT_LOCAL_EASTATE_eventPicture
+	 
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_treasury_events.OPTA1000"
+		trigger = {
+			check_variable = {
+				which = num_of_tianshanlotus
+				value = 1
+			}			
+		}	
+		country_event = {
+			id = rab_treasury_events.3
+		}	
+	}
+	option = {
+		name = "rab_treasury_events.OPTB1000"
+		trigger = {
+			check_variable = {
+				which = num_of_stopwarflag
+				value = 1
+			}			
+		}
+		country_event = {
+			id = rab_treasury_events.6
+		}	
+	}
+	option = {
+		name = "rab_treasury_events.OPTC1000"
+		trigger = {
+			check_variable = {
+				which = num_of_milbook
+				value = 1
+			}			
+		}
+		country_event = {
+			id = rab_treasury_events.13
+		}	
+	}	
+	option = {
+		name = "rab_treasury_events.OPTD1000"
+		trigger = {
+			check_variable = {
+				which = num_of_admbook
+				value = 1
+			}			
+		}
+		country_event = {
+			id = rab_treasury_events.20
+		}	
+	}
+	option = {
+		name = "rab_treasury_events.OPTE1000"
+		trigger = {
+			check_variable = {
+				which = num_of_snowshoes_plot
+				value = 1
+			}			
+		}
+		country_event = {
+			id = rab_treasury_events.25
+		}	
+	}
+	option = {
+		name = "rab_treasury_events.OPTF1000"
+		trigger = {
+			check_variable = {
+				which = num_of_immortality
+				value = 1
+			}			
+		}
+		country_event = {
+			id = rab_treasury_events.28
+		}	
+	}
+	option = {
+		name = "rab_treasury_events.OPTG1000"
+		trigger = {
+			check_variable = {
+				which = num_of_amber
+				value = 1
+			}			
+		}
+		country_event = {
+			id = rab_treasury_events.30
+		}	
+	}	
+	#傳國玉璽
+ 	option = {
+		name = "rab_treasury_events.OPTH1000"
+		trigger = {
+			has_country_modifier = md_chuanguoyuxi
+		}
+		country_event = {
+			id = rab_treasury_events.33
+		}	
+	}
+	option = {
+		name = "rab_treasury_events.OPTZZZZZ"	
+		clr_country_flag = tmp_rab_treasury_events_1000
+	}	
+}
+# when army reach the specified province
+province_event = {
+	id = rab_treasury_events.1
+	title = "rab_treasury_events.NAME1"
+	desc = "rab_treasury_events.DESC1"
+	picture = VISIT_LOCAL_EASTATE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_province_modifier = md_tianshanlotus
+		units_in_province = event_target:finder_tianshanlotus_tag
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	#rab_hidden_events.121 => auto check modifier , then clear global eventtarget 
+
+	option = {
+		name = "rab_treasury_events.OPTA1"
+		remove_province_modifier = md_tianshanlotus
+		event_target:finder_tianshanlotus_tag = {
+			country_event = {
+				id = rab_treasury_events.2
+			}	
+		}
+	}
+}
+
+country_event = {
+	id = rab_treasury_events.2
+	title = "rab_treasury_events.NAME2"
+	desc = "rab_treasury_events.DESC2"
+	picture = treasury_tianshanlotus_eventPicture
+	
+	is_triggered_only = yes 
+	#rab_hidden_events.121 => auto check modifier , then clear global eventtarget 
+	immediate = {
+		hidden_effect = {
+		change_variable = {
+			which = num_of_tianshanlotus
+			value = 1
+			}		
+		}
+	}	
+	option = {
+		name = "rab_treasury_events.OPTA2"
+		custom_tooltip = tp_addnum_of_tianshanlotus
+	}
+}
+
+#only show the treasury infomation
+country_event = {
+	id = rab_treasury_events.3
+	title = "rab_treasury_events.NAME3"
+	desc = "rab_treasury_events.DESC3"
+	picture = treasury_tianshanlotus_eventPicture
+	 
+	is_triggered_only = yes 
+		
+	option = {
+		name = "rab_treasury_events.OPTA3"
+		
+		country_event = {
+			id = rab_treasury_events.1000
+		}	
+	}
+}
+# army on the target province , then need to clear the modifier
+province_event = {
+	id = rab_treasury_events.4
+	title = "rab_treasury_events.NAME4"
+	desc = "rab_treasury_events.DESC4"
+	picture = VISIT_LOCAL_EASTATE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_province_modifier = md_stopwarflag
+		units_in_province = event_target:finder_player_tag
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+		#to avoid event.8
+		clr_province_flag = flg_pov_md_stopwarflag	
+	}	
+	option = {
+		name = "rab_treasury_events.OPTA4"
+		remove_province_modifier = md_stopwarflag
+		clear_global_event_target = pov_md_stopwarflag
+		event_target:finder_player_tag = {
+			country_event = {
+				id = rab_treasury_events.5
+			}	
+		}
+	}
+}
+
+country_event = {
+	id = rab_treasury_events.5
+	title = "rab_treasury_events.NAME5"
+	desc = "rab_treasury_events.DESC5"
+	picture = treasury_stopwarflag_eventPicture
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+		change_variable = {
+			which = num_of_stopwarflag
+			value = 1
+			}		
+		}
+	}	
+	option = {
+		name = "rab_treasury_events.OPTA5"
+		custom_tooltip = tp_addnum_of_stopwarflag
+	}
+}
+
+#only show the treasury infomation
+country_event = {
+	id = rab_treasury_events.6
+	title = "rab_treasury_events.NAME6"
+	desc = "rab_treasury_events.DESC6"
+	picture = treasury_stopwarflag_eventPicture
+	 
+	is_triggered_only = yes 
+		
+	option = {
+		name = "rab_treasury_events.OPTA6"
+		country_event = {
+			id = rab_treasury_events.1000
+		}	
+	}
+	option = {
+		name = "rab_treasury_events.OPTB6"
+		trigger = {
+			is_at_war = yes
+		}	
+		every_country = {
+			limit = {
+				war_with = ROOT
+			}
+			white_peace = ROOT
+		}
+		hidden_effect = {
+			subtract_variable = {
+				which = num_of_stopwarflag
+				value = 1
+			}
+			clr_country_flag = tmp_rab_treasury_events_1000		
+		}		
+	}	
+}
+
+#appear in the world. which from random events from on_actions.
+country_event = {
+	id = rab_treasury_events.7
+	title = "rab_treasury_events.NAME7"
+	desc = "rab_treasury_events.DESC7"
+	picture = treasury_stopwarflag_eventPicture
+
+	is_triggered_only = yes 
+	hidden = yes
+	
+	trigger = {
+		NOT = { has_global_flag = flg_stopwarflag_3limit }
+		NOT = { 
+			any_province = {
+				has_province_modifier = md_stopwarflag
+			}
+		}
+		any_province = {
+			base_tax = 2	
+		}	
+	}	
+		
+	option = {
+		name = "rab_treasury_events.OPTA7"
+		#below sequency is important.
+		if = {
+			limit = { 
+				has_global_flag = flg_stopwarflag_2limit 
+			}
+			clr_global_flag = flg_stopwarflag_2limit
+			set_global_flag = flg_stopwarflag_3limit
+		}
+		if = {
+			limit = { 
+				has_global_flag = flg_stopwarflag_1limit 
+			}
+			clr_global_flag = flg_stopwarflag_1limit
+			set_global_flag = flg_stopwarflag_2limit
+		}			
+		if = {
+			limit = { 
+				NOT = { 
+					OR = {
+						has_global_flag = flg_stopwarflag_1limit 
+						has_global_flag = flg_stopwarflag_2limit 
+						has_global_flag = flg_stopwarflag_3limit 
+					}
+				}
+			}
+			set_global_flag = flg_stopwarflag_1limit
+		}
+	
+		random_province = {
+			limit = {
+				base_tax = 2
+				is_sea = no
+				is_core = owner
+				NOT = { has_province_modifier = md_stopwarflag }
+			}	
+			add_province_modifier = {
+				name = "md_stopwarflag"
+				duration = 365
+			}
+			set_province_flag = flg_pov_md_stopwarflag
+			save_global_event_target_as = pov_md_stopwarflag 
+		}
+	}
+}
+
+#iIf one year later , it still not get from player , it will be award to owner.
+country_event = {
+	id = rab_treasury_events.8
+	title = "rab_treasury_events.NAME8"
+	desc = "rab_treasury_events.DESC8"
+	picture = treasury_stopwarflag_eventPicture
+
+	trigger = {
+		any_owned_province = {
+			NOT = { has_province_modifier = md_stopwarflag }
+			has_province_flag = flg_pov_md_stopwarflag
+		}	
+	}	
+	
+	mean_time_to_happen = {
+		days = 5
+	}	
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = flg_stopwarflag_1limit
+				}
+				save_global_event_target_as = tag1_md_stopwarflag
+				set_country_flag = flg_tag1_md_stopwarflag
+			}	
+			if = {
+				limit = {
+					has_global_flag = flg_stopwarflag_2limit
+				}
+				save_global_event_target_as = tag2_md_stopwarflag
+				set_country_flag = flg_tag2_md_stopwarflag
+			}	
+
+			if = {
+				limit = {
+					has_global_flag = flg_stopwarflag_3limit
+				}
+				save_global_event_target_as = tag3_md_stopwarflag
+				set_country_flag = flg_tag3_md_stopwarflag
+			}	
+			random_owned_province = {
+				limit = {
+					has_province_flag = flg_pov_md_stopwarflag 
+					NOT = { has_province_modifier = md_stopwarflag }
+				}
+				clr_province_flag = flg_pov_md_stopwarflag
+			}
+			
+			clear_global_event_target = pov_md_stopwarflag
+			
+			change_variable = {
+				which = num_of_stopwarflag
+				value = 1
+			}			
+		}		
+	}
+	
+	option = {
+		name = "rab_treasury_events.OPTA8"
+		custom_tooltip = tp_addnum_of_stopwarflag
+	}
+}
+#buy
+country_event = {
+	id = rab_treasury_events.9
+	title = "rab_treasury_events.NAME9"
+	desc = "rab_treasury_events.DESC9"
+	picture = treasury_stopwarflag_eventPicture
+	 
+	is_triggered_only = yes 
+		
+	option = { # reject
+		name = "rab_treasury_events.OPTA9"
+		trigger = {
+			NOT = { 
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = -100
+				}
+			}
+		}
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury	
+	}	
+	option = { 
+		name = "rab_treasury_events.OPTB9"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = -100
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = -50
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_stopwarflag
+				value = 1
+			}
+			add_treasury = 5000
+		}
+		add_treasury = -5000
+		change_variable = {
+				which = num_of_stopwarflag
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury	
+	}	
+	option = { 
+		name = "rab_treasury_events.OPTC9"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = -50
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = 0
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_stopwarflag
+				value = 1
+			}
+			add_treasury = 2000
+		}
+		add_treasury = -2000
+		change_variable = {
+				which = num_of_stopwarflag
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury	
+	}
+	option = { 
+		name = "rab_treasury_events.OPTD9"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = 0
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = 50
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_stopwarflag
+				value = 1
+			}
+			add_treasury = 1000
+		}
+		add_treasury = -1000
+		change_variable = {
+				which = num_of_stopwarflag
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury	
+	}	
+	option = { 
+		name = "rab_treasury_events.OPTE9"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = 50
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = 100
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_stopwarflag
+				value = 1
+			}
+			add_treasury = 700
+		}
+		add_treasury = -700
+		change_variable = {
+				which = num_of_stopwarflag
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury		
+	}	
+	option = { 
+		name = "rab_treasury_events.OPTF9"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = 100
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = 150
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_stopwarflag
+				value = 1
+			}
+			add_treasury = 300
+		}
+		add_treasury = -300
+		change_variable = {
+				which = num_of_stopwarflag
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury		
+	}
+	option = { 
+		name = "rab_treasury_events.OPTG9"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = 150
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_stopwarflag
+				value = 1
+			}
+			add_treasury = 150
+		}
+		add_treasury = -150
+		change_variable = {
+				which = num_of_stopwarflag
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing		
+		clear_global_event_target = tag_buy_treasury
+	}
+	option = { 
+		name = "rab_treasury_events.OPTH9"
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury
+	}	
+}
+#iif [tag1_md_stopwarflag.GetName] [tag2_md_stopwarflag.GetName] [tag3_md_stopwarflag.GetName] ʧȥÁˠnum_of_stopwarflag
+country_event = {
+	id = rab_treasury_events.10
+	title = "rab_treasury_events.NAME10"
+	desc = "rab_treasury_events.DESC10"
+	picture = treasury_stopwarflag_eventPicture
+	 
+	hidden = yes
+
+	trigger = {
+		OR = {
+			has_country_flag = flg_tag1_md_stopwarflag	
+			has_country_flag = flg_tag2_md_stopwarflag	
+			has_country_flag = flg_tag3_md_stopwarflag	
+		}
+		NOT = {
+			check_variable = {
+				which = num_of_stopwarflag
+				value = 1
+			}
+		}			
+	}	
+	mean_time_to_happen = {
+		days = 5
+	}	
+	option = { # reject
+		name = "rab_treasury_events.OPTA8"
+		if = {
+			limit = {
+				has_country_flag = flg_tag1_md_stopwarflag	
+				NOT = {
+					check_variable = {
+						which = num_of_stopwarflag
+						value = 1
+					}
+				}				
+			}
+			clear_global_event_target = tag1_md_stopwarflag
+			clr_country_flag = flg_tag1_md_stopwarflag
+		}	
+		if = {
+			limit = {
+				has_country_flag = flg_tag2_md_stopwarflag	
+				NOT = {
+					check_variable = {
+						which = num_of_stopwarflag
+						value = 1
+					}
+				}				
+			}
+			clear_global_event_target = tag2_md_stopwarflag
+			clr_country_flag = flg_tag2_md_stopwarflag
+		}	
+		if = {
+			limit = {
+				has_country_flag = flg_tag3_md_stopwarflag	
+				NOT = {
+					check_variable = {
+						which = num_of_stopwarflag
+						value = 1
+					}
+				}				
+			}
+			clear_global_event_target = tag3_md_stopwarflag
+			clr_country_flag = flg_tag3_md_stopwarflag
+		}			
+	}
+}
+
+# army on the target province , then need to clear the modifier
+province_event = {
+	id = rab_treasury_events.11
+	title = "rab_treasury_events.NAME11"
+	desc = "rab_treasury_events.DESC11"
+	picture = VISIT_LOCAL_EASTATE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_province_modifier = md_milbook
+		units_in_province = event_target:finder_player_tag
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+		#to avoid event.8
+		clr_province_flag = flg_pov_md_milbook	
+	}	
+	option = {
+		name = "rab_treasury_events.OPTA11"
+		remove_province_modifier = md_milbook
+		clear_global_event_target = pov_md_milbook
+		event_target:finder_player_tag = {
+			country_event = {
+				id = rab_treasury_events.12
+			}	
+		}
+	}
+}
+
+country_event = {
+	id = rab_treasury_events.12
+	title = "rab_treasury_events.NAME12"
+	desc = "rab_treasury_events.DESC12"
+	picture = treasury_milbook_eventPicture
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+		change_variable = {
+			which = num_of_milbook
+			value = 1
+			}		
+		}
+	}	
+	option = {
+		name = "rab_treasury_events.OPTA12"
+		custom_tooltip = tp_addnum_of_milbook
+	}
+}
+
+#only show the treasury infomation
+country_event = {
+	id = rab_treasury_events.13
+	title = "rab_treasury_events.NAME13"
+	desc = "rab_treasury_events.DESC13"
+	picture = treasury_milbook_eventPicture
+	 
+	is_triggered_only = yes 
+		
+	option = {
+		name = "rab_treasury_events.OPTA13"
+		country_event = {
+			id = rab_treasury_events.1000
+		}	
+	}
+	#the effect on treasury !
+	option = {
+		name = "rab_treasury_events.OPTB13"
+		trigger = {
+			has_regency = no
+			has_consort_regency = no
+		}	
+		change_mil = 3
+		hidden_effect = {
+			subtract_variable = {
+				which = num_of_milbook
+				value = 1
+			}
+			clr_country_flag = tmp_rab_treasury_events_1000		
+		}		
+	}	
+	option = {
+		name = "rab_treasury_events.OPTC13"
+		trigger = {
+			#has_regency = no
+			#has_consort_regency = no
+			has_heir = yes
+			heir_age = 15
+		}
+		change_heir_mil = 3
+		hidden_effect = {
+			subtract_variable = {
+				which = num_of_milbook
+				value = 1
+			}
+			clr_country_flag = tmp_rab_treasury_events_1000		
+		}		
+	}	
+}
+
+#appear in the world. which from random events from on_actions.
+country_event = {
+	id = rab_treasury_events.14
+	title = "rab_treasury_events.NAME14"
+	desc = "rab_treasury_events.DESC14"
+	picture = treasury_milbook_eventPicture
+
+	is_triggered_only = yes 
+	hidden = yes
+	
+	trigger = {
+		NOT = { has_global_flag = flg_milbook_3limit }
+		NOT = { 
+			any_province = {
+				has_province_modifier = md_milbook
+			}
+		}
+		any_province = {
+			base_tax = 2	
+		}	
+	}	
+		
+	option = {
+		name = "rab_treasury_events.OPTA14"
+		#below sequency is important.
+		if = {
+			limit = { 
+				has_global_flag = flg_milbook_2limit 
+			}
+			clr_global_flag = flg_milbook_2limit
+			set_global_flag = flg_milbook_3limit
+		}
+		if = {
+			limit = { 
+				has_global_flag = flg_milbook_1limit 
+			}
+			clr_global_flag = flg_milbook_1limit
+			set_global_flag = flg_milbook_2limit
+		}			
+		if = {
+			limit = { 
+				NOT = { 
+					OR = {
+						has_global_flag = flg_milbook_1limit 
+						has_global_flag = flg_milbook_2limit 
+						has_global_flag = flg_milbook_3limit 
+					}
+				}
+			}
+			set_global_flag = flg_milbook_1limit
+		}
+	
+		random_province = {
+			limit = {
+				base_tax = 2
+				is_sea = no
+				is_core = owner
+				NOT = { has_province_modifier = md_milbook }
+			}	
+			add_province_modifier = {
+				name = "md_milbook"
+				duration = 365 # rab_try
+			}
+			set_province_flag = flg_pov_md_milbook
+			save_global_event_target_as = pov_md_milbook 
+		}
+	}
+}
+
+#iIf one year later , it still not get from player , it will be award to owner.
+country_event = {
+	id = rab_treasury_events.15
+	title = "rab_treasury_events.NAME15"
+	desc = "rab_treasury_events.DESC15"
+	picture = treasury_milbook_eventPicture
+
+	trigger = {
+		any_owned_province = {
+			NOT = { has_province_modifier = md_milbook }
+			has_province_flag = flg_pov_md_milbook
+		}	
+	}	
+	
+	mean_time_to_happen = {
+		days = 5
+	}	
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = flg_milbook_1limit
+				}
+				save_global_event_target_as = tag1_md_milbook
+				set_country_flag = flg_tag1_md_milbook
+			}	
+			if = {
+				limit = {
+					has_global_flag = flg_milbook_2limit
+				}
+				save_global_event_target_as = tag2_md_milbook
+				set_country_flag = flg_tag2_md_milbook
+			}	
+
+			if = {
+				limit = {
+					has_global_flag = flg_milbook_3limit
+				}
+				save_global_event_target_as = tag3_md_milbook
+				set_country_flag = flg_tag3_md_milbook
+			}	
+			random_owned_province = {
+				limit = {
+					has_province_flag = flg_pov_md_milbook 
+					NOT = { has_province_modifier = md_milbook }
+				}
+				clr_province_flag = flg_pov_md_milbook
+			}
+			
+			clear_global_event_target = pov_md_milbook
+			
+			change_variable = {
+				which = num_of_milbook
+				value = 1
+			}			
+		}		
+	}
+	
+	option = {
+		name = "rab_treasury_events.OPTA15"
+		custom_tooltip = tp_addnum_of_milbook
+	}
+}
+#buy
+country_event = {
+	id = rab_treasury_events.16
+	title = "rab_treasury_events.NAME16"
+	desc = "rab_treasury_events.DESC16"
+	picture = treasury_milbook_eventPicture
+	 
+	is_triggered_only = yes 
+		
+	option = { # reject
+		name = "rab_treasury_events.OPTA16"
+		trigger = {
+			NOT = { 
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = -100
+				}
+			}
+		}
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury	
+	}	
+	option = { 
+		name = "rab_treasury_events.OPTB16"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = -100
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = -50
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_milbook
+				value = 1
+			}
+			add_treasury = 3000
+		}
+		add_treasury = -3000
+		change_variable = {
+				which = num_of_milbook
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury	
+	}	
+	option = { 
+		name = "rab_treasury_events.OPTC16"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = -50
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = 0
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_milbook
+				value = 1
+			}
+			add_treasury = 1000
+		}
+		add_treasury = -1000
+		change_variable = {
+				which = num_of_milbook
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury	
+	}
+	option = { 
+		name = "rab_treasury_events.OPTD16"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = 0
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = 50
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_milbook
+				value = 1
+			}
+			add_treasury = 500
+		}
+		add_treasury = -500
+		change_variable = {
+				which = num_of_milbook
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury	
+	}	
+	option = { 
+		name = "rab_treasury_events.OPTE16"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = 50
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = 100
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_milbook
+				value = 1
+			}
+			add_treasury = 250
+		}
+		add_treasury = -250
+		change_variable = {
+				which = num_of_milbook
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury		
+	}	
+	option = { 
+		name = "rab_treasury_events.OPTF16"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = 100
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = 150
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_milbook
+				value = 1
+			}
+			add_treasury = 150
+		}
+		add_treasury = -150
+		change_variable = {
+				which = num_of_milbook
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury		
+	}
+	option = { 
+		name = "rab_treasury_events.OPTG16"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = 150
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_milbook
+				value = 1
+			}
+			add_treasury = 50
+		}
+		add_treasury = -50
+		change_variable = {
+				which = num_of_milbook
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing		
+		clear_global_event_target = tag_buy_treasury
+	}
+	option = { 
+		name = "rab_treasury_events.OPTH16"
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury
+	}	
+}
+
+
+
+country_event = {
+	id = rab_treasury_events.17
+	title = "rab_treasury_events.NAME17"
+	desc = "rab_treasury_events.DESC17"
+	picture = treasury_milbook_eventPicture
+	 
+	hidden = yes
+
+	trigger = {
+		OR = {
+			has_country_flag = flg_tag1_md_milbook	
+			has_country_flag = flg_tag2_md_milbook	
+			has_country_flag = flg_tag3_md_milbook	
+		}
+		NOT = {
+			check_variable = {
+				which = num_of_milbook
+				value = 1
+			}
+		}			
+	}	
+	mean_time_to_happen = {
+		days = 5
+	}	
+	option = { # reject
+		name = "rab_treasury_events.OPTA17"
+		if = {
+			limit = {
+				has_country_flag = flg_tag1_md_milbook	
+				NOT = {
+					check_variable = {
+						which = num_of_milbook
+						value = 1
+					}
+				}				
+			}
+			clear_global_event_target = tag1_md_milbook
+			clr_country_flag = flg_tag1_md_milbook
+		}	
+		if = {
+			limit = {
+				has_country_flag = flg_tag2_md_milbook	
+				NOT = {
+					check_variable = {
+						which = num_of_milbook
+						value = 1
+					}
+				}				
+			}
+			clear_global_event_target = tag2_md_milbook
+			clr_country_flag = flg_tag2_md_milbook
+		}	
+		if = {
+			limit = {
+				has_country_flag = flg_tag3_md_milbook	
+				NOT = {
+					check_variable = {
+						which = num_of_milbook
+						value = 1
+					}
+				}				
+			}
+			clear_global_event_target = tag3_md_milbook
+			clr_country_flag = flg_tag3_md_milbook
+		}			
+	}
+}
+####################### admbook ######################################
+
+
+# army on the target province , then need to clear the modifier
+
+#####################################
+#
+#	admbook
+#
+#####################################
+
+province_event = {
+	id = rab_treasury_events.18
+	title = "rab_treasury_events.NAME18"
+	desc = "rab_treasury_events.DESC18"
+	picture = VISIT_LOCAL_EASTATE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_province_modifier = md_admbook
+		units_in_province = event_target:finder_player_tag
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+		#to avoid event.8
+		clr_province_flag = flg_pov_md_admbook	
+	}	
+	option = {
+		name = "rab_treasury_events.OPTA18"
+		remove_province_modifier = md_admbook
+		clear_global_event_target = pov_md_admbook
+		event_target:finder_player_tag = {
+			country_event = {
+				id = rab_treasury_events.19
+			}	
+		}
+	}
+}
+
+country_event = {
+	id = rab_treasury_events.19
+	title = "rab_treasury_events.NAME19"
+	desc = "rab_treasury_events.DESC19"
+	picture = treasury_admbook_eventPicture
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		hidden_effect = {
+		change_variable = {
+			which = num_of_admbook
+			value = 1
+			}		
+		}
+	}	
+	option = {
+		name = "rab_treasury_events.OPTA19"
+		custom_tooltip = tp_addnum_of_admbook
+	}
+}
+
+#only show the treasury infomation
+country_event = {
+	id = rab_treasury_events.20
+	title = "rab_treasury_events.NAME20"
+	desc = "rab_treasury_events.DESC20"
+	picture = treasury_admbook_eventPicture
+	 
+	is_triggered_only = yes 
+		
+	option = {
+		name = "rab_treasury_events.OPTA20"
+		country_event = {
+			id = rab_treasury_events.1000
+		}	
+	}
+	#the effect on treasury !
+	option = {
+		name = "rab_treasury_events.OPTB20"
+		trigger = {
+			has_regency = no
+			has_consort_regency = no
+		}	
+		change_adm = 3
+		hidden_effect = {
+			subtract_variable = {
+				which = num_of_admbook
+				value = 1
+			}
+			clr_country_flag = tmp_rab_treasury_events_1000		
+		}		
+	}	
+	option = {
+		name = "rab_treasury_events.OPTC20"
+		trigger = {
+			#has_regency = no
+			#has_consort_regency = no
+			has_heir = yes
+			heir_age = 15
+		}
+		change_heir_adm = 3
+		hidden_effect = {
+			subtract_variable = {
+				which = num_of_admbook
+				value = 1
+			}
+			clr_country_flag = tmp_rab_treasury_events_1000		
+		}		
+	}	
+}
+
+#appear in the world. which from random events from on_actions.
+country_event = {
+	id = rab_treasury_events.21
+	title = "rab_treasury_events.NAME21"
+	desc = "rab_treasury_events.DESC21"
+	picture = treasury_admbook_eventPicture
+
+	is_triggered_only = yes 
+	hidden = yes
+	
+	trigger = {
+		NOT = { has_global_flag = flg_admbook_3limit }
+		NOT = { 
+			any_province = {
+				has_province_modifier = md_admbook
+			}
+		}
+		any_province = {
+			base_tax = 2	
+		}	
+	}	
+		
+	option = {
+		name = "rab_treasury_events.OPTA21"
+		#below sequency is important.
+		if = {
+			limit = { 
+				has_global_flag = flg_admbook_2limit 
+			}
+			clr_global_flag = flg_admbook_2limit
+			set_global_flag = flg_admbook_3limit
+		}
+		if = {
+			limit = { 
+				has_global_flag = flg_admbook_1limit 
+			}
+			clr_global_flag = flg_admbook_1limit
+			set_global_flag = flg_admbook_2limit
+		}			
+		if = {
+			limit = { 
+				NOT = { 
+					OR = {
+						has_global_flag = flg_admbook_1limit 
+						has_global_flag = flg_admbook_2limit 
+						has_global_flag = flg_admbook_3limit 
+					}
+				}
+			}
+			set_global_flag = flg_admbook_1limit
+		}
+	
+		random_province = {
+			limit = {
+				base_tax = 2
+				is_sea = no
+				is_core = owner
+				NOT = { has_province_modifier = md_admbook }
+			}	
+			add_province_modifier = {
+				name = "md_admbook"
+				duration = 365 
+			}
+			set_province_flag = flg_pov_md_admbook
+			save_global_event_target_as = pov_md_admbook 
+		}
+	}
+}
+
+#iIf one year later , it still not get from player , it will be award to owner.
+country_event = {
+	id = rab_treasury_events.22
+	title = "rab_treasury_events.NAME22"
+	desc = "rab_treasury_events.DESC22"
+	picture = treasury_admbook_eventPicture
+
+	trigger = {
+		any_owned_province = {
+			NOT = { has_province_modifier = md_admbook }
+			has_province_flag = flg_pov_md_admbook
+		}	
+	}	
+	
+	mean_time_to_happen = {
+		days = 5
+	}	
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = flg_admbook_1limit
+				}
+				save_global_event_target_as = tag1_md_admbook
+				set_country_flag = flg_tag1_md_admbook
+			}	
+			if = {
+				limit = {
+					has_global_flag = flg_admbook_2limit
+				}
+				save_global_event_target_as = tag2_md_admbook
+				set_country_flag = flg_tag2_md_admbook
+			}	
+
+			if = {
+				limit = {
+					has_global_flag = flg_admbook_3limit
+				}
+				save_global_event_target_as = tag3_md_admbook
+				set_country_flag = flg_tag3_md_admbook
+			}	
+			random_owned_province = {
+				limit = {
+					has_province_flag = flg_pov_md_admbook 
+					NOT = { has_province_modifier = md_admbook }
+				}
+				clr_province_flag = flg_pov_md_admbook
+			}
+			
+			clear_global_event_target = pov_md_admbook
+			
+			change_variable = {
+				which = num_of_admbook
+				value = 1
+			}			
+		}		
+	}
+	
+	option = {
+		name = "rab_treasury_events.OPTA22"
+		custom_tooltip = tp_addnum_of_admbook
+	}
+}
+#buy
+country_event = {
+	id = rab_treasury_events.23
+	title = "rab_treasury_events.NAME23"
+	desc = "rab_treasury_events.DESC23"
+	picture = treasury_admbook_eventPicture
+	 
+	is_triggered_only = yes 
+		
+	option = { # reject
+		name = "rab_treasury_events.OPTA23"
+		trigger = {
+			NOT = { 
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = -100
+				}
+			}
+		}
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury	
+	}	
+	option = { 
+		name = "rab_treasury_events.OPTB23"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = -100
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = -50
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_admbook
+				value = 1
+			}
+			add_treasury = 3000
+		}
+		add_treasury = -3000
+		change_variable = {
+				which = num_of_admbook
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury	
+	}	
+	option = { 
+		name = "rab_treasury_events.OPTC23"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = -50
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = 0
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_admbook
+				value = 1
+			}
+			add_treasury = 1000
+		}
+		add_treasury = -1000
+		change_variable = {
+				which = num_of_admbook
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury	
+	}
+	option = { 
+		name = "rab_treasury_events.OPTD23"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = 0
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = 50
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_admbook
+				value = 1
+			}
+			add_treasury = 500
+		}
+		add_treasury = -500
+		change_variable = {
+				which = num_of_admbook
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury	
+	}	
+	option = { 
+		name = "rab_treasury_events.OPTE23"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = 50
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = 100
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_admbook
+				value = 1
+			}
+			add_treasury = 250
+		}
+		add_treasury = -250
+		change_variable = {
+				which = num_of_admbook
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury		
+	}	
+	option = { 
+		name = "rab_treasury_events.OPTF23"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = 100
+			}	
+			NOT = {
+				reverse_has_opinion = {
+					who = event_target:tag_buy_treasury
+					value = 150
+				}					
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_admbook
+				value = 1
+			}
+			add_treasury = 150
+		}
+		add_treasury = -150
+		change_variable = {
+				which = num_of_admbook
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury		
+	}
+	option = { 
+		name = "rab_treasury_events.OPTG23"
+		trigger = {
+			reverse_has_opinion = {
+				who = event_target:tag_buy_treasury
+				value = 150
+			}
+		}
+		event_target:tag_buy_treasury = {
+			subtract_variable = {
+				which = num_of_admbook
+				value = 1
+			}
+			add_treasury = 50
+		}
+		add_treasury = -50
+		change_variable = {
+				which = num_of_admbook
+				value = 1			
+		}	
+		clr_country_flag = flg_buy_doing		
+		clear_global_event_target = tag_buy_treasury
+	}
+	option = { 
+		name = "rab_treasury_events.OPTH23"
+		clr_country_flag = flg_buy_doing
+		clear_global_event_target = tag_buy_treasury
+	}	
+}
+#iif [tag1_md_admbook.GetName] [tag2_md_admbook.GetName] [tag3_md_admbook.GetName]  num_of_admbook 為零的時候
+country_event = {
+	id = rab_treasury_events.24
+	title = "rab_treasury_events.NAME24"
+	desc = "rab_treasury_events.DESC24"
+	picture = treasury_admbook_eventPicture
+	 
+	hidden = yes
+
+	trigger = {
+		OR = {
+			has_country_flag = flg_tag1_md_admbook	
+			has_country_flag = flg_tag2_md_admbook	
+			has_country_flag = flg_tag3_md_admbook	
+		}
+		NOT = {
+			check_variable = {
+				which = num_of_admbook
+				value = 1
+			}
+		}			
+	}	
+	mean_time_to_happen = {
+		days = 5
+	}	
+	option = { # reject
+		name = "rab_treasury_events.OPTA24"
+		if = {
+			limit = {
+				has_country_flag = flg_tag1_md_admbook	
+				NOT = {
+					check_variable = {
+						which = num_of_admbook
+						value = 1
+					}
+				}				
+			}
+			clear_global_event_target = tag1_md_admbook
+			clr_country_flag = flg_tag1_md_admbook
+		}	
+		if = {
+			limit = {
+				has_country_flag = flg_tag2_md_admbook	
+				NOT = {
+					check_variable = {
+						which = num_of_admbook
+						value = 1
+					}
+				}				
+			}
+			clear_global_event_target = tag2_md_admbook
+			clr_country_flag = flg_tag2_md_admbook
+		}	
+		if = {
+			limit = {
+				has_country_flag = flg_tag3_md_admbook	
+				NOT = {
+					check_variable = {
+						which = num_of_admbook
+						value = 1
+					}
+				}				
+			}
+			clear_global_event_target = tag3_md_admbook
+			clr_country_flag = flg_tag3_md_admbook
+		}			
+	}
+}
+#only shows the snowshoesplot
+country_event = {
+	id = rab_treasury_events.25
+	title = "rab_treasury_events.NAME25"
+	desc = "rab_treasury_events.DESC25"
+	picture = BIG_BOOK_eventPicture
+	 
+	is_triggered_only = yes 
+		
+	option = {
+		name = "rab_treasury_events.OPTA25"
+		country_event = {
+			id = rab_treasury_events.1000
+		}
+	}
+	#the effect on treasury !
+	option = {
+		name = "rab_treasury_events.OPTB25"
+		custom_tooltip = tp.rab_treasury_events.OPTB25
+		hidden_effect = {
+			subtract_variable = {
+				which = num_of_snowshoes_plot
+				value = 1
+			}
+			set_country_flag = flg_snowshoes_eq
+		}
+		country_event = {
+			id = rab_treasury_events.27
+		}	
+	}	
+}
+#id = 29 also they are pair.
+country_event = {
+	id = rab_treasury_events.26
+	title = "rab_treasury_events.NAME26"
+	desc = "rab_treasury_events.DESC26"
+	picture = BIG_BOOK_eventPicture
+	 
+	trigger = {
+		has_country_flag = flg_get_treasury
+		is_month = 10
+		NOT = {
+			check_variable = {
+				which = num_of_snowshoes_plot
+				value = 1				
+			}	
+		}
+		NOT = {
+			has_country_flag = flg_snowshoes_eq	
+		}	
+	}	
+	mean_time_to_happen = {
+		days = 1
+	}	
+	immediate = {
+		clr_country_flag = flg_get_treasury
+	}	
+	option = {
+		name = "rab_treasury_events.OPTA26"
+		custom_tooltip = tp.rab_treasury_events.OPTA26
+		hidden_effect = {
+			change_variable = {
+				which = num_of_snowshoes_plot
+				value = 1
+			}
+		}		
+	}	
+}
+
+
+
+country_event = {
+	id = rab_treasury_events.27
+	title = "rab_treasury_events.NAME27"
+	desc = "rab_treasury_events.DESC27"
+	picture = ARMY_HAPPY_eventPicture
+		
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_treasury_events.OPTA27"
+		clr_country_flag = tmp_rab_treasury_events_1000		
+	}	
+}
+
+
+country_event = {
+	id = rab_treasury_events.28
+	title = "rab_treasury_events.NAME28"
+	desc = "rab_treasury_events.DESC28"
+	picture = immortality_eventPicutre
+	 
+	is_triggered_only = yes 
+		
+	option = {
+		name = "rab_treasury_events.OPTA28"
+		country_event = {
+			id = rab_treasury_events.1000
+		}
+	}
+	#the effect on treasury !
+	option = {
+		name = "rab_treasury_events.OPTB28"
+		trigger = {
+			has_regency = no	
+			has_consort_regency = no
+		}
+		remove_ruler_all_personality = yes		
+		add_ruler_personality = immortal_personality
+		custom_tooltip = tp.rab_treasury_events.OPTC28
+		hidden_effect = {
+			subtract_variable = {
+				which = num_of_immortality
+				value = 1
+			}
+			clr_country_flag = tmp_rab_treasury_events_1000		
+		}				
+	}
+	option = {
+		name = "rab_treasury_events.OPTC28"
+		trigger = {
+			has_female_consort = yes
+		}
+		if = {
+			limit = {
+				NOT = { consort_has_personality = immortal_personality }
+			}	
+			country_event = {
+				id = rab_treasury_events.31
+			}	
+		}
+		else_if = {
+			limit = {
+				consort_has_personality = immortal_personality
+			}	
+			country_event = {
+				id = rab_treasury_events.1031
+			}	
+		}	
+	}	
+}
+
+#琥珀
+country_event = {
+	id = rab_treasury_events.29
+	title = "rab_treasury_events.NAME29"
+	desc = "rab_treasury_events.DESC29"
+	picture = amber_eventPicture
+# rab_treasury_events.DESC29:0 "这个透明神奇的玩意，年纪大概超过千万岁，晶莹剔透的橙色物品，加以琢磨之后成为各类的装饰品，有时候里面包含了史前时代的各类小昆虫，更显其神秘的魅力。"	 
+# from rab_talk_queen.OPTC502 or OPTD502 when talk with your queen , then set country flag = flg_get_treasury
+	trigger = {
+		has_country_flag = flg_get_treasury
+		OR = {
+			NOT = { is_month = 10 }
+			AND = {
+				is_month = 10
+				OR = {
+					check_variable = {
+						which = num_of_snowshoes_plot
+						value = 1				
+					}	
+					has_country_flag = flg_snowshoes_eq	
+				}
+			}
+		}			
+	}
+	mean_time_to_happen = {
+		days = 1
+	}	
+	immediate = {
+		clr_country_flag = flg_get_treasury
+	}	
+	option = {
+		name = "rab_treasury_events.OPTA29"
+		change_variable = {
+			which = num_of_amber
+			value = 1
+		}		
+	}
+}
+
+#only shows from decisions.
+country_event = {
+	id = rab_treasury_events.30
+	title = "rab_treasury_events.NAME30"
+	desc = "rab_treasury_events.DESC30"
+	picture = amber_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "rab_treasury_events.OPTA30"
+		country_event = {
+			id = rab_treasury_events.1000
+		}		
+	}
+	option = {
+		name = "rab_treasury_events.OPTB30"
+		add_treasury = 25
+		custom_tooltip = tp.rab_treasury_events.OPTB30
+		hidden_effect = {
+			subtract_variable = {
+				which = num_of_amber
+				value = 1
+			}
+			clr_country_flag = tmp_rab_treasury_events_1000					
+		}	
+	}	
+}
+
+country_event = {
+	id = rab_treasury_events.31
+	title = "rab_treasury_events.NAME31"
+	desc = "rab_treasury_events.DESC31"
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic1
+		}
+		picture = CHOICES_QUEENS_1_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic2
+		}
+		picture = CHOICES_QUEENS_2_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic3
+		}
+		picture = CHOICES_QUEENS_3_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic4
+		}
+		picture = CHOICES_QUEENS_4_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic5
+		}
+		picture = CHOICES_QUEENS_5_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic6
+		}
+		picture = CHOICES_QUEENS_6_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic7
+		}
+		picture = CHOICES_QUEENS_7_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic8
+		}
+		picture = CHOICES_QUEENS_8_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic9
+		}
+		picture = CHOICES_QUEENS_9_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic10
+		}
+		picture = CHOICES_QUEENS_10_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic11
+		}
+		picture = CHOICES_QUEENS_11_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic12
+		}
+		picture = CHOICES_QUEENS_12_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic13
+		}
+		picture = CHOICES_QUEENS_13_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic14
+		}
+		picture = CHOICES_QUEENS_14_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic15
+		}
+		picture = CHOICES_QUEENS_15_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic16
+		}
+		picture = CHOICES_QUEENS_16_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic17
+		}
+		picture = CHOICES_QUEENS_17_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic18
+		}
+		picture = CHOICES_QUEENS_18_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic19
+		}
+		picture = CHOICES_QUEENS_19_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic20
+		}
+		picture = CHOICES_QUEENS_20_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic21
+		}
+		picture = CHOICES_QUEENS_21_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic22
+		}
+		picture = CHOICES_QUEENS_22_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic23
+		}
+		picture = CHOICES_QUEENS_23_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic24
+		}
+		picture = CHOICES_QUEENS_24_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic25
+		}
+		picture = CHOICES_QUEENS_25_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic26
+		}
+		picture = CHOICES_QUEENS_26_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic27
+		}
+		picture = CHOICES_QUEENS_27_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic28
+		}
+		picture = CHOICES_QUEENS_28_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic29
+		}
+		picture = CHOICES_QUEENS_29_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic30
+		}
+		picture = CHOICES_QUEENS_30_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic31
+		}
+		picture = CHOICES_QUEENS_31_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic32
+		}
+		picture = CHOICES_QUEENS_32_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic33
+		}
+		picture = CHOICES_QUEENS_33_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic34
+		}
+		picture = CHOICES_QUEENS_34_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic35
+		}
+		picture = CHOICES_QUEENS_35_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic36
+		}
+		picture = CHOICES_QUEENS_36_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic37
+		}
+		picture = CHOICES_QUEENS_37_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic38
+		}
+		picture = CHOICES_QUEENS_38_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic39
+		}
+		picture = CHOICES_QUEENS_39_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic40
+		}
+		picture = CHOICES_QUEENS_40_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic41
+		}
+		picture = CHOICES_QUEENS_41_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic42
+		}
+		picture = CHOICES_QUEENS_42_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic43
+		}
+		picture = CHOICES_QUEENS_43_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic44
+		}
+		picture = CHOICES_QUEENS_44_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic45
+		}
+		picture = CHOICES_QUEENS_45_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic46
+		}
+		picture = CHOICES_QUEENS_46_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic47
+		}
+		picture = CHOICES_QUEENS_47_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic48
+		}
+		picture = CHOICES_QUEENS_48_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic49
+		}
+		picture = CHOICES_QUEENS_49_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic50
+		}
+		picture = CHOICES_QUEENS_50_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic51
+		}
+		picture = CHOICES_QUEENS_51_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic52
+		}
+		picture = CHOICES_QUEENS_52_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic53
+		}
+		picture = CHOICES_QUEENS_53_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic54
+		}
+		picture = CHOICES_QUEENS_54_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic55
+		}
+		picture = CHOICES_QUEENS_55_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic56
+		}
+		picture = CHOICES_QUEENS_56_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic57
+		}
+		picture = CHOICES_QUEENS_57_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic58
+		}
+		picture = CHOICES_QUEENS_58_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic59
+		}
+		picture = CHOICES_QUEENS_59_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic60
+		}
+		picture = CHOICES_QUEENS_60_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic61
+		}
+		picture = CHOICES_QUEENS_61_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic62
+		}
+		picture = CHOICES_QUEENS_62_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic63
+		}
+		picture = CHOICES_QUEENS_63_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic64
+		}
+		picture = CHOICES_QUEENS_64_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic65
+		}
+		picture = CHOICES_QUEENS_65_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic66
+		}
+		picture = CHOICES_QUEENS_66_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic67
+		}
+		picture = CHOICES_QUEENS_67_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic68
+		}
+		picture = CHOICES_QUEENS_68_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic69
+		}
+		picture = CHOICES_QUEENS_69_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic70
+		}
+		picture = CHOICES_QUEENS_70_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic71
+		}
+		picture = CHOICES_QUEENS_71_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic72
+		}
+		picture = CHOICES_QUEENS_72_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic73
+		}
+		picture = CHOICES_QUEENS_73_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic74
+		}
+		picture = CHOICES_QUEENS_74_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic75
+		}
+		picture = CHOICES_QUEENS_75_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic76
+		}
+		picture = CHOICES_QUEENS_76_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic77
+		}
+		picture = CHOICES_QUEENS_77_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic78
+		}
+		picture = CHOICES_QUEENS_78_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic79
+		}
+		picture = CHOICES_QUEENS_79_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic80
+		}
+		picture = CHOICES_QUEENS_80_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic81
+		}
+		picture = CHOICES_QUEENS_81_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic82
+		}
+		picture = CHOICES_QUEENS_82_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic83
+		}
+		picture = CHOICES_QUEENS_83_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic84
+		}
+		picture = CHOICES_QUEENS_84_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic85
+		}
+		picture = CHOICES_QUEENS_85_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic86
+		}
+		picture = CHOICES_QUEENS_86_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic87
+		}
+		picture = CHOICES_QUEENS_87_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic88
+		}
+		picture = CHOICES_QUEENS_88_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic89
+		}
+		picture = CHOICES_QUEENS_89_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic90
+		}
+		picture = CHOICES_QUEENS_90_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic91
+		}
+		picture = CHOICES_QUEENS_91_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic92
+		}
+		picture = CHOICES_QUEENS_92_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic93
+		}
+		picture = CHOICES_QUEENS_93_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic94
+		}
+		picture = CHOICES_QUEENS_94_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic95
+		}
+		picture = CHOICES_QUEENS_95_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic96
+		}
+		picture = CHOICES_QUEENS_96_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic97
+		}
+		picture = CHOICES_QUEENS_97_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic98
+		}
+		picture = CHOICES_QUEENS_98_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic99
+		}
+		picture = CHOICES_QUEENS_99_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic100
+		}
+		picture = CHOICES_QUEENS_100_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic101
+		}
+		picture = CHOICES_QUEENS_101_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic102
+		}
+		picture = CHOICES_QUEENS_102_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic103
+		}
+		picture = CHOICES_QUEENS_103_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic104
+		}
+		picture = CHOICES_QUEENS_104_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic105
+		}
+		picture = CHOICES_QUEENS_105_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic106
+		}
+		picture = CHOICES_QUEENS_106_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic107
+		}
+		picture = CHOICES_QUEENS_107_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic108
+		}
+		picture = CHOICES_QUEENS_108_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic109
+		}
+		picture = CHOICES_QUEENS_109_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic110
+		}
+		picture = CHOICES_QUEENS_110_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic111
+		}
+		picture = CHOICES_QUEENS_111_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic112
+		}
+		picture = CHOICES_QUEENS_112_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic113
+		}
+		picture = CHOICES_QUEENS_113_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic114
+		}
+		picture = CHOICES_QUEENS_114_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic115
+		}
+		picture = CHOICES_QUEENS_115_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic116
+		}
+		picture = CHOICES_QUEENS_116_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic117
+		}
+		picture = CHOICES_QUEENS_117_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic118
+		}
+		picture = CHOICES_QUEENS_118_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic119
+		}
+		picture = CHOICES_QUEENS_119_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic120
+		}
+		picture = CHOICES_QUEENS_120_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic121
+		}
+		picture = CHOICES_QUEENS_121_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic122
+		}
+		picture = CHOICES_QUEENS_122_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic123
+		}
+		picture = CHOICES_QUEENS_123_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic124
+		}
+		picture = CHOICES_QUEENS_124_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic125
+		}
+		picture = CHOICES_QUEENS_125_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic126
+		}
+		picture = CHOICES_QUEENS_126_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic127
+		}
+		picture = CHOICES_QUEENS_127_eventPicture 
+	}		
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic200
+		}
+		picture = CHOICES_QUEENS_200_eventPicture 
+	} 
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic201
+		}
+		picture = CHOICES_QUEENS_201_eventPicture 
+	} 
+
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic202
+		}
+		picture = CHOICES_QUEENS_202_eventPicture 
+	}
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic203
+		}
+		picture = CHOICES_QUEENS_203_eventPicture 
+	}	
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "rab_treasury_events.OPTA31"
+		country_event = {
+			id = rab_treasury_events.32
+		}		
+	}
+	option = {
+		name = "rab_treasury_events.OPTB31"
+		if = {
+			limit = {
+				NOT = { consort_has_personality = immortal_personality }
+			}	
+			remove_queen_all_personality = yes
+			add_queen_personality = immortal_personality
+			change_variable = {
+				which = num_of_talking_wife
+				value = 5	
+			}
+			talk_with_consort_heir_effect = yes
+			custom_tooltip = tp.rab_treasury_events.OPTC28
+			hidden_effect = {
+				subtract_variable = {
+					which = num_of_immortality
+					value = 1
+				}
+				clr_country_flag = tmp_rab_treasury_events_1000		
+			}
+		}
+	}	
+}
+#wife is confused that why you give u twice medician
+country_event = {
+	id = rab_treasury_events.1031
+	title = rab_treasury_events.NAME1031
+	desc = rab_treasury_events.DESC1031
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic1
+		}
+		picture = CHOICES_QUEENS_1_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic2
+		}
+		picture = CHOICES_QUEENS_2_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic3
+		}
+		picture = CHOICES_QUEENS_3_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic4
+		}
+		picture = CHOICES_QUEENS_4_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic5
+		}
+		picture = CHOICES_QUEENS_5_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic6
+		}
+		picture = CHOICES_QUEENS_6_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic7
+		}
+		picture = CHOICES_QUEENS_7_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic8
+		}
+		picture = CHOICES_QUEENS_8_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic9
+		}
+		picture = CHOICES_QUEENS_9_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic10
+		}
+		picture = CHOICES_QUEENS_10_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic11
+		}
+		picture = CHOICES_QUEENS_11_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic12
+		}
+		picture = CHOICES_QUEENS_12_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic13
+		}
+		picture = CHOICES_QUEENS_13_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic14
+		}
+		picture = CHOICES_QUEENS_14_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic15
+		}
+		picture = CHOICES_QUEENS_15_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic16
+		}
+		picture = CHOICES_QUEENS_16_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic17
+		}
+		picture = CHOICES_QUEENS_17_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic18
+		}
+		picture = CHOICES_QUEENS_18_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic19
+		}
+		picture = CHOICES_QUEENS_19_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic20
+		}
+		picture = CHOICES_QUEENS_20_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic21
+		}
+		picture = CHOICES_QUEENS_21_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic22
+		}
+		picture = CHOICES_QUEENS_22_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic23
+		}
+		picture = CHOICES_QUEENS_23_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic24
+		}
+		picture = CHOICES_QUEENS_24_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic25
+		}
+		picture = CHOICES_QUEENS_25_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic26
+		}
+		picture = CHOICES_QUEENS_26_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic27
+		}
+		picture = CHOICES_QUEENS_27_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic28
+		}
+		picture = CHOICES_QUEENS_28_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic29
+		}
+		picture = CHOICES_QUEENS_29_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic30
+		}
+		picture = CHOICES_QUEENS_30_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic31
+		}
+		picture = CHOICES_QUEENS_31_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic32
+		}
+		picture = CHOICES_QUEENS_32_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic33
+		}
+		picture = CHOICES_QUEENS_33_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic34
+		}
+		picture = CHOICES_QUEENS_34_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic35
+		}
+		picture = CHOICES_QUEENS_35_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic36
+		}
+		picture = CHOICES_QUEENS_36_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic37
+		}
+		picture = CHOICES_QUEENS_37_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic38
+		}
+		picture = CHOICES_QUEENS_38_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic39
+		}
+		picture = CHOICES_QUEENS_39_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic40
+		}
+		picture = CHOICES_QUEENS_40_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic41
+		}
+		picture = CHOICES_QUEENS_41_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic42
+		}
+		picture = CHOICES_QUEENS_42_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic43
+		}
+		picture = CHOICES_QUEENS_43_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic44
+		}
+		picture = CHOICES_QUEENS_44_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic45
+		}
+		picture = CHOICES_QUEENS_45_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic46
+		}
+		picture = CHOICES_QUEENS_46_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic47
+		}
+		picture = CHOICES_QUEENS_47_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic48
+		}
+		picture = CHOICES_QUEENS_48_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic49
+		}
+		picture = CHOICES_QUEENS_49_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic50
+		}
+		picture = CHOICES_QUEENS_50_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic51
+		}
+		picture = CHOICES_QUEENS_51_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic52
+		}
+		picture = CHOICES_QUEENS_52_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic53
+		}
+		picture = CHOICES_QUEENS_53_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic54
+		}
+		picture = CHOICES_QUEENS_54_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic55
+		}
+		picture = CHOICES_QUEENS_55_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic56
+		}
+		picture = CHOICES_QUEENS_56_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic57
+		}
+		picture = CHOICES_QUEENS_57_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic58
+		}
+		picture = CHOICES_QUEENS_58_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic59
+		}
+		picture = CHOICES_QUEENS_59_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic60
+		}
+		picture = CHOICES_QUEENS_60_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic61
+		}
+		picture = CHOICES_QUEENS_61_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic62
+		}
+		picture = CHOICES_QUEENS_62_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic63
+		}
+		picture = CHOICES_QUEENS_63_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic64
+		}
+		picture = CHOICES_QUEENS_64_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic65
+		}
+		picture = CHOICES_QUEENS_65_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic66
+		}
+		picture = CHOICES_QUEENS_66_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic67
+		}
+		picture = CHOICES_QUEENS_67_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic68
+		}
+		picture = CHOICES_QUEENS_68_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic69
+		}
+		picture = CHOICES_QUEENS_69_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic70
+		}
+		picture = CHOICES_QUEENS_70_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic71
+		}
+		picture = CHOICES_QUEENS_71_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic72
+		}
+		picture = CHOICES_QUEENS_72_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic73
+		}
+		picture = CHOICES_QUEENS_73_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic74
+		}
+		picture = CHOICES_QUEENS_74_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic75
+		}
+		picture = CHOICES_QUEENS_75_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic76
+		}
+		picture = CHOICES_QUEENS_76_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic77
+		}
+		picture = CHOICES_QUEENS_77_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic78
+		}
+		picture = CHOICES_QUEENS_78_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic79
+		}
+		picture = CHOICES_QUEENS_79_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic80
+		}
+		picture = CHOICES_QUEENS_80_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic81
+		}
+		picture = CHOICES_QUEENS_81_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic82
+		}
+		picture = CHOICES_QUEENS_82_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic83
+		}
+		picture = CHOICES_QUEENS_83_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic84
+		}
+		picture = CHOICES_QUEENS_84_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic85
+		}
+		picture = CHOICES_QUEENS_85_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic86
+		}
+		picture = CHOICES_QUEENS_86_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic87
+		}
+		picture = CHOICES_QUEENS_87_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic88
+		}
+		picture = CHOICES_QUEENS_88_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic89
+		}
+		picture = CHOICES_QUEENS_89_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic90
+		}
+		picture = CHOICES_QUEENS_90_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic91
+		}
+		picture = CHOICES_QUEENS_91_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic92
+		}
+		picture = CHOICES_QUEENS_92_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic93
+		}
+		picture = CHOICES_QUEENS_93_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic94
+		}
+		picture = CHOICES_QUEENS_94_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic95
+		}
+		picture = CHOICES_QUEENS_95_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic96
+		}
+		picture = CHOICES_QUEENS_96_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic97
+		}
+		picture = CHOICES_QUEENS_97_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic98
+		}
+		picture = CHOICES_QUEENS_98_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic99
+		}
+		picture = CHOICES_QUEENS_99_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic100
+		}
+		picture = CHOICES_QUEENS_100_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic101
+		}
+		picture = CHOICES_QUEENS_101_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic102
+		}
+		picture = CHOICES_QUEENS_102_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic103
+		}
+		picture = CHOICES_QUEENS_103_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic104
+		}
+		picture = CHOICES_QUEENS_104_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic105
+		}
+		picture = CHOICES_QUEENS_105_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic106
+		}
+		picture = CHOICES_QUEENS_106_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic107
+		}
+		picture = CHOICES_QUEENS_107_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic108
+		}
+		picture = CHOICES_QUEENS_108_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic109
+		}
+		picture = CHOICES_QUEENS_109_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic110
+		}
+		picture = CHOICES_QUEENS_110_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic111
+		}
+		picture = CHOICES_QUEENS_111_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic112
+		}
+		picture = CHOICES_QUEENS_112_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic113
+		}
+		picture = CHOICES_QUEENS_113_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic114
+		}
+		picture = CHOICES_QUEENS_114_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic115
+		}
+		picture = CHOICES_QUEENS_115_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic116
+		}
+		picture = CHOICES_QUEENS_116_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic117
+		}
+		picture = CHOICES_QUEENS_117_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic118
+		}
+		picture = CHOICES_QUEENS_118_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic119
+		}
+		picture = CHOICES_QUEENS_119_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic120
+		}
+		picture = CHOICES_QUEENS_120_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic121
+		}
+		picture = CHOICES_QUEENS_121_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic122
+		}
+		picture = CHOICES_QUEENS_122_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic123
+		}
+		picture = CHOICES_QUEENS_123_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic124
+		}
+		picture = CHOICES_QUEENS_124_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic125
+		}
+		picture = CHOICES_QUEENS_125_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic126
+		}
+		picture = CHOICES_QUEENS_126_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic127
+		}
+		picture = CHOICES_QUEENS_127_eventPicture 
+	}		
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic200
+		}
+		picture = CHOICES_QUEENS_200_eventPicture 
+	} 
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic201
+		}
+		picture = CHOICES_QUEENS_201_eventPicture 
+	} 
+
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic202
+		}
+		picture = CHOICES_QUEENS_202_eventPicture 
+	}
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic203
+		}
+		picture = CHOICES_QUEENS_203_eventPicture 
+	}	
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "rab_treasury_events.OPTA1031"
+		clr_country_flag = tmp_rab_treasury_events_1000	
+	}
+}
+	
+country_event = {
+	id = rab_treasury_events.32
+	title = "rab_treasury_events.NAME32"
+	desc = "rab_treasury_events.DESC32"
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic1
+		}
+		picture = CHOICES_QUEENS_1_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic2
+		}
+		picture = CHOICES_QUEENS_2_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic3
+		}
+		picture = CHOICES_QUEENS_3_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic4
+		}
+		picture = CHOICES_QUEENS_4_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic5
+		}
+		picture = CHOICES_QUEENS_5_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic6
+		}
+		picture = CHOICES_QUEENS_6_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic7
+		}
+		picture = CHOICES_QUEENS_7_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic8
+		}
+		picture = CHOICES_QUEENS_8_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic9
+		}
+		picture = CHOICES_QUEENS_9_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic10
+		}
+		picture = CHOICES_QUEENS_10_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic11
+		}
+		picture = CHOICES_QUEENS_11_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic12
+		}
+		picture = CHOICES_QUEENS_12_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic13
+		}
+		picture = CHOICES_QUEENS_13_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic14
+		}
+		picture = CHOICES_QUEENS_14_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic15
+		}
+		picture = CHOICES_QUEENS_15_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic16
+		}
+		picture = CHOICES_QUEENS_16_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic17
+		}
+		picture = CHOICES_QUEENS_17_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic18
+		}
+		picture = CHOICES_QUEENS_18_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic19
+		}
+		picture = CHOICES_QUEENS_19_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic20
+		}
+		picture = CHOICES_QUEENS_20_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic21
+		}
+		picture = CHOICES_QUEENS_21_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic22
+		}
+		picture = CHOICES_QUEENS_22_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic23
+		}
+		picture = CHOICES_QUEENS_23_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic24
+		}
+		picture = CHOICES_QUEENS_24_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic25
+		}
+		picture = CHOICES_QUEENS_25_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic26
+		}
+		picture = CHOICES_QUEENS_26_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic27
+		}
+		picture = CHOICES_QUEENS_27_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic28
+		}
+		picture = CHOICES_QUEENS_28_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic29
+		}
+		picture = CHOICES_QUEENS_29_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic30
+		}
+		picture = CHOICES_QUEENS_30_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic31
+		}
+		picture = CHOICES_QUEENS_31_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic32
+		}
+		picture = CHOICES_QUEENS_32_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic33
+		}
+		picture = CHOICES_QUEENS_33_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic34
+		}
+		picture = CHOICES_QUEENS_34_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic35
+		}
+		picture = CHOICES_QUEENS_35_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic36
+		}
+		picture = CHOICES_QUEENS_36_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic37
+		}
+		picture = CHOICES_QUEENS_37_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic38
+		}
+		picture = CHOICES_QUEENS_38_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic39
+		}
+		picture = CHOICES_QUEENS_39_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic40
+		}
+		picture = CHOICES_QUEENS_40_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic41
+		}
+		picture = CHOICES_QUEENS_41_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic42
+		}
+		picture = CHOICES_QUEENS_42_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic43
+		}
+		picture = CHOICES_QUEENS_43_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic44
+		}
+		picture = CHOICES_QUEENS_44_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic45
+		}
+		picture = CHOICES_QUEENS_45_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic46
+		}
+		picture = CHOICES_QUEENS_46_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic47
+		}
+		picture = CHOICES_QUEENS_47_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic48
+		}
+		picture = CHOICES_QUEENS_48_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic49
+		}
+		picture = CHOICES_QUEENS_49_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic50
+		}
+		picture = CHOICES_QUEENS_50_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic51
+		}
+		picture = CHOICES_QUEENS_51_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic52
+		}
+		picture = CHOICES_QUEENS_52_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic53
+		}
+		picture = CHOICES_QUEENS_53_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic54
+		}
+		picture = CHOICES_QUEENS_54_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic55
+		}
+		picture = CHOICES_QUEENS_55_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic56
+		}
+		picture = CHOICES_QUEENS_56_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic57
+		}
+		picture = CHOICES_QUEENS_57_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic58
+		}
+		picture = CHOICES_QUEENS_58_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic59
+		}
+		picture = CHOICES_QUEENS_59_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic60
+		}
+		picture = CHOICES_QUEENS_60_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic61
+		}
+		picture = CHOICES_QUEENS_61_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic62
+		}
+		picture = CHOICES_QUEENS_62_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic63
+		}
+		picture = CHOICES_QUEENS_63_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic64
+		}
+		picture = CHOICES_QUEENS_64_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic65
+		}
+		picture = CHOICES_QUEENS_65_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic66
+		}
+		picture = CHOICES_QUEENS_66_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic67
+		}
+		picture = CHOICES_QUEENS_67_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic68
+		}
+		picture = CHOICES_QUEENS_68_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic69
+		}
+		picture = CHOICES_QUEENS_69_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic70
+		}
+		picture = CHOICES_QUEENS_70_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic71
+		}
+		picture = CHOICES_QUEENS_71_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic72
+		}
+		picture = CHOICES_QUEENS_72_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic73
+		}
+		picture = CHOICES_QUEENS_73_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic74
+		}
+		picture = CHOICES_QUEENS_74_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic75
+		}
+		picture = CHOICES_QUEENS_75_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic76
+		}
+		picture = CHOICES_QUEENS_76_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic77
+		}
+		picture = CHOICES_QUEENS_77_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic78
+		}
+		picture = CHOICES_QUEENS_78_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic79
+		}
+		picture = CHOICES_QUEENS_79_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic80
+		}
+		picture = CHOICES_QUEENS_80_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic81
+		}
+		picture = CHOICES_QUEENS_81_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic82
+		}
+		picture = CHOICES_QUEENS_82_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic83
+		}
+		picture = CHOICES_QUEENS_83_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic84
+		}
+		picture = CHOICES_QUEENS_84_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic85
+		}
+		picture = CHOICES_QUEENS_85_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic86
+		}
+		picture = CHOICES_QUEENS_86_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic87
+		}
+		picture = CHOICES_QUEENS_87_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic88
+		}
+		picture = CHOICES_QUEENS_88_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic89
+		}
+		picture = CHOICES_QUEENS_89_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic90
+		}
+		picture = CHOICES_QUEENS_90_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic91
+		}
+		picture = CHOICES_QUEENS_91_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic92
+		}
+		picture = CHOICES_QUEENS_92_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic93
+		}
+		picture = CHOICES_QUEENS_93_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic94
+		}
+		picture = CHOICES_QUEENS_94_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic95
+		}
+		picture = CHOICES_QUEENS_95_eventPicture 
+	}
+	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic96
+		}
+		picture = CHOICES_QUEENS_96_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic97
+		}
+		picture = CHOICES_QUEENS_97_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic98
+		}
+		picture = CHOICES_QUEENS_98_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic99
+		}
+		picture = CHOICES_QUEENS_99_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic100
+		}
+		picture = CHOICES_QUEENS_100_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic101
+		}
+		picture = CHOICES_QUEENS_101_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic102
+		}
+		picture = CHOICES_QUEENS_102_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic103
+		}
+		picture = CHOICES_QUEENS_103_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic104
+		}
+		picture = CHOICES_QUEENS_104_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic105
+		}
+		picture = CHOICES_QUEENS_105_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic106
+		}
+		picture = CHOICES_QUEENS_106_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic107
+		}
+		picture = CHOICES_QUEENS_107_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic108
+		}
+		picture = CHOICES_QUEENS_108_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic109
+		}
+		picture = CHOICES_QUEENS_109_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic110
+		}
+		picture = CHOICES_QUEENS_110_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic111
+		}
+		picture = CHOICES_QUEENS_111_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic112
+		}
+		picture = CHOICES_QUEENS_112_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic113
+		}
+		picture = CHOICES_QUEENS_113_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic114
+		}
+		picture = CHOICES_QUEENS_114_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic115
+		}
+		picture = CHOICES_QUEENS_115_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic116
+		}
+		picture = CHOICES_QUEENS_116_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic117
+		}
+		picture = CHOICES_QUEENS_117_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic118
+		}
+		picture = CHOICES_QUEENS_118_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic119
+		}
+		picture = CHOICES_QUEENS_119_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic120
+		}
+		picture = CHOICES_QUEENS_120_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic121
+		}
+		picture = CHOICES_QUEENS_121_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic122
+		}
+		picture = CHOICES_QUEENS_122_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic123
+		}
+		picture = CHOICES_QUEENS_123_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic124
+		}
+		picture = CHOICES_QUEENS_124_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic125
+		}
+		picture = CHOICES_QUEENS_125_eventPicture 
+	}
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic126
+		}
+		picture = CHOICES_QUEENS_126_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic127
+		}
+		picture = CHOICES_QUEENS_127_eventPicture 
+	}		
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic200
+		}
+		picture = CHOICES_QUEENS_200_eventPicture 
+	} 
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic201
+		}
+		picture = CHOICES_QUEENS_201_eventPicture 
+	} 
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic202
+		}
+		picture = CHOICES_QUEENS_202_eventPicture 
+	}
+ 	picture = {
+		trigger = {
+			has_country_flag = flg_has_concert_pic203
+		}
+		picture = CHOICES_QUEENS_203_eventPicture 
+	}	
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "rab_treasury_events.OPTA32"
+		subtract_variable = {
+			which = num_of_talking_wife
+			value = 5	
+		}
+		talk_with_consort_heir_effect = yes
+		clr_country_flag = tmp_rab_treasury_events_1000				
+	}
+}
+# SHOW 傳國玉璽
+country_event = {
+	id = rab_treasury_events.33
+	title = "rab_treasury_events.NAME33"
+	desc = "rab_treasury_events.DESC33"
+	picture = chuanguoyuxi_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_treasury_events.OPTA33"
+		country_event = {
+			id = rab_treasury_events.1000
+		}	
+	}
+}
+
+# when you receive 传国玉玺 from conquest other country.(celestial_empire governement)
+# when you receive 传国玉玺 from conquest other country.(not celestial_empire governement)
+
+country_event = {
+	id = rab_treasury_events.34
+	title = "rab_treasury_events.NAME34"
+	picture = povinfo_chuanguoyuxi_eventPicture
+	desc = {
+		trigger = {
+			is_year = 1913
+		}	
+		desc = "rab_treasury_events.DESC34.a"
+	}
+	desc = {
+		trigger = {
+			NOT = { is_year = 1913 }
+			OR = {
+				has_reform = celestial_empire
+				has_reform = ancient_chinese_warlord_reform
+				has_reform = ancient_chinese_togofu_reform
+				has_reform = chinese_feudatory_reform
+				tag = TP1
+			}
+		}	
+		desc = "rab_treasury_events.DESC34.b"
+	}
+	desc = {
+		trigger = {
+			NOT = { is_year = 1913 }
+			NOT = {
+				OR = {
+					has_reform = celestial_empire
+					has_reform = ancient_chinese_warlord_reform
+					has_reform = ancient_chinese_togofu_reform
+					has_reform = chinese_feudatory_reform
+					tag = TP1
+				}
+			}	
+		}	
+		desc = "rab_treasury_events.DESC34.c"
+	}
+	picture = {
+		trigger = {
+			OR = {
+				is_year = 1913
+				NOT = {
+					OR = {
+						has_reform = celestial_empire
+						has_reform = ancient_chinese_warlord_reform
+						has_reform = ancient_chinese_togofu_reform
+						has_reform = chinese_feudatory_reform
+						tag = TP1						
+					}
+				}
+			}	
+		}
+		picture = chuanguoyuxi_eventPicture 
+	}
+	picture = {
+		trigger = {
+			NOT  = { is_year = 1913 }
+			OR = {
+				has_reform = celestial_empire
+				has_reform = ancient_chinese_warlord_reform
+				has_reform = ancient_chinese_togofu_reform
+				has_reform = chinese_feudatory_reform
+				tag = TP1						
+			}			
+		}
+		picture = povinfo_chuanguoyuxi_eventPicture 
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = {
+			has_country_modifier = md_chuanguoyuxi
+		}
+	}	
+	
+	immediate = {
+		hidden_effect = {
+			FROM = { 
+				remove_country_modifier = md_chuanguoyuxi
+			} 
+		}	
+	}	
+	
+	option = {
+		name = "rab_treasury_events.OPTA34"
+		trigger = {
+			is_year = 1913
+		}
+		country_event = {
+			id = rab_treasury_events.35
+		}
+	}		
+	option = {
+		name = "rab_treasury_events.OPTB34"
+		trigger = {
+			NOT = { is_year = 1913 }
+			OR = {
+				has_reform = celestial_empire
+				has_reform = ancient_chinese_warlord_reform
+				has_reform = ancient_chinese_togofu_reform
+				has_reform = chinese_feudatory_reform
+				tag = TP1						
+			}
+		}	
+		add_country_modifier = {
+			name = "md_chuanguoyuxi"
+			duration = -1
+		}		
+	}	
+	option = {
+		name = "rab_treasury_events.OPTC34"
+		trigger = {
+			NOT = { is_year = 1913 }
+			NOT = {
+				OR = {
+					has_reform = celestial_empire
+					has_reform = ancient_chinese_warlord_reform
+					has_reform = ancient_chinese_togofu_reform
+					has_reform = chinese_feudatory_reform
+					tag = TP1						
+				}
+			}	
+		}	
+		add_country_modifier = {
+			name = "md_chuanguoyuxi"
+			duration = -1
+		}
+	}
+	after = {
+		hidden_effect = {
+			FROM = { 
+				remove_country_modifier = md_chuanguoyuxi
+			} 
+		}	
+	}	
+}
+
+# if the chuanguoyuxi left to 1913 after.
+country_event = {
+	id = rab_treasury_events.35
+	title = "rab_treasury_events.NAME35"
+	desc = "rab_treasury_events.DESC35"
+	picture = finally_chuanguoyuxi_eventPicture
+
+	trigger = {
+		is_year = 1913	
+		has_country_modifier = md_chuanguoyuxi
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier = md_chuanguoyuxi
+		}	
+	}	
+	
+	option = {
+		name = "rab_treasury_events.OPTA35"
+		add_treasury = 500
+	}
+}
+
+country_event = {
+	id = rab_treasury_events.36
+	title = "rab_treasury_events.NAME35"
+	desc = "rab_treasury_events.DESC35"
+	picture = finally_chuanguoyuxi_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier = md_chuanguoyuxi
+		}	
+	}	
+	
+	option = {
+		name = "rab_treasury_events.OPTA35"
+		add_treasury = 500
+	}
+}
+
+
+

@@ -1,0 +1,5421 @@
+namespace = rab_canonized
+# rab_canonized.5 vu'YSÍ‰k¡N³QšRHT¥bÙu—RINWšR:YºN	orÛSŠ‹ from on_actions.txt : Monarch_Death
+# rab_canonized.6 —RINWbËzKNR„vºNx‹NöN from TS_rab_country_decision.txt
+# rab_canonized.7 JTåwıw‹œ^—RINWNbx„vºNx
+# rab_canonized.8 'YIl6e0RÛSØS„vˆmo`
+# rab_canonized.9 tmp_rab_recovery_AN2 ıw‹œ^6e0R6eŞV„vcäN
+# rab_canonized.10 tmp_rab_recovery_XI1 ıw‹œ^6e0R6eŞV„vcäN
+# rab_canonized.11 tmp_rab_recovery_XIY ıw‹œ^6e0R6eŞV„vcäN
+# rab_canonized.12 tmp_rab_recovery_AN3 ıw‹œ^6e0R6eŞV„vcäN
+# rab_canonized.601~ 681 ıw‹œ^å‚=fxÇdNÍSÛSÿGR¨–mj0uu„v˜SºN‹NöN
+#
+##########################################
+#
+#	³QšRHT¥bÙu'YIlšR:YºN	
+#	from on_monarch_death
+#
+########################################
+# 2018.12.30 fit to 1.28
+# 2019.03.03 1u¼eŞV6eıw‹œ^¡c(uY²NLub—NbåNòT“t’l	g id 9 ~ id 13
+# 2020-07-09 duhufu_state_color add into
+country_event = {
+	id = rab_canonized.5
+	title = "rab_canonized.NAME5"
+	desc = "rab_canonized.DESC5"
+	picture = DEATH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			is_subject_of_type = duhufu_state
+			is_subject_of_type = duhufu_state_color
+		}	
+		NOT = { has_country_flag = temp_ruler_flg }
+		NOT = { war_with = overlord }
+	}
+	
+
+	#ÛSØS
+	option = {
+		name = "rab_canonized.OPTA5"
+		trigger = {
+			ai = no
+		}
+
+		if = {
+			limit = { tag = XIY }
+			change_tag = XI3
+			change_government = ancient_chinese_warlord
+			add_government_reform = ancient_chinese_warlord_reform
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+		}
+		if = {
+			limit = { tag = XI1 }
+			change_tag = XI2
+			change_government = ancient_chinese_warlord
+			add_government_reform = ancient_chinese_warlord_reform
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+		}
+		if = {
+			limit = { tag = AN2 }
+			change_tag = MB1
+			change_government = ancient_chinese_warlord
+			add_government_reform = ancient_chinese_warlord_reform
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+		}
+		if = {
+			limit = { tag = AN3 }
+			change_tag = JH2
+			change_government = ancient_chinese_warlord #rab_test
+			add_government_reform = ancient_chinese_warlord_reform
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+		}	
+		if = {
+			limit = { tag = ND1 }
+			change_tag = ZDJ
+			change_government = ancient_chinese_warlord #rab_test
+			add_government_reform = ancient_chinese_warlord_reform
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+		}
+		if = {
+			limit = { tag = HS0 }
+			change_tag = HE1
+			change_government = ancient_chinese_warlord #rab_test
+			add_government_reform = ancient_chinese_warlord_reform
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+		}
+		if = {
+			limit = { tag = WSZ }
+			change_tag = XYJ
+			change_government = ancient_chinese_warlord #rab_test
+			add_government_reform = ancient_chinese_warlord_reform
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+		}
+		if = {
+			limit = { tag = BT1 }
+			change_tag = GE1
+			change_government = ancient_chinese_warlord #rab_test
+			add_government_reform = ancient_chinese_warlord_reform
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+		}
+		if = {
+			limit = { tag = AN4 }
+			change_tag = TE1
+			change_government = ancient_chinese_warlord #rab_test
+			add_government_reform = ancient_chinese_warlord_reform
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+		}		
+		set_country_flag = temp_ruler_flg
+		define_ruler = {
+			age = 30
+			adm = 2
+			dip = 2
+			mil = 2
+		}
+			#.^V<w
+			east_china_sea_region = {
+				discover_country = ROOT
+			}
+			south_china_sea_region = {
+				discover_country = ROOT
+			}
+			south_china_region = {
+				discover_country = ROOT
+			}
+			north_china_region = {
+				discover_country = ROOT
+			}			
+			tibet_region = {
+				discover_country = ROOT
+			}			
+			xinan_region = {
+				discover_country = ROOT
+			}
+			central_asia_region = {
+				discover_country = ROOT
+			}
+			
+		overlord = {
+			country_event = {
+				id = rab_canonized.8
+			}
+			free_vassal = ROOT
+		}		
+	}
+	option = {
+		name = "rab_canonized.OPTB5"
+		hidden_effect = {
+			overlord = {
+				random_list = {
+					5 = { country_event = { id = rab_canonized.601 } }
+					5 = { country_event = { id = rab_canonized.602 } }
+					5 = { country_event = { id = rab_canonized.603 } }
+					5 = { country_event = { id = rab_canonized.604 } }
+					5 = { country_event = { id = rab_canonized.605 } }
+					5 = { country_event = { id = rab_canonized.606 } }
+					5 = { country_event = { id = rab_canonized.607 } }
+					5 = { country_event = { id = rab_canonized.608 } }
+					5 = { country_event = { id = rab_canonized.609 } }
+					5 = { country_event = { id = rab_canonized.610 } }
+					5 = { country_event = { id = rab_canonized.611 } }
+					5 = { country_event = { id = rab_canonized.612 } }
+					5 = { country_event = { id = rab_canonized.613 } }
+					5 = { country_event = { id = rab_canonized.614 } }
+					5 = { country_event = { id = rab_canonized.615 } }
+					5 = { country_event = { id = rab_canonized.616 } }
+					5 = { country_event = { id = rab_canonized.617 } }
+					5 = { country_event = { id = rab_canonized.618 } }
+					5 = { country_event = { id = rab_canonized.619 } }
+					5 = { country_event = { id = rab_canonized.620 } }
+					5 = { country_event = { id = rab_canonized.621 } }
+					5 = { country_event = { id = rab_canonized.622 } }
+					5 = { country_event = { id = rab_canonized.623 } }
+					5 = { country_event = { id = rab_canonized.624 } }
+					5 = { country_event = { id = rab_canonized.625 } }
+					5 = { country_event = { id = rab_canonized.626 } }
+					5 = { country_event = { id = rab_canonized.627 } }
+					5 = { country_event = { id = rab_canonized.628 } }
+					5 = { country_event = { id = rab_canonized.629 } }
+					5 = { country_event = { id = rab_canonized.630 } }
+					5 = { country_event = { id = rab_canonized.631 } }
+					5 = { country_event = { id = rab_canonized.632 } }
+					5 = { country_event = { id = rab_canonized.634 } }
+					5 = { country_event = { id = rab_canonized.635 } }
+					5 = { country_event = { id = rab_canonized.636 } }
+					5 = { country_event = { id = rab_canonized.637 } }
+					5 = { country_event = { id = rab_canonized.638 } }
+					5 = { country_event = { id = rab_canonized.639 } }
+					5 = { country_event = { id = rab_canonized.640 } }
+					5 = { country_event = { id = rab_canonized.641 } }
+					5 = { country_event = { id = rab_canonized.642 } }
+					5 = { country_event = { id = rab_canonized.644 } }
+					5 = { country_event = { id = rab_canonized.645 } }
+					5 = { country_event = { id = rab_canonized.646 } }
+					5 = { country_event = { id = rab_canonized.647 } }
+					5 = { country_event = { id = rab_canonized.648 } }
+					5 = { country_event = { id = rab_canonized.649 } }
+					5 = { country_event = { id = rab_canonized.650 } }
+					5 = { country_event = { id = rab_canonized.651 } }
+					5 = { country_event = { id = rab_canonized.652 } }
+					5 = { country_event = { id = rab_canonized.653 } }
+					5 = { country_event = { id = rab_canonized.654 } }
+					5 = { country_event = { id = rab_canonized.655 } }
+					5 = { country_event = { id = rab_canonized.656 } }
+					5 = { country_event = { id = rab_canonized.657 } }
+					5 = { country_event = { id = rab_canonized.658 } }
+					5 = { country_event = { id = rab_canonized.659 } }
+					5 = { country_event = { id = rab_canonized.662 } }
+					5 = { country_event = { id = rab_canonized.661 } }
+					5 = { country_event = { id = rab_canonized.662 } }
+					5 = { country_event = { id = rab_canonized.663 } }
+					5 = { country_event = { id = rab_canonized.664 } }
+					5 = { country_event = { id = rab_canonized.665 } }
+					5 = { country_event = { id = rab_canonized.666 } }
+					5 = { country_event = { id = rab_canonized.667 } }
+					5 = { country_event = { id = rab_canonized.668 } }
+					5 = { country_event = { id = rab_canonized.669 } }
+					5 = { country_event = { id = rab_canonized.670 } }
+					5 = { country_event = { id = rab_canonized.671 } }
+					5 = { country_event = { id = rab_canonized.672 } }
+					5 = { country_event = { id = rab_canonized.673 } }
+					5 = { country_event = { id = rab_canonized.674 } }
+					5 = { country_event = { id = rab_canonized.675 } }
+				
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = rab_canonized.6
+	title = "rab_canonized.NAME6"
+	desc = "rab_canonized.DESC6"
+	picture = DEATH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_country_flag = temp_ruler_flg }
+	}
+		
+	option = {
+		name = "rab_canonized.OPTA6"
+		hidden_effect = {
+			overlord = {
+				random_list = {
+					5 = { country_event = { id = rab_canonized.601 } }
+					5 = { country_event = { id = rab_canonized.602 } }
+					5 = { country_event = { id = rab_canonized.603 } }
+					5 = { country_event = { id = rab_canonized.604 } }
+					5 = { country_event = { id = rab_canonized.605 } }
+					5 = { country_event = { id = rab_canonized.606 } }
+					5 = { country_event = { id = rab_canonized.607 } }
+					5 = { country_event = { id = rab_canonized.608 } }
+					5 = { country_event = { id = rab_canonized.609 } }
+					5 = { country_event = { id = rab_canonized.610 } }
+					5 = { country_event = { id = rab_canonized.611 } }
+					5 = { country_event = { id = rab_canonized.612 } }
+					5 = { country_event = { id = rab_canonized.613 } }
+					5 = { country_event = { id = rab_canonized.614 } }
+					5 = { country_event = { id = rab_canonized.615 } }
+					5 = { country_event = { id = rab_canonized.616 } }
+					5 = { country_event = { id = rab_canonized.617 } }
+					5 = { country_event = { id = rab_canonized.618 } }
+					5 = { country_event = { id = rab_canonized.619 } }
+					5 = { country_event = { id = rab_canonized.620 } }
+					5 = { country_event = { id = rab_canonized.621 } }
+					5 = { country_event = { id = rab_canonized.622 } }
+					5 = { country_event = { id = rab_canonized.623 } }
+					5 = { country_event = { id = rab_canonized.624 } }
+					5 = { country_event = { id = rab_canonized.625 } }
+					5 = { country_event = { id = rab_canonized.626 } }
+					5 = { country_event = { id = rab_canonized.627 } }
+					5 = { country_event = { id = rab_canonized.628 } }
+					5 = { country_event = { id = rab_canonized.629 } }
+					5 = { country_event = { id = rab_canonized.630 } }
+					5 = { country_event = { id = rab_canonized.631 } }
+					5 = { country_event = { id = rab_canonized.632 } }
+					5 = { country_event = { id = rab_canonized.634 } }
+					5 = { country_event = { id = rab_canonized.635 } }
+					5 = { country_event = { id = rab_canonized.636 } }
+					5 = { country_event = { id = rab_canonized.637 } }
+					5 = { country_event = { id = rab_canonized.638 } }
+					5 = { country_event = { id = rab_canonized.639 } }
+					5 = { country_event = { id = rab_canonized.640 } }
+					5 = { country_event = { id = rab_canonized.641 } }
+					5 = { country_event = { id = rab_canonized.642 } }
+					5 = { country_event = { id = rab_canonized.644 } }
+					5 = { country_event = { id = rab_canonized.645 } }
+					5 = { country_event = { id = rab_canonized.646 } }
+					5 = { country_event = { id = rab_canonized.647 } }
+					5 = { country_event = { id = rab_canonized.648 } }
+					5 = { country_event = { id = rab_canonized.649 } }
+					5 = { country_event = { id = rab_canonized.650 } }
+					5 = { country_event = { id = rab_canonized.651 } }
+					5 = { country_event = { id = rab_canonized.652 } }
+					5 = { country_event = { id = rab_canonized.653 } }
+					5 = { country_event = { id = rab_canonized.654 } }
+					5 = { country_event = { id = rab_canonized.655 } }
+					5 = { country_event = { id = rab_canonized.656 } }
+					5 = { country_event = { id = rab_canonized.657 } }
+					5 = { country_event = { id = rab_canonized.658 } }
+					5 = { country_event = { id = rab_canonized.659 } }
+					5 = { country_event = { id = rab_canonized.662 } }
+					5 = { country_event = { id = rab_canonized.661 } }
+					5 = { country_event = { id = rab_canonized.662 } }
+					5 = { country_event = { id = rab_canonized.663 } }
+					5 = { country_event = { id = rab_canonized.664 } }
+					5 = { country_event = { id = rab_canonized.665 } }
+					5 = { country_event = { id = rab_canonized.666 } }
+					5 = { country_event = { id = rab_canonized.667 } }
+					5 = { country_event = { id = rab_canonized.668 } }
+					5 = { country_event = { id = rab_canonized.669 } }
+					5 = { country_event = { id = rab_canonized.670 } }
+					5 = { country_event = { id = rab_canonized.671 } }
+					5 = { country_event = { id = rab_canonized.672 } }
+					5 = { country_event = { id = rab_canonized.673 } }
+					5 = { country_event = { id = rab_canonized.674 } }
+					5 = { country_event = { id = rab_canonized.675 } }
+					5 = { country_event = { id = rab_canonized.676 } }
+					5 = { country_event = { id = rab_canonized.677 } }
+					5 = { country_event = { id = rab_canonized.678 } }
+					5 = { country_event = { id = rab_canonized.679 } }
+					5 = { country_event = { id = rab_canonized.680 } }
+					5 = { country_event = { id = rab_canonized.681 } }
+				
+				}
+			}
+		}
+	}
+}
+
+# overlord6e0R¯‹o`
+#country_event = {
+#	id = rab_canonized.6
+#	title = "rab_canonized.NAME6"
+#	desc = "rab_canonized.DESC6"
+#	picture = NEW_ADVISOR_eventPicture
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "rab_canonized.OPTA6"
+#		FROM = {
+#			set_country_flag = temp_ruler_flg
+#			define_ruler = {
+#			}
+#			country_event = {
+#				id = rab_canonized.7
+#				days = 5
+#			}
+#		}	
+#	}
+#	option = {
+#		name = "rab_canonized.OPTB6"
+#		FROM = {
+#			set_country_flag = temp_ruler_flg		
+#			country_event = {
+#				id = rab_canonized.7
+#				days = 5				
+#			}			
+#		}	
+#	}		
+#	option = {
+#	name = "rab_canonized.OPTC6"
+#		FROM = {
+#			set_country_flag = temp_ruler_flg		
+#
+#			country_event = {
+#				id = rab_canonized.7
+#				days = 5				
+#			}
+#			define_ruler = {
+#			}			
+#		}	
+#	}		
+#}	
+#
+country_event = {
+	id = rab_canonized.7
+	title = "rab_canonized.NAME7"
+	desc = "rab_canonized.DESC7"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA7"
+		clr_country_flag = temp_ruler_flg
+	}
+}
+# 'YIl6e0RÛSØS„vˆmo`
+country_event = {
+	id = rab_canonized.8
+	title = "rab_canonized.NAME8"
+	desc = "rab_canonized.DESC8"
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA8"
+		FROM = {
+			clr_country_flag = temp_ruler_flg
+		}
+		add_opinion = {
+			who = FROM
+			modifier = op_vassal_betray
+		}
+		if = {
+			limit = {
+				FROM = { tag = AN2 }
+			}
+			clr_country_flag = flg_ever_anduhufu
+			clr_country_flag = tmp_rab_recovery_AN2
+			clr_country_flag = tmp_rab_recovery_AN2_1
+			
+		}
+		if = {
+			limit = {
+				FROM = { tag = XI1 }
+			}
+			clr_country_flag = flg_ever_xi1duhufu
+			clr_country_flag = tmp_rab_recovery_XI1
+			clr_country_flag = tmp_rab_recovery_XI1_1
+		}		
+		if = {
+			limit = {
+				FROM = { tag = XIY }
+			}
+			clr_country_flag = flg_ever_xiyduhufu
+			clr_country_flag = tmp_rab_recovery_XIY
+			clr_country_flag = tmp_rab_recovery_XIY_1
+		}
+		if = {
+			limit = {
+				FROM = { tag = AN3 }
+			}
+			clr_country_flag = flg_ever_annan
+			clr_country_flag = tmp_rab_recovery_AN3
+			clr_country_flag = tmp_rab_recovery_AN3_1
+		}		
+		if = {
+			limit = {
+				FROM = { tag = ND1 }
+			}
+			clr_country_flag = flg_ever_andon
+			clr_country_flag = tmp_rab_recovery_ND1
+			clr_country_flag = tmp_rab_recovery_ND1_1
+		}
+		if = {
+			limit = {
+				FROM = { tag = HS0 }
+			}
+			clr_country_flag = flg_ever_heishui
+			clr_country_flag = tmp_rab_recovery_HS0
+			clr_country_flag = tmp_rab_recovery_HS0_1
+		}
+		if = {
+			limit = {
+				FROM = { tag = WSZ }
+			}
+			clr_country_flag = flg_ever_wusizang
+			clr_country_flag = tmp_rab_recovery_WSZ
+			clr_country_flag = tmp_rab_recovery_WSZ_1
+		}
+		add_prestige = -25
+		
+	}
+}
+
+########################################################
+country_event = {
+	id = rab_canonized.601
+	title = "rab_canonized.NAME601"
+	desc = "rab_canonized.DESC601"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA601"
+		FROM = {
+			set_country_flag = temp_ruler_flg			
+			define_ruler = {
+				name = "—gëX)n"
+				mil = 1
+				adm = 3
+				dip = 1					
+				fixed = yes				
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB601"
+		FROM = {
+			set_country_flag = temp_ruler_flg			
+			define_ruler = {
+				name = "H–Npg"
+				mil = 5
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC601"
+		FROM = {
+			set_country_flag = temp_ruler_flg			
+			define_ruler = {
+				name = "‹s0R"
+				mil = 4
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+########################################################
+country_event = {
+	id = rab_canonized.602
+	title = "rab_canonized.NAME602"
+	desc = "rab_canonized.DESC602"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA602"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "u:yMR"
+				mil = 4
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB602"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–4gn"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC602"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "hgNŒ"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+########################################################
+country_event = {
+	id = rab_canonized.603
+	title = "rab_canonized.NAME603"
+	desc = "rab_canonized.DESC603"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA602"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "òSÌRÕˆ"
+				mil = 2
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB603"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "9tQ©t"
+				mil = 2
+				adm = 3
+				dip = 2				
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC603"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "YOÑ‘¹R"
+				mil = 2
+				adm = 3
+				dip = 4				
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.604
+	title = "rab_canonized.NAME604"
+	desc = "rab_canonized.DESC604"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA604"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "œNIQ"
+				mil = 4
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB604"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "jlTfN"
+				mil = 1
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC604"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "c„vtfV"
+				mil = 2
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.605
+	title = "rab_canonized.NAME605"
+	desc = "rab_canonized.DESC605"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA605"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "Ÿ”íe‹v"
+				mil = 0
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB605"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "4bpgf"
+				mil = 1
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC605"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "jg+t1W"
+				mil = 2
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.606
+	title = "rab_canonized.NAME606"
+	desc = "rab_canonized.DESC606"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA606"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "ØšTÚ‹"
+				mil = 4
+				adm = 1
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB606"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "YRï–	V"
+				mil = 1
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC606"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "‹s¦hŒT"
+				mil = 2
+				adm = 1
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.607
+	title = "rab_canonized.NAME607"
+	desc = "rab_canonized.DESC607"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA607"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "ïgcR„U"
+				mil = 4
+				adm = 4
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB607"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Ä‡RšN"
+				mil = 1
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC607"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "ÑàVZ"
+				mil = 6
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.608
+	title = "rab_canonized.NAME608"
+	desc = "rab_canonized.DESC608"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA608"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "hTfR÷^"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB608"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "¸‹KQPŸ"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC608"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "‹RQO"
+				mil = 2
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.609
+	title = "rab_canonized.NAME609"
+	desc = "rab_canonized.DESC609"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA609"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "TRõVR"
+				mil = 1
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB609"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "9)R"
+				mil = 2
+				adm = 3
+				dip = 0					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC609"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "‹„OS"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.610
+	title = "rab_canonized.NAME610"
+	desc = "rab_canonized.DESC6010"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA610"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "YO›PN"
+				mil = 4
+				adm = 4
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB610"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "ùfœUcƒ"
+				mil = 2
+				adm = 4
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC610"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Wƒi`"
+				mil = 4
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.611
+	title = "rab_canonized.NAME611"
+	desc = "rab_canonized.DESC611"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA611"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "O›ÑmO"
+				mil = 4
+				adm = 1
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB611"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "ÜYÕqwm"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC611"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Xo<yÎW"
+				mil = 3
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.612
+	title = "rab_canonized.NAME612"
+	desc = "rab_canonized.DESC612"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA612"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "!…^t‘N"
+				mil = 4
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB612"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "!…CSïQ"
+				mil = 5
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC612"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "‹RfR…h"
+				mil = 1
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.613
+	title = "rab_canonized.NAME613"
+	desc = "rab_canonized.DESC613"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA613"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "TR+uÁ"
+				mil = 1
+				adm = 1
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB613"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "œ¹Rñƒ"
+				mil = 2
+				adm = 5
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC613"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "!…¹ƒf"
+				mil = 2
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.614
+	title = "rab_canonized.NAME614"
+	desc = "rab_canonized.DESC614"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA614"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "!…0kÌR"
+				mil = 5
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB614"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "lšNÉl"
+				mil = 5
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC614"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "é—÷^†–"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.615
+	title = "rab_canonized.NAME615"
+	desc = "rab_canonized.DESC615"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA615"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "hT÷^R`"
+				mil = 4
+				adm = 2
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB615"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "‹vU×V"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC615"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—gN:V"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.616
+	title = "rab_canonized.NAME616"
+	desc = "rab_canonized.DESC616"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA616"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "—ghÕl"
+				mil = 6
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB616"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "hgëX"
+				mil = 2
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC616"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "‹sck'S"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.617
+	title = "rab_canonized.NAME617"
+	desc = "rab_canonized.DESC617"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA617"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "NgıVóm"
+				mil = 1
+				adm = 1
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB617"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "¹e Q÷^"
+				mil = 3
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC617"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "hgàVQ"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.618
+	title = "rab_canonized.NAME618"
+	desc = "rab_canonized.DESC618"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA618"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "ÄePjŒ"
+				mil = 3
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB618"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "*m	V‡e"
+				mil = 2
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC618"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "VmRîO"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.619
+	title = "rab_canonized.NAME619"
+	desc = "rab_canonized.DESC619"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA619"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "—gfVR"
+				mil = 1
+				adm = 1
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB619"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "ÄpàV"
+				mil = 2
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC619"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–äQi"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.620
+	title = "rab_canonized.NAME620"
+	desc = "rab_canonized.DESC620"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA620"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "—gúV3t"
+				mil = 4
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB620"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "NgúVÉy"
+				mil = 2
+				adm = 4
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC620"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "0ŒhT"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.621
+	title = "rab_canonized.NAME621"
+	desc = "rab_canonized.DESC621"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA621"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = ".V&OÈv"
+				mil = 4
+				adm = 4
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB621"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "XoÈv›l"
+				mil = 2
+				adm = 1
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC621"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Ng‡e¨N"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.622
+	title = "rab_canonized.NAME622"
+	desc = "rab_canonized.DESC622"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA622"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "Ñy†æ—"
+				mil = 4
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB622"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "4TÆVN"
+				mil = 2
+				adm = 4
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC622"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = ".V‰ƒw"
+				mil = 2
+				adm = 1
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.623
+	title = "rab_canonized.NAME623"
+	desc = "rab_canonized.DESC623"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA623"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "í‰àV"
+				mil = 4
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB623"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "NgsOIS"
+				mil = 1
+				adm = 2
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC623"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—gNàV"
+				mil = 4
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.624
+	title = "rab_canonized.NAME624"
+	desc = "rab_canonized.DESC624"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA624"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = ".VsO3t"
+				mil = 4
+				adm = 1
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB624"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "ÎZ÷^"
+				mil = 2
+				adm = 2
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC624"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–Sf^t"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.625
+	title = "rab_canonized.NAME625"
+	desc = "rab_canonized.DESC625"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA625"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "ùf‚cR"
+				mil = 2
+				adm = 2
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB625"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "öSËzT"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC625"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—g›l"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.626
+	title = "rab_canonized.NAME626"
+	desc = "rab_canonized.DESC626"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA626"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = ".VxQê–"
+				mil = 4
+				adm = 3
+				dip = 4				
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB626"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "‹s?×V"
+				mil = 2
+				adm = 4
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC626"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "XoúVp"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.627
+	title = "rab_canonized.NAME627"
+	desc = "rab_canonized.DESC627"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA627"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "4Ti`»l"
+				mil = 1
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB627"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Ñ‘Sfï–"
+				mil = 2
+				adm = 2
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC627"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—gÈv‚Y"
+				mil = 2
+				adm = 0
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.628
+	title = "rab_canonized.NAME628"
+	desc = "rab_canonized.DESC628"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA628"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "!…—R8O"
+				mil = 4
+				adm = 2
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB628"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—g=O¦"
+				mil = 2
+				adm = 1
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC628"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—gëX»l"
+				mil = 2
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.629
+	title = "rab_canonized.NAME629"
+	desc = "rab_canonized.DESC629"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA629"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "h‡e5"
+				mil = 5
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB629"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "RUn"
+				mil = 2
+				adm = 5
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC629"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Ñ‰T"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.630
+	title = "rab_canonized.NAME630"
+	desc = "rab_canonized.DESC630"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA630"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "Vú^‰R"
+				mil = 4
+				adm = 5
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB630"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—g¶Rx^"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC630"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "!…fÍs"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.631
+	title = "rab_canonized.NAME631"
+	desc = "rab_canonized.DESC631"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA631"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "hgmlğ"
+				mil = 4
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB631"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–‰Éy"
+				mil = 5
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC631"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–V—"
+				mil = 2
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.632
+	title = "rab_canonized.NAME632"
+	desc = "rab_canonized.DESC632"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA632"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "hgïQx^"
+				mil = 4
+				adm = 2
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB632"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–sOS"
+				mil = 1
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC632"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—gN5"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.633
+	title = "rab_canonized.NAME633"
+	desc = "rab_canonized.DESC633"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA633"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "—gÕˆù‚"
+				mil = 4
+				adm = 1
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB633"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "hg8"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC633"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "œ˜	V‡e"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.634
+	title = "rab_canonized.NAME634"
+	desc = "rab_canonized.DESC634"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA634"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "¸‹ğNV—"
+				mil = 4
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB634"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "±ÊOT"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC634"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "hgŒ"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.635
+	title = "rab_canonized.NAME635"
+	desc = "rab_canonized.DESC635"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA635"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "RiOï–"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB635"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—gGW3–"
+				mil = 2
+				adm = 2
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC635"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Ëe‡eS"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.636
+	title = "rab_canonized.NAME636"
+	desc = "rab_canonized.DESC636"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA636"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "¸‹ÅVÉy"
+				mil = 4
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB636"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—gÍu)R"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC636"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = ".–R—Q"
+				mil = 2
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.637
+	title = "rab_canonized.NAME637"
+	desc = "rab_canonized.DESC637"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA637"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "YOÿafR"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB637"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "bSï–Éy"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC637"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–àVğ"
+				mil = 2
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.638
+	title = "rab_canonized.NAME638"
+	desc = "rab_canonized.DESC638"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA638"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "4TiOx^"
+				mil = 4
+				adm = 4
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB638"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "óg‰sU"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC638"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = ".V^tÄ–"
+				mil = 2
+				adm = 5
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.639
+	title = "rab_canonized.NAME639"
+	desc = "rab_canonized.DESC639"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA639"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "4TëX3t"
+				mil = 4
+				adm = 2
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB639"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–fNjŒ"
+				mil = 2
+				adm = 2
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC639"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "!…w6q"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.640
+	title = "rab_canonized.NAME640"
+	desc = "rab_canonized.DESC640"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA640"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "hgfViO"
+				mil = 4
+				adm = 2
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB640"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "‹sàV"
+				mil = 2
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC640"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "íAQw"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.641
+	title = "rab_canonized.NAME641"
+	desc = "rab_canonized.DESC641"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA641"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "'„WS"
+				mil = 4
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB641"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Ä‡e—g"
+				mil = 5
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC641"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "œ˜kR9N"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.642
+	title = "rab_canonized.NAME642"
+	desc = "rab_canonized.DESC642"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA642"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "H–fV‡R"
+				mil = 4
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB642"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Ñ‡es^"
+				mil = 2
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC642"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "*PáOjŒ"
+				mil = 2
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.643
+	title = "rab_canonized.NAME643"
+	desc = "rab_canonized.DESC643"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA643"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "0Œ‡e›"
+				mil = 4
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB643"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "4TËyck"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC643"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–áOpg"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.644
+	title = "rab_canonized.NAME644"
+	desc = "rab_canonized.DESC644"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA644"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "±·VÌR"
+				mil = 4
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB644"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "0ŒŒTıQ"
+				mil = 2
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC644"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "NgS°"
+				mil = 2
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.645
+	title = "rab_canonized.NAME645"
+	desc = "rab_canonized.DESC645"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA645"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = ".VOfck"
+				mil = 4
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB645"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "RïQ&O"
+				mil = 2
+				adm = 3
+				dip = 0					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC645"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "!…mRd"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.646
+	title = "rab_canonized.NAME646"
+	desc = "rab_canonized.DESC646"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA646"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "H–T"
+				mil = 4
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB646"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "V×VR"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC646"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "0Œ—Rñ‚"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.647
+	title = "rab_canonized.NAME647"
+	desc = "rab_canonized.DESC647"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA647"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "H–Y—Œg"
+				mil = 4
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB647"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Ngwi`"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC647"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "TSf‡…"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.648
+	title = "rab_canonized.NAME648"
+	desc = "rab_canonized.DESC648"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA648"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "!…òT®s"
+				mil = 2
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB648"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–áO»l"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC648"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "RÊOfh"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.649
+	title = "rab_canonized.NAME649"
+	desc = "rab_canonized.DESC649"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA649"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "H–`ğ"
+				mil = 4
+				adm = 3
+				dip = 6					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB649"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "4T¶Ra"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC649"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "‹vf¦"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.650
+	title = "rab_canonized.NAME650"
+	desc = "rab_canonized.DESC650"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA650"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "—gàV†–"
+				mil = 4
+				adm = 3
+				dip = 6					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB650"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "VÊOR"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC650"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Nß`l"
+				mil = 2
+				adm = 3
+				dip = 6					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.651
+	title = "rab_canonized.NAME651"
+	desc = "rab_canonized.DESC651"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA651"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "H–NQ¨N"
+				mil = 4
+				adm = 3
+				dip = 6					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB651"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "ˆÁ®N"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC651"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "íºNjŒ"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.652
+	title = "rab_canonized.NAME652"
+	desc = "rab_canonized.DESC652"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA652"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "hgmR-W"
+				mil = 4
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB652"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "í85"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC652"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "NgZS‡e"
+				mil = 2
+				adm = 4
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.653
+	title = "rab_canonized.NAME653"
+	desc = "rab_canonized.DESC653"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA653"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "jl	VàV"
+				mil = 2
+				adm = 2
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB653"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "¸‹úV5"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC653"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–ÁTîO"
+				mil = 2
+				adm = 2
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.654
+	title = "rab_canonized.NAME654"
+	desc = "rab_canonized.DESC654"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA654"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "4Th‡R"
+				mil = 3
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB654"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = ".V=c‡R"
+				mil = 2
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC654"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "‹s‡eeg"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.655
+	title = "rab_canonized.NAME655"
+	desc = "rab_canonized.DESC655"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA655"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "bS°-W"
+				mil = 5
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB655"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Ä‚šN"
+				mil = 2
+				adm = 2
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC655"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "0ŒfÇR"
+				mil = 2
+				adm = 1
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.656
+	title = "rab_canonized.NAME656"
+	desc = "rab_canonized.DESC656"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA656"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "şff‰"
+				mil = 4
+				adm = 5
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB656"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "ïgœR2X"
+				mil = 2
+				adm = 5
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC656"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "TsOWS"
+				mil = 2
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.657
+	title = "rab_canonized.NAME657"
+	desc = "rab_canonized.DESC657"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA657"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "4b?eáO"
+				mil = 4
+				adm = 5
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB657"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "àz¯uœR"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC657"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–R"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.658
+	title = "rab_canonized.NAME658"
+	desc = "rab_canonized.DESC658"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA658"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "‹Rx^N"
+				mil = 4
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB658"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = ".VÁTeg"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC658"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "4TëXpg"
+				mil = 2
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.659
+	title = "rab_canonized.NAME659"
+	desc = "rab_canonized.DESC659"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA659"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "¸‹°y"
+				mil = 4
+				adm = 2
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB659"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–.tb"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC659"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "4TµxàV"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.660
+	title = "rab_canonized.NAME660"
+	desc = "rab_canonized.DESC660"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA660"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "0ŒSfw"
+				mil = 4
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB660"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "‹slê"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC660"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "*mÅVGS"
+				mil = 2
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.661
+	title = "rab_canonized.NAME661"
+	desc = "rab_canonized.DESC661"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA661"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "ÜYÛvV"
+				mil = 2
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB661"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = ")n‡wz˜"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC661"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "!…OŒe"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.662
+	title = "rab_canonized.NAME662"
+	desc = "rab_canonized.DESC662"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA662"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "‹swàV"
+				mil = 4
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB662"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "4TY—ğS"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC662"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "V†–V—"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.663
+	title = "rab_canonized.NAME663"
+	desc = "rab_canonized.DESC663"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA663"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "Øˆh°"
+				mil = 4
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB663"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—gµm°”"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC663"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—g‡eê"
+				mil = 2
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.664
+	title = "rab_canonized.NAME664"
+	desc = "rab_canonized.DESC664"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA664"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "—gîuúV"
+				mil = 4
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB664"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "4TleDt"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC664"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = ".V5àV"
+				mil = 2
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.665
+	title = "rab_canonized.NAME665"
+	desc = "rab_canonized.DESC665"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA665"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "YOLˆR—"
+				mil = 4
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB665"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "R6RÉy"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC665"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—gGYf"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.666
+	title = "rab_canonized.NAME666"
+	desc = "rab_canonized.DESC666"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA666"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "H–R=O"
+				mil = 1
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB666"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–.tÁN"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC666"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "‹vi`Ëy"
+				mil = 2
+				adm = 1
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.667
+	title = "rab_canonized.NAME667"
+	desc = "rab_canonized.DESC667"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA667"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "NæT†–"
+				mil = 4
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB667"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "µkKQƒ"
+				mil = 4
+				adm = 4
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC667"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "¸‹m`»l"
+				mil = 3
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.668
+	title = "rab_canonized.NAME668"
+	desc = "rab_canonized.DESC668"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA668"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "³S	TïQ"
+				mil = 3
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB668"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "TÉyœU"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC668"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "şfú^"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.669
+	title = "rab_canonized.NAME669"
+	desc = "rab_canonized.DESC669"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA669"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "—gQO‰R"
+				mil = 4
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB669"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "4TS»l"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC669"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Ï‚×Vôu"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.670
+	title = "rab_canonized.NAME670"
+	desc = "rab_canonized.DESC670"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA670"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = ".Vofk”"
+				mil = 1
+				adm = 3
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB670"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "4T¶RPŸ"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC670"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—g5¯u"
+				mil = 2
+				adm = 2
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.671
+	title = "rab_canonized.NAME671"
+	desc = "rab_canonized.DESC671"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA671"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "—gY—*‚"
+				mil = 3
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB671"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Ä1fzf"
+				mil = 4
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC671"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "±ÊOf"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.672
+	title = "rab_canonized.NAME672"
+	desc = "rab_canonized.DESC672"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA672"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "ÑáO<y"
+				mil = 2
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB672"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "“îu¹u"
+				mil = 2
+				adm = 2
+				dip = 4
+				female = yes
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC672"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "!…Ïgb"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.673
+	title = "rab_canonized.NAME673"
+	desc = "rab_canonized.DESC673"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA673"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "—gN-N"
+				mil = 1
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB673"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "ÄúVÏg"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC673"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = ".V±ST"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.674
+	title = "rab_canonized.NAME674"
+	desc = "rab_canonized.DESC674"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA674"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "1gtfàV"
+				mil = 4
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB674"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H– QÕˆ"
+				mil = 3
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC674"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "—g×Vf"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.675
+	title = "rab_canonized.NAME675"
+	desc = "rab_canonized.DESC675"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA675"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "—gËS—"
+				mil = 4
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB675"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "ˆúV"
+				mil = 3
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC675"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "hg—R–˜"
+				mil = 2
+				adm = 3
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.676
+	title = "rab_canonized.NAME676"
+	desc = "rab_canonized.DESC676"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA676"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "—gÊOpg"
+				mil = 4
+				adm = 3
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB676"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = ".Và`¹Y"
+				mil = 5
+				adm = 3
+				dip = 5				
+				female = yes
+				fixed = yes
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC676"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–gIQ"
+				mil = 5
+				adm = 3
+				dip = 4				
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+country_event = {
+	id = rab_canonized.677
+	title = "rab_canonized.NAME677"
+	desc = "rab_canonized.DESC677"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA677"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "‹sá"
+				mil = 4
+				adm = 5
+				dip = 5					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB677"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "ˆÕ`.^"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC677"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "CQÇR%f"
+				mil = 5
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+country_event = {
+	id = rab_canonized.678
+	title = "rab_canonized.NAME678"
+	desc = "rab_canonized.DESC678"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA678"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "hgIQ	g"
+				mil = 1
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB678"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Ngö”úV"
+				mil = 3
+				adm = 2
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC678"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Œ˜–˜"
+				mil = 4
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+country_event = {
+	id = rab_canonized.679
+	title = "rab_canonized.NAME679"
+	desc = "rab_canonized.DESC679"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA679"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "—gËSf"
+				mil = 4
+				adm = 2
+				dip = 3					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB679"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "UOmc"
+				mil = 3
+				adm = 1
+				dip = 1					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC679"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "hgÔkúV"
+				mil = 2
+				adm = 3
+				dip = 2					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+country_event = {
+	id = rab_canonized.680
+	title = "rab_canonized.NAME680"
+	desc = "rab_canonized.DESC680"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA680"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "ƒYR—"
+				mil = 4
+				adm = 5
+				dip = 6					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB680"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Ua¹RËSËS"
+				mil = 6
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC680"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "ùfTGY"
+				mil = 2
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+
+country_event = {
+	id = rab_canonized.681
+	title = "rab_canonized.NAME681"
+	desc = "rab_canonized.DESC681"
+	picture = NEW_ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_canonized.OPTA681"
+		FROM = {
+			set_country_flag = temp_ruler_flg		
+			define_ruler = {
+				name = "lšÍs‡e"
+				mil = 3
+				adm = 2
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTB681"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "H–=cpg"
+				mil = 3
+				adm = 3
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}
+	option = {
+		name = "rab_canonized.OPTC681"
+		FROM = {
+			set_country_flag = temp_ruler_flg				
+			define_ruler = {
+				name = "Ñf"
+				mil = 2
+				adm = 2
+				dip = 4					
+				fixed = yes					
+			}
+			country_event = {
+				id = rab_canonized.7
+				days = 5				
+			}			
+		}
+	}	
+}
+

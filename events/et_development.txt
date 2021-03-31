@@ -1,0 +1,477 @@
+namespace = et
+#
+#et.70 : Famine :
+#	rab_ modify to cost money to dispose
+#	rab_ modify the correct ratio of trigger chance
+#		
+# 2018.12.31 fit to 1.28 whole file re- edited by rab_
+province_event = {
+
+	id = et.70
+	title = "et.EVTNAME70"
+	desc = "et.EVTDESC70"
+	picture = FAMINE_eventPicture
+
+	trigger = {	
+		has_dlc = "Common Sense"
+		owner = { NOT = { adm_tech = 58 } }
+		base_tax = 4
+		base_production = 4
+		base_manpower = 3
+		NOT = { has_province_modifier = et_famine }
+		NOT = { has_province_modifier = had_et_famine }
+		#NOT = { has_terrain = farmlands }
+		NOT = { has_building = storehouse }
+		NOT = { trade_goods = gold }
+	}
+	mean_time_to_happen = {
+		months = 2400
+		modifier = {
+			factor = 4
+			has_terrain = farmlands
+		}
+		modifier = {
+			factor = 0.5
+			has_terrain = desert
+		}
+		modifier = {
+			factor = 0.8
+			has_terrain = steppe
+		}
+		modifier = {
+			factor = 0.8
+			has_terrain = savannah
+		}
+		modifier = {
+			factor = 0.8
+			has_terrain = mountain
+		}
+		modifier = {
+			factor = 0.55
+			NOT = {	development = 10 }
+		}
+		modifier = {
+			factor = 0.85
+			development = 10
+			NOT = { development = 20 }
+		}
+		modifier = {
+			factor = 1
+			development = 20
+			NOT = { development = 25 }
+		}
+		modifier = {
+			factor = 1.2
+			development = 25
+			NOT = { development = 30 }
+
+		}
+		modifier = {
+			factor = 1.6
+			development = 30
+			NOT = { development = 35 }
+		}
+		modifier = {
+			factor = 2.0
+			development = 35
+			NOT = { development = 40 }
+		}
+		modifier = {
+			factor = 2.5
+			development = 40
+			NOT = { development = 45 }
+		}
+		modifier = {
+			factor = 5.0
+			development = 45
+			NOT = { development = 50 }
+		}
+		modifier = {
+			factor = 10.0
+			development = 50
+		}
+		modifier = {
+			owner = { adm_tech = 46 } 		
+			factor = 8.0
+		}
+	}
+	
+	option = {
+		name = "et.EVTOPTA70"
+		add_base_tax = -3
+		add_base_production = -3
+		add_base_manpower = -3
+		reload_pov_limit = yes
+		add_province_modifier = {
+			name = et_famine
+			duration = 1825
+		}
+	}
+	option = {
+		name = "et.EVTOPTB70"
+		add_base_manpower = -1
+		reload_pov_limit = yes
+		add_province_modifier = {
+			name = had_et_famine
+			duration = 1200
+		}		
+		if = {
+			limit = { NOT = { development = 6 } }
+			owner = { add_treasury = -55 }
+		}
+		if = {
+			limit = { 
+				development = 6
+				NOT = { development = 10 } 
+			}
+			owner = { add_treasury = -75 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    		owner = { add_treasury = -125 }	
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+			owner = { add_treasury = -160 }
+			
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+			owner = { add_treasury = -200 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+   			owner = { add_treasury = -240 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+			owner = { add_treasury = -280 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    		owner = { add_treasury = -320 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_treasury = -360 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+			}
+    
+			owner = { add_treasury = -450 }
+		}
+		
+	}
+	option = {
+		name = "et.EVTOPTC70"
+		trigger = {
+			owner = {
+				OR = {
+					advisor = ma_loan
+					advisor = jiang_ge
+					advisor = chou_lan
+					advisor = hu_guang
+					advisor = cai_yong
+					advisor = he_chang
+					advisor = ban_zho
+					advisor = zhang_jian
+					advisor = zhang_heng
+					advisor = yan_chuo
+					advisor = chen_fan
+					advisor = zhang_man_cheng
+					advisor = sun_qian
+					advisor = wang_uan
+					advisor = dou_zhi
+				}	
+			}
+		}
+	}
+	option = {
+		name = "et.EVTOPTD70"
+		trigger = {
+			owner = {
+				OR = {
+					advisor = cai_lun
+					advisor = jiang_shi
+					advisor = zhang_rang
+					advisor = zhen_chong
+					advisor = cao_teng
+					advisor = dan_chao
+					advisor = wang_fu
+				}	
+			}	
+		}
+	}
+	option = {
+		name = "et.EVTOPTE70"
+		trigger = {
+			owner = {
+				OR = {
+					advisor = xun_yu
+					advisor = zhou_yu
+					advisor = jia_xu
+					advisor = li_lu
+					advisor = cheng_yu
+					advisor = diao_chan
+				}	
+			}	
+		}
+	}	
+}
+
+#Drought rab_
+province_event = {
+
+	id = et.71
+	title = "et.EVTNAME71"
+	desc = "et.EVTDESC71"
+	picture = DROUGHT_eventPicture
+
+	trigger = {	
+		has_dlc = "Common Sense"
+		owner = { NOT = { adm_tech = 46 } }
+		base_tax = 3
+		base_production = 3
+		base_manpower = 3
+		NOT = {
+			OR = {
+				has_terrain = forest
+				has_terrain = jungle
+				has_terrain = marsh
+				has_terrain = coastline
+				has_terrain = inland_ocean
+			}
+		}
+		NOT = { has_province_modifier = et_drought }
+		NOT = { has_building = windmill }
+		NOT = { trade_goods = gold }
+		NOT = { has_province_modifier = md_had_drought }
+	}
+	mean_time_to_happen = {
+		months = 2200
+		modifier = {
+			factor = 0.005
+			has_province_modifier = pov_no_rain
+		}
+		modifier = {
+			factor = 0.8
+			has_climate = arid
+		}
+		modifier = {
+			factor = 0.1
+			has_terrain = desert
+		}
+		modifier = {
+			factor = 0.7
+			NOT = {	development = 10 }
+		}
+		modifier = {
+			factor = 0.85
+			development = 10
+			NOT = { development = 20 }
+		}
+		modifier = {
+			factor = 1
+			development = 20
+			NOT = { development = 25 }
+		}
+		modifier = {
+			factor = 1.2
+			development = 25
+			NOT = { development = 30 }
+		}
+		modifier = {
+			factor = 1.6
+			development = 30
+			NOT = { development = 35 }
+		}
+		modifier = {
+			factor = 2.0
+			development = 35
+			NOT = { development = 40 }
+		}
+		modifier = {
+			factor = 2.5
+			development = 40
+			NOT = { development = 45 }
+		}
+		modifier = {
+			factor = 5.0
+			development = 45
+			NOT = { development = 50 }
+		}	
+		modifier = {
+			factor = 10.0
+			development = 50
+		}			
+	}
+	option = {
+		name = "et.EVTOPTA71"
+		add_base_tax = -3
+		add_base_production = -3
+		add_base_manpower = -3
+		add_province_modifier = {
+			name = et_drought
+			duration = 1700
+		}
+		reload_pov_limit = yes
+	}
+	option = {
+		name = "et.EVTOPTB71"
+		add_base_manpower = -1
+		reload_pov_limit = yes
+		add_province_modifier = {
+			name = "md_had_drought"
+			duration = 730
+		}
+		if = {
+			limit = { NOT = { development = 5 } }
+			owner = { add_treasury = -55 }
+		}
+		if = {
+			limit = { 
+				development = 5 
+				NOT = { development = 10 } 
+			}
+			owner = { add_treasury = -75 }
+		}
+		if = {
+			limit = { 
+				development = 10 
+				NOT = { development = 15 } 
+			}
+    		owner = { add_treasury = -110 }	
+		}
+		if = {
+			limit = { 
+				development = 15 
+				NOT = { development = 20 } 
+			}
+			owner = { add_treasury = -120 }
+			
+		}
+		if = {
+			limit = { 
+				development = 20 
+				NOT = { development = 25 } 
+			}
+			owner = { add_treasury = -160 }
+		}
+		if = {
+			limit = { 
+				development = 25 
+				NOT = { development = 30 } 
+			}
+   			owner = { add_treasury = -180 }
+		}
+		if = {
+			limit = { 
+				development = 30 
+				NOT = { development = 35 } 
+			}
+			owner = { add_treasury = -200 }
+		}
+		if = {
+			limit = { 
+				development = 35 
+				NOT = { development = 40 } 
+			}
+    		owner = { add_treasury = -240 }
+		}
+		if = {
+			limit = { 
+				development = 40 
+				NOT = { development = 45 } 
+			}
+    
+			owner = { add_treasury = -280 }
+		}
+		if = {
+			limit = { 
+				development = 45 
+			}
+    
+			owner = { add_treasury = -320 }
+		}
+	
+	}
+	option = {
+		name = "et.EVTOPTC71"
+		trigger = {
+			owner = {
+				OR = {
+					advisor = ma_loan
+					advisor = jiang_ge
+					advisor = chou_lan
+					advisor = hu_guang
+					advisor = cai_yong
+					advisor = he_chang
+					advisor = ban_zho
+					advisor = zhang_jian
+					advisor = zhang_heng
+					advisor = yan_chuo
+					advisor = chen_fan
+					advisor = zhang_man_cheng
+					advisor = sun_qian
+					advisor = wang_uan
+					advisor = dou_zhi
+				}	
+			}
+		}
+	}
+	option = {
+		name = "et.EVTOPTD71"
+		trigger = {
+			owner = {
+				OR = {
+					advisor = cai_lun
+					advisor = jiang_shi
+					advisor = zhang_rang
+					advisor = zhen_chong
+					advisor = cao_teng
+					advisor = dan_chao
+					advisor = wang_fu
+				}	
+			}	
+		}
+	}
+	option = {
+		name = "et.EVTOPTE71"
+		trigger = {
+			owner = {
+				OR = {
+					advisor = xun_yu
+					advisor = zhou_yu
+					advisor = jia_xu
+					advisor = li_lu
+					advisor = cheng_yu
+					advisor = diao_chan
+				}	
+			}	
+		}
+	}	
+}

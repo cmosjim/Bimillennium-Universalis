@@ -1,0 +1,113 @@
+
+namespace = sa_endofsui
+
+country_event = {
+	id = sa_endofsui.1
+	title = "sa_endofsui.NAME1"
+	desc = "sa_endofsui.DESC1"
+	picture = WARLORD_FOUNDATION_eventPicture
+	
+	hidden = yes
+	
+	fire_only_once = yes
+    
+	
+	trigger = {
+		num_of_cities = 150
+		has_reform = celestial_empire
+		exists = CCS
+		NOT = { war_with = CCS }
+		CCS = {
+			reverse_has_opinion = {
+				who = ROOT
+				value = -50
+			}
+			OR = {
+				is_subject = no
+				AND = {
+					is_subject_of_type = tributary_state
+					is_subject_of = ROOT
+				}	
+			}
+			is_at_war = no
+			is_neighbor_of = ROOT
+			not = { num_of_cities = 40 }
+			ai = yes
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "sa_endofsui.OPTA1"
+		create_vassal = CCS
+		#CCS = { country_event = { id = sa_endofsui.2 } }
+	}
+	option = {
+		name = "sa_endofsui.OPTB1"
+		add_prestige = -5
+	}
+}
+
+#country_event = {
+#	id = sa_endofsui.2
+#	title = "sa_endofsui.NAME2"
+#	desc = "sa_endofsui.DESC2"
+#	picture = khuruldai_eventPicture
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "sa_endofsui.OPTA2"
+#		FROM = { country_event = { id = sa_endofsui.3 } }
+#	}
+#}
+
+country_event = {
+	id = sa_endofsui.4
+	title = "sa_endofsui.NAME4"
+	desc = "sa_endofsui.DESC4"
+	picture = ARMY_START_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		tag = DJD
+		exists = WSC
+		exists = TNG
+		NOT = { war_with = WSC }
+		TNG = {
+			offensive_war_with = WSC
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "sa_endofsui.OPTA4"
+		declare_war_with_cb = {
+			who = TNG
+			casus_belli = cb_chinese_unification
+		}
+		add_opinion = {
+			who = WSC
+			modifier = fight_against_TNG_together
+		}
+		reverse_add_opinion = {
+			who = WSC
+			modifier = fight_against_TNG_together
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				alliance_with = TNG
+			}
+		}
+	}
+	option = {
+		name = "sa_endofsui.OPTB4"
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,41 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = hanyanhui_advisor_come
+
+country_event = {
+	id = hanyanhui_advisor_come.1
+	title = "hanyanhui_advisor_come.1.t"
+	desc = "hanyanhui_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		has_country_flag = hanyanhui_flag
+	}
+	option = {
+		name = hanyanhui_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = hanyanhui
+				name = "é—ö^ËV0ŒëX0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "é—ö^ËV0ŒëX0"
+				fire = 2
+				shock = 2
+				manuever = 2
+				siege = 1
+			}
+		}
+	}
+}

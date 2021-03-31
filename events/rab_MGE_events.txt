@@ -1,0 +1,19 @@
+
+namespace = rab_MGE_events
+
+country_event = {
+	id = rab_MGE_events.1
+	title = "rab_MGE_events.NAME1"
+	desc = "rab_MGE_events.DESC1"
+	picture = KOREA_PRINCESS_eventPicture
+	
+	is_triggered_only = yes
+	#mge_missions_01
+	option = {
+		name = "rab_MGE_events.OPTA1"
+		add_dip_power = 100
+		add_adm_power = 100
+		create_marriage = GOY
+		add_accepted_culture = korean
+	}
+}

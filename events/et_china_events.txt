@@ -1,0 +1,550 @@
+#這是產生和諧的事件
+#我們新增了
+#1.和谐道教
+#2.和谐拜上帝会
+#3.和谐藏傳佛教
+#和諧滿族薩滿 is harmonized_pagan 與其他異教是原版的無需新增
+#2018-12-30 fit to 1.28
+#2020-09-26 add 梅山教 et_china.17
+#2020-12-15 add harmonized_legalist 
+namespace = et_china
+#Bon Harmonization
+country_event = {
+	id = et_china.2
+	title = "et_china.2.t"
+	desc = "et_china.2.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = { religion = tibetan_bon }
+				save_event_target_as = tibetan_bon_province
+			}
+			clr_country_flag = harmonization_shangdi_conflict
+			clr_country_flag = harmonization_han_kitab
+			clr_country_flag = harmonization_fate_of_advisor
+			clr_country_flag = harmonization_empowering_ceremonies
+		}
+	}
+	
+	option = {
+		name = "et_china.2.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_bon"
+				duration = -1
+			}
+		}
+		set_country_flag = flg_harmonized_bon
+	}
+}
+
+#Muism Harmonization
+country_event = {
+	id = et_china.3
+	title = "et_china.3.t"
+	desc = "et_china.3.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = { religion = muism }
+				save_event_target_as = muism_province
+			}
+			clr_country_flag = harmonization_shangdi_conflict
+			clr_country_flag = harmonization_han_kitab
+			clr_country_flag = harmonization_fate_of_advisor
+			clr_country_flag = harmonization_empowering_ceremonies
+		}
+	}
+	
+	option = {
+		name = "et_china.3.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_muism"
+				duration = -1
+			}
+		}
+		set_country_flag = harmonized_muism
+	}
+}
+
+#Tengri Harmonization
+country_event = {
+	id = et_china.4
+	title = "et_china.4.t"
+	desc = "et_china.4.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = { religion = tengri_pagan_reformed }
+				save_event_target_as = tengri_pagan_reformed_province
+			}
+			clr_country_flag = harmonization_shangdi_conflict
+			clr_country_flag = harmonization_han_kitab
+			clr_country_flag = harmonization_fate_of_advisor
+			clr_country_flag = harmonization_empowering_ceremonies
+		}
+	}
+	
+	option = {
+		name = "et_china.4.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_tengri"
+				duration = -1
+			}
+		}
+		set_country_flag = flg_harmonized_tengri
+	}
+}
+
+#Hellenic Harmonization
+country_event = {
+	id = et_china.5
+	title = "et_china.5.t"
+	desc = "et_china.5.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = { religion_group = hellenic }
+				save_event_target_as = hellenic_province
+			}
+			clr_country_flag = harmonization_shangdi_conflict
+			clr_country_flag = harmonization_han_kitab
+			clr_country_flag = harmonization_fate_of_advisor
+			clr_country_flag = harmonization_empowering_ceremonies
+		}
+	}
+	
+	option = {
+		name = "et_china.5.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_hellenic"
+				duration = -1
+			}
+		}
+	}
+}
+
+#Irreligious Harmonization
+country_event = {
+	id = et_china.6
+	title = "et_china.6.t"
+	desc = "et_china.6.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = { religion_group = secular }
+				save_event_target_as = secular_province
+			}
+			clr_country_flag = harmonization_shangdi_conflict
+			clr_country_flag = harmonization_han_kitab
+			clr_country_flag = harmonization_fate_of_advisor
+			clr_country_flag = harmonization_empowering_ceremonies
+		}
+	}
+	
+	option = {
+		name = "et_china.6.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_irreligious"
+				duration = -1
+			}
+		}
+	}
+}
+
+#American Harmonization
+country_event = {
+	id = et_china.7
+	title = "et_china.7.t"
+	desc = "et_china.7.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = { religion_group = american_pagan }
+				save_event_target_as = american_pagan_province
+			}
+			clr_country_flag = harmonization_shangdi_conflict
+			clr_country_flag = harmonization_han_kitab
+			clr_country_flag = harmonization_fate_of_advisor
+			clr_country_flag = harmonization_empowering_ceremonies
+		}
+	}
+	
+	option = {
+		name = "et_china.7.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_american"
+				duration = -1
+			}
+		}
+	}
+}
+
+#North European Harmonization
+country_event = {
+	id = et_china.8
+	title = "et_china.8.t"
+	desc = "et_china.8.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = { religion_group = slavic_pagan }
+				save_event_target_as = slavic_pagan_province
+			}
+			clr_country_flag = harmonization_shangdi_conflict
+			clr_country_flag = harmonization_han_kitab
+			clr_country_flag = harmonization_fate_of_advisor
+			clr_country_flag = harmonization_empowering_ceremonies
+		}
+	}
+	
+	option = {
+		name = "et_china.8.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_north_european"
+				duration = -1
+			}
+		}
+	}
+}
+
+#Germanic Harmonization
+country_event = {
+	id = et_china.9
+	title = "et_china.9.t"
+	desc = "et_china.9.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = { religion_group = german_pagan }
+				save_event_target_as = german_pagan_province
+			}
+			clr_country_flag = harmonization_shangdi_conflict
+			clr_country_flag = harmonization_han_kitab
+			clr_country_flag = harmonization_fate_of_advisor
+			clr_country_flag = harmonization_empowering_ceremonies
+		}
+	}
+	
+	option = {
+		name = "et_china.9.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_german"
+				duration = -1
+			}
+		}
+	}
+}
+
+#African Harmonization
+country_event = {
+	id = et_china.10
+	title = "et_china.10.t"
+	desc = "et_china.10.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = { religion_group = african_pagan }
+				save_event_target_as = african_pagan_province
+			}
+			clr_country_flag = harmonization_shangdi_conflict
+			clr_country_flag = harmonization_han_kitab
+			clr_country_flag = harmonization_fate_of_advisor
+			clr_country_flag = harmonization_empowering_ceremonies
+		}
+	}
+	
+	option = {
+		name = "et_china.10.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_african"
+				duration = -1
+			}
+		}
+	}
+}
+
+#Mesopotamian Harmonization
+country_event = {
+	id = et_china.11
+	title = "et_china.11.t"
+	desc = "et_china.11.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = { religion_group = mesopotamian }
+				save_event_target_as = mesopotamian_province
+			}
+			clr_country_flag = harmonization_shangdi_conflict
+			clr_country_flag = harmonization_han_kitab
+			clr_country_flag = harmonization_fate_of_advisor
+			clr_country_flag = harmonization_empowering_ceremonies
+		}
+	}
+	
+	option = {
+		name = "et_china.11.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_mesopotamian"
+				duration = -1
+			}
+		}
+	}
+}
+
+#金刚 vajrayana Harmonization
+
+country_event = {
+	id = et_china.12
+	title = "et_china.12.t"
+	desc = "et_china.12.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "et_china.121.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_vajrayana"
+				duration = -1
+			}
+		}
+	}
+}
+#大乘 
+country_event = {
+	id = et_china.121
+	title = "et_china.121.t"
+	desc = "et_china.121.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "et_china.121.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_mahayana"
+				duration = -1
+			}
+		}
+	}
+}
+#小乘
+country_event = {
+	id = et_china.122
+	title = "et_china.122.t"
+	desc = "et_china.122.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "et_china.122.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_buddhism"
+				duration = -1
+			}
+		}
+	}
+}
+#harmonized_daoism 
+country_event = {
+	id = et_china.13
+	title = "et_china.13.t"
+	desc = "et_china.13.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "et_china.13.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_daoism"
+				duration = -1
+			}
+		}
+		set_country_flag = 
+	}
+}
+
+#harmonized_worship_god Harmonization
+country_event = {
+	id = et_china.14
+	title = "et_china.14.t"
+	desc = "et_china.14.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "et_china.14.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_worship_god"
+				duration = -1
+			}
+		}
+	}
+}
+
+#Buddhic Harmonization
+country_event = {
+	id = et_china.15
+	title = "et_china.15.t"
+	desc = "et_china.15.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "et_china.15.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_tibetan_buddhism"
+				duration = -1
+			}
+		}
+	}
+}
+#rab_ add new religion - manchu_shamanism
+#manchu_shamanism
+country_event = {
+	id = et_china.16
+	title = "et_china.16.t"
+	desc = "et_china.16.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "et_china.16.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_manchu_shamanism"
+				duration = -1
+			}
+		}
+	}
+}
+
+
+#Satsana Phi Harmonization
+country_event = {
+	id = et_china.17
+	title = "et_china.17.t"
+	desc = "et_china.17.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = { religion = satsana_phi }
+				save_event_target_as = satsana_phi_province
+			}
+			clr_country_flag = harmonization_shangdi_conflict
+			clr_country_flag = harmonization_han_kitab
+			clr_country_flag = harmonization_fate_of_advisor
+			clr_country_flag = harmonization_empowering_ceremonies
+		}
+	}
+	
+	option = {
+		name = "et_china.17.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_satsana_phi"
+				duration = -1
+			}
+		}
+	}
+}
+
+
+
+#legalist Harmonization
+country_event = {
+	id = et_china.18
+	title = "et_china.18.t"
+	desc = "et_china.18.d"
+	picture = NEO_CONFUCIANISM_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = { religion = legalist }
+				save_event_target_as = legalist_province
+			}
+			clr_country_flag = harmonization_shangdi_conflict
+			clr_country_flag = harmonization_han_kitab
+			clr_country_flag = harmonization_fate_of_advisor
+			clr_country_flag = harmonization_empowering_ceremonies
+		}
+	}
+	
+	option = {
+		name = "et_china.18.a"
+		tooltip = {
+			add_country_modifier = {
+				name = "harmonized_legalist"
+				duration = -1
+			}
+		}
+	}
+}

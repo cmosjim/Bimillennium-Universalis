@@ -1,0 +1,251 @@
+namespace = et
+# sequency : horde_occupy_counting : et.12 => et.13
+# 2018.12.26 fix to 1.28 okay.
+# 2019-10-20 delete nomadic_conquest 
+# 2019-10-20 horde_occupy_counting still used for barbarian_migration to detect occupy immediately , but there is no nomadic_conquest in this file
+province_event = {
+	
+	id = et.12
+	title = "EVTNAME9206"
+	desc = "EVTDESC9206"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	# on_atctions
+	# province
+	# root = location, from = winning country
+	#on_siege_lost_province =  {
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+		}
+		FROM = { 
+			is_nomad = yes
+			NOT = { has_country_modifier = nomadic_conquest }
+		}
+		owner = { is_nomad = no }
+	}
+	
+	option = {
+		name = "EVTOPTA9206"
+		owner = { add_prestige = -10 }
+		controller = {
+			country_event = {
+				id = et.13
+				days = 1
+			}
+		}
+	}
+}
+
+# For the tribe
+country_event = {
+	id = et.13
+	title = "EVTNAME9205"
+	desc = "EVTDESC9205"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA9205"
+		add_legitimacy = 5
+		add_prestige = 10
+		add_war_exhaustion = -0.25
+	}
+}
+
+# Province defects to horde
+province_event = {
+	id = et.14
+	title = "et.EVTNAME14"
+	desc = "et.EVTDESC14"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	trigger = {
+		NOT = { controlled_by = owner }
+		controller = { is_at_war = yes }
+		has_province_flag = flg_horde_occupy_counting
+		NOT = { has_province_modifier = horde_occupy_counting }
+		AND = {
+			controller = { has_country_modifier = barbarian_migration  }
+			OR = {
+				owner = { tag = ROM }
+				owner = { tag = ROW }
+				owner = { tag = BYZ }
+				owner = { tag = GLL }
+			}
+		}
+		owner = { NOT = { has_country_modifier = nomadic_conquest } }
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	immediate = {
+		clr_province_flag = flg_horde_occupy_counting
+		#rab_ modify , only barbarian_migration could get the core directly
+		if = {
+			limit = { controller = { has_country_modifier = barbarian_migration  } }
+				controller = { 
+				add_core = ROOT
+				ROOT = { cede_province = PREV } 
+				country_event = {
+					id = et.15
+					days = 1
+				}
+			}
+		}
+	}	
+	option = {
+		name = "et.EVTOPTA14"
+	}
+}
+
+# Province defects to horde
+country_event = {
+	id = et.15
+	title = "et.EVTNAME15"
+	desc = "et.EVTDESC15"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "et.EVTOPTA15"
+		add_prestige = 5
+	}
+}
+
+# Plundering event for tribes, nomadic conquest & barbarian migration
+province_event = {
+	id = et.30
+	title = "et.EVTNAME30"
+	desc = "et.EVTDESC30"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { controlled_by = owner }		
+		FROM = { 
+			has_country_modifier = barbarian_migration
+		}
+		owner = {
+			NOT = { has_country_modifier = barbarian_migration }
+		}
+	}
+	immediate = {
+		####################################################
+		####During this period , no occur occupied event
+		####################################################
+		hidden_effect = {
+			remove_province_modifier = horde_occupy_counting
+			set_province_flag = flg_horde_occupy_counting
+			add_province_modifier = {
+				name = "horde_occupy_counting"
+				duration = 178
+			}
+		}
+		####################################################	
+	}	
+	option = {
+		name = "et.EVTOPTA30"
+		owner = { add_prestige = -1 }
+		controller = {
+			country_event = {
+				id = et.31
+				days = 1
+			}
+		}
+
+	}
+}
+
+# For the tribe, nomadic conquest & barbarian migration
+country_event = {
+	id = et.31
+	title = "et.EVTNAME31"
+	desc = "et.EVTDESC31"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "et.EVTOTPA31"
+		add_legitimacy = 5
+		add_prestige = 10
+		add_treasury = 10
+		add_war_exhaustion = -0.2
+	}
+}
+
+province_event = {
+	id = et.333
+	title = "rab_warlord_siege.NAME333"
+	desc = "rab_warlord_siege.DESC333"
+	picture = SIEGE_eventPicture
+	
+	   is_triggered_only = yes
+	   hidden = yes
+	   
+	trigger = {
+		controlled_by = owner
+		OR = {
+			has_province_modifier = horde_occupy_counting		
+			has_province_flag = flg_horde_occupy_counting
+		}	
+	}	
+	option = {
+		name = "rab_warlord_siege.OPTA333"
+		remove_province_modifier = horde_occupy_counting
+		clr_province_flag = flg_horde_occupy_counting
+	}
+}
+
+#AI horde DOW
+#ountry_event = {
+#	id = et.95
+#	title = "et.EVTNAME95"
+#	desc = "et.EVTDESC95"
+#	picture = HORDE_ON_HORSEBACK_eventPicture
+#
+#	trigger = {
+#		has_country_modifier = nomadic_conquest
+#		is_at_war = no
+#		NOT = { war_exhaustion = 10 }
+#		manpower_percentage = 0.25
+#		ai = yes
+#		any_neighbor_country = { 
+#			NOT = { truce_with = ROOT } 
+#			NOT = { alliance_with = ROOT }
+#			NOT = { is_subject_of = ROOT }
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#	
+#	option = {
+#		name = "et.EVTOPTA63"
+#		add_stability = 1
+#		random_neighbor_country = {
+#			limit = { 
+#				NOT = { truce_with = ROOT } 
+#				NOT = { alliance_with = ROOT }
+#				NOT = { is_subject_of = ROOT }
+#			}
+#			ROOT = {
+#				declare_war_with_cb = {
+#					who = PREV
+#					casus_belli = cb_horde_vs_civ
+#				}
+#			}
+#		}
+#	}
+#

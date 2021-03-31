@@ -1,0 +1,64 @@
+namespace = remove_building_events
+
+
+province_event = {
+	id = remove_building_events.1
+	title = "remove_building_events.NAME1"
+	desc = {
+		trigger = {
+			has_building = special_mil_research		
+		}
+		desc = "remove_building_events.DESC1a"
+	}
+	desc = {
+		trigger = {
+			has_building = special_navy_research		
+		}
+		desc = "remove_building_events.DESC1b"
+	}
+	
+	picture = {
+		trigger = {
+			NOT = {
+				owner = { mil_tech = 83 }
+			}
+		}
+		picture = BATTLE_eventPicture
+	}
+	picture = {
+		trigger = {
+			owner = { mil_tech = 83 }
+		}
+		picture = m_BATTLE_eventPicture
+	}
+	
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_building = special_mil_research
+			has_building = special_navy_research
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_building = special_mil_research
+			}
+			remove_building = special_mil_research
+		}	
+		if = {
+			limit = {
+				has_building = special_navy_research
+			}
+			remove_building = special_navy_research
+		}		
+	}
+	
+	option = {
+		name = "remove_building_events.OPTA1"
+
+	}
+}

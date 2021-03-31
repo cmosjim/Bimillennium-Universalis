@@ -1,0 +1,93 @@
+#游戏指南 军事篇
+#2016/9/24 init
+#2018/12/31 fit to 1.28
+#Game_Instructions_mil_events.1 : Main Menu
+#Game_Instructions_mil_events.2 : 武将系统【第一页】
+#Game_Instructions_mil_events.3 : 武将系统【第二页】
+#Game_Instructions_mil_events.4 : 占领系统
+#OPTA1: 武将系统
+#OPTB1: 占领地说明
+
+namespace = Game_Instructions_mil_events
+
+country_event = {
+    id = Game_Instructions_mil_events.1
+	title = "Game_Instructions_mil_events.NAME1"
+	desc = "Game_Instructions_mil_events.DESC1"
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+		
+		option = {
+		   name = "Game_Instructions_mil_events.OPTA1" 
+		   country_event = {
+				id = Game_Instructions_mil_events.2
+		   }
+		}
+		option = {
+		   name = "Game_Instructions_mil_events.OPTB1" 
+		   country_event = {
+				id = Game_Instructions_mil_events.4
+		   }
+		}
+		option = {
+		   name = "Game_Instructions_mil_events.OPTC1" 
+		   clr_country_flag = flag_Game_Instructions
+		}			
+}
+
+country_event = {
+    id = Game_Instructions_mil_events.2
+	title = "Game_Instructions_mil_events.NAME2"
+	desc = "Game_Instructions_mil_events.DESC2"
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+		
+		option = {
+		   name = "Game_Instructions_mil_events.OPTA2" 
+				country_event = {
+					id = Game_Instructions_mil_events.3
+				}
+		}
+		option = {
+		   name = "Game_Instructions_mil_events.OPTB2" 
+				country_event = {
+					id = Game_Instructions_mil_events.1
+				}
+		}		
+}
+
+country_event = {
+    id = Game_Instructions_mil_events.3
+	title = "Game_Instructions_mil_events.NAME3"
+	desc = "Game_Instructions_mil_events.DESC3"
+	picture = MIL_1_eventPicture
+	
+	is_triggered_only = yes
+		
+		option = {
+		   name = "Game_Instructions_mil_events.OPTA3" 
+				country_event = {
+					id = Game_Instructions_mil_events.1
+				}
+		}		
+}
+
+country_event = {
+    id = Game_Instructions_mil_events.4
+	title = "Game_Instructions_mil_events.NAME4"
+	desc = "Game_Instructions_mil_events.DESC4"
+	picture = MIL_2_eventPicture
+	
+	is_triggered_only = yes
+		
+		option = {
+		   name = "Game_Instructions_mil_events.OPTA4" 
+				country_event = {
+					id = Game_Instructions_mil_events.1
+				}
+		}		
+}
+
+

@@ -1,0 +1,53 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = xiaochacgui_advisor_come
+
+#fkS–gÕyagˆNN˙Q∞s
+#id = 1 : xiaochacgui : 'Ñg5ç0fkS0
+
+country_event = {
+	id = xiaochacgui_advisor_come.1
+	title = "xiaochacgui_advisor_come.1.t"
+	desc = "xiaochacgui_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#˙Q∞sˆeÙï
+	#:NÜNêMQﬂuªl¯v≤QÅzZPÜNcheck ruler®RjO
+	trigger = {
+		is_year = 1852	
+		NOT = { is_year = 1853 }
+		tag = TP1
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = xiaochacgui_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = xiaochacgui
+				name = "'Ñg5ç0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "'Ñg5ç0fkS0"
+				fire = 7
+				shock = 9
+				manuever = 5
+				siege = 3
+			}
+		}
+	}
+}
+

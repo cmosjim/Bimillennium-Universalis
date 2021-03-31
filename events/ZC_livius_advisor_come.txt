@@ -1,0 +1,43 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = livius_advisor_come
+
+#fkSSà”Ü0oÍõN¥ù8Ë
+#id = 1 : livius : ??XÜGY0fkS0
+#
+country_event = {
+	id = livius_advisor_come.1
+	title = "livius_advisor_come.1.t"
+	desc = "livius_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		is_year = 2
+		NOT = { is_year = 17 }
+		OR = {
+			tag = ROM
+			AND = {
+				NOT = { exists = ROM }
+				owns = 4923
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = livius_advisor_come.OPTA1
+		define_advisor = {
+			type = livius
+			name = "–c˛VØe NgÙu0ÜSÚSfR∂R0"
+			discount = yes	
+			skill = 3
+		}
+	}
+}

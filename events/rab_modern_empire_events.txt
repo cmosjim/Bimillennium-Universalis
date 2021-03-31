@@ -1,0 +1,334 @@
+namespace = rab_modern_empire_events
+######################TST_TGG_fihger_starter###################
+
+country_event = {
+	id = rab_modern_empire_events.1
+	title = "rab_modern_empire_events.NAME1"
+	desc = "rab_modern_empire_events.DESC1"
+	picture = MODERN_EMPIRE_eventPicture
+	
+	is_triggered_only = yes
+	#劉	
+	option = {
+		name = "rab_modern_empire_events.OPTA1" 
+		trigger = {
+			NOT = { exists = AH1  }
+		}
+		change_tag = AH1
+	}
+	#石
+	option = {
+		name = "rab_modern_empire_events.OPTB1" 
+		trigger = {
+			NOT = { exists = AH2  }
+		}		
+			change_tag = AH2
+		
+	}
+	#苻
+	option = {
+		name = "rab_modern_empire_events.OPTC1" 
+		trigger = {
+			NOT = { exists = AH3  }
+		}		
+			change_tag = AH3
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTD1" 
+		trigger = {
+			NOT = {  exists = AH4  }
+		}		
+			change_tag = AH4
+	
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTE1" 
+		trigger = {
+			NOT = {  exists = AH5  }
+		}		
+			change_tag = AH5
+	
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTF1" 
+		trigger = {
+			NOT = {  exists = AH6  }
+		}		
+			change_tag = AH6
+	
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTG1" 
+		trigger = {
+			NOT = {  exists = AH7  }
+		}		
+			change_tag = AH7
+	
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTH1" 
+		trigger = {
+			NOT = {  exists = AH8  }
+		}		
+			change_tag = AH8
+	
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTI1" 
+		trigger = {
+			NOT = {  exists = AH9  }
+		}		
+			change_tag = AH9
+			
+	
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTJ1" 
+		trigger = {
+			NOT = {  exists = AH0  }
+		}		
+			change_tag = AH0
+
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTK1" 
+		trigger = {
+			NOT = {  exists = AI1  }
+		}		
+			change_tag = AI1
+
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTL1" 
+		trigger = {
+			NOT = {  exists = AI2  }
+		}		
+			change_tag = AI2
+
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTM1" 
+		trigger = {
+			NOT = {  exists = AI3  }
+		}		
+			change_tag = AI3
+			
+
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTN1" 
+		trigger = {
+			NOT = {  exists = AI4  }
+		}		
+			change_tag = AI4
+
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTO1" 
+		trigger = {
+			NOT = {  exists = AI5  }
+		}		
+			change_tag = AI5
+			
+
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTP1" 
+		trigger = {
+			NOT = {  exists = AI6  }
+		}		
+			change_tag = AI6
+
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTQ1" 
+		trigger = {
+			NOT = {  exists = AI7  }
+		}		
+			change_tag = AI7
+
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTR1" 
+		trigger = {
+			NOT = {  exists = AI8  }
+		}		
+			change_tag = AI8
+
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTS1" 
+		trigger = {
+			NOT = {  exists = AI9  }
+		}		
+			change_tag = AI9
+	
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTT1" 
+		trigger = {
+			NOT = {  exists = AJ1  }
+		}		
+			change_tag = AJ1
+
+	}	
+	option = {
+		name = "rab_modern_empire_events.OPTU1" 
+		trigger = {
+			NOT = {  exists = AJ2  }
+		}		
+			change_tag = AJ2
+
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTV1" 
+		trigger = {
+			NOT = {  exists = AJ3  }
+		}		
+			change_tag = AJ3
+
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTW1" 
+		trigger = {
+			NOT = {  exists = AJ4  }
+		}		
+			change_tag = AJ4
+
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTX1" 
+		trigger = {
+			NOT = {  exists = AJ5  }
+		}		
+			change_tag = AJ5
+
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTY1" 
+		trigger = {
+			NOT = {  exists = AJ6  }
+		}		
+			change_tag = AJ6
+
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTZ1" 
+		trigger = {
+			NOT = {  exists = AJ7  }
+		}		
+			change_tag = AJ7
+
+			
+	}
+
+	option = {
+		name = "rab_modern_empire_events.OPTAA1" 
+		trigger = {
+			NOT = {  exists = AJ8  }
+		}		
+			change_tag = AJ8
+
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTAB1" 
+		trigger = {
+			NOT = {  exists = AJ9  }
+		}		
+			change_tag = AJ9
+
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTAC1" 
+		trigger = {
+			NOT = {  exists = AJ0  }
+		}		
+			change_tag = AJ0
+
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTAD1" 
+		trigger = {
+			NOT = {  exists = ZZ5  }
+		}		
+			change_tag = ZZ5
+
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTAE1" 
+		trigger = {
+			NOT = {  exists = ZZ6  }
+		}		
+			change_tag = ZZ6
+
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTAF1" 
+		trigger = {
+			NOT = {  exists = ZZ7  }
+		}		
+			change_tag = ZZ7
+
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTAG1" 
+		trigger = {
+			NOT = {  exists = ZZ8  }
+		}		
+			change_tag = ZZ8
+
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTAH1" 
+		trigger = {
+			NOT = {  exists = ZZ9  }
+		}		
+			change_tag = ZZ9
+
+			
+	}
+	option = {
+		name = "rab_modern_empire_events.OPTAI1" 
+		trigger = {
+			NOT = {  exists = ZZ0  }
+		}		
+			change_tag = ZZ0
+	
+	}	
+	option = {
+		name = "rab_modern_empire_events.OPTAJ1" 
+		trigger = {
+			NOT = {  exists = AI0  }
+		}		
+			change_tag = AI0
+	
+	}		
+	after = {
+		swap_free_idea_group = yes
+		change_government = monarchy
+		set_government_rank = 3
+		set_country_flag = huge_chinese_empire_flg	
+		add_government_reform = chinese_parliament_monarchy
+		add_government_reform = parliamentary_reform
+		add_government_reform = regional_representation_reform
+		add_government_reform = legislative_houses_reform
+		add_government_reform = multi_party_system
+		add_government_reform = democracy_reform
+		add_government_reform = ceremonial_monarch
+	}
+}
+	

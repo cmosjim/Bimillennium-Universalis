@@ -1,0 +1,223 @@
+########################
+#
+#########################
+
+namespace = rab_hold_empire_examination
+
+
+country_event = {
+	id = rab_hold_empire_examination.1
+	title = "rab_hold_empire_examination.NAME1"
+	desc = "rab_hold_empire_examination.DESC1"
+	picture = IMPERIAL_EXAMINATION_eventPicture
+	
+	is_triggered_only = yes
+
+
+	option = {
+		name = rab_hold_empire_examination.OPTA1
+		hidden_effect = {
+			change_variable = {
+				which = examination_held
+				value = 1
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds
+						value = 35
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds
+							value = 55
+						}
+					}
+				}
+				country_event = { id = 11100 }
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds
+						value = 65
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds
+							value = 75
+						}
+					}
+				}
+				country_event = { id = 11230 }
+			}			
+		}
+		add_adm_power = -100
+		add_treasury = -100
+		add_prestige = 1		
+		if = { 
+			limit = {
+				is_month = 0
+				NOT = {
+					is_month = 1
+				}
+			}
+			define_advisor = {
+				type = trader
+				skill = 3
+				cost_multiplier = 0.75
+			}
+		}			
+		if = { 
+			limit = {
+				is_month = 1
+				NOT = {
+					is_month = 2
+				}
+			}
+			define_advisor = {
+				type = philosopher
+				skill = 3
+				cost_multiplier = 0.75
+			}						
+		}
+		if = { 
+			limit = {
+				is_month = 2
+				NOT = {
+					is_month = 3
+				}
+			}
+			define_advisor = {
+				type = natural_scientist
+				skill = 3
+				cost_multiplier = 0.75
+			}						
+		}
+		if = { 
+			limit = {
+				is_month = 3
+				NOT = {
+					is_month = 4
+				}
+			}
+			define_advisor = {
+				type = artist
+				skill = 3
+				cost_multiplier = 0.75
+			}						
+		}
+		if = { 
+			limit = {
+				is_month = 4
+				NOT = {
+					is_month = 5
+				}
+			}
+			define_advisor = {
+				type = naval_reformer
+				skill = 3
+				cost_multiplier = 0.75
+			}
+		}					
+		if = { 
+			limit = {
+				is_month = 5
+				NOT = {
+					is_month = 6
+				}
+			}
+			define_advisor = {
+				type = diplomat
+				skill = 3
+				cost_multiplier = 0.75
+			}						
+		}			
+		if = { 
+			limit = {
+				is_month = 6
+				NOT = {
+					is_month = 7
+				}
+			}
+			define_advisor = {
+				type = quartermaster
+				skill = 3
+				cost_multiplier = 0.75
+			}						
+		}
+		if = { 
+			limit = {
+				is_month = 7
+				NOT = {
+					is_month = 8
+				}
+			}
+			define_advisor = {
+				type = inquisitor
+				skill = 3
+				cost_multiplier = 0.75
+			}						
+		}
+		if = { 
+			limit = {
+				is_month = 8
+				NOT = {
+					is_month = 9
+				}
+			}
+			define_advisor = {
+				type = recruitmaster
+				skill = 3
+				cost_multiplier = 0.75
+			}						
+		}
+		if = { 
+			limit = {
+				is_month = 9
+				NOT = {
+					is_month = 10
+				}
+			}
+			define_advisor = {
+				type = treasurer
+				skill = 3
+				cost_multiplier = 0.75
+			}						
+		}
+		if = { 
+			limit = {
+				is_month = 10
+				NOT = {
+					is_month = 11
+				}
+			}
+			define_advisor = {
+				type = commandant
+				skill = 3
+				cost_multiplier = 0.75
+			}						
+		}
+		if = { 
+			limit = {
+				is_month = 11
+			}
+			define_advisor = {
+				type = army_organiser
+				skill = 3
+				cost_multiplier = 0.75
+			}						
+		}			
+
+		add_country_modifier = {
+			name = "md_hold_empire_examination"
+			duration = 730
+		}		
+		clr_country_flag = tmp_hold_empire_examination
+	}
+	option = {
+		name = rab_hold_empire_examination.OPTB1	
+		clr_country_flag = tmp_hold_empire_examination
+
+	}
+}

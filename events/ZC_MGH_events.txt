@@ -1,0 +1,65 @@
+namespace = magadha_flavor
+country_event = {
+	id = magadha_flavor.1
+	title = magadha_flavor.1.t
+	desc = magadha_flavor.1.d
+	picture = BUDDHA_eventPicture
+
+	is_triggered_only = yes
+		
+	option = {
+		name = magadha_flavor.1.a
+		add_ADM_power = 100
+		add_prestige = 25
+		4609 = {
+			add_province_modifier = {
+				name = Buddhist_popularization
+				duration = 3650
+			}
+		}
+	}
+		
+	option = {
+		name = magadha_flavor.1.b
+		add_prestige = 10
+		4609 = {
+			add_province_modifier = {
+				name = construction_of_the_holy_land
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = magadha_flavor.2
+	title = magadha_flavor.2.t
+	desc = magadha_flavor.2.d
+	picture = 13_Maratha_Estate_eventPicture
+
+	is_triggered_only = yes
+		
+	option = {
+		name = magadha_flavor.2.a
+		vassalize = SAT
+	}
+		
+	option = {
+		name = magadha_flavor.2.b
+		every_province = {
+            limit = {
+				owned_by = SAT
+				NOT = {
+					is_core = ROOT
+				}
+			}
+			if = {
+				limit = { NOT = { exists = MY1 } }
+				add_core = MGH
+			}
+			else = {
+				add_core = MY1
+			}
+		}
+	}
+}

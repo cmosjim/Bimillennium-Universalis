@@ -1,0 +1,71 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = shlang_advisor_come
+
+#fkSĞgÍyhöNNúQşs
+#id = 1 : shlang : Ëet0fkS0
+#
+country_event = {
+	id = shlang_advisor_come.1
+	title = "shlang_advisor_come.1.t"
+	desc = "shlang_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		#ÙÌ‘=ffkSúQ°s(WêTÌ‘„vagöN
+		OR = {
+			AND = {
+				is_year = 1638
+				NOT = { is_year = 1647 }
+				tag = MNG
+			}	
+			AND = {
+				is_year = 1647
+				NOT = { is_year = 1648 }
+				tag = QNG
+			}	
+			AND = {
+				is_year = 1648
+				NOT = { is_year = 1652 }
+				tag = MNG
+			}	
+			AND = {
+				is_year = 1652
+				NOT = { is_year = 1695 }
+				tag = QNG
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = shlang_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = shlang
+				name = "Ëet0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "Ëet0fkS0"
+				fire = 8
+				shock = 8
+				manuever = 5
+				siege = 5
+			}
+		}
+	}
+}
+

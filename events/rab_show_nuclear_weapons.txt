@@ -1,0 +1,44 @@
+#appearing in world
+namespace = rab_show_nuclear_weapons
+#feedback how many nuclear weapons you infiltrate_administration 
+#
+
+#				set_country_flag = flg_target_info_start	
+#				add_country_modifier = {
+#						name = "target_info_start"
+#						duration = 120
+#				}
+#country_event = {
+#	id = rab_show_nuclear_weapons.1
+#	title = "rab_show_nuclear_weapons.NAME1"
+#	desc = "rab_show_nuclear_weapons.DESC1"
+#	picture = nuclear_weapons_eventPicture
+#
+#	trigger = {
+#			has_country_flag = flg_target_info_start
+#			NOT = { has_country_modifier = target_info_start }
+#	}		
+#	mean_time_to_happen = {
+#		days = 10
+#	}	
+#	option = {
+#		name = "rab_show_nuclear_weapons.OPTA1"
+#		
+#	}
+#}
+
+#just look how many nuclear we have 
+#2018.12.31 fit to 1.28
+country_event = {
+	id = rab_show_nuclear_weapons.1
+	title = "rab_show_nuclear_weapons.NAME1"
+	desc = "rab_show_nuclear_weapons.DESC1"
+	picture = nuclear_weapons_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_show_nuclear_weapons.OPTA1"
+		clr_country_flag = flg_show_nuclear_weapons
+	}
+}

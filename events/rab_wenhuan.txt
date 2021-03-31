@@ -1,0 +1,2228 @@
+
+#
+#num_of_wenhuanzhi 文宦值 : 此值越大代表文官升任 反之为宦官
+#num_of_wuqizhi 武戚值 : 此值越大代表武官升任 反之为外戚
+#
+############################################
+#
+# 文宦
+#
+############################################
+#2019-02-12 modify OPTE7 OPTE9 問外戚 / only not war happened.
+#2019-07-25 上朝由玩家決議
+namespace = rab_wenhuan
+country_event = {
+	id = rab_wenhuan.1
+	title = "rab_wenhuan.NAME1"
+	desc = "rab_wenhuan.DESC1"
+	picture = wen_partydesc_eventPicture
+	trigger = {
+		has_reform = celestial_empire
+		NOT = { has_country_modifier = wudaigeju }
+		NOT = { has_country_flag = wenhuanzhi1  }
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = num_of_wenhuanzhi
+				value = 50
+			}
+			set_variable = {
+				which = huan_value
+				value = 50
+			}			
+			
+		}		
+	}
+	option = {
+	name = "rab_wenhuan.OPTA1"
+		custom_tooltip = tp_st_of_wenhuanzhi
+		set_country_flag = wenhuanzhi1
+	}
+}
+
+#查看文宦值wenhuan
+country_event = {
+	id = rab_wenhuan.2
+	title = "rab_wenhuan.NAME2"
+	#desc = "rab_wenhuan.DESC2"
+	
+	picture = {
+		trigger = {
+
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 6
+				}				
+			}	
+		}
+		picture = wenhuan_process_0_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 6
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 16
+				}				
+			}	
+		}
+		picture = wenhuan_process_10_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 16
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 26
+				}				
+			}	
+		}
+		picture = wenhuan_process_20_eventPicture 
+	}	
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 26
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 36
+				}				
+			}	
+		}
+		picture = wenhuan_process_30_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 36
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 46
+				}				
+			}	
+		}
+		picture = wenhuan_process_40_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 46
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 56
+				}				
+			}	
+		}
+		picture = wenhuan_process_50_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 56
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 66
+				}				
+			}	
+		}
+		picture = wenhuan_process_60_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 66
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 76
+				}				
+			}	
+		}
+		picture = wenhuan_process_70_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 76
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 86
+				}				
+			}	
+		}
+		picture = wenhuan_process_80_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 86
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 96
+				}				
+			}	
+		}
+		picture = wenhuan_process_90_eventPicture 
+	}
+	picture = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 96
+			}
+		}
+		picture = wenhuan_process_100_eventPicture 
+	}
+	#desc start
+# rab_wenhuan.DESC2a:0 "现在文官派系在朝廷中的的影响力有§G[Root.num_of_wenhuanzhi.GetValue]§!点。宦官只有§G[Root.huan_value.GetValue]§!点，目前文官派系面对宦官是稍微得势的，但是由于文武值小于50，所以文官和宦官都没能发挥影响力"
+# rab_wenhuan.DESC2b:0 "现在文官派系在朝廷中的的影响力有§G[Root.num_of_wenhuanzhi.GetValue]§!点。宦官只有§G[Root.huan_value.GetValue]§!点，目前文官派系面对宦官是得势的，但是由于文武值小于50，所以文官和宦官都没能发挥影响力"
+# rab_wenhuan.DESC2c:0 "现在文官派系在朝廷中的的影响力有§G[Root.num_of_wenhuanzhi.GetValue]§!点。宦官只有§G[Root.huan_value.GetValue]§!点，目前文官派系面对宦官是完全专权的状态，但是由于文武值小于50，所以文官和宦官都没能发挥影响力"
+# rab_wenhuan.DESC2d:0 "现在文官派系在朝廷中的的影响力只有§G[Root.num_of_wenhuanzhi.GetValue]§!点。宦官却有§G[Root.huan_value.GetValue]§!点，目前宦官派系面对文官是稍微得势的，但是由于文武值小于50，所以宦官和文官都没能发挥影响力"
+# rab_wenhuan.DESC2e:0 "现在文官派系在朝廷中的的影响力只有§G[Root.num_of_wenhuanzhi.GetValue]§!点。宦官却有§G[Root.huan_value.GetValue]§!点，目前宦官派系面对文官是得势的，但是由于文武值小于50，所以宦官和文官都没能发挥影响力"
+# rab_wenhuan.DESC2f:0 "现在文官派系在朝廷中的的影响力只有§G[Root.num_of_wenhuanzhi.GetValue]§!点。宦官却有§G[Root.huan_value.GetValue]§!点，目前宦官派系面对文官是完全专权的状态，但是由于文武值小于50，所以宦官和文官都没能发挥影响力"
+ 	
+	desc = {
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 50
+				}
+			}			
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 50
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 60
+				}				
+			}
+		}
+		desc = "rab_wenhuan.DESC2a"
+	}
+# rab_wenhuan.DESC2b:0 "现在文官派系在朝廷中的的影响力有§G[Root.num_of_wenhuanzhi.GetValue]§!点。宦官只有§G[Root.huan_value.GetValue]§!点，目前文官派系面对宦官是得势的，但是由于文武值小于50，所以文官和宦官都没能发挥影响力"	
+	desc = {
+		trigger = {
+			NOT = {			
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 50
+				}
+			}			
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 60
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 90
+				}				
+			}
+		}
+		desc = "rab_wenhuan.DESC2b"
+	}	
+	desc = {
+		trigger = {
+			NOT = {			
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 50
+				}
+			}			
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 90
+			}
+		}
+		desc = "rab_wenhuan.DESC2c"
+	}	
+	desc = {
+		trigger = {
+			NOT = {			
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 50
+				}
+			}			
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 40
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 50
+				}				
+			}
+		}
+		desc = "rab_wenhuan.DESC2d"
+	}	
+	desc = {
+		trigger = {
+			NOT = {			
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 50
+				}
+			}			
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 10
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 40
+				}				
+			}
+		}
+		desc = "rab_wenhuan.DESC2e"
+	}	
+	desc = {
+		trigger = {
+			NOT = {			
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 50
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 10
+				}
+			}
+		}
+		desc = "rab_wenhuan.DESC2f"
+	}
+####################################
+	desc = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 50
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 60
+				}				
+			}
+		}
+		desc = "rab_wenhuan.DESC2g"
+		
+	}
+	desc = {
+		trigger = { 
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 60
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 90
+				}				
+			}
+		}
+		desc = "rab_wenhuan.DESC2h"
+	}	
+	desc = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}		
+		
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 90
+			}
+		}
+		desc = "rab_wenhuan.DESC2i"
+	}	
+	desc = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}		
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 40
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 50
+				}				
+			}
+		}
+		desc = "rab_wenhuan.DESC2j"
+	}	
+	desc = {
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 50
+				}
+			}			
+		
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 10
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 40
+				}				
+			}
+		}
+		desc = "rab_wenhuan.DESC2k"
+	}	
+	desc = {
+		trigger = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 10
+				}
+			}
+		}
+		desc = "rab_wenhuan.DESC2l"
+	}		
+	
+	is_triggered_only = yes
+	#leave
+	option = {
+		name = "rab_wenhuan.OPTA2"
+		clr_country_flag = wenwuzhi2
+	}
+}	
+
+country_event = {
+	id = rab_wenhuan.3
+	title = "rab_wenhuan.NAME3"
+	desc = "rab_wenhuan.DESC3"
+	picture = wenwu_partydesc_eventPicture
+	
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				religion = legalist
+				has_personal_deity = zhongshupie
+			}
+			add_country_modifier = {
+				name = "md_cele_meeting"
+				duration = 30 #jim_test
+			}			
+		}
+		else = {
+			add_country_modifier = {
+				name = "md_cele_meeting"
+				duration = 180 #jim_test
+			}
+		}
+		set_country_flag = flg_during_meeting_faction
+	}
+	option = {
+	name = "rab_wenhuan.OPTA3"
+		if = {
+			limit = {
+				check_variable = {
+					which = var_seeds
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = var_seeds
+						value = 15
+					}
+				}
+			}
+			country_event = {
+				id = rab_wenhuan.4 #文官指控宦官
+			}			
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = var_seeds
+					value = 15
+				}
+				NOT = {
+					check_variable = {
+						which = var_seeds
+						value = 29
+					}
+				}
+			}
+			country_event = {
+				id = rab_wenhuan.5 #宦官指控文官
+			}			
+		}		
+		if = {
+			limit = {
+				check_variable = {
+					which = var_seeds
+					value = 29
+				}
+				NOT = {
+					check_variable = {
+						which = var_seeds
+						value = 43
+					}
+				}
+			}
+			country_event = {
+				id = rab_wenhuan.6 #武将指控宦官
+			}			
+		}	
+		if = {
+			limit = {
+				check_variable = {
+					which = var_seeds
+					value = 43
+				}
+				NOT = {
+					check_variable = {
+						which = var_seeds
+						value = 57
+					}
+				}
+			}
+			country_event = {
+				id = rab_wenhuan.7 #宦官指控武将
+			}			
+		}	
+		if = {
+			limit = {
+				check_variable = {
+					which = var_seeds
+					value = 57
+				}
+				NOT = {
+					check_variable = {
+						which = var_seeds
+						value = 71
+					}
+				}
+			}
+			country_event = {
+				id = rab_wenhuan.8 #武将指控文官
+			}			
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = var_seeds
+					value = 71
+				}
+				NOT = {
+					check_variable = {
+						which = var_seeds
+						value = 85
+					}
+				}
+			}
+			country_event = {
+				id = rab_wenhuan.9 #文官指控武将
+			}			
+		}		
+		if = {
+			limit = {
+				check_variable = {
+					which = var_seeds
+					value = 85
+				}
+			}
+			country_event = {
+				id = rab_wenhuan.10 #自由选择
+			}			
+		}
+	}
+}
+
+#文官指控宦官
+country_event = {
+	id = rab_wenhuan.4
+	title = "rab_wenhuan.NAME4"
+	desc = "rab_wenhuan.DESC4"
+	picture = receives_commands_adm_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+	name = "rab_wenhuan.OPTA4"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_bureaucrats = yes
+			}
+		}	
+		#大表赞同
+		add_wenhuan_5_effect = yes
+		add_wenwu_2_effect = yes
+		clr_country_flag = flg_during_meeting_faction
+	}	
+	
+	option = {
+	name = "rab_wenhuan.OPTB4"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_bureaucrats = yes
+			}
+		}	
+		#赞同
+		add_wenhuan_2_effect = yes
+		clr_country_flag = flg_during_meeting_faction
+	}	
+	
+	option = {
+	name = "rab_wenhuan.OPTC4"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_enuchs = yes
+			}
+		}	
+		#驳斥
+		subtract_wenhuan_2_effect = yes		
+		clr_country_flag = flg_during_meeting_faction
+	}
+
+	option = {
+	name = "rab_wenhuan.OPTD4"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_enuchs = yes
+			}
+		}	
+		#大声驳斥
+		subtract_wenhuan_5_effect = yes
+		add_wenwu_2_effect = yes		
+		clr_country_flag = flg_during_meeting_faction
+	}
+	option = {
+	name = "rab_wenhuan.OPTE4"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_generals = yes
+			}
+		}	
+		#ask general
+		subtract_wenwu_1_effect = yes
+		add_wuqi_5_effect = yes
+		clr_country_flag = flg_during_meeting_faction
+	}	
+}
+
+#宦官指控文官
+country_event = {
+	id = rab_wenhuan.5
+	title = "rab_wenhuan.NAME5"
+	desc = "rab_wenhuan.DESC5"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+	name = "rab_wenhuan.OPTA5"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_enuchs = yes
+			}
+		}	
+		#大表赞同
+		subtract_wenhuan_5_effect = yes
+		add_wenwu_2_effect = yes		
+		clr_country_flag = flg_during_meeting_faction
+	}	
+	
+	option = {
+	name = "rab_wenhuan.OPTB5"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_enuchs = yes
+			}
+		}	
+		#赞同
+		subtract_wenhuan_2_effect = yes
+		clr_country_flag = flg_during_meeting_faction
+	}	
+	
+	option = {
+	name = "rab_wenhuan.OPTC5"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_bureaucrats = yes
+			}
+		}	
+		#驳斥
+		add_wenhuan_2_effect = yes
+		clr_country_flag = flg_during_meeting_faction
+	}
+
+	option = {
+	name = "rab_wenhuan.OPTD5"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_bureaucrats = yes
+			}
+		}	
+		#大声驳斥
+		add_wenhuan_5_effect = yes
+		add_wenwu_2_effect = yes	
+		clr_country_flag = flg_during_meeting_faction
+	}
+	option = {
+	name = "rab_wenhuan.OPTE5"
+	# ask general
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_generals = yes
+			}
+		}	
+		subtract_wenwu_1_effect = yes
+		add_wuqi_5_effect = yes		
+		clr_country_flag = flg_during_meeting_faction
+	}	
+}
+
+
+#武将指控宦官
+country_event = {
+	id = rab_wenhuan.6
+	title = "rab_wenhuan.NAME6"
+	desc = "rab_wenhuan.DESC6"
+	picture = NORMAL_PEOPLE_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+	name = "rab_wenhuan.OPTA6"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					faction_in_aichoice_generals = yes
+					faction_in_aichoice_bureaucrats = yes
+				}	
+			}
+		}	
+		#大表赞同
+		add_wuqi_5_effect = yes
+		subtract_wenwu_2_effect = yes
+		add_wenhuan_5_effect = yes
+		clr_country_flag = flg_during_meeting_faction
+	}
+	
+	option = {
+	name = "rab_wenhuan.OPTB6"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				OR = {
+					faction_in_aichoice_generals = yes
+					faction_in_aichoice_bureaucrats = yes
+				}
+			}
+		}	
+		#赞同
+		add_wuqi_2_effect = yes
+		add_wenhuan_2_effect = yes	
+		clr_country_flag = flg_during_meeting_faction
+	}	
+	
+	option = {
+	name = "rab_wenhuan.OPTC6"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					faction_in_aichoice_relationship = yes
+					faction_in_aichoice_enuchs = yes
+				}	
+			}
+		}	
+		#驳斥
+		subtract_wuqi_2_effect = yes
+		subtract_wenhuan_2_effect = yes
+		clr_country_flag = flg_during_meeting_faction
+	}
+
+	option = {
+	name = "rab_wenhuan.OPTD6"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				OR = {
+					faction_in_aichoice_relationship = yes
+					faction_in_aichoice_enuchs = yes
+				}
+			}
+		}	
+		#大声驳斥
+		subtract_wuqi_5_effect = yes
+		add_wenwu_2_effect = yes
+		subtract_wenhuan_5_effect = yes
+		clr_country_flag = flg_during_meeting_faction
+	}
+
+	
+	option = {
+	name = "rab_wenhuan.OPTE6"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_bureaucrats = yes
+			}
+		}	
+		#ask 文官 
+		add_wenwu_1_effect = yes
+		add_wenhuan_5_effect = yes
+		clr_country_flag = flg_during_meeting_faction
+	}	
+
+}
+
+#宦官指控武将
+country_event = {
+	id = rab_wenhuan.7
+	title = "rab_wenhuan.NAME7"
+	desc = "rab_wenhuan.DESC7"
+	picture = EUNUCH_POWER_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+	name = "rab_wenhuan.OPTA7"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					faction_in_aichoice_enuchs = yes
+					faction_in_aichoice_relationship = yes
+				}	
+			}
+		}	
+		#大表赞同
+		subtract_wuqi_5_effect = yes
+		add_wenwu_2_effect = yes
+		subtract_wenhuan_5_effect = yes
+		clr_country_flag = flg_during_meeting_faction
+	}	
+	
+	option = {
+	name = "rab_wenhuan.OPTB7"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				OR = {
+					faction_in_aichoice_enuchs = yes
+					faction_in_aichoice_relationship = yes
+				}	
+			}
+		}	
+		#赞同
+		subtract_wuqi_2_effect = yes
+		subtract_wenhuan_2_effect = yes
+		clr_country_flag = flg_during_meeting_faction
+	}	
+	
+	option = {
+	name = "rab_wenhuan.OPTC7"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				OR = {
+					faction_in_aichoice_bureaucrats = yes
+					faction_in_aichoice_generals = yes
+				}
+			}
+		}	
+		#驳斥
+		add_wuqi_2_effect = yes
+		add_wenhuan_2_effect = yes			
+		clr_country_flag = flg_during_meeting_faction
+	}
+
+	option = {
+	name = "rab_wenhuan.OPTD7"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				OR = {
+					faction_in_aichoice_bureaucrats = yes
+					faction_in_aichoice_generals = yes
+				}
+			}
+		}	
+		#大声驳斥
+		add_wuqi_5_effect = yes
+		subtract_wenwu_2_effect = yes
+		add_wenhuan_5_effect = yes
+		clr_country_flag = flg_during_meeting_faction		
+	}
+
+	
+	option = {
+	name = "rab_wenhuan.OPTE7"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_relationship = yes
+			}
+		}	
+		#ask 外戚
+		subtract_wenwu_1_effect = yes
+		subtract_wuqi_5_effect = yes		
+		clr_country_flag = flg_during_meeting_faction
+	}	
+}
+
+#武将指控文官
+country_event = {
+	id = rab_wenhuan.8
+	title = "rab_wenhuan.NAME8"
+	desc = "rab_wenhuan.DESC8"
+	picture = Generals_Up_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+	name = "rab_wenhuan.OPTA8"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				OR = {
+					faction_in_aichoice_enuchs = yes
+					faction_in_aichoice_generals = yes
+				}
+			}
+		}	
+		#大表赞同
+		subtract_wenwu_2_effect = yes
+		add_wuqi_5_effect = yes
+		subtract_wenhuan_5_effect	= yes
+		clr_country_flag = flg_during_meeting_faction
+	}	
+	
+	option = {
+	name = "rab_wenhuan.OPTB8"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				OR = {
+					faction_in_aichoice_enuchs = yes
+					faction_in_aichoice_generals = yes
+				}
+			}
+		}	
+		#赞同
+		add_wuqi_2_effect = yes
+		subtract_wenhuan_2_effect	= yes		
+		clr_country_flag = flg_during_meeting_faction
+	}	
+	
+	option = {
+	name = "rab_wenhuan.OPTC8"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				OR = {
+					faction_in_aichoice_bureaucrats = yes
+					faction_in_aichoice_relationship = yes
+				}
+			}
+		}	
+		#驳斥
+		subtract_wuqi_2_effect = yes
+		add_wenhuan_2_effect	= yes			
+		clr_country_flag = flg_during_meeting_faction		
+	}
+
+	option = {
+	name = "rab_wenhuan.OPTD8"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				OR = {
+					faction_in_aichoice_bureaucrats = yes
+					faction_in_aichoice_relationship = yes
+				}
+			}
+		}	
+		#大声驳斥
+		add_wenwu_2_effect = yes
+		subtract_wuqi_5_effect = yes
+		add_wenhuan_5_effect	= yes		
+		clr_country_flag = flg_during_meeting_faction
+	}
+
+	
+	option = {
+	name = "rab_wenhuan.OPTE8"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_enuchs = yes
+			}
+		}	
+		#ask huan
+		add_wenwu_1_effect = yes
+		subtract_wenhuan_5_effect = yes		
+		clr_country_flag = flg_during_meeting_faction		
+	}	
+}
+
+#文官指控武将
+country_event = {
+	id = rab_wenhuan.9
+	title = "rab_wenhuan.NAME9"
+	desc = "rab_wenhuan.DESC9"
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+	name = "rab_wenhuan.OPTA9"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				OR = {
+					faction_in_aichoice_bureaucrats = yes
+					faction_in_aichoice_relationship = yes
+				}
+			}
+		}	
+		#大表赞同
+		add_wenwu_2_effect = yes
+		subtract_wuqi_5_effect = yes
+		add_wenhuan_5_effect	= yes				
+		clr_country_flag = flg_during_meeting_faction
+	}	
+	
+	option = {
+	name = "rab_wenhuan.OPTB9"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				OR = {
+					faction_in_aichoice_bureaucrats = yes
+					faction_in_aichoice_relationship = yes
+				}
+			}
+		}	
+		#赞同
+		subtract_wuqi_2_effect = yes
+		add_wenhuan_2_effect	= yes			
+		clr_country_flag = flg_during_meeting_faction
+	}	
+	
+	option = {
+	name = "rab_wenhuan.OPTC9"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				OR = {
+					faction_in_aichoice_enuchs = yes
+					faction_in_aichoice_generals = yes
+				}
+			}
+		}	
+		#驳斥
+		add_wuqi_2_effect = yes
+		subtract_wenhuan_2_effect	= yes		
+		clr_country_flag = flg_during_meeting_faction		
+	}
+
+	option = {
+	name = "rab_wenhuan.OPTD9"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				OR = {
+					faction_in_aichoice_enuchs = yes
+					faction_in_aichoice_generals = yes
+				}
+			}
+		}	
+		#大声驳斥
+		subtract_wenwu_2_effect = yes
+		add_wuqi_5_effect = yes
+		subtract_wenhuan_5_effect	= yes		
+		clr_country_flag = flg_during_meeting_faction
+	}
+
+	
+	option = {
+	name = "rab_wenhuan.OPTE9"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_enuchs = yes
+			}
+		}	
+		#ask 外戚
+		subtract_wenwu_1_effect = yes
+		subtract_wuqi_5_effect = yes					
+		clr_country_flag = flg_during_meeting_faction
+	}	
+}
+
+
+#在这次的上朝当中，有个地方省份的首禀奏圣上，希望能够拨款建设地方，促进繁荣，请问陛下要交给谁去办理呢
+country_event = {
+	id = rab_wenhuan.10
+	title = "rab_wenhuan.NAME10"
+	desc = "rab_wenhuan.DESC10"
+	picture = EMPEROR_UP_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+	name = "rab_wenhuan.OPTA10"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_generals = yes
+			}
+		}	
+		#武将
+		subtract_wenwu_2_effect = yes
+		add_wuqi_5_effect = yes
+		add_treasury = -55
+		hidden_effect = {
+			set_country_flag = flg_general_temp
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 14
+						}
+					}
+				}
+				country_event = {
+					id =  rab_wenhuan.11
+				}	
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 14
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 28
+						}
+					}
+				}
+				#country_event = {
+				#	id =  rab_wenhuan.12
+				#}	
+				clr_country_flag = flg_rab_wenhuan_12
+				set_country_flag = flg_rab_wenhuan_12
+			}		
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 28
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 42
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_13
+				set_country_flag = flg_rab_wenhuan_13				
+				#country_event = {
+				#	id =  rab_wenhuan.13
+				#}	
+			}			
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 42
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 56
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_14
+				set_country_flag = flg_rab_wenhuan_14				
+				#country_event = {
+				#	id =  rab_wenhuan.14
+				#}	
+			}	
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 56
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 70
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_15
+				set_country_flag = flg_rab_wenhuan_15				
+				#country_event = {
+				#	id =  rab_wenhuan.15
+				#}				
+	
+			}			
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 70
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 84
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_16
+				set_country_flag = flg_rab_wenhuan_16				
+				#country_event = {
+				#	id =  rab_wenhuan.16
+				#}				
+	
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 84
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_17
+				set_country_flag = flg_rab_wenhuan_17				
+				#country_event = {
+				#	id =  rab_wenhuan.17
+				#}				
+	
+			}
+		clr_country_flag = flg_during_meeting_faction		
+		}
+	}	
+	
+	option = {
+	name = "rab_wenhuan.OPTB10"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_enuchs = yes
+			}
+		}	
+		#宦官
+		add_wenwu_2_effect = yes
+		subtract_wenhuan_5_effect = yes
+		add_treasury = -100
+		hidden_effect = {
+			set_country_flag = flg_huan_temp
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 14
+						}
+					}
+				}
+				country_event = {
+					id =  rab_wenhuan.11
+				}	
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 14
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 28
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_12
+				set_country_flag = flg_rab_wenhuan_12
+				#country_event = {
+				#	id =  rab_wenhuan.12
+				#}	
+			}		
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 28
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 42
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_13
+				set_country_flag = flg_rab_wenhuan_13
+				#country_event = {
+				#	id =  rab_wenhuan.13
+				#}	
+			}			
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 42
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 56
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_14
+				set_country_flag = flg_rab_wenhuan_14				
+				#country_event = {
+				#	id =  rab_wenhuan.14
+				#}	
+			}	
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 56
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 70
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_15
+				set_country_flag = flg_rab_wenhuan_15				
+				#country_event = {
+				#	id =  rab_wenhuan.15
+				#}				
+				#random_owned_province = {
+				#	add_base_tax = 1
+				#}
+				#clr_flag_temp = yes	
+			}			
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 70
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 84
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_16
+				set_country_flag = flg_rab_wenhuan_16				
+				#country_event = {
+				#	id =  rab_wenhuan.16
+				#}				
+				#random_owned_province = {
+				#	add_base_production = 1
+				#}
+				#clr_flag_temp = yes	
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 84
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_17
+				set_country_flag = flg_rab_wenhuan_17				
+				#country_event = {
+				#	id =  rab_wenhuan.17
+				#}				
+				#random_owned_province = {
+				#	add_base_manpower = 1
+				#}
+				#clr_flag_temp = yes	
+			}	
+			clr_country_flag = flg_during_meeting_faction	
+		}		
+	}	
+	
+	option = {
+	name = "rab_wenhuan.OPTC10"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_bureaucrats = yes
+			}
+		}	
+		#文官
+		add_wenwu_2_effect = yes
+		add_wenhuan_5_effect = yes
+		add_treasury = -100
+		hidden_effect = {
+			set_country_flag = flg_wen_temp
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 14
+						}
+					}
+				}
+				country_event = {
+					id =  rab_wenhuan.11
+				}	
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 14
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 28
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_12
+				set_country_flag = flg_rab_wenhuan_12				
+				#country_event = {
+				#	id =  rab_wenhuan.12
+				#}	
+			}		
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 28
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 42
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_13
+				set_country_flag = flg_rab_wenhuan_13				
+				#country_event = {
+				#	id =  rab_wenhuan.13
+				#}	
+			}			
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 42
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 56
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_14
+				set_country_flag = flg_rab_wenhuan_14				
+				#country_event = {
+				#	id =  rab_wenhuan.14
+				#}	
+			}	
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 56
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 70
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_15
+				set_country_flag = flg_rab_wenhuan_15				
+				#country_event = {
+				#	id =  rab_wenhuan.15
+				#}				
+				#random_owned_province = {
+				#	add_base_tax = 1
+				#}
+				#clr_flag_temp = yes	
+			}			
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 70
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 84
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_16
+				set_country_flag = flg_rab_wenhuan_16				
+				#country_event = {
+				#	id =  rab_wenhuan.16
+				#}				
+				#random_owned_province = {
+				#	add_base_production = 1
+				#}
+				#clr_flag_temp = yes	
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 84
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_17
+				set_country_flag = flg_rab_wenhuan_17				
+				#country_event = {
+				#	id =  rab_wenhuan.17
+				#}				
+				#random_owned_province = {
+				#	add_base_manpower = 1
+				#}
+				#clr_flag_temp = yes	
+			}
+			clr_country_flag = flg_during_meeting_faction	
+		}		
+	}
+
+	option = {
+	name = "rab_wenhuan.OPTD10"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0 
+				faction_in_aichoice_relationship = yes
+			}
+		}	
+		#外戚
+		subtract_wenwu_2_effect = yes
+		subtract_wuqi_5_effect = yes
+		add_treasury = -100
+		hidden_effect = {
+			set_country_flag = flg_relationship_temp
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 14
+						}
+					}
+				}
+				country_event = {
+					id =  rab_wenhuan.11
+				}	
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 14
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 28
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_12
+				set_country_flag = flg_rab_wenhuan_12				
+				#country_event = {
+				#	id =  rab_wenhuan.12
+				#}	
+			}		
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 28
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 42
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_13
+				set_country_flag = flg_rab_wenhuan_13				
+				#country_event = {
+				#	id =  rab_wenhuan.13
+				#}	
+			}			
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 42
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 56
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_14
+				set_country_flag = flg_rab_wenhuan_14				
+				#country_event = {
+				#	id =  rab_wenhuan.14
+				#}	
+			}	
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 56
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 70
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_15
+				set_country_flag = flg_rab_wenhuan_15
+				#country_event = {
+				#	id =  rab_wenhuan.15
+				#}				
+
+			}			
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 70
+					}
+					NOT = {
+						check_variable = {
+							which = var_seeds_plus
+							value = 84
+						}
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_16
+				set_country_flag = flg_rab_wenhuan_16
+				#country_event = {
+				#	id =  rab_wenhuan.16
+				#}				
+				#random_owned_province = {
+				#	add_base_production = 1
+				#}
+				#clr_flag_temp = yes	
+			}
+			if = {
+				limit = { 
+					check_variable = {
+						which = var_seeds_plus
+						value = 84
+					}
+				}
+				clr_country_flag = flg_rab_wenhuan_17
+				set_country_flag = flg_rab_wenhuan_17
+				#country_event = {
+				#	id =  rab_wenhuan.17
+				#}				
+				#random_owned_province = {
+				#	add_base_manpower = 1
+				#}
+				#clr_flag_temp = yes	
+			}
+			clr_country_flag = flg_during_meeting_faction		
+		}
+	}
+	option = {
+	name = "rab_wenhuan.OPTE10"
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				OR = {
+					treasury = 500
+					NOT = { prestige = 50 }
+				}	
+			}
+		}
+		#no money
+		add_prestige = -5
+		clr_country_flag = flg_during_meeting_faction		
+	}	
+}
+
+#私款吞掉
+country_event = {
+	id = rab_wenhuan.11
+	title = "rab_wenhuan.NAME11"
+	desc = "rab_wenhuan.DESC11"
+	picture = EMPEROR_UP_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "rab_wenhuan.OPTA11"
+		add_prestige = -5
+		subtract_bit_mandate_effect = yes
+		clr_flag_temp = yes
+		clr_country_flag = flg_during_meeting_faction
+	}
+	option = {
+		name = "rab_wenhuan.OPTB11"
+		add_prestige = -5
+		subtract_bit_mandate_effect = yes
+		if = {
+			limit = {
+				has_country_flag = flg_general_temp
+			}
+				subtract_wuqi_5_effect = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = flg_huan_temp
+			}
+				add_wenhuan_5_effect = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = flg_wen_temp
+			}
+				subtract_wenhuan_5_effect = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = flg_relationship_temp
+			}
+				add_wuqi_5_effect = yes
+		}	
+		clr_flag_temp = yes
+		clr_country_flag = flg_during_meeting_faction
+	}	
+}
+#搞炸了豆腐渣
+country_event = {
+	id = rab_wenhuan.12
+	title = "rab_wenhuan.NAME12"
+	desc = "rab_wenhuan.DESC12"
+	picture = EMPEROR_UP_eventPicture
+	
+	trigger = {
+		has_country_flag = flg_rab_wenhuan_12
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		clr_country_flag = flg_rab_wenhuan_12
+	}
+	
+	option = {
+	name = "rab_wenhuan.OPTA12"
+		add_prestige = -1
+		if = {
+			limit = { 
+				check_variable = {
+					which = var_seeds_plusplus
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = var_seeds_plusplus
+						value = 33
+					}
+				}				
+			}
+			random_owned_province = {
+				add_base_tax = -1			
+			}			
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = var_seeds_plusplus
+					value = 33
+				}
+				NOT = {
+					check_variable = {
+						which = var_seeds_plusplus
+						value = 66
+					}
+				}				
+			}
+			random_owned_province = {
+				add_base_production = -1			
+			}			
+		}	
+		if = {
+			limit = { 
+				check_variable = {
+					which = var_seeds_plusplus
+					value = 66
+				}
+			}
+			random_owned_province = {
+				add_base_manpower = -1			
+			}			
+		}		
+		clr_flag_temp = yes
+		clr_country_flag = flg_during_meeting_faction
+	}
+}
+	
+#超出預期
+country_event = {
+	id = rab_wenhuan.13
+	title = "rab_wenhuan.NAME13"
+	desc = "rab_wenhuan.DESC13"
+	picture = EMPEROR_UP_eventPicture
+	
+	trigger = {
+		has_country_flag = flg_rab_wenhuan_13
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		clr_country_flag = flg_rab_wenhuan_13
+	}
+
+	option = {
+	name = "rab_wenhuan.OPTA13"
+		add_bit_mandate_effect = yes
+		clr_flag_temp = yes
+		if = {
+			limit = { 
+				check_variable = {
+					which = var_seeds_plusplus
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = var_seeds_plusplus
+						value = 33
+					}
+				}				
+			}
+			random_owned_province = {
+				add_base_tax = 2
+			}			
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = var_seeds_plusplus
+					value = 33
+				}
+				NOT = {
+					check_variable = {
+						which = var_seeds_plusplus
+						value = 66
+					}
+				}				
+			}
+			random_owned_province = {
+				add_base_production = 2	
+			}			
+		}	
+		if = {
+			limit = { 
+				check_variable = {
+					which = var_seeds_plusplus
+					value = 66
+				}
+			}
+			random_owned_province = {
+				add_base_manpower = 2		
+			}			
+		}	
+		clr_country_flag = flg_during_meeting_faction	
+	}	
+}
+
+#超出預期的好
+country_event = {
+	id = rab_wenhuan.14
+	title = "rab_wenhuan.NAME14"
+	desc = "rab_wenhuan.DESC14"
+	picture = EMPEROR_UP_eventPicture
+	
+	trigger = {
+		has_country_flag = flg_rab_wenhuan_14
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		clr_country_flag = flg_rab_wenhuan_14
+	}
+
+	option = {
+	name = "rab_wenhuan.OPTA14"
+		add_prestige = 5
+		clr_flag_temp = yes
+		if = {
+			limit = { 
+				check_variable = {
+					which = var_seeds_plusplus
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = var_seeds_plusplus
+						value = 33
+					}
+				}				
+			}
+			random_owned_province = {
+				add_base_tax = 1
+			}			
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = var_seeds_plusplus
+					value = 33
+				}
+				NOT = {
+					check_variable = {
+						which = var_seeds_plusplus
+						value = 66
+					}
+				}				
+			}
+			random_owned_province = {
+				add_base_production = 1
+			}			
+		}	
+		if = {
+			limit = { 
+				check_variable = {
+					which = var_seeds_plusplus
+					value = 66
+				}
+			}
+			random_owned_province = {
+				add_base_manpower = 1
+			}			
+		}		
+		clr_country_flag = flg_during_meeting_faction
+		
+	}
+	option = {
+	name = "rab_wenhuan.OPTB14"
+		add_bit_mandate_effect = yes
+		add_prestige = 5
+		if = {
+			limit = { 
+				check_variable = {
+					which = var_seeds_plusplus
+					value = 0
+				}
+				NOT = {
+					check_variable = {
+						which = var_seeds_plusplus
+						value = 33
+					}
+				}				
+			}
+			random_owned_province = {
+				add_base_tax = 1
+			}			
+		}
+		if = {
+			limit = { 
+				check_variable = {
+					which = var_seeds_plusplus
+					value = 33
+				}
+				NOT = {
+					check_variable = {
+						which = var_seeds_plusplus
+						value = 66
+					}
+				}				
+			}
+			random_owned_province = {
+				add_base_production = 1
+			}			
+		}	
+		if = {
+			limit = { 
+				check_variable = {
+					which = var_seeds_plusplus
+					value = 66
+				}
+			}
+			random_owned_province = {
+				add_base_manpower = 1
+			}			
+		}		
+		if = {
+			limit = {
+				has_country_flag = flg_general_temp
+			}
+				add_wuqi_5_effect = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = flg_huan_temp
+			}
+				subtract_wenhuan_5_effect = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = flg_wen_temp
+			}
+				add_wenhuan_5_effect = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = flg_relationship_temp
+			}
+				subtract_wuqi_5_effect = yes
+		}		
+		clr_flag_temp = yes
+		clr_country_flag = flg_during_meeting_faction
+	}	
+}
+
+country_event = {
+	id = rab_wenhuan.15
+	title = "rab_wenhuan.NAME15"
+	desc = "rab_wenhuan.DESC15"
+	picture = EMPEROR_UP_eventPicture
+	
+	trigger = {
+		has_country_flag = flg_rab_wenhuan_15
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		clr_country_flag = flg_rab_wenhuan_15
+	}
+
+	option = {
+	name = "rab_wenhuan.OPTA15"
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		clr_flag_temp = yes	
+		clr_country_flag = flg_during_meeting_faction
+	}	
+}
+
+country_event = {
+	id = rab_wenhuan.16
+	title = "rab_wenhuan.NAME16"
+	desc = "rab_wenhuan.DESC16"
+	picture = EMPEROR_UP_eventPicture
+	
+	trigger = {
+		has_country_flag = flg_rab_wenhuan_16
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		clr_country_flag = flg_rab_wenhuan_16
+	}
+
+	option = {
+	name = "rab_wenhuan.OPTA16"
+		random_owned_province = {
+			add_base_production = 1
+		}
+		clr_flag_temp = yes	
+		clr_country_flag = flg_during_meeting_faction
+	}	
+}
+
+country_event = {
+	id = rab_wenhuan.17
+	title = "rab_wenhuan.NAME17"
+	desc = "rab_wenhuan.DESC17"
+	picture = EMPEROR_UP_eventPicture
+	
+	trigger = {
+		has_country_flag = flg_rab_wenhuan_17
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		clr_country_flag = flg_rab_wenhuan_17
+	}
+
+	option = {
+	name = "rab_wenhuan.OPTA17"
+		random_owned_province = {
+			add_base_manpower = 1
+		}
+		clr_flag_temp = yes	
+		clr_country_flag = flg_during_meeting_faction
+	}	
+}

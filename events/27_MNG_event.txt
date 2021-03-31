@@ -1,0 +1,74 @@
+namespace = MNG_events_namespace
+
+#皇明祖训
+country_event = { 
+	id = MNG_events_namespace.1
+	title = "MNG_events_1_title"
+	desc = "MNG_events_1_desc"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = MNG
+			tag = DNM
+		}
+		adm_tech = 47
+		NOT = { has_country_modifier = huangmingzuxun }
+		ai = no
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = "MNG_events_1_OPTA"
+		add_country_modifier = {
+			name = "huangmingzuxun"
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = "fanfu_sutan"
+			duration = 3650
+		}
+	}
+}
+
+#土地兼并
+country_event = { 
+	id = MNG_events_namespace.2
+	title = "MNG_events_2_title"
+	desc = "MNG_events_2_desc"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "MNG_events_2_OPTA"
+		add_stability = -3
+		add_years_of_income = -50
+		add_country_modifier = {
+			name = "tudi_jianbing"
+			duration = 7430
+		}
+	}
+}
+
+#一条鞭法
+country_event = { 
+	id = MNG_events_namespace.3
+	title = "MNG_events_3_title"
+	desc = "MNG_events_3_desc"
+	picture = ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "MNG_events_3_OPTA"
+		add_wenwu_10_effect = yes
+		add_country_modifier = {
+			name = "yi_tiao_bian_fa"
+			duration = 3650
+		}
+	}
+}

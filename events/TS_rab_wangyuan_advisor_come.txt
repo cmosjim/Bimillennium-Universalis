@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+# 2018.12.28 fit to 1.28 and translated okay.
+namespace = wangyuan_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : wangyuan : ‹sCQ0fkS0
+#
+country_event = {
+	id = wangyuan_advisor_come.1
+	title = "wangyuan_advisor_come.1.t"
+	desc = "wangyuan_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+	#úQ°söeô•
+	trigger = {
+		OR = {
+			AND = {
+				is_year = 23
+				NOT = { is_year = 34 }
+				tag = KU2
+			}
+			AND = {
+				is_year = 34
+				NOT = { is_year = 60 }
+				tag = HND
+			}
+		}		
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = wangyuan_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = wangyuan
+				name = "‹sCQ0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "‹sCQ0fkS0"
+				fire = 6
+				shock = 6
+				manuever = 4
+				siege = 4
+			}
+		}
+	}
+}
+

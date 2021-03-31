@@ -1,0 +1,62 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = murongchui_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : murongchui : Ua¹R‚W0fkS0
+
+country_event = {
+	id = murongchui_advisor_come.1
+	title = "murongchui_advisor_come.1.t"
+	desc = "murongchui_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 346	
+		NOT = { is_year = 390 }
+		#MRÕqCCY
+		OR = {	
+			AND = {
+				NOT = { exists = HY1 }
+				exists = CCY
+				tag = CCY
+			}
+			AND = {
+				NOT = { exists = HY1 }
+				owns = 703
+			}	
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = murongchui_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = murongchui
+				name = "Ua¹R‚W0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "Ua¹R‚W0fkS0"
+				fire = 6
+				shock = 6
+				manuever = 4
+				siege = 4
+			}
+		}
+	}
+}
+

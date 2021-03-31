@@ -1,0 +1,66 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = zhangdingbian_advisor_come
+
+#fkSĞgÍyhöNNúQşs
+#id = 1 : zhangdingbian : .VšR¹0fkS0
+#
+country_event = {
+	id = zhangdingbian_advisor_come.1
+	title = "zhangdingbian_advisor_come.1.t"
+	desc = "zhangdingbian_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+	
+		#5VšRŠÿ1318t^ÿ1417t^	ÿ
+		is_year = 1344
+		NOT = { is_year = 1400 }
+		NOT = { tag = YUA }
+		OR = {
+			tag = HH2
+			tag = CH4
+			AND = {
+				NOT = {
+					OR = {
+						exists = HH2
+						exists = CH4
+					}
+				}
+				owns = 681 #”l3–
+			}	
+		}	
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = zhangdingbian_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = zhangdingbian
+				name = ".VšR¹0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = ".VšR¹0fkS0"
+				fire = 8
+				shock = 8
+				manuever = 5
+				siege = 5
+			}
+		}
+	}
+}
+

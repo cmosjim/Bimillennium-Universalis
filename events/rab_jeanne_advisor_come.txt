@@ -1,0 +1,52 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = jeanne_advisor_come
+
+#fkSĞgÍyhöNNúQşs
+#id = 1 : jeanne : ·V01WsY0
+#
+country_event = {
+	id = jeanne_advisor_come.1
+	title = "jeanne_advisor_come.1.t"
+	desc = "jeanne_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		is_year = 1426
+		NOT = { is_year = 1432 }
+		tag = FRA
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = jeanne_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = jeanne
+				name = "·V01WsY0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "·V01WsY0"
+				female = yes
+				fire = 9
+				shock = 10
+				manuever = 9
+				siege = 8
+			}
+		}
+	}
+}
+

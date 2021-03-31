@@ -1,0 +1,783 @@
+#appearing in world
+#fit to 1.28
+namespace = rab_YUA_events
+
+country_event = {
+	id = rab_YUA_events.1
+	title = "rab_YUA_events.NAME1"
+	desc = "rab_YUA_events.DESC1"
+	picture = khuruldai_eventPicture
+	
+	is_triggered_only =  yes
+	#劉
+	option = {
+		name = "rab_YUA_events.OPTA1"
+		trigger = {
+			NOT = { exists = AA1 }
+		}	
+		change_tag = AA1
+		swap_free_idea_group = yes
+		if = {
+			limit = { 
+				NOT = { technology_group = chinese }
+			}
+				change_technology_group = chinese
+		}
+		if = {
+			limit = { 
+				NOT = { unit_type = chinese}
+			}
+				change_unit_type = chinese
+		}	
+		if = {
+			limit = { 
+				NOT = { has_reform = celestial_empire }
+			}
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire				
+		}
+		clr_country_flag = flg_temp_Build_CNH_AF7
+	}
+	#李
+	option = {
+		name = "rab_YUA_events.OPTB1"
+		trigger = {
+			NOT = { exists = AA7 }
+		}	
+		change_tag = AA7
+		swap_free_idea_group = yes
+		if = {
+			limit = { 
+				NOT = { technology_group = chinese }
+			}
+				change_technology_group = chinese
+		}
+		if = {
+			limit = { 
+				NOT = { unit_type = chinese}
+			}
+				change_unit_type = chinese
+		}	
+		if = {
+			limit = { 
+				NOT = { has_reform = celestial_empire }
+			}
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire				
+		}
+		clr_country_flag = flg_temp_Build_CNH_AF7		
+	}
+
+#秦	:AE6
+	option = {
+		name = "rab_YUA_events.OPTC1"
+		trigger = {
+			NOT = { exists = AE6 }
+		}	
+		change_tag = AE6
+		swap_free_idea_group = yes
+		if = {
+			limit = { 
+				NOT = { technology_group = chinese }
+			}
+				change_technology_group = chinese
+		}
+		if = {
+			limit = { 
+				NOT = { unit_type = chinese}
+			}
+				change_unit_type = chinese
+		}	
+		if = {
+			limit = { 
+				NOT = { has_reform = celestial_empire }
+			}
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire				
+		}	
+		clr_country_flag = flg_temp_Build_CNH_AF7		
+	}
+#徐	:AF5
+	option = {
+		name = "rab_YUA_events.OPTD1"
+		trigger = {
+			NOT = { exists = AF5 }
+		}	
+		change_tag = AF5
+		swap_free_idea_group = yes
+		if = {
+			limit = { 
+				NOT = { technology_group = chinese }
+			}
+				change_technology_group = chinese
+		}
+		if = {
+			limit = { 
+				NOT = { unit_type = chinese}
+			}
+				change_unit_type = chinese
+		}	
+		if = {
+			limit = { 
+				NOT = { has_reform = celestial_empire }
+			}
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire				
+		}
+		clr_country_flag = flg_temp_Build_CNH_AF7		
+	}
+#吴	:AF6	
+
+	option = {
+		name = "rab_YUA_events.OPTE1"
+		trigger = {
+			NOT = { exists = AF6 }
+		}	
+		change_tag = AF6
+		swap_free_idea_group = yes
+		if = {
+			limit = { 
+				NOT = { technology_group = chinese }
+			}
+				change_technology_group = chinese
+		}
+		if = {
+			limit = { 
+				NOT = { unit_type = chinese}
+			}
+				change_unit_type = chinese
+		}	
+		if = {
+			limit = { 
+				NOT = { has_reform = celestial_empire }
+			}
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire				
+		}
+		clr_country_flag = flg_temp_Build_CNH_AF7		
+	}
+#高	:AB2 	
+	option = {
+		name = "rab_YUA_events.OPTF1"
+		trigger = {
+			NOT = { exists = AB2 }
+		}	
+		change_tag = AB2
+		swap_free_idea_group = yes
+		if = {
+			limit = { 
+				NOT = { technology_group = chinese }
+			}
+				change_technology_group = chinese
+		}
+		if = {
+			limit = { 
+				NOT = { unit_type = chinese}
+			}
+				change_unit_type = chinese
+		}	
+		if = {
+			limit = { 
+				NOT = { has_reform = celestial_empire }
+			}
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire				
+		}
+		clr_country_flag = flg_temp_Build_CNH_AF7		
+	}
+#张	:AB3
+	
+	option = {
+		name = "rab_YUA_events.OPTG1"
+		trigger = {
+			NOT = { exists = AB3 }
+		}	
+		change_tag = AB3
+		swap_free_idea_group = yes
+		if = {
+			limit = { 
+				NOT = { technology_group = chinese }
+			}
+				change_technology_group = chinese
+		}
+		if = {
+			limit = { 
+				NOT = { unit_type = chinese}
+			}
+				change_unit_type = chinese
+		}	
+		if = {
+			limit = { 
+				NOT = { has_reform = celestial_empire }
+			}
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire				
+		}
+		clr_country_flag = flg_temp_Build_CNH_AF7		
+	}
+#陈 :AB6  
+	
+	option = {
+		name = "rab_YUA_events.OPTH1"
+		trigger = {
+			NOT = { exists = AB6 }
+		}	
+		change_tag = AB6
+		swap_free_idea_group = yes
+		if = {
+			limit = { 
+				NOT = { technology_group = chinese }
+			}
+				change_technology_group = chinese
+		}
+		if = {
+			limit = { 
+				NOT = { unit_type = chinese}
+			}
+				change_unit_type = chinese
+		}	
+		if = {
+			limit = { 
+				NOT = { has_reform = celestial_empire }
+			}
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire				
+		}
+		clr_country_flag = flg_temp_Build_CNH_AF7		
+	}
+#杨 :AB8
+
+	option = {
+		name = "rab_YUA_events.OPTI1"
+		trigger = {
+			NOT = { exists = AB8 }
+		}	
+		change_tag = AB8
+		swap_free_idea_group = yes
+		if = {
+			limit = { 
+				NOT = { technology_group = chinese }
+			}
+				change_technology_group = chinese
+		}
+		if = {
+			limit = { 
+				NOT = { unit_type = chinese}
+			}
+				change_unit_type = chinese
+		}	
+		if = {
+			limit = { 
+				NOT = { has_reform = celestial_empire }
+			}
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire				
+		}
+		clr_country_flag = flg_temp_Build_CNH_AF7		
+	}
+#郭 :AC1
+	option = {
+		name = "rab_YUA_events.OPTJ1"
+		trigger = {
+			NOT = { exists = AC1 }
+		}	
+		change_tag = AC1
+		swap_free_idea_group = yes
+		if = {
+			limit = { 
+				NOT = { technology_group = chinese }
+			}
+				change_technology_group = chinese
+		}
+		if = {
+			limit = { 
+				NOT = { unit_type = chinese}
+			}
+				change_unit_type = chinese
+		}	
+		if = {
+			limit = { 
+				NOT = { has_reform = celestial_empire }
+			}
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire				
+		}		
+		clr_country_flag = flg_temp_Build_CNH_AF7
+	}	
+#王 :AC3
+	option = {
+		name = "rab_YUA_events.OPTK1"
+		trigger = {
+			NOT = { exists = AC3 }
+		}	
+		change_tag = AC3
+		swap_free_idea_group = yes
+		if = {
+			limit = { 
+				NOT = { technology_group = chinese }
+			}
+				change_technology_group = chinese
+		}
+		if = {
+			limit = { 
+				NOT = { unit_type = chinese}
+			}
+				change_unit_type = chinese
+		}	
+		if = {
+			limit = { 
+				NOT = { has_reform = celestial_empire }
+			}
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire				
+		}		
+		clr_country_flag = flg_temp_Build_CNH_AF7		
+	}	
+
+#赵 :AC5 		
+	option = {
+		name = "rab_YUA_events.OPTL1"
+		trigger = {
+			NOT = { exists = AC5 }
+		}	
+		change_tag = AC5
+		swap_free_idea_group = yes
+		if = {
+			limit = { 
+				NOT = { technology_group = chinese }
+			}
+				change_technology_group = chinese
+		}
+		if = {
+			limit = { 
+				NOT = { unit_type = chinese}
+			}
+				change_unit_type = chinese
+		}	
+		if = {
+			limit = { 
+				NOT = { has_reform = celestial_empire }
+			}
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire				
+		}		
+		clr_country_flag = flg_temp_Build_CNH_AF7		
+	}
+}
+
+
+
+country_event = {
+	id = rab_YUA_events.2
+	title = "rab_YUA_events.NAME2"
+	#傳統與儒家的抉擇
+	desc = "rab_YUA_events.DESC2"
+	#我們已經將大半個中原地區納入手中，朝廷上也越來越多漢人，一時之間儒學與中原文化流竄各個貴族階層，出生於北方游牧的貴族們開始對這種同化日漸不安，他們堅持我們的皇帝做出決斷了
+	#若是處置不當很有可能造成分裂的局面。
+	picture = khuruldai_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = YUA
+		NOT = { has_country_flag = split_YUA_done  }
+		calc_true_if = {
+			all_owned_province = {
+				region = central_asia_region
+			}
+			amount = 50
+		}
+		calc_true_if = {
+			all_owned_province = {
+				region = persia_region
+			}
+			amount = 25
+		}
+		calc_true_if = {
+			all_owned_province = {
+				region = khorasan_region
+			}
+			amount = 25
+		}
+		calc_true_if = {
+			all_owned_province = {
+				region = ural_region
+			}	
+			amount = 5
+		}
+		calc_true_if = {
+			all_owned_province = {
+				region = north_china_region
+			}	
+			amount = 55
+		}			
+		num_of_cities = 350
+		NOT = {
+			OR = {
+				exists = WK1		
+				exists = GLH		
+				exists = CHG		
+				exists = ILK
+			}
+		}	
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name = "rab_YUA_events.OPTA2"	
+		#事已至此，要滾的貴族就滾回草原去
+		ai_chance = { factor = 100 }
+		set_country_flag = split_YUA_done
+		if = {
+			limit = { 
+				NOT = { technology_group = chinese }
+			}
+				change_technology_group = chinese
+		}
+		if = {
+			limit = { 
+				NOT = { unit_type = chinese}
+			}
+				change_unit_type = chinese
+		}
+			
+		if = {
+			limit = { 
+				NOT = { has_reform = celestial_empire }
+			}
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire
+				set_government_rank = 3				
+		}
+		if = {
+			limit = { 
+				NOT = { religion = confucianism }
+			}
+				change_religion = confucianism
+		}		
+		#every_owned_province = {
+		#	limit = {
+		#		OR = {
+		#			province_id = 1846
+		#			province_id = 2130
+		#			province_id = 2148
+		#			province_id = 2152
+		#			province_id = 2174
+		#			province_id = 2175
+		#			province_id = 2176
+		#			province_id = 2178
+		#			province_id = 2183
+		#			province_id = 2185
+		#			province_id = 2187
+		#			province_id = 2265
+		#			province_id = 2268
+		#			province_id = 2269
+		#			province_id = 2270
+		#			province_id = 2271
+		#			province_id = 2272
+		#			province_id = 2273
+		#			province_id = 2274
+		#			province_id = 2276
+		#			province_id = 2277
+		#			province_id = 2278
+		#			province_id = 2279
+		#			province_id = 2280
+		#			province_id = 2281
+		#			province_id = 2282
+		#			province_id = 2283
+		#			province_id = 2284
+		#			province_id = 2285
+		#			province_id = 2286
+		#			province_id = 2287
+		#			province_id = 2288
+		#			province_id = 2289
+		#			province_id = 2290
+		#			province_id = 2291
+		#			province_id = 2292
+		#			province_id = 2293
+		#			province_id = 2294
+		#			province_id = 2295
+		#			province_id = 2296
+		#			province_id = 2297
+		#			province_id = 2298
+		#			province_id = 2299
+		#			province_id = 2300
+		#			province_id = 2301
+		#			province_id = 2302
+		#			province_id = 2303
+		#			province_id = 2304
+		#			province_id = 2363
+		#			province_id = 2364
+		#			province_id = 2547
+		#			province_id = 2548
+		#			province_id = 329
+		#			province_id = 331
+		#			province_id = 407
+		#			province_id = 408
+		#			province_id = 409
+		#			province_id = 410
+		#			province_id = 411
+		#			province_id = 412
+		#			province_id = 413
+		#			province_id = 414
+		#			province_id = 415
+		#			province_id = 416
+		#			province_id = 417
+		#			province_id = 418
+		#			province_id = 419
+		#			province_id = 423
+		#			province_id = 424
+		#			province_id = 426
+		#			province_id = 427
+		#			province_id = 428
+		#			province_id = 429
+		#			province_id = 4298
+		#			province_id = 430
+		#			province_id = 431
+		#			province_id = 432
+		#			province_id = 433
+		#			province_id = 434
+		#			province_id = 435
+		#			province_id = 436
+		#			province_id = 437
+		#			province_id = 438
+		#			province_id = 4410
+		#			province_id = 4411
+		#			province_id = 4412
+		#			province_id = 4413
+		#			province_id = 4414
+		#			province_id = 4415
+		#			province_id = 4416
+		#			province_id = 4417
+		#			province_id = 4418
+		#			province_id = 4422
+		#			province_id = 4423
+		#			province_id = 4424
+		#			province_id = 4425
+		#			province_id = 4426
+		#			province_id = 4436
+		#			province_id = 4437
+		#			province_id = 4444
+		#			province_id = 4445
+		#			province_id = 4446
+		#			province_id = 4447
+		#			province_id = 4448
+		#			province_id = 4449
+		#			province_id = 445
+		#			province_id = 4450
+		#			province_id = 4451
+		#			province_id = 4452
+		#			province_id = 4453
+		#			province_id = 4454
+		#			province_id = 4455
+		#			province_id = 4456
+		#			province_id = 4457
+		#			province_id = 4458
+		#			province_id = 446
+		#			province_id = 4460
+		#			province_id = 4461
+		#			province_id = 4464
+		#			province_id = 4465
+		#			province_id = 447
+		#			province_id = 448
+		#			province_id = 449
+		#			province_id = 450
+		#			province_id = 451
+		#			province_id = 420
+		#			province_id = 421
+		#			province_id = 425
+		#			province_id = 4626
+		#			province_id = 575
+		#			province_id = 576
+		#			province_id = 577
+		#			province_id = 578
+		#			province_id = 4421
+		#			province_id = 4427
+		#			province_id = 4428
+		#			province_id = 4459
+		#			province_id = 2264
+		#			province_id = 2266
+		#			province_id = 2267
+		#			
+		#			
+		#		}	
+		#	}
+		#		cede_province = ILK				
+		#		add_core = ILK			
+		#		remove_core = YUA
+        #
+		#}	
+		#every_owned_province = {
+		#	limit = {
+		#		OR = {
+		#		province_id = 1071
+		#		province_id = 1074
+		#		province_id = 1075
+		#		province_id = 1076
+		#		province_id = 1081
+		#		province_id = 1082
+		#		province_id = 1965
+		#		province_id = 1966
+		#		province_id = 1970
+		#		province_id = 1971
+		#		province_id = 1972
+		#		province_id = 2006
+		#		province_id = 2154
+		#		province_id = 2261
+		#		province_id = 2262
+		#		province_id = 2263
+		#		province_id = 2430
+		#		province_id = 2436
+		#		province_id = 2437
+		#		province_id = 2438
+		#		province_id = 2439
+		#		province_id = 2440
+		#		province_id = 2441
+		#		province_id = 2442
+		#		province_id = 2443
+		#		province_id = 2447
+		#		province_id = 2448
+		#		province_id = 2449
+		#		province_id = 2450
+		#		province_id = 2451
+		#		province_id = 2612
+		#		province_id = 2613
+		#		province_id = 2616
+		#		province_id = 2617
+		#		province_id = 2618
+		#		province_id = 2619
+		#		province_id = 2620
+		#		province_id = 2621
+		#		province_id = 268
+		#		province_id = 2838
+		#		province_id = 2839
+		#		province_id = 2840
+		#		province_id = 2841
+		#		province_id = 2842
+		#		province_id = 285
+		#		province_id = 286
+		#		province_id = 288
+		#		province_id = 299
+		#		province_id = 302
+		#		province_id = 303
+		#		province_id = 304
+		#		province_id = 305
+		#		province_id = 306
+		#		province_id = 4388
+		#		province_id = 4389
+		#		province_id = 439
+		#		province_id = 4390
+		#		province_id = 4391
+		#		province_id = 440
+		#		province_id = 443
+		#		province_id = 455
+		#		province_id = 456
+		#		province_id = 463
+		#		province_id = 464
+		#		province_id = 465
+		#		province_id = 466
+		#		province_id = 4669
+		#		province_id = 467
+		#		province_id = 4670
+		#		province_id = 468
+		#		province_id = 4686
+		#		province_id = 469
+		#		province_id = 470
+		#		province_id = 471
+		#		province_id = 472
+		#		province_id = 473
+		#		province_id = 474
+		#		province_id = 475
+		#		province_id = 476
+		#		province_id = 477
+		#		province_id = 479
+		#		}	
+		#	}
+		#		cede_province = GLH
+		#		add_core = GLH			
+		#		remove_core = YUA
+		#		
+		#}	
+		#every_owned_province = {
+		#	limit = {
+		#		OR = {
+		#		province_id = 1785
+		#		province_id = 1967
+		#		province_id = 1968
+		#		province_id = 1969
+		#		province_id = 1973
+		#		province_id = 2122
+		#		province_id = 2177
+		#		province_id = 2179
+		#		province_id = 2431
+		#		province_id = 2432
+		#		province_id = 2433
+		#		province_id = 2434
+		#		province_id = 2435
+		#		province_id = 2444
+		#		province_id = 2445
+		#		province_id = 2881
+		#		province_id = 2888
+		#		province_id = 3324
+		#		province_id = 3325
+		#		province_id = 441
+		#		province_id = 442
+		#		province_id = 444
+		#		province_id = 4462
+		#		province_id = 4463
+		#		province_id = 452
+		#		province_id = 453
+		#		province_id = 454
+		#		province_id = 4568
+		#		province_id = 457
+		#		province_id = 458
+		#		province_id = 459
+		#		province_id = 460
+		#		province_id = 461
+		#		province_id = 4898
+		#		province_id = 4899
+		#		province_id = 508
+		#		province_id = 714
+		#		province_id = 715
+		#		province_id = 739
+        #
+		#		}	
+		#	}
+		#		cede_province = CHG
+		#		add_core = CHG			
+		#		remove_core = YUA				
+		#}
+		#every_owned_province = {
+		#	limit = {
+		#		OR = {
+		#			province_id = 2898
+		#			province_id = 2897
+		#			province_id = 2887
+		#			province_id = 2894
+		#			province_id = 2895
+		#			province_id = 2896
+		#			province_id = 2446
+		#			province_id = 1066
+		#			province_id = 480
+		#			province_id = 478
+		#			province_id = 459
+		#
+		#		}	
+		#	}
+		#		cede_province = WK1
+		#		add_core = WK1	
+		#		remove_core = YUA				
+		#}		
+	}	
+	option = {
+		name = "rab_YUA_events.OPTB2"
+		#我們遵從貴族的建議，但是漢人的反撲越來越激烈
+		#堅持不分裂 給予大量的叛亂
+		ai_chance = { factor = 0 }	
+		add_country_modifier = {
+			name = "legitimacy_wars"
+			duration = 7300
+		}
+	}	
+}

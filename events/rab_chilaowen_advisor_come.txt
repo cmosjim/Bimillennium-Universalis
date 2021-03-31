@@ -1,0 +1,74 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = chilaowen_advisor_come
+
+#fkS–gÕyùhˆNN˙Q˛s
+#id = 1 : chilaowen : dçw)n0fkS0
+#
+country_event = {
+	id = chilaowen_advisor_come.1
+	title = "chilaowen_advisor_come.1.t"
+	desc = "chilaowen_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+#571t^ˇ649t^7g2Âe
+	trigger = {
+		#ŸèÃë=ffkS˙Q∞s(WÍTÃëÑvagˆN
+		is_year = 1190
+		NOT = { is_year = 1248 }
+		OR = {
+			AND = {
+				exists = MGE
+				tag = MGE
+			}			
+			AND = {
+				NOT = { exists = MGE }
+				exists = QY1
+				tag = QY1
+			}
+			AND = {
+				NOT = { exists = MGE }
+				NOT = { exists = QY1 }
+				exists = KHA
+				tag = KHA
+			}
+			AND = {
+				NOT = { exists = MGE }
+				NOT = { exists = QY1 }
+				NOT = { exists = KHA }
+				owns = 1058	
+			}			
+		}
+	}
+	mean_time_to_happen = {
+		days = 10
+	}		
+	option = {
+		name = chilaowen_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = chilaowen
+				name = "dçw)n0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "dçw)n0fkS0"
+				fire = 7
+				shock = 8
+				manuever = 6
+				siege = 5
+			}
+		}
+	}
+}
+

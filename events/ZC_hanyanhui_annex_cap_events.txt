@@ -1,0 +1,137 @@
+namespace = hanyanhui_annex_cap_events
+
+country_event = {
+	id = hanyanhui_annex_cap_events.1
+	title = "hanyanhui_annex_cap_events.NAME1"
+	desc = "hanyanhui_annex_cap_events.DESC1"
+	picture = SIEGE_eventPicture
+	
+	hidden = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		FROM = { 
+			OR = {
+			 	advisor = hanyanhui
+				has_leader = "é—ö^ËV0ŒëX0"
+			}
+		}
+	}	
+	option = {
+		name = "hanyanhui_annex_cap_events.OPTA1"
+		country_event = {
+			id = hanyanhui_annex_cap_events.2
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = hanyanhui_annex_cap_events.2
+	title = "hanyanhui_annex_cap_events.NAME2"
+	desc = "hanyanhui_annex_cap_events.DESC2"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = "hanyanhui_annex_cap_events.OPTA2"
+		############################################
+		## This table defined by rab_event_modifiers
+		############################################		
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0 
+				OR = {
+					tag = JAP
+					tag = JA1
+				}	
+			}	
+		}
+		
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						tag = JAP
+						tag = JA1
+					}
+				}
+			}
+			
+			if = { 
+				limit = { ai = no }
+				define_advisor = {
+					type = hanyanhui
+					name = "é—ö^ËV0ŒëX0"
+					discount = yes	
+					skill = 3
+				}
+			}
+			if = { 
+				limit = { ai = yes }
+					define_general = {
+					name = "é—ö^ËV0ŒëX0"
+					fire = 2
+					shock = 2
+					manuever = 2
+					siege = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					tag = JAP
+					tag = JA1
+				}
+			}
+			country_event = {
+				id = hanyanhui_annex_cap_events.3
+			}
+		}		
+	}
+		
+	option = {
+		name = "hanyanhui_annex_cap_events.OPTB2"
+		ai_chance = { factor = 10 }	
+		add_prestige = -2
+		add_treasury = 100
+	}	
+		
+	option = {
+		name = "hanyanhui_annex_cap_events.OPTC2"
+		ai_chance = { factor = 20 }
+		add_prestige = 2
+		hidden_effect = { 
+			random_owned_province = {
+				add_province_modifier = {
+					name = "pov_hanyanhui"
+					duration = -1
+				}
+			}
+		}
+	}	
+}
+
+
+
+country_event = { 
+	id = hanyanhui_annex_cap_events.3
+	title = "hanyanhui_annex_cap_events.NAME3"
+	desc = "hanyanhui_annex_cap_events.DESC3"
+	picture = CAPTURE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "hanyanhui_annex_cap_events.OPTA3"
+		country_event = {
+				id = hanyanhui_annex_cap_events.2
+		}
+	}
+}

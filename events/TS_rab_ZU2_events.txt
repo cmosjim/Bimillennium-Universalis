@@ -1,0 +1,153 @@
+
+namespace = rab_ZU2_events
+#H–ËSŒ-N­r
+country_event = {
+	id = rab_ZU2_events.1
+	title = "rab_ZU2_events.NAME1"
+	desc = "rab_ZU2_events.DESC1"
+	picture = ARCHER_eventPicture
+	
+	fire_only_once = yes
+   
+	trigger = {
+		is_year = 1362
+		NOT = { is_year = 1380 }
+		ai = no
+		war_score_against = {
+			who = CH4
+			value = 10 #rab_test
+		} 
+		has_ruler = "1gCQ‹t"
+		CH4 = {
+			has_ruler = "H–ËSŒ"
+		}	
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		CH4 = {
+			kill_ruler = yes
+		}	
+	}	
+
+	option = {
+		name = "rab_ZU2_events.OPTA1"
+		CH4 = {
+			add_country_modifier = {
+				name = "md_no_leader_debuff_CH4"
+				duration = 365
+			}	
+		}	
+	}
+}
+
+
+country_event = {
+	id = rab_ZU2_events.2
+	title = "rab_ZU2_events.NAME2"
+	desc = "rab_ZU2_events.DESC2"
+	picture = MNG_PIC_eventPictures
+
+	fire_only_once = yes
+
+ 	trigger = {
+		started_in = 1352.1.1
+		NOT = { is_year = 1353 }
+		tag = ZU2
+		has_ruler = "1gCQ‹t"
+		NOT = {
+			has_country_flag = tmp_celestial_empire_choose_queens 
+		}
+		OR = {
+			AND = {
+				has_consort = yes 
+				has_country_flag = flg_marry_finished
+			}
+			has_consort = no
+		}	
+	}			
+
+
+	option = {
+		name = "rab_ZU2_events.OPTA2"
+		add_treasury = 10000
+		capital_scope = {
+			ROOT = {
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+			}
+		}
+		country_event = {
+			id = rab_ZU2_events.3
+		}	
+	}
+}
+
+country_event = {
+	id = rab_ZU2_events.3
+	title = "rab_ZU2_events.NAME3"
+	desc = "rab_ZU2_events.DESC3"
+	picture = MNG_PIC_eventPictures
+   
+	is_triggered_only = yes
+	
+	option = {
+		name = "rab_ZU2_events.OPTA3"
+		trigger = {
+			already_define_consort_type = yes
+		}
+		add_country_modifier = {
+			name = "md_no_consort"
+			duration = -1
+		}	
+		clr_previous_consort_type = yes
+		set_country_flag = flg_has_concert_pic202		
+		define_consort = {
+			name = "lšÀyñ‚"
+			adm = 6
+			dip = 6
+			mil = 6
+			female = yes
+		}
+	}
+	option = {
+		name = "rab_ZU2_events.OPTB3"
+		trigger = {
+			already_define_consort_type = no
+		}
+		clr_previous_consort_type = yes
+		set_country_flag = flg_has_concert_pic202		
+		define_consort = {
+			name = "lšÀyñ‚"
+			adm = 6
+			dip = 6
+			mil = 6
+			female = yes
+		}
+		
+	}
+	option = {
+		name = "rab_ZU2_events.OPTC3"
+		
+	}	
+}
+

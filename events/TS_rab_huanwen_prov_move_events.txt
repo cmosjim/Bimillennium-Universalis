@@ -1,0 +1,158 @@
+#################################
+#This sections define outoff general 
+#move to another provinces .
+#################################
+
+#id = 1 : IN˚|ﬂu-U^TgbLàÑv
+#id = 2 : Sh)n 0õQ^0 €kBêÍÅPÉ 
+
+namespace = huanwen_prov_move_events
+
+
+province_event = {
+	id =huanwen_prov_move_events.1
+	title = "huanwen_prov_move_events.NAME1"
+	desc = "huanwen_prov_move_events.DESC1"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	hidden = yes
+
+	trigger = {
+	#¶OKmw˝NÖQ=f&T	gÂãpov_xxxx
+	#ÍSÅâ	g∞eûXÑvfkSˇ∞ãóV†ReQÂãpov_xxxx éN OR vQ-N
+		has_province_modifier = pov_huanwen
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "huanwen_prov_move_events.OPTA1"
+###########################Sh)n 0õQ^0pov_huanwen#################################		
+		if = {
+			limit = { has_province_modifier = pov_huanwen }
+			if = {
+			#≥QöR(WŒëfkSÑvˇRãT
+				limit = { 
+					NOT = { is_year = 380  }
+				}
+			#GPÇYÂã˝V∂RÑvTãsyr(ç&rT
+			#1S€kBêÍÅPÉ	
+				if = { 
+					limit = {
+						owner = { 
+							NOT = { tag = JAP } 
+								OR = {
+									has_ruler_modifier = ra_ch4
+									has_ruler_modifier = ra_ch6
+									has_ruler_modifier = ra_ch7
+									has_ruler_modifier = ra_ch8
+									has_ruler_modifier = rb_ch2
+									has_ruler_modifier = rb_ch4
+														
+								}
+							}
+						}
+			
+					remove_province_modifier = pov_huanwen
+					owner = {
+						country_event = {
+							id =huanwen_prov_move_events.2
+						}
+					}
+				}
+					#GPÇYÂã˝V∂RÑvTãsyr(çN&rT1S0Rªê—èÑvwR						
+				if = { 
+					limit = { 
+						owner = {
+							NOT = { tag = JAP } 
+							NOT = { 
+								OR = {
+								    has_ruler_modifier = ra_ch4
+								    has_ruler_modifier = ra_ch6
+									has_ruler_modifier = ra_ch7
+									has_ruler_modifier = ra_ch8
+									has_ruler_modifier = rb_ch2
+									has_ruler_modifier = rb_ch4
+            
+								}
+							}
+						}		
+					}
+					remove_province_modifier = pov_huanwen
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_huanwen"
+							duration = -1
+						}					
+					}
+				}
+				#N=fgÖVÑv˝V∂R Ùv•c˚y0R+RÑvwR
+				if = { 
+					limit = { 
+						owner = { tag = JAP } 
+					}
+					remove_province_modifier = pov_huanwen
+					random_neighbor_province = {
+						add_province_modifier = {
+							name = "pov_huanwen"
+							duration = -1
+						}					
+					}								
+				}
+			}	
+			if = {
+			#ÇYúgt^˝NÖç«èdkPñˇ(WŒëfkSªyN
+				limit = { 
+					is_year = 380					
+				}	
+				remove_province_modifier = pov_huanwen		
+			}
+		}
+	}
+}
+	
+############################################################################
+#	Sh)n 0õQ^0€kBêÍÅPÉ
+#
+############################################################################
+
+
+country_event = {
+	id =huanwen_prov_move_events.2
+	title = "huanwen_prov_move_events.NAME2"
+	desc = "huanwen_prov_move_events.DESC2"
+	picture = NEW_ADVISOR_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = "huanwen_prov_move_events.OPTA2"
+		if = { 
+			limit = { ai = no }
+				define_advisor = {
+					type =huanwen
+					name = "Sh)n 0õQ^0"
+					discount = yes	
+					skill = 3
+				}
+		}
+		if = { 
+			limit = { ai = yes }
+				define_general = {
+				name = "Sh)n 0õQ^0"
+				fire = 6
+				shock = 6
+				manuever = 2
+				siege = 5
+			}
+		}
+	}
+}
+
+	
+	

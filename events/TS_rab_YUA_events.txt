@@ -1,0 +1,504 @@
+
+namespace = TS_rab_YUA_events
+
+country_event = {
+	id = TS_rab_YUA_events.1
+	title = "xy_xymengyuan.NAME21"
+	desc = "xy_xymengyuan.DESC21"
+	picture = red_jing_eventPicture
+	
+	is_triggered_only =  yes
+	
+	option = {
+		name = "TS_rab_YUA_events.OPTA1"
+		set_country_flag = yuanmogeju11	
+        every_owned_province = {
+			limit = {
+				superregion = china_superregion
+				is_core = ROOT
+			}
+			remove_core = ROOT	
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = HH2
+				}
+			}
+			every_owned_province = {
+				limit = {
+					area = chuanbei_east_area
+				}
+				cede_province = HH2
+				add_core = HH2
+			}
+			HH2 = {
+				define_ruler = {
+					
+					name = "êVˇRâè"
+					fixed = yes
+					adm = 4
+					dip = 2
+					mil = 4
+					min_age = 30
+					max_age = 40
+					leader = { name = "êVˇRâè"	 fire = 5	 shock = 4	manuever = 5	siege = 5 }
+							
+				}
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_chinese_unification
+				}			
+			}			
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = HE2
+				}
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						province_id = 2475
+						province_id = 2014
+						province_id = 667
+						province_id = 668
+						province_id = 2476
+						province_id = 3235
+						province_id = 4804
+						province_id = 665
+					}	
+				}
+				cede_province = HE2
+				add_core = HE2
+			}	
+			HE2 = {
+				define_ruler = {
+					
+					name = "UOw"
+					fixed = yes
+					adm = 4
+					dip = 2
+					mil = 4
+					min_age = 25
+					max_age = 35
+					leader = { name = "UOw" fire = 5	 shock = 4	manuever = 5	siege = 3 }
+							
+				}
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_chinese_unification
+				}			
+			}	
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = CD2
+				}
+			}		
+			every_owned_province = {
+				limit = {
+					OR = {
+						province_id = 1829     
+						province_id = 2477
+						province_id = 2478
+						province_id = 3234
+						province_id = 4807
+						province_id = 4808
+						province_id = 4809
+						province_id = 669
+						province_id = 3237
+						province_id = 3238
+					}
+				}
+				cede_province = CD2
+				add_core = CD2
+			}
+			CD2 = {
+				define_ruler = {
+					
+					name = "HñÀSöR"
+					fixed = yes
+					adm = 4
+					dip = 5
+					mil = 4
+					min_age = 25
+					max_age = 35
+					leader = { name = "HñÀSöR"	 fire = 6	 shock = 6	manuever = 5	siege = 4 }
+							
+				}
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_chinese_unification
+				}			
+			}		
+		}	
+		if = {
+			limit = {
+				NOT = {
+					exists = FN1
+				}
+			}			
+			every_owned_province = {
+				limit = {
+					OR = {			
+						province_id = 1824        
+						province_id = 2480
+						province_id = 3263
+					}
+				}
+				cede_province = FN1
+				add_core = FN1
+			}
+			FN1 = {
+				define_ruler = {
+					
+					name = "πe˝VÕs"
+					fixed = yes
+					adm = 4
+					dip = 3
+					mil = 5
+					min_age = 25
+					max_age = 35
+					leader = { name = "πe˝VÕs"	 fire = 5	 shock = 7	manuever = 5	siege = 3 }
+							
+				}
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_chinese_unification
+				}			
+			}			
+		}	
+		if = {
+			limit = {
+				NOT = {
+					exists = CH4
+				}
+			}		
+			every_owned_province = {
+				limit = {		
+					OR = {			
+						province_id = 1833 
+						province_id = 671
+						province_id = 2485
+						province_id = 3259
+						province_id = 4825
+						province_id = 683
+						province_id = 4810					
+						province_id = 670
+						province_id = 4813
+					}
+					
+				}				
+				cede_province = CH4
+				add_core = CH4			
+			}
+			CH4 = {
+				define_ruler = {
+					
+					name = "HñÀSå"
+					fixed = yes
+					adm = 4
+					dip = 3
+					mil = 3
+					min_age = 25
+					max_age = 35
+					leader = { name = "HñÀSå"	fire = 5	 shock = 6	manuever = 3	siege = 5 }
+							
+				}
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_chinese_unification
+				}			
+			}		
+		}	
+		if = {
+			limit = {
+				NOT = {
+					exists = ZU2
+				}
+			}			
+			every_owned_province = {
+				limit = {		
+					OR = {			
+						province_id = 3233
+						province_id = 4837
+						province_id = 4814 
+						province_id = 2483
+						province_id = 2482
+						province_id = 2484 
+						province_id = 1821
+						province_id = 3219
+						province_id = 3258
+						province_id = 4811
+						province_id = 682
+						province_id = 4827
+						province_id = 686
+						province_id = 4327
+						province_id = 3220
+						province_id = 3221
+						province_id = 4851
+						province_id = 1838
+						province_id = 4849
+					}	
+				}
+				cede_province = ZU2
+				add_core = ZU2
+			}
+			ZU2 = {
+				define_ruler = {
+					
+					name = "1gCQãt"
+					fixed = yes
+					adm = 5
+					dip = 5
+					mil = 6
+					min_age = 25
+					max_age = 35
+					leader = { name = "1gCQãt"	 fire = 8	 shock = 9	manuever = 6	siege = 6 }
+							
+				}
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_chinese_unification
+				}
+			}		
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = HS2
+				}
+			}			
+			every_owned_province = {
+				limit = {		  
+					OR = {			
+						province_id = 2495
+						province_id = 4848
+						province_id = 4850
+						province_id = 4847
+						province_id = 2494
+						province_id = 4860
+						province_id = 4846
+					}
+				}
+				cede_province = HS2
+				add_core = HS2
+			}
+			HS2 = {
+				define_ruler = {
+					
+					name = "Èóóg?Q"
+					fixed = yes
+					adm = 2
+					dip = 2
+					mil = 2
+					min_age = 25
+					max_age = 35
+						
+				}
+				declare_war_with_cb = {
+					who = ROOT
+					casus_belli = cb_chinese_unification
+				}
+			}			
+		}	
+		if = {
+			limit = {
+				NOT = {
+					exists = ZH2
+				}
+			}			
+			every_owned_province = {
+				limit = {		  
+					OR = {			
+						area = shandong_area
+						area = shandong_mid_area
+						area = shouth_hebei_area
+						area = hebei_mid_area
+						area = south_hebei_area
+						area = hebei_west_area
+					}	
+				}
+				cede_province = ZH2
+				add_core = ZH2
+			}	
+			
+			ZH2 = {
+				define_ruler = {
+					
+					name = "ãs›O›O"
+					fixed = yes
+					adm = 5
+					dip = 5
+					mil = 6
+					min_age = 25
+					max_age = 35
+					leader = { name = "ãs›O›O"	fire = 8	 shock = 9	manuever = 6	siege = 6 }					
+				}
+				#declare_war_with_cb = {
+				#	who = ROOT
+				#	casus_belli = cb_chinese_unification
+				#}
+				add_opinion = {
+					who = YUA
+					modifier = ZH2_att_YUA
+				}	
+				add_historical_friend = YUA			
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = BL1
+				}
+			}		
+			every_owned_province = {
+				limit = {		  
+					OR = {				
+						area = shanxi_north_area
+						area = shanxi_west_area
+						area = ordos_east_area
+						province_id = 4889
+					}
+				}
+				cede_province = BL1
+				add_core = BL1
+			}
+		}
+		east_china_sea_region = {
+			discover_country = HE2
+			discover_country = CD2			
+			discover_country = FN1			
+			discover_country = ZU2			
+			discover_country = HS2			
+			discover_country = HH2			
+			discover_country = ZH2			
+			discover_country = BL1		
+			discover_country = CH4
+		}
+		south_china_sea_region = {
+			discover_country = HE2
+			discover_country = CD2			
+			discover_country = FN1			
+			discover_country = ZU2			
+			discover_country = HS2			
+			discover_country = HH2			
+			discover_country = ZH2			
+			discover_country = BL1
+			discover_country = CH4
+		}
+		indo_china_region = {
+			discover_country = HE2
+			discover_country = CD2			
+			discover_country = FN1			
+			discover_country = ZU2			
+			discover_country = HS2			
+			discover_country = HH2			
+			discover_country = ZH2			
+			discover_country = BL1
+			discover_country = CH4
+		}
+		south_china_region = {
+			discover_country = HE2
+			discover_country = CD2			
+			discover_country = FN1			
+			discover_country = ZU2			
+			discover_country = HS2			
+			discover_country = HH2			
+			discover_country = ZH2			
+			discover_country = BL1
+			discover_country = CH4
+		}
+		north_china_region = {
+			discover_country = HE2
+			discover_country = CD2			
+			discover_country = FN1			
+			discover_country = ZU2			
+			discover_country = HS2			
+			discover_country = HH2			
+			discover_country = ZH2			
+			discover_country = BL1
+			discover_country = CH4
+		}			
+		tibet_region = {
+			discover_country = HE2
+			discover_country = CD2			
+			discover_country = FN1			
+			discover_country = ZU2			
+			discover_country = HS2			
+			discover_country = HH2			
+			discover_country = ZH2			
+			discover_country = BL1
+			discover_country = CH4
+		}			
+		xinan_region = {
+			discover_country = HE2
+			discover_country = CD2			
+			discover_country = FN1			
+			discover_country = ZU2			
+			discover_country = HS2			
+			discover_country = HH2			
+			discover_country = ZH2			
+			discover_country = BL1
+			discover_country = CH4
+		}	
+		mongolia_region = {
+			discover_country = HE2
+			discover_country = CD2			
+			discover_country = FN1			
+			discover_country = ZU2			
+			discover_country = HS2			
+			discover_country = HH2			
+			discover_country = ZH2			
+			discover_country = BL1
+			discover_country = CH4	
+		}			
+		manchuria_region = {
+			discover_country = HE2
+			discover_country = CD2			
+			discover_country = FN1			
+			discover_country = ZU2			
+			discover_country = HS2			
+			discover_country = HH2			
+			discover_country = ZH2			
+			discover_country = BL1
+			discover_country = CH4		
+		}
+		korea_region = {
+			discover_country = HE2
+			discover_country = CD2			
+			discover_country = FN1			
+			discover_country = ZU2			
+			discover_country = HS2			
+			discover_country = HH2			
+			discover_country = ZH2			
+			discover_country = BL1
+			discover_country = CH4		
+		}
+		japan_region = {
+			discover_country = HE2
+			discover_country = CD2			
+			discover_country = FN1			
+			discover_country = ZU2			
+			discover_country = HS2			
+			discover_country = HH2			
+			discover_country = ZH2			
+			discover_country = BL1
+			discover_country = CH4		
+		}
+		central_asia_region = {
+			discover_country = HE2
+			discover_country = CD2			
+			discover_country = FN1			
+			discover_country = ZU2			
+			discover_country = HS2			
+			discover_country = HH2			
+			discover_country = ZH2			
+			discover_country = BL1
+			discover_country = CH4			
+		}
+	}
+}	

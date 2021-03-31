@@ -1,0 +1,65 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = lumon_advisor_come
+
+#fkSÐgÍyagöNNúQ°s
+#id = 1 : lumon : T™„0fkS0
+
+country_event = {
+	id = lumon_advisor_come.1
+	title = "lumon_advisor_come.1.t"
+	desc = "lumon_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 195	
+		NOT = { is_year = 220 }
+		OR = {
+			AND = {
+				exists = SNC
+				tag = SNC
+			}
+			AND = {
+				exists = WUU
+				tag = WUU
+			}
+			AND = {
+				NOT = { exists = WUU }
+				NOT = { exists = SNC }
+				owns = 2481
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = lumon_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = lumon
+				name = "T™„0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "T™„0fkS0"
+				fire = 6
+				shock = 6
+				manuever = 3
+				siege = 3
+			}
+		}
+	}
+}
+

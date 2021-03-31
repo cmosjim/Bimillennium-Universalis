@@ -1,0 +1,639 @@
+# 2021-01-30 modify by xy [9.2.2]
+# 2021-03-26 modify by mem suggestion , after wii can release germanic subject 
+namespace = xy_germany
+
+country_event = {
+    id = xy_germany.1
+    title = "xy_germany.NAME1"
+    desc = "xy_germany.DESC1"
+    picture = BATTLE_eventPicture
+    major = yes
+    trigger = {
+        is_year = 1490
+        NOT = {
+            tag = GER
+        }
+		NOT = {
+			OR = {
+				has_country_flag = win_wii_with_JA1
+				has_country_flag = win_wii_with_NZ1
+			}
+		}
+        total_development = 500
+        culture_group = germanic
+        NOT = {
+            hre_size = 2
+        }
+        any_country = {
+            capital_scope = {
+                controlled_by = ROOT
+            }
+            culture_group = germanic
+            is_subject = no
+            war_with = ROOT
+            NOT = {
+                war_score_against = {
+                    who = ROOT
+                    value = -60
+                }
+            }
+            NOT = {
+                any_country = {
+                    NOT = {
+                        tag = ROOT
+                    }
+                    total_development = 500
+                    culture_group = germanic
+                    is_subject = no
+                    war_with = PREV
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 4
+    }
+    option = {
+        name = "xy_germany.OPTA1"
+        ai_chance = {
+            factor = 100
+        }
+        random_country = {
+            limit = {
+                capital_scope = {
+                    controlled_by = ROOT
+                }
+                culture_group = germanic
+                is_subject = no
+                war_with = ROOT
+                NOT = {
+                    war_score_against = {
+                        who = ROOT
+                        value = -60
+                    }
+                }
+            }
+            white_peace = ROOT
+            ROOT = {
+                create_subject = {
+                    subject_type = germanic_state
+                    subject = PREV
+                }
+            }
+        }
+        add_prestige = 10
+    }
+    option = {
+        name = "xy_germany.OPTB1"
+    }
+}
+
+country_event = {
+    id = xy_germany.2
+    title = "xy_germany.NAME2"
+    desc = "xy_germany.DESC2"
+    picture = GERMAN_EMPIRE_eventPicture
+    major = yes
+    trigger = {
+        tag = GER
+        is_year = 1490
+        any_country = {
+            ai = yes
+            NOT = {
+                liberty_desire = 50
+            }
+            is_subject_of_type = germanic_state
+            is_subject_of = ROOT
+        }
+    }
+    mean_time_to_happen = {
+        months = 60
+    }
+
+    option = {
+        name = "xy_germany.OPTA2"
+        random_country = {
+            limit = {
+                ai = yes
+                is_subject_of_type = germanic_state
+                is_subject_of = ROOT
+                NOT = {
+                    liberty_desire = 50
+                }
+            }
+            every_owned_province = {
+                cede_province = ROOT add_core = ROOT
+            }
+        }
+        add_prestige = 10
+    }
+    option = {
+        name = "xy_germany.OPTB2"
+        add_prestige = -10
+    }
+}
+
+country_event = {
+    id = xy_germany.3
+    title = "xy_germany.NAME3"
+    desc = "xy_germany.DESC3"
+    picture = LOUIS_VII_SECOND_CRUSADE_eventPicture
+    major = yes
+    trigger = {
+        is_year = 1490
+        NOT = {
+            tag = GER
+        }
+		NOT = {
+			OR = {
+				has_country_flag = win_wii_with_JA1
+				has_country_flag = win_wii_with_NZ1
+			}
+		}		
+        total_development = 500
+        culture_group = germanic
+        NOT = {
+            hre_size = 2
+        }
+        any_country = {
+            capital_scope = {
+                controlled_by = ROOT
+            }
+            culture_group = germanic
+            is_subject = no
+            war_with = ROOT
+            NOT = {
+                war_score_against = {
+                    who = ROOT
+                    value = -20
+                }
+            }
+            any_subject_country = {
+                is_subject_of_type = germanic_state
+            }
+            NOT = {
+                any_country = {
+                    NOT = {
+                        tag = ROOT
+                    }
+                    total_development = 500
+                    culture_group = germanic
+                    is_subject = no
+                    war_with = PREV
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 2
+    }
+
+    option = {
+        name = "xy_germany.OPTA3"
+        random_country = {
+            limit = {
+                capital_scope = {
+                    controlled_by = ROOT
+                }
+                culture_group = germanic
+                is_subject = no
+                war_with = ROOT
+                NOT = {
+                    war_score_against = {
+                        who = ROOT
+                        value = -20
+                    }
+                }
+            }
+            random_subject_country = {
+                limit = {
+                    is_subject_of_type = germanic_state
+                }
+                set_country_flag = hepingba
+                ROOT = {
+                    create_subject = {
+                        subject_type = germanic_state
+                        subject = PREV
+                    }
+                }
+                every_country = {
+                    limit = {
+                        war_with = PREV
+                    }
+                    white_peace = PREV
+                }
+            }
+        }
+        add_prestige = 10
+    }
+    option = {
+        name = "xy_germany.OPTB3"
+        add_prestige = -10
+    }
+}
+
+country_event = {
+    id = xy_germany.4
+    title = "xy_germany.NAME4"
+    desc = "xy_germany.DESC4"
+    picture = LOUIS_VII_SECOND_CRUSADE_eventPicture
+    major = yes
+    trigger = {
+        NOT = {
+            is_year = 1356
+        }
+        any_country = {
+            is_part_of_hre = yes
+            is_emperor = no
+        }
+        hre_size = 2
+        is_emperor = yes
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_germany.OPTA4"
+        set_country_flag = holyromanempire_older
+        hre_inheritable = yes
+        every_country = {
+            limit = {
+                is_part_of_hre = yes
+                is_emperor = no
+            }
+            set_in_empire = no
+            emperor = {
+                create_subject = {
+                    subject_type = older_germanic_state
+                    subject = PREV
+                }
+            }
+        }
+
+    }
+
+}
+
+country_event = {
+    id = xy_germany.5
+    title = "xy_germany.NAME5"
+    desc = "xy_germany.DESC5"
+    picture = ARGUE_WITH_EMPEROR_eventPicture
+    major = yes
+    trigger = {
+        is_year = 1356
+        has_country_flag = holyromanempire_older
+        is_emperor = yes
+        any_country = {
+            is_subject_of_type = older_germanic_state
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    immediate = {
+        clr_country_flag = holyromanempire_older
+        hre_inheritable = no
+    }
+    option = {
+        name = "xy_germany.OPTA5"
+        ai_chance = {
+            factor = 100
+        }
+		every_owned_province = {
+            set_in_empire = yes
+			}
+        while = {
+            limit = {
+                num_of_cities = 2
+            }
+             give_estate_land_share_small = {
+            estate = estate_nobles
+        }
+        every_owned_province = {
+            set_province_flag = hrehuangditudi
+        }
+        create_independent_estate = {
+            estate = estate_nobles
+            play_as = no
+        }
+        every_owned_province = {
+            clr_province_flag = hrehuangditudi
+        }
+        every_country = {
+            limit = {
+                any_owned_province = {
+                    has_province_flag = hrehuangditudi
+                }
+            }
+            every_owned_province = {
+                clr_province_flag = hrehuangditudi
+            }
+            random_owned_province = {
+                set_province_flag = hrehuangditudi111
+				remove_core = ROOT
+            }
+            root = {
+                create_subject = {
+                    subject_type = older_germanic_state
+                    subject = PREV
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    NOT = {
+                        has_province_flag = hrehuangditudi111
+                    }
+                }
+                remove_core = PREV
+                cede_province = ROOT
+                add_core = ROOT
+                clr_province_flag = hrehuangditudi
+            }
+            every_owned_province = {
+                clr_province_flag = hrehuangditudi111
+            }
+        }
+		}
+        every_country = {
+            limit = {
+                is_subject_of_type = older_germanic_state
+            }
+            emperor = {
+                free_vassal = PREV
+            }
+			every_owned_province = {
+            set_in_empire = yes
+			}
+        }
+    }
+    option = {
+        name = "xy_germany.OPTB5"
+        trigger = {
+            total_development = 1500
+        }
+        every_country = {
+            limit = {
+                is_subject_of_type = older_germanic_state
+                NOT = {
+                    liberty_desire = 50
+                }
+            }
+            emperor = {
+                inherit = PREV
+            }
+        }
+        change_tag = HLR
+        every_country = {
+            limit = {
+                is_subject_of_type = older_germanic_state
+            }
+            overlord = {
+                free_vassal = PREV
+            }
+        }
+        jiesanshenluo_effect = yes
+    }
+    option = {
+        name = "xy_germany.OPTC5"
+        every_country = {
+            limit = {
+                is_subject_of_type = older_germanic_state
+            }
+            overlord = {
+                free_vassal = PREV
+            }
+        }
+        jiesanshenluo_effect = yes
+    }
+
+}
+#rab_ correct
+country_event = {
+    id = xy_germany.6
+    title = "xy_germany.NAME6"
+    desc = "xy_germany.DESC6"
+    picture = ARGUE_WITH_EMPEROR_eventPicture
+    major = yes
+    trigger = {
+        has_estate = estate_nobles
+        NOT = {
+            is_year = 1356
+        }
+        has_country_flag = holyromanempire_older
+        is_emperor = yes
+        num_of_cities = 5
+        OR = {
+            NOT = {
+                has_country_flag = germanic_hrefenfengflag
+            }
+            had_country_flag = {
+                flag = germanic_hrefenfengflag days = 365
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    immediate = {
+        set_country_flag = germanic_hrefenfengflag
+    }
+    option = {
+        name = "xy_germany.OPTA6"
+        ai_chance = {
+            factor = 100
+        }
+        give_estate_land_share_small = {
+            estate = estate_nobles
+        }
+        every_owned_province = {
+            set_province_flag = hrehuangditudi
+        }
+        create_independent_estate = {
+            estate = estate_nobles
+            play_as = no
+        }
+        every_owned_province = {
+            clr_province_flag = hrehuangditudi
+        }
+        every_country = {
+            limit = {
+                any_owned_province = {
+                    has_province_flag = hrehuangditudi
+                }
+            }
+            every_owned_province = {
+                clr_province_flag = hrehuangditudi
+            }
+            random_owned_province = {
+                set_province_flag = hrehuangditudi111
+				remove_core = ROOT
+            }
+            root = {
+                create_subject = {
+                    subject_type = older_germanic_state
+                    subject = PREV
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    NOT = {
+                        has_province_flag = hrehuangditudi111
+                    }
+                }
+                remove_core = PREV
+                cede_province = ROOT
+                add_core = ROOT
+                clr_province_flag = hrehuangditudi
+            }
+            every_owned_province = {
+                clr_province_flag = hrehuangditudi111
+            }
+		}	
+        every_province = {
+            limit = {
+                NOT = {
+                    owned_by = emperor
+                }
+                is_part_of_hre = yes
+            }
+            set_in_empire = no
+        }
+        every_province = {
+            limit = {
+                NOT = {
+                    owned_by = emperor
+                }
+                is_part_of_hre = yes
+            }
+            set_in_empire = no
+        }
+	}
+	option = {
+		name = "xy_germany.OPTB6"
+        ai_chance = {
+            factor = 0
+        }
+        every_country = {
+            limit = {
+               is_subject_of_type = older_germanic_state
+            }
+            add_opinion = {
+               who = emperor
+               modifier = refuse_separation_hre
+			}
+        }
+    }
+}
+
+country_event = {
+    id = xy_germany.7
+    title = "xy_germany.NAME7"
+    desc = "xy_germany.DESC7"
+    picture = MODERN_ARMY_OCCUPY_eventPicture
+    major = yes
+    trigger = {
+        NOT = {
+            is_year = 1356
+        }
+        NOT = {
+            tag = HLR
+        }
+        has_country_flag = holyromanempire_older
+        is_subject = yes
+        ai = yes
+        NOT = {
+            hre_size = 1
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    immediate = {
+        set_country_flag = germanic_hrefenfengflag
+    }
+    option = {
+        name = "xy_germany.OPTA7"
+        every_country = {
+            limit = {
+                culture_group = ROOT
+                ai = yes
+                capital_scope = {
+                    continent = europe
+                }
+            }
+            ROOT = {
+                inherit = PREV
+            }
+        }
+        change_tag = HLR
+        clr_country_flag = holyromanempire_older
+        every_country = {
+            limit = {
+                is_subject_of_type = older_germanic_state
+            }
+            overlord = {
+                free_vassal = PREV
+            }
+        }
+        overlord = {
+            free_vassal = ROOT
+        }
+    }
+}
+
+country_event = {
+    id = xy_germany.8
+    title = "xy_germany.NAME8"
+    desc = "xy_germany.DESC8"
+    picture = MODERN_ARMY_OCCUPY_eventPicture
+    trigger = {
+        is_subject_of_type = older_germanic_state
+        NOT = {
+            has_country_flag = shenluochengyuan
+        }
+        NOT = {
+            has_country_flag = duligermanic_state
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    immediate = {
+        set_country_flag = shenluochengyuan
+    }
+    option = {
+        name = "xy_germany.OPTA8"
+
+    }
+}
+country_event = {
+    id = xy_germany.9
+    title = "xy_germany.NAME9"
+    desc = "xy_germany.DESC9"
+    picture = MODERN_ARMY_OCCUPY_eventPicture
+    major = yes
+
+    trigger = {
+        has_country_flag = shenluochengyuan
+        war_with = emperor
+        emperor = {
+            has_country_flag = holyromanempire_older
+        }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    immediate = {
+        white_peace = emperor
+        emperor = {
+            create_subject = {
+                subject_type = older_germanic_state
+                subject = PREV
+            }
+        }
+    }
+    option = {
+        name = "xy_germany.OPTA9"
+    }
+}

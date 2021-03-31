@@ -1,0 +1,353 @@
+namespace = rab_check
+	
+#country_event = {
+#	id = rab_check.1
+#	title = "rab_check.NAME4801"
+#	desc = "rab_check.DESC4801"
+#	picture = FEMALES_eventPicture
+#	
+#	is_triggered_only = yes 
+#	
+#	option = {
+#		name ="rab_check.OPTA1"
+#		country_event = {
+#		
+#			id = rab_check.2
+#		
+#		}
+#		
+#	}
+#
+#}		
+#	
+#
+#country_event = {
+#	id = rab_check.2
+#	title = "rab_check.NAME4801"
+#	desc = "rab_check.DESC4801"
+#	picture = FEMALE_GENERAL_eventPicture
+#	
+#	is_triggered_only = yes 
+#	
+#	option = {
+#		name ="rab_check.OPTA2"
+#		country_event = {
+#		
+#			id = rab_check.3
+#		
+#		}
+#		
+#	}
+#
+#}
+#
+#country_event = {
+#	id = rab_check.3
+#	title = "rab_check.NAME4801"
+#	desc = "rab_check.DESC4801"
+#	picture = FEMALE_RULER_eventPicture
+#	
+#	is_triggered_only = yes 
+#	
+#	option = {
+#		name ="rab_check.OPTA3"
+#		country_event = {
+#		
+#			id = rab_check.4
+#		
+#		}
+#		
+#	}
+#
+#}
+#
+#country_event = {
+#	id = rab_check.4
+#	title = "rab_check.NAME4801"
+#	desc = "rab_check.DESC4801"
+#	picture = FEMALE_SCHOLAR_eventPicture
+#	
+#	is_triggered_only = yes 
+#	
+#	option = {
+#		name ="rab_check.OPTA4"
+#
+#		
+#	}
+#}
+#
+
+#country_event = {
+#	id = rab_check.3
+#	title = "rab_check.NAME3"
+#	desc = "rab_check.DESC3"
+#	picture = HAN_SHEING_DE_eventPicture
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = "rab_check.OPTA3"
+#		capital_scope = {
+#			ROOT = {
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV
+#				infantry = PREV				
+#				
+#			}
+#		}
+#	}		
+#}
+#
+#
+#country_event = {
+#	id = rab_check.4
+#	title = "rab_check.NAME4"
+#	desc = "rab_check.DESC4"
+#	picture = HAN_SHEING_DE_eventPicture
+#	
+#	is_triggered_only = yes
+#	option = {
+#		name = "rab_check.OPTA4"
+#		set_country_flag = flg_add_error
+#		set_global_flag = flg_add_global_error
+#		add_prestige = 10
+#	}
+#}
+	

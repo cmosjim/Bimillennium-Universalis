@@ -1,0 +1,2368 @@
+#2019-09-07 modify picture link 
+
+namespace = xy_xymengyuan
+
+country_event = {
+    id = xy_xymengyuan.1
+    title = "xy_xymengyuan.NAME1"
+    desc = "xy_xymengyuan.DESC1"
+    picture = khuruldai_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        is_year = 1206
+        NOT = {
+            is_year = 1207
+        }
+        ai = no
+        NOT = {
+            exists = MGE
+        }
+        OR = {
+            OR = {
+                has_reform = mongol_steppe_horde_reform
+                culture_group = mongolic
+            }
+            any_province = {
+                region = mongolia_region
+                is_empty = no
+                NOT = {
+                    owned_by = ROOT
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "xy_xymengyuan.OPTA1"
+        if = {
+            limit = {
+                any_country = {
+                    ai = no
+                    NOT = {
+                        tag = PAP
+                    }
+                    NOT = {
+                        tag = HLR
+                    }
+                    NOT = {
+                        tag = EUR
+                    }
+                    NOT = {
+                        tag = YUA
+                    }
+                    NOT = {
+                        tag = ROM
+                    }
+                    OR = {
+                        has_reform = mongol_steppe_horde_reform
+                        culture_group = mongolic
+                    }
+                    capital_scope = {
+                        region = mongolia_region
+                    }
+                }
+            }
+            random_country = {
+                limit = {
+                    ai = no
+                    NOT = {
+                        tag = PAP
+                    }
+                    NOT = {
+                        tag = HLR
+                    }
+                    NOT = {
+                        tag = EUR
+                    }
+                    NOT = {
+                        tag = YUA
+                    }
+                    NOT = {
+                        tag = ROM
+                    }
+                    OR = {
+                        has_reform = mongol_steppe_horde_reform
+                        culture_group = mongolic
+                    }
+                    capital_scope = {
+                        region = mongolia_region
+                    }
+                }
+                PREV = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                has_ruler_flag = chengjisihan
+                            }
+                        }
+                        define_ruler = {
+                            name = "¡î(gw"
+                            age = 42
+                            adm = 6
+                            dip = 6
+                            mil = 6
+                            fixed = yes
+                        }
+                    }
+                }
+                every_province = {
+                    limit = {
+                        OR = {
+                            AND = {
+                                region = mongolia_region
+                                is_empty = no
+                                owner = {
+                                    ai = yes
+                                }
+                            }
+                            owner = {
+                                OR = {
+                                    has_reform = mongol_steppe_horde_reform
+                                    culture_group = mongolic
+                                }
+                                ai = yes
+                            }
+                        }
+                    }
+                    cede_province = PREV
+                    add_core = PREV
+                }
+            }
+        }
+        else = {
+            if = {
+                limit = {
+                    exists = QY1
+                }
+                QY1 = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                has_ruler_flag = chengjisihan
+                            }
+                        }
+                        define_ruler = {
+                            name = "¡î(gw"
+                            age = 42
+                            adm = 6
+                            dip = 6
+                            mil = 6
+                            fixed = yes
+                        }
+                    }
+                    every_province = {
+                        limit = {
+                            OR = {
+                                AND = {
+                                    region = mongolia_region
+                                    is_empty = no
+                                    owner = {
+                                        ai = yes
+                                    }
+                                }
+                                owner = {
+                                    OR = {
+                                        has_reform = mongol_steppe_horde_reform
+                                        culture_group = mongolic
+                                    }
+                                    ai = yes
+                                }
+                            }
+                        }
+                        cede_province = PREV
+                        add_core = PREV
+                    }
+                }
+            }
+            else = {
+                if = {
+                    limit = {
+                        any_country = {
+                            OR = {
+                                has_reform = mongol_steppe_horde_reform
+                                culture_group = mongolic
+                            }
+                            capital_scope = {
+                                region = mongolia_region
+                            }
+                        }
+                    }
+                    random_country = {
+                        limit = {
+                            OR = {
+                                has_reform = mongol_steppe_horde_reform
+                                culture_group = mongolic
+                            }
+                            capital_scope = {
+                                region = mongolia_region
+                            }
+                        }
+                        if = {
+                            limit = {
+                                NOT = {
+                                    has_ruler_flag = chengjisihan
+                                }
+                            }
+                            define_ruler = {
+                                name = "¡î(gw"
+                                age = 42
+                                adm = 6
+                                dip = 6
+                                mil = 6
+                                fixed = yes
+                            }
+                        }
+                        every_province = {
+                            limit = {
+                                OR = {
+                                    AND = {
+                                        region = mongolia_region
+                                        is_empty = no
+                                        owner = {
+                                            ai = yes
+                                        }
+                                    }
+                                    owner = {
+                                        OR = {
+                                            has_reform = mongol_steppe_horde_reform
+                                            culture_group = mongolic
+                                        }
+                                        ai = yes
+                                    }
+                                }
+                            }
+                            cede_province = PREV
+                            add_core = PREV
+                        }
+                    }
+                }
+                else = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                any_country = {
+                                    OR = {
+                                        has_reform = mongol_steppe_horde_reform
+                                        culture_group = mongolic
+                                    }
+                                    capital_scope = {
+                                        region = mongolia_region
+                                    }
+                                }
+                            }
+                        }
+                        QY1 = {
+                            every_province = {
+                                limit = {
+                                    OR = {
+                                        AND = {
+                                            region = mongolia_region
+                                            is_empty = no
+                                            owner = {
+                                                ai = yes
+                                            }
+                                        }
+                                        owner = {
+                                            OR = {
+                                                has_reform = mongol_steppe_horde_reform
+                                                culture_group = mongolic
+                                            }
+                                            ai = yes
+                                        }
+                                    }
+                                }
+                                cede_province = PREV
+                                add_core = PREV
+                            }
+                            define_ruler = {
+                                name = "¡î(gw"
+                                age = 42
+                                adm = 6
+                                dip = 6
+                                mil = 6
+                                fixed = yes
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+    option = {
+        name = "xy_xymengyuan.OPTB1"
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.2
+    title = "xy_xymengyuan.NAME2"
+    desc = "xy_xymengyuan.DESC2"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+
+    trigger = {
+        OR = {
+            MGE = {
+                has_country_flag = mengguxizheng
+            }
+            MGE = {
+                has_ruler_flag = mengguxizhengrl
+            }
+        }
+        tag = MGE
+        mil = 5
+        is_year = 1207
+        stability = 0
+        NOT = {
+            war_exhaustion = 1
+        }
+        is_at_war = no
+        any_neighbor_country = {
+            NOT = {
+                alliance_with = ROOT
+            }
+            NOT = {
+                num_of_cities = ROOT
+            }
+            is_subject = no
+            NOT = {
+                has_reform = celestial_empire
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+        modifier = {
+            factor = 0
+            ai = yes
+        }
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA2"
+        ai_chance = {
+            factor = 100
+        }
+        if = {
+            limit = {
+                any_neighbor_country = {
+                    tag = KHW
+                    NOT = {
+                        alliance_with = ROOT
+                    }
+                    NOT = {
+                        has_reform = celestial_empire
+                    }
+                    NOT = {
+                        num_of_cities = ROOT
+                    }
+                    NOT = {
+                        is_subject_of = ROOT
+                    }
+                    NOT = {
+                        overlord = {
+                            is_subject_of = ROOT
+                        }
+                    }
+                }
+            }
+            ROOT = {
+                declare_war_with_cb = {
+                    who = KHW
+                    casus_belli = cb_tribal_feud
+                }
+            }
+
+        }
+        else_if = {
+            limit = {
+                any_neighbor_country = {
+                    tag = PER
+                    NOT = {
+                        alliance_with = ROOT
+                    }
+                    NOT = {
+                        has_reform = celestial_empire
+                    }
+                    NOT = {
+                        num_of_cities = ROOT
+                    }
+                    NOT = {
+                        is_subject_of = ROOT
+                    }
+                    NOT = {
+                        overlord = {
+                            is_subject_of = ROOT
+                        }
+                    }
+                }
+            }
+            ROOT = {
+                declare_war_with_cb = {
+                    who = PER
+                    casus_belli = cb_tribal_feud
+                }
+            }
+
+        }
+        else_if = {
+            limit = {
+                any_neighbor_country = {
+                    capital_scope = {
+                        NOT = {
+                            superregion = india_superregion
+                        }
+                    }
+                    NOT = {
+                        alliance_with = ROOT
+                    }
+                    NOT = {
+                        has_reform = celestial_empire
+                    }
+                    NOT = {
+                        num_of_cities = ROOT
+                    }
+                    NOT = {
+                        is_subject_of = ROOT
+                    }
+                    NOT = {
+                        overlord = {
+                            is_subject_of = ROOT
+                        }
+                    }
+                }
+            }
+            random_neighbor_country = {
+                limit = {
+                    capital_scope = {
+                        NOT = {
+                            superregion = india_superregion
+                        }
+                    }
+                    NOT = {
+                        alliance_with = ROOT
+                    }
+                    NOT = {
+                        has_reform = celestial_empire
+                    }
+                    NOT = {
+                        num_of_cities = ROOT
+                    }
+                    NOT = {
+                        is_subject_of = ROOT
+                    }
+                    NOT = {
+                        overlord = {
+                            is_subject_of = ROOT
+                        }
+                    }
+                }
+                ROOT = {
+                    declare_war_with_cb = {
+                        who = PREV
+                        casus_belli = cb_tribal_feud
+                    }
+                }
+            }
+
+        }
+        else = {
+            random_neighbor_country = {
+                limit = {
+                    NOT = {
+                        alliance_with = ROOT
+                    }
+                    NOT = {
+                        has_reform = celestial_empire
+                    }
+                    NOT = {
+                        num_of_cities = ROOT
+                    }
+                    NOT = {
+                        is_subject_of = ROOT
+                    }
+                    NOT = {
+                        overlord = {
+                            is_subject_of = ROOT
+                        }
+                    }
+                }
+                ROOT = {
+                    declare_war_with_cb = {
+                        who = PREV
+                        casus_belli = cb_tribal_feud
+                    }
+                }
+            }
+        }
+    }
+    option = {
+        name = "xy_xymengyuan.OPTB2"
+        add_stability = -1
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.3
+    title = "xy_xymengyuan.NAME3"
+    desc = "xy_xymengyuan.DESC3"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+
+    trigger = {
+        OR = {
+            MGE = {
+                has_country_flag = mengguxizheng
+            }
+            MGE = {
+                has_ruler_flag = mengguxizhengrl
+            }
+        }
+        war_with = MGE
+        is_emperor = no
+        NOT = {
+            has_reform = celestial_empire
+        }
+        OR = {
+            AND = {
+                NOT = {
+                    total_development = 50
+                }
+                MGE = {
+                    ai = yes
+                }
+                ai = yes
+                is_neighbor_of = MGE
+            }
+            NOT = {
+                war_score_against = {
+                    who = MGE
+                    value = -60
+                }
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA3"
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        total_development = 50
+                    }
+                    MGE = {
+                        ai = no
+                    }
+                }
+                MGE = {
+                    add_manpower = 3
+                    add_war_exhaustion = -2
+                    add_treasury = 200
+                }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        total_development = 50
+                    }
+                    MGE = {
+                        ai = yes
+                    }
+                }
+                MGE = {
+                    add_manpower = 15
+                    add_war_exhaustion = -2
+                    add_treasury = 600
+                }
+            }
+            if = {
+                limit = {
+                    total_development = 50 NOT = {
+                        total_development = 100
+                    }
+                    MGE = {
+                        ai = no
+                    }
+                }
+                MGE = {
+                    add_manpower = 6
+                    add_war_exhaustion = -4
+                    add_treasury = 400
+                }
+            }
+            if = {
+                limit = {
+                    total_development = 50 NOT = {
+                        total_development = 100
+                    }
+                    MGE = {
+                        ai = yes
+                    }
+                }
+                MGE = {
+                    add_manpower = 30
+                    add_war_exhaustion = -4
+                    add_treasury = 1200
+                }
+            }
+            if = {
+                limit = {
+                    total_development = 100
+                    NOT = {
+                        total_development = 200
+                    }
+                    MGE = {
+                        ai = no
+                    }
+                }
+                MGE = {
+                    add_manpower = 12
+                    add_war_exhaustion = -8
+                    add_treasury = 800
+                }
+            }
+            if = {
+                limit = {
+                    total_development = 100
+                    NOT = {
+                        total_development = 200
+                    }
+                    MGE = {
+                        ai = yes
+                    }
+                }
+                MGE = {
+                    add_manpower = 60
+                    add_war_exhaustion = -8
+                    add_treasury = 4000
+                }
+            }
+            if = {
+                limit = {
+                    total_development = 200
+                    MGE = {
+                        ai = no
+                    }
+                }
+                MGE = {
+                    add_manpower = 24
+                    add_war_exhaustion = -16
+                    add_treasury = 1600
+                }
+            }
+            if = {
+                limit = {
+                    total_development = 200
+                    MGE = {
+                        ai = yes
+                    }
+                }
+                MGE = {
+                    add_manpower = 120
+                    add_war_exhaustion = -16
+                    add_treasury = 8000
+                }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        total_development = 400
+                    }
+                }
+                every_owned_province = {
+                    cede_province = MGE
+                    add_province_modifier = {
+                        name = "mglveduo"
+                        duration = 18250
+                    }
+                    add_base_manpower = -1
+                    add_base_tax = -1
+                    add_base_production = -1
+                    add_local_autonomy = 80
+                    add_core = MGE
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    controlled_by = MGE
+                }
+                cede_province = MGE
+                add_province_modifier = {
+                    name = "mglveduo"
+                    duration = 18250
+                }
+                add_base_manpower = -1
+                add_base_tax = -1
+                add_base_production = -1
+                add_local_autonomy = 80
+                add_core = MGE
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.4
+    title = "xy_xymengyuan.NAME4"
+    desc = "xy_xymengyuan.DESC4"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = MGE
+        mil = 5
+        is_year = 1207
+        has_country_modifier = nomadic_conquest
+        exists = XIA
+        XIA = {
+            is_neighbor_of = ROOT
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA4"
+        ai_chance = {
+            factor = 100
+        }
+        GNN = {
+            country_event = {
+                id = xy_xymengyuan.5
+            }
+        }
+    }
+    option = {
+        name = "xy_xymengyuan.OPTB4"
+        add_stability = -1
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.5
+    title = "xy_xymengyuan.NAME5"
+    desc = "xy_xymengyuan.DESC5"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+
+    is_triggered_only = yes
+    option = {
+        name = "xy_xymengyuan.OPTA5"
+        ai_chance = {
+            factor = 100
+            modifier = {
+                factor = 0
+                XIA = {
+                    ai = no
+                }
+            }
+        }
+        XIA = {
+            add_country_modifier = {
+                name = "beigulimeng"
+                duration = 365
+            }
+        }
+        MGE = {
+            country_event = {
+                id = xy_xymengyuan.55 days = 2
+            }
+        }
+    }
+    option = {
+        name = "xy_xymengyuan.OPTB5"
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                XIA = {
+                    ai = yes
+                }
+            }
+        }
+        create_subject = {
+
+            subject_type = tributary_state
+
+            subject = XIA
+        }
+        MGE = {
+            declare_war_with_cb = {
+                who = XIA
+                casus_belli = cb_tribal_feud
+            }
+        }
+        MGE = {
+            add_country_modifier = {
+                name = "mgezaodujie"
+                duration = 730
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.55
+    title = "xy_xymengyuan.NAME55"
+    desc = "xy_xymengyuan.DESC55"
+    picture = CONQUEST_eventPicture
+
+    hidden = yes
+
+    is_triggered_only = yes
+    option = {
+        name = "xy_xymengyuan.OPTA5"
+        declare_war_with_cb = {
+            who = XIA
+            casus_belli = cb_tribal_feud
+        }
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.6
+    title = "xy_xymengyuan.NAME6"
+    desc = "xy_xymengyuan.DESC6"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        NOT = {
+            has_global_flag = mengjinyizhanfs
+        }
+        tag = MGE
+        mil = 5
+        is_year = 1207
+        has_country_modifier = nomadic_conquest
+        OR = {
+            XIA = {
+                is_subject_of = ROOT
+            }
+            NOT = {
+                exists = XIA
+            }
+        }
+        GNN = {
+            is_neighbor_of = ROOT
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA6"
+        ai_chance = {
+            factor = 100
+        }
+        declare_war_with_cb = {
+            who = GNN
+            casus_belli = cb_tribal_feud
+        }
+        GNN = {
+            add_country_modifier = {
+                name = "beigulimeng"
+                duration = 365
+            }
+            add_country_modifier = {
+                name = "gnnshuailuo"
+                duration = 1825
+            }
+        }
+        set_global_flag = mengjinyizhanfs
+        set_country_flag = mengjinyizhanjx #ÅybkjPb
+    }
+    option = {
+        name = "xy_xymengyuan.OPTB6"
+        set_global_flag = mengjinyizhanfs
+        set_country_flag = mengjinyizhanjx #ÅybkjPb
+        add_stability = -1
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.7
+    title = "xy_xymengyuan.NAME7"
+    desc = "xy_xymengyuan.DESC7"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = GNN
+        war_with = MGE
+        MGE = {
+            has_country_flag = mengjinyizhanjx
+        }
+
+        NOT = {
+            war_score_against = {
+                who = MGE
+                value = -15
+            }
+        }
+        OR = {
+            AND = {
+                MGE = {
+                    ai = yes
+                }
+                GNN = {
+                    ai = yes
+                }
+            }
+            1816 = {
+                NOT = {
+                    controlled_by = ROOT
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA7"
+        GNN = {
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        region = manchuria_region
+                        region = korea_region
+                        region = mongolia_region
+                    }
+                }
+                cede_province = MGE add_core = MGE
+            }
+        }
+        MGE = {
+            clr_country_flag = mengjinyizhanjx
+        }
+    }
+    option = {
+        ai_chance = {
+            factor = 100
+        }
+        name = "xy_xymengyuan.OPTB7"
+        GNN = {
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        region = manchuria_region
+                        region = korea_region
+                        region = mongolia_region
+                    }
+                }
+                cede_province = MGE add_core = MGE
+            }
+            every_owned_province = {
+                limit = {
+                    area = hebei_area
+                }
+                cede_province = MGE add_core = MGE
+            }
+            set_capital = 688
+        }
+        MGE = {
+            clr_country_flag = mengjinyizhanjx
+        }
+        white_peace = MGE
+        MGE = {
+            country_event = {
+                id = xy_xymengyuan.9
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.8
+    title = "xy_xymengyuan.NAME8"
+    desc = "xy_xymengyuan.DESC8"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = MGE
+        war_with = MGE
+        MGE = {
+            has_country_flag = mengjinyizhanjx
+        }
+
+        NOT = {
+            war_score_against = {
+                who = GNN
+                value = -50
+            }
+        }
+
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA8"
+        clr_country_flag = mengjinyizhanjx
+        set_country_flag = youmuzhognzhi
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.9
+    title = "xy_xymengyuan.NAME9"
+    desc = "xy_xymengyuan.DESC9"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+
+    is_triggered_only = yes
+    option = {
+        name = "xy_xymengyuan.OPTA9"
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.10
+    title = "xy_xymengyuan.NAME10"
+    desc = "xy_xymengyuan.DESC10"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = MGE
+        mil = 5
+        is_year = 1207
+        has_country_modifier = nomadic_conquest
+        war_with = XIA
+        XIA = {
+            NOT = {
+                war_score_against = {
+                    who = MGE
+                    value = -20
+                }
+            }
+            capital_scope = {
+                NOT = {
+                    controlled_by = XIA
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA10"
+        ai_chance = {
+            factor = 100
+        }
+        vassalize = XIA
+        white_peace = XIA
+    }
+    option = {
+        name = "xy_xymengyuan.OPTB10"
+        add_prestige = 20
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.11
+    title = "xy_xymengyuan.NAME11"
+    desc = "xy_xymengyuan.DESC11"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = MGE
+        has_country_flag = mengguxizheng
+        has_country_flag = mengguxizheng1
+        OR = {
+            AND = {
+                NOT = {
+                    exists = KHW
+                }
+                NOT = {
+                    exists = PER
+                }
+            }
+            is_year = 1240
+        }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA11"
+        clr_country_flag = mengguxizheng
+        every_country = {
+            limit = {
+                war_with = ROOT
+                NOT = {
+                    war_score_against = {
+                        who = MGE
+                        value = 0
+                    }
+                }
+            }
+            white_peace = ROOT
+        }
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.12
+    title = "xy_xymengyuan.NAME12"
+    desc = "xy_xymengyuan.DESC12"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = MGE
+        NOT = {
+            has_global_flag = mengjinerzhanfs
+        }
+        NOT = {
+            has_country_flag = mengguxizheng
+        }
+        has_country_flag = mengguxizheng1
+        exists = GNN
+        has_country_modifier = nomadic_conquest
+        is_at_war = no
+    }
+    mean_time_to_happen = {
+        months = 6
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA12"
+        ai_chance = {
+            factor = 100
+        }
+        GNN = {
+            add_country_modifier = {
+                name = "beigulimeng"
+                duration = 365
+            }
+            add_country_modifier = {
+                name = "gnnshuailuo"
+                duration = 1825
+            }
+        }
+        clr_country_flag = mengguxizheng
+        set_global_flag = mengjinerzhanfs
+        set_country_flag = mengjinerzhanjx #ÅybkjPb
+        declare_war_with_cb = {
+            who = GNN
+            casus_belli = cb_tribal_feud
+        }
+    }
+    option = {
+        name = "xy_xymengyuan.OPTB12"
+        set_global_flag = mengjinerzhanfs
+        set_country_flag = mengjinerzhanjx #ÅybkjPb
+        add_prestige = -20
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.13
+    title = "xy_xymengyuan.NAME13"
+    desc = "xy_xymengyuan.DESC13"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = MGE
+        GNN = {
+            NOT = {
+                war_score_against = {
+                    who = MGE
+                    value = -30
+                }
+            }
+        }
+        has_country_flag = mengjinerzhanjx
+        688 = {
+            NOT = {
+                controlled_by = GNN
+            }
+        }
+        OR = {
+            SNG = {
+                NOT = {
+                    war_with = GNN
+                }
+            }
+            AND = {
+                SNG = {
+                    war_with = GNN
+                }
+                GNN = {
+                    NOT = {
+                        any_owned_province = {
+                            controlled_by = SNG
+                        }
+                    }
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA13"
+        clr_country_flag = mengjinerzhanjx
+        GNN = {
+            white_peace = MGE 
+			every_owned_province = {
+                cede_province = MGE 
+				add_core = MGE
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.14
+    title = "xy_xymengyuan.NAME14"
+    desc = "xy_xymengyuan.DESC14"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = MGE
+        GNN = {
+            OR = {
+                NOT = {
+                    war_score_against = {
+                        who = MGE
+                        value = -30
+                    }
+                }
+                NOT = {
+                    war_score_against = {
+                        who = SNG
+                        value = -30
+                    }
+                }
+            }
+        }
+        has_country_flag = mengjinerzhanjx
+        688 = {
+            NOT = {
+                controlled_by = GNN
+            }
+        }
+        SNG = {
+            war_with = GNN
+        }
+        GNN = {
+            any_owned_province = {
+                controlled_by = SNG
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA14"
+        if = {
+            limit = {
+                SNG = {
+                    NOT = {
+                        check_variable = {
+                            which = num_of_wenwuzhi
+                            value = 50
+                        }
+                    }
+                    war_score_against = {
+                        who = GNN
+                        value = 30
+                    }
+
+                }
+            }
+            SNG = {
+                country_event = {
+                    id = xy_xymengyuan.15
+                }
+            }
+        }
+        else = {
+            SNG = {
+                country_event = {
+                    id = xy_xymengyuan.16
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.15
+    title = "xy_xymengyuan.NAME15"
+    desc = "xy_xymengyuan.DESC15"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    is_triggered_only = yes
+    option = {
+        name = "xy_xymengyuan.OPTA15"
+        clr_country_flag = mengjinerzhanjx
+        GNN = {
+            every_owned_province = {
+                limit = {
+                    controlled_by = MGE
+                }
+                cede_province = MGE add_core = MGE
+            }
+        }
+        GNN = {
+            white_peace = MGE
+            white_peace = SNG
+        }
+        GNN = {
+            every_owned_province = {
+                cede_province = SNG add_core = SNG remove_core = GNN
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.16
+    title = "xy_xymengyuan.NAME16"
+    desc = "xy_xymengyuan.DESC16"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    is_triggered_only = yes
+    option = {
+        name = "xy_xymengyuan.OPTA16"
+        clr_country_flag = mengjinerzhanjx
+        GNN = {
+            white_peace = MGE
+            white_peace = SNG
+        }
+        GNN = {
+            every_owned_province = {
+                cede_province = MGE add_core = MGE remove_core = GNN
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.17
+    title = "xy_xymengyuan.NAME17"
+    desc = "xy_xymengyuan.DESC17"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = MGE
+        has_country_flag = mengguxizhengn
+        NOT = {
+            has_country_modifier = nomadic_conquest
+        }
+        NOT = {
+            has_ruler_flag = mengguxizhengrl
+        }
+        NOT = {
+            has_global_flag = yuanchengli
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA17"
+        ai_chance = {
+            factor = 100
+        }
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 1785
+                        province_id = 1967
+                        province_id = 1968
+                        province_id = 1969
+                        province_id = 1973
+                        province_id = 2122
+                        province_id = 2177
+                        province_id = 2179
+                        province_id = 2431
+                        province_id = 2432
+                        province_id = 2433
+                        province_id = 2434
+                        province_id = 2435
+                        province_id = 2444
+                        province_id = 2445
+                        province_id = 2881
+                        province_id = 2888
+                        province_id = 3324
+                        province_id = 3325
+                        province_id = 441
+                        province_id = 442
+                        province_id = 444
+                        province_id = 4462
+                        province_id = 4463
+                        province_id = 452
+                        province_id = 453
+                        province_id = 454
+                        province_id = 4568
+                        province_id = 457
+                        province_id = 458
+                        province_id = 459
+                        province_id = 460
+                        province_id = 461
+                        province_id = 4898
+                        province_id = 4899
+                        province_id = 508
+                        province_id = 714
+                        province_id = 715
+                        province_id = 739
+
+                    }
+                }
+                cede_province = CHG
+                add_core = CHG
+                remove_core = MGE
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        province_id = 2898
+                        province_id = 2897
+                        province_id = 2887
+                        province_id = 2894
+                        province_id = 2895
+                        province_id = 2896
+                        province_id = 2446
+                        province_id = 1066
+                        province_id = 480
+                        province_id = 478
+                        province_id = 459
+
+                    }
+                }
+                cede_province = WK1
+                add_core = WK1
+                remove_core = MGE
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = dagestan_area
+                        area = circassia_area
+                        area = syr_darya_area
+                        area = kyzylkum_area
+                        area = khiva_area
+                        area = transcaspia_area
+                        area = nogai_area
+                        area = lower_yik_area
+                        area = kazakhstan_area
+                        area = balchasj_area
+                        area = yrtesh_area
+                        area = ishim_area
+                        superregion = eastern_europe_superregion
+                        superregion = europe_superregion
+                    }
+                }
+                cede_province = GLH
+                add_core = GLH
+                remove_core = MGE
+            }
+            every_subject_country = {
+                limit = {
+                    capital_scope = {
+                        OR = {
+                            area = dagestan_area
+                            area = circassia_area
+                            area = syr_darya_area
+                            area = kyzylkum_area
+                            area = khiva_area
+                            area = transcaspia_area
+                            area = nogai_area
+                            area = lower_yik_area
+                            area = kazakhstan_area
+                            area = balchasj_area
+                            area = yrtesh_area
+                            area = ishim_area
+                            superregion = eastern_europe_superregion
+                            superregion = europe_superregion
+                        }
+                    }
+                }
+                GLH = {
+                    create_subject = {
+                        subject_type = tributary_state
+                        subject = PREV
+                    }
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        superregion = persia_superregion
+                        superregion = persia_superregion
+                        superregion = india_superregion
+                        superregion = near_east_superregion
+                        superregion = africa_superregion
+                    }
+                }
+                cede_province = ILK
+                add_core = ILK
+                remove_core = MGE
+                create_subject = {
+                    subject_type = tributary_state
+                    subject = ILK
+                }
+            }
+            every_subject_country = {
+                limit = {
+                    capital_scope = {
+                        OR = {
+                            superregion = persia_superregion
+                            superregion = persia_superregion
+                            superregion = india_superregion
+                            superregion = near_east_superregion
+                            superregion = africa_superregion
+                        }
+                    }
+                }
+                ILK = {
+                    create_subject = {
+                        subject_type = tributary_state
+                        subject = PREV
+                    }
+                }
+            }
+            change_tag = YUA
+            change_government = gov_celestial_empire
+            add_government_reform = celestial_empire
+            set_government_rank = 3
+            if = {
+                limit = {
+                    NOT = {
+                        technology_group = chinese
+                    }
+                }
+                change_technology_group = chinese
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        unit_type = chinese
+                    }
+                }
+                change_unit_type = chinese
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        has_reform = celestial_empire
+                    }
+                }
+                change_government = gov_celestial_empire
+                add_government_reform = celestial_empire
+                set_government_rank = 3
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        religion = confucianism
+                    }
+                }
+                change_religion = confucianism
+            }
+            set_global_flag = yuanchengli
+            set_emperor_of_china = ROOT
+            set_capital = 1816
+        }
+        custom_tooltip = tp_mgfl
+    }
+    option = {
+        name = "xy_xymengyuan.OPTB17"
+        change_tag = KHA
+        every_owned_province = {
+            limit = {
+                superregion = china_superregion
+            }
+            remove_core = MGE
+            remove_core = KHA
+        }
+        change_tag = KHA
+        if = {
+            limit = {
+                is_emperor_of_china = yes
+            }
+            dismantle_empire_of_china = yes
+        }
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.18
+    title = "xy_xymengyuan.NAME18"
+    desc = "xy_xymengyuan.DESC18"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = YUA
+        is_neighbor_of = SNG
+        has_global_flag = yuanchengli
+        NOT = {
+            has_global_flag = mengsngzyfs
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA18"
+        ai_chance = {
+            factor = 100
+        }
+        set_global_flag = mengsngzyfs
+        set_country_flag = mengsngerzhanjx #ÅybkjPb
+        declare_war_with_cb = {
+            who = SNG
+            casus_belli = cb_chinese_unification
+        }
+
+    }
+    option = {
+        name = "xy_xymengyuan.OPTB18"
+        set_global_flag = mengsngzyfs
+        set_country_flag = mengsngerzhanjx #ÅybkjPb
+        add_prestige = -20
+
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.19
+    title = "xy_xymengyuan.NAME19"
+    desc = "xy_xymengyuan.DESC19"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = YUA
+        has_country_flag = mengsngerzhanjx
+        war_with = SNG
+        684 = {
+            OR = {
+                controlled_by = ROOT
+                NOT = {
+                    owned_by = SNG
+                }
+            }
+        }
+        1821 = {
+            OR = {
+                controlled_by = ROOT
+                NOT = {
+                    owned_by = SNG
+                }
+            }
+        }
+        667 = {
+            OR = {
+                controlled_by = ROOT
+                NOT = {
+                    owned_by = SNG
+                }
+            }
+        }
+        679 = {
+            OR = {
+                controlled_by = ROOT
+                NOT = {
+                    owned_by = SNG
+                }
+            }
+        }
+        OR = {
+            NOT = {
+                any_owned_province = {
+                    superregion = china_superregion
+                    NOT = {
+                        OR = {
+                            area = taiwan_north_area
+                            area = taiwan_south_area
+                        }
+                    }
+                    controlled_by = SNG
+                }
+            }
+            war_score_against = {
+                who = SNG
+                value = 30
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    SNG = {
+                        any_owned_province = {
+                            OR = {
+                                area = taiwan_north_area
+                                area = taiwan_south_area
+                            }
+                            NOT = {
+                                controlled_by = YUA
+                            }
+                        }
+                    }
+                    YUA = {
+                        NOT = {
+                            any_owned_province = {
+                                OR = {
+                                    area = taiwan_north_area
+                                    area = taiwan_south_area
+                                }
+                            }
+                        }
+                    }
+                }
+                SNG = {
+                    every_owned_province = {
+                        limit = {
+                            OR = {
+                                area = taiwan_north_area
+                                area = taiwan_south_area
+                            }
+                        }
+                        set_province_flag = weibeitunsong
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    SNG = {
+                        any_owned_province = {
+                            region = moluccas_region
+                            NOT = {
+                                controlled_by = YUA
+                            }
+                        }
+                    }
+                    YUA = {
+                        NOT = {
+                            any_owned_province = {
+                                region = moluccas_region
+                            }
+                        }
+                    }
+                }
+                SNG = {
+                    every_owned_province = {
+                        limit = {
+                            region = moluccas_region
+                        }
+                        set_province_flag = weibeitunsong
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    SNG = {
+                        any_owned_province = {
+                            region = indonesia_region
+                            NOT = {
+                                controlled_by = YUA
+                            }
+                        }
+                    }
+                    YUA = {
+                        NOT = {
+                            any_owned_province = {
+                                region = indonesia_region
+                            }
+                        }
+                    }
+                }
+                SNG = {
+                    every_owned_province = {
+                        limit = {
+                            region = indonesia_region
+                        }
+                        set_province_flag = weibeitunsong
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    SNG = {
+                        any_owned_province = {
+                            region = japan_region
+                            NOT = {
+                                controlled_by = YUA
+                            }
+                        }
+                    }
+                    YUA = {
+                        NOT = {
+                            any_owned_province = {
+                                region = japan_region
+                            }
+                        }
+                    }
+                }
+                SNG = {
+                    every_owned_province = {
+                        limit = {
+                            region = japan_region
+                        }
+                        set_province_flag = weibeitunsong
+                    }
+                }
+            }
+        }
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA19"
+        clr_country_flag = mengsngerzhanjx
+        SNG = {
+            every_owned_province = {
+                limit = {
+                    NOT = {
+                        has_province_flag = weibeitunsong
+                    }
+                    continent = asia
+                }
+                cede_province = ROOT
+                add_core = ROOT
+            }
+        }
+        white_peace = SNG
+        SNG = {
+            clr_country_flag = jipinjiruo
+        }
+        set_emperor_of_china = ROOT
+        add_prestige = 100
+        set_global_flag = mengsongzhanyims
+        SNG = {
+            add_country_modifier = {
+                name = "yashanyimin"
+                duration = 3650
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.20
+    title = "xy_xymengyuan.NAME20"
+    desc = "xy_xymengyuan.DESC20"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = SNG
+        YUA = {
+            has_country_flag = mengsngerzhanjx
+        }
+        688 = {
+            OR = {
+                controlled_by = ROOT NOT = {
+                    owned_by = YUA
+                }
+            }
+        }
+        1816 = {
+            OR = {
+                controlled_by = ROOT NOT = {
+                    owned_by = YUA
+                }
+            }
+        }
+        war_score_against = {
+            who = YUA
+            value = 30
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA20"
+        YUA = {
+            clr_country_flag = mengsngerzhanjx
+        }
+        YUA = {
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        controlled_by = ROOT
+                        superregion = china_superregion
+                    }
+                }
+                cede_province = ROOT add_core = ROOT
+            }
+        }
+        white_peace = YUA
+        set_global_flag = mengsongzhanyiss
+        set_emperor_of_china = ROOT
+    }
+
+}
+
+#country_event = {
+#     id = xy_xymengyuan.21
+#     title = "xy_xymengyuan.NAME21"
+#     desc = "xy_xymengyuan.DESC21"
+#     picture = BAD_ARMY_eventPicture
+#     is_triggered_only = yes
+#     major = yes
+#     option = {
+#         name = "xy_xymengyuan.OPTA21"
+#         set_country_flag = yuanmogeju11
+#         every_owned_province = {
+#             limit = {
+#                 superregion = china_superregion
+#                 is_core = ROOT
+#                
+#            }
+#             remove_core = ROOT
+#             add_core = MNG #ÇYóûX†RCQ+grRnc ˜ãÓO9edkãNˆN
+#            
+#        }
+#        
+#    }
+#    
+#}
+
+country_event = {
+    id = xy_xymengyuan.22
+    title = "xy_xymengyuan.NAME22"
+    desc = "xy_xymengyuan.DESC22"
+    picture = BAD_ARMY_eventPicture
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = "xy_xymengyuan.OPTA22"
+        add_stability = 6
+        add_stability_or_adm_power = yes
+        random_country = {
+            limit = {
+                owns = 1816
+            }
+			if = { limit = { is_subject = no }
+            country_event = {
+                id = xy_xymengyuan.25
+            }
+			}
+			else = {
+			overlord = { 
+			country_event = {
+                id = xy_xymengyuan.25
+            } 
+			}
+			}
+        }
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.23
+    title = "xy_xymengyuan.NAME23"
+    desc = "xy_xymengyuan.DESC23"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = GNN
+        MGE = {
+            NOT = {
+                war_score_against = {
+                    who = GNN
+                    value = -30
+                }
+            }
+        }
+        OR = {
+            NOT = {
+                war_with = SNG
+            }
+            AND = {
+                war_with = SNG
+                SNG = {
+                    NOT = {
+                        war_score_against = {
+                            who = GNN
+                            value = -30
+                        }
+                    }
+                }
+            }
+        }
+        has_country_flag = mengjinerzhanjx
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA23"
+        clr_country_flag = mengjinerzhanjx
+        MGE = {
+            every_owned_province = {
+                cede_province = ROOT add_core = ROOT
+            }
+        }
+        if = {
+            limit = {
+                SNG = {
+                    war_with = ROOT
+                }
+            }
+            SNG = {
+                every_owned_province = {
+                    cede_province = ROOT add_core = ROOT
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.24
+    title = "xy_xymengyuan.NAME24"
+    desc = "xy_xymengyuan.DESC24"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+
+    trigger = {
+        tag = YUA
+        any_owned_province = {
+            superregion = china_superregion
+            NOT = {
+                controlled_by = ROOT
+            }
+            controller = {
+                culture_group = PREV
+            }
+        }
+        OR = {
+            has_any_disaster = yes
+            has_country_modifier = bankruptcy
+            NOT = {
+                stability = -1
+            }
+        }
+
+    }
+    mean_time_to_happen = {
+        months = 2
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA24"
+        random_owned_province = {
+            limit = {
+                superregion = china_superregion
+                NOT = {
+                    controlled_by = ROOT
+                }
+                controller = {
+                    culture_group = PREV
+                }
+            }
+            cede_province = controller
+        }
+    }
+
+}
+
+country_event = {
+    id = xy_xymengyuan.25
+    title = "xy_xymengyuan.NAME25"
+    desc = "xy_xymengyuan.DESC25"
+    picture = CONQUEST_eventPicture
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = "xy_xymengyuan.OPTA25"
+        set_emperor_of_china = ROOT
+    }
+}
+
+country_event = {
+    id = xy_xymengyuan.26
+    title = "xy_xymengyuan.NAME26"
+    desc = "xy_xymengyuan.DESC26"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+
+    trigger = {
+        tag = YUA
+        is_year = 1207
+        has_country_flag = yuanmogeju11
+        NOT = {
+            any_owned_province = {
+                superregion = china_superregion
+            }
+        }
+        any_country = {
+            war_with = ROOT
+            war_score_against = {
+                who = ROOT
+                value = 20
+            }
+        }
+
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA26"
+        change_tag = TAT
+        change_government = tribal
+        add_government_reform = steppe_horde
+        change_unit_type = eastern_nomad_group
+        change_technology_group = eastern_nomad_group
+    }
+
+}
+
+country_event = {
+    id = xy_xymengyuan.27
+    title = "xy_xymengyuan.NAME27"
+    desc = "xy_xymengyuan.DESC27"
+    picture = CONQUEST_eventPicture
+
+    major = yes
+    fire_only_once = yes
+    trigger = {
+        is_emperor_of_china = yes
+        NOT = {
+            is_year = 1644
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_xymengyuan.OPTA27"
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        exists = CZH
+                    }
+                }
+                every_province = {
+                    limit = {
+                        is_core = CZH
+                    }
+                    remove_core = CZH
+                }
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        exists = CXI
+                    }
+                    NOT = {
+                        exists = MNG
+                    }
+                }
+                every_province = {
+                    limit = {
+                        is_core = CXI
+                    }
+                    remove_core = CXI
+                }
+            }
+            if = {
+                limit = {
+                    exists = MNG
+                }
+                every_province = {
+                    limit = {
+                        region = north_china_region
+                    }
+                    add_core = CSH
+                }
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        area = shandong_area
+                        area = shandong_mid_area
+                        area = west_shandong_area
+                        area = shandong_south_area #NEW
+                    }
+                }
+                add_core = QIC
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        area = liaoning_area
+                        area = liaoning_east_area
+                        area = hebei_area #’q
+                        area = hebei_mid_area
+                        area = hebei_west_area #NEW
+                        area = south_hebei_area
+                    }
+                }
+                add_core = DY5
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        area = henan_area
+                        area = henan_west_area
+                        area = north_henan_area
+                        area = henan_east_area #NEW
+                        area = central_henan_area
+                    }
+                }
+                add_core = DL3
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        area = shanxi_area
+                        area = shanxi_north_area
+                        area = shanxi_east_area #NEW
+                        area = shanxi_west_area #NEW
+                    }
+                }
+                add_core = JN1
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        area = shaanxi_area
+                        area = shaanxi_north_area
+                        area = central_shaanxi_area #NEW
+                    }
+                }
+                add_core = CSH
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        area = gansu_area
+                        area = west_gansu_area
+                        area = gansu_eastnorth_area
+                        area = westnorth_gansu_area
+                        area = central_gansu_area #NEW
+                    }
+                }
+                add_core = LNG
+            }
+            every_province = {
+                limit = {
+                    region = xinan_region
+                }
+                add_core = SHU
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        area = huguang_area
+                        area = huguang_mid_area
+                        area = huguang_west_area
+                        area = jiangxi_area
+                        area = hunan_area
+                        area = hunan_south_area
+                        area = hunan_west_area #NEW
+                        area = jiangxi_south_area
+                    }
+                }
+                add_core = CUU
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        area = guangdong_area
+                        area = west_guangdong_area
+                        area = hainan_area
+                        area = guangzhou_area
+                        area = guangxi_area
+                        area = guangxi_west_area
+                        area = guangxi_center_area #NEW
+                    }
+                }
+                add_core = YUE
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        area = zhejiang_area
+                        area = zhejiang_north_area
+                        area = jiangsu_area
+                        area = south_jiangsu_area
+                        area = jiangsu_mid_area #äç
+                    }
+                }
+                add_core = WUU
+            }
+            every_province = {
+                limit = {
+                    OR = {
+                        area = fujian_north_area
+                        area = fujian_area
+                    }
+                }
+                add_core = MIN
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = menggong_advisor_come
+
+#fkS–gÕyagˆNN˙Q∞s
+#id = 1 : menggong : mRŸs0fkS0
+
+country_event = {
+	id = menggong_advisor_come.1
+	title = "menggong_advisor_come.1.t"
+	desc = "menggong_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#˙Q∞sˆeÙï
+	#:NÜNêMQﬂuªl¯v≤QÅzZPÜNcheck ruler®RjO
+	trigger = {
+		is_year = 1215	
+		NOT = { is_year = 1245 }
+		OR = { 
+			AND = { 
+				exists = SNG
+				tag = SNG
+				}
+			AND = {
+				NOT = { exists = SNG }
+				NOT = { primary_culture = mongol }
+				owns = 2490
+			}	
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = menggong_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = menggong
+				name = "mRŸs0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "mRŸs0fkS0"
+				fire = 8
+				shock = 9
+				manuever = 5
+				siege = 4
+			}
+		}
+	}
+}
+

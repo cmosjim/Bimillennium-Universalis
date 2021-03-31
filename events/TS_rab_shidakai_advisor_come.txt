@@ -1,0 +1,53 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = shidakai_advisor_come
+
+#fkSĞgÍyagöNNúQ°s
+#id = 1 : shidakai : ów¾V0fkS0
+
+country_event = {
+	id = shidakai_advisor_come.1
+	title = "shidakai_advisor_come.1.t"
+	desc = "shidakai_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	#:N†NMQßu»løv²QzZP†Ncheck ruler¨RjO
+	trigger = {
+		is_year = 1852	
+		NOT = { is_year = 1863 }
+		tag = TP1
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = "shidakai_advisor_come.OPTA1"
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = shidakai
+				name = "ów¾V0fkS0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "ów¾V0fkS0"
+				fire = 12
+				shock = 11
+				manuever = 4
+				siege = 4
+			}
+		}
+	}
+}
+

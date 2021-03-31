@@ -1,0 +1,185 @@
+namespace = sassanid_flavor
+
+country_event = {
+	id = sassanid_flavor.1
+	title = sassanid_flavor.1.t
+	desc = sassanid_flavor.1.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+		
+	option = {
+		name = sassanid_flavor.1.a
+		inherit = PRT
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+	}
+}
+
+country_event = {
+	id = sassanid_flavor.2
+	title = sassanid_flavor.2.t
+	desc = sassanid_flavor.2.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+		
+	option = {
+		name = sassanid_flavor.2.a
+		add_mercantilism = 10
+		add_country_modifier = {
+			name = silk_monopoly
+			duration = 9125
+		}
+	}
+
+	option = {
+		name = sassanid_flavor.2.b
+		add_country_modifier = {
+			name = silk_transportation
+			duration = 9125
+		}
+	}
+}
+
+country_event = {
+	id = sassanid_flavor.3
+	title = sassanid_flavor.3.t
+	desc = sassanid_flavor.3.d
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+		
+	option = {
+		name = sassanid_flavor.3.a
+		add_country_modifier = {
+			name = suppression_of_nestorianism
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = sassanid_flavor.3.b
+		add_country_modifier = {
+			name = nestorianism_booming
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = sassanid_flavor.4
+	title = sassanid_flavor.4.t
+	desc = sassanid_flavor.4.d
+	picture = ARMY_START_1_eventPicture
+
+	is_triggered_only = yes
+		
+	option = {
+		name = sassanid_flavor.4.a
+		capital_scope = {
+			ROOT = {
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				cavalry = PREV
+				cavalry = PREV
+				cavalry = PREV
+				cavalry = PREV
+				cavalry = PREV
+				artillery = PREV
+				artillery = PREV
+				artillery = PREV
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sassanid_flavor.5
+	title = sassanid_flavor.5.t
+	desc = sassanid_flavor.5.d
+	picture = CHURCH_ESTATE_UPSET_eventPicture
+
+	is_triggered_only = yes
+		
+	option = {
+		name = sassanid_flavor.5.a
+		add_stability = 1
+		random_owned_province = {
+			spawn_rebels = {
+				type = zoroastrian_rebels 
+         				size = 20
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = zoroastrian_rebels 
+         				size = 20
+			}
+		}
+	}
+
+	option = {
+		name = sassanid_flavor.5.b
+		add_country_modifier = {
+			name = persia_resist_idolatry
+			duration = 3650
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = zoroastrian_rebels 
+         				size = 20
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = zoroastrian_rebels 
+         				size = 20
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = zoroastrian_rebels 
+         				size = 20
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = zoroastrian_rebels 
+         				size = 20
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sassanid_flavor.6
+	title = sassanid_flavor.6.t
+	desc = sassanid_flavor.6.d
+	picture = BAD_ARMY_eventPicture
+
+	trigger = {
+		has_country_flag = avesta_flag 
+	}
+
+	fire_only_once = yes
+		
+	mean_time_to_happen = {
+		months = 60
+	}	
+
+	option = {
+		name = sassanid_flavor.6.a
+		add_prestige = 100
+		set_country_flag = shah_name_flag
+	}
+}

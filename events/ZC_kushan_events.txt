@@ -1,0 +1,18 @@
+namespace = kushan_flavor
+country_event = {
+	id = kushan_flavor.1
+	title = kushan_flavor.1.t
+	desc = kushan_flavor.1.d
+	picture = RIDING_FIGHTING_eventPicture
+
+	is_triggered_only = yes
+		
+	option = {
+		name = kushan_flavor.1.a
+		add_treasury = 400
+		add_country_modifier = {
+			name = kushan_trade_golden_century
+			duration = 7300
+		}
+	}
+}

@@ -1,0 +1,405 @@
+namespace = yamato_flavor
+
+country_event = {
+	id = yamato_flavor.1
+	title = yamato_flavor.1.t
+	desc =yamato_flavor.1.d
+	picture = TRIBUTARY_FLEET_eventPicture
+
+	trigger = {
+		culture_group = japanese_g
+		NOT = { religion_group = pagan }
+		is_year = 2
+		NOT = { is_year = 250 }
+		NOT = { has_country_modifier = yayoi_era }
+		NOT = { has_country_modifier = kofun_era }
+		NOT = { has_country_modifier = asuka_era }
+		NOT = { has_country_modifier = nara_era }
+		NOT = { has_country_modifier = heian_era }
+		NOT = { has_country_modifier = shogunate_era }
+		NOT = { has_country_modifier = great_japan_era }
+		all_country = { NOT = { has_reform = shogunate } }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}	
+
+	option = {
+		name =  yamato_flavor.1.a
+		add_country_modifier = {
+			name = yayoi_era
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = yamato_flavor.2
+	title = yamato_flavor.2.t
+	desc =yamato_flavor.2.d
+	picture = TRIBUTARY_FLEET_eventPicture
+
+	trigger = {
+		culture_group = japanese_g
+		NOT = { religion_group = pagan }
+		is_year = 250
+		NOT = { is_year = 592 }
+		NOT = { has_country_modifier = kofun_era }
+		NOT = { has_country_modifier = asuka_era }
+		NOT = { has_country_modifier = nara_era }
+		NOT = { has_country_modifier = heian_era }
+		NOT = { has_country_modifier = shogunate_era }
+		NOT = { has_country_modifier = great_japan_era }
+		all_country = { NOT = { has_reform = shogunate } }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}	
+
+	option = {
+		name =  yamato_flavor.2.a
+		add_country_modifier = {
+			name = kofun_era
+			duration = -1
+		}
+		remove_country_modifier = yayoi_era 
+	}
+}
+
+country_event = {
+	id = yamato_flavor.3
+	title = yamato_flavor.3.t
+	desc =yamato_flavor.3.d
+	picture = TRIBUTARY_FLEET_eventPicture
+
+	trigger = {
+		culture_group = japanese_g
+		NOT = { religion_group = pagan }
+		is_year = 592
+		NOT = { is_year = 710 }
+		NOT = { has_country_modifier = asuka_era }
+		NOT = { has_country_modifier = nara_era }
+		NOT = { has_country_modifier = heian_era }
+		NOT = { has_country_modifier = shogunate_era }
+		NOT = { has_country_modifier = great_japan_era }
+		all_country = { NOT = { has_reform = shogunate } }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}	
+
+	option = {
+		name =  yamato_flavor.3.a
+		add_country_modifier = {
+			name = asuka_era
+			duration = -1
+		}
+		remove_country_modifier = yayoi_era 
+		remove_country_modifier = kofun_era
+	}
+}
+
+country_event = {
+	id = yamato_flavor.4
+	title = yamato_flavor.4.t
+	desc =yamato_flavor.4.d
+	picture = TRIBUTARY_FLEET_eventPicture
+
+	trigger = {
+		culture_group = japanese_g
+		NOT = { religion_group = pagan }
+		is_year = 710
+		NOT = { is_year = 794 }
+		NOT = { has_country_modifier = nara_era }
+		NOT = { has_country_modifier = heian_era }
+		NOT = { has_country_modifier = shogunate_era }
+		NOT = { has_country_modifier = great_japan_era }
+		all_country = { NOT = { has_reform = shogunate } }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}	
+
+	option = {
+		name =  yamato_flavor.4.a
+		add_country_modifier = {
+			name = nara_era
+			duration = -1
+		}
+		remove_country_modifier = yayoi_era 
+		remove_country_modifier = kofun_era
+		remove_country_modifier = asuka_era
+	}
+}
+
+country_event = {
+	id = yamato_flavor.5
+	title = yamato_flavor.5.t
+	desc =yamato_flavor.5.d
+	picture = TRIBUTARY_FLEET_eventPicture
+
+	trigger = {
+		culture_group = japanese_g
+		NOT = { religion_group = pagan }
+		is_year = 794
+		NOT = { is_year = 1867 }
+		NOT = { has_country_modifier = heian_era }
+		NOT = { has_country_modifier = shogunate_era }
+		NOT = { has_country_modifier = great_japan_era }
+		all_country = { NOT = { has_reform = shogunate } }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}	
+
+	option = {
+		name =  yamato_flavor.5.a
+		add_country_modifier = {
+			name = heian_era
+			duration = -1
+		}
+		remove_country_modifier = yayoi_era 
+		remove_country_modifier = kofun_era
+		remove_country_modifier = asuka_era
+		remove_country_modifier = nara_era
+	}
+}
+
+country_event = {
+	id = yamato_flavor.6
+	title = yamato_flavor.6.t
+	desc =yamato_flavor.6.d
+	picture = TRIBUTARY_FLEET_eventPicture
+
+	trigger = {
+		culture_group = japanese_g
+		NOT = { religion_group = pagan }
+		OR = {
+			has_reform = shogunate
+			has_reform = daimyo
+			has_reform = indep_daimyo
+		}
+		NOT = { exists = JAP }
+		NOT = { has_country_modifier = shogunate_era }
+		NOT = { has_country_modifier = great_japan_era }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}	
+
+	option = {
+		name =  yamato_flavor.6.a
+		add_country_modifier = {
+			name = shogunate_era
+			duration = -1
+		}
+		remove_country_modifier = yayoi_era 
+		remove_country_modifier = kofun_era
+		remove_country_modifier = asuka_era
+		remove_country_modifier = nara_era
+		remove_country_modifier = heian_era
+	}
+}
+
+country_event = {
+	id = yamato_flavor.7
+	title = yamato_flavor.7.t
+	desc =yamato_flavor.7.d
+	picture = TRIBUTARY_FLEET_eventPicture
+
+	trigger = {
+		culture_group = japanese_g
+		NOT = { religion_group = pagan }
+		is_year = 1867
+		NOT = { has_country_modifier = great_japan_era }
+		all_country = { NOT = { has_reform = shogunate } }
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}	
+
+	option = {
+		name =  yamato_flavor.7.a
+		add_country_modifier = {
+			name = great_japan_era
+			duration = -1
+		}
+		remove_country_modifier = yayoi_era 
+		remove_country_modifier = kofun_era
+		remove_country_modifier = asuka_era
+		remove_country_modifier = nara_era
+		remove_country_modifier = heian_era
+		remove_country_modifier = shogunate_era
+	}
+}
+
+country_event = {
+	id = yamato_flavor.8
+	title = yamato_flavor.8.t
+	desc =yamato_flavor.8.d
+	picture = CherryBlossom_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+	
+	option = {
+		name =  yamato_flavor.8.a	
+		add_country_modifier = {
+			name = surname_system
+			duration = -1
+		}
+	}
+	
+	option = {
+		name =  yamato_flavor.8.b	
+		add_country_modifier = {
+			name = tribe_system
+			duration = -1
+		}
+	}
+
+	option = {
+		name =  yamato_flavor.8.c	
+		add_country_modifier = {
+			name = state_system
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = yamato_flavor.9
+	title = yamato_flavor.9.t
+	desc =yamato_flavor.9.d
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name =  yamato_flavor.9.a	
+		change_religion = mahayana
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+	}
+
+	option = {
+		name =  yamato_flavor.9.b	
+		change_religion = shinto
+		add_legitimacy = 10
+	}
+}
+
+country_event = {
+	id = yamato_flavor.10
+	title = yamato_flavor.10.t
+	desc =yamato_flavor.10.d
+	picture = CherryBlossom_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = yamato_flavor.10.a
+		remove_country_modifier = surname_system
+		remove_country_modifier = tribe_system
+		remove_country_modifier = state_system
+		add_country_modifier = {
+			name = taika_reform
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = yamato_flavor.11
+	title = yamato_flavor.11.t
+	desc =yamato_flavor.11.d
+	picture = SHIP_SAILING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = yamato_flavor.11.a
+		if = {
+			limit = { NOT = { has_country_flag = formed_japan_flag } }
+			change_tag = JAP
+			change_government = monarchy
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			country_event = { id = ideagroups.1 }
+			swap_non_generic_missions = yes
+			add_prestige = 25
+			set_country_flag = formed_japan_flag
+		}
+	}
+	
+	option = {
+		name = yamato_flavor.11.b
+		add_legitimacy = 25
+	}
+}
+
+country_event = {
+	id = yamato_flavor.12
+	title = yamato_flavor.12.t
+	desc =yamato_flavor.12.d
+	picture = BUDDHA_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = yamato_flavor.12.a
+		if = { 
+			limit = { religion = shinto }
+			add_country_modifier = {
+				name = shinto_mainstream
+				duration = 3650
+			}
+			random_owned_province = {
+				spawn_rebels = {
+					type = mahayana_rebels
+					size = 20
+				}
+			}
+			random_owned_province = {
+				spawn_rebels = {
+					type = mahayana_rebels
+					size = 20
+				}
+			}
+		}
+		if = { 
+			limit = { religion = mahayana }
+			add_country_modifier = {
+				name = mahayana_mainstream
+				duration = 3650
+			}
+			random_owned_province = {
+				spawn_rebels = {
+					type = shinto_rebels
+					size = 20
+				}
+			}
+			random_owned_province = {
+				spawn_rebels = {
+					type = shinto_rebels
+					size = 20
+				}
+			}
+		}
+	}
+}
+		

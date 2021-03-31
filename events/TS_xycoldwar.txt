@@ -1,0 +1,1657 @@
+#2021-02-28 modify by xy
+namespace = xy_coldwar
+country_event = {
+    id = xy_coldwar.1
+    title = "xy_coldwar.NAME1"
+    desc = "xy_coldwar.DESC1"
+    picture = INDUSTRIAL_FACTORY_eventPicture
+    trigger = {
+        is_subject_of_type = ideology_union_state
+        has_country_flag = industrial_indexzhi1
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 80
+            }
+        }
+        OR = {
+            NOT = {
+                has_country_flag = industry_coldwar_py
+            }
+            had_country_flag = {
+                flag = industry_coldwar_py days = 365
+            }
+        }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    immediate = {
+        set_country_flag = industry_coldwar_py
+    }
+    option = {
+        name = "xy_coldwar.OPTA1"
+        if = {
+            limit = {
+                current_age = industrial_age
+            }
+            change_variable = {
+                which = num_of_industrialindex
+                value = 3
+            }
+        }
+        if = {
+            limit = {
+                current_age = great_war_age
+            }
+            change_variable = {
+                which = num_of_industrialindex
+                value = 3
+            }
+        }
+        if = {
+            limit = {
+                current_age = information_age
+            }
+            change_variable = {
+                which = num_of_industrialindex
+                value = 4
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_coldwar.2
+    title = "xy_coldwar.NAME2"
+    desc = "xy_coldwar.DESC2"
+    picture = INDUSTRIAL_OBSOLETE_eventPicture
+    trigger = {
+        NOT = {
+            is_subject_of_type = ideology_union_state
+        }
+        has_country_flag = industrial_indexzhi1
+        has_country_flag = hadbeen_ideologyunionstate
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+    immediate = {
+        clr_country_flag = hadbeen_ideologyunionstate
+    }
+    option = {
+        name = "xy_coldwar.OPTA2"
+        every_owned_province = {
+            limit = {
+                has_building = factory
+            }
+            remove_building = factory
+        }
+        add_years_of_income = -0.5
+        if = {
+            limit = {
+                check_variable = {
+                    which = num_of_industrialindex
+                    value = 30
+                }
+            }
+            subtract_variable = {
+                which = num_of_industrialindex
+                value = 30
+            }
+        }
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                        which = num_of_industrialindex
+                        value = 30
+                    }
+                }
+            }
+            set_variable = {
+                which = num_of_industrialindex
+                value = 0
+            }
+        }
+
+    }
+}
+
+country_event = {
+    id = xy_coldwar.3
+    title = "xy_coldwar.NAME3"
+    desc = "xy_coldwar.DESC3"
+    picture = COLDWAR_1_eventPicture
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA3"
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 0
+                OR = {
+                    tag = CHN
+                    tag = CW1
+                }
+            }
+            modifier = {
+                factor = 0
+                total_development = 1000
+                check_variable = {
+                    which = num_of_industrialindex
+                    value = 80
+                }
+            }
+            modifier = {
+                factor = 0
+                total_development = 2000
+                NOT = {
+                    tag = JA1
+                }
+                NOT = {
+                    tag = JAP
+                }
+            }
+        }
+        if = {
+            limit = {
+                religion = communism
+            }
+            random_country = {
+                limit = {
+                    has_country_flag = gongchanlingxiu
+                }
+                create_subject = {
+                    subject_type = ideology_union_state
+                    subject = ROOT
+                }
+            }
+        }
+        if = {
+            limit = {
+                religion = liberalism
+            }
+            random_country = {
+                limit = {
+                    has_country_flag = ziyoulingxiu
+                }
+                create_subject = {
+                    subject_type = ideology_union_state
+                    subject = ROOT
+                }
+            }
+        }
+        set_country_flag = hadbeen_ideologyunionstate
+    }
+    option = {
+        name = "xy_coldwar.OPTB3"
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = {
+    id = xy_coldwar.4
+    title = "xy_coldwar.NAME4"
+    desc = "xy_coldwar.DESC4"
+    picture = COLDWAR_2_eventPicture
+    trigger = {
+        is_subject_of_type = ideology_union_state
+        OR = {
+            AND = {
+                overlord = {
+                    has_country_flag = gongchanlingxiu
+                }
+                NOT = {
+                    religion = communism
+                }
+            }
+            AND = {
+                overlord = {
+                    has_country_flag = ziyoulingxiu
+                }
+                NOT = {
+                    religion = liberalism
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA4"
+        overlord = {
+            free_vassal = PREV
+        }
+
+    }
+}
+
+country_event = {
+    id = xy_coldwar.5
+    title = "xy_coldwar.NAME5"
+    desc = "xy_coldwar.DESC5"
+    picture = CORRUPTION_eventPicture
+    is_triggered_only = yes
+    major = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    immediate = {
+        set_country_flag = choosing_cdwar_5
+    }
+    option = {
+        name = "xy_coldwar.OPTA5"
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 0
+                capital_scope = {
+                    NOT = {
+                        continent = europe
+                    }
+                }
+            }
+        }
+        change_religion = liberalism
+        set_country_flag = zaoyuhepingyanbian
+		# åTs^oÿSfãJT
+		clr_country_flag = choosing_cdwar_5
+    }
+    option = {
+        name = "xy_coldwar.OPTB5"
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 0
+                capital_scope = {
+                    continent = europe
+                }
+            }
+        }
+        add_country_modifier = {
+            name = "false_communism"
+            duration = -1
+        }
+		clr_country_flag = choosing_cdwar_5
+    }
+}
+
+country_event = {
+    id = xy_coldwar.6
+    title = "xy_coldwar.NAME6"
+    desc = "xy_coldwar.DESC6"
+    picture = COLDWAR_3_eventPicture
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA6"
+        add_stability = 1
+        remove_country_modifier = cultural_revolution_md
+        if = {
+            limit = {
+                has_country_modifier = false_communism
+            }
+            remove_country_modifier = false_communism
+        } 
+        add_country_modifier = {
+            name = "people_wake_com"
+            duration = -1
+        }
+		
+    }
+}
+
+country_event = {
+    id = xy_coldwar.7
+    title = "xy_coldwar.NAME7"
+    desc = "xy_coldwar.DESC7"
+    picture = CORRUPTION_eventPicture
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA7"
+        hidden_effect = {
+            country_event = {
+                id = xy_coldwar.77
+            }
+        }
+        add_mil_power = 500
+        add_adm_power = 500
+        add_dip_power = 500
+        add_treasury = 5000
+    }
+    option = {
+        name = "xy_coldwar.OPTB7"
+		ai_chance = {
+            factor = 100
+			}
+        hidden_effect = {
+            country_event = {
+                id = xy_coldwar.8
+            }
+        }
+    }
+}
+country_event = {
+    id = xy_coldwar.77
+    title = "xy_coldwar.NAME77"
+    desc = "xy_coldwar.DESC77"
+    picture = CORRUPTION_eventPicture
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA77"
+
+    }
+}
+country_event = {
+    id = xy_coldwar.8
+    title = "xy_coldwar.NAME8"
+    desc = "xy_coldwar.DESC8"
+    picture = COLDWAR_4_eventPicture
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA8"
+        hidden_effect = {
+            country_event = {
+                id = xy_coldwar.77
+            }
+        }
+        add_mil_power = 500
+        add_adm_power = 500
+        add_dip_power = 500
+        add_treasury = 5000
+    }
+    option = {
+        name = "xy_coldwar.OPTB8"
+		ai_chance = {
+            factor = 100
+			}
+        hidden_effect = {
+            country_event = {
+                id = xy_coldwar.9
+            }
+        }
+    }
+}
+country_event = {
+    id = xy_coldwar.9
+    title = "xy_coldwar.NAME9"
+    desc = "xy_coldwar.DESC9"
+    picture = COLDWAR_4_eventPicture
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA9"
+        hidden_effect = {
+            country_event = {
+                id = xy_coldwar.77
+            }
+        }
+        add_mil_power = 500
+        add_adm_power = 500
+        add_dip_power = 500
+        add_treasury = 5000
+    }
+    option = {
+        name = "xy_coldwar.OPTB9"
+		ai_chance = {
+            factor = 100
+			}
+        hidden_effect = {
+            country_event = {
+                id = xy_coldwar.10
+            }
+        }
+    }
+}
+country_event = {
+    id = xy_coldwar.10
+    title = "xy_coldwar.NAME10"
+    desc = "xy_coldwar.DESC10"
+    picture = COLDWAR_4_eventPicture
+
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA10"
+        add_country_modifier = {
+            name = "cultural_revolution_md"
+            duration = -1
+        }
+        add_stability = -3
+        custom_tooltip = tp_stt_wenge
+        if = {
+            limit = {
+                tag = CHN
+            }
+            define_ruler = {
+                name = "€k˝lN"
+                adm = 5
+                dip = 5
+                mil = 6
+                age = 60
+                religion = communism
+                culture = chihan
+                fixed = yes
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_coldwar.11
+    title = "xy_coldwar.NAME11"
+    desc = "xy_coldwar.DESC11"
+    picture = COLDWAR_5_eventPicture
+    major = yes
+    trigger = {
+        OR = {
+            AND = {
+                has_country_flag = gongchanlingxiu
+                NOT = {
+                    religion = communism
+                }
+            }
+            AND = {
+                has_country_flag = ziyoulingxiu
+                NOT = {
+                    religion = liberalism
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA11"
+        if = {
+            limit = {
+                has_country_flag = gongchanlingxiu
+            }
+            clr_country_flag = gongchanlingxiu
+        }
+        if = {
+            limit = {
+                has_country_flag = ziyoulingxiu
+            }
+            clr_country_flag = ziyoulingxiu
+        }
+        set_country_flag = zyhpyb_overlord  
+		# åTs^oÿSÑvw'YÂT
+        every_country = {
+            limit = {
+                is_subject_of_type = ideology_union_state is_subject_of = ROOT
+            }
+            overlord = {
+                free_vassal = PREV
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_coldwar.12
+    title = "xy_coldwar.NAME12"
+    desc = "xy_coldwar.DESC12"
+    picture = INDUSTRIAL_FACTORY_eventPicture
+    hidden = yes
+    trigger = {
+	 dip_tech = 86
+        ai = yes
+		is_at_war = no		
+        check_variable = {
+            which = num_of_industrialindex
+            value = 100
+        }
+        total_development = 5000
+        NOT = {
+            AND = {
+                any_country = {
+                    has_country_flag = gongchanlingxiu
+                }
+                religion = communism
+            }
+        }
+        NOT = {
+            AND = {
+                any_country = {
+                    has_country_flag = ziyoulingxiu
+                }
+                religion = liberalism
+            }
+        }
+        OR = {
+            religion = communism
+            religion = liberalism
+        }
+        NOT = {
+            has_country_flag = coldwar_overlord1
+        }
+        NOT = {
+            any_country = {
+                religion = fascism
+            }
+        }
+        OR = {
+            AND = {
+                religion = communism
+                NOT = {
+                    any_country = {
+                        religion = communism
+                        OR = {
+                            check_variable = {
+                                which = num_of_industrialindex
+                                value = 92
+
+                            }
+                        }
+                    }
+                }
+            }
+            AND = {
+                religion = liberalism
+                NOT = {
+                    any_country = {
+                        religion = liberalism
+                        OR = {
+                            check_variable = {
+                                which = num_of_industrialindex
+                                value = 92
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        any_country = {
+            reverse_check_chinese_warlord = yes
+            NOT = {
+                has_reform = modern_chinese_warlord_reform
+            }
+            religion = ROOT
+        }
+    }
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA12"
+        if = {
+            limit = {
+                religion = communism
+            }
+            set_country_flag = gongchanlingxiu
+        }
+        if = {
+            limit = {
+                religion = liberalism
+            }
+            set_country_flag = ziyoulingxiu
+        }
+        set_country_flag = coldwar_overlord1
+        every_country = {
+            limit = {
+                reverse_check_chinese_warlord = yes
+                NOT = {
+                    is_colonial_nation = yes
+                }
+                NOT = {
+                    has_country_flag = coldwar_overlord1
+                }
+                NOT = {
+                    has_reform = modern_chinese_warlord_reform
+                }
+                religion = ROOT
+				is_at_war = no  
+            }
+            country_event = {
+                id = xy_coldwar.3
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_coldwar.13
+    title = "xy_coldwar.NAME13"
+    desc = "xy_coldwar.DESC13"
+    picture = COLDWAR_6_eventPicture
+    trigger = {
+        religion = communism
+        has_country_modifier = cultural_revolution_md
+        NOT = {
+            has_country_modifier = people_wake_com
+        }
+    }
+    mean_time_to_happen = {
+        months = 4
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA13"
+        add_army_tradition = -5
+        add_mil_power = -50
+    }
+}
+
+country_event = {
+    id = xy_coldwar.14
+    title = "xy_coldwar.NAME14"
+    desc = "xy_coldwar.DESC14"
+    picture = COLDWAR_7_eventPicture
+    trigger = {
+        NOT = {
+            religion = communism
+        }
+        has_country_modifier = cultural_revolution_md
+    }
+    mean_time_to_happen = {
+        months = 4
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA14"
+        remove_country_modifier = cultural_revolution_md
+    }
+}
+country_event = {
+    id = xy_coldwar.15
+    title = "xy_coldwar.NAME15"
+    desc = "xy_coldwar.DESC15"
+    picture = COLDWAR_8_eventPicture
+    trigger = {
+        religion = communism
+        has_country_modifier = cultural_revolution_md
+        NOT = {
+            has_country_modifier = people_wake_com
+        }
+    }
+    mean_time_to_happen = {
+        months = 4
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA15"
+        add_adm_power = -50
+        add_treasury = -500
+    }
+}
+country_event = {
+    id = xy_coldwar.16
+    title = "xy_coldwar.NAME16"
+    desc = "xy_coldwar.DESC16"
+    picture = COLDWAR_9_eventPicture
+    trigger = {
+        religion = communism
+        has_country_modifier = cultural_revolution_md
+        NOT = {
+            has_country_modifier = people_wake_com
+        }
+    }
+    mean_time_to_happen = {
+        months = 4
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA16"
+        add_dip_power = -50
+        add_prestige = -10
+    }
+}
+
+country_event = {
+    id = xy_coldwar.17
+    title = "xy_coldwar.NAME17"
+    desc = "xy_coldwar.DESC17"
+    picture = BANKRUPTCY_eventPicture
+    is_triggered_only = yes
+    major = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "xy_coldwar.OPTA17"
+        clr_country_flag = zyhpyb_overlord
+        add_dip_power = -500
+        add_adm_power = -500
+        add_mil_power = -500
+        add_prestige = -100
+        if = {
+            limit = {
+                check_variable = {
+                    which = num_of_industrialindex
+                    value = 60
+                }
+            }
+            subtract_variable = {
+                which = num_of_industrialindex
+                value = 60
+            }
+        }
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                        which = num_of_industrialindex
+                        value = 60
+                    }
+                }
+            }
+            set_variable = {
+                which = num_of_industrialindex
+                value = 0
+            }
+        }
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    NOT = {
+                        development = 10
+                    }
+                }
+                add_base_tax = -1 add_base_manpower = -1 add_base_production = -1
+            }
+            every_owned_province = {
+                limit = {
+                    NOT = {
+                        development = 30
+                    }
+                }
+                add_base_tax = -3 add_base_manpower = -3 add_base_production = -3
+            }
+            every_owned_province = {
+                limit = {
+                    NOT = {
+                        development = 50
+                    }
+                }
+                add_base_tax = -5 add_base_manpower = -5 add_base_production = -5
+            }
+            every_owned_province = {
+                limit = {
+                    NOT = {
+                        development = 70
+                    }
+                }
+                add_base_tax = -7 add_base_manpower = -7 add_base_production = -7
+            }
+            if = {
+                limit = {
+                    OR = {
+                        tag = SOV tag = RUS
+                    }
+                }
+                country_event = {
+                    id = xy_coldwar.21
+                }
+            }
+            add_treasury = -30000
+        }
+        custom_tooltip = tp_zhenyingjieti
+    }
+}
+country_event = {
+    id = xy_coldwar.18
+    title = "xy_coldwar.NAME18"
+    desc = "xy_coldwar.DESC18"
+    picture = COLDWAR_10_eventPicture
+    is_triggered_only = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "xy_coldwar.OPTA18"
+        add_dip_power = 400
+        add_adm_power = 400
+        add_mil_power = 400
+        add_prestige = 20
+        change_variable = {
+            which = num_of_industrialindex
+            value = 10
+        }
+        add_years_of_income = 5
+    }
+}
+
+country_event = {
+    id = xy_coldwar.19
+    title = "xy_coldwar.NAME19"
+    desc = "xy_coldwar.DESC19"
+    picture = COLDWAR_10_eventPicture
+    is_triggered_only = yes
+    major = yes
+    mean_time_to_happen = {
+        days = 1
+    }
+    option = {
+        name = "xy_coldwar.OPTA19"
+        add_dip_power = 600
+        add_adm_power = 600
+        add_mil_power = 600
+        add_prestige = 100
+        if = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                        which = num_of_industrialindex
+                        value = 110
+                    }
+                }
+            }
+            set_variable = {
+                which = num_of_industrialindex
+                value = 110
+            }
+        }
+        add_years_of_income = 5
+    }
+}
+
+province_event = {
+    id = xy_coldwar.20
+    title = "xy_coldwar.NAME20"
+    desc = "xy_coldwar.DESC20"
+    picture = COLDWAR_11_eventPicture
+    trigger = {
+        is_year = 1945
+        OR = {
+            AND = {
+                owner = {
+                    religion = liberalism
+                    NOT = {
+                        has_country_modifier = transfer_pdcline
+                    }
+                    check_variable = {
+                        which = num_of_industrialindex
+                        value = 80
+                    }
+                }
+            }
+            AND = {
+                owner = {
+                    has_country_modifier = betransfered_pdcline
+                    check_variable = {
+                        which = num_of_industrialindex
+                        value = 60
+                    }
+                }
+            }
+        }
+
+    }
+    mean_time_to_happen = {
+        months = 1500
+        modifier = {
+            factor = 0.5
+            check_variable = {
+                which = num_of_industrialindex
+                value = 100
+            }
+        }
+    }
+    option = {
+        name = "xy_coldwar.OPTA20"
+        ai_chance = {
+            factor = 10
+        }
+        if = {
+			limit = {
+				NOT = {
+					religion = communism
+				}
+			}
+            change_religion = communism
+        }
+        spawn_rebels = {
+            type = communism_rebels
+            size = 3
+        }
+    }
+    option = {
+        name = "xy_coldwar.OPTB20"
+        ai_chance = {
+            factor = 90
+            modifier = {
+                factor = 0
+                num_of_loans = 3
+            }
+        }
+        owner = {
+            add_years_of_income = -0.15
+        }
+    }
+}
+
+country_event = {
+    id = xy_coldwar.21
+    title = "xy_coldwar.NAME21"
+    desc = "xy_coldwar.DESC21"
+    picture = CITY_DEVELOPMENT_eventPicture
+
+    is_triggered_only = yes
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA21"
+        ai_chance = {
+            factor = 95
+        } 
+		#AI	g95 % ÑvÔS˝w	êÈbÂã	êyò
+        if = {
+            limit = {
+                tag = SOV
+            }
+            change_tag = RUS
+        }
+		if = {
+		limit = {
+		has_opinion_modifier = {
+	who = CHN
+	modifier = sovjiaoe
+        }
+		}
+		remove_opinion = {
+					who = CHN
+					modifier = sovjiaoe
+				}
+		}
+		CHN = {
+		if = {
+		limit = {
+		has_opinion_modifier = {
+	who = SOV
+	modifier = sovjiaoe
+        }
+		}
+		remove_opinion = {
+					who = SOV
+					modifier = sovjiaoe
+				}
+		}
+		}
+        swap_non_generic_missions = yes
+        remove_non_electors_emperors_from_empire_effect = yes
+        set_government_rank = 3
+        lower_yik_area = {
+            #        rR©ãNOKQ
+            remove_core = RUS
+            add_core = KZK # »T(ÑKQØefW
+            cede_province = KZK
+        }
+        nogai_area = {
+            #        rR©ã˙ã÷v
+            remove_core = RUS
+            add_core = KZK # »T(ÑKQØefW
+            cede_province = KZK
+        }
+        kazakhstan_area = {
+            #            rR©ã»T(ÑKQØefW
+            remove_core = RUS
+            add_core = KZK # »T(ÑKQØefW
+            cede_province = KZK
+        }
+        syr_darya_area = {
+            #            rR©ã!ïS≥l
+            remove_core = RUS
+            add_core = KZK # »T(ÑKQØefW
+            cede_province = KZK
+        }
+        balchasj_area = {
+            #            rR©ãÙTSéU¿N
+            remove_core = RUS
+            add_core = KZK # »T(ÑKQØefW
+            cede_province = KZK
+        }
+        439 = {
+            remove_core = RUS
+            add_core = KZK # »T(ÑKQØefW
+            cede_province = KZK
+        }
+        1970 = {
+            add_core = KZK # »T(ÑKQØefW
+            remove_core = RUS
+            cede_province = KZK
+        }
+        2433 = {
+            add_core = KZK # »T(ÑKQØefW
+            remove_core = RUS
+            cede_province = KZK
+        }
+        2444 = {
+            add_core = KZK # »T(ÑKQØefW
+            remove_core = RUS
+            cede_province = KZK
+        }
+        2445 = {
+            add_core = KZK # »T(ÑKQØefW
+            remove_core = RUS
+            cede_province = KZK
+        }
+        2446 = {
+            add_core = KZK # »T(ÑKQØefW
+            remove_core = RUS
+            cede_province = KZK
+        }
+        461 = {
+            add_core = KZK # »T(ÑKQØefW
+            remove_core = RUS
+            cede_province = KZK
+        }
+        2448 = {
+            add_core = KZK # »T(ÑKQØefW
+            remove_core = RUS
+            cede_province = KZK
+        }
+        2449 = {
+            add_core = KZK # »T(ÑKQØefW
+            remove_core = RUS
+            cede_province = KZK
+        }
+        2451 = {
+            add_core = KZK # »T(ÑKQØefW
+            remove_core = RUS
+            cede_province = KZK
+        }
+        479 = {
+            add_core = KZK # »T(ÑKQØefW
+            remove_core = RUS
+            cede_province = KZK
+        }
+        443 = {
+            add_core = KZK # »T(ÑKQØefW
+            remove_core = RUS
+            cede_province = KZK
+        }
+        KZK = {
+            change_religion = sunni
+        }
+        merv_area = {
+            #            rR©ã(gû
+            add_core = TRK # Wì^¸fØefW
+            remove_core = RUS
+            cede_province = TRK
+        }
+        2431 = {
+            add_core = TRK # Wì^¸fØefW
+            remove_core = RUS
+            cede_province = TRK
+        }
+        2292 = {
+            add_core = TRK # Wì^¸fØefW
+            remove_core = RUS
+            cede_province = TRK
+        }
+        437 = {
+            add_core = TRK # Wì^¸fØefW
+            remove_core = RUS
+            cede_province = TRK
+        }
+        438 = {
+            add_core = TRK # Wì^¸fØefW
+            remove_core = RUS
+            cede_province = TRK
+        }
+        441 = {
+            add_core = TRK # Wì^¸fØefW
+            remove_core = RUS
+            cede_province = TRK
+        }
+        TRK = {
+            change_religion = sunni
+        }
+        2430 = {
+            add_core = UZB # LNyQ+RKQØefW
+            remove_core = RUS
+            cede_province = UZB
+        }
+        2432 = {
+            add_core = UZB # LNyQ+RKQØefW
+            remove_core = RUS
+            cede_province = UZB
+        }
+        440 = {
+            add_core = UZB # LNyQ+RKQØefW
+            remove_core = RUS
+            cede_province = UZB
+        }
+        1973 = {
+            add_core = UZB # LNyQ+RKQØefW
+            remove_core = RUS
+            cede_province = UZB
+        }
+        442 = {
+            add_core = UZB# LNyQ+RKQØefW
+            remove_core = RUS
+            cede_province = UZB
+        }
+        453 = {
+            add_core = UZB # LNyQ+RKQØefW
+            remove_core = RUS
+            cede_province = UZB
+        }
+        454 = {
+            add_core = UZB # LNyQ+RKQØefW
+            remove_core = RUS
+            cede_province = UZB
+        }
+        455 = {
+            add_core = UZB # LNyQ+RKQØefW
+            remove_core = RUS
+            cede_province = UZB
+        }
+        457 = {
+            add_core = UZB # LNyQ+RKQØefW
+            remove_core = RUS
+            cede_province = UZB
+        }
+        458 = {
+            add_core = UZB# LNyQ+RKQØefW
+            remove_core = RUS
+            cede_province = UZB
+        }
+        4463 = {
+            add_core = UZB # LNyQ+RKQØefW
+            remove_core = RUS
+            cede_province = UZB
+        }
+        UZB = {
+            change_religion = sunni
+        }
+        452 = {
+            add_core = TJK # TX	TKQ
+            remove_core = RUS
+            cede_province = TJK
+        }
+        1967 = {
+            add_core = TJK # TX	TKQ
+            remove_core = RUS
+            cede_province = TJK
+        }
+        1968 = {
+            add_core = TJK # TX	TKQ
+            remove_core = RUS
+            cede_province = TJK
+        }
+        TJK = {
+            change_religion = sunni
+        }
+        460 = {
+            add_core = KYR # 	TS	TØe
+            remove_core = RUS
+            cede_province = KYR
+        }
+        459 = {
+            add_core = KYR # 	TS	TØe
+            remove_core = RUS
+            cede_province = KYR
+        }
+        2434 = {
+            add_core = KYR # 	TS	TØe
+            remove_core = RUS
+            cede_province = KYR
+        }
+        2435 = {
+            add_core = KYR # 	TS	TØe
+            remove_core = RUS
+            cede_province = KYR
+        }
+        KYR = {
+            change_religion = sunni
+        }
+        livonia_area = {
+            #            rR©ã)RÉl<SöN
+            add_core = LTV # …b1ÅÙuöN
+            remove_core = RUS
+            cede_province = LTV
+        }
+        curonia_area = {
+            #            rR©ãì^SpQ
+            add_core = LTV # …b1ÅÙuöN
+            remove_core = RUS
+            cede_province = LTV
+        }
+        estonia_ingria_area = {
+            #            rR©ã1rôl<SöN
+            add_core = EST # 1rôl<SöN
+            remove_core = RUS
+            cede_province = EST
+        }
+        37 = {
+            add_core = EST # 1rôl<SöN
+            remove_core = LTV
+            cede_province = EST
+        }
+        35 = {
+            add_core = EST # 1rôl<SöN
+            remove_core = LTV
+            cede_province = EST
+        }
+        samogitia_area = {
+            #            rR©ã(Ñ´É	T^öN
+            add_core = LIT # ÀzvñõR
+            remove_core = RUS
+            cede_province = LIT
+        }
+        40 = {
+            add_core = LIT # ÀzvñõR
+            remove_core = RUS
+            cede_province = LIT
+        }
+        4675 = {
+            add_core = LIT # ÀzvñõR
+            remove_core = RUS
+            cede_province = LIT
+        }
+        272 = {
+            add_core = LIT # ÀzvñõR
+            remove_core = RUS
+            cede_province = LIT
+        }
+        white_ruthenia_area = {
+            #             rR©ããvÅú^X<SöN
+            add_core = BLR # ãvƒOWØe
+            remove_core = RUS
+            cede_province = BLR
+        }
+        minsk_area = {
+            #            rR©ãfØeKQ
+            add_core = BLR # ãvƒOWØe
+            remove_core = RUS
+            cede_province = BLR
+        }
+        pripyat_area = {
+            #            nfÃëÆvöNcR
+            add_core = BLR # ãvƒOWØe
+            remove_core = RUS
+            cede_province = BLR
+        }
+        2149 = {
+            add_core = BLR # ãvƒOWØe
+            remove_core = RUS
+            cede_province = BLR
+        }
+        4676 = {
+            add_core = BLR # ãvƒOWØe
+            remove_core = RUS
+            cede_province = BLR
+        }
+        1937 = {
+            add_core = BLR # ãvƒOWØe
+            remove_core = RUS
+            cede_province = BLR
+        }
+        277 = {
+            add_core = BLR # ãvƒOWØe
+            remove_core = RUS
+            cede_province = BLR
+        }
+        bessarabia_area = {
+            #             ‘k(Ñ…b‘köN
+            add_core = MDV # idSYÊt
+            remove_core = RUS
+            cede_province = MDV
+        }
+        yedisan_area = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        west_dniepr_area = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        east_dniepr_area = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        podolia_volhynia_area = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        zaporizhia_area = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        volhynia_area = {
+            add_core = UKR# LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        1756 = {
+            add_core = UKR # LNKQpQ
+            remove_core = MDV
+            cede_province = UKR
+        }
+        2611 = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        2612 = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        291 = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        1945 = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        289 = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        285 = {
+            add_core = UKR  # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        284 = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        2608 = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        1952 = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        3114 = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        1940 = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        4681 = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        261 = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        2154 = {
+            add_core = UKR # LNKQpQ
+            remove_core = RUS
+            cede_province = UKR
+        }
+        imereti_area = {
+            add_core = GEO # <hÅú	TöN
+            remove_core = RUS
+            cede_province = GEO
+        }
+        kartli_kakheti_area = {
+            add_core = GEO # <hÅú	TöN
+            remove_core = RUS
+            cede_province = GEO
+        }
+        armenia_area = {
+            add_core = ARM  # öNé<SöN
+            remove_core = RUS
+            cede_province = ARM
+        }
+        2152 = {
+            add_core = AZE  # ?ñ^X‹bÜu
+            cede_province = AZE
+        }
+        2282 = {
+            add_core = AZE  # ?ñ^X‹bÜu
+            cede_province = AZE
+        }
+        420 = {
+            add_core = AZE  # ?ñ^X‹bÜu
+            remove_core = ARM
+            cede_province = AZE
+        }
+        4427 = {
+            add_core = AZE  # ?ñ^X‹bÜu
+            remove_core = RUS
+            cede_province = AZE
+        }
+        4421 = {
+            add_core = AZE  # ?ñ^X‹bÜu
+            remove_core = RUS
+            cede_province = AZE
+        }
+        421 = {
+            add_core = AZE  # ?ñ^X‹bÜu
+            remove_core = RUS
+            cede_province = AZE
+        }
+        4459 = {
+            add_core = AZE  # ?ñ^X‹bÜu
+            remove_core = RUS
+            cede_province = AZE
+        }
+    }
+}
+
+country_event = {
+    id = xy_coldwar.22
+    title = "xy_coldwar.NAME22"
+    desc = "xy_coldwar.DESC22"
+    picture = COLDWAR_6_eventPicture
+	hidden = yes
+    trigger = {
+        ai = yes
+        is_at_war = yes
+        dip_tech = 85
+        any_country = {
+            is_subject_of = ROOT
+            NOT = {
+                same_continent = ROOT
+            }
+            any_country = {
+                same_continent = PREV is_neighbor_of = PREV war_with = ROOT
+            }
+        }
+        any_owned_province = {
+            same_continent = capital
+            num_of_units_in_province = {
+                who = owner
+                amount = 50
+            }
+        }
+        NOT = {
+            any_country = {
+                same_continent = ROOT 
+				war_with = ROOT
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 4
+    }
+
+    option = {
+        name = "xy_coldwar.OPTA22"
+        random_owned_province = {
+            limit = {
+                num_of_units_in_province = {
+                    who = owner
+                    amount = 50
+                }
+                same_continent = capital
+            }
+            kill_units = {
+                who = ROOT
+                amount = 50
+            }
+        }
+        random_country = {
+            limit = {
+                is_subject_of = ROOT
+                NOT = {
+                    same_continent = ROOT
+                }
+                any_country = {
+                    is_neighbor_of = PREV same_continent = PREV war_with = ROOT
+                }
+            }
+            capital_scope = {
+                ROOT = {
+                    set_variable = {
+                        which = transport_mil_ts
+                        value = 1
+                    }
+                }
+                while = {
+                    limit = {
+
+                        NOT = {
+                            ROOT = {
+                                check_variable = {
+                                    which = transport_mil_ts
+                                    value = 26
+                                }
+                            }
+                        }
+                    }
+                    infantry = ROOT
+                    ROOT = {
+                        change_variable = {
+                            which = transport_mil_ts
+                            value = 1
+                        }
+                    }
+                }
+                ROOT = {
+                    set_variable = {
+                        which = transport_mil_ts
+                        value = 1
+                    }
+                }
+                while = {
+                    limit = {
+
+                        NOT = {
+                            ROOT = {
+                                check_variable = {
+                                    which = transport_mil_ts
+                                    value = 11
+                                }
+                            }
+                        }
+                    }
+                    cavalry = ROOT
+                    ROOT = {
+                        change_variable = {
+                            which = transport_mil_ts
+                            value = 1
+                        }
+                    }
+                }
+                ROOT = {
+                    set_variable = {
+                        which = transport_mil_ts
+                        value = 1
+                    }
+                }
+                while = {
+                    limit = {
+
+                        NOT = {
+                            ROOT = {
+                                check_variable = {
+                                    which = transport_mil_ts
+                                    value = 16
+                                }
+                            }
+                        }
+                    }
+                    artillery = ROOT
+                    ROOT = {
+                        change_variable = {
+                            which = transport_mil_ts
+                            value = 1
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+country_event = {
+    id = xy_coldwar.23
+    title = "xy_coldwar.NAME23"
+    desc = "xy_coldwar.DESC23"
+    picture = GERMAN_EMPIRE_eventPicture
+
+    trigger = {
+        NOT = {
+            religion = communism
+        }
+        OR = {
+            has_country_modifier = people_wake_com
+            has_country_modifier = false_communism
+        }
+    }
+    mean_time_to_happen = {
+        months = 1
+    }
+    option = {
+        name = "xy_coldwar.OPTA23"
+        remove_country_modifier = people_wake_com
+        remove_country_modifier = false_communism
+    }
+}

@@ -1,0 +1,61 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = morikatsu_advisor_come
+
+#fkS–gÕyùhˆNN˙Q˛s
+#id = 1 : morikatsu  : €k)R‹w8l0fkS0
+#
+country_event = {
+	id = morikatsu_advisor_come.1
+	title = "morikatsu_advisor_come.1.t"
+	desc = "morikatsu_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+
+
+	trigger = {
+		is_year = 1603
+		NOT = { is_year = 1622 }
+		OR = {
+		   AND = {
+		      exists = ODA 
+		      tag = ODA
+		   }		
+		   AND = {
+		      NOT = { exists = ODA}		
+		      owns = 1837
+		   }
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = morikatsu_advisor_come.OPTA1
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = morikatsu 
+				name = "€k)R‹w8l0fkS0"
+				discount = yes	
+				skill = 3
+				culture = japanese
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "€k)R‹w8l0fkS0"
+				fire = 6
+				shock = 4
+				manuever = 4
+				siege = 3
+			}
+		}
+	}
+}
+

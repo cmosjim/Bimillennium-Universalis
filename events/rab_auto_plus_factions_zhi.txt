@@ -1,0 +1,49 @@
+namespace = rab_auto_plus
+################################
+########JUST TEST ONLY			#
+################################
+
+country_event = {
+   id = rab_auto_plus.1
+	title = "rab_auto_plus.1.t"
+	desc = "rab_auto_plus.1.d"
+	picture = PRAYING_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_reform = celestial_empire
+	}
+	mean_time_to_happen = {
+		days = 240
+	}
+    option = {
+	   name = "rab_auto_plus.1.a" 
+		random_list = {
+			10 = {
+				add_wenhuan_1_effect = yes
+			}	
+			10 = {
+				add_wenhuan_2_effect = yes
+			}			
+			10 = {
+				subtract_wenhuan_1_effect = yes
+			}	
+			10 = {
+				subtract_wenhuan_2_effect = yes
+			}
+			10 = {
+				add_wuqi_1_effect = yes
+			}	
+			10 = {
+				add_wuqi_2_effect = yes
+			}			
+			10 = {
+				subtract_wuqi_1_effect = yes
+			}	
+			10 = {
+				subtract_wuqi_2_effect = yes
+			}			
+		}	
+	}
+}

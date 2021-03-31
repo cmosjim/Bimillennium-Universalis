@@ -1,0 +1,381 @@
+	
+	namespace = western_consort_events
+	
+	country_event = {
+		id = western_consort_events.1
+		title = "western_consort_events.NAME1"
+		desc = "western_consort_events.DESC1"
+		
+		is_triggered_only = yes
+		
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic1
+			}
+			picture = WESTERN_CHOICES_QUEENS_1_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic2
+			}
+			picture = WESTERN_CHOICES_QUEENS_2_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic3
+			}
+			picture = WESTERN_CHOICES_QUEENS_3_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic4
+			}
+			picture = WESTERN_CHOICES_QUEENS_4_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic5
+			}
+			picture = WESTERN_CHOICES_QUEENS_5_eventPicture 
+		}
+		
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic6
+			}
+			picture = WESTERN_CHOICES_QUEENS_6_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic7
+			}
+			picture = WESTERN_CHOICES_QUEENS_7_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic8
+			}
+			picture = WESTERN_CHOICES_QUEENS_8_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic9
+			}
+			picture = WESTERN_CHOICES_QUEENS_9_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic10
+			}
+			picture = WESTERN_CHOICES_QUEENS_10_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic11
+			}
+			picture = WESTERN_CHOICES_QUEENS_11_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic12
+			}
+			picture = WESTERN_CHOICES_QUEENS_12_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic13
+			}
+			picture = WESTERN_CHOICES_QUEENS_13_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic14
+			}
+			picture = WESTERN_CHOICES_QUEENS_14_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic15
+			}
+			picture = WESTERN_CHOICES_QUEENS_15_eventPicture 
+		}
+		
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic16
+			}
+			picture = WESTERN_CHOICES_QUEENS_16_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic17
+			}
+			picture = WESTERN_CHOICES_QUEENS_17_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic18
+			}
+			picture = WESTERN_CHOICES_QUEENS_18_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic19
+			}
+			picture = WESTERN_CHOICES_QUEENS_19_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic20
+			}
+			picture = WESTERN_CHOICES_QUEENS_20_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic21
+			}
+			picture = WESTERN_CHOICES_QUEENS_21_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic22
+			}
+			picture = WESTERN_CHOICES_QUEENS_22_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic23
+			}
+			picture = WESTERN_CHOICES_QUEENS_23_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic24
+			}
+			picture = WESTERN_CHOICES_QUEENS_24_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic25
+			}
+			picture = WESTERN_CHOICES_QUEENS_25_eventPicture 
+		}
+		
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic26
+			}
+			picture = WESTERN_CHOICES_QUEENS_26_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic27
+			}
+			picture = WESTERN_CHOICES_QUEENS_27_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic28
+			}
+			picture = WESTERN_CHOICES_QUEENS_28_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic29
+			}
+			picture = WESTERN_CHOICES_QUEENS_29_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic30
+			}
+			picture = WESTERN_CHOICES_QUEENS_30_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic31
+			}
+			picture = WESTERN_CHOICES_QUEENS_31_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic32
+			}
+			picture = WESTERN_CHOICES_QUEENS_32_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic33
+			}
+			picture = WESTERN_CHOICES_QUEENS_33_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic34
+			}
+			picture = WESTERN_CHOICES_QUEENS_34_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic35
+			}
+			picture = WESTERN_CHOICES_QUEENS_35_eventPicture 
+		}
+		
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic36
+			}
+			picture = WESTERN_CHOICES_QUEENS_36_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic37
+			}
+			picture = WESTERN_CHOICES_QUEENS_37_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic38
+			}
+			picture = WESTERN_CHOICES_QUEENS_38_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic39
+			}
+			picture = WESTERN_CHOICES_QUEENS_39_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic40
+			}
+			picture = WESTERN_CHOICES_QUEENS_40_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic41
+			}
+			picture = WESTERN_CHOICES_QUEENS_41_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic42
+			}
+			picture = WESTERN_CHOICES_QUEENS_42_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic43
+			}
+			picture = WESTERN_CHOICES_QUEENS_43_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic44
+			}
+			picture = WESTERN_CHOICES_QUEENS_44_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic45
+			}
+			picture = WESTERN_CHOICES_QUEENS_45_eventPicture 
+		}
+		
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic46
+			}
+			picture = WESTERN_CHOICES_QUEENS_46_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic47
+			}
+			picture = WESTERN_CHOICES_QUEENS_47_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic48
+			}
+			picture = WESTERN_CHOICES_QUEENS_48_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic49
+			}
+			picture = WESTERN_CHOICES_QUEENS_49_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic50
+			}
+			picture = WESTERN_CHOICES_QUEENS_50_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic51
+			}
+			picture = WESTERN_CHOICES_QUEENS_51_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic52
+			}
+			picture = WESTERN_CHOICES_QUEENS_52_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic53
+			}
+			picture = WESTERN_CHOICES_QUEENS_53_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic54
+			}
+			picture = WESTERN_CHOICES_QUEENS_54_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic55
+			}
+			picture = WESTERN_CHOICES_QUEENS_55_eventPicture 
+		}
+		
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic56
+			}
+			picture = WESTERN_CHOICES_QUEENS_56_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic57
+			}
+			picture = WESTERN_CHOICES_QUEENS_57_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic58
+			}
+			picture = WESTERN_CHOICES_QUEENS_58_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic59
+			}
+			picture = WESTERN_CHOICES_QUEENS_59_eventPicture 
+		}
+		picture = {
+			trigger = {
+				has_country_flag = flg_western_consort_pic60
+			}
+			picture = WESTERN_CHOICES_QUEENS_60_eventPicture 
+		}
+		option = {
+			name = "western_consort_events.OPTA1"
+		}	
+	
+}

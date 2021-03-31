@@ -1,0 +1,60 @@
+########################
+#Advisor  entry  Events#
+#########################
+
+namespace = direnjie_advisor_come
+
+#‡e˜RÐgÍyagöNNúQ°s
+#id = 1 : direnjie : ÄrÁNpg0‡e˜R0
+
+country_event = {
+	id = direnjie_advisor_come.1
+	title = "direnjie_advisor_come.1.t"
+	desc = "direnjie_advisor_come.1.d"
+	picture = NEW_ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	#úQ°söeô•
+	trigger = {
+		is_year = 650	
+		NOT = { is_year = 700 }
+		OR = {
+			AND = {
+				exists = TNG
+				tag = TNG
+			}
+			AND = {
+				NOT = { exists = TNG }
+				owns = 693
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 5
+	}		
+	option = {
+		name = direnjie_advisor_come.OPTA1
+		
+		if = { 
+		limit = { ai = no }
+			define_advisor = {
+				type = direnjie
+				name = "ÄrÁNpg0‡e˜R0"
+				discount = yes	
+				skill = 3
+			}
+		}
+		if = { 
+		limit = { ai = yes }
+			define_general = {
+				name = "ÄrÁNpg0‡e˜R0"
+				fire = 4
+				shock = 5
+				manuever = 3
+				siege = 4
+			}
+		}
+	}
+}
+
