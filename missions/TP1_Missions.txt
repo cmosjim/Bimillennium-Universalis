@@ -1,0 +1,67 @@
+Taipen_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = TP1
+	}
+	# 1829 2479 
+	Taipen_church_power = {
+		icon = mission_taipen_tag
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1829
+				province_id = 2479
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			NOT = { num_of_cities = 55 }
+			1829 = { has_province_modifier = pov_church_power }
+			2479 = { has_province_modifier = pov_church_power }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "Taipen_church_power_modifier"
+				duration = 7300
+			}
+		}
+	}	
+#682 667 1821 2484 3162 3239 1824 680 
+	Taipen_golden_store = {
+		icon = mission_taipen_tag
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 682
+				province_id = 667
+				province_id = 1821
+				province_id = 2484
+				province_id = 3162				
+				province_id = 3239	
+				province_id = 1824	
+				province_id = 680					
+		
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			NOT = { num_of_cities = 55 }
+			682 = { has_province_modifier = pov_golden_store }
+			667 = { has_province_modifier = pov_golden_store }
+			1821 = { has_province_modifier = pov_golden_store }
+			2484 = { has_province_modifier = pov_golden_store }
+			3162 = { has_province_modifier = pov_golden_store }
+			3239 = { has_province_modifier = pov_golden_store }
+			1824 = { has_province_modifier = pov_golden_store }	
+			680 = { has_province_modifier = pov_golden_store }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "Taipen_golden_store_modifier"
+				duration = 7300
+			}
+		}
+	}
+}

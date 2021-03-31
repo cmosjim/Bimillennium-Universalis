@@ -1,0 +1,638 @@
+PRT_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = PRT
+	}
+	has_country_shield = yes
+
+	standing_guard = {
+		icon = mission_invade_the_deccan_ori
+		required_missions = { }
+		position = 1
+		trigger = {
+			NOT = {
+				army_size_percentage = 0.4
+			}
+			manpower_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = standing_guard
+				duration = 7300
+			}
+		}
+	}
+
+	light_cavalry = {
+		icon = mission_conquer_maharashtra
+		required_missions = { standing_guard }
+		position = 3
+		trigger = {
+			num_of_cavalry = 30
+			num_of_generals = 2
+		}
+		effect = {
+			add_country_modifier = {
+				name = light_cavalry 
+				duration = 7300
+			}
+		}
+	}
+
+	parthian_cavalry = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { light_cavalry }
+		position = 5
+		trigger = {
+			prestige = 50
+			army_tradition = 40
+		}
+		effect = {
+			add_country_modifier = {
+				name = parthian_cavalry
+				duration = -1
+			}
+		}
+	}
+}
+
+PRT_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = PRT
+	}
+	has_country_shield = yes
+	
+	insult_rome = {
+		icon = mission_rule_italy
+		required_missions = { }
+		position = 1
+		trigger = {
+			PRT = {
+				OR = {
+					reverse_has_opinion_modifier = {
+						who = ROM
+						modifier = insulted
+					}
+					reverse_has_opinion_modifier = {
+						who = ROM
+						modifier = scornfully_insulted
+					}
+				}
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_manpower = 20
+			410 = {
+				limit = {
+					NOT = { owned_by = ROM }
+					NOT = { is_core = ROM }
+				}
+				add_permanent_claim = ROM
+			}
+		}
+	}
+	
+	Eurasian_war = {
+		icon = mission_crusade_for_varna
+		required_missions = { insult_rome }
+		required_missions = { standing_guard }
+		position = 2
+		trigger = {
+			OR = {
+				ROM = {
+					NOT = { total_development = 200 }
+				}
+				PRT = {
+					OR = {
+						reverse_has_opinion_modifier = {
+							who = ROM
+							modifier = insulted
+						}
+						reverse_has_opinion_modifier = {
+							who = ROM
+							modifier = scornfully_insulted
+						}
+					}
+				}
+			}
+			OR = {
+				ROM = {
+					NOT = {
+						has_opinion = {
+							who = ROOT
+							value = -190
+						}
+					}
+				}
+				ROM = {
+					NOT = { total_development = 200 }
+				}
+			}
+			NOT = { had_recent_war = 10 }
+		}
+		effect = {
+			add_prestige = 25
+			ROM = {
+				declare_war_with_cb = {
+                    				who = PRT
+                   		 		casus_belli = cb_super_badboy
+				}
+			}
+		}
+	}
+
+	occupy_mashriq = {
+		icon = mission_reconquer_ceuta
+		required_missions = { Eurasian_war }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2367
+				province_id = 382
+				province_id = 379
+			}
+			NOT = { controlled_by = ROOT }
+		}
+		trigger = {
+			2367 = {
+				controlled_by = ROOT
+			}
+			382 = {
+				controlled_by = ROOT
+			}
+			379 = {
+				controlled_by = ROOT
+			}
+		}
+		effect = {
+			add_manpower = 10
+			mashriq_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	protect_Baghdad = {
+		icon =mission_build_up_to_force_limit
+		required_missions = { occupy_mashriq }
+		position = 4
+		trigger = {
+			OR = {
+				410 = {
+					NOT = { owned_by = ROOT }
+					controlled_by = ROOT
+				}
+				410 = {			
+					owned_by = ROOT	
+					devastation = 0
+				}
+			}
+			is_at_war = yes
+		}
+		effect = {
+			add_war_exhaustion = -10
+		}
+	}
+
+	insult_rome_again = {
+		icon = mission_turning_the_tables
+		required_missions = { protect_Baghdad }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				province_id = 379
+				province_id = 2367
+			}
+			NOT = { controlled_by = ROOT }
+		}
+		trigger = {
+			379 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				devastation = 0
+			}
+			2367 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				devastation = 0
+			}
+		}
+		effect = {
+			add_prestige = 10
+			ROM = {
+				add_prestige = -10
+			}
+			add_country_modifier = {
+				name = enforce_management
+				duration = 3650
+			}
+		}
+	}
+}
+
+PRT_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = PRT
+	}
+	has_country_shield = yes
+
+	noble_and_vassal = {
+		icon = mission_into_the_west
+		required_missions = { }
+		position = 1
+		trigger = {
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 75
+			}		
+		}
+		effect = {
+			add_stability = 1
+			add_legitimacy = 10
+			create_general = {
+				tradition = 75
+			}
+		}
+	}
+	
+	redeclare_Armenia = {
+		icon = mission_persian_soldiers
+		required_missions = { noble_and_vassal }
+		required_missions = { insult_rome }
+		position = 2
+		effect = {
+			tabriz_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			shirvan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			armenia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_kurdistan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	rule_Armenia_again = {
+		icon = mission_portuguese_oman
+		required_missions = { redeclare_Armenia }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = tabriz_area
+				area = shirvan_area
+				area = armenia_area
+				area = north_kurdistan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {	
+			tabriz_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			shirvan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			armenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_kurdistan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = rule_Armenia_again
+				duration = 3650
+			}
+		}
+	}
+
+	reconciliation_with_Armenia = {
+		icon = mission_potosi_silver
+		required_missions = { rule_Armenia_again }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = tabriz_area
+				area = shirvan_area
+				area = armenia_area
+				area = north_kurdistan_area
+			}
+			NOT = { tag = ROOT }
+		}
+		trigger = {
+			tabriz_area = {
+				type = all
+				NOT = { unrest = 0 }
+			}
+			shirvan_area = {
+				type = all
+				NOT = { unrest = 0 }
+			}
+			armenia_area = {
+				type = all
+				NOT = { unrest = 0 }
+			}
+			north_kurdistan_area = {
+				type = all
+				NOT = { unrest = 0 }
+			}
+		}
+		effect = {
+			samtskhe_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			erzurum_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			imereti_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kartli_kakheti_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	India_Parthia_issue = {
+		icon = mission_rajputana_frontier
+		required_missions = { reconciliation_with_Armenia }
+		position = 5
+		trigger = {
+			full_idea_group = shichen_ideas
+		}
+		effect = {
+			every_province = {
+  				limit = {
+  					owned_by = IPA
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	lord_of_lords = {
+		icon = mission_rajendras_ambition
+		required_missions = { India_Parthia_issue }
+		required_missions = { insult_rome_again }
+		position = 6
+		trigger = {
+			vassal = 5
+		}
+		effect = {
+			add_country_modifier = {
+				name = lord_of_lords
+				duration = -1
+			}
+		}
+	}
+
+	parthia_domination = {
+		icon = mission_rule_the_garjats
+		required_missions = { lord_of_lords }
+		position = 7
+		trigger = {
+			vassal = 10
+		}
+		effect = {
+			add_country_modifier = {
+				name = parthia_domination
+				duration = -1
+			}
+		}
+	}
+}
+
+PRT_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = PRT
+	}
+	has_country_shield = yes
+
+	mountain_development = {
+		icon = mission_colonial
+		required_missions = { }
+		position = 1
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 40
+				has_terrain = mountain
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = { has_terrain = mountain }
+				add_province_modifier = {
+					name = mountain_development
+					duration = 9125
+				}
+			}
+		}
+	}
+	
+	benefit_from_silk_roads = {
+		icon = mission_entrepot_of_india
+		required_missions = { mountain_development }
+		required_missions = { noble_and_vassal }
+		position = 2
+		trigger = {
+			4460 = {
+				is_strongest_trade_power = ROOT
+				trade_share = {
+					country = ROOT
+					share = 60
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = benefit_from_silk_roads
+				duration = 3650
+			}
+		}
+	}
+
+	mintage = {
+		icon = mission_establish_mint_towns
+		required_missions = { benefit_from_silk_roads }
+		position = 3
+		trigger = {
+			NOT = { corruption = 2 }
+			monthly_income = 50
+		}
+		effect = {
+			add_country_modifier = {
+				name = mintage
+				duration = 7300
+			}
+		}
+	}
+
+	build_relationship_with_China = {
+		icon = mission_kowtow
+		required_missions = { mintage }
+		required_missions = { open_to_Mesopotamian_cultures }
+		position = 4
+		trigger = {
+			OR = {
+				NEW = {
+					has_opinion = {
+						who = ROOT
+						value = 120
+					}
+				}
+				HND = {
+					has_opinion = {
+						who = ROOT
+						value = 120
+					}
+				}
+				WEI = {
+					has_opinion = {
+						who = ROOT
+						value = 120
+					}
+				}
+				SHU = {
+					has_opinion = {
+						who = ROOT
+						value = 120
+					}
+				}
+				WUU = {
+					has_opinion = {
+						who = ROOT
+						value = 120
+					}
+				}
+				AND = {
+					NOT = { exists = NEW }
+					NOT = { exists = HND }
+					NOT = { exists = WEI }
+					NOT = { exists = SHU }
+					NOT = { exists = WUU }
+				}
+			}
+		}
+		effect = {
+			capital_scope = {
+				ROOT = {
+					cavalry = PREV
+					cavalry = PREV
+					cavalry = PREV
+					cavalry = PREV
+					cavalry = PREV
+				}
+			}
+			add_country_modifier = {
+				name = build_relationship_with_China
+				duration = 5475
+			}
+		}
+	}
+}
+
+
+PRT_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = PRT
+	}
+	has_country_shield = yes
+
+	keep_Parthian_works = {
+		icon = mission_court_education
+		required_missions = { }
+		position = 2
+		trigger = {
+			advisor = artist
+			treasury = 500
+		}
+		effect = {
+			add_treasury = -500
+			add_country_modifier = {
+				name = Parthian_works
+				duration = 7300
+			}
+		}
+	}
+	
+	open_to_Mesopotamian_cultures = {
+		icon = mission_secure_the_malabar_coast
+		required_missions = { keep_Parthian_works }
+		position = 3
+		trigger = {
+			accepted_culture = assyrian
+			accepted_culture = aramaic
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						culture = assyrian
+						culture = aramaic
+					}
+				}
+				add_base_manpower = 2
+			}
+		}
+	}
+}
+
+				

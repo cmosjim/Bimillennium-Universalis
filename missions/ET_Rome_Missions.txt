@@ -1,0 +1,209 @@
+#2019.02.07 fixed bug in prestige => add_prestige
+#rom_slot_1 = {
+#	slot = 1
+#	generic = no
+#	ai = yes
+#	potential = {
+#		tag = ROM
+#	}
+#	has_country_shield = yes
+#
+#	pontus_rom = {
+#		icon = mission_asian_trader
+#		required_missions = {  }
+#		ai_weight = {
+#			factor = 5
+#		}
+#		ai_priority = {
+#			factor = 5
+#		}
+#		provinces_to_highlight = {
+#			OR = {
+#				area = rum_area
+#				area = kastamonu_area
+#				province_id = 330
+#				province_id = 2266
+#				province_id = 462
+#				province_id = 1856
+#			}
+#			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+#		}
+#		trigger = {
+#			rum_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#			kastamonu_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#			owns_or_non_sovereign_subject_of = 330
+#			owns_or_non_sovereign_subject_of = 2266
+#			owns_or_non_sovereign_subject_of = 462
+#			owns_or_non_sovereign_subject_of = 1856
+#		}
+#		effect = {
+#			add_prestige = 15 #rab_
+#		}
+#	}
+#	armenia_rom = {
+#		icon = mission_high_income
+#		required_missions = {  }
+#		provinces_to_highlight = {
+#			OR = {
+#				province_id = 2268
+#				province_id = 331
+#				province_id = 2270
+#				province_id = 418
+#				province_id = 2271
+#				province_id = 4425
+#				province_id = 2267
+#				province_id = 4424
+#				province_id = 4426
+#				province_id = 2148
+#				province_id = 2152
+#				province_id = 4465
+#				province_id = 419
+#				province_id = 2282
+#				province_id = 420
+#				province_id = 424
+#				province_id = 4459
+#			}
+#			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+#		}
+#		trigger = {
+#			owns_or_non_sovereign_subject_of = 2268
+#			owns_or_non_sovereign_subject_of = 331
+#			owns_or_non_sovereign_subject_of = 2270
+#			owns_or_non_sovereign_subject_of = 418
+#			owns_or_non_sovereign_subject_of = 2271
+#			owns_or_non_sovereign_subject_of = 4425
+#			owns_or_non_sovereign_subject_of = 2267
+#			owns_or_non_sovereign_subject_of = 4424
+#			owns_or_non_sovereign_subject_of = 4426
+#			owns_or_non_sovereign_subject_of = 2148
+#			owns_or_non_sovereign_subject_of = 2152
+#			owns_or_non_sovereign_subject_of = 4465
+#			owns_or_non_sovereign_subject_of = 419
+#			owns_or_non_sovereign_subject_of = 2282
+#			owns_or_non_sovereign_subject_of = 420
+#			owns_or_non_sovereign_subject_of = 424
+#			owns_or_non_sovereign_subject_of = 4459
+#		}
+#		effect = {
+#			add_prestige = 15
+#		}
+#	}
+#	germania_rom = {
+#		icon = mission_assemble_an_army
+#		required_missions = {  }
+#		provinces_to_highlight = {
+#			OR = {
+#				province_id = 70
+#				province_id = 74
+#				province_id = 72
+#			}
+#			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+#		}
+#		trigger = {
+#			owns_or_non_sovereign_subject_of = 70
+#			owns_or_non_sovereign_subject_of = 74
+#			owns_or_non_sovereign_subject_of = 72
+#		}
+#		effect = {
+#			add_prestige = 15
+#		}
+#	}
+#	britannia_rom = {
+#		icon = mission_invade_island
+#		required_missions = {  }
+#		provinces_to_highlight = {
+#			OR = {
+#				area = yorkshire_area
+#				area = west_midlands_area
+#				area = scottish_marches_area
+#				area = wales_area
+#			}
+#			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+#		}
+#		trigger = {
+#			yorkshire_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#			west_midlands_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#			scottish_marches_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#			wales_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#		}
+#		effect = {
+#			add_prestige = 15
+#		}
+#	}
+#	caledonia_rom = {
+#		icon = mission_galleys_in_port
+#		required_missions = {  }
+#		provinces_to_highlight = {
+#			OR = {
+#				area = lowlands_area
+#				area = highlands_area
+#			}
+#			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+#		}
+#		trigger = {
+#			lowlands_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#			highlands_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#		}
+#		effect = {
+#			add_prestige = 15
+#		}
+#	}
+#	hibernia_rom = {
+#		icon = mission_dominate_home_trade_node
+#		required_missions = {  }
+#		provinces_to_highlight = {
+#			OR = {
+#				area = munster_area
+#				area = leinster_area
+#				area = connacht_area
+#				area = ulster_area
+#			}
+#			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+#		}
+#		trigger = {
+#			munster_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#			leinster_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#			connacht_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#			ulster_area = {
+#				type = all
+#				country_or_non_sovereign_subject_holds = ROOT
+#			}
+#		}
+#		effect = {
+#			add_prestige = 15
+#		}
+#	}
+#}

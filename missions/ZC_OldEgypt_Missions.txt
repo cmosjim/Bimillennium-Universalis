@@ -1,0 +1,467 @@
+OLDEGYPT_mission_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		religion = egyptian
+	}
+	has_country_shield = yes
+	
+	recover_cairo = {
+		icon = mission_rb_seize_alexandria
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {	
+				province_id = 361
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			361 = {
+				owned_by = ROOT
+				religion = egyptian
+				is_capital = yes
+			}
+		}
+		effect = {
+			361 = { add_base_tax = 1 }
+			if = {
+				limit = {
+					NOT = { owns_core_province = 362 }
+				}
+				362 = {
+					add_permanent_claim = ROOT
+				}
+			}	
+			if = {
+				limit = {
+					NOT = { owns_core_province = 363 }
+				}
+				363 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 2526 }
+				}
+				2526 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 4440 }
+				}
+				4440 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 2524 }
+				}
+				2524 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 2523 }
+				}
+				2523 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 4442 }
+				}
+				4442 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 360 }
+				}
+				360 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 4441 }
+				}
+				4441 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 1231 }
+				}
+				1231 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 1234 }
+				}
+				1234 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 2520 }
+				}
+				2520 = {
+					add_permanent_claim = ROOT
+				}
+			}
+		}	
+	}
+		
+	red_and_white_crown = {
+		icon = mission_empire
+		required_missions = { recover_cairo }
+		position = 2
+		provinces_to_highlight = {
+			OR = {	
+				province_id = 362
+				province_id = 363
+				province_id = 2526
+				province_id = 4440
+				province_id = 2523
+				province_id = 2524
+				province_id = 4442
+				province_id = 360
+				province_id = 4441
+				province_id = 1231
+				province_id = 1234
+				province_id = 2520
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			362 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			363  = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2526 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4440  = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2523 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4442  = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			360 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4441  = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1231  = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1234 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2524 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2520  = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = rule_nile
+				duration = 5475
+			}
+			add_country_modifier = {
+				name = pharaoh
+				duration = -1
+			}
+		}
+	}
+	
+	pyramid_construction = {
+		icon = mission_egyptian_mamluk_soldier
+		required_missions = { red_and_white_crown }
+		position = 3
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 20
+				region = egypt_region
+			}
+		}
+		effect = {
+			custom_tooltip = build_pyramids_decision
+			set_country_flag = build_egyptian_pyramids_enabled
+			gulf_of_arabia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palestine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			syria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			aleppo_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	invade_west_asia = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { pyramid_construction }
+		position = 4
+		provinces_to_highlight = {
+			OR = {	
+				area = gulf_of_arabia_area
+				area = palestine_area
+				area = syria_area
+				area = aleppo_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			gulf_of_arabia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			palestine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			syria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			aleppo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = cana_govern
+				duration = 3650
+			}
+		}
+	}
+				
+	egyptian_trade = {
+		icon = mission_dominate_persian_gulf
+		required_missions = { invade_west_asia }
+		position = 5
+		trigger = {
+			trade_income_percentage = 0.4
+			home_trade_node = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = egyptian_trade
+				duration = 7300
+			}
+		}
+	}
+}
+
+
+
+OLDEGYPT_mission_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		religion = egyptian
+	}
+	has_country_shield = yes
+
+	cut_off_contact = {
+		icon = invest_in_the_rich_trades
+		required_missions = { }
+		position = 1
+		trigger = {
+			diplomatic_reputation = 2
+			num_of_diplomats = 4
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { owns_core_province = 358 }
+				}
+				358 = {
+					add_permanent_claim = ROOT
+				}	
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 4439 }
+				}
+				4439 = {
+					add_permanent_claim = ROOT
+				}	
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 359 }
+				}
+				359 = {
+					add_permanent_claim = ROOT
+				}	
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 2519 }
+				}
+				2519 = {
+					add_permanent_claim = ROOT
+				}	
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 4443 }
+				}
+				4443 = {
+					add_permanent_claim = ROOT
+				}	
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 2527 }
+				}
+				2527 = {
+					add_permanent_claim = ROOT
+				}	
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 2525 }
+				}
+				2525 = {
+					add_permanent_claim = ROOT
+				}	
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 2004 }
+				}
+				2004 = {
+					add_permanent_claim = ROOT
+				}	
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 357 }
+				}
+				357 = {
+					add_permanent_claim = ROOT
+				}	
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 4438 }
+				}
+				4438 = {
+					add_permanent_claim = ROOT
+				}	
+			}	
+
+			north_cyrenaica_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	cyrenaica = {
+		icon = mission_arabian_fort
+		required_missions = { cut_off_contact }
+		position = 2
+		provinces_to_highlight = {
+			OR = {	
+				province_id = 357
+				area = north_cyrenaica_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			357 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_cyrenaica_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	repulse_aksum = {
+		icon = mission_mayan_conquest
+		required_missions = { cyrenaica }
+		position = 3
+		trigger = {
+			OR = {
+				AKS = {
+					any_owned_province = {
+						NOT = { continent = africa }
+					}
+				}
+				NOT = { exists = AKS }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = solve_aksum
+				duration = 3650
+			}		
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

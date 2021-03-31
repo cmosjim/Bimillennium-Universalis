@@ -1,0 +1,870 @@
+NAB_mission_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = NAB
+	}
+	has_country_shield = yes
+
+	old_Arab_cavalry = {
+		icon = mission_marathi_fiefs
+		required_missions = { explosion_of_Nabateans }
+		position = 2
+		trigger = {
+			num_of_cavalry = 5
+			army_professionalism = 0.1
+		}
+		effect = {
+			add_country_modifier = {
+				name = old_Arab_cavalry
+				duration = 73000
+			}
+		}
+	}
+
+	prepare_for_war = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { old_Arab_cavalry }
+		position = 3
+		trigger = {
+			num_of_generals = 1
+			army_size_percentage = 1
+			manpower_percentage = 1
+		}
+		effect = {
+			add_mil_power = 50
+			add_country_modifier = {
+				name = prepare_for_war
+				duration = 3650
+			}
+			asir_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tihama_al_yemen_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_yemen_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yemen_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	march_to_yemen = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { prepare_for_war }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = asir_area
+				area = tihama_al_yemen_area
+				area = upper_yemen_area
+				area = yemen_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			asir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tihama_al_yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			hadramut_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mahra_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dhofar_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	conquer_south_Arab = {
+		icon = mission_protect_granada
+		required_missions = { march_to_yemen }
+		position = 5
+		provinces_to_highlight = {
+			area = dhofar_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			dhofar_area = {
+  				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			oman_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mascat_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pirate_coast_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bahrain_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	unify_Arab = {
+		icon = mission_persian_soldiers
+		required_missions = { conquer_south_Arab }
+		position = 6
+		provinces_to_highlight = {
+			area = bahrain_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			bahrain_area = {
+  				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = unify_Arab
+				duration = 3650
+			}
+		}
+	}
+
+	Nabatean_morach = {
+		icon = mission_empire
+		required_missions = { }
+		position = 8
+		trigger = {
+			ADM = 4
+			DIP = 4
+			MIL = 4
+		}
+		effect = {
+			add_ruler_modifier = {
+				name = Nabatean_morach
+			}
+		}
+	}
+}
+
+NAB_mission_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = NAB
+	}
+	has_country_shield = yes
+
+	march_to_Egypt = {
+		icon = mission_reconquer_ceuta
+		required_missions = { prepare_for_war }
+		required_missions = { open_up_trade_routes }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = mecca_area
+				area = medina_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			mecca_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			medina_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			gulf_of_arabia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bahari_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	hold_Cairo = {
+		icon = mission_egyptian_mamluk_soldier
+		required_missions = { march_to_Egypt }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = gulf_of_arabia_area
+				area = bahari_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			gulf_of_arabia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bahari_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			delta_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palestine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			syria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			syrian_desert_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	control_Syria = {
+		icon = mission_control_the_desh
+		required_missions = { hold_Cairo }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = syria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			syria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = Phoenician_trade
+				duration = 3650
+			}
+		}
+	}
+	
+	into_the_dry_land = {
+		icon = mission_bedouins
+		required_missions = { control_Syria }
+		required_missions = { unify_Arab }
+		position = 7
+		effect = {
+			if = {		
+				limit = { 4394 = { is_empty = yes } }
+				4394 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 406 = { is_empty = yes } }
+				406 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 405 = { is_empty = yes } }
+				405 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 393 = { is_empty = yes } }
+				393 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}	
+					if = {		
+				limit = { 2545 = { is_empty = yes } }
+				2545 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 2532 = { is_empty = yes } }
+				2532 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 4397 = { is_empty = yes } }
+				4397 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 4396 = { is_empty = yes } }
+				4396 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 392 = { is_empty = yes } }
+				392 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 2534 = { is_empty = yes } }
+				2534 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 2533 = { is_empty = yes } }
+				2533 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 2544 = { is_empty = yes } }
+				2544 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 4398 = { is_empty = yes } }
+				4398 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 1779 = { is_empty = yes } }
+				1779 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 404 = { is_empty = yes } }
+				404 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 4407 = { is_empty = yes } }
+				4407 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+			if = {		
+				limit = { 403 = { is_empty = yes } }
+				403 = { 
+					cede_province = NAB 
+					add_core = NAB
+				}
+			}
+		}
+	}
+	
+	adapt_to_dry_land = {
+		icon = mission_traverse_the_sahara
+		required_missions = { into_the_dry_land }
+		position = 8
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 100
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = adapt_to_dry_land
+				duration = 3650
+			}
+		}
+	}
+}
+			
+NAB_mission_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = NAB
+	}
+	has_country_shield = yes
+
+	explosion_of_Nabateans = {
+		icon = mission_restore_trade_superiority
+		required_missions = { }
+		position = 1
+		trigger = {
+			stability = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = cultural_fusion
+				duration = -1
+			}
+		}
+	}
+	
+	centre_of_Petra = {
+		icon = mission_valencian_silk
+		required_missions = { explosion_of_Nabateans }
+		position = 2
+		trigger = {
+			capital = 4392
+			capital_scope = {
+       				has_state_edict = edict_protect_trade
+			}
+		}
+		effect = {
+			4392 = {
+				if = {
+					limit = {
+						NOT = { province_has_center_of_trade_of_level = 1 }
+					}
+					center_of_trade = 1
+				}
+				else = {
+					limit = {
+						NOT = { province_has_center_of_trade_of_level = 3 }
+					}
+					add_center_of_trade_level = 1
+				}
+			}
+		}
+	}
+
+	open_up_trade_routes = {
+		icon = mission_saharan_route
+		required_missions = { centre_of_Petra }
+		position = 3
+		trigger = {
+			num_of_merchants = 4
+		}
+		effect = {
+			add_mercantilism = 5
+			mecca_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			medina_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	attempt_to_new_route = {
+		icon = mission_traverse_the_sahara
+		required_missions = { open_up_trade_routes }
+		position = 4
+		trigger = { 
+			dip_tech = 4 
+		}
+		effect = {
+			add_country_modifier = {
+				name = attempt_to_new_route
+				duration = 1825
+			}
+		}
+	}
+		
+	sea_trade = {
+		icon = mission_galleys_in_port
+		required_missions  = { attempt_to_new_route }
+		position = 5
+		trigger = {
+			num_of_light_ship = 10
+		}
+		effect = {
+			add_country_modifier = {
+				name = sea_trade
+				duration = 5475
+			}
+		}
+	}
+				
+	explore_Mediterranean = {
+		icon = mission_hanseatic_city
+		required_missions = { sea_trade }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = palestine_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			palestine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = explore_Mediterranean
+				duration = 7300
+			}
+		}
+	} 
+			
+	our_Nabatean = {
+		icon = mission_unite_home_region
+		required_missions = { Nabatean_morach }
+		required_missions = { adapt_to_dry_land }
+		required_missions = { control_Arab_spices_trade }
+		required_missions = { remain_nabataean_religion }
+		position = 9
+		effect = {
+			add_country_modifier = {
+				name = our_Nabatean
+				duration = -1
+			}
+			mashriq_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+NAB_mission_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = NAB
+	}
+	has_country_shield = yes
+
+	Nabatean_merchants = {
+		icon = mission_market_place_with_asian_traders
+		required_missions = { open_up_trade_routes }
+		required_missions = { rebuid_Petra }
+		position = 4
+		trigger = {
+			358 = {
+				trade_share = {
+					country = ROOT
+					share = 20
+				}
+			}
+		}
+		effect = {
+			add_mercantilism = 5
+		}
+	}
+
+	trade_competition_with_Egypt = {
+		icon = mission_asian_trader
+		required_missions = { Nabatean_merchants }
+		position = 5
+		trigger = {
+			358 = {
+				trade_share = {
+					country = ROOT
+					share = 40
+				}
+			}
+		}
+		effect = {
+			add_mercantilism = 5
+		}
+	}
+
+	 Alexandria_trade = {
+		icon = mission_treasure
+		required_missions = { trade_competition_with_Egypt }
+		position = 6
+		trigger = {
+			358 = {
+				trade_share = {
+					country = ROOT
+					share = 60
+				}
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+			add_prestige = 25
+			add_mercantilism = 5
+		}
+	}
+
+	control_Arab_incense_trade = {
+		icon = mission_rb_monopolize_the_channel
+		required_missions = { Alexandria_trade }
+		required_missions = { repair_sig }
+		position = 7
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 9
+				trade_goods = incense
+			}
+   		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					trade_goods = incense
+				}
+				add_base_production = 1
+			}
+			add_mercantilism = 5
+		}
+	}
+	
+	control_Arab_spices_trade = {
+		icon = mission_rb_colonise_spice_islands
+		required_missions = { control_Arab_incense_trade }
+		position = 8
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 4
+				trade_goods = spices
+			}
+   		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					trade_goods = spices
+				}
+				add_base_tax = 1
+				add_base_production = 2
+			}
+			add_mercantilism = 5
+		}
+	}
+}
+
+NAB_mission_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = NAB
+	}
+	has_country_shield = yes
+
+	Bhaja = {
+		icon = mission_arabian_fort
+		required_missions = { explosion_of_Nabateans }
+		position = 2
+		trigger = {
+			all_owned_province = {
+				has_building = windmill
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = wonderful_irregation_system
+				duration = 7300
+			}
+		}
+	}
+			
+	rebuid_Petra = {
+		icon = mission_colonial	
+		required_missions = { Bhaja }
+		position = 3
+		trigger = {
+			4392 = {
+				development = 10
+			}
+		}
+		effect = {
+			4392 = {
+				add_province_modifier = {
+					name = rebuild_Petra
+					duration = -1	
+				}
+			}
+		}
+	}
+
+	clay_pipe = {
+		icon = mission_junnagadh_fort
+		required_missions = { rebuid_Petra }
+		position = 4
+		trigger = {
+			4392 = {
+				base_production = 7
+			}
+		}
+		effect = {
+			add_country_modifier= {
+				name = clay_pipe
+				duration = 3650
+			}
+		}
+	}
+
+	repair_Khazneh = {
+		icon = mission_renovate_kannauj
+		required_missions = { clay_pipe }
+		position = 5
+		trigger = {
+			OR = {
+				4392 = { has_building = glorious_monument }
+				4392 = { has_building = temple }
+				4392 = { has_building = cathedral }
+			}
+		}
+		effect = {
+			country_event = { id = nabataean_flavor.2 }
+		}
+	}
+				
+	repair_sig = {
+		icon = mission_potosi_silver	
+		required_missions = { repair_Khazneh }
+		position = 6
+		trigger = {
+			OR = {
+				4392 = { has_building = road }
+				4392 = { has_building = highway }
+				4392 = {
+					base_manpower = 10
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = repair_sig
+				duration = 3650 
+			}
+		}	
+	}
+
+	remain_nabataean_religion = {
+		icon = mission_hands_praying
+		required_missions = { }
+		position = 8
+		trigger = {
+			OR = {
+				is_year = 300
+				num_of_owned_provinces_with = {
+					value = 10
+					religion = chalcedonism
+				}
+			}
+			religion = nabataean
+		}
+		effect = {
+			add_country_modifier = {
+				name = remain_nabataean_religion
+				duration = 36500
+			}
+		}
+	}
+}
+	

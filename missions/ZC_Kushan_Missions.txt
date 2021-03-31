@@ -1,0 +1,593 @@
+KUS_mission_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			AND = {
+				OR = {
+					was_tag = DY2
+					was_tag = DX3
+				}
+				tag = KUS
+			}
+			tag = KUS
+		}
+	}
+	has_country_shield = yes
+
+	khwarezm = {
+		icon = mission_conquer_timbuktu
+		required_missions = { xiongnu_revenge }
+		required_missions = { strongest_yabghu }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				province_id = 441
+				province_id = 1973
+				province_id = 440
+				province_id = 2431
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			NOT = { exists = KHW }
+			441 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1973 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			440 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2431 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_ADM_power = 100
+			add_manpower = 3
+		}
+	}
+
+	invade_indus = {
+		icon = mission_coromandel_trade
+		required_missions = { khwarezm }
+		required_missions = { baluch_port }
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = multan_area
+				area = kalat_area
+				area = northern_sindh_area
+				area = sindh_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			multan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kalat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_sindh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sindh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {		
+				name = invade_indus
+				duration = 3650
+			}
+			marwar_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mewar_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			patan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			saurashtra_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ahmedabad_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	west_indian_fell = {
+		icon = mission_the_tiger_triumphant
+		required_missions = { invade_indus }
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				area = marwar_area
+				area = mewar_area
+				area = patan_area
+				area = saurashtra_area
+				area = ahmedabad_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			marwar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mewar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			patan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			saurashtra_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ahmedabad_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = west_indian_fell
+				duration = 3650
+			}
+		}
+	}
+}
+
+KUS_mission_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			AND = {
+				OR = {
+					was_tag = DY2
+					was_tag = DX3
+				}
+				tag = KUS
+			}
+			tag = KUS
+		}
+	}
+	has_country_shield = yes
+	
+	strongest_yabghu = {
+		icon = mission_levantine_restoration
+		required_missions = { stop_migration }
+		position = 6
+		trigger = {
+			stability = 3
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			army_size = 30
+		}
+		effect = {
+			add_legitimacy = 100
+			if = {
+				limit = {
+					NOT = { owns_core_province = 441 }
+				}
+				441 = {
+					add_permanent_claim = ROOT
+				}	
+			}	
+			if = {
+				limit = {
+					NOT = { owns_core_province = 1973 }
+				}
+				1973 = {
+					add_permanent_claim = ROOT
+				}	
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 440 }
+				}
+				440 = {
+					add_permanent_claim = ROOT
+				}	
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 2431 }
+				}
+				2431 = {
+					add_permanent_claim = ROOT
+				}	
+			}
+			ghor_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sistan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			makran_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	baluch_port = {
+		icon = mission_aragonese_navy
+		required_missions = { strongest_yabghu }
+		required_missions = { ferghana }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = ghor_area
+				area = sistan_area
+				area = makran_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}	
+		trigger = {
+			ghor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sistan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			makran_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = invade_baluch
+				duration = 3650
+			}
+			multan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kalat_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_sindh_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sindh_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+KUS_mission_3 = {
+	slot = 3
+	generic = no
+	ai = no
+	potential = { 
+		OR = {
+			AND = {
+				OR = {
+					was_tag = DY2
+					was_tag = DX3
+				}
+				tag = KUS
+			}
+			tag = KUS
+		}
+	}
+	has_country_shield = yes
+
+	ferghana = {
+		icon = mission_restore_rule_over_mysore
+		required_missions = { yumen_trade }
+		position = 7
+		trigger = {
+			OR = {
+				DWG = {
+					has_opinion = {
+						who = ROOT
+						value = 190
+					}
+				}
+				NOT = { exists = DWG }
+			}
+		}
+		effect = {
+			inherit = DWG
+			sind_sagar_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lahore_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			jangladesh_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sirhind_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	inbreak_north_india = {
+		icon = mission_unite_rajputana
+		required_missions = { ferghana }
+		required_missions = { baluch_port }
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = sind_sagar_area
+				area = lahore_area
+				area = jangladesh_area
+				area = sirhind_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			sind_sagar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lahore_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			jangladesh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sirhind_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}	
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = inbreak_north_india
+				duration = 3650
+			}
+		}
+	}
+}
+
+KUS_mission_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			AND = {
+				OR = {
+					was_tag = DY2
+					was_tag = DX3
+				}
+				tag = KUS
+			}
+			tag = KUS
+		}
+	}
+	has_country_shield = yes
+
+	celestial_contradiction = {
+		icon = mission_scholar_officials
+		required_missions = { return_to_taklimakan }
+		position = 5
+		trigger = {
+			any_country = {
+				has_reform = celestial_empire
+				war_with = ROOT
+				NOT = {
+					war_score_against = {
+						who = ROOT
+						value = -25
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = xiyu_trouble
+				duration = 3650
+			}
+		}
+	}
+
+	imperfection = {
+		icon = mission_impaled_soldies
+		required_missions = { celestial_contradiction }
+		position = 7
+		trigger = {
+			any_country = {
+				has_reform = celestial_empire
+				war_with = ROOT
+				NOT = {
+					war_score_against = {
+						who = ROOT
+						value = -75 
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = beat_china
+				duration = -1
+			}
+		}
+	}
+
+	decisive_battle_with_persia = {
+		icon = mission_crusade_for_varna
+		required_missions = { imperfection }
+		required_missions = { ferghana_horse }
+		position = 9
+		trigger = {
+			OR = {
+				AND = {
+					war_with = PRT
+					war_score_against = {
+						who = PRT
+						value = 75
+					}
+				}
+				AND = {
+					war_with = SAS
+					war_score_against = {
+						who = SAS
+						value = 75
+					}
+				}
+				AND = {
+					NOT = { exists = PRT }
+					NOT = { exists = SAS }
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = beat_persian
+				duration = -1
+			}
+		}
+	}
+}		
+
+KUS_mission_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			AND = {
+				OR = {
+					was_tag = DY2
+					was_tag = DX3
+				}
+				tag = KUS
+			}
+			tag = KUS
+		}
+	}
+	has_country_shield = yes
+
+	ferghana_horse = {
+		icon = mission_chinese_general_riding
+		required_missions = { imperfection }
+		required_missions = { annex_XiaoRouzhi }
+		position = 8
+		trigger = {
+			any_owned_province = {
+				is_capital = yes
+				trade_goods = livestock
+			}
+		}
+		effect = {
+			country_event = { id = kushan_flavor.1 }
+		}
+	}
+
+	entrepot_trade = {
+		icon = mission_the_chola_campaigns
+		required_missions = { ferghana_horse }
+		position = 9
+		trigger = {
+			monthly_income = 40
+		}
+		effect = {
+			add_country_modifier = {
+				name = golden_coin
+				duration = -1
+			}
+		}
+	}
+}
+	
+	
+
+
+
+
+
+
+
+

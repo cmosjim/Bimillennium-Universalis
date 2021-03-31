@@ -1,0 +1,89 @@
+WudeShiKuo_Missions = {
+	slot = 5 #right column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		has_country_modifier = wudaigeju
+	}
+	has_country_shield = yes
+	wudaixuanchengdi_mission = {
+		icon = mission_inspect
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_country_modifier = wudaidiguo
+		}
+		effect = {
+			add_prestige = 10
+			add_mil_power = 50
+		}		
+	}
+	wudaigaigewu1_mission = {
+		icon = mission_unite_home_region
+		required_missions = { wudaixuanchengdi_mission }
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			has_country_modifier = wudaiwugai
+		}
+		effect = {
+			add_mil_power = 150
+		}
+	}
+	wudaigaigewen_mission = {
+		icon = mission_cannons_firing
+		required_missions = { wudaigaigewu1_mission }
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			has_country_modifier = wudaiwengai
+		}
+		effect = {
+			add_army_professionalism = 0.05
+		}
+	}
+	wudaigaigeguan_mission = {
+		icon = mission_assemble_an_army
+		required_missions = { wudaigaigewen_mission }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_country_modifier = wudaiguangai
+		}
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+		
+		}
+	}	
+	get_wenwuzhi = {
+		icon = mission_sea_battles
+		required_missions = { wudaigaigeguan_mission }
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			has_reform = celestial_empire
+			custom_trigger_tooltip = {
+				tooltip = get_wenwuzhi.tooltip
+					has_country_flag = wenwuzhi1
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "md_new_period"
+				duration = 3600
+			}
+		}
+	}
+}

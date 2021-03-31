@@ -1,0 +1,1117 @@
+MGH_mission_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MGH
+			tag = MY1
+		}
+	}
+	has_country_shield = yes
+
+	reevaluate_caste_system = {
+		icon = mission_found_udaipur
+		required_missions = { }
+		position = 1
+		trigger = {
+			estate_loyalty = {
+				estate = estate_brahmins
+				loyalty = 65
+			}
+			estate_influence = {
+				estate = estate_brahmins
+				influence = 60
+			}
+			estate_loyalty = {
+				estate = estate_vaisyas
+				loyalty = 65
+			}
+			estate_influence = {
+				estate = estate_vaisyas
+				influence = 60
+			}
+		}
+		effect = {
+			add_stability = 1
+			add_prestige = 20
+		}
+	}
+	
+	deal_with_rajput = {
+		icon = mission_defeat_mewar
+		required_missions = { reevaluate_caste_system }
+		position = 3
+		trigger = {
+			estate_loyalty = {
+				estate = estate_rajput
+				loyalty = 65
+			}
+			estate_influence = {
+				estate = estate_rajput
+				influence = 60
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = efficient_administration 
+				duration = -1
+			}
+		}
+	}
+
+	deal_with_jains = {
+		icon = mission_brahmin_administrators
+		required_missions = { deal_with_rajput }
+		position = 5
+		trigger = {
+			estate_influence = {
+				estate = estate_jains
+				influence = 50
+			}
+			estate_loyalty = {
+				estate = estate_jains
+				loyalty = 65
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = deal_with_jains
+				duration = -1
+			}
+		}
+	}
+}
+
+MGH_mission_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MGH
+			tag = MY1
+		}
+	}
+	has_country_shield = yes
+
+	Buddhist_sanctuary = {
+		icon = mission_hands_praying
+		required_missions = { make_or_break }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = nepal_area
+				area = baisi_rajya_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			nepal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			baisi_rajya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					4609 = {
+						NOT = { has_building = glorious_monument }
+					}
+				}
+				add_building = glorious_monument
+			}
+			4609 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				change_religion = mahayana
+			}
+			country_event = { id = magadha_flavor.1 }
+		}
+	}
+
+	purdue_beings = {
+		icon = mission_din_i_llahi
+		required_missions = { Buddhist_sanctuary }
+		position = 3
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 20
+				religion = mahayana
+			}
+		}
+		effect = {
+			add_ADM_power = 100
+			add_stability = 1
+		}
+	}
+
+	army = {
+		icon = mission_accomodate_the_rajputs
+		required_missions = { deal_with_rajput }
+		position = 4
+		trigger = {
+			num_of_infantry = 30
+			num_of_cavalry = 20
+			num_of_artillery = 10
+		}
+		effect = {
+			add_manpower = 10
+			add_years_of_income = 1
+			add_MIL_power = 100
+			add_country_modifier = {
+				name = army_reformation
+				duration = 10950
+			}
+		}
+	}
+
+	march_to_North_India = {
+		icon = mission_bengal_campaign
+		required_missions = { march_to_In_India }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = oudh_area 
+				area = lower_doab_area
+				area = katehar_area 
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			oudh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_doab_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			katehar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = march_to_North_India
+				duration = 3650
+			}
+			himalayan_hills_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_doab_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			jaipur_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sirhind_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			jangladesh_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	negotiate_with_Satavahana = {
+		icon = mission_the_tamil_trade_guilds
+		required_missions = { conquer_WesternSatraps }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = saurashtra_area 
+				area = ahmedabad_area 
+				area = tapti_area 
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			NOT = { exists = WSA }
+			saurashtra_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ahmedabad_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tapti_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = { id = magadha_flavor.2 }
+		}
+	}
+
+	declare_Satavahana = {
+		icon = mission_delhi_resurgent
+		required_missions = { negotiate_with_Satavahana }
+		position = 8
+		trigger = {
+			OR = {
+				SAT = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+				reverse_has_opinion_modifier = {
+					who = SAT
+					modifier = insulted
+				}
+				reverse_has_opinion_modifier = {
+					who = SAT
+					modifier = scornfully_insulted
+				}
+				NOT = { exists = SAT }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = overlord_of_India
+				duration = 7300
+			}
+		}
+	}
+
+	integrate_Satavahana = {
+		icon = mission_indian_empire
+		required_missions = { declare_Satavahana }
+		position = 9
+		trigger = {
+			NOT = { exists = SAT }
+			1948 = {
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_stability = 2
+		}
+	}
+}	
+
+MGH_mission_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MGH
+			tag = MY1
+		}
+	}
+	has_country_shield = yes
+
+	make_or_break = {
+		icon = mission_end_tamil_insurgency
+		required_missions = { }
+		trigger = {
+			total_development = 50
+			army_size = 15
+		}
+		effect = {
+			add_army_tradition = 10	
+			add_years_of_income = 1
+			nepal_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			baisi_rajya_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bihar_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			purvanchal_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mithila_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	unify_bihar = {
+		icon = mission_marathi_fiefs
+		required_missions = { make_or_break }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = bihar_area
+				area = purvanchal_area
+				area = mithila_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			bihar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			purvanchal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mithila_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			558 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			oudh_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_doab_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			katehar_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			baghelkhand_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bundelkhand_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	march_to_In_India = {
+		icon = mission_invade_maharashtra
+		required_missions = { unify_bihar }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = baghelkhand_area
+				area = bundelkhand_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			baghelkhand_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bundelkhand_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			gondwana_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			gird_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			malwa_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	conquer_Malwa = {
+		icon = mission_abu_saids_dream
+		required_missions = { march_to_In_India }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = gondwana_area
+			   	area = gird_area
+				area = malwa_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			gondwana_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gird_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			malwa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = { exists = MLW }
+		}
+		effect = {
+			add_country_modifier = {
+				name = conquer_Malwa
+				duration = 3650 
+			}
+		 	mewar_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			marwar_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			patan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	conquer_WesternSatraps = {
+		icon = mission_the_battle_for_raichur
+		required_missions = { conquer_Malwa }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = mewar_area
+			   	area = marwar_area
+				area = patan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			mewar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			marwar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			patan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = surrender_of_WesternSatraps
+				duration = 7300
+			}
+			saurashtra_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ahmedabad_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tapti_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	return_to_Indus = {
+		icon = mission_conquer_gujarat_dlh
+		required_missions = { conquer_WesternSatraps }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = upper_doab_area 
+			 	area = jaipur_area
+				area = sirhind_area
+				area = jangladesh_area 	
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			upper_doab_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			jaipur_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sirhind_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			jangladesh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			sindh_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_sindh_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			multan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lahore_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sind_sagar_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_kashmir_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	river_valley_civilization = {
+		icon = mission_court_education
+		required_missions = { return_to_Indus }
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = sindh_area
+			 	area = northern_sindh_area
+				area = multan_area
+				area = lahore_area 	
+				area = sind_sagar_area
+				area = west_kashmir_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			sindh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_sindh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			multan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lahore_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sind_sagar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_kashmir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			kabulistan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ghor_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sistan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kalat_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			makran_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+			
+MGH_mission_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MGH
+			tag = MY1
+		}
+	}
+	has_country_shield = yes
+
+	Varanasi = {
+		icon = mission_rajputana_frontier
+		required_missions = { make_or_break }
+		position = 2
+		trigger = {
+			2241 = {
+				is_core = ROOT
+				religion = hinduism
+				base_tax = 5
+				base_production = 5
+			 }
+			has_personal_deity = shiva
+		}
+		effect = {
+			2241 = {
+				add_province_modifier = {
+					name = protect_Varanasi
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = conquer_Varanasi
+				duration = 3650
+			}
+		}
+	}
+
+	accept_Hindu_devotees = {
+		icon = mission_patronize_sufi_scholars
+		required_missions = { Varanasi }
+		position = 3
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 50
+				religion = hinduism
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = accept_Hindu_devotees
+				duration = 7300
+			}
+		}
+	}
+			
+	strengthen_control_of_Ganges = {
+		icon = mission_conquer_andhra_bah
+		required_missions = { conquer_bengal }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = gaur_area 
+			   	area = north_bengal_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			gaur_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_bengal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			jharkhand_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			orissa_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_mahanadi_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			garjat_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			andhra_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	food_production = {
+		icon = mission_rb_import_potatoes
+		required_missions = { march_to_In_India }
+		position = 5
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				trade_goods = grain
+				base_production = 6
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = develop_agriculture
+				duration = 18250
+			}
+		}
+	}
+
+	settle_under_himalaya = {
+		icon = mission_secure_khandesh
+		required_missions = { conquer_WesternSatraps }
+		position = 7
+		provinces_to_highlight = {
+			area = himalayan_hills_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			himalayan_hills_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			western_assam_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			assam_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tripura_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			arakan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	war_of_Kalinga = {
+		icon = mission_end_tamil_insurgency
+		required_missions = { settle_under_himalaya }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = jharkhand_area
+				area = orissa_area
+			 	area = upper_mahanadi_area
+				area = garjat_area
+				area = andhra_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			jharkhand_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			orissa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_mahanadi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			garjat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			andhra_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = conquer_Kalinga
+				duration = 3650
+			}
+		}
+	}
+
+	great_peace = {
+		icon = mission_invade_burma
+		required_missions = { war_of_Kalinga }
+		position = 9
+		trigger = {
+			NOT = { had_recent_war = 30 }
+			num_of_owned_provinces_with = {
+				value = 200
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = great_peace
+				duration = -1
+			}
+		}
+	}
+}
+	
+MGH_mission_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MGH
+			tag = MY1
+		}
+	}
+	has_country_shield = yes
+
+	search_for_ports = {
+		icon = mission_recover_konkan_ports
+		required_missions = { }
+		position = 1
+		trigger = {
+			army_size_percentage = 1.25
+		}
+		effect = {
+			west_bengal_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	conquer_bengal =  {
+		icon = mission_conquer_burma
+		required_missions = { search_for_ports }
+		position = 3
+		provinces_to_highlight = {
+			area = west_bengal_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			west_bengal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			gaur_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_bengal_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_bengal_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	bengal_trade = {
+		icon = mission_consume_the_baghels
+		required_missions = { conquer_bengal }
+		position = 5
+		provinces_to_highlight = {
+			area = east_bengal_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			east_bengal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			561 = {
+				province_has_center_of_trade_of_level = 2
+			}
+			564 = {
+				province_has_center_of_trade_of_level = 2
+			}
+			4595 = {
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = bengal_trade
+				duration = 3650
+			}
+		}
+	}
+
+

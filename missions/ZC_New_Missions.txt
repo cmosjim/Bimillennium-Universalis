@@ -1,0 +1,915 @@
+NEW_mission_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = NEW
+		}
+	}
+	has_country_shield = yes
+
+	wise = {
+		icon = mission_ottoman_harem
+		required_missions = { }
+		position = 1
+		trigger = {
+			OR = {
+				natural_scientist = 5
+				treasurer = 5
+				theologian = 5
+				inquisitor = 5
+				artist = 5
+				master_of_mint = 5
+				philosopher = 5
+			}
+			OR = {
+				statesman = 5
+				naval_reformer = 5
+				trader = 5
+				spymaster = 5
+				colonial_governor = 5
+				diplomat = 5
+				navigator = 5
+			}
+			OR = {
+				army_reformer = 5
+				army_organiser = 5
+				commandant = 5
+				quartermaster = 5
+				recruitmaster = 5
+				fortification_expert = 5
+				grand_captain = 5
+			}
+			has_commanding_three_star = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = good_reputation
+				duration = 3650
+			}
+		}
+	}
+
+	against_business_monopoly = {
+		icon = mission_entrepot_of_india
+		required_missions = { wise }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 679
+			province_id = 700
+			province_id = 2492
+			province_id = 2502
+			province_id = 1836
+			province_id = 3254
+		}
+		trigger = {
+			owns = 679
+			679 = {
+				base_tax = 5
+			}
+			owns = 700
+			700 = {
+				base_tax = 5
+			}
+			owns = 2492
+			2492 = {
+				base_tax = 5
+			}
+			owns = 2502
+			2502 = {
+				base_tax = 5
+			}
+			owns = 1836
+			1836 = {
+				base_tax = 5
+			}
+			owns = 3254
+			3254 = {
+				base_tax = 5
+			}
+			NOT = { inflation = 0.01 }
+		}
+		effect = {
+			679 = {
+				add_province_modifier = {
+					name = wu_jun_guan
+					duration = -1
+				}
+			}
+			700 = {
+				add_province_modifier = {
+					name = wu_jun_guan
+					duration = -1
+				}
+			}
+			2492 = {
+				add_province_modifier = {
+					name = wu_jun_guan
+					duration = -1
+				}
+			}
+			2502 = {
+				add_province_modifier = {
+					name = wu_jun_guan
+					duration = -1
+				}
+			}
+			1836 = {
+				add_province_modifier = {
+					name = wu_jun_guan
+					duration = -1
+				}
+			}
+			3254 = {
+				add_province_modifier = {
+					name = wu_jun_guan
+					duration = -1
+				}
+			}
+		}
+	}
+
+	liu_guan = {
+		icon = mission_establish_mint_towns
+		required_missions = { against_business_monopoly }
+		required_missions = { monetary_reform_crisis }
+		position = 5
+		trigger = {
+			NOT = {
+				estate_influence = {
+					estate = estate_burghers
+					influence = 30
+				}
+			}
+		}
+		effect = {
+			add_mandate = 20
+			add_meritocracy = 20 
+			add_corruption = 5
+		}
+	}
+
+	limit_officers = {
+		icon = mission_have_two_subjects
+		required_missions = { liu_guan }
+		required_missions = { abolitionism }
+		position = 6
+		trigger = {
+			NOT = { corruption = 0.01 }
+			tax_income_percentage = 0.4
+		}
+		effect = {
+			add_country_modifier = {
+				name = liu_guan
+				duration = -1
+			}
+		}
+	}
+
+	wang_tian = {
+		icon = mission_rb_conquer_wales
+		required_missions = { limit_officers }
+		required_missions = { jiao_zhou_return }
+		position = 7
+		trigger = {
+			NOT = {
+				estate_influence = {
+					estate = estate_burghers
+					influence = 30
+				}
+			}
+			NOT = {		
+				estate_influence = {
+					estate = estate_church
+					influence = 30
+				}
+			}	
+			NOT = {		
+				estate_influence = {
+					estate = estate_nobles
+					influence = 30
+				}
+			}
+		}
+		effect = {
+			add_mandate = 80
+			add_stability = -3
+			random_owned_province = {
+        				spawn_rebels = {
+					type = noble_rebels 
+         					size = 20
+				}
+			}
+			random_owned_province = {
+        				spawn_rebels = {
+					type = noble_rebels 
+         					size = 20
+				}
+			}
+			random_owned_province = {
+        				spawn_rebels = {
+					type = noble_rebels 
+         					size = 20
+				}
+			}
+			random_owned_province = {
+        				spawn_rebels = {
+					type = noble_rebels 
+         					size = 20
+				}
+			}
+			random_owned_province = {
+        				spawn_rebels = {
+					type = noble_rebels 
+         					size = 20
+				}
+			}
+			random_owned_province = {
+        				spawn_rebels = {
+					type = noble_rebels 
+         					size = 20
+				}
+			}
+			random_owned_province = {
+        				spawn_rebels = {
+					type = noble_rebels 
+         					size = 20
+				}
+			}
+		}
+	}
+
+	land_nationalization  = {
+		icon = mission_rb_scottish_the_darien_scheme
+		required_missions = { wang_tian }
+		position = 8
+		trigger = {
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			stability = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = land_nationalization
+				duration = -1
+			}
+		}
+	}
+}
+
+NEW_mission_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = NEW
+		}
+	}
+	has_country_shield = yes
+
+	classical_ancient_prose = {
+		icon = mission_hands_praying
+		required_missions = { }
+		position = 1
+		trigger = {
+			NOT = { meritocracy = 75 }
+			stability = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = classical_ancient_prose
+				duration = 1825
+			}
+			hidden_effect = {
+				country_event = { id = liuxin_advisor_come.1 }
+			}
+		}
+	}
+
+	broadcast_of_classical_ancient_prose = {
+		icon = mission_scholar_officials
+		required_missions = { classical_ancient_prose }
+		required_missions = { wise }
+		position = 2
+		trigger = {
+			NOT = { has_country_modifier = classical_ancient_prose }
+			meritocracy = 100
+		}
+		effect = {
+			700 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			add_country_modifier = {
+				name = broadcast_of_classical_ancient_prose
+				duration = 7300
+			}
+		}
+	}
+
+	liu_xin_coup = {
+		icon = mission_spoils_of_war
+		required_missions = { broadcast_of_classical_ancient_prose }
+		required_missions = { two_capitals }
+		position = 3
+		trigger = {
+			liuxin = 5
+		}
+		effect = {
+			country_event = { id = new_flavor.1 }
+		}
+	}
+
+	monetary_reform_crisis = {
+		icon = mission_african_gold
+		required_missions = { }
+		position = 4
+		trigger = {
+			check_variable = {
+				which = monetary_reform
+				value = 4
+			}
+		}
+		effect = {
+			add_mandate = 80
+			add_inflation = 10
+			random_owned_province = {
+        				spawn_rebels = {
+					type = noble_rebels 
+         					size = 20
+				}
+			}
+			random_owned_province = {
+        				spawn_rebels = {
+					type = noble_rebels 
+         					size = 20
+				}
+			}
+			random_owned_province = {
+        				spawn_rebels = {
+					type = noble_rebels 
+         					size = 20
+				}
+			}
+			random_owned_province = {
+        				spawn_rebels = {
+					type = anti_tax_rebels 
+         					size = 20
+				}
+			}
+			random_owned_province = {
+        				spawn_rebels = {
+					type = anti_tax_rebels 
+         					size = 20
+				}
+			}
+			random_owned_province = {
+        				spawn_rebels = {
+					type = anti_tax_rebels 
+         					size = 20
+				}
+			}
+			random_owned_province = {
+        				spawn_rebels = {
+					type = anti_tax_rebels 
+         					size = 20
+				}
+			}
+		}
+	}
+
+	high_quality_coin = {
+		icon = mission_high_income
+		required_missions = { monetary_reform_crisis }
+		position = 5
+		trigger = {
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			NOT = { inflation = 0.01 }
+			check_variable = {
+				which = monetary_reform
+				value = 5
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = successful_monetary_reform
+				duration = -1
+			}
+		}
+	}
+}
+	
+NEW_mission_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = NEW
+		}
+	}
+	has_country_shield = yes
+
+	two_capitals = {
+		icon = mission_asian_city
+		required_missions = { }
+		position = 2
+		trigger = {
+			owns = 700
+			owns = 2492
+			700 = { development = 20 }
+			2492 = { development = 20 }
+			OR = {
+				capital = 700
+				capital = 2492
+			}
+		}
+		effect = {
+			700 = {
+				add_province_modifier = {
+					name = two_capitals
+					duration = -1
+				}
+			}
+			2492 = {
+				add_province_modifier = {
+					name = two_capitals
+					duration = -1
+				}
+			}
+		}
+	}
+
+	population_explosion = {
+		icon = mission_religious
+		required_missions = { two_capitals }
+		required_missions = { crusade_xiong_nu }
+		position = 3
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 30
+				base_manpower = 5
+			}
+		}		
+		effect = {
+			add_meritocracy = 10 
+			remove_country_modifier = population_explosion
+		}
+	}
+
+	abolitionism = {
+		icon = mission_rice_field
+		required_missions = { population_explosion }
+		required_missions = { monetary_reform_crisis }
+		position = 5
+		trigger = {
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			manpower = 100
+		}
+		effect = {
+			add_country_modifier = {
+				name = abolitionism
+				duration = 18250
+			}
+			add_country_modifier = {
+				name = local_anti_abolitionism
+				duration = 3650
+			}
+		}
+	}
+}		
+
+NEW_mission_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = NEW
+		}
+	}
+	has_country_shield = yes
+
+	xiongnu_seal = {
+		icon = mission_rb_monopolize_the_channel
+		required_missions = { }
+		position = 1
+		trigger = {
+			XIO = {
+				has_opinion = {
+					who = ROOT
+					value = 0
+				}
+			}
+			prestige = 25
+		}
+		effect = {
+			add_mandate = 40
+			country_event = { id = new_flavor.2 }
+			every_province = {
+            	limit = {
+					owned_by = XIO
+					NOT = {
+						owned_by = ROOT
+					}					
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	crusade_xiong_nu = {
+		icon = mission_unite_the_deccan
+		required_missions = { xiongnu_seal }
+		position = 2
+		trigger = {
+			OR = {
+				AND = {
+					war_with = XIO
+					war_score_against = {
+						who = XIO
+						value = 80
+					}
+				}
+				NOT = { exists = XIO }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = win_expedition
+				duration = 3650
+			}
+			XIO = {
+				add_horde_unity = -20
+				add_country_modifier = {
+					name = xiang_nu_chan_yu
+					duration = 3650
+				}
+			}
+			every_province = {
+            				limit = {
+              					owned_by = WWH
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	control_wu_huan = {
+		icon = mission_chinese_general_riding
+		required_missions = { crusade_xiong_nu }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 3253
+				province_id = 2550
+				province_id = 3189
+				province_id = 2551
+				province_id = 703
+				province_id = 3201
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			3253 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			2550 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			3189 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			2551 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			703 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			3201 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_DIP_power = 100
+			every_province = {
+            				limit = {
+					owned_by = GOG
+		
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	conquer_koguryo = {
+		icon = mission_impaled_soldies
+		required_missions = { control_wu_huan }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2553
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			2553 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_ADM_power = 50
+			add_DIP_power = 50
+			add_MIL_power = 50
+			every_province = {
+   				limit = {
+  					owned_by = GO2
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+			
+	supress_gou_ding = {
+		icon = mission_crusade_for_varna
+		required_missions = { conquer_koguryo }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2468
+				province_id = 663
+				province_id = 4819
+				province_id = 4842
+				province_id = 2384
+				province_id = 2383
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			2468 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			663 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			4819 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			4842 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			2384 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			2383 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			NOT = { exists = GO2 }
+		}
+		effect = {
+			add_prestige = 10
+			add_adm_power = 50
+			every_province = {
+				limit = {
+              					owned_by = DR1
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	jiao_zhou_return = {
+		icon = mission_city_of_the_world's_desire
+		required_missions = { supress_gou_ding }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = guangdong_area
+				area = guangzhou_area
+				area = west_guangdong_area
+				area = hainan_area
+				area = guangxi_area
+				area = guangxi_center_area
+				area = guangxi_west_area
+				area = red_river_delta_area
+				area = vietnam_area
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			guangdong_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			guangzhou_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			west_guangdong_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			hainan_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			guangxi_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			guangxi_center_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			guangxi_west_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			red_river_delta_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			vietnam_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			NOT = { exists = DR1 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = jiao_zhou_return
+				duration = 3650
+			}
+		}
+	}
+}
+

@@ -1,0 +1,192 @@
+CAP_mission_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = CAP
+			tag = HT2
+		}
+	}
+	has_country_shield = yes
+
+	mastery_of_iron = {
+		icon = mission_rb_unite_the_clans
+		required_missions = { }
+		position = 1
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 2
+				trade_goods = iron
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mastery_of_iron
+				duration = -1
+			}
+		}
+	}
+
+	seize_slaves = {
+		icon = mission_mayan_conquest
+		required_missions = { mastery_of_iron }
+		position = 2
+		trigger = {
+			grown_by_development = 150
+		}
+		effect = {
+			add_country_modifier = {
+				name = slave_economy
+				duration = -1
+			}
+		}
+	}	
+
+	hittite_law = {
+		icon = mission_consulate_of_the_sea
+		required_missions = { seize_slaves }
+		position = 3
+		trigger = {
+			has_idea = hittfadian
+			any_owned_province = {
+				NOT = { unrest = 0 }
+			}
+		}
+		effect = {
+			add_stability = 1
+			add_treasury = 100
+		}
+	}
+
+	adapt_to_modern_times = {
+		icon = mission_potosi_silver
+		required_missions = { hittite_law }
+		position = 4
+		trigger = {
+			adm_tech = 10
+			dip_tech = 10
+			mil_tech = 10
+		}
+		effect = {
+			add_ADM_power = 300
+			add_DIP_power = 300
+			add_MIL_power = 300
+		}
+	}
+}
+
+CAP_mission_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CAP
+			tag = HT2
+		}
+	}
+	has_country_shield = yes
+
+	home_of_hittie = {
+		icon = mission_spoils_of_war
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = karaman_area
+				area = rum_area
+				area = ankara_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			karaman_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			rum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ankara_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = home_of_hittie
+				duration = 3650
+			}
+		}
+	}
+
+	unify_anatolia = {
+		icon = mission_subdue_the_afghans
+		required_missions = { home_of_hittie }
+		position = 2
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 30
+				region = anatolia_region
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = unify_anatolia
+				duration = 5475
+			}
+			aleppo_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			syria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	invade_syria = {
+		icon = mission_fortify_mandu
+		required_missions = { unify_anatolia }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = aleppo_area
+				area = syria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			aleppo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			syria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = invade_syria
+				duration = 3650
+			}
+		}
+	}
+}
+			
+
+
+	
+
+	

@@ -1,0 +1,154 @@
+27_GE1_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = GE1
+			tag = GE2
+		}
+	}
+	has_country_shield = yes
+	
+	#整军备战
+	zhengjun_beizhan = {
+		icon = mission_chinese_general_riding
+		required_missions = {  }
+		trigger = {
+			owns = 3304
+			owns = 2885
+			army_size = 15
+		}
+		effect = {
+			add_treasury = 300
+			add_yearly_manpower = 10
+			country_event = { 
+				days = 30
+				id = GYDT_events_namespace.5
+			}
+			westnorth_gansu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		#添加永久宣称
+			}
+		}
+	}
+	
+	#走出瓜沙
+	zouchu_guasha = {
+		icon = mission_inspect
+		required_missions = { zhengjun_beizhan }
+		trigger = {
+			is_at_war = no
+			owns = 4894	#拥有敦煌
+			num_of_cities = 5
+		}
+		effect = {
+			country_event = { 
+				id = GYDT_events_namespace.1
+			}
+		}
+	}
+	
+	#东归或西进
+	east_or_west = {
+		icon = mission_roads
+		required_missions = { zouchu_guasha }
+		trigger = {
+			owns = 3304
+			owns = 2885
+			owns = 4894
+			num_of_cities = 10
+		}
+		effect = {
+			add_prestige = 10
+			west_gansu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		#添加永久宣称
+			}
+			
+			turpan_kumul_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		#添加永久宣称
+			}
+			
+			shanshan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		#添加永久宣称
+			}
+		}
+	}
+	
+	#地方一霸
+	difang_yiba = {
+		icon = mission_conquer_kathiawar
+		required_missions = { east_or_west }
+		trigger = {
+			home_trade_node = {
+				is_strongest_trade_power = ROOT
+			}
+			num_of_cities = 30
+		}
+		effect = {
+			add_treasury = 150
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			
+			hebei_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		#添加永久宣称
+			}
+			hebei_mid_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		#添加永久宣称
+			}
+			hebei_west_area = {  #NEW 7.6
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		#添加永久宣称
+			} 
+		}
+	}
+	
+	#重返中原
+	chongfan_zhongyuan = {
+		icon = mission_a_million_rice_fields
+		required_missions = { difang_yiba }			
+		trigger = {
+			num_of_cities = 50
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						region = xinan_region
+						region = north_china_region
+						region = south_china_region
+					}	
+				}
+				amount = 10
+			}
+		}
+		effect = {
+			add_prestige = 50
+		}
+	}
+}

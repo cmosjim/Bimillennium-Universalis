@@ -1,0 +1,1724 @@
+KHT_mission_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = KHT
+			tag = LIO
+		}
+	}
+	has_country_shield = yes
+
+	khitan_eight_horde = {
+		icon = mission_unite_the_deccan
+		required_missions = { }
+		position = 1
+		trigger = {
+			estate_influence = {
+    				estate = estate_nomadic_tribes
+    				influence = 60
+			}
+			estate_loyalty = {
+    				estate = estate_nomadic_tribes
+    				loyalty = 50
+			}
+		}
+		effect = {
+			add_horde_unity = 15
+			add_prestige = 10
+		}
+	}
+
+	trial_law = {
+		icon = mission_consulate_of_the_sea
+		required_missions = { khitan_eight_horde }
+		required_missions = { liao_han_city }
+		position = 2
+		trigger = {
+			has_idea = khitan_script
+			NOT = { average_autonomy = 1 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = trial_law
+				duration = 7300
+			}
+		}
+	}
+
+	only_khan_emperor = {
+		icon = mission_empire
+		required_missions = { trial_law }
+		position = 3
+		trigger = {
+			NOT = {
+				estate_territory = {
+    					estate = estate_nomadic_tribes
+    					territory = 30 
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = khan_hereditary
+				duration = -1
+			}
+		}
+	}
+
+	liao_imperial_examinations = {
+		icon = mission_rb_monopolize_the_channel
+		required_missions = { only_khan_emperor }
+		required_missions = { kaifeng_jianliao }
+		position = 6
+		trigger = {
+			has_institution = civil_service
+			check_variable = {
+				which = examination_held
+				value = 5
+			}
+		}
+		effect = {
+			add_meritocracy = 15
+			add_country_modifier = {
+				name = han_liao_officer
+				duration = 9125
+			}
+		}
+	}
+}
+
+KHT_mission_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = KHT
+			tag = LIO
+		}
+	}
+	has_country_shield = yes
+
+	liao_han_city = {
+		icon = mission_pacify_punjab
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			province_id = 722
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			owns = 722
+			capital = 722
+			722 = {
+				has_state_edict = edict_encourage_development
+			}
+		}		
+		effect = {
+			722 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				change_province_name = "Il垛"
+				change_trade_goods = salt
+			}
+			add_casus_belli = {
+				target = DN2
+				type = cb_vassalize_mission
+    				months = 120
+			}
+			add_casus_belli = {
+				target = XIA
+				type = cb_vassalize_mission
+    				months = 120
+			}
+			eastern_mid_mongolia = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			702 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ordos_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ordos_east_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	tangut_defect = {
+		icon = mission_afghan_frontier
+		required_missions = { liao_han_city }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = ordos_area
+				area = ordos_east_area
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			AND = {
+				OR = {
+					AND = {
+						NOT = { exists = DN2 }
+						NOT = { exists = XIA }
+					}
+					DN2 = { is_subject_of = ROOT }
+					XIA = { is_subject_of = ROOT }
+				}
+				ordos_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { 
+							is_subject_of = ROOT
+							NOT = { is_subject_of_type = tributary_state }
+						}	
+					}
+				}
+				ordos_east_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { 
+							is_subject_of = ROOT
+							NOT = { is_subject_of_type = tributary_state }
+						}	
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = tangut_back
+				duration = 7300
+			}
+		}
+	}
+		
+	learn_han_system = {
+		icon = mission_the_chola_campaigns	
+		required_missions = { tangut_defect }
+		position = 3
+		trigger = {
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 10
+					culture_group = east_asian
+				}
+				has_idea = parallel_governments_khitans
+			}
+			722 = { has_building = temple }
+		}
+		effect = {
+			722 = {
+				change_province_name = "N昧"
+				add_province_modifier = {
+					name = shangjing_linhuangfu
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = hu_han_fen_zhi
+				duration = -1
+			}
+		}
+	}
+	
+	chanyuan_alliance = {
+		icon = mission_invade_the_deccan_ori
+    		required_missions = { learn_han_system }
+		required_missions = { north_great_wall }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 3215
+		}
+		trigger = {
+			war_with = SNG
+			war_score_against = {
+				who = SNG
+				value = 70
+			}
+			OR = {
+				3215 = {
+					NOT = { owned_by = ROOT }
+					controlled_by = ROOT
+				}
+				3215 = {			
+					owned_by = ROOT	
+				}
+			}
+		}
+		effect = {
+			country_event = { id = khitan_flavor.1 }
+		}
+	}	
+}
+			
+KHT_mission_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = KHT
+			tag = LIO
+		}
+	}
+	has_country_shield = yes
+
+	qianjin_frontier = {
+		icon = mission_crusade_for_varna
+		required_missions = { liao_han_city }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = eastern_mid_mongolia
+				province_id = 702
+				province_id = 3223
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			eastern_mid_mongolia = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			702 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			3223 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_MIL_power = 50
+			inner_mongolia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hebei_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			shanxi_north_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			3190 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			696 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			3182 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	north_great_wall = {
+		icon = mission_great_wall
+		required_missions = { qianjin_frontier }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = inner_mongolia_area
+				province_id = 3190
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			inner_mongolia_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			3190 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}	
+		}
+		effect = {
+			add_country_modifier = {
+				name = song_opposition
+				duration = 5475
+			}
+		}
+	}
+
+	qianjin_yanyun = {
+		icon =mission_protect_granada
+		required_missions = { north_great_wall }
+		required_missions = { xianbei_grassland }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = hebei_area
+				area = shanxi_north_area
+				province_id = 696
+				province_id = 3182
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			hebei_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			shanxi_north_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			696 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			3182 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}	
+		}
+		effect = {
+			add_manpower = 2
+			add_country_modifier = {
+				name = celestial_military_officer
+				duration = 5475
+			}
+		}
+	}
+
+	kaifeng_jianliao = {
+		icon = mission_kowtow
+		required_missions = { qianjin_yanyun }
+		position = 5
+		provinces_to_highlight = {
+			province_id = 688
+		}
+		trigger = {
+			OR = {
+				688 = {
+					NOT = { owned_by = ROOT }
+					controlled_by = ROOT
+				}
+				688 = {			
+					owned_by = ROOT	
+				}
+			}
+		}
+		effect = {
+			add_ADM_power = 250
+			add_DIP_power = 250
+			add_MIL_power = 250
+			north_china_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+KHT_mission_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = KHT
+			tag = LIO
+		}
+	}
+	has_country_shield = yes
+
+	northeast_horde_threat = {
+		icon = mission_chinese_general_riding
+		required_missions = { }
+		position = 1
+		trigger = {
+			OR = {
+				any_country = {
+					OR = {
+						has_reform = steppe_horde
+						has_reform = great_mongol_state_reform
+					}
+					war_with = ROOT 
+				}
+				total_development = 200
+			}
+		}
+		effect = {
+			north_jilin_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			jilin_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ningguta_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_jilin_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_heilongjiang_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			heilongjiang_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	bohai_defeat = {
+		icon = mission_subdue_rajputana
+		required_missions = { northeast_horde_threat }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = north_jilin_area
+				area = jilin_area
+				area = ningguta_area
+				area = central_jilin_area
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			NOT = { exists = BLH }
+			north_jilin_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			jilin_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			ningguta_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			central_jilin_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = dondan_king
+				duration = 3650
+			}	
+			outer_mongolia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			outer_east_mongolia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			outer_west_mongolia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			buryatia_south_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_mongolia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			uliastai_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			altai_sayan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			3280 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			3249 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			3281 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2898 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}	
+	}
+
+	xianbei_grassland = {
+		icon = mission_rb_conquer_wales
+		required_missions = { bohai_defeat }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = outer_mongolia_area
+				area = outer_east_mongolia_area
+				area = outer_west_mongolia_area
+				area = buryatia_south_area
+				area = central_mongolia_area
+				area = uliastai_area
+				area = altai_sayan_area
+				province_id = 3249
+				province_id = 3280
+				province_id = 3281
+				province_id = 2898
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			north_jilin_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			jilin_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			ningguta_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			central_jilin_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			north_jilin_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			jilin_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			ningguta_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			3249 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			3280 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			3281 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			2898 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_manpower = 10
+			add_army_professionalism = 0.05
+		}
+	}
+
+	zhongyuan_annex = {
+		icon = mission_impaled_soldies
+		required_missions = { xianbei_grassland }
+		required_missions = { kaifeng_jianliao }
+		position = 6
+		provinces_to_highlight = {
+			region = north_china_region
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			north_china_region = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_country_modifier = {
+				name = khitan_across_river
+				duration = 7300
+			}
+		}
+	}
+}
+
+KHT_mission_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = KHT
+			tag = LIO
+		}
+	}
+	has_country_shield = yes
+
+	corea_diplomacy = {
+		icon = mission_asian_cannon
+		required_missions = { }
+		position = 1
+		trigger = {
+			OR = {
+				GOY = {
+					has_opinion = {
+						who = ROOT
+						value = 140
+					}
+				}
+				NOT = { exists = GOY }
+			}
+		}
+		effect = {
+			korea_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = { exists = GOY }
+				GOY = {
+					country_event = { id = khitan_flavor.2 }
+				}
+			}
+		}
+	}
+
+	shiwei_strike = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { northeast_horde_threat }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = east_heilongjiang_area
+				area = heilongjiang_area
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			NOT = { exists = SH1 }
+			east_heilongjiang_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			heilongjiang_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = resist_shiwei
+				duration = 3650
+			}
+			central_heilongjiang_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_ilin_hala_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ilan_hala_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ilan_hala_south_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ilan_hala_north_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	khitan_shumo = {
+		icon = mission_japanese_samurai
+		required_missions = { shiwei_strike }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = central_ilin_hala_area
+				area = ilan_hala_area
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			NOT = { exists = SNS }
+			central_ilin_hala_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			ilan_hala_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_ADM_power = 50
+			add_DIP_power = 50
+			add_MIL_power = 50	
+		}
+	}
+
+	east_tribe = {
+		icon = mission_manchu_warrior
+		required_missions = { khitan_shumo }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = jilin_area
+				area = north_jilin_area
+				area = ningguta_area
+				area = central_jilin_area
+				area = heilongjiang_area
+				area = east_heilongjiang_area
+				area = central_heilongjiang_area
+				area = central_ilin_hala_area
+				area = ilan_hala_area
+				area = ilan_hala_south_area
+				area = ilan_hala_north_area
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			jilin_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			north_jilin_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			ningguta_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			central_jilin_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			heilongjiang_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			east_heilongjiang_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			central_heilongjiang_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			central_ilin_hala_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			ilan_hala_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			ilan_hala_south_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			ilan_hala_north_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			manchuria_region = {
+				type = all
+				NOT = { average_unrest = 1 }
+			}
+		}
+		effect = {
+			add_horde_unity = 10
+			add_legitimacy = 10
+			add_country_modifier = {
+				name = dongbei_stable
+				duration = 3650
+			}
+		}
+	}
+
+	liao_wujing = {
+		icon = mission_asian_city
+		required_missions = { east_tribe }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				province_id = 3201
+				province_id = 3187
+				province_id = 1816
+				province_id = 697
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			3201 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			3187 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			1816 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			697 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			3201 = {
+				add_province_modifier = {
+					name = zhongjing_dadingfu
+					duration = -1
+				}
+			}
+			3187 = {
+				add_province_modifier = {
+					name = dongjing_liaoyangfu
+					duration = -1
+				}
+			}
+			1816 = {
+				add_province_modifier = {
+					name = nanjing_xijinfu
+					duration = -1
+				}
+			}
+			697 = {
+				add_province_modifier = {
+					name = xijing_datongfu
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+rab_khitan_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+			has_reform = chinese_feudatory_reform
+		}
+		OR = {
+			tag = KHT
+			tag = LIO
+		}
+	}
+	has_country_shield = no
+	form_team_searching_immortality = {
+		icon = mission_inspect
+		required_missions = {
+		}
+		trigger = {
+			adm = 3
+			prestige = 80
+			num_of_cities = 220
+			has_reform = celestial_empire
+		}
+		effect = {
+			add_prestige = 5
+			set_country_flag = flg_event_1_immortality
+		}
+	}
+	#find_message_from_JAP.tooltip : 在日本蒐尋並獲得情報
+	find_message_from_JAP = {
+		icon = mission_inspect_2
+		required_missions = {
+			form_team_searching_immortality
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = find_message_from_JAP.tooltip
+				has_country_flag = flg_immortality_message
+			}
+		}
+		effect = {
+			add_prestige = 5
+			set_country_flag = flg_event_2_immortality
+		}
+	}
+	side_by_rome = {
+		icon = mission_roads
+		#position = 5
+		required_missions = {
+			find_message_from_JAP
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = side_by_rome.tooltip
+				any_country = {
+					OR = {
+						is_neighbor_of = ROOT
+						any_neighbor_country = {
+							OR = {
+								is_subject_of_type = duhufu_state
+								is_subject_of_type = duhufu_state_color
+							}
+							is_subject_of = ROOT
+						}
+					}
+					OR = {
+						is_subject_of_type = tributary_state
+						NOT = {
+							is_subject_of = ROOT
+						}
+					}
+					num_of_cities = 45
+					capital_scope = {
+						OR = {
+							continent = europe
+							continent = africa
+							region = arabia_region
+							region = mashriq_region
+							region = persia_region
+							region = khorasan_region
+							region = central_asia_region
+							area = transcaspia_area
+						}
+					}
+				}
+				has_country_flag = flg_event_2_immortality
+			}
+		}
+		effect = {
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							is_neighbor_of = ROOT
+							any_neighbor_country = {
+								OR = {
+									is_subject_of_type = duhufu_state
+									is_subject_of_type = duhufu_state_color
+								}
+								is_subject_of = ROOT
+							}
+						}
+						OR = {
+							is_subject_of_type = tributary_state
+							NOT = {
+								is_subject_of = ROOT
+							}
+						}
+						num_of_cities = 45
+						capital_scope = {
+							OR = {
+								continent = europe
+								continent = africa
+								region = arabia_region
+								region = mashriq_region
+								region = persia_region
+								region = khorasan_region
+								region = central_asia_region
+								area = transcaspia_area
+							}
+						}
+					}
+					save_global_event_target_as = event_target_immortality_country
+				}
+			}
+			add_prestige = 5
+			add_bit_mandate_effect = yes
+			set_country_flag = flg_event_3_immortality
+		}
+	}
+	#victory_by_rome.tooltip : 戰勝 [event_target_immortality_country.GetName]
+	#num_of_immortality : 長生不老藥
+	victory_by_rome = {
+		icon = mission_dan
+		#position = 5
+		required_missions = {
+			side_by_rome
+		}
+		#event_target:country win => on_actions => events
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = victory_by_rome.tooltip
+				has_country_flag = flg_event_9_immortality
+			}
+		}
+		effect = {
+			custom_tooltip = tp_get_immortality
+			change_variable = {
+				which = num_of_immortality
+				value = 2
+			}
+		}
+	}
+	get_country_treasure = {
+		icon = mission_treasure
+		#position = 5
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = get_country_treasure.tooltip
+				treasury_system_trigger = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "treasury_charming"
+				duration = 3650
+			}
+		}
+	}
+
+	silk_road_modifier_complete = {
+		icon = mission_rab_protection
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			OR = {
+				AND = {
+					exists = XIY
+					XIY = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = duhufu_state
+							is_subject_of_type = duhufu_state_color
+						}
+						num_of_cities = 35
+					}
+				}
+				AND = {
+					exists = XI1
+					XI1 = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = duhufu_state
+							is_subject_of_type = duhufu_state_color
+						}
+						num_of_cities = 35
+					}
+				}
+				AND = {
+					exists = BT1
+					BT1 = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = duhufu_state
+							is_subject_of_type = duhufu_state_color
+						}
+						num_of_cities = 35
+					}
+				}
+				AND = {
+					exists = AN4
+					AN4 = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = duhufu_state
+							is_subject_of_type = duhufu_state_color
+						}
+						num_of_cities = 35
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "silk_road_modifier_complete_buff"
+				duration = 7300
+			}
+			add_mercantilism = 1
+		}
+	}
+	#加強建設屯兵邊疆
+	silk_road_more_manpowers = {
+		icon = mission_rab_protection
+		required_missions = {
+			silk_road_modifier_complete
+		}
+		provinces_to_highlight = {
+			province_id = 3304
+			province_id = 2884
+			province_id = 2881
+			province_id = 4894
+		}
+		trigger = {
+			3304 = {
+				base_manpower = 3
+			}
+			2884 = {
+				base_manpower = 3
+			}
+			2881 = {
+				base_manpower = 3
+			}
+			4894 = {
+				base_manpower = 3
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "silk_road_modifier"
+				duration = 7300
+			}
+		}
+	}
+	#建立安北都?府
+	chengli_anbeiduhufu = {
+		icon = mission_rab_protection
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			AN2 = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = duhufu_state
+					is_subject_of_type = duhufu_state_color
+				}
+			}
+		}
+		effect = {
+			add_mandate_effect = yes
+		}
+	}
+	#建立安南都?府
+	chengli_annanduhufu = {
+		icon = mission_rab_protection
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			AN3 = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = duhufu_state
+					is_subject_of_type = duhufu_state_color
+				}
+			}
+		}
+		effect = {
+			add_mandate_effect = yes
+		}
+	}
+	#建立安??都?府
+	chengli_andongduhufu = {
+		icon = mission_rab_protection
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			ND1 = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = duhufu_state
+					is_subject_of_type = duhufu_state_color
+				}
+			}
+		}
+		effect = {
+			add_mandate_effect = yes
+		}
+	}
+	#舉辦科舉十次
+	hold_empire_examination_ten = {
+		icon = mission_emperor
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			check_variable = {
+				which = examination_held
+				value = 10
+			}
+		}
+		effect = {
+			add_army_professionalism = 0.05
+			add_adm_power = 100
+			add_stability = 1
+		}
+	}
+}
+
+

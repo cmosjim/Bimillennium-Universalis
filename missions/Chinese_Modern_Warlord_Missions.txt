@@ -1,0 +1,660 @@
+#<series> = {
+#    slot = <int>                    # Which column the missions will appear in. 1 to 5.
+#    generic = <boolean>             # Whether missions within this series are considered generic.
+#    ai = <boolean>                  # Whether the AI will claim missions in this series.
+#    has_country_shield = <boolean>  # Whether to display the country shield on the icon.    
+#    
+#    # Determines whether a series is loaded at all. Used to limit series to DLC.
+#    potential_on_load = {
+#        <trigger>
+#    }
+#    
+#    # Determines when a series appears for a country. Country scope.
+#    potential = {
+#        <trigger>
+#    }
+#    
+#    # The name of the mission, used for localization
+#    <mission> = {
+#        icon = <gfx>            # The icon to use for the mission
+#        generic = <boolean>     # Whether this mission is considered generic.
+#        ai = <boolean>          # Whether the AI will claim this mission.
+#        position = <int>        # Which row the mission appears in. 1 is top.
+#        completed_by = <date>   # Automatically completes mission in history. 
+#        
+#        # Which missions must be completed before this mission is active.
+#        required_missions = {
+#            <mission>
+#        }
+#        
+#        # Determines which provinces to highlight. Acts like all_province scope. Optional.
+#        provinces_to_highlight = {
+#            <trigger>
+#        }
+#    
+#        # Determines when the mission is completed. Country scope.
+#        trigger = {
+#            <trigger>
+#        }
+#        
+#        # The effect executed when the mission is claimed. Country scope.
+#        effect = {
+#            <effect>
+#        }
+#    }
+#}
+
+modern_chinese_missions_1 = {
+	slot = 1
+	generic = yes
+	ai = yes
+	potential = {
+		OR = {
+			has_reform = modern_chinese_warlord_reform
+			tag = ROC
+			tag = CW1
+		}
+	}
+	has_country_shield = yes
+
+	
+	occupy_into_muddy_1 = {
+		icon = mission_war_jap		#图标
+		required_missions = {  }			#前置任务 也就是前一个任务
+		position = 1
+		#觀看日軍抗戰指導書第一階段
+		trigger = {
+			war_with = JA1
+			OR = {
+				ai = yes
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = occupy_into_muddy_1.tooltip
+						has_country_flag = flg_done_occupy_into_muddy_1 #look book okay
+						has_global_flag = wii_periods
+					}
+				}
+			}
+		}
+		effect = {
+			add_mil_power = 100
+		}		
+	}
+	#觀看日軍抗戰指導書第二階段	逼其建立補給站
+
+	occupy_into_muddy_2 = {
+		icon = mission_war_jap		#图标
+		required_missions = { occupy_into_muddy_1 }			#前置任务 也就是前一个任务		
+		position = 2
+		trigger = {
+			war_with = JA1
+			OR = {
+				ai = yes
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = occupy_into_muddy_2.tooltip
+						has_country_flag = flg_done_occupy_into_muddy_2 #look book okay
+						has_global_flag = wii_periods				
+					}
+				}
+			}	
+		}
+		effect = {
+			add_adm_power = 100
+		}		
+	}	
+	#觀看日軍抗戰指導書第三階段 占領日軍在華的補給站or給予荒地
+
+	occupy_into_muddy_3 = {					
+		icon = mission_war_jap		#图标
+		required_missions = { occupy_into_muddy_2 }			#前置任务 也就是前一个任务
+		position = 3
+		provinces_to_highlight = {			#要突出显示的省或地区
+			#province_id = event_target:jap_support_province
+		}
+		trigger = {
+			war_with = JA1
+			custom_trigger_tooltip = {
+				tooltip = occupy_into_muddy_3.tooltip
+				has_country_flag = flg_done_occupy_into_muddy_3 #look book okay
+				has_global_flag = wii_periods				
+			}
+		}
+		effect = {
+			add_treasury = 1000
+			add_country_modifier = {
+				name = "md_Inspiration_skill"
+				duration = 3650
+			}	
+		}
+	}
+
+	occupy_into_muddy_4 = {					
+		icon = mission_war_jap		#图标
+		required_missions = { occupy_into_muddy_3 }			#前置任务 也就是前一个任务
+		position = 4
+		trigger = {
+			war_with = JA1
+			custom_trigger_tooltip = {
+				tooltip = occupy_into_muddy_4.tooltip
+				has_country_flag = flg_done_occupy_into_muddy_4 #look book okay
+				has_global_flag = wii_periods				
+			}
+		}
+		effect = {
+			add_adm_power = 200
+			add_mil_power = 200
+			add_dip_power = 200
+		}
+	}	
+	#日軍投降
+	occupy_into_muddy_5 = {
+		icon = mission_war_jap
+		completed_by = 1945.8.15
+		required_missions = { }	
+		position = 5
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = occupy_into_muddy_5.tooltip			
+				#this flag is not occur in history files.
+					has_global_flag = JA1_wii_fail 
+			}		
+		}
+		effect = {
+			add_country_modifier = {
+				name = "md_Inspiration_skill"
+				duration = 3650
+			}	
+		}
+	}
+
+}
+
+#西=>南=>北
+modern_chinese_missions_2 = {
+	slot = 2 #ie, second upper left column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes 
+	potential = {
+		OR = {			
+			tag = QX1
+			tag = CD1
+			tag = CJ1
+			tag = JS1
+			tag = DX2
+		}
+	}
+	
+	#missions
+	#1st tier: (they appear in the order scripted here in the interface, all missions within one "series" has an arrow going down to the next one scripted)
+	m2_build_army_mission = { #Localized as reclaim_maine_title and reclaim_maine_desc
+		icon = mission_build_up_to_force_limit
+		required_missions = {  } #None
+		trigger = {
+			army_size_percentage = 0.8 #What you need to complete the mission, displayed for mission tooltip
+		}
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 3650
+			}
+		}
+	}
+	#2nd tier: (second because it is the second mission to be listed)
+	m2_expand_country_mission = {
+		icon = mission_conquer_50_development
+		required_missions = { m2_build_army_mission }
+		trigger = { num_of_cities = 10 }
+		effect = {
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			add_treasury = 200
+		}
+	}
+	#3d Tier: (not actually scripted as third, it's third as it is the 3rd one in this mission series)
+	m2_conquer_states = {
+		icon = mission_cannons_firing
+		required_missions = { m2_expand_country_mission }
+		trigger = { num_of_cities = 15}
+		effect = {
+			define_general = {
+				shock = 7
+				fire = 6
+				manuever = 6
+				siege = 6
+			}
+		}
+	}
+	#4th
+	m2_assemble_an_army = {
+		icon = mission_assemble_an_army
+		required_missions = { m2_conquer_states }
+		trigger = { num_of_cities = 20 }
+		effect = {
+			add_adm_power = 150
+			add_dip_power = 150
+			add_mil_power = 150
+			add_sailors = 20
+		}
+	}	
+	#normal quests
+	#征服西邊xinan_region
+	m2_modern_conquer_xinan_region = {
+		icon = mission_modern_warlord_war
+		required_missions = { m2_assemble_an_army }		
+		provinces_to_highlight = {
+			region = xinan_region
+		}
+		trigger = {
+			xinan_region = {
+				type = all
+				owned_by = ROOT
+			}	
+		}		
+		effect = {
+			add_country_modifier = {
+				name = "md_Inspiration_skill"
+				duration = 3650
+			}
+			add_adm_power = 100
+		}		
+	}
+	m2_modern_conquer_south_china_region = {
+		icon = mission_modern_warlord_war
+		required_missions = { m2_modern_conquer_xinan_region }		
+		provinces_to_highlight = {
+			OR = {
+				region = south_china_region
+				region = xinan_region
+			}	
+		}
+		trigger = {
+			xinan_region = {
+				type = all
+				owned_by = ROOT
+			}			
+			south_china_region = {
+				type = all
+				owned_by = ROOT
+			}	
+		}			
+		effect = {
+			add_country_modifier = {
+				name = "md_fire_damage_skill"
+				duration = 3650
+			}
+			add_dip_power = 100
+		}		
+	}
+	
+	m2_modern_conquer_north_china_region = {
+		icon = mission_modern_warlord_war
+		required_missions = {  m2_modern_conquer_south_china_region  }		
+		provinces_to_highlight = {
+			OR = {
+				region = south_china_region
+				region = xinan_region
+				region = north_china_region
+			}			
+		}
+		trigger = {
+			xinan_region = {
+				type = all
+				owned_by = ROOT
+			}			
+			south_china_region = {
+				type = all
+				owned_by = ROOT
+			}
+			north_china_region = {
+				type = all
+				owned_by = ROOT
+			}			
+		}		
+		effect = {
+			add_country_modifier = {
+				name = "md_discipline_skill"
+				duration = 3650
+			}
+			add_mil_power = 100
+		}		
+	}
+}
+
+
+		#	tag = NM1 #马福祥
+		#	tag = QM1 #马步芳
+		#	tag = TM2 #宋哲元 馮
+		#	tag = XB1 #國民軍 冯玉祥 north
+		#	tag = FX1 #奉系
+		#	tag = GJ2 #甘军
+		#	tag = GM1 #甘马
+		#	tag = JX1 #晋系
+		#	tag = ZX1 #直系
+		#	tag = ZL2 #直魯聯軍
+#北=>西=>南
+
+modern_chinese_missions_3 = {
+	slot = 2 #ie, second upper left column
+	generic = yes #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes 
+	potential = {
+		OR = {			
+			tag = NM1 #马福祥
+			tag = QM1 #马步芳
+			tag = TM2 #宋哲元 馮
+			tag = XB1 #國民軍 冯玉祥 north
+			tag = FX1 #奉系
+			tag = GJ2 #甘军
+			tag = GM1 #甘马
+			tag = JX1 #晋系
+			tag = ZX1 #直系
+			tag = ZL2 #直魯聯軍
+			tag = CW1 #中華蘇維埃
+		}
+	}
+	
+	#missions
+	#1st tier: (they appear in the order scripted here in the interface, all missions within one "series" has an arrow going down to the next one scripted)
+	m3_build_army_mission = { #Localized as reclaim_maine_title and reclaim_maine_desc
+		icon = mission_build_up_to_force_limit
+		required_missions = {  } #None
+		trigger = {
+			army_size_percentage = 0.8 #What you need to complete the mission, displayed for mission tooltip
+		}
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 3650
+			}
+		}
+	}
+	#2nd tier: (second because it is the second mission to be listed)
+	m3_expand_country_mission = {
+		icon = mission_conquer_50_development
+		required_missions = { m3_build_army_mission }
+		trigger = { num_of_cities = 10 }
+		effect = {
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			add_treasury = 200
+		}
+	}
+	#3d Tier: (not actually scripted as third, it's third as it is the 3rd one in this mission series)
+	m3_conquer_states = {
+		icon = mission_cannons_firing
+		required_missions = { m3_expand_country_mission }
+		trigger = { num_of_cities = 15}
+		effect = {
+			define_general = {
+				shock = 7
+				fire = 6
+				manuever = 6
+				siege = 6
+			}
+		}
+	}
+	#4th
+	m3_assemble_an_army = {
+		icon = mission_assemble_an_army
+		required_missions = { m3_conquer_states }
+		trigger = { num_of_cities = 20 }
+		effect = {
+			add_adm_power = 150
+			add_dip_power = 150
+			add_mil_power = 150
+			add_sailors = 20
+		}
+	}	
+
+	m3_modern_conquer_north_china_region = {
+		icon = mission_modern_warlord_war
+		required_missions = { m3_assemble_an_army }		
+		provinces_to_highlight = {
+			region = north_china_region 
+		}
+		trigger = {
+			north_china_region = {
+				type = all
+				owned_by = ROOT
+			}	
+		}		
+		effect = {
+			add_country_modifier = {
+				name = "md_Inspiration_skill"
+				duration = 3650
+			}
+			add_adm_power = 100
+		}		
+	}
+	m3_modern_conquer_xinan_region = {
+		icon = mission_modern_warlord_war
+		required_missions = { m3_modern_conquer_north_china_region }		
+		provinces_to_highlight = {
+			OR = {
+				region = xinan_region
+				region = north_china_region
+			}	
+		}
+		trigger = {
+			north_china_region = {
+				type = all
+				owned_by = ROOT
+			}			
+			xinan_region = {
+				type = all
+				owned_by = ROOT
+			}			
+
+		}			
+		effect = {
+			add_country_modifier = {
+				name = "md_fire_damage_skill"
+				duration = 3650
+			}
+			add_dip_power = 100
+		}		
+	}
+	m3_modern_conquer_south_china_region = {
+		icon = mission_modern_warlord_war
+		required_missions = { m3_modern_conquer_xinan_region }		
+		provinces_to_highlight = {
+			OR = {
+				region = xinan_region
+				region = north_china_region
+				region = south_china_region
+			}
+		}
+		trigger = {
+			north_china_region = {
+				type = all
+				owned_by = ROOT
+			}			
+			xinan_region = {
+				type = all
+				owned_by = ROOT
+			}			
+			south_china_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}		
+		effect = {
+			add_country_modifier = {
+				name = "md_discipline_skill"
+				duration = 3650
+			}
+			add_mil_power = 100
+		}		
+	}
+}
+
+#WJ1 孙传芳
+#WX1 段祺瑞
+#DN5 东南互保 李鴻章
+#XX1 湘系
+#
+#南=>西=>北
+
+modern_chinese_missions_4 = {
+	slot = 2
+	generic = yes 
+	ai = yes 
+	potential = {
+		OR = {			
+			tag = WJ1 #孙传芳
+			tag = WX1 #段祺瑞
+			tag = DN5 #东南互保 李鴻章
+			tag = XX1 #湘系
+			tag = BS1 #八屬聯軍
+			tag = GJ1 #國民革命軍
+			tag = YX1 #粵軍
+		}
+	}
+	
+	#missions
+	#1st tier: (they appear in the order scripted here in the interface, all missions within one "series" has an arrow going down to the next one scripted)
+	m4_build_army_mission = { #Localized as reclaim_maine_title and reclaim_maine_desc
+		icon = mission_build_up_to_force_limit
+		required_missions = {  } #None
+		trigger = {
+			army_size_percentage = 0.8 #What you need to complete the mission, displayed for mission tooltip
+		}
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 3650
+			}
+		}
+	}
+	#2nd tier: (second because it is the second mission to be listed)
+	m4_expand_country_mission = {
+		icon = mission_conquer_50_development
+		required_missions = { m4_build_army_mission }
+		trigger = { num_of_cities = 10 }
+		effect = {
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			add_treasury = 200
+		}
+	}
+	#3d Tier: (not actually scripted as third, it's third as it is the 3rd one in this mission series)
+	m4_conquer_states = {
+		icon = mission_cannons_firing
+		required_missions = { m4_expand_country_mission }
+		trigger = { num_of_cities = 15}
+		effect = {
+			define_general = {
+				shock = 7
+				fire = 6
+				manuever = 6
+				siege = 6
+			}
+		}
+	}
+	#4th
+	m4_assemble_an_army = {
+		icon = mission_assemble_an_army
+		required_missions = { m4_conquer_states }
+		trigger = { num_of_cities = 20 }
+		effect = {
+			add_adm_power = 150
+			add_dip_power = 150
+			add_mil_power = 150
+			add_sailors = 20
+		}
+	}		
+	m4_modern_conquer_south_china_region = {
+		icon = mission_modern_warlord_war
+		required_missions = { m4_assemble_an_army }		
+		provinces_to_highlight = {
+			region = south_china_region 
+		}
+		trigger = {
+			south_china_region = {
+				type = all
+				owned_by = ROOT
+			}	
+		}		
+		effect = {
+			add_country_modifier = {
+				name = "md_Inspiration_skill"
+				duration = 3650
+			}
+			add_adm_power = 100
+		}		
+	}
+	m4_modern_conquer_xinan_region = {
+		icon = mission_modern_warlord_war
+		required_missions = { m4_modern_conquer_south_china_region  }		
+		provinces_to_highlight = {
+			OR = {
+				region = xinan_region
+				region = south_china_region
+			}
+		}
+		trigger = {
+			south_china_region = {
+				type = all
+				owned_by = ROOT
+			}			
+			xinan_region = {
+				type = all
+				owned_by = ROOT
+			}			
+
+		}			
+		effect = {
+			add_country_modifier = {
+				name = "md_fire_damage_skill"
+				duration = 3650
+			}
+			add_dip_power = 100
+		}		
+	}
+	m4_modern_conquer_north_china_region = {
+		icon = mission_modern_warlord_war
+		required_missions = {  m4_modern_conquer_xinan_region  }		
+		provinces_to_highlight = {
+			OR = {
+				region = xinan_region
+				region = north_china_region
+				region = south_china_region
+			}
+		}
+		trigger = {
+			north_china_region = {
+				type = all
+				owned_by = ROOT
+			}			
+			xinan_region = {
+				type = all
+				owned_by = ROOT
+			}			
+			south_china_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}		
+		effect = {
+			add_country_modifier = {
+				name = "md_discipline_skill"
+				duration = 3650
+			}
+			add_mil_power = 100
+		}		
+	}
+}
+
+
+

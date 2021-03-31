@@ -1,0 +1,315 @@
+﻿GOG_mission_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { 
+		tag = GOG
+	}
+	has_country_shield = yes
+
+	domestic_city = {
+		icon = mission_occupy_alexandria
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			province_id = 3315
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			3315 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2553 = {
+				OR = {
+					has_building = fort_et
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+		}
+		effect = {
+			2553 = {
+				add_province_modifier = {
+					name = wei_na_yan_cheng
+					duration = -1
+				}
+			}
+			3316 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2514 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2515 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2554 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			3268 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	wo_ju_tribe = {
+		icon = mission_mayan_conquest
+		required_missions = { domestic_city }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 3316
+				province_id = 2514
+				province_id = 2515
+				province_id = 2554
+				province_id = 3268
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			3316 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2514 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2515 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2554 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3268 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_ADM_power = 100
+			732 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			3312 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2512 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			734 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	destruction_of_dong_hui = {
+		icon = mission_japanese_samurai
+		required_missions = { wo_ju_tribe }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 732
+				province_id = 3312
+				province_id = 2512
+				province_id = 734
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			732 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3312 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2512 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			734 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_ADM_power = 100
+			jilin_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			liaoning_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			liaoning_east_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	sneak_attack_on_liaodong = {
+		icon = mission_manchu_warrior
+		required_missions = { destruction_of_dong_hui }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = jilin_area
+				area = liaoning_area
+				area = liaoning_east_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			jilin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			liaoning_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			liaoning_east_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			pyongan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_korea_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	defeat_laolang = {
+		icon = mission_steppe_warriors
+		required_missions = { sneak_attack_on_liaodong }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = pyongan_area
+				area = western_korea_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			pyongan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_korea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = settle_on_north_korea
+				duration = 7300
+			}
+		}
+	}
+}
+
+GOG_mission_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { 
+		tag = GOG
+	}
+	has_country_shield = yes
+	
+	pyongyang_the_capital = {
+		icon = mission_japanese_fort
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			province_id = 1845
+		}
+		trigger = {
+			owns = 1845
+			1845 = {
+				is_capital = yes
+			}
+		}
+		effect = {
+			1845 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
+	
+	plunder_bohai = {
+		icon = mission_rb_scottish_north_sea_trade
+		required_missions = { }
+		position = 2
+		trigger = {
+			NOT = { manpower = 1 }
+			NOT = { treasury = 2 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = plunder_bohai
+				duration = -1
+			}
+		}
+	}
+}

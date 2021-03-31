@@ -1,0 +1,295 @@
+AKS_mission_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = AKS
+	}
+	has_country_shield = yes
+		
+	queen_of_sheba = {
+		icon = mission_pirate_havens
+		required_missions = { }
+		position = 1
+		trigger = {
+			diplomatic_reputation = 3
+		}
+		effect = {
+			add_prestige = 20
+			if = {
+				limit = {
+					exists = SAA
+				}	
+				add_casus_belli = {
+    					target = SAA
+    					type = cb_restore_personal_union
+    					months = 300
+				}
+			}
+			asir_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tihama_al_yemen_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_yemen_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yemen_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hadramut_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	exit_of_red_sea = {
+		icon = mission_reconquer_ceuta
+		required_missions = { queen_of_sheba }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = asir_area
+				area = tihama_al_yemen_area
+				area = upper_yemen_area
+				area = yemen_area
+				area = hadramut_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			asir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tihama_al_yemen_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yemen_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hadramut_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = early_world_sea_trade
+				duration = -1
+			}
+			upper_nubia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dongola_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			red_sea_coast_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_nubia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	end_of_egypt = {
+		icon = mission_mayan_conquest
+		required_missions = { exit_of_red_sea }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2593
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			NOT = { exists = EGP }
+			NOT = { exists = MEO }
+			2593 = { is_core = ROOT }
+		}
+		effect = {
+			add_MIL_power = 100
+			add_army_tradition = 10
+		}
+	}
+
+	converted_to_christian = {
+		icon = mission_hands_praying
+		required_missions = { }
+		position = 4
+		trigger = {
+			religion_group = christian
+		}
+		effect = {
+			add_country_modifier = {
+				name = east_african_christian
+				duration = 3650
+			}
+		}
+	}
+}
+
+AKS_mission_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = AKS
+	}
+	has_country_shield = yes
+
+	trade_protection = {
+		icon = mission_hands_praying
+		required_missions = { }
+		position = 1
+		trigger = {
+			num_of_light_ship = 5
+		}
+		effect = {
+			2673 = {
+				if = {
+					limit = {
+						NOT = { province_has_center_of_trade_of_level = 1 }
+					}
+					center_of_trade = 1
+				}
+				else = {
+					limit = {
+						NOT = { province_has_center_of_trade_of_level = 3 }
+					}
+					add_center_of_trade_level = 1
+				}
+			}
+			add_country_modifier = {
+				name = trade_attention
+				duration = 3650
+			}
+		}
+	}
+
+	mastic = {
+		icon = mission_african_gold
+		required_missions = { trade_protection }
+		position = 2
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = incense
+			}
+		}
+		effect = {
+			2673 = {
+				change_trade_goods = incense
+			}
+			add_country_modifier = {
+				name = mastic_production 
+				duration = 5475
+			}
+		}
+	}
+
+	european_assist = {
+		icon = mission_dominate_home_trade_node
+		required_missions = { mastic }
+		position = 3 
+		trigger = {
+			any_country = {
+				owns = 151
+				OR = {
+					alliance_with = ROOT
+					has_opinion = {
+						who = ROOT
+						value = 140
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = trade_agent
+				duration = 18250
+			}
+			every_country = {
+				limit = { culture_group = iranian }
+				add_country_modifier = {
+					name = businessmen_fear
+					duration = 3650
+				}
+			}
+		}
+	}
+
+	red_sea_port = {
+		icon = mission_colonize_the_west
+		required_missions = { european_assist }
+		position = 4
+		trigger = {
+			358 = {
+				is_strongest_trade_power = ROOT
+			}
+			2675 = {
+				is_strongest_trade_power = ROOT
+			}
+			1331 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = red_sea_economy
+				duration = -1
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

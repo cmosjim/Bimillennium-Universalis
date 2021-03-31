@@ -1,0 +1,244 @@
+# These missions should require X provinces in [region] rather than entire regions
+# initial modify in 2019-12-03
+# MGE 任務 中亚的帝国central_asia_region  呼罗珊之主 khorasan_region  波斯之王 persia_region 掠逐东欧大草原 crimea_region 直上西藏 tibet_region
+# 敲進印度的大門 hindusthan_region 印度斯坦
+# 通往印度洋 burma_region
+# 遠征日本 
+
+mge_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = MGE
+		exists = GOY
+	}
+	#附庸高麗
+	mge_vassal_korea_region = {
+		icon = mission_kowtow
+		required_missions = {  }
+		provinces_to_highlight = {
+			region = korea_region
+		}
+		trigger = {
+			exists = GOY
+			GOY = {
+				vassal_of = ROOT
+			}	
+		}
+		effect = {
+			country_event = {
+				id = rab_MGE_events.1
+			}	
+		}
+	}	
+}
+	
+mge_missions_2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = MGE
+		NOT = { map_setup = map_setup_random }
+	}
+	mge_central_asia_region_king = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = {  }
+		provinces_to_highlight = {
+			region = central_asia_region
+		}
+		trigger = {
+			#custom_trigger_tooltip = {
+			#	tooltip = mge_missions_1_tooltip
+				calc_true_if = {
+					all_owned_province = {
+						region = central_asia_region
+					}
+					amount = 25			
+				}	
+			#}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_reform = steppe_horde
+				}
+				add_horde_unity = 5
+			}
+			add_army_tradition = 5
+		}
+	}
+
+	#波斯之王persia_region
+	mge_persia_region_king = {
+		icon = mission_persian_soldiers
+		required_missions = { mge_central_asia_region_king }
+		provinces_to_highlight = {
+			region = persia_region
+		}
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					region = persia_region
+				}
+				amount = 25			
+			}	
+		}
+		effect = {
+			if = {
+				limit = {
+					has_reform = steppe_horde
+				}
+				add_horde_unity = 5
+			}
+			add_splendor = 2
+		}
+	}		
+	#掠逐东欧大草原 crimea_region	
+	mge_crimea_region_king = {
+		icon = mission_steppe_warriors
+		required_missions = { mge_persia_region_king }
+		provinces_to_highlight = {
+			region = crimea_region
+		}
+		trigger = {
+			#custom_trigger_tooltip = {
+			#	tooltip = mge_missions_1_tooltip
+				calc_true_if = {
+					all_owned_province = {
+						region = crimea_region
+					}
+					amount = 20			
+				}	
+			#}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_reform = steppe_horde
+				}
+				add_horde_unity = 5
+			}
+			add_army_tradition = 5
+		}
+	}
+	#直上西藏tibet_region	
+	mge_tibet_region_king = {
+		icon = mission_high_lands
+		required_missions = { mge_crimea_region_king }
+		provinces_to_highlight = {
+			region = tibet_region
+		}
+		trigger = {
+			#custom_trigger_tooltip = {
+			#	tooltip = mge_missions_1_tooltip
+				calc_true_if = {
+					all_owned_province = {
+						region = tibet_region
+					}
+					amount = 25			
+				}	
+			#}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_reform = steppe_horde
+				}
+				add_horde_unity = 5
+			}
+			add_manpower = 10
+		}
+	}
+	mge_hindusthan_region_king = {
+		icon = mission_unite_the_deccan
+		required_missions = { mge_tibet_region_king }
+		provinces_to_highlight = {
+			region = hindusthan_region
+		}
+		trigger = {
+			#custom_trigger_tooltip = {
+			#	tooltip = mge_missions_1_tooltip
+				calc_true_if = {
+					all_owned_province = {
+						region = hindusthan_region
+					}
+					amount = 30			
+				}	
+			#}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_reform = steppe_horde
+				}
+				add_horde_unity = 10
+			}
+			add_army_tradition = 5
+		}
+	}
+	#打通印度洋
+	mge_burma_region_king = {
+		icon = mission_secure_hajj_ports
+		required_missions = { mge_hindusthan_region_king }
+		provinces_to_highlight = {
+			region = burma_region 
+		}
+		trigger = {
+			#custom_trigger_tooltip = {
+			#	tooltip = mge_missions_1_tooltip
+				calc_true_if = {
+					all_owned_province = {
+						region = burma_region 
+					}
+					amount = 25			
+				}	
+			#}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_reform = steppe_horde
+				}
+				add_horde_unity = 5
+			}
+			add_country_modifier = {
+				name = "Indian_Ocean_Trade"
+				duration = 3650
+			}	
+		}
+	}
+	
+	#遠征日本
+	mge_japan_region_king = {
+		icon = mission_japanese_samurai
+		required_missions = { mge_burma_region_king }
+		provinces_to_highlight = {
+			region = japan_region
+		}
+		trigger = {
+			#custom_trigger_tooltip = {
+			#	tooltip = mge_missions_1_tooltip
+				calc_true_if = {
+					all_owned_province = {
+						region = japan_region
+					}
+					amount = 30			
+				}	
+			#}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_reform = steppe_horde
+				}
+				add_horde_unity = 5
+			}
+			add_army_professionalism = 0.05
+		}
+	}	
+}
+

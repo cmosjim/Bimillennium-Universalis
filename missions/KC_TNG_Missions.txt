@@ -1,0 +1,1316 @@
+tang_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = TNG
+			tag = LY2
+		}
+	}
+	has_country_shield = yes
+	#起兵反隋
+	war_with_sui = {
+		icon = mission_chinese_monarch_horseback
+		required_missions = {
+		}
+		position = 1
+		provinces_to_highlight = {
+		}
+		completed_by = 618.6.17
+		trigger = {
+			OR = {
+				war_with = SUI
+				NOT = {
+					exists = SUI
+				}
+			}
+		}
+		effect = {
+			add_manpower = 15
+			add_mil_power = 100
+		}
+	}
+	#建立大唐
+	build_tang = {
+		icon = mission_chinese_officials_in_line
+		required_missions = {
+			war_with_sui
+		}
+		position = 2
+		provinces_to_highlight = {
+		}
+		completed_by = 618.6.17
+		trigger = {
+			tag = TNG
+		}
+		effect = {
+			add_prestige = 50
+			add_adm_power = 100
+			set_emperor_of_china = TNG
+			set_mandate = 80
+			700 = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+			xinan_region = {
+				#西南地区 
+				limit = {
+					NOT = {
+						is_core = TNG
+					}
+					NOT = {
+						owned_by = TNG
+					}
+				}
+				add_permanent_claim = TNG				#添加永久宣称
+			}
+			north_china_region = {
+				#华北地区
+				limit = {
+					NOT = {
+						is_core = TNG
+					}
+					NOT = {
+						owned_by = TNG
+					}
+				}
+				add_permanent_claim = TNG
+			}
+			south_china_region = {
+				#华南地区
+				limit = {
+					NOT = {
+						is_core = TNG
+					}
+					NOT = {
+						owned_by = TNG
+					}
+				}
+				add_permanent_claim = TNG
+			}
+		}
+	}
+	#鼎立关中
+	dingli_guanzhong = {
+		icon = mission_chinese_fortress_siege
+		required_missions = {
+			build_tang
+		}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = shaanxi_area
+				area = central_shaanxi_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT				#本家或属国(非朝贡国)持有
+			}
+		}
+		completed_by = 618.6.17
+		trigger = {
+			shaanxi_area = {
+				type = all
+				owned_by = ROOT
+			}
+			central_shaanxi_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_treasury = 100
+			add_manpower = 25
+		}
+	}
+	#得陇望蜀
+	delong_wangshu = {
+		icon = mission_chinese_castle_tower
+		required_missions = {
+			dingli_guanzhong
+		}
+		position = 4
+		completed_by = 618.6.17
+		provinces_to_highlight = {
+			OR = {
+				area = chuanbei_east_area
+				area = sichuan_area
+				area = chuanbei_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT				#本家或属国(非朝贡国)持有
+			}
+			NOT = {
+				province_id = 2491
+			}
+		}
+		trigger = {
+			sichuan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			chuanbei_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns = 3164
+			owns = 680
+			owns = 4835
+			owns = 4836
+		}
+		effect = {
+			add_prestige = 10
+			add_mil_power = 100
+		}
+	}
+	#入主中原 
+	tng_ruzhu_zhongyuan = {
+		icon = mission_a_million_rice_fields		#图标
+		required_missions = {
+			delong_wangshu
+		}
+		position = 5
+		completed_by = 621.3.1
+		provinces_to_highlight = {
+			#要突出显示的省或地区
+			OR = {
+				area = henan_area
+				area = henan_west_area
+				area = central_henan_area
+				area = north_henan_area
+				area = henan_east_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT				#本家或属国(非朝贡国)持有
+			}
+		}
+		trigger = {
+			henan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			central_henan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			henan_west_area = {
+				type = all
+				owned_by = ROOT
+			}
+			henan_east_area = {
+				type = all
+				owned_by = ROOT
+			}
+			north_henan_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_adm_power = 100
+		}
+	}
+	#冯盎降唐
+	fengang_xiangtang = {
+		icon = mission_have_two_subjects
+		required_missions = {
+			tng_ruzhu_zhongyuan
+		}
+		position = 6
+		provinces_to_highlight = {
+		}
+		completed_by = 622.7.1
+		trigger = {
+			OR = {
+				AND = {
+					exists = FA2
+					FA2 = {
+						#冯盎对你的好感度为75以上  
+						has_opinion = {
+							who = ROOT
+							value = 75
+						}
+					}
+				}
+				AND = {
+					NOT = {
+						exists = FA2
+					}
+				}
+			}
+		}
+		effect = {
+			add_prestige = 15
+			if = {
+				limit = {
+					exists = FA2
+					ai = no
+				}
+				TNG_general_fengang_effect = yes				# 招募冯盎为将领
+				every_province = {
+					limit = {
+						owned_by = FA2
+					}
+					add_core = ROOT
+					cede_province = ROOT
+				}
+			}
+		}
+	}
+	#爨氏内附
+	cuanshi_neifu = {
+		icon = mission_reclaim_lost_territory		#图标
+		required_missions = {
+			end_sui
+		}
+		position = 7
+		completed_by = 619.12.30
+		provinces_to_highlight = {
+			OR = {
+				province_id = 661
+				province_id = 662
+				province_id = 675
+				province_id = 2465
+				province_id = 2466
+				province_id = 2467
+				province_id = 2468
+				province_id = 2488
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					exists = CCS
+					CCS = {
+						#爨氏对你的好感度为75以上  
+						has_opinion = {
+							who = ROOT
+							value = 75
+						}
+					}
+				}
+				AND = {
+					NOT = {
+						exists = CCS
+					}
+					owns = 661
+					owns = 662
+					owns = 675
+					owns = 2465
+					owns = 2466
+					owns = 2467
+					owns = 2468
+					owns = 2488
+				}
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_dip_power = 100
+			add_mandate = 5
+			if = {
+				limit = {
+					exists = CCS
+					ai = no
+				}
+				vassalize = CCS
+			}
+		}
+	}
+	#岭南万户皆春色
+	tang_get_lingnan = {
+		icon = mission_great_wall
+		required_missions = {
+			cuanshi_neifu
+		}
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = champa_area
+				area = red_river_delta_area
+				area = north_laos_area
+				area = vietnam_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			champa_area_sub_holds = yes
+			red_river_delta_area_sub_holds = yes
+			vietnam_area_sub_holds = yes
+			north_laos_area_sub_holds = yes
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			add_mandate = 5
+		}
+	}
+	#安南都护府
+	build_annan = {
+		icon = mission_rab_protection
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		completed_by = 621.12.30
+		position = 10
+		trigger = {
+			AN3 = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = duhufu_state
+					is_subject_of_type = duhufu_state_color
+				}
+			}
+		}
+		effect = {
+			add_mandate_effect = yes
+		}
+	}
+}
+
+tang_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = TNG
+			tag = LY2
+		}
+	}
+	has_country_shield = yes
+	#收复辽东
+	get_liao_east = {
+		icon = mission_ancient_chinese_army_in_siege
+		required_missions = {
+			end_sui
+		}
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = liaoning_area				#辽宁西部
+				area = liaoning_east_area				#辽宁东部
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			liaoning_area = {
+				type = all
+				owned_by = ROOT
+			}
+			liaoning_east_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			jilin_area = {
+				#南吉林
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT				#添加永久宣称
+			}
+			north_jilin_area = {
+				#北吉林
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT				#添加永久宣称
+			}
+			central_heilongjiang_area = {
+				#中黑龙江
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT				#添加永久宣称
+			}
+			ningguta_area = {
+				#宁古塔
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT				#添加永久宣称
+			}
+		}
+	}
+	#灭亡高句丽
+	ruin_gaogouli = {
+		icon = mission_unite_home_region
+		required_missions = {
+			get_liao_east
+		}
+		position = 8
+		completed_by = 668.10.1
+		provinces_to_highlight = {
+		}
+		trigger = {
+			NOT = {
+				exists = GOG
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+			add_mandate = 5
+		}
+	}
+	#辽东海北翦长鲸
+	tang_get_eastnorth = {
+		icon = mission_great_wall
+		required_missions = {
+			ruin_gaogouli
+		}
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = heilongjiang_area
+				area = jilin_area
+				area = north_jilin_area
+				area = ilan_hala_area
+				area = liaoning_area
+				area = liaoning_east_area
+				area = central_jilin_area
+				area = east_heilongjiang_area
+				area = central_heilongjiang_area
+				area = central_ilin_hala_area
+				area = ningguta_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			heilongjiang_area_sub_holds = yes
+			jilin_area_sub_holds = yes
+			north_jilin_area_sub_holds = yes
+			ilan_hala_area_sub_holds = yes
+			liaoning_area_sub_holds = yes
+			liaoning_east_area_sub_holds = yes
+			central_jilin_area_sub_holds = yes
+			east_heilongjiang_area_sub_holds = yes
+			central_heilongjiang_area_sub_holds = yes
+			central_ilin_hala_area_sub_holds = yes
+			ningguta_area_sub_holds = yes
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			add_mandate = 5
+		}
+	}
+	#建立安东都护府
+	build_andong = {
+		icon = mission_rab_protection
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		position = 10
+		trigger = {
+			ND1 = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = duhufu_state
+					is_subject_of_type = duhufu_state_color
+				}
+			}
+		}
+		effect = {
+			add_mandate_effect = yes
+		}
+	}
+}
+
+tang_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = TNG
+			tag = LY2
+		}
+	}
+	has_country_shield = yes
+	#终结隋末乱世
+	end_sui = {
+		icon = mission_conquer_kathiawar
+		required_missions = {
+			tng_ruzhu_zhongyuan
+		}
+		position = 6
+		completed_by = 628.11.1
+		trigger = {
+			OR = {
+				NOT = {
+					calc_true_if = {
+						all_country = {
+							capital_scope = {
+								superregion = china_superregion
+							}
+							OR = {
+								has_reform = ancient_chinese_warlord_reform
+								has_reform = celestial_empire
+								has_reform = chinese_feudatory_reform
+							}
+						}
+						amount = 1
+					}
+				}
+				AND = {
+					calc_true_if = {
+						all_country = {
+							capital_scope = {
+								superregion = china_superregion
+							}
+							OR = {
+								has_reform = ancient_chinese_warlord_reform
+								has_reform = celestial_empire
+								has_reform = chinese_feudatory_reform
+							}
+						}
+						amount = 1
+					}
+					NOT = {
+						calc_true_if = {
+							all_country = {
+								capital_scope = {
+									superregion = china_superregion
+								}
+								OR = {
+									has_reform = ancient_chinese_warlord_reform
+									has_reform = celestial_empire
+									has_reform = chinese_feudatory_reform
+								}
+							}
+							amount = 2
+						}
+					}
+					exists = CCS
+					CCS = {
+						has_reform = ancient_chinese_warlord_reform
+					}
+				}
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			add_mil_power = 100
+			add_dip_power = 100
+			add_stability = 1
+			add_mandate = 10
+			#中亚
+			central_asia_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			#西藏
+			tibet_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			#蒙古
+			mongolia_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			#满洲
+			manchuria_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			#朝鲜
+			korea_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			#印度支那
+			indo_china_region = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			#缅甸
+			lower_burma_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	#灭土谷浑
+	ruin_tuguhun = {
+		icon = mission_unite_home_region
+		required_missions = {
+			end_sui
+		}
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				province_id = 678
+				province_id = 706
+				province_id = 3330
+				province_id = 3261
+				province_id = 2459
+				province_id = 3236
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			NOT = {
+				exists = TUG
+			}
+			owns = 678
+			owns = 706
+			owns = 3330
+			owns = 3261
+			owns = 2459
+			owns = 3236
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+			add_mandate = 5
+		}
+	}
+	#青海长云暗雪山
+	tang_get_tibet = {
+		icon = mission_great_wall
+		position = 9
+		required_missions = {
+			ruin_tuguhun
+		}
+		has_country_shield = yes
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1788
+				region = tibet_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			utsang_area_sub_holds = yes
+			utsang_east_area_sub_holds = yes
+			utsang_mountain_area_sub_holds = yes
+			amdo_area_sub_holds = yes
+			amdo_south_area_sub_holds = yes
+			kham_area_sub_holds = yes
+			tsang_area_sub_holds = yes
+			bhutan_area_sub_holds = yes
+			ngari_area_sub_holds = yes
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			add_mandate = 10
+		}
+	}
+	#万国衣冠拜冕旒
+	tang_wanguo_laichao = {
+		icon = et_mission_forbidden_city
+		required_missions = {
+			tang_get_eastnorth
+			tang_get_north
+			tang_get_west
+			tang_get_tibet
+			tang_get_lingnan
+		}
+		provinces_to_highlight = {
+		}
+		position = 10
+		trigger = {
+			calc_true_if = {
+				all_country = {
+					is_subject_of = ROOT
+				}
+				amount = 25
+			}
+		}
+		effect = {
+			add_prestige = 50
+			add_adm_power = 200
+			add_dip_power = 200
+			add_mil_power = 200
+			add_mandate = 30
+		}
+	}
+}
+
+tang_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = TNG
+			tag = LY2
+		}
+	}
+	has_country_shield = yes
+	#北伐突厥
+	beifa_tujue = {
+		icon = mission_chinese_general_riding
+		required_missions = {
+			end_sui
+		}
+		provinces_to_highlight = {
+		}
+		position = 7
+		completed_by = 628.1.1
+		trigger = {
+			OR = {
+				NOT = {
+					exists = GOK
+				}
+				AND = {
+					war_with = GOK
+					war_score_against = {
+						who = GOK
+						value = 75
+					}
+					GOK = {
+						capital_scope = {
+							NOT = {
+								controlled_by = GOK
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+		}
+	}
+	#灭薛延陀
+	ruin_xueyantuo = {
+		icon = mission_unite_home_region
+		required_missions = {
+			beifa_tujue
+		}
+		completed_by = 647.1.1
+		position = 8
+		provinces_to_highlight = {
+		}
+		trigger = {
+			NOT = {
+				exists = ST1
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+		}
+	}
+	#汉家旌帜满阴山
+	tang_get_north = {
+		icon = mission_great_wall
+		required_missions = {
+			ruin_xueyantuo
+		}
+		position = 9
+		provinces_to_highlight = {
+			region = mongolia_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			outer_mongolia_area_sub_holds = yes
+			inner_mongolia_area_sub_holds = yes
+			outer_east_mongolia_area_sub_holds = yes
+			ordos_area_sub_holds = yes
+			ordos_east_area_sub_holds = yes
+			eastern_mongolia_sub_holds = yes
+			central_mongolia_area_sub_holds = yes
+			eastern_mid_mongolia_sub_holds = yes
+			altai_sayan_area_sub_holds = yes
+			tannu_uriankhai_area_sub_holds = yes
+			uliastai_area_sub_holds = yes
+			buryatia_south_area_sub_holds = yes
+			irkutsk_west_area_sub_holds = yes
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			add_mandate = 10
+		}
+	}
+	#安北都护府
+	build_anbei = {
+		icon = mission_rab_protection
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		position = 10
+		trigger = {
+			AN2 = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = duhufu_state
+					is_subject_of_type = duhufu_state_color
+				}
+			}
+		}
+		effect = {
+			add_mandate_effect = yes
+		}
+	}
+}
+
+tang_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = TNG
+			tag = LY2
+		}
+	}
+	has_country_shield = yes
+	form_team_searching_immortality = {
+		icon = mission_inspect
+		required_missions = {
+		}
+		trigger = {
+			adm = 3
+			prestige = 80
+			num_of_cities = 220
+			has_reform = celestial_empire
+		}
+		effect = {
+			add_prestige = 5
+			set_country_flag = flg_event_1_immortality
+		}
+	}
+	find_message_from_JAP = {
+		icon = mission_inspect_2
+		required_missions = {
+			form_team_searching_immortality
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = find_message_from_JAP.tooltip
+				has_country_flag = flg_immortality_message
+			}
+		}
+		effect = {
+			add_prestige = 5
+			set_country_flag = flg_event_2_immortality
+		}
+	}
+	side_by_rome = {
+		icon = mission_roads
+		required_missions = {
+			find_message_from_JAP
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = side_by_rome.tooltip
+				any_country = {
+					OR = {
+						is_neighbor_of = ROOT
+						any_neighbor_country = {
+							OR = {
+								is_subject_of_type = duhufu_state
+								is_subject_of_type = duhufu_state_color
+							}
+							is_subject_of = ROOT
+						}
+					}
+					OR = {
+						is_subject_of_type = tributary_state
+						NOT = {
+							is_subject_of = ROOT
+						}
+					}
+					num_of_cities = 45
+					capital_scope = {
+						OR = {
+							continent = europe
+							continent = africa
+							region = arabia_region
+							region = mashriq_region
+							region = persia_region
+							region = khorasan_region
+							region = central_asia_region
+							area = transcaspia_area
+						}
+					}
+				}
+				has_country_flag = flg_event_2_immortality
+			}
+		}
+		effect = {
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							is_neighbor_of = ROOT
+							any_neighbor_country = {
+								OR = {
+									is_subject_of_type = duhufu_state
+									is_subject_of_type = duhufu_state_color
+								}
+								is_subject_of = ROOT
+							}
+						}
+						OR = {
+							is_subject_of_type = tributary_state
+							NOT = {
+								is_subject_of = ROOT
+							}
+						}
+						num_of_cities = 45
+						capital_scope = {
+							OR = {
+								continent = europe
+								continent = africa
+								region = arabia_region
+								region = mashriq_region
+								region = persia_region
+								region = khorasan_region
+								region = central_asia_region
+								area = transcaspia_area
+							}
+						}
+					}
+					save_global_event_target_as = event_target_immortality_country
+				}
+			}
+			add_prestige = 5
+			add_bit_mandate_effect = yes
+			set_country_flag = flg_event_3_immortality
+		}
+	}
+	victory_by_rome = {
+		icon = mission_dan
+		required_missions = {
+			side_by_rome
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = victory_by_rome.tooltip
+				has_country_flag = flg_event_9_immortality
+			}
+		}
+		effect = {
+			custom_tooltip = tp_get_immortality
+			change_variable = {
+				which = num_of_immortality
+				value = 2
+			}
+		}
+	}
+	get_country_treasure = {
+		icon = mission_treasure
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = get_country_treasure.tooltip
+				treasury_system_trigger = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "treasury_charming"
+				duration = 3650
+			}
+		}
+	}
+	#重开西域
+	chongkai_xiyu = {
+		icon = mission_into_africa
+		required_missions = {
+			end_sui
+		}
+		position = 7
+		completed_by = 646.1.1
+		provinces_to_highlight = {
+			OR = {
+				#蒙古 吐鲁番
+				area = turpan_kumul_area
+				#中亚
+				area = tarim_basin_area				#塔里木
+				area = tarim_basin_east_area				#塔里木
+				area = jetysuu_area				#七河
+				area = zungaria_area				#南准噶尔
+				area = north_zungaria				#北准噶尔#2019-09-17
+				area = kashgaria_area
+				area = east_altishahr_area
+				area = east_south_altishahr_area
+				area = shanshan_area				#2019-09-17
+				area = hetian_area				#2019-09-17
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT				#本家或属国(非朝贡国)持有
+			}
+		}
+		trigger = {
+			#蒙古 吐鲁番
+			turpan_kumul_area_sub_holds = yes
+			#北六城
+			tarim_basin_area_sub_holds = yes
+			#东塔里木盆地"
+			tarim_basin_east_area_sub_holds = yes
+			##七河
+			jetysuu_area_sub_holds = yes
+			#南准噶尔地区
+			zungaria_area_sub_holds = yes
+			#北准噶尔
+			north_zungaria_sub_holds = yes
+			#喀什噶尔地区
+			kashgaria_area_sub_holds = yes
+			#南六城地区
+			east_altishahr_area_sub_holds = yes
+			#疆南绿洲地区
+			east_south_altishahr_area_sub_holds = yes
+			#鄯善地区
+			shanshan_area_sub_holds = yes
+			#和阗地区
+			hetian_area_sub_holds = yes
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			#波斯地区
+			iraq_e_ajam_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			#呼罗珊地区
+			khorasan_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	#交战阿拉伯
+	tang_war_with_arab = {
+		icon = mission_ancient_chinese_army_in_siege
+		required_missions = {
+			chongkai_xiyu
+		}
+		provinces_to_highlight = {
+		}
+		completed_by = 659.1.1
+		position = 8
+		trigger = {
+			OR = {
+				AND = {
+					NOT = {
+						exists = SAS
+					}
+					NOT = {
+						exists = RSD
+					}
+				}
+				AND = {
+					OR = {
+						AND = {
+							war_with = SAS
+							war_score_against = {
+								who = SAS
+								value = 75
+							}
+							SAS = {
+								capital_scope = {
+									NOT = {
+										controlled_by = PREV
+									}
+								}
+							}
+						}
+						AND = {
+							war_with = RSD
+							war_score_against = {
+								who = RSD
+								value = 75
+							}
+							RSD = {
+								capital_scope = {
+									NOT = {
+										controlled_by = PREV
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+		}
+	}
+	#黄沙百战穿金甲
+	tang_get_west = {
+		icon = mission_great_wall
+		required_missions = {
+			tang_war_with_arab
+		}
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = transoxiana_area
+				area = khiva_area
+				area = syr_darya_area
+				area = arys_area
+				area = ferghana_area
+				area = balchasj_area
+				area = kyzylkum_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			#河中
+			transoxiana_area_sub_holds = yes
+			#希瓦
+			khiva_area_sub_holds = yes
+			#锡尔河
+			syr_darya_area_sub_holds = yes
+			#阿雷西
+			arys_area_sub_holds = yes
+			#费尔干纳
+			ferghana_area_sub_holds = yes
+			#巴尔喀什
+			balchasj_area_sub_holds = yes
+			#克孜勒库姆
+			kyzylkum_area_sub_holds = yes
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+		}
+	}
+	#安西都护府
+	build_anxi = {
+		icon = mission_rab_protection
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		completed_by = 639.12.30
+		position = 10
+		trigger = {
+			AN4 = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = duhufu_state
+					is_subject_of_type = duhufu_state_color
+				}
+			}
+		}
+		effect = {
+			add_mandate_effect = yes
+		}
+	}
+}

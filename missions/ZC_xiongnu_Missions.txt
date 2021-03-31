@@ -1,0 +1,815 @@
+XIO_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = XIO
+	}
+	has_country_shield = yes
+
+	yuezhi_issue = {
+		icon = mission_ottoman_harem
+		required_missions = { }
+		position = 1
+		trigger = {
+			OR = {
+				NOT = { exists = DY2 }
+				is_rival = DY2
+				is_enemy = DY2
+			}
+		}
+		effect = {
+			capital_scope = {
+				ROOT = {
+					cavalry = PREV
+					cavalry = PREV
+					cavalry = PREV
+					cavalry = PREV
+					cavalry = PREV
+				}
+			}
+			DY2 = {
+				add_trust = {
+					who = XIO
+					value = -100
+					mutual = yes
+				}
+				add_historical_rival = XIO
+			}
+		}
+	}
+			
+	yuezhi_in_decline = {
+		icon = mission_spoils_of_war
+		required_missions = { yuezhi_issue }
+		position = 3
+		trigger = {
+			DY2 = {
+				NOT = { total_development = 50 }
+			}
+		}
+		effect = {
+			add_horde_unity = 20
+		}
+	}
+}
+
+XIO_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = XIO
+	}
+	has_country_shield = yes
+
+	under_seige = {
+		icon = mission_abu_saids_dream
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = ordos_area
+				area = ordos_east_area
+				area = inner_mongolia_area
+				area = gansu_eastnorth_area
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			ordos_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			ordos_east_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			inner_mongolia_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			gansu_eastnorth_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			shaanxi_north_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			shanxi_west_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			shanxi_north_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = under_seige
+				duration = 7300
+			}
+		}
+	}
+
+	break_the_Great_Wall = {
+		icon = mission_great_wall
+		required_missions = { under_seige }
+		required_missions = { recover_donghu }	
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = shaanxi_north_area
+				area = shanxi_west_area
+				area = shanxi_north_area
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			shaanxi_north_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			shanxi_west_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			shanxi_north_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = break_the_Great_Wall
+				duration = 3650
+			}
+			country_event = { id = xiongnu_flavor.7 }
+		}
+	}
+
+	loot_changan = {
+		icon = mission_asian_city
+		required_missions = { break_the_Great_Wall }
+		position = 4
+		trigger = {
+			NOT = { owns = 700 }
+			700 = {
+				has_province_modifier = province_razed
+			}
+		}
+		effect = {
+			add_treasury = 100
+			add_manpower = 5
+			country_event = { id = xiongnu_flavor.8 }
+		}
+	}
+}
+			
+XIO_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = XIO
+	}
+	has_country_shield = yes
+
+	xiongnu_tribal_affiliation = {
+		icon = mission_alliances
+		required_missions = { }
+		position = 1
+		trigger = {
+			tributary_state = 3
+		}
+		effect = {
+			add_country_modifier = {
+				name = xiongnu_tribal_affiliation
+				duration = 5475
+			}
+			eastern_mid_mongolia = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			eastern_mongolia = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			outer_east_mongolia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			703 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	recover_donghu = {
+		icon = mission_unite_the_deccan
+		required_missions = { xiongnu_tribal_affiliation }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = eastern_mid_mongolia
+				area = eastern_mongolia
+				area = outer_east_mongolia_area
+				province_id = 703
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			eastern_mid_mongolia = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			eastern_mongolia = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			outer_east_mongolia_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			703 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			north_jilin_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			heilongjiang_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_heilongjiang_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	unify_eastern_prairie = {
+		icon = mission_marathi_fiefs
+		required_missions = { recover_donghu }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = north_jilin_area
+				area = heilongjiang_area 
+				area = central_heilongjiang_area
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			north_jilin_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			heilongjiang_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			central_heilongjiang_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_horde_unity = 20
+		}
+	}
+
+	brute_power = {
+		icon = mission_crusade_for_varna
+		required_missions = { unify_eastern_prairie }
+		required_missions = { Tarim_Basin }	
+		position = 4
+		trigger = {
+			OR = {
+				tributary_state = 10
+				vassal = 10
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = brute_power
+				duration = -1
+			}
+		}
+	}
+}
+
+XIO_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = XIO
+	}
+	has_country_shield = yes
+
+	conquer_hexi = {
+		icon = mission_chinese_general_riding
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = central_gansu_area
+				area = west_gansu_area 
+				area = westnorth_gansu_area
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			central_gansu_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			west_gansu_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			westnorth_gansu_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			turpan_kumul_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			zungaria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			jetysuu_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+		
+	unify_Dzungaria = {
+		icon = mission_the_battle_for_raichur
+		required_missions = { conquer_hexi }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = turpan_kumul_area
+				area = zungaria_area
+				area = jetysuu_area
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			turpan_kumul_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			zungaria_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			jetysuu_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_prestige = 20
+			shanshan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tarim_basin_east_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_south_altishahr_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hetian_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tarim_basin_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_altishahr_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kashgaria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	Tarim_Basin = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { unify_Dzungaria }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = shanshan_area
+				area = tarim_basin_east_area
+				area = east_south_altishahr_area
+				area = hetian_area
+				area = tarim_basin_area
+				area = east_altishahr_area
+				area = kashgaria_area
+			}
+			AND = {
+				NOT = { owned_by = ROOT }
+				NOT = { 
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}
+				}
+			}
+		}
+		trigger = {
+			shanshan_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			tarim_basin_east_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			east_south_altishahr_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			hetian_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			tarim_basin_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			east_altishahr_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			kashgaria_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = northern_overlord
+				duration = 3650
+			}
+		}
+	}
+}
+
+XIO_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = XIO
+	}
+	has_country_shield = yes
+
+	tribe_taxation = {
+		icon = mission_rb_scottish_the_darien_scheme
+		required_missions = { }
+		position = 1
+		trigger = {
+			estate_influence = {
+				estate = estate_nomadic_tribes 
+				influence = 80
+			}
+		}
+		effect = {
+			add_years_of_income = 0.5
+			add_country_modifier = {
+				name = tribe_taxation
+				duration = -1
+			}
+		}
+	}
+
+	live_stocks = {
+		icon = mission_junnagadh_fort
+		required_missions = { tribe_taxation }
+		required_missions = { Tarim_Basin }
+		position = 4
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 30
+				trade_goods = livestock
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = live_stocks
+				duration = 7300
+			}
+		}
+	}
+
+	study_of_agriculture = {
+		icon = mission_rice_field
+		required_missions = { live_stocks }
+		position = 5
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = grain
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = study_of_agriculture
+				duration = 36500
+			}
+		}
+	}
+}

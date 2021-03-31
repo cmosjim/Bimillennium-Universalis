@@ -1,0 +1,1364 @@
+FRK_mission_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FRK
+		}
+	}
+	has_country_shield = yes
+
+	moravia_and_bohemia = {
+		icon = bohemian_crystal
+		required_missions = { roman_emperor }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = bohemia_area
+				area = erzgebirge_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			bohemia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			erzgebirge_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			transdanubia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			slovakia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	vassalize_pannonia = {
+		icon = mission_cossack_cavalry
+		required_missions = { moravia_and_bohemia }
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = transdanubia_area
+				area = slovakia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			transdanubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			slovakia_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			croatia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_adriatic_coast_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_saxony_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_saxony_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	vassalize_croatia = {
+		icon = mission_conquer_5_states
+		required_missions = { vassalize_pannonia }
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				area = croatia_area
+				area = east_adriatic_coast_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			croatia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_adriatic_coast_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = huge_feudal_empire
+				duration = -1
+			}
+		}
+	}
+}
+
+FRK_mission_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FRK
+		}
+	}
+	has_country_shield = yes
+
+	the_salic_monarchy = {
+		icon = mission_rb_take_north_india
+		required_missions = { feudal_dynasty }	
+		position = 4
+		trigger = {
+			owns = 183
+			has_reform = salic_reform
+		}
+		effect = {
+			set_capital = 183
+			183 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
+
+	lex_salica = {
+		icon = mission_rb_monopolize_the_channel
+		required_missions = { the_salic_monarchy }
+		position = 5
+		trigger = {
+			has_reform = salic_reform
+			prestige = 100
+			legitimacy = 100
+			estate_influence = {
+				estate = estate_nobles
+				influence = 75
+			}
+		}
+		effect = {
+			add_ADM_power = 200
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 20
+			}
+		}
+	}
+
+	roman_emperor = {
+		icon = carolingian_empire
+		required_missions = { }
+		position = 7
+		trigger = {
+			has_reform = salic_reform
+			legitimacy = 100
+			adm = 5
+			dip = 5
+			mil = 5
+			owns = 1878
+			owns = 183
+		}
+		effect = {
+			add_ruler_modifier = {
+				name = roman_emperor
+			}
+			venetia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lombardy_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			piedmont_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			liguria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bohemia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			erzgebirge_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			country_event = { id = frank_flavor.4 }
+		}
+	}
+	
+	saxon_faliure = {
+		icon = mission_city_of_the_world's_desire	
+		required_missions = { vassalize_pannonia }
+		required_missions = { roman_emperor }
+		required_missions = { remove_lombardy }
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				area = westphalia_area
+				area = braunschweig_area
+				area = weser_area
+				area = northern_saxony_area
+				area = lower_saxony_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			NOT = { exists = SAX }
+			westphalia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			braunschweig_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			weser_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_saxony_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_saxony_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = experience_of_battle_with_saxon
+				duration = 10950
+			}
+			mecklenburg_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			vorpommern_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = { exists = OBO }
+				add_casus_belli = {
+					type = cb_vassalize_mission
+        	  				months = 300
+          					target = OBO
+				}
+			}
+		}
+	}
+
+	vassalize_obotrites = {
+		icon = mission_rb_control_electors
+		required_missions = { saxon_faliure }
+		position = 11
+		provinces_to_highlight = {
+			OR = {
+				area = mecklenburg_area
+				area = vorpommern_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			mecklenburg_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vorpommern_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			mittelmark_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = { exists = VEL }
+				add_casus_belli = {
+					type = cb_vassalize_mission
+        	  				months = 300
+          					target = VEL
+				}
+			}
+		}
+	}
+
+	vassalize_veleti = {
+		icon = mission_rb_conquer_the_highlands
+		required_missions = { vassalize_obotrites }
+		position = 12
+		provinces_to_highlight = {
+			area = mittelmark_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			mittelmark_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			south_saxony_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = { exists = SOR }
+				add_casus_belli = {
+					type = cb_vassalize_mission
+        	  				months = 300
+          					target = SOR
+				}
+			}
+		}
+	}
+
+	vassalize_sorbia = {
+		icon = mission_rb_rein_in_the_highland_clans
+		required_missions = { vassalize_veleti }
+		position = 13
+		provinces_to_highlight = {
+			area = south_saxony_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			south_saxony_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = salic_feudal_rule
+				duration = -1
+			}
+		}
+	}
+}
+
+FRK_mission_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FRK
+		}
+	}
+	has_country_shield = yes
+
+	move_to_north_gaul = {
+		icon = mission_chinese_general_riding
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = flanders_area
+				area = wallonia_area
+				area = netherlands_area 
+				area = luxemburg_liege_area
+				area = lower_rhineland_area
+				area = north_rhine_area
+				area = brabant_area
+				area = north_brabant_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			north_rhine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			flanders_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			wallonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			netherlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			luxemburg_liege_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_rhineland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			brabant_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_brabant_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			hesse_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palatinate_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			franconia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			thuringia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lorraine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			picardy_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			champagne_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ile_de_france_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			normandy_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			loire_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			orleans_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	destroy_soissons = {
+		icon = mission_control_surat
+		required_missions = { move_to_north_gaul }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = lorraine_area
+				area = champagne_area
+				area = ile_de_france_area
+				area = normandy_area
+				area = loire_area
+				area = picardy_area 
+				area = orleans_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			lorraine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			champagne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ile_de_france_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			normandy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			loire_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			picardy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			orleans_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = new_land
+				duration = 5475
+			}
+		}
+	}
+
+	feudal_dynasty = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { destroy_soissons }
+		position = 3
+		trigger = {
+			NOT = { has_reform = barbarian_reform }
+			NOT = { has_country_modifier = barbarian_migration }
+		}
+		effect = {
+			poitou_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			massif_central_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			guyenne_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pyrenees_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = early_feudal_overlord
+				duration = -1
+			}
+		}
+	}
+
+	drive_away_visigoth = {
+		icon = mission_conquer_5_states
+		required_missions = { feudal_dynasty }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = poitou_area
+				area = massif_central_area
+				area = guyenne_area
+				area = pyrenees_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			poitou_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			massif_central_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			guyenne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pyrenees_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = drive_away_visigoth
+				duration = 3650
+			}
+			bourgogne_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			romandie_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			savoy_dauphine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_burgundy_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	rule_burgundy = {
+		icon = mission_rb_repatriate_burgundy
+		required_missions = { drive_away_visigoth }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = bourgogne_area
+				area = romandie_area
+				area = savoy_dauphine_area
+				area = west_burgundy_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			bourgogne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			romandie_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			savoy_dauphine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_burgundy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			provence_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			languedoc_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	unify_gaul = {
+		icon = mission_rb_the_education_acts	
+		required_missions = { rule_burgundy }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = provence_area
+				area = languedoc_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			provence_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			languedoc_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = unify_gaul
+				duration = 7300
+			}
+		}
+	}
+	
+	north_italy_obedience = {
+		icon = all_roads_lead_to_milan	
+		required_missions = { roman_emperor }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = venetia_area
+				area = lombardy_area
+				area = piedmont_area
+				area = liguria_area
+				area = po_valley_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			venetia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lombardy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			piedmont_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			liguria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			po_valley_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			emilia_romagna_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tuscany_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_italy_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	remove_lombardy = {
+		icon = complete_the_risorgimento
+		required_missions = { north_italy_obedience }
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = emilia_romagna_area
+				area = tuscany_area
+				area = central_italy_area
+				province_id = 4921
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			NOT = { exists = LOM }
+			emilia_romagna_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tuscany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_italy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4921 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			catalonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			westphalia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			braunschweig_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			weser_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	conquer_catalonia = {
+		icon = mission_protect_albania
+		required_missions = { remove_lombardy }
+		position = 10
+		provinces_to_highlight = {
+			area = catalonia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			catalonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			aragon_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			basque_country = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	climb_pyrenees = {
+		icon = mission_potosi_silver
+		required_missions = { conquer_catalonia }
+		position = 11	
+		provinces_to_highlight = {
+			OR = {
+				area = aragon_area
+				area = basque_country
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			aragon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			basque_country = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_MIL_power = 200
+		}
+	}
+}
+
+FRK_mission_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FRK
+		}
+	}
+	has_country_shield = yes
+
+	march_to_thuringia = {
+		icon = mission_assemble_an_army
+		required_missions = { move_to_north_gaul }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = hesse_area 
+				area = palatinate_area
+				area = franconia_area 
+				area = thuringia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			hesse_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			palatinate_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			franconia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			thuringia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			upper_rhineland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_swabia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_swabia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			switzerland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_bavaria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = { 
+				limit = { exists = ALM }
+				add_casus_belli = {
+					type = cb_vassalize_mission
+        	  				months = 300
+          					target = ALM
+				}
+			}
+		}
+	}
+
+	annex_alamanni = {
+		icon = mission_alliances
+		required_missions = { march_to_thuringia }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = upper_rhineland_area
+				area = lower_swabia_area
+				area = upper_swabia_area 
+				area = switzerland_area
+				area = upper_bavaria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			upper_rhineland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_swabia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_swabia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			switzerland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_bavaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = { exists = ALM }
+		}
+		effect = {
+			add_DIP_power = 100
+			add_prestige = 15
+			south_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	consolidate_power_on_south_german = {
+		icon = mission_rb_hanseatic_east
+		required_missions = { annex_alamanni }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				region = south_german_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			south_german_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_corruption = -2
+		}
+	}
+
+	aquitaine = {
+		icon = mission_rb_conquer_the_isles
+		required_missions = { consolidate_power_on_south_german }
+		required_missions = { drive_away_visigoth }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = guyenne_area
+				area = pyrenees_area
+				province_id = 196
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			legitimacy = 100
+			guyenne_area = {
+				type = all
+				owned_by = ROOT
+			}
+			pyrenees_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns = 196
+		}
+		effect = {
+			country_event = { id = frank_flavor.1 }
+		}
+	}
+
+	gain_lowland = {
+		icon = mission_invade_island
+		required_missions = { aquitaine }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = holland_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			holland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_ADM_power = 50
+			add_DIP_power = 50
+			add_MIL_power = 50
+		}
+	}
+
+	prepare_for_defense = {
+		icon = protect_against_austria
+		required_missions = { clovis_christianise }
+		position = 8
+		trigger = {
+			any_country = {
+				is_neighbor_of = ROOT
+				any_neighbor_country = {
+					religion_group = muslim
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = prepare_for_defense
+				duration = 1095
+			}
+		}
+	}
+
+	resist_muslim = {
+		icon = mission_subdue_rajputana
+		required_missions = { prepare_for_defense }
+		position = 10
+		trigger = {
+			any_country = {
+				religion_group = muslim
+				war_with = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = resist_of_christianity
+				duration = 1825
+			}
+			hidden_effect = {
+				country_event = { id = chalimate_advisor_come.1 }
+			}
+		}
+	}
+			
+	disappear_of_iberian_muslim = {
+		icon = mission_conquer_romania
+		required_missions = { resist_muslim }
+		position = 12
+		trigger = {
+			is_at_war = no
+			all_neighbor_country = {
+				religion_group = christian
+			}
+			all_province = {
+				continent = europe
+				NOT = { religion_group = muslim }
+			}
+		}
+		effect = {
+			country_event = { id = frank_flavor.6 }
+		}
+	}
+}
+
+FRK_mission_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FRK
+		}
+	}
+	has_country_shield = yes
+
+	beat_avar = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { aquitaine }
+		position = 6
+		trigger = {
+			OR = {
+				AND = {
+					war_with = AVR
+					war_score_against = {
+						who = AVR
+						value = 100
+					}
+				}
+				NOT = { exists = AVR }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = frank_beat_horde
+				duration = 3650
+			}
+		}
+	}
+
+	clovis_christianise = {
+		icon = spread_piety
+		required_missions = { }
+		position = 7
+		trigger = {
+			religion = chalcedonism
+			religious_unity = 0.9
+			is_defender_of_faith = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = european_christian
+				duration = 5475
+			}
+		}
+	}
+
+	donation_of_pepin = {
+		icon = mission_religious
+		required_missions = { clovis_christianise }
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = central_italy_area
+				province_id = 4921
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			central_italy_area = {
+				type = all
+				OR = {
+					owned_by = ROOT 
+					owned_by = PAP
+				}
+			}
+			4921 = {
+				OR = {
+					owned_by = ROOT 
+					owned_by = PAP
+				}
+			}
+		}
+		effect = {
+			country_event = { id = frank_flavor.5 }
+		}
+	}
+		
+	aachen_cathedral = {
+		icon = mission_european_church	
+		required_missions = { donation_of_pepin }
+		position = 12
+		trigger = {
+			1878 = { 
+				has_building = temple
+				NOT = { 
+					unrest = 0 
+					local_autonomy = 0.01
+				}
+			}
+		}
+		effect = {
+			1878 = {
+				add_province_modifier = {
+					name = aachen_cathedral
+					duration = -1
+				}
+			}
+		}
+	}
+
+	
+}

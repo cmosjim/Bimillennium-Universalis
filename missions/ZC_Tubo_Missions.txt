@@ -1,0 +1,899 @@
+TIB_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = tibetan
+	}
+	has_country_shield = yes
+
+	bhrikuti_devi = {
+		icon = mission_pirate_havens
+		required_missions = { }
+		position = 1
+		trigger = {
+			OR = {
+				any_country = {
+					primary_culture = nepali 
+					marriage_with = ROOT
+				}
+				all_country = {
+					NOT = { primary_culture = nepali }
+				}
+			}
+		}
+		effect = {
+			country_event = { id = tubo_flavor.1 }
+			nepal_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			baisi_rajya_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}		
+	}
+
+	nepal_submission = {
+		icon = mission_subdue_the_afghans	
+		required_missions = { south_to_india }
+		required_missions = { bhrikuti_devi }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = nepal_area
+				area = baisi_rajya_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			nepal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			baisi_rajya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_army_tradition = 10	
+			himalayan_hills_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_kashmir_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	highland_barley = {
+		icon = mission_rb_import_potatoes
+		required_missions = { rise_of_highland }
+		position = 8
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 4
+				region = tibet_region
+				trade_goods = grain
+				base_production = 4
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = barley
+				duration = -1
+			}
+		}
+	}	
+}
+	
+TIB_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = tibetan
+	}
+	has_country_shield = yes
+
+	zhang_zhung_acquisition = {
+		icon = mission_conquer_kannauj
+		required_missions = { first_defeat }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = ngari_area
+				area = utsang_area
+				area = utsang_east_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			ngari_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			utsang_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			utsang_east_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = { exists = ZHA }
+		}
+		effect = {
+			add_country_modifier = {
+				name = zhang_zhung_acquisition
+				duration = 3650
+			}
+		}
+	}
+
+	south_to_india = {
+		icon = mission_kanbawzathadi_palace
+		required_missions = { zhang_zhung_acquisition }
+		required_missions = { tibet_union }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = bhutan_area
+				province_id = 562
+				province_id = 2251
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			bhutan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			562 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2251 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = south_to_india
+				duration = 3650
+			}
+		}
+	}
+
+	consolidate_control_of_himalaya = {
+		icon = mission_rb_conquer_the_isles
+		required_missions = { south_to_india }
+		required_missions = { wakhan_corridor }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = nepal_area
+				area = baisi_rajya_area
+				area = himalayan_hills_area
+				area = east_kashmir_area
+				area = bhutan_area
+				province_id = 1788
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			nepal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			baisi_rajya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			himalayan_hills_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_kashmir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bhutan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1788 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			3325 = {
+				add_province_modifier = {
+					name = south_himalaya_defense
+					duration = -1
+				}
+			}
+			509 = {
+				add_province_modifier = {
+					name = south_himalaya_defense
+					duration = -1
+				}
+			}
+			4600 = {
+				add_province_modifier = {
+					name = south_himalaya_defense
+					duration = -1
+				}
+			}
+			565 = {
+				add_province_modifier = {
+					name = south_himalaya_defense
+					duration = -1
+				}
+			}
+			1788 = {
+				add_province_modifier = {
+					name = south_himalaya_defense
+					duration = -1
+				}
+			}
+		}
+	}
+
+	yak = {
+		icon = mission_rb_conquer_wales
+		required_missions = { rise_of_highland }
+		position = 8
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 20
+				region = tibet_region
+				OR = {
+					trade_goods = livestock
+					trade_goods = wool
+				}
+				development = 6
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = highland_yak
+				duration = -1
+			}
+		}
+	}
+}
+
+TIB_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = tibetan
+	}
+	has_country_shield = yes
+
+	first_defeat = {
+		icon = mission_protect_granada
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1787
+				province_id = 3334
+				province_id = 2454
+				province_id = 2455
+				province_id = 677
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			owns = 1787
+			owns = 3334
+			owns = 2454
+			owns = 2455
+			owns = 677
+		}
+		effect = {
+			add_prestige = 10
+			add_legitimacy = 10
+			tibet_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+		
+	tibet_union = {
+		icon = mission_control_surat
+		required_missions = { zhang_zhung_acquisition }
+		required_missions = { first_defeat }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				region = tibet_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			tibet_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			himalayan_hills_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_kashmir_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_kashmir_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	wakhan_corridor = {
+		icon = mission_wine_monopolies
+		required_missions = { tibet_union }
+		required_missions = { south_to_india }
+		required_missions = { drive_away_west_turkistan }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				province_id = 452
+				province_id = 508
+				province_id = 2177
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			owns = 452
+			owns = 508
+			owns = 2177
+		}
+		effect = {
+			add_country_modifier = {
+				name = silk_afghanistan_corridor
+				duration = -1
+			}
+		}
+	}
+
+	rise_of_highland = {
+		icon = mission_potosi_silver
+		required_missions = { }
+		position = 7
+		trigger = {
+			treasury = 500
+			legitimacy = 100
+		}
+		effect = {
+			add_country_modifier = {
+				name = rise_of_highland
+				duration = 36500
+			}
+		}
+	}
+}
+
+TIB_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = tibetan
+	}
+	has_country_shield = yes
+
+	tuyuhun_frontier = {
+		icon = mission_portuguese_oman
+		required_missions = { first_defeat }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 706
+				province_id = 2459
+				province_id = 3236
+				province_id = 3261
+				province_id = 3330
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			NOT = { exists = TUG }
+			owns = 706
+			owns = 2459
+			owns = 3236
+			owns = 3261
+			owns = 3330
+		}
+		effect = {
+			add_country_modifier = {
+				name = tuyuhun_frontier
+				duration = 3650
+			}
+			amdo_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tarim_basin_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tarim_basin_east_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_altishahr_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_south_altishahr_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hetian_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			shanshan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kashgaria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			westnorth_gansu_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_gansu_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2886 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			709 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			3192 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			3226 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	drive_away_west_turkistan = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { tibet_union }
+		required_missions = { tuyuhun_frontier }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = amdo_area
+				area = tarim_basin_area
+				area = tarim_basin_east_area
+				area = east_altishahr_area
+				area = east_south_altishahr_area
+				area = hetian_area
+				area = shanshan_area
+				area = kashgaria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			amdo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tarim_basin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tarim_basin_east_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_altishahr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_south_altishahr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hetian_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			shanshan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kashgaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = xiyu_tubo
+				duration = 7300
+			}
+			452 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			508 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2177 = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	vassalize_nanzhao = {
+		icon = mission_chinese_general_riding
+		required_missions = { wakhan_corridor }
+		required_missions = { drive_away_west_turkistan }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = yun_gui_west_area
+				area = yun_gui_borderland_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			yun_gui_west_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yun_gui_borderland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			yun_gui_west_area = {
+				add_province_modifier = {
+					name = vassalize_nanzhao
+					duration = 3650
+				}	
+			}
+			yun_gui_borderland_area = {
+				add_province_modifier = {
+					name = vassalize_nanzhao
+					duration = 3650
+				}	
+			}
+		}
+	}
+
+	highland_post = {
+		icon = mission_control_the_desh
+		required_missions = { rise_of_highland }
+		position = 8
+		trigger = {
+			tibet_region = {
+				type = all
+				OR = {
+					has_building = road
+					has_building = highway
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = highland_post
+				duration = -1
+			}
+		}
+	}
+}
+
+TIB_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = tibetan
+	}
+	has_country_shield = yes
+
+	tubo_time = {
+		icon = mission_manchu_warrior
+		required_missions = { }
+		position = 1
+		trigger = {
+			OR = {
+				has_ruler = "åg^çr^^"
+				in_golden_age = yes
+			}
+		}
+		effect = {
+			if = {
+				limit = { ai = no }
+				define_advisor = {
+					type = philosopher
+					name = "T%V Qh^Nb"
+					skill = 3
+					discount = yes
+				}
+				define_advisor = {
+					type = trader
+					name = "dçY	TSpg‚l"
+					skill = 3
+					discount = yes
+				}
+				define_advisor = {
+					type = natural_scientist
+					name = "…b^úgV"
+					skill = 3
+					discount = yes
+				}
+				define_advisor = {
+					type = statesman
+					name = "9É“Rpg"
+					skill = 3
+					discount = yes
+				}
+				define_advisor = {
+					type = fortification_expert
+					name = "dçQhlbfe"
+					skill = 3
+					discount = yes
+				}
+				define_advisor = {
+					type = theologian
+					name = "Bh éXQh≈ñ+u…b"
+					skill = 3
+					discount = yes
+				}
+				define_advisor = {
+					type = quartermaster
+					name = "Bw æè`SN^X"
+					skill = 3
+					discount = yes
+				}
+			}
+		}	
+	}
+
+	ganzhou_suzhou = {
+		icon = mission_impaled_soldies
+		required_missions = { tubo_time }
+		required_missions = { tuyuhun_frontier }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = westnorth_gansu_area
+				area = west_gansu_area
+				province_id = 2886
+				province_id = 709
+				province_id = 3226
+				province_id = 3192
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			westnorth_gansu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_gansu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2886 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			709 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3226 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3192 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = isolate_xiyu
+				duration = 5475
+			}
+			central_gansu_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			gansu_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	changan_threaten = {
+		icon = mission_manchu_warrior
+		required_missions = { ganzhou_suzhou }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = central_gansu_area
+				area = gansu_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			central_gansu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gansu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 30
+			yun_gui_west_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yun_gui_borderland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	bring_down_changan = {
+		icon = mission_rice_field
+		required_missions = { changan_threaten }
+		position = 6
+		provinces_to_highlight = {
+			province_id = 700
+		}
+		trigger = {
+			OR = {
+				700 = {
+					NOT = { owned_by = ROOT }
+					controlled_by = ROOT
+				}
+				700 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = tubo_glory	
+				duration = -1
+			}
+		}
+	}
+	
+	zangwen = {
+		icon = geneva_conventions
+		required_missions = { rise_of_highland }
+		position = 8
+		trigger = {
+			has_idea = zangwen
+			has_institution = writing
+		}
+		effect = {
+			add_country_modifier = {
+				name = set_zangwen
+				duration = -1
+			}
+		}
+	}
+}
+

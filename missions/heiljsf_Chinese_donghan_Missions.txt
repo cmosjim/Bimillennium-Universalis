@@ -1,0 +1,1423 @@
+#2019.08.11 fit to 1.28
+heiljsf_chinese_donghan_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+			is_year = 24
+            OR = {
+                tag = LX2
+                tag = HND
+            }
+	}
+	has_country_shield = yes
+
+ 	##出抚河北
+	chuxun_hebei = {
+		icon = mission_manchu_warrior			#图标
+		required_missions = { }					#前置任务 也就是前一个任务
+		position = 1							#从上到下数本任务的位置，最顶端对应的数值为1
+		completed_by = 25.8.5
+		provinces_to_highlight = {				#要突出显示的省或地区
+            OR = {
+                province_id = 1816
+                province_id = 3181
+                province_id = 2500
+            }
+			NOT = {
+				owned_by = ROOT			        	
+			}	
+		}
+		trigger = {
+			1816 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			3181 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			2500 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			NOT = {
+				OR = {
+					exists = TM3					#铜马军
+					exists = WA1					#王郎军
+				}
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_adm_power = 100
+		}
+	}	
+	
+	##建立东汉
+	jianli_donghan = {
+		icon = mission_japanese_fort			#图标
+		required_missions = { chuxun_hebei }	#前置任务 也就是前一个任务
+		position = 2							#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+		
+		}
+		trigger = {
+			NOT = {
+				#更始汉朝被灭
+				OR = {
+					exists = WX2
+					exists = LX2
+				}	
+			}
+            tag = HND								    #是汉军
+			HND = { capital = 2492 }
+		}
+		effect = {
+			add_prestige = 50
+			add_adm_power = 100
+			set_emperor_of_china = HND				#汉获得天命
+			set_mandate = 80						#天命值设置为80
+            create_alliance = WQ1                   #与文齐同盟
+			2492 = {								#建设洛阳
+				add_base_tax = 7
+				add_base_production = 7
+				add_base_manpower = 3
+			}
+			xinan_region = {                        #西南地区 
+				limit = {
+					NOT = { is_core = HND }
+					NOT = { owned_by = HND }
+				}
+				add_permanent_claim = HND           #添加永久宣称
+			}
+			north_china_region = {                  #华北地区
+				limit = {
+					NOT = { is_core = HND }
+					NOT = { owned_by = HND }
+				}
+				add_permanent_claim = HND
+			}
+            south_china_region = {                  #华南地区
+				limit = {
+					NOT = { is_core = HND }
+					NOT = { owned_by = HND }
+				}
+				add_permanent_claim = HND
+			}
+		}
+	}
+    
+    ##传国玉玺
+	chuanguo_yuxi = {
+		icon = mission_riches_of_golconda		#图标
+		required_missions = { jianli_donghan }	#前置任务 也就是前一个任务
+		position = 3							#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+            OR = {
+                province_id = 687
+            }
+            NOT = {
+				owned_by = ROOT			        	
+			}
+		}
+		trigger = {
+			OR = {
+				NOT = { exists = CH1 }              #赤眉军被灭
+			}
+            687 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			capital = 2492
+			has_country_modifier = md_chuanguoyuxi
+		}
+		effect = {
+            add_adm_power = 100
+            set_mandate = 100						#天命值设置为100
+			xinan_region = {                        #西南地区 
+				limit = {
+					NOT = { is_core = HND }
+					NOT = { owned_by = HND }
+				}
+				add_core = HND                      #添加核心
+			}
+			north_china_region = {                  #华北地区
+				limit = {
+					NOT = { is_core = HND }
+					NOT = { owned_by = HND }
+				}
+				add_core = HND
+			}
+            south_china_region = {                  #华南地区
+				limit = {
+					NOT = { is_core = HND }
+					NOT = { owned_by = HND }
+				}
+				add_core = HND
+			}
+            if = {
+                limit = {
+                    exists = WA2                    #地方军存在
+					ai = no
+                }
+                every_province = {					#吞并国家  刘秀吞并地方军
+                    limit = {
+                        owned_by = WA2
+                    }
+                    add_core = PREV
+                    cede_province = PREV
+                }
+            }
+            HND = {
+                random_owned_province = {               #产生运输船
+                    limit = { has_port = yes }
+                    ROOT = {
+                        transport = PREV
+                    }
+                }
+            }
+		}
+	}
+   
+    ##收复东部
+	shoufu_dongbu = {
+		icon = mission_unite_home_region			#图标
+		required_missions = { chuanguo_yuxi }	#前置任务 也就是前一个任务
+		position = 4							#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+		    OR = {
+                province_id = 3185
+                province_id = 3239
+                province_id = 2496
+                province_id = 686
+                province_id = 681
+            }
+            NOT = {
+				owned_by = ROOT			        	
+			}
+		}
+		trigger = {
+			NOT = { exists = ZB1 }					#张步军
+			NOT = { exists = DX4 }					#董宪军
+			NOT = { exists = LY1 }                  #刘永军
+			NOT = { exists = LX1 }                  #李宪军
+			NOT = { exists = QI3 }                  #秦丰军
+            3185 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            3239 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            2496 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            686 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            681 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_prestige = 10
+            add_mandate = 10                    #添加天命10
+			add_mil_power = 100
+            vassalize = WQ1                     #附庸文齐
+            if = {
+                limit = {
+                    exists = DR1                #邓让军存在
+					ai = no
+                }
+                every_province = {				#吞并国家  刘秀吞并邓让军
+                    limit = {
+                        owned_by = DR1
+                    }
+                    add_core = PREV
+                    cede_province = PREV
+                }
+            }
+            if = {
+                limit = {
+                    exists = GO2                #钩町军存在
+					ai = no
+                }
+                every_province = {				#吞并国家  刘秀吞并钩町军
+                    limit = {
+                        owned_by = GO2
+                    }
+                    add_core = PREV
+                    cede_province = PREV
+                }
+            }
+		}
+	}
+    
+    ##位面之子
+	weimian_zhizi = {
+		icon = mission_buddhist_monk_praying			#图标
+		required_missions = { shoufu_dongbu }	#前置任务 也就是前一个任务
+		position = 5							#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+            OR = {
+                province_id = 3232
+                province_id = 679
+                province_id = 667
+                province_id = 1821
+                province_id = 684
+            }
+            NOT = {
+				owned_by = ROOT			        	
+			}
+		}
+		trigger = {
+			NOT = { exists = KU2 }				#隗嚣军
+			NOT = { exists = CH2 }				#公孙述军
+			NOT = { exists = DR1 }              #邓让军
+			NOT = { exists = WA2 }              #地方军
+            3232 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            679 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            667 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            1821 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            684 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_prestige = 10
+            add_mandate = 30                    #添加天命30
+			add_mil_power = 100
+            add_dip_power = 100
+            add_adm_power = 100
+		}
+	}
+ 
+    ##投笔从戎
+    toubi_congrong = {
+		icon = mission_control_the_ganges_delta			#图标
+		required_missions = { donghan_tongyi }	
+		position = 7						
+		provinces_to_highlight = {	
+		
+		}
+		trigger = {
+                NOT = { great_power_rank = 3 }      #列强排名必须高于3
+                NOT = { inflation = 0.01 }          #通货膨胀小于0.01
+                stability = 1                       #稳定度大于1
+                NOT = { war_exhaustion = 0.01 }        #厌战度低于1
+                manpower_percentage = 0.50          #后备兵力百分比
+                meritocracy = 80                    #贤能值
+		}
+		effect = {
+			add_prestige = 10
+            add_adm_power = 100
+			if = {
+				limit = {
+					exists = XIO 
+				}	
+				HND = {											#汉军向匈奴开战
+					declare_war_with_cb = {
+						who = XIO
+						casus_belli = cb_humiliate_rotw             #宣战理由 羞辱对手
+					}
+				}
+			}
+			country_event = {
+				id = Advisor_come.21
+				days = 10				
+			}			
+			hidden_effect = {
+				set_country_flag = flg_toubi_congrong
+				set_variable = {
+					which = var_win_XIO	
+					value = 0
+				}	
+			}	
+		}
+	}
+	
+	##震慑鄯善
+    zhenshe_Shansha = {
+		icon = mission_non-western_cavalry_raid			#图标
+		required_missions = { toubi_congrong }	#前置任务 也就是前一个任务
+		position = 8							#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+		
+		}
+		trigger = {
+			#truce_with = XIO                    
+			#2019-10-23 modify
+			#与匈奴战胜5场battle or kill XIO no exists.
+			custom_trigger_tooltip = {
+				tooltip = zhenshe_Shansha.tooltip
+				OR = {
+					check_variable = {
+						which = var_win_XIO
+						value = 5
+					}
+					NOT = { exists = XIO }
+				}	
+			}	
+		}
+		effect = {
+			add_prestige = 10
+            add_adm_power = 100
+			if = { 
+				limit = {
+					ai = no
+				}	
+				every_province = {
+					limit = {
+						area = shanshan_area
+						NOT = { 
+							OR = {
+								owned_by = XIY
+								owned_by = XI1
+								owned_by = AN3
+								owned_by = AN2
+								owned_by = ND1
+								owned_by = AN4
+								owned_by = BT1
+								owned_by = WSZ
+								owned_by = HS0
+							}	
+						}
+					}	
+						add_core = ROOT
+						cede_province = ROOT
+				}
+			}
+            if = {
+                limit = {
+                    exists = LO1                        #鄯善存在
+					ai = no
+                }
+                every_province = {						#吞并国家  吞并鄯善
+                    limit = {
+                        owned_by = LO1
+                    }
+                    add_core = PREV
+                    cede_province = PREV
+                }
+            }
+            east_south_altishahr_area = {         #疆南綠洲地区
+				limit = {
+					NOT = { is_core = HND }
+					NOT = { owned_by = HND }
+				}
+				add_core = HND                      #添加永久宣称
+			}
+            hetian_area = {                        #和阗地区 
+				limit = {
+					NOT = { is_core = HND }
+					NOT = { owned_by = HND }
+				}
+				add_core = HND                      #添加永久宣称
+			}
+		}
+	}
+    	
+	##再使西域
+    zaishi_xiyu = {
+		icon = mission_conquer_central_deccan			#图标
+		required_missions = { zhenshe_Shansha }	#前置任务 也就是前一个任务
+		position = 9    						#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+		OR = {
+                province_id = 710
+				province_id = 4900
+            }
+			NOT = {
+				owned_by = ROOT			        	
+			}	
+		}
+		trigger = {
+			NOT = { exists = HOT }                  #于阗被灭
+			710 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			4900 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_prestige = 10
+            add_adm_power = 100
+			if = {
+				limit = {
+					ai = no
+				}	
+				every_province = {
+					limit = {
+						area = east_south_altishahr_area
+						NOT = { 
+							OR = {
+								owned_by = XIY
+								owned_by = XI1
+								owned_by = AN3
+								owned_by = AN2
+								owned_by = ND1
+								owned_by = AN4
+								owned_by = BT1
+								owned_by = WSZ
+								owned_by = HS0
+							}	
+						}
+					}	
+						add_core = ROOT
+						cede_province = ROOT
+				}
+						
+          
+				every_province = {
+					limit = {
+						area = hetian_area
+						NOT = { 
+							OR = {
+								owned_by = XIY
+								owned_by = XI1
+								owned_by = AN3
+								owned_by = AN2
+								owned_by = ND1
+								owned_by = AN4
+								owned_by = BT1							
+								owned_by = WSZ
+								owned_by = HS0
+							}	
+						}
+					}	
+						add_core = ROOT
+						cede_province = ROOT
+				}			
+
+				every_province = {
+					limit = {
+						area = east_altishahr_area
+						NOT = { 
+							OR = {
+								owned_by = XIY
+								owned_by = XI1
+								owned_by = AN3
+								owned_by = AN2
+								owned_by = ND1
+								owned_by = AN4
+								owned_by = BT1							
+								owned_by = WSZ
+								owned_by = HS0
+								
+							}	
+						}
+					}	
+						add_core = ROOT
+						cede_province = ROOT
+				}			
+
+				every_province = {
+					limit = {
+						area = kashgaria_area
+						NOT = { 
+							OR = {
+								owned_by = XIY
+								owned_by = XI1
+								owned_by = AN3
+								owned_by = AN2
+								owned_by = ND1
+								owned_by = AN4
+								owned_by = BT1							
+								owned_by = WSZ
+								owned_by = HS0						
+							}	
+						}
+					}	
+						add_core = ROOT
+						cede_province = ROOT
+				}			
+				3325 = {					                #吞并省份
+					add_core = ROOT
+					cede_province = ROOT
+				}
+			}
+            tarim_basin_east_area = {                #東塔里木盆地
+				limit = {
+					NOT = { is_core = HND }
+					NOT = { owned_by = HND }
+				}
+				add_core = HND                      #添加永久宣称
+			}
+            tarim_basin_area = {                    #北六城
+				limit = {
+					NOT = { is_core = HND }
+					NOT = { owned_by = HND }
+				}
+				add_core = HND                      #添加永久宣称
+			}
+            zungaria_area = {                        #南准噶尔 
+				limit = {
+					NOT = { is_core = HND }
+					NOT = { owned_by = HND }
+				}
+				add_core = HND                      #添加永久宣称
+			}
+		}
+	}
+    
+    ##以夷制夷
+    yiyi_zhiyi = {
+		icon = mission_control_the_desh			#图标
+		required_missions = { zaishi_xiyu }	    #前置任务 也就是前一个任务
+		position = 10    						#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+		    OR = {
+				area = tarim_basin_east_area            #東塔里木盆地
+				area = tarim_basin_area                 #北六城
+			}
+		}
+		trigger = {
+				NOT = { exists = YN2 }                  #焉耆被灭
+                NOT = { exists = QC1 }                  #龟兹被灭
+                NOT = { exists = CS1 }                  #车师被灭
+				tarim_basin_east_area_sub_holds = yes
+
+				tarim_basin_area_sub_holds = yes
+
+		}
+		effect = {
+			add_prestige = 10
+            add_adm_power = 100
+            jetysuu_area = {                        #七河 
+				limit = {
+					NOT = { is_core = HND }
+					NOT = { owned_by = HND }
+				}
+				add_core = HND                      #添加永久宣称
+			}
+		}
+	}
+    
+    ##万里侯相
+    wanli_houxiang = {
+		icon = mission_conquer_malwa_mug			#图标
+		required_missions = { yiyi_zhiyi }	    #前置任务 也就是前一个任务
+		position = 11    						#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+		
+		}
+		trigger = {
+			exists = XIY            #西域都护府存在
+		}
+		effect = {
+			add_prestige = 10
+            add_adm_power = 100
+			if = {
+				limit = {
+					exists = DY2
+				}				
+				create_subject = {                      #朝贡大月式
+					subject_type = tributary_state
+					subject = DY2
+				}
+			}	
+		}
+	} 
+}
+
+heiljsf_chinese_donghan_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		is_year = 24
+           OR = {
+               tag = LX2
+               tag = HND
+           }
+	}
+	has_country_shield = yes
+    
+    ##东汉统一
+	donghan_tongyi = {
+		icon = mission_japanese_fort			#图标
+		required_missions = { weimian_zhizi }	#前置任务 也就是前一个任务
+		position = 6							#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+            OR = {
+                AND = {                             #西南地区 不包括云贵边陲 
+                    region = xinan_region
+                    NOT = {
+                        area = yun_gui_borderland_area
+                    }
+                }
+                AND = {   
+                    region = north_china_region     #华北地区 不包括两省 
+                    NOT = {
+                        province_id = 3226
+                        province_id = 703
+                    }
+                }
+				AND = {                             #华南地区 但不包含台湾省                    
+                    region = south_china_region
+                    NOT = {
+                        area = taiwan_north_area
+                        area = taiwan_south_area
+                    }
+                }
+				area = red_river_delta_area
+				area = liaoning_area
+                area = liaoning_east_area
+                area = ordos_east_area
+                province_id = 1016
+                province_id = 2385
+                province_id = 2383
+                province_id = 2886
+                province_id = 2549
+                province_id = 2552
+                province_id = 2513
+                province_id = 3315
+                province_id = 1845
+                province_id = 3314
+                province_id = 3313
+                province_id = 733
+			}
+				NOT = { owned_by = ROOT	}				#本国还未拥有
+		}
+		trigger = {
+			xinan_region = {                    #西南地区 不包括云贵边陲
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+           #NOT = {
+           #    yun_gui_borderland_area = {
+           #        type = all
+           #        owned_by = ROOT
+           #    }
+           #}
+
+
+			occupy_south_china_without_specified = yes
+			occupy_south_china_without_taiwan = yes
+			
+            red_river_delta_area_sub_holds = yes
+            liaoning_area_sub_holds = yes
+            liaoning_east_area_sub_holds = yes
+            ordos_east_area_sub_holds = yes
+			
+            1016 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            2385 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            2383 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            2886 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            2549 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            2552 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            2513 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            3315 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            1845 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            3314 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            3313 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            733 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_prestige = 10
+            add_mandate = 30                    #添加天命30
+			add_mil_power = 100
+            add_dip_power = 100
+            add_adm_power = 100
+			if = {
+				limit = {
+					NOT = { exists = WWH }
+					ai = no
+				}	
+				random_province = {
+					limit = {
+						region = mongolia_region		
+						NOT = { owned_by = ROOT }
+					}	
+					cede_province = WWH
+					add_core = WWH
+				}	
+			}	
+		}
+	}
+    
+    ##南匈奴归顺
+    nanxiongnu_guishun = {
+		icon = mission_have_two_subjects			#图标
+		required_missions = { donghan_tongyi }	#前置任务 也就是前一个任务
+		position = 7							#从上到下数本任务的位置，最顶端对应的数值为1
+		completed_by = 50.1.1
+		provinces_to_highlight = {				#要突出显示的省或地区
+            
+		}
+		trigger = {
+			OR = {
+				XIO = { 
+					num_of_revolts = 1          #匈奴叛军控制1个省份
+					num_of_rebel_armies = 1     #匈奴存在1个叛军
+				}
+				NOT = { exists = XIO }
+			}	
+		}
+		effect = {
+			add_prestige = 10
+            add_dip_power = 100
+			if = {
+				limit = {
+					ai = no
+				}	
+				3226 = {				#吞并省份
+					add_core = ROOT
+					cede_province = ROOT
+				}
+				2885 = {				#吞并省份
+					add_core = ROOT
+					cede_province = ROOT
+				}
+				3297 = {				#吞并省份
+					add_core = ROOT
+					cede_province = ROOT
+				}
+				ordos_east_area = {				#南匈奴吞并河套地区
+					add_core = SXI
+					cede_province = SXI
+				}
+				ordos_area = {				    #南匈奴吞并鄂尔多斯
+					add_core = SXI
+					cede_province = SXI
+				}
+				
+				vassalize = SXI                 #附庸南匈奴
+			}
+		}
+	}
+	
+	##征伐北匈奴
+    zhengfa_beixiongnu = {   	
+		icon = mission_great_wall		#图标
+		required_missions = {           #前置任务 也就是前一个任务
+            nanxiongnu_guishun
+            fuyong_xianbei
+        }	
+		position = 9							#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+            
+		}
+		trigger = {
+			OR = {
+				NOT = {
+					XIO = {
+						total_development = 20
+					}
+				}
+				NOT = { exists = XIO }
+			}	
+		}
+		effect = {
+			add_prestige = 10
+            add_dip_power = 100
+		}
+	}
+    
+    ##天佑大汉
+    tianyou_dahan = {   	
+		icon = mission_great_wall		#图标
+		required_missions = {           #前置任务 也就是前一个任务
+            zhengfa_beixiongnu
+            wanli_houxiang
+            handi_zuida
+        }	
+		position = 12						#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+            
+		}
+		trigger = {
+			AND = {
+				imperial_mandate = 100          #天命值至少有100
+                stability = 3                   #稳定度大于等于3
+                exists = XIY                    #西域都护府存在
+                manpower_percentage = 0.90      #后备兵力百分比
+                meritocracy = 95                #贤能值
+                monthly_income = 20             #月收入至少20金
+			}
+		}
+		effect = {
+			add_prestige = 10
+            add_adm_power = 100
+            add_dip_power = 100
+            add_mil_power = 100
+            add_country_modifier = {
+				name = heiljsf_shidai_wangzhe       #时代王者国家修正
+				duration = 7200
+			}
+		}
+	}
+}
+
+
+heiljsf_chinese_donghan_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		AND = {
+			is_year = 24
+            OR = {
+                tag = LX2
+                tag = HND
+            }
+			
+		}
+	}
+	has_country_shield = yes
+    
+    ##附庸乌桓
+    fuyong_wuheng = {
+		icon = mission_have_two_subjects			#图标
+		required_missions = { donghan_tongyi }	    #前置任务 也就是前一个任务
+		position = 7    						#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+		
+		}
+		trigger = {
+            imperial_mandate = 80               #天命值至少有80
+            exists = WWH
+			WWH = {                             #乌桓对你的好感度为50以上  
+				has_opinion = {
+					who = ROOT
+					value = 50
+				}
+			}	
+		}
+		effect = {
+			add_prestige = 10
+            add_dip_power = 100
+            vassalize = WWH                     #附庸乌桓
+			if = {
+				limit = {
+					ai = no
+					NOT = { exists = XIB }
+				}
+				random_province = {
+					limit = {
+						region = mongolia_region		
+						NOT = { owned_by = ROOT }
+					}	
+					cede_province = XIB
+					add_core = XIB
+				}						
+			}	
+		}
+	}
+    
+    ##附庸鲜卑
+    fuyong_xianbei = {
+		icon = mission_have_two_subjects			#图标
+		required_missions = { fuyong_wuheng }	    #前置任务 也就是前一个任务
+		position = 8    						#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+		
+		}
+		trigger = {
+			
+            imperial_mandate = 80               #天命值至少有80
+			exists = XIB
+			OR = {
+				XIB = {                             #鲜卑对你的好感度为50以上  
+					has_opinion = {
+						who = ROOT
+						value = 50
+					}
+				}
+			}	
+		}
+		effect = {
+			add_prestige = 10
+            add_dip_power = 100
+            vassalize = XIB                     #附庸鲜卑
+			if = {
+				limit = {
+					ai = no
+					NOT = { exists = AIL }
+				}
+				random_province = {
+					limit = {
+						region = burma_region		
+						NOT = { owned_by = ROOT }
+					}	
+					cede_province = AIL
+					add_core = AIL
+				}						
+			}
+		}
+	}
+    
+    ##哀牢举国内附
+    ailao_juguoneifu = {
+		icon = mission_reclaim_lost_territory		#图标
+		required_missions = { fuyong_xianbei }	    #前置任务 也就是前一个任务
+		position = 9    						#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+            OR = {
+                province_id = 2465
+                province_id = 661
+                province_id = 2466
+                province_id = 2467
+            }
+			NOT = {
+				owned_by = ROOT			        	
+			}	
+		}
+		trigger = {
+			imperial_mandate = 80               #天命值至少有80
+			OR = {
+                AND = {
+                    exists = AIL 
+                    AIL = {                             #哀牢对你的好感度为100以上  
+                        has_opinion = {
+                            who = ROOT
+                            value = 60
+                        }
+                    }
+                }
+                AND = {
+                	NOT = { exists = AIL }
+                    2465 = {
+						OR = {
+							owned_by = ROOT
+							owner = { 
+								is_subject_of = ROOT
+								NOT = { is_subject_of_type = tributary_state }
+							}	
+						}
+					}
+                    661 = {
+						OR = {
+							owned_by = ROOT
+							owner = { 
+								is_subject_of = ROOT
+								NOT = { is_subject_of_type = tributary_state }
+							}	
+						}
+					}
+                    2466 = {
+						OR = {
+							owned_by = ROOT
+							owner = { 
+								is_subject_of = ROOT
+								NOT = { is_subject_of_type = tributary_state }
+							}	
+						}
+					}
+                    2467 = {
+						OR = {
+							owned_by = ROOT
+							owner = { 
+								is_subject_of = ROOT
+								NOT = { is_subject_of_type = tributary_state }
+							}	
+						}
+					}   
+                }
+			}	
+		}
+		effect = {
+			add_prestige = 10
+            add_dip_power = 100
+            if = {
+                limit = {
+                    exists = AIL                    #哀牢存在
+					ai = no
+                }
+                every_province = {					#吞并国家  刘秀吞并哀牢
+                    limit = {
+                        owned_by = AIL
+                    }
+                    add_core = PREV
+                    cede_province = PREV
+                }
+            }
+		}
+	}
+    
+    ##汉地最大化
+	handi_zuida = {
+		icon = mission_rab_protection			#图标
+		required_missions = { ailao_juguoneifu }	#前置任务 也就是前一个任务
+		position = 11							#从上到下数本任务的位置，最顶端对应的数值为1
+		provinces_to_highlight = {				#要突出显示的省或地区
+            OR = {
+				region = xinan_region
+				region = north_china_region
+				AND = {                             #华南地区 但不包含台湾省                    
+                    region = south_china_region
+                    NOT = {
+                        area = taiwan_north_area
+                        area = taiwan_south_area
+                    }
+                }
+				area = red_river_delta_area
+				area = vietnam_area
+				area = champa_area
+				area = liaoning_area
+                area = liaoning_east_area
+                area = ordos_east_area
+                province_id = 2383
+                province_id = 2886
+                province_id = 2549
+                province_id = 2552
+                province_id = 2513
+                province_id = 3315
+                province_id = 1845
+                province_id = 3314
+                province_id = 3313
+                province_id = 733
+			}
+			NOT = { owned_by = ROOT	}				#本国还未拥有
+		}
+		trigger = {
+			xinan_region = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            north_china_region = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+			
+            #AND = {
+            #    south_china_region = {
+            #        type = all
+            #        owned_by = ROOT
+            #    }
+            #    NOT = {
+            #        taiwan_north_area = {
+            #            type = all
+            #            owned_by = ROOT
+            #        }
+            #        taiwan_south_area = {
+            #            type = all
+            #            owned_by = ROOT
+            #        }
+            #    }
+            #}
+			
+			occupy_south_china_without_taiwan = yes
+
+            red_river_delta_area_sub_holds = yes
+            vietnam_area_sub_holds = yes
+            champa_area_sub_holds = yes
+            liaoning_area_sub_holds = yes
+            liaoning_east_area_sub_holds = yes
+            ordos_east_area_sub_holds = yes
+			
+            2383 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            2886 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            2549 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            2552 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            2513 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            3315 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            1845 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            3314 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            3313 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+            733 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_prestige = 10
+            add_mandate = 30                    #添加天命30
+			add_mil_power = 100
+            add_dip_power = 100
+            add_adm_power = 100
+		}
+	}
+}

@@ -1,0 +1,362 @@
+#2019-04-10 side_by_rome mission 給予更多的彈性偵測可挑戰的國家
+#2019-07-07 side_by_rome mission 包含都護府的周遭國家考慮
+#2019-12-13 central_asia_region add into the detect "side_by_rome" missions
+#2020-09-28 delete asia_silk_road_china mission 
+#2021-02-28 modify by KingChen trigger exclusive TNG LY2
+#2021-03-02 KC add tag = LIO
+rab_chinese_missions_1 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			has_reform = ancient_chinese_warlord_reform
+			has_reform = celestial_empire
+			tag = TP1
+			has_reform = chinese_feudatory_reform
+		}
+		NOT = {
+			OR = {
+				tag = TNG
+				tag = LY2
+				tag = LIO
+			}
+		}
+	}
+	has_country_shield = no
+	form_team_searching_immortality = {
+		icon = mission_inspect
+		required_missions = {
+		}
+		trigger = {
+			adm = 3
+			prestige = 80
+			num_of_cities = 220
+			has_reform = celestial_empire
+		}
+		effect = {
+			add_prestige = 5
+			set_country_flag = flg_event_1_immortality
+		}
+	}
+	#find_message_from_JAP.tooltip : 在日本蒐尋並獲得情報
+	find_message_from_JAP = {
+		icon = mission_inspect_2
+		required_missions = {
+			form_team_searching_immortality
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = find_message_from_JAP.tooltip
+				has_country_flag = flg_immortality_message
+			}
+		}
+		effect = {
+			add_prestige = 5
+			set_country_flag = flg_event_2_immortality
+		}
+	}
+	side_by_rome = {
+		icon = mission_roads
+		#position = 5
+		required_missions = {
+			find_message_from_JAP
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = side_by_rome.tooltip
+				any_country = {
+					OR = {
+						is_neighbor_of = ROOT
+						any_neighbor_country = {
+							OR = {
+								is_subject_of_type = duhufu_state
+								is_subject_of_type = duhufu_state_color
+							}
+							is_subject_of = ROOT
+						}
+					}
+					OR = {
+						is_subject_of_type = tributary_state
+						NOT = {
+							is_subject_of = ROOT
+						}
+					}
+					num_of_cities = 45
+					capital_scope = {
+						OR = {
+							continent = europe
+							continent = africa
+							region = arabia_region
+							region = mashriq_region
+							region = persia_region
+							region = khorasan_region
+							region = central_asia_region
+							area = transcaspia_area
+						}
+					}
+				}
+				has_country_flag = flg_event_2_immortality
+			}
+		}
+		effect = {
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							is_neighbor_of = ROOT
+							any_neighbor_country = {
+								OR = {
+									is_subject_of_type = duhufu_state
+									is_subject_of_type = duhufu_state_color
+								}
+								is_subject_of = ROOT
+							}
+						}
+						OR = {
+							is_subject_of_type = tributary_state
+							NOT = {
+								is_subject_of = ROOT
+							}
+						}
+						num_of_cities = 45
+						capital_scope = {
+							OR = {
+								continent = europe
+								continent = africa
+								region = arabia_region
+								region = mashriq_region
+								region = persia_region
+								region = khorasan_region
+								region = central_asia_region
+								area = transcaspia_area
+							}
+						}
+					}
+					save_global_event_target_as = event_target_immortality_country
+				}
+			}
+			add_prestige = 5
+			add_bit_mandate_effect = yes
+			set_country_flag = flg_event_3_immortality
+		}
+	}
+	#victory_by_rome.tooltip : 戰勝 [event_target_immortality_country.GetName]
+	#num_of_immortality : 長生不老藥
+	victory_by_rome = {
+		icon = mission_dan
+		#position = 5
+		required_missions = {
+			side_by_rome
+		}
+		#event_target:country win => on_actions => events
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = victory_by_rome.tooltip
+				has_country_flag = flg_event_9_immortality
+			}
+		}
+		effect = {
+			custom_tooltip = tp_get_immortality
+			change_variable = {
+				which = num_of_immortality
+				value = 2
+			}
+		}
+	}
+	get_country_treasure = {
+		icon = mission_treasure
+		#position = 5
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = get_country_treasure.tooltip
+				treasury_system_trigger = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "treasury_charming"
+				duration = 3650
+			}
+		}
+	}
+
+	silk_road_modifier_complete = {
+		icon = mission_rab_protection
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			OR = {
+				AND = {
+					exists = XIY
+					XIY = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = duhufu_state
+							is_subject_of_type = duhufu_state_color
+						}
+						num_of_cities = 35
+					}
+				}
+				AND = {
+					exists = XI1
+					XI1 = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = duhufu_state
+							is_subject_of_type = duhufu_state_color
+						}
+						num_of_cities = 35
+					}
+				}
+				AND = {
+					exists = BT1
+					BT1 = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = duhufu_state
+							is_subject_of_type = duhufu_state_color
+						}
+						num_of_cities = 35
+					}
+				}
+				AND = {
+					exists = AN4
+					AN4 = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = duhufu_state
+							is_subject_of_type = duhufu_state_color
+						}
+						num_of_cities = 35
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "silk_road_modifier_complete_buff"
+				duration = 7300
+			}
+			add_mercantilism = 1
+		}
+	}
+	#加強建設屯兵邊疆
+	silk_road_more_manpowers = {
+		icon = mission_rab_protection
+		required_missions = {
+			silk_road_modifier_complete
+		}
+		provinces_to_highlight = {
+			province_id = 3304
+			province_id = 2884
+			province_id = 2881
+			province_id = 4894
+		}
+		trigger = {
+			3304 = {
+				base_manpower = 3
+			}
+			2884 = {
+				base_manpower = 3
+			}
+			2881 = {
+				base_manpower = 3
+			}
+			4894 = {
+				base_manpower = 3
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "silk_road_modifier"
+				duration = 7300
+			}
+		}
+	}
+	#建立安北都护府
+	chengli_anbeiduhufu = {
+		icon = mission_rab_protection
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			AN2 = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = duhufu_state
+					is_subject_of_type = duhufu_state_color
+				}
+			}
+		}
+		effect = {
+			add_mandate_effect = yes
+		}
+	}
+	#建立安南都护府
+	chengli_annanduhufu = {
+		icon = mission_rab_protection
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			AN3 = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = duhufu_state
+					is_subject_of_type = duhufu_state_color
+				}
+			}
+		}
+		effect = {
+			add_mandate_effect = yes
+		}
+	}
+	#建立安东护都护府
+	chengli_andongduhufu = {
+		icon = mission_rab_protection
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			ND1 = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = duhufu_state
+					is_subject_of_type = duhufu_state_color
+				}
+			}
+		}
+		effect = {
+			add_mandate_effect = yes
+		}
+	}
+	#舉辦科舉十次
+	hold_empire_examination_ten = {
+		icon = mission_emperor
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			check_variable = {
+				which = examination_held
+				value = 10
+			}
+		}
+		effect = {
+			add_army_professionalism = 0.05
+			add_adm_power = 100
+			add_stability = 1
+		}
+	}
+}

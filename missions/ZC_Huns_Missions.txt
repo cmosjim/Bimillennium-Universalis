@@ -1,0 +1,692 @@
+HNS_mission_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = HNS
+	}
+	has_country_shield = yes
+
+	imaginary_end = {
+		icon = claim_the_borderlands
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = astrakhan_area
+				area = circassia_area
+				area = dagestan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			astrakhan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			circassia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dagestan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = first_win
+				duration = 3650
+			}
+			crimea_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	east_goths = {
+		icon = sav_union_with_naples
+		required_missions = { imaginary_end }
+		required_missions = { alan }
+		position = 2
+		provinces_to_highlight = {
+			region = crimea_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			crimea_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = crimea_pasture
+				duration = 5475
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 2613 }
+				}
+				2613 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_core_province = 4683 }
+				}
+				4683 = {
+					add_permanent_claim = ROOT
+				}	
+			}			
+			sloboda_ukraine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_dniepr_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_dniepr_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			podolia_volhynia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	expel_small_tribe = {
+		icon = mission_mayan_conquest
+		required_missions = { east_goths }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2613
+				province_id = 4683
+				area = sloboda_ukraine_area
+				area = east_dniepr_area
+				area = west_dniepr_area
+				area = podolia_volhynia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			2613 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4683 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sloboda_ukraine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_dniepr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_dniepr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			podolia_volhynia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = { exists = SRT }
+		}
+		effect = {
+			add_horde_unity = 20
+			custom_tooltip = force_moving_population
+			set_country_flag = force_moving_population_flag
+		}
+	}
+			
+	huns_migration = {
+		icon = mission_protect_granada
+		required_missions = { expel_small_tribe }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				region = poland_region
+				region = carpathia_region
+				region = north_german_region
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			poland_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			carpathia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_german_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = eurasian_horde
+				duration = -1
+			}
+		}
+	}
+}
+
+HNS_mission_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = HNS
+	}
+	has_country_shield = yes
+
+	alan = {
+		icon = mission_control_the_ganges_delta
+		required_missions = { }
+		position = 1
+		trigger = { 
+			NOT = { exists = ALN }
+		}
+		effect = {
+			country_event = { id = huns_flavor.1 }
+		}
+	}
+
+	national_conquer = {
+		icon = mission_conquer_50_development
+		required_missions = { alan }
+		position = 2
+		trigger = {
+			AND = {
+				any_owned_province = {
+					culture_group = oghur
+				}
+				any_owned_province = {
+					culture_group = iranian
+				}
+				any_owned_province = {
+					culture_group = germanic
+				}
+				OR = {
+					any_owned_province = {
+						culture_group = east_slavic
+					}
+					any_owned_province = {
+						culture_group = west_slavic
+					}
+					any_owned_province = {
+						culture_group = caucasian
+					}
+				}
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = { has_owner_culture = no }
+				change_culture = ROOT
+			}
+			random_owned_province = {
+				limit = { has_owner_culture = no }
+				change_culture = ROOT
+			}
+			random_owned_province = {
+				limit = { has_owner_culture = no }
+				change_culture = ROOT
+			}
+			random_owned_province = {
+				limit = { has_owner_culture = no }
+				change_culture = ROOT
+			}
+			random_owned_province = {
+				limit = { has_owner_culture = no }
+				change_culture = ROOT
+			}
+			random_owned_province = {
+				limit = { has_owner_culture = no }
+				change_culture = ROOT
+			}
+			random_owned_province = {
+				limit = { has_owner_culture = no }
+				change_culture = ROOT
+			}
+			random_owned_province = {
+				limit = { has_owner_culture = no }
+				change_culture = ROOT
+			}
+			random_owned_province = {
+				limit = { has_owner_culture = no }
+				change_culture = ROOT
+			}
+			random_owned_province = {
+				limit = { has_owner_culture = no }
+				change_culture = ROOT
+			}
+		}
+	}
+	
+	european_powers = {
+		icon = mission_alliances
+		required_missions = { national_conquer }
+		position = 3
+		trigger = {
+			is_great_power = yes
+			horde_unity = 100
+		}
+		effect = {
+			add_stability = 1
+		}
+	}
+
+	meet_west_goths = {
+		icon = mission_crusade_for_varna
+		required_missions = { expel_small_tribe }
+		required_missions = { european_powers }
+		provinces_to_highlight = {
+			OR = {
+				area = bessarabia_area
+				area = moldavia_area
+				area = transylvania_area
+				area = southern_transylvania_area
+				area = wallachia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			bessarabia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			moldavia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			transylvania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			southern_transylvania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			wallachia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			silistria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bulgaria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			thrace_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	fire_constantinople = {
+		icon = take_constantinople
+		required_missions = { meet_west_goths }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = silistria_area
+				area = bulgaria_area
+				area = thrace_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { owns = 151 }
+					151 = {
+						has_province_modifier = province_razed
+					}
+				}
+				AND = {
+					silistria_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					bulgaria_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					thrace_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = eastern_scourge
+				duration = -1
+			}
+		}
+	}
+}
+					
+HNS_mission_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = HNS
+	}
+	has_country_shield = yes
+
+	farmers_and_herdsmen = {
+		icon = mission_rb_conquer_wales
+		required_missions = { }
+		position = 1
+		trigger = {
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 5
+					has_terrain = farmlands
+				}
+				num_of_owned_provinces_with = {
+					value = 15
+					trade_goods = grain
+				}
+			}
+		}
+		effect = {
+			capital_scope = {
+				ROOT = {
+					cavalry = PREV
+					cavalry = PREV
+					cavalry = PREV
+					cavalry = PREV
+					cavalry = PREV
+				}
+			}
+		}
+	}
+	
+	western_land = {
+		icon = end_genoese_competition
+		required_missions = { farmers_and_herdsmen }
+		required_missions = { sword_swear }
+		required_missions = { alan }
+		position = 2
+		trigger = {
+			num_of_cavalry = 30
+			prestige = 40
+		}
+		effect = {
+			add_horde_unity = 10
+			discover_province = 266
+			discover_province = 70
+			discover_province = 3104
+			discover_province = 118
+		}
+	}
+
+	huns_attack = {
+		icon = mission_chinese_general_riding
+		required_missions = { western_land }
+		position = 3
+		trigger = {
+			any_country = {
+				capital_scope = { continent = europe } 
+				war_with = ROOT
+				NOT = {
+					war_score_against = {
+						who = ROOT
+						value = -99
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = first_scourge_of_god
+				duration = 10950
+			}
+		}
+	}
+
+	fire_roma = {
+		icon = boh_humiliate_austria
+		required_missions = { huns_attack }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 118
+		}
+		trigger = {
+			OR = {
+				AND = {
+					owns = 118
+					118 = {
+						devastation = 50
+					}
+				}
+				118 = { 
+					NOT = { owned_by = ROOT }
+					has_province_modifier = province_razed 
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = western_scourge
+				duration = -1
+			}
+		}
+	}
+}			
+
+HNS_mission_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = HNS
+	}
+	has_country_shield = yes
+
+	sword_swear = {
+		icon = mission_unite_home_region
+		required_missions = { }
+		position = 1
+		trigger = {
+			power_projection = 30
+			prestige = 40
+		}
+		effect = {
+			add_country_modifier = {
+				name = promise_to_conquer
+				duration = 3650
+			}
+		}
+	}
+
+	welltrained = {
+		icon = mission_control_surat
+		required_missions = { sword_swear }
+		position = 3
+		trigger = {
+			army_professionalism = 0.3
+			advisor = commandant 
+		}
+		effect = {
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 10
+			}
+		}
+	}
+	
+	rome_fall = {
+		icon = the_hundred_years_war
+		required_missions = { welltrained }
+		position = 4
+		trigger = {
+			OR = {
+				NOT = { exists = ROM }
+				ROM = { NOT = { total_development = 200 } }
+			}
+		}
+		effect = {
+			add_horde_unity = 100
+			add_prestige = 50
+		}
+	}
+
+	beyond_income = {
+		icon = mission_high_income
+		required_missions = { rome_fall }
+		required_missions = { fire_roma }
+		required_missions = { annihilation_of_defense }
+		position = 5
+		trigger = {
+			OR = {
+				NOT = { exists = BYZ }
+				BYZ = { num_of_loans = 5 }
+			}
+		}
+		effect = {
+			add_treasury = 500
+		}
+	}
+}
+
+HNS_mission_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = HNS
+	}
+	has_country_shield = yes
+
+	religion_permeation = { 
+		icon = mission_conquer_benin
+		required_missions = { sword_swear }
+		position = 2
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 15
+				continent = europe
+				religion = tengri_pagan_reformed
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = religion_permeation
+				duration = 5475
+			}
+		}
+	}
+
+	annihilation_of_defense = {
+		icon = mission_conquer_50_development
+		required_missions = { religion_permeation }
+		required_missions = { welltrained }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				region = italy_region
+				region = balkan_region
+			}
+			OR = {
+				has_building = fort_et
+				has_building = fort_15th
+				has_building = fort_16th
+				has_building = fort_17th
+				has_building = fort_18th
+			}
+		}
+		trigger = {
+			italy_region = {
+				type = all
+				AND = {
+					NOT = { has_building = fort_et }
+					NOT = { has_building = fort_15th }
+					NOT = { has_building = fort_16th }
+					NOT = { has_building = fort_17th }
+					NOT = { has_building = fort_18th }
+				}
+			}
+			balkan_region = {
+				type = all
+				AND = {
+					NOT = { has_building = fort_et }
+					NOT = { has_building = fort_15th }
+					NOT = { has_building = fort_16th }
+					NOT = { has_building = fort_17th }
+					NOT = { has_building = fort_18th }
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = huns_siege
+				duration = -1
+			}
+		}
+	}
+	
+	attila_strike = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { annihilation_of_defense }
+		position = 5
+		trigger = {
+			any_country = {
+				culture_group = iranian
+				war_with = ROOT 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = attila_strike
+				duration = 1825
+			}
+		}
+	}
+}
+

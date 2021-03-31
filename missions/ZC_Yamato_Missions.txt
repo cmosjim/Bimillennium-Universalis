@@ -1,0 +1,758 @@
+YH1_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = YH1
+	}
+	has_country_shield = yes
+
+	seal_from_china = {
+		icon = mission_kowtow
+		required_missions = { japanese_agricultural_society }
+		position = 2
+		trigger = {
+			any_country = {
+				has_reform = celestial_empire
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+			}
+			is_subject_of_type = tributary_state
+		}
+		effect = {
+			add_treasury = 100
+			add_DIP_power = 50
+			add_country_modifier = {
+				name = learn_from_china
+				duration = -1
+			}
+		}
+	}
+
+	prepare_for_korean_war = {
+		icon = mission_asian_cannon
+		required_missions = { discover_hokkaido }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4312
+				province_id = 1818
+				province_id = 4314
+				province_id = 1019
+				province_id = 1021
+				province_id = 1020
+			}
+		}
+		trigger = {
+			4312 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+				OR = {
+					has_building = fort_et
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			1818 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_building = fort_et
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			4314 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_building = fort_et
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			1019 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					has_building = fort_et
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			1021 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+				OR = {
+					has_building = fort_et
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			1020 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+				OR = {
+					has_building = fort_et
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			num_of_galley = 20
+			navy_size_percentage = 1
+		}
+		effect = {
+			add_navy_tradition = 20
+			define_admiral = {
+				name = "Abe Hirafu"
+				fire = 3
+				shock = 2
+				manuever = 3
+				siege = 2
+			}
+			south_korea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	land_in_korea = {
+		icon = mission_galleys_in_port
+		required_missions = { prepare_for_korean_war }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = south_korea_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			south_korea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			pyongan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hamgyeong_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_korea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			eastern_korea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+YH1_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = YH1
+	}
+	has_country_shield = yes
+
+	japanese_agricultural_society = {
+		icon = mission_rice_field
+		required_missions = { }
+		position = 1
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				trade_goods = grain
+			}
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = iron
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			saigoku_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sanindo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	emishi_offense = {
+		icon = mission_conquer_5_states
+		required_missions = { japanese_agricultural_society }
+		position = 2
+		trigger = {
+			OR = {
+				has_spy_network_in = {
+					who = EMI
+					value = 50
+				}
+				NOT = { exists = EMI }
+			}
+		}
+		effect = {
+			kanto_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			eastern_kanto_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			thohoku_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1024 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	destroy_dongyi = {
+		icon = mission_al_andalus
+		required_missions = { emishi_offense }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = kanto_area
+				area = eastern_kanto_area
+				area = thohoku_area
+				province_id = 1024
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			kanto_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			eastern_kanto_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			thohoku_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			1024 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = eastern_peace 
+				duration = 1825
+			}
+			create_conquistador = { tradition = 35 }
+		}
+	}
+
+	discover_hokkaido = {
+		icon = mission_invade_island
+		required_missions = { destroy_dongyi }
+		position = 4
+		trigger = {
+			hokkaido_area = { 
+				type = all
+				has_discovered = ROOT 
+			}
+		}
+		effect = {
+			hokkaido_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = first_migration 
+				duration = 36500
+			}
+		}
+	}
+
+	control_aino = {
+		icon = mission_iroquois_warriors
+		required_missions = { discover_hokkaido }
+		required_missions = { unify_kyushu }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = hokkaido_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			hokkaido_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			add_ADM_power = 100
+			add_country_modifier = {
+				name = hokkaido_explorer
+				duration = 36500
+			}
+		}
+	}
+}
+
+YH1_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = YH1
+	}
+	has_country_shield = yes
+	
+	unify_southern_honshu_island = {
+		icon = mission_great_wall
+		required_missions = { japanese_agricultural_society }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = saigoku_area
+				area = sanindo_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			saigoku_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			sanindo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			shikoku_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	unify_shikoku = {
+		icon = claim_the_borderlands
+		required_missions = { unify_southern_honshu_island }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = shikoku_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			shikoku_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			northern_kyushu = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kyushu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	unify_kyushu = {
+		icon = mission_japanese_samurai
+		required_missions = { unify_shikoku }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = northern_kyushu
+				province_id = 1012
+				province_id = 4310
+				province_id = 4311
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			northern_kyushu = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			1012 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			4310 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			4311 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = yamato_govern
+				duration = 5475
+			}
+			country_event = { id = yamato_flavor.8 }
+		}
+	}
+}
+
+YH1_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = YH1
+	}
+	has_country_shield = yes
+
+	seventeen_article_constitution = {
+		icon = reform_the_nomocanon
+		required_missions = { }
+		position = 1
+		trigger = {
+			stability = 3
+			NOT = {
+				estate_influence = {
+					estate = estate_nobles
+					influence = 50
+				}
+			}
+			NOT = { average_autonomy = 10 }
+		}
+		effect = {
+			hidden_effect = {
+				country_event = { id = jiuhu_advisor_come.1 }
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -20
+			}
+			add_country_modifier = {
+				name = seventeen_article_constitution
+				duration = 7300
+			}
+			country_event = { id = yamato_flavor.9 }
+		}
+	}
+
+	taika_reform = {
+		icon = mission_kowtow
+		required_missions = { seventeen_article_constitution }
+		required_missions = { unify_shikoku }
+		position = 4
+		trigger = {
+			has_reform = autocracy_reform
+			has_country_modifier = asuka_era
+			NOT = { average_unrest = 1 }
+			any_country = {
+				has_reform = celestial_empire
+				has_opinion = {
+					who = ROOT
+					value = 160
+				}
+			}
+		}
+		effect = {
+			country_event = { id = yamato_flavor.10 }
+		}
+	}
+
+	laws_and_decrees = {
+		icon = mission_scholar_officials
+		required_missions = { taika_reform }
+		required_missions = { unify_kyushu }
+		position = 5
+		trigger = {
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 80
+			}
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 80
+			}
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 80
+			}
+			OR = {
+				has_country_modifier = asuka_era
+				has_country_modifier = nara_era
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = laws_and_decrees
+				duration = 7300
+			}
+		}
+	}
+
+	nation_of_sunrise = {
+		icon = secure_the_republic
+		required_missions = { laws_and_decrees }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1012
+				province_id = 1020
+				province_id = 1021
+				province_id = 1028
+				province_id = 1852
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			owns = 1012
+			owns = 1020
+			owns = 1021
+			owns = 1028
+			owns = 1852
+		}
+		effect = {
+			country_event = { id = yamato_flavor.11 }
+		}
+	}
+}
+				
+YH1_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = YH1
+	}
+	has_country_shield = yes
+	
+	kofun_construction = {
+		icon = mission_colonial
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1021
+				province_id = 1832
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			treasury = 500
+			owns = 1021 
+			owns = 1832 
+		}
+		effect = {
+			add_treasury = -500
+			1021 = {
+				add_province_modifier = {
+					name = zhu_mu
+					duration = -1
+				}
+			}
+			1832 = {
+				add_province_modifier = {
+					name = da_xian_ling
+					duration = -1
+				}
+			}
+		}
+	}
+
+	the_mikado = {
+		icon = mission_have_two_subjects
+		required_missions = { kofun_construction }
+		required_missions = { seventeen_article_constitution }
+		position = 2
+		trigger = {
+			legitimacy = 100
+			adm = 4
+			OR = {
+				religion = shinto
+				religion = mahayana
+			}
+		}
+		effect = {
+			add_treasury = 100
+			country_event = { id = yamato_flavor.12 }
+		}
+	}
+
+	da_zai_fu = {
+		icon = mission_asian_city
+		required_missions = { the_mikado }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = northern_kyushu
+				province_id = 1012
+				province_id = 4310
+				province_id = 4311
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			treasury = 600
+			northern_kyushu = {
+				type = all
+				owned_by = ROOT 
+			}
+			owns = 1012
+			owns = 4310 
+			owns = 4311 
+		}
+		effect = {
+			add_treasury = -600
+			1818 = {
+				add_building = constable
+			}
+			northern_kyushu = {
+				add_province_modifier = {
+					name = dazaifu_govern
+					duration = 3650
+				}
+			}
+			1012 = {
+				add_province_modifier = {
+					name = dazaifu_govern
+					duration = 3650
+				}
+			}
+			4310 = {
+				add_province_modifier = {
+					name = dazaifu_govern
+					duration = 3650
+				}
+			}
+			4311 = {
+				add_province_modifier = {
+					name = dazaifu_govern
+					duration = 3650
+				}
+			}
+		}
+	}
+
+	tagajou = {
+		icon = mission_rb_colonise_canada
+		required_missions = { da_zai_fu }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1026
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			treasury = 600
+			owns = 1026
+		}
+		effect = {
+			add_treasury = -600
+			1026 = {
+				add_building = town_hall
+				add_province_modifier = {
+					name = tagajou_town_hall
+					duration = 36500
+				}
+			}
+		}
+	}
+
+	san_shi_yi_shen = {
+		icon = mission_consulate_of_the_sea
+		required_missions = { tagajou }
+		required_missions = { laws_and_decrees }
+		position = 6
+		trigger = {
+			num_of_colonists = 1
+		}
+		effect = {
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+			add_country_modifier = {
+				name = san_shi_yi_shen 
+				duration = 36500
+			}
+		}
+	}
+}
+			
+
+
+
+
+

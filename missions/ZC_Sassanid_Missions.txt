@@ -1,0 +1,960 @@
+SAS_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = SAS
+	}
+	has_country_shield = yes
+
+	crown_exchange = {
+		icon = mission_empire
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = isfahan_area
+				area = kerman_area
+				province_id = 431
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					war_with = PRT
+					isfahan_area = {
+						type = all
+						NOT = { owned_by = ROOT }
+						controlled_by = ROOT
+					}
+					kerman_area = {
+						type = all
+						NOT = { owned_by = ROOT }
+						controlled_by = ROOT
+					}
+					431 = {
+						NOT = { owned_by = ROOT }
+						controlled_by = ROOT
+					}
+				}
+				NOT = { exists = PRT }
+			}
+		}
+		effect = {
+			PRT = { 
+				define_ruler = {
+					adm = 0
+					dip = 0
+					mil = 0
+					max_random_mil = 1
+					max_random_dip = 1
+					max_random_adm = 1
+				}
+				add_country_modifier = {
+					name = rudderless
+					duration = 1825
+				}
+			}
+		}
+	}	
+	
+	persian_power = {
+		icon = mission_have_two_subjects
+		required_missions = { crown_exchange }
+		position = 2
+		trigger = {
+			OR = {
+				AND = { 
+					war_with = PRT
+					war_score_against = {
+						who = PRT
+						value = 80
+					}	
+				}
+				NOT = { exists = PRT }
+			}
+		}
+		effect = {
+			country_event = { id = sassanid_flavor.1 }
+			al_jazira_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_kurdistan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bahrain_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pirate_coast_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mascat_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	roman_outpost = {
+		icon = mission_restore_rule_over_mysore
+		required_missions = { persian_power }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = al_jazira_area
+				area = north_kurdistan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			al_jazira_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			north_kurdistan_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = roman_outpost
+				duration = 3650
+			}
+			aleppo_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			syria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palestine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			erzurum_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			samtskhe_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			armenia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			shirvan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tabriz_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}	
+	}
+
+	beat_armenia = {
+		icon = mission_unite_the_deccan
+		required_missions = { roman_outpost }
+		required_missions = { yemen_red_sea }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = erzurum_area
+				area = samtskhe_area
+				area = armenia_area
+				area = shirvan_area
+				area = tabriz_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			erzurum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			samtskhe_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			armenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			shirvan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tabriz_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_treasury = 100
+			add_ADM_power = 75
+			add_DIP_power = 75
+			anatolia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	european_trade_competition = {
+		icon = mission_consume_the_baghels
+		required_missions = { beat_armenia }
+		position = 5
+		trigger = {
+			OR = {
+				OR = {
+					ROM = {
+						trade_embargo_by = ROOT
+					}
+					BYZ = {
+						trade_embargo_by = ROOT
+					}
+				}
+				AND = {
+					NOT = { exists = ROM }
+					NOT = { exists = BYZ }
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = control_persian_gulf
+				duration = 3650
+			}
+			ROM = {
+				if = { 
+					limit = { trade_embargo_by = ROOT } 
+					add_country_modifier = {
+						name = sassanid_trade_conpetition
+						duration = 3650
+					}
+				}
+			}
+			BYZ = {
+				if = { 
+					limit = { trade_embargo_by = ROOT } 
+					add_country_modifier = {
+						name = sassanid_trade_conpetition
+						duration = 3650
+					}
+				}
+			}
+		}	
+	}
+
+	tread_on_rome = {
+		icon = mission_pf_soldier
+		required_missions = { european_trade_competition }
+		position = 6
+		trigger = {
+			OR = {
+				151 = {
+					NOT = { owned_by = ROOT }
+					controlled_by = ROOT
+				}
+				owns = 151
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_MIL_power = 100
+		}
+	}
+}
+
+SAS_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = SAS
+	}
+	has_country_shield = yes
+
+	silk_production = {
+		icon = mission_conquer_malwa_bah
+		required_missions = { }
+		position = 1
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				trade_goods = silk
+			}
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = silk
+				base_production = 8
+			}
+		}
+		effect = {
+			country_event = { id = sassanid_flavor.2 }
+			every_owned_province = {
+				limit = {
+					trade_goods = silk
+					base_production = 8
+				}
+				add_province_modifier = {
+					name = persian_silk_centre
+					duration = 9125
+				}
+			}
+		}
+	}
+
+	rule_persian_gulf = {
+		icon = mission_invade_island
+		required_missions = { crown_exchange }
+		required_missions = { silk_production }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = bahrain_area
+				area = mascat_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			bahrain_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mascat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = persian_gulf_government
+				duration = 3650
+			}
+			upper_yemen_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yemen_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			asir_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tihama_al_yemen_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tabriz_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			erzurum_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			samtskhe_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			armenia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			shirvan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hadramut_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	yemen_red_sea = {
+		icon = adriatic_access
+		required_missions = { rule_persian_gulf }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = upper_yemen_area
+				area = yemen_area
+				area = asir_area
+				area = tihama_al_yemen_area
+				area = bahrain_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			upper_yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+	 		yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			asir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tihama_al_yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bahrain_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_DIP_power = 50
+			add_prestige = 20
+			add_country_modifier = {
+				name = arabian_coast
+				duration = 5475
+			}
+		}
+	}
+
+	central_asian_king = {
+		icon = mission_persian_soldiers
+		required_missions = { yemen_red_sea }
+		required_missions = { european_trade_competition }
+		required_missions = { hephthalite }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				region = persia_region
+				region = khorasan_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			persia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			khorasan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = sassanid_king_of_kings
+				duration = -1
+			}
+		}
+	}
+
+	reestablish_old_persia = {
+		icon = mission_crusade_for_varna
+		required_missions = { tread_on_rome }
+		required_missions = { central_asian_king }
+		required_missions = { reconquer_cairo }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				province_id = 151
+				province_id = 146
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			owns = 151
+			owns = 146
+		}
+		effect = {
+			add_country_modifier = {
+				name = successor_of_achaemenid
+				duration = -1
+			}
+		}
+	}
+}
+
+SAS_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = SAS
+	}
+	has_country_shield = yes
+
+	gold_silver_pot = {
+		icon = mission_treasure
+		required_missions = { silk_production }
+		position = 2
+		trigger = {
+			treasury = 500
+			DIP_power = 100
+		}
+		effect = {
+			add_treasury = -500
+			add_DIP_power = -100
+			every_owned_province = {
+				limit = { is_capital = yes }
+				add_province_modifier = {
+					name = gold_silver_pot
+					duration = -1
+				}
+			}
+		}
+	}
+
+	thinking = {
+		icon = reform_the_nomocanon
+		required_missions = { avesta }
+		position = 3
+		trigger = {
+			innovativeness = 30
+		}
+		effect = {
+			add_country_modifier = {
+				name = thinking
+				duration = -1
+			}
+		}
+	}
+
+	supress_kushan = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { yemen_red_sea }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 448
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns = 448
+			OR = {
+				KUS = {
+					NOT = { total_development = 75 }
+				}
+				NOT = { exists = KUS }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = supress_kushan
+				duration = 7300
+			}
+			ghor_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kabulistan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			balkh_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			merv_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			transoxiana_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	hephthalite = {
+		icon = mission_chinese_general_riding
+		required_missions = { supress_kushan }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = ghor_area
+				area = kabulistan_area
+				area = balkh_area
+				area = merv_area
+				area = transoxiana_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			ghor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kabulistan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			balkh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			merv_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			transoxiana_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = { exists = KUS }
+			NOT = { exists = HEP }
+		}
+		effect = {
+			add_country_modifier = {
+				name = kushanshahr
+				duration = 3650
+			}
+			egypt_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mashriq_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	reconquer_cairo = {
+		icon = mission_egyptian_mamluk_soldier
+		required_missions = { hephthalite }
+		position = 6
+		provinces_to_highlight = {
+			province_id = 361
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			owns = 361
+		}
+		effect = {
+			add_ADM_power = 100
+			add_DIP_power = 100
+			add_MIL_power = 100
+		}
+	}
+}
+
+SAS_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = SAS
+	}
+	has_country_shield = yes
+
+	shah_name = {
+		icon = mission_consulate_of_the_sea
+		required_missions = { }
+		position = 1
+		trigger = {
+			at_war_with_religious_enemy = yes
+			treasury = 300
+			ADM_power = 100
+			DIP_power = 100
+			MIL_power = 100
+		}
+		effect = {
+			add_treasury = -300
+			add_ADM_power = -100
+			add_DIP_power = -100
+			add_MIL_power = -100
+			set_country_flag = avesta_flag
+			custom_tooltip = rewrite_avesta_decision
+		}
+	}
+
+	avesta = {
+		icon = mission_mediterranean_islands
+		required_missions = { shah_name }
+		position = 2
+		trigger = {
+			treasury = 300
+			religion = zoroastrian
+			owns = 2289
+			2289 = { religion = zoroastrian }
+		}
+		effect = {
+			add_treasury = -300
+			add_stability = 2
+		}
+	}
+
+	speaking = {
+		icon = reform_the_nomocanon
+		required_missions = { avesta }
+		position = 3
+		trigger = {
+			any_country = {
+				is_free_or_tributary_trigger = yes 
+				has_opinion = {
+					who = ROOT
+					value = 200
+				}
+				trust = { 
+					who = FRA 
+					value = 80
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = speaking
+				duration = -1
+			}
+		}
+	}
+
+	nestorianism_in_persia = {
+		icon = mission_rb_control_state_religion
+		required_missions = { priest_abuts }
+		position = 6
+		trigger = {
+			any_owned_province = {
+				religion = nestorian
+			}
+		}
+		effect = {
+			country_event = { id = sassanid_flavor.3 }
+		}
+	}
+
+	arabian_intrution = {
+		icon = mission_invade_maharashtra
+		required_missions = { }
+		position = 7
+		trigger = {
+			any_country = {
+				religion_group = muslim
+				war_with = ROOT
+				army_size = ROOT
+			}
+		}
+		effect = {
+			country_event = { id = sassanid_flavor.4 }
+		}
+	}
+}
+
+SAS_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = SAS
+	}
+	has_country_shield = yes
+
+	sassanid_centralization = {
+		icon = balance_the_estates
+		required_missions = { }
+		position = 2
+		trigger = {
+			NOT = { average_autonomy = 0 }
+			estate_influence = {
+				estate = estate_nobles
+				influence = 60
+			}
+		}
+		effect = {
+			add_stability = 1
+			add_ADM_power = 50
+		}
+	}
+	
+	operating = {
+		icon = reform_the_nomocanon
+		required_missions = { sassanid_centralization }
+		required_missions = { avesta }
+		position = 3
+		trigger = {
+			stability = 3
+			NOT = { average_unrest = 0.001 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = operating
+				duration = -1
+			}
+		}
+	}
+
+	carry_out_dehellenization = {
+		icon = boh_humiliate_austria
+		required_missions = { }
+		position = 4
+		trigger = {
+			all_owned_province = {
+				NOT = { culture_group = byzantine }
+				religion = zoroastrian
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = carry_out_dehellenization
+				duration = 3650
+			}
+		}
+	}
+
+	priest_abuts = {
+		icon = the_land_of_moses
+		required_missions = { carry_out_dehellenization }
+		position = 5
+		trigger = {
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 70
+			}
+			estate_territory = {
+   	 			estate = estate_nobles
+    				territory = 30
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = inquisitor
+				name = "Kadar"
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.1
+			}
+			add_country_modifier = {
+				name = expand_fire_temple
+				duration = 1825
+			}
+		}
+	}
+
+	idolatry = {
+		icon = mission_restore_trade_superiority
+		required_missions = { priest_abuts }
+		position = 6
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 20
+				OR = {
+					has_building = glorious_monument
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+			religious_unity = 1
+		}
+		effect = {
+			country_event = { id = sassanid_flavor.5 }	
+		}	
+	}
+}
+
+

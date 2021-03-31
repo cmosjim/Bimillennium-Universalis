@@ -1,0 +1,436 @@
+DY2_mission_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = DY2
+			tag = KUS
+		}
+	}
+	has_country_shield = yes
+
+	spread_of_Buddhism = {
+		icon = mission_scholar_officials
+		required_missions = { }
+		position = 1
+		trigger = {
+			OR = {
+				AND = {
+					religion = tengri_pagan_reformed
+					secondary_religion = mahayana
+				}
+				religion = mahayana
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = Buddhism_spread
+				duration = 7300
+			}
+		}
+	}
+
+	end_da_xia = {
+		icon = mission_assert_control_over_delhi
+		required_missions = { spread_of_Buddhism }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 578
+				province_id = 2180
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			NOT = { exists = DX3 }
+			owns = 578
+			owns = 2180
+		}
+		effect = {
+			add_prestige = 15
+		}
+	}
+	
+	xiongnu_revenge = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { end_da_xia }
+		position = 5
+		trigger = {
+			NOT = { exists = XIO }
+		}
+		effect = {
+			add_country_modifier = {
+				name = xiongnu_doom
+				duration = -1
+			}
+		}
+	}
+}
+
+DY2_mission_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = DY2
+			tag = KUS
+		}
+	}
+	has_country_shield = yes
+
+	stop_migration = {
+		icon = mission_chinese_general_riding
+		required_missions = { end_da_xia }
+		position = 4
+		trigger = {
+			total_development = 300
+		}
+		effect = {
+			add_ADM_power = 400
+			add_horde_unity = -50
+			random_owned_province = {
+				limit = { culture = afghani }
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 20
+				}
+			}
+			random_owned_province = {
+				limit = { culture = afghani }
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 20
+				}
+			}
+			random_owned_province = {
+				limit = { culture = afghani }
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 20
+				}
+			}
+			random_owned_province = {
+				limit = { culture = afghani }
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 20
+				}
+			}
+		}
+	}
+}
+			
+DY2_mission_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = DY2
+			tag = KUS
+		}
+	}
+	has_country_shield = yes
+
+	return_to_Hexi_corridor = {
+		icon = mission_unite_the_deccan
+		required_missions = { return_to_taklimakan }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = shanshan_area
+				area = westnorth_gansu_area
+				area = turpan_kumul_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			shanshan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			westnorth_gansu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			turpan_kumul_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = return_to_Hexi_corridor
+				duration = 3650
+			}
+		}
+	}
+
+	yumen_trade = {
+		icon = mission_rb_colonise_spice_islands
+		required_missions = { return_to_Hexi_corridor }
+		position = 5
+		trigger = {
+			4894 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = yumen_trade
+				duration = 5475
+			}
+		}
+	}
+}
+
+DY2_mission_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = DY2
+			tag = KUS
+		}
+	}
+	has_country_shield = yes
+
+	vassalize_kangju = {
+		icon = mission_conquer_kannauj
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = kyzylkum_area
+				area = arys_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			OR = {
+				AND = {
+					kyzylkum_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					arys_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					NOT = { exists = KGJ }
+				}
+				KGJ = { is_subject_of = ROOT }
+			}
+		}
+		effect = {
+			jetysuu_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			zungaria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	conquer_Uisin = {
+		icon = mission_impaled_soldies
+		required_missions = { vassalize_kangju }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = jetysuu_area
+				area = zungaria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			jetysuu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zungaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_ADM_power = 25
+			add_DIP_power = 25
+			add_MIL_power = 25
+			kashgaria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tarim_basin_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tarim_basin_east_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_altishahr_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_south_altishahr_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hetian_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	return_to_taklimakan = {
+		icon = mission_traverse_the_sahara
+		required_missions = { conquer_Uisin }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = kashgaria_area
+				area = tarim_basin_area
+				area = east_altishahr_area
+				area = east_south_altishahr_area
+				area = tarim_basin_east_area
+				area = hetian_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			kashgaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tarim_basin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_altishahr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_south_altishahr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tarim_basin_east_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hetian_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			shanshan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			amdo_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			turpan_kumul_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			westnorth_gansu_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+DY2_mission_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { 
+		OR = {
+			tag = DY2
+			tag = KUS
+		}
+	}
+	has_country_shield = yes
+
+	accept_qiang = {
+		icon = mission_conquer_malwa_mer
+		required_missions = { }
+		position = 1
+		trigger = {
+			accepted_culture = qiang
+		}	
+		effect = {
+			add_DIP_power = 100
+		}
+	}
+
+	annex_XiaoRouzhi = {
+		icon = mission_unite_west_india
+		required_missions = { return_to_taklimakan }
+		required_missions = { accept_qiang }
+		position = 4
+		provinces_to_highlight = {
+			area = amdo_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			amdo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+		}
+	}
+}

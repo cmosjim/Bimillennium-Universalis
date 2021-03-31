@@ -1,0 +1,250 @@
+#2020.05.17 fit to 1.29 
+heiljsf_chinese_qindiguo_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+            OR = {
+                tag = DQE
+                tag = DQN
+            }
+	}
+	has_country_shield = yes
+
+ 	##teƒwæy›Q
+	zhengsu_qinjun = {
+		icon = mission_manchu_warrior			#şVh
+		required_missions = { }					#MRnûN¡R mN1S=fMRN*NûN¡R
+		position = 1							#ÎNN0RNpe,gûN¡R„vMOnÿgv˜ïzùR”^„vpe<P:N1
+		provinces_to_highlight = {				#‰zúQ>f:y„vwb0W:S
+          
+		}
+		trigger = {
+			army_size_percentage = 0.9			#F–›QÄ‰!j¾0R100%
+			army_professionalism = 0.03			#F–›QLwN¦^¾0R3%
+		}
+		effect = {
+			add_prestige = 10
+			add_adm_power = 100
+		}
+	}	
+	
+	##šRı¸T3–
+	dingdu_xianyang = {
+		icon = mission_japanese_fort			#şVh
+		required_missions = { zhengsu_qinjun }	#MRnûN¡R mN1S=fMRN*NûN¡R
+		position = 2							#ÎNN0RNpe,gûN¡R„vMOnÿgv˜ïzùR”^„vpe<P:N1
+		provinces_to_highlight = {				#‰zúQ>f:y„vwb0W:S
+            OR = {
+                province_id = 700
+            }
+            NOT = {
+                owned_by = ROOT			        	
+			}
+		}
+		trigger = {
+			700 = {
+				OR = {
+					owned_by = ROOT
+					owner = { 
+						is_subject_of = ROOT
+						NOT = { is_subject_of_type = tributary_state }
+					}	
+				}
+			}
+		}
+		effect = {
+			add_prestige = 50
+			add_adm_power = 100
+            700 = {
+                move_capital_effect = yes           #Áı¸T3–
+                change_province_name = "¸T3–"		#9eT:N¸T3–
+				rename_capital = "¸T3–"
+				
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+			central_shaanxi_area = {                        
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT           #ûm R8lEN±Rğy
+			}
+			shaanxi_area = {                  
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            shaanxi_north_area = {                  
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            gansu_area = {                  
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+    
+   ##ËzıVKN,g
+	liguo_zhiben = {
+		icon = mission_riches_of_golconda		#şVh
+		required_missions = { dingdu_xianyang }	#MRnûN¡R mN1S=fMRN*NûN¡R
+		position = 3							#ÎNN0RNpe,gûN¡R„vMOnÿgv˜ïzùR”^„vpe<P:N1
+		provinces_to_highlight = {				#‰zúQ>f:y„vwb0W:S
+            OR = {
+                area = central_shaanxi_area  
+                area = shaanxi_area           
+                area = shaanxi_north_area                
+                area = gansu_area  
+            }
+            NOT = {
+				owned_by = ROOT			        	
+			}
+		}
+		trigger = {
+			central_shaanxi_area_sub_holds = yes			
+
+            shaanxi_area_sub_holds = yes		
+
+            shaanxi_north_area_sub_holds = yes					
+
+            gansu_area_sub_holds = yes				
+
+		}
+		effect = {
+            add_adm_power = 100
+            set_mandate = 100						#)Y‹T<P¾‹n:N100
+            chuanbei_east_area = {                  #ÛVİThQƒX±Rğy
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            sichuan_area = {                  
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            chuannan_area = {                  
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            chuanbei_area = {                  
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+   
+    ##ôT‡KN0W
+	bashu_zhidi = {
+		icon = mission_unite_home_region			#şVh
+		required_missions = { liguo_zhiben }	#MRnûN¡R mN1S=fMRN*NûN¡R
+		position = 4							#ÎNN0RNpe,gûN¡R„vMOnÿgv˜ïzùR”^„vpe<P:N1
+		provinces_to_highlight = {				#‰zúQ>f:y„vwb0W:S
+		    OR = {
+                area = chuanbei_east_area  
+                area = sichuan_area  
+            }
+            NOT = {
+				owned_by = ROOT			        	
+			}
+		}
+		trigger = {
+			chuanbei_east_area_sub_holds = yes	
+            sichuan_area_sub_holds = yes	
+		}
+		effect = {
+            add_prestige = 10
+            add_mil_power = 100
+		}
+	}
+    
+    ##TµuŞ*j
+	hezong_lianheng = {
+		icon = mission_buddhist_monk_praying	#şVh
+		required_missions = { bashu_zhidi }     #MRnûN¡R mN1S=fMRN*NûN¡R
+		position = 5							#ÎNN0RNpe,gûN¡R„vMOnÿgv˜ïzùR”^„vpe<P:N1
+		provinces_to_highlight = {				#‰zúQ>f:y„vwb0W:S
+
+		}
+		trigger = {
+			num_of_allies = 3
+		}
+		effect = {
+			add_prestige = 10
+            add_mandate = 30                    #ûm R)Y‹T30
+			add_mil_power = 100
+            add_dip_power = 100
+            add_adm_power = 100
+		}
+	}
+ 
+    ## RúV•ÎW
+    jiagu_changcheng = {
+		icon = mission_control_the_ganges_delta			#şVh
+		required_missions = { hezong_lianheng }	
+		position = 6						
+		provinces_to_highlight = {	
+		
+		}
+		trigger = {
+            4882 = { has_influencing_fort = yes }
+            1816 = { has_influencing_fort = yes }
+            3186 = { has_influencing_fort = yes }
+            4324 = { has_influencing_fort = yes }
+            704 = { has_influencing_fort = yes }
+            3188 = { has_influencing_fort = yes }
+            726 = { has_influencing_fort = yes }
+            2510 = { has_influencing_fort = yes }
+		}
+		effect = {
+			add_prestige = 10
+            add_adm_power = 100
+		}
+	}
+    
+    ##•»lEN‰R
+    changzhi_jiuan = {
+		icon = mission_control_the_ganges_delta			#şVh
+		required_missions = { jiagu_changcheng }	
+		position = 7						
+		provinces_to_highlight = {	
+		
+		}
+		trigger = {
+            religion = legalist
+            num_of_cities = 200
+            num_of_religion = {
+                religion = legalist
+                value = 0.95
+            }
+		}
+		effect = {
+			set_country_flag = fajia_flag
+			country_event = { id = daqin_empire_events.7 }
+			add_prestige = 10
+            add_mandate = 30                    #ûm R)Y‹T30
+		}
+	}    
+}

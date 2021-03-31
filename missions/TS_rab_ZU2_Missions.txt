@@ -1,0 +1,48 @@
+#2019-04-10 side_by_rome mission ftàNÙfYÑvHV'`uP,nÔSc0bÑvW∂R
+#2019-07-07 side_by_rome mission S+T˝êwãú^ÑvhTmêW∂Rwna
+#2019-12-13 central_asia_region add into the detect "side_by_rome" missions
+rab_ZU2_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		started_in = 1352.1.1
+		tag = ZU2
+	}
+	has_country_shield = no
+	
+	occupy_najing = {
+		icon = mission_inspect
+		required_missions = {  }
+		trigger = {
+			owns = 1821
+		}
+		effect = {
+			2496 = { 
+				cede_province = ZU2 
+				add_core = ZU2
+			}
+			4850 = { 
+				cede_province = ZU2 
+				add_core = ZU2
+			}
+			4848 = { 
+				cede_province = ZU2 
+				add_core = ZU2
+			}
+			2497 = { 
+				cede_province = ZU2 
+				add_core = ZU2
+			}
+			every_country = {
+				limit = {
+					war_with = ROOT 
+				}	
+				white_peace = ROOT
+			}
+			1821 = {
+				change_province_name = "î^)Yú^"
+			}	
+		}		
+	}
+}

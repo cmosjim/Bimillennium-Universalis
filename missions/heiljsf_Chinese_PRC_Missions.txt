@@ -1,0 +1,2062 @@
+heiljsf_chinese_PRC_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CHN
+		}
+	}
+	has_country_shield = yes
+
+ 		#˙^Àz∞e-N˝V
+	jianli_xinzhongguo = {
+		icon = mission_rab_protection			
+		required_missions = { }				
+		position = 1							
+		provinces_to_highlight = {		
+		
+		}
+		trigger = {
+			1816 = {
+				owned_by = ROOT
+			}
+			capital = 1816
+		}
+		effect = {
+			add_prestige = 50
+			add_adm_power = 100
+			add_harmony = 100
+			add_country_modifier = {
+				name = "heiljsf_minzudatuanjie"	
+				duration = -1
+			}
+			utsang_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		
+			}
+			utsang_east_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		
+			}
+			utsang_mountain_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		
+			}
+			amdo_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		
+			}
+			amdo_south_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		
+			}
+			kham_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		
+			}
+			tsang_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		
+			}
+			ngari_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		
+			}
+			add_harmonized_religion = mahayana
+			add_harmonized_religion = vajrayana
+			add_harmonized_religion = tengri_pagan_reformed
+			add_harmonized_religion = buddhism
+			add_harmonized_religion = animism
+			add_harmonized_religion = daoism
+			1816 = {
+				change_province_name = "S¨N"
+				rename_capital = "beijing"
+			}
+			3257 = {
+				change_province_name = "Nwm"
+				rename_capital = "shanghai"
+			}
+			700 = {
+				change_province_name = "ââR"
+				rename_capital = "xian"
+			}
+			695 = {
+				change_province_name = ")Y%m"
+				rename_capital = "tianjin"
+			}
+			682 = {
+				change_province_name = "fkIl"
+				rename_capital = "wuhan"
+			}
+			662 = {
+				change_province_name = "ff"
+				rename_capital = "kunming"
+			}
+
+		}
+	}	
+
+	#„â>eâœÖ
+	jiefang_xizang = {
+		icon = mission_hands_praying	
+		required_missions = { jianli_xinzhongguo }
+		position = 2								
+		provinces_to_highlight = {					
+			OR = {
+				area = utsang_area
+				area = utsang_east_area
+				area = utsang_mountain_area
+				area = amdo_area
+				area = amdo_south_area
+				area = kham_area
+				area = tsang_area
+				area = ngari_area	
+			}
+			NOT = {
+				owned_by = ROOT					
+			}
+		}
+		trigger = {
+			utsang_area = {
+				type = all
+				owned_by = ROOT
+			}
+			utsang_east_area = {
+				type = all
+				owned_by = ROOT
+			}
+			utsang_mountain_area = {
+				type = all
+				owned_by = ROOT
+			}
+			amdo_area = {
+				type = all
+				owned_by = ROOT
+			}
+			amdo_south_area = {
+				type = all
+				owned_by = ROOT
+			}
+			kham_area = {
+				type = all
+				owned_by = ROOT
+			}
+			tsang_area = {
+				type = all
+				owned_by = ROOT
+			}
+			ngari_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+			if = {
+				limit = {
+					1788 = { 
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}	
+				1788 = { add_permanent_claim = ROOT }		
+			}
+			if = {
+				limit = {
+					4600 = { 
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}	
+				
+				4600 = { add_permanent_claim = ROOT }
+			}
+			if = {
+				limit = {
+					2179 = { 
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}	
+				
+				2179 = { add_permanent_claim = ROOT }
+			}			
+		}
+	}
+	
+	#?=nÕnRV
+	xianggang_huigui = {
+		icon = mission_invade_island		
+		required_missions = { jiefang_xizang }
+		position = 3							
+		provinces_to_highlight = {					
+			OR = {
+				province_id = 2014
+			}
+			NOT = {
+				owned_by = ROOT					
+			}
+		}
+		trigger = {
+			owns = 2014
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+		}
+	}
+	
+	#ôô=nﬁVRV
+	aomen_huigui = {
+		icon = mission_have_manufactories		
+		required_missions = { xianggang_huigui }
+		position = 4						
+		provinces_to_highlight = {					
+			OR = {
+				province_id = 668
+			}
+			NOT = {
+				owned_by = ROOT					
+			}
+		}
+		trigger = {
+			owns = 668
+			
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+		}
+	}
+	#≥oËïﬁVRV
+	control_southern_sea = {
+		icon = mission_navy_base
+		required_missions = { aomen_huigui }
+		position = 5
+		provinces_to_highlight = {					
+
+		}	
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = tp_control_southern_sea
+				check_variable = { which = pop_southernsea_a value = 100 }
+				check_variable = { which = pop_southernsea_b value = 100 }
+				check_variable = { which = pop_southernsea_c value = 100 }
+				check_variable = { which = pop_southernsea_d value = 100 }
+			}	
+		}
+		effect = {
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "control_whole_southern_islands"
+				duration = -1
+			}
+		}		
+	}
+
+
+	#ﬂuNSån
+	zhongba_jianjiao = {
+		icon = mission_alliances		
+		required_missions = {  }
+		position = 6
+		
+		provinces_to_highlight = {
+		
+		}
+		trigger = {
+			alliance_with = PAK
+		}
+		effect = {
+			add_prestige = 20
+			add_dip_power = 100
+			
+			PAK = {
+				add_historical_rival = IND
+				add_trust = {
+					who = IND
+					value = -50
+					mutual = yes
+				}
+				add_trust = {
+					who = USA
+					value = -30
+					mutual = yes
+				}
+				add_opinion = {
+					who = IND
+					#modifier = friendly_government	
+					modifier = orthodoxy_denied			
+				}
+			}
+			
+			add_trust = {
+				who = PAK
+				value = 30
+				mutual = yes
+			}
+			
+		}
+	}
+	
+#bçóVKQ¿Ns|SbâN
+	yingde_Kashmir = {
+		icon = mission_unite_home_region		
+		required_missions = { zhongba_jianjiao }
+		position = 7
+		
+		provinces_to_highlight = {
+				OR = {
+					province_id = 2179
+					province_id = 2122
+					province_id = 4568
+				}
+				NOT = {
+					owned_by = ROOT				#,g˝VÂb	g
+				}
+		}
+		trigger = {
+			owns = 2179
+			PAK = { owns = 2122 }
+			PAK = { owns = 4568 } 
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+			
+			add_trust = {
+				who = PAK
+				value = 20
+				mutual = yes
+			}		
+
+		}
+	}
+	
+	
+	#„â≥QœÖ:SÜòWâNÆã
+	jiejue_zangqulingtuzhengyi = {
+		icon = mission_arabian_fort		
+		required_missions = { yingde_Kashmir }
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {		
+				province_id = 1788
+				province_id = 4600
+			}
+			NOT = {
+				owned_by = ROOT					
+			}
+		}
+		trigger = {
+			owns = 1788
+			owns = 2179
+			owns = 4600
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+			1788 = {
+				change_province_name = "œÖWS"
+				rename_capital = "zangnan"
+			}
+		}
+	}
+
+	#.^©R?ñ*m∆Yãs˝VY˝V
+	ahongmu_fuguo = {
+		icon = mission_arabian_fort		
+		required_missions = { jiejue_zangqulingtuzhengyi }
+		position = 9
+		
+		provinces_to_highlight = {
+			OR = {		
+				province_id = 2251
+
+			}
+			NOT = {
+				owned_by = ASS					
+			}
+		}
+		trigger = {
+			ASS = {
+				owns = 2251
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_dip_power = 100
+			vassalize = ASS
+			
+			add_trust = {
+				who = ASS
+				value = 20
+				mutual = yes
+			}
+			western_assam_area = { 
+				limit = {
+					NOT = { is_core = ASS }
+					NOT = { owned_by = ASS }
+				}
+				add_core = ASS		
+			}
+			naga_hills_area = { 
+				limit = {
+					NOT = { is_core = ASS }
+					NOT = { owned_by = ASS }
+				}
+				add_core = ASS		
+			}
+			if = {
+				limit = {
+					566 = {
+						NOT = { is_core = ASS }
+						NOT = { owned_by = ASS }
+					}
+				}	
+				566 = { add_core = ASS }		
+			}
+			if = {
+				limit = {
+					4559 = {
+						NOT = { is_core = ASS }
+						NOT = { owned_by = ASS }
+					}
+				}	
+				4559 = { add_core = ASS }		
+			}
+			if = {
+				limit = {
+					2252 = {
+						NOT = { is_core = ASS }
+						NOT = { owned_by = ASS }
+					}
+				}	
+				2252 = { add_core = ASS }		
+			}
+			if = {
+				limit = {
+					2254 = {
+						NOT = { is_core = ASS }
+						NOT = { owned_by = ASS }
+					}
+				}	
+				2254 = { add_core = ASS }		
+			}
+			if = {
+				limit = {
+					3093 = {
+						NOT = { is_core = ASS }
+						NOT = { owned_by = ASS }
+					}
+				}	
+				3093 = { add_core = ASS }		
+			}			
+		}
+	}
+	
+	#?ñ*m∆Yãs˝VÑvEeW
+	ahongmu_gutu = {
+		icon = mission_arabian_fort		
+		required_missions = { ahongmu_fuguo }
+		position = 10
+		
+		provinces_to_highlight = {
+			OR = {
+				area = western_assam_area
+				area = naga_hills_area
+				province_id = 566
+				province_id = 4559
+				province_id = 2252
+				province_id = 2254
+				province_id = 3093
+			}
+			NOT = {
+				owned_by = ASS					
+			}
+		}
+		trigger = {
+			western_assam_area = {
+				type = all
+				owned_by = ASS
+			}
+			naga_hills_area = {
+				type = all
+				owned_by = ASS
+			}
+			ASS = {
+				owns = 566
+				owns = 4559
+				owns = 2252
+				owns = 2254
+				owns = 3093	
+			}			
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+			add_trust = {
+				who = ASS
+				value = 20
+				mutual = yes
+			}
+			add_historical_friend = ASS
+			ASS = {
+				add_historical_friend = CHN			
+				change_religion = confucianism
+				add_harmonized_religion = animism
+				add_harmonized_religion = hinduism
+				add_accepted_culture = shan
+				change_primary_culture = shan
+			}
+			western_assam_area = {
+				change_culture = shan
+			}
+			naga_hills_area = {
+				change_culture = shan
+			}
+			566 = {
+				change_culture = shan
+			}
+			4559 = {
+				change_culture = shan
+			}
+			2252 = {
+				change_culture = shan
+			}
+		}
+	}
+	
+}
+
+heiljsf_chinese_PRC_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CHN
+		}
+	}
+	has_country_shield = yes
+	
+	tongyi_taiwan = {
+		icon = mission_galleys_in_port		
+		required_missions = { control_southern_sea }
+		position = 6							
+		provinces_to_highlight = {					
+			OR = {
+				area = taiwan_north_area
+				area = taiwan_south_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT		#,g¿åb^SÌ·(^?g!?Ì·)c	g
+			}
+		}
+		trigger = {
+			taiwan_north_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT		#,g¿åb^SÌ·(^?g!?Ì·)c	g
+			}
+			taiwan_south_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT		#,g¿åb^SÌ·(^?g!?Ì·)c	g
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "heiljsf_zhuquanwanzhen" #INCgíıte
+				duration = -1
+			}
+		}
+	}
+	
+	heping_naru = {
+		icon = mission_extent_yasak_to_the_east		
+		required_missions = { fuyong_menggu }
+		position = 7	
+		
+		provinces_to_highlight = {
+			OR = {
+				area = central_mongolia_area	
+				area = inner_mongolia_area
+				area = outer_mongolia_area
+				area = outer_east_mongolia_area
+				area = altai_sayan_area		
+			
+				province_id = 3278
+				province_id = 3251
+				province_id = 2893
+				province_id = 3249
+				province_id = 719
+				province_id = 2892
+				province_id = 2891
+			}
+			NOT = {
+				owned_by = ROOT					#,gÌ·ôT	g
+			}
+			
+		}
+		trigger = {
+			central_mongolia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			inner_mongolia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			outer_mongolia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			outer_east_mongolia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			altai_sayan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns = 3278
+			owns = 3251
+			owns = 2893
+			owns = 3249
+			owns = 719
+			owns = 2892
+			owns = 2891
+			
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+		}
+	}
+	
+	
+	zhongba_tiemeng = {
+		icon = mission_the_tamil_trade_guilds		
+		required_missions = { yingde_Kashmir }
+		position = 8
+		
+		provinces_to_highlight = {
+		
+		}
+		trigger = {
+			alliance_with = PAK
+			trust = { 
+				who = PAK 
+				value = 100 
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_dip_power = 100
+			add_historical_friend = PAK
+			PAK = {
+				add_historical_friend = CHN
+			}
+			
+		}
+	}
+	
+	
+	zhongmeng_tongmeng = {
+		icon = mission_alliances		
+		required_missions = {  }
+		position = 9
+		
+		provinces_to_highlight = {
+		
+		}
+		trigger = {
+			OR = {
+				alliance_with = BGD
+				alliance_with = BNG
+			}	
+		}
+		effect = {
+			add_prestige = 20
+			add_dip_power = 100
+			
+			if = {
+				limit = {
+					exists = BGD 
+				}
+				BGD = {
+					add_historical_rival = IND
+					add_trust = {
+						who = IND
+						value = -50
+						mutual = yes
+					}
+				
+				}
+				
+				add_trust = {
+					who = BGD
+					value = 30
+					mutual = yes
+				}
+				gaur_area = { 
+					limit = {
+						NOT = { is_core = BGD }
+						NOT = { owned_by = BGD }
+					}
+					add_core = BGD		
+				}
+				west_bengal_area = { 
+					limit = {
+						NOT = { is_core = BGD }
+						NOT = { owned_by = BGD }
+					}
+					add_core = BGD		
+				}
+				north_bengal_area = { 
+					limit = {
+						NOT = { is_core = BGD }
+						NOT = { owned_by = BGD }
+					}
+					add_core = BGD		
+				}
+				east_bengal_area = { 
+					limit = {
+						NOT = { is_core = BGD }
+						NOT = { owned_by = BGD }
+					}
+					add_core = BGD		# ‡-Ó8haõ
+				}				
+			}				
+
+			if = {
+				limit = {
+					exists = BNG 
+				}
+				BNG = {
+					add_historical_rival = IND
+					add_trust = {
+						who = IND
+						value = -50
+						mutual = yes
+					}
+				
+				}
+				
+				add_trust = {
+					who = BNG
+					value = 30
+					mutual = yes
+				}
+				gaur_area = { 
+					limit = {
+						NOT = { is_core = BNG }
+						NOT = { owned_by = BNG }
+					}
+					add_core = BNG		
+				}
+				west_bengal_area = { 
+					limit = {
+						NOT = { is_core = BNG }
+						NOT = { owned_by = BNG }
+					}
+					add_core = BNG		
+				}
+				north_bengal_area = { 
+					limit = {
+						NOT = { is_core = BNG }
+						NOT = { owned_by = BNG }
+					}
+					add_core = BNG		
+				}
+				east_bengal_area = { 
+					limit = {
+						NOT = { is_core = BNG }
+						NOT = { owned_by = BNG }
+					}
+					add_core = BNG		
+				}				
+			}
+			add_opinion = {
+				who = IND
+				
+				modifier = orthodoxy_denied	
+			}
+		}
+	}
+	
+	#mR-Ó?r≈EeW
+	mengjiala_gutu = {
+		icon = mission_arabian_fort		
+		required_missions = { zhongmeng_tongmeng }
+		position = 10
+		
+		provinces_to_highlight = {
+			OR = {
+				area = gaur_area
+				area = west_bengal_area
+				area = north_bengal_area
+				area = east_bengal_area
+			}
+			NOT = {
+				OR = {
+					owned_by = BGD	
+					owned_by = BNG	
+				}
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					gaur_area = {
+						type = all
+						owned_by = BGD
+					}
+					west_bengal_area = {
+						type = all
+						owned_by = BGD
+					}
+					north_bengal_area = {
+						type = all
+						owned_by = BGD
+					}
+					east_bengal_area = {
+						type = all
+						owned_by = BGD
+					}
+				}
+				AND = {
+					gaur_area = {
+						type = all
+						owned_by = BNG
+					}
+					west_bengal_area = {
+						type = all
+						owned_by = BNG
+					}
+					north_bengal_area = {
+						type = all
+						owned_by = BNG
+					}
+					east_bengal_area = {
+						type = all
+						owned_by = BNG
+					}
+				}		
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = BGD
+				}
+				vassalize = BGD
+				add_trust = {
+					who = BGD
+					value = 20
+					mutual = yes
+				}
+				add_historical_friend = BGD
+				BGD = {
+					add_historical_friend = CHN			#N«m
+				}				
+			}	
+			if = {
+				limit = {
+					exists = BNG
+				}
+				vassalize = BNG
+				add_trust = {
+					who = BNG
+					value = 20
+					mutual = yes
+				}
+				add_historical_friend = BNG
+				BNG = {
+					add_historical_friend = CHN			#N«m
+				}				
+			}			
+			add_prestige = 20
+			add_mil_power = 100
+
+		}
+	}
+		
+	#%?pS˝ˇV
+	zhijie_yindu = {
+		icon = mission_the_tamil_trade_guilds		
+		required_missions = {
+			ahongmu_gutu 
+			mengjiala_gutu
+		}
+		position = 11
+		
+		provinces_to_highlight = {
+		
+		}
+		trigger = {
+			NOT = {
+				IND = {
+					total_development = 3000
+				}
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_dip_power = 100
+			add_mil_power = 100
+			add_adm_power =	100
+			
+			IND = {
+				add_nationalism = 50			#µË0R50t^R?ININ
+				add_unrest = 20					#µË0R20ÓÅqN˝ˇV
+			}
+			
+		}
+	}
+}
+
+
+heiljsf_chinese_PRC_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CHN
+		}
+	}
+	has_country_shield = yes
+	
+	#D?†z?’å
+	fuyong_menggu = {
+		icon = mission_non-western_cavalry_raid		
+		required_missions = {  }
+		position = 6	
+		
+		provinces_to_highlight = {
+	
+		}
+		trigger = {
+			KHA = {
+				vassal_of = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			north_zungaria  = { 					#SãûvVS0W:S
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_core = ROOT		# ‡-Ó8lENT≥
+			}
+			jetysuu_area = { 						#N∫ç0W:S
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_core = ROOT		# ‡-Ó8lENT≥
+			}
+			if = {
+				limit = { 
+					1850 = { 
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}	
+				1850 = { add_core = ROOT }		# ‡-Ó8lENT≥
+			}
+			if = {
+				limit = { 
+					3268 = { 
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}	
+				3268 = { add_permanent_claim = ROOT }		# ‡-Ó8lENT≥
+			}
+			3268 = {
+				add_core = ROOT
+			}	
+		}
+	}
+	
+	#?QXI„çõW
+	chongsu_suiyecheng = {
+		icon = mission_galleys_in_port		
+		required_missions = { fuyong_menggu }
+		position = 7	
+		provinces_to_highlight = {					
+			OR = {
+				province_id = 459
+				province_id = 2435
+			}
+			NOT = {
+				owned_by = ROOT					#,gÌ·ôT	g
+			}
+		}
+		trigger = {
+			owns = 459
+			owns = 2435
+		}		
+		
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			459 = {
+				change_province_name = "éxˆSŒW"
+				rename_capital = "suiyecheng"
+				add_base_tax = 20
+				add_base_production = 20
+				add_base_manpower = 8
+				add_prosperity = 1
+				
+				center_of_trade = 1
+				add_permanent_province_modifier = {
+					name = inland_center_of_trade_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+
+	
+	balkhash_zhaisanghu = {
+		icon = mission_galleys_in_port		
+		required_missions = { chongsu_suiyecheng }
+		position = 8	
+		
+		provinces_to_highlight = {					
+			OR = {
+				area = jetysuu_area
+				area = north_zungaria
+			}
+			NOT = {
+				owned_by = ROOT					#,gÌ·ôT	g
+			}
+		}
+		trigger = {
+			jetysuu_area = {
+				type = all
+				owned_by = ROOT
+			}
+			north_zungaria = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			459 = {
+				change_province_name = "éxˆSŒW"
+				rename_capital = "suiyecheng"
+				add_permanent_province_modifier = {
+					name = inland_center_of_trade_modifier
+					duration = -1
+				}
+				
+			}
+		}
+	}
+	
+	
+	zuihou_xuechi = {
+		icon = mission_galleys_in_port		
+		required_missions = { 	balkhash_zhaisanghu }
+		position = 9			
+		provinces_to_highlight = {					
+			OR = {
+				area = tannu_uriankhai_area
+				area = uliastai_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT		
+			}
+		}
+		trigger = {
+			tannu_uriankhai_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT		
+			}
+			uliastai_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT		
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			tannu_uriankhai_area = {
+				remove_core = RUS
+			}
+			uliastai_area = {
+				remove_core = RUS
+			}
+
+		}
+	}
+	
+	
+	zhonge_miyue = {
+		icon = mission_galleys_in_port		
+		required_missions = { 
+			gutu_waidongbei
+			zuihou_xuechi
+		}
+		position = 10				
+		provinces_to_highlight = {					
+
+		}
+		trigger = {
+			NOT ={ is_rival = RUS }
+			RUS ={
+				NOT ={
+					is_rival = CHN
+					 trust = { who = ROOT value = 20 }
+				}
+			}	
+		
+		}
+		effect = {
+			add_prestige = 20
+			add_dip_power = 100
+			set_ai_attitude = {
+				attitude = attitude_friendly
+				who = RUS
+				locked = yes
+			}
+			add_opinion = {
+				who = RUS
+				modifier = friendly_government		
+			}
+			RUS = {
+				add_opinion = {
+					who = CHN
+					modifier = friendly_government		
+				}
+			}
+			add_trust = {
+					who = RUS
+					value = 50
+					mutual = yes
+			}
+		}
+	}
+	
+
+	haishi_haopengyou = {
+		icon = mission_alliances		
+		required_missions = { zhonge_miyue }
+		position = 11
+		
+		provinces_to_highlight = {
+		
+		}
+		trigger = {
+			alliance_with = RUS
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			create_alliance = CAN
+		
+			RUS = {
+				add_trust = {
+					who = USA
+					value = -30
+					mutual = yes
+				}
+				add_historical_rival = USA
+				
+				add_opinion = {
+					who = CHN
+					modifier = friendly_government		
+				}
+			}
+			
+			CAN = {
+				add_trust = {
+					who = USA
+					value = -30
+					mutual = yes
+				}
+				add_historical_rival = USA
+				
+				add_opinion = {
+					who = CHN
+					modifier = friendly_government	
+				}
+			}
+			
+			add_opinion = {
+				who = RUS
+				modifier = friendly_government		
+			}
+			
+			add_trust = {
+				who = RUS
+				value = 30
+				mutual = yes
+			}
+			alaska_area = { 
+				limit = {
+					NOT = { is_core = RUS }
+					NOT = { owned_by = RUS }
+				}
+				add_core = RUS		
+			}
+			east_alaska_area = { 
+				limit = {
+					NOT = { is_core = CAN }
+					NOT = { owned_by = CAN }
+				}
+				add_core = CAN		
+			}
+			red_river_area = { 
+				limit = {
+					NOT = { is_core = CAN }
+					NOT = { owned_by = CAN }
+				}
+				add_core = CAN		
+			}
+		}
+	}
+
+
+	ejia_fena = {
+		icon = mission_collect_yasak		
+		required_missions = {
+			haishi_haopengyou 
+			zhijie_yindu
+		}
+
+		position = 12
+		
+		provinces_to_highlight = {
+			OR = {
+				area = alaska_area
+				area = east_alaska_area
+				area = red_river_area
+			}
+			NOT = {
+				owned_by = CAN					
+			}
+		}
+		trigger = {
+			alliance_with = RUS
+			alliance_with = CAN
+			
+			alaska_area = {
+				type = all
+				owned_by = RUS
+			}
+			east_alaska_area = {
+				type = all
+				owned_by = CAN
+			}
+			red_river_area = {
+				type = all
+				owned_by = CAN
+			}
+		}
+		
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			
+			add_trust = {
+				who = RUS
+				value = 20
+				mutual = yes
+			}
+			add_trust = {
+				who = CAN
+				value = 30
+				mutual = yes
+			}
+			
+			dakota_area = {
+				limit = {
+					is_empty = no
+				}		
+				cede_province = SIO
+				add_core = SIO
+				remove_core = USA
+				change_religion = totemism
+			}
+			colorado_plateau_area = {	
+				limit = {
+					is_empty = no
+				}				
+				cede_province = NAH
+				add_core = NAH
+				remove_core = USA
+				change_religion = totemism
+			}
+			great_plains_region = {
+				limit = {
+					is_empty = no
+					NOT = { is_core = SIO }
+					NOT = { owned_by = SIO }
+				}
+				add_core = SIO					
+			}
+			arizona_area = {
+				limit = {
+					NOT = { is_core = NAH }
+					NOT = { owned_by = NAH }
+					is_empty = no
+				}
+				add_core = NAH					
+			}
+			new_mexico_area = {
+				limit = {
+					NOT = { is_core = NAH }
+					NOT = { owned_by = NAH }
+					is_empty = no
+				}
+				add_core = NAH				
+			}
+			central_valley_area = {
+				limit = {
+					NOT = { is_core = NAH }
+					NOT = { owned_by = NAH }
+					is_empty = no
+				}
+				add_core = NAH				
+			}
+			great_basin_area = {
+				limit = {
+					NOT = { is_core = NAH }
+					NOT = { owned_by = NAH }
+					is_empty = no
+				}
+				add_core = NAH				
+			}
+			utah_area = {
+				limit = {
+					NOT = { is_core = NAH }
+					NOT = { owned_by = NAH }
+					is_empty = no
+				}
+				add_core = NAH				
+			}
+			apacheria_area = {
+				limit = {
+					NOT = { is_core = NAH }
+					NOT = { owned_by = NAH }
+					is_empty = no
+				}
+				add_core = NAH				
+			}
+			northern_california_area = {
+				limit = {
+					NOT = { is_core = NAH }
+					NOT = { owned_by = NAH }
+					is_empty = no
+				}
+				add_core = NAH					
+			}
+			oregon_area = {
+				limit = {
+					NOT = { is_core = NAH }
+					NOT = { owned_by = NAH }
+					is_empty = no
+				}
+				add_core = NAH					
+			}
+			snake_river_area = {
+				limit = {
+					NOT = { is_core = SIO }
+					NOT = { owned_by = SIO }
+					is_empty = no
+				}
+				add_core = SIO				
+			}
+			salish_sea_area = {
+				limit = {
+					NOT = { is_core = SIO }
+					NOT = { owned_by = SIO }
+					is_empty = no
+				}
+				add_core = SIO				
+			}
+			if = {
+				limit = {
+					873  = {
+						NOT = { is_core = SIO }
+						NOT = { owned_by = SIO }
+						is_empty = no
+					}
+				}
+				873 = { add_core = SIO }					
+			}
+			if = {
+				limit = {
+					3050  = {
+						NOT = { is_core = SIO }
+						NOT = { owned_by = SIO }
+						is_empty = no
+					}
+				}
+				3050 = { add_core = SIO }					
+			}
+			if = {
+				limit = {
+					3051  = {
+						NOT = { is_core = SIO }
+						NOT = { owned_by = SIO }
+						is_empty = no
+					}
+				}
+				add_core = SIO					
+			}
+			if = {
+				limit = {
+					3052  = {
+						NOT = { is_core = SIO }
+						NOT = { owned_by = SIO }
+						is_empty = no
+					}
+				}
+				3052 = { add_core = SIO }					
+			}
+			vassalize = SIO
+			vassalize = NAH
+		}	
+	}
+
+	
+	
+	chuli_meiguorenquan = {
+		icon = mission_collect_yasak		
+		required_missions = { 
+			ejia_fena 
+			zhongmei_taipingyang
+		}
+
+		position = 13
+		
+		provinces_to_highlight = {
+			OR = {
+				region = great_plains_region
+				area = arizona_area
+				area = colorado_plateau_area
+				area = new_mexico_area
+				area = central_valley_area
+				area = great_basin_area
+				area = utah_area
+				area = apacheria_area
+				area = northern_california_area
+				area = snake_river_area
+				area = oregon_area
+				area = salish_sea_area
+				province_id = 873 
+				province_id = 3050 
+				province_id = 3051 
+				province_id = 3052
+			}
+			NOT = {
+				owned_by = NAH				
+			}
+		}
+		trigger = {
+			great_plains_region = {
+				type = all
+				owned_by = SIO
+			}
+			snake_river_area = {
+				type = all
+				owned_by = SIO
+			}
+			salish_sea_area= {
+				type = all
+				owned_by = SIO
+			}
+			SIO = { owns = 873 }
+			SIO = { owns = 3050 }
+			SIO = { owns = 3051 }
+			SIO = { owns = 3052 }
+
+			arizona_area = {
+				type = all
+				owned_by = NAH
+			}
+			colorado_plateau_area = {
+				type = all
+				owned_by = NAH
+			}
+			new_mexico_area = {
+				type = all
+				owned_by = NAH
+			}
+			central_valley_area = {
+				type = all
+				owned_by = NAH
+			}
+			great_basin_area = {
+				type = all
+				owned_by = NAH
+			}
+			utah_area = {
+				type = all
+				owned_by = NAH
+			}
+			apacheria_area = {
+				type = all
+				owned_by = NAH
+			}
+			northern_california_area = {
+				type = all
+				owned_by = NAH
+			}
+			oregon_area = {
+				type = all
+				owned_by = NAH
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+			add_trust = {
+				who = NAH
+				value = 30
+				mutual = yes
+			}
+			add_trust = {
+				who = SIO
+				value = 30
+				mutual = yes
+			}
+			california_area = {
+				cede_province = ROOT
+				add_core = ROOT
+				remove_core = USA
+			}
+			2143 = {
+				change_province_name = "Áe—ëqS"
+			}
+			4785 = {
+				change_province_name = "	NÈÖ^"
+			}
+			868 = {
+				change_province_name = "mIgˆw"
+			}
+			2921 = {
+				change_province_name = "1WÌèb"
+			}
+		}
+	}
+	
+}
+
+heiljsf_chinese_PRC_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CHN
+		}
+	}
+	has_country_shield = yes
+
+		
+	
+	shouhui_budonggang = {
+		icon = mission_rb_the_thirteen_colonies	
+		required_missions = { fuyong_menggu }
+		position = 7
+		
+		provinces_to_highlight = {					
+			OR = {
+				province_id = 1850
+				province_id = 3268
+			}
+			NOT = {
+				owned_by = ROOT				
+			}
+		}
+		trigger = {
+			owns = 1850
+			owns = 3268
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			manchuria_region = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT	
+			}
+			tannu_uriankhai_area = { 		
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		
+			}
+			uliastai_area = { 					
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		
+			}
+			1850 = {
+				remove_core = RUS
+				change_province_name = "ÃSŒWPR"
+				rename_capital = "shuangchengzi"
+				add_base_tax = 10
+				add_base_production = 10
+				add_base_manpower = 5
+				add_prosperity = 1
+			}
+			3268 = {
+				remove_core = RUS
+				change_province_name = "wm¬S4T"
+				rename_capital = "haishenwei"
+				add_base_tax = 10
+				add_base_production = 10
+				add_base_manpower = 5
+				add_prosperity = 1
+				
+				add_permanent_province_modifier = {
+					name = center_of_trade_modifier
+					duration = -1
+				}
+			}
+			
+			if = { 
+				limit = {
+					729 = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }						
+					}	
+				}	
+				729 = { add_core = ROOT }
+			}
+		}
+	}
+
+	
+	taipingyang_chukou = {
+		icon = mission_collect_yasak		
+		required_missions = { shouhui_budonggang }
+		position = 8
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4332
+				province_id = 2563
+				province_id = 3269
+				province_id = 2564
+				province_id = 729
+				province_id = 3206
+				province_id = 4345
+				province_id = 1050
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			owns = 4332 
+			owns = 2563 
+			owns = 3269 
+			owns = 2564 
+			owns = 729
+			owns = 3206 
+			owns = 4345 
+			owns = 1050 
+
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			ilan_hala_north_area = {						#NÊu?Î
+				cede_province = ROOT
+				add_core = ROOT
+				remove_core = RUS
+			}
+			ilan_hala_south_area = {
+				cede_province = ROOT
+				add_core = ROOT
+				remove_core = RUS
+			}
+			1032 = {
+				cede_province = ROOT
+				add_core = ROOT
+				remove_core = RUS
+			}
+			729 = {
+				remove_core = RUS
+				change_province_name = "=OõR"
+				rename_capital = "boli"
+				add_base_tax = 10
+				add_base_production = 10
+				add_base_manpower = 5
+				add_prosperity = 1
+			}
+		}
+	}
+	
+
+	gutu_waidongbei = {
+		icon = mission_collect_yasak		
+		required_missions = { taipingyang_chukou }
+		position = 9
+		
+		provinces_to_highlight = {
+			region = manchuria_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			manchuria_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			manchuria_region = {
+				remove_core = RUS
+			}
+			1049 = {
+				change_province_name = "wmpQ·l"
+				rename_capital = "hailanpao"
+				add_base_tax = 10
+				add_base_production = 10
+				add_base_manpower = 5
+				add_prosperity = 1
+			}
+			2561 = {
+				change_province_name = "ô^Wà"
+				rename_capital = "miaojie"
+				add_base_tax = 15
+				add_base_production = 15
+				add_base_manpower = 10
+				add_prosperity = 1
+				center_of_trade = 1
+			}
+		}
+	}
+	
+	#ÑS‹tYSÑv:P°RqS:g
+	ecuador_zhaiwuweiji = {
+		icon = mission_collect_yasak		
+		required_missions = { zhongliu_fenri  }
+		position = 10
+		
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			
+			ECU = {
+					subsidised_percent_amount = 0.8
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+
+					
+			2002 = {
+				cede_province = ROOT
+				add_core = ROOT
+				remove_core = ECU
+			}
+			northern_polynesia_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT		
+			}
+			if = { 
+				limit = {			
+					1235 = { 
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}	
+				1235 = { add_permanent_claim = ROOT }		
+			}
+		}
+	}
+	
+	#-Né*Ys^mbâN
+	zhongmei_taipingyang = {
+		icon = mission_collect_yasak		
+		required_missions = { 
+			fuchi_guba
+			ecuador_zhaiwuweiji 
+			haishi_haopengyou
+		}
+		position = 12
+		
+		provinces_to_highlight = {
+			OR = {
+				area = northern_polynesia_area
+				province_id = 1235	
+				province_id = 492
+				province_id = 493	
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			northern_polynesia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns = 1235
+			owns = 493 
+			CUB = {
+				owns = 492 
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			
+			add_trust = {
+					who = CUB
+					value = 30
+					mutual = yes
+				}
+				CUB = {
+					add_trust = {
+						who = USA
+						value = -30
+						mutual = yes
+					}
+					add_opinion = {
+						who = USA
+						modifier = orthodoxy_denied			
+					}
+				}	
+			add_historical_friend = CUB
+			CUB = {
+				add_historical_friend = CHN
+			}
+
+		}
+	}	
+	
+}
+
+
+heiljsf_chinese_PRC_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CHN
+		}
+	}
+	has_country_shield = yes
+
+
+	liuqiu_fuguo = {
+		icon = mission_arabian_fort		
+		required_missions = { }
+		position = 6
+		
+		provinces_to_highlight = {
+			OR = {		
+				province_id = 1015
+			}
+			NOT = {
+				owned_by = RYU					
+			}
+		}
+		trigger = {
+			RYU = {
+				owns = 1015
+				vassal_of = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_dip_power = 100
+						
+			add_trust = {
+				who = RYU
+				value = 20
+				mutual = yes
+			}
+			hokkaido_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT	
+			}
+			if = {
+				limit = {
+					4301 = { 
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}	
+				4301 = { add_core = ROOT }		
+			}
+			kyushu_area = { 
+				limit = {
+					NOT = { is_core = RYU }
+					NOT = { owned_by = RYU }
+				}
+				add_core = RYU	
+			}
+			northern_kyushu = { 
+				limit = {
+					NOT = { is_core = RYU }
+					NOT = { owned_by = RYU }
+				}
+				add_core = RYU	
+			}
+			shikoku_area = { 
+				limit = {
+					NOT = { is_core = RYU }
+					NOT = { owned_by = RYU }
+				}
+				add_core = RYU	
+			}
+			
+		}
+	}
+	
+
+	zhongliu_fenri = {
+		icon = mission_collect_yasak		
+		required_missions = { 
+			taipingyang_chukou
+			liuqiu_fuguo
+		}
+		position = 9
+		
+		provinces_to_highlight = {					
+			OR = {
+				province_id = 4301
+				area = hokkaido_area
+				area = kyushu_area
+				area = northern_kyushu
+				area = shikoku_area
+			}
+			NOT = {
+				owned_by = ROOT					
+			}
+		}
+		trigger = {
+			owns = 4301
+			hokkaido_area = {
+				type = all
+				owned_by = ROOT
+			}
+			kyushu_area = {
+				type = all
+				owned_by = RYU
+			}
+			northern_kyushu = {
+				type = all
+				owned_by = RYU
+			}
+			shikoku_area = {
+				type = all
+				owned_by = RYU
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			hokkaido_area = {
+				remove_core = JAP
+				remove_core = RUS
+				remove_core = JA1
+			}
+
+		}
+	}
+	
+	
+	fuchi_guba = {
+		icon = mission_collect_yasak		
+		required_missions = { zhongliu_fenri }
+		position = 11
+		
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			CUB = {
+				subsidised_percent_amount = 0.8
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			vassalize = CUB
+			if = { 
+				limit = {
+					492 = { 
+						NOT = { is_core = CUB }
+						NOT = { owned_by = CUB }
+					}
+				}	
+				492 = { add_core = CUB }			
+			}
+			if = { 
+				limit = {
+					493 = { 
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+				}	
+				493 = { add_core = ROOT }			
+			}			
+
+		}
+	}
+}
+
+	
