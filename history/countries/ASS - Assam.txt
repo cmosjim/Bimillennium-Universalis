@@ -1,0 +1,1489 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = assamese
+religion = hinduism
+technology_group = early_chinese
+capital = 566	# Gargaon
+
+750.1.1 = { technology_group = chinese }
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+350.1.1 = {
+	monarch = {
+		name = "Pushya"
+		dynasty = "Varman"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+350.1.1 = {
+	heir = {
+		name = "Samudra"
+		monarch_name = "Samudra"
+		dynasty = "Varman"
+		birth_date = 344.1.1
+		death_date = 398.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+}
+
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+374.1.1 = {
+	monarch = {
+		name = "Samudra"
+		dynasty = "Varman"
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+}
+
+374.1.1 = {
+	heir = {
+		name = "Bala"
+		monarch_name = "Bala"
+		dynasty = "Varman"
+		birth_date = 368.1.1
+		death_date = 422.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+398.1.1 = {
+	monarch = {
+		name = "Bala"
+		dynasty = "Varman"
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+398.1.1 = {
+	heir = {
+		name = "Kalyana"
+		monarch_name = "Kalyana"
+		dynasty = "Varman"
+		birth_date = 392.1.1
+		death_date = 446.1.1
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+422.1.1 = {
+	monarch = {
+		name = "Kalyana"
+		dynasty = "Varman"
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+422.1.1 = {
+	heir = {
+		name = "Ganapati"
+		monarch_name = "Ganapati"
+		dynasty = "Varman"
+		birth_date = 416.1.1
+		death_date = 470.1.1
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+446.1.1 = {
+	monarch = {
+		name = "Ganapati"
+		dynasty = "Varman"
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+446.1.1 = {
+	heir = {
+		name = "Mahendra"
+		monarch_name = "Mahendra"
+		dynasty = "Varman"
+		birth_date = 440.1.1
+		death_date = 494.1.1
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+470.1.1 = {
+	monarch = {
+		name = "Mahendra"
+		dynasty = "Varman"
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+470.1.1 = {
+	heir = {
+		name = "Narayana"
+		monarch_name = "Narayana"
+		dynasty = "Varman"
+		birth_date = 464.1.1
+		death_date = 518.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+494.1.1 = {
+	monarch = {
+		name = "Narayana"
+		dynasty = "Varman"
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+494.1.1 = {
+	heir = {
+		name = "Bhuti"
+		monarch_name = "Bhuti"
+		dynasty = "Varman"
+		birth_date = 488.1.1
+		death_date = 542.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+518.1.1 = {
+	monarch = {
+		name = "Bhuti"
+		dynasty = "Varman"
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+518.1.1 = {
+	heir = {
+		name = "Chandramukha"
+		monarch_name = "Chandramukha"
+		dynasty = "Varman"
+		birth_date = 512.1.1
+		death_date = 566.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+542.1.1 = {
+	monarch = {
+		name = "Chandramukha"
+		dynasty = "Varman"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+542.1.1 = {
+	heir = {
+		name = "Sthita"
+		monarch_name = "Sthita"
+		dynasty = "Varman"
+		birth_date = 536.1.1
+		death_date = 590.1.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+566.1.1 = {
+	monarch = {
+		name = "Sthita"
+		dynasty = "Varman"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+566.1.1 = {
+	heir = {
+		name = "Susthita"
+		monarch_name = "Susthita"
+		dynasty = "Varman"
+		birth_date = 560.1.1
+		death_date = 600.1.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+590.1.1 = {
+	monarch = {
+		name = "Susthita"
+		dynasty = "Varman"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+590.1.1 = {
+	heir = {
+		name = "Bhaskar"
+		monarch_name = "Bhaskar"
+		dynasty = "Varman"
+		birth_date = 570.1.1
+		death_date = 650.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+600.1.1 = {
+	monarch = {
+		name = "Bhaskar"
+		dynasty = "Varman"
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+650.1.1 = {
+	monarch = {
+		name = "Salasthamba"
+		dynasty = "Mlechchha"
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+650.1.1 = {
+	heir = {
+		name = "Vijaya"
+		monarch_name = "Vijaya"
+		dynasty = "Mlechchha"
+		birth_date = 640.1.1
+		death_date = 725.1.1
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+670.1.1 = {
+	monarch = {
+		name = "Vijaya"
+		dynasty = "Mlechchha"
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+695.1.1 = {
+	heir = {
+		name = "Harshadeva"
+		monarch_name = "Harshadeva"
+		dynasty = "Mlechchha"
+		birth_date = 695.1.1
+		death_date = 745.1.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+725.1.1 = {
+	monarch = {
+		name = "Harshadeva"
+		dynasty = "Mlechchha"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+725.1.1 = {
+	heir = {
+		name = "Balavarman"
+		monarch_name = "Balavarman II"
+		dynasty = "Mlechchha"
+		birth_date = 715.1.1
+		death_date = 785.1.1
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}
+
+745.1.1 = {
+	monarch = {
+		name = "Balavarman II"
+		dynasty = "Mlechchha"
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}
+
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+755.1.1 = {
+	heir = {
+		name = "Pralambha"
+		monarch_name = "Pralambha"
+		dynasty = "Mlechchha"
+		birth_date = 755.1.1
+		death_date = 815.1.1
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+785.1.1 = {
+	monarch = {
+		name = "Pralambha"
+		dynasty = "Mlechchha"
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+785.1.1 = {
+	heir = {
+		name = "Harjjaravarman"
+		monarch_name = "Harjjaravarman"
+		dynasty = "Mlechchha"
+		birth_date = 785.1.1
+		death_date = 832.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+815.1.1 = {
+	monarch = {
+		name = "Harjjaravarman"
+		dynasty = "Mlechchha"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+815.1.1 = {
+	heir = {
+		name = "Vanamalavarmadeva"
+		monarch_name = "Vanamalavarmadeva"
+		dynasty = "Mlechchha"
+		birth_date = 802.1.1
+		death_date = 855.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+832.1.1 = {
+	monarch = {
+		name = "Vanamalavarmadeva"
+		dynasty = "Mlechchha"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+832.1.1 = {
+	heir = {
+		name = "Jayamala"
+		monarch_name = "Jayamala"
+		dynasty = "Mlechchha"
+		birth_date = 825.1.1
+		death_date = 860.1.1
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 2
+	}
+}
+
+855.1.1 = {
+	monarch = {
+		name = "Jayamala"
+		dynasty = "Mlechchha"
+		adm = 5
+		dip = 2
+		mil = 2
+	}
+}
+
+855.1.1 = {
+	heir = {
+		name = "Balavarman"
+		monarch_name = "Balavarman III"
+		dynasty = "Mlechchha"
+		birth_date = 830.1.1
+		death_date = 890.1.1
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 3
+	}
+}
+
+860.1.1 = {
+	monarch = {
+		name = "Balavarman III"
+		dynasty = "Mlechchha"
+		adm = 1
+		dip = 5
+		mil = 3
+	}
+}
+
+860.1.1 = {
+	heir = {
+		name = "Tyagasimha"
+		monarch_name = "Tyagasimha"
+		dynasty = "Mlechchha"
+		birth_date = 860.1.1
+		death_date = 900.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+890.1.1 = {
+	monarch = {
+		name = "Tyagasimha"
+		dynasty = "Mlechchha"
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+900.1.1 = {
+	monarch = {
+		name = "Brahma"
+		dynasty = "Pala"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+900.1.1 = {
+	heir = {
+		name = "Ratna"
+		monarch_name = "Ratna"
+		dynasty = "Pala"
+		birth_date = 890.1.1
+		death_date = 960.1.1
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+920.1.1 = {
+	monarch = {
+		name = "Ratna"
+		dynasty = "Pala"
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+930.1.1 = {
+	heir = {
+		name = "Indra"
+		monarch_name = "Indra"
+		dynasty = "Pala"
+		birth_date = 930.1.1
+		death_date = 990.1.1
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 5
+	}
+}
+
+960.1.1 = {
+	monarch = {
+		name = "Indra"
+		dynasty = "Pala"
+		adm = 5
+		dip = 2
+		mil = 5
+	}
+}
+
+960.1.1 = {
+	heir = {
+		name = "Go"
+		monarch_name = "Go"
+		dynasty = "Pala"
+		birth_date = 960.1.1
+		death_date = 1015.1.1
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 2
+	}
+}
+
+990.1.1 = {
+	monarch = {
+		name = "Go"
+		dynasty = "Pala"
+		adm = 1
+		dip = 5
+		mil = 2
+	}
+}
+
+990.1.1 = {
+	heir = {
+		name = "Harsha"
+		monarch_name = "Harsha"
+		dynasty = "Pala"
+		birth_date = 985.1.1
+		death_date = 1035.1.1
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 3
+	}
+}
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1015.1.1 = {
+	monarch = {
+		name = "Harsha"
+		dynasty = "Pala"
+		adm = 1
+		dip = 5
+		mil = 3
+	}
+}
+
+1015.1.1 = {
+	heir = {
+		name = "Dharma"
+		monarch_name = "Dharma"
+		dynasty = "Pala"
+		birth_date = 1005.1.1
+		death_date = 1075.1.1
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 4
+	}
+}
+
+1035.1.1 = {
+	monarch = {
+		name = "Dharma"
+		dynasty = "Pala"
+		adm = 5
+		dip = 1
+		mil = 4
+	}
+}
+
+1045.1.1 = {
+	heir = {
+		name = "Jaya"
+		monarch_name = "Jaya"
+		dynasty = "Pala"
+		birth_date = 1045.1.1
+		death_date = 1100.1.1
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+1075.1.1 = {
+	monarch = {
+		name = "Jaya"
+		dynasty = "Pala"
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+1100.1.1 = {
+	monarch = {
+		name = "Giridhar"
+		dynasty = "Kachari"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1100.1.1 = {
+	heir = {
+		name = "Beeradhwaj"
+		monarch_name = "Beeradhwaj"
+		dynasty = "Kachari"
+		birth_date = 1095.1.1
+		death_date = 1155.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1125.1.1 = {
+	monarch = {
+		name = "Beeradhwaj"
+		dynasty = "Kachari"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1125.1.1 = {
+	heir = {
+		name = "Surajit"
+		monarch_name = "Surajit"
+		dynasty = "Kachari"
+		birth_date = 1125.1.1
+		death_date = 1180.1.1
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1155.1.1 = {
+	monarch = {
+		name = "Surajit"
+		dynasty = "Kachari"
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+1155.1.1 = {
+	heir = {
+		name = "Ohak"
+		monarch_name = "Ohak"
+		dynasty = "Kachari"
+		birth_date = 1150.1.1
+		death_date = 1210.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1180.1.1 = {
+	monarch = {
+		name = "Ohak"
+		dynasty = "Kachari"
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1180.1.1 = {
+	heir = {
+		name = "Makardhwaj"
+		monarch_name = "Makardhwaj"
+		dynasty = "Kachari"
+		birth_date = 1180.1.1
+		death_date = 1228.1.1
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 5
+	}
+}
+
+1210.1.1 = {
+	monarch = {
+		name = "Makardhwaj"
+		dynasty = "Kachari"
+		adm = 5
+		dip = 2
+		mil = 5
+	}
+}
+
+1228.1.1 = {
+	monarch = {
+		name = "Sukapha"
+		dynasty = "Ahom"
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1238.1.1 = {
+	heir = {
+		name = "Suteupha"
+		monarch_name = "Suteupha"
+		dynasty = "Ahom"
+		birth_date = 1238.1.1
+		death_date = 1281.1.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1268.1.1 = {
+	monarch = {
+		name = "Suteupha"
+		dynasty = "Ahom"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1268.1.1 = {
+	heir = {
+		name = "Subinpha"
+		monarch_name = "Subinpha"
+		dynasty = "Ahom"
+		birth_date = 1251.1.1
+		death_date = 1293.1.1
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 3
+	}
+}
+
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1281.1.1 = {
+	monarch = {
+		name = "Ï‚lVvb?–"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 5
+		mil = 3
+	}
+}
+
+1281.1.1 = {
+	heir = {
+		name = "Ï‚KQÈT‰R<hZR‰R"
+		monarch_name = "Ï‚KQÈT‰R<hZR‰R"
+		
+		birth_date = 1263.1.1
+		death_date = 1332.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1293.1.1 = {
+	monarch = {
+		name = "Ï‚KQÈT‰R<hZR‰R"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1302.1.1 = {
+	heir = {
+		name = "Ï‚·^Õl"
+		monarch_name = "Ï‚·^Õl"
+		
+		birth_date = 1302.1.1
+		death_date = 1364.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1332.1.1 = {
+	monarch = {
+		name = "Ï‚·^Õl"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1364.1.1 = {
+	monarch = {
+		name = "(regency council)"
+		#dynasty = " "
+		regent = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1369.1.1 = {
+	monarch = {
+		name = "Ï‚þVÕl"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1376.1.1 = {
+	monarch = {
+		name = "(regency council)"
+		#dynasty = " "
+		regent = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1380.1.1 = {
+	monarch = {
+		name = "v–Il•^"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1389.1.1 = {
+	monarch = {
+		name = "(regency council)"
+		#dynasty = " "
+		regent = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1397.1.1 = {
+  monarch = {
+    name = "Ï‚SVÕl"  # Sudangpha
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 0
+    DIP = 0
+    MIL = 3
+  }
+}
+1397.1.1 = {
+  heir = {
+    name = "Ï‚àzÑS"  # Sujangpha
+    monarch_name = "Ï‚àzÑS"  # Sujangpha
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1370.1.1
+    death_Date = 1422.1.1
+    claim = 95
+    ADM = 1
+    DIP = 1
+    MIL = 1
+  }
+}
+1407.1.1 = {
+  monarch = {
+    name = "Ï‚àzÑS"  # Sujangpha
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 1
+    DIP = 1
+    MIL = 1
+  }
+}
+1407.1.1 = {
+  heir = {
+    name = "Ï‚^ÑS"  # Siphakpha
+    monarch_name = "Ï‚^ÑS"  # Siphakpha
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1400.1.1
+    death_Date = 1439.1.1
+    claim = 95
+    ADM = 2
+    DIP = 0
+    MIL = 2
+  }
+}
+1422.1.1 = {
+  monarch = {
+    name = "Ï‚^ÑS"  # Siphakpha
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 2
+    DIP = 0
+    MIL = 2
+  }
+}
+1422.1.1 = {
+  heir = {
+    name = "Ï‚îhÑS"  # Susenphâ
+    monarch_name = "Ï‚îhÑS"  # Susenphâ
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1420.1.1
+    death_Date = 1488.1.1
+    claim = 95
+    ADM = 4
+    DIP = 2
+    MIL = 3
+  }
+}
+1439.1.1 = {
+  monarch = {
+    name = "Ï‚îhÑS"  # Susenphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 4
+    DIP = 2
+    MIL = 3
+  }
+}
+1450.1.1 = {
+  heir = {
+    name = "Ï‚R`Õl"  # Suhenphâ
+    monarch_name = "Ï‚R`Õl"  # Suhenphâ
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1450.1.1
+    death_Date = 1493.1.1
+    claim = 95
+    ADM = 2
+    DIP = 1
+    MIL = 2
+  }
+}
+1488.1.1 = {
+  monarch = {
+    name = "Ï‚R`Õl"  # Suhenphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 2
+    DIP = 1
+    MIL = 2
+  }
+}
+1493.1.1 = {
+  monarch = {
+    name = "Ï‚s^Õl"  # Supimphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 2
+    DIP = 1
+    MIL = 2
+  }
+}
+1493.1.1 = {
+  heir = {
+    name = "Ï‚÷mÑS"  # Suhungmung
+    monarch_name = "Ï‚÷mÑS"  # Suhungmung
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1490.1.1
+    death_Date = 1539.1.1
+    claim = 95
+    ADM = 0
+    DIP = 0
+    MIL = 1
+  }
+}
+1497.1.1 = {
+  monarch = {
+    name = "Ï‚÷mÑS"  # Suhungmung
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 0
+    DIP = 0
+    MIL = 1
+  }
+}
+1497.1.1 = {
+  heir = {
+    name = "Ï‚¯w™„"  # Suklenmung
+    monarch_name = "Ï‚¯w™„"  # Suklenmung
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1497.1.1
+    death_Date = 1552.1.1
+    claim = 95
+    ADM = 3
+    DIP = 2
+    MIL = 2
+  }
+}
+1539.1.1 = {
+  monarch = {
+    name = "Ï‚¯w™„"  # Suklenmung
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 3
+    DIP = 2
+    MIL = 2
+  }
+}
+1539.1.1 = {
+  heir = {
+    name = "Ï‚IlÕl"  # Sukhamphâ
+    monarch_name = "Ï‚IlÕl"  # Sukhamphâ
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1530.1.1
+    death_Date = 1603.1.1
+    claim = 95
+    ADM = 3
+    DIP = 3
+    MIL = 2
+  }
+}
+1552.1.1 = {
+  monarch = {
+    name = "Ï‚IlÕl"  # Sukhamphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 3
+    DIP = 3
+    MIL = 2
+  }
+}
+1570.1.1 = {
+  heir = {
+    name = "Ï‚îhÕl"  # Susengphâ
+    monarch_name = "Ï‚îhÕl"  # Susengphâ
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1570.1.1
+    death_Date = 1641.1.1
+    claim = 95
+    ADM = 3
+    DIP = 3
+    MIL = 1
+  }
+}
+1603.1.1 = {
+  monarch = {
+    name = "Ï‚îhÕl"  # Susengphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 3
+    DIP = 3
+    MIL = 1
+  }
+}
+1603.1.1 = {
+  heir = {
+    name = "Ï‚pQÕl"  # Suramphâ
+    monarch_name = "Ï‚pQÕl"  # Suramphâ
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1600.1.1
+    death_Date = 1644.1.1
+    claim = 95
+    ADM = 0
+    DIP = 0
+    MIL = 0
+  }
+}
+
+1636.5.15 = { technology_group = old_estern_asian }
+
+1641.1.1 = {
+  monarch = {
+    name = "Ï‚pQÕl"  # Suramphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 0
+    DIP = 0
+    MIL = 0
+  }
+}
+1641.1.1 = {
+  heir = {
+    name = "Ï‚÷^Õl"  # Sutyinphâ
+    monarch_name = "Ï‚÷^Õl"  # Sutyinphâ
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1641.1.1
+    death_Date = 1648.1.1
+    claim = 95
+    ADM = 0
+    DIP = 1
+    MIL = 0
+  }
+}
+1644.1.1 = {
+  monarch = {
+    name = "Ï‚÷^Õl"  # Sutyinphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 0
+    DIP = 1
+    MIL = 0
+  }
+}
+1644.1.1 = {
+  heir = {
+    name = "Ï‚fWÉb"  # Sutamla
+    monarch_name = "Ï‚fWÉb"  # Sutamla
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1640.1.1
+    death_Date = 1663.9.1
+    claim = 95
+    ADM = 0
+    DIP = 0
+    MIL = 2
+  }
+}
+1648.1.1 = {
+  monarch = {
+    name = "Ï‚fWÉb"  # Sutamla
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 0
+    DIP = 0
+    MIL = 2
+  }
+}
+1663.9.1 = {
+  monarch = {
+    name = "Ï‚ž^™„"  # Supungmung
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 2
+    DIP = 2
+    MIL = 2
+  }
+}
+1669.1.1 = {
+  monarch = {
+    name = "Ï‚YrÕl"  # Sunyatphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 3
+    DIP = 1
+    MIL = 2
+  }
+}
+1673.8.1 = {
+  monarch = {
+    name = "Ï‚pQÑS"  # Suklamphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 1
+    DIP = 1
+    MIL = 2
+  }
+}
+1675.1.1 = {
+  monarch = {
+    name = "Ï‚÷m"  # Suhung
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 0
+    DIP = 0
+    MIL = 0
+  }
+}
+1675.6.1 = {
+  monarch = {
+    name = "bôTS"  # Gobar
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 0
+    DIP = 0
+    MIL = 0
+  }
+}
+1676.1.1 = {
+  monarch = {
+    name = "Ï‚¬NÑS"  # Sujinphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 0
+    DIP = 0
+    MIL = 0
+  }
+}
+1677.7.1 = {
+  monarch = {
+    name = "Ï‚YÕl"  # Sudalphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 0
+    DIP = 1
+    MIL = 1
+  }
+}
+1679.1.1 = {
+  monarch = {
+    name = "Ï‚›RÕl"  # Sulikphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 0
+    DIP = 0
+    MIL = 1
+  }
+}
+1681.7.1 = {
+  monarch = {
+    name = "Ï‚^Õl"  # Supatphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 1
+    DIP = 2
+    MIL = 1
+  }
+}
+1681.7.1 = {
+  heir = {
+    name = "Ï‚÷mÕl"  # Sukrungphâ
+    monarch_name = "Ï‚÷mÕl"  # Sukrungphâ
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1660.1.1
+    death_Date = 1714.2.1
+    claim = 95
+    ADM = 2
+    DIP = 2
+    MIL = 2
+  }
+}
+1696.1.1 = {
+  monarch = {
+    name = "Ï‚÷mÕl"  # Sukrungphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 2
+    DIP = 2
+    MIL = 2
+  }
+}
+1696.1.1 = {
+  heir = {
+    name = "Ï‚fWÕl"  # Sutanphâ
+    monarch_name = "Ï‚fWÕl"  # Sutanphâ
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1690.1.1
+    death_Date = 1744.1.1
+    claim = 95
+    ADM = 0
+    DIP = 1
+    MIL = 1
+  }
+}
+1714.2.1 = {
+  monarch = {
+    name = "Ï‚fWÕl"  # Sutanphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 0
+    DIP = 1
+    MIL = 1
+  }
+}
+1714.2.1 = {
+  heir = {
+    name = "Ï‚éZÑS"  # Sunenphâ
+    monarch_name = "Ï‚éZÑS"  # Sunenphâ
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1700.1.1
+    death_Date = 1751.1.1
+    claim = 95
+    ADM = 1
+    DIP = 2
+    MIL = 1
+  }
+}
+1744.1.1 = {
+  monarch = {
+    name = "Ï‚éZÑS"  # Sunenphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 1
+    DIP = 2
+    MIL = 1
+  }
+}
+1744.1.1 = {
+  heir = {
+    name = "Ï‚&OÑS"  # Suramphâ
+    monarch_name = "Ï‚&OÑS"  # Suramphâ
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1740.1.1
+    death_Date = 1769.1.1
+    claim = 95
+    ADM = 1
+    DIP = 2
+    MIL = 2
+  }
+}
+1751.1.1 = {
+  monarch = {
+    name = "Ï‚&OÑS"  # Suramphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 1
+    DIP = 2
+    MIL = 2
+  }
+}
+1751.1.1 = {
+  heir = {
+    name = "Ï‚ËuÑS"  # Suyeophâ
+    monarch_name = "Ï‚ËuÑS"  # Suyeophâ
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1751.1.1
+    death_date = 1780.12.1
+    claim = 95
+    ADM = 1
+    DIP = 2
+    MIL = 2
+  }
+}
+1769.1.1 = {
+  monarch = {
+    name = "Ï‚ËuÑS"  # Suyeophâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 1
+    DIP = 2
+    MIL = 2
+  }
+}
+1769.1.1 = {
+  heir = {
+    name = "Ï‚^ž^Õl"  # Suhitpangphâ
+    monarch_name = "Ï‚^ž^Õl"  # Suhitpangphâ
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1760.1.1
+    death_Date = 1794.12.20
+    claim = 95
+    ADM = 0
+    DIP = 0
+    MIL = 1
+  }
+}
+1780.12.1 = {
+  monarch = {
+    name = "Ï‚^ž^Õl"  # Suhitpangphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 0
+    DIP = 0
+    MIL = 1
+  }
+}
+1780.12.1 = {
+  heir = {
+    name = "Ï‚¦”Õl"  # Suklingphâ
+    monarch_name = "Ï‚¦”Õl"  # Suklingphâ
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1770.1.1
+    death_Date = 1810.1.1
+    claim = 95
+    ADM = 1
+    DIP = 1
+    MIL = 0
+  }
+}
+1794.12.20 = {
+  monarch = {
+    name = "Ï‚¦”Õl"  # Suklingphâ
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 1
+    DIP = 1
+    MIL = 0
+  }
+}
+1794.12.20 = {
+  heir = {
+    name = "Ï‚NÕl"  # Sudinpha
+    monarch_name = "Ï‚NÕl"  # Sudinpha
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1790.1.1
+    death_Date = 1818.1.1
+    claim = 95
+    ADM = 1
+    DIP = 0
+    MIL = 2
+  }
+}
+1810.1.1 = {
+  monarch = {
+    name = "Ï‚NÕl"  # Sudinpha
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 1
+    DIP = 0
+    MIL = 2
+  }
+}
+1810.1.1 = {
+  heir = {
+    name = "nfpQ¾S"  # Brajnatha
+    monarch_name = "nfpQ¾S"  # Brajnatha
+    dynasty = "?–*mÆY"  # Ahom
+    birth_date = 1800.1.1
+    death_Date = 1847.1.1
+    claim = 95
+    ADM = 2
+    DIP = 2
+    MIL = 3
+  }
+}
+1818.1.1 = {
+  monarch = {
+    name = "nfpQ¾S"  # Brajnatha
+    dynasty = "?–*mÆY"  # Ahom
+    ADM = 2
+    DIP = 2
+    MIL = 3
+  }
+}
+
+1920.1.1 = { technology_group = asian }

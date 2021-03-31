@@ -1,0 +1,1526 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 25
+primary_culture = venetian
+religion = hellenism
+add_accepted_culture = greek
+add_accepted_culture = croatian
+technology_group = barbarian
+capital = 112 # Venezia
+historical_friend = KNI
+
+national_focus = DIP
+add_army_professionalism = 0.05
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+400.1.1 = { religion = chalcedonism }
+450.1.1 = { technology_group = western }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+500.1.1 = { 
+	government = republic
+	add_government_reform = venice_merchants_reform
+}
+
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+697.1.1 = {
+	monarch = {
+		name = "›OW TPüeY ?ñ≥u’lØeXb"
+		birth_date = 667.1.1
+		adm = 2
+		dip = 4
+		mil = 0
+	}
+}
+
+717.1.1 = {
+	monarch = {
+		name = "lö^Xm yr†R)RöN˙ã"
+		birth_date = 687.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+726.1.1 = {
+	monarch = {
+		name = "eYS0t O^Xb"
+		birth_date = 696.1.1
+		adm = 4
+		dip = 2
+		mil = 0
+	}
+}
+
+737.1.1 = {
+	monarch = {
+		name = "yreYæèXb O^Xb"
+		birth_date = 707.1.1
+		adm = 4
+		dip = 0
+		mil = 4
+	}
+}
+
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+755.1.1 = {
+	monarch = {
+		name = "†R…b bS^<SeY"
+		birth_date = 725.1.1
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+756.1.1 = {
+	monarch = {
+		name = "YËï<SKQ ´ÉÖQ†RÃëeY"
+		birth_date = 726.1.1
+		adm = 1
+		dip = 0
+		mil = 2
+	}
+}
+
+764.1.1 = {
+	monarch = {
+		name = "€kÃëPüeY †RS‹bS"
+		birth_date = 734.1.1
+		adm = 4
+		dip = 3
+		mil = 0
+	}
+}
+
+787.1.1 = {
+	monarch = {
+		name = "TN·Q<S †RS‹bS"
+		birth_date = 757.1.1
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+804.1.1 = {
+	monarch = {
+		name = "eY^±ÉÃëeY âRyr˙ãeu"
+		birth_date = 774.1.1
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+811.1.1 = {
+	monarch = {
+		name = "≈ñ<Sm ^–câ^GYeY"
+		birth_date = 781.1.1
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+827.1.1 = {
+	monarch = {
+		name = "ÂgÎXN<S ^–câ^GYeY"
+		birth_date = 797.1.1
+		adm = 2
+		dip = 5
+		mil = 1
+	}
+}
+
+829.1.1 = {
+	monarch = {
+		name = "TN·Q<S I ^–câ^GYeY"
+		birth_date = 799.1.1
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+836.1.1 = {
+	monarch = {
+		name = "|VóVW yr…bY<S—y"
+		birth_date = 806.1.1
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+864.1.1 = {
+	monarch = {
+		name = "eYS0t I ^–câ^GYeY"
+		birth_date = 834.1.1
+		adm = 1
+		dip = 2
+		mil = 5
+	}
+}
+
+867.1.1 = { religion = catholic }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+881.1.1 = {
+	monarch = {
+		name = "TN·Q<S II ^–câ^GYeY"
+		birth_date = 851.1.1
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+}
+
+887.1.1 = {
+	monarch = {
+		name = "|VóVW I NWÍèöN˙ã"
+		birth_date = 842.1.1
+		adm = 1
+		dip = 4
+		mil = 5
+	}
+}
+
+887.9.18 = {
+	monarch = {
+		name = "|VóVW yrÃë^˙ã"
+		birth_date = 857.1.1
+		adm = 2
+		dip = 3
+		mil = 0
+	}
+}
+
+912.1.1 = {
+	monarch = {
+		name = "eYS0t II ^–câ^GYeY"
+		birth_date = 882.1.1
+		adm = 3
+		dip = 0
+		mil = 0
+	}
+}
+
+932.1.1 = {
+	monarch = {
+		name = "Æv6wyrW II NWÍèöN˙ã"
+		birth_date = 872.1.1
+		adm = 1
+		dip = 5
+		mil = 1
+	}
+}
+
+939.1.1 = {
+	monarch = {
+		name = "|VóVW ^yrÃëâ^PüeY"
+		birth_date = 909.1.1
+		adm = 3
+		dip = 0
+		mil = 2
+	}
+}
+
+942.1.1 = {
+	monarch = {
+		name = "Æv6wyrW III NWÍèöN˙ã"
+		birth_date = 912.1.1
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+959.1.1 = {
+	monarch = {
+		name = "Æv6wyrW IV NWÍèöN˙ã"
+		birth_date = 929.1.1
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+976.1.1 = {
+	monarch = {
+		name = "|VóVW I eYSiçeYm"
+		birth_date = 928.1.1
+		adm = 0
+		dip = 3
+		mil = 5
+	}
+}
+
+978.1.1 = {
+	monarch = {
+		name = "Ùuæè“R NWÍèöN˙ã"
+		birth_date = 966.1.1
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+979.1.1 = {
+	monarch = {
+		name = "yrÃë^˙ã Öh´É"
+		birth_date = 949.1.1
+		adm = 1
+		dip = 4
+		mil = 4
+	}
+}
+
+991.1.1 = {
+	monarch = {
+		name = "|VóVW II eY^Xm"
+		birth_date = 961.1.1
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}
+
+1009.1.1 = {
+	monarch = {
+		name = "eYXb eY^Xm"
+		birth_date = 992.1.1
+		adm = 0
+		dip = 3
+		mil = 5
+	}
+}
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1026.1.1 = {
+	monarch = {
+		name = "|VóVW ÙTZS…b˙ã"
+		birth_date = 996.1.1
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+1032.1.1 = {
+	monarch = {
+		name = "YÖh<S—y V…bÌs<S—y"
+		birth_date = 1002.1.1
+		adm = 5
+		dip = 0
+		mil = 1
+	}
+}
+
+1043.1.1 = {
+	monarch = {
+		name = "YÖh<S—y I TRTXÃë<S"
+		birth_date = 1013.1.1
+		adm = 4
+		dip = 0
+		mil = 4
+	}
+}
+
+1071.1.1 = {
+	monarch = {
+		name = "YÖh<S—y ^XSÉl"
+		birth_date = 1041.1.1
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1084.1.1 = {
+	monarch = {
+		name = "ÙuTX±É ’l)RW"
+		birth_date = 1054.1.1
+		adm = 4
+		dip = 3
+		mil = 0
+	}
+}
+
+1095.1.1 = {
+	monarch = {
+		name = "ÙuY I s|GkS"
+		birth_date = 1065.1.1
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+}
+
+1102.1.1 = {
+	monarch = {
+		name = "eY∑V…biO ’l)RW"
+		birth_date = 1072.1.1
+		adm = 5
+		dip = 3
+		mil = 0
+	}
+}
+
+1117.1.1 = {
+	monarch = {
+		name = "YÖh<S—y s|GkS"
+		birth_date = 1087.1.1
+		adm = 3
+		dip = 3
+		mil = 0
+	}
+}
+
+1130.1.1 = {
+	monarch = {
+		name = "|VóVW ‚lpQ<S"
+		birth_date = 1100.1.1
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1148.1.1 = {
+	monarch = {
+		name = "YÖh<S—y ´ÉWâ<S"
+		birth_date = 961.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1156.2.1 = {
+	monarch = {
+		name = "ÙuY II s|GkS"
+		birth_date = 1126.1.1
+		adm = 5
+		dip = 2
+		mil = 2
+	}
+}
+
+1172.1.1 = {
+	monarch = {
+		name = "^XÙTØeÇÑâR PüöN<S"
+		birth_date = 1142.1.1
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+1178.1.1 = {
+	monarch = {
+		name = "eYÃëeY löØeXbÆv6wW"
+		birth_date = 1148.1.1
+		adm = 5
+		dip = 1
+		mil = 1
+	}
+}
+
+1192.1.1 = {
+	monarch = {
+		name = "i`Ãë—y 9NYm"
+		birth_date = 1162.1.1
+		adm = 0
+		dip = 4
+		mil = 3
+	}
+}
+
+1205.6.21 = {
+	monarch = {
+		name = "|VóVW PüöN<S"
+		birth_date = 1175.1.1
+		adm = 0
+		dip = 0
+		mil = 4
+	}
+}
+
+1229.3.6 = {
+	monarch = {
+		name = "»T—y‚l ÇÑ√W‚lW"
+		birth_date = 1199.1.1
+		adm = 5
+		dip = 2
+		mil = 0
+	}
+}
+
+1249.5.2 = {
+	monarch = {
+		name = "löÃë˙ã ´ÉWâ<S"
+		birth_date = 1219.1.1
+		adm = 5
+		dip = 3
+		mil = 1
+	}
+}
+
+1253.1.1 = {
+	monarch = {
+		name = "˜ñÖmW ùÇ˙ã"
+		birth_date = 1223.1.1
+		adm = 0
+		dip = 3
+		mil = 2
+	}
+}
+
+1268.7.7 = {
+	monarch = {
+		name = "W&O0t ÇÑ√W‚lW"
+		birth_date = 1238.1.1
+		adm = 2
+		dip = 5
+		mil = 4
+	}
+}
+
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1275.8.15 = {
+	monarch = {
+		name = "»T—y‚l TRTXÃë<S"
+		birth_date = 1245.1.1
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1280.3.31 = {
+	monarch = {
+		name = "TNN<S 9NYm"
+		birth_date = 1250.1.1
+		adm = 2
+		dip = 5
+		mil = 1
+	}
+}
+
+1289.11.2 = {
+	monarch = {
+		name = "|VóVW <h…b<SÂT"
+		birth_date = 1251.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1311.8.13 = {
+	monarch = {
+		name = "löÃë˙ã POSPü"
+		birth_date = 1231.1.1
+		adm = 2
+		dip = 4
+		mil = 0
+	}
+}
+
+1312.7.3 = {
+	monarch = {
+		name = "TNN<S 0tpQPO"
+		birth_date = 1240.1.1
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1328.12.31 = {
+	monarch = {
+		name = "VgRØe—y 9NYm"
+		birth_date = 1298.1.1
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+
+1339.11.7 = {
+	monarch = {
+		name = "ÙTXbmÖheY <h…b<SÂT"
+		birth_date = 1260.1.1
+		adm = 0
+		dip = 2
+		mil = 4
+	}
+}
+
+1342.12.28 = {
+	monarch = {
+		name = "âR∑VÃëöN 9NYm"
+		birth_date = 1306.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+1354.9.7 = {
+	monarch = {
+		name = "löÃë˙ã ’l)RW"
+		birth_date = 1285.1.1
+		adm = 2
+		dip = 0
+		mil = 4
+	}
+}
+
+1355.4.17 = {
+	monarch = {
+		name = "TNN<S <h…b<SÂT"
+		birth_date = 1325.1.1
+		adm = 0
+		dip = 5
+		mil = 5
+	}
+}
+
+1356.8.8 = {
+	monarch = {
+		name = "TNN<S YS¨Ç"
+		birth_date = 1326.1.1
+		adm = 5
+		dip = 0
+		mil = 0
+	}
+}
+
+1361.7.12 = {
+	monarch = {
+		name = "W&O0t ^XSâ"
+		birth_date = 1310.1.1
+		adm = 5
+		dip = 1
+		mil = 0
+	}
+}
+
+1365.7.18 = {
+	monarch = {
+		name = "löÔS —yS≥uW"
+		birth_date = 1286.1.1
+		adm = 1
+		dip = 3
+		mil = 0
+	}
+}
+
+1368.1.13 = {
+	monarch = {
+		name = "âR∑VÃëöN TRTXÃë<S"
+		birth_date = 1338.1.1
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+
+1380.1.1 = {
+  leader = {
+    name = "aSm ˝l˙ã"  # Carlo ùÇ˙ã
+    type = admiral
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1404.1.1
+  }
+}
+1382.1.1 = {
+  monarch = {
+    name = "âRXb<SeY ÊóÖmS"  # Antonio Venier
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1400.1.1 = {
+  monarch = {
+    name = "s|ÔQ±É Øel˙ã"  # s|GkS Steno
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+1414.1.1 = {
+  monarch = {
+    name = "Xblö0t ´É^X<S<h"  # Tomasso Mocenigo
+    adm = 2
+    dip = 1
+    mil = 0
+  }
+}
+1416.1.1 = {
+  leader = {
+    name = "|VóVW m˜ñ9N"  # |VóVW Loredan
+    type = admiral
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1439.1.1
+  }
+}
+1423.4.5 = {
+  monarch = {
+    name = "VgRØe—y èyØeaSÃë"  # VgRØe—y Foscari
+    birth_date = 1373.1.1
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+1425.1.1 = {
+  leader = {
+    name = "VgRØe—y æè aSSlö<SeY…b"  # VgRØe—y da Carmagnola
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1432.5.5
+  }
+}
+1438.1.1 = {
+  leader = {
+    name = "√W…bØe´É"  # Erasmo Gattamelata
+    type = admiral
+    fire = 4
+    shock = 4
+    manuever = 3
+    siege = 0
+    death_date = 1443.1.1
+  }
+}
+1451.1.1 = {
+  leader = {
+    name = "—y±ÉeY<S"  # Colleoni
+    type = general
+    fire = 5
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1475.11.2
+  }
+}
+1453.1.1 = {
+  leader = {
+    name = "G m˜ñ9N"  # G. Loredan
+    type = admiral
+    fire = 3
+    shock = 4
+    manuever = 4
+    siege = 0
+    death_date = 1467.1.1
+  }
+}
+1454.1.1 = {
+  leader = {
+    name = "aS≥uS"  # Canal
+    type = admiral
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1471.1.1
+  }
+}
+1457.10.24 = {
+  monarch = {
+    name = "^Øe8YÃë löÃëÆv√WW"  # Pasquale Malipiero
+    birth_date = 1392.1.1
+    adm = 2
+    dip = 2
+    mil = 4
+  }
+}
+1462.5.13 = {
+  monarch = {
+    name = "KQÃëØeXbiOW ´Ém"  # Cristoforo Moro
+    birth_date = 1390.1.1
+    adm = 2
+    dip = 2
+    mil = 4
+  }
+}
+1470.1.1 = {
+  leader = {
+    name = "´É^X<S<h"  # Moceningo
+    type = general
+    fire = 5
+    shock = 4
+    manuever = 5
+    siege = 0
+    death_date = 1476.1.1
+  }
+}
+1471.11.3 = {
+  monarch = {
+    name = "<SKQW yrpQ"  # NicolÚ Tron
+    birth_date = 1399.1.1
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1473.7.29 = {
+  monarch = {
+    name = "<SKQW löSRW"  # NicolÚ Marcello
+    birth_date = 1399.1.1
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+1474.12.2 = {
+  monarch = {
+    name = "|VóVW ´É^X<S<h"  # |VóVW Mocenigo
+    birth_date = 1406.1.1
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1476.2.22 = {
+  monarch = {
+    name = "âR∑VÃëöN áe∑V…bOe"  # âR∑VÃëöN Vendamin
+    birth_date = 1393.1.1
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+1478.5.7 = {
+  monarch = {
+    name = "TN·Q<S ´É^X<S<h"  # TNN<S Mocenigo
+    birth_date = 1409.1.1
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1485.11.15 = {
+  monarch = {
+    name = "löÔS ÙTÙTÃë<h"  # löÔS Barbango
+    birth_date = 1413.1.1
+    adm = 0
+    dip = 0
+    mil = 2
+  }
+}
+1486.8.15 = {
+  monarch = {
+    name = "?ñ<hØe–c˙ã ÙTÙTÃë<h"  # Agostino Barbango
+    birth_date = 1420.1.1
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+1490.1.1 = {
+  leader = {
+    name = "R(Ñ˜ñ ‚l	TöN"  # C. Borgia
+    type = general
+    fire = 2
+    shock = 1
+    manuever = 2
+    siege = 2
+    death_date = 1507.3.12
+  }
+}
+1495.1.1 = {
+  leader = {
+    name = "âR∑V»pöN m˜ñ9N"  # âR∑VÃëöN Loredan
+    type = admiral
+    fire = 2
+    shock = 1
+    manuever = 3
+    siege = 1
+    death_date = 1505.1.1
+  }
+}
+1498.1.1 = {
+  leader = {
+    name = "áeÓh—y"  # Vincenco ‚lpQ<S
+    type = admiral
+    fire = 2
+    shock = 1
+    manuever = 2
+    siege = 1
+    death_date = 1508.1.1
+  }
+}
+1500.1.1 = {
+  leader = {
+    name = "<S—yW ÆvÇÑ)RöN˙ã"  # Nicolo Pitigliano
+    type = general
+    fire = 1
+    shock = 1
+    manuever = 1
+    siege = 2
+    death_date = 1510.1.1
+  }
+}
+1500.1.1 = {
+  leader = {
+    name = "ÙTSXbmÖheY ∑V ?ñÙuöN˙ã"  # ÙTXbmÖheY d'Alviano
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 1
+    death_date = 1515.10.1
+  }
+}
+1501.9.21 = {
+  monarch = {
+    name = "±ÉeY≥uSY m˜ñæè˙ã"  # Leonardo Loredano
+    birth_date = 1436.11.16
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1510.1.1 = {
+  leader = {
+    name = "bSTN löSÊóPO"  # Lucio Malvezzo
+    type = general
+    fire = 2
+    shock = 1
+    manuever = 1
+    siege = 1
+    death_date = 1515.1.1
+  }
+}
+1510.1.1 = {
+  leader = {
+    name = "<hÃëlö<S"  # Grimani
+    type = admiral
+    fire = 4
+    shock = 4
+    manuever = 4
+    siege = 0
+    death_date = 1545.1.1
+  }
+}
+1510.1.1 = {
+  leader = {
+    name = "mÖh)R<S"  # Lomellini
+    type = admiral
+    fire = 2
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1575.1.1
+  }
+}
+1521.6.23 = {
+  monarch = {
+    name = "âRXb<SeY <hÃë¸f<S"  # Antonio Grimani
+    birth_date = 1434.12.28
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+1523.5.8 = {
+  monarch = {
+    name = "âR∑VÃëöN <hÃë–c"  # âR∑VÃëöN Gritti
+    birth_date = 1455.1.1
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1539.12.30 = {
+  monarch = {
+    name = "|VóVW pQY"  # |VóVW Lando
+    birth_date = 1462.1.1
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1540.1.1 = {
+  leader = {
+    name = "±ÉeY≥uSY èyØe—ym"  # Leonardo Foscolo
+    type = general
+    fire = 3
+    shock = 2
+    manuever = 2
+    siege = 1
+    death_date = 1550.1.1
+  }
+}
+1545.11.12 = {
+  monarch = {
+    name = "VgRØe—y Y≥uXb"  # Franco Donato
+    birth_date = 1468.1.1
+    adm = 4
+    dip = 4
+    mil = 1
+  }
+}
+1550.1.1 = {
+  leader = {
+    name = "ÊóÖmW"  # Veniero
+    type = admiral
+    fire = 3
+    shock = 4
+    manuever = 5
+    siege = 0
+    death_date = 1578.3.3
+  }
+}
+1553.5.24 = {
+  monarch = {
+    name = "VgRØe—y Ùu<S√W"  # VgRØe—y Venier
+    birth_date = 1489.1.1
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+1556.6.3 = {
+  monarch = {
+    name = "W&OPO nf)R'k)R"  # Laurenti Priuli
+    birth_date = 1489.1.1
+    adm = 6
+    dip = 3
+    mil = 1
+  }
+}
+1559.8.18 = {
+  monarch = {
+    name = "	TW…b´É nf)R'k)R"  # Girolamo Priuli
+    birth_date = 1486.1.1
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1560.1.1 = {
+  leader = {
+    name = "ÙTSÙTÃëb"  # Barbarigo
+    type = admiral
+    fire = 4
+    shock = 4
+    manuever = 2
+    siege = 0
+    death_date = 1580.1.1
+  }
+}
+1560.1.1 = {
+  leader = {
+    name = "NYÃë<S"  # Quirini
+    type = admiral
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1600.1.1
+  }
+}
+1565.1.1 = {
+  leader = {
+    name = "löKQW âRN<SeY ^…b†RN"  # Macro Antonio Bragadin
+    type = general
+    fire = 4
+    shock = 4
+    manuever = 1
+    siege = 3
+    death_date = 1571.8.17
+  }
+}
+1567.11.5 = {
+  monarch = {
+    name = "|VóVW m˜ñ9N"  # |VóVW Loredan
+    birth_date = 1482.1.1
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1570.1.1 = {
+  leader = {
+    name = "1g`ÇÑ≥u<S"  # Giustinani
+    type = admiral
+    fire = 3
+    shock = 4
+    manuever = 2
+    siege = 0
+    death_date = 1610.1.1
+  }
+}
+1570.5.6 = {
+  monarch = {
+    name = "?ñSÊó^X ´É^X<S<h I"  # Alvise Mocenigo I
+    birth_date = 1507.10.26
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1577.6.5 = {
+  monarch = {
+    name = "^XÙTØeNl Ùu<S√W"  # ^XÙTØeÇÑâR Venier
+    birth_date = 1496.1.1
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1578.3.4 = {
+  monarch = {
+    name = "<SKQW æè ÏÑyr"  # NicolÛ da Ponte
+    birth_date = 1491.1.15
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1585.1.1 = {
+  leader = {
+    name = "˝l˙ã"  # ùÇ˙ã
+    type = admiral
+    fire = 3
+    shock = 4
+    manuever = 4
+    siege = 0
+    death_date = 1600.1.1
+  }
+}
+1585.7.30 = {
+  monarch = {
+    name = "^ØeaSS â—y≥u"  # Pasquale Cicogna
+    birth_date = 1509.5.27
+    adm = 4
+    dip = 0
+    mil = 2
+  }
+}
+1595.4.5 = {
+  monarch = {
+    name = "löÃë˙ã <hÃë¸f<S"  # löÃë˙ã Grimani
+    birth_date = 1532.7.1
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1605.12.26 = {
+  monarch = {
+    name = "±ÉeY≥uSY m˜ñæè˙ã II"  # Leonardo Loredano II
+    birth_date = 1536.2.12
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1612.7.17 = {
+  monarch = {
+    name = "löSNWY<SeY Öh´É"  # löÔS Memo
+    birth_date = 1536.11.11
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1615.1.1 = {
+  leader = {
+    name = "´ÉR<Sb"  # Mocenigo
+    type = admiral
+    fire = 2
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1650.1.1
+  }
+}
+1615.10.30 = {
+  monarch = {
+    name = "TN·Q<S ,gZS"  # TNN<S Bembo
+    birth_date = 1543.8.21
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+1618.3.17 = {
+  monarch = {
+    name = "<SKQW Y≥uXb"  # NicolÛ Donato
+    birth_date = 1539.1.28
+    adm = 4
+    dip = 2
+    mil = 0
+  }
+}
+1618.5.10 = {
+  monarch = {
+    name = "âRXb<SeY nf)R'k)R"  # Antonio Priulo
+    birth_date = 1548.5.10
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+1623.8.13 = {
+  monarch = {
+    name = "iOgÂT TRTXÃë<S"  # Franco TRTXÃë<S
+    birth_date = 1556.11.28
+    adm = 1
+    dip = 4
+    mil = 4
+  }
+}
+1624.12.7 = {
+  monarch = {
+    name = "TN·Q<S —y±êW I"  # TNN<S Cornari I
+    birth_date = 1551.11.11
+    adm = 0
+    dip = 3
+    mil = 3
+  }
+}
+1629.12.24 = {
+  monarch = {
+    name = "<S—ym TRTXÃë<S"  # NicolÛ TRTXÃë<S
+    birth_date = 1553.9.26
+    adm = 0
+    dip = 2
+    mil = 4
+  }
+}
+1631.4.3 = {
+  monarch = {
+    name = "VgRØe—y √WÃëPO"  # VgRØe—y Erizzo
+    birth_date = 1566.2.18
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1646.1.1 = {
+  leader = {
+    name = "m&OPO löSRm"  # W&O0t Marcello
+    type = admiral
+    fire = 2
+    shock = 1
+    manuever = 2
+    siege = 1
+    death_date = 1656.1.1
+  }
+}
+1646.1.4 = {
+  monarch = {
+    name = "VgRØe—y ®Xóg"  # VgRØe—y Molino
+    birth_date = 1575.4.21
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1655.1.1 = {
+  leader = {
+    name = "VgRØe—y"  # Fransesco ´ÉWâ<S
+    type = general
+    fire = 5
+    shock = 4
+    manuever = 4
+    siege = 2
+    death_date = 1694.1.7
+  }
+}
+1655.2.26 = {
+  monarch = {
+    name = "aSm TRTXÃë<S"  # Carlo TRTXÃë<S
+    birth_date = 1580.7.5
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1656.5.2 = {
+  monarch = {
+    name = "VgRØe—y —y±êW"  # VgRØe—y Cornello
+    birth_date = 1585.3.6
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+1656.6.6 = {
+  monarch = {
+    name = "çS˛VTN ÊtRW"  # Bertuccio Valiero
+    birth_date = 1596.7.1
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1658.3.30 = {
+  monarch = {
+    name = "TN·Q<S iO(ÑW"  # TNN<S Pesaro
+    birth_date = 1589.9.1
+    adm = 0
+    dip = 1
+    mil = 1
+  }
+}
+1659.9.30 = {
+  monarch = {
+    name = "YÖh<S—y II TRTXÃë<S"  # YÖh<S—y II TRTXÃë<S
+    birth_date = 1585.1.28
+    adm = 1
+    dip = 3
+    mil = 4
+  }
+}
+1670.1.1 = {
+  leader = {
+    name = "ÃëÊt"  # Riva
+    type = admiral
+    fire = 4
+    shock = 5
+    manuever = 3
+    siege = 0
+    death_date = 1720.1.1
+  }
+}
+1675.1.27 = {
+  monarch = {
+    name = "<SKQW (Ñ<h±ÉY"  # NicolÛ Sagredo
+    birth_date = 1606.12.8
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1676.8.15 = {
+  monarch = {
+    name = "?ñSÙu˝l TRTXÃë<S"  # Alvise TRTXÃë<S
+    birth_date = 1601.10.24
+    adm = 1
+    dip = 4
+    mil = 2
+  }
+}
+1683.1.1 = {
+  leader = {
+    name = "	TW…b´É —yS≥uW"  # Girolamo —yS≥uW
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 2
+    siege = 1
+    death_date = 1693.1.1
+  }
+}
+1684.1.16 = {
+  monarch = {
+    name = "löSNWY<SeY 1gØeÇÑ<SöN<S"  # Marcantonio Giustiniani
+    birth_date = 1619.3.2
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1688.3.24 = {
+  monarch = {
+    name = "VgRØe—y ´ÉWâ<S"  # VgRØe—y ´ÉWâ<S
+    birth_date = 1619.2.25
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+1694.1.7 = {
+  monarch = {
+    name = "âSÙuØeyr ÊtRW"  # Silvestro Valiero
+    birth_date = 1630.3.28
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1697.1.1 = {
+  leader = {
+    name = "öNÜSQh∑VW ´Éóg"  # Alessandro Molin
+    type = admiral
+    fire = 3
+    shock = 1
+    manuever = 2
+    siege = 1
+    death_date = 1707.1.1
+  }
+}
+1700.7.8 = {
+  monarch = {
+    name = "?ñSÊó^X II ´É^X<S<h"  # Alvise II Mocenigo
+    birth_date = 1628.1.3
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1707.1.1 = {
+  leader = {
+    name = "bSYÙu—y VpQ	T<S"  # Ludovico Flangini
+    type = admiral
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 1
+    death_date = 1717.1.1
+  }
+}
+1709.5.7 = {
+  monarch = {
+    name = "TN·Q<S —y±êW II"  # TNN<S —yS≥uW II
+    birth_date = 1647.8.4
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1710.1.1 = {
+  leader = {
+    name = "âR∑V»pöN Æv(Ñ<S"  # âR∑VÃëöN Pisani
+    type = general
+    fire = 1
+    shock = 1
+    manuever = 1
+    siege = 1
+    death_date = 1720.1.1
+  }
+}
+1710.1.1 = {
+  leader = {
+    name = "?ñSÊó^X"  # Alvise Mocenigo
+    type = general
+    fire = 1
+    shock = 1
+    manuever = 2
+    siege = 1
+    death_date = 1720.1.1
+  }
+}
+1715.1.1 = {
+  leader = {
+    name = "¶u ØQ ∑VÇ&Oç<h"  # Johan von der Schulenberg
+    type = general
+    fire = 2
+    shock = 1
+    manuever = 2
+    siege = 3
+    death_date = 1720.1.1
+  }
+}
+1722.8.13 = {
+  monarch = {
+    name = "?ñSÊó^X III ´É^X<S<h"  # Alvise III Mocenigo
+    birth_date = 1662.8.29
+    adm = 1
+    dip = 4
+    mil = 2
+  }
+}
+1732.5.22 = {
+  monarch = {
+    name = "aSm ÅúPü<S"  # Carlo Ruzzini
+    birth_date = 1653.11.11
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+1735.1.6 = {
+  monarch = {
+    name = "?ñSÊó^X Æv(Ñ<S"  # Alvise Pisani
+    birth_date = 1664.1.1
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+1741.6.18 = {
+  monarch = {
+    name = "|VóVW <hÃë¸f<S"  # |VóVW Grimani
+    birth_date = 1677.10.5
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+1752.3.8 = {
+  monarch = {
+    name = "VgRØe—y m˜ñ9N"  # VgRØe—y Loredan
+    birth_date = 1685.2.9
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1762.5.20 = {
+  monarch = {
+    name = "löÔS èyØeaSÃë<S"  # löÔS Foscarini
+    birth_date = 1696.2.4
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+1763.3.30 = {
+  monarch = {
+    name = "?ñSÊó^X IV ´É^X<S<h"  # Alvise IV Mocenigo
+    birth_date = 1701.5.19
+    adm = 2
+    dip = 4
+    mil = 1
+  }
+}
+1775.1.1 = {
+  leader = {
+    name = "âRpgm √W´É"  # Angelo Emo
+    type = admiral
+    fire = 2
+    shock = 2
+    manuever = 1
+    siege = 1
+    death_date = 1792.1.1
+  }
+}
+1778.12.30 = {
+  monarch = {
+    name = "›OW ˜ñ<SS"  # Paulo Rainiero
+    birth_date = 1710.11.21
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1789.2.17 = {
+  monarch = {
+    name = "bSYÙu—y löÅR"  # Ludovico Manin
+    birth_date = 1725.5.14
+    adm = 1
+    dip = 5
+    mil = 1
+  }
+}

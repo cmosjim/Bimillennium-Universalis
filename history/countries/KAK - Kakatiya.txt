@@ -1,0 +1,103 @@
+government = monarchy
+add_government_reform = nayankara_reform
+primary_culture = telegu
+religion = hinduism
+technology_group = early_indian
+capital = 542
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1075.1.1 = {
+  monarch = {
+    name = "ŒTXŒNN"  # Beta II
+    dynasty = "aSaSĞcšN"  # Kakatiya
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+1110.1.1 = {
+  monarch = {
+    name = "nf…ÉbŒNN"  # Prola II
+    dynasty = "aSaSĞcšN"  # Kakatiya
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1158.1.1 = {
+  monarch = {
+    name = "nfÉbTX^o›·VÉbNN"  # Prataparudra I
+    dynasty = "aSaSĞcšN"  # Kakatiya
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+1195.1.1 = {
+  monarch = {
+    name = "¬™ÈT·VO"  # Mahadeva
+    dynasty = "aSaSĞcšN"  # Kakatiya
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1199.1.1 = {
+  monarch = {
+    name = " Rt^‚„·Væt"  # Ganapati Deva
+    dynasty = "aSaSĞcšN"  # Kakatiya
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1262.1.1 = {
+  monarch = {
+    name = "o›·VÉbjt·Væt"  # Rudramadevi
+    dynasty = "aSaSĞcšN"  # Kakatiya
+    adm = 5
+    dip = 3
+    mil = 3
+    female = yes
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1296.1.1 = {
+  monarch = {
+    name = "nfÉbTX^o›·VÉb"  # Prataparudra II
+    dynasty = "aSaSĞcšN"  # Kakatiya
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}

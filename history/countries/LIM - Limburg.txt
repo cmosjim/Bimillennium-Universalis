@@ -1,0 +1,119 @@
+government = monarchy
+add_government_reform = feudalism_reform
+mercantilism = 0.1
+technology_group = western
+religion = catholic
+primary_culture = flemish
+capital = 1742
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1065.1.1 = {
+  monarch = {
+    name = "ƒlS&O I"  # Waleran I
+    dynasty = "ƒ ·V ?–‰v"  # van de Ardennen
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1082.6.1 = {
+  monarch = {
+    name = "¨N)R I"  # Henry I
+    dynasty = "ƒ ·V ?–‰v"  # van de Ardennen
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1119.6.1 = {
+  monarch = {
+    name = "ƒlS&O II"  # Waleran II
+    dynasty = "ƒ ·V ?–‰v"  # van de Ardennen
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1139.6.1 = {
+  monarch = {
+    name = "¨N)R II"  # Henry II
+    dynasty = "ƒ ·V ?–‰v"  # van de Ardennen
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1170.6.1 = {
+  monarch = {
+    name = "¨N)R III"  # Henry III
+    dynasty = "ƒ ·V ?–‰v"  # van de Ardennen
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1221.6.1 = {
+  monarch = {
+    name = "ƒlS&O III"  # Waleran III
+    dynasty = "ƒ ·V ?–‰v"  # van de Ardennen
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1226.6.1 = {
+  monarch = {
+    name = "¨N)R IV"  # Henry IV
+    dynasty = "ƒ ·V ?–‰v"  # van de Ardennen
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1247.6.1 = {
+  monarch = {
+    name = "ƒlS&O IV"  # Waleran IV
+    dynasty = "ƒ ·V ?–‰v"  # van de Ardennen
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1279.1.1 = {
+  monarch = {
+    name = "ÃW’‚ R·V"  # Ermengarde
+    dynasty = "ƒ ·V ?–‰v"  # van de Ardennen
+    adm = 3
+    dip = 3
+    mil = 3
+    female = yes
+  }
+}

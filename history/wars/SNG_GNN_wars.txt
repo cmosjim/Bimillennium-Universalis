@@ -1,0 +1,63 @@
+
+name = "‹RÑ‘b‰N"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 1821
+}
+
+
+#1125.9.1 = {
+#	add_attacker = GNN
+#	add_defender = SNG
+#}
+#
+#1127.3.1 = {
+#	rem_attacker = GNN
+#	rem_defender = SNG
+#}
+
+1127.5.1 = {
+	add_attacker = GNN
+	add_defender = SNG
+}
+
+1130.1.1 = {
+	rem_attacker = GNN
+	rem_defender = SNG
+}
+
+1133.1.1 = {
+	add_attacker = GNN
+	add_attacker = DQ3
+	add_defender = SNG
+}
+
+1137.1.1 = {
+	rem_attacker = GNN
+	rem_attacker = DQ3
+	rem_defender = SNG
+}
+
+
+1140.1.1 = {
+	add_attacker = GNN
+	add_defender = SNG
+}
+
+1141.1.1 = {
+	rem_attacker = GNN
+	rem_defender = SNG
+}
+
+
+1161.1.1 = {
+	add_attacker = GNN
+	add_defender = SNG
+}
+
+1161.6.1 = {
+	rem_attacker = GNN
+	rem_defender = SNG
+}

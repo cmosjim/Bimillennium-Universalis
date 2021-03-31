@@ -1,0 +1,135 @@
+government = tribal
+add_government_reform = tribal_despotism
+mercantilism = 0.1
+primary_culture = polynesian
+religion = animism
+technology_group = north_american
+capital = 1240
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1775.5.1 = {
+  monarch = {
+    name = "aSs|»Ts|»T I"  # Kamehameha I
+    dynasty = "aSs|»Ts|»T"  # Kamehameha
+    adm = 4
+    dip = 5
+    mil = 6
+  }
+}
+1819.5.20 = {
+  monarch = {
+    name = "aSs|»Ts|»T II"  # Kamehameha II
+    dynasty = "aSs|»Ts|»T"  # Kamehameha
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+1825.6.6 = {
+  monarch = {
+    name = "aSs|»Ts|»T III"  # Kamehameha III
+    dynasty = "aSs|»Ts|»T"  # Kamehameha
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1855.1.11 = {
+  monarch = {
+    name = "aSs|»Ts|»T IV"  # Kamehameha IV
+    dynasty = "aSs|»Ts|»T"  # Kamehameha
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1862.1.1 = {
+  religion = protestant
+}
+1863.11.30 = {
+  monarch = {
+    name = "aSs|»Ts|»T V"  # Kamehameha V
+    dynasty = "aSs|»Ts|»T"  # Kamehameha
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+1872.12.11 = {
+  monarch = {
+    name = "™R±ê)R˙ã"  # Lunalilo
+    dynasty = "—yeY2SöN ™RO"  # Keoua Nui
+    adm = 5
+    dip = 4
+    mil = 1
+  }
+}
+1874.2.12 = {
+  monarch = {
+    name = "aS…baSÊt"  # Kalakaua
+    dynasty = "aS…baSÊt"  # Kalakaua
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1891.1.29 = {
+  monarch = {
+    name = ")RYuaS…b<S"  # Liliuokalani
+    dynasty = "aS…baSÊt"  # Kalakaua
+    adm = 4
+    dip = 3
+    mil = 1
+    female = yes
+  }
+}
+1893.1.17 = {
+  government = republic
+  set_legacy_government = constitutional_republic
+}
+1893.1.17 = {
+  monarch = {
+    name = "ˇ4Nˆe?eú^	ˇ"  # (Provisional Government)
+    regent = yes
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1874.2.12 = {
+  monarch = {
+    name = "Qhèy∑V YS"  # Sanford Dole
+    birth_date = 1844.4.23
+    adm = 1
+    dip = 3
+    mil = 2
+  }
+}

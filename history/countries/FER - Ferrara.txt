@@ -1,0 +1,439 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = western
+religion = catholic
+primary_culture = romagnan
+capital = 113
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1137.1.1 = {
+  monarch = {
+    name = "eY‘kPO I"  # Obizzo I
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1107.1.1
+    adm = 2
+    dip = 0
+    mil = 2
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1170.1.1 = {
+  heir = {
+    name = "?ñPO"  # Azzo
+    monarch_name = "?ñPO VI"  # Azzo VI
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1170.1.1
+    death_date = 1212.11.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 5
+  }
+}
+1193.1.1 = {
+  monarch = {
+    name = "?ñPO VI"  # Azzo VI
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1170.1.1
+    adm = 0
+    dip = 5
+    mil = 5
+  }
+}
+1193.1.1 = {
+  heir = {
+    name = "?ñSY^gÍè˙ã"  # Aldobrandino
+    monarch_name = "?ñSY^gÍè˙ã I"  # Aldobrandino I
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1182.1.1
+    death_date = 1215.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+1212.11.1 = {
+  monarch = {
+    name = "?ñSY^gÍè˙ã I"  # Aldobrandino I
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1182.1.1
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+1212.11.1 = {
+  heir = {
+    name = "?ñPO"  # Azzo
+    monarch_name = "?ñPO VII"  # Azzo VII
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1205.1.1
+    death_date = 1264.2.16
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}
+1215.1.1 = {
+  monarch = {
+    name = "?ñPO VII"  # Azzo VII
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1205.1.1
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}
+1247.1.1 = {
+  heir = {
+    name = "eY‘kPO"  # Obizzo
+    monarch_name = "eY‘kPO II"  # Obizzo II
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1247.1.1
+    death_date = 1293.2.13
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}
+1264.2.16 = {
+  monarch = {
+    name = "eY‘kPO II"  # Obizzo II
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1247.1.1
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}
+1264.2.16 = {
+  heir = {
+    name = "?ñPO"  # Azzo
+    monarch_name = "?ñPO VIII"  # Azzo VIII
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1263.1.1
+    death_date = 1308.1.31
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 2
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1293.2.13 = {
+  monarch = {
+    name = "?ñPO VIII"  # Azzo VIII
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1263.1.1
+    adm = 5
+    dip = 2
+    mil = 2
+  }
+}
+1293.2.13 = {
+  heir = {
+    name = "?ñSY^gÍè˙ã"  # Aldobrandino
+    monarch_name = "?ñSY^gÍè˙ã II"  # Aldobrandino II
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1278.1.1
+    death_date = 1317.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 0
+  }
+}
+1308.1.31 = {
+  monarch = {
+    name = "?ñSY^gÍè˙ã II"  # Aldobrandino II
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1278.1.1
+    adm = 3
+    dip = 3
+    mil = 0
+  }
+}
+1308.1.31 = {
+  heir = {
+    name = "eY‘kPO"  # Obizzo
+    monarch_name = "eY‘kPO III"  # Obizzo III
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1294.7.14
+    death_date = 1352.3.20
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1317.1.1 = {
+  monarch = {
+    name = "eY‘kPO III"  # Obizzo III
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1294.7.14
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1335.1.1 = {
+  heir = {
+    name = "?ñSY^gÍè˙ã"  # Aldobrandino
+    monarch_name = "?ñSY^gÍè˙ã III"  # Aldobrandino III
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1335.1.1
+    death_date = 1361.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 5
+  }
+}
+1352.3.20 = {
+  monarch = {
+    name = "?ñSY^gÍè˙ã III"  # Aldobrandino III
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1335.1.1
+    adm = 3
+    dip = 0
+    mil = 5
+  }
+}
+1352.3.20 = {
+  heir = {
+    name = "<S—ym"  # Niccolo
+    monarch_name = "<S—ym II"  # Niccolo II
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1338.1.1
+    death_date = 1388.3.26
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 4
+  }
+}
+1361.1.1 = {
+  monarch = {
+    name = "<S—ym II"  # Niccolo II
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1338.1.1
+    adm = 2
+    dip = 0
+    mil = 4
+  }
+}
+1361.1.1 = {
+  heir = {
+    name = "?ñSçXb"  # Alberto
+    monarch_name = "?ñSçXb V"  # Alberto V
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1347.2.26
+    death_date = 1393.7.30
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 3
+  }
+}
+1388.3.26 = {
+  monarch = {
+    name = "?ñSçXb V"  # Alberto V
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1347.2.26
+    adm = 2
+    dip = 0
+    mil = 3
+  }
+}
+1388.3.26 = {
+  heir = {
+    name = "<S—ym"  # Niccolo
+    monarch_name = "<S—ym III"  # Niccolo III
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1383.11.9
+    death_date = 1441.12.26
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1393.7.30 = {
+  monarch = {
+    name = "<S—ym III"  # Niccolo III
+    dynasty = "∑V √WØeyr"  # d'Este
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1407.1.1 = {
+  heir = {
+    name = "±ÉeYÖQm"  # Leonello
+    monarch_name = "±ÉeYÖQm I"  # Leonello I
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1407.1.1
+    death_date = 1450.10.2
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1441.12.26 = {
+  monarch = {
+    name = "±ÉeYÖQm I"  # Leonello I
+    dynasty = "∑V √WØeyr"  # d'Este
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1441.12.26 = {
+  heir = {
+    name = "ZSS0t"  # Borso
+    monarch_name = "ZSS0t I"  # Borso I
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1413.1.1
+    death_date = 1471.8.20
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+1450.10.2 = {
+  monarch = {
+    name = "ZSS0t I"  # Borso I
+    dynasty = "∑V √WØeyr"  # d'Este
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+1450.10.2 = {
+  heir = {
+    name = "√WS—y±É"  # Ercole
+    monarch_name = "√WS—y±É I"  # Ercole I
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1431.10.26
+    death_date = 1505.6.15
+    claim = 95
+    adm = 6
+    dip = 4
+    mil = 4
+  }
+}
+1452.1.1 = {
+  capital = 113
+}
+1471.8.21 = {
+  monarch = {
+    name = "√WS—y±É I"  # Ercole I
+    dynasty = "∑V √WØeyr"  # d'Este
+    adm = 6
+    dip = 4
+    mil = 4
+  }
+}
+1476.7.21 = {
+  heir = {
+    name = "?ñπe0t"  # Alfonso
+    monarch_name = "?ñπe0t I"  # Alfonso I
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1476.7.21
+    death_date = 1534.10.31
+    claim = 95
+    adm = 6
+    dip = 5
+    mil = 4
+  }
+}
+1505.6.16 = {
+  monarch = {
+    name = "?ñπe0t I"  # Alfonso I
+    dynasty = "∑V √WØeyr"  # d'Este
+    adm = 6
+    dip = 5
+    mil = 4
+  }
+}
+1508.4.5 = {
+  heir = {
+    name = "√WS—y±É"  # Ercole
+    monarch_name = "√WS—y±É II"  # Ercole II
+    dynasty = "∑V √WØeyr"  # d'Este
+    claim = 95
+    birth_date = 1508.4.5
+    death_date = 1559.10.3
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1534.10.30 = {
+  government = monarchy
+  add_government_reform = autocracy_reform
+}
+1534.10.30 = {
+  monarch = {
+    name = "√WS—y±É II"  # Ercole II
+    dynasty = "∑V √WØeyr"  # d'Este
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1534.10.30 = {
+  heir = {
+    name = "?ñπe0t"  # Alfonso
+    monarch_name = "?ñπe0t II"  # Alfonso II
+    dynasty = "∑V √WØeyr"  # d'Este
+    claim = 95
+    birth_date = 1533.11.22
+    death_date = 1597.10.27
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+1559.10.4 = {
+  monarch = {
+    name = "?ñπe0t II"  # Alfonso II
+    dynasty = "∑V √WØeyr"  # d'Este
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}

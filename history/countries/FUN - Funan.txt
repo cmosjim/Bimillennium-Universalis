@@ -1,0 +1,184 @@
+government = monarchy
+add_government_reform = mandala_reform
+primary_culture = khmer
+religion = hinduism
+technology_group = early_chinese
+capital = 2391	# Vyadhapura
+
+
+2.1.1 = {
+	monarch = {
+		name = "˜mkX"
+		dynasty = "vbWSãs"
+		adm = 5
+		dip = 5
+		mil = 5
+		female = yes
+	}
+}
+52.1.1 = {
+	monarch = {
+		name = "˜mÿvµQ"
+		dynasty = "vbWSãs"
+		adm = 6
+		dip = 5
+		mil = 5
+	}
+}
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+102.1.1 = {
+	monarch = {
+		name = "˜mÿvÿv"
+		dynasty = "vbWSãs"
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+152.1.1 = {
+	monarch = {
+		name = "˜mzzzz"
+		dynasty = "vbWSãs"
+		adm = 6
+		dip = 4
+		mil = 4
+	}
+}
+202.1.1 = {
+	monarch = {
+		name = "ÉÖ"
+		dynasty = "vbWSãs"
+		adm = 5
+		dip = 5
+		mil = 6
+	leader = { 
+                name = "ÉÖ"	
+                type = general	
+                #rank = 0	
+                fire = 2	
+                shock = 2	
+                manuever = 3	
+                siege = 3 }
+	}
+}
+225.1.1 = {
+	monarch = {
+		name = "É—ëu"
+		dynasty = "vbWSãs"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+240.1.1 = {
+	monarch = {
+		name = "É√e"
+		dynasty = "vbWSãs"
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+243.1.1 = {
+	monarch = {
+		name = "Éï"
+		dynasty = "vbWSãs"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+292.1.1 = {
+	monarch = {
+		name = "É˚R"
+		dynasty = "vbWSãs"
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+357.1.1 = {
+	monarch = {
+		name = "˙z√eéj"      #unknown ruler
+		dynasty = "vbWSãs"
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+407.1.1 = {
+	monarch = {
+		name = "çaHñÇY"
+		dynasty = "vbWSãs"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+430.1.1 = {
+	monarch = {
+		name = "cŒû‰èÀçid"   #unknown ruler
+		dynasty = "vbWSãs"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+470.1.1 = {
+	monarch = {
+		name = "ñ6wÀçid"
+		dynasty = "vbWSãs"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+522.1.1 = {
+	monarch = {
+		name = "YuNñÀçid"
+		dynasty = "vbWSãs"
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+445.1.1 = {
+	monarch = {
+		name = "YuNñÀçid a!" #unknown ruler
+		dynasty = "vbWSãs"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+484.1.1 = {
+	monarch = {
+		name = "YuNñÀçid b!"
+		dynasty = "vbWSãs"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+514.1.1 = {
+	monarch = {
+		name = "YuNñÀçid c!"
+		dynasty = "vbWSãs"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }

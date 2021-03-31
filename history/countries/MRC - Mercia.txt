@@ -1,0 +1,326 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = barbarian
+primary_culture = anglo_saxon
+religion = germanic
+capital = 234
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+527.1.1 = {
+  monarch = {
+    name = "åÇmtS"  # Icel
+    dynasty = "OKQóg"  # Icling
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+536.1.1 = {
+  technology_group = western
+}
+550.1.1 = {
+  monarch = {
+    name = "—yÖQÙT"  # Cnebba
+    dynasty = "OKQóg"  # Icling
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+570.1.1 = {
+  monarch = {
+    name = "-^i`Él∑V"  # Cynewald
+    dynasty = "OKQóg"  # Icling
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+584.1.1 = {
+  monarch = {
+    name = "KQÃëeYæè"  # Creoda
+    dynasty = "OKQóg"  # Icling
+    adm = 5
+    dip = 3
+    mil = 3
+  }
+}
+593.1.1 = {
+  monarch = {
+    name = ">mÙT"  # Pybba
+    dynasty = "OKQóg"  # Icling
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+606.1.1 = {
+  monarch = {
+    name = "—yÅú"  # Cearl
+    dynasty = "—yÅúóg"  # Cearling
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+626.1.1 = {
+  monarch = {
+    name = "mVæè"  # Penda
+    dynasty = "OKQóg"  # Icling
+    adm = 6
+    dip = 4
+    mil = 4
+  }
+}
+640.1.1 = {
+  religion = chalcedonism
+  government = monarchy
+  add_government_reform = salic_reform
+}
+658.1.1 = {
+  monarch = {
+    name = "fk+Y^S"  # Wulfhere
+    dynasty = "OKQóg"  # Icling
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+675.1.1 = {
+  monarch = {
+    name = "1r∑V˜ñ∑V"  # Aethelred I
+    dynasty = "OKQóg"  # Icling
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+704.1.1 = {
+  monarch = {
+    name = "—yi`˜ñ∑V"  # Coenred
+    dynasty = "OKQóg"  # Icling
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+709.1.1 = {
+  monarch = {
+    name = "âeY˜ñ∑V"  # Ceolred
+    dynasty = "OKQóg"  # Icling
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+716.1.1 = {
+  monarch = {
+    name = "âeYÉl∑V"  # Ceolwald
+    dynasty = "OKQóg"  # Icling
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+716.6.1 = {
+  monarch = {
+    name = "√W^XSÙT∑V"  # Aethelbald
+    dynasty = "OKQóg"  # Icling
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+757.1.1 = {
+  monarch = {
+    name = "‘keY˜ñ∑V"  # Beornred
+    dynasty = "‘keY˜ñN"  # Beornding
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+757.6.1 = {
+  monarch = {
+    name = "eY’l"  # Offa
+    dynasty = "OKQóg"  # Icling
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+796.7.29 = {
+  monarch = {
+    name = "åÇ<hVÃëØe"  # Ecgfrith
+    dynasty = "OKQóg"  # Icling
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+796.12.17 = {
+  monarch = {
+    name = "—yi`fk+Y"  # Coenwulf
+    dynasty = ">måe"  # Pybbing
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+821.1.1 = {
+  monarch = {
+    name = "âeYfk+Y"  # Ceolwulf I
+    dynasty = ">måe"  # Pybbing
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+823.1.1 = {
+  monarch = {
+    name = "çeYfk+Y"  # Beornwulf
+    dynasty = "‘keY˜ñN"  # Beornding
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+826.1.1 = {
+  monarch = {
+    name = "bS∑VaS"  # Ludeca
+    dynasty = "¯löR"  # Luding
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+827.1.1 = {
+  monarch = {
+    name = "Z<h±É+Y"  # Wiglaf
+    dynasty = "Ùu<h…b+Y"  # Wiglafing
+    adm = 5
+    dip = 3
+    mil = 3
+  }
+}
+839.1.1 = {
+  monarch = {
+    name = "Z<hôÑ∑V"  # Wigmund
+    dynasty = "Ùu<h…b+Y"  # Wiglafing
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+840.1.1 = {
+  monarch = {
+    name = "Z<hØefW"  # Wigstan
+    dynasty = "Ùu<h…b+Y"  # Wiglafing
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+840.4.1 = {
+  monarch = {
+    name = "åÇiO±É∑V"  # Aelfflaed
+    dynasty = "Ùu<h…b+Y"  # Wiglafing
+    adm = 3
+    dip = 2
+    mil = 3
+    female = yes
+  }
+}
+840.8.1 = {
+  monarch = {
+    name = "çeYfk+Y"  # Beorhtwulf
+    dynasty = "‘keY˜ñN"  # Beornding
+    adm = 4
+    dip = 3
+    mil = 6
+  }
+}
+852.1.1 = {
+  monarch = {
+    name = "ZS<h^t∑V"  # Burgred
+    dynasty = "‘keY˜ñN"  # Beornding
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+867.1.1 = {
+  religion = catholic
+}
+874.1.1 = {
+  monarch = {
+    name = "âeYfk+Y"  # Ceolwulf II
+    dynasty = "Ùu<h…b+Y"  # Wiglafing
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+883.1.1 = {
+  monarch = {
+    name = "√W^XS˜ñ∑V"  # Aethelred II
+    dynasty = "Aethelreding"
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+911.1.1 = {
+  monarch = {
+    name = "Aethelflaed"
+    dynasty = "Aethelreding"
+    adm = 3
+    dip = 2
+    mil = 4
+    female = yes
+  }
+}
+918.6.12 = {
+  monarch = {
+    name = "Aefwynn"
+    dynasty = "Aethelreding"
+    adm = 2
+    dip = 2
+    mil = 3
+    female = yes
+  }
+}
+962.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

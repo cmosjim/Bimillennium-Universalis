@@ -1,0 +1,64 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = jianghuai
+capital = 685	# Chengdu
+
+#RYÿ161t^ÿ223t^6g10åe	ÿ
+#R…yÿ207t^ÿ271t^	ÿ
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+181.1.1 = {
+	monarch = {
+		name = "RY"
+		#0o-fÈp^‰R™Pÿ161t^7g16åeÿ223t^6g10åe	ÿ
+		birth_date = 161.7.16
+		death_date = 223.6.10
+		claim = 100
+		dip = 5
+		adm = 5
+		mil = 3
+		leader = { name = "RY"	type = general	fire = 3	shock = 4	manuever = 3	siege = 2 }
+	}
+
+}
+
+196.1.1 = { capital = 2494 }
+199.1.1 = { capital = 685 }
+202.1.1 = { capital = 2490 }
+210.1.1 = { capital = 671 }
+215.1.1 = { capital = 679 }
+215.1.1 = { primary_culture = sichuanese }
+222.1.1 = {
+	heir = {
+		name = "R…y"
+		birth_date = 207.1.1
+		death_date = 271.1.1
+		claim = 100
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}
+
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = {
+	government = modern_chinese_warlord
+	add_government_reform = modern_chinese_warlord_reform
+	religion = liberalism
+}
+
+1949.10.1 = { technology_group = modern_chinese }

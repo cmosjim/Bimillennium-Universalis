@@ -1,0 +1,613 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+primary_culture = langobardi
+religion = germanic
+technology_group = barbarian
+capital = 59
+2.1.1 = {
+  monarch = {
+    name = "OZS"  # Ibo
+    dynasty = "&OÙT,r"  # Lombard
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+50.1.1 = {
+  monarch = {
+    name = "Aio"
+    dynasty = "&OÙT,r"  # Lombard
+    adm = 3
+    dip = 3
+    mil = 0
+  }
+}
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+120.1.1 = {
+  monarch = {
+    name = "Shava"
+    dynasty = "&OÙT,r"  # Lombard
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+180.1.1 = {
+  monarch = {
+    name = "åÇvQ'k"  # Agio
+    dynasty = "&OÙT,r"  # Lombard
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+230.1.1 = {
+  monarch = {
+    name = "Agilmund"
+    dynasty = "&OÙT,r"  # Lombard
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+280.1.1 = {
+  monarch = {
+    name = "…böNs|KQ"  # Laiamicho
+    dynasty = "&OÙT,r"  # Lombard
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+330.1.1 = {
+  monarch = {
+    name = "Ortnit"
+    dynasty = "&OÙT,r"  # Lombard
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+380.1.1 = {
+  monarch = {
+    name = "?ñ<hSôÑ∑V"  # Agelmund
+    dynasty = "&OÙT,r"  # Lombard
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+410.1.1 = {
+  monarch = {
+    name = "Lamissio"
+    dynasty = "&OÙT,r"  # Lombard
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+420.1.1 = {
+  monarch = {
+    name = "Lethuc"
+    dynasty = "“RN"  # Lething
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+454.1.1 = {
+  capital = 267
+}
+460.1.1 = {
+  monarch = {
+    name = "Hildehoc"
+    dynasty = "“RN"  # Lething
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+470.1.1 = {
+  monarch = {
+    name = "bÍèóKQ"  # Godehoc
+    dynasty = "“RN"  # Lething
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+490.1.1 = {
+  monarch = {
+    name = "Claffo"
+    dynasty = "“RN"  # Lething
+    adm = 6
+    dip = 6
+    mil = 6
+  }
+}
+500.1.1 = {
+  monarch = {
+    name = "TXXb"  # Tato
+    dynasty = "“RN"  # Lething
+    adm = 6
+    dip = 2
+    mil = 4
+  }
+}
+510.1.1 = {
+  monarch = {
+    name = "Wacho"
+    dynasty = "“RN"  # Lething
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+539.6.1 = {
+  monarch = {
+    name = "Waltari"
+    dynasty = "“RN"  # Lething
+    adm = 6
+    dip = 6
+    mil = 5
+  }
+}
+540.1.1 = {
+  religion = arianism
+}
+546.6.1 = {
+  monarch = {
+    name = "eYY‡V"  # Audoin
+    dynasty = "Gausian"
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+553.1.1 = {
+  capital = 1768
+}
+565.6.1 = {
+  monarch = {
+    name = "?ñSZS‡V"  # Alboin
+    dynasty = "Audoining"
+    adm = 4
+    dip = 5
+    mil = 2
+  }
+}
+568.6.1 = {
+  primary_culture = lombard
+}
+569.6.1 = {
+  capital = 104
+}
+570.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+  technology_group = western
+}
+572.6.1 = {
+  monarch = {
+    name = "KQ±É+Y"  # Cleph
+    dynasty = "Audoining"
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+574.6.1 = {
+  monarch = {
+    name = "ˇDd?eOÆã	ˇ"  # (regency council)
+    regent = yes
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+584.6.1 = {
+  monarch = {
+    name = "eY(ÑÃë"  # Authari
+    dynasty = "Audoining"
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+591.1.1 = {
+  monarch = {
+    name = "?ñ	TbSSèy"  # Agilulf
+    dynasty = "Audoining"
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+600.1.1 = {
+  religion = chalcedonism
+}
+616.6.1 = {
+  monarch = {
+    name = "Adaloald"
+    dynasty = "Audoining"
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+620.1.1 = {
+  religion = arianism
+}
+626.6.1 = {
+  monarch = {
+    name = "?ñÃëeY?ñSY"  # Arioald
+    dynasty = "Audoining"
+    adm = 6
+    dip = 2
+    mil = 4
+  }
+}
+636.6.1 = {
+  monarch = {
+    name = "WTXÃë"  # Rothari
+    dynasty = "Audoining"
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+652.6.1 = {
+  monarch = {
+    name = "mY?ñS∑V"  # Rodoald
+    dynasty = "Audoining"
+    adm = 6
+    dip = 6
+    mil = 5
+  }
+}
+653.6.1 = {
+  monarch = {
+    name = "?ñÃëçyr I"  # Aripert I
+    dynasty = "Audoining"
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+654.1.1 = {
+  religion = chalcedonism
+}
+661.6.1 = {
+  monarch = {
+    name = "iOKQTXÃëyr"  # Perctarit
+    dynasty = "Audoining"
+    adm = 4
+    dip = 5
+    mil = 2
+  }
+}
+662.6.1 = {
+  monarch = {
+    name = "<hÃëFzöNS"  # Grimuald
+    dynasty = "Audoining"
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+671.4.1 = {
+  monarch = {
+    name = "÷vÙT∑V"  # Garibald
+    dynasty = "Audoining"
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+671.8.1 = {
+  monarch = {
+    name = "iOKQTXÃëyr"  # Perctarit
+    dynasty = "Audoining"
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+688.6.1 = {
+  monarch = {
+    name = "ì^ÅRKQiOyr"  # Cunincpert
+    dynasty = "Audoining"
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+700.6.1 = {
+  monarch = {
+    name = "Ûgyr^yr"  # Liutpert
+    dynasty = "Audoining"
+    adm = 6
+    dip = 2
+    mil = 4
+  }
+}
+701.4.1 = {
+  monarch = {
+    name = "…b—ëiOyr"  # Radingpert
+    dynasty = "Audoining"
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+701.8.1 = {
+  monarch = {
+    name = "?ñÃëçyr II"  # Aripert II
+    dynasty = "Audoining"
+    adm = 3
+    dip = 5
+    mil = 5
+  }
+}
+712.4.1 = {
+  monarch = {
+    name = "âRØenfpQ∑V"  # Ansprand
+    dynasty = "Audoining"
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+712.8.1 = {
+  monarch = {
+    name = ")RLNyrnfpQ∑V"  # Liutprand
+    dynasty = "Audoining"
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+744.4.1 = {
+  monarch = {
+    name = "^S∑V^pQ∑V"  # Hildeprand
+    dynasty = "Audoining"
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+744.8.1 = {
+  monarch = {
+    name = "…byrGYØe"  # Ratchis
+    dynasty = "Audoining"
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+749.6.1 = {
+  monarch = {
+    name = "√WØe˛VS+Y"  # Aistulf
+    dynasty = "Audoining"
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+756.6.1 = {
+  monarch = {
+    name = "ƒrâ∑VÃëLNØe"  # Desiderius
+    dynasty = "?ñ…b^Øe"  # Alachisling
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+867.1.1 = {
+  religion = catholic
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+962.1.1 = {
+  government = monarchy
+  add_government_reform = imperial_march_reform
+}
+962.2.2 = {
+  monarch = {
+    name = "eYçXb I"  # Oberto I
+    dynasty = "Oberthengi"
+    birth_date = 932.1.1
+    adm = 5
+    dip = 2
+    mil = 5
+  }
+}
+962.2.2 = {
+  heir = {
+    name = "?ñæèS=Oyr"  # Adalbert
+    monarch_name = "?ñæèS=Oyr II"  # Adalbert II
+    dynasty = "Oberthengi"
+    birth_date = 945.1.1
+    death_date = 997.1.1
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 2
+  }
+}
+975.1.1 = {
+  monarch = {
+    name = "?ñæèS=Oyr II"  # Adalbert II
+    dynasty = "Oberthengi"
+    birth_date = 945.1.1
+    adm = 0
+    dip = 1
+    mil = 2
+  }
+}
+975.1.1 = {
+  heir = {
+    name = "eYçXb"  # Oberto
+    monarch_name = "eYçXb II"  # Oberto II
+    dynasty = "Oberthengi"
+    birth_date = 967.1.1
+    death_date = 1014.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 1
+  }
+}
+997.1.1 = {
+  monarch = {
+    name = "eYçXb II"  # Oberto II
+    dynasty = "Oberthengi"
+    birth_date = 967.1.1
+    adm = 1
+    dip = 0
+    mil = 1
+  }
+}
+997.1.1 = {
+  heir = {
+    name = "?ñS=Oyr ?ñPO"  # Albert Azzo
+    monarch_name = "?ñS=Oyr ?ñPO I"  # Albert Azzo I
+    dynasty = "Oberthengi"
+    birth_date = 984.1.1
+    death_date = 1029.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1014.1.1 = {
+  monarch = {
+    name = "?ñS=Oyr ?ñPO I"  # Albert Azzo I
+    dynasty = "Oberthengi"
+    birth_date = 984.1.1
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1014.1.1 = {
+  heir = {
+    name = "?ñS=Oyr ?ñPO"  # Albert Azzo
+    monarch_name = "?ñS=Oyr ?ñPO II"  # Albert Azzo II
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1009.7.10
+    death_date = 1097.8.20
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1029.1.1 = {
+  monarch = {
+    name = "?ñS=Oyr ?ñPO II"  # Albert Azzo II
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1009.7.10
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1067.1.1 = {
+  heir = {
+    name = "èyS—y"  # Folco
+    monarch_name = "èyS—y I"  # Folco I
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1067.1.1
+    death_date = 1128.12.25
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 0
+  }
+}
+1097.8.20 = {
+  monarch = {
+    name = "èyS—y I"  # Folco I
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1067.1.1
+    adm = 3
+    dip = 2
+    mil = 0
+  }
+}
+1098.1.1 = {
+  heir = {
+    name = "?ñPO"  # Azzo
+    monarch_name = "?ñPO III"  # Azzo III
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1098.1.1
+    death_date = 1137.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1128.12.25 = {
+  monarch = {
+    name = "?ñPO III"  # Azzo III
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1098.1.1
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1128.12.25 = {
+  heir = {
+    name = "eY‘kPO"  # Obizzo
+    monarch_name = "eY‘kPO I"  # Obizzo I
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1110.1.1
+    death_date = 1193.12.5
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1137.1.1 = {
+  monarch = {
+    name = "eY‘kPO I"  # Obizzo I
+    dynasty = "∑V √WØeyr"  # d'Este
+    birth_date = 1110.1.1
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

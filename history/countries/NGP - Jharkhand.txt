@@ -1,0 +1,431 @@
+government = tribal
+add_government_reform = gond_kingdom
+government_rank = 1
+primary_culture = jharkhandi
+technology_group = early_indian
+religion = hinduism
+capital = 560
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1440.1.1 = {
+  monarch = {
+    name = "id√ãW˝ê"  # Maharato
+    dynasty = "±êKOµh¡y"  # Nagavamsi
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1500.1.1 = {
+  monarch = {
+    name = "id√ãW˝ê II"  # Maharato II
+    dynasty = "±êKOµh¡y"  # Nagavamsi
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+1510.1.1 = {
+  heir = {
+    name = "löjg ÁPKOW"  # Madhu Singh
+    monarch_name = "löjg ÁPKOW"  # Madhu Singh
+    dynasty = "±êKOµh¡y"  # Nagavamsi
+    birth_date = 1510.1.1
+    death_date = 1595.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1550.1.1 = {
+  monarch = {
+    name = "löjg ÁPKOW"  # Madhu Singh
+    dynasty = "±êKOµh¡y"  # Nagavamsi
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1570.1.1 = {
+  heir = {
+    name = "¶^)RÖy (Ñ"  # Durjan Sal
+    monarch_name = "¶^)RÖy (Ñ"  # Durjan Sal
+    dynasty = "±êKOµh¡y"  # Nagavamsi
+    birth_date = 1560.1.1
+    death_date = 1630.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1595.1.1 = {
+  monarch = {
+    name = "¶^)RÖy (Ñ"  # Durjan Sal
+    dynasty = "±êKOµh¡y"  # Nagavamsi
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1595.1.1 = {
+  heir = {
+    name = "?ñæñY WbY"  # Anant Raj
+    monarch_name = "?ñæñY WbY"  # Anant Raj
+    dynasty = "±êKOµh¡y"  # Nagavamsi
+    birth_date = 1575.1.1
+    death_date = 1662.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1630.1.1 = {
+  monarch = {
+    name = "?ñæñY WbY"  # Anant Raj
+    dynasty = "±êKOµh¡y"  # Nagavamsi
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1630.1.1 = {
+  heir = {
+    name = "˜è–c<S WbY"  # Medini Raj
+    monarch_name = "˜è–c<S WbY"  # Medini Raj
+    dynasty = "±êKOµh¡y"  # Nagavamsi
+    birth_date = 1600.1.1
+    death_date = 1674.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1662.1.1 = {
+  monarch = {
+    name = "˜è–c<S WbY"  # Medini Raj
+    dynasty = "±êKOµh¡y"  # Nagavamsi
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1662.1.1 = {
+  heir = {
+    name = "‚lWY‚l WbY"  # Pratap Raj
+    monarch_name = "‚lWY‚l WbY"  # Pratap Raj
+    dynasty = "±êKOµh¡y"  # Nagavamsi
+    birth_date = 1620.1.1
+    death_date = 1681.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1674.1.1 = {
+  monarch = {
+    name = "±êpQNñW |iNñW ÁP√ã"  # Narendra Rudra Singh
+    dynasty = "LRér)R"  # Raksel
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1674.1.1 = {
+  heir = {
+    name = "‹b»T∑'Y¶^∑õè<h"  # Baiha Dadu Singh
+    monarch_name = "‹b»T∑'Y¶^∑õè<h"  # Baiha Dadu Singh
+    dynasty = "LRér)R"  # Raksel
+    birth_date = 1650.1.1
+    death_date = 1709.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1678.1.1 = {
+  monarch = {
+    name = "±êpQNñW |iNñW ÁP√ã"  # Narendra Rudra Singh
+    dynasty = "LRér)R"  # Raksel
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1678.1.1 = {
+  heir = {
+    name = "‚lW‚lNñW ÁP√ã"  # Balbhadra Singh
+    monarch_name = "‚lW‚lNñW ÁP√ã"  # Balbhadra Singh
+    dynasty = "LRér)R"  # Raksel
+    birth_date = 1650.1.1
+    death_date = 1728.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1709.1.1 = {
+  monarch = {
+    name = "‚lW‚lNñW ÁP√ã"  # Balbhadra Singh
+    dynasty = "LRér)R"  # Raksel
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1709.1.1 = {
+  heir = {
+    name = "†RâNf ÁP√ã"  # Jaswant Singh
+    monarch_name = "†RâNf ÁP√ã"  # Jaswant Singh
+    dynasty = "LRér)R"  # Raksel
+    birth_date = 1700.1.1
+    death_date = 1749.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1728.1.1 = {
+  monarch = {
+    name = "†RâNf ÁP√ã"  # Jaswant Singh
+    dynasty = "LRér)R"  # Raksel
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1728.1.1 = {
+  heir = {
+    name = "FZ√ãïbW ÁP√ã"  # Bahadur Singh
+    monarch_name = "FZ√ãïbW ÁP√ã"  # Bahadur Singh
+    dynasty = "LRér)R"  # Raksel
+    birth_date = 1720.1.1
+    death_date = 1760.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1749.1.1 = {
+  monarch = {
+    name = "FZ√ãïbW ÁP√ã"  # Bahadur Singh
+    dynasty = "LRér)R"  # Raksel
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1749.1.1 = {
+  heir = {
+    name = "≤RLN ÁP√ã"  # Sheo Singh
+    monarch_name = "≤RLN ÁP√ã"  # Sheo Singh
+    dynasty = "LRér)R"  # Raksel
+    birth_date = 1740.1.1
+    death_date = 1792.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1760.1.1 = {
+  monarch = {
+    name = "≤RLN ÁP√ã"  # Sheo Singh
+    dynasty = "LRér)R"  # Raksel
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1760.1.1 = {
+  heir = {
+    name = "?ñ	Tyr ÁP√ã"  # Ajit Singh
+    monarch_name = "?ñ	Tyr ÁP√ã"  # Ajit Singh
+    dynasty = "LRér)R"  # Raksel
+    birth_date = 1760.1.1
+    death_date = 1799.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+1792.1.1 = {
+  monarch = {
+    name = "?ñ	Tyr ÁP√ã"  # Ajit Singh
+    dynasty = "LRér)R"  # Raksel
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+1792.1.1 = {
+  heir = {
+    name = "‚lW‚lNñW ÁP√ã"  # Balbhadra Singh
+    monarch_name = "‚lW‚lNñW ÁP√ã"  # Balbhadra Singh
+    dynasty = "LRér)R"  # Raksel
+    birth_date = 1775.1.1
+    death_date = 1816.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1799.1.1 = {
+  monarch = {
+    name = "‚lW‚lNñW ÁP√ã"  # Balbhadra Singh
+    dynasty = "LRér)R"  # Raksel
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1800.1.1 = {
+  monarch = {
+    name = "Qh<h…b∆Y0õè<h"  # Singram Singh
+    dynasty = "LRér)R"  # Raksel
+    adm = 2
+    dip = 2
+    mil = 4
+  }
+}
+1813.1.1 = {
+  monarch = {
+    name = "‚lW‚lNñW ÁP√ã"  # Balbhadra Singh
+    dynasty = "LRér)R"  # Raksel
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1813.1.1 = {
+  heir = {
+    name = "âRõsS ÁP√ã"  # Amar Singh
+    monarch_name = "âRõsS ÁP√ã"  # Amar Singh
+    dynasty = "LRér)R"  # Raksel
+    birth_date = 1795.1.1
+    death_date = 1851.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1816.1.1 = {
+  monarch = {
+    name = "âRõsS ÁP√ã"  # Amar Singh
+    dynasty = "LRér)R"  # Raksel
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1827.1.1 = {
+  heir = {
+    name = "‡VNñWC`Y ÁP√ã"  # Indrajit Singh
+    monarch_name = "‡VNñWC`Y ÁP√ã"  # Indrajit Singh
+    dynasty = "LRér)R"  # Raksel
+    birth_date = 1827.1.1
+    death_date = 1879.3.25
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 5
+  }
+}
+1851.1.1 = {
+  monarch = {
+    name = "‡VNñWC`Y ÁP√ã"  # Indrajit Singh
+    dynasty = "LRér)R"  # Raksel
+    birth_date = 1827.1.1
+    adm = 4
+    dip = 0
+    mil = 5
+  }
+}
+1860.1.1 = {
+  heir = {
+    name = "…b‰S≥uyr(Ñ…b0õè<h"  # Raghunath Saran Singh
+    monarch_name = "…b‰S≥uyr(Ñ…b0õè<h"  # Raghunath Saran Singh
+    dynasty = "LRér)R"  # Raksel
+    birth_date = 1860.1.1
+    death_date = 1917.12.31
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 3
+  }
+}
+1879.3.25 = {
+  monarch = {
+    name = "…b‰S≥uyr(Ñ…b0õè<h"  # Raghunath Saran Singh
+    dynasty = "LRér)R"  # Raksel
+    birth_date = 1860.1.1
+    adm = 1
+    dip = 4
+    mil = 3
+  }
+}
+1895.1.1 = {
+  heir = {
+    name = "W¸f™R”u (Ñ…b0õè<h"  # Ramanuj Saran Singh
+    monarch_name = "W¸f™R”u (Ñ…b0õè<h"  # Ramanuj Saran Singh
+    dynasty = "LRér)R"  # Raksel
+    birth_date = 1895.1.1
+    death_date = 1965.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 2
+  }
+}
+1917.12.31 = {
+  monarch = {
+    name = "W¸f™R”u (Ñ…b0õè<h"  # Ramanuj Saran Singh
+    dynasty = "LRér)R"  # Raksel
+    birth_date = 1895.1.1
+    adm = 1
+    dip = 4
+    mil = 2
+  }
+}

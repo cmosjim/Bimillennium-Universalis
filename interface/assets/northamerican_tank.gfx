@@ -1,0 +1,21 @@
+objectTypes = {
+	
+	###################################################################################################################
+	#####                                                                                                         #####
+	#####                                                  North American Tank                                   #####
+	#####                                                                                                         #####
+	###################################################################################################################
+	
+	pdxmesh = {
+		name = "northamerican_tank"
+		file = "gfx/models/Units/northamerican_tank.mesh"			
+
+		animation = { id = "attack"				type = "northamerican_tank_attack_animation" }
+		animation = { id = "idle"				type = "northamerican_tank_idle_animation" }
+		animation = { id = "walk"				type = "northamerican_tank_moving_animation" }
+		animation = { id = "death"				type = "northamerican_tank_idle_animation" }
+		animation = { id = "retreat"			type = "northamerican_tank_moving_animation" }
+		
+		scale = 1.3
+	}
+}

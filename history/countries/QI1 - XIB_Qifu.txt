@@ -1,0 +1,110 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+technology_group = eastern_nomad_group
+religion = tengri_pagan_reformed
+primary_culture = mongol
+capital = 709
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+265.1.1 = {
+	monarch = {
+		name = "^NOPy0ë"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+285.1.1 = {
+	monarch = {
+		name = "^NOPtk"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 3
+		mil = 4
+        leader = { 
+                name = "”bÀçâ`û"	
+                type = general	
+                #rank = 0	
+                fire = 3	
+                shock = 3	
+                manuever = 3	
+                siege = 2 }
+	}
+}
+305.1.1 = {
+	monarch = {
+		name = "^NO)R±ê"
+		#dynasty = " "
+	
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+
+}
+
+
+325.1.1 = {
+	monarch = {
+		name = "^NOAyÂl"
+		#dynasty = " "
+	
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+335.1.1 = {
+	monarch = {
+		name = "^NOèˆ^"
+		#dynasty = " "
+	
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+
+345.1.1 = {
+	monarch = {
+		name = "^NO±è'Y“R"
+		#dynasty = " "
+	
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+365.1.1 = {
+	monarch = {
+		name = "^NO¯SAu"
+		#dynasty = " "
+	
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+
+
+630.1.1 = { religion = vajrayana }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+
+#Khans of the Oirats (Kalmyks, Dzungars)
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+

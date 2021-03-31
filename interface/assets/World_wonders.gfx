@@ -1,0 +1,26 @@
+objectTypes = {
+	
+
+pdxmesh = {
+		name = "Great_wall_china_01"
+		file = "gfx/models/Buildings/Special/Great_wall_china_01.mesh"
+		scale = 2.0
+		cull_distance = 700.0f
+	}
+
+pdxmesh = {
+		name = "Great_wall_china_02"
+		file = "gfx/models/Buildings/Special/Great_wall_china_02.mesh"
+		scale = 2.0
+		cull_distance = 700.0f
+	}
+
+
+pdxmesh = {
+		name = "Kush_pyramids"
+		file = "gfx/models/Buildings/Special/Kush_pyramids.mesh"
+		scale = 0.45
+		cull_distance = 700.0f
+	}
+	
+}

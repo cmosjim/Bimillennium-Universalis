@@ -1,0 +1,427 @@
+government = monarchy
+add_government_reform = autocracy_reform
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = 0
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = vietnamese
+religion = mahayana
+technology_group = early_chinese
+capital = 610	# Hue
+
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1427.1.1 = {
+	monarch = {
+		name = "Le Loi"
+		dynasty = "Le"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1427.1.1 = {
+	heir = {
+		name = "Le Thai Tong"
+		monarch_name = "Le Thai Tong"
+		dynasty = "Le"
+		birth_Date = 1423.1.1
+		death_date = 1442.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1438.1.1 = {
+	monarch = {
+		name = "Le Thai Tong"
+		dynasty = "Le"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1441.1.1 = {
+	heir = {
+		name = "Le Nhan Tong"
+		monarch_name = "Le Nhan Tong"
+		dynasty = "Le"
+		birth_Date = 1441.1.1
+		death_date = 1459.1.1
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1442.1.1 = {
+	monarch = {
+		name = "Le Nhan Tong"
+		dynasty = "Le"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1442.1.1 = {
+	heir = {
+		name = "Le Thanh Tong"
+		monarch_name = "Le Thanh Tong"
+		dynasty = "Le"
+		birth_date = 1442.1.1
+		death_date = 1498.1.1
+		claim = 95
+		adm = 6
+		dip = 4
+		mil = 4
+	}
+}
+
+1460.1.1 = {
+	monarch = {
+		name = "Le Thanh Tong"
+		dynasty = "Le"
+		adm = 6
+		dip = 4
+		mil = 4
+	}
+}
+
+1498.1.1 = {
+	monarch = {
+		name = "Duc Trung"
+		dynasty = "Nguyen"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1498.1.1 = {
+	heir = {
+		name = "Van-Lang"
+		monarch_name = "Van-Lang"
+		dynasty = "Nguyen"
+		birth_date = 1470.1.1
+		death_Date = 1513.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1500.1.1 = {
+	monarch = {
+		name = "Van-Lang"
+		dynasty = "Nguyen"
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1500.1.1 = {
+	heir = {
+		name = "Hoang Du"
+		monarch_name = "Hoang Du"
+		dynasty = "Nguyen"
+		birth_Date = 1490.1.1
+		death_date = 1518.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1513.1.1 = {
+	monarch = {
+		name = "Hoang Du"
+		dynasty = "Nguyen"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1513.1.1 = {
+	heir = {
+		name = "Êm"
+		monarch_name = "Êm"
+		dynasty = ".ñ"
+		birth_Date = 1500.1.1
+		death_Date = 1545.6.29
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 2
+	}
+}
+
+1518.1.1 = {
+	monarch = {
+		name = "Êm"
+		dynasty = ".ñ"
+		adm = 5
+		dip = 5
+		mil = 2
+	}
+}
+
+1545.1.1 = {
+  monarch = {
+    name = "bo"  # Hoang
+    dynasty = ".ñ"  # Nguyen
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1563.1.1 = {
+  heir = {
+    name = "èyên"  # Phuc Nguyen
+    monarch_name = "èyên"  # Phuc Nguyen
+    dynasty = ".ñ"  # Nguyen
+    birth_date = 1563.1.1
+    death_date = 1635.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1613.1.1 = {
+  monarch = {
+    name = "èyên"  # Phuc Nguyen
+    dynasty = ".ñ"  # Nguyen
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1613.1.1 = {
+  heir = {
+    name = "èyúo"  # Phuc Lan
+    monarch_name = "èyúo"  # Phuc Lan
+    dynasty = ".ñ"  # Nguyen
+    birth_date = 1601.1.1
+    death_date = 1648.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1635.1.1 = {
+  monarch = {
+    name = "èyúo"  # Phuc Lan
+    dynasty = ".ñ"  # Nguyen
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1635.1.1 = {
+  heir = {
+    name = "èy“o"  # Phuc Tan
+    monarch_name = "èy“o"  # Phuc Tan
+    dynasty = ".ñ"  # Nguyen
+    birth_date = 1620.1.1
+    death_date = 1687.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+
+1636.5.15 = { technology_group = old_estern_asian }
+
+1648.1.1 = {
+  monarch = {
+    name = "èy“o"  # Phuc Tan
+    dynasty = ".ñ"  # Nguyen
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1650.1.1 = {
+  heir = {
+    name = "èy±n"  # Phuc Tran
+    monarch_name = "èy±n"  # Phuc Tran
+    dynasty = ".ñ"  # Nguyen
+    birth_date = 1650.1.1
+    death_date = 1691.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1687.1.1 = {
+  monarch = {
+    name = "èy±n"  # Phuc Tran
+    dynasty = ".ñ"  # Nguyen
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1687.1.1 = {
+  heir = {
+    name = "èyÕm"  # Phuc Chu
+    monarch_name = "èyÕm"  # Phuc Chu
+    dynasty = ".ñ"  # Nguyen
+    birth_date = 1675.1.1
+    death_date = 1725.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1691.1.1 = {
+  monarch = {
+    name = "èyÕm"  # Phuc Chu
+    dynasty = ".ñ"  # Nguyen
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1696.1.1 = {
+  heir = {
+    name = "èyço"  # Phuc Tru
+    monarch_name = "èyço"  # Phuc Tru
+    dynasty = ".ñ"  # Nguyen
+    birth_date = 1696.1.1
+    death_date = 1738.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1725.1.1 = {
+  monarch = {
+    name = "èyço"  # Phuc Tru
+    dynasty = ".ñ"  # Nguyen
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1725.1.1 = {
+  heir = {
+    name = "èyñ"  # Phuc Khoat
+    monarch_name = "èyñ"  # Phuc Khoat
+    dynasty = ".ñ"  # Nguyen
+    birth_date = 1714.1.1
+    death_date = 1765.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1738.1.1 = {
+  monarch = {
+    name = "èyñ"  # Phuc Khoat
+    dynasty = ".ñ"  # Nguyen
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1754.1.1 = {
+  heir = {
+    name = "èyÛm"  # Phuc Thuan
+    monarch_name = "èyÛm"  # Phuc Thuan
+    dynasty = ".ñ"  # Nguyen
+    birth_date = 1754.1.1
+    death_date = 1777.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1765.1.1 = {
+  monarch = {
+    name = "èyÛm"  # Phuc Thuan
+    dynasty = ".ñ"  # Nguyen
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1765.2.8 = {
+  heir = {
+    name = "èy.f"  # Phuc Anh
+    monarch_name = "èy.f"  # Phuc Anh
+    dynasty = ".ñ"  # Nguyen
+    birth_date = 1765.2.8
+    death_date = 1820.2.3
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1802.1.1 = {
+  monarch = {
+    name = "èy.f"  # Phuc Anh
+    dynasty = ".ñ"  # Nguyen
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1802.1.1 = {
+  heir = {
+    name = "èy∆w"  # Phuc Dam
+    monarch_name = "èy∆w"  # Phuc Dam
+    dynasty = ".ñ"  # Nguyen
+    birth_date = 1791.1.1
+    death_date = 1841.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1820.2.3 = {
+  monarch = {
+    name = "èy∆w"  # Phuc Dam
+    dynasty = ".ñ"  # Nguyen
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+
+1920.1.1 = { technology_group = asian }

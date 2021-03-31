@@ -1,0 +1,248 @@
+government = monarchy
+add_government_reform = iqta
+mercantilism = 0.1
+technology_group = muslim
+primary_culture = mongol
+religion = shiite
+capital = 410
+religious_school = jafari_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1335.1.1 = {
+  monarch = {
+    name = "ÈTQh.^Vy<h"  # Hasan Buzurg
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    adm = 2
+    dip = 1
+    mil = 3
+  }
+}
+1335.1.1 = {
+  heir = {
+    name = "?–æ—¯e"  # Awais
+    monarch_name = "?–æ—¯e"  # Awais
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    birth_date = 1326.1.1
+    death_date = 1374.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+1356.1.1 = {
+  monarch = {
+    name = "?–æ—¯e"  # Awais
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+1356.1.1 = {
+  heir = {
+    name = "¯OiàV"  # Hussain
+    monarch_name = "¯OiàV"  # Hussain
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    birth_date = 1344.1.1
+    death_date = 1383.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1374.1.1 = {
+  monarch = {
+    name = "¯OiàV"  # Hussain
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1374.1.1 = {
+  heir = {
+    name = "Œ‚ÈTÈ·V"  # Ahmed
+    monarch_name = "Œ‚ÈTÈ·V"  # Ahmed
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    birth_date = 1353.1.1
+    death_date = 1410.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+1383.1.1 = {
+  monarch = {
+    name = "Œ‚ÈTÈ·V"  # Ahmad
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+1383.1.1 = {
+  heir = {
+    name = "ætÉb·V"  # Walad
+    monarch_name = "™l?– ætÉb·V"  # Shah Walad
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    birth_date = 1383.1.1
+    death_date = 1410.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1410.1.1 = {
+  monarch = {
+    name = "™l?– ætÉb·V"  # Shah Walad
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1410.1.1 = {
+  heir = {
+    name = "lšÈTƒ·V"  # Mahmud
+    monarch_name = "lšÈTƒ·V"  # Mahmud
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    birth_date = 1390.1.1
+    death_date = 1415.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+1411.1.1 = {
+  capital = 408
+}
+1411.1.1 = {
+  monarch = {
+    name = "lšÈTƒ·V"  # Mahmud
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+1411.1.1 = {
+  heir = {
+    name = "jk`"  # Uwais
+    monarch_name = "jk` II"  # Uwais II
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    birth_date = 1390.1.1
+    death_date = 1421.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1415.1.1 = {
+  monarch = {
+    name = "jk` II"  # Uwais II
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1415.1.1 = {
+  heir = {
+    name = "FzUØž·V"  # Mohammed
+    monarch_name = "FzUØž·V"  # Mohammed
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    birth_date = 1395.1.1
+    death_date = 1422.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+1421.1.1 = {
+  monarch = {
+    name = "FzUØž·V"  # Mohammed
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+1421.1.1 = {
+  heir = {
+    name = "lšÈTƒ·V"  # Mahmud
+    monarch_name = "lšÈTƒ·V"  # Mahmud II
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    birth_date = 1400.1.1
+    death_date = 1424.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+1422.1.1 = {
+  monarch = {
+    name = "lšÈTƒ·V"  # Mahmud II
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+1422.1.1 = {
+  heir = {
+    name = "¯OiàV"  # Husain
+    monarch_name = "¯OiàV II"  # Husain II
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    birth_date = 1404.1.1
+    death_date = 1432.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1424.1.1 = {
+  monarch = {
+    name = "¯OiàV II"  # Husain II
+    dynasty = "-gLR¦N?Q"  # Jalayirid
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}

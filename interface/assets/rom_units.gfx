@@ -1,0 +1,13 @@
+objectTypes = {
+	pdxmesh = {
+		name = "Imperium_ROM_INFANTRY_1"
+		file = "gfx/models/Units/etruscan_hoplite.mesh"		
+
+		animation = { id = "attack"		type = "etr_fight" }
+		animation = { id = "idle"		type = "etr_idle" }
+		animation = { id = "walk"		type = "etr_walk" }
+		animation = { id = "retreat"	type = "etr_wounded" }
+
+		scale = 0.12
+	}
+}

@@ -1,0 +1,28 @@
+objectTypes = {
+	
+	###################################################################################################################
+	#####                                                                                                         #####
+	#####                                                   South American Tank                                   #####
+	#####                                                                                                         #####
+	###################################################################################################################
+	
+	pdxmesh = {
+		name = "southamerican_tank"
+		file = "gfx/models/Units/southamerican_tank.mesh"			
+
+		animation = { id = "attack"				type = "southamerican_tank_attack_animation" }
+		animation = { id = "idle"				type = "southamerican_tank_idle_animation" }
+		animation = { id = "walk"				type = "southamerican_tank_idle_animation" }
+		animation = { id = "death"				type = "southamerican_tank_idle_animation" }
+		animation = { id = "retreat"			type = "southamerican_tank_idle_animation" }
+		
+	#	animation = { id = "horse_attack"		type = "cavalry_rider_attack_animation" }		
+	#	animation = { id = "horse_idle"			type = "cavalry_rider_idle_animation" }
+	#	animation = { id = "horse_walk"			type = "cavalry_rider_moving_animation" }
+	#	animation = { id = "horse_death"		type = "cavalry_rider_death_animation" }
+	#	animation = { id = "horse_retreat"		type = "cavalry_rider_moving_animation" }			
+		
+		scale = 0.25
+	}
+
+}

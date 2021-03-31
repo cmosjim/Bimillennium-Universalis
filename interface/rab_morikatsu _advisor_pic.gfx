@@ -1,0 +1,11 @@
+spriteTypes = {	
+
+		spriteType = {
+		name = "GFX_advisor_morikatsu"
+		texturefile = "gfx//interface//advisors//morikatsu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}

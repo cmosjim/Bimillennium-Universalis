@@ -1,0 +1,21 @@
+# ‚'Y‰TjO
+name = "fN'Y‰TwT—bn"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 2466
+}
+
+1649.1.1 = {
+	add_attacker = QNG
+	add_defender = MNG
+	add_defender = CXI
+}
+
+1662.1.1 = {
+	rem_attacker = QNG
+	rem_defender = MNG
+	rem_defender = CXI
+}
+

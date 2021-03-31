@@ -1,0 +1,319 @@
+government = tribal
+add_government_reform = steppe_horde
+primary_culture = kazani
+religion = sunni
+technology_group = western_nomad_group
+capital = 1082
+religious_school = hanafi_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = nomad_group
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1396.1.1 = {
+  monarch = {
+    name = "?ñjSjg…b ^Y"  # Abdullah Pasha
+    dynasty = "b	T`"  # Genghisid
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+1396.1.1 = {
+  heir = {
+    name = "TX)R^"  # Talich
+    monarch_name = "TX)R^"  # Talich
+    dynasty = "b	T`"  # Genghisid
+    birth_Date = 1390.1.1
+    death_Date = 1429.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+1411.1.1 = {
+  monarch = {
+    name = "TX)R^"  # Talich
+    dynasty = "b	T`"  # Genghisid
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+1411.1.1 = {
+  heir = {
+    name = "?ñÃë+RÂT"  # 'Ali Beg
+    monarch_name = "?ñÃë+RÂT"  # 'Ali Beg
+    dynasty = "b	T`"  # Genghisid
+    birth_date = 1400.1.1
+    death_Date = 1438.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1429.1.1 = {
+  monarch = {
+    name = "?ñÃë+RÂT"  # 'Ali Beg
+    dynasty = "b	T`"  # Genghisid
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1429.1.1 = {
+  heir = {
+    name = "NQÅú lö—ûªû"  # Ulugh Muhammad
+    monarch_name = "NQÅú lö—ûªû"  # Ulugh Muhammad
+    dynasty = "b	T`"  # Genghisid
+    birth_date = 1429.1.1
+    death_date = 1445.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1438.1.1 = {
+  monarch = {
+    name = "NQÅú lö—ûªû"  # Ulugh Muhammad
+    dynasty = "b	T`"  # Genghisid
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1438.1.1 = {
+  heir = {
+    name = "löT(gæèKQ"  # Mahmudak
+    monarch_name = "löT(gæèKQ"  # Mahmudak
+    dynasty = "b	T`"  # Genghisid
+    birth_date = 1430.1.1
+    death_Date = 1466.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1445.1.1 = {
+  monarch = {
+    name = "löT(gæèKQ"  # Mahmudak
+    dynasty = "b	T`"  # Genghisid
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1445.1.1 = {
+  heir = {
+    name = "fjS…b1k"  # Ibrahim
+    monarch_name = "fjS…b1k"  # Ibrahim
+    dynasty = "b	T`"  # Genghisid
+    birth_Date = 1445.1.1
+    death_Date = 1479.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+1466.1.1 = {
+  monarch = {
+    name = "fjS…b1k"  # Ibrahim
+    dynasty = "b	T`"  # Genghisid
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+1466.1.1 = {
+  heir = {
+    name = "OõR»T(g"  # Illham
+    monarch_name = "OõR»T(g"  # Illham
+    dynasty = "b	T`"  # Genghisid
+    birth_Date = 1449.1.1
+    death_Date = 1487.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+1479.1.1 = {
+  monarch = {
+    name = "OS»T(g"  # Ilham
+    dynasty = "b	T`"  # Genghisid
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+1479.1.1 = {
+  heir = {
+    name = "lö—ûªû ?ñf"  # Muhammad Amin
+    monarch_name = "lö—ûªû ?ñf"  # Muhammad Amin
+    dynasty = "b	T`"  # Genghisid
+    birth_Date = 1469.1.1
+    death_Date = 1518.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 5
+  }
+}
+1487.1.1 = {
+  monarch = {
+    name = "lö—ûªû ?ñf"  # Muhammad Amin
+    dynasty = "b	T`"  # Genghisid
+    adm = 1
+    dip = 3
+    mil = 5
+  }
+}
+1495.1.1 = {
+  monarch = {
+    name = "lö(gKQ"  # Mamuk Khan
+    dynasty = "b	T`"  # Genghisid
+    adm = 1
+    dip = 4
+    mil = 4
+  }
+}
+1496.1.1 = {
+  monarch = {
+    name = "?ñN˝ê …b–c+u"  # Abd-al-Latif
+    dynasty = "b	T`"  # Genghisid
+    adm = 4
+    dip = 5
+    mil = 4
+  }
+}
+1502.1.1 = {
+  monarch = {
+    name = "lö—ûªû ?ñf"  # Muhammad Amin
+    dynasty = "b	T`"  # Genghisid
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+1518.1.1 = {
+  monarch = {
+    name = "ôl ?ñÃë"  # Shah Ali
+    dynasty = "<h±É"  # Giray
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1518.1.1 = {
+  heir = {
+    name = "ôl^^"  # Sahib
+    monarch_name = "ôl^^"  # Sahib
+    dynasty = "<h±É"  # Giray
+    birth_date = 1508.1.1
+    death_Date = 1551.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1521.1.1 = {
+  monarch = {
+    name = "ôl^^"  # Sahib
+    dynasty = "<h±É"  # Giray
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1524.1.1 = {
+  monarch = {
+    name = "(Ñ’l"  # Safa
+    dynasty = "<h±É"  # Giray
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1524.1.1 = {
+  heir = {
+    name = "úò ?ñÃë"  # Yan Ali
+    monarch_name = "úò ?ñÃë"  # Yan Ali
+    dynasty = "b	T`"  # Genghisid
+    birth_Date = 1516.1.1
+    death_date = 1535.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 5
+  }
+}
+1532.1.1 = {
+  monarch = {
+    name = "úò ?ñÃë"  # Yan Ali
+    dynasty = "b	T`"  # Genghisid
+    adm = 2
+    dip = 2
+    mil = 5
+  }
+}
+1535.1.1 = {
+  monarch = {
+    name = "(Ñ’l"  # Safa
+    dynasty = "<h±É"  # Giray
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+1549.1.1 = {
+  monarch = {
+    name = "LNÌè˜è1Y"  # ÷temish
+    dynasty = "<h±É"  # Giray
+    adm = 1
+    dip = 5
+    mil = 3
+  }
+}
+1551.1.1 = {
+  monarch = {
+    name = "YrÍè<h?Q lö—ûªû"  # Yadigar Muhammad
+    dynasty = "b	T`"  # Genghisid
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}

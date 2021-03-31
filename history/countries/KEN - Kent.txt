@@ -1,0 +1,311 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+technology_group = barbarian
+primary_culture = briton
+religion = druidism
+capital = 235
+2.1.1 = {
+  monarch = {
+    name = "Vodenos"
+    dynasty = "NWÇÑ∫N"  # Cantiaci
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+15.1.1 = {
+  monarch = {
+    name = "√W9SÅúØe"  # Eppillus
+    dynasty = "?ñyr˜ñÙTyr"  # Atrebate
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+200.1.1 = {
+  primary_culture = anglo_saxon
+  religion = germanic
+  government = monarchy
+  add_government_reform = feudalism_reform
+  government_rank = 1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+420.1.1 = {
+  monarch = {
+    name = "®N÷vØeyr"  # Hengest
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 4
+    dip = 3
+    mil = 6
+  }
+}
+460.1.1 = {
+  monarch = {
+    name = "ó(Ñ"  # Horsa
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+490.1.1 = {
+  monarch = {
+    name = "eYSØeKQ"  # Oisc
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+512.1.1 = {
+  monarch = {
+    name = "eYKQTX"  # Octa
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+536.1.1 = {
+  technology_group = western
+}
+536.1.1 = {
+  monarch = {
+    name = "åÇeYËïÃëKQ"  # Eormenric
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+590.1.1 = {
+  monarch = {
+    name = "√W^XS=Oyr I"  # Aethelberht I
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+616.1.1 = {
+  religion = chalcedonism
+  government = monarchy
+  add_government_reform = salic_reform
+}
+616.2.24 = {
+  monarch = {
+    name = "1r∑VÙT∑V"  # Eadbald
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+640.1.20 = {
+  monarch = {
+    name = "åÇeYNW=Oyr"  # Eorcenberht
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+664.7.14 = {
+  monarch = {
+    name = "√W<h=Oyr I"  # Ecgberht I
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+673.7.4 = {
+  monarch = {
+    name = "Hlothhere"
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+685.6.1 = {
+  monarch = {
+    name = "√W∑VÃëKQ"  # Eadric
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+686.6.1 = {
+  monarch = {
+    name = "FzS"  # Mul
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+687.6.1 = {
+  monarch = {
+    name = "ØeÊtÚÉ∑V"  # Swaefheard
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+692.6.1 = {
+  monarch = {
+    name = "Withred"
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+725.4.23 = {
+  monarch = {
+    name = "√W^XS=Oyr II"  # Aethelberht II
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+762.1.1 = {
+  monarch = {
+    name = "√W∑V=Oyr II"  # Eadberht II
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+764.1.1 = {
+  monarch = {
+    name = "√W<h=Oyr III"  # Ecgberht III
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+780.1.1 = {
+  monarch = {
+    name = "OSôÑ∑V"  # Ealhmund
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+796.1.1 = {
+  monarch = {
+    name = "Eadberht III Praen"
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+798.1.1 = {
+  monarch = {
+    name = "ì^yr˜ñ∑V"  # Cuthred
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+807.1.1 = {
+  monarch = {
+    name = "—yi`fk+Y"  # Coenwulf
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+815.1.1 = {
+  monarch = {
+    name = "âeYfk+Y"  # Ceolwulf
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 1
+    dip = 4
+    mil = 4
+  }
+}
+823.1.1 = {
+  monarch = {
+    name = "Baldred"
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+825.1.1 = {
+  monarch = {
+    name = "√W^XSÉl+Y"  # Aethelwulf
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+858.1.1 = {
+  monarch = {
+    name = "√W^XS=Oyr III"  # Aethelberht III
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 4
+    dip = 3
+    mil = 6
+  }
+}
+866.1.1 = {
+  monarch = {
+    name = "√W^XS˜ñ∑V I"  # Aethelred I
+    dynasty = "NWÇÑ"  # Cantie
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+867.1.1 = {
+  religion = catholic
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+962.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

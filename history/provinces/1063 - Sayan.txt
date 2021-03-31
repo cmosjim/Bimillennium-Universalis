@@ -1,0 +1,37 @@
+#1063 - Sayan
+
+culture = buryat
+religion = tengri_pagan_reformed
+capital = "Sayan"
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+owner = GN1
+controller = GN1
+add_core = GN1
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+333.1.1 = { base_tax = 2  base_manpower = 2  base_manpower = 2  }
+407.1.1 = { owner = ROU controller = ROU add_core = ROU remove_core = GN1 }
+549.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = ROU trade_goods = fur }
+628.1.1 = { owner = GL1 controller = GL1 add_core = GL1 remove_core = GOK }
+647.1.1 = {  owner = TNG controller = TNG add_core = TNG remove_core = GL1 } 
+689.1.1 = { owner = HO3 controller = HO3 add_core = HO3 remove_core = TNG }
+692.1.1 = { owner = GN1 controller = GN1 add_core = GN1 remove_core = HO3 }
+744.1.1 = { owner = UIG controller = UIG add_core = UIG remove_core = GN1 }
+841.1.1 = { owner = GN1 controller = GN1 add_core = GN1 remove_core = UIG }
+1133.1.1 = { owner = TU1 controller = TU1 add_core = TU1 remove_core = GN1 }
+1207.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = TU1 }
+1260.5.5 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1389.1.1 = { owner = TAT controller = TAT add_core = TAT remove_core = YUA }
+1402.1.1 = { owner = OIR controller = OIR add_core = OIR remove_core = TAT }
+1606.1.1 = { owner = BRT controller = BRT add_core = BRT remove_core = OIR }
+1618.1.1 = { discovered_by = RUS }
+1680.1.1 = { owner = ZUN controller = ZUN add_core = ZUN remove_core = BRT }
+1703.1.1 = { discovered_by = RUS owner = RUS controller = RUS religion = orthodox culture = russian trade_goods = fur remove_core = BRT } # Part of Russia
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1930.1.1 = { base_production = 2 }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }

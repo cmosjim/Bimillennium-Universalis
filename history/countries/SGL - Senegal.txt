@@ -1,0 +1,96 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = senegambian
+religion = sunni
+technology_group = muslim
+capital = 1113
+religious_school = maliki_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1900.1.1 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1960.8.20 = {
+  monarch = {
+    name = "˝V°R‘YXTO"  # Council of State
+    adm = 2
+    dip = 2
+    mil = 2
+    religion = sunni
+    regent = yes
+  }
+}
+1960.9.6 = {
+  monarch = {
+    name = ")ReY‚l∑V ^XæèS QhbS"  # LÈopold SÈdar Senghor
+    adm = 3
+    dip = 5
+    mil = 3
+    religion = sunni
+  }
+}
+1988.1.1 = {
+  monarch = {
+    name = "?ñjSjg ÍèLN+Y"  # Abdou Diouf
+    adm = 6
+    dip = 2
+    mil = 2
+    religion = sunni
+  }
+}
+2000.4.1 = {
+  monarch = {
+    name = "?ñjSjg…b6w Êt∑V"  # Abdoulaye Wade
+    adm = 5
+    dip = 3
+    mil = 2
+    religion = sunni
+  }
+}
+2012.4.2 = {
+  monarch = {
+    name = "lö˙W (Ñ“R"  # Macky Sall
+    adm = 3
+    dip = 4
+    mil = 2
+    religion = sunni
+  }
+}

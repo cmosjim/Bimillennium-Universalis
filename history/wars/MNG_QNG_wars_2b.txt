@@ -1,0 +1,19 @@
+#n›QeQsQ
+name = "n›QeQsQ"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 673
+}
+
+1644.1.1 = {
+	add_attacker = QNG
+	add_defender = MNG
+}
+
+1649.1.1 = {
+	rem_attacker = QNG
+	rem_defender = MNG
+}
+

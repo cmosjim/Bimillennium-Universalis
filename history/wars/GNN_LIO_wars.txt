@@ -1,0 +1,19 @@
+
+name = "ёˏb�N"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 721
+}
+
+
+1120.1.1 = {
+	add_attacker = GNN
+	add_defender = LIO
+}
+
+1125.1.1 = {
+	rem_attacker = GNN
+	rem_defender = LIO
+}

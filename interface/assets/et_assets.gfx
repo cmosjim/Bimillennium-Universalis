@@ -1,0 +1,33 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "T-34-85"
+		file = "gfx/models/Units/T-34-85.mesh"		
+		
+
+		animation = { id = "attack"		type = "t_34_85_attack_animation" }
+		animation = { id = "idle"		type = "t_34_85_idle_animation" }
+		animation = { id = "walk"		type = "t_34_85_idle_animation" }
+		animation = { id = "death"		type = "t_34_85_idle_animation" }
+		animation = { id = "retreat"	type = "t_34_85_idle_animation" }
+
+
+		
+		scale = 0.5
+	}
+
+	pdxmesh = {
+		name = "Pak40"
+		file = "gfx/models/Units/pak40.mesh"		
+		
+
+		animation = { id = "attack"	type = "pak40_attack_animation" }
+		animation = { id = "idle"		type = "pak40_idle_animation" }
+		animation = { id = "walk"		type = "pak40_moving_animation" }
+		animation = { id = "death"		type = "pak40_idle_animation" }
+		animation = { id = "retreat"	type = "pak40_moving_animation" }
+				
+		scale = 0.5
+	}
+	
+}

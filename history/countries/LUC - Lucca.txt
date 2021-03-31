@@ -1,0 +1,60 @@
+government = republic
+add_government_reform = noble_elite_reform
+set_legacy_government = noble_republic
+government_rank = 1
+mercantilism = 0.25
+primary_culture = tuscan
+religion = catholic
+technology_group = western
+capital = 3126
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1444.11.11 = {
+  monarch = {
+    name = "I`tãNO"  # Consiglio Generale
+    adm = 3
+    dip = 3
+    mil = 3
+    regent = yes
+  }
+}
+1814.4.11 = {
+  government = monarchy
+  add_government_reform = autocracy_reform
+  monarch = {
+    name = "õsKNöN ÔçféÉ"  # Maria Luisa
+    dynasty = "‚l¡e"  # Bourbon
+    adm = 4
+    dip = 4
+    mil = 2
+    female = yes
+  }
+}

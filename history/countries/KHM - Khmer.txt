@@ -1,0 +1,1449 @@
+government = tribal
+add_government_reform = tribal_despotism
+government_rank = 1
+mercantilism = 0.1
+primary_culture = khmer
+religion = mahayana
+technology_group = early_chinese
+capital = 2380
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+500.1.1 = {
+  government = monarchy
+  add_government_reform = mandala_reform
+  government_rank = 2
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = chinese
+}
+802.1.1 = {
+  capital = 609
+  monarch = {
+    name = "–6wËid II"  # Jayavarman II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+820.1.1 = {
+  heir = {
+    name = "–6wËid"  # Jayavarman
+    monarch_name = "–6wËid III"  # Jayavarman III
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 820.1.1
+    death_date = 877.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+850.1.1 = {
+  monarch = {
+    name = "–6wËid III"  # Jayavarman III
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+850.1.1 = {
+  heir = {
+    name = "àVN–WËid"  # Indravarman
+    monarch_name = "àVN–WËid I"  # Indravarman I
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 847.1.1
+    death_date = 889.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+877.1.1 = {
+  monarch = {
+    name = "àVN–WËid I"  # Indravarman I
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+877.1.1 = {
+  heir = {
+    name = "6w“Ëid"  # Yasovarman
+    monarch_name = "6w“Ëid I"  # Yasovarman I
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 859.1.1
+    death_date = 900.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+889.1.1 = {
+  monarch = {
+    name = "6w“Ëid I"  # Yasovarman I
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+889.1.1 = {
+  heir = {
+    name = "÷f)R™lËid"  # Harshavarman
+    monarch_name = "÷f)R™lËid I"  # Harshavarman I
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 870.1.1
+    death_date = 925.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+900.1.1 = {
+  monarch = {
+    name = "÷f)R™lËid I"  # Harshavarman I
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+900.1.1 = {
+  heir = {
+    name = "ObY±Ëid"  # Ishanavarman
+    monarch_name = "ObY±Ëid II"  # Ishanavarman II
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 895.1.1
+    death_date = 928.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 1
+  }
+}
+925.1.1 = {
+  monarch = {
+    name = "ObY±Ëid II"  # Ishanavarman II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 5
+    dip = 4
+    mil = 1
+  }
+}
+925.1.1 = {
+  heir = {
+    name = "–6wËid"  # Jayavarman
+    monarch_name = "–6wËid IV"  # Jayavarman IV
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 898.1.1
+    death_date = 941.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+928.1.1 = {
+  monarch = {
+    name = "–6wËid IV"  # Jayavarman IV
+    dynasty = "ØšÉh"  # Khmer
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+928.1.1 = {
+  heir = {
+    name = "÷f)R™lËid"  # Harshavarman
+    monarch_name = "÷f)R™lËid II"  # Harshavarman II
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 911.1.1
+    death_date = 944.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+941.1.1 = {
+  monarch = {
+    name = "÷f)R™lËid II"  # Harshavarman II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+941.1.1 = {
+  heir = {
+    name = "W–àVN–WËid"  # Rajendravarman
+    monarch_name = "W–àVN–WËid II"  # Rajendravarman II
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 914.1.1
+    death_date = 968.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 1
+  }
+}
+944.1.1 = {
+  monarch = {
+    name = "W–àVN–WËid II"  # Rajendravarman II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 5
+    mil = 1
+  }
+}
+944.1.1 = {
+  heir = {
+    name = "–6wËid"  # Jayavarman
+    monarch_name = "–6wËid V"  # Jayavarman V
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 938.1.1
+    death_date = 1001.6.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 4
+  }
+}
+968.1.1 = {
+  monarch = {
+    name = "–6wËid V"  # Jayavarman V
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 5
+    mil = 4
+  }
+}
+971.1.1 = {
+  heir = {
+    name = "ON–6wíYËid"  # Udayadityavarman
+    monarch_name = "ON–6wíYËid I"  # Udayadityavarman I
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 971.1.1
+    death_date = 1002.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1001.6.1 = {
+  monarch = {
+    name = "ON–6wíYËid I"  # Udayadityavarman I
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1001.6.1 = {
+  heir = {
+    name = "–6w×kWËid"  # Jayavirahvarman
+    monarch_name = "–6w×kWËid I"  # Jayavirahvarman I
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 972.1.1
+    death_date = 1006.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 5
+  }
+}
+1002.1.1 = {
+  monarch = {
+    name = "–6w×kWËid I"  # Jayavirahvarman I
+    dynasty = "ØšÉh"  # Khmer
+    adm = 5
+    dip = 4
+    mil = 5
+  }
+}
+1002.1.1 = {
+  heir = {
+    name = "Ï‚)R6wËid"  # Suryavarman
+    monarch_name = "Ï‚)R6wËid I"  # Suryavarman I
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 976.1.1
+    death_date = 1050.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+1006.1.1 = {
+  monarch = {
+    name = "Ï‚)R6wËid I"  # Suryavarman I
+    dynasty = "ØšÉh"  # Khmer
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1020.1.1 = {
+  heir = {
+    name = "ON–6wíYËid"  # Udayadityavarman
+    monarch_name = "ON–6wíYËid II"  # Udayadityavarman II
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1020.1.1
+    death_date = 1066.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+1050.1.1 = {
+  monarch = {
+    name = "ON–6wíYËid II"  # Udayadityavarman II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+1050.1.1 = {
+  heir = {
+    name = "÷f)R™lËid"  # Harshavarman
+    monarch_name = "÷f)R™lËid III"  # Harshavarman III
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1036.1.1
+    death_date = 1080.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 4
+  }
+}
+1066.1.1 = {
+  monarch = {
+    name = "÷f)R™lËid III"  # Harshavarman III
+    dynasty = "ØšÉh"  # Khmer
+    adm = 3
+    dip = 1
+    mil = 4
+  }
+}
+1066.1.1 = {
+  heir = {
+    name = "–6wËid"  # Jayavarman
+    monarch_name = "–6wËid VI"  # Jayavarman VI
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1050.1.1
+    death_date = 1107.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+1080.1.1 = {
+  monarch = {
+    name = "–6wËid VI"  # Jayavarman VI
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+1080.1.1 = {
+  heir = {
+    name = "N–W<SàVN–WËid"  # Dharanindravarman
+    monarch_name = "N–W<SàVN–WËid I"  # Dharanindravarman I
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1077.1.1
+    death_date = 1113.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 4
+  }
+}
+1107.1.1 = {
+  monarch = {
+    name = "N–W<SàVN–WËid I"  # Dharanindravarman I
+    dynasty = "ØšÉh"  # Khmer
+    adm = 5
+    dip = 5
+    mil = 4
+  }
+}
+1107.1.1 = {
+  heir = {
+    name = "Ï‚)R6wËid"  # Sryavarman
+    monarch_name = "Ï‚)R6wËid II"  # Sryavarman II
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1083.1.1
+    death_date = 1150.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 5
+  }
+}
+1113.1.1 = {
+  monarch = {
+    name = "Ï‚)R6wËid II"  # Sryavarman II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 5
+    dip = 1
+    mil = 5
+  }
+}
+1120.1.1 = {
+  heir = {
+    name = "N–W<SàVN–WËid"  # Dharanindravarman
+    monarch_name = "N–W<SàVN–WËid II"  # Dharanindravarman II
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1120.1.1
+    death_date = 1156.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1150.1.1 = {
+  monarch = {
+    name = "N–W<SàVN–WËid II"  # Dharanindravarman II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1150.1.1 = {
+  heir = {
+    name = "6w“Ëid"  # Yasovarman
+    monarch_name = "6w“Ëid II"  # Yasovarman II
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1126.1.1
+    death_date = 1165.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+1156.1.1 = {
+  monarch = {
+    name = "6w“Ëid II"  # Yasovarman II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+1156.1.1 = {
+  heir = {
+    name = "^éƒFZ<S0W6wËid"  # Tribhuvanidityavarman
+    monarch_name = "^éƒFZ<S0W6wËid I"  # Tribhuvanidityavarman I
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1135.1.1
+    death_date = 1181.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1165.1.1 = {
+  monarch = {
+    name = "^éƒFZ<S0W6wËid I"  # Tribhuvanidityavarman I
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1165.1.1 = {
+  heir = {
+    name = "–6wËid"  # Jayavarman
+    monarch_name = "–6wËid VII"  # Jayavarman VII
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1151.1.1
+    death_date = 1218.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 5
+  }
+}
+1181.1.1 = {
+  monarch = {
+    name = "–6wËid VII"  # Jayavarman VII
+    dynasty = "ØšÉh"  # Khmer
+    adm = 5
+    dip = 1
+    mil = 5
+  }
+}
+1188.1.1 = {
+  heir = {
+    name = "àVN–WËid"  # Indravarman
+    monarch_name = "àVN–WËid II"  # Indravarman II
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1188.1.1
+    death_date = 1243.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1218.1.1 = {
+  monarch = {
+    name = "àVN–WËid II"  # Indravarman II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1218.1.1 = {
+  heir = {
+    name = "–6wËid"  # Jayavarman
+    monarch_name = "–6wËid VIII"  # Jayavarman VIII
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1213.1.1
+    death_date = 1295.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+1243.1.1 = {
+  monarch = {
+    name = "–6wËid VIII"  # Jayavarman VIII
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+1265.1.1 = {
+  heir = {
+    name = "àVN–WËid"  # Indravarman
+    monarch_name = "àVN–WËid III"  # Indravarman III
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1265.1.1
+    death_date = 1307.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1295.1.1 = {
+  religion = buddhism
+  monarch = {
+    name = "àVN–WËid III"  # Indravarman III
+    dynasty = "ØšÉh"  # Khmer
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+1295.1.1 = {
+  heir = {
+    name = "àVN–WËid"  # Indrajayavarman
+    monarch_name = "àVN–WËid I"  # Indrajayavarman I
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1277.1.1
+    death_date = 1327.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1307.1.1 = {
+  monarch = {
+    name = "àVN–WËid I"  # Indrajayavarman I
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1307.1.1 = {
+  heir = {
+    name = "–6wËid"  # Jayavarman
+    monarch_name = "–6wËid IX"  # Jayavarman IX
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1297.1.1
+    death_date = 1336.1.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 2
+  }
+}
+1327.1.1 = {
+  monarch = {
+    name = "–6wËid IX"  # Jayavarman IX
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 5
+    mil = 2
+  }
+}
+1327.1.1 = {
+  heir = {
+    name = "Xb0tÁT"  # Trosok Peam
+    monarch_name = "Xb0tÁT"  # Trosok Peam
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1306.1.1
+    death_date = 1340.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1336.1.1 = {
+  monarch = {
+    name = "Xb0tÁT"  # Trosok Peam
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1336.1.1 = {
+  heir = {
+    name = "<SÁTË"  # Nippean Bat
+    monarch_name = "<SÁTË"  # Nippean Bat
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1310.1.1
+    death_date = 1346.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+1340.1.1 = {
+  monarch = {
+    name = "<SÁTË"  # Nippean Bat
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+1340.1.1 = {
+  heir = {
+    name = "œQÁe‹sw"  # Lompong Racha
+    monarch_name = "œQÁe‹sw"  # Lompong Racha
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1316.1.1
+    death_date = 1357.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 2
+  }
+}
+1346.1.1 = {
+  monarch = {
+    name = "œQÁe‹sw"  # Lompong Racha
+    dynasty = "ØšÉh"  # Khmer
+    adm = 5
+    dip = 2
+    mil = 2
+  }
+}
+1346.1.1 = {
+  heir = {
+    name = "Ï‚6wÿf"  # Soryavong
+    monarch_name = "Ï‚6wÿf"  # Soryavong
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1327.1.1
+    death_date = 1363.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+1357.1.1 = {
+  monarch = {
+    name = "Ï‚6wÿf"  # Soryavong
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+1357.1.1 = {
+  heir = {
+    name = "ôT†– Éb	V"  # Borom Reachea
+    monarch_name = "ôT†– Éb	V"  # Borom Reachea
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1333.1.1
+    death_date = 1373.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 3
+  }
+}
+1363.1.1 = {
+  monarch = {
+    name = "ôT†– Éb	V"  # Borom Reachea
+    dynasty = "ØšÉh"  # Khmer
+    adm = 5
+    dip = 5
+    mil = 3
+  }
+}
+1363.1.1 = {
+  heir = {
+    name = "‚m»kb"  # Thomma Saok
+    monarch_name = "‚m»kb"  # Thomma Saok
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1343.1.1
+    death_date = 1389.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+1373.1.1 = {
+  monarch = {
+    name = "‚m»kb"  # Thomma Saok
+    dynasty = "ØšÉh"  # Khmer
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+1373.1.1 = {
+  heir = {
+    name = "TYÈT šN"  # Ponchea Yat
+    monarch_name = "TYÈT šN"  # Ponchea Yat
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1359.1.1
+    death_date = 1404.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1389.1.1 = {
+  monarch = {
+    name = "ÁeP6w"  # Ponthea Yat
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1399.1.1 = {
+  heir = {
+    name = "±Wö^³u Éb›s¾^‚„"  # Narayana Ramadhipati
+    monarch_name = "±Wö^³u Éb›s¾^‚„"  # Narayana Ramadhipati
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1380.1.1
+    death_Date = 1429.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1404.1.1 = {
+  monarch = {
+    name = "±Wö^³u Éb›s¾^‚„"  # Narayana Ramadhipati
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1404.1.1 = {
+  heir = {
+    name = "Ê‘)R éƒĞc6w"  # Sri Bodhya
+    monarch_name = "Ê‘)R éƒĞc6w"  # Sri Bodhya
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1400.1.1
+    death_Date = 1444.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1429.1.1 = {
+  monarch = {
+    name = "Ê‘)R éƒĞc6w"  # Sri Bodhya
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1429.1.1 = {
+  heir = {
+    name = "¾idW–^W–"  # Dharmarajadhiraja
+    monarch_name = "¾idW–^W–"  # Dharmarajadhiraja
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1410.1.1
+    death_Date = 1486.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+1444.1.1 = {
+  monarch = {
+    name = "¾idW–^W–"  # Dharmarajadhiraja
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+1460.1.1 = {
+  heir = {
+    name = "¯e÷– 0tzzXb"  # Srey Sukonthor
+    monarch_name = "¯e÷– 0tzzXb"  # Srey Sukonthor
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1460.1.1
+    death_Date = 1512.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1486.1.1 = {
+  monarch = {
+    name = "¯e÷– 0tzzXb"  # Srey Sukonthor
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1486.1.1 = {
+  heir = {
+    name = "HY¯w"  # Nay Kan
+    monarch_name = "HY¯w"  # Nay Kan
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1480.1.1
+    death_Date = 1516.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1512.1.1 = {
+  monarch = {
+    name = "HY¯w"  # Nay Kan
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1512.1.1 = {
+  heir = {
+    name = "‰R^"  # Ang Chan
+    monarch_name = "‰R^ I"  # Ang Chan I
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1500.1.1
+    death_Date = 1566.1.1
+    claim = 95
+    adm = 6
+    dip = 6
+    mil = 6
+  }
+}
+1516.1.1 = {
+  monarch = {
+    name = "‰R^ I"  # Ang Chan I
+    dynasty = "ØšÉh"  # Khmer
+    adm = 6
+    dip = 6
+    mil = 6
+  }
+}
+1550.1.1 = {
+  heir = {
+    name = "ôT†– Éb	V"  # Barom Reachea
+    monarch_name = "ôT†– Éb	V I"  # Barom Reachea I
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1540.1.1
+    death_Date = 1576.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+1566.1.1 = {
+  monarch = {
+    name = "ôT†– Éb	V I"  # Barom Reachea I
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+1566.1.1 = {
+  heir = {
+    name = "VrN–"  # Chettha
+    monarch_name = "VrN– I"  # Chettha I
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1546.1.1
+    death_Date = 1594.1.1
+    claim = 95
+    adm = 2
+    mil = 1
+    dip = 1
+  }
+}
+1576.1.1 = {
+  monarch = {
+    name = "VrN– I"  # Chettha I
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1576.1.1 = {
+  heir = {
+    name = "^t›s0Ÿ”nf^t"  # Reamea Chung Prei
+    monarch_name = "^t›s0Ÿ”nf^t"  # Reamea Chung Prei
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1570.1.1
+    death_Date = 1596.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1594.1.1 = {
+  monarch = {
+    name = "^t›s0Ÿ”nf^t"  # Reamea Chung Prei
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1596.1.1 = {
+  monarch = {
+    name = "ôT†– Éb	V II"  # Barom Reachea II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1598.1.1 = {
+  monarch = {
+    name = "ôT†– Éb	V III"  # Barom Reachea III
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1600.1.1 = {
+  monarch = {
+    name = "-f^kWSÆY"  # Chao Ponhea Nhom
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1603.1.1 = {
+  monarch = {
+    name = "ôT†– Éb	V IV"  # Barom Reachea IV
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1603.1.1 = {
+  heir = {
+    name = "VrN–"  # Chettha
+    monarch_name = "VrN– II"  # Chettha II
+    dynasty = "ØšÉh"  # Khmer
+    birth_date = 1590.1.1
+    death_Date = 1628.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1619.1.1 = {
+  monarch = {
+    name = "VrN– II"  # Chettha II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1628.1.1 = {
+  monarch = {
+    name = "mV`ST"  # Ponhem To
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1630.1.1 = {
+  monarch = {
+    name = "TYÈT0ªR"  # Ponhea Nu
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1630.1.1 = {
+  heir = {
+    name = "‰R¬O"  # Ang Non
+    monarch_name = "‰R¬O I"  # Ang Non I
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1600.1.1
+    death_Date = 1642.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1636.5.15 = {
+  technology_group = old_estern_asian
+}
+1640.1.1 = {
+  monarch = {
+    name = "‰R¬O I"  # Ang Non I
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1642.1.1 = {
+  monarch = {
+    name = "pQzêH–"  # Chan Rama Thupdey
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1642.1.1 = {
+  heir = {
+    name = "ôTNW–"  # Batom Reachea
+    monarch_name = "ôTNW–"  # Batom Reachea
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1620.1.1
+    death_Date = 1672.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+1659.1.1 = {
+  monarch = {
+    name = "ôTNW–"  # Batom Reachea
+    dynasty = "ØšÉh"  # Khmer
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+1672.1.1 = {
+  monarch = {
+    name = "VrN– III"  # Chettha III
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1673.1.1 = {
+  monarch = {
+    name = "‰R0Œ"  # Ang Chei
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1674.1.1 = {
+  monarch = {
+    name = "‰R¬O"  # Ang Non
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1674.1.1 = {
+  heir = {
+    name = "VrN–"  # Chettha
+    monarch_name = "VrN– IV"  # Chettha IV
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1660.1.1
+    death_Date = 1706.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1675.1.1 = {
+  monarch = {
+    name = "VrN– IV"  # Chettha IV
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1706.1.1 = {
+  monarch = {
+    name = "Xbid Éb	V II"  # Thommo Reachea II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1706.1.1 = {
+  heir = {
+    name = "‰Ri`"  # Ang Em
+    monarch_name = "‰Ri`"  # Ang Em
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1680.1.1
+    death_Date = 1722.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1710.1.1 = {
+  monarch = {
+    name = "‰Ri`"  # Ang Em
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1710.1.1 = {
+  heir = {
+    name = "(„TX ‰RR"  # Satha Ang Chei
+    monarch_name = "(„TX ‰RR"  # Satha Ang Chei
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1700.1.1
+    death_Date = 1738.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+1722.1.1 = {
+  monarch = {
+    name = "(„TX ‰RR"  # Satha Ang Chei
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+1722.1.1 = {
+  heir = {
+    name = "Xbid Éb	V"  # Thommo Reachea
+    monarch_name = "Xbid Éb	V II"  # Thommo Reachea II
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1700.1.1
+    death_Date = 1747.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1738.1.1 = {
+  monarch = {
+    name = "Xbid Éb	V II"  # Thommo Reachea II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1738.1.1 = {
+  heir = {
+    name = "‰Råz"  # Ang Ton
+    monarch_name = "‰Råz"  # Ang Ton
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1730.1.1
+    death_Date = 1749.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1747.1.1 = {
+  monarch = {
+    name = "‰Råz"  # Ang Ton
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1747.1.1 = {
+  heir = {
+    name = "VrN–"  # Chettha
+    monarch_name = "VrN– V"  # Chettha V
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1730.1.1
+    death_Date = 1755.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1749.1.1 = {
+  monarch = {
+    name = "VrN– V"  # Chettha V
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1749.1.1 = {
+  heir = {
+    name = "‰Råz"  # Ang Ton
+    monarch_name = "‰Råz"  # Ang Ton
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1720.1.1
+    death_Date = 1758.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1755.1.1 = {
+  monarch = {
+    name = "‰Råz"  # Ang Ton
+    dynasty = "ØšÉh"  # Khmer
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1755.1.1 = {
+  heir = {
+    name = "OrWLNí"  # Preah Outey
+    monarch_name = "OrWLNí II"  # Preah Outey II
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1730.1.1
+    death_Date = 1775.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1758.1.1 = {
+  monarch = {
+    name = "OrWLNí II"  # Preah Outey II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1758.1.1 = {
+  heir = {
+    name = "‰R¬O"  # Ang Non
+    monarch_name = "‰R¬O II"  # Ang Non II
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1750.1.1
+    death_date = 1779.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1775.1.1 = {
+  monarch = {
+    name = "‰R¬O II"  # Ang Non II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1775.1.1 = {
+  heir = {
+    name = "‰Rñ‚"  # Ang Eng
+    monarch_name = "‰Rñ‚"  # Ang Eng
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1760.1.1
+    death_Date = 1806.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1779.1.1 = {
+  monarch = {
+    name = "‰Rñ‚"  # Ang Eng
+    dynasty = "ØšÉh"  # Khmer
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1779.1.1 = {
+  heir = {
+    name = "‰R^"  # Ang Chan
+    monarch_name = "‰R^ II"  # Ang Chan II
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1760.1.1
+    death_Date = 1834.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1806.1.1 = {
+  monarch = {
+    name = "‰R^ II"  # Ang Chan II
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1815.1.1 = {
+  heir = {
+    name = "‰R	w"  # Ang Mey
+    monarch_name = "‰R	w"  # Ang Mey
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1815.1.1
+    death_Date = 1874.12.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+    female = yes
+  }
+}
+1834.1.1 = {
+  monarch = {
+    name = "‰R	w"  # Ang Mey
+    dynasty = "ØšÉh"  # Khmer
+    adm = 3
+    dip = 3
+    mil = 2
+    female = yes
+  }
+}
+1834.1.1 = {
+  heir = {
+    name = "‰RN"  # Ang Duong
+    monarch_name = "‰RN"  # Ang Duong
+    dynasty = "ØšÉh"  # Khmer
+    birth_Date = 1796.1.1
+    death_Date = 1860.10.19
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+1840.1.1 = {
+  monarch = {
+    name = "‰RN"  # Ang Duong
+    dynasty = "ØšÉh"  # Khmer
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+1860.10.19 = {
+  monarch = {
+    name = "ú‹Wfe I"  # Norodom I
+    dynasty = "ú‹Wfe"  # Norodom
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1920.1.1 = {
+  technology_group = asian
+}

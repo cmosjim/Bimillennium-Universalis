@@ -1,0 +1,187 @@
+#2018.12.18 for 1.28 request , some pictures move from event_pictures_COS to specified event_pictures_estates 
+#--delete eventpictures.gfx , it is based on originally file from Parathod , it include event_pictures_estates and event_pictures_poland folder 
+#
+#we just replace the pics from these folders.
+#
+#create folder : \gfx\event_pictures\event_pictures_estates
+#
+#then put following pictures .dds  from event_pictures_cos into this folder. total 8 pics.
+##----------------------------------------------------------------------------------------------
+##	spriteType = {
+##		name = "NOBLE_ESTATE_DEMANDS_eventPicture"
+##		texturefile = "gfx/event_pictures/event_pictures_estates/NOBLE_ESTATE_DEMANDS_eventPicture.dds"
+##		allwaystransparent = yes
+##	}
+##	
+##	spriteType = {
+##		name = "NOBLE_ESTATE_eventPicture"
+##		texturefile = "gfx/event_pictures/event_pictures_estates/NOBLE_ESTATE_eventPicture.dds"
+##		allwaystransparent = yes
+##	}
+##	
+##	spriteType = {
+##		name = "NOBLE_ESTATE_TAKE_OVER_eventPicture"
+##		texturefile = "gfx/event_pictures/event_pictures_estates/NOBLE_ESTATE_TAKE_OVER_eventPicture.dds"
+##		allwaystransparent = yes
+##	}
+##
+##	spriteType = {
+##		name = "BURGHER_ESTATE_eventPicture"
+##		texturefile = "gfx/event_pictures/event_pictures_estates/BURGHER_ESTATE_eventPicture.dds"
+##		allwaystransparent = yes
+##	}
+
+
+
+##	
+##	spriteType = {
+##		name = "BURGHER_ESTATE_UPSET_eventPicture"
+##		texturefile = "gfx/event_pictures/event_pictures_estates/BURGHER_ESTATE_UPSET_eventPicture.dds"
+##		allwaystransparent = yes
+##	}
+##	
+##	spriteType = {
+##		name = "CHURCH_ESTATE_1_eventPicture"
+##		texturefile = "gfx/event_pictures/event_pictures_estates/CHURCH_ESTATE_1_eventPicture.dds"
+##		allwaystransparent = yes
+##	}
+##	
+##	spriteType = {
+##		name = "CHURCH_ESTATE_2_eventPicture"
+##		texturefile = "gfx/event_pictures/event_pictures_estates/CHURCH_ESTATE_2_eventPicture.dds"
+##		allwaystransparent = yes
+##	}
+##	
+##	spriteType = {
+##		name = "CHURCH_ESTATE_UPSET_eventPicture"
+##		texturefile = "gfx/event_pictures/event_pictures_estates/CHURCH_ESTATE_UPSET_eventPicture.dds"
+##		allwaystransparent = yes
+##	}
+##------------------------------------------------------------------------------------------------------------
+#--delete ideas.gfx
+#--delete ages_view.gfx / ages_view.gui
+#--delete countryestatesview.gfx
+
+
+spriteTypes = {
+	
+	spriteType = {
+		name = "ANGRY_SHAMANS_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_COS/ANGRY_SHAMANS_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	#spriteType = {
+	#	name = "BURGHER_ESTATE_eventPicture"
+	#	texturefile = "gfx/event_pictures/event_pictures_COS/BURGHER_ESTATE_eventPicture.dds"
+	#	allwaystransparent = yes
+	#}
+	#
+	#spriteType = {
+	#	name = "BURGHER_ESTATE_UPSET_eventPicture"
+	#	texturefile = "gfx/event_pictures/event_pictures_COS/BURGHER_ESTATE_UPSET_eventPicture.dds"
+	#	allwaystransparent = yes
+	#}
+	#
+	#spriteType = {
+	#	name = "CHURCH_ESTATE_1_eventPicture"
+	#	texturefile = "gfx/event_pictures/event_pictures_COS/CHURCH_ESTATE_1_eventPicture.dds"
+	#	allwaystransparent = yes
+	#}
+	#
+	#spriteType = {
+	#	name = "CHURCH_ESTATE_2_eventPicture"
+	#	texturefile = "gfx/event_pictures/event_pictures_COS/CHURCH_ESTATE_2_eventPicture.dds"
+	#	allwaystransparent = yes
+	#}
+	#
+	#spriteType = {
+	#	name = "CHURCH_ESTATE_UPSET_eventPicture"
+	#	texturefile = "gfx/event_pictures/event_pictures_COS/CHURCH_ESTATE_UPSET_eventPicture.dds"
+	#	allwaystransparent = yes
+	#}
+	
+	spriteType = {
+		name = "COSSACK_ESTATE_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_COS/COSSACK_ESTATE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "COSSACK_ESTATE_RAIDERS_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_COS/COSSACK_ESTATE_RAIDERS_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "COSSACK_ESTATE_UPSET_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_COS/COSSACK_ESTATE_UPSET_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "DHIMMI_ESTATE_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_COS/DHIMMI_ESTATE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "DHIMMI_ESTATE_UPSET_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_COS/DHIMMI_ESTATE_UPSET_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "DIET_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_COS/DIET_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "FAT_WARRIORS_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_COS/FAT_WARRIORS_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "MIRACLE_MONK_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_COS/MIRACLE_MONK_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	#spriteType = {
+	#	name = "NOBLE_ESTATE_DEMANDS_eventPicture"
+	#	texturefile = "gfx/event_pictures/event_pictures_COS/NOBLE_ESTATE_DEMANDS_eventPicture.dds"
+	#	allwaystransparent = yes
+	#}
+	#
+	#spriteType = {
+	#	name = "NOBLE_ESTATE_eventPicture"
+	#	texturefile = "gfx/event_pictures/event_pictures_COS/NOBLE_ESTATE_eventPicture.dds"
+	#	allwaystransparent = yes
+	#}
+	#
+	#spriteType = {
+	#	name = "NOBLE_ESTATE_TAKE_OVER_eventPicture"
+	#	texturefile = "gfx/event_pictures/event_pictures_COS/NOBLE_ESTATE_TAKE_OVER_eventPicture.dds"
+	#	allwaystransparent = yes
+	#}
+	
+	spriteType = {
+		name = "NOMAD_ESTATE_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_COS/NOMAD_ESTATE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "RELIGIOUS_MIGRANTS_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_COS/RELIGIOUS_MIGRANTS_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "SENCRATIC_ALTER_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_COS/SENCRATIC_ALTER_eventPicture.dds"
+		allwaystransparent = yes
+	}
+}

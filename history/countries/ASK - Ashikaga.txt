@@ -1,0 +1,514 @@
+government = monarchy
+add_government_reform = daimyo
+primary_culture = japanese
+religion = shinto
+technology_group = early_chinese
+capital = 1020	# Yamashiro
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1155.1.1 = {
+  monarch = {
+    name = "≥ç)RIN∑^"  # Takauji
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1127.8.18
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = charismatic_negotiator_personality
+  add_ruler_personality = inspiring_leader_personality
+}	
+1155.7.4 = {
+  heir = {
+    name = "≥ç)RIN|Q"  # Yoshiakira
+    monarch_name = "≥ç)RIN|Q"  # Yoshiakira
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1154.1.1
+    death_date = 1199.5.29
+    claim = 90
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+
+1157.5.29 = {
+  monarch = {
+    name = "≥ç)RIN|Q"  
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1127.8.18
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+
+1189.1.1 = {
+  heir = {
+    name = "≥ç)RINl"  # Yoshiakira
+    monarch_name = "≥ç)RINl"  # Yoshiakira
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1189.1.1
+    death_date = 1254.1.1
+    claim = 90
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+
+#ckªlCQt^ˇ1199t^	ˇ3g8Âe
+
+1199.5.29 = {
+  monarch = {
+    name = "≥ç)RINl"  
+ 
+    birth_date = 1189.1.1
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}	
+
+1216.1.1 = {
+  heir = {
+    name = "≥ç)Rll"  
+    monarch_name = "≥ç)Rll"  
+    birth_date = 1216.1.1
+    death_date = 1270.5.31
+    claim = 90
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+
+1254.1.1 = {
+  monarch = {
+    name = "≥ç)Rll"  
+ 
+    birth_date = 1216.1.1
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}	
+
+1254.1.1 = {
+  heir = {
+    name = "≥ç)RVçl"  
+    monarch_name = "≥ç)RVçl"  
+    birth_date = 1240.1.1
+    death_date = 1262.1.2
+    claim = 90
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+
+1259.1.1 = {
+  monarch = {
+    name = "≥ç)RVçl"  
+ 
+    birth_date = 1216.1.1
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}	
+#uﬁã	áe‹VCQt^ˇ1260t^	ˇ
+#âk°l	VâR7t^6g25Âeˇ1284t^8g7Âe	ˇ
+1260.1.1 = {
+  heir = {
+    name = "≥ç)R∂Rˆe"  
+    monarch_name = "≥ç)R∂Rˆe"  
+    birth_date = 1260.1.1
+    death_date = 1284.8.7
+    claim = 90
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+
+1262.1.2 = {
+  monarch = {
+    name = "≥ç)R∂Rˆe"  
+ 
+    birth_date = 1260.1.1
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}	
+
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+
+#áe8lASt^(1273)^ˇCQ∑VåNt^(1331)kNgîNÂe
+1273.1.1 = {
+  heir = {
+    name = "≥ç)Rçl"  
+    monarch_name = "≥ç)Rçl"  
+    birth_date = 1273.1.1
+    death_date = 1331.9.5
+    claim = 90
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+
+1284.8.7 = {
+  monarch = {
+    name = "≥ç)Rçl"  
+    birth_date = 1273.1.1
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+
+1305.7.27 = {
+  heir = {
+    name = "≥ç)RSl"  
+    monarch_name = "≥ç)RSl"  
+   
+    birth_date = 1305.7.27
+    death_date = 1358.1.1
+    claim = 90
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+	
+	
+1331.9.5 = {
+  monarch = {
+    name = "≥ç)RSl"  # Takauji
+   
+    birth_date = 1305.7.27
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = charismatic_negotiator_personality
+  add_ruler_personality = inspiring_leader_personality
+}
+
+1331.9.5 = {
+  heir = {
+    name = "≥ç)RIN‡ã"  # Yoshiakira
+    monarch_name = "≥ç)RIN‡ã"  # Yoshiakira
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1330.7.4
+    death_date = 1367.12.18
+    claim = 90
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+
+1338.2.23 = {
+	add_government_reform = shogunate
+}
+
+1358.5.7 = {
+  monarch = {
+    name = "≥ç)RIN‡ã"  # Yoshiakira
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1330.7.4
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+
+1358.9.25 = {
+  heir = {
+    name = "≥ç)RIN·n"  # Yoshimitsu
+    monarch_name = "≥ç)RIN·n"  # Yoshimitsu
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1358.9.25
+    death_date = 1408.5.31
+    claim = 90
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+
+1367.12.18 = {
+  monarch = {
+    name = "≥ç)RIN·n"  # Yoshimitsu
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1358.9.25
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = lawgiver_personality
+  add_ruler_personality = silver_tongue_personality
+}
+1368.1.1 = {
+  monarch = {
+    name = "≥ç)RIN·n"  # Yoshimitsu
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1358.9.25
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+1386.3.12 = {
+  heir = {
+    name = "≥ç)R≥ç)R"  # Yoshimochi
+    monarch_name = "≥ç)RINc"  # Yoshimochi
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1386.3.12
+    death_date = 1428.2.3
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1408.5.31 = {
+  monarch = {
+    name = "≥ç)RINc"  # Yoshimochi
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1386.3.12
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = careful_personality
+}
+1408.5.31 = {
+  heir = {
+    name = "≥ç)RINœë"  # Yoshikazu
+    monarch_name = "≥ç)RINœë"  # Yoshikazu
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1407.8.27
+    death_date = 1425.3.17
+    claim = 90
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1425.3.17 = {
+  heir = {
+    name = "≥ç)RINYe"  # Yoshinori
+    monarch_name = "≥ç)RINYe"  # Yoshinori
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1394.6.14
+    death_date = 1441.7.12
+    claim = 60
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1428.2.3 = {
+  monarch = {
+    name = "≥ç)RINYe"  # Yoshinori
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1394.6.14
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = cruel_personality
+}
+1434.3.19 = {
+  heir = {
+    name = "≥ç)RIN‹w"  # Yoshikatsu
+    monarch_name = "≥ç)RIN‹w"  # Yoshikatsu
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1434.3.19
+    death_date = 1443.8.16
+    claim = 90
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1441.7.12 = {
+  monarch = {
+    name = "≥ç)RIN‹w"  # Yoshikatsu
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1434.3.19
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+  clear_scripted_personalities = yes
+}
+1443.8.16 = {
+  monarch = {
+    name = "≥ç)RIN?e"  # Yoshimasa
+    #dynasty = "≥ç)R"  # Ashikaga
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = obsessive_perfectionist_personality
+}
+1464.1.1 = {
+  heir = {
+    name = "≥ç)RIN∆â"  # Yoshimi
+    monarch_name = "≥ç)RIN∆â"  # Yoshimi
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1439.3.3
+    death_date = 1491.2.15
+    claim = 80
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1465.12.11 = {
+  heir = {
+    name = "≥ç)RINS"  # Yoshihisa
+    monarch_name = "≥ç)RINS"  # Yoshihisa
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1465.12.11
+    death_date = 1489.4.26
+    claim = 90
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1473.1.1 = {
+  monarch = {
+    name = "≥ç)RINS"  # Yoshihisa
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1465.12.11
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = drunkard_personality
+}
+1490.1.1 = {
+  monarch = {
+    name = "≥ç)RINz"  # Yoshitane
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1466.9.9
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+  clear_scripted_personalities = yes
+}
+1495.1.23 = {
+  monarch = {
+    name = "≥ç)RINÑo"  # Yoshizumi
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1481.1.15
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = craven_personality
+}
+1508.7.1 = {
+  monarch = {
+    name = "≥ç)RINz"  # Yoshitane
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1466.9.9
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+  clear_scripted_personalities = yes
+}
+1521.12.25 = {
+  monarch = {
+    name = "≥ç)RINtf"  # Yoshiharu
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1511.4.2
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = charismatic_negotiator_personality
+}
+1536.3.31 = {
+  heir = {
+    name = "≥ç)RINâè"  # Yoshiteru
+    monarch_name = "≥ç)RINâè"  # Yoshiteru
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1536.3.31
+    death_date = 1565.6.17
+    claim = 90
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1546.12.1 = {
+  monarch = {
+    name = "≥ç)RINâè"  # Yoshiteru
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1536.3.31
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = martial_educator_personality
+}
+1565.6.17 = {
+  monarch = {
+    name = "≥ç)RINcÉ"  # Yoshihide
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1538.1.1
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = malevolent_personality
+}
+1568.9.1 = {
+  monarch = {
+    name = "≥ç)RIN-f"  # Yoshiaki
+    #dynasty = "≥ç)R"  # Ashikaga
+    birth_date = 1537.12.15
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = silver_tongue_personality
+}
+1573.7.3 = {
+  government = monarchy
+  add_government_reform = daimyo
+}
+1636.5.15 = { technology_group = old_estern_asian }
+1949.10.1 = { technology_group = asian }

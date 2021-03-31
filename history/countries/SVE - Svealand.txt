@@ -1,0 +1,285 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+primary_culture = swedish
+religion = norse_pagan_reformed
+technology_group = barbarian
+capital = 1
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+350.1.1 = {
+  monarch = {
+    name = "ÒÇ<hÙu"  # Yngvi
+    dynasty = "ÒÇ<hóg"  # Yngling
+    adm = 3
+    dip = 1
+    mil = 5
+  }
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+380.1.1 = {
+  monarch = {
+    name = "kç<hÃëKQ"  # Hugleik
+    dynasty = "ÒÇ<hóg"  # Yngling
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+400.1.1 = {
+  monarch = {
+    name = "»T	T"  # Haki
+    dynasty = "ÒÇ<hóg"  # Yngling
+    adm = 1
+    dip = 5
+    mil = 2
+  }
+}
+420.1.1 = {
+  monarch = {
+    name = "TN&O∑V"  # Jorund
+    dynasty = "ÒÇ<hóg"  # Yngling
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+450.1.1 = {
+  monarch = {
+    name = "âR"  # Aun
+    dynasty = "ÒÇ<hóg"  # Yngling
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+480.1.1 = {
+  monarch = {
+    name = "âRöR±g"  # Ongentheow
+    dynasty = "ÒÇ<hóg"  # Yngling
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+515.1.1 = {
+  monarch = {
+    name = "eY∑VS"  # Ohthere
+    dynasty = "ÒÇ<hóg"  # Yngling
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+530.1.1 = {
+  monarch = {
+    name = "eYÖQ…b"  # Onela
+    dynasty = "ÒÇ<hóg"  # Yngling
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+550.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+  technology_group = western
+}
+550.1.1 = {
+  monarch = {
+    name = "√W>çSØe"  # Eadgils
+    dynasty = "ÒÇ<hóg"  # Yngling
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+575.1.1 = {
+  monarch = {
+    name = "'kØeåÅ"  # ÷sten
+    dynasty = "ÒÇ<hóg"  # Yngling
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+580.1.1 = {
+  monarch = {
+    name = "0tSÙu"  # Sˆlve
+    dynasty = "ÒÇ<hóg"  # Yngling
+    adm = 6
+    dip = 5
+    mil = 6
+  }
+}
+590.1.1 = {
+  monarch = {
+    name = "ÒÇÊtS"  # Ingvar
+    dynasty = "ÒÇ<hóg"  # Yngling
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+600.1.1 = {
+  monarch = {
+    name = "?ñúQ∑V"  # Anund
+    dynasty = "ÒÇ<hóg"  # Yngling
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+640.1.1 = {
+  monarch = {
+    name = "ÒÇöNS"  # Ingjald
+    dynasty = "ÒÇ<hóg"  # Yngling
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+655.1.1 = {
+  monarch = {
+    name = "OÊtS"  # Ivar
+    dynasty = "Ùu∑V’lf"  # Vidfamning
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+695.1.1 = {
+  monarch = {
+    name = "»T…bS∑V"  # Harald
+    dynasty = "Ùu∑V’lf"  # Vidfamning
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  monarch = {
+    name = "^‰S∑V √î"  # Sigurd Ring
+    dynasty = "Ùu∑V’lf"  # Vidfamning
+    adm = 4
+    dip = 6
+    mil = 4
+  }
+}
+770.1.1 = {
+  monarch = {
+    name = "g≥uS m‚lKQ"  # Ragnar Lodbrok
+    dynasty = "Ùu∑V’lf"  # Vidfamning
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+785.1.1 = {
+  monarch = {
+    name = "'kØeåÅ ç)R"  # ÷sten Beli
+    dynasty = "Ùu∑V’lf"  # Vidfamning
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+800.1.1 = {
+  monarch = {
+    name = "√WÃëKQ I"  # Erik I
+    dynasty = "?ñÙu ôÑ0t"  # av Munsˆ
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+829.6.1 = {
+  monarch = {
+    name = "‘k¶ui` I"  # Bjˆrn I
+    dynasty = "?ñÙu ôÑ0t"  # av Munsˆ
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+831.1.1 = {
+  monarch = {
+    name = "eYm+Y"  # Olof
+    dynasty = "?ñÙu ôÑ0t"  # av Munsˆ
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+850.1.1 = {
+  monarch = {
+    name = "√WÃëKQ II"  # Erik II
+    dynasty = "?ñÙu ôÑ0t"  # av Munsˆ
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+910.1.1 = {
+  monarch = {
+    name = "√î"  # Ring
+    dynasty = "?ñÙu ôÑ0t"  # av Munsˆ
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+940.1.1 = {
+  monarch = {
+    name = "√WÃëKQ III"  # Erik III
+    dynasty = "?ñÙu ôÑ0t"  # av Munsˆ
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+950.1.1 = {
+  monarch = {
+    name = "√WôÑ∑V"  # Emund
+    dynasty = "?ñÙu ôÑ0t"  # av Munsˆ
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+960.1.1 = {
+  monarch = {
+    name = "eYm+Y II"  # Olof II
+    dynasty = "?ñÙu ôÑ0t"  # av Munsˆ
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

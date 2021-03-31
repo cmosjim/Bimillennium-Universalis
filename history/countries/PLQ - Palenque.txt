@@ -1,0 +1,447 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = putun
+religion = mesoamerican_religion
+technology_group = mesoamerican
+capital = 2640
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+431.3.11 = {
+  monarch = {
+    name = "“^aSôTÉbÆY I"  # K'uk' B'alam I
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 397.3.31
+    adm = 2
+    dip = 4
+    mil = 1
+  }
+}
+431.3.11 = {
+  heir = {
+    name = "aS¯e^"  # Casper
+    monarch_name = "aS¯e^"  # Casper
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 422.8.8
+    death_date = 487.7.29
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 1
+  }
+}
+435.1.1 = {
+  monarch = {
+    name = "aS¯e^"  # Casper
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 422.8.8
+    adm = 5
+    dip = 4
+    mil = 1
+  }
+}
+459.11.15 = {
+  heir = {
+    name = "^(ƒ.ÃWpg.(„KQ.GYKQ"  # B'utz Aj Sak Chiik
+    monarch_name = "^(ƒ.ÃWpg.(„KQ.GYKQ"  # B'utz Aj Sak Chiik
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 459.11.15
+    death_date = 501.6.5
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+487.7.29 = {
+  monarch = {
+    name = "^(ƒ.ÃWpg.(„KQ.GYKQ"  # B'utz Aj Sak Chiik
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 459.11.15
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+487.7.29 = {
+  heir = {
+    name = "?–aS"  # Ahkal Mo' Naab'
+    monarch_name = "?–aS I"  # Ahkal Mo' Naab' I
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 465.7.5
+    death_date = 524.12.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+501.6.5 = {
+  monarch = {
+    name = "?–aS I"  # Ahkal Mo' Naab' I
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 465.7.5
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+524.12.1 = {
+  monarch = {
+    name = "ÿzzMOg	ÿ"  # (interregnum)
+    regent = yes
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+529.2.25 = {
+  monarch = {
+    name = "¯w.TN.úWTXÆY I"  # K'an Joy Chitam I
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 490.5.4
+    adm = 0
+    dip = 5
+    mil = 4
+  }
+}
+529.2.25 = {
+  heir = {
+    name = "?–aS"  # Ahkal Mo' Naab'
+    monarch_name = "?–aS II"  # Ahkal Mo' Naab' II
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 523.9.3
+    death_date = 570.7.23
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 0
+  }
+}
+565.2.8 = {
+  monarch = {
+    name = "?–aS II"  # Ahkal Mo' Naab' II
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 523.9.3
+    adm = 0
+    dip = 2
+    mil = 0
+  }
+}
+565.2.8 = {
+  heir = {
+    name = "NW·ôTÉbÆY"  # Kan B'alam
+    monarch_name = "NW·ôTÉbÆY I"  # Kan B'alam I
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 524.9.20
+    death_date = 583.2.3
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+570.7.23 = {
+  monarch = {
+    name = "NW·ôTÉbÆY I"  # Kan B'alam I
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 524.9.20
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+570.7.23 = {
+  heir = {
+    name = "¦uS·OaS³uS"  # Yohl Ik'nal
+    monarch_name = "¦uS·OaS³uS"  # Yohl Ik'nal
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 553.1.1
+    death_date = 605.1.4
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 5
+    female = yes
+  }
+}
+583.2.3 = {
+  monarch = {
+    name = "¦uS·OaS³uS"  # Yohl Ik'nal
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 553.1.1
+    adm = 3
+    dip = 5
+    mil = 5
+    female = yes
+  }
+}
+583.2.3 = {
+  heir = {
+    name = "?–<S2SSlšyr"  # Aj Ne' Yohl Mat
+    monarch_name = "?–<S2SSlšyr"  # Aj Ne' Yohl Mat
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 575.1.1
+    death_date = 612.8.11
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+605.1.4 = {
+  monarch = {
+    name = "?–<S2SSlšyr"  # Aj Ne' Yohl Mat
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 575.1.1
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+605.1.4 = {
+  heir = {
+    name = "âlKO"  # Pakal
+    monarch_name = "âlKO I"  # Pakal I
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 582.1.1
+    death_date = 612.10.22
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 5
+  }
+}
+612.8.11 = {
+  monarch = {
+    name = "âlKO I"  # Pakal I
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 582.1.1
+    adm = 5
+    dip = 1
+    mil = 5
+  }
+}
+612.8.11 = {
+  heir = {
+    name = "(„ýV"  # Sak K'uk'
+    monarch_name = "(„ýV"  # Sak K'uk'
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 582.1.1
+    death_date = 615.7.29
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 4
+    female = yes
+  }
+}
+612.10.22 = {
+  monarch = {
+    name = "(„ýV"  # Sak K'uk'
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 582.1.1
+    adm = 2
+    dip = 5
+    mil = 4
+    female = yes
+  }
+}
+612.10.22 = {
+  heir = {
+    name = "âlKO"  # Pakal
+    monarch_name = "âlKO II"  # Pakal II
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 603.3.1
+    death_date = 683.8.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 5
+  }
+}
+615.7.29 = {
+  monarch = {
+    name = "âlKO II"  # Pakal II
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 603.3.1
+    adm = 5
+    dip = 4
+    mil = 5
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+635.5.23 = {
+  heir = {
+    name = "NW·ôTÉbÆY"  # Kan B'alam
+    monarch_name = "NW·ôTÉbÆY II"  # Kan B'alam II
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 635.5.23
+    death_date = 702.2.20
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+683.8.1 = {
+  monarch = {
+    name = "NW·ôTÉbÆY II"  # Kan B'alam II
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 635.5.23
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+683.8.1 = {
+  heir = {
+    name = "¯w.TN.úWTXÆY"  # K'an Joy Chitam
+    monarch_name = "¯w.TN.úWTXÆY II"  # K'an Joy Chitam II
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 644.11.5
+    death_date = 722.1.3
+    claim = 95
+    adm = 5
+    dip = 0
+    mil = 4
+  }
+}
+702.2.20 = {
+  monarch = {
+    name = "¯w.TN.úWTXÆY II"  # K'an Joy Chitam II
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 644.11.5
+    adm = 5
+    dip = 0
+    mil = 4
+  }
+}
+702.2.20 = {
+  heir = {
+    name = "?–aS"  # Ahkal Mo' Naab'
+    monarch_name = "?–aS III"  # Ahkal Mo' Naab' III
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 678.9.13
+    death_date = 730.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+722.1.3 = {
+  monarch = {
+    name = "?–aS III"  # Ahkal Mo' Naab' III
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 678.9.13
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+722.1.3 = {
+  heir = {
+    name = "âlKO"  # Pakal
+    monarch_name = "âlKO III"  # Pakal III
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 700.1.1
+    death_date = 764.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 0
+  }
+}
+730.1.1 = {
+  monarch = {
+    name = "âlKO III"  # Pakal III
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 700.1.1
+    adm = 5
+    dip = 1
+    mil = 0
+  }
+}
+734.1.1 = {
+  heir = {
+    name = "“^aSôTÉbÆY"  # K'uk' B'ahlam
+    monarch_name = "“^aSôTÉbÆY"  # K'uk' B'ahlam
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 734.1.1
+    death_date = 799.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+764.1.1 = {
+  monarch = {
+    name = "“^aSôTÉbÆY"  # K'uk' B'ahlam
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 734.1.1
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+780.1.1 = {
+  heir = {
+    name = "âlKO"  # Pakal
+    monarch_name = "âlKO IV"  # Pakal IV
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 780.1.1
+    death_date = 900.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 1
+  }
+}
+799.1.1 = {
+  monarch = {
+    name = "âlKO IV"  # Pakal IV
+    dynasty = "^&OKQ"  # Palenque
+    birth_date = 769.1.1
+    adm = 0
+    dip = 2
+    mil = 1
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+900.1.1 = {
+  monarch = {
+    name = "ÿzzMOg	ÿ"  # (interregnum)
+    regent = yes
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

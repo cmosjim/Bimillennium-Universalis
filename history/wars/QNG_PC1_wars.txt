@@ -1,0 +1,20 @@
+
+name = "	Né…KNqN"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 2488
+}
+
+
+1673.12.1 = {
+	add_attacker = QNG
+	add_defender = PC1
+}
+
+1678.6.1 = {
+	rem_attacker = QNG
+	rem_defender = PC1
+}
+

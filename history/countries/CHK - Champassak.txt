@@ -1,0 +1,216 @@
+government = monarchy
+add_government_reform = autocracy_reform
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = 0
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+technology_group = early_chinese
+primary_culture = lao
+religion = buddhism
+capital = 608	# Champassak
+
+
+# Champassak (splinter-kingdom of Lan Xang)	
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1636.5.15 = { technology_group = old_estern_asian }
+1700.1.1 = {
+  monarch = {
+    name = "WSÉb"  # Nan Rat
+    dynasty = "`SôT^X"  # Champasak
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1700.1.1 = {
+  heir = {
+    name = "ú‹ R(„"  # Nokasat
+    monarch_name = "ú‹ R(„"  # Nokasat
+    dynasty = "`SôT^X"  # Champasak
+    birth_date = 1490.1.1
+    death_Date = 1738.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+    female = yes
+  }
+}
+1713.1.1 = {
+  monarch = {
+    name = "ú‹ R(„"  # Nokasat
+    dynasty = "`SôT^X"  # Champasak
+    adm = 3
+    dip = 3
+    mil = 2
+    female = yes
+  }
+}
+1713.1.1 = {
+  heir = {
+    name = "(„6wúVüf"  # Saya Kumane
+    monarch_name = "(„6wúVüf"  # Saya Kumane
+    dynasty = "`SôT^X"  # Champasak
+    birth_date = 1702.1.1
+    death_Date = 1791.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1738.1.1 = {
+  monarch = {
+    name = "(„6wúVüf"  # Saya Kumane
+    dynasty = "`SôT^X"  # Champasak
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1738.1.1 = {
+  heir = {
+    name = "Nv"  # Xiang Keo
+    monarch_name = "Nv"  # Xiang Keo
+    dynasty = "`SôT^X"  # Champasak
+    birth_date = 1735.1.1
+    death_Date = 1791.7.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+1776.1.1 = {
+  government_rank = 1
+}
+1791.1.1 = {
+  monarch = {
+    name = "Nv"  # Xiang Keo
+    dynasty = "`SôT^X"  # Champasak
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+1791.1.1 = {
+  heir = {
+    name = "9³u"  # Fay Na
+    monarch_name = "9³u"  # Fay Na
+    dynasty = "`SôT^X"  # Champasak
+    birth_date = 1778.1.1
+    death_Date = 1811.7.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1791.7.1 = {
+  monarch = {
+    name = "9³u"  # Fay Na
+    dynasty = "`SôT^X"  # Champasak
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1791.7.1 = {
+  heir = {
+    name = "ú‹’‚"  # No Muong
+    monarch_name = "ú‹’‚"  # Fay Na
+    dynasty = "`SôT^X"  # Champasak
+    birth_date = 1782.1.1
+    death_Date = 1811.7.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1811.1.1 = {
+  monarch = {
+    name = "ú‹’‚"  # No Muong
+    dynasty = "`SôT^X"  # Champasak
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+1811.1.1 = {
+  heir = {
+    name = "	VœQ"  # Cha Nou
+    monarch_name = "	VœQ"  # Cha Nou
+    dynasty = "`SôT^X"  # Champasak
+    birth_date = 1786.1.1
+    death_Date = 1813.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}
+1811.7.1 = {
+  monarch = {
+    name = "	VœQ"  # Cha Nou
+    dynasty = "`SôT^X"  # Champasak
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}
+1811.7.1 = {
+  heir = {
+    name = "lšú‹"  # Ma Noi
+    monarch_name = "lšú‹"  # Ma Noi
+    dynasty = "`SôT^X"  # Champasak
+    birth_date = 1788.1.1
+    death_Date = 1819.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}
+1813.1.1 = {
+  monarch = {
+    name = "lšú‹"  # Ma Noi
+    dynasty = "`SôT^X"  # Champasak
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}
+1813.1.1 = {
+  heir = {
+    name = "W–eˆ ²w"  # Rajabud Yo
+    monarch_name = "W–eˆ ²w"  # Rajabud Yo
+    dynasty = "`SôT^X"  # Champasak
+    birth_date = 1793.1.1
+    death_Date = 1827.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+
+
+1920.1.1 = { technology_group = asian }
+

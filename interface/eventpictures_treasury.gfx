@@ -1,0 +1,32 @@
+spriteTypes = {
+	
+
+	spriteType = {
+		name = "treasury_tianshanlotus_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_ALL/treasury_tianshanlotus_eventPicture.dds"
+	}	
+	
+	spriteType = {
+		name = "treasury_stopwarflag_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_ALL/treasury_stopwarflag_eventPicture.dds"
+	}		
+	spriteType = {
+		name = "treasury_milbook_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_ALL/treasury_milbook_eventPicture.dds"
+	}		
+	spriteType = {
+		name = "treasury_admbook_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_ALL/treasury_admbook_eventPicture.dds"
+	}	
+	spriteType = {
+		name = "amber_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_ALL/amber_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "immortality_eventPicutre"
+		texturefile = "gfx/event_pictures/event_pictures_ALL/immortality_eventPicutre.dds"
+		allwaystransparent = yes
+	}
+	
+}

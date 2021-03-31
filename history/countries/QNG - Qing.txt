@@ -1,0 +1,578 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = early_chinese
+primary_culture = manchu
+religion = confucianism
+capital = 1816 # Beijing
+historical_rival = KHA
+historical_rival = OIR
+historical_rival = MNG
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+
+1399.1.1 = {
+	monarch = {
+		name = "1r∞e…âW%cöSÕk6wLNES"
+		#dynasty = " "
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1399.1.1 = {
+	heir = {
+		name = "1r∞e…âWsÂT^(g3w "
+		monarch_name = "1r∞e…âWsÂT^(g3w "
+		birth_date = 1370.1.1
+		death_date = 1433.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1405.1.1 = {
+	monarch = {
+		name = "1r∞e…âWsÂT^(g3w "
+		#dynasty = " "
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1405.1.1 = {
+	heir = {
+		name = "1r∞e…âWcÑqS"
+		monarch_name = "1r∞e…âWcÑqS"
+		
+		birth_date = 1405.1.1
+		death_date = 1467.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1433.1.1 = {
+	monarch = {
+		name = "1r∞e…âWcÑqS"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1433.1.1 = {
+	heir = {
+		name = "1r∞e…âW1ÅW"
+		monarch_name = "1r∞e…âW1ÅW"
+	
+		birth_date = 1433.1.1
+		death_date = 1506.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1467.1.1 = {
+	monarch = {
+		name = "1r∞e…âW1ÅW"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1467.1.1 = {
+	heir = {
+		name = "1r∞e…âW!ïùRPü«r‰S"
+		monarch_name = "1r∞e…âW!ïùRPü«r‰S"
+		birth_date = 1467.1.1
+		death_date = 1522.1.1
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1481.1.1 = {
+	monarch = {
+		name = "1r∞e…âW!ïùRPü«r‰S"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1481.1.1 = {
+	heir = {
+		name = "1r∞e…âWèy·n"
+		monarch_name = "1r∞e…âWèy·n"
+		
+		birth_date = 1481.1.1
+		death_date = 1542.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1522.1.1 = {
+	monarch = {
+		name = "1r∞e…âWèy·n"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1522.1.1 = {
+	heir = {
+		name = "1r∞e…âW…âfâR"
+		monarch_name = "1r∞e…âW…âfâR"
+		
+		birth_date = 1522.1.1
+		death_date = 1571.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1542.1.1 = {
+	monarch = {
+		name = "1r∞e…âW…âfâR"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1542.1.1 = {
+	heir = {
+		name = "1r∞e…âWTXKQN"
+		monarch_name = "1r∞e…âWTXKQN"
+		
+		birth_date = 1532.1.1
+		death_date = 1583.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1571.1.1 = {
+	monarch = {
+		name = "1r∞e…âWTXKQN"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1571.1.1 = {
+	heir = {
+		name = "1r∞e…âW™RS»Tdç"
+		monarch_name = "1r∞e…âW™RS»Tdç"
+		
+		birth_date = 1559.2.21
+		death_date = 1626.9.30
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 6
+		leader = {	
+			name = "1r∞e…âW™RS»Tdç"
+			type = general
+			
+			fire = 3
+			shock = 5
+			manuever = 4
+			siege = 2 
+		}
+	}
+}
+
+1583.1.1 = {
+	monarch = {
+		name = "1r∞e…âW™RS»Tdç"
+		#dynasty = " "
+		
+		adm = 5
+		dip = 4
+		mil = 6
+		leader = {
+			name = "1r∞e…âW™RS»Tdç"   	
+			type = general		
+			fire = 3	
+			shock = 5	
+			manuever = 4	
+			siege = 2 
+		}
+	}
+}
+
+1592.11.28 = {
+	heir = {
+		name = "1r∞e…âWáv*YÅg"
+		monarch_name = "1r∞e…âWáv*YÅg"
+		
+		birth_date = 1592.11.28
+		death_date = 1643.9.21
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 5
+		leader = { 
+			name = "1r∞e…âWáv*YÅg"
+			type = general
+			
+			fire = 2
+			shock = 5
+			manuever = 3
+			siege = 1 
+		}
+	}
+}
+
+1626.9.30 = {
+	monarch = {
+		name = "1r∞e…âWáv*YÅg"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 4
+		mil = 5
+		leader = {
+			name = "1r∞e…âWáv*YÅg"
+			type = general
+			fire = 2
+			shock = 5
+			manuever = 3
+			siege = 1 
+		}
+	}
+}
+
+1628.1.1 = {
+	leader = {
+	name = "1r∞e…âWYSnà"			
+	type = general		
+	fire = 4	
+	shock = 4	
+	manuever = 5	
+	siege = 2	
+	death_date = 1650.12.31 
+	} 
+}
+
+1636.1.1 = {
+	leader = {
+	name = "1r∞e…âWjå<h"
+	type = general
+	fire = 3
+	shock = 4
+	manuever = 4
+	siege = 2
+	death_date = 1647.12.31 
+	} 
+}
+
+1636.1.1 = {
+	government = gov_celestial_empire
+	add_government_reform = celestial_empire
+
+}	
+1636.5.15 = { technology_group = qing_chinese }
+#1636.5.15 = { primary_culture = manchu_new } ## Tech 63
+1638.3.15 = {
+	heir = {
+		name = "1r∞e…âWèy4N"
+		monarch_name = "1r∞e…âWèy4N"
+		
+		birth_date = 1638.3.15
+		death_date = 1661.2.5
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1643.9.22 = {
+	monarch = {
+		name = "1r∞e…âWèy4N"  #Shunzhi Emperor
+		#dynasty = " "
+		
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1645.7.1 = { capital = 1816 } # Beijing
+
+1654.5.4 = {
+	heir = {
+		name = "1r∞e…âWÑsËp"
+		monarch_name = "1r∞e…âWÑsËp"
+		
+		birth_date = 1654.5.4
+		death_date = 1722.12.20
+		claim = 95
+		adm = 6
+		dip = 5
+		mil = 5
+	}
+}
+
+1661.2.5 = {
+	monarch = {
+		name = "1r∞e…âWÑsËp" #Kangxi Emperor
+		#dynasty = " "
+		
+		adm = 6
+		dip = 5
+		mil = 5
+	}
+}
+
+1678.12.13 = {
+	heir = {
+		name = "1r∞e…âW‰wõy"
+		monarch_name = "1r∞e…âW‰wõy"
+		
+		birth_date = 1678.12.13
+		death_date = 1735.10.8
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+1722.12.21 = {
+	monarch = {
+		name = "1r∞e…âW‰wõy" #Yongzheng Emperor
+		#dynasty = " "
+		
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+1722.12.21 = {
+	heir = {
+		name = "1r∞e…âWVÜS"
+		monarch_name = "1r∞e…âWVÜS"
+		
+		birth_date = 1711.9.25
+		death_date = 1799.2.7
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1735.10.10 = {
+	monarch = {
+		name = "1r∞e…âWVÜS" #Qianlong Emperor
+		#dynasty = " "
+		
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+
+
+1760.11.13 = {
+	heir = {
+		name = "1r∞e…âWôò0t"
+		monarch_name = "1r∞e…âWôò0t"
+		
+		birth_date = 1760.11.13
+		death_date = 1820.9.2
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1796.2.9 = {
+	monarch = {
+		name = "1r∞e…âWôò0t" #Jiaqing Emperor
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1796.2.9 = {
+	heir = {
+		name = "1r∞e…âW˚eÅR"
+		monarch_name = "1r∞e…âW˚eÅR"
+		
+		birth_date = 1782.9.16
+		death_date = 1850.2.25
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1820.9.3 = {
+	monarch = {
+		name = "1r∞e…âWıuÅR" #Daoguang Emperor
+		#dynasty = " "
+		
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1831.7.17 = {
+	heir = {
+		name = "1r∞e…âW∏T0N^"
+		monarch_name = "1r∞e…âW∏T0N^"
+		
+		birth_date = 1831.7.17
+		death_date = 1861.8.22
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1850.2.25 = {
+	monarch = {
+		name = "1r∞e…âW∏T0N^"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1856.4.27 = {
+	heir = {
+		name = "1r∞e…âWãèÛm"
+		monarch_name = "1r∞e…âWãèÛm"
+		
+		birth_date = 1856.4.27
+		death_date = 1875.1.12
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1861.8.22 = {
+	monarch = {
+		name = "1r∞e…âWãèÛm"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1871.8.14 = {
+	heir = {
+		name = "1r∞e…âWãèIn"
+		monarch_name = "1r∞e…âWãèIn"
+		
+		birth_date = 1871.8.14
+		death_date = 1908.11.14
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1875.1.12 = {
+	monarch = {
+		name = "1r∞e…âWãèIn"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1897.1.1 = {
+	set_global_flag = chuangguandong
+}
+	
+1906.2.7 = {
+	heir = {
+		name = "1r∞e…âW•nÍN"
+		monarch_name = "1r∞e…âW•nÍN"
+		
+		birth_date = 1906.2.7
+		death_date = 1967.10.17
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1908.11.14 = {
+	monarch = {
+		name = "1r∞e…âW•nÍN"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+1949.10.1 = { technology_group = modern_chinese }

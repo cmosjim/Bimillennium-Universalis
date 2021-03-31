@@ -1,0 +1,74 @@
+#2488 - Umung
+
+owner = HND
+controller = HND
+culture = yi
+religion = animism
+capital = "Umung"
+trade_goods = copper
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 3
+is_city = yes
+add_core = HND
+
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = early_indian
+discovered_by = indian
+
+8.12.1 = { owner = NEW controller = NEW add_core = NEW remove_core = HND }
+23.1.1 = { owner = WQ1 controller = WQ1 add_core = WQ1 remove_core = NEW }
+25.9.1 = { owner = CH2 controller = CH2 add_core = CH2 remove_core = WQ1 }
+36.1.1 = { owner = HND controller = HND add_core = HND remove_core = CH2 }
+180.1.1 = { base_tax = 2 base_production = 2 base_manpower = 3 }
+191.1.1 = { owner = LOE controller = LOE add_core = LOE }
+194.1.1 = { owner = LZ1 controller = LZ1 add_core = LZ1 remove_core = LOE }
+215.1.1 = { owner = LUP controller = LUP add_core = LUP remove_core = LZ1 }
+221.4.6 = { owner = SHU controller = SHU add_core = SHU remove_core = LUP remove_core = HND }
+263.11.1 = { owner = WEI controller = WEI add_core = WEI remove_core = SHU }
+266.2.4 = { owner = JN1 controller = JN1 add_core = JN1 remove_core = WEI }
+311.1.1 = { base_tax = 3 base_production = 3 base_manpower = 3 }
+314.1.1 = { owner = CGH controller = CGH add_core = CGH remove_core = JN1 }
+347.1.1 = { owner = JN1 controller = JN1 add_core = JN1 remove_core = CGH }
+420.1.1 = { owner = LSO controller = LSO add_core = LSO remove_core = JN1 }
+479.1.1 = { owner = QIC controller = QIC add_core = QIC remove_core = LSO }
+500.1.1 = { discovered_by = eastern_nomad_group discovered_by = nomad_group }
+502.1.1 = { owner = LN1 controller = LN1 add_core = LN1 remove_core = QIC }
+557.1.1 = { owner = CZH controller = CZH add_core = CZH remove_core = LN1 }
+581.3.4 = { owner = CCS controller = CCS add_core = CCS remove_core = CZH }
+737.1.1 = { owner = NAN controller = NAN add_core = NAN remove_core = CCS }
+907.1.1 = { owner = QQ1 controller = QQ1 add_core = QQ1 remove_core = NAN }
+
+971.1.1 = { owner = SNG controller = SNG add_core = SNG remove_core = QQ1 }
+1276.1.1 = { owner = YUA controller = YUA add_core = YUA add_core = CZH remove_core = SNG }
+1371.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = YUA }
+1650.11.1 = { owner = CXI controller = CXI add_core = CXI }
+1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+1658.1.1 = { owner = MNG controller = MNG remove_core = CXI }
+1659.1.1 = { owner = QNG controller = QNG add_core = QNG remove_core = MNG }
+1662.4.1 = { owner = PC1 controller = PC1 add_core = PC1 }# Three Feudatories - Wu Sangui titled as Prince of Pingxi in Yunnan
+1678.6.1 = { controller = WDC owner = WDC add_core = WDC remove_core = PC1 } # Three Feudatories revolt
+1681.10.29 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		remove_core = WDC
+}
+1801.1.1 = { base_manpower = 3 }
+1825.1.1 = { base_tax = 3 }
+1850.1.1 = { capital = "Zhaotong" }
+1911.10.30 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Double Ninth uprising
+1912.2.12 = { revolt = {} owner = BNN controller = BNN add_core = BNN  remove_core = QNG remove_core = CZH }
+1917.7.6 = { owner = QX1 controller = QX1 add_core = QX1 remove_core = BNN }
+1926.9.1 = { owner = GJ1 controller = GJ1 add_core = GJ1 remove_core = QX1 }
+1928.12.29 = { owner = ROC controller = ROC add_core = ROC remove_core = FX1 remove_core = GJ1 remove_core = JX1 }
+1929.1.1 = { base_tax = 4 }
+1930.1.1 = {  owner = DX2 controller = DX2 add_core = DX2 remove_core = ROC }
+1949.10.1 = { owner = CHN controller = CHN add_core = CHN remove_core = DX2 }
+1967.1.1 = { base_tax = 1 base_production = 1 }
+1978.1.1 = { base_tax = 2 base_production = 2 }
+1990.1.1 = { base_tax = 3 base_production = 3 base_manpower = 3 }
+2010.1.1 = { base_tax = 4  }

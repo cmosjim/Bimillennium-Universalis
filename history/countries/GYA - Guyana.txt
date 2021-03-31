@@ -1,0 +1,139 @@
+government = republic
+add_government_reform = oligarchy_reform
+mercantilism = 0.1
+technology_group = western
+primary_culture = british_colombian
+religion = reformed
+capital = 744
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1920.1.1 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = universal_suffrage_reform
+  add_government_reform = reinforce_republican_values_reform
+  add_government_reform = multi_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = abolish_presidency
+  set_legacy_government = parliamentary_republic
+}
+1966.5.26 = {
+  monarch = {
+    name = "y^¯e =O³uÆY"  # Forbes Burnham
+    adm = 3
+    mil = 2
+    religion = protestant
+    dip = 4
+  }
+}
+1970.5.17 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+  monarch = {
+    name = "Ÿ”šNmt"  # Arthur Chung
+    adm = 4
+    dip = 1
+    mil = 4
+    religion = protestant
+  }
+}
+1980.10.6 = {
+  monarch = {
+    name = "y^¯e =O³uÆY"  # Forbes Burnham
+    adm = 3
+    mil = 2
+    religion = protestant
+    dip = 4
+  }
+}
+1985.8.6 = {
+  monarch = {
+    name = "·V¯e™„·V —Oyr"  # Desmond Hoyte
+    adm = 3
+    mil = 3
+    religion = protestant
+    dip = 5
+  }
+}
+1992.10.6 = {
+  monarch = {
+    name = "Rê >9h"  # Cheddi Jagan
+    adm = 4
+    dip = 4
+    mil = 3
+    religion = protestant
+  }
+}
+1997.12.19 = {
+  monarch = {
+    name = "Žr…Qyr >9h"  # Janet Jagan
+    adm = 5
+    mil = 2
+    religion = protestant
+    dip = 3
+    female = yes
+  }
+}
+1999.8.11 = {
+  monarch = {
+    name = "ôTÉbyr ><hêeY"  # Bharrat Jagdeo
+    adm = 4
+    dip = 4
+    mil = 3
+    religion = protestant
+  }
+}
+2011.12.3 = {
+  monarch = {
+    name = "U³u·V Éb«ƒTX"  # Donald Ramotar
+    adm = 3
+    dip = 3
+    mil = 4
+    religion = protestant
+  }
+}
+2015.5.16 = {
+  monarch = {
+    name = "'YkS <hpQpg"  # David Granger
+    adm = 3
+    dip = 5
+    mil = 2
+    religion = protestant
+  }
+}

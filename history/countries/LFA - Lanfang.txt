@@ -1,0 +1,153 @@
+government = republic
+add_government_reform = noble_elite_reform
+set_legacy_government = noble_republic
+mercantilism = 0.1
+primary_culture = hakka
+technology_group = early_chinese
+religion = confucianism
+capital = 2418	# Pontianak
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1636.5.15 = { technology_group = old_estern_asian }	
+1777.1.1 = {
+	monarch = {
+		name = "W≥Ç=O"
+	
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1795.1.1 = {
+	monarch = {
+		name = "mlb=O"
+	
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1799.1.1 = {
+	monarch = {
+		name = "ñ€V=O"
+	
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1804.1.1 = {
+	monarch = {
+		name = "mlb=O"
+	
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1811.1.1 = {
+	monarch = {
+		name = "ãR“c=O"
+		
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1823.1.1 = {
+	monarch = {
+		name = "RSåN"
+		
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1838.1.1 = {
+	monarch = {
+		name = "‰SmQ=O"
+		
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1842.1.1 = {
+	monarch = {
+		name = "0åBh≥Ç"
+		
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1843.1.1 = {
+	monarch = {
+		name = "ˆSåÅâè"
+		
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1845.1.1 = {
+	monarch = {
+		name = "Rr^tQ"
+		
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1848.1.1 = {
+	monarch = {
+		name = "R?ñu"
+		
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1876.1.1 = {
+	monarch = {
+		name = "RÆNòR"
+		
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1880.1.1 = {
+	monarch = {
+		name = "R?ñu"
+		
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1949.10.1 = { technology_group = modern_chinese }

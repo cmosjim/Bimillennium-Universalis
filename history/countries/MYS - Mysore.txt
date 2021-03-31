@@ -1,0 +1,543 @@
+government = monarchy
+add_government_reform = nayankara_reform
+government_rank = 1
+primary_culture = kannada
+religion = hinduism
+technology_group = early_indian
+capital = 533
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1399.1.1 = {
+  monarch = {
+    name = "u R Éb>"  # Ganga Raja
+    dynasty = "LNlšşVS"  # Ummatur
+    ADM = 2
+    DIP = 1
+    MIL = 3
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = bold_fighter_personality
+  add_ruler_personality = intricate_web_weaver_personality
+}
+1458.1.1 = {
+  monarch = {
+    name = "‚„lš Éb> I"  # Timma Râja I
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1458.1.1 = {
+  heir = {
+    name = "åglš"  # Châma
+    monarch_name = "åglš Éb> II"  # Câma Râja II
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1458.1.1
+    death_date = 1513.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+1478.1.1 = {
+  monarch = {
+    name = "åglš Éb> II"  # Châma Râja II
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+1478.1.1 = {
+  heir = {
+    name = "åglš"  # Châma
+    monarch_name = "åglš Éb> III"  # Châma Râja III
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1478.1.1
+    death_date = 1552.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1513.1.1 = {
+  monarch = {
+    name = "åglš Éb> III"  # Châma Râja III
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1513.1.1 = {
+  heir = {
+    name = "‚„lš"  # Timma
+    monarch_name = "‚„lš Éb> II"  # Timma Râja II
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1513.1.1
+    death_date = 1572.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 1
+  }
+}
+1552.1.1 = {
+  monarch = {
+    name = "‚„lš Éb> II"  # Timma Râja II
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 5
+    dip = 3
+    mil = 1
+  }
+}
+1552.1.1 = {
+  heir = {
+    name = "åglš"  # Châma
+    monarch_name = "åglš Éb> II"  # Châma Râja II
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1552.1.1
+    death_date = 1576.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1572.1.1 = {
+  monarch = {
+    name = "åglš Éb> IV"  # Châma Râja IV
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1572.1.1 = {
+  heir = {
+    name = "TX¾ ·Væt"  # Bettada Deva
+    monarch_name = "TX¾ ·Væt Éb>"  # Bettada Deva Râja
+    birth_date = 1556.1.1
+    death_date = 1578.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+1576.1.1 = {
+  monarch = {
+    name = "TX¾ ·Væt Éb>"  # Bettada Deva Râja
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+1576.1.1 = {
+  heir = {
+    name = "ætêšNS"  # Wadaiyâr
+    monarch_name = "Éb> ætêšNS"  # Râja Wadaiyâr
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1558.1.1
+    death_date = 1617.6.21
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}
+1578.11.27 = {
+  monarch = {
+    name = "Éb> ætêšNS"  # Râja Wadaiyâr
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}
+1578.11.27 = {
+  heir = {
+    name = "åglš"  # Châma
+    monarch_name = "åglš Éb> V"  # Châma Râja V
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_Date = 1578.11.27
+    death_date = 1637.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1617.6.21 = {
+  monarch = {
+    name = "åglš Éb> V"  # Châma Râja V
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1617.6.21 = {
+  heir = {
+    name = "Olšê"  # Imadi
+    monarch_name = "Olšê Éb>"  # Imadi Râja
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1617.6.21
+    death_date = 1638.10.9
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1637.5.3 = {
+  monarch = {
+    name = "Olšê Éb>"  # Imadi Râja
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1637.5.3 = {
+  heir = {
+    name = "NW‚„Ébæt ³uÉb(„"  # Kanthirava Narasa
+    monarch_name = "NW‚„Ébæt ³uÉb(„ Éb> I"  # Kanthirava Narasa Râja I
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1617.1.1
+    death_date = 1659.8.3
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1638.10.9 = {
+  monarch = {
+    name = "NW‚„Ébæt ³uÉb(„ Éb> I"  # Kanthirava Narasa Râja I
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1638.10.9 = {
+  heir = {
+    name = "¯w^ ·Væt"  # Kempa Deva
+    monarch_name = "¯w^ ·Væt Éb>"  # Kempa Deva Râja
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1610.1.1
+    death_date = 1672.2.11
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 4
+  }
+}
+1659.8.3 = {
+  monarch = {
+    name = "¯w^ ·Væt Éb>"  # Kempa Deva Râja
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 2
+    dip = 2
+    mil = 4
+  }
+}
+1659.8.3 = {
+  heir = {
+    name = "PŸaS ·Væt"  # Chikka Deva
+    monarch_name = "PŸaS ·Væt Éb>"  # Chikka Deva Râja
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1659.8.3
+    death_date = 1704.11.17
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 4
+  }
+}
+1672.2.11 = {
+  monarch = {
+    name = "PŸaS ·Væt Éb>"  # Chikka Deva Râja
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 1
+    dip = 3
+    mil = 4
+  }
+}
+1672.2.11 = {
+  heir = {
+    name = "NW‚„Ébæt ³uÉb(„"  # Kanthirava Narasa
+    monarch_name = "NW‚„Ébæt ³uÉb(„ Éb> II"  # Kanthirava Narasa Râja II
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1672.2.11
+    death_date = 1714.2.17
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+1704.11.17 = {
+  monarch = {
+    name = "NW‚„Ébæt ³uÉb(„ Éb> II"  # Kanthirava Narasa Râja II
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+1704.11.17 = {
+  heir = {
+    name = "KQÌ‘^³u"  # Krishna
+    monarch_name = "KQÌ‘^³u Éb> I"  # Krishna Râja I
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1690.1.1
+    death_date = 1732.3.6
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+1714.2.17 = {
+  monarch = {
+    name = "KQÌ‘^³u Éb> I"  # Krishna Râja I
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+1714.2.17 = {
+  heir = {
+    name = "åglš"  # Châma
+    monarch_name = "åglš Éb> VI"  # Châma Râja VI
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1710.1.1
+    death_date = 1734.6.12
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+1732.3.6 = {
+  monarch = {
+    name = "åglš Éb> VI"  # Châma Râja VI
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+1732.3.6 = {
+  heir = {
+    name = "KQÌ‘^³u"  # Krishna
+    monarch_name = "KQÌ‘^³u Éb> II"  # Krishna Râja II
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1710.1.1
+    death_date = 1761.6.3
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1734.6.12 = {
+  monarch = {
+    name = "KQÌ‘^³u Éb> II"  # Krishna Râja II
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1734.6.12 = {
+  heir = {
+    name = "wm¾S ?–Ì‘"  # Haydar 'Alî
+    monarch_name = "wm¾S ?–Ì‘"  # Haydar 'Alî
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1730.1.1
+    death_date = 1782.12.8
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 6
+  }
+}
+1761.6.3 = {
+  monarch = {
+    name = "wm¾S ?–Ì‘"  # Haydar 'Alî
+    dynasty = "Õlyr^"  # Fatehi
+    ADM = 3
+    DIP = 3
+    MIL = 5
+    leader = {
+      name = "wm¾S ?–Ì‘"  # Haydar 'Alî
+      type = general
+      fire = 4
+      shock = 4
+      manuever = 3
+      siege = 1
+    }
+  }
+  religion = sunni
+  government = monarchy
+  add_government_reform = indian_sultanate_reform
+  religious_school = hanafi_school
+}
+1761.6.3 = {
+  heir = {
+    name = "Ğcnf („^jS"  # Tîpû Sahib
+    monarch_name = "Ğcnf („^jS"  # Tîpû Sahib
+    dynasty = "Õlyr^"  # Fatehi
+    birth_date = 1750.1.1
+    death_date = 1799.5.5
+    claim = 95
+    ADM = 2
+    DIP = 4
+    MIL = 5
+  }
+}
+1780.1.1 = {
+  leader = {
+    name = "Ğcnf („^jS"  # Tîpû Sahib
+    type = general
+    fire = 5
+    shock = 5
+    manuever = 3
+    siege = 1
+    death_date = 1782.12.8
+  }
+}
+1782.12.8 = {
+  monarch = {
+    name = "Ğcnf („^jS"  # Tîpû Sâhib
+    dynasty = "Õlyr^"  # Fatehi
+    ADM = 2
+    DIP = 5
+    MIL = 6
+    leader = {
+      name = "Ğcnf („^jS"  # Tîpû Sahib
+      type = general
+      fire = 5
+      shock = 5
+      manuever = 3
+      siege = 1
+    }
+  }
+}
+1799.5.5 = {
+  monarch = {
+    name = "KQÌ‘^³u Éb> III"  # Krishna Râja III
+    dynasty = "ætêšNS"  # Wodeyar
+    ADM = 1
+    DIP = 0
+    MIL = 0
+  }
+  religion = hinduism
+  government = monarchy
+  add_government_reform = feudalism_reform
+}
+1863.1.1 = {
+  heir = {
+    name = "åglš Éb>"  # Châma Râja
+    monarch_name = "åglš Éb> X"  # Châma Râja X
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1863.1.1
+    death_date = 1894.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+1868.3.27 = {
+  monarch = {
+    name = "åglš Éb> X"  # Châma Râja X
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+1884.6.4 = {
+  heir = {
+    name = "KQÌ‘^³u Éb>"  # Krishna Râja
+    monarch_name = "KQÌ‘^³u Éb> IV"  # Krishna Râja IV
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1884.6.4
+    death_date = 1940.8.3
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}
+1894.1.1 = {
+  monarch = {
+    name = "KQÌ‘^³u Éb> IV"  # Krishna Râja IV
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}
+1919.7.18 = {
+  heir = {
+    name = ">6wåglšÉbÑ‘·VÉb"  # Jayachamarajendra
+    monarch_name = ">6wåglšÉbÑ‘·VÉb"  # Jayachamarajendra
+    dynasty = "ætêšNS"  # Wodeyar
+    birth_date = 1919.7.18
+    death_date = 1974.9.23
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+1940.8.3 = {
+  monarch = {
+    name = ">6wåglšÉbÑ‘·VÉb"  # Jayachamarajendra
+    dynasty = "ætêšNS"  # Wodeyar
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}

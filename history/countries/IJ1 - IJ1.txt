@@ -1,0 +1,92 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = khorasani
+religion = sunni
+government_rank = 1
+technology_group = muslim
+capital = 4448	# Zaranj
+religious_school = shafii_school
+
+
+#Sharaf al-Din Mahmud Shah (13041325)
+#Amir Ghiyas al-Din Kai-Khusrau (13361338/9)
+#Amir Jalal al-Din Mas'ud Shah (in opposition to Kai-Khusrau) (c. 1338  c. 1342)
+#Shams al-Din Muhammad (in opposition to Mas'ud Shah) (1339)
+#Shaikh Jamal al-Din Abu Ishaq (c. 13431357)
+
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+
+
+1304.1.1 = {
+	monarch = {
+		name = "Sharaf al-Din Mahmud"
+		dynasty = "Injuids"
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+}
+
+1336.1.1 = {
+	monarch = {
+		name = "Amir Ghiyas al-Din"
+		dynasty = "Injuids"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1338.1.1 = {
+	monarch = {
+		name = "Amir Jalal al-Din"
+		dynasty = "Injuids"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1339.1.1 = {
+	monarch = {
+		name = "Shams al-Din"
+		dynasty = "Injuids"
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+}
+
+1343.1.1 = {
+	monarch = {
+		name = "Shaikh Jamal al-Din"
+		dynasty = "Injuids"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+1636.5.15 = { technology_group = old_estern_asian }
+1912.2.12 = {
+
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+	religion = liberalism
+}
+1949.10.1 = { technology_group = modern_chinese }

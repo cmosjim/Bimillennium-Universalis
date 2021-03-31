@@ -1,0 +1,17 @@
+name = "V—·^KNØS"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 688 #VS
+}
+
+1125.9.1 = {
+	add_attacker = GNN
+	add_defender = SNG
+}
+
+1127.3.1 = {
+	rem_attacker = GNN
+	rem_defender = SNG
+}

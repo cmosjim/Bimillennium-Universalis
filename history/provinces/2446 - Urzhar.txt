@@ -1,0 +1,65 @@
+#2446 - Urzhar
+
+owner = XIO
+controller = XIO
+add_core = XIO
+is_city = yes
+culture = oirats
+religion = tengri_pagan_reformed
+capital = "Urzhar"
+trade_goods = livestock
+hre = no
+discovered_by = nomad_group
+discovered_by = eastern_nomad_group
+discovered_by = western_nomad_group
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = asian
+discovered_by = early_chinese
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+260.1.1 = { owner = CBN controller = CBN add_core = CBN remove_core = XIO }
+407.1.1 = { owner = ROU controller = ROU add_core = ROU remove_core = CBN }
+502.1.1 = { owner = DLN controller = DLN add_core = DLN remove_core = ROU }
+541.1.1 = { owner = ROU controller = ROU add_core = ROU remove_core = DLN }
+547.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = ROU culture = turkic }
+628.1.1 = { owner = WGO controller = WGO add_core = WGO remove_core = GOK }
+658.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = WGO }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG remove_core = WGO }
+705.2.21 = { owner = TNG controller = TNG add_core = TNG remove_core = WZ1 }
+709.1.1 = { owner = BT1 controller = BT1 add_core = BT1 remove_core = TNG }
+712.1.1 = { owner = HO3 controller = HO3 add_core = HO3 remove_core = BT1 }
+719.1.1 = { owner = TRG controller = TRG add_core = TRG remove_core = HO3 }
+738.1.1 = { owner = KLU controller = KLU add_core = KLU remove_core = TRG }
+942.1.1 = { owner = KKH controller = KKH add_core = KKH remove_core = KLU }
+1100.1.1 = { religion = mahayana }
+1133.1.1 = { owner = LIO controller = LIO add_core = LIO remove_core = KKH }
+1134.1.1 = { owner = NE1 controller = NE1 add_core = NE1 remove_core = LIO }
+1204.1.1 = { owner = QY1 controller = QY1 add_core = QY1 remove_core = NE1 }
+1206.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = NE1 }
+1240.1.1 = { religion = tengri_pagan_reformed }
+1260.1.1 = { owner = WK1 controller = WK1 add_core = WK1 remove_core = MGE }
+1310.1.1 = { owner = CHG controller = CHG add_core = CHG remove_core = WK1 }
+1347.1.1 = { owner = DC1 controller = DC1 add_core = DC1 remove_core = CHG }
+1380.1.1 = { religion = sunni }
+1389.1.1 = { owner = TAT controller = TAT add_core = TAT remove_core = YUA }
+1402.1.1 = { owner = OIR controller = OIR add_core = OIR remove_core = TAT culture = oirats }
+1622.1.1 = { discovered_by = RUS }
+1635.1.1 = { owner = ZUN
+		controller = ZUN
+		add_core = ZUN
+		}
+1755.1.1 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		}
+
+1825.1.1 = { base_production = 2 }
+1854.2.4   = { owner = RUS controller = RUS add_core = RUS remove_core = QNG capital = "Ust-Kamenogorsk" }
+1917.12.13 = { add_core = KZK }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV remove_core = RUS }
+1991.12.16 = { owner = KZK controller = KZK remove_core = SOV remove_core = RUS capital = "skemen" }
+2000.1.1 = { base_tax = 2 base_manpower = 2 }

@@ -1,0 +1,208 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = nguni
+religion = shamanism
+technology_group = central_african
+unit_type = sub_saharan
+capital = 2597
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1727.1.1 = {
+  monarch = {
+    name = "õs<hÙT"  # Mageba
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1697.1.1
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1727.1.1 = {
+  heir = {
+    name = "i`æèÙT"  # Ndaba
+    monarch_name = "i`æèÙT"  # Ndaba
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1715.1.1
+    death_date = 1763.1.1
+    claim = 95
+    adm = 0
+    dip = 4
+    mil = 0
+  }
+}
+1745.1.1 = {
+  monarch = {
+    name = "i`æèÙT"  # Ndaba
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1715.1.1
+    adm = 0
+    dip = 4
+    mil = 0
+  }
+}
+1757.1.1 = {
+  heir = {
+    name = ">çõs"  # Jama
+    monarch_name = ">çõs"  # Jama
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1757.1.1
+    death_date = 1781.1.1
+    claim = 95
+    adm = 0
+    dip = 3
+    mil = 5
+  }
+}
+1763.1.1 = {
+  monarch = {
+    name = ">çõs"  # Jama
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1757.1.1
+    adm = 0
+    dip = 3
+    mil = 5
+  }
+}
+1763.1.1 = {
+  heir = {
+    name = "õè^ç<h—y≥u"  # Senzangakhona
+    monarch_name = "õè^ç<h—y≥u"  # Senzangakhona
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1762.1.1
+    death_date = 1816.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1781.1.1 = {
+  monarch = {
+    name = "õè^ç<h—y≥u"  # Senzangakhona
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1762.1.1
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1787.1.1 = {
+  heir = {
+    name = "ôlaS"  # Shaka
+    monarch_name = "ôlaS"  # Shaka
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1787.1.1
+    death_date = 1828.9.22
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 6
+  }
+}
+1816.1.1 = {
+  monarch = {
+    name = "ôlaS"  # Shaka
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1787.1.1
+    adm = 5
+    dip = 4
+    mil = 6
+  }
+}
+1816.1.1 = {
+  heir = {
+    name = "NàQ"  # Dingane
+    monarch_name = "NàQ"  # Dingane
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1795.1.1
+    death_date = 1840.1.29
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 2
+  }
+}
+1828.9.22 = {
+  monarch = {
+    name = "NàQ"  # Dingane
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1795.1.1
+    adm = 0
+    dip = 5
+    mil = 2
+  }
+}
+1828.9.22 = {
+  heir = {
+    name = "∆YXo∑V"  # Mpande
+    monarch_name = "∆YXo∑V"  # Mpande
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1798.1.1
+    death_date = 1872.10.18
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1840.1.29 = {
+  monarch = {
+    name = "∆YXo∑V"  # Mpande
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1798.1.1
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1840.1.29 = {
+  heir = {
+    name = "^XGYÊt¶u"  # Cetshwayo
+    monarch_name = "^XGYÊt¶u"  # Cetshwayo
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1834.1.1
+    death_date = 1884.2.8
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+1872.10.18 = {
+  monarch = {
+    name = "^XGYÊt¶u"  # Cetshwayo
+    dynasty = "VyÅú"  # Zulu
+    birth_date = 1834.1.1
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}

@@ -1,0 +1,505 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+primary_culture = japanese
+religion = shinto
+technology_group = early_chinese
+capital = 1028
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1000.1.1 = {
+	set_country_flag = daimyo
+}
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1192.7.12 = {
+	monarch = {
+		name = "Sagöe?e"
+		#dynasty = "Hojo"
+		birth_date = 1138.1.1
+		adm = 3
+		dip = 4
+		mil = 0
+	}
+}
+
+1192.7.12 = {
+	heir = {
+		name = "SagINöe"
+		monarch_name = "SagINöe"
+		#dynasty = "Hojo"
+		birth_date = 1163.1.1
+		death_date = 1224.7.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1205.7.1 = {
+	monarch = {
+		name = "SagINöe"
+		#dynasty = "Hojo"
+		birth_date = 1163.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1205.7.1 = {
+	heir = {
+		name = "Sagðlöe"
+		monarch_name = "Sagðlöe"
+		#dynasty = "Hojo"
+		birth_date = 1183.1.1
+		death_date = 1242.7.14
+		claim = 95
+		adm = 5
+		dip = 0
+		mil = 2
+	}
+}
+
+1224.7.1 = {
+	monarch = {
+		name = "Sagðlöe"
+		#dynasty = "Hojo"
+		birth_date = 1183.1.1
+		adm = 5
+		dip = 0
+		mil = 2
+	}
+}
+
+1224.7.1 = {
+	heir = {
+		name = "SagÏuöe"
+		monarch_name = "SagÏuöe"
+		#dynasty = "Hojo"
+		birth_date = 1224.1.1
+		death_date = 1246.5.17
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 0
+	}
+}
+
+1242.7.14 = {
+	monarch = {
+		name = "SagÏuöe"
+		#dynasty = "Hojo"
+		birth_date = 1224.1.1
+		adm = 4
+		dip = 1
+		mil = 0
+	}
+}
+
+1242.7.14 = {
+	heir = {
+		name = "SagöeV"
+		monarch_name = "SagöeV"
+		#dynasty = "Hojo"
+		birth_date = 1227.6.29
+		death_date = 1263.12.24
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1246.5.17 = {
+	monarch = {
+		name = "SagöeV"
+		#dynasty = "Hojo"
+		birth_date = 1227.6.29
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1246.5.17 = {
+	heir = {
+		name = "Sag•öe"
+		monarch_name = "Sag•öe"
+		#dynasty = "Hojo"
+		birth_date = 1230.4.11
+		death_date = 1264.9.12
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1256.11.22 = {
+	monarch = {
+		name = "Sag•öe"
+		#dynasty = "Hojo"
+		birth_date = 1230.4.11
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1256.11.22 = {
+	heir = {
+		name = "Sag?eQg"
+		monarch_name = "Sag?eQg"
+		#dynasty = "Hojo"
+		birth_date = 1205.7.10
+		death_date = 1273.6.13
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1264.9.12 = {
+	monarch = {
+		name = "Sag?eQg"
+		#dynasty = "Hojo"
+		birth_date = 1205.7.10
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1264.9.12 = {
+	heir = {
+		name = "Sagöe—R"
+		monarch_name = "Sagöe—R"
+		#dynasty = "Hojo"
+		birth_date = 1251.6.5
+		death_date = 1284.4.20
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1268.3.5 = {
+	monarch = {
+		name = "Sagöe—R"
+		#dynasty = "Hojo"
+		birth_date = 1251.6.5
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1272.1.14 = {
+	heir = {
+		name = "Sagöe"
+		monarch_name = "Sagöe"
+		#dynasty = "Hojo"
+		birth_date = 1272.1.14
+		death_date = 1311.12.6
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 0
+	}
+}
+
+1284.4.20 = {
+	monarch = {
+		name = "Sagöe"
+		#dynasty = "Hojo"
+		birth_date = 1272.1.14
+		adm = 4
+		dip = 4
+		mil = 0
+	}
+}
+
+1284.4.20 = {
+	heir = {
+		name = "Sag^öe"
+		monarch_name = "Sag^öe"
+		#dynasty = "Hojo"
+		birth_date = 1275.1.1
+		death_date = 1311.11.3
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 2
+	}
+}
+
+1301.8.1 = {
+	monarch = {
+		name = "Sag^öe"
+		#dynasty = "Hojo"
+		birth_date = 1275.1.1
+		adm = 5
+		dip = 2
+		mil = 2
+	}
+}
+
+1301.8.1 = {
+	heir = {
+		name = "Sag—R±R"
+		monarch_name = "Sag—R±R"
+		#dynasty = "Hojo"
+		birth_date = 1259.1.1
+		death_date = 1312.7.16
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 0
+	}
+}
+
+1311.11.3 = {
+	monarch = {
+		name = "Sag—R±R"
+		#dynasty = "Hojo"
+		birth_date = 1259.1.1
+		adm = 3
+		dip = 2
+		mil = 0
+	}
+}
+
+1311.11.3 = {
+	heir = {
+		name = "Sag™qöe"
+		monarch_name = "Sag™qöe"
+		#dynasty = "Hojo"
+		birth_date = 1279.1.1
+		death_date = 1315.8.18
+		claim = 95
+		adm = 0
+		dip = 4
+		mil = 2
+	}
+}
+
+1312.7.16 = {
+	monarch = {
+		name = "Sag™qöe"
+		#dynasty = "Hojo"
+		birth_date = 1279.1.1
+		adm = 0
+		dip = 4
+		mil = 2
+	}
+}
+
+1312.7.16 = {
+	heir = {
+		name = "SagúWöe"
+		monarch_name = "SagúWöe"
+		#dynasty = "Hojo"
+		birth_date = 1286.1.1
+		death_date = 1333.7.4
+		claim = 95
+		adm = 3
+		dip = 0
+		mil = 4
+	}
+}
+
+1315.8.18 = {
+	monarch = {
+		name = "SagúWöe"
+		#dynasty = "Hojo"
+		birth_date = 1286.1.1
+		adm = 3
+		dip = 0
+		mil = 4
+	}
+}
+
+1315.8.18 = {
+	heir = {
+		name = "SagØšöe"
+		monarch_name = "SagØšöe"
+		#dynasty = "Hojo"
+		birth_date = 1303.1.1
+		death_date = 1333.5.23
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 3
+	}
+}
+
+1316.1.1 = {
+	monarch = {
+		name = "SagØšöe"
+		#dynasty = "Hojo"
+		birth_date = 1303.1.1
+		adm = 0
+		dip = 1
+		mil = 3
+	}
+}
+
+1316.1.1 = {
+	heir = {
+		name = "Sag>f"
+		monarch_name = "Sag>f"
+		#dynasty = "Hojo"
+		birth_date = 1278.1.1
+		death_date = 1333.7.4
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 0
+	}
+}
+
+1326.3.1 = {
+	monarch = {
+		name = "Sag>f"
+		#dynasty = "Hojo"
+		birth_date = 1278.1.1
+		adm = 4
+		dip = 4
+		mil = 0
+	}
+}
+
+1326.3.1 = {
+	heir = {
+		name = "SagˆRöe"
+		monarch_name = "SagˆRöe"
+		#dynasty = "Hojo"
+		birth_date = 1295.1.1
+		death_date = 1333.6.30
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+1326.4.1 = {
+	monarch = {
+		name = "SagˆRöe"
+		#dynasty = "Hojo"
+		birth_date = 1295.1.1
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+
+1490.1.1 = {
+  monarch = {
+    name = "Sagée‘N"  # Soun
+    #dynasty = "Sag"  # Hojo
+    birth_date = 1453.1.1
+    adm = 5
+    dip = 4
+    mil = 5
+  }
+}
+1490.1.1 = {
+  heir = {
+    name = "Sagl²u"  # Ujitsuna
+    monarch_name = "l²u"  # Ujitsuna
+    #dynasty = "Sag"  # Hojo
+    birth_date = 1487.1.1
+    death_date = 1541.8.10
+    claim = 90
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1519.9.18 = {
+  monarch = {
+    name = "Sagl²u"  # Ujitsuna
+    #dynasty = "Sag"  # Hojo
+    birth_date = 1487.1.1
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1519.9.18 = {
+  heir = {
+    name = "Sagl·^"  # Ujiyasu
+    monarch_name = "l·^"  # Ujiyasu
+    #dynasty = "Sag"  # Hojo
+    birth_date = 1515.1.1
+    death_date = 1571.10.21
+    claim = 90
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+1541.4.15 = {
+  monarch = {
+    name = "Sagl·^"  # Ujiyasu
+    #dynasty = "Sag"  # Hojo
+    birth_date = 1515.1.1
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+1541.4.15 = {
+  heir = {
+    name = "Sagl?e"  # Ujimasa
+    monarch_name = "l?e"  # Ujimasa
+    #dynasty = "Sag"  # Hojo
+    birth_date = 1538.1.1
+    death_date = 1590.8.10
+    claim = 90
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1571.10.21 = {
+  monarch = {
+    name = "Sagl?e"  # Ujimasa
+    #dynasty = "Sag"  # Hojo
+    birth_date = 1538.1.1
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1571.10.21 = {
+  heir = {
+    name = "Saglôv"  # Ujinao
+    monarch_name = "lôv"  # Ujinao
+    #dynasty = "Sag"  # Hojo
+    birth_date = 1562.1.1
+    death_date = 1591.12.19
+    claim = 90
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1636.5.15 = { technology_group = old_estern_asian }
+1949.10.1 = { technology_group = modern_chinese }

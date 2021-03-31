@@ -1,0 +1,817 @@
+government = monarchy
+add_government_reform = feudalism_reform
+mercantilism = 0.1
+primary_culture = korean
+religion = buddhism
+technology_group = early_chinese
+capital = 735	# Hanseong
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+
+
+
+
+918.1.1 = {
+	monarch = {
+		name = "ãs˙^"
+		
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+918.1.1 = {
+	heir = {
+		name = "ãsç"
+		monarch_name = "ãsç"
+		
+		birth_date = 912.1.1
+		death_date = 945.1.1
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}
+
+943.1.1 = {
+	monarch = {
+		name = "ãsfk"
+		
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}
+
+943.1.1 = {
+	heir = {
+		name = "ãs'S"
+		monarch_name = "ãs'S"
+		
+		birth_date = 923.1.1
+		death_date = 949.3.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+945.1.1 = {
+	monarch = {
+		name = "ãs'S"
+		
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+945.1.1 = {
+	heir = {
+		name = "ãs-f"
+		monarch_name = "ãs-f"
+		
+		birth_date = 925.1.1
+		death_date = 975.7.4
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 1
+	}
+}
+
+949.3.1 = {
+	monarch = {
+		name = "ãs-f"
+		
+		adm = 5
+		dip = 1
+		mil = 1
+	}
+}
+
+949.3.1 = {
+	heir = {
+		name = "ãsƒw"
+		monarch_name = "ãsƒw"
+		
+		birth_date = 920.1.1
+		death_date = 981.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+975.7.4 = {
+	monarch = {
+		name = "ãsƒw"
+		
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+975.7.4 = {
+	heir = {
+		name = "ãsªl"
+		monarch_name = "ãsªl"
+		
+		birth_date = 960.1.1
+		death_date = 997.1.1
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 5
+	}
+}
+
+981.1.1 = {
+	monarch = {
+		name = "ãsªl"
+		
+		adm = 1
+		dip = 5
+		mil = 5
+	}
+}
+
+981.1.1 = {
+	heir = {
+		name = "ãsıã"
+		monarch_name = "ãsıã"
+		
+		birth_date = 980.1.1
+		death_date = 1009.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+997.1.1 = {
+	monarch = {
+		name = "ãsıã"
+		
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+997.1.1 = {
+	heir = {
+		name = "ãs‚ã"
+		monarch_name = "ãs‚ã"
+		
+		birth_date = 992.1.1
+		death_date = 1031.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1009.1.1 = {
+	monarch = {
+		name = "ãs‚ã"
+		
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+
+1016.1.1 = {
+	heir = {
+		name = "ãs¶î"
+		monarch_name = "ãs¶î"
+		
+		birth_date = 1016.1.1
+		death_date = 1034.1.1
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 2
+	}
+}
+
+1031.1.1 = {
+	monarch = {
+		name = "ãs¶î"
+		
+		adm = 1
+		dip = 5
+		mil = 2
+	}
+}
+
+1031.1.1 = {
+	heir = {
+		name = "ãs®N"
+		monarch_name = "ãs®N"
+		
+		birth_date = 1018.1.1
+		death_date = 1046.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+1034.1.1 = {
+	monarch = {
+		name = "ãs®N"
+		
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+1034.1.1 = {
+	heir = {
+		name = "ãsÀV"
+		monarch_name = "ãsÀV"
+		
+		birth_date = 1019.1.1
+		death_date = 1083.1.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1046.1.1 = {
+	monarch = {
+		name = "ãsÀV"
+		
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1049.1.1 = {
+	heir = {
+		name = "ãs–è"
+		monarch_name = "ãs–è"
+		
+		birth_date = 1049.1.1
+		death_date = 1094.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1083.1.1 = {
+	monarch = {
+		name = "ãs–è"
+		
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1083.1.1 = {
+	heir = {
+		name = "ãs1f"
+		monarch_name = "ãs1f"
+		
+		birth_date = 1064.1.1
+		death_date = 1095.1.1
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1094.1.1 = {
+	monarch = {
+		name = "ãs1f"
+		
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1094.1.1 = {
+	heir = {
+		name = "ãsôò"
+		monarch_name = "ãsôò"
+		
+		birth_date = 1054.1.1
+		death_date = 1105.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1095.1.1 = {
+	monarch = {
+		name = "ãsôò"
+		
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1095.1.1 = {
+	heir = {
+		name = "ãswóR"
+		monarch_name = "ãswóR"
+		
+		birth_date = 1079.1.1
+		death_date = 1122.1.1
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1105.1.1 = {
+	monarch = {
+		name = "ãswóR"
+		
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1109.1.1 = {
+	heir = {
+		name = "ãswi"
+		monarch_name = "ãswi"
+		
+		birth_date = 1109.1.1
+		death_date = 1146.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1122.1.1 = {
+	monarch = {
+		name = "ãswi"
+		
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1127.1.1 = {
+	heir = {
+		name = "ãsào"
+		monarch_name = "ãsào"
+		
+		birth_date = 1127.1.1
+		death_date = 1173.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 4
+	}
+}
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+
+
+1146.1.1 = {
+	monarch = {
+		name = "ãsào"
+		
+		adm = 2
+		dip = 1
+		mil = 4
+	}
+}
+
+1146.1.1 = {
+	heir = {
+		name = "ãsgf"
+		monarch_name = "ãsgf"
+		
+		birth_date = 1131.1.1
+		death_date = 1202.1.1
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+1170.1.1 = {
+	monarch = {
+		name = "ãsgf"
+		
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+1170.1.1 = {
+	heir = {
+		name = "ãsSS"
+		monarch_name = "ãsSS"
+		
+		birth_date = 1144.1.1
+		death_date = 1204.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1197.1.1 = {
+	monarch = {
+		name = "ãsSS"
+		
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1197.1.1 = {
+	heir = {
+		name = "ãsn"
+		monarch_name = "ãsn"
+		
+		birth_date = 1181.1.1
+		death_date = 1237.1.1
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 1
+	}
+}
+
+1204.1.1 = {
+	monarch = {
+		name = "ãsn"
+		
+		adm = 2
+		dip = 5
+		mil = 1
+	}
+}
+
+1204.1.1 = {
+	heir = {
+		name = "ãs'YNS"
+		monarch_name = "ãs'YNS"
+		
+		birth_date = 1152.1.1
+		death_date = 1213.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1211.1.1 = {
+	monarch = {
+		name = "ãs'YNS"
+		
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1211.1.1 = {
+	heir = {
+		name = "ãsPRçá"
+		monarch_name = "ãsPRçá"
+		
+		birth_date = 1192.1.1
+		death_date = 1259.1.1
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+1213.1.1 = {
+	monarch = {
+		name = "ãsPRçá"
+		
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+1219.1.1 = {
+	heir = {
+		name = "ãsCQóR"
+		monarch_name = "ãsCQóR"
+		
+		birth_date = 1219.1.1
+		death_date = 1274.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1259.1.1 = {
+	monarch = {
+		name = "ãsCQóR"
+		
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1259.1.1 = {
+	heir = {
+		name = "ãså"
+		monarch_name = "ãså"
+		
+		birth_date = 1236.1.1
+		death_date = 1308.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+
+
+1274.1.1 = {
+	monarch = {
+		name = "ãså"
+		
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+
+1275.1.1 = {
+	heir = {
+		name = "ãsãt"
+		monarch_name = "ãsãt"
+		
+		birth_date = 1275.1.1
+		death_date = 1325.1.1
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1308.1.1 = {
+	monarch = {
+		name = "ãsãt"
+		
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1308.1.1 = {
+	heir = {
+		name = "ãsq"
+		monarch_name = "ãsq"
+		
+		birth_date = 1280.1.1
+		death_date = 1339.1.1
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}
+
+1313.1.1 = {
+	monarch = {
+		name = "ãsq"
+		
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}
+
+1315.1.1 = {
+	heir = {
+		name = "ãsoy"
+		monarch_name = "ãsoy"
+		
+		birth_date = 1315.1.1
+		death_date = 1344.1.1
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}
+
+1330.1.1 = {
+	monarch = {
+		name = "ãsoy"
+		
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}
+
+1337.1.1 = {
+	heir = {
+		name = "ãsf"
+		monarch_name = "ãsf"
+		
+		birth_date = 1337.1.1
+		death_date = 1348.1.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1344.1.1 = {
+	monarch = {
+		name = "ãsf"
+		
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1344.1.1 = {
+	heir = {
+		name = "˜è`—v5g?QÍS"
+		monarch_name = "˜è`—v5g?QÍS"
+		
+		birth_date = 1337.1.1
+		death_date = 1351.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+
+1348.1.1 = {
+	monarch = {
+		name = "˜è`—v5g?QÍS"
+		
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+
+1348.1.1 = {
+	heir = {
+		name = "ãszy"
+		monarch_name = "ãszy"
+		
+		birth_date = 1330.1.1
+		death_date = 1374.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1351.1.1 = {
+	monarch = {
+		name = "ãszy"
+		
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1363.1.1 = {
+	heir = {
+		name = "ãsmr<StY"
+		monarch_name = "ãsmr<StY"
+		
+		birth_date = 1363.1.1
+		death_date = 1388.1.1
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+1374.1.1 = {
+	monarch = {
+		name = "ãsmr<StY"
+		
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+1381.1.1 = {
+	heir = {
+		name = "ãsf"
+		monarch_name = "ãsf"
+		
+		birth_date = 1381.1.1
+		death_date = 1389.1.1
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}
+
+1388.1.1 = {
+	monarch = {
+		name = "ãsf"
+		
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}
+
+1388.1.1 = {
+	heir = {
+		name = "ãsvt"
+		monarch_name = "ãsvt"
+		
+		birth_date = 1345.1.1
+		death_date = 1392.7.18
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+1389.1.1 = {
+	monarch = {
+		name = "ãsvt"
+		
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+1636.5.15 = { technology_group = old_estern_asian }
+1912.2.12 = {
+
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+	religion = liberalism
+}
+1949.10.1 = { technology_group = modern_chinese }

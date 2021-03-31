@@ -1,0 +1,18 @@
+spriteTypes = {	
+		spriteType = {
+		name = "GFX_advisor_lumu_female"
+		texturefile = "gfx//interface//advisors//lumu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_lumu"
+		texturefile = "gfx//interface//advisors//lumu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}

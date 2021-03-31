@@ -1,0 +1,399 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+primary_culture = gothic
+religion = germanic
+technology_group = barbarian
+historical_friend = OST
+capital = 158
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+271.1.1 = {
+  monarch = {
+    name = "¯w³uôT¯e"  # Cannabas
+    dynasty = "åTyr"  # Goth
+    adm = 4
+    dip = 5
+    mil = 2
+  }
+}
+320.1.1 = {
+  monarch = {
+    name = "òƒR·V9h"  # Fritigern
+    dynasty = "ÐcS‡e"  # Terving
+    adm = 2
+    dip = 4
+    mil = 1
+  }
+}
+350.1.1 = {
+  capital = 150
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+370.1.1 = {
+  monarch = {
+    name = "?–yrÈTÉbÌ‘KQ"  # Athanaric
+    dynasty = "ÐcS‡e"  # Terving
+    adm = 2
+    dip = 5
+    mil = 5
+  }
+}
+395.1.1 = {
+  religion = arianism
+  monarch = {
+    name = "?–ÉbÌ‘KQ I"  # Alaric I
+    dynasty = "=OSyQ"  # Balti
+    adm = 6
+    dip = 5
+    mil = 6
+  }
+}
+410.1.1 = {
+  monarch = {
+    name = "?–v–S+Y"  # Athaulf
+    dynasty = "=OSyQ"  # Balti
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+414.1.1 = {
+  capital = 196
+}
+415.1.1 = {
+  monarch = {
+    name = "‰<hÌ‘KQ"  # Sigeric
+    dynasty = "=OSyQ"  # Balti
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+415.6.1 = {
+  monarch = {
+    name = "æt)RšN"  # Wallia
+    dynasty = "=OSyQ"  # Balti
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+419.1.1 = {
+  monarch = {
+    name = "ÄreYYÌ‘KQ I"  # Theodoric I
+    dynasty = "=OSyQ"  # Balti
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+451.1.1 = {
+  monarch = {
+    name = "YÌ‘¯e™„·V"  # Thorismund
+    dynasty = "=OSyQ"  # Balti
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+453.6.1 = {
+  monarch = {
+    name = "ÄreYYÌ‘KQ II"  # Theodoric II
+    dynasty = "=OSyQ"  # Balti
+    adm = 4
+    dip = 6
+    mil = 4
+  }
+}
+466.6.1 = {
+  monarch = {
+    name = "2SÌ‘KQ"  # Euric
+    dynasty = "=OSyQ"  # Balti
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+477.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+}
+484.6.1 = {
+  monarch = {
+    name = "?–ÉbÌ‘KQ II"  # Alaric II
+    dynasty = "=OSyQ"  # Balti
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+507.1.1 = {
+  capital = 2598
+}
+507.6.1 = {
+  monarch = {
+    name = "Öv(„±ƒKQ"  # Gesalec
+    dynasty = "=OSyQ"  # Balti
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+526.6.1 = {
+  monarch = {
+    name = "?–lšÉbÌ‘KQ"  # Amalaric
+    dynasty = "=OSyQ"  # Balti
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+531.6.1 = {
+  monarch = {
+    name = "ÄrLN‚„¯e"  # Theudis
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+536.1.1 = {
+  technology_group = western
+}
+548.6.1 = {
+  monarch = {
+    name = "ÄrLN‚„	T^XS"  # Theudigisel
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+549.6.1 = {
+  monarch = {
+    name = "?–	TÉb I"  # Agila I
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+554.6.1 = {
+  monarch = {
+    name = "?–TX³u	TS·V"  # Athanagild
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+568.6.1 = {
+  monarch = {
+    name = "ógæt I"  # Liuva I
+    dynasty = "óg‡e"  # Liuving
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+569.6.1 = {
+  monarch = {
+    name = ")ReYôu	TS·V"  # Liugivild
+    dynasty = "óg‡e"  # Liuving
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+586.6.1 = {
+  monarch = {
+    name = "÷–aS÷–·V I"  # Reccared I
+    dynasty = "óg‡e"  # Liuving
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+  religion = chalcedonism
+}
+601.6.1 = {
+  monarch = {
+    name = "ógæt II"  # Liuva II
+    dynasty = "óg‡e"  # Liuving
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+603.6.1 = {
+  monarch = {
+    name = "ôuyrÌ‘KQ"  # Witteric
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+610.6.1 = {
+  monarch = {
+    name = "ˆQ·Vlš"  # Gundemar
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+612.6.1 = {
+  monarch = {
+    name = "‰’dôTyr"  # Sisebut
+    dynasty = "‰¯e^­^-¯e)nyrg<h"  # Sisebuting-Swinthilung
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+621.4.1 = {
+  monarch = {
+    name = "÷–aS÷–·V II"  # Reccared II
+    dynasty = "‰¯e^­^-¯e)nyrg<h"  # Sisebuting-Swinthilung
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+621.8.1 = {
+  monarch = {
+    name = "¯e)n‚„Éb"  # Suintila
+    dynasty = "‰¯e^­^-¯e)nyrg<h"  # Sisebuting-Swinthilung
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+631.6.1 = {
+  monarch = {
+    name = "‰^XWS·V"  # Sisenand
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+636.6.1 = {
+  monarch = {
+    name = "QY±ÐcÉb"  # Chintila
+    dynasty = "4tÐcg<h"  # Chintilung
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+640.6.1 = {
+  monarch = {
+    name = "þVS R"  # Tulga
+    dynasty = "4tÐcg<h"  # Chintilung
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+641.6.1 = {
+  monarch = {
+    name = "›¾¯e‡eyr"  # Chindaswinth
+    dynasty = "¦”ãN¯e)nIN"  # Chindaswintung
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+653.6.1 = {
+  monarch = {
+    name = "tåg)n¯e"  # Recceswinth
+    dynasty = "¦”ãN¯e)nIN"  # Chindaswintung
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+672.6.1 = {
+  monarch = {
+    name = "ætUaôT"  # Wamba
+    dynasty = "¦”ãN¯e)nIN"  # Chindaswintung
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+680.6.1 = {
+  monarch = {
+    name = "ÃWôu^"  # Erwig
+    dynasty = "¦”ãN¯e)nIN"  # Chindaswintung
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+687.6.1 = {
+  monarch = {
+    name = "ÃW	TaS"  # Egica
+    dynasty = "¦”ãN¯e)nIN"  # Chindaswintung
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+702.6.1 = {
+  monarch = {
+    name = "ôußR"  # Wittiza
+    dynasty = "¦”ãN¯e)nIN"  # Chindaswintung
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+710.6.1 = {
+  monarch = {
+    name = "W·VÌ‘KQ"  # Roderic
+    dynasty = "¦”ãN¯e)nIN"  # Chindaswintung
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+711.6.1 = {
+  monarch = {
+    name = "?–	TÉb II"  # Agila II
+    dynasty = "¦”ãN¯e)nIN"  # Chindaswintung
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+714.6.1 = {
+  monarch = {
+    name = "?–SY"  # Ardo
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

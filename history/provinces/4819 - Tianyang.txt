@@ -1,0 +1,68 @@
+#663 - Lingyun
+
+owner = GO2
+controller = GO2
+culture = zhuang
+religion = confucianism
+capital = "Lingyun"
+trade_goods = tea
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = GO2
+
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = early_indian
+discovered_by = indian
+
+23.1.1 = { owner = WQ1 controller = WQ1 add_core = WQ1 remove_core = GO2 }
+36.1.1 = { owner = HND controller = HND add_core = HND remove_core = WQ1 }
+191.1.1 = { owner = ZOF controller = ZOF add_core = ZOF remove_core = HND add_core = ZIX }
+215.1.1 = { owner = LUP controller = LUP add_core = LUP remove_core = ZOF }
+221.4.6 = { owner = SHU controller = SHU add_core = SHU remove_core = ZIX remove_core = LUP }
+263.11.1 = { owner = WEI controller = WEI add_core = WEI remove_core = SHU }
+266.2.4 = { owner = JN1 controller = JN1 add_core = JN1 remove_core = WEI }
+420.1.1 = { owner = LSO controller = LSO add_core = LSO remove_core = JN1 }
+479.1.1 = { owner = QIC controller = QIC add_core = QIC remove_core = LSO }
+500.1.1 = { discovered_by = eastern_nomad_group discovered_by = nomad_group }
+502.1.1 = { owner = LN1 controller = LN1 add_core = LN1 remove_core = QIC }
+557.1.1 = { owner = CEN controller = CEN add_core = CEN remove_core = LN1 }
+561.1.1 = {  owner = CZH controller = CZH add_core = CZH remove_core = CEN }
+581.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CZH }
+618.6.18 = { owner = FA2 controller = FA2 add_core = FA2 remove_core = SUI }
+622.7.1 = { owner = TNG controller = TNG add_core = TNG remove_core = FA2 }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+705.2.21 = { owner = TNG controller = TNG add_core = TNG remove_core = WZ1 }
+907.6.1 = { owner = HNH controller = HNH add_core = HNH remove_core = TNG }
+971.1.1 = { owner = SNG controller = SNG add_core = SNG remove_core = HNH }
+1277.1.1 = { owner = YUA controller = YUA add_core = YUA add_core = CZH remove_core = SNG }
+1371.1.1 = { owner = YU2 controller = YU2 add_core = YU2 }
+1373.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = YUA remove_core = YU2 }
+1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+1658.2.1 = { owner = QNG controller = QNG	}
+1674.1.1 = { owner = PC1 controller = PC1 add_core = PC1 }
+1678.6.1 = { controller = WDC owner = WDC add_core = WDC remove_core = PC1 } # Three Feudatories revolt
+1680.1.1 = { controller = QNG owner = QNG add_core = QNG remove_core = WDC }
+1681.10.1 = { remove_core = MNG }
+1751.1.1 = { base_production = 2 base_manpower = 4 }
+1775.1.1 = { base_tax = 2 base_manpower = 5 }
+1801.1.1 = { base_tax = 3 base_manpower = 5 }
+1825.1.1 = { base_production = 4 base_manpower = 5 }
+1851.1.1 = { base_tax = 4 base_production = 5 base_manpower = 7 }
+1875.1.1 = { base_production = 6 base_manpower = 7 }
+1911.11.7 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB }
+1912.2.12 = { revolt = {} owner = BNN controller = BNN add_core = BNN  remove_core = QNG remove_core = CZH }
+1917.7.6 = { owner = GX1 controller = GX1 add_core = GX1 remove_core = BNN }
+1921.1.1 = { owner = YX1 controller = YX1 add_core = YX1 remove_core = GX1 }
+1923.1.1 = { owner = GX1 controller = GX1 add_core = GX1 remove_core = YX1 }
+1926.1.1 = { owner = GJ1 controller = GJ1 add_core = GJ1 remove_core = GX1 }
+1928.12.29 = { owner = ROC controller = ROC add_core = ROC remove_core = GJ1 }
+1929.1.1 = { base_tax = 5 base_production = 6 }
+1930.1.1 = { owner = GX1 controller = GX1 add_core = GX1 remove_core = ROC }
+1949.12.1 = { owner = CHN controller = CHN add_core = CHN remove_core = GX1 }
+1951.1.1 = { base_tax = 6 base_production = 7 }
+1957.1.1 = { religion = communism }
+2000.1.1 = { base_tax = 7 base_production = 7 }

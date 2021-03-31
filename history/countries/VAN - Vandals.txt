@@ -1,0 +1,209 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+primary_culture = vandal
+religion = germanic
+technology_group = barbarian
+capital = 264
+2.1.1 = {
+  monarch = {
+    name = "eYpQY"  # Aurvandil
+    dynasty = "jl¾S"  # Vandal
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+70.1.1 = {
+  monarch = {
+    name = "³R¯e"  # Raus
+    dynasty = "jl¾S"  # Vandal
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+150.1.1 = {
+  monarch = {
+    name = "wnf—V"  # Rapt
+    dynasty = "jl¾S"  # Vandal
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+180.1.1 = {
+  monarch = {
+    name = "÷–<h"  # Rag
+    dynasty = "jl¾S"  # Vandal
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+230.1.1 = {
+  monarch = {
+    name = "?–Ùuyr"  # Argait
+    dynasty = "?–¯eN"  # Asding
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+240.1.1 = {
+  monarch = {
+    name = "Ryr•KQ"  # Gunteric
+    dynasty = "?–¯eN"  # Asding
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+260.1.1 = {
+  monarch = {
+    name = "Ñy±—KQ¯e"  # Crocus
+    dynasty = "?–¯eN"  # Asding
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+300.1.1 = {
+  monarch = {
+    name = "ôu¯e›s"  # Wisimar
+    dynasty = "?–¯eN"  # Asding
+    adm = 6
+    dip = 5
+    mil = 6
+  }
+}
+350.1.1 = {
+  capital = 66
+}
+359.1.1 = {
+  monarch = {
+    name = "KOê	T0t"  # Godigisel
+    dynasty = "?–¯eN"  # Asding
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+407.1.1 = {
+  religion = arianism
+  monarch = {
+    name = "Ryr•KQ"  # Gunderic
+    dynasty = "?–¯eN"  # Asding
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+409.1.1 = {
+  capital = 223
+}
+428.6.1 = {
+  monarch = {
+    name = "Öv(„Ì‘KQ"  # Genseric
+    dynasty = "?–¯eN"  # Asding
+    adm = 5
+    dip = 4
+    mil = 3
+    leader = {
+      name = "Öv(„Ì‘KQ"  # Genseric
+      type = general
+      fire = 3
+      shock = 5
+      manuever = 3
+      siege = 0
+    }
+  }
+}
+432.1.1 = {
+  capital = 1882
+}
+439.1.1 = {
+  capital = 431
+}
+477.1.1 = {
+  monarch = {
+    name = "ğÒR^tKQ"  # Huneric
+    dynasty = "?–¯eN"  # Asding
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+480.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+}
+484.1.1 = {
+  monarch = {
+    name = "äS(„™„·V"  # Gunthamund
+    dynasty = "?–¯eN"  # Asding
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+496.6.1 = {
+  monarch = {
+    name = "^t¯e’‚·V"  # Tharasmund
+    dynasty = "?–¯eN"  # Asding
+    adm = 4
+    dip = 6
+    mil = 4
+  }
+}
+523.6.1 = {
+  monarch = {
+    name = "^S·VÌ‘KQ"  # Hilderic
+    dynasty = "?–¯eN"  # Asding
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+530.6.1 = {
+  monarch = {
+    name = "Öv)RØ"  # Gelimer
+    dynasty = "?–¯eN"  # Asding
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+536.1.1 = {
+  technology_group = western
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

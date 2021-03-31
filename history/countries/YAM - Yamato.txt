@@ -1,0 +1,461 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = japanese
+religion = shinto
+technology_group = early_chinese
+capital = 1832
+1.1.1 = {
+  monarch = {
+    name = "ImÓveQeVîNAS˘rÉS"
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+71.1.1 = {
+  monarch = {
+    name = "'Y≥çeVÕV„N%RS"
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+131.1.1 = {
+  monarch = {
+    name = "z≥çeVS"
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+192.1.1 = {
+  monarch = {
+    name = "≥çÚNeVS"
+    adm = 5
+    dip = 3
+    mil = 3
+  }
+}
+201.1.1 = {
+  monarch = {
+    name = "lwï≥çÎYS"
+    adm = 4
+    dip = 4
+    mil = 2
+    female = yes
+  }
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+270.1.1 = {
+  monarch = {
+    name = "ãã0u%R"
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+311.1.1 = {
+  monarch = {
+    name = "'YÊùÔù"
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+400.1.1 = {
+  monarch = {
+    name = "eS-N"  # Richu
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+406.1.1 = {
+  monarch = {
+    name = "ÕSck"  # Hanzei
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+411.1.1 = {
+  monarch = {
+    name = "AQm`"  # Ingyo
+    adm = 1
+    dip = 4
+    mil = 4
+  }
+}
+453.1.1 = {
+  monarch = {
+    name = "âR∑^"  # Anko
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+456.1.1 = {
+  monarch = {
+    name = "ƒñeu"  # Yuryaku
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+480.1.1 = {
+  monarch = {
+    name = "nÅR"  # Seinei
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+485.1.1 = {
+  monarch = {
+    name = ">fóR"  # Kenzo
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+488.1.1 = {
+  monarch = {
+    name = "¡N2ç"  # Ninken
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+498.1.1 = {
+  monarch = {
+    name = "fk»p"  # Buretsu
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+507.1.1 = {
+  monarch = {
+    name = "ÁuSO"  # Keitai
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+531.1.1 = {
+  monarch = {
+    name = "âRÚï"  # Ankan
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+535.1.1 = {
+  monarch = {
+    name = "±RS"  # Senka
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+539.1.1 = {
+  monarch = {
+    name = "¶îf"  # Kimmei
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+572.1.1 = {
+  monarch = {
+    name = "Oeæè"  # Bidatsu
+    adm = 1
+    dip = 4
+    mil = 4
+  }
+}
+585.1.1 = {
+  monarch = {
+    name = "(uf"  # Yomei
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+587.1.1 = {
+  monarch = {
+    name = "T˚S"  # Sushun
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+592.1.1 = {
+  monarch = {
+    name = "®c‰S"  # Suiko
+    adm = 4
+    dip = 3
+    mil = 6
+    female = yes
+  }
+}
+607.1.1 = {
+  religion = mahayana
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+629.1.1 = {
+  monarch = {
+    name = "Çf"  # Jomei
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+642.1.1 = {
+  monarch = {
+    name = "ávÅg"  # Kogyoku
+    adm = 4
+    dip = 2
+    mil = 2
+    female = yes
+  }
+}
+645.1.1 = {
+  monarch = {
+    name = "kR∑V"  # Kotoku
+    adm = 3
+    dip = 4
+    mil = 6
+  }
+}
+655.1.1 = {
+  monarch = {
+    name = "Püf"  # Saimei
+    adm = 4
+    dip = 3
+    mil = 5
+    female = yes
+  }
+}
+661.1.1 = {
+  monarch = {
+    name = ")Yzf"  # Tenji
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+672.1.7 = {
+  monarch = {
+    name = "Váe"  # Kobun
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+672.8.21 = {
+  monarch = {
+    name = ")Yfk"  # Temmu
+    adm = 5
+    dip = 3
+    mil = 3
+  }
+}
+686.10.1 = {
+  monarch = {
+    name = "cﬂu"  # Jito
+    adm = 4
+    dip = 2
+    mil = 2
+    female = yes
+  }
+}
+697.9.23 = {
+  monarch = {
+    name = "áefk"  # Mommu
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+707.7.18 = {
+  monarch = {
+    name = "CQf"  # Gemmei
+    adm = 4
+    dip = 4
+    mil = 3
+    female = yes
+  }
+}
+712.1.1 = {
+  religion = shinto
+}
+715.10.3 = {
+  monarch = {
+    name = "CQck"  # Gensho
+    adm = 4
+    dip = 4
+    mil = 3
+    female = yes
+  }
+}
+724.3.3 = {
+  monarch = {
+    name = "1Wfk"  # Shomu
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+749.8.19 = {
+  monarch = {
+    name = "kR&å"  # Koken
+    adm = 1
+    dip = 4
+    mil = 4
+    female = yes
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = chinese
+}
+758.12.7 = {
+  monarch = {
+    name = "Ûm¡N"  # Junnin
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+765.1.26 = {
+  monarch = {
+    name = "kR&å"  # Koken
+    adm = 1
+    dip = 4
+    mil = 4
+    female = yes
+  }
+}
+770.10.23 = {
+  monarch = {
+    name = "IQ¡N"  # Konin
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+781.4.30 = {
+  monarch = {
+    name = "Shfk"  # Kammu
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1338.2.23 = {
+  monarch = {
+    name = "Tçëêë"  # Go-Daigo
+    birth_date = 1288.11.26
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+1338.2.23 = {
+  heir = {
+    name = "TQgN"  # Go-Murakami
+    monarch_name = "TQgN"  # Go-Murakami
+    birth_date = 1328.1.1
+    death_date = 1368.3.29
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 1
+  }
+}
+1339.9.18 = {
+  monarch = {
+    name = "TQgN"  # Go-Murakami
+    birth_date = 1328.1.1
+    adm = 3
+    dip = 0
+    mil = 1
+  }
+}
+1343.1.1 = {
+  heir = {
+    name = "ïÜ^"  # Chokei
+    monarch_name = "ïÜ^"  # Chokei
+    birth_date = 1343.1.1
+    death_date = 1394.8.27
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 0
+  }
+}
+1368.3.29 = {
+  monarch = {
+    name = "ïÜ^"  # Chokei
+    birth_date = 1343.1.1
+    adm = 1
+    dip = 3
+    mil = 0
+  }
+}
+1368.3.29 = {
+  heir = {
+    name = "TüüqS"  # Go-Kameyama
+    monarch_name = "TüüqS"  # Go-Kameyama
+    birth_date = 1347.1.1
+    death_date = 1424.5.10
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 1
+  }
+}
+1383.1.1 = {
+  monarch = {
+    name = "TüüqS"  # Go-Kameyama
+    birth_date = 1347.1.1
+    adm = 0
+    dip = 2
+    mil = 1
+  }
+}
+1636.5.15 = {
+  technology_group = old_estern_asian
+}
+1949.10.1 = {
+  technology_group = modern_chinese
+}

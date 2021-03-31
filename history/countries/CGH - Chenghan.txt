@@ -1,0 +1,88 @@
+government = gov_celestial_empire
+add_government_reform = celestial_empire
+government_rank = 3
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = di
+
+capital = 679	# Chang'an
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+
+303.1.1 = {
+ 	monarch = {
+		name = "Ngƒñ"
+		#dynasty = " "
+
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+334.1.1 = {
+ 	monarch = {
+		name = "NgÌs"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+334.6.1 = {
+ 	monarch = {
+		name = "Ngg"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 1
+		mil = 4
+	}
+}
+
+
+338.1.1 = {
+ 	monarch={
+		name= "NgˇR"
+		
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}
+
+343.1.1 = {
+ 	monarch={
+		name= "NgøR"
+		
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}
+
+
+347.1.1 = {
+ 	monarch={
+		name= "É2ç"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+1912.2.12 = {
+
+	set_legacy_government = constitutional_republic
+	religion = liberalism
+}
+1949.10.1 = { technology_group = modern_chinese }

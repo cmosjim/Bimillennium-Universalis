@@ -1,0 +1,189 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = al_iraqiya_arabic
+religion = shiite
+technology_group = middle_eastern
+capital = 410
+religious_school = jafari_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+627.1.1 = {
+  technology_group = muslim
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1932.10.3 = {
+  religion = sunni
+  religious_school = hanafi_school
+  monarch = {
+    name = "9ç(ÑS I"  # Faisal I
+    dynasty = "»T^∆Y"  # Hashemite
+    adm = 5
+    dip = 3
+    mil = 1
+  }
+}
+1932.10.3 = {
+  heir = {
+    name = "†RPü"  # Ghazi
+    monarch_name = "†RPü I"  # Ghazi I
+    dynasty = "»T^∆Y"  # Hashemite
+    birth_date = 1910.3.12
+    death_date = 1939.4.4
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+1933.9.8 = {
+  monarch = {
+    name = "†RPü I"  # Ghazi I
+    dynasty = "»T^∆Y"  # Hashemite
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+1935.5.2 = {
+  heir = {
+    name = "9ç(ÑS"  # Faisal
+    monarch_name = "9ç(ÑS II"  # Faisal II
+    dynasty = "»T^∆Y"  # Hashemite
+    birth_date = 1935.5.2
+    death_date = 1958.7.14
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1939.4.4 = {
+  monarch = {
+    name = "9ç(ÑS II"  # Faisal II
+    dynasty = "»T^∆Y"  # Hashemite
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1958.7.14 = {
+  government = republic
+  add_government_reform = presidential_reform
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1958.7.14 = {
+  monarch = {
+    name = "FzUÿû∑V ≥u	T^ ÅúÙTO"  # Muhammad Najib ar-Ruba'i
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1963.2.8 = {
+  monarch = {
+    name = "?ñjSjg“R (Ñ…b∆Y ?ñÃë+Y"  # Abdul Salam Arif
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+1966.4.13 = {
+  monarch = {
+    name = "?ñjSjg“R …bkç¸f ÙTNbyQ"  # Abd ar-Rahman al-Bazzaz
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+1966.4.16 = {
+  monarch = {
+    name = "?ñjSjg“R …bkç¸f ?ñÃë+Y"  # Abdul Rahman Arif
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1968.7.17 = {
+  monarch = {
+    name = "åÇ»T»è∑V »TQh çKQS"  # Ahmed Hassan al-Bakr
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1979.7.16 = {
+  monarch = {
+    name = "(Ñæè∆Y ØOiç‡V"  # Saddam Hussein
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+2003.4.21 = {
+  religion = shiite
+  religious_school = jafari_school
+  monarch = {
+    name = "ˇO…bKQ4Nˆe°rt‘YXTO	ˇ"  # (coalition provisional authority)
+    regent = yes
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+2004.6.28 = {
+  monarch = {
+    name = "†RPü öNÊtS"  # Ghazi Mashal Ajil al-Yawer
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+2005.4.7 = {
+  monarch = {
+    name = ">ç…b“R TX…bÙT<S"  # Jalal Talabani
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+2014.7.24 = {
+  monarch = {
+    name = "èy?ñ∑V löœÇ∆Y"  # Fuad Masum
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}

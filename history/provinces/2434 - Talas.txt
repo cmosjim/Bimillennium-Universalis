@@ -1,0 +1,50 @@
+#2434 - Talas
+
+owner = KGJ
+controller = KGJ
+add_core = KGJ
+is_city = yes
+culture = khazak
+religion = tengri_pagan_reformed
+capital = "Talas"
+trade_goods = iron
+hre = no
+discovered_by = nomad_group
+discovered_by = eastern_nomad_group
+discovered_by = western_nomad_group
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = asian
+discovered_by = early_indian
+discovered_by = middle_eastern
+discovered_by = muslim
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+280.1.1 = { owner = CBN controller = CBN add_core = CBN remove_core = KGJ }
+495.1.1 = { owner = HEP controller = HEP add_core = HEP remove_core = CBN }
+555.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = HEP culture = turkic }
+583.1.1 = { owner = WGO controller = WGO add_core = WGO remove_core = GOK }
+659.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = WGO }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+705.2.21 = { owner = TNG controller = TNG add_core = TNG remove_core = WZ1 }
+708.1.1 = { owner = TRG controller = TRG add_core = TRG remove_core = TNG }
+766.1.1 = { owner = KLU controller = KLU add_core = KLU remove_core = TRG }
+840.1.1 = { owner = KKH controller = KKH add_core = KKH remove_core = KLU }
+1100.1.1 = { religion = sunni }
+1134.1.1 = { owner = CK1 controller = CK1 add_core = CK1 remove_core = KKH }
+1137.1.1 = { owner = KKT controller = KKT add_core = KKT remove_core = CK1 }
+1219.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = KKT culture = kirgiz }
+1260.1.1 = { owner = CHG controller = CHG add_core = CHG remove_core = MGE }
+1347.1.1 = { owner = DC1 controller = DC1 add_core = DC1 remove_core = CHG }
+1456.1.1 = { add_core = KZH }
+1456.1.1 = { owner = KZH controller = KZH remove_core = DC1 } # Kazakh horde forms
+1504.1.1 = { owner = UZ1 controller = UZ1 add_core = UZ1 remove_core = KZH } # Muhammad Shaybani
+1560.1.1 = { controller = BUK owner = BUK add_core = BUK remove_core = UZ1 } # Conquered by Muhammad Shaybani
+1622.1.1 = { discovered_by = RUS }
+1709.1.1 = { owner = KOK controller = KOK add_core = KOK } # Independent principality established by Shaybanid Shahrukh
+1876.2.19 = { owner = RUS controller = RUS add_core = RUS remove_core = KOK }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV remove_core = RUS }
+1924.10.14 = { add_core = KYR remove_core = BUK remove_core = KOK culture = kirgiz }
+1991.8.31  = { owner = KYR controller = KYR remove_core = SOV remove_core = RUS }

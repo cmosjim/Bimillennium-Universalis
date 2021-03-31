@@ -1,0 +1,803 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+technology_group = barbarian
+primary_culture = welsh
+religion = druidism
+capital = 241
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+383.1.1 = {
+  monarch = {
+    name = "âR)n"  # Anwn
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 360.1.1
+    adm = 3
+    dip = 0
+    mil = 1
+  }
+}
+400.1.1 = {
+  heir = {
+    name = "ÇÑjgÊtS"  # Tudwal
+    monarch_name = "ÇÑjgÊtS"  # Tudwal
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 400.1.1
+    death_date = 450.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 2
+  }
+}
+410.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+  government_rank = 1
+}
+430.1.1 = {
+  monarch = {
+    name = "ÇÑjgÊtS"  # Tudwal
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 400.1.1
+    adm = 5
+    dip = 1
+    mil = 2
+  }
+}
+430.1.1 = {
+  heir = {
+    name = "yrØeÃëi`"  # Teithrin
+    monarch_name = "yrØeÃëi`"  # Teithrin
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 420.1.1
+    death_date = 470.1.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 0
+  }
+}
+450.1.1 = {
+  monarch = {
+    name = "yrØeÃëi`"  # Teithrin
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 420.1.1
+    adm = 0
+    dip = 5
+    mil = 0
+  }
+}
+450.1.1 = {
+  heir = {
+    name = "ÇÑØeèySyr"  # Teithfallt
+    monarch_name = "ÇÑØeèySyr"  # Teithfallt
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 440.1.1
+    death_date = 490.1.1
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 3
+  }
+}
+470.1.1 = {
+  monarch = {
+    name = "ÇÑØeèySyr"  # Teithfallt
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 440.1.1
+    adm = 0
+    dip = 1
+    mil = 3
+  }
+}
+470.1.1 = {
+  heir = {
+    name = "ÇÑ2S∑VÃë<h"  # Tewdrig
+    monarch_name = "ÇÑ2S∑VÃë<h"  # Tewdrig
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 460.1.1
+    death_date = 517.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 4
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+490.1.1 = {
+  monarch = {
+    name = "ÇÑ2S∑VÃë<h"  # Tewdrig
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 460.1.1
+    adm = 5
+    dip = 2
+    mil = 4
+  }
+}
+490.1.1 = {
+  heir = {
+    name = "ÖhÃë<h"  # Meurig
+    monarch_name = "ÖhÃë<h I"  # Meurig I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 487.1.1
+    death_date = 540.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 1
+  }
+}
+517.1.1 = {
+  monarch = {
+    name = "ÖhÃë<h I"  # Meurig I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 487.1.1
+    adm = 4
+    dip = 5
+    mil = 1
+  }
+}
+517.1.1 = {
+  heir = {
+    name = "?ñØeÅúOØe"  # Athrwys
+    monarch_name = "?ñØeÅúOØe I"  # Athrwys I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 510.1.1
+    death_date = 573.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+536.1.1 = {
+  technology_group = western
+}
+540.1.1 = {
+  monarch = {
+    name = "?ñØeÅúOØe I"  # Athrwys I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 510.1.1
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+543.1.1 = {
+  heir = {
+    name = "VÃëeYKQ"  # Frioc
+    monarch_name = "VÃëeYKQ I"  # Frioc I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 543.1.1
+    death_date = 590.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 4
+  }
+}
+573.1.1 = {
+  monarch = {
+    name = "VÃëeYKQ I"  # Frioc I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 543.1.1
+    adm = 5
+    dip = 5
+    mil = 4
+  }
+}
+573.1.1 = {
+  heir = {
+    name = "O^XS"  # Ithel
+    monarch_name = "O^XS I"  # Ithel I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 560.1.1
+    death_date = 610.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+590.1.1 = {
+  monarch = {
+    name = "O^XS I"  # Ithel I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 560.1.1
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+590.1.1 = {
+  heir = {
+    name = "id9h"  # Morgan
+    monarch_name = "id9h I"  # Morgan I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 580.1.1
+    death_date = 630.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+610.1.1 = {
+  monarch = {
+    name = "id9h I"  # Morgan I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 580.1.1
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+610.1.1 = {
+  heir = {
+    name = "id9h"  # Morgan
+    monarch_name = "id9h II"  # Morgan II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 600.1.1
+    death_date = 654.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+630.1.1 = {
+  monarch = {
+    name = "id9h II"  # Morgan II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 600.1.1
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+630.1.1 = {
+  heir = {
+    name = "âRØe˜ñØe"  # Anthres
+    monarch_name = "âRØe˜ñØe I"  # Anthres I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 624.1.1
+    death_date = 663.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 0
+  }
+}
+654.1.1 = {
+  monarch = {
+    name = "âRØe˜ñØe I"  # Anthres I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 624.1.1
+    adm = 5
+    dip = 2
+    mil = 0
+  }
+}
+654.1.1 = {
+  heir = {
+    name = "id9h"  # Morgan
+    monarch_name = "id9h III"  # Morgan III
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 633.1.1
+    death_date = 715.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 0
+  }
+}
+660.1.1 = {
+  religion = chalcedonism
+  government = monarchy
+  add_government_reform = salic_reform
+}
+663.1.1 = {
+  monarch = {
+    name = "id9h III"  # Morgan III
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 633.1.1
+    adm = 2
+    dip = 2
+    mil = 0
+  }
+}
+685.1.1 = {
+  heir = {
+    name = "O^XS"  # Ithel
+    monarch_name = "O^XS II"  # Ithel II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 685.1.1
+    death_date = 745.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 4
+  }
+}
+715.1.1 = {
+  monarch = {
+    name = "O^XS II"  # Ithel II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 685.1.1
+    adm = 0
+    dip = 2
+    mil = 4
+  }
+}
+715.1.1 = {
+  heir = {
+    name = "9çi`ÊóS"  # Ffernfael
+    monarch_name = "9çi`ÊóS I"  # Ffernfael I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 715.1.1
+    death_date = 774.1.1
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 0
+  }
+}
+745.1.1 = {
+  monarch = {
+    name = "9çi`ÊóS I"  # Ffernfael I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 715.1.1
+    adm = 2
+    dip = 0
+    mil = 0
+  }
+}
+745.1.1 = {
+  heir = {
+    name = "?ñØeÅúOØe"  # Athrwys
+    monarch_name = "?ñØeÅúOØe II"  # Athrwys II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 744.1.1
+    death_date = 810.1.1
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 0
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+774.1.1 = {
+  monarch = {
+    name = "?ñØeÅúOØe II"  # Athrwys II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 744.1.1
+    adm = 2
+    dip = 0
+    mil = 0
+  }
+}
+780.1.1 = {
+  heir = {
+    name = "O∑VÊtÜñ"  # Idwallon
+    monarch_name = "O∑VÊtÜñ"  # Idwallon
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 780.1.1
+    death_date = 842.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 0
+  }
+}
+810.1.1 = {
+  monarch = {
+    name = "O∑VÊtÜñ"  # Idwallon
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 780.1.1
+    adm = 4
+    dip = 2
+    mil = 0
+  }
+}
+812.1.1 = {
+  heir = {
+    name = "O^XS"  # Ithel
+    monarch_name = "O^XS III"  # Ithel III
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 812.1.1
+    death_date = 848.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+842.1.1 = {
+  monarch = {
+    name = "O^XS III"  # Ithel III
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 812.1.1
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+842.1.1 = {
+  heir = {
+    name = "ÖhÃë<h"  # Meurig
+    monarch_name = "ÖhÃë<h II"  # Meurig II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 818.1.1
+    death_date = 849.1.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 0
+  }
+}
+848.1.1 = {
+  monarch = {
+    name = "ÖhÃë<h II"  # Meurig II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 818.1.1
+    adm = 0
+    dip = 5
+    mil = 0
+  }
+}
+848.1.1 = {
+  heir = {
+    name = "ÖhÃë<h"  # Meurig
+    monarch_name = "ÖhÃë<h III"  # Meurig III
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 819.1.1
+    death_date = 874.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 4
+  }
+}
+849.1.1 = {
+  monarch = {
+    name = "ÖhÃë<h III"  # Meurig III
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 819.1.1
+    adm = 0
+    dip = 2
+    mil = 4
+  }
+}
+849.1.1 = {
+  heir = {
+    name = "9çi`ÊóS"  # Ffernfael
+    monarch_name = "9çi`ÊóS II"  # Ffernfael II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 844.1.1
+    death_date = 880.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 0
+  }
+}
+867.1.1 = {
+  religion = catholic
+}
+874.1.1 = {
+  monarch = {
+    name = "9çi`ÊóS II"  # Ffernfael II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 844.1.1
+    adm = 3
+    dip = 3
+    mil = 0
+  }
+}
+874.1.1 = {
+  heir = {
+    name = "^WkçÊtS"  # Brochfael
+    monarch_name = "^WkçÊtS I"  # Brochfael I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 850.1.1
+    death_date = 920.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+880.1.1 = {
+  monarch = {
+    name = "^WkçÊtS I"  # Brochfael I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 850.1.1
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+890.1.1 = {
+  heir = {
+    name = "'káe"  # Owain
+    monarch_name = "'káe I"  # Owain I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 890.1.1
+    death_date = 930.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 5
+  }
+}
+920.1.1 = {
+  monarch = {
+    name = "'káe I"  # Owain I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 890.1.1
+    adm = 5
+    dip = 2
+    mil = 5
+  }
+}
+920.1.1 = {
+  heir = {
+    name = "aS∑VS II"  # Cadell
+    monarch_name = "aS∑VS I"  # Cadell I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 900.1.1
+    death_date = 943.1.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 5
+  }
+}
+930.1.1 = {
+  monarch = {
+    name = "aS∑VS I"  # Cadell I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 900.1.1
+    adm = 0
+    dip = 5
+    mil = 5
+  }
+}
+930.1.1 = {
+  heir = {
+    name = "id9h"  # Morgan
+    monarch_name = "id9h IV"  # Morgan IV
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 913.1.1
+    death_date = 950.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 0
+  }
+}
+943.1.1 = {
+  monarch = {
+    name = "id9h IV"  # Morgan IV
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 913.1.1
+    adm = 3
+    dip = 4
+    mil = 0
+  }
+}
+943.1.1 = {
+  heir = {
+    name = "˙ãÙu"  # Nowy
+    monarch_name = "˙ãÙu I"  # Nowy I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 920.1.1
+    death_date = 970.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+950.1.1 = {
+  monarch = {
+    name = "˙ãÙu I"  # Nowy I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 920.1.1
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+950.1.1 = {
+  heir = {
+    name = "?ñØeÊóS"  # Arthfael
+    monarch_name = "?ñØeÊóS II"  # Arthfael II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 940.1.1
+    death_date = 983.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+962.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+}
+970.1.1 = {
+  monarch = {
+    name = "?ñØeÊóS II"  # Arthfael II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 940.1.1
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+970.1.1 = {
+  heir = {
+    name = "W∑VÃë"  # Rhodri
+    monarch_name = "W∑VÃë I"  # Rhodri I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 953.1.1
+    death_date = 1015.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 5
+  }
+}
+983.1.1 = {
+  monarch = {
+    name = "W∑VÃë I"  # Rhodri I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 953.1.1
+    adm = 1
+    dip = 0
+    mil = 5
+  }
+}
+985.1.1 = {
+  heir = {
+    name = "åÇ∑V)n"  # Edwyn
+    monarch_name = "åÇ∑V)n I"  # Edwyn I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 985.1.1
+    death_date = 1045.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1015.1.1 = {
+  monarch = {
+    name = "åÇ∑V)n I"  # Edwyn I
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 985.1.1
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+1015.1.1 = {
+  heir = {
+    name = "ÖhÃë<h"  # Meurig
+    monarch_name = "ÖhÃë<h IV"  # Meurig IV
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 1015.1.1
+    death_date = 1055.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1045.1.1 = {
+  monarch = {
+    name = "ÖhÃë<h IV"  # Meurig IV
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 1015.1.1
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1045.1.1 = {
+  heir = {
+    name = "<hÅú9ç∑V"  # Gruffydd
+    monarch_name = "<hÅú9ç∑V II"  # Gruffydd II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 1025.1.1
+    death_date = 1063.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1055.1.1 = {
+  monarch = {
+    name = "<hÅú9ç∑V II"  # Gruffydd II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 1025.1.1
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1055.1.1 = {
+  heir = {
+    name = "aSjgu"  # Cadwgan
+    monarch_name = "aSjgu II"  # Cadwgan II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 1033.1.1
+    death_date = 1075.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 5
+  }
+}
+1063.1.1 = {
+  monarch = {
+    name = "aSjgu II"  # Cadwgan II
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 1033.1.1
+    adm = 5
+    dip = 1
+    mil = 5
+  }
+}
+1063.1.1 = {
+  heir = {
+    name = "<hÅú9ç∑V"  # Gruffydd
+    monarch_name = "<hÅú9ç∑V III"  # Gruffydd III
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 1045.1.1
+    death_date = 1081.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 3
+  }
+}
+1075.1.1 = {
+  monarch = {
+    name = "<hÅú9ç∑V III"  # Gruffydd III
+    dynasty = "ÔQS-Ãëf"  # Caer-Leon
+    birth_date = 1045.1.1
+    adm = 1
+    dip = 0
+    mil = 3
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

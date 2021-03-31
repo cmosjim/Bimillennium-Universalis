@@ -1,0 +1,70 @@
+government = gov_celestial_empire
+add_government_reform = celestial_empire
+government_rank = 3
+technology_group = early_chinese
+religion = confucianism
+primary_culture = chihan
+
+capital = 700	# Chang'an
+
+#8t^12g23t^10g6åe
+
+	#first = NEW
+	#second = XIY
+	#start_date = 8.12.1
+	#end_date = 15.12.31
+	
+8.12.1 = {
+ 	monarch = {
+		name = "‹sËƒ"
+
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+	set_country_flag = flg_ever_xiyduhufu
+	set_country_flag = p_flg_ever_xiyduhufu
+	add_country_modifier = {
+		name = "md_building_duhufu"
+		duration = 36500
+	}
+	add_country_modifier = {
+		name = "md_chuanguoyuxi"
+		duration = -1
+	}		
+}
+
+15.12.31 = {
+	clr_country_flag = flg_ever_xiyduhufu
+	clr_country_flag = p_flg_ever_xiyduhufu
+	remove_country_modifier = md_building_duhufu
+	
+}
+23.10.6 = {
+	remove_country_modifier = md_chuanguoyuxi
+}
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = {
+
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+	religion = liberalism
+}
+1949.10.1 = { technology_group = modern_chinese }

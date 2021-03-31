@@ -1,0 +1,85 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+technology_group = dummy_group
+primary_culture = jan_mayenese
+religion = catholic
+capital = 17
+elector = yes
+
+2.1.1 = {
+	monarch = {
+		name = "Grrrr"
+		dynasty = "Grrrr"
+		adm = 0
+		dip = 0
+		mil = 0
+		
+	}
+	add_ruler_personality = immortal_personality	
+}
+
+2.1.1 = {
+	heir = {
+		name = "Grawrrr"
+		monarch_name = "Grawrrr"
+		dynasty = "Grrrr"		
+		claim = 100
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	add_heir_personality = immortal_personality	
+}
+
+50.1.1 = {
+	monarch = {
+		name = "Grawrrr"
+		dynasty = "Grrrr"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	add_ruler_personality = immortal_personality	
+}
+
+50.1.1 = {
+	heir = {
+		name = "Grawrrrr"
+		monarch_name = "Grawrrrr"
+		dynasty = "Grrrr"		
+		claim = 100
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	add_heir_personality = immortal_personality	
+}
+
+
+100.1.1 = {
+	monarch = {
+		name = "Rawrr"
+		dynasty = "Grrrr"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	add_ruler_personality = immortal_personality	
+}
+
+100.1.1 = {
+	heir = {
+		name = "Grawrrrrr"
+		monarch_name = "Grawrrrrr"
+		dynasty = "Grrrr"		
+		claim = 100
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	add_heir_personality = immortal_personality	
+}
+
+
+962.2.2 = { elector = no }

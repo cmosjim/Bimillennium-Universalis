@@ -1,0 +1,329 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+technology_group = eastern_nomad_group
+primary_culture = tocharian
+religion = mahayana
+capital = 3293
+
+
+##V	(30)	NPR 16
+##RW	(4)	2uHS 46
+##«Òk	(23)	š^b 50
+##ú^	(3)	xvI‘ 73
+
+
+16.1.1 = {
+	monarch = {
+		name = "V"
+		#dynasty = " "
+	
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+46.1.1 = {
+	monarch = {
+		name = "RW"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+50.1.1 = {
+	monarch = {
+		name = "«Òk"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+
+73.1.1 = {
+	monarch = {
+		name = "ú^"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+##2S)RY	(16)	NPR 76
+##‹v8—	(19)	›oS 91
+##‹vñ‚	(17)	š^b 110-127
+##‹vÿ	(58)	ìXÅR 222
+##‹vqS	(46)	š^PR 280
+##™ŸO	(23)	Nb 326
+
+76.1.1 = {
+	monarch = {
+		name = "2S)RY"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+91.1.1 = {
+	monarch = {
+		name = "‹v8—"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+110.1.1 = {
+	monarch = {
+		name = "‹vñ‚"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+280.1.1 = {
+	monarch = {
+		name = "‹vqS"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+326.1.1 = {
+	monarch = {
+		name = "™ŸO"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+##‹v¯u	(33)	ñTI‘ 349
+##‹v—	(55)	ìXHS 382
+##<S^tidàs±Üw	(40)	›N 521
+##XbĞcaS	(19)	ìXHS 562
+##‹vÏ‚<S¥T	(34)	›N 581
+##Ï‚OÃRÃ™	(3)	YN¥N 615
+
+
+
+349.1.1 = {
+	monarch = {
+		name = "‹v¯u"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+382.1.1 = {
+	monarch = {
+		name = "‹v—"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+521.1.1 = {
+	monarch = {
+		name = "<S^tidàs±Üw"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+562.1.1 = {
+	monarch = {
+		name = "XbĞcaS"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+581.1.1 = {
+	monarch = {
+		name = "‹vÏ‚<S"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+615.1.1 = {
+	monarch = {
+		name = "Ï‚OÃRÃ™"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+}
+
+##Ï‚Oí	(29)	bÅR 618
+##Ã‹Î^1YÕk	(1)	N*g 647
+##öS²b	(2)	b3u 648
+##Ã‹Î^1YÕk	(9)	š^b 650
+##‹v.tKz	(19)	ñT*g 659
+##ö^0uÌ	(14)	bÅR 678
+##ö^GuÔb	(16)	ìX° 692
+##‹v«ƒş‚	(11)	b3u 708
+##‹vkR‚‚	(12)	ñT*g 719
+##‹v¯s	(57)	›*g 731
+
+618.1.1 = {
+	monarch = {
+		name = "Ï‚Oí"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+
+647.1.1 = {
+	monarch = {
+		name = "Ã‹Î^1YÕk"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+
+
+648.1.1 = {
+	monarch = {
+		name = "öS²b"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+
+
+650.1.1 = {
+	monarch = {
+		name = "Ã‹Î^1YÕk"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+
+659.1.1 = {
+	monarch = {
+		name = "‹v.tKz"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+678.1.1 = {
+	monarch = {
+		name = "ö^0uÌ"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+692.1.1 = {
+	monarch = {
+		name = "ö^GuÔb"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+708.1.1 = {
+	monarch = {
+		name = "‹v«ƒş‚"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+
+719.1.1 = {
+	monarch = {
+		name = "‹vkR‚‚"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
+
+731.1.1 = {
+	monarch = {
+		name = "‹v¯s"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }

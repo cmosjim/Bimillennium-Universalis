@@ -1,0 +1,810 @@
+government = monarchy
+add_government_reform = indian_sultanate_reform
+primary_culture = bengali
+religion = sunni
+technology_group = early_indian
+capital = 561
+religious_school = hanafi_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1342.1.1 = {
+  monarch = {
+    name = "O)RšN¯e"  # Ilyas
+    dynasty = "O)RšN¯e"  # Ilyas
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1342.1.1 = {
+  heir = {
+    name = "¯eŒNN–W"  # Sikandar
+    monarch_name = "¯eŒNN–W"  # Sikandar
+    dynasty = "O)RšN¯e"  # Ilyas
+    birth_date = 1340.1.1
+    death_date = 1490.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1358.1.1 = {
+  monarch = {
+    name = "¯eŒNN–W"  # Sikandar
+    dynasty = "O)RšN¯e"  # Ilyas
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1370.1.1 = {
+  heir = {
+    name = "?–NbÆY"  # Azam
+    monarch_name = "?–NbÆY"  # Azam
+    dynasty = "O)RšN¯e"  # Ilyas
+    birth_date = 1370.1.1
+    death_date = 1410.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1390.1.1 = {
+  monarch = {
+    name = "?–NbÆY"  # Azam
+    dynasty = "O)RšN¯e"  # Ilyas
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1390.1.1 = {
+  heir = {
+    name = "ÈTÆYNb"  # Hamza
+    monarch_name = "ÈTÆYNb"  # Hamza
+    dynasty = "O)RšN¯e"  # Ilyas
+    birth_date = 1390.1.1
+    death_date = 1411.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1410.1.1 = {
+  monarch = {
+    name = "ÈTÆYNb"  # Hamza
+    dynasty = "O)RšN¯e"  # Ilyas
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1410.1.1 = {
+  heir = {
+    name = "ôT6wúW·V"  # Bayazid
+    monarch_name = "ôT6wúW·V I"  # Bayazid I
+    dynasty = "O)RšN¯e"  # Ilyas
+    birth_date = 1390.1.1
+    death_Date = 1414.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1412.1.1 = {
+  monarch = {
+    name = "ôT6wúW·V"  # Bayazid
+    dynasty = "O)RšN¯e"  # Ilyas
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1414.1.1 = {
+  monarch = {
+    name = "Éb> KO…QÀN"  # Raja Ganesh
+    dynasty = "KO…QÀN"  # Ganesha
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+1414.1.1 = {
+  heir = {
+    name = "FzUØ·V"  # Mohammed
+    monarch_name = "FzUØ·V"  # Mohammed
+    dynasty = "KO…QÀN"  # Ganesha
+    birth_date = 1400.1.1
+    death_date = 1433.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+1418.1.1 = {
+  monarch = {
+    name = "FzUØ·V"  # Mohammed
+    dynasty = "KO…QÀN"  # Ganesha
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+1418.1.1 = {
+  heir = {
+    name = "Œ‚ÈTÈ·V"  # Ahmad
+    monarch_name = "Œ‚ÈTÈ·V"  # Ahmad
+    dynasty = "KO…QÀN"  # Ganesha
+    birth_date = 1410.1.1
+    death_date = 1435.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+1433.1.1 = {
+  monarch = {
+    name = "Œ‚ÈTÈ·V"  # Ahmad
+    dynasty = "KO…QÀN"  # Ganesha
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+1435.1.1 = {
+  monarch = {
+    name = "³uLRN lšÈTƒ·V"  # Nasir ad-Din Mahmud
+    dynasty = "O)RšN¯e"  # Ilyas
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1435.1.1 = {
+  heir = {
+    name = "œKQLNN ôTSôTKQ"  # Rukn ad-Din Barbak
+    monarch_name = "œKQLNN ôTSôTKQ"  # Rukn ad-Din Barbak
+    dynasty = "O)RšN¯e"  # Ilyas
+    birth_date = 1430.1.1
+    death_date = 1474.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1459.1.1 = {
+  monarch = {
+    name = "œKQLNN ôTSôTKQ"  # Rukn ad-Din Barbak
+    dynasty = "O)RšN¯e"  # Ilyas
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1459.1.1 = {
+  heir = {
+    name = "™lÆY¯eN"  # Shams ad-Din Fath
+    monarch_name = "™lÆY¯eN"  # Shams ad-Din Fath
+    dynasty = "O)RšN¯e"  # Ilyas
+    birth_Date = 1459.1.1
+    death_Date = 1481.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1474.1.1 = {
+  monarch = {
+    name = "™lÆY¯eN"  # Shams ad-Din Fath
+    dynasty = "O)RšN¯e"  # Ilyas
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1474.1.1 = {
+  heir = {
+    name = "¯eŒNN–W"  # Sikandar
+    monarch_name = "!•NW¾S  II"  # Sikandar II
+    dynasty = "O)RšN¯e"  # Ilyas
+    birth_date = 1460.1.1
+    death_date = 1482.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1481.1.1 = {
+  monarch = {
+    name = "!•NW¾S  II"  # Sikandar II
+    dynasty = "O)RšN¯e"  # Ilyas
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1481.1.1 = {
+  heir = {
+    name = "NbLRÒRN"  # Jalal ad-Din Fath
+    monarch_name = "NbLRÒRN"  # Jalal ad-Din Fath
+    dynasty = "O)RšN¯e"  # Ilyas
+    birth_date = 1460.1.1
+    death_date = 1487.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1482.1.1 = {
+  monarch = {
+    name = "NbLRÒRN"  # Jalal ad-Din Fath
+    dynasty = "O)RšN¯e"  # Ilyas
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1487.1.1 = {
+  monarch = {
+    name = "™lkNb¾ ôTSôTKQ II"  # Shah-Zada Barbak II
+    dynasty = "?–Ôk‰<S·V"  # Abyssinid
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1487.1.1 = {
+  heir = {
+    name = "iIN+YLNN òƒœyQ"  # Sayf ad-Din Firuz
+    monarch_name = "iIN+YLNN òƒœyQ II"  # Sayf ad-Din Firuz II
+    dynasty = "?–Ôk‰<S·V"  # Abyssinid
+    birth_date = 1460.1.1
+    death_date = 1490.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1488.1.1 = {
+  monarch = {
+    name = "iIN+YLNN òƒœyQ II"  # Sayf ad-Din Firuz II
+    dynasty = "?–Ôk‰<S·V"  # Abyssinid
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1488.1.1 = {
+  heir = {
+    name = "³uLRN lšÈTƒ·V"  # Nasir ad-Din Mahmud
+    monarch_name = "³u‰SN lškFz·V II"  # Nasir ad-Din Mahmud II
+    dynasty = "?–Ôk‰<S·V"  # Abyssinid
+    birth_date = 1488.1.1
+    death_date = 1491.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1490.1.1 = {
+  monarch = {
+    name = "³u‰SN lškFz·V II"  # Nasir ad-Din Mahmud II
+    dynasty = "?–Ôk‰<S·V"  # Abyssinid
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1490.1.1 = {
+  heir = {
+    name = "™lÆY¯eN ?–^ ±¯e"  # Shams ad-Din Abu Nasr
+    monarch_name = "™lÆY¯eN ?–^ ±¯e"  # Shams ad-Din Abu Nasr
+    dynasty = "?–Ôk‰<S·V"  # Abyssinid
+    birth_Date = 1465.1.1
+    death_date = 1493.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1491.1.1 = {
+  monarch = {
+    name = "™lÆY¯eN ?–^ ±¯e"  # Shams ad-Din Abu Nasr
+    dynasty = "?–Ôk‰<S·V"  # Abyssinid
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1491.1.1 = {
+  heir = {
+    name = "?–ÉbN ¯OiàV"  # 'Ala' ad-Din Husayn
+    monarch_name = "?–ÉbN ¯OiàV"  # 'Ala' ad-Din Husayn
+    dynasty = "¯OiàV™l^"  # Hussein Shahi
+    birth_date = 1480.1.1
+    death_date = 1519.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+1493.1.1 = {
+  monarch = {
+    name = "?–ÉbN ¯OiàV"  # 'Ala' ad-Din Husayn
+    dynasty = "¯OiàV™l^"  # Hussein Shahi
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+1500.1.1 = {
+  heir = {
+    name = "³u‰SN ³u¯eÉbyr"  # Nasir ad-Din Nasrat
+    monarch_name = "³u‰SN ³u¯eÉbyr"  # Nasir ad-Din Nasrat
+    dynasty = "¯OiàV™l^"  # Hussein Shahi
+    birth_date = 1500.1.1
+    death_date = 1533.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1518.1.1 = {
+  add_accepted_culture = persian
+}
+1519.1.1 = {
+  monarch = {
+    name = "³u‰SN ³u¯eÉbyr"  # Nasir ad-Din Nasrat
+    dynasty = "¯OiàV™l^"  # Hussein Shahi
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1519.1.1 = {
+  heir = {
+    name = "?–ÉbN òƒœyQ"  # 'Ala' ad-Din Firuz
+    monarch_name = "?–ÉbN òƒœyQ II"  # 'Ala' ad-Din Firuz III
+    dynasty = "¯OiàV™l^"  # Hussein Shahi
+    birth_date = 1519.1.1
+    death_date = 1533.3.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1533.1.1 = {
+  monarch = {
+    name = "?–ÉbN òƒœyQ II"  # 'Ala' ad-Din Firuz III
+    dynasty = "¯OiàV™l^"  # Hussein Shahi
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1533.1.1 = {
+  heir = {
+    name = "	TšN‰LNN lšÈTƒ·V"  # Ghiyat ad-Din Mahmud
+    monarch_name = "	TšN‰LNN lšÈTƒ·V II"  # Ghiyat ad-Din Mahmud II
+    dynasty = "¯OiàV™l^"  # Hussein Shahi
+    birth_Date = 1510.1.1
+    death_date = 1538.4.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 4
+  }
+}
+1533.3.1 = {
+  monarch = {
+    name = "	TšN‰LNN lšÈTƒ·V II"  # Ghiyat ad-Din Mahmud II
+    dynasty = "¯OiàV™l^"  # Hussein Shahi
+    adm = 2
+    dip = 2
+    mil = 4
+  }
+}
+1538.4.1 = {
+  monarch = {
+    name = "‚S™l"  # Sher Shah
+    dynasty = "Ï‚S"  # Suri
+    adm = 6
+    dip = 5
+    mil = 6
+  }
+}
+1538.4.1 = {
+  heir = {
+    name = "O¯epQ ™l"  # Islam Shah
+    monarch_name = "O¯epQ ™l"  # Islam Shah
+    dynasty = "Ï‚S"  # Suri
+    birth_Date = 1510.1.1
+    death_date = 1545.4.23
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1545.4.23 = {
+  monarch = {
+    name = "O¯epQ ™l"  # Islam Shah
+    dynasty = "Ï‚S"  # Suri
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1545.4.23 = {
+  heir = {
+    name = "™lÆY¯eLNN FzUØ·V"  # Shams ad-Din Muhammad
+    monarch_name = "™lÆY¯eLNN FzUØ·V"  # Shams ad-Din Muhammad
+    dynasty = "Ï‚S"  # Suri
+    birth_Date = 1520.1.1
+    death_date = 1555.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1553.1.1 = {
+  monarch = {
+    name = "™lÆY¯eLNN FzUØ·V"  # Shams ad-Din Muhammad
+    dynasty = "Ï‚S"  # Suri
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1553.1.1 = {
+  heir = {
+    name = "	TšN‰LNN ôTÈTjgS"  # Ghiyat ad-Din Bahadur
+    monarch_name = "	TšN‰LNN ôTÈTjgS"  # Ghiyat ad-Din Bahadur
+    dynasty = "Ï‚S"  # Suri
+    birth_date = 1530.1.1
+    death_Date = 1561.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+1555.1.1 = {
+  monarch = {
+    name = "	TšN‰LNN ôTÈTjgS"  # Ghiyat ad-Din Bahadur
+    dynasty = "Ï‚S"  # Suri
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+1555.1.1 = {
+  heir = {
+    name = "	TšN‰LNN >ÉbÒR"  # Ghiyat ad-Din Jalal
+    monarch_name = "	TšN‰LNN >ÉbÒR"  # Ghiyat ad-Din Jalal
+    dynasty = "Ï‚S"  # Suri
+    birth_date = 1530.1.1
+    death_date = 1564.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+1561.1.1 = {
+  monarch = {
+    name = "	TšN‰LNN >ÉbÒR"  # Ghiyat ad-Din Jalal
+    dynasty = "Ï‚S"  # Suri
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+1564.1.1 = {
+  monarch = {
+    name = "Ï‚±ƒüf Wl"  # Sulayman Khan
+    dynasty = "aSSÉb<S"  # Karrani
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1564.1.1 = {
+  heir = {
+    name = "¾LN·V"  # Da'ud
+    monarch_name = "¾LN·V"  # Da'ud
+    dynasty = "aSSÉb<S"  # Karrani
+    birth_Date = 1550.1.1
+    death_Date = 1575.4.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1572.1.1 = {
+  monarch = {
+    name = "¾LN·V"  # Da'ud
+    dynasty = "aSSÉb<S"  # Karrani
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1716.1.1 = {
+  monarch = {
+    name = "FzS^·V “^Ì‘"  # Murshid Quli
+    dynasty = "³u‰Ì‘"  # Nasiri
+    adm = 5
+    dip = 4
+    mil = 6
+  }
+}
+1716.1.1 = {
+  heir = {
+    name = "‚>N FzUØ·V"  # Shuja' ad-Din Muhammad
+    monarch_name = "‚>N FzUØ·V"  # Shuja' ad-Din Muhammad
+    dynasty = "³u‰Ì‘"  # Nasiri
+    birth_Date = 1670.1.1
+    death_date = 1739.8.26
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+1726.1.1 = {
+  monarch = {
+    name = "‚>N FzUØ·V"  # Shuja' ad-Din Muhammad
+    dynasty = "³u‰Ì‘"  # Nasiri
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+1726.1.1 = {
+  heir = {
+    name = "?–Éb·V SÉb ™lSÕlÉbPŸ"  # 'Ala' ad-Daula Sarafaraz
+    monarch_name = "?–Éb·V SÉb ™lSÕlÉbPŸ"  # 'Ala' ad-Daula Sarafaraz
+    dynasty = "³u‰Ì‘"  # Nasiri
+    birth_date = 1700.1.1
+    death_date = 1740.5.13
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1739.3.24 = {
+  monarch = {
+    name = "?–Éb·V-SÉb ™lSÕlÉbPŸ"  # 'Ala' ad-Daula Sarfaraz
+    dynasty = "³u‰Ì‘"  # Nasiri
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1739.3.24 = {
+  heir = {
+    name = "s|SNb FzUØ·V"  # Mirza Muhammad
+    monarch_name = "s|SNb FzUØ·V"  # Mirza Muhammad
+    dynasty = "?–+Y™lS"  # Afshar
+    birth_date = 1671.5.10
+    death_date = 1756.4.9
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+1740.5.13 = {
+  monarch = {
+    name = "s|SNb FzUØ·V"  # Mirza Muhammad
+    dynasty = "?–+Y™lS"  # Afshar
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+1740.5.13 = {
+  heir = {
+    name = "s|SNb lškFz·V ‰Ébpg"  # Mirza Mahmud Siraj
+    monarch_name = "s|SNb lškFz·V ‰Ébpg"  # Mirza Mahmud Siraj
+    dynasty = "?–+Y™lS"  # Afshar
+    birth_date = 1733.1.1
+    death_date = 1757.7.2
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1756.4.10 = {
+  monarch = {
+    name = "s|SNb lškFz·V ‰Ébpg"  # Mirza Mahmud Siraj
+    dynasty = "?–+Y™lS"  # Afshar
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1756.4.10 = {
+  heir = {
+    name = "s|S FzUØ·V >ÕlS"  # Mir Muhammad Ja'far
+    monarch_name = "s|S FzUØ·V >ÕlS"  # Mir Muhammad Ja'far
+    dynasty = "?–+Y™lS"  # Afshar
+    birth_date = 1691.1.1
+    death_date = 1765.2.5
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1757.6.24 = {
+  monarch = {
+    name = "s|S FzUØ·V >ÕlS"  # Mir Muhammad Ja'far
+    dynasty = "?–+Y™lS"  # Afshar
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1757.6.24 = {
+  heir = {
+    name = "s|S aS‰ÆY ?–Ì‘"  # Mir Qasim 'Ali
+    monarch_name = "s|S aS‰ÆY ?–Ì‘"  # Mir Qasim 'Ali
+    dynasty = "?–+Y™lS"  # Afshar
+    birth_Date = 1720.1.1
+    death_Date = 1763.7.8
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+1760.10.21 = {
+  monarch = {
+    name = "s|S aS‰ÆY ?–Ì‘"  # Mir Qasim 'Ali
+    dynasty = "?–+Y™lS"  # Afshar
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+1760.10.21 = {
+  heir = {
+    name = "s|S FzUØ·V >ÕlS"  # Mir Muhammad Ja'far
+    monarch_name = "s|S FzUØ·V >ÕlS"  # Mir Muhammad Ja'far
+    dynasty = "³u>òƒ"  # Najafi
+    birth_date = 1691.1.1
+    death_date = 1765.2.5
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1763.7.8 = {
+  monarch = {
+    name = "s|S FzUØ·V >ÕlS"  # Mir Muhammad Ja'far
+    dynasty = "³u>òƒ"  # Najafi
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1763.7.8 = {
+  heir = {
+    name = "s|S nfSæt›R ³u	TÆY"  # Mir Phulwari Najm
+    monarch_name = "s|S nfSæt›R ³u	TÆY"  # Mir Phulwari Najm
+    dynasty = "³u>òƒ"  # Najafi
+    birth_Date = 1730.1.1
+    death_date = 1766.5.9
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1765.2.5 = {
+  monarch = {
+    name = "s|S nfSæt›R ³u	TÆY"  # Mir Phulwari Najm
+    dynasty = "³u>òƒ"  # Najafi
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1765.2.5 = {
+  heir = {
+    name = "iIN+Y SÉb"  # Sayf ad-Daula
+    monarch_name = "iIN+Y SÉb"  # Sayf ad-Daula
+    dynasty = "³u>òƒ"  # Najafi
+    birth_date = 1730.1.1
+    death_date = 1770.3.11
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+1766.5.9 = {
+  monarch = {
+    name = "iIN+Y SÉb"  # Sayf ad-Daula
+    dynasty = "³u>òƒ"  # Najafi
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+1766.5.9 = {
+  heir = {
+    name = "FzôTÉbKQ SÉb"  # Mubarak ad-Daula
+    monarch_name = "FzôTÉbKQ SÉb"  # Mubarak ad-Daula
+    dynasty = "³u>òƒ"  # Najafi
+    birth_Date = 1755.1.1
+    death_date = 1793.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1770.3.11 = {
+  monarch = {
+    name = "FzôTÉbKQ SÉb"  # Mubarak ad-Daula
+    dynasty = "³u>òƒ"  # Najafi
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}

@@ -1,0 +1,20 @@
+
+name = "Oánn„j‡e"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 738
+}
+
+#1674t^4g21åe
+1674.4.21 = {
+	add_attacker = DN3
+	add_defender = QNG
+}
+
+1677.1.1 = {
+	rem_attacker = DN3
+	rem_defender = QNG
+}
+

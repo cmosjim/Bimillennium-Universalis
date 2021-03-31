@@ -1,0 +1,460 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = eastern
+primary_culture = serbian
+religion = orthodox
+capital = 138
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1360.1.1 = {
+  monarch = {
+    name = "ÙTS(Ñ I"  # Balsa I
+    dynasty = "ÙTS^GY"  # Balsic
+    adm = 5
+    dip = 2
+    mil = 4
+  }
+}
+1360.1.1 = {
+  heir = {
+    name = "EN…b	T"  # Djurad
+    monarch_name = "EN…b	T I"  # Djurad I
+    dynasty = "ÙTS^GY"  # Balsic
+    birth_date = 1332.1.1
+    death_date = 1378.1.13
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+1362.1.1 = {
+  monarch = {
+    name = "EN…b	T I"  # Djurad I
+    dynasty = "ÙTS^GY"  # Balsic
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+1362.1.1 = {
+  heir = {
+    name = "ÙTS(Ñ"  # Balsa
+    monarch_name = "ÙTS(Ñ II"  # Balsa II
+    dynasty = "ÙTS^GY"  # Balsic
+    birth_date = 1348.1.1
+    death_date = 1385.9.18
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1378.1.13 = {
+  monarch = {
+    name = "ÙTS(Ñ II"  # Balsa II
+    dynasty = "ÙTS^GY"  # Balsic
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1378.1.13 = {
+  heir = {
+    name = "EN…b	T"  # Djurad
+    monarch_name = "EN…b	T II"  # Djurad II
+    dynasty = "ÙTS^GY"  # Balsic
+    birth_date = 1355.1.1
+    death_date = 1403.4.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 1
+  }
+}
+1385.1.1 = {
+  monarch = {
+    name = "EN…b	T II"  # Djurad II
+    dynasty = "ÙTS^GY"  # Balsic
+    adm = 1
+    dip = 5
+    mil = 1
+  }
+}
+1387.1.1 = {
+  heir = {
+    name = "ÙTSôl"  # Balsha
+    monarch_name = "ÙTSôl III"  # Balsha III
+    dynasty = "ÙTS^GY"  # Balsic
+    birth_date = 1385.1.1
+    death_date = 1421.4.28
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1403.4.1 = {
+  monarch = {
+    name = "ÙTSôl III"  # Balsha III
+    dynasty = "ÙTS^GY"  # Balsic
+    dip = 2
+    adm = 4
+    mil = 4
+  }
+}
+1421.1.1 = {
+  monarch = {
+    name = "ØeyrXo I"  # Stepan I
+    dynasty = "…bNbRÙuGY"  # Lazarevic
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1465.1.1 = {
+  monarch = {
+    name = "¶uN I"  # Jovan I
+    dynasty = "(ÉS˙ã6wÙuGY"  # Crnojevic
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1475.1.1 = {
+  heir = {
+    name = "EN…b	T"  # Djurad
+    monarch_name = "EN…b	T IV"  # Djurad IV
+    dynasty = "(ÉS˙ã6wÙuGY"  # Crnojevic
+    birth_date = 1475.1.1
+    death_date = 1496.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1490.1.1 = {
+  monarch = {
+    name = "jg…b∑V IV"  # Djuradj IV
+    dynasty = "(ÉS˙ã6wÙuGY"  # Crnojevic
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1496.1.1 = {
+  monarch = {
+    name = "ØeyrXo II"  # Stepan II
+    dynasty = "(ÉS˙ã6wÙuGY"  # Crnojevic
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1498.1.1 = {
+  monarch = {
+    name = "¶uN II"  # Jovan II
+    dynasty = "(ÉS˙ã6wÙuGY"  # Crnojevic
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1515.7.1 = {
+  monarch = {
+    name = "jg…b∑V V"  # Djuradj V
+    dynasty = "(ÉS˙ã6wÙuGY"  # Crnojevic
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1516.1.1 = {
+  government = theocracy
+  add_government_reform = leading_clergy_reform
+}
+1516.1.1 = {
+  monarch = {
+    name = "ÊtÙu…b"  # Vavila
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1520.1.1 = {
+  monarch = {
+    name = "<hS¸f II"  # German II
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1530.1.1 = {
+  monarch = {
+    name = "^+Y±É"  # Pavle
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1532.1.1 = {
+  monarch = {
+    name = "ÊtâÃë6w I"  # Vasilije I
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1540.1.1 = {
+  monarch = {
+    name = "<S—yÍè∆Y"  # Nikodim
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1560.1.1 = {
+  monarch = {
+    name = "löKQÃë6w"  # Makrije
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1561.1.1 = {
+  monarch = {
+    name = "ÅúÚÉ∆Y I"  # Rufim I
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1569.1.1 = {
+  monarch = {
+    name = "^ós|6w II"  # Pahomije II
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1575.1.1 = {
+  monarch = {
+    name = "<h…bâ∆Y"  # Gerasim
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1582.1.1 = {
+  monarch = {
+    name = ",g»Tf"  # Venjamin
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1591.1.1 = {
+  monarch = {
+    name = "<SaS˙ãS"  # Nikanor
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1593.1.1 = {
+  monarch = {
+    name = "ÅúÚÉ∆Y II"  # Rufim II
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1639.1.1 = {
+  monarch = {
+    name = "löSæèÃë6w I"  # Mardarija I
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1649.1.1 = {
+  monarch = {
+    name = "Ùu(ÑÃë¡ I"  # Visarion I
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1659.1.1 = {
+  monarch = {
+    name = "löSæèÃë6w II"  # Mardarija II
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1673.1.1 = {
+  monarch = {
+    name = "ÅúÚÉ∆Y III"  # Rufim III
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1680.1.1 = {
+  monarch = {
+    name = "ÊtâÃë6w II"  # Vasilije II
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1685.1.1 = {
+  monarch = {
+    name = "Ùu(ÑÃë¡ II"  # Visarion II
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1694.1.1 = {
+  monarch = {
+    name = "(ÑÊt I"  # Sava I
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1696.7.1 = {
+  monarch = {
+    name = "æè<Sm I"  # Danilo I
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1735.1.21 = {
+  monarch = {
+    name = "(ÑÊt II"  # Sava II
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1782.3.9 = {
+  monarch = {
+    name = "iOTXS I"  # Petar I
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1830.10.30 = {
+  monarch = {
+    name = "iOTXS II"  # Petar II
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1851.10.31 = {
+  monarch = {
+    name = "æè<Sm II"  # Danilo II
+    dip = 3
+    adm = 3
+    mil = 3
+    religion = orthodox
+  }
+}
+1852.3.13 = {
+  set_legacy_government = administrative_monarchy
+}
+1852.3.13 = {
+  monarch = {
+    name = "æè<Sm I"  # Danilo I
+    dynasty = "|VóVWÙuGY-ÖmbØe"  # Petrovic-Njegos
+    adm = 4
+    dip = 2
+    mil = 3
+    religion = orthodox
+  }
+}
+1852.3.13 = {
+  heir = {
+    name = "<S‰S…b"  # Nikola
+    monarch_name = "<S‰S…b I"  # Nikola I
+    dynasty = "|VóVWÙuGY-ÖmbØe"  # Petrovic-Njegos
+    birth_date = 1841.10.7
+    death_date = 1921.3.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 4
+    religion = orthodox
+  }
+}
+1860.8.13 = {
+  monarch = {
+    name = "<S‰S…b I"  # Nikola I
+    dynasty = "|VóVWÙuGY-ÖmbØe"  # Petrovic-Njegos
+    adm = 5
+    dip = 2
+    mil = 4
+    religion = orthodox
+  }
+}
+1900.1.1 = {
+  technology_group = western
+}
+1910.1.1 = { religion = liberalism }
+1940.1.1 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = universal_suffrage_reform
+  add_government_reform = reinforce_republican_values_reform
+  add_government_reform = multi_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = ceremonial_president
+  set_legacy_government = presidental_republic
+  government_rank = 2
+}
+2006.6.3 = {
+  monarch = {
+    name = "ÚÉ)Rnf fköN˙ãÙuGY"  # Filipo Vujanovic
+    adm = 5
+    dip = 4
+    mil = 2
+    religion = orthodox
+  }
+}

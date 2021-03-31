@@ -1,0 +1,20 @@
+
+name = "HQö–ŒKNqN"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 700
+}
+
+
+115.1.1 = {
+	add_attacker = SQ1
+	add_defender = HND
+}
+
+116.5.25 = {
+	rem_attacker = SQ1
+	rem_defender = HND
+}
+

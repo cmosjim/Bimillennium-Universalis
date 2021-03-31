@@ -1,0 +1,91 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+primary_culture = donghu
+religion = tengri_pagan_reformed
+technology_group = eastern_nomad_group
+capital = 2891 #Mumo
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+
+
+604.1.1 = {
+	monarch = {
+		name = "fÿRw«ƒ:"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 5
+        leader = { 
+                name = "fÿRw«ƒ:"	
+                type = general	
+                #rank = 0	
+                fire = 2	
+                shock = 3	
+                manuever = 4	
+                siege = 2 
+		}
+	}
+}
+
+612.1.1 = {
+	monarch = {
+		name = "™lµ”WålfeVr²e"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 6
+        leader = { 
+                name = "™lµ”WålfeVr²e"	
+                type = general	
+                #rank = 0	
+                fire = 2	
+                shock = 4	
+                manuever = 5	
+                siege = 2 }
+	}
+}
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+
+628.1.1 = {
+	monarch = {
+		name = "wàs×kKOïS"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+        leader = { 
+                name = "wàs×kKOïS"	
+                type = general	
+                #rank = 0	
+                fire = 2	
+                shock = 4	
+                manuever = 4	
+                siege = 2 }
+	}
+}
+
+645.1.1 = {
+	monarch = {
+		name = "†wöS²bÔb|p"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }

@@ -1,0 +1,401 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = sidamo
+religion = shamanism
+technology_group = east_african
+unit_type = sub_saharan
+capital = 1218
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1180.1.1 = {
+  monarch = {
+    name = "löXb XIII"  # Mato XIII
+    dynasty = "löXb"  # Mato
+    birth_date = 1150.1.1
+    adm = 4
+    dip = 0
+    mil = 1
+  }
+}
+1190.1.1 = {
+  monarch = {
+    name = "löXb XIV"  # Mato XIV
+    dynasty = "löXb"  # Mato
+    birth_date = 1160.1.1
+    adm = 4
+    dip = 1
+    mil = 1
+  }
+}
+1200.1.1 = {
+  monarch = {
+    name = "löXb XV"  # Mato XV
+    dynasty = "löXb"  # Mato
+    birth_date = 1170.1.1
+    adm = 3
+    dip = 1
+    mil = 4
+  }
+}
+1210.1.1 = {
+  monarch = {
+    name = "löXb XVI"  # Mato XVI
+    dynasty = "löXb"  # Mato
+    birth_date = 1180.1.1
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1220.1.1 = {
+  monarch = {
+    name = "löXb XVII"  # Mato XVII
+    dynasty = "löXb"  # Mato
+    birth_date = 1190.1.1
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1230.1.1 = {
+  monarch = {
+    name = "löXb XVIII"  # Mato XVIII
+    dynasty = "löXb"  # Mato
+    birth_date = 1200.1.1
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1240.1.1 = {
+  monarch = {
+    name = "löXb XIX"  # Mato XIX
+    dynasty = "löXb"  # Mato
+    birth_date = 1210.1.1
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1250.1.1 = {
+  monarch = {
+    name = "löXb XX"  # Mato XX
+    dynasty = "löXb"  # Mato
+    birth_date = 1220.1.1
+    adm = 3
+    dip = 2
+    mil = 0
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1270.1.1 = {
+  monarch = {
+    name = "löXb XXI"  # Mato XXI
+    dynasty = "löXb"  # Mato
+    birth_date = 1240.1.1
+    adm = 0
+    dip = 5
+    mil = 1
+  }
+}
+1280.1.1 = {
+  monarch = {
+    name = "löXb XXII"  # Mato XXII
+    dynasty = "löXb"  # Mato
+    birth_date = 1250.1.1
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+1290.1.1 = {
+  monarch = {
+    name = "löXb XXIII"  # Mato XXIII
+    dynasty = "löXb"  # Mato
+    birth_date = 1260.1.1
+    adm = 4
+    dip = 0
+    mil = 4
+  }
+}
+1300.1.1 = {
+  monarch = {
+    name = "löXb XXIV"  # Mato XXIV
+    dynasty = "löXb"  # Mato
+    birth_date = 1270.1.1
+    adm = 3
+    dip = 0
+    mil = 3
+  }
+}
+1310.1.1 = {
+  monarch = {
+    name = "löXb XXV"  # Mato XXV
+    dynasty = "löXb"  # Mato
+    birth_date = 1280.1.1
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+1320.1.1 = {
+  monarch = {
+    name = "löXb XXVI"  # Mato XXVI
+    dynasty = "löXb"  # Mato
+    birth_date = 1290.1.1
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1330.1.1 = {
+  monarch = {
+    name = "löXb XXVII"  # Mato XXVII
+    dynasty = "löXb"  # Mato
+    birth_date = 1300.1.1
+    adm = 2
+    dip = 2
+    mil = 5
+  }
+}
+1340.1.1 = {
+  monarch = {
+    name = "löXb XXVIII"  # Mato XXVIII
+    dynasty = "löXb"  # Mato
+    birth_date = 1310.1.1
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+1350.1.1 = {
+  monarch = {
+    name = "löXb XXIX"  # Mato XXIX
+    dynasty = "löXb"  # Mato
+    birth_date = 1320.1.1
+    adm = 0
+    dip = 0
+    mil = 3
+  }
+}
+1360.1.1 = {
+  monarch = {
+    name = "löXb XXX"  # Mato XXX
+    dynasty = "löXb"  # Mato
+    birth_date = 1330.1.1
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1370.1.1 = {
+  monarch = {
+    name = "löXb XXXI"  # Mato XXXI
+    dynasty = "löXb"  # Mato
+    birth_date = 1340.1.1
+    adm = 4
+    dip = 0
+    mil = 2
+  }
+}
+1380.1.1 = {
+  monarch = {
+    name = "löXb XXXII"  # Mato XXXII
+    dynasty = "löXb"  # Mato
+    birth_date = 1350.1.1
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1390.1.1 = {
+  religion = coptic
+  monarch = {
+    name = "OeEN I"  # Minjo I
+    dynasty = "	T˙ã˙WeY"  # Ginocho
+    adm = 6
+    dip = 5
+    mil = 6
+  }
+}
+1425.1.1 = {
+  monarch = {
+    name = "YÀz∑V I"  # Shongetato I
+    dynasty = "	T˙ã˙WeY"  # Ginocho
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1460.1.1 = {
+  monarch = {
+    name = "âR)R∑V I"  # Addiotato I
+    dynasty = "	T˙ã˙WeY"  # Ginocho
+    adm = 2
+    dip = 1
+    mil = 3
+  }
+}
+1495.1.1 = {
+  monarch = {
+    name = "ôlÀz∑V I"  # Shaditato I
+    dynasty = "	T˙ã˙WeY"  # Ginocho
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1530.1.1 = {
+  monarch = {
+    name = "löÇÑ bêe I"  # Madi Gafine I
+    dynasty = "	T˙ã˙WeY"  # Ginocho
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+1565.1.1 = {
+  monarch = {
+    name = "¶êÀz∑V I"  # Bongatato I
+    dynasty = "	T˙ã˙WeY"  # Ginocho
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1605.1.1 = {
+  monarch = {
+    name = "	TÙT I"  # Giba I
+    dynasty = "ÖQÀyÀy"  # Nechocho
+    adm = 1
+    dip = 2
+    mil = 3
+  }
+}
+1640.1.1 = {
+  monarch = {
+    name = "†R)R I"  # Gali I
+    dynasty = "ÿöÀy"  # Gaocho
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1675.1.1 = {
+  monarch = {
+    name = "†R)R II"  # Gali II
+    dynasty = "ÿöÀy"  # Gaocho
+    adm = 4
+    dip = 2
+    mil = 6
+  }
+}
+1710.1.1 = {
+  monarch = {
+    name = "†RGY I"  # Gaki I
+    dynasty = "ÿöÀy"  # Gaocho
+    adm = 1
+    dip = 2
+    mil = 3
+  }
+}
+1742.1.1 = {
+  monarch = {
+    name = "†R)R III"  # Gali III
+    dynasty = "ÿöÀy"  # Gaocho
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+1775.1.1 = {
+  monarch = {
+    name = "Y<h I"  # Shag I
+    dynasty = "bY^tÀy"  # Sherocho
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+1795.1.1 = {
+  monarch = {
+    name = "ÔQO I"  # Kaye I
+    dynasty = "bY^tÀy"  # Sherocho
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}
+1798.1.1 = {
+  monarch = {
+    name = "óÇÑ I"  # Hoti I
+    dynasty = "ÿöÀy"  # Gaocho
+    adm = 1
+    dip = 3
+    mil = 2
+  }
+}
+1821.1.1 = {
+  monarch = {
+    name = "†R»T I"  # Gaha I
+    dynasty = "ÖQÀyÀy"  # Nechocho
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1845.1.1 = {
+  monarch = {
+    name = "†RÙu I"  # Gawi I
+    dynasty = "ÖQÀyÀy"  # Nechocho
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1854.1.1 = {
+  monarch = {
+    name = "ÔQO II"  # Kaye II
+    dynasty = "bY^tÀy"  # Sherocho
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1890.4.6 = {
+  monarch = {
+    name = "†RGY I"  # Gaki I
+    dynasty = "bY^tÀy"  # Sherocho
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}

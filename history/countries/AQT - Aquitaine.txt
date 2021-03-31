@@ -1,0 +1,349 @@
+government = tribal
+add_government_reform = barbarian_reform
+primary_culture = aquitanian
+religion = chalcedonism
+technology_group = barbarian
+capital = 196
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+260.1.1 = {
+  primary_culture = aquitaine
+  capital = 196
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+500.1.1 = {
+  government = monarchy
+  add_government_reform = salic_reform
+  government_rank = 1
+}
+536.1.1 = {
+  technology_group = western
+}
+555.1.1 = {
+  monarch = {
+    name = "Âg∆Y"  # Chram
+    dynasty = "®Xm)n"  # Merovingian
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+583.1.1 = {
+  monarch = {
+    name = "∑Vâ∑VÃëLNØe"  # Desiderius
+    dynasty = "?ñ˙WfW"  # Aquitainian
+    adm = 2
+    dip = 2
+    mil = 5
+  }
+}
+587.1.1 = {
+  monarch = {
+    name = "eYØeyrWÙuS∑V"  # Austrovald
+    dynasty = "?ñ˙WfW"  # Aquitainian
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+589.1.1 = {
+  monarch = {
+    name = "^X^tØe"  # Sereus
+    dynasty = "?ñ˙WfW"  # Aquitainian
+    adm = 5
+    dip = 0
+    mil = 2
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+629.10.18 = {
+  government_rank = 2
+  monarch = {
+    name = "Âgt=Oyr II"  # Charibert II
+    dynasty = "®Xm)n"  # Merovingian
+    birth_date = 607.1.1
+    adm = 5
+    dip = 2
+    mil = 1
+  }
+}
+630.1.1 = {
+  heir = {
+    name = "^SiOÃëKQ"  # Chilperic
+    monarch_name = "^SiOÃëKQ"  # Chilperic
+    dynasty = "®Xm)n"  # Merovingian
+    birth_date = 630.1.1
+    death_date = 632.6.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 1
+  }
+}
+632.4.8 = {
+  monarch = {
+    name = "^SiOÃëKQ"  # Chilperic
+    dynasty = "®Xm)n"  # Merovingian
+    birth_date = 630.1.1
+    adm = 3
+    dip = 5
+    mil = 1
+  }
+}
+632.6.1 = {
+  government_rank = 1
+  monarch = {
+    name = "ZS∑V	TiçS"  # Bodegisel
+    dynasty = "eYØeyr…bâöN"  # Austrasian
+    adm = 3
+    dip = 5
+    mil = 1
+  }
+}
+660.1.1 = {
+  monarch = {
+    name = "ÚÉ)RKQØe"  # Felix
+    dynasty = "?ñ˙WfW"  # Aquitainian
+    adm = 2
+    dip = 0
+    mil = 2
+  }
+}
+670.1.1 = {
+  monarch = {
+    name = "bSnfØe I"  # Lupus I
+    dynasty = "?ñ˙WfW"  # Aquitainian
+    adm = 2
+    dip = 0
+    mil = 2
+  }
+}
+679.1.1 = {
+  monarch = {
+    name = "eYY I"  # Odo I
+    dynasty = "∑V †RØe—yÖm"  # de Gascogne
+    birth_date = 650.1.1
+    adm = 5
+    dip = 5
+    mil = 4
+  }
+}
+705.1.1 = {
+  heir = {
+    name = "ó≥u∑V"  # Hunald
+    monarch_name = "ó≥u∑V I"  # Hunald I
+    dynasty = "∑V †RØe—yÖm"  # de Gascogne
+    birth_date = 705.1.1
+    death_date = 748.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 3
+  }
+}
+735.1.1 = {
+  monarch = {
+    name = "ó≥u∑V I"  # Hunald I
+    dynasty = "∑V †RØe—yÖm"  # de Gascogne
+    birth_date = 705.1.1
+    adm = 5
+    dip = 5
+    mil = 3
+  }
+}
+735.1.1 = {
+  heir = {
+    name = "Ùu’l"  # Waifer
+    monarch_name = "Ùu’l I"  # Waifer I
+    dynasty = "∑V †RØe—yÖm"  # de Gascogne
+    birth_date = 718.1.1
+    death_date = 767.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 4
+  }
+}
+748.1.1 = {
+  monarch = {
+    name = "Ùu’l I"  # Waifer I
+    dynasty = "∑V †RØe—yÖm"  # de Gascogne
+    birth_date = 718.1.1
+    adm = 4
+    dip = 0
+    mil = 4
+  }
+}
+748.1.1 = {
+  heir = {
+    name = "ó≥u∑V"  # Hunald
+    monarch_name = "ó≥u∑V II"  # Hunald II
+    dynasty = "∑V †RØe—yÖm"  # de Gascogne
+    birth_date = 737.1.1
+    death_date = 3000.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+768.1.1 = {
+  monarch = {
+    name = "ó≥u∑V II"  # Hunald II
+    dynasty = "∑V †RØe—yÖm"  # de Gascogne
+    birth_date = 737.1.1
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+781.1.1 = {
+  government_rank = 2
+  monarch = {
+    name = "Ôçf I 0TÜ⁄ãw0"  # Louis I the Pious
+    dynasty = "†Rmóg"  # Carolingian
+    birth_date = 778.4.16
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+814.1.29 = {
+  monarch = {
+    name = "Ns^ I"  # Pepin I
+    dynasty = "†Rmóg"  # Carolingian
+    birth_date = 797.1.1
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+823.1.1 = {
+  heir = {
+    name = "Ns^"  # Pepin
+    monarch_name = "Ns^ II"  # Pepin II
+    dynasty = "†Rmóg"  # Carolingian
+    birth_date = 823.1.1
+    death_date = 864.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 0
+  }
+}
+838.12.13 = {
+  monarch = {
+    name = "Ns^ II"  # Pepin II
+    dynasty = "†Rmóg"  # Carolingian
+    birth_date = 823.1.1
+    adm = 2
+    dip = 1
+    mil = 0
+  }
+}
+847.1.1 = {
+  heir = {
+    name = "Âgt"  # Charles
+    monarch_name = "Âgt I"  # Charles I
+    dynasty = "†Rmóg"  # Carolingian
+    birth_date = 847.1.1
+    death_date = 866.9.29
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 0
+  }
+}
+855.1.1 = {
+  monarch = {
+    name = "Âgt I"  # Charles I
+    dynasty = "†Rmóg"  # Carolingian
+    birth_date = 847.1.1
+    adm = 3
+    dip = 1
+    mil = 0
+  }
+}
+855.1.1 = {
+  heir = {
+    name = "Ôçf"  # Louis
+    monarch_name = "Ôçf I"  # Louis I
+    dynasty = "†Rmóg"  # Carolingian
+    birth_date = 846.11.1
+    death_date = 879.4.10
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+866.9.29 = {
+  monarch = {
+    name = "Ôçf I"  # Louis I
+    dynasty = "†Rmóg"  # Carolingian
+    birth_date = 846.11.1
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+867.1.1 = {
+  religion = catholic
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+970.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+}
+1000.1.1 = {
+  government_rank = 1
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1137.4.9 = {
+  monarch = {
+    name = "√WâÉ˙ã"  # Eleanor
+    dynasty = "…b∆YÚÉ∑V"  # Ramnulfid
+    adm = 4
+    dip = 5
+    mil = 1
+    female = yes
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1515.1.1 = {
+  government = monarchy
+  add_government_reform = autocracy_reform
+}
+1560.1.1 = {
+  religion = reformed
+}
+1589.8.3 = {
+  set_legacy_government = administrative_monarchy
+}
+1661.3.9 = {
+  government = monarchy
+  add_government_reform = autocracy_reform
+}

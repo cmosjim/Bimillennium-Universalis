@@ -1,0 +1,154 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = chihan
+capital = 3240	#Jingzhou
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+
+907.1.1 = {
+	add_country_modifier = {
+		name = "wudaigeju"
+		duration = -1 
+	}
+}
+907.1.1 = {
+	monarch = {
+		name = "ØšcRtQ"
+		#dynasty = " "
+	
+		birth_date = 858.1.1
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+924.4.14 = {
+	heir = {
+		name = "Øšu1W"
+		monarch_name = "Øšu1W"
+	
+		birth_date = 891.1.1
+		death_date = 948.12.1
+		claim = 95
+		adm = 0
+		dip = 3
+		mil = 4
+	}
+}
+
+928.1.28 = {
+	monarch = {
+		name = "Øšu1W"
+		#dynasty = " "
+	
+		birth_date = 891.1.1
+		adm = 0
+		dip = 3
+		mil = 4
+	}
+}
+
+928.1.28 = {
+	heir = {
+		name = "ØšİO‡"
+		monarch_name = "ØšİO‡"
+	
+		birth_date = 918.1.1
+		death_date = 960.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+948.12.1 = {
+	monarch = {
+		name = "ØšİO‡"
+		#dynasty = " "
+	
+		birth_date = 918.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+948.12.1 = {
+	heir = {
+		name = "Øšw¬"
+		monarch_name = "Øšw¬"
+	
+		birth_date = 930.1.1
+		death_date = 962.1.1
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+960.1.1 = {
+	monarch = {
+		name = "Øšw¬"
+		#dynasty = " "
+	
+		birth_date = 930.1.1
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+960.1.1 = {
+	heir = {
+		name = "Øšçu²Q"
+		monarch_name = "Øšçu²Q"
+	
+		birth_date = 930.1.1
+		death_date = 963.1.1
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 4
+	}
+}
+
+962.1.1 = {
+	monarch = {
+		name = "Øšçu²Q"
+		#dynasty = " "
+	
+		birth_date = 930.1.1
+		adm = 0
+		dip = 2
+		mil = 4
+	}
+}
+963.1.1 = {
+	remove_country_modifier = wudaigeju
+}
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = {
+	government = modern_chinese_warlord
+	add_government_reform = modern_chinese_warlord_reform
+	religion = liberalism
+}
+
+
+1949.10.1 = { technology_group = modern_chinese }

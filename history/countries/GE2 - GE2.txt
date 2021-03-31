@@ -1,0 +1,156 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+government_rank = 1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = jin
+capital = 3304	
+
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+
+907.1.1 = {
+	add_country_modifier = {
+		name = "wudaigeju"
+		duration = -1 
+	}	
+}
+
+914.1.1 = {
+	monarch = {
+		name = "ùf®‹Ñ‘"
+
+		adm = 4
+		dip = 5
+		mil = 2
+	
+        leader = { 
+                name = "ùf®‹Ñ‘"	
+                type = general	
+                fire = 4	
+                shock = 5	
+                manuever = 5
+                siege = 3
+		}
+	}			
+}
+
+917.1.1 = {
+	heir = {
+		name = "ùfCQ·V"
+		monarch_name = "ùfCQ·V"
+		claim = 100
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+
+935.1.1 = {
+	monarch = {
+		name = "ùfCQ·V"
+		#dynasty = " "
+		adm = 4
+		dip = 5
+		mil = 3
+		        leader = { 
+                name = "ùfCQ·V"	
+                type = general	
+                #rank = 0	
+                fire = 6
+                shock = 5	
+                manuever = 3
+                siege = 4
+				}
+	}
+}
+
+939.1.1 = {
+	monarch = {
+		name = "ùfCQñm"
+		#dynasty = " "
+		adm = 4
+		dip = 3
+		mil = 3
+
+	}
+}
+
+944.1.1 = {
+	monarch = {
+		name = "ùfCQàV"
+		#dynasty = " "
+		adm = 5
+		dip = 5
+		mil = 4
+
+	}
+}
+
+974.1.1 = {
+	monarch = {
+		name = "ùfö^m`"
+		#dynasty = " "
+		adm = 4
+		dip = 2
+		mil = 3
+
+	}
+}
+
+976.1.1 = {
+	monarch = {
+		name = "ùfö^„y"
+		#dynasty = " "
+		adm = 2
+		dip = 2
+		mil = 3
+
+	}
+}
+1002.1.1 = {
+	monarch = {
+		name = "ùf—RÿR"
+		#dynasty = " "
+		adm = 2
+		dip = 2
+		mil = 1
+
+	}
+}
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+
+1014.1.1 = {
+	monarch = {
+		name = "ùf2z˜"
+		#dynasty = " "
+		adm = 2
+		dip = 2
+		mil = 4
+
+	}
+}
+1037.1.1 ={
+	remove_country_modifier = wudaigeju
+}
+##RVIN›Q‚‚¦^O	ùfö^„y	9761002t^
+##RVIN›Q‚‚¦^O	ùf—RÿR	1002t^1014t^
+##RVIN›Q‚‚¦^O	ùf2z˜	1014t^1035t^
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = {
+	government = modern_chinese_warlord
+	add_government_reform = modern_chinese_warlord_reform
+	religion = liberalism
+}
+
+1949.10.1 = { technology_group = modern_chinese }

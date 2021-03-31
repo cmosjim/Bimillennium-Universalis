@@ -1,0 +1,355 @@
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = rwandan
+religion = shamanism
+technology_group = central_african
+unlock_cult = mwari_cult
+unlock_cult = central_african_ancestor_cult
+unlock_cult = cwezi_cult
+unit_type = sub_saharan
+capital = 2034
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1444.1.1 = {
+  monarch = {
+    name = "aS÷–…hÉb"  # Karemera
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1400.1.1
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1470.1.1 = {
+  monarch = {
+    name = "ôTpQ^Éb6w"  # Baramparaye
+    female = yes
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1450.1.1
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1530.1.1 = {
+  monarch = {
+    name = "i`TX÷– I œ™lPŸ"  # Ntare I Rushatsi
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1500.1.1
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1580.1.1 = {
+  monarch = {
+    name = "FzTX R I"  # Mutaga I
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1560.1.1
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1600.1.1 = {
+  monarch = {
+    name = "ÆYN^ßR I"  # Mwambutsa I
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1580.1.1
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1620.1.1 = {
+  monarch = {
+    name = "i`TX÷– II"  # Ntare II
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1600.1.1
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1650.1.1 = {
+  monarch = {
+    name = "ÆYæ—PŸ II"  # Mwezi II
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1620.1.1
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1680.1.1 = {
+  monarch = {
+    name = "i`TX÷– III"  # Ntare III
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1650.1.1
+    adm = 5
+    dip = 0
+    mil = 0
+  }
+}
+1680.1.1 = {
+  heir = {
+    name = "ÆYæ—PŸ"  # Mwezi
+    monarch_name = "ÆYôuPŸ III"  # Mwezi III
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1679.1.1
+    death_date = 1739.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+1709.1.1 = {
+  monarch = {
+    name = "ÆYôuPŸ III"  # Mwezi III
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1679.1.1
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+1709.1.1 = {
+  heir = {
+    name = "FzTX R"  # Mutaga
+    monarch_name = "FzTX R III"  # Mutaga III
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1709.1.1
+    death_date = 1767.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 0
+  }
+}
+1739.1.1 = {
+  monarch = {
+    name = "FzTX R III"  # Mutaga III
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1709.1.1
+    adm = 1
+    dip = 3
+    mil = 0
+  }
+}
+1739.1.1 = {
+  heir = {
+    name = "ÆYN^ßR"  # Mwambutsa
+    monarch_name = "ÆYN^ßR III"  # Mwambutsa III
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1737.1.1
+    death_date = 1796.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1767.1.1 = {
+  monarch = {
+    name = "ÆYN^ßR III"  # Mwambutsa III
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1737.1.1
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1767.1.1 = {
+  heir = {
+    name = "i`TXS"  # Ntare
+    monarch_name = "i`TXS IV"  # Ntare IV
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1766.1.1
+    death_date = 1852.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 0
+  }
+}
+1796.1.1 = {
+  monarch = {
+    name = "i`TXS IV"  # Ntare IV
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1766.1.1
+    adm = 1
+    dip = 3
+    mil = 0
+  }
+}
+1840.1.1 = {
+  heir = {
+    name = "ÆYæ—PŸ"  # Mwezi
+    monarch_name = "ÆYæ—PŸ IV"  # Mwezi IV
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1840.1.1
+    death_date = 1908.8.21
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 1
+  }
+}
+1852.1.1 = {
+  monarch = {
+    name = "ÆYæ—PŸ IV"  # Mwezi IV
+    dynasty = "i`şVæ—W"  # Ntwero
+    birth_date = 1840.1.1
+    adm = 1
+    dip = 5
+    mil = 1
+    religion = protestant
+  }
+}
+1890.1.1 = {
+  set_legacy_government = constitutional_monarchy
+  religion = catholic
+  technology_group = muslim
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1962.7.1 = {
+  monarch = {
+    name = "i`TXS V"  # Ntare V
+    dynasty = "i`şVæ—W"  # Ntwero
+    adm = 3
+    dip = 3
+    mil = 4
+    religion = protestant
+  }
+}
+1966.7.1 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1966.7.1 = {
+  monarch = {
+    name = "s|GkS s|TRW"  # Michel Micombero
+    adm = 5
+    dip = 4
+    mil = 3
+    religion = protestant
+  }
+}
+1976.11.2 = {
+  monarch = {
+    name = "©‹ ôT‚„¯eyr ôT RNb"  # Jean-Baptiste Bagaza
+    adm = 5
+    dip = 3
+    mil = 2
+    religion = protestant
+  }
+}
+1987.9.3 = {
+  monarch = {
+    name = "®vÃWS ^¦ušN"  # Pierre Buyoya
+    adm = 4
+    dip = 6
+    mil = 4
+    religion = protestant
+  }
+}
+1993.7.10 = {
+  monarch = {
+    name = "…hS^eY i`¾¾6w"  # Melchior Ndadaye
+    adm = 2
+    mil = 1
+    religion = protestant
+    dip = 2
+  }
+}
+1993.10.27 = {
+  monarch = {
+    name = "‰Sôu úW<S	T"  # Sylvie Kinigi
+    adm = 5
+    dip = 3
+    mil = 4
+    religion = protestant
+    female = yes
+  }
+}
+1994.2.5 = {
+  monarch = {
+    name = "‰nfÌ‘‰R i`TXÌ‘šNs|Éb"  # Cyprien Ntaryamira
+    adm = 3
+    dip = 1
+    mil = 3
+    religion = protestant
+  }
+}
+1994.4.6 = {
+  monarch = {
+    name = "‰Sôu¯eyr i`‚„ís R<SšN"  # Sylvestre Ntibantunganya
+    adm = 1
+    mil = 3
+    religion = protestant
+    dip = 5
+  }
+}
+1996.7.25 = {
+  monarch = {
+    name = "®vÃWS ^¦ušN"  # Pierre Buyoya
+    adm = 4
+    dip = 6
+    mil = 4
+    religion = protestant
+  }
+}
+2003.4.30 = {
+  monarch = {
+    name = "Ys|‚„f i`¾Oıl6w"  # Domitien Ndayizeye
+    adm = 3
+    dip = 1
+    mil = 3
+    religion = protestant
+  }
+}
+2005.8.26 = {
+  monarch = {
+    name = "®vÃWS i`“^&OPŸNb"  # Pierre Nkurunziza
+    adm = 4
+    mil = 2
+    religion = protestant
+    dip = 4
+  }
+}

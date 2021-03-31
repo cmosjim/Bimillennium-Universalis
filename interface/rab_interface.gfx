@@ -1,0 +1,1463 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_liberalism_adm_ideas"
+		texturefile = "gfx//interface//ideas//liberalism_adm_ideas.tga"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+	spriteType = {
+		name = "GFX_idea_liberalism_mil_ideas"
+		texturefile = "gfx//interface//ideas//liberalism_mil_ideas.tga"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}	
+
+
+	spriteType = {
+		name = "Paul_von_Hindenburg_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/Paul_von_Hindenburg_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "asiangfx_KING_OF_FOREIGN_CUSTOMS_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_ASIAN/king_of_foreign_customs.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "red_jing_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_ASIAN/red_jing_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_fort_et"
+		texturefile = "gfx//interface//buildings//latin_fort.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fort_et_easterngfx"
+		texturefile = "gfx//interface//buildings//eastern_fort.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fort_et_asiangfx"
+		texturefile = "gfx//interface//buildings//chinese_fort.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fort_et_africangfx"
+		texturefile = "gfx//interface//buildings//african_fort.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fort_et_indiangfx"
+		texturefile = "gfx//interface//buildings//indian_fort.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fort_et_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_fort.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fort_et_northamericagfx"
+		texturefile = "gfx//interface//buildings//northamerica_fort.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fort_et_southamericagfx"
+		texturefile = "gfx//interface//buildings//southamerica_fort.tga"
+		loadType = "INGAME"
+	}
+
+#######################  advisor modern 	
+
+	spriteType = {
+		name = "GFX_advisor_modern_arab_adm_1"
+		texturefile = "gfx//interface//advisors//modern_arab_adm_1.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_arab_adm_1_female"
+		texturefile = "gfx//interface//advisors//modern_arab_adm_1_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_modern_arab_adm_2"
+		texturefile = "gfx//interface//advisors//modern_arab_adm_2.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_arab_adm_2_female"
+		texturefile = "gfx//interface//advisors//modern_arab_adm_2_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_advisor_modern_arab_adm_3"
+		texturefile = "gfx//interface//advisors//modern_arab_adm_3.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_arab_adm_3_female"
+		texturefile = "gfx//interface//advisors//modern_arab_adm_3_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_modern_arab_adm_4"
+		texturefile = "gfx//interface//advisors//modern_arab_adm_4.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_arab_adm_4_female"
+		texturefile = "gfx//interface//advisors//modern_arab_adm_4_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_modern_arab_adm_5"
+		texturefile = "gfx//interface//advisors//modern_arab_adm_5.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	
+	spriteType = {
+		name = "GFX_advisor_modern_arab_adm_5_female"
+		texturefile = "gfx//interface//advisors//modern_arab_adm_5_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_modern_arab_dip_1"
+		texturefile = "gfx//interface//advisors//modern_arab_dip_1.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_arab_dip_1_female"
+		texturefile = "gfx//interface//advisors//modern_arab_dip_1_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_modern_arab_dip_2"
+		texturefile = "gfx//interface//advisors//modern_arab_dip_2.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_arab_dip_2_female"
+		texturefile = "gfx//interface//advisors//modern_arab_dip_2_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_advisor_modern_arab_dip_3"
+		texturefile = "gfx//interface//advisors//modern_arab_dip_3.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_arab_dip_3_female"
+		texturefile = "gfx//interface//advisors//modern_arab_dip_3_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_modern_arab_dip_4"
+		texturefile = "gfx//interface//advisors//modern_arab_dip_4.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_arab_dip_4_female"
+		texturefile = "gfx//interface//advisors//modern_arab_dip_4_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_modern_arab_dip_5"
+		texturefile = "gfx//interface//advisors//modern_arab_dip_5.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_arab_dip_5_female"
+		texturefile = "gfx//interface//advisors//modern_arab_dip_5_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+
+	spriteType = {
+		name = "GFX_advisor_modern_arab_mil_1"
+		texturefile = "gfx//interface//advisors//modern_arab_mil_1.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_arab_mil_1_female"
+		texturefile = "gfx//interface//advisors//modern_arab_mil_1_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_modern_arab_mil_2"
+		texturefile = "gfx//interface//advisors//modern_arab_mil_2.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_arab_mil_2_female"
+		texturefile = "gfx//interface//advisors//modern_arab_mil_2_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_advisor_modern_arab_mil_3"
+		texturefile = "gfx//interface//advisors//modern_arab_mil_3.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_arab_mil_3_female"
+		texturefile = "gfx//interface//advisors//modern_arab_mil_3_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_modern_arab_mil_4"
+		texturefile = "gfx//interface//advisors//modern_arab_mil_4.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_arab_mil_4_female"
+		texturefile = "gfx//interface//advisors//modern_arab_mil_4_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_modern_arab_mil_5"
+		texturefile = "gfx//interface//advisors//modern_arab_mil_5.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_arab_mil_5_female"
+		texturefile = "gfx//interface//advisors//modern_arab_mil_5_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+##########################	advisor_modern_western 
+
+	spriteType = {
+		name = "GFX_advisor_modern_western_adm_1"
+		texturefile = "gfx//interface//advisors//modern_western_adm_1.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_western_adm_1_female"
+		texturefile = "gfx//interface//advisors//modern_western_adm_1_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_modern_western_adm_2"
+		texturefile = "gfx//interface//advisors//modern_western_adm_2.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_western_adm_2_female"
+		texturefile = "gfx//interface//advisors//modern_western_adm_2_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_advisor_modern_western_adm_3"
+		texturefile = "gfx//interface//advisors//modern_western_adm_3.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_western_adm_3_female"
+		texturefile = "gfx//interface//advisors//modern_western_adm_3_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_modern_western_adm_4"
+		texturefile = "gfx//interface//advisors//modern_western_adm_4.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_western_adm_4_female"
+		texturefile = "gfx//interface//advisors//modern_western_adm_4_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_modern_western_adm_5"
+		texturefile = "gfx//interface//advisors//modern_western_adm_5.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	
+	spriteType = {
+		name = "GFX_advisor_modern_western_adm_5_female"
+		texturefile = "gfx//interface//advisors//modern_western_adm_5_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_modern_western_dip_1"
+		texturefile = "gfx//interface//advisors//modern_western_dip_1.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_western_dip_1_female"
+		texturefile = "gfx//interface//advisors//modern_western_dip_1_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_modern_western_dip_2"
+		texturefile = "gfx//interface//advisors//modern_western_dip_2.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_western_dip_2_female"
+		texturefile = "gfx//interface//advisors//modern_western_dip_2_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_advisor_modern_western_dip_3"
+		texturefile = "gfx//interface//advisors//modern_western_dip_3.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_western_dip_3_female"
+		texturefile = "gfx//interface//advisors//modern_western_dip_3_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_modern_western_dip_4"
+		texturefile = "gfx//interface//advisors//modern_western_dip_4.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_western_dip_4_female"
+		texturefile = "gfx//interface//advisors//modern_western_dip_4_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_modern_western_dip_5"
+		texturefile = "gfx//interface//advisors//modern_western_dip_5.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_western_dip_5_female"
+		texturefile = "gfx//interface//advisors//modern_western_dip_5_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+
+	spriteType = {
+		name = "GFX_advisor_modern_western_mil_1"
+		texturefile = "gfx//interface//advisors//modern_western_mil_1.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_western_mil_1_female"
+		texturefile = "gfx//interface//advisors//modern_western_mil_1_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_modern_western_mil_2"
+		texturefile = "gfx//interface//advisors//modern_western_mil_2.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_western_mil_2_female"
+		texturefile = "gfx//interface//advisors//modern_western_mil_2_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_advisor_modern_western_mil_3"
+		texturefile = "gfx//interface//advisors//modern_western_mil_3.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_western_mil_3_female"
+		texturefile = "gfx//interface//advisors//modern_western_mil_3_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_modern_western_mil_4"
+		texturefile = "gfx//interface//advisors//modern_western_mil_4.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_western_mil_4_female"
+		texturefile = "gfx//interface//advisors//modern_western_mil_4_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_modern_western_mil_5"
+		texturefile = "gfx//interface//advisors//modern_western_mil_5.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_western_mil_5_female"
+		texturefile = "gfx//interface//advisors//modern_western_mil_5_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_advisor_modern_adm_1"
+		texturefile = "gfx//interface//advisors//modern_adm_1.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_modern_adm_1_female"
+		texturefile = "gfx//interface//advisors//modern_adm_1_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_modern_adm_2"
+		texturefile = "gfx//interface//advisors//modern_adm_2.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_modern_adm_2_female"
+		texturefile = "gfx//interface//advisors//modern_adm_2_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_advisor_modern_adm_3"
+		texturefile = "gfx//interface//advisors//modern_adm_3.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_adm_3_female"
+		texturefile = "gfx//interface//advisors//modern_adm_3_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_modern_adm_4"
+		texturefile = "gfx//interface//advisors//modern_adm_4.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_adm_4_female"
+		texturefile = "gfx//interface//advisors//modern_adm_4_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_modern_adm_5"
+		texturefile = "gfx//interface//advisors//modern_adm_5.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_adm_5_female"
+		texturefile = "gfx//interface//advisors//modern_adm_5_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_modern_dip_1"
+		texturefile = "gfx//interface//advisors//modern_dip_1.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_dip_1_female"
+		texturefile = "gfx//interface//advisors//modern_dip_1_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_modern_dip_2"
+		texturefile = "gfx//interface//advisors//modern_dip_2.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_dip_2_female"
+		texturefile = "gfx//interface//advisors//modern_dip_2_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_advisor_modern_dip_3"
+		texturefile = "gfx//interface//advisors//modern_dip_3.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_dip_3_female"
+		texturefile = "gfx//interface//advisors//modern_dip_3_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_modern_dip_4"
+		texturefile = "gfx//interface//advisors//modern_dip_4.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_dip_4_female"
+		texturefile = "gfx//interface//advisors//modern_dip_4_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_modern_dip_5"
+		texturefile = "gfx//interface//advisors//modern_dip_5.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_dip_5_female"
+		texturefile = "gfx//interface//advisors//modern_dip_5_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+
+	spriteType = {
+		name = "GFX_advisor_modern_mil_1"
+		texturefile = "gfx//interface//advisors//modern_mil_1.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_mil_1_female"
+		texturefile = "gfx//interface//advisors//modern_mil_1_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_modern_mil_2"
+		texturefile = "gfx//interface//advisors//modern_mil_2.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_modern_mil_2_female"
+		texturefile = "gfx//interface//advisors//modern_mil_2_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_advisor_modern_mil_3"
+		texturefile = "gfx//interface//advisors//modern_mil_3.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_mil_3_female"
+		texturefile = "gfx//interface//advisors//modern_mil_3_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_modern_mil_4"
+		texturefile = "gfx//interface//advisors//modern_mil_4.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_mil_4_female"
+		texturefile = "gfx//interface//advisors//modern_mil_4_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_modern_mil_5"
+		texturefile = "gfx//interface//advisors//modern_mil_5.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_modern_mil_5_female"
+		texturefile = "gfx//interface//advisors//modern_mil_5_female.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_obj_latemiddle_large_navy"
+		texturefile = "gfx/interface/ages/obj_latemiddle_large_navy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_disaster_meiji_reform"
+		texturefile = "gfx//interface//disasters//meiji_reform.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+	
+	#rab_ add
+	spriteType = {
+		name = "GFX_disaster_xinhaigeming"
+		texturefile = "gfx//interface//disasters//xinhaigeming.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+	
+	#rab_ add
+	spriteType = {
+		name = "GFX_disaster_socialism_evolve"
+		texturefile = "gfx//interface//disasters//socialism_evolve.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+	
+	
+	#rab_ add
+	spriteType = {
+		name = "GFX_disaster_cultural_revolution"
+		texturefile = "gfx//interface//disasters//cultural_revolution.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+	
+	#rab_ add
+	spriteType = {
+		name = "GFX_disaster_wangmang_disaster"
+		texturefile = "gfx//interface//disasters//wangmang_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}		
+	# rab_ add
+	spriteType = {
+		name = "GFX_disaster_nomad_tech_disaster"
+		texturefile = "gfx//interface//disasters//nomad_tech_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+	
+	# rab_ add
+	spriteType = {
+		name = "GFX_disaster_estate_bullys_disaster"
+		texturefile = "gfx//interface//disasters//estate_bullys_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	#xy_ add disaster when cele to att neighberhood country.
+	spriteType = {
+		name = "GFX_disaster_china_war"
+		texturefile = "gfx//interface//disasters//china_war.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	#xy_ add disaster when end of YUA corruption
+	spriteType = {
+		name = "GFX_disaster_yuanwajie"
+		texturefile = "gfx//interface//disasters//yuanwajie.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+	#xy_ add disaster when 經濟危機
+	spriteType = {
+		name = "GFX_disaster_economy_crisis_disaster"
+		texturefile = "gfx//interface//disasters//economy_crisis_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+	###################rab_ s#####################################
+	# medical area total has 4 icons to update
+	################################################################
+	spriteType = {
+		name = "GFX_isolated_area"
+		texturefile = "gfx//interface//buildings//isolated_area.tga"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_quarantine"
+		texturefile = "gfx//interface//buildings//quarantine.tga"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_simple_hospital"
+		texturefile = "gfx//interface//buildings//simple_hospital.tga"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_hospital"
+		texturefile = "gfx//interface//buildings//hospital.tga"
+		loadType = "INGAME"
+	}	
+	###################rab_ ADD#####################################
+	# special mil research area total has 1 icons to update rab_ add
+	################################################################
+	spriteType = {
+		name = "GFX_special_mil_research"
+		texturefile = "gfx//interface//buildings//special_mil_research.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_special_navy_research"
+		texturefile = "gfx//interface//buildings//special_navy_research.tga"
+		loadType = "INGAME"
+	}	
+	###################rab_ ADD#####################################
+	# bomb rab_ add 
+	################################################################
+	spriteType = {
+		name = "GFX_bomb"
+		texturefile = "gfx//interface//buildings//bomb.tga"
+		loadType = "INGAME"
+	}	
+	###################rab_ ADD#####################################
+	# anti_nuclear rab_ add 
+	################################################################
+	spriteType = {
+		name = "GFX_anti_nuclear"
+		texturefile = "gfx//interface//buildings//anti_nuclear.tga"
+		loadType = "INGAME"
+	}		
+	################################################################
+	#
+	# Missions Pics
+	#
+	################################################################
+	spriteType = {
+		name = "mission_high_lands"
+		texturefile = "gfx//interface//missions//mission_high_lands.dds"
+	}	
+	spriteType = {
+		name = "mission_taipen_tag"
+		texturefile = "gfx//interface//missions//mission_taipen_tag.dds"
+	}
+	spriteType = {
+		name = "mission_mountains"
+		texturefile = "gfx//interface//missions//mission_mountains.dds"
+	}
+	spriteType = {
+		name = "mission_treasure"
+		texturefile = "gfx//interface//missions//mission_treasure.dds"
+	}	
+	spriteType = {
+		name = "mission_rab_silk_road"
+		texturefile = "gfx//interface//missions//mission_rab_silk_road.dds"
+	}
+	spriteType = {
+		name = "mission_rab_protection"
+		texturefile = "gfx//interface//missions//mission_rab_protection.dds"
+	}
+	spriteType = {
+		name = "mission_roads"
+		texturefile = "gfx//interface//missions//mission_roads.dds"
+	}
+	spriteType = {
+		name = "mission_inspect_2"
+		texturefile = "gfx//interface//missions//mission_inspect_2.dds"
+	}
+	spriteType = {
+		name = "mission_inspect"
+		texturefile = "gfx//interface//missions//mission_inspect.dds"
+	}
+	spriteType = {
+		name = "mission_dan"
+		texturefile = "gfx//interface//missions//mission_dan.dds"
+	}	
+	spriteType = {
+		name = "mission_war_jap"
+		texturefile = "gfx//interface//missions//mission_war_jap.dds"
+	}
+	spriteType = {
+		name = "mission_modern_warlord_war"
+		texturefile = "gfx//interface//missions//mission_modern_warlord_war.dds"
+	}
+	spriteType = {
+		name = "mission_emperor"
+		texturefile = "gfx//interface//missions//mission_emperor.dds"
+	}	
+	spriteType = {
+		name = "mission_navy_base"
+		texturefile = "gfx//interface//missions//mission_navy_base.dds"
+	}	
+	spriteType = {
+		name = "mission_usa_old_western_regions_map"
+		texturefile = "gfx//interface//missions//mission_usa_old_western_regions_map.dds"
+	}
+	spriteType = {
+		name = "mission_steam_locomotive"
+		texturefile = "gfx//interface//missions//mission_steam_locomotive.dds"
+	}	
+
+	################################################################
+	#
+	# Governement Reform Pics
+	#
+	################################################################	
+
+
+	spriteType = {
+		name = "government_reform_cn_golden"
+		texturefile = "gfx//interface//government_reform_icons//cn_golden.dds"
+	}
+	
+
+	spriteType = {
+		name = "government_reform_cn_land"
+		texturefile = "gfx//interface//government_reform_icons//cn_land.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_cn_soldiers"
+		texturefile = "gfx//interface//government_reform_icons//cn_soldiers.dds"
+	}	
+
+	spriteType = {
+		name = "government_reform_cn_ideas"
+		texturefile = "gfx//interface//government_reform_icons//cn_ideas.dds"
+	}
+	spriteType = {
+		name = "government_reform_cn_building"
+		texturefile = "gfx//interface//government_reform_icons//cn_building.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_cn_vassalmoney"
+		texturefile = "gfx//interface//government_reform_icons//cn_vassalmoney.dds"
+	}
+
+
+	spriteType = {
+		name = "government_reform_cn_advisor"
+		texturefile = "gfx//interface//government_reform_icons//cn_advisor.dds"
+	}	
+
+
+	spriteType = {
+		name = "government_reform_cn_simpleprocess"
+		texturefile = "gfx//interface//government_reform_icons//cn_simpleprocess.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_cn_general"
+		texturefile = "gfx//interface//government_reform_icons//cn_general.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_cn_culture"
+		texturefile = "gfx//interface//government_reform_icons//cn_culture.dds"
+	}
+	spriteType = {
+		name = "government_reform_cn_generic_people"
+		texturefile = "gfx//interface//government_reform_icons//cn_generic_people.dds"
+	}
+	spriteType = {
+		name = "government_reform_cn_merchant"
+		texturefile = "gfx//interface//government_reform_icons//cn_merchant.dds"
+	}
+	spriteType = {
+		name = "government_reform_cn_king"
+		texturefile = "gfx//interface//government_reform_icons//cn_king.dds"
+	}
+	spriteType = {
+		name = "government_reform_cn_soldiers_2"
+		texturefile = "gfx//interface//government_reform_icons//cn_soldiers_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_cn_paper_with_seal_3"
+		texturefile = "gfx//interface//government_reform_icons//cn_paper_with_seal_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_cn_landscape"
+		texturefile = "gfx//interface//government_reform_icons//cn_landscape.dds"
+	}
+	spriteType = {
+		name = "government_reform_cn_castle"
+		texturefile = "gfx//interface//government_reform_icons//cn_castle.dds"
+	}
+	spriteType = {
+		name = "government_reform_cn_judge"
+		texturefile = "gfx//interface//government_reform_icons//cn_judge.dds"
+	}
+	spriteType = {
+		name = "government_reform_cn_queen"
+		texturefile = "gfx//interface//government_reform_icons//cn_queen.dds"
+	}
+	spriteType = {
+		name = "government_reform_cn_man_and_children"
+		texturefile = "gfx//interface//government_reform_icons//cn_man_and_children.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_china_socialism_icon"
+		texturefile = "gfx//interface//government_reform_icons//china_socialism_icon.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_five_powers"
+		texturefile = "gfx//interface//government_reform_icons//five_powers.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_chinese_adm_1"
+		texturefile = "gfx//interface//government_reform_icons//chinese_adm_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_adm_2"
+		texturefile = "gfx//interface//government_reform_icons//chinese_adm_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_adm_3"
+		texturefile = "gfx//interface//government_reform_icons//chinese_adm_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_adm_4"
+		texturefile = "gfx//interface//government_reform_icons//chinese_adm_4.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_adm_5"
+		texturefile = "gfx//interface//government_reform_icons//chinese_adm_5.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_dip_1"
+		texturefile = "gfx//interface//government_reform_icons//chinese_dip_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_dip_2"
+		texturefile = "gfx//interface//government_reform_icons//chinese_dip_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_dip_3"
+		texturefile = "gfx//interface//government_reform_icons//chinese_dip_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_dip_4"
+		texturefile = "gfx//interface//government_reform_icons//chinese_dip_4.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_dip_5"
+		texturefile = "gfx//interface//government_reform_icons//chinese_dip_5.dds"
+		
+	}	
+	spriteType = {
+		name = "government_reform_chinese_religion_1"
+		texturefile = "gfx//interface//government_reform_icons//chinese_religion_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_religion_2"
+		texturefile = "gfx//interface//government_reform_icons//chinese_religion_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_religion_3"
+		texturefile = "gfx//interface//government_reform_icons//chinese_religion_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_religion_4"
+		texturefile = "gfx//interface//government_reform_icons//chinese_religion_4.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_religion_5"
+		texturefile = "gfx//interface//government_reform_icons//chinese_religion_5.dds"
+		
+	}	
+	spriteType = {
+		name = "government_reform_chinese_tax_1"
+		texturefile = "gfx//interface//government_reform_icons//chinese_tax_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_tax_2"
+		texturefile = "gfx//interface//government_reform_icons//chinese_tax_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_tax_3"
+		texturefile = "gfx//interface//government_reform_icons//chinese_tax_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_tax_4"
+		texturefile = "gfx//interface//government_reform_icons//chinese_tax_4.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_tax_5"
+		texturefile = "gfx//interface//government_reform_icons//chinese_tax_5.dds"
+		
+	}
+	spriteType = {
+		name = "government_reform_chinese_trade_1"
+		texturefile = "gfx//interface//government_reform_icons//chinese_trade_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_trade_2"
+		texturefile = "gfx//interface//government_reform_icons//chinese_trade_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_trade_3"
+		texturefile = "gfx//interface//government_reform_icons//chinese_trade_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_trade_4"
+		texturefile = "gfx//interface//government_reform_icons//chinese_trade_4.dds"
+	}
+	#spriteType = {
+	#	name = "government_reform_chinese_trade_5"
+	#	texturefile = "gfx//interface//government_reform_icons//chinese_trade_5.dds"
+	#	
+	#}
+	spriteType = {
+		name = "government_reform_chinese_costdown_1"
+		texturefile = "gfx//interface//government_reform_icons//chinese_costdown_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_costdown_2"
+		texturefile = "gfx//interface//government_reform_icons//chinese_costdown_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_costdown_3"
+		texturefile = "gfx//interface//government_reform_icons//chinese_costdown_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_costdown_4"
+		texturefile = "gfx//interface//government_reform_icons//chinese_costdown_4.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_costdown_5"
+		texturefile = "gfx//interface//government_reform_icons//chinese_costdown_5.dds"
+		
+	}
+	spriteType = {
+		name = "government_reform_chinese_tech_1"
+		texturefile = "gfx//interface//government_reform_icons//chinese_tech_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_tech_2"
+		texturefile = "gfx//interface//government_reform_icons//chinese_tech_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_tech_3"
+		texturefile = "gfx//interface//government_reform_icons//chinese_tech_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_tech_4"
+		texturefile = "gfx//interface//government_reform_icons//chinese_tech_4.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_tech_5"
+		texturefile = "gfx//interface//government_reform_icons//chinese_tech_5.dds"
+		
+	}
+	spriteType = {
+		name = "government_reform_chinese_unrest_1"
+		texturefile = "gfx//interface//government_reform_icons//chinese_unrest_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_unrest_2"
+		texturefile = "gfx//interface//government_reform_icons//chinese_unrest_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_unrest_3"
+		texturefile = "gfx//interface//government_reform_icons//chinese_unrest_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_unrest_4"
+		texturefile = "gfx//interface//government_reform_icons//chinese_unrest_4.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_unrest_5"
+		texturefile = "gfx//interface//government_reform_icons//chinese_unrest_5.dds"
+		
+	}
+	spriteType = {
+		name = "government_reform_chinese_mil_1"
+		texturefile = "gfx//interface//government_reform_icons//chinese_mil_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_mil_2"
+		texturefile = "gfx//interface//government_reform_icons//chinese_mil_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_mil_3"
+		texturefile = "gfx//interface//government_reform_icons//chinese_mil_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_mil_4"
+		texturefile = "gfx//interface//government_reform_icons//chinese_mil_4.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_mil_5"
+		texturefile = "gfx//interface//government_reform_icons//chinese_mil_5.dds"
+		
+	}
+
+	spriteType = {
+		name = "government_reform_chinese_colony_1"
+		texturefile = "gfx//interface//government_reform_icons//chinese_colony_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_colony_2"
+		texturefile = "gfx//interface//government_reform_icons//chinese_colony_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_colony_3"
+		texturefile = "gfx//interface//government_reform_icons//chinese_colony_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_colony_4"
+		texturefile = "gfx//interface//government_reform_icons//chinese_colony_4.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_colony_5"
+		texturefile = "gfx//interface//government_reform_icons//chinese_colony_5.dds"
+		
+	}	
+	spriteType = {
+		name = "government_reform_ancient_chinese_warlord_reform"
+		texturefile = "gfx//interface//government_reform_icons//ancient_chinese_warlord_reform.dds"
+		
+	}	
+	spriteType = {
+		name = "government_reform_chinese_feudatory_reform"
+		texturefile = "gfx//interface//government_reform_icons//chinese_feudatory_reform.dds"
+		
+	}
+	spriteType = {
+		name = "government_reform_modern_chinese_warlord_reform"
+		texturefile = "gfx//interface//government_reform_icons//modern_chinese_warlord_reform.dds"
+		
+	}
+	spriteType = {
+		name = "government_reform_mongol_steppe_horde_reform"
+		texturefile = "gfx//interface//government_reform_icons//mongol_steppe_horde_reform.dds"
+		
+	}	
+	spriteType = {
+		name = "government_reform_dalailama_monastic_reform"
+		texturefile = "gfx//interface//government_reform_icons//dalailama_monastic_reform.dds"
+		
+	}	
+	spriteType = {
+		name = "government_reform_ancient_chinese_togofu_reform"
+		texturefile = "gfx//interface//government_reform_icons//ancient_chinese_togofu_reform.dds"
+		
+	}
+	#modern chinese warlord
+	spriteType = {
+		name = "government_reform_modern_chinese_mil_1"
+		texturefile = "gfx//interface//government_reform_icons//modern_chinese_mil_1.dds"
+	}	
+	spriteType = {
+		name = "government_reform_modern_chinese_mil_2"
+		texturefile = "gfx//interface//government_reform_icons//modern_chinese_mil_2.dds"
+	}	
+	spriteType = {
+		name = "government_reform_modern_chinese_mil_3"
+		texturefile = "gfx//interface//government_reform_icons//modern_chinese_mil_3.dds"
+	}	
+	spriteType = {
+		name = "government_reform_modern_chinese_adm_1"
+		texturefile = "gfx//interface//government_reform_icons//modern_chinese_adm_1.dds"
+	}	
+	spriteType = {
+		name = "government_reform_modern_chinese_adm_2"
+		texturefile = "gfx//interface//government_reform_icons//modern_chinese_adm_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_modern_chinese_dip_1"
+		texturefile = "gfx//interface//government_reform_icons//modern_chinese_dip_1.dds"
+	}	
+	spriteType = {
+		name = "government_reform_modern_chinese_dip_2"
+		texturefile = "gfx//interface//government_reform_icons//modern_chinese_dip_2.dds"
+	}		
+	spriteType = {
+		name = "government_reform_modern_chinese_adj_1"
+		texturefile = "gfx//interface//government_reform_icons//modern_chinese_adj_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_modern_chinese_adj_2"
+		texturefile = "gfx//interface//government_reform_icons//modern_chinese_adj_2.dds"
+	}	
+	spriteType = {
+		name = "government_reform_modern_chinese_edu_1"
+		texturefile = "gfx//interface//government_reform_icons//modern_chinese_edu_1.dds"
+	}
+	spriteType = {
+		name = "government_reform_modern_chinese_edu_2"
+		texturefile = "gfx//interface//government_reform_icons//modern_chinese_edu_2.dds"
+	}
+	spriteType = {
+		name = "government_reform_modern_chinese_edu_3"
+		texturefile = "gfx//interface//government_reform_icons//modern_chinese_edu_3.dds"
+	}
+	spriteType = {
+		name = "government_reform_chinese_parliament_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//chinese_parliament_monarchy.dds"
+	}		
+	spriteType = {
+		name = "GFX_obj_civil_service_held"
+		texturefile = "gfx/interface/ages/obj_civil_service_held.dds"
+	}	
+}
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_rab_training_field"
+		texturefile = "gfx//interface//buildings//latin_rab_training_field.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_rab_training_field_easterngfx"
+		texturefile = "gfx//interface//buildings//eastern_rab_training_field.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_rab_training_field_africangfx"
+		texturefile = "gfx//interface//buildings//african_rab_training_field.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_rab_training_field_asiangfx"
+		texturefile = "gfx//interface//buildings//chinese_rab_training_field.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_rab_training_field_indiangfx"
+		texturefile = "gfx//interface//buildings//indian_rab_training_field.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_rab_training_field_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_rab_training_field.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_rab_training_field_southamericagfx"
+		texturefile = "gfx//interface//buildings//southamerica_rab_training_field.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_rab_training_field_northamericagfx"
+		texturefile = "gfx//interface//buildings//northamerica_rab_training_field.tga"
+		loadType = "INGAME"
+	}
+}	

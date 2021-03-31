@@ -1,0 +1,314 @@
+government = tribal
+add_government_reform = gond_kingdom
+government_rank = 1
+primary_culture = garjati
+religion = hinduism
+technology_group = early_indian
+capital = 4571
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+500.1.1 = {
+  capital = 551
+  monarch = {
+    name = "pgZ…b∆Y"  # Jayabala
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 470.1.1
+    adm = 5
+    dip = 3
+    mil = 0
+  }
+}
+500.1.1 = {
+  heir = {
+    name = "FZIéWñ"  # Vatsaraja
+    monarch_name = "FZIéWñ"  # Vatsaraja
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 490.1.1
+    death_date = 540.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 4
+  }
+}
+520.1.1 = {
+  monarch = {
+    name = "FZIéWñ"  # Vatsaraja
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 490.1.1
+    adm = 0
+    dip = 0
+    mil = 4
+  }
+}
+520.1.1 = {
+  heir = {
+    name = "±ê…bÙT…b"  # Narabala
+    monarch_name = "±ê…bÙT…b"  # Narabala
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 510.1.1
+    death_date = 560.1.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 5
+  }
+}
+540.1.1 = {
+  monarch = {
+    name = "±ê…bÙT…b"  # Narabala
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 510.1.1
+    adm = 0
+    dip = 5
+    mil = 5
+  }
+}
+540.1.1 = {
+  heir = {
+    name = "ÙT»T…bTXÙT…b"  # Bharatabala
+    monarch_name = "ÙT»T…bTXÙT…b"  # Bharatabala
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 530.1.1
+    death_date = 580.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 0
+  }
+}
+560.1.1 = {
+  monarch = {
+    name = "ÙT»T…bTXÙT…b"  # Bharatabala
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 530.1.1
+    adm = 5
+    dip = 2
+    mil = 0
+  }
+}
+560.1.1 = {
+  heir = {
+    name = "œÇ…bÙT…b"  # Shurabala
+    monarch_name = "œÇ…bÙT…b"  # Shurabala
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 560.1.1
+    death_date = 600.1.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 4
+  }
+}
+580.1.1 = {
+  monarch = {
+    name = "œÇ…bÙT…b"  # Shurabala
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 560.1.1
+    adm = 1
+    dip = 5
+    mil = 4
+  }
+}
+600.1.1 = {
+  monarch = {
+    name = "ONñ6w±ê"  # Udayana
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 570.1.1
+    adm = 1
+    dip = 3
+    mil = 4
+  }
+}
+600.1.1 = {
+  heir = {
+    name = "‡V∑V…bÙT…b"  # Indrabala
+    monarch_name = "‡V∑V…bÙT…b"  # Indrabala
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 590.1.1
+    death_date = 640.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 4
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+620.1.1 = {
+  monarch = {
+    name = "‡V∑V…bÙT…b"  # Indrabala
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 590.1.1
+    adm = 0
+    dip = 2
+    mil = 4
+  }
+}
+620.1.1 = {
+  heir = {
+    name = "éj±êWKO"  # Nannaraja
+    monarch_name = "éj±êWKO"  # Nannaraja
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 610.1.1
+    death_date = 660.1.1
+    claim = 95
+    adm = 5
+    dip = 0
+    mil = 3
+  }
+}
+640.1.1 = {
+  monarch = {
+    name = "éj±êWKO"  # Nannaraja
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 610.1.1
+    adm = 5
+    dip = 0
+    mil = 3
+  }
+}
+640.1.1 = {
+  heir = {
+    name = ",rÊt…bÍèÊt"  # Tivaradeva
+    monarch_name = ",rÊt…bÍèÊt"  # Tivaradeva
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 630.1.1
+    death_date = 680.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 1
+  }
+}
+660.1.1 = {
+  monarch = {
+    name = ",rÊt…bÍèÊt"  # Tivaradeva
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 630.1.1
+    adm = 0
+    dip = 2
+    mil = 1
+  }
+}
+660.1.1 = {
+  heir = {
+    name = "éj±êWKO"  # Nannaraja
+    monarch_name = "WS±ê…b>ç II"  # Nannaraja II
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 650.1.1
+    death_date = 700.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+680.1.1 = {
+  monarch = {
+    name = "WS±ê…b>ç II"  # Nannaraja II
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 650.1.1
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+680.1.1 = {
+  heir = {
+    name = "√eNñWrY"  # Chandragupta
+    monarch_name = "√eNñWrY"  # Chandragupta
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 670.1.1
+    death_date = 710.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+700.1.1 = {
+  monarch = {
+    name = "√eNñWrY"  # Chandragupta
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 670.1.1
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+700.1.1 = {
+  heir = {
+    name = "»TSY‰SnfTX"  # Harshagupta
+    monarch_name = "»TSY‰SnfTX"  # Harshagupta
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 680.1.1
+    death_date = 730.1.1
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 5
+  }
+}
+710.1.1 = {
+  monarch = {
+    name = "»TSY‰SnfTX"  # Harshagupta
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 680.1.1
+    adm = 2
+    dip = 0
+    mil = 5
+  }
+}
+710.1.1 = {
+  heir = {
+    name = "â%n‰SnfTX"  # Shivgupta
+    monarch_name = "â%n‰SnfTX"  # Shivgupta
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 710.1.1
+    death_date = 790.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+730.1.1 = {
+  monarch = {
+    name = "â%n‰SnfTX"  # Shivgupta
+    dynasty = "XojgÊt^"  # Panduvamshi
+    birth_date = 710.1.1
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

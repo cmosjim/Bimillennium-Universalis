@@ -1,0 +1,114 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+primary_culture = tunisian
+religion = shamanism
+technology_group = middle_eastern
+capital = 352	# Gafsa
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+
+702.1.1 = {
+	religion = sunni
+	technology_group = muslim
+	religious_school = maliki_school
+}
+
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1440.1.1 = {
+	monarch = {
+		name = "Abu"
+		dynasty = "Banu Khalef"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1480.1.1 = {
+	monarch = {
+		name = "Abu II"
+		dynasty = "Banu Khalef"
+		adm = 2
+		dip = 0
+		mil = 2
+	}
+}
+
+1540.1.1 = {
+	monarch = {
+		name = "Hassan"
+		dynasty = "Banu Khalef"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1590.1.1 = {
+	monarch = {
+		name = "Hassan II"
+		dynasty = "Banu Khalef"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1640.1.1 = {
+	monarch = {
+		name = "Hassan III"
+		dynasty = "Banu Khalef"
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1690.1.1 = {
+	monarch = {
+		name = "Abu III"
+		dynasty = "Banu Khalef"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1740.1.1 = {
+	monarch = {
+		name = "Abu IV"
+		dynasty = "Banu Khalef"
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1780.1.1 = {
+	monarch = {
+		name = "Abu V"
+		dynasty = "Banu Khalef"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1810.1.1 = {
+	monarch = {
+		name = "Hassan IV"
+		dynasty = "Banu Khalef"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}

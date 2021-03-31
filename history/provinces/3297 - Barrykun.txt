@@ -1,0 +1,78 @@
+#3297 - Barrykun
+
+owner = HND
+controller = HND
+culture = beidi
+religion = tengri_pagan_reformed
+capital = "Barrykun"
+trade_goods = wool
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 2
+is_city = yes
+add_core = HND
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+
+
+8.12.1 = { owner = NEW controller = NEW add_core = NEW remove_core = HND }
+18.1.1 = { owner = XIO controller = XIO add_core = XIO remove_core = NEW }
+73.1.1 = { owner = HND controller = HND add_core = HND remove_core = XIO }
+107.1.1 = { owner = CS1 controller = CS1 add_core = CS1 remove_core = HND }
+125.1.1 = { owner = HND controller = HND add_core = HND remove_core = CS1 }
+184.1.1 = { owner = CS1 controller = CS1 add_core = CS1 remove_core = HND }
+191.1.1 = { owner = CL1 controller = CL1 add_core = CL1 remove_core = CS1 }
+213.1.1 = { owner = TS2 controller = TS2 add_core = TS2 remove_core = CL1 }
+220.1.1 = { owner = WEI controller = WEI add_core = WEI remove_core = TS2 }
+266.2.4 = { owner = JN1 controller = JN1 add_core = JN1 remove_core = WEI }
+320.1.1 = { owner = QN1 controller = QN1 add_core = QN1 remove_core = JN1 }
+376.1.1 = { owner = QIN controller = QIN add_core = QIN remove_core = QN1 }
+385.1.1 = { owner = HO2 controller = HO2 add_core = HO2 remove_core = QIN }
+407.1.1 = { owner = LNG controller = LNG add_core = LNG remove_core = HO2 }
+421.1.1 = { owner = BE1 controller = BE1 add_core = BE1 remove_core = LNG }
+442.1.1 = { owner = NWE controller = NWE add_core = NWE remove_core = BE1 }
+494.1.1 = { owner = NWY controller = NWY add_core = NWY remove_core = NWE }
+552.1.1 = { owner = EW1 controller = EW1 add_core = EW1 remove_core = NWY }
+610.1.1 = { owner = SUI controller = SUI add_core = SUI remove_core = EW1 }
+617.1.1 = { owner = EW1 controller = EW1 add_core = EW1 remove_core = SUI }
+632.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = EW1 }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+705.2.21 = { owner = TNG controller = TNG add_core = TNG remove_core = WZ1 }
+709.1.1 = { owner = BT1 controller = BT1 add_core = BT1 remove_core = TNG }
+776.1.1 = { owner = TO1 controller = TO1 add_core = TO1 remove_core = BT1 }
+798.1.1 = { owner = UIG controller = UIG add_core = UIG remove_core = TO1 }
+850.1.1 = {  owner = AN1 controller = AN1 add_core = AN1 remove_core = UIG }
+867.1.1 = {  owner = GA2 controller = GA2 add_core = GA2 remove_core = AN1 }
+1036.1.1 = { owner = DN2 controller = DN2 add_core = DN2 remove_core = GA2 }
+1038.1.1 = { owner = XIA controller = XIA add_core = XIA remove_core = DN2 culture = tangut }
+1227.8.28 = { owner = MGE controller = MGE add_core = MGE remove_core = XIA }
+1260.5.5 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1275.1.1 = { religion = vajrayana }
+1389.1.1 = { owner = TAT controller = TAT add_core = TAT remove_core = YUA }
+1402.1.1 = { owner = OIR controller = OIR add_core = OIR remove_core = TAT culture = oirats }
+1404.1.1 = { owner = MNG controller = MNG }
+1415.1.1 = { owner = OIR controller = OIR }
+1457.1.1 = { owner = HMI controller = HMI add_core = HMI remove_core = OIR }
+1479.1.1 = { owner = DC1 controller = DC1 }
+1482.1.1 = { owner = HMI controller = HMI }
+1488.1.1 = { owner = TU2 controller = TU2 }
+1492.1.1 = { owner = HMI controller = HMI }
+1493.1.1 = { owner = TU2 controller = TU2 }
+1495.1.1 = { owner = HMI controller = HMI }
+1513.1.1 = { owner = TU2 controller = TU2 add_core = TU2 }
+1570.1.1 = { owner = YQ1 controller = YQ1 add_core = YQ1 remove_core = TU2 }
+1570.1.1 = {  religion = sunni }
+1635.1.1 = { owner = ZUN controller = ZUN add_core = ZUN remove_core = YQ1 }
+1709.1.1 = { discovered_by = SPA }
+1721.1.1 = { owner = QNG controller = QNG add_core = QNG }
+1850.1.2 = { remove_core = ZUN }
+1912.2.12 = { owner = BNN controller = BNN add_core = BNN remove_core = QNG remove_core = HMI }
+1917.7.6 = { owner = JS1 controller = JS1 add_core = JS1 remove_core = BNN }
+1944.9.11 = { owner = ROC controller = ROC add_core = ROC remove_core = JS1 }
+1949.10.1 = { owner = CHN controller = CHN add_core = CHN remove_core = ROC }

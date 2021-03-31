@@ -1,0 +1,199 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+primary_culture = hannoverian
+religion = germanic
+technology_group = barbarian
+capital = 1775
+40.1.1 = {
+  monarch = {
+    name = "áwÆY^Ì‘"  # Humbli
+    dynasty = "Îv<hœ"  # Angle
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+120.1.1 = {
+  monarch = {
+    name = "Îv<h"  # Angul
+    dynasty = "Îv<hœ"  # Angle
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+200.1.1 = {
+  monarch = {
+    name = "ƒl‰v"  # Woden
+    dynasty = "Îv<hœ"  # Angle
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+260.1.1 = {
+  heir = {
+    name = "ZyrÉb<h"  # Withlaeg
+    monarch_name = "ZyrÉb<h"  # Withlaeg
+    dynasty = "Îv<hœ"  # Angle
+    birth_date = 260.1.1
+    death_date = 340.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+280.1.1 = {
+  monarch = {
+    name = "ZyrÉb<h"  # Withlaeg
+    dynasty = "Îv<hœ"  # Angle
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+320.1.1 = {
+  heir = {
+    name = "æ—™„·V"  # Wermund
+    monarch_name = "æ—™„·V"  # Wermund
+    dynasty = "Îv<hœ"  # Angle
+    birth_date = 320.1.1
+    death_date = 400.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 5
+  }
+}
+340.1.1 = {
+  monarch = {
+    name = "æ—™„·V"  # Wermund
+    dynasty = "Îv<hœ"  # Angle
+    adm = 1
+    dip = 4
+    mil = 5
+  }
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+380.1.1 = {
+  heir = {
+    name = "eYÕl"  # Offa
+    monarch_name = "eYÕl"  # Offa
+    dynasty = "Îv<hœ"  # Angle
+    birth_date = 380.1.1
+    death_date = 456.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+400.1.1 = {
+  monarch = {
+    name = "eYÕl"  # Offa
+    dynasty = "Îv<hœ"  # Angle
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+440.1.1 = {
+  heir = {
+    name = "Îv<hmt'k"  # Angeltheow
+    monarch_name = "Îv<hmt'k"  # Angeltheow
+    dynasty = "Îv<hœ"  # Angle
+    birth_date = 440.1.1
+    death_date = 520.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+456.1.1 = {
+  monarch = {
+    name = "Îv<hmt'k"  # Angeltheow
+    dynasty = "Îv<hœ"  # Angle
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+500.1.1 = {
+  heir = {
+    name = "O'k¨X"  # Eomer
+    monarch_name = "O'k¨X"  # Eomer
+    dynasty = "Îv<hœ"  # Angle
+    birth_date = 500.1.1
+    death_date = 600.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 3
+  }
+}
+520.1.1 = {
+  monarch = {
+    name = "O'k¨X"  # Eomer
+    dynasty = "Îv<hœ"  # Angle
+    adm = 5
+    dip = 2
+    mil = 3
+  }
+}
+536.1.1 = {
+  technology_group = western
+}
+580.1.1 = {
+  heir = {
+    name = "Œ‚mtS"  # Icel
+    monarch_name = "Œ‚mtS"  # Icel
+    dynasty = "Îv<hœ"  # Angle
+    birth_date = 580.1.1
+    death_date = 700.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+600.1.1 = {
+  monarch = {
+    name = "Œ‚mtS"  # Icel
+    dynasty = "Îv<hœ"  # Angle
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

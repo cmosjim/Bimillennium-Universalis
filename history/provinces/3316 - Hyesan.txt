@@ -1,0 +1,59 @@
+#3316 - Hyesan
+
+owner = FU1
+controller = FU1
+add_core = FU1 
+culture = donghu
+religion = manchu_shamanism
+capital = "Hyesan"
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 1
+is_city = yes
+
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+57.1.1 = { owner = GOG controller = GOG add_core = GOG remove_core = FU1 }
+246.1.1 = { owner = WEI controller = WEI }
+266.2.4 = { owner = JN1 controller = JN1 add_core = JN1 remove_core = WEI }
+288.1.1 = { owner = GOG controller = GOG add_core = GOG remove_core = JN1 }
+313.1.1 = { owner = GOG controller = GOG remove_core = JN1 }
+372.1.1 = { religion = mahayana }
+668.10.1 = { owner = TNG controller = TNG add_core = TNG }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+705.2.21 = { owner = TNG controller = TNG add_core = TNG remove_core = WZ1 }
+720.1.1 = { owner = BLH controller = BLH add_core = BLH remove_core = TNG }
+926.1.14 = { owner = DN4 controller = DN4 add_core = DN4 remove_core = BLH }
+991.1.1 = { owner = LIO controller = LIO add_core = LIO remove_core = KHT }
+1000.1.1 = { base_tax = 3 base_manpower = 3 base_production = 3 }
+1115.1.1 = { owner = GNN controller = GNN add_core = GNN remove_core = LIO }
+1216.1.1 = { owner = DX1 controller = DX1 add_core = DX1 remove_core = GNN }
+1233.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = DX1 }
+1260.5.5 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1360.1.1 = { owner = GOY controller = GOY add_core = GOY remove_core = YUA }
+1392.1.1 = { owner = KOR controller = KOR add_core = KOR remove_core = GOY  religion = confucianism }
+1542.1.1 = { discovered_by = POR }
+1592.7.18 = { controller = JAP } # Japanese invasion - Battle of Haejungchang
+1593.2.22 = { controller = KOR } # Kato retreats to Seoul
+1600.1.1 = { citysize = 4224 } # Great devastation as a result of the Japanese invasion
+1637.1.1 = { add_core = MNG } # Tributary of Qing China
+1644.1.1 = { add_core = MCH remove_core = MNG } # Part of the Manchu empire
+1645.7.1 = { add_core = QNG remove_core = MCH }
+1653.1.1 = { discovered_by = NED } # Hendrick Hamel
+1739.1.1 = { discovered_by = RUS } # Martin Spanberg
+1750.1.1 = { base_tax = 4 base_manpower = 4 base_production = 4 }
+1850.1.1 = { capital = "Kimchaek" }
+1900.1.1 = { base_tax = 5 }
+1910.8.20 = { owner = JAP controller = JAP add_core = JAP }
+1912.2.12 = { remove_core = QNG }
+1945.8.15 = { owner = SC1 controller = SC1 add_core = SC1 remove_core = JAP }
+1948.1.1 = { religion = muism }
+1948.9.9 = { owner = NOK controller = NOK add_core = NOK remove_core = SC1 religion = communism }
+2010.1.1 = { base_tax = 6 base_manpower = 4 base_production = 5 }

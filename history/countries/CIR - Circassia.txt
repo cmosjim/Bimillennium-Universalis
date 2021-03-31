@@ -1,0 +1,56 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+mercantilism = 0.1
+primary_culture = circassian
+religion = orthodox
+technology_group = eastern
+capital = 2260
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1444.1.1 = {
+  monarch = {
+    name = "iOyrÉbPOKQ"  # Petrezok
+    dynasty = "iOyrÉbPOKQ"  # Petrezok
+    adm = 1
+    dip = 3
+    mil = 2
+  }
+}
+1470.1.1 = {
+  monarch = {
+    name = "(zzMOg)"  # (Interregnum)
+    adm = 0
+    mil = 0
+    dip = 0
+    regent = yes
+  }
+}

@@ -1,0 +1,94 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = masai
+religion = protestant
+technology_group = muslim
+capital = 1798
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1900.1.1 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1963.12.12 = {
+  monarch = {
+    name = "lšSÑyÆY ¦žKQU³u"  # Malcolm MacDonald
+    adm = 2
+    dip = 3
+    mil = 3
+    religion = protestant
+  }
+}
+1964.12.12 = {
+  monarch = {
+    name = "TN«ƒ ¯wÅ–TX"  # Jomo Kenyatta
+    adm = 5
+    dip = 3
+    mil = 3
+    religion = protestant
+  }
+}
+1978.8.22 = {
+  monarch = {
+    name = "9N<SS ÃWÉbnf «ƒO"  # Daniel arap Moi
+    adm = 4
+    dip = 4
+    mil = 2
+    religion = protestant
+  }
+}
+2002.12.30 = {
+  monarch = {
+    name = "ÆYætO PŸ	T"  # Mwai Kibaki
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = protestant
+  }
+}
+2013.4.4 = {
+  monarch = {
+    name = "LNáwœ ¯wÅ–TX"  # Uhuru Kenyatta
+    adm = 3
+    dip = 3
+    mil = 4
+    religion = protestant
+  }
+}

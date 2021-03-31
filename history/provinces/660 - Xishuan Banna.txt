@@ -1,0 +1,55 @@
+#660 - Sibsongbanna
+
+culture = shan
+religion = animism
+capital = "Sibsongbanna"
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = early_indian
+discovered_by = indian
+owner = GM2
+controller = GM2
+add_core = GM2
+
+660.1.1 = { religion = vajrayana }
+737.1.1 = { owner = NAN controller = NAN add_core = NAN is_city = yes trade_goods = tea }
+900.1.1 = { discovered_by = nomad_group }
+937.1.1 = { owner = CDL controller = CDL add_core = CDL remove_core = NAN }
+1000.1.1 = { base_tax = 2 base_production = 2 }
+1100.1.1 = { base_manpower = 2 }
+1200.1.1 = { base_tax = 3 base_production = 3 }
+1253.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = CDL }
+1260.5.5 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1368.1.1 = { owner = HSE controller = HSE add_core = HSE remove_core = YUA }
+1401.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = HSE }
+1647.12.1 = {  owner = CXI controller = CXI add_core = CXI }
+1658.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = CXI }
+1662.4.1 = { owner = PC1 controller = PC1 add_core = PC1 }# Three Feudatories - Wu Sangui titled as Prince of Pingxi in Yunnan
+1678.6.1 = {  owner = WDC controller = WDC add_core = WDC remove_core = PC1 }
+1681.10.1 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		remove_core = WDC
+		capital = "Jinghong"
+}
+1775.1.1 = { base_production = 4 }
+
+1825.1.1 = { base_tax = 4 }
+1875.1.1 = { base_manpower = 3 }
+1911.10.30 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Double Ninth uprising
+1912.2.12 = { revolt = {} owner = BNN controller = BNN add_core = BNN  remove_core = QNG remove_core = CZH }
+1917.7.6 = {  owner = DX2 controller = DX2 add_core = DX2 remove_core = BNN }
+1928.1.1 = { owner = GJ1 controller = GJ1 add_core = GJ1 remove_core = DX2 }
+1928.12.29 = { owner = ROC controller = ROC add_core = ROC remove_core = GJ1 }
+1929.1.1 = { base_manpower = 4 }
+1930.1.1 = {  owner = DX2 controller = DX2 add_core = DX2 remove_core = ROC }
+1949.12.1 = { owner = CHN controller = CHN add_core = CHN remove_core = DX2 }
+2000.1.1 = { base_tax = 5 base_production = 5 }

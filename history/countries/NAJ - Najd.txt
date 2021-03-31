@@ -1,0 +1,879 @@
+government = tribal
+add_government_reform = tribal_federation
+mercantilism = 0.1
+technology_group = middle_eastern
+primary_culture = bedouin_arabic
+religion = south_arabian
+capital = 392
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+540.1.1 = {
+  monarch = {
+    name = "»TCNêe"  # Al-Hanafi
+    dynasty = "ÙT™R »TCNêe"  # Banu Hanifa
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+580.1.1 = {
+  monarch = {
+    name = "LNTXS »TCNêe"  # Uthal al-Hanafi
+    dynasty = "ÙT™R »TCNêe"  # Banu Hanifa
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+600.1.1 = {
+  monarch = {
+    name = "jglö»T"  # Thumamah
+    dynasty = "ÙT™R »TCNêe"  # Banu Hanifa
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+637.1.1 = {
+  technology_group = muslim
+  religion = shiite
+  religious_school = zaydi_school
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+867.1.1 = {
+  monarch = {
+    name = "FzUÿû∑V"  # Muhammad
+    dynasty = "LNwmyQS"  # Ukhaidhirid
+    birth_date = 837.1.1
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+867.1.1 = {
+  heir = {
+    name = "O.tèy"  # Yusuf
+    monarch_name = "O.tèy"  # Yusuf
+    dynasty = "LNwmyQS"  # Ukhaidhirid
+    birth_date = 860.1.1
+    death_date = 910.1.1
+    claim = 95
+    adm = 0
+    dip = 3
+    mil = 2
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+890.1.1 = {
+  monarch = {
+    name = "O.tèy"  # Yusuf
+    dynasty = "LNwmyQS"  # Ukhaidhirid
+    birth_date = 860.1.1
+    adm = 0
+    dip = 3
+    mil = 2
+  }
+}
+890.1.1 = {
+  heir = {
+    name = "OØeõsÍN"  # Isma'il
+    monarch_name = "OØeõsÍN"  # Isma'il
+    dynasty = "LNwmyQS"  # Ukhaidhirid
+    birth_date = 880.1.1
+    death_date = 928.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 2
+  }
+}
+910.1.1 = {
+  monarch = {
+    name = "OØeõsÍN"  # Isma'il
+    dynasty = "LNwmyQS"  # Ukhaidhirid
+    birth_date = 880.1.1
+    adm = 0
+    dip = 0
+    mil = 2
+  }
+}
+910.1.1 = {
+  heir = {
+    name = "»TQh"  # Al-Hasan
+    monarch_name = "»TQh"  # Al-Hasan
+    dynasty = "LNwmyQS"  # Ukhaidhirid
+    birth_date = 898.1.1
+    death_date = 960.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 0
+  }
+}
+928.1.1 = {
+  monarch = {
+    name = "»TQh"  # Al-Hasan
+    dynasty = "LNwmyQS"  # Ukhaidhirid
+    birth_date = 898.1.1
+    adm = 3
+    dip = 5
+    mil = 0
+  }
+}
+930.1.1 = {
+  heir = {
+    name = "åÇ»T»è∑V"  # Ahmad
+    monarch_name = "åÇ»T»è∑V"  # Ahmad
+    dynasty = "LNwmyQS"  # Ukhaidhirid
+    birth_date = 930.1.1
+    death_date = 1000.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+960.1.1 = {
+  monarch = {
+    name = "åÇ»T»è∑V"  # Ahmad
+    dynasty = "LNwmyQS"  # Ukhaidhirid
+    birth_date = 930.1.1
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+980.1.1 = {
+  heir = {
+    name = "?ñ^ >ç’lS"  # Abu Ja'far
+    monarch_name = "?ñ^ >ç’lS"  # Abu Ja'far
+    dynasty = "LNwmyQS"  # Ukhaidhirid
+    birth_date = 980.1.1
+    death_date = 1060.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1000.1.1 = {
+  monarch = {
+    name = "?ñ^ >ç’lS"  # Abu Ja'far
+    dynasty = "LNwmyQS"  # Ukhaidhirid
+    birth_date = 970.1.1
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1060.1.1 = {
+  religion = sunni
+  religious_school = hanbali_school
+}
+1060.1.1 = {
+  monarch = {
+    name = "(Dd?eOÆã)"  # (regency council)
+    adm = 2
+    dip = 2
+    mil = 2
+    regent = yes
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1380.1.1 = {
+  monarch = {
+    name = "ÊtyrÌs"  # Watban
+    dynasty = "(ÑLN∑V"  # Sa'ud
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1395.1.1 = {
+  heir = {
+    name = "lö<S"  # Mani
+    monarch_name = "lö<S"  # Mani
+    dynasty = "(ÑLN∑V"  # Sa'ud
+    birth_Date = 1395.1.1
+    death_date = 1475.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1446.1.1 = {
+  monarch = {
+    name = "lö<S"  # Mani
+    dynasty = "(ÑLN∑V"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1446.1.1 = {
+  heir = {
+    name = "…b‘köN"  # Rabi'a
+    monarch_name = "…b‘köN I"  # Rabi'a I
+    dynasty = "(ÑLN∑V"  # Sa'ud
+    birth_Date = 1446.1.1
+    death_date = 1500.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1475.1.1 = {
+  monarch = {
+    name = "…b‘köN I"  # Rabi'a I
+    dynasty = "(ÑLN∑V"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1475.1.1 = {
+  heir = {
+    name = "Fz(Ñ"  # Musa
+    monarch_name = "Fz(Ñ I"  # Musa I
+    dynasty = "(ÑLN∑V"  # Sa'ud
+    birth_date = 1475.1.1
+    death_date = 1533.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1500.1.1 = {
+  monarch = {
+    name = "Fz(Ñ I"  # Musa I
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1500.1.1 = {
+  heir = {
+    name = "fjS…b1k"  # Ibrahim
+    monarch_name = "fjS…b1k I"  # Ibrahim I
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1500.1.1
+    death_date = 1566.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1533.1.1 = {
+  monarch = {
+    name = "fjS…b1k I"  # Ibrahim I
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1533.1.1 = {
+  heir = {
+    name = "löSIl"  # Markhan
+    monarch_name = "löSIl I"  # Markhan I
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1533.1.1
+    death_Date = 1600.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1566.1.1 = {
+  monarch = {
+    name = "löSIl I"  # Markhan I
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1566.1.1 = {
+  heir = {
+    name = "…b‘köN"  # Rabi'a
+    monarch_name = "…b‘köN II"  # Rabi'a II
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1566.1.1
+    death_date = 1630.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1600.1.1 = {
+  monarch = {
+    name = "…b‘köN II"  # Rabi'a II
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1600.1.1 = {
+  heir = {
+    name = "ÊtyrÌs"  # Watban
+    monarch_name = "ÊtyrÌs"  # Watban
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1600.1.1
+    death_date = 1654.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1630.1.1 = {
+  monarch = {
+    name = "ÊtyrÌs"  # Watban
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1630.1.1 = {
+  heir = {
+    name = "löSIl"  # Markhan
+    monarch_name = "löSIl II"  # Markhan II
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1630.1.1
+    death_date = 1654.6.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1654.1.1 = {
+  monarch = {
+    name = "löSIl II"  # Markhan II
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1654.1.1 = {
+  heir = {
+    name = "FzUÿû∑V"  # Muhammad
+    monarch_name = "FzUÿû∑V I"  # Muhammad I
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1630.1.1
+    death_Date = 1672.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1654.6.1 = {
+  monarch = {
+    name = "FzUÿû∑V I"  # Muhammad I
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1654.6.1 = {
+  heir = {
+    name = "≥uâS"  # Nasir
+    monarch_name = "≥uâS I"  # Nasir I
+    dynasty = "ôlyr"  # Sa'ud
+    birth_date = 1630.1.1
+    death_Date = 1673.4.20
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1672.1.1 = {
+  monarch = {
+    name = "≥uâS I"  # Nasir I
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1672.1.1 = {
+  heir = {
+    name = "löSIl"  # Markhan
+    monarch_name = "löSIl III"  # Markhan III
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1660.1.1
+    death_Date = 1690.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1673.4.20 = {
+  monarch = {
+    name = "löSIl III"  # Markhan III
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1673.4.20 = {
+  heir = {
+    name = "fjS…b1k"  # Ibrahim
+    monarch_name = "fjS…b1k II"  # Ibrahim II
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1673.4.20
+    death_Date = 1694.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1690.1.1 = {
+  monarch = {
+    name = "fjS…b1k II"  # Ibrahim II
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1690.1.1 = {
+  heir = {
+    name = "O∑VÃëØe"  # Idris
+    monarch_name = "O∑VÃëØe"  # Idris
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1670.1.1
+    death_Date = 1699.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1694.1.1 = {
+  monarch = {
+    name = "O∑VÃëØe"  # Idris
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1694.1.1 = {
+  heir = {
+    name = "œÇ9N"  # Sultan
+    monarch_name = "œÇ9N"  # Sultan
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1694.1.1
+    death_Date = 1708.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1699.1.1 = {
+  monarch = {
+    name = "œÇ9N"  # Sultan
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1699.1.1 = {
+  heir = {
+    name = "?ñjSjg…b"  # 'Abd Allah
+    monarch_name = "?ñjSjg…b"  # 'Abd Allah
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1680.1.1
+    death_date = 1709.3.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1708.1.1 = {
+  monarch = {
+    name = "?ñjSjg…b"  # 'Abd Allah
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1708.1.1 = {
+  heir = {
+    name = "Fz(Ñ"  # Musa
+    monarch_name = "Fz(Ñ I"  # Musa I
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1690.1.1
+    death_date = 1720.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1709.3.1 = {
+  monarch = {
+    name = "Fz(Ñ I"  # Musa I
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1709.3.1 = {
+  heir = {
+    name = "ôlyr"  # Sa'ud
+    monarch_name = "ôlyr I"  # Sa'ud I
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1690.1.1
+    death_date = 1720.12.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1720.1.1 = {
+  monarch = {
+    name = "ôlyr I"  # Sa'ud I
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1720.1.1 = {
+  heir = {
+    name = "FzUÿû∑V"  # Muhammad
+    monarch_name = "FzUÿû∑V II"  # Muhammad II
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1690.1.1
+    death_Date = 1725.6.12
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 6
+  }
+}
+1720.12.1 = {
+  monarch = {
+    name = "FzUÿû∑V II"  # Muhammad II
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 5
+    adm = 4
+    mil = 6
+  }
+}
+1720.12.1 = {
+  heir = {
+    name = "NbO∑V"  # Zayid
+    monarch_name = "NbO∑V"  # Zayid
+    dynasty = "ôlyr"  # Sa'ud
+    birth_date = 1700.1.1
+    death_Date = 1765.5.20
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1725.6.12 = {
+  monarch = {
+    name = "NbO∑V"  # Zayid
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+  government = monarchy
+  add_government_reform = iqta
+}
+1725.6.12 = {
+  heir = {
+    name = "?ñjSjg“R ?ñPüyQ"  # 'Abd al-'Aziz
+    monarch_name = "?ñjSjg“R ?ñPüyQ I"  # 'Abd al-'Aziz I
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1721.1.1
+    death_Date = 1803.1.1
+    claim = 95
+    adm = 6
+    dip = 4
+    mil = 6
+  }
+}
+1765.6.20 = {
+  monarch = {
+    name = "?ñjSjg“R ?ñPüyQ I"  # 'Abd al-'Aziz I
+    dynasty = "ôlyr"  # Saud
+    dip = 4
+    adm = 6
+    mil = 6
+  }
+}
+1765.6.20 = {
+  heir = {
+    name = "ôlyr"  # Saud
+    monarch_name = "ôlyr II"  # Saud II
+    dynasty = "ôlyr"  # Sa'ud
+    birth_date = 1759.1.1
+    death_Date = 1814.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 6
+  }
+}
+1803.1.1 = {
+  monarch = {
+    name = "ôlyr II"  # Saud II
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 3
+    adm = 3
+    mil = 6
+  }
+}
+1803.1.1 = {
+  heir = {
+    name = "?ñjSjg…b"  # Abdullah
+    monarch_name = "?ñjSjg…b I"  # Abdullah I
+    dynasty = "ôlyr"  # Sa'ud
+    birth_Date = 1790.1.1
+    death_Date = 1825.1.1
+    claim = 95
+    adm = 6
+    dip = 4
+    mil = 6
+  }
+}
+1814.1.1 = {
+  monarch = {
+    name = "?ñjSjg…b I"  # Abdullah I
+    dynasty = "ôlyr"  # Sa'ud
+    dip = 4
+    adm = 6
+    mil = 6
+  }
+}
+1824.1.1 = {
+  monarch = {
+    name = "˛VS˙W"  # Turki
+    dynasty = "ôlyr"  # Sa'ud
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1824.1.1 = {
+  heir = {
+    name = "9ç(ÑS"  # Faisal
+    monarch_name = "9ç(ÑS"  # Faisal
+    dynasty = "ôlyr"  # Sa'ud
+    birth_date = 1804.1.1
+    death_date = 1865.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 4
+  }
+}
+1834.1.1 = {
+  monarch = {
+    name = "9ç(ÑS"  # Faisal
+    dynasty = "ôlyr"  # Sa'ud
+    adm = 5
+    dip = 2
+    mil = 4
+  }
+}
+1834.1.1 = {
+  heir = {
+    name = "»TÀz∑V"  # Khalid
+    monarch_name = "»TÀz∑V"  # Khalid
+    dynasty = "ôlyr"  # Sa'ud
+    birth_date = 1808.1.1
+    death_date = 1841.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 2
+  }
+}
+1838.1.1 = {
+  monarch = {
+    name = "»TÀz∑V"  # Khalid
+    dynasty = "ôlyr"  # Sa'ud
+    adm = 5
+    dip = 1
+    mil = 2
+  }
+}
+1838.1.1 = {
+  heir = {
+    name = "?ñjSjg…b"  # Abdallah
+    monarch_name = "?ñjSjg…b"  # Abdallah
+    dynasty = "ôlyr"  # Sa'ud
+    birth_date = 1811.1.1
+    death_date = 1843.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+1841.1.1 = {
+  monarch = {
+    name = "?ñjSjg…b"  # Abdallah
+    dynasty = "ôlyr"  # Sa'ud
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+1843.1.1 = {
+  monarch = {
+    name = "9ç(ÑS"  # Faisal
+    dynasty = "ôlyr"  # Sa'ud
+    adm = 5
+    dip = 2
+    mil = 4
+  }
+}
+1843.1.1 = {
+  heir = {
+    name = "?ñjSjg…b"  # Abdallah
+    monarch_name = "?ñjSjg…b"  # Abdallah
+    dynasty = "ôlyr"  # Sa'ud
+    birth_date = 1813.1.1
+    death_date = 1889.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 5
+  }
+}
+1865.1.1 = {
+  monarch = {
+    name = "?ñjSjg…b"  # Abdallah
+    dynasty = "ôlyr"  # Sa'ud
+    adm = 3
+    dip = 5
+    mil = 5
+  }
+}
+1865.1.1 = {
+  heir = {
+    name = "ôlyr"  # Saud
+    monarch_name = "ôlyr"  # Saud
+    dynasty = "ôlyr"  # Sa'ud
+    birth_date = 1843.1.1
+    death_date = 1875.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 3
+  }
+}
+1873.1.1 = {
+  monarch = {
+    name = "ôlyr"  # Saud
+    dynasty = "ôlyr"  # Sa'ud
+    adm = 2
+    dip = 1
+    mil = 3
+  }
+}
+1873.1.1 = {
+  heir = {
+    name = "?ñjSjg“R …bkç¸f"  # Abdul Rahman
+    monarch_name = "?ñjSjg“R …bkç¸f"  # Abdul Rahman
+    dynasty = "ôlyr"  # Sa'ud
+    birth_date = 1845.1.1
+    death_date = 1891.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1875.1.1 = {
+  monarch = {
+    name = "?ñjSjg“R …bkç¸f"  # Abdul Rahman
+    dynasty = "ôlyr"  # Sa'ud
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1876.1.1 = {
+  monarch = {
+    name = "?ñjSjg…b"  # Abdallah
+    dynasty = "ôlyr"  # Sa'ud
+    adm = 3
+    dip = 5
+    mil = 5
+  }
+}
+1889.1.1 = {
+  monarch = {
+    name = "?ñjSjg“R …bkç¸f"  # Abdul Rahman
+    dynasty = "ôlyr"  # Sa'ud
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1891.1.1 = {
+  monarch = {
+    name = "?ñjSjg ?ñPüyQ"  # 'Abd al-'Aziz
+    dynasty = "ôlyr"  # Sa'ud
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}

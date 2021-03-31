@@ -1,0 +1,537 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+government_rank = 1
+technology_group = early_indian
+religion = hinduism
+primary_culture = avadhi
+capital = 2234
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+360.1.1 = {
+  monarch = {
+    name = "eY»TÍèÊt"  # Oghadeva
+    dynasty = "KSGYGY»TaSS^"  # Uchchhakalpa
+    birth_date = 330.1.1
+    adm = 0
+    dip = 4
+    mil = 4
+  }
+}
+370.1.1 = {
+  heir = {
+    name = "ì^lö…bÍèÊt"  # Kumaradeva
+    monarch_name = "ì^lö…bÍèÊt"  # Kumaradeva
+    dynasty = "KSGYGY»TaSS^"  # Uchchhakalpa
+    birth_date = 370.1.1
+    death_date = 430.1.1
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 1
+  }
+}
+400.1.1 = {
+  monarch = {
+    name = "ì^lö…bÍèÊt"  # Kumaradeva
+    dynasty = "KSGYGY»TaSS^"  # Uchchhakalpa
+    birth_date = 370.1.1
+    adm = 0
+    dip = 1
+    mil = 1
+  }
+}
+400.1.1 = {
+  heir = {
+    name = ">çöNØeÊtf"  # Jayasvamin
+    monarch_name = ">çöNØeÊtf"  # Jayasvamin
+    dynasty = "KSGYGY»TaSS^"  # Uchchhakalpa
+    birth_date = 400.1.1
+    death_date = 460.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 3
+  }
+}
+430.1.1 = {
+  monarch = {
+    name = ">çöNØeÊtf"  # Jayasvamin
+    dynasty = "KSGYGY»TaSS^"  # Uchchhakalpa
+    birth_date = 400.1.1
+    adm = 4
+    dip = 0
+    mil = 3
+  }
+}
+430.1.1 = {
+  heir = {
+    name = "-VmNÌzW"  # Vyaghra
+    monarch_name = "-VmNÌzW"  # Vyaghra
+    dynasty = "KSGYGY»TaSS^"  # Uchchhakalpa
+    birth_date = 430.1.1
+    death_date = 493.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 2
+  }
+}
+460.1.1 = {
+  monarch = {
+    name = "-VmNÌzW"  # Vyaghra
+    dynasty = "KSGYGY»TaSS^"  # Uchchhakalpa
+    birth_date = 430.1.1
+    adm = 0
+    dip = 0
+    mil = 2
+  }
+}
+463.1.1 = {
+  heir = {
+    name = "†RöN≥u(Ñ"  # Jayanatha
+    monarch_name = "†RöN≥u(Ñ"  # Jayanatha
+    dynasty = "KSGYGY»TaSS^"  # Uchchhakalpa
+    birth_date = 463.1.1
+    death_date = 508.1.1
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 0
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+493.1.1 = {
+  monarch = {
+    name = "†RöN≥u(Ñ"  # Jayanatha
+    dynasty = "KSGYGY»TaSS^"  # Uchchhakalpa
+    birth_date = 463.1.1
+    adm = 0
+    dip = 1
+    mil = 0
+  }
+}
+493.1.1 = {
+  heir = {
+    name = "ôlV≥uTX"  # Sarvanatha
+    monarch_name = "ôlV≥uTX"  # Sarvanatha
+    dynasty = "KSGYGY»TaSS^"  # Uchchhakalpa
+    birth_date = 480.1.1
+    death_date = 533.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+508.1.1 = {
+  monarch = {
+    name = "ôlV≥uTX"  # Sarvanatha
+    dynasty = "KSGYGY»TaSS^"  # Uchchhakalpa
+    birth_date = 480.1.1
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1440.1.1 = {
+  monarch = {
+    name = "◊kWid –cFZ"  # Virama Dev
+    dynasty = "FZKzW"  # Baghela
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1440.1.1 = {
+  heir = {
+    name = "0t–c√i ∑VeY"  # Shaktivan Deo
+    monarch_name = "0t–c√i ∑VeY"  # Shaktivan Deo
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1440.1.1
+    death_date = 1500.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1495.1.1 = {
+  monarch = {
+    name = "0t–c√i ∑VeY"  # Shaktivan Deo
+    dynasty = "FZKzW"  # Baghela
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1495.1.1 = {
+  heir = {
+    name = "òÇW õè<h"  # Veer Singh
+    monarch_name = "òÇW õè<h"  # Veer Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1495.1.1
+    death_date = 1540.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+1500.1.1 = {
+  monarch = {
+    name = "òÇW õè<h"  # Veer Singh
+    dynasty = "FZKzW"  # Baghela
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+1500.1.1 = {
+  heir = {
+    name = "◊kW√i"  # Virbhan
+    monarch_name = "◊kW√i õè<h"  # Virbhan Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1500.1.1
+    death_date = 1555.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1540.1.1 = {
+  monarch = {
+    name = "◊kW√i õè<h"  # Virbhan Singh
+    dynasty = "FZKzW"  # Baghela
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1540.1.1 = {
+  heir = {
+    name = "Wid√eNñW"  # Ramachandra
+    monarch_name = "Wid√eNñW õè<h"  # Ramachandra Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1500.1.1
+    death_date = 1555.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+1555.1.1 = {
+  monarch = {
+    name = "Wid√eNñW õè<h"  # Ramachandra Singh
+    dynasty = "FZKzW"  # Baghela
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+1555.1.1 = {
+  heir = {
+    name = "4YTéj"  # Duryodhan
+    monarch_name = "4YTéj õè<h"  # Duryodhan Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1555.1.1
+    death_date = 1618.1.1
+    claim = 95
+    adm = 0
+    dip = 3
+    mil = 1
+  }
+}
+1592.1.1 = {
+  monarch = {
+    name = "4YTéj õè<h"  # Duryodhan Singh
+    dynasty = "FZKzW"  # Baghela
+    adm = 0
+    dip = 3
+    mil = 1
+  }
+}
+1592.1.1 = {
+  heir = {
+    name = "◊k´ãWid?ñÌèY"  # Vikramaditya
+    monarch_name = "◊k´ãWid?ñÌèY"  # Vikramaditya
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1592.1.1
+    death_date = 1630.1.1
+    claim = 95
+    adm = 0
+    dip = 3
+    mil = 1
+  }
+}
+1618.1.1 = {
+  monarch = {
+    name = "◊k´ãWid?ñÌèY"  # Vikramaditya
+    dynasty = "FZKzW"  # Baghela
+    adm = 2
+    dip = 3
+    mil = 0
+  }
+}
+1618.1.1 = {
+  heir = {
+    name = "?ñidW"  # Amar
+    monarch_name = "?ñidW õè<h II"  # Amar Singh II
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1618.1.1
+    death_date = 1643.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1630.1.1 = {
+  monarch = {
+    name = "?ñidW õè<h II"  # Amar Singh II
+    dynasty = "FZKzW"  # Baghela
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1630.1.1 = {
+  heir = {
+    name = "?ñ≥u"  # Anoop
+    monarch_name = "?ñ≥u õè<h"  # Anoop Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1630.1.1
+    death_date = 1660.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 0
+  }
+}
+1643.1.1 = {
+  monarch = {
+    name = "?ñ≥u õè<h"  # Anoop Singh
+    dynasty = "FZKzW"  # Baghela
+    adm = 2
+    dip = 2
+    mil = 0
+  }
+}
+1643.1.1 = {
+  heir = {
+    name = "çà"  # Bhao
+    monarch_name = "çà õè<h"  # Bhao Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1643.1.1
+    death_date = 1690.1.1
+    claim = 95
+    adm = 0
+    dip = 4
+    mil = 5
+  }
+}
+1660.1.1 = {
+  monarch = {
+    name = "çà õè<h"  # Bhao Singh
+    dynasty = "FZKzW"  # Baghela
+    adm = 0
+    dip = 4
+    mil = 5
+  }
+}
+1660.1.1 = {
+  heir = {
+    name = "?ñ<S|iNñ"  # Anirudh
+    monarch_name = "?ñ<S|iNñ õè<h"  # Anirudh Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1660.1.1
+    death_date = 1700.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 0
+  }
+}
+1690.1.1 = {
+  monarch = {
+    name = "?ñ<S|iNñ õè<h"  # Anirudh Singh
+    dynasty = "FZKzW"  # Baghela
+    adm = 4
+    dip = 4
+    mil = 0
+  }
+}
+1690.1.1 = {
+  heir = {
+    name = "?ñFZ4YNñ"  # Avadhut
+    monarch_name = "?ñFZ4YNñ õè<h"  # Avadhut Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1690.1.1
+    death_date = 1755.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1700.1.1 = {
+  monarch = {
+    name = "?ñFZ4YNñ õè<h"  # Avadhut Singh
+    dynasty = "FZKzW"  # Baghela
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1720.1.1 = {
+  heir = {
+    name = "?ñ	Tyr"  # Ajit
+    monarch_name = "?ñ	Tyr õè<h"  # Ajit Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1720.1.1
+    death_date = 1809.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1755.1.1 = {
+  monarch = {
+    name = "?ñ	Tyr õè<h"  # Ajit Singh
+    dynasty = "FZKzW"  # Baghela
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1755.1.1 = {
+  heir = {
+    name = "Jai"
+    monarch_name = "Jai Singh"
+    dynasty = "Baghela"
+    birth_date = 1765.1.4
+    death_date = 1835.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1809.1.1 = {
+  monarch = {
+    name = "wO ÁP√ã"  # Jai Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1765.1.4
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1809.1.1 = {
+  heir = {
+    name = "◊knFZ±ê÷N õè<h"  # Vishwanath Singh
+    monarch_name = "◊knFZ±ê÷N õè<h"  # Vishwanath Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1789.1.1
+    death_date = 1876.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 4
+  }
+}
+1835.1.1 = {
+  monarch = {
+    name = "◊knFZ±ê÷N õè<h"  # Vishwanath Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1789.1.1
+    adm = 1
+    dip = 4
+    mil = 4
+  }
+}
+1835.1.1 = {
+  heir = {
+    name = "…b<h…bm  õè<h"  # Raghuraj Singh
+    monarch_name = "…b<h…bm  õè<h"  # Raghuraj Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1831.1.1
+    death_date = 1880.2.5
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 3
+  }
+}
+1876.1.1 = {
+  monarch = {
+    name = "…b<h…bm  õè<h"  # Raghuraj Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1831.1.1
+    adm = 3
+    dip = 0
+    mil = 3
+  }
+}
+1876.7.23 = {
+  heir = {
+    name = "áe±êaSyr W¸f W¸f™R”u ÈÉWiç∑V õè<h"  # Venkat Raman Ramanuj Prasad Singh
+    monarch_name = "áe±êaSyr W¸f W¸f™R”u ÈÉWiç∑V õè<h"  # Venkat Raman Ramanuj Prasad Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1876.7.23
+    death_date = 1948.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+1880.2.5 = {
+  monarch = {
+    name = "áe±êaSyr W¸f W¸f™R”u ÈÉWiç∑V õè<h"  # Venkat Raman Ramanuj Prasad Singh
+    dynasty = "FZKzW"  # Baghela
+    birth_date = 1876.7.23
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+1765.1.4 = {
+  heir = {
+    dynasty = "FZKzW"  # Baghela
+    monarch_name = "wO ÁP√ã"  # Jai Singh
+    name = "wO"  # Jai
+  }
+}

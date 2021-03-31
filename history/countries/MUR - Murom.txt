@@ -1,0 +1,260 @@
+government = tribal
+add_government_reform = tribal_despotism
+government_rank = 1
+mercantilism = 0.1
+primary_culture = volga_finnic
+religion = suomenusko
+technology_group = eastern
+capital = 1754
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1010.1.1 = {
+  religion = orthodox
+  primary_culture = russian
+  government = monarchy
+  add_government_reform = principality
+  monarch = {
+    name = "ØeÙuöNXbØe…b+Y"  # Sviatoslav
+    dynasty = "ØeÙuöNXbÙuGY"  # Sviatovich
+    adm = 1
+    dip = 2
+    mil = 3
+  }
+}
+1097.1.1 = {
+  monarch = {
+    name = "≈ñWØe…b+Y"  # Yaroslav
+    dynasty = "ØeÙuöNXbÙuGY"  # Sviatovich
+    adm = 1
+    dip = 2
+    mil = 5
+  }
+}
+1129.1.1 = {
+  monarch = {
+    name = "2SÃë"  # Yuri
+    dynasty = "…bWØe…bÙuGY"  # Iaroslavich
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1129.1.1 = {
+  heir = {
+    name = "ØeÙuöNXbØe…b+Y"  # Sviatoslav
+    monarch_name = "ØeÙuöNXbØe…b+Y"  # Sviatoslav
+    dynasty = "…bWØe…bÙuGY"  # Iaroslavich
+    birth_date = 1113.1.1
+    death_date = 1145.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1143.1.1 = {
+  monarch = {
+    name = "ØeÙuöNXbØe…b+Y"  # Sviatoslav
+    dynasty = "…bWØe…bÙuGY"  # Iaroslavich
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+1143.1.1 = {
+  heir = {
+    name = "WØecRØe…b+Y"  # Rostislav
+    monarch_name = "WØecRØe…b+Y"  # Rostislav
+    dynasty = "…bWØe…bÙuGY"  # Iaroslavich
+    birth_date = 1115.1.1
+    death_date = 1147.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 5
+  }
+}
+1145.1.1 = {
+  monarch = {
+    name = "WØecRØe…b+Y"  # Rostislav
+    dynasty = "…bWØe…bÙuGY"  # Iaroslavich
+    adm = 2
+    dip = 4
+    mil = 5
+  }
+}
+1147.1.1 = {
+  monarch = {
+    name = "V…b˙Ws|S"  # Vladimir
+    dynasty = "ØeÙuöNXbØe…bÙuGY"  # Sviatoslavich
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1149.1.1 = {
+  monarch = {
+    name = "WØecRØe…b+Y"  # Rostislav
+    dynasty = "…bWØe…bÙuGY"  # Iaroslavich
+    adm = 2
+    dip = 4
+    mil = 5
+  }
+}
+1155.1.1 = {
+  monarch = {
+    name = "V…b˙Ws|S"  # Vladimir
+    dynasty = "ØeÙuöNXbØe…bÙuGY"  # Sviatoslavich
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1161.1.1 = {
+  monarch = {
+    name = "2SÃë"  # Yuri
+    dynasty = "V…b˙Ws|mÙuGY"  # Vladimirovich
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+}
+1174.1.1 = {
+  monarch = {
+    name = "æèÙu∑V"  # Davyd
+    dynasty = "2SS6wÙuGY"  # Iur'evich
+    adm = 2
+    dip = 4
+    mil = 1
+  }
+}
+1174.1.1 = {
+  heir = {
+    name = "V…b˙Ws|S"  # Vladimir
+    monarch_name = "V…b˙Ws|S"  # Vladimir
+    dynasty = "2SS6wÙuGY"  # Iur'evich
+    birth_date = 1160.1.1
+    death_date = 1203.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1190.1.1 = {
+  monarch = {
+    name = "V…b˙Ws|S"  # Vladimir
+    dynasty = "2SS6wÙuGY"  # Iur'evich
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1190.1.1 = {
+  heir = {
+    name = "ObS"  # Igor
+    monarch_name = "ObS"  # Igor
+    dynasty = "2SS6wÙuGY"  # Iur'evich
+    birth_date = 1173.1.1
+    death_date = 1220.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+1203.1.1 = {
+  monarch = {
+    name = "ObS"  # Igor
+    dynasty = "2SS6wÙuGY"  # Iur'evich
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+1220.1.1 = {
+  monarch = {
+    name = "2SÃë"  # Yuri
+    dynasty = "æèÙuYÙuGY"  # Davydovich
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1237.1.1 = {
+  monarch = {
+    name = "≈ñWØe…b+Y"  # Yaroslav
+    dynasty = "2SS6wÙuGY"  # Iur'evich
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1330.1.1 = {
+  monarch = {
+    name = "ÊtâÃë"  # Vasiliy
+    dynasty = "…bWØe…bÙuGY"  # Iaroslavich
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1330.1.1 = {
+  heir = {
+    name = "2SÃë"  # Yuri
+    monarch_name = "2SÃë"  # Yuri
+    dynasty = "…bWØe…bÙuGY"  # Iaroslavich
+    birth_date = 1314.1.1
+    death_date = 3000.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 4
+  }
+}
+1344.1.1 = {
+  monarch = {
+    name = "2SÃë"  # Yuri
+    dynasty = "…bWØe…bÙuGY"  # Iaroslavich
+    adm = 4
+    dip = 5
+    mil = 4
+  }
+}
+1353.1.1 = {
+  monarch = {
+    name = "9çeYYS I"  # Fedor I
+    dynasty = "<hRZSÙuGY"  # Glebovich
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}

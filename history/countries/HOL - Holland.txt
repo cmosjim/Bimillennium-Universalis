@@ -1,0 +1,298 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = western
+religion = catholic
+primary_culture = dutch
+capital = 97
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1061.1.1 = {
+  monarch = {
+    name = "∑VKQîNN"  # Dirk V
+    dynasty = "ØQ wÉpQ"  # van Holland
+    adm = 3
+    dip = 5
+    mil = 1
+  }
+}
+1080.1.1 = {
+  heir = {
+    name = "VmÃëØe"  # Floris
+    monarch_name = "VmÃëØeåNN"  # Floris II
+    dynasty = "ØQ wÉpQ"  # van Holland
+    birth_date = 1080.1.1
+    death_date = 1121.3.2
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+1091.6.17 = {
+  monarch = {
+    name = "VmÃëØeåNN"  # Floris II
+    dynasty = "ØQ wÉpQ"  # van Holland
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+1114.1.1 = {
+  heir = {
+    name = "∑VKQ"  # Dirk
+    monarch_name = "∑VKQmQN"  # Dirk VI
+    dynasty = "ØQ wÉpQ"  # van Holland
+    birth_date = 1114.1.1
+    death_date = 1157.8.5
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 4
+  }
+}
+1121.3.2 = {
+  monarch = {
+    name = "∑VKQmQN"  # Dirk VI
+    dynasty = "ØQ wÉpQ"  # van Holland
+    adm = 1
+    dip = 5
+    mil = 4
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1141.1.1 = {
+  heir = {
+    name = "VmÃëØe"  # Floris
+    monarch_name = "VmÃëØe	NN"  # Floris III
+    dynasty = "ØQ wÉpQ"  # van Holland
+    birth_date = 1141.1.1
+    death_date = 1190.8.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+1157.8.5 = {
+  monarch = {
+    name = "VmÃëØe	NN"  # Floris III
+    dynasty = "ØQ wÉpQ"  # van Holland
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+1160.1.1 = {
+  heir = {
+    name = "∑VKQ"  # Dirk
+    monarch_name = "∑VKQNN"  # Dirk VII
+    dynasty = "ØQ wÉpQ"  # van Holland
+    birth_date = 1160.1.1
+    death_date = 1203.11.4
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 1
+  }
+}
+1190.8.1 = {
+  monarch = {
+    name = "∑VKQNN"  # Dirk VII
+    dynasty = "ØQ wÉpQ"  # van Holland
+    adm = 5
+    dip = 3
+    mil = 1
+  }
+}
+1190.8.1 = {
+  heir = {
+    name = "Z…^"  # Willem
+    monarch_name = "Z…^NN"  # Willem I
+    dynasty = "ØQ wÉpQ"  # van Holland
+    birth_date = 1141.1.1
+    death_date = 1222.2.4
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+1203.11.4 = {
+  monarch = {
+    name = "Z…^NN"  # Willem I
+    dynasty = "ØQ wÉpQ"  # van Holland
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+1210.6.24 = {
+  heir = {
+    name = "VmÃëØe"  # Floris
+    monarch_name = "VmÃëØe€VN"  # Floris IV
+    dynasty = "ØQ wÉpQ"  # van Holland
+    birth_date = 1210.6.24
+    death_date = 1234.7.19
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 5
+  }
+}
+1222.2.4 = {
+  monarch = {
+    name = "VmÃëØe€VN"  # Floris IV
+    dynasty = "ØQ wÉpQ"  # van Holland
+    adm = 3
+    dip = 5
+    mil = 5
+  }
+}
+1228.2.1 = {
+  heir = {
+    name = "Z…^"  # Willem
+    monarch_name = "Z…^åNN"  # Willem II
+    dynasty = "ØQ wÉpQ"  # van Holland
+    birth_date = 1228.2.1
+    death_date = 1256.1.12
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+1234.7.19 = {
+  monarch = {
+    name = "Z…^åNN"  # Willem II
+    dynasty = "ØQ wÉpQ"  # van Holland
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+1254.6.24 = {
+  heir = {
+    name = "VmÃëØe"  # Floris
+    monarch_name = "VmÃëØeîNN"  # Floris V
+    dynasty = "ØQ wÉpQ"  # van Holland
+    birth_date = 1254.6.24
+    death_date = 1296.6.27
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 1
+  }
+}
+1256.1.12 = {
+  monarch = {
+    name = "VmÃëØeîNN"  # Floris V
+    dynasty = "ØQ wÉpQ"  # van Holland
+    adm = 5
+    dip = 5
+    mil = 1
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1284.1.1 = {
+  heir = {
+    name = "¶u"  # Johann
+    monarch_name = "¶uNN"  # Johann I
+    dynasty = "ØQ wÉpQ"  # van Holland
+    birth_date = 1284.1.1
+    death_date = 1299.11.10
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+1296.6.27 = {
+  monarch = {
+    name = "¶uNN"  # Johann I
+    dynasty = "ØQ wÉpQ"  # van Holland
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+1389.1.1 = {
+  monarch = {
+    name = "?ñS=Oyr"  # Albert
+    dynasty = "ØQ ÙuyrSØeÙTkç"  # von Wittelsbach
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+1389.1.1 = {
+  heir = {
+    name = "Z…^"  # Willem
+    monarch_name = "Z…^mQN"  # Willem VI
+    dynasty = "ØQ ÙuyrSØeÙTkç"  # von Wittelsbach
+    birth_date = 1365.4.5
+    death_date = 1417.5.31
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1404.1.1 = {
+  monarch = {
+    name = "Z…^mQN"  # Willem VI
+    dynasty = "ØQ ÙuyrSØeÙTkç"  # von Wittelsbach
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+  heir = {
+    name = "≈ñÔS‘k"  # Jacoba
+    monarch_name = "≈ñÔS‘k"  # Jacoba
+    dynasty = "ØQ ÙuyrSØeÙTkç"  # von Wittelsbach
+    birth_date = 1401.8.16
+    death_date = 1436.10.8
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 2
+    female = yes
+  }
+}
+1417.5.31 = {
+  monarch = {
+    name = "≈ñÔS‘k"  # Jacoba
+    dynasty = "ØQ ÙuyrSØeÙTkç"  # von Wittelsbach
+    adm = 3
+    dip = 2
+    mil = 2
+    female = yes
+  }
+}

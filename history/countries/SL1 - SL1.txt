@@ -1,0 +1,210 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+technology_group = eastern_nomad_group
+primary_culture = tocharian
+religion = mahayana
+capital = 739
+
+##b ÿ3	ÿ š^HS 70
+##jQ˜˜ ÿ2	ÿ xvI‘ 72
+##àV ÿ10	ÿ 2ub 74
+##b'Y ÿ32	ÿ 2u3u 84
+##‰RıV ÿ9	ÿ N° 116
+##Wy ÿ2	ÿ YNN 125
+##ãØv ÿ42	ÿ NoS 127
+##ŒT—V ÿ3	ÿ b3u 168
+##?–%V¥S ÿ13	ÿ YNN 605
+##ôˆğu ÿ9	ÿ bÅR 618
+##ôˆ?–id=e ÿ71	ÿ N¥N 627
+##ôˆ7YeP ÿ30	ÿ bb 698
+##ôˆ‰RšR ÿ25	ÿ b° 728
+##ôˆıVo‚ ÿ31	ÿ xvóT 753
+##ôˆ·Q·Q ÿ4	ÿ 2uPR 784
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+
+70.1.1 = {
+	monarch = {
+		name = "b"
+		#dynasty = " "
+	
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+72.1.1 = {
+	monarch = {
+		name = "jQ˜˜"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+74.1.1 = {
+	monarch = {
+		name = "àV"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+
+84.1.1 = {
+	monarch = {
+		name = "b'Y"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+116.1.1 = {
+	monarch = {
+		name = "‰RıV"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+125.1.1 = {
+	monarch = {
+		name = "Wy"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+
+127.1.1 = {
+	monarch = {
+		name = "ãØv"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+168.1.1 = {
+	monarch = {
+		name = "ŒT—V"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+
+
+605.1.1 = {
+	monarch = {
+		name = "?–%V¥S"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+618.1.1 = {
+	monarch = {
+		name = "ôˆğu"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+
+627.1.1 = {
+	monarch = {
+		name = "ôˆ?–id=e"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+698.1.1 = {
+	monarch = {
+		name = "ôˆ7YeP"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+728.1.1 = {
+	monarch = {
+		name = "ôˆ‰RšR"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+
+753.1.1 = {
+	monarch = {
+		name = "ôˆıVo‚"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+784.1.1 = {
+	monarch = {
+		name = "ôˆ·Q·Q"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+}
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+
+
+
+
+
+
+
+

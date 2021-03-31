@@ -1,0 +1,85 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+mercantilism = 0.1
+primary_culture = huizu
+religion = sunni
+technology_group = early_chinese
+capital = 706	#ÞVÏe R—lš
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+
+1912.1.12 = {
+	government = modern_chinese_warlord
+	add_government_reform = modern_chinese_warlord_reform
+	religion = liberalism
+}
+
+1912.4.1 = {
+	monarch = {
+		name = "lš’ž"
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+#lšek³‚ÿ1903t^ÿ1975t^7g	ÿ
+
+1912.1.1 = {
+	heir = {
+		name = "lšek³‚"
+		monarch_name = "lšek³‚"
+		
+		birth_date = 1903.1.1
+		death_date = 1975.7.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1931.1.1 = {
+	monarch = {
+		name = "lšŸž"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1937.5.1 = {
+	monarch = {
+		name = "lšek³‚"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1937.5.1 = {
+	heir = {
+		name = "lšçuôc"
+		monarch_name = "lšçuôc"
+		
+		birth_date = 1921.1.8
+		death_date = 2012.2.27
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1949.10.1 = { technology_group = modern_chinese }

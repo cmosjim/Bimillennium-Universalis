@@ -1,0 +1,71 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = tibetan
+religion = tibetan_bon
+technology_group = early_chinese
+capital = 2455 # 
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+630.1.1 = { religion = vajrayana }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+775.1.1 = { religion = tibetan_buddhism }
+837.1.1 = { religion = tibetan_bon }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+978.1.1 = { religion = tibetan_buddhism }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+
+
+1589.1.1 = {
+	monarch = {
+		name = "‘N9N	Vªc"
+		#dynasty = " "
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+}
+
+1617.1.1 = {
+	monarch = {
+		name = "WQh	Vªc"
+		#dynasty = " "
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+}
+1636.5.15 = { technology_group = old_estern_asian }
+1642.1.1 = { government = dalailama_monastic add_government_reform = dalailama_monastic_reform  }
+
+1683.1.1 = {
+	monarch = {
+		name = "ÓN.Y	Vªc"
+		#dynasty = " "
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+
+
+1707.1.1 = {
+	monarch = {
+		name = "<hQh	Vªc"
+		#dynasty = " "
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+1949.10.1 = { technology_group = modern_chinese }
+

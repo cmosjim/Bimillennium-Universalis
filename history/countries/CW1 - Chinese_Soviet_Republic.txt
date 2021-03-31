@@ -1,0 +1,51 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+mercantilism = 0.1
+primary_culture = chihan
+religion = communism
+technology_group = early_chinese
+historical_friend = SOV
+capital = 670	
+
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = {
+	government = modern_chinese_warlord
+	add_government_reform = modern_chinese_warlord_reform
+	religion = communism
+}
+
+
+1931.1.1 = { capital = 670 }
+1931.3.1 = {
+	monarch = {
+		name = "ÛkýlN"
+		adm = 5
+		mil = 6
+		dip = 5
+		birth_date = 1893.12.26	
+		#ÛkýlNÿ1893t^12g26åeÿ1976t^9g9åe	ÿ
+        leader = { 
+                name = "ÛkýlN"	
+                type = general	
+                fire = 9
+                shock = 9	
+                manuever = 5
+				siege = 4
+		}
+	}	
+}
+
+1935.10.1 = { capital = 2506 }
+
+1949.10.1 = { technology_group = modern_chinese }

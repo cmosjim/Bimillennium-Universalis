@@ -1,0 +1,112 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = eastern
+primary_culture = greek
+religion = orthodox
+capital = 147
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1268.1.1 = {
+  monarch = {
+    name = "¦u‰R<S¯e I"  # Ioannes I
+    dynasty = "jgaS¯e"  # Doukas
+    birth_date = 1240.1.1
+    adm = 5
+    dip = 5
+    mil = 1
+  }
+}
+1268.1.1 = {
+  heir = {
+    name = "TëXfWN"  # Constantine
+    monarch_name = "TëXfWN I"  # Constantine I
+    dynasty = "jgaS¯e"  # Doukas
+    birth_date = 1259.1.1
+    death_date = 1303.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 1
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1289.1.1 = {
+  monarch = {
+    name = "TëXfWN I"  # Constantine I
+    dynasty = "jgaS¯e"  # Doukas
+    birth_date = 1259.1.1
+    adm = 4
+    dip = 4
+    mil = 1
+  }
+}
+1289.1.1 = {
+  heir = {
+    name = "¦u‰R<S¯e"  # Ioannes
+    monarch_name = "¦u‰R<S¯e II"  # Ioannes II
+    dynasty = "jgaS¯e"  # Doukas
+    birth_date = 1270.1.1
+    death_date = 1318.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 4
+  }
+}
+1303.1.1 = {
+  monarch = {
+    name = "¦u‰R<S¯e II"  # Ioannes II
+    dynasty = "jgaS¯e"  # Doukas
+    birth_date = 1270.1.1
+    adm = 0
+    dip = 0
+    mil = 4
+  }
+}
+1370.1.1 = {
+  monarch = {
+    name = "¦uN LNWÀN"  # Jovan Uros
+    dynasty = "…Qlš<SGY"  # Nemanjic
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1373.1.1 = {
+  monarch = {
+    name = "?–±ƒKQ‰ ‰R6wm¯e"  # Alexios Angelos
+    dynasty = "òƒpQyrWmVú‹¯e"  # Philanthropenos
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}

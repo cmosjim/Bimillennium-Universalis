@@ -1,0 +1,118 @@
+government = gov_celestial_empire
+add_government_reform = celestial_empire
+government_rank = 3
+mercantilism = 0.1
+technology_group = early_chinese
+religion = tengri_pagan_reformed
+primary_culture = mongol
+capital = 697	
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+
+
+386.1.1 = {
+	monarch = {
+		name = "”bÀçÍs"
+		#dynasty = " "
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+409.11.10 = {
+	monarch = {
+		name = "”bÀç„U"
+		#dynasty = " "
+	
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+423.12.23 = {
+	monarch = {
+		name = "”bÀçq"
+		#dynasty = " "
+	
+		adm = 4
+		dip = 4
+		mil = 6
+	}
+}
+#w*Ys^wTNt^(446)ˇ*Yfk^≤NÅV÷v4Tˇr—ShQbó'`ÑvmpiOLà®R
+#SOõ*Yfk^RTiOYeˇT‡V◊SSêÎX«R&åKNIrÑvqVÕTˇlèIYSêYe
+452.3.11 = {
+	monarch = {
+		name = "”bÀçYO"
+		#dynasty = " "
+		#OõWSâRêñãs
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+452.10.31 = {
+	monarch = {
+		name = "”bÀçÏo"
+		#dynasty = " "
+	   #Oõáeb^
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+#452 b`YiO
+465.6.20 = {
+	monarch = {
+		name = "”bÀçV"
+		#dynasty = " "
+	    #Oõ.sáe^
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+471.9.20 = {
+	monarch = {
+		name = "”bÀçèR"
+		#dynasty = " "
+		#OõkRáe^
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+494.1.1 = {
+	capital = 2492
+}
+
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = {
+
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+	religion = liberalism
+}
+1949.10.1 = { technology_group = modern_chinese }
+
+

@@ -1,0 +1,153 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = early_chinese
+primary_culture = filipino
+capital = 2863
+religion = hinduism
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = chinese
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+900.1.1 = {
+  monarch = {
+    name = "fkÔz"  # Butuan
+    dynasty = "fkÔz"  # Butuan
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+989.1.1 = {
+  monarch = {
+    name = "GYóg"  # Kiling
+    dynasty = "fkÔz"  # Butuan
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1011.1.1 = {
+  monarch = {
+    name = "ÙTTXôl≈ñ"  # Bata Shaja
+    dynasty = "fkÔz"  # Butuan
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1100.1.1 = {
+  monarch = {
+    name = "GYóg"  # Kiling
+    dynasty = "fkÔz"  # Butuan
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1150.1.1 = {
+  monarch = {
+    name = "ÙTTXôl≈ñ"  # Bata Shaja
+    dynasty = "fkÔz"  # Butuan
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1200.1.1 = {
+  monarch = {
+    name = "—ypQ^"  # Colambu
+    dynasty = "fkÔz"  # Butuan
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1250.1.1 = {
+  monarch = {
+    name = "â ?ñÙu"  # Si Awi
+    dynasty = "fkÔz"  # Butuan
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1300.1.1 = {
+  monarch = {
+    name = "GYóg"  # Kiling
+    dynasty = "fkÔz"  # Butuan
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1350.1.1 = {
+  monarch = {
+    name = "ÙTTXôl≈ñ"  # Bata Shaja
+    dynasty = "fkÔz"  # Butuan
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1400.1.1 = {
+  monarch = {
+    name = "—ypQ^"  # Colambu
+    dynasty = "fkÔz"  # Butuan
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1444.1.1 = {
+  monarch = {
+    name = "—ypQ^"
+    dynasty = "fkÔz"
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1490.1.1 = {
+  monarch = {
+    name = "â ?ñÙu"
+    dynasty = "fkÔz"
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+1636.5.15 = {
+  technology_group = old_estern_asian
+}
+1920.1.1 = {
+  technology_group = asian
+}

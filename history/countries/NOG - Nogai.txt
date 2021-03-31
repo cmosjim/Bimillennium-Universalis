@@ -1,0 +1,300 @@
+government = tribal
+add_government_reform = steppe_horde
+primary_culture = nogaybak
+religion = sunni
+technology_group = western_nomad_group
+capital = 465
+religious_school = hanafi_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = nomad_group
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1262.1.1 = {
+  monarch = {
+    name = "ú‹Öv"  # Nogai
+    dynasty = "b	T`"  # Genghisid
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1369.1.1 = {
+  monarch = {
+    name = "šNêÖv"  # Yadigai
+    dynasty = "mNêå‹"  # Edigüid
+    adm = 1
+    dip = 4
+    mil = 3
+  }
+}
+1380.1.1 = {
+  heir = {
+    name = "O(„ <h"  # 'Isa Beg
+    monarch_name = "O(„ <h"  # 'Isa Beg
+    dynasty = "mNêå‹"  # Edigüid
+    birth_date = 1380.1.1
+    death_date = 1412.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1410.1.1 = {
+  monarch = {
+    name = "O(„ <h"  # 'Isa Beg
+    dynasty = "mNêå‹"  # Edigüid
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1410.1.1 = {
+  heir = {
+    name = "üfÏ‚S"  # Mansur
+    monarch_name = "üfÏ‚S"  # Mansur
+    dynasty = "mNêå‹"  # Edigüid
+    birth_date = 1390.1.1
+    death_date = 1418.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1412.1.1 = {
+  monarch = {
+    name = "üfÏ‚S"  # Mansur
+    dynasty = "mNêå‹"  # Edigüid
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1412.1.1 = {
+  heir = {
+    name = "ïQ “^ôT·V"  # Kai Qubad
+    monarch_name = "ïQ “^ôT·V"  #  Kai Qubad
+    dynasty = "mNêå‹"  # Edigüid
+    birth_date = 1400.1.1
+    death_date = 1426.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+1418.1.1 = {
+  monarch = {
+    name = "ïQ “^ôT·V"  # Kai Qubad
+    dynasty = "mNêå‹"  # Edigüid
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+1418.1.1 = {
+  heir = {
+    name = "ªRS"  # Nur
+    monarch_name = "ªRS"  # Nur
+    dynasty = "mNêå‹"  # Edigüid
+    birth_Date = 1418.1.1
+    death_date = 1440.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1426.1.1 = {
+  monarch = {
+    name = "ªRS"  # Nur
+    dynasty = "mNêå‹"  # Edigüid
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1426.1.1 = {
+  heir = {
+    name = "^(g?Q"  # Timur
+    monarch_name = "^(g?Q"  # Timur
+    dynasty = "mNêå‹"  # Edigüid
+    birth_date = 1420.1.1
+    death_date = 1480.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1440.1.1 = {
+  monarch = {
+    name = "^(g?Q"  # Timur
+    dynasty = "mNêå‹"  # Edigüid
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1440.1.1 = {
+  heir = {
+    name = "Yagarachi"
+    monarch_name = "Yagarachi"
+    dynasty = "mNêå‹"  # Edigüid
+    birth_date = 1440.1.1
+    death_date = 1500.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1480.1.1 = {
+  monarch = {
+    name = "Yagarchi"
+    dynasty = "mNêå‹"  # Edigüid
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1480.1.1 = {
+  heir = {
+    name = "ÈTQh"  # Hasan
+    monarch_name = "ÈTQh"  # Hasan
+    dynasty = "mNêå‹"  # Edigüid
+    birth_date = 1460.1.1
+    death_date = 1510.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1500.1.1 = {
+  monarch = {
+    name = "ÈTQh"  # Hasan
+    dynasty = "mNêå‹"  # Edigüid
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1500.1.1 = {
+  heir = {
+    name = "Fz(„"  # Musa
+    monarch_name = "Fz(„ I"  # Musa I
+    dynasty = "mNêå‹"  # Edigüid
+    birth_date = 1490.1.1
+    death_date = 1525.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1510.1.1 = {
+  monarch = {
+    name = "Fz(„ I"  # Musa I
+    dynasty = "mNêå‹"  # Edigüid
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1510.1.1 = {
+  heir = {
+    name = "0Œk ›sÈ"  # Shaykh Mamai
+    monarch_name = "0Œk ›sÈ"  # Shaykh Mamai
+    dynasty = "mNêå‹"  # Edigüid
+    birth_date = 1500.1.1
+    death_Date = 1536.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1525.1.1 = {
+  monarch = {
+    name = "0Œk ›sÈ"  # Shaykh Mamai
+    dynasty = "mNêå‹"  # Edigüid
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1525.1.1 = {
+  heir = {
+    name = "O.ty"  # Yusuf
+    monarch_name = "O.ty"  # Yusuf
+    dynasty = "mNêå‹"  # Edigüid
+    birth_date = 1515.1.1
+    death_date = 1555.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1536.1.1 = {
+  monarch = {
+    name = "O.ty"  # Yusuf
+    dynasty = "mNêå‹"  # Edigüid
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1536.1.1 = {
+  heir = {
+    name = "O¯e›sêN"  # Isma'il
+    monarch_name = "O¯e›sêN"  # Isma'il
+    dynasty = "mNêå‹"  # Edigüid
+    birth_date = 1530.1.1
+    death_Date = 1557.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1555.1.1 = {
+  monarch = {
+    name = "O¯e›sêN"  # Isma'il
+    dynasty = "mNêå‹"  # Edigüid
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}

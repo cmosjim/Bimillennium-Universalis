@@ -1,0 +1,86 @@
+government = monarchy
+add_government_reform = iqta
+technology_group = muslim
+religion = sunni
+primary_culture = kirgiz
+capital = 459
+religious_school = hanafi_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1950.1.1 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1991.8.31 = {
+  monarch = {
+    name = "?ñØeaSS ?ñaS6w+Y"  # Askar Akayev
+    adm = 4
+    dip = 3
+    mil = 5
+    religion = sunni
+  }
+}
+2005.3.25 = {
+  monarch = {
+    name = "ì^S¸f+RKQ ÙT˙W6w+Y"  # Kurmanbek Bakiyev
+    adm = 4
+    dip = 2
+    mil = 3
+    religion = sunni
+  }
+}
+2010.4.7 = {
+  monarch = {
+    name = "ÑNb eYêÙT6wZ"  # Roza Otunbayeva
+    adm = 5
+    dip = 2
+    mil = 3
+    religion = sunni
+    female = yes
+  }
+}
+2011.12.1 = {
+  monarch = {
+    name = "?ñSlöyQ+RKQ ?ñfWÙT6w+Y"  # Almazbek Atambayev
+    adm = 4
+    dip = 2
+    mil = 4
+    religion = sunni
+  }
+}

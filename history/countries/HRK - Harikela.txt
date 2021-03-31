@@ -1,0 +1,137 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+technology_group = early_indian
+religion = hinduism
+primary_culture = bengali
+capital = 564
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+900.1.1 = {
+  monarch = {
+    name = "^∂ñÔçÊè√eNñW"  # Traillokyachandra
+    dynasty = "√eNñW"  # Candra
+    adm = 1
+    dip = 4
+    mil = 4
+  }
+}
+910.1.1 = {
+  heir = {
+    name = "≤R)R√eNñW"  # Srichandra
+    monarch_name = "≤R)R√eNñW"  # Srichandra
+    dynasty = "√eNñW"  # Candra
+    birth_date = 910.1.1
+    death_date = 975.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+930.1.1 = {
+  monarch = {
+    name = "≤R)R√eNñW"  # Srichandra
+    dynasty = "√eNñW"  # Candra
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+940.1.1 = {
+  heir = {
+    name = "Êè®h6w±ê√eNñW"  # Kalyanachandra
+    monarch_name = "Êè®h6w±ê√eNñW"  # Kalyanachandra
+    dynasty = "√eNñW"  # Candra
+    birth_date = 940.1.1
+    death_date = 1000.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+975.1.1 = {
+  monarch = {
+    name = "Êè®h6w±ê√eNñW"  # Kalyanachandra
+    dynasty = "√eNñW"  # Candra
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+975.1.1 = {
+  heir = {
+    name = "W|É√ã√eNñW"  # Ladahachandra
+    monarch_name = "W|É√ã√eNñW"  # Ladahachandra
+    dynasty = "√eNñW"  # Candra
+    birth_date = 970.1.1
+    death_date = 1020.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+1000.1.1 = {
+  monarch = {
+    name = "W|É√ã√eNñW"  # Ladahachandra
+    dynasty = "√eNñW"  # Candra
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+1000.1.1 = {
+  heir = {
+    name = "øwëòNñ√eNñW"  # Govindachandra
+    monarch_name = "øwëòNñ√eNñW"  # Govindachandra
+    dynasty = "√eNñW"  # Candra
+    birth_date = 990.1.1
+    death_date = 1050.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1020.1.1 = {
+  monarch = {
+    name = "øwëòNñ√eNñW"  # Govindachandra
+    dynasty = "√eNñW"  # Candra
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

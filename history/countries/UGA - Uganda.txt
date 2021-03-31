@@ -1,0 +1,159 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = ganda
+religion = catholic
+technology_group = muslim
+capital = 2036
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1900.1.1 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1962.10.9 = {
+  monarch = {
+    name = "ÿzzMOg	ÿ"  # (vacant)
+    adm = 2
+    dip = 2
+    mil = 2
+    religion = protestant
+    regent = yes
+  }
+}
+1963.10.9 = {
+  monarch = {
+    name = "V÷–·VÌ‘KQ01r·VNS0Fzyr(„ II"  # Frederick Edward Mutesa II
+    adm = 3
+    dip = 4
+    mil = 2
+    religion = protestant
+  }
+}
+1966.4.15 = {
+  monarch = {
+    name = "s|S˜0eYZSyr"  # Milton Obote
+    adm = 5
+    dip = 3
+    mil = 2
+    religion = protestant
+  }
+}
+1971.1.25 = {
+  monarch = {
+    name = "Oê0?–Oe ¾¾"  # Idi Amin Dada
+    adm = 4
+    dip = 2
+    mil = 4
+    religion = protestant
+  }
+}
+1979.4.13 = {
+  monarch = {
+    name = "O.ty0úW™Ÿ·V0bS±ƒ"  # Yusuf Kironde Lule
+    adm = 5
+    dip = 4
+    mil = 1
+    religion = protestant
+  }
+}
+1979.6.20 = {
+  monarch = {
+    name = "bV÷–0bSTR<hæt0ÔkHY(„"  # Godfrey Lukongwa Binaisa
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = protestant
+  }
+}
+1980.5.12 = {
+  monarch = {
+    name = "İOW0FzN R"  # Paulo Muwaga
+    adm = 3
+    dip = 3
+    mil = 2
+    religion = protestant
+  }
+}
+1980.5.22 = {
+  monarch = {
+    name = "I`ßuÔYXTO"  # Presidential Commission
+    adm = 2
+    dip = 2
+    mil = 2
+    religion = protestant
+    regent = yes
+  }
+}
+1980.12.17 = {
+  monarch = {
+    name = "s|S˜0eYZSyr"  # Milton Obote
+    adm = 5
+    dip = 3
+    mil = 2
+    religion = protestant
+  }
+}
+1985.7.27 = {
+  monarch = {
+    name = "ôT‰)ReY0eYÉbÉb-eYïQm"  # Bazilio Olara-Okello
+    adm = 4
+    dip = 4
+    mil = 3
+    religion = protestant
+  }
+}
+1985.7.29 = {
+  monarch = {
+    name = "‚„Xb0eYïQm"  # Tito Okello
+    adm = 3
+    dip = 4
+    mil = 3
+    religion = protestant
+  }
+}
+1986.1.26 = {
+  monarch = {
+    name = "¦uæ—Ì‘0aSäSTX0Fz^Xôu<S"  # Yoweri Kaguta Museveni
+    adm = 6
+    dip = 2
+    mil = 1
+    religion = protestant
+  }
+}

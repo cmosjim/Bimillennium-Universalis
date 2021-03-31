@@ -1,0 +1,54 @@
+#732 - South Hamgyeong
+
+owner = FU1
+controller = FU1
+add_core = FU1 
+culture = korean
+religion = muism
+capital = "Hamheung"
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+is_city = yes
+
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+57.1.1 =  { owner = DON controller = DON add_core = DON remove_core = FU1 }
+244.1.1 = {  owner = WEI controller = WEI add_core = WEI remove_core = DON }
+266.2.4 = { owner = JN1 controller = JN1 add_core = JN1 remove_core = WEI }
+290.1.1 = { owner = MO1 controller = MO1 add_core = MO1 remove_core = JN1 } 
+313.1.1 = { owner = GOG controller = GOG add_core = GOG remove_core = MO1 }
+372.1.1 = { religion = mahayana }
+576.1.1 = { owner = SLL controller = SLL add_core = SLL remove_core = GOG }
+668.10.1 = { owner = TNG controller = TNG add_core = TNG remove_core = SLL }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+705.2.21 = { owner = TNG controller = TNG add_core = TNG remove_core = WZ1 }
+720.1.1 = { owner = BLH controller = BLH add_core = BLH remove_core = TNG }
+918.1.1 = { owner = GOY controller = GOY add_core = GOY remove_core = BLH }
+1269.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = GOY }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1359.12.1 = { owner = GOY controller = GOY remove_core = YUA }
+1392.1.1 = { owner = KOR controller = KOR add_core = KOR remove_core = GOY  religion = confucianism }
+1542.1.1 = { discovered_by = POR }
+1592.7.18 = { controller = JAP } # Japanese invasion - Battle of Haejungchang
+1593.2.22 = { controller = KOR } # Kato retreats to Seoul
+1637.1.1 = { add_core = MNG } # Tributary of Qing China
+1644.1.1 = { add_core = MCH remove_core = MNG } # Part of the Manchu empire
+1645.7.1 = { add_core = QNG remove_core = MCH }
+1653.1.1 = { discovered_by = NED } # Hendrick Hamel
+1800.1.1 = { base_tax = 6 base_manpower = 6 base_production = 6  }
+1855.1.1 = { base_tax = 7 base_manpower = 7 base_production = 7  }
+1910.8.20 = { owner = JAP controller = JAP add_core = JAP }
+1912.2.12 = { remove_core = QNG }
+1945.8.15 = { owner = SC1 controller = SC1 add_core = SC1 remove_core = JAP }
+1948.9.9 = { owner = NOK controller = NOK add_core = NOK remove_core = SC1 }
+1955.1.1 = { religion = muism }
+1970.1.1 = { religion = communism }
+2004.1.1 = { base_tax = 8 base_production = 5 base_manpower = 11 }
+2012.1.1 = { base_tax = 11 base_production = 7 base_manpower = 12 }

@@ -1,0 +1,93 @@
+#700 - Xi'an
+owner = HND
+controller = HND
+culture = zhongyuan
+religion = confucianism
+capital = "Chang An"
+trade_goods = grain
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = HND
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+
+8.12.1 = { owner = NEW controller = NEW add_core = NEW remove_core = HND }
+23.10.6 = { owner = WX2 controller = WX2 add_core = WX2 remove_core = NEW }
+25.9.1 = { owner = CH1 controller = CH1 add_core = CH1 remove_core = WX2 }
+26.1.1 = { owner = YN1 controller = YN1 add_core = YN1 remove_core = CH1 }
+29.1.1 = { owner = CH2 controller = CH2 add_core = CH2 remove_core = YN1 }
+35.1.1 = { owner = HND controller = HND add_core = HND remove_core = CH2 }
+45.1.1 = { base_tax = 7 base_production = 6 base_manpower = 6 }
+191.1.1 = { owner = TGG controller = TGG add_core = TGG remove_core = HND }
+192.5.8 = { owner = LIZ controller = LIZ add_core = LIZ remove_core = TGG } 
+198.4.1 = { owner = TS2 controller = TS2 add_core = TS2 remove_core = LIZ }
+200.1.1 = { base_tax = 5 base_production = 6 base_manpower = 8 }
+220.1.1 = { owner = WEI controller = WEI add_core = WEI remove_core = TS2 }
+266.2.4 = { owner = JN1 controller = JN1 add_core = JN1 remove_core = WEI }
+270.1.1 = { base_tax = 7 base_production = 8 base_manpower = 8 }
+316.1.1 = { owner = HZZ controller = HZZ add_core = HZZ remove_core = JN1 culture = kiat }
+324.1.1 = { base_tax = 8 base_production = 7 base_manpower = 7 }
+329.1.1 = { owner = ZAO controller = ZAO add_core = ZAO remove_core = HZZ }
+349.1.1 = { culture = zhongyuan base_tax = 7 base_production = 8 base_manpower = 8 }
+350.1.1 = { owner = QIN controller = QIN add_core = QIN remove_core = ZAO }
+385.1.1 = { owner = XYN controller = XYN add_core = XYN remove_core = QIN }
+390.1.1 = { owner = HO1 controller = HO1 add_core = HO1 remove_core = XYN }
+417.1.1 = { owner = JN1 controller = JN1 add_core = JN1 remove_core = HO1 }
+420.1.1 = { owner = LSO controller = LSO add_core = LSO remove_core = JN1 }
+479.1.1 = { owner = QIC controller = QIC add_core = QIC remove_core = LSO }
+494.1.1 = { owner = NWY controller = NWY add_core = NWY  remove_core = QIC }
+510.1.1 = { base_tax = 8 base_production = 9 base_manpower = 9 }
+557.1.1 = { owner = CZH controller = CZH add_core = CZH remove_core = NWY }
+581.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CZH }
+617.10.1 = { owner = LY2 controller = LY2 add_core = LY2 remove_core = SUI }
+618.6.18 = { owner = TNG controller = TNG add_core = TNG remove_core = LY2 }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+705.2.21 = { owner = TNG controller = TNG add_core = TNG remove_core = WZ1 }
+708.1.1 = { base_tax = 9 base_production = 8 base_manpower = 7 }
+756.12.1 = { owner = DY4 controller = DY4 add_core = DY4 religion = zoroastrian }
+757.11.1 = { owner = TNG controller = TNG religion = confucianism remove_core = DY4 }
+900.1.1 = { base_tax = 10 base_production = 13 }
+907.1.1 = { owner = ZU1  controller = ZU1 add_core = ZU1 remove_core = TNG }
+920.1.1 = { fort_15th = no }
+923.5.13 = { owner = HT1 controller = HT1 add_core = HT1 remove_core = ZU1 }
+937.1.1 = { owner = HJ1 controller = HJ1 add_core = HJ1 remove_core = HT1 }
+947.1.1 = { owner = HH1 controller = HH1 add_core = HH1 remove_core = HJ1 }
+951.1.1 = { owner = HZ1 controller = HZ1 add_core = HZ1 remove_core = HH1 }
+960.1.1 = { owner = SNG controller = SNG add_core = SNG remove_core = HZ1 }
+1100.1.1 = { base_tax = 11 base_production = 8 }
+1100.2.24 = { religion = daoism }
+1127.1.1 = { controller = GNN  }
+1127.1.10 = { owner = GNN controller = GNN add_core = GNN remove_core = SNG }
+1127.3.1 = { base_tax = 8 base_production = 7 base_manpower = 7 }
+1133.1.1 = { owner = DQ3 controller = DQ3 add_core = DQ3 }
+1137.11.18 = { owner = GNN controller = GNN add_core = GNN remove_core = DQ3 }
+1180.1.1 = { base_tax = 9 base_production = 6 base_manpower = 7 }
+1234.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = GNN }
+1260.5.5 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1333.3.1 = { base_tax = 10 base_production = 9 base_manpower = 8 }
+1359.1.1 = { owner = ZH2 controller = ZH2 add_core = ZH2 remove_core = YUA }
+1368.6.1 = { owner = MNG controller = MNG add_core = MNG remove_core = ZH2 }
+1626.3.1 = { base_tax = 11 base_production = 10 base_manpower = 9 }
+1628.1.1 = { revolt_risk = 10 } # Li Zicheng rebellion
+1644.1.1 = { revolt_risk = 0 owner = CSH controller = CSH add_core = CSH } # Li Zicheng's Shun empire
+1645.2.1 = { owner = QNG controller = QNG add_core = QNG remove_core = CSH }
+1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+1662.1.1 = { remove_core = MNG }
+1912.2.12 = { owner = BNN controller = BNN add_core = BNN  remove_core = QNG  }
+1917.7.6 = { owner = ZX1 controller = ZX1 add_core = ZX1 remove_core = BNN }
+1925.1.1 = { owner = XB1 controller = XB1 add_core = XB1 remove_core = ZX1 }
+1925.2.1 = { base_tax = 6 base_production = 6 base_manpower = 9 }
+1926.3.1 = { owner = ZX1 controller = ZX1 add_core = ZX1 remove_core = XB1 }
+1927.3.1 = { owner = GJ1 controller = GJ1 add_core = GJ1 remove_core = ZX1 }
+1928.12.29 = { owner = ROC controller = ROC add_core = ROC remove_core = GJ1 }
+1949.10.1 = { owner = CHN controller = CHN add_core = CHN remove_core = ROC religion = communism }
+1966.5.1 = { base_tax = 7 base_production = 7 base_manpower = 10 }
+1978.1.1 = { base_tax = 8 base_production = 8 base_manpower = 8 }
+2000.1.1 = { base_tax = 9 base_production = 9 base_manpower = 9 }
+2011.1.1 = { base_tax = 10 base_production = 10 base_manpower = 10 }

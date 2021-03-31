@@ -1,0 +1,17 @@
+name = "CQ‹Rb‰N"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 667
+}
+
+1271.1.1 = {
+	add_attacker = YUA
+	add_defender = SNG
+}
+
+1279.3.19 = {
+	rem_attacker = YUA
+	rem_defender = SNG
+}

@@ -1,0 +1,11 @@
+spriteTypes = {	
+
+		spriteType = {
+		name = "GFX_advisor_gaozhanggong"
+		texturefile = "gfx//interface//advisors//gaozhanggong.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}

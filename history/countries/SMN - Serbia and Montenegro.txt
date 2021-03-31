@@ -1,0 +1,116 @@
+government = republic
+set_legacy_government = constitutional_republic
+mercantilism = 0.1
+primary_culture = serbian
+religion = orthodox
+technology_group = eastern
+capital = 4362
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1900.1.1 = {
+  technology_group = western
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1945.1.1 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = universal_suffrage_reform
+  add_government_reform = reinforce_republican_values_reform
+  add_government_reform = multi_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = ceremonial_president
+  set_legacy_government = presidental_republic
+}
+1992.4.28 = {
+  monarch = {
+    name = "Y^ÃëﬂR TNâGY"  # Dobrica Cosic
+    adm = 4
+    dip = 4
+    mil = 3
+    religion = orthodox
+  }
+}
+1993.6.1 = {
+  monarch = {
+    name = "s|m¿N …bjgmÙuGY"  # Milos Radulovic
+    adm = 2
+    dip = 3
+    mil = 3
+    religion = orthodox
+  }
+}
+1993.6.25 = {
+  monarch = {
+    name = "POpQ )R)RGY"  # Zoran Lilic
+    adm = 3
+    dip = 2
+    mil = 4
+    religion = orthodox
+  }
+}
+1997.6.25 = {
+  monarch = {
+    name = "ØeS>ç ZSÂÇÙuGY"  # Srda Bozovic
+    adm = 3
+    dip = 3
+    mil = 1
+    religion = orthodox
+  }
+}
+1997.7.23 = {
+  monarch = {
+    name = "ØemZS9N s|mÇÙuGY"  # Slobodan Milosevic
+    adm = 5
+    dip = 2
+    mil = 3
+    religion = orthodox
+  }
+}
+2000.10.7 = {
+  monarch = {
+    name = "ÉlOØe…b+Y —y¿N˛V<SﬂR"  # Vojislav Kostunica
+    adm = 4
+    dip = 2
+    mil = 4
+    religion = orthodox
+  }
+}
+2003.3.7 = {
+  monarch = {
+    name = "ØeÊóXbNbS löWÙuGY"  # Svetozar Marovic
+    adm = 3
+    dip = 3
+    mil = 2
+    religion = orthodox
+  }
+}

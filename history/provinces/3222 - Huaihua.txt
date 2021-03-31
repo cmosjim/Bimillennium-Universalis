@@ -1,0 +1,73 @@
+#3222 - Huaihua
+
+owner = HND
+controller = HND
+culture = miao
+religion = animism
+capital = "`S"
+trade_goods = tea
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = HND
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+
+8.12.1 = { owner = NEW controller = NEW add_core = NEW remove_core = HND }
+23.10.6 = { owner = WX2 controller = WX2 add_core = WX2 remove_core = NEW }
+25.9.1 = { owner = TI1 controller = TI1 add_core = TI1 remove_core = WX2 }
+29.1.1 = { owner = HND controller = HND add_core = HND remove_core = TI1 }
+191.1.1 = { owner = LOE controller = LOE add_core = LOE remove_core = HND }
+194.1.1 = { owner = LZ1 controller = LZ1 add_core = LZ1 remove_core = LOE }
+213.1.1 = { owner = LUP controller = LUP add_core = LUP remove_core = LZ1 }
+221.4.6 = { owner = SHU controller = SHU add_core = SHU remove_core = LUP }
+263.11.1 = { owner = WEI controller = WEI add_core = WEI remove_core = SHU }
+266.2.4 = { owner = JN1 controller = JN1 add_core = JN1 remove_core = WEI }
+420.1.1 = { owner = LSO controller = LSO add_core = LSO remove_core = JN1 }
+479.1.1 = { owner = QIC controller = QIC add_core = QIC remove_core = LSO }
+502.1.1 = { owner = LN1 controller = LN1 add_core = LN1 remove_core = QIC }
+557.1.1 = { owner = CEN controller = CEN add_core = CEN remove_core = LN1 }
+561.1.1 = {  owner = CZH controller = CZH add_core = CZH remove_core = CEN }
+581.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CZH }
+618.6.18 = { owner = TNG controller = TNG add_core = TNG remove_core = SUI }
+637.1.1 = { religion = confucianism }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+705.2.21 = { owner = TNG controller = TNG add_core = TNG remove_core = WZ1 }
+902.1.1 = { owner = QQ1 controller = QQ1 add_core = QQ1 remove_core = TNG }
+938.1.1 = { owner = CUU controller = CUU add_core = CUU remove_core = QQ1 }
+951.11.1 = { owner = QQ1 controller = QQ1 add_core = QQ1 remove_core = CUU }
+971.1.1 = { owner = SNG controller = SNG add_core = SNG remove_core = QQ1 }
+1277.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = SNG }
+1363.1.16 = { owner = XA1 controller = XA1 add_core = XA1 remove_core = YUA }
+1369.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = XA1 }
+1573.1.1 = { culture = yao religion = satsana_phi }
+1594.1.1 = { revolt_risk = 6 } # Rebels
+1599.1.1 = { revolt_risk = 0 }
+1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+1657.1.1 = { owner = QNG controller = QNG }
+1662.4.1 = { owner = PC1 controller = PC1 add_core = PC1 }# Three Feudatories - Wu Sangui titled as Prince of Pingxi in Yunnan
+1678.6.1 = { controller = WDC owner = WDC remove_core = PC1 } # Three Feudatories revolt
+
+
+1681.10.1 = {	owner = QNG
+	controller = QNG
+	add_core = QNG
+	remove_core = WDC 
+	remove_core = MNG
+}
+1751.1.1 = { base_tax = 3 base_manpower = 2 }
+1911.11.4 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Guizhou uprising
+1912.2.12 = {  owner = BNN controller = BNN add_core = BNN  remove_core = QNG capital = "Kaili" }
+1916.6.6 = { revolt = { type = particularist_rebels size = 0 } controller = REB }
+1917.7.6 = { owner = QX1 controller = QX1 add_core = QX1 remove_core = BNN }
+1926.9.1 = { owner = GJ1 controller = GJ1 add_core = GJ1 remove_core = QX1 }
+1928.12.29 = { owner = ROC controller = ROC add_core = ROC remove_core = GJ1 }
+1949.10.1 = { owner = CHN controller = CHN add_core = CHN remove_core = ROC }
+1957.1.1 = { religion = communism }
+1978.1.1 = { base_tax = 3 base_production = 2 base_manpower = 2 }

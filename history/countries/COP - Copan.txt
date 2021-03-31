@@ -1,0 +1,369 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = highland_mayan
+religion = mesoamerican_religion
+technology_group = mesoamerican
+capital = 2632
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+426.1.1 = {
+  monarch = {
+    name = "öNKQì^€k"  # K'inich Yax K'uk' Mo'
+    dynasty = "—yXo"  # Copan
+    birth_date = 396.1.1
+    adm = 5
+    dip = 0
+    mil = 0
+  }
+}
+426.1.1 = {
+  heir = {
+    name = "'Y*Y3ñãs"  # K'inich Popol Hol
+    monarch_name = "'Y*Y3ñãs"  # K'inich Popol Hol
+    dynasty = "—yXo"  # Copan
+    birth_date = 407.1.1
+    death_date = 460.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 0
+  }
+}
+437.1.1 = {
+  monarch = {
+    name = "'Y*Y3ñãs"  # K'inich Popol Hol
+    dynasty = "—yXo"  # Copan
+    birth_date = 407.1.1
+    adm = 4
+    dip = 0
+    mil = 0
+  }
+}
+437.1.1 = {
+  heir = {
+    name = "ì^ √WKQØe"  # Ku Ix
+    monarch_name = "ì^ √WKQØe"  # Ku Ix
+    dynasty = "—yXo"  # Copan
+    birth_date = 430.1.1
+    death_date = 480.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+460.1.1 = {
+  monarch = {
+    name = "ì^ √WKQØe"  # Ku Ix
+    dynasty = "—yXo"  # Copan
+    birth_date = 430.1.1
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+460.1.1 = {
+  heir = {
+    name = "Fz≈ñS TNS"  # Muyal Jol
+    monarch_name = "Fz≈ñS TNS"  # Muyal Jol
+    dynasty = "—yXo"  # Copan
+    birth_date = 450.1.1
+    death_date = 504.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 4
+  }
+}
+480.1.1 = {
+  monarch = {
+    name = "Fz≈ñS TNS"  # Muyal Jol
+    dynasty = "—yXo"  # Copan
+    birth_date = 450.1.1
+    adm = 0
+    dip = 0
+    mil = 4
+  }
+}
+480.1.1 = {
+  heir = {
+    name = "yåjïãs"  # B'alam Nehn
+    monarch_name = "yåjïãs"  # B'alam Nehn
+    dynasty = "—yXo"  # Copan
+    birth_date = 474.1.1
+    death_date = 544.1.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 4
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+504.1.1 = {
+  monarch = {
+    name = "yåjïãs"  # B'alam Nehn
+    dynasty = "—yXo"  # Copan
+    birth_date = 474.1.1
+    adm = 1
+    dip = 5
+    mil = 4
+  }
+}
+514.1.1 = {
+  heir = {
+    name = "ZS 'ki` ˙W<SGY"  # Wil Ohn K'inich
+    monarch_name = "ZS 'ki` ˙W<SGY"  # Wil Ohn K'inich
+    dynasty = "—yXo"  # Copan
+    birth_date = 514.1.1
+    death_date = 551.1.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 1
+  }
+}
+544.1.1 = {
+  monarch = {
+    name = "ZS 'ki` ˙W<SGY"  # Wil Ohn K'inich
+    dynasty = "—yXo"  # Copan
+    birth_date = 514.1.1
+    adm = 0
+    dip = 5
+    mil = 1
+  }
+}
+544.1.1 = {
+  heir = {
+    name = "(ÑaSbS"  # Sak-Lu
+    monarch_name = "(ÑaSbS"  # Sak-Lu
+    dynasty = "—yXo"  # Copan
+    birth_date = 521.1.1
+    death_date = 553.5.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+551.1.1 = {
+  monarch = {
+    name = "(ÑaSbS"  # Sak-Lu
+    dynasty = "—yXo"  # Copan
+    birth_date = 521.1.1
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+551.1.1 = {
+  heir = {
+    name = "gÆNé2mNÜ"  # Tzi-B'alam
+    monarch_name = "gÆNé2mNÜ"  # Tzi-B'alam
+    dynasty = "—yXo"  # Copan
+    birth_date = 523.1.1
+    death_date = 578.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 2
+  }
+}
+553.5.1 = {
+  monarch = {
+    name = "gÆNé2mNÜ"  # Tzi-B'alam
+    dynasty = "—yXo"  # Copan
+    birth_date = 523.1.1
+    adm = 4
+    dip = 0
+    mil = 2
+  }
+}
+553.5.1 = {
+  heir = {
+    name = "aSaS±î1u^yr"  # K'ak' Chan Yopaat
+    monarch_name = "aSaS±î1u^yr"  # K'ak' Chan Yopaat
+    dynasty = "—yXo"  # Copan
+    birth_date = 548.1.1
+    death_date = 628.2.5
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 1
+  }
+}
+578.1.1 = {
+  monarch = {
+    name = "aSaS±î1u^yr"  # K'ak' Chan Yopaat
+    dynasty = "—yXo"  # Copan
+    birth_date = 548.1.1
+    adm = 1
+    dip = 0
+    mil = 1
+  }
+}
+598.1.1 = {
+  heir = {
+    name = "ﬂpyåãs"  # Chan Imix K'awiil
+    monarch_name = "ﬂpyåãs"  # Chan Imix K'awiil
+    dynasty = "—yXo"  # Copan
+    birth_date = 598.1.1
+    death_date = 695.1.2
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 0
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+628.2.5 = {
+  monarch = {
+    name = "ﬂpyåãs"  # Chan Imix K'awiil
+    dynasty = "—yXo"  # Copan
+    birth_date = 598.1.1
+    adm = 4
+    dip = 1
+    mil = 0
+  }
+}
+665.1.1 = {
+  heir = {
+    name = "LNôlKQ…b2S¡ LNÙT aSÙuO"  # Uaxaclajuun Ub'aah K'awiil
+    monarch_name = "LNôlKQ…b2S¡ LNÙT aSÙuO"  # Uaxaclajuun Ub'aah K'awiil
+    dynasty = "—yXo"  # Copan
+    birth_date = 665.1.1
+    death_date = 738.5.3
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 1
+  }
+}
+695.1.2 = {
+  monarch = {
+    name = "LNôlKQ…b2S¡ LNÙT aSÙuO"  # Uaxaclajuun Ub'aah K'awiil
+    dynasty = "—yXo"  # Copan
+    birth_date = 665.1.1
+    adm = 0
+    dip = 0
+    mil = 1
+  }
+}
+708.1.1 = {
+  heir = {
+    name = "?ñ>ç aSKQ TNnf…bpg ±î aSZS"  # Ajaw K'ak' Joplaj Chan K'awiil
+    monarch_name = "?ñ>ç aSKQ TNnf…bpg ±î aSZS"  # Ajaw K'ak' Joplaj Chan K'awiil
+    dynasty = "—yXo"  # Copan
+    birth_date = 708.1.1
+    death_date = 749.1.1
+    claim = 95
+    adm = 5
+    dip = 0
+    mil = 1
+  }
+}
+738.5.3 = {
+  monarch = {
+    name = "?ñ>ç aSKQ TNnf…bpg ±î aSZS"  # Ajaw K'ak' Joplaj Chan K'awiil
+    dynasty = "—yXo"  # Copan
+    birth_date = 708.1.1
+    adm = 5
+    dip = 0
+    mil = 1
+  }
+}
+738.5.3 = {
+  heir = {
+    name = "ﬂpÛXãs"  # Ajaw K'ak' Yipyaj Chan K'awiil
+    monarch_name = "ﬂpÛXãs"  # Ajaw K'ak' Yipyaj Chan K'awiil
+    dynasty = "—yXo"  # Copan
+    birth_date = 719.1.1
+    death_date = 763.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 5
+  }
+}
+749.1.1 = {
+  monarch = {
+    name = "ﬂpÛXãs"  # Ajaw K'ak' Yipyaj Chan K'awiil
+    dynasty = "—yXo"  # Copan
+    birth_date = 719.1.1
+    adm = 2
+    dip = 4
+    mil = 5
+  }
+}
+749.1.1 = {
+  heir = {
+    name = "≈ñÎX^(ÑÖy2S^yr"  # Yax Pasaj Chan Yopaat
+    monarch_name = "≈ñÎX^(ÑÖy2S^yr"  # Yax Pasaj Chan Yopaat
+    dynasty = "—yXo"  # Copan
+    birth_date = 733.1.1
+    death_date = 820.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+763.1.1 = {
+  monarch = {
+    name = "≈ñÎX^(ÑÖy2S^yr"  # Yax Pasaj Chan Yopaat
+    dynasty = "—yXo"  # Copan
+    birth_date = 733.1.1
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}
+790.1.1 = {
+  heir = {
+    name = "ÁqÛwàR≤bw"  # Ukit Took
+    monarch_name = "ÁqÛwàR≤bw"  # Ukit Took
+    dynasty = "—yXo"  # Copan
+    birth_date = 790.1.1
+    death_date = 830.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 5
+  }
+}
+820.1.1 = {
+  monarch = {
+    name = "ÁqÛwàR≤bw"  # Ukit Took
+    dynasty = "—yXo"  # Copan
+    birth_date = 790.1.1
+    adm = 1
+    dip = 2
+    mil = 5
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

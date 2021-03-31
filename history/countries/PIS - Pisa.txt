@@ -1,0 +1,134 @@
+government = republic
+add_government_reform = noble_elite_reform
+set_legacy_government = noble_republic
+mercantilism = 0.1
+primary_culture = tuscan
+religion = catholic
+technology_group = western
+capital = 115
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1005.1.1 = {
+  monarch = {
+    name = "-WY"  # Guido
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1039.1.1 = {
+  monarch = {
+    name = "Oppizo"
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1077.1.1 = {
+  monarch = {
+    name = "pgÉbSY"  # Gerardo
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1105.1.1 = {
+  monarch = {
+    name = "|V—VW «ƒÌ‘Ñy<S"  # Pietro Moriconi
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+1135.1.1 = {
+  monarch = {
+    name = "=O³u·V ·V KQ±ƒSƒl"  # Bernard de Clairvaux
+    adm = 2
+    dip = 2
+    mil = 4
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1170.1.1 = {
+  monarch = {
+    name = "?–SXb ôu¯eTR‚„"  # Alberto Visconti
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1184.1.1 = {
+  monarch = {
+    name = "ÃWSêPŸeY ôu¯eTR‚„"  # Eldizio Visconti
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1208.1.1 = {
+  monarch = {
+    name = "mTXÌ‘eY W(„Ì‘eY"  # Lotario Rosario
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1250.1.1 = {
+  monarch = {
+    name = "9ãNÌ‘Ñy ôu¯eTR‚„"  # Federico Visconti
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1320.1.1 = {
+  monarch = {
+    name = "Bonifazio di Donotatico"
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1380.1.1 = {
+  monarch = {
+    name = " R^Ì‘ÃWS lšÌ‘šN ôu¯eTR‚„"  # Gabriele Maria Visconti
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1494.1.1 = {
+  monarch = {
+    name = "‰™„ eYpQê"  # Simone Orlandi
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}

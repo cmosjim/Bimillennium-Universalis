@@ -1,0 +1,120 @@
+government = monarchy
+add_government_reform = feudalism_reform
+mercantilism = 0.1
+technology_group = western
+primary_culture = hannoverian
+religion = catholic
+capital = 85
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1750.1.1 = {
+  government = republic
+  set_legacy_government = constitutional_republic
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1945.5.8 = {
+  monarch = {
+    name = "ÿßv›Q`S†˜	ÿ"  # (Allied Occupation)
+    adm = 2
+    dip = 2
+    mil = 2
+    religion = protestant
+    regent = yes
+  }
+}
+1949.9.7 = {
+  monarch = {
+    name = "aSS ?–ú‹·V"  # Karl Arnold
+    adm = 3
+    dip = 4
+    mil = 2
+    religion = protestant
+  }
+}
+1949.9.13 = {
+  monarch = {
+    name = "yreYYS jŒ¯e"  # Theodor Heuss
+    adm = 4
+    dip = 2
+    mil = 4
+    religion = protestant
+  }
+}
+1958.1.1 = {
+  decision = join_european_union
+}
+1959.9.13 = {
+  monarch = {
+    name = "wmàVÌ‘^ T^KQ"  # Heinrich Lübke
+    adm = 4
+    dip = 3
+    mil = 2
+    religion = protestant
+  }
+}
+1969.7.1 = {
+  monarch = {
+    name = "äS¯eTX+Y wm…müf"  # Gustav Heinemann
+    adm = 2
+    dip = 4
+    mil = 2
+    religion = protestant
+  }
+}
+1974.7.1 = {
+  monarch = {
+    name = "ætSyr 0ŒS"  # Walter Scheel
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = protestant
+  }
+}
+1979.7.1 = {
+  monarch = {
+    name = "aSS aS¯eÕn¯e"  # Karl Carstens
+    adm = 2
+    dip = 4
+    mil = 4
+    religion = protestant
+  }
+}
+1984.7.1 = {
+  monarch = {
+    name = "Ì‘Y·V ¯Q O›(ƒýlKQ"  # Richard von Weizsäcker
+    adm = 4
+    dip = 4
+    mil = 3
+    religion = protestant
+  }
+}

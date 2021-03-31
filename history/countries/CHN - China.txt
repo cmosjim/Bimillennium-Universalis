@@ -1,0 +1,184 @@
+government = republic
+add_government_reform = revolutionary_republic_normal_reform
+government_rank = 3
+mercantilism = 0.1
+primary_culture = chihan
+culture_group_union = east_asian #Æ‰b:NÍkıV
+religion = communism
+technology_group = early_chinese
+capital = 1816	# S¬N
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1911.1.1 = { religion = communism }
+1945.8.15 = {
+	monarch = {
+		name = "ÛkılN"
+		birth_date = 1893.12.26
+		#age = 52
+		adm = 5
+		mil = 6
+		dip = 5
+		religion = communism
+        leader = { 
+                name = "ÛkılN"	
+                type = general	
+                #rank = 0	
+                fire = 6	
+                shock = 9	
+                manuever = 5
+                siege = 4
+				}
+	}
+}
+
+1949.10.1 = {
+	government = republic
+	add_government_reform = oligarchy_reform
+	add_government_reform = strengthen_executive_powers_reform
+	add_government_reform = dictatorial_rule
+	add_government_reform = communist_government
+	add_government_reform = powerful_head_of_state
+	set_legacy_government = communist_dictatorship
+}
+
+1949.10.1 = { technology_group = modern_chinese set_global_flag = jfzz_jieshu }
+1950.5.6 = { set_global_flag = chaozhan_start }
+1950.10.19 = { set_global_flag = kangmeiyuanchao2
+set_country_flag = sulianyuanzhu2
+ }
+1953.7.1 = { clr_global_flag = kangmeiyuanchao2 }
+1957.1.1 = { set_country_flag = ziranzaihai111
+   set_country_flag = hezuoshe1
+   set_global_flag = zhongsujiaoe
+ }
+1959.1.1 = { clr_country_flag = ziranzaihai111
+ }
+#1959t^4g27åeÿ1968t^10g31åe
+1959.4.27 = {
+	monarch = {
+		name = "RSGY"
+		birth_date = 1898.11.24
+		#age = 59
+		adm = 3
+		mil = 3
+		dip = 5
+		religion = communism
+	}
+}
+
+#1966t^5gÿ-NqQ-N.YÑS^”NNmQåwÿVËYÛLˆ‡eS'Yi—‹T
+1966.5.16 = {
+
+	monarch = {
+		name = "ÛkılN"
+		birth_date = 1893.12.26
+		#age = 73
+		adm = 5
+		mil = 6
+		dip = 5
+		religion = communism
+        leader = { 
+                name = "ÛkılN"	
+                type = general	
+                #rank = 0	
+                fire = 6	
+                shock = 9	
+                manuever = 5
+                siege = 4
+				}
+	}
+	
+}
+#1968t^VËY:MOÿ1975t^,rÛVJShQıVºNlãNhˆ'YOÇ
+#.Rd–	gsQ0-NNSºNlqQŒTıVIN-^0„vag>kÿŸ^d–dkNLw¡R
+#1976.10.7NSıV•±R^‡ei—Óumg
+1970.1.1 = { 
+		add_country_modifier = {
+			name = "people_wake_com"
+			duration = -1
+		}
+}		
+1976.10.7 = {
+
+	monarch = {
+		name = "NSıV•"
+		birth_date = 1921.2.16
+		adm = 5
+		dip = 2
+		mil = 3
+		religion = communism
+	}
+	government = republic
+	add_government_reform = oligarchy_reform
+	add_government_reform = presidential_reform
+	add_government_reform = strengthen_executive_powers_reform
+	add_government_reform = single_party_system
+	add_government_reform = communist_government
+	add_government_reform = powerful_head_of_state
+	set_legacy_government = socialist_republic	
+}
+
+#1981t^6g28åeÿ1989t^11g9åe
+
+1981.6.28 = {
+	monarch = {
+		name = "“Ss^"
+		birth_date = 1904.8.22
+		#age = 74
+		adm = 6
+		dip = 3
+		mil = 4
+		religion = communism
+	}
+}
+#-NWqQ0uè,rASŒN!khQWãNhˆ'Yg¼e1982t^9g1åeó11åe(WS¬NìS
+1982.9.11 = {
+	add_government_reform = china_socialism
+}	
+1989.6.23 = {
+	monarch = {
+		name = "mlıll"
+		birth_date = 1926.8.17		
+		religion = communism
+		##age = 62
+		adm = 4
+		mil = 5
+		dip = 4
+	}
+}
+
+2002.11.15 = {
+	monarch = {
+		name = "áw&•›m"
+		birth_date = 1942.12.21		
+		#religion = confucianism
+		#age = 60
+		adm = 5
+		mil = 2
+		dip = 2
+	}
+}
+
+2012.11.15 = {
+	monarch = {
+		name = "`NÑs^"
+		birth_date = 1953.6.15		
+		#religion = confucianism
+		#age = 59
+		adm = 3
+		mil = 3
+		dip = 5
+	}
+}
+

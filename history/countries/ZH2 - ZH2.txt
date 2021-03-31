@@ -1,0 +1,68 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+government_rank = 1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = mongol
+add_accepted_culture = chihan
+capital = 2492
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+#ßRU^(g?QÿChaqan-temürÿ1328t^1362t^	ÿÿWR÷^^tÿCNî†lºN
+1359.1.1 = {
+	monarch = {
+		name = "ßRU^(g?Q"
+		birth_date =  1328.1.1
+		death_date =  1362.1.1
+		adm = 4
+		dip = 4
+		mil = 6
+		leader = { name = "ßRU^(g?Q"	type = general	fire = 7	shock = 8	manuever = 3	siege = 5 }
+	}
+}
+#óckŒNASŒNt^ÿ1362t^	ÿmQgÿôVÊvıöe«ˆ0u0N0‹sëXÚ‹:R‰k0
+#‹sİOİOÿt1315t^ÿ1375t^9g17åe	ÿÿˆlNÿÊN‰RËVwèÉl1uäSÎWPR	ÿ
+1359.1.1 = {
+	heir = {
+		name = "‹sİOİO"
+        monarch_name = "‹sİOİO"
+		birth_date = 1315.1.1
+		death_date = 1375.9.17
+		claim = 100
+		dip = 5
+		adm = 5
+		mil = 6
+	}
+}
+
+1359.1.1 = {
+	add_opinion = {
+		who = YUA
+		modifier = ZH2_att_YUA
+	}	
+	add_historical_friend = YUA
+}	
+
+1362.6.1 = {
+	monarch = {
+		name = "‹sİOİO"
+
+		birth_date = 1315.1.1
+		death_date = 1375.9.17
+		adm = 5
+		dip = 5
+		mil = 6
+		leader = { name = "‹sİOİO"	type = general	fire = 8	shock = 8	manuever = 5	siege = 6 }
+	}
+}
+

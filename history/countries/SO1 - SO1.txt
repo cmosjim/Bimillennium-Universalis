@@ -1,0 +1,110 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = beidi
+capital = 685	# Chengdu
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+
+
+
+#00gπeÇÇ¶^YuT0upfkÇÇ¶^O Èóm 914t^928t^
+#00gπeÇÇ¶^YuT ÈóÑo 928t^929t^
+#00gπeÇÇ¶^O ∑^èy 929t^932t^
+#00gπeÇÇ¶^YuT .V^T 932t^939t^
+#00HñYuãs0gπeÇÇ¶^O ØQVf 939t^952t^
+#00upﬁT'Y˝êcwú^ïÚS0gπeYuT ØQÁuN 952t^ˇt^
+#00âs^ãs0upﬁTÂwﬁT ÙàNm ˇt^1002t^
+914.1.1 = {
+	monarch = {
+		name = "Èóm"
+		#dynasty = " "
+		claim = 100
+		dip = 2
+		adm = 4
+		mil = 3
+		leader = { name = "Èóm"	type = general	fire = 3	shock = 4	manuever = 3	siege = 2 }
+	}
+}
+
+928.1.1 = {
+	monarch = {
+		name = "ÈóÑo"
+		#dynasty = " "
+		claim = 100
+		dip = 4
+		adm = 4
+		mil = 3
+		leader = { name = "ÈóÑo"	type = general	fire = 3	shock = 4	manuever = 3	siege = 2 }
+	}
+}
+
+929.1.1 = {
+	monarch = {
+		name = "∑^èy"
+		#dynasty = " "
+		claim = 100
+		dip = 5
+		adm = 3
+		mil = 3
+		leader = { name = "∑^èy"	type = general	fire = 5	shock = 2	manuever = 3	siege = 2 }
+	}
+}
+
+932.1.1 = {
+	monarch = {
+		name = ".V^T"
+		#dynasty = " "
+		claim = 100
+		dip = 5
+		adm = 5
+		mil = 3
+		leader = { name = ".V^T"	type = general	fire = 5	shock = 6	manuever = 5	siege = 4 }
+	}
+}
+
+939.1.1 = {
+	monarch = {
+		name = "ØQVf"
+		#dynasty = " "
+		claim = 100
+		dip = 2
+		adm = 2
+		mil = 5
+		leader = { name = "ØQVf"	type = general	fire = 5	shock = 5	manuever = 3	siege = 4 }
+	}
+}
+
+952.1.1 = {
+	monarch = {
+		name = "ØQÁuN"
+		#dynasty = " "
+		claim = 100
+		dip = 3
+		adm = 3
+		mil = 3
+		leader = { name = "ØQÁuN"	type = general	fire = 3	shock = 4	manuever = 3	siege = 2 }
+	}
+}
+
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = {
+	government = modern_chinese_warlord
+	add_government_reform = modern_chinese_warlord_reform
+	religion = liberalism
+}
+
+1949.10.1 = { technology_group = modern_chinese }

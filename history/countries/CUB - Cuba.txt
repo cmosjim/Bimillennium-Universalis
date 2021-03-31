@@ -1,0 +1,238 @@
+government = republic
+add_government_reform = revolutionary_republic_normal_reform
+mercantilism = 0.1
+technology_group = western
+primary_culture = iberian_caribbean
+religion = catholic
+capital = 484
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1898.8.12 = {
+  monarch = {
+    name = "XblöØe √WØeyr…bæè ^Slö"  # Tom·s Estrada Palma
+    adm = 4
+    dip = 2
+    mil = 1
+    religion = catholic
+  }
+}
+1902.5.20 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  set_legacy_government = constitutional_republic
+  government_rank = 2
+  religion = liberalism
+}
+1909.1.28 = {
+  monarch = {
+    name = "UO^X s|<hS b¶ûØe"  # JosÈ Miguel GÛmez
+    adm = 3
+    dip = 2
+    mil = 2
+    religion = catholic
+  }
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1913.5.20 = {
+  monarch = {
+    name = "löÃëeY aSâöN Öh˙ãaSS"  # Mario CarcÌa Menocal
+    adm = 2
+    dip = 3
+    mil = 2
+    religion = catholic
+  }
+}
+1920.1.1 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1921.5.20 = {
+  monarch = {
+    name = "?ñSV˜ñY (ÑöNØe"  # Alfredo Zayas
+    adm = 4
+    dip = 1
+    mil = 2
+    religion = catholic
+  }
+}
+1925.5.20 = {
+  monarch = {
+    name = "pg…bSY löÂgY"  # Gerardo Machado
+    adm = 1
+    dip = 2
+    mil = 1
+    religion = catholic
+  }
+}
+1933.8.13 = {
+  monarch = {
+    name = "ÂgSØe ¸f™R√WS ∑V ^XØeiO∑VØe"  # Carlos Manuel de CÈspedes
+    adm = 3
+    dip = 3
+    mil = 3
+    religion = catholic
+  }
+}
+1933.9.10 = {
+  monarch = {
+    name = "…bôÑ <h≥R"  # RamÛn Grau
+    adm = 3
+    dip = 1
+    mil = 2
+    religion = catholic
+  }
+}
+1934.1.18 = {
+  monarch = {
+    name = "aSmØe ÖhÍè√Wyr"  # Carlos Medieta
+    adm = 2
+    dip = 3
+    mil = 2
+    religion = catholic
+  }
+}
+1935.12.11 = {
+  monarch = {
+    name = "UO^X ÙT<Syr"  # JosÈ Barnet
+    adm = 3
+    dip = 3
+    mil = 2
+    religion = catholic
+  }
+}
+1936.5.20 = {
+  monarch = {
+    name = "lö	TS löÃëöN˙ã b¶ûØe"  # Miguel Mariano GÛmez
+    adm = 1
+    dip = 5
+    mil = 2
+    religion = catholic
+  }
+}
+1936.12.24 = {
+  monarch = {
+    name = "9ç∑VÃë—y …b˜ñY ^Åú"  # Federico Laredo Br˙
+    adm = 3
+    dip = 3
+    mil = 3
+    religion = catholic
+  }
+}
+1940.10.10 = {
+  monarch = {
+    name = "ÃRS®NâeY ÙTÇÑØeTX"  # Fulgencio Batista
+    adm = 4
+    dip = 3
+    mil = 2
+    religion = catholic
+  }
+}
+1944.10.10 = {
+  monarch = {
+    name = "…bôÑ <h≥R"  # RamÛn Grau
+    adm = 3
+    dip = 1
+    mil = 2
+    religion = catholic
+  }
+}
+1948.10.10 = {
+  monarch = {
+    name = "aSmØe ÆvãV'k 0taS…bØe"  # Carlos PrÌo Socarr·s
+    adm = 4
+    dip = 4
+    mil = 1
+    religion = catholic
+  }
+}
+1952.5.10 = {
+  monarch = {
+    name = "ÃRS®NâeY ÙTÇÑØeTX"  # Fulgencio Batista
+    adm = 4
+    dip = 3
+    mil = 2
+    religion = catholic
+  }
+}
+1959.1.3 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = presidential_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = communist_government
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = socialist_republic
+  religion = communism
+  monarch = {
+    name = "¸f™R√WS LNÅúÍèöN"  # Manuel Urrutia
+    adm = 2
+    dip = 4
+    mil = 4
+    religion = catholic
+  }
+}
+1959.7.18 = {
+  monarch = {
+    name = "eYØeÊtSY YSÇÑ—yØe Xb…bY"  # Osvaldo DorticÛs Torrado
+    adm = 3
+    dip = 3
+    mil = 3
+    religion = catholic
+  }
+}
+1976.12.2 = {
+  monarch = {
+    name = "ÚÉ∑VS aSØeyrW"  # Fidel Castro
+    adm = 4
+    dip = 3
+    mil = 5
+    religion = communism
+  }
+}
+2008.2.24 = {
+  monarch = {
+    name = "≥RS aSØeyrW"  # Ra˙l Castro
+    adm = 3
+    dip = 3
+    mil = 4
+    religion = catholic
+  }
+}

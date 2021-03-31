@@ -1,0 +1,37 @@
+#2899 - Mangazea
+
+latent_trade_goods = {
+	oil
+}
+
+culture = samoyed
+religion = shamanism
+capital = "Mangazea"
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+native_ferocity = 1
+native_hostileness = 1
+
+1300.1.1 = { discovered_by = nomad_group }
+
+1600.1.1 = {	discovered_by = RUS
+		owner = RUS
+		controller = RUS
+	   	religion = orthodox
+	   	culture = russian
+		trade_goods = fur
+		citysize = 388
+	   }
+1605.1.1 = {	add_core = RUS
+	   	is_city = yes
+		
+	   }
+
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1978.1.1 = { trade_goods = oil capital = "Urengoy" base_tax = 2 base_production = 3 }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+
+

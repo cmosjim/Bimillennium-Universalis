@@ -1,0 +1,145 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = kanauji
+religion = hinduism
+technology_group = early_indian
+capital = 2191
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+520.1.1 = {
+  monarch = {
+    name = "båe"  # Pushyabhuti
+    dynasty = "O9V±"  # Vardhana
+    birth_date = 490.1.1
+    adm = 3
+    dip = 0
+    mil = 2
+  }
+}
+525.1.1 = {
+  heir = {
+    name = "?–íY"  # Aditya
+    monarch_name = "?–íY"  # Aditya
+    dynasty = "O9V±"  # Vardhana
+    birth_date = 525.1.1
+    death_date = 580.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+555.1.1 = {
+  monarch = {
+    name = "?–íY"  # Aditya
+    dynasty = "O9V±"  # Vardhana
+    birth_date = 525.1.1
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+555.1.1 = {
+  heir = {
+    name = "éƒWÃ‹UW"  # Prabhakara
+    monarch_name = "éƒWÃ‹UW"  # Prabhakara
+    dynasty = "O9V±"  # Vardhana
+    birth_date = 550.1.1
+    death_date = 605.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 5
+  }
+}
+580.1.1 = {
+  monarch = {
+    name = "éƒWÃ‹UW"  # Prabhakara
+    dynasty = "O9V±"  # Vardhana
+    birth_date = 550.1.1
+    adm = 1
+    dip = 2
+    mil = 5
+  }
+}
+580.1.1 = {
+  heir = {
+    name = "W–"  # Rajya
+    monarch_name = "W–"  # Rajya
+    dynasty = "O9V±"  # Vardhana
+    birth_date = 575.1.1
+    death_date = 606.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+605.1.1 = {
+  monarch = {
+    name = "W–"  # Rajya
+    dynasty = "O9V±"  # Vardhana
+    birth_date = 575.1.1
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+605.1.1 = {
+  heir = {
+    name = "÷f)R™l"  # Harsha
+    monarch_name = "÷f)R™l"  # Harsha
+    dynasty = "O9V±"  # Vardhana
+    birth_date = 590.1.1
+    death_date = 647.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 6
+  }
+}
+606.1.1 = {
+  monarch = {
+    name = "÷f)R™l"  # Harsha
+    dynasty = "O9V±"  # Vardhana
+    birth_date = 590.1.1
+    adm = 4
+    dip = 3
+    mil = 6
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+620.1.1 = {
+  capital = 556
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

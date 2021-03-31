@@ -1,0 +1,854 @@
+government = monarchy
+add_government_reform = nayankara_reform
+primary_culture = oriya
+religion = jainism
+technology_group = early_indian
+capital = 2229
+2.1.1 = {
+  monarch = {
+    name = "Kudepasiri"
+    dynasty = "Mahameghavahana"
+    adm = 5
+    dip = 2
+    mil = 0
+  }
+}
+20.1.1 = {
+  heir = {
+    name = "Manasada"
+    monarch_name = "Manasada"
+    dynasty = "Mahameghavahana"
+    birth_date = 20.1.1
+    death_date = 100.1.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 2
+  }
+}
+50.1.1 = {
+  monarch = {
+    name = "Manasada"
+    dynasty = "Mahameghavahana"
+    birth_date = 20.1.1
+    adm = 1
+    dip = 5
+    mil = 2
+  }
+}
+70.1.1 = {
+  heir = {
+    name = "Sirisada"
+    monarch_name = "Sirisada"
+    dynasty = "Mahameghavahana"
+    birth_date = 70.1.1
+    death_date = 150.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 2
+  }
+}
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+100.1.1 = {
+  monarch = {
+    name = "Sirisada"
+    dynasty = "Mahameghavahana"
+    birth_date = 70.1.1
+    adm = 4
+    dip = 0
+    mil = 2
+  }
+}
+120.1.1 = {
+  heir = {
+    name = "Mahasada"
+    monarch_name = "Mahasada"
+    dynasty = "Mahameghavahana"
+    birth_date = 120.1.1
+    death_date = 200.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 0
+  }
+}
+150.1.1 = {
+  monarch = {
+    name = "Mahasada"
+    dynasty = "Mahameghavahana"
+    birth_date = 120.1.1
+    adm = 2
+    dip = 3
+    mil = 0
+  }
+}
+170.1.1 = {
+  heir = {
+    name = "Sivamakasada"
+    monarch_name = "Sivamakasada"
+    dynasty = "Mahameghavahana"
+    birth_date = 170.1.1
+    death_date = 250.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 5
+  }
+}
+200.1.1 = {
+  monarch = {
+    name = "Sivamakasada"
+    dynasty = "Mahameghavahana"
+    birth_date = 170.1.1
+    adm = 3
+    dip = 5
+    mil = 5
+  }
+}
+220.1.1 = {
+  heir = {
+    name = "Asakasada"
+    monarch_name = "Asakasada"
+    dynasty = "Mahameghavahana"
+    birth_date = 220.1.1
+    death_date = 350.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 0
+  }
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+250.1.1 = {
+  monarch = {
+    name = "Asakasada"
+    dynasty = "Mahameghavahana"
+    birth_date = 220.1.1
+    adm = 2
+    dip = 1
+    mil = 0
+  }
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+380.1.1 = {
+  monarch = {
+    name = "FUæW"  # Shankara
+    dynasty = "Mathara"
+    birth_date = 350.1.1
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+380.1.1 = {
+  heir = {
+    name = "(„KQĞc"  # Shakti
+    monarch_name = "(„KQĞc"  # Shakti
+    dynasty = "Mathara"
+    birth_date = 365.1.1
+    death_date = 410.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+395.1.1 = {
+  monarch = {
+    name = "(„KQĞc"  # Shakti
+    dynasty = "Mathara"
+    birth_date = 365.1.1
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+395.1.1 = {
+  heir = {
+    name = "Prabhanjana"
+    monarch_name = "Prabhanjana"
+    dynasty = "Mathara"
+    birth_date = 380.1.1
+    death_date = 425.1.1
+    claim = 95
+    adm = 0
+    dip = 3
+    mil = 3
+  }
+}
+410.1.1 = {
+  monarch = {
+    name = "Prabhanjana"
+    dynasty = "Mathara"
+    birth_date = 380.1.1
+    adm = 0
+    dip = 3
+    mil = 3
+  }
+}
+410.1.1 = {
+  heir = {
+    name = "Anantashakti"
+    monarch_name = "Anantashakti"
+    dynasty = "Mathara"
+    birth_date = 400.1.1
+    death_date = 440.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 2
+  }
+}
+425.1.1 = {
+  monarch = {
+    name = "Anantashakti"
+    dynasty = "Mathara"
+    birth_date = 400.1.1
+    adm = 1
+    dip = 4
+    mil = 2
+  }
+}
+430.1.1 = {
+  monarch = {
+    name = "OidËid"  # Umavarman
+    dynasty = "Pitrbhakta"
+    birth_date = 400.1.1
+    adm = 1
+    dip = 0
+    mil = 4
+  }
+}
+430.1.1 = {
+  heir = {
+    name = "¾–N–µ”WÃi–±Ëid"  # Nandaprabhanjanavarman
+    monarch_name = "¾–N–µ”WÃi–±Ëid"  # Nandaprabhanjanavarman
+    dynasty = "Pitrbhakta"
+    birth_date = 415.1.1
+    death_date = 460.1.1
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 5
+  }
+}
+445.1.1 = {
+  monarch = {
+    name = "¾–N–µ”WÃi–±Ëid"  # Nandaprabhanjanavarman
+    dynasty = "Pitrbhakta"
+    birth_date = 415.1.1
+    adm = 0
+    dip = 1
+    mil = 5
+  }
+}
+445.1.1 = {
+  heir = {
+    name = "Chandavarman"
+    monarch_name = "Chandavarman"
+    dynasty = "Pitrbhakta"
+    birth_date = 430.1.1
+    death_date = 475.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 0
+  }
+}
+460.1.1 = {
+  monarch = {
+    name = "Chandavarman"
+    dynasty = "Pitrbhakta"
+    birth_date = 430.1.1
+    adm = 1
+    dip = 2
+    mil = 0
+  }
+}
+460.1.1 = {
+  heir = {
+    name = "Vishakhavarman"
+    monarch_name = "Vishakhavarman"
+    dynasty = "Pitrbhakta"
+    birth_date = 450.1.1
+    death_date = 496.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+475.1.1 = {
+  monarch = {
+    name = "Vishakhavarman"
+    dynasty = "Pitrbhakta"
+    birth_date = 450.1.1
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+496.1.1 = {
+  monarch = {
+    name = "àVN–WËid I"  # Indravarman I
+    dynasty = "uKO"  # Ganga
+    birth_date = 480.1.1
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+507.1.1 = {
+  heir = {
+    name = "	NüfYËid"  # Samantavarman
+    monarch_name = "	NüfYËid"  # Samantavarman
+    dynasty = "uKO"  # Ganga
+    birth_date = 507.1.1
+    death_date = 562.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 4
+  }
+}
+537.1.1 = {
+  monarch = {
+    name = "	NüfYËid"  # Samantavarman
+    dynasty = "uKO"  # Ganga
+    birth_date = 507.1.1
+    adm = 4
+    dip = 0
+    mil = 4
+  }
+}
+537.1.1 = {
+  heir = {
+    name = "Ã‹‰`^Ëid"  # Hastivarman
+    monarch_name = "Ã‹‰`^Ëid"  # Hastivarman
+    dynasty = "uKO"  # Ganga
+    birth_date = 532.1.1
+    death_date = 578.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+562.1.1 = {
+  monarch = {
+    name = "Ã‹‰`^Ëid"  # Hastivarman
+    dynasty = "uKO"  # Ganga
+    birth_date = 532.1.1
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+562.1.1 = {
+  heir = {
+    name = "àVN–WËid"  # Indravarman
+    monarch_name = "àVN–WËid II"  # Indravarman II
+    dynasty = "uKO"  # Ganga
+    birth_date = 548.1.1
+    death_date = 589.1.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 4
+  }
+}
+578.1.1 = {
+  monarch = {
+    name = "àVN–WËid II"  # Indravarman II
+    dynasty = "uKO"  # Ganga
+    birth_date = 548.1.1
+    adm = 0
+    dip = 5
+    mil = 4
+  }
+}
+580.1.1 = {
+  monarch = {
+    name = "Prighivi"
+    dynasty = "×kícWÃ‹"  # Vigraha
+    birth_date = 550.1.1
+    adm = 1
+    dip = 4
+    mil = 2
+  }
+}
+580.1.1 = {
+  heir = {
+    name = "Loka"
+    monarch_name = "Loka"
+    dynasty = "×kícWÃ‹"  # Vigraha
+    birth_date = 580.1.1
+    death_date = 603.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+600.1.1 = {
+  monarch = {
+    name = "Loka"
+    dynasty = "×kícWÃ‹"  # Vigraha
+    birth_date = 580.1.1
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+603.1.1 = {
+  monarch = {
+    name = "W±"  # Rana
+    dynasty = "z–6w"  # Durjaya
+    birth_date = 573.1.1
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+}
+603.1.1 = {
+  heir = {
+    name = "Prithvimaharaja"
+    monarch_name = "Prithvimaharaja"
+    dynasty = "z–6w"  # Durjaya
+    birth_date = 580.1.1
+    death_date = 620.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 3
+  }
+}
+610.1.1 = {
+  monarch = {
+    name = "Prithvimaharaja"
+    dynasty = "z–6w"  # Durjaya
+    birth_date = 580.1.1
+    adm = 0
+    dip = 0
+    mil = 3
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+620.1.1 = {
+  monarch = {
+    name = "idN–FZW– II"  # Madhavaraja II
+    dynasty = "Shailobdhava"
+    birth_date = 590.1.1
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+640.1.1 = {
+  heir = {
+    name = "+gN–idW–"  # Madhyamaraja
+    monarch_name = "+gN–idW– I"  # Madhyamaraja I
+    dynasty = "Shailobdhava"
+    birth_date = 640.1.1
+    death_date = 700.1.1
+    claim = 95
+    adm = 5
+    dip = 0
+    mil = 2
+  }
+}
+670.1.1 = {
+  monarch = {
+    name = "+gN–idW– I"  # Madhyamaraja I
+    dynasty = "Shailobdhava"
+    birth_date = 640.1.1
+    adm = 5
+    dip = 0
+    mil = 2
+  }
+}
+670.1.1 = {
+  heir = {
+    name = "idN–FZËid"  # Madhavavarman
+    monarch_name = "idN–FZËid III"  # Madhavavarman III
+    dynasty = "Shailobdhava"
+    birth_date = 670.1.1
+    death_date = 710.1.1
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 4
+  }
+}
+700.1.1 = {
+  monarch = {
+    name = "idN–FZËid III"  # Madhavavarman III
+    dynasty = "Shailobdhava"
+    birth_date = 670.1.1
+    adm = 2
+    dip = 0
+    mil = 4
+  }
+}
+700.1.1 = {
+  heir = {
+    name = "¾idW–"  # Dharmaraja
+    monarch_name = "¾idW– II"  # Dharmaraja II
+    dynasty = "Shailobdhava"
+    birth_date = 680.1.1
+    death_date = 727.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}
+710.1.1 = {
+  monarch = {
+    name = "¾idW– II"  # Dharmaraja II
+    dynasty = "Shailobdhava"
+    birth_date = 680.1.1
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}
+710.1.1 = {
+  heir = {
+    name = "+gN–idW–"  # Madhyamaraja
+    monarch_name = "+gN–idW– II"  # Madhyamaraja II
+    dynasty = "Shailobdhava"
+    birth_date = 697.1.1
+    death_date = 740.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 3
+  }
+}
+727.1.1 = {
+  monarch = {
+    name = "+gN–idW– II"  # Madhyamaraja II
+    dynasty = "Shailobdhava"
+    birth_date = 697.1.1
+    adm = 0
+    dip = 0
+    mil = 3
+  }
+}
+727.1.1 = {
+  heir = {
+    name = "Allaparaja"
+    monarch_name = "Allaparaja I"
+    dynasty = "Shailobdhava"
+    birth_date = 710.1.1
+    death_date = 760.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+740.1.1 = {
+  monarch = {
+    name = "Allaparaja I"
+    dynasty = "Shailobdhava"
+    birth_date = 710.1.1
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+740.1.1 = {
+  heir = {
+    name = "Tailapanibha"
+    monarch_name = "Tailapanibha I"
+    dynasty = "Shailobdhava"
+    birth_date = 730.1.1
+    death_date = 780.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 0
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+760.1.1 = {
+  monarch = {
+    name = "Tailapanibha I"
+    dynasty = "Shailobdhava"
+    birth_date = 730.1.1
+    adm = 3
+    dip = 3
+    mil = 0
+  }
+}
+760.1.1 = {
+  heir = {
+    name = "+gN–idW–"  # Madhyamaraja
+    monarch_name = "+gN–idW– III"  # Madhyamaraja III
+    dynasty = "Shailobdhava"
+    birth_date = 750.1.1
+    death_date = 786.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 1
+  }
+}
+780.1.1 = {
+  monarch = {
+    name = "+gN–idW– III"  # Madhyamaraja III
+    dynasty = "Shailobdhava"
+    birth_date = 750.1.1
+    adm = 2
+    dip = 4
+    mil = 1
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+882.1.1 = {
+  monarch = {
+    name = "–±÷–6w I"  # Janmejaya I
+    dynasty = "Somavamshi"
+    birth_date = 852.1.1
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+892.1.1 = {
+  heir = {
+    name = "6wšNĞc"  # Yayati
+    monarch_name = "6wšNĞc I"  # Yayati I
+    dynasty = "Somavamshi"
+    birth_date = 892.1.1
+    death_date = 955.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+922.1.1 = {
+  monarch = {
+    name = "6wšNĞc I"  # Yayati I
+    dynasty = "Somavamshi"
+    birth_date = 892.1.1
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+925.1.1 = {
+  heir = {
+    name = "×kidWÖN"  # Bhimaratha
+    monarch_name = "×kidWÖN"  # Bhimaratha
+    dynasty = "Somavamshi"
+    birth_date = 925.1.1
+    death_date = 980.1.1
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 0
+  }
+}
+955.1.1 = {
+  monarch = {
+    name = "×kidWÖN"  # Bhimaratha
+    dynasty = "Somavamshi"
+    birth_date = 925.1.1
+    adm = 2
+    dip = 0
+    mil = 0
+  }
+}
+955.1.1 = {
+  heir = {
+    name = "¾idWÖN"  # Dharmaratha
+    monarch_name = "¾idWÖN"  # Dharmaratha
+    dynasty = "Somavamshi"
+    birth_date = 950.1.1
+    death_date = 1005.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+980.1.1 = {
+  monarch = {
+    name = "¾idWÖN"  # Dharmaratha
+    dynasty = "Somavamshi"
+    birth_date = 950.1.1
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+980.1.1 = {
+  heir = {
+    name = "±²b™l"  # Nahusa
+    monarch_name = "±²b™l"  # Nahusa
+    dynasty = "Somavamshi"
+    birth_date = 975.1.1
+    death_date = 1025.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+1005.1.1 = {
+  monarch = {
+    name = "±²b™l"  # Nahusa
+    dynasty = "Somavamshi"
+    birth_date = 975.1.1
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+1005.1.1 = {
+  heir = {
+    name = "6wšNĞc"  # Yayati
+    monarch_name = "6wšNĞc II"  # Yayati II
+    dynasty = "Somavamshi"
+    birth_date = 995.1.1
+    death_date = 1040.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 4
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1025.1.1 = {
+  monarch = {
+    name = "6wšNĞc II"  # Yayati II
+    dynasty = "Somavamshi"
+    birth_date = 995.1.1
+    adm = 5
+    dip = 1
+    mil = 4
+  }
+}
+1025.1.1 = {
+  heir = {
+    name = "Uddyotakesari"
+    monarch_name = "Uddyotakesari"
+    dynasty = "Somavamshi"
+    birth_date = 1010.1.1
+    death_date = 1065.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 0
+  }
+}
+1040.1.1 = {
+  monarch = {
+    name = "Uddyotakesari"
+    dynasty = "Somavamshi"
+    birth_date = 1010.1.1
+    adm = 4
+    dip = 2
+    mil = 0
+  }
+}
+1040.1.1 = {
+  heir = {
+    name = "–±÷–6w"  # Janmejaya
+    monarch_name = "–±÷–6w II"  # Janmejaya II
+    dynasty = "Somavamshi"
+    birth_date = 1035.1.1
+    death_date = 1085.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1065.1.1 = {
+  monarch = {
+    name = "–±÷–6w II"  # Janmejaya II
+    dynasty = "Somavamshi"
+    birth_date = 1035.1.1
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1065.1.1 = {
+  heir = {
+    name = "ÌRpQ±–6w"  # Puranjaya
+    monarch_name = "ÌRpQ±–6w"  # Puranjaya
+    dynasty = "Somavamshi"
+    birth_date = 1055.1.1
+    death_date = 1100.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1085.1.1 = {
+  monarch = {
+    name = "ÌRpQ±–6w"  # Puranjaya
+    dynasty = "Somavamshi"
+    birth_date = 1055.1.1
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1085.1.1 = {
+  heir = {
+    name = "¯WcĞcFZ"  # Karnadeva
+    monarch_name = "¯WcĞcFZ"  # Karnadeva
+    dynasty = "Somavamshi"
+    birth_date = 1070.1.1
+    death_date = 1110.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1100.1.1 = {
+  monarch = {
+    name = "¯WcĞcFZ"  # Karnadeva
+    dynasty = "Somavamshi"
+    birth_date = 1070.1.1
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

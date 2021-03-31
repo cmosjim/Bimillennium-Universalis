@@ -1,0 +1,16 @@
+spriteTypes = {	
+
+		spriteType = {
+		name = "GFX_advisor_lulingqi"
+		texturefile = "gfx//interface//advisors//lulingqi.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+		}
+	
+		spriteType = {
+		name = "lulingqi_come_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_ASIAN/lulingqi_come_eventPicture.dds"	
+		}
+}

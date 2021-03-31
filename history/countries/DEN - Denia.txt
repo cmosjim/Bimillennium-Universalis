@@ -1,0 +1,66 @@
+government = monarchy
+add_government_reform = iqta
+mercantilism = 0.1
+primary_culture = andalucian
+religion = sunni
+add_accepted_culture = berber
+technology_group = muslim
+capital = 1750
+religious_school = maliki_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1010.1.1 = {
+  monarch = {
+    name = "Fz>çâ∑V ?ñS FzÊt’lKQ"  # Mujahid al-Muwaffaq
+    dynasty = "√Ws|S"  # Amirid
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+1045.1.1 = {
+  monarch = {
+    name = "?ñÃë OKQÙT“R ?ñjg∑V Sê±É"  # 'Ali Iqbal ad-Dawla
+    dynasty = "√Ws|S"  # Amirid
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1224.1.1 = {
+  monarch = {
+    name = "?ñjS Nb6w∑V ?ñjSjg“R …bkç¸f"  # Abu Zayd 'Abd ar-Rahman
+    dynasty = "√Ws|S"  # Amirid
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

@@ -1,0 +1,348 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = early_indian
+primary_culture = nepali
+religion = hinduism
+capital = 554
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1060.1.1 = {
+  monarch = {
+    name = "≥u†R…b	T"  # Nagaraj
+    dynasty = "+gW"  # Malla
+    birth_date = 1040.1.1
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1070.1.1 = {
+  heir = {
+    name = "nê‚l"  # Chaap
+    monarch_name = "nê‚l"  # Chaap
+    dynasty = "+gW"  # Malla
+    birth_date = 1070.1.1
+    death_date = 1120.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+1100.1.1 = {
+  monarch = {
+    name = "nê‚l"  # Chaap
+    dynasty = "+gW"  # Malla
+    birth_date = 1070.1.1
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+1100.1.1 = {
+  heir = {
+    name = "nê’kW"  # Chapilla
+    monarch_name = "nê’kW"  # Chapilla
+    dynasty = "+gW"  # Malla
+    birth_date = 1090.1.1
+    death_date = 1140.1.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 0
+  }
+}
+1120.1.1 = {
+  monarch = {
+    name = "nê’kW"  # Chapilla
+    dynasty = "+gW"  # Malla
+    birth_date = 1090.1.1
+    adm = 0
+    dip = 5
+    mil = 0
+  }
+}
+1120.1.1 = {
+  heir = {
+    name = "ØW8SòbW"  # Krashichalla
+    monarch_name = "ØW8SòbW"  # Krashichalla
+    dynasty = "+gW"  # Malla
+    birth_date = 1110.1.1
+    death_date = 1160.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1140.1.1 = {
+  monarch = {
+    name = "ØW8SòbW"  # Krashichalla
+    dynasty = "+gW"  # Malla
+    birth_date = 1110.1.1
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+1140.1.1 = {
+  heir = {
+    name = "ØW0WòbW"  # Kradhichalla
+    monarch_name = "ØW0WòbW"  # Kradhichalla
+    dynasty = "+gW"  # Malla
+    birth_date = 1130.1.1
+    death_date = 1189.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 5
+  }
+}
+1160.1.1 = {
+  monarch = {
+    name = "ØW0WòbW"  # Kradhichalla
+    dynasty = "+gW"  # Malla
+    birth_date = 1130.1.1
+    adm = 1
+    dip = 1
+    mil = 5
+  }
+}
+1160.1.1 = {
+  heir = {
+    name = "ØWòbW"  # Krachalla
+    monarch_name = "ØWòbW"  # Krachalla
+    dynasty = "+gW"  # Malla
+    birth_date = 1159.1.1
+    death_date = 1223.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 1
+  }
+}
+1189.1.1 = {
+  monarch = {
+    name = "ØWòbW"  # Krachalla
+    dynasty = "+gW"  # Malla
+    birth_date = 1159.1.1
+    adm = 3
+    dip = 0
+    mil = 1
+  }
+}
+1193.1.1 = {
+  heir = {
+    name = "?ñìèÊè"  # Ashok
+    monarch_name = "?ñìèÊè"  # Ashok
+    dynasty = "+gW"  # Malla
+    birth_date = 1193.1.1
+    death_date = 1287.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1223.1.1 = {
+  monarch = {
+    name = "?ñìèÊè"  # Ashok
+    dynasty = "+gW"  # Malla
+    birth_date = 1193.1.1
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1257.1.1 = {
+  heir = {
+    name = "	TTXÃë"  # Jitari
+    monarch_name = "	TTXÃë"  # Jitari
+    dynasty = "+gW"  # Malla
+    birth_date = 1257.1.1
+    death_date = 1312.1.1
+    claim = 95
+    adm = 0
+    dip = 4
+    mil = 4
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1287.1.1 = {
+  monarch = {
+    name = "	TTXÃë"  # Jitari
+    dynasty = "+gW"  # Malla
+    birth_date = 1257.1.1
+    adm = 0
+    dip = 4
+    mil = 4
+  }
+}
+1287.1.1 = {
+  heir = {
+    name = "Âenf"  # Ripu
+    monarch_name = "Âenf"  # Ripu
+    dynasty = "+gW"  # Malla
+    birth_date = 1282.1.1
+    death_date = 1313.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 2
+  }
+}
+1312.1.1 = {
+  monarch = {
+    name = "Âenf"  # Ripu
+    dynasty = "+gW"  # Malla
+    birth_date = 1282.1.1
+    adm = 5
+    dip = 5
+    mil = 2
+  }
+}
+1312.1.1 = {
+  heir = {
+    name = "?ñÌèY"  # Aditya
+    monarch_name = "?ñÌèY"  # Aditya
+    dynasty = "+gW"  # Malla
+    birth_date = 1283.1.1
+    death_date = 1330.1.1
+    claim = 95
+    adm = 0
+    dip = 4
+    mil = 1
+  }
+}
+1313.1.1 = {
+  monarch = {
+    name = "?ñÌèY"  # Aditya
+    dynasty = "+gW"  # Malla
+    birth_date = 1283.1.1
+    adm = 0
+    dip = 4
+    mil = 1
+  }
+}
+1313.1.1 = {
+  heir = {
+    name = "¡e≈ñ"  # Punya
+    monarch_name = "¡e≈ñ"  # Punya
+    dynasty = "+gW"  # Malla
+    birth_date = 1300.1.1
+    death_date = 1350.1.1
+    claim = 95
+    adm = 5
+    dip = 0
+    mil = 4
+  }
+}
+1330.1.1 = {
+  monarch = {
+    name = "¡e≈ñ"  # Punya
+    dynasty = "+gW"  # Malla
+    birth_date = 1300.1.1
+    adm = 5
+    dip = 0
+    mil = 4
+  }
+}
+1330.1.1 = {
+  heir = {
+    name = "µîÈTSO◊k"  # Prithvi
+    monarch_name = "µîÈTSO◊k"  # Prithvi
+    dynasty = "+gW"  # Malla
+    birth_date = 1320.1.1
+    death_date = 1370.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+1350.1.1 = {
+  monarch = {
+    name = "µîÈTSO◊k"  # Prithvi
+    dynasty = "+gW"  # Malla
+    birth_date = 1320.1.1
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+1350.1.1 = {
+  heir = {
+    name = "œÇ)R6w"  # Surya
+    monarch_name = "œÇ)R6w"  # Surya
+    dynasty = "+gW"  # Malla
+    birth_date = 1340.1.1
+    death_date = 1390.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 0
+  }
+}
+1370.1.1 = {
+  monarch = {
+    name = "œÇ)R6w"  # Surya
+    dynasty = "+gW"  # Malla
+    birth_date = 1340.1.1
+    adm = 4
+    dip = 3
+    mil = 0
+  }
+}
+1370.1.1 = {
+  heir = {
+    name = "?ñÀç6w"  # Abhaya
+    monarch_name = "?ñÀç6w"  # Abhaya
+    dynasty = "+gW"  # Malla
+    birth_date = 1360.1.1
+    death_date = 1404.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1390.1.1 = {
+  monarch = {
+    name = "?ñÀç6w"  # Abhaya
+    dynasty = "+gW"  # Malla
+    birth_date = 1360.1.1
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}

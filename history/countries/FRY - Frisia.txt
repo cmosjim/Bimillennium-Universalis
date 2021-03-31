@@ -1,0 +1,415 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+primary_culture = frisian
+religion = germanic
+technology_group = barbarian
+capital = 98
+2.1.1 = {
+  monarch = {
+    name = "?ñ∑VS IV"  # Adel IV
+    dynasty = "VÃë0t"  # Friso
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+2.1.1 = {
+  heir = {
+    name = "Íè'kaSmØe iç!ç"  # Diocarus Segon
+    monarch_name = "Íè'kaSmØe iç!ç"  # Diocarus Segon
+    dynasty = "VÃë0t"  # Friso
+    birth_date = 2.1.1
+    death_date = 15.1.1
+    claim = 95
+    adm = 0
+    dip = 4
+    mil = 1
+  }
+}
+11.1.1 = {
+  monarch = {
+    name = "Íè'kaSmØe iç!ç"  # Diocarus Segon
+    dynasty = "VÃë0t"  # Friso
+    adm = 0
+    dip = 4
+    mil = 1
+  }
+}
+11.1.1 = {
+  heir = {
+    name = "Íè=OS∑V iç!ç"  # Dibbald Segon
+    monarch_name = "Íè=OS∑V iç!ç"  # Dibbald Segon
+    dynasty = "VÃë0t"  # Friso
+    birth_date = 2.1.1
+    death_date = 28.1.1
+    claim = 95
+    adm = 0
+    dip = 4
+    mil = 1
+  }
+}
+15.1.1 = {
+  monarch = {
+    name = "Íè=OS∑V iç!ç"  # Dibbald Segon
+    dynasty = "VÃë0t"  # Friso
+    adm = 0
+    dip = 4
+    mil = 1
+  }
+}
+15.1.1 = {
+  heir = {
+    name = "TX=O"  # Tabbo
+    monarch_name = "TX=O"  # Tabbo
+    dynasty = "VÃë0t"  # Friso
+    birth_date = 2.1.1
+    death_date = 47.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 2
+  }
+}
+28.1.1 = {
+  monarch = {
+    name = "TX=O"  # Tabbo
+    dynasty = "VÃë0t"  # Friso
+    birth_date = 2.1.1
+    adm = 5
+    dip = 5
+    mil = 2
+  }
+}
+28.1.1 = {
+  heir = {
+    name = "?ñØeì^<SLNØe"  # Asconius
+    monarch_name = "?ñØeì^<SLNØe"  # Asconius
+    dynasty = "VÃë0t"  # Friso
+    birth_date = 17.1.1
+    death_date = 58.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+47.1.1 = {
+  monarch = {
+    name = "?ñØeì^<SLNØe"  # Asconius
+    dynasty = "VÃë0t"  # Friso
+    birth_date = 17.1.1
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+58.1.1 = {
+  monarch = {
+    name = "KS=O"  # Ubbo
+    dynasty = "KS=O"  # Ubbo
+    birth_date = 28.1.1
+    adm = 5
+    dip = 2
+    mil = 0
+  }
+}
+58.1.1 = {
+  heir = {
+    name = "»Tôü"  # Haron
+    monarch_name = "»Tôü"  # Haron
+    dynasty = "KS=O"  # Ubbo
+    birth_date = 50.1.1
+    death_date = 140.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 3
+  }
+}
+70.1.1 = {
+  monarch = {
+    name = "»Tôü"  # Haron
+    dynasty = "KS=O"  # Ubbo
+    birth_date = 50.1.1
+    adm = 0
+    dip = 0
+    mil = 3
+  }
+}
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+120.1.1 = {
+  heir = {
+    name = "eYÍèSÙT∑V"  # Odilbald
+    monarch_name = "eYÍèSÙT∑V"  # Odilbald
+    dynasty = "KS=O"  # Ubbo
+    birth_date = 120.1.1
+    death_date = 210.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 2
+  }
+}
+140.1.1 = {
+  monarch = {
+    name = "eYÍèSÙT∑V"  # Odilbald
+    dynasty = "KS=O"  # Ubbo
+    birth_date = 120.1.1
+    adm = 3
+    dip = 0
+    mil = 2
+  }
+}
+190.1.1 = {
+  heir = {
+    name = "KSYS+Y »T&O"  # Udolph Haron
+    monarch_name = "KSYS+Y »T&O"  # Udolph Haron
+    dynasty = "KS=O"  # Ubbo
+    birth_date = 190.1.1
+    death_date = 286.1.1
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 3
+  }
+}
+210.1.1 = {
+  monarch = {
+    name = "KSYS+Y »T&O"  # Udolph Haron
+    dynasty = "KS=O"  # Ubbo
+    birth_date = 190.1.1
+    adm = 2
+    dip = 0
+    mil = 3
+  }
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+286.1.1 = {
+  monarch = {
+    name = "ÃëﬂRS∑V I"  # Richold I
+    dynasty = "'kV"  # Offo
+    birth_date = 266.1.1
+    adm = 5
+    dip = 1
+    mil = 0
+  }
+}
+300.1.1 = {
+  heir = {
+    name = "eYÍèSÙT∑V"  # Odilbald
+    monarch_name = "eYÍèSÙT∑V"  # Odilbald
+    dynasty = "'kV"  # Offo
+    birth_date = 300.1.1
+    death_date = 380.1.1
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 3
+  }
+}
+320.1.1 = {
+  monarch = {
+    name = "eYÍèSÙT∑V"  # Odilbald
+    dynasty = "'kV"  # Offo
+    birth_date = 300.1.1
+    adm = 2
+    dip = 0
+    mil = 3
+  }
+}
+340.1.1 = {
+  heir = {
+    name = "ÃëﬂRS∑V"  # Richold
+    monarch_name = "ÃëﬂRS∑V II"  # Richold II
+    dynasty = "'kV"  # Offo
+    birth_date = 340.1.1
+    death_date = 430.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 5
+  }
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+360.1.1 = {
+  monarch = {
+    name = "ÃëﬂRS∑V II"  # Richold II
+    dynasty = "eYV"  # Offo
+    birth_date = 340.1.1
+    adm = 0
+    dip = 0
+    mil = 5
+  }
+}
+380.1.1 = {
+  heir = {
+    name = "çWS∑V"  # Beroald
+    monarch_name = "çWS∑V"  # Beroald
+    dynasty = "eYV"  # Offo
+    birth_date = 380.1.1
+    death_date = 480.1.1
+    claim = 95
+    adm = 0
+    dip = 3
+    mil = 0
+  }
+}
+400.1.1 = {
+  monarch = {
+    name = "çWS∑V"  # Beroald
+    dynasty = "eYV"  # Offo
+    birth_date = 380.1.1
+    adm = 0
+    dip = 3
+    mil = 0
+  }
+}
+420.1.1 = {
+  monarch = {
+    name = "ÚÉSÊtS∑V"  # Folcwald
+    dynasty = "èySKQÊtSN"  # Folcwalding
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+450.1.1 = {
+  monarch = {
+    name = "¨Çi`"  # Finn
+    dynasty = "èySKQÊtSN"  # Folcwalding
+    adm = 5
+    dip = 5
+    mil = 0
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+500.1.1 = {
+  monarch = {
+    name = "VÃëÉlS+Y"  # Frithuwalf
+    dynasty = "èySKQÊtSN"  # Folcwalding
+    adm = 1
+    dip = 2
+    mil = 0
+  }
+}
+540.1.1 = {
+  monarch = {
+    name = "V˜ñS…b+Y"  # Frealaf
+    dynasty = "èySKQÊtSN"  # Folcwalding
+    adm = 3
+    dip = 2
+    mil = 0
+  }
+}
+590.1.1 = {
+  monarch = {
+    name = "eY˝êS+Y"  # Audulf
+    dynasty = "VÃëØepQ"  # Frisian
+    birth_date = 570.1.1
+    adm = 0
+    dip = 1
+    mil = 3
+  }
+}
+600.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+  technology_group = western
+  government_rank = 1
+}
+600.1.1 = {
+  heir = {
+    name = "eY∑V˙WrÇ"  # Aldgisl
+    monarch_name = "eY∑V˙WrÇ"  # Aldgisl
+    dynasty = "VÃëØepQ"  # Frisian
+    birth_date = 600.1.1
+    death_date = 679.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 1
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+630.1.1 = {
+  monarch = {
+    name = "eY∑V˙WrÇ"  # Aldgisl
+    dynasty = "VÃëØepQ"  # Frisian
+    birth_date = 600.1.1
+    adm = 3
+    dip = 0
+    mil = 1
+  }
+}
+649.1.1 = {
+  heir = {
+    name = "…b∑VZS∑V"  # Radbod
+    monarch_name = "…b∑VZS∑V I"  # Radbod I
+    dynasty = "VÃëØepQ"  # Frisian
+    birth_date = 649.1.1
+    death_date = 719.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 3
+  }
+}
+679.1.1 = {
+  monarch = {
+    name = "…b∑VZS∑V I"  # Radbod I
+    dynasty = "VÃëØepQ"  # Frisian
+    birth_date = 649.1.1
+    adm = 3
+    dip = 0
+    mil = 3
+  }
+}
+680.1.1 = {
+  heir = {
+    name = "‚l‚l"  # Poppo
+    monarch_name = "‚l‚l"  # Poppo
+    dynasty = "VÃëØepQ"  # Frisian
+    birth_date = 680.1.1
+    death_date = 734.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 3
+  }
+}
+719.1.1 = {
+  monarch = {
+    name = "‚l‚l"  # Poppo
+    dynasty = "VÃëØepQ"  # Frisian
+    birth_date = 680.1.1
+    adm = 1
+    dip = 0
+    mil = 3
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

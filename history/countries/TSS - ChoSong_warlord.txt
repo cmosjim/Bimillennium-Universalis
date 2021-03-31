@@ -1,0 +1,49 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = chihan
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+150.1.1 = { 
+	monarch = {
+		name = "ùfiT"
+		#dynasty = " "
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+
+}
+
+155.1.1 = { 
+	heir = {
+		name = "ùfÍd"
+		birth_date = 155.1.1
+		death_date = 220.3.15
+		adm = 6
+		dip = 6
+		mil = 5
+	}
+}
+
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = {
+	government = modern_chinese_warlord
+	add_government_reform = modern_chinese_warlord_reform
+	religion = liberalism
+}
+
+1949.10.1 = { technology_group = modern_chinese }

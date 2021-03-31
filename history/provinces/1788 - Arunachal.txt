@@ -1,0 +1,51 @@
+#1788 - Arunachal
+
+owner = FA1
+controller = FA1
+culture = tibetan
+religion = tibetan_bon
+capital = "Arunachal"
+trade_goods = wool
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+is_city = yes
+add_core = FA1
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = early_indian
+discovered_by = indian
+
+630.1.1 = { religion = vajrayana }
+632.1.1 = { owner = TO1 controller = TO1 add_core = TO1 remove_core = FA1 }
+750.1.1 = { religion = vajrayana }
+766.1.1 = { religion = tibetan_buddhism }
+837.1.1 = { religion = tibetan_bon }
+877.1.1 = { owner = NW1 controller = NW1 add_core = NW1 remove_core = TO1 }
+1003.1.1 = { religion = tibetan_buddhism }
+1247.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = NW1 }
+1260.5.5 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1373.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = YUA }
+1618.1.1 = { owner = GR1 controller = GR1 add_core = GR1 remove_core = MNG } 
+1640.1.1 = { owner = KSD controller = KSD add_core = KSD remove_core = GR1 }
+1717.1.1 = { owner = ZUN controller = ZUN add_core = ZUN remove_core = KSD } 
+1720.1.1 = { owner = QNG controller = QNG add_core = QNG remove_core = ZUN } 
+1792.11.1 = { owner = QNG controller = QNG add_core = QNG } # U-tsang integrated into Qing empire after Sino-nepalese war
+1850.1.1 = { owner = GBR controller = GBR add_core = GBR add_core = ASS base_tax = 1 trade_goods = wool }
+1881.1.1 = { base_production = 2 }
+1906.1.1 = {  owner = QNG  controller = QNG }
+1912.2.12 = { owner = BNN controller = BNN add_core = BNN  remove_core = QNG add_core = TIB remove_core = UTS }
+1912.7.1 = { owner = GAS controller = GAS add_core = GAS remove_core = BNN }
+1914.1.1 = { owner = GBR controller = GBR }
+1917.1.1 = { base_tax = 2 }
+1930.1.1 = { add_core = IND add_core = ROC remove_core = ASS }
+1948.1.1 = { owner = IND controller = IND remove_core = GBR }
+1949.12.1 = { remove_core = ROC }
+1951.5.23 = { add_core = CHN }
+1953.1.1 = { base_production = 3 }
+2000.1.1 = { base_tax = 3 base_manpower = 2 }
+2003.1.1 = { add_core = CHN }

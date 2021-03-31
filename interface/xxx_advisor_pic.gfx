@@ -1,0 +1,27 @@
+spriteTypes = {	
+
+		spriteType = {
+		name = "GFX_advisor_chiang_kai_shek"
+		texturefile = "gfx//interface//advisors//chiang_kai_shek.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_he_yingqin"
+		texturefile = "gfx//interface//advisors//he_yingqin.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+		spriteType = {
+		name = "GFX_advisor_rab_female_1"
+		texturefile = "gfx//interface//advisors//rab_female_1.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+}

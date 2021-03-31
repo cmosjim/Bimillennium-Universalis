@@ -1,0 +1,20 @@
+
+name = "-NpSπèÉXbâN"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 1788
+}
+
+
+1962.10.20 = {
+	add_attacker = CHN
+	add_defender = IND
+}
+
+1962.11.21 = {
+	rem_attacker = CHN
+	rem_defender = IND
+}
+

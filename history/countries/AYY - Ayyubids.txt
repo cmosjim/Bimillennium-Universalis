@@ -1,0 +1,111 @@
+government = monarchy
+set_legacy_government = despotic_monarchy
+primary_culture = kurdish
+religion = sunni
+technology_group = muslim
+capital = 361	# Cairo
+add_accepted_culture = al_suryah_arabic
+religious_school = shafii_school
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1171.1.1={
+	monarch={
+		name="Saladin"
+		dynasty="Ayyubid"
+		dip = 6
+		adm = 5
+		mil = 6
+	}
+}
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1193.3.4={
+	monarch={
+		name="Al-Aziz Uthman"
+		dynasty="Ayyubid"
+		dip = 4
+		adm = 5
+		mil = 4
+	}
+}
+
+1198.11.29={
+	monarch={
+		name="Al-Mansur Muhammad"
+		dynasty="Ayyubid"
+		dip = 4
+		adm = 5
+		mil = 4
+	}
+}
+
+1200.6.1={
+	monarch={
+		name="Al-Adil Sayf al-Din Abu Bakr I"
+		dynasty="Ayyubid"
+		dip = 4
+		adm = 5
+		mil = 4
+	}
+}
+
+1218.6.1={
+	monarch={
+		name="Al-Kamil"
+		dynasty="Ayyubid"
+		dip = 4
+		adm = 5
+		mil = 4
+	}
+}
+
+1238.6.1={
+	monarch={
+		name="Al-Adil Sayf al-Din Abu Bakr II"
+		dynasty="Ayyubid"
+		dip = 4
+		adm = 5
+		mil = 4
+	}
+}
+
+1240.6.1={
+	monarch={
+		name="As-Salih Ayyub"
+		dynasty="Ayyubid"
+		dip = 4
+		adm = 5
+		mil = 4
+	}
+}
+
+1249.11.22={
+	monarch={
+		name="Al-Mu'azzam Turan-Shah"
+		dynasty="Ayyubid"
+		dip = 4
+		adm = 5
+		mil = 4
+	}
+}
+
+1250.1.1 = { capital = 382 }
+
+1250.6.1={
+	monarch={
+		name="Al-Ashraf Musa"
+		dynasty="Ayyubids"
+		dip = 4
+		adm = 5
+		mil = 4
+	}
+}
+1270.1.1 = { add_government_reform = early_gov_reform_10 }

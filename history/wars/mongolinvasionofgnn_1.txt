@@ -1,0 +1,17 @@
+name = "™„äS,rN!kOÑ‘b‰N"
+
+war_goal = {
+	type = take_capital_throne
+	casus_belli = cb_claim_throne
+	tag = GNN
+}
+
+1211.8.1 = {
+	add_attacker = MGE
+	add_defender = GNN
+}
+
+1216.12.1 = {
+	rem_attacker = MGE
+	rem_defender = GNN
+}

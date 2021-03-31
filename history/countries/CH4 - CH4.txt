@@ -1,0 +1,72 @@
+government = gov_celestial_empire
+add_government_reform = celestial_empire
+government_rank = 3
+technology_group = early_chinese
+religion = confucianism
+primary_culture = xiang
+add_accepted_culture = chihan
+add_accepted_culture = wu
+capital = 4810 #ôgQh
+#s–ËSÒŠÿ1316t^ÿ1363t^	ÿ
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1359.1.1 = {
+	#1363t^10g3åe
+	monarch = {
+		name = "H–ËSŒ"
+		birth_date =  1316.1.1
+		death_date =  1363.10.3
+		adm = 4
+		dip = 3
+		mil = 3
+		leader = { name = "H–ËSŒ"	type = general	fire = 5	shock = 6	manuever = 3	siege = 5 }
+	}
+}
+
+#s–tÿ1351t^ÿ1408t^[1] 	ÿÿVnS”l‹–
+1359.1.1 = {
+	heir = {
+		name = "H–t"
+        monarch_name = "H–t"
+		birth_date = 1351.1.1
+		death_date = 1408.1.1
+		claim = 100
+		dip = 2
+		adm = 3
+		mil = 3
+	}
+}
+
+
+1363.10.3 = {
+	monarch = {
+		name = "H–t"
+		birth_date = 1351.1.1
+		death_date = 1408.1.1
+		adm = 2
+		dip = 3
+		mil = 3
+		
+	}
+}
+1400.1.1 = {
+	heir = {
+		name = "H–f„U"
+        monarch_name = "H–f„U"
+		birth_date = 1398.1.1
+		death_date = 1401.1.1
+		claim = 100
+		dip = 2
+		adm = 1
+		mil = 3
+	}
+}	

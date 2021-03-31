@@ -1,0 +1,796 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+primary_culture = frankish
+religion = germanic
+technology_group = barbarian
+capital = 3104
+2.1.1 = {
+  monarch = {
+    name = "êLNYÌ‘KQ¯e"  # Deudorix
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+15.1.1 = {
+  monarch = {
+    name = "KQmêeY II"  # Chlodio II
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+15.1.1 = {
+  heir = {
+    name = "lš·^Ø"  # Marcomer
+    monarch_name = "lš·^Ø III"  # Marcomer III
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 2.1.1
+    death_date = 51.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 5
+  }
+}
+20.1.1 = {
+  monarch = {
+    name = "lš·^Ø III"  # Marcomer III
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 2.1.1
+    adm = 0
+    dip = 0
+    mil = 5
+  }
+}
+21.1.1 = {
+  heir = {
+    name = "KQW·V«ƒ"  # Chlodomer
+    monarch_name = "KQW·V«ƒ III"  # Chlodomer III
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 21.1.1
+    death_date = 63.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+51.1.1 = {
+  monarch = {
+    name = "KQW·V«ƒ III"  # Chlodomer III
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 21.1.1
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+51.1.1 = {
+  heir = {
+    name = "‰Ryrú‹S"  # Antenor
+    monarch_name = "‰Ryrú‹S IV"  # Antenor IV
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 33.1.1
+    death_date = 69.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+63.1.1 = {
+  monarch = {
+    name = "‰Ryrú‹S IV"  # Antenor IV
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 33.1.1
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+63.1.1 = {
+  heir = {
+    name = "^t·V"  # Rather
+    monarch_name = "^t·V I"  # Rather I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 39.1.1
+    death_date = 90.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+69.1.1 = {
+  monarch = {
+    name = "^t·V I"  # Rather I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 39.1.1
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+69.1.1 = {
+  heir = {
+    name = "Ì‘GY«ƒ"  # Richemer
+    monarch_name = "Ì‘GY«ƒ I"  # Richemer I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 60.1.1
+    death_date = 114.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 3
+  }
+}
+90.1.1 = {
+  monarch = {
+    name = "Ì‘GY«ƒ I"  # Richemer I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 60.1.1
+    adm = 5
+    dip = 5
+    mil = 3
+  }
+}
+90.1.1 = {
+  heir = {
+    name = "eYYlšS"  # Odomar
+    monarch_name = "eYYlšS I"  # Odomar I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 84.1.1
+    death_date = 128.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+114.1.1 = {
+  monarch = {
+    name = "eYYlšS I"  # Odomar I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 84.1.1
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+114.1.1 = {
+  heir = {
+    name = "lš·^Ø"  # Marcomer
+    monarch_name = "lš·^Ø IV"  # Marcomer IV
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 98.1.1
+    death_date = 149.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+128.1.1 = {
+  monarch = {
+    name = "lš·^Ø IV"  # Marcomer IV
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 98.1.1
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+128.1.1 = {
+  heir = {
+    name = "KQW·V«ƒ"  # Chlodomer
+    monarch_name = "KQW·V«ƒ IV"  # Chlodomer IV
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 119.1.1
+    death_date = 166.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+149.1.1 = {
+  monarch = {
+    name = "KQW·V«ƒ IV"  # Chlodomer IV
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 119.1.1
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+149.1.1 = {
+  heir = {
+    name = "ÕlÉb=Oyr"  # Farabert
+    monarch_name = "ÕlÉb=Oyr I"  # Farabert I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 136.1.1
+    death_date = 186.1.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 5
+  }
+}
+166.1.1 = {
+  monarch = {
+    name = "ÕlÉb=Oyr I"  # Farabert I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 136.1.1
+    adm = 1
+    dip = 5
+    mil = 5
+  }
+}
+166.1.1 = {
+  heir = {
+    name = "Ï‚ú‹"  # Sunno
+    monarch_name = "Œgú‹ I"  # Sunno I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 156.1.1
+    death_date = 213.1.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 5
+  }
+}
+186.1.1 = {
+  monarch = {
+    name = "Œgú‹ I"  # Sunno I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 156.1.1
+    adm = 0
+    dip = 5
+    mil = 5
+  }
+}
+186.1.1 = {
+  heir = {
+    name = "^S·VÌ‘KQ"  # Hilderic
+    monarch_name = "^S·VÌ‘KQ I"  # Hilderic I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 183.1.1
+    death_date = 253.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+213.1.1 = {
+  monarch = {
+    name = "^S·VÌ‘KQ I"  # Hilderic I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 183.1.1
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+223.1.1 = {
+  heir = {
+    name = "ôTSyr"  # Barther
+    monarch_name = "ôTSyr I"  # Barther I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 223.1.1
+    death_date = 272.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 5
+  }
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+253.1.1 = {
+  monarch = {
+    name = "ôTSyr I"  # Barther I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 223.1.1
+    adm = 0
+    dip = 0
+    mil = 5
+  }
+}
+253.1.1 = {
+  heir = {
+    name = "KQmêeY"  # Chlodio
+    monarch_name = "KQmêeY III"  # Chlodio III
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 242.1.1
+    death_date = 298.1.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 4
+  }
+}
+272.1.1 = {
+  monarch = {
+    name = "KQmêeY III"  # Chlodio III
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 242.1.1
+    adm = 1
+    dip = 5
+    mil = 4
+  }
+}
+272.1.1 = {
+  heir = {
+    name = "ƒlSyr"  # Walter
+    monarch_name = "ƒlSyr I"  # Walter I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 268.1.1
+    death_date = 306.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 4
+  }
+}
+298.1.1 = {
+  monarch = {
+    name = "ƒlSyr I"  # Walter I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 268.1.1
+    adm = 4
+    dip = 0
+    mil = 4
+  }
+}
+298.1.1 = {
+  heir = {
+    name = "¾<h=Oyr"  # Dagobert
+    monarch_name = "¾<h=Oyr"  # Dagobert I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 276.1.1
+    death_date = 317.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+306.1.1 = {
+  monarch = {
+    name = "¾<h=Oyr"  # Dagobert I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 276.1.1
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+306.1.1 = {
+  heir = {
+    name = "KQW·V«ƒ"  # Chlodomer
+    monarch_name = "KQW·V«ƒ I"  # Chlodomer I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 287.1.1
+    death_date = 330.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 3
+  }
+}
+317.1.1 = {
+  monarch = {
+    name = "KQW·V«ƒ I"  # Chlodomer I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 287.1.1
+    adm = 1
+    dip = 2
+    mil = 3
+  }
+}
+317.1.1 = {
+  heir = {
+    name = "Ì‘GY«ƒ"  # Richemer
+    monarch_name = "Ì‘GY«ƒ I"  # Richemer I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 300.1.1
+    death_date = 350.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 4
+  }
+}
+330.1.1 = {
+  monarch = {
+    name = "Ì‘GY«ƒ I"  # Richemer I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 300.1.1
+    adm = 1
+    dip = 3
+    mil = 4
+  }
+}
+330.1.1 = {
+  heir = {
+    name = "ĞcLN·VFzS"  # Theodomer
+    monarch_name = "ĞcLN·VFzS I"  # Theodomer I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 320.1.1
+    death_date = 360.1.1
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 2
+  }
+}
+350.1.1 = {
+  monarch = {
+    name = "ĞcLN·VFzS I"  # Theodomer I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 320.1.1
+    adm = 2
+    dip = 0
+    mil = 2
+  }
+}
+350.1.1 = {
+  heir = {
+    name = "KQmêeY"  # Chlodio
+    monarch_name = "KQmêeY IV"  # Chlodio IV
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 330.1.1
+    death_date = 378.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+360.1.1 = {
+  monarch = {
+    name = "KQmêeY IV"  # Chlodio IV
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 330.1.1
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+360.1.1 = {
+  heir = {
+    name = "¾<h=Oyr"  # Dagobert
+    monarch_name = "¾<h=Oyr"  # Dagobert I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 348.1.1
+    death_date = 389.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 1
+  }
+}
+378.1.1 = {
+  monarch = {
+    name = "¾<h=Oyr"  # Dagobert I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 348.1.1
+    adm = 3
+    dip = 0
+    mil = 1
+  }
+}
+378.1.1 = {
+  heir = {
+    name = "úWú‹ôTS·V"  # Genobald
+    monarch_name = "úWú‹ôTS·V I"  # Genobald I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 350.1.1
+    death_date = 419.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 0
+  }
+}
+389.1.1 = {
+  monarch = {
+    name = "úWú‹ôTS·V I"  # Genobald I
+    dynasty = "¯eaSÆY^Ì‘"  # Sicambri
+    birth_date = 350.1.1
+    adm = 3
+    dip = 5
+    mil = 0
+  }
+}
+419.1.1 = {
+  monarch = {
+    name = "lš·^Ø"  # Marcomer
+    dynasty = ")R^SÌ‘šN"  # Ripuarian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+420.1.1 = {
+  monarch = {
+    name = "ÕlÉb™„·V"  # Pharamond
+    dynasty = ")R^SÌ‘šN"  # Ripuarian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+422.1.1 = {
+  monarch = {
+    name = "ĞcLN·V…h÷–¯e"  # Theudemeres
+    dynasty = ")R^SÌ‘šN"  # Ripuarian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+432.1.1 = {
+  capital = 91
+}
+460.1.1 = {
+  monarch = {
+    name = "ÃWÊSêLN¯e"  # Aegidius
+    dynasty = ")R^SÌ‘šN"  # Ripuarian
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+483.1.1 = {
+  monarch = {
+    name = "‰<h=Oyr"  # Sigobert
+    dynasty = ")R^SÌ‘šN"  # Ripuarian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+486.6.1 = {
+  primary_culture = cosmopolitan_french
+}
+487.1.1 = {
+  government = monarchy
+  add_government_reform = salic_reform
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+507.6.1 = {
+  monarch = {
+    name = "KQm·VÌ‘KQ"  # Chlodoric
+    dynasty = ")R^SÌ‘šN"  # Ripuarian
+    adm = 4
+    dip = 6
+    mil = 4
+  }
+}
+508.1.1 = {
+  capital = 183
+}
+509.1.1 = {
+  religion = chalcedonism
+}
+509.1.1 = {
+  monarch = {
+    name = "KQmôu I"  # Clovis I
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 6
+    mil = 6
+  }
+}
+511.11.28 = {
+  monarch = {
+    name = "KQmğlS I"  # Chlothar I
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+536.1.1 = {
+  technology_group = western
+}
+561.6.1 = {
+  monarch = {
+    name = "^SiOÌ‘KQ I"  # Chilperic I
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+584.6.1 = {
+  monarch = {
+    name = "KQmğlS II"  # Chlothar II
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+629.6.1 = {
+  monarch = {
+    name = "¾<h=Oyr"  # Dagobert I
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+639.6.1 = {
+  monarch = {
+    name = "KQmôu II"  # Clovis II
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+655.6.1 = {
+  monarch = {
+    name = "KQmğlS III"  # Chlothar III
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+673.4.1 = {
+  monarch = {
+    name = "ĞcLN·VÌ‘KQ III"  # Theuderic III
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+673.8.1 = {
+  monarch = {
+    name = "KQm·VÌ‘KQ II"  # Childeric II
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+675.6.1 = {
+  monarch = {
+    name = "ĞcLN·VÌ‘KQ III"  # Theuderic III
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+691.4.13 = {
+  monarch = {
+    name = "KQmôu IV"  # Clovis IV
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+695.6.1 = {
+  monarch = {
+    name = "^S·V=Oyr III"  # Childebert III
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+711.4.24 = {
+  monarch = {
+    name = "¾<h=Oyr III"  # Dagobert III
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+715.12.31 = {
+  monarch = {
+    name = "^SiOÌ‘KQ II"  # Chilperic II
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+720.6.1 = {
+  monarch = {
+    name = "ĞcLN·VÌ‘KQ IV"  # Theuderic IV
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+737.4.30 = {
+  monarch = {
+    name = "ÿDd?eO®‹	ÿ"  # (regency council)
+    regent = yes
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+743.6.1 = {
+  monarch = {
+    name = "^S·VÌ‘KQ III"  # Childeric III
+    dynasty = "¨Xm)n"  # Merovingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+752.6.1 = {
+  monarch = {
+    name = "Ns^îwPR"  # Pepin the Short
+    dynasty = " Rm—g"  # Carolingian
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+768.9.25 = {
+  monarch = {
+    name = "ågtüf"  # Charlemagne
+    dynasty = " Rm—g"  # Carolingian
+    adm = 6
+    dip = 6
+    mil = 6
+  }
+}
+814.1.29 = {
+  monarch = {
+    name = "ïf I 0T†Ú‹w0"  # Louis I the Pious
+    dynasty = " Rm—g"  # Carolingian
+    birth_date = 778.4.16
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+962.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

@@ -1,0 +1,19 @@
+
+name = "*Ys^)YýVKNqN"
+
+war_goal = {
+	type = superiority_chinese_unification
+	casus_belli = cb_chinese_unification
+}
+
+
+1853.1.1 = {
+	add_attacker = QNG
+	add_defender = TP1
+}
+
+1864.10.25 = {
+	rem_attacker = QNG
+	rem_defender = TP1
+}
+

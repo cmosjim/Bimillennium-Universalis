@@ -1,0 +1,830 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = hausa
+religion = shamanism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 1151
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+999.1.1 = {
+  monarch = {
+    name = "ÙT!çæè"  # Bagunda
+    dynasty = "»Tç"  # Habe
+    adm = 5
+    dip = 2
+    mil = 1
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1033.1.1 = {
+  heir = {
+    name = "ÊtÃëâ"  # Warisi
+    monarch_name = "ÊtÃëâ"  # Warisi
+    dynasty = "»Tç"  # Habe
+    birth_date = 1033.1.1
+    death_date = 1095.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 5
+  }
+}
+1063.1.1 = {
+  monarch = {
+    name = "ÊtÃëâ"  # Warisi
+    dynasty = "»Tç"  # Habe
+    adm = 2
+    dip = 5
+    mil = 5
+  }
+}
+1065.1.1 = {
+  heir = {
+    name = "KOpglöœÇ"  # Gajemasu
+    monarch_name = "KOpglöœÇ"  # Gajemasu
+    dynasty = "»Tç"  # Habe
+    birth_date = 1065.1.1
+    death_date = 1134.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 4
+  }
+}
+1095.1.1 = {
+  monarch = {
+    name = "KOpglöœÇ"  # Gajemasu
+    dynasty = "»Tç"  # Habe
+    adm = 2
+    dip = 1
+    mil = 4
+  }
+}
+1104.1.1 = {
+  heir = {
+    name = "≥uÊtTX"  # Nawata
+    monarch_name = "≥uÊtTX"  # Nawata
+    dynasty = "»Tç"  # Habe
+    birth_date = 1104.1.1
+    death_date = 1136.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1134.1.1 = {
+  monarch = {
+    name = "≥uÊtTX"  # Nawata
+    dynasty = "»Tç"  # Habe
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1134.1.1 = {
+  heir = {
+    name = "2S(Ñ"  # Yusa
+    monarch_name = "2S(Ñ"  # Yusa
+    dynasty = "»Tç"  # Habe
+    birth_date = 1106.1.1
+    death_date = 1194.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+1136.1.1 = {
+  monarch = {
+    name = "2S(Ñ"  # Yusa
+    dynasty = "»Tç"  # Habe
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1164.1.1 = {
+  heir = {
+    name = "≥u‰S	T"  # Naguji
+    monarch_name = "≥u‰S	T"  # Naguji
+    dynasty = "»Tç"  # Habe
+    birth_date = 1164.1.1
+    death_date = 1247.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+1194.1.1 = {
+  monarch = {
+    name = "≥u‰S	T"  # Naguji
+    dynasty = "»Tç"  # Habe
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+1200.1.1 = {
+  religion = sunni
+  religious_school = maliki_school
+}
+1217.1.1 = {
+  heir = {
+    name = "‰S<hÊt"  # Gugwa
+    monarch_name = "‰S<hÊt"  # Gugwa
+    dynasty = "»Tç"  # Habe
+    birth_date = 1217.1.1
+    death_date = 1290.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+1247.1.1 = {
+  monarch = {
+    name = "‰S<hÊt"  # Gugwa
+    dynasty = "»Tç"  # Habe
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+1260.1.1 = {
+  heir = {
+    name = "ÇaS≥R"  # Shekarau
+    monarch_name = "ÇaS≥R"  # Shekarau
+    dynasty = "»Tç"  # Habe
+    birth_date = 1260.1.1
+    death_date = 1307.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 4
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1290.1.1 = {
+  monarch = {
+    name = "ÇaS≥R"  # Shekarau
+    dynasty = "»Tç"  # Habe
+    adm = 1
+    dip = 4
+    mil = 4
+  }
+}
+1290.1.1 = {
+  heir = {
+    name = "ﬂRs|öN"  # Tsamiya
+    monarch_name = "ﬂRs|öN"  # Tsamiya
+    dynasty = "»Tç"  # Habe
+    birth_date = 1277.1.1
+    death_date = 1343.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+1307.1.1 = {
+  monarch = {
+    name = "ﬂRs|öN"  # Tsamiya
+    dynasty = "»Tç"  # Habe
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+1313.1.1 = {
+  heir = {
+    name = "eYØe¸f Nb(gvVÊt"  # Usman Zamnagawa
+    monarch_name = "eYØe¸f Nb(gvVÊt"  # Usman Zamnagawa
+    dynasty = "»Tç"  # Habe
+    birth_date = 1313.1.1
+    death_date = 1349.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+1343.1.1 = {
+  monarch = {
+    name = "eYØe¸f Nb(gvVÊt"  # Usman Zamnagawa
+    dynasty = "»Tç"  # Habe
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+1343.1.1 = {
+  heir = {
+    name = "öN	T"  # Yaji
+    monarch_name = "öN	T"  # Yaji
+    dynasty = "»Tç"  # Habe
+    birth_date = 1319.1.1
+    death_date = 1385.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1349.1.1 = {
+  monarch = {
+    name = "öN	T"  # Yaji
+    dynasty = "»Tç"  # Habe
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1355.1.1 = {
+  heir = {
+    name = "^†RöN"  # Bugaya
+    monarch_name = "^†RöN"  # Bugaya
+    dynasty = "»Tç"  # Habe
+    birth_date = 1355.1.1
+    death_date = 3000.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1385.1.1 = {
+  monarch = {
+    name = "^†RöN"  # Bugaya
+    dynasty = "»Tç"  # Habe
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1390.1.1 = {
+  monarch = {
+    name = "^Wlö"  # Chiroma
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 2
+    mil = 1
+  }
+}
+1420.1.1 = {
+  heir = {
+    name = "≈ñT^"  # Yakubu
+    monarch_name = "≈ñT^"  # Yakubu
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1420.1.1
+    death_Date = 1462.9.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1452.1.1 = {
+  monarch = {
+    name = "≈ñT^"  # Yakubu
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1452.1.1 = {
+  heir = {
+    name = "Fz»T¸f Åú∆Y’l"  # Muhamman Rumfa
+    monarch_name = "Fz»T¸f Åú∆Y’l"  # Muhamman Rumfa
+    birth_date = 1450.1.1
+    death_Date = 1498.8.1
+    claim = 95
+    adm = 6
+    dip = 4
+    mil = 5
+  }
+}
+1462.9.1 = {
+  monarch = {
+    name = "Fz»T¸f Åú∆Y’l"  # Muhamman Rumfa
+    dynasty = "»Tç"  # Habe
+    dip = 4
+    adm = 6
+    mil = 5
+  }
+}
+1470.1.1 = {
+  heir = {
+    name = "?ñjSjg…b^"  # 'Abdullahi
+    monarch_name = "?ñjSjg…b^ II"  # 'Abdullahi II
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1470.1.1
+    death_Date = 1508.5.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 6
+  }
+}
+1498.8.1 = {
+  monarch = {
+    name = "?ñjSjg…b^ II"  # 'Abdullahi II
+    dynasty = "»Tç"  # Habe
+    dip = 2
+    adm = 4
+    mil = 6
+  }
+}
+1498.8.1 = {
+  heir = {
+    name = "Fz»T¸f ˙W0t˙W"  # Muhamman Kisoki
+    monarch_name = "Fz»T¸f ˙W0t˙W"  # Muhamman Kisoki
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1490.1.1
+    death_Date = 1530.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+1508.5.1 = {
+  monarch = {
+    name = "Fz»T¸f ˙W0t˙W"  # Muhamman Kisoki
+    dynasty = "»Tç"  # Habe
+    dip = 1
+    adm = 3
+    mil = 2
+  }
+}
+1508.5.1 = {
+  heir = {
+    name = "æèLNæè ?ñÙT(Ñlö"  # Da'uda Abasama
+    monarch_name = "æèLNæè ?ñÙT(Ñlö I"  # Da'uda Abasama I
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1500.1.1
+    death_Date = 1542.3.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1530.1.1 = {
+  monarch = {
+    name = "æèLNæè ?ñÙT(Ñlö I"  # Da'uda Abasama I
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1530.1.1 = {
+  heir = {
+    name = "?ñ^ çKQS aSY"  # Abu Bakr Kado
+    monarch_name = "?ñ^ çKQS aSY"  # Abu Bakr Kado
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1500.1.1
+    death_date = 1564.8.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1542.3.1 = {
+  monarch = {
+    name = "?ñ^ çKQS aSY"  # Abu Bakr Kado
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1542.3.1 = {
+  heir = {
+    name = "öNì^ÃR"  # Yakufu
+    monarch_name = "öNì^ÃR"  # Yakufu
+    dynasty = "»Tç"  # Habe
+    birth_date = 1520.1.1
+    death_Date = 1572.5.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+1564.8.1 = {
+  monarch = {
+    name = "öNì^ÃR"  # Yakufu
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 1
+    mil = 3
+  }
+}
+1564.8.1 = {
+  heir = {
+    name = "Fz»T¸f ôl0å˜ñ"  # Muhamman Shashere
+    monarch_name = "Fz»T¸f ôl0å˜ñ"  # Muhamman Shashere
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1550.1.1
+    death_Date = 1582.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 2
+  }
+}
+1572.5.1 = {
+  monarch = {
+    name = "Fz»T¸f ôl0å˜ñ"  # Muhamman Shashere
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 1
+    mil = 2
+  }
+}
+1572.5.1 = {
+  heir = {
+    name = "Fz»T¸f Nb˙W"  # Muhamman Zaki
+    monarch_name = "Fz»T¸f Nb˙W"  # Muhamman Zaki
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1570.1.1
+    death_date = 1617.12.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1582.1.1 = {
+  monarch = {
+    name = "Fz»T¸f Nb˙W"  # Muhamman Zaki
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1582.1.1 = {
+  heir = {
+    name = "Fz»T¸f ™RNb˙W"  # Muhamman Nuzaki
+    monarch_name = "Fz»T¸f ™RNb˙W"  # Muhamman Nuzaki
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1560.1.1
+    death_Date = 1622.11.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+1617.12.1 = {
+  monarch = {
+    name = "Fz»T¸f ™RNb˙W"  # Muhamman Nuzaki
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 1
+    mil = 3
+  }
+}
+1617.12.1 = {
+  heir = {
+    name = "ì^fW‘k"  # Kutambi
+    monarch_name = "ì^fW‘k"  # Kutambi
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1600.1.1
+    death_Date = 1648.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1622.11.1 = {
+  monarch = {
+    name = "ì^fW‘k"  # Kutambi
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1622.11.1 = {
+  heir = {
+    name = "?ñS»T	T"  # Alhaji
+    monarch_name = "?ñS»T	T"  # Alhaji
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1620.1.1
+    death_Date = 1649.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+1648.1.1 = {
+  monarch = {
+    name = "?ñS»T	T"  # Alhaji
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 1
+    mil = 3
+  }
+}
+1649.1.1 = {
+  monarch = {
+    name = "ÇKQéU'S  II"  # Shekkarau II
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 2
+  }
+}
+1650.12.1 = {
+  monarch = {
+    name = "Fz»T¸f ì^fÙT"  # Muhamman Kukumba
+    dynasty = "»Tç"  # Habe
+    dip = 2
+    adm = 1
+    mil = 3
+  }
+}
+1651.12.1 = {
+  monarch = {
+    name = "0töN˙W"  # Soyaki
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1651.12.15 = {
+  monarch = {
+    name = "Fz»T¸f ì^fÙT"  # Muhamman Kukumba
+    dynasty = "»Tç"  # Habe
+    dip = 2
+    adm = 1
+    mil = 3
+  }
+}
+1659.9.1 = {
+  monarch = {
+    name = "ÙTÊt"  # Bawa
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1659.9.1 = {
+  heir = {
+    name = "Fz»T¸f æèÍè"  # Muhamman Dadi
+    monarch_name = "Fz»T¸f æèÍè"  # Muhamman Dadi
+    birth_Date = 1650.1.1
+    death_Date = 1702.5.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1670.1.1 = {
+  monarch = {
+    name = "Fz»T¸f æèÍè"  # Muhamman Dadi
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1670.1.1 = {
+  heir = {
+    name = "Fz»T∆Y ôlÃë+Y"  # Muhamman Sharifa
+    monarch_name = "Fz»T∆Y ôlÃë+Y"  # Muhamman Sharifa
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1670.1.1
+    death_Date = 1730.7.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1702.5.1 = {
+  monarch = {
+    name = "Fz»T∆Y ôlÃë+Y"  # Muhamman Sharifa
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1702.5.1 = {
+  heir = {
+    name = "FzU¸f fÙTÃë"  # Muhamman Kumbari
+    monarch_name = "FzU¸f fÙTÃë"  # Muhamman Kumbari
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1700.1.1
+    death_Date = 1743.2.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1730.7.1 = {
+  monarch = {
+    name = "FzU¸f fÙTÃë"  # Muhamman Kumbari
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1730.7.1 = {
+  heir = {
+    name = "?ñS»T	T aS‘k"  # Alhaji Kabbi
+    monarch_name = "?ñS»T	T aS‘k"  # Alhaji Kabbi
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1723.1.1
+    death_Date = 1752.5.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1743.2.1 = {
+  monarch = {
+    name = "?ñS»T	T aS‘k"  # Alhaji Kabbi
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1743.2.1 = {
+  heir = {
+    name = "Fz»T¸f öNNm"  # Muhamman Yaji
+    monarch_name = "Fz»T¸f öNNm"  # Muhamman Yaji
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1730.1.1
+    death_Date = 1768.5.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1752.5.1 = {
+  monarch = {
+    name = "Fz»T¸f öNNm"  # Muhamman Yaji
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1752.5.1 = {
+  heir = {
+    name = "ÙTÙT Nb˙W"  # Babba Zaki
+    monarch_name = "ÙTÙT Nb˙W"  # Babba Zaki
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1750.1.1
+    death_Date = 1776.2.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1768.5.1 = {
+  monarch = {
+    name = "ÙTÙT Nb˙W"  # Babba Zaki
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1768.5.1 = {
+  heir = {
+    name = "æèLNæè ?ñÙT(Ñlö"  # Da'uda Abasama
+    monarch_name = "æèLNæè ?ñÙT(Ñlö II"  # Da'uda Abasama II
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1750.1.1
+    death_Date = 1780.12.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1776.2.1 = {
+  monarch = {
+    name = "æèLNæè ?ñÙT(Ñlö II"  # Da'uda Abasama II
+    dynasty = "»Tç"  # Habe
+    dip = 3
+    adm = 3
+    mil = 3
+  }
+}
+1776.2.1 = {
+  heir = {
+    name = "Fz»T¸f ?ñSÊt)R"  # Muhamman Alwali
+    monarch_name = "Fz»T¸f ?ñSÊt)R"  # Muhamman Alwali
+    dynasty = "»Tç"  # Habe
+    birth_Date = 1770.1.1
+    death_Date = 1807.3.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+1780.12.1 = {
+  monarch = {
+    name = "Fz»T¸f ?ñSÊt)R"  # Muhamman Alwali
+    dynasty = "»Tç"  # Habe
+    dip = 1
+    adm = 3
+    mil = 1
+  }
+}
+1780.12.1 = {
+  heir = {
+    name = "œÇ±É¸f™R 9N ?ñÙT»Tlö"  # Suleimanu dan Abahama
+    monarch_name = "œÇ±É¸f™R 9N ?ñÙT»Tlö"  # Suleimanu dan Abahama
+    dynasty = "ÃR…b<S"  # Fulani
+    birth_Date = 1780.1.1
+    death_Date = 1819.9.21
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 1
+  }
+}
+1807.3.1 = {
+  monarch = {
+    name = "œÇ±É¸f™R 9N ?ñÙT»Tlö"  # Suleimanu dan Abahama
+    dynasty = "ÃR…b<S"  # Fulani
+    dip = 1
+    adm = 4
+    mil = 1
+  }
+}
+1807.3.1 = {
+  heir = {
+    name = "fjS…b1k æèY"  # Ibrahim Dabo
+    monarch_name = "fjS…b1k æèY"  # Ibrahim Dabo
+    dynasty = "ÃR…b<S"  # Fulani
+    birth_Date = 1780.1.1
+    death_Date = 1830.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1819.9.21 = {
+  monarch = {
+    name = "fjS…b1k æèY"  # Ibrahim Dabo
+    dynasty = "ÃR…b<S"  # Fulani
+    dip = 3
+    adm = 2
+    mil = 3
+  }
+}

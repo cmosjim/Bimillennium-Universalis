@@ -1,0 +1,67 @@
+#3243 - 
+
+owner = XIO
+controller = XIO
+culture = khitan
+religion = tengri_pagan_reformed
+capital = "ÂíËþµÂ"
+trade_goods = livestock
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+is_city = yes
+add_core = XIO
+add_core = XIB
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+
+14.1.1 = { owner = XIB controller = XIB remove_core = XIO remove_core = XIB }
+338.1.1 = { owner = DA1 controller = DA1 add_core = DA1 remove_core = XIO }
+376.1.1 = { owner = QIN controller = QIN add_core = QIN remove_core = DA1 }
+385.1.1 = { owner = DA1 controller = DA1 add_core = DA1 remove_core = QIN }
+398.1.1 = { owner = NWE controller = NWE add_core = NWE remove_core = DA1 }
+432.1.1 = { owner = KHT controller = KHT add_core = KHT remove_core = NWE } 
+648.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = KHT }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+692.1.1 = { owner = HO3 controller = HO3 add_core = HO3 remove_core = WZ1 }
+744.1.1 = { owner = UIG controller = UIG add_core = UIG remove_core = HO3 }
+841.1.1 = { owner = GN1 controller = GN1 add_core = GN1 remove_core = UIG }
+923.1.1 = { owner = KHT controller = KHT add_core = KHT remove_core = GN1 }
+947.1.1 = { owner = LIO controller = LIO add_core = LIO remove_core = KHT }
+1133.1.1 = { owner = WN1 controller = WN1 add_core = WN1 remove_core = LIO culture = mongol  }
+1206.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = WN1 culture = chahar }
+1260.5.5 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1265.1.1 = { religion = vajrayana }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1389.1.1 = { owner = TAT controller = TAT add_core = TAT remove_core = YUA }
+1402.1.1 = { culture = khalkha }
+1434.1.1 = {owner = OIR controller = OIR add_core = OIR remove_core = TAT }
+1482.1.1 = { owner = TAT controller = TAT add_core = TAT remove_core = OIR } 
+1586.1.1 = { religion = vajrayana } # State religion
+1624.1.1 = {	owner = MCH
+		controller = MCH
+		add_core = MCH
+		remove_core = TAT
+	    } # The Later Jin Khanate
+1636.5.15 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		remove_core = MCH
+	    } # The Qing Dynasty
+1682.1.1 = { discovered_by = SPA } #Ferdinand Verbiest
+1688.1.1 = { owner = ZUN
+		controller = ZUN
+		}
+1691.1.1 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		 remove_core = ZUN
+	   } # Kangxi leads Qing army pushing Zunghars back
+1709.1.1 = { discovered_by = SPA }
+1840.1.1 = { add_core = KHA capital = "Bayan Tu'men" }
+1911.12.29 = { owner = KHA controller = KHA add_core = KHA remove_core = QNG }

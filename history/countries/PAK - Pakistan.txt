@@ -1,0 +1,206 @@
+government = republic
+add_government_reform = oligarchy_reform
+technology_group = muslim
+religion = sunni
+primary_culture = panjabi
+capital = 2180
+religious_school = hanafi_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1920.1.1 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = universal_suffrage_reform
+  add_government_reform = reinforce_republican_values_reform
+  add_government_reform = multi_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = abolish_presidency
+  set_legacy_government = parliamentary_republic
+}
+1947.8.14 = {
+  monarch = {
+    name = ")RšN8Yyr ?–Ì‘ Wl"  # Liaquat Ali Khan
+    adm = 4
+    dip = 5
+    mil = 2
+  }
+}
+1951.10.17 = {
+  monarch = {
+    name = "aSæt> ³uyQFzN"  # Khawaja Nazimuddin
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1953.4.17 = {
+  monarch = {
+    name = "FzUØ·V ?–Ì‘ ZS<hÉb"  # Muhammad Ali Bogra
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1955.8.12 = {
+  monarch = {
+    name = "TNjgÌ‘ FzUØ·V ?–Ì‘"  # Chaudhry Muhammad Ali
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+1956.3.23 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+  monarch = {
+    name = "O¯eNW·VS s|SNb"  # Iskander Mirza
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1958.10.27 = {
+  monarch = {
+    name = "?–2S^ Wl"  # Ayub Khan
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+1969.3.25 = {
+  monarch = {
+    name = "öSwmšN Wl"  # Yahya Khan
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1971.12.20 = {
+  monarch = {
+    name = "POÒRòƒaSS ?–Ì‘ ^Xb"  # Zulfikar Ali Bhutto
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+1973.8.14 = {
+  monarch = {
+    name = "ÕlyQS OÉb^ TNjgÌ‘"  # Fazal Ilahi Chaudhry
+    adm = 4
+    dip = 1
+    mil = 1
+  }
+}
+1978.9.16 = {
+  monarch = {
+    name = "FzUØ·V PŸšN ÈTKQ"  # Muhammad Zia-ul-Haq
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+1988.8.17 = {
+  monarch = {
+    name = "4TÉbÆY O™lKQ Wl"  # Ghulam Ishaq Khan
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1993.7.18 = {
+  monarch = {
+    name = "æt^ÆY („>·V"  # Wasim Sajjad
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+1993.11.14 = {
+  monarch = {
+    name = "ÕlœKQ ±ƒ RÌ‘"  # Farooq Leghari
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1997.12.2 = {
+  monarch = {
+    name = "æt^ÆY („>·V"  # Wasim Sajjad
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+1998.1.1 = {
+  monarch = {
+    name = "FzUØ·V ÉbòƒKQ TXÉbS"  # Muhammad Rafiq Tarar
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+2001.6.20 = {
+  monarch = {
+    name = "iOSæ—yQ Fz™lÉb+Y"  # Pervez Musharraf
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+2008.8.18 = {
+  monarch = {
+    name = "FzUØ·V s|‰R Ï‚ÆYW"  # Muhammad Mian Soomro
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+2008.9.9 = {
+  monarch = {
+    name = "?–‰+Y ?–Ì‘ NbS¾Ì‘"  # Asif Ali Zardari
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+2013.9.9 = {
+  monarch = {
+    name = "lšÆYªRi` ¯OiàV"  # Mamnoon Hussain
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}

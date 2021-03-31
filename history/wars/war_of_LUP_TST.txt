@@ -1,0 +1,17 @@
+name = "Il-NKNb"
+
+war_goal = {
+  type = take_core
+  casus_belli = cb_core
+  province = 689
+}
+
+217.1.1 = {
+	add_attacker = LUP
+	add_defender = TS2
+}
+
+219.6.1 = {
+	rem_attacker = LUP
+	rem_attacker = TS2
+}

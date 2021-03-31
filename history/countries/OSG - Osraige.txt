@@ -1,0 +1,1232 @@
+government = tribal
+add_government_reform = barbarian_reform
+technology_group = barbarian
+primary_culture = irish
+religion = druidism
+capital = 4502
+2.1.1 = {
+  monarch = {
+    name = "Iar"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+2.1.1 = {
+  heir = {
+    name = "Criomthann MÛr"
+    monarch_name = "Criomthann MÛr"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 2.1.1
+    death_date = 50.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+20.1.1 = {
+  monarch = {
+    name = "Criomthann MÛr"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 2.1.1
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+20.1.1 = {
+  heir = {
+    name = "”engus Osrithe"
+    monarch_name = "”engus Osrithe"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 20.1.1
+    death_date = 90.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 4
+  }
+}
+50.1.1 = {
+  monarch = {
+    name = "”engus Osrithe"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 20.1.1
+    adm = 5
+    dip = 2
+    mil = 4
+  }
+}
+60.1.1 = {
+  heir = {
+    name = "Loegaire Birn"
+    monarch_name = "Loegaire Birn"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 60.1.1
+    death_date = 150.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 5
+  }
+}
+90.1.1 = {
+  monarch = {
+    name = "Loegaire Birn"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 60.1.1
+    adm = 1
+    dip = 0
+    mil = 5
+  }
+}
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+120.1.1 = {
+  heir = {
+    name = "Amhalgadh"
+    monarch_name = "Amhalgadh"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 120.1.1
+    death_date = 190.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+150.1.1 = {
+  monarch = {
+    name = "Amhalgadh"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 120.1.1
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+160.1.1 = {
+  heir = {
+    name = "Echach L·mdÛit"
+    monarch_name = "Echach L·mdÛit"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 160.1.1
+    death_date = 230.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+190.1.1 = {
+  monarch = {
+    name = "Echach L·mdÛit"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 160.1.1
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+200.1.1 = {
+  heir = {
+    name = "Buan"
+    monarch_name = "Buan"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 200.1.1
+    death_date = 270.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+230.1.1 = {
+  monarch = {
+    name = "Buan"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 200.1.1
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+240.1.1 = {
+  heir = {
+    name = "Niadh Corb"
+    monarch_name = "Niadh Corb"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 240.1.1
+    death_date = 310.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+270.1.1 = {
+  monarch = {
+    name = "Niadh Corb"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 240.1.1
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+280.1.1 = {
+  heir = {
+    name = "Cairbre Caomh"
+    monarch_name = "Cairbre Caomh"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 280.1.1
+    death_date = 350.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 4
+  }
+}
+310.1.1 = {
+  monarch = {
+    name = "Cairbre Caomh"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 280.1.1
+    adm = 1
+    dip = 0
+    mil = 4
+  }
+}
+320.1.1 = {
+  heir = {
+    name = "Conall"
+    monarch_name = "Conall"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 320.1.1
+    death_date = 400.1.1
+    claim = 95
+    adm = 5
+    dip = 0
+    mil = 1
+  }
+}
+350.1.1 = {
+  monarch = {
+    name = "Conall"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 320.1.1
+    adm = 5
+    dip = 0
+    mil = 1
+  }
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+370.1.1 = {
+  heir = {
+    name = "Rumaind Duach"
+    monarch_name = "Rumaind Duach"
+    dynasty = "æèS ‘ki`"  # D·l Birn
+    birth_date = 370.1.1
+    death_date = 450.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+400.1.1 = {
+  monarch = {
+    name = "Rumaind Duach"
+    dynasty = "D·l Birn"
+    birth_date = 370.1.1
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+420.1.1 = {
+  heir = {
+    name = "Laignich F·elad"
+    monarch_name = "Laignich F·elad"
+    dynasty = "D·l Birn"
+    birth_date = 420.1.1
+    death_date = 490.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+450.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+  government_rank = 1
+}
+450.1.1 = {
+  monarch = {
+    name = "Laignich F·elad"
+    dynasty = "D·l Birn"
+    birth_date = 420.1.1
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+460.1.1 = {
+  heir = {
+    name = "Bicne C·ech"
+    monarch_name = "Bicne C·ech"
+    dynasty = "D·l Birn"
+    birth_date = 460.1.1
+    death_date = 530.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+490.1.1 = {
+  monarch = {
+    name = "Bicne C·ech"
+    dynasty = "D·l Birn"
+    birth_date = 460.1.1
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+500.1.1 = {
+  heir = {
+    name = "Colm·n MÛr"
+    monarch_name = "Colm·n MÛr"
+    dynasty = "D·l Birn"
+    birth_date = 500.1.1
+    death_date = 574.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+530.1.1 = {
+  monarch = {
+    name = "Colm·n MÛr"
+    dynasty = "D·l Birn"
+    birth_date = 500.1.1
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+536.1.1 = {
+  technology_group = western
+}
+544.1.1 = {
+  heir = {
+    name = "Feradach Finn"
+    monarch_name = "Feradach Finn"
+    dynasty = "D·l Birn"
+    birth_date = 544.1.1
+    death_date = 583.1.1
+    claim = 95
+    adm = 0
+    dip = 4
+    mil = 2
+  }
+}
+574.1.1 = {
+  monarch = {
+    name = "Feradach Finn"
+    dynasty = "D·l Birn"
+    birth_date = 544.1.1
+    adm = 0
+    dip = 4
+    mil = 2
+  }
+}
+574.1.1 = {
+  heir = {
+    name = "Colm·n"
+    monarch_name = "Colm·n"
+    dynasty = "D·l Birn"
+    birth_date = 553.1.1
+    death_date = 603.1.1
+    claim = 95
+    adm = 0
+    dip = 3
+    mil = 4
+  }
+}
+583.1.1 = {
+  monarch = {
+    name = "Colm·n"
+    dynasty = "D·l Birn"
+    birth_date = 553.1.1
+    adm = 0
+    dip = 3
+    mil = 4
+  }
+}
+583.1.1 = {
+  heir = {
+    name = "RÛn·n RÌgflaith"
+    monarch_name = "RÛn·n RÌgflaith"
+    dynasty = "D·l Birn"
+    birth_date = 573.1.1
+    death_date = 624.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 4
+  }
+}
+603.1.1 = {
+  monarch = {
+    name = "RÛn·n RÌgflaith"
+    dynasty = "D·l Birn"
+    birth_date = 573.1.1
+    adm = 2
+    dip = 1
+    mil = 4
+  }
+}
+603.1.1 = {
+  heir = {
+    name = "Scannlan MÛr"
+    monarch_name = "Scannlan MÛr"
+    dynasty = "D·l Birn"
+    birth_date = 594.1.1
+    death_date = 644.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 0
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+624.1.1 = {
+  monarch = {
+    name = "Scannlan MÛr"
+    dynasty = "D·l Birn"
+    birth_date = 594.1.1
+    adm = 4
+    dip = 3
+    mil = 0
+  }
+}
+624.1.1 = {
+  heir = {
+    name = "Crundm·ol"
+    monarch_name = "Crundm·ol"
+    dynasty = "D·l Birn"
+    birth_date = 614.1.1
+    death_date = 656.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+644.1.1 = {
+  monarch = {
+    name = "Crundm·ol"
+    dynasty = "D·l Birn"
+    birth_date = 614.1.1
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+644.1.1 = {
+  heir = {
+    name = "F·el·n"
+    monarch_name = "F·el·n"
+    dynasty = "D·l Birn"
+    birth_date = 626.1.1
+    death_date = 660.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 4
+  }
+}
+656.1.1 = {
+  monarch = {
+    name = "F·el·n"
+    dynasty = "D·l Birn"
+    birth_date = 626.1.1
+    adm = 5
+    dip = 2
+    mil = 4
+  }
+}
+656.1.1 = {
+  heir = {
+    name = "Tuaim Sn·mha"
+    monarch_name = "Tuaim Sn·mha"
+    dynasty = "D·l Birn"
+    birth_date = 630.1.1
+    death_date = 678.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 5
+  }
+}
+660.1.1 = {
+  monarch = {
+    name = "Tuaim Sn·mha"
+    dynasty = "D·l Birn"
+    birth_date = 630.1.1
+    adm = 4
+    dip = 0
+    mil = 5
+  }
+}
+660.1.1 = {
+  heir = {
+    name = "F·elchar"
+    monarch_name = "F·elchar"
+    dynasty = "D·l Birn"
+    birth_date = 648.1.1
+    death_date = 693.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+678.1.1 = {
+  monarch = {
+    name = "F·elchar"
+    dynasty = "D·l Birn"
+    birth_date = 648.1.1
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+678.1.1 = {
+  heir = {
+    name = "C˙ Cherca"
+    monarch_name = "C˙ Cherca"
+    dynasty = "D·l Birn"
+    birth_date = 663.1.1
+    death_date = 712.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+693.1.1 = {
+  monarch = {
+    name = "C˙ Cherca"
+    dynasty = "D·l Birn"
+    birth_date = 663.1.1
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+693.1.1 = {
+  heir = {
+    name = "Fland"
+    monarch_name = "Fland"
+    dynasty = "D·l Birn"
+    birth_date = 682.1.1
+    death_date = 720.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 4
+  }
+}
+700.1.1 = {
+  religion = chalcedonism
+}
+712.1.1 = {
+  monarch = {
+    name = "Fland"
+    dynasty = "D·l Birn"
+    birth_date = 682.1.1
+    adm = 3
+    dip = 0
+    mil = 4
+  }
+}
+712.1.1 = {
+  heir = {
+    name = "Ailill"
+    monarch_name = "Ailill"
+    dynasty = "D·l Birn"
+    birth_date = 690.1.1
+    death_date = 727.1.1
+    claim = 95
+    adm = 5
+    dip = 0
+    mil = 2
+  }
+}
+720.1.1 = {
+  monarch = {
+    name = "Ailill"
+    dynasty = "D·l Birn"
+    birth_date = 690.1.1
+    adm = 5
+    dip = 0
+    mil = 2
+  }
+}
+720.1.1 = {
+  heir = {
+    name = "Cellach"
+    monarch_name = "Cellach"
+    dynasty = "D·l Birn"
+    birth_date = 697.1.1
+    death_date = 735.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+727.1.1 = {
+  monarch = {
+    name = "Cellach"
+    dynasty = "D·l Birn"
+    birth_date = 697.1.1
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+727.1.1 = {
+  heir = {
+    name = "Forbasach"
+    monarch_name = "Forbasach"
+    dynasty = "D·l Birn"
+    birth_date = 705.1.1
+    death_date = 740.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 5
+  }
+}
+735.1.1 = {
+  monarch = {
+    name = "Forbasach"
+    dynasty = "D·l Birn"
+    birth_date = 705.1.1
+    adm = 4
+    dip = 0
+    mil = 5
+  }
+}
+735.1.1 = {
+  heir = {
+    name = "Anmchad"
+    monarch_name = "Anmchad"
+    dynasty = "D·l Birn"
+    birth_date = 710.1.1
+    death_date = 761.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 3
+  }
+}
+740.1.1 = {
+  monarch = {
+    name = "Anmchad"
+    dynasty = "D·l Birn"
+    birth_date = 710.1.1
+    adm = 1
+    dip = 2
+    mil = 3
+  }
+}
+740.1.1 = {
+  heir = {
+    name = "TÛim Sn·ma"
+    monarch_name = "TÛim Sn·ma"
+    dynasty = "D·l Birn"
+    birth_date = 731.1.1
+    death_date = 770.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+761.1.1 = {
+  monarch = {
+    name = "TÛim Sn·ma"
+    dynasty = "D·l Birn"
+    birth_date = 731.1.1
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+761.1.1 = {
+  heir = {
+    name = "D˙ngal"
+    monarch_name = "D˙ngal"
+    dynasty = "D·l Birn"
+    birth_date = 740.1.1
+    death_date = 772.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 4
+  }
+}
+770.1.1 = {
+  monarch = {
+    name = "D˙ngal"
+    dynasty = "D·l Birn"
+    birth_date = 740.1.1
+    adm = 5
+    dip = 2
+    mil = 4
+  }
+}
+770.1.1 = {
+  heir = {
+    name = "Fergal"
+    monarch_name = "Fergal"
+    dynasty = "D·l Birn"
+    birth_date = 742.1.1
+    death_date = 802.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 0
+  }
+}
+772.1.1 = {
+  monarch = {
+    name = "Fergal"
+    dynasty = "D·l Birn"
+    birth_date = 742.1.1
+    adm = 3
+    dip = 5
+    mil = 0
+  }
+}
+772.1.1 = {
+  heir = {
+    name = "D˙ngal"
+    monarch_name = "D˙ngal"
+    dynasty = "D·l Birn"
+    birth_date = 772.1.1
+    death_date = 842.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+}
+802.1.1 = {
+  monarch = {
+    name = "D˙ngal"
+    dynasty = "D·l Birn"
+    birth_date = 772.1.1
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+}
+812.1.1 = {
+  heir = {
+    name = "Cerball"
+    monarch_name = "Cerball"
+    dynasty = "D·l Birn"
+    birth_date = 812.1.1
+    death_date = 888.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+842.1.1 = {
+  monarch = {
+    name = "Cerball"
+    dynasty = "D·l Birn"
+    birth_date = 812.1.1
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+858.1.1 = {
+  heir = {
+    name = "Riacan"
+    monarch_name = "Riacan"
+    dynasty = "D·l Birn"
+    birth_date = 858.1.1
+    death_date = 894.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+867.1.1 = {
+  religion = catholic
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+888.1.1 = {
+  monarch = {
+    name = "Riacan"
+    dynasty = "D·l Birn"
+    birth_date = 858.1.1
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+888.1.1 = {
+  heir = {
+    name = "Diarmait"
+    monarch_name = "Diarmait"
+    dynasty = "D·l Birn"
+    birth_date = 864.1.1
+    death_date = 905.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 5
+  }
+}
+894.1.1 = {
+  monarch = {
+    name = "Diarmait"
+    dynasty = "D·l Birn"
+    birth_date = 864.1.1
+    adm = 2
+    dip = 4
+    mil = 5
+  }
+}
+905.1.1 = {
+  monarch = {
+    name = "Cellach"
+    dynasty = "D·l Birn"
+    birth_date = 875.1.1
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+908.1.1 = {
+  monarch = {
+    name = "Diarmait"
+    dynasty = "D·l Birn"
+    birth_date = 878.1.1
+    adm = 2
+    dip = 4
+    mil = 5
+  }
+}
+908.1.1 = {
+  heir = {
+    name = "Cuilen"
+    monarch_name = "Cuilen"
+    dynasty = "D·l Birn"
+    birth_date = 898.1.1
+    death_date = 934.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 0
+  }
+}
+928.1.1 = {
+  monarch = {
+    name = "Cuilen"
+    dynasty = "D·l Birn"
+    birth_date = 898.1.1
+    adm = 5
+    dip = 5
+    mil = 0
+  }
+}
+928.1.1 = {
+  heir = {
+    name = "Donnchad"
+    monarch_name = "Donnchad"
+    dynasty = "D·l Birn"
+    birth_date = 904.1.1
+    death_date = 976.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 3
+  }
+}
+934.1.1 = {
+  monarch = {
+    name = "Donnchad"
+    dynasty = "D·l Birn"
+    birth_date = 904.1.1
+    adm = 3
+    dip = 0
+    mil = 3
+  }
+}
+946.1.1 = {
+  heir = {
+    name = "Gilla P·traic"
+    monarch_name = "Gilla P·traic"
+    dynasty = "D·l Birn"
+    birth_date = 946.1.1
+    death_date = 1003.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+976.1.1 = {
+  monarch = {
+    name = "Gilla P·traic"
+    dynasty = "D·l Birn"
+    birth_date = 946.1.1
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+976.1.1 = {
+  heir = {
+    name = "Donnchad"
+    monarch_name = "Donnchad"
+    dynasty = "D·l Birn"
+    birth_date = 973.1.1
+    death_date = 1039.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+1003.1.1 = {
+  monarch = {
+    name = "Donnchad"
+    dynasty = "D·l Birn"
+    birth_date = 973.1.1
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+1009.1.1 = {
+  heir = {
+    name = "Gilla P·traic"
+    monarch_name = "Gilla P·traic"
+    dynasty = "D·l Birn"
+    birth_date = 1009.1.1
+    death_date = 1055.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 0
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1039.1.1 = {
+  monarch = {
+    name = "Gilla P·traic"
+    dynasty = "D·l Birn"
+    birth_date = 1009.1.1
+    adm = 2
+    dip = 4
+    mil = 0
+  }
+}
+1039.1.1 = {
+  heir = {
+    name = "Domnall"
+    monarch_name = "Domnall"
+    dynasty = "D·l Birn"
+    birth_date = 1025.1.1
+    death_date = 1073.1.1
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 0
+  }
+}
+1055.1.1 = {
+  monarch = {
+    name = "Domnall"
+    dynasty = "D·l Birn"
+    birth_date = 1025.1.1
+    adm = 2
+    dip = 0
+    mil = 0
+  }
+}
+1055.1.1 = {
+  heir = {
+    name = "Donnchad"
+    monarch_name = "Donnchad"
+    dynasty = "D·l Birn"
+    birth_date = 1043.1.1
+    death_date = 1090.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+1073.1.1 = {
+  monarch = {
+    name = "Donnchad"
+    dynasty = "D·l Birn"
+    birth_date = 1043.1.1
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+1073.1.1 = {
+  heir = {
+    name = "Gilla P·traic Ruad"
+    monarch_name = "Gilla P·traic Ruad"
+    dynasty = "D·l Birn"
+    birth_date = 1060.1.1
+    death_date = 1103.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+1090.1.1 = {
+  monarch = {
+    name = "Gilla P·traic Ruad"
+    dynasty = "D·l Birn"
+    birth_date = 1060.1.1
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+1090.1.1 = {
+  heir = {
+    name = "Cerball"
+    monarch_name = "Cerball"
+    dynasty = "D·l Birn"
+    birth_date = 1073.1.1
+    death_date = 1113.1.1
+    claim = 95
+    adm = 5
+    dip = 0
+    mil = 5
+  }
+}
+1103.1.1 = {
+  monarch = {
+    name = "Cerball"
+    dynasty = "D·l Birn"
+    birth_date = 1073.1.1
+    adm = 5
+    dip = 0
+    mil = 5
+  }
+}
+1103.1.1 = {
+  heir = {
+    name = "Finn"
+    monarch_name = "Finn"
+    dynasty = "D·l Birn"
+    birth_date = 1083.1.1
+    death_date = 1119.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}
+1113.1.1 = {
+  monarch = {
+    name = "Finn"
+    dynasty = "D·l Birn"
+    birth_date = 1083.1.1
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}
+1113.1.1 = {
+  heir = {
+    name = "Donnchad Balc"
+    monarch_name = "Donnchad Balc"
+    dynasty = "D·l Birn"
+    birth_date = 1089.1.1
+    death_date = 1123.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 2
+  }
+}
+1119.1.1 = {
+  monarch = {
+    name = "Donnchad Balc"
+    dynasty = "D·l Birn"
+    birth_date = 1089.1.1
+    adm = 0
+    dip = 2
+    mil = 2
+  }
+}
+1119.1.1 = {
+  heir = {
+    name = "Conchobar"
+    monarch_name = "Conchobar"
+    dynasty = "D·l Birn"
+    birth_date = 1093.1.1
+    death_date = 1126.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}
+1123.1.1 = {
+  monarch = {
+    name = "Conchobar"
+    dynasty = "D·l Birn"
+    birth_date = 1093.1.1
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}
+1123.1.1 = {
+  heir = {
+    name = "Gilla P·traic"
+    monarch_name = "Gilla P·traic"
+    dynasty = "D·l Birn"
+    birth_date = 1096.1.1
+    death_date = 1146.1.1
+    claim = 95
+    adm = 0
+    dip = 4
+    mil = 1
+  }
+}
+1126.1.1 = {
+  monarch = {
+    name = "Gilla P·traic"
+    dynasty = "D·l Birn"
+    birth_date = 1096.1.1
+    adm = 0
+    dip = 4
+    mil = 1
+  }
+}
+1126.1.1 = {
+  heir = {
+    name = "Cerball"
+    monarch_name = "Cerball"
+    dynasty = "D·l Birn"
+    birth_date = 1116.1.1
+    death_date = 1163.1.1
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 5
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1146.1.1 = {
+  monarch = {
+    name = "Cerball"
+    dynasty = "D·l Birn"
+    birth_date = 1116.1.1
+    adm = 0
+    dip = 1
+    mil = 5
+  }
+}
+1146.1.1 = {
+  heir = {
+    name = "Donchadh"
+    monarch_name = "Donchadh"
+    dynasty = "D·l Birn"
+    birth_date = 1133.1.1
+    death_date = 1185.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+1163.1.1 = {
+  monarch = {
+    name = "Donchadh"
+    dynasty = "D·l Birn"
+    birth_date = 1133.1.1
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+1163.1.1 = {
+  heir = {
+    name = "Maelseachlainn"
+    monarch_name = "Maelseachlainn"
+    dynasty = "D·l Birn"
+    birth_date = 1160.1.1
+    death_date = 1194.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+1185.1.1 = {
+  monarch = {
+    name = "Maelseachlainn"
+    dynasty = "D·l Birn"
+    birth_date = 1160.1.1
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1850.1.1 = {
+  set_legacy_government = constitutional_monarchy
+}

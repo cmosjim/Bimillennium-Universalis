@@ -1,0 +1,62 @@
+#2372 - Mong Pai
+
+owner = PYU
+controller = PYU
+culture = shan
+religion = animism
+capital = "Mawkmai"
+trade_goods = grain
+hre = no
+discovered_by = indian
+discovered_by = early_indian
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = asian
+discovered_by = early_chinese
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = PYU
+
+630.1.1 = { owner = HRP controller = HRP add_core = HRP remove_core = PYU }
+1100.1.1 = { owner = PAG controller = PAG add_core = PAG remove_core = HRP }
+1200.1.1 = { base_tax = 2 base_production = 2 }
+1296.1.1 = { owner = MPA controller = MPA add_core = MPA remove_core = PAG }
+
+1502.1.1 = {
+	controller = SST
+	owner = SST
+	add_core = SST
+	remove_core = MPA
+}
+1535.1.1 = { discovered_by = POR }
+1554.1.1 = { add_core = TAU }
+1557.11.1 = { controller = TAU } # The Shan dynasty is overthrown
+1563.4.1 = {	owner = TAU }
+1599.1.1 = {
+	owner = SST
+	controller = SST
+}
+1605.1.1 = {
+	owner = TAU
+	controller = TAU
+}
+1752.1.1 = {
+	owner = SST
+	controller = SST
+}
+1754.1.1 = {
+	owner = TAU
+	controller = TAU
+}
+
+1885.11.29 = { owner = GBR controller = GBR add_core = GBR add_core = BRM remove_core = TAU remove_core = SST capital = "Loikaw" }
+1942.5.1   = { controller = THL }
+1945.3.1   = { controller = GBR }
+1948.1.4   = { owner = BRM controller = BRM remove_core = GBR }
+1989.1.1   = { owner = MNM controller = MNM add_core = MNM remove_core = BRM }
+
+
+

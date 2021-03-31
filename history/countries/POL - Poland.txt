@@ -1,0 +1,1620 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+primary_culture = polish
+religion = slavic
+technology_group = eastern
+historical_friend = LIT
+historical_rival = TEU
+historical_rival = LIV
+capital = 254	# Poznan
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+680.1.1 = {
+	monarch = {
+		name = "±ÉØe—y I"
+		dynasty = "‚lÆv)R∑V"
+		adm = 2
+		dip = 1
+		mil = 4
+	}
+}
+
+690.1.1 = {
+	heir = {
+		name = "±ÉØe—y"
+		monarch_name = "±ÉØe—y II"
+		dynasty = "‚lÆv)R∑V"
+		birth_date = 690.1.1
+		death_date = 740.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+
+720.1.1 = {
+	monarch = {
+		name = "±ÉØe—y II"
+		dynasty = "‚lÆv)R∑V"
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+
+720.1.1 = {
+	heir = {
+		name = "±ÉØe—y"
+		monarch_name = "±ÉØe—y III"
+		dynasty = "‚lÆv)R∑V"
+		birth_date = 710.1.1
+		death_date = 760.1.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 4
+	}
+}
+
+740.1.1 = {
+	monarch = {
+		name = "±ÉØe—y III"
+		dynasty = "‚lÆv)R∑V"
+		adm = 0
+		dip = 1
+		mil = 4
+	}
+}
+
+740.1.1 = {
+	heir = {
+		name = "‚lÆvS"
+		monarch_name = "‚lÆvS I"
+		dynasty = "‚lÆv)R∑V"
+		birth_date = 730.1.1
+		death_date = 800.1.1
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 0
+	}
+}
+
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+760.1.1 = {
+	monarch = {
+		name = "‚lÆvS I"
+		dynasty = "‚lÆv)R∑V"
+		adm = 5
+		dip = 5
+		mil = 0
+	}
+}
+
+780.1.1 = {
+	heir = {
+		name = "‚lÆvS"
+		monarch_name = "‚lÆvS II"
+		dynasty = "‚lÆv)R∑V"
+		birth_date = 780.1.1
+		death_date = 850.1.1
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
+
+800.1.1 = {
+	monarch = {
+		name = "‚lÆvS II"
+		dynasty = "‚lÆv)R∑V"
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
+
+850.1.1 = { government = monarchy
+add_government_reform = feudalism_reform government_rank = 1 }
+
+850.1.1 = {
+	monarch = {
+		name = "ÆvöNØeyr"
+		dynasty = "ÆvöNØeyr"
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+850.1.1 = {
+	heir = {
+		name = "â´ÉÙuyr"
+		monarch_name = "â´ÉÙuyr"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 820.1.1
+		death_date = 870.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+870.1.1 = {
+	monarch = {
+		name = "â´ÉÙuyr"
+		dynasty = "ÆvöNØeyr"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+870.1.1 = {
+	heir = {
+		name = "±ÉØelKQ"
+		monarch_name = "±ÉØelKQ"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 860.1.1
+		death_date = 920.1.1
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+890.1.1 = {
+	monarch = {
+		name = "±ÉØelKQ"
+		dynasty = "ÆvöNØeyr"
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+890.1.1 = {
+	heir = {
+		name = "πfí|"
+		monarch_name = "πfí|"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 890.1.1
+		death_date = 960.1.1
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+920.1.1 = {
+	monarch = {
+		name = "πfí|"
+		dynasty = "ÆvöNØeyr"
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+930.1.1 = {
+	heir = {
+		name = "s|Øe—y"
+		monarch_name = "s|Øe—y I"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 930.1.1
+		death_date = 992.5.25
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+
+960.1.1 = { capital = 262 } #Krakow
+
+960.1.1 = {
+	monarch = {
+		name = "s|Øe—y I"
+		dynasty = "ÆvöNØeyr"
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+
+966.1.1 = { religion = catholic }
+
+967.1.1 = {
+	heir = {
+		name = "ZS±ÉØeÊt+Y"
+		monarch_name = "ZS±ÉØeÊt+Y I"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 967.1.1
+		death_date = 1025.6.17
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 5
+	}
+}
+
+992.5.25 = {
+	monarch = {
+		name = "ZS±ÉØeÊt+Y I"
+		dynasty = "ÆvöNØeyr"
+		adm = 1
+		dip = 5
+		mil = 5
+	}
+}
+
+992.5.25 = {
+	heir = {
+		name = "s|Øe—y"
+		monarch_name = "s|Øe—y II"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 990.1.1
+		death_date = 1034.5.11
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1025.6.17 = {
+	monarch = {
+		name = "s|Øe—y II"
+		dynasty = "ÆvöNØeyr"
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+1025.6.17 = {
+	heir = {
+		name = "aSâs|S"
+		monarch_name = "aSâs|S I"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1016.7.25
+		death_date = 1058.11.28
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+1034.5.11 = {
+	monarch = {
+		name = "aSâs|S I"
+		dynasty = "ÆvöNØeyr"
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+1042.1.1 = {
+	heir = {
+		name = "ZS±ÉØeÊt+Y"
+		monarch_name = "ZS±ÉØeÊt+Y II"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1042.1.1
+		death_date = 1081.4.3
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1058.11.28 = {
+	monarch = {
+		name = "ZS±ÉØeÊt+Y II"
+		dynasty = "ÆvöNØeyr"
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1058.11.28 = {
+	heir = {
+		name = "V…bÍèØe…b+Y"
+		monarch_name = "V…bÍèØe…b+Y I"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1044.1.1
+		death_date = 1102.6.4
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+1076.12.26 = { government_rank = 2 }
+
+1079.1.1 = {
+	monarch = {
+		name = "V…bÍèØe…b+Y I"
+		dynasty = "ÆvöNØeyr"
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+1079.1.1 = {
+	heir = {
+		name = "yQ‘k<hÖm+Y"
+		monarch_name = "yQ‘k<hÖm+Y I"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1073.1.1
+		death_date = 1113.7.8
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1102.6.4 = {
+	monarch = {
+		name = "yQ‘k<hÖm+Y I"
+		dynasty = "ÆvöNØeyr"
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1102.6.4 = {
+	heir = {
+		name = "ZS±ÉØeÊt+Y"
+		monarch_name = "ZS±ÉØeÊt+Y III"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1086.8.20
+		death_date = 1138.10.28
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+1107.1.1 = {
+	monarch = {
+		name = "ZS±ÉØeÊt+Y III"
+		dynasty = "ÆvöNØeyr"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+1107.1.1 = {
+	heir = {
+		name = "V…bÍèØe…b+Y"
+		monarch_name = "V…bÍèØe…b+Y II"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1105.1.1
+		death_date = 1159.5.30
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1138.10.28 = { capital = 254 }	# Poznan
+
+1138.10.28 = {
+	monarch = {
+		name = "V…bÍèØe…b+Y II"
+		dynasty = "ÆvöNØeyr"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1138.10.28 = {
+	heir = {
+		name = "ZS±ÉØeÊt+Y"
+		monarch_name = "ZS±ÉØeÊt+Y IV"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1125.1.1
+		death_date = 1173.1.5
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 1
+	}
+}
+
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1146.1.1 = {
+	monarch = {
+		name = "ZS±ÉØeÊt+Y IV"
+		dynasty = "ÆvöNØeyr"
+		adm = 4
+		dip = 2
+		mil = 1
+	}
+}
+
+1146.1.1 = {
+	heir = {
+		name = "s|Øe—y"
+		monarch_name = "s|Øe—y III"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1127.1.1
+		death_date = 1202.3.13
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1173.1.5 = {
+	monarch = {
+		name = "s|Øe—y III"
+		dynasty = "ÆvöNØeyr"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1173.1.5 = {
+	heir = {
+		name = "aSâs|S"
+		monarch_name = "aSâs|S II"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1138.1.1
+		death_date = 1194.5.5
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}
+
+1177.1.1 = {
+	monarch = {
+		name = "aSâs|S II"
+		dynasty = "ÆvöNØeyr"
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}
+
+1186.1.1 = {
+	heir = {
+		name = "±ÉØe˝lKQ"
+		monarch_name = "±ÉØe˝lKQ I"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1186.1.1
+		death_date = 1227.11.24
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1194.5.5 = {
+	monarch = {
+		name = "±ÉØe˝lKQ I"
+		dynasty = "ÆvöNØeyr"
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1198.1.1 = {
+	monarch = {
+		name = "s|Øe—y III"
+		dynasty = "ÆvöNØeyr"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1202.3.13 = {
+	monarch = {
+		name = "±ÉØe˝lKQ I"
+		dynasty = "ÆvöNØeyr"
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1202.3.13 = {
+	heir = {
+		name = "V…bÍèØe…b+Y"
+		monarch_name = "V…bÍèØe…b+Y III"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1161.1.1
+		death_date = 1231.11.3
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1227.11.24 = {
+	monarch = {
+		name = "V…bÍèØe…b+Y III"
+		dynasty = "ÆvöNØeyr"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1227.11.24 = {
+	heir = {
+		name = "∑^…b∑V"
+		monarch_name = "∑^…b∑V I"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1188.1.1
+		death_date = 1247.8.31
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1229.1.1 = {
+	monarch = {
+		name = "∑^…b∑V I"
+		dynasty = "ÆvöNØeyr"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1232.1.1 = {
+	monarch = {
+		name = "®N)R I"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1165.1.1
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+1232.1.1 = {
+	heir = {
+		name = "®N)R"
+		monarch_name = "®N)R II"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1196.1.1
+		death_date = 1241.4.9
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}
+
+1238.3.19 = {
+	monarch = {
+		name = "®N)R II"
+		dynasty = "ÆvöNØeyr"
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}
+
+1241.4.9 = {
+	monarch = {
+		name = "∑^…b∑V I"
+		dynasty = "ÆvöNØeyr"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1241.4.9 = {
+	heir = {
+		name = "ZS±ÉØeÊt+Y"
+		monarch_name = "ZS±ÉØeÊt+Y V"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1226.6.21
+		death_date = 1279.12.7
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1243.1.1 = {
+	monarch = {
+		name = "ZS±ÉØeÊt+Y V"
+		dynasty = "ÆvöNØeyr"
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1243.1.1 = {
+	heir = {
+		name = "±ÉØe˝lKQ"
+		monarch_name = "±ÉØe˝lKQ II"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1241.1.1
+		death_date = 1288.9.30
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1279.12.7 = {
+	monarch = {
+		name = "±ÉØe˝lKQ II"
+		dynasty = "ÆvöNØeyr"
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+1288.9.30 = {
+	monarch = {
+		name = "®N)R IV"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1258.1.1
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1288.9.30 = {
+	heir = {
+		name = "nfÌpÖh^S"
+		monarch_name = "nfÌpÖh^S II"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1257.10.14
+		death_date = 1296.2.8
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+1290.6.23 = {
+	monarch = {
+		name = "nfÌpÖh^S II"
+		dynasty = "ÆvöNØeyr"
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+1306.8.4 = {
+	monarch = {
+		name = "V…bÍèØe…b+Y I"
+		dynasty = "ÆvöNØeyr"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1310.4.30 = {
+	heir = {
+		name = "aSPüs|Âe"
+		monarch_name = "aSPüs|Âe III"
+		dynasty = "ÆvöNØeyr"
+		birth_date = 1310.4.30
+		death_date = 1370.11.5
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 5
+	}
+}
+
+1320.1.1 = { capital = 262 }	# Krakow
+
+1333.3.2 = {
+	monarch = {
+		name = "aSPüs|Âe III"
+		dynasty = "ÆvöNØeyr"
+		adm = 5
+		dip = 3
+		mil = 5
+	}
+}
+
+1382.9.10 = {
+	government = monarchy
+add_government_reform = elective_monarchy
+	monarch = {
+		name = "≈ñ∑VÙu†R I"
+		dynasty = "âRpgáe"
+		adm = 3
+		dip = 5
+		mil = 2
+		female = yes
+	}
+}
+
+1382.9.10 = {
+	heir = {
+		name = "V…bÍèØe…b+Y"
+		monarch_name = "V…bÍèØe…b+Y II"
+		dynasty = "≈ñ÷vÜñ"
+		birth_date = 1362.1.1
+		death_date = 1434.6.1
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1386.3.4 = {
+	monarch = {
+		name = "V…bÍèØe…b+Y II"
+		dynasty = "≈ñ÷vÜñ"
+		adm = 2
+		dip = 3
+		mil = 2
+		leader = { name = "V…bÍèØe…b+Y II"	type = general		fire = 4	shock = 5	manuever = 4	siege = 2 }
+	}
+}
+
+1389.1.1 = { leader = {	name = "õè∑V…b∆Y löØe—yÙuGY"		type = general		fire = 4	shock = 4	manuever = 3	siege = 2	death_date = 1414.1.1 } }
+
+1399.1.1 = { leader = {	name = "yQ‘k<hÖm+Y ^ÌpâöN"		type = general		fire = 4	shock = 4	manuever = 3	siege = 2	death_date = 1425.1.1 } }
+
+1410.1.1 = { leader = {	name = "—ûNbÙuôl"			type = general		fire = 6	shock = 6	manuever = 5	siege = 6	death_date = 1428.4.1 } }
+
+1424.10.31 = {
+	heir = {
+		name = "V…bÍèØe…b+Y"
+		monarch_name = "V…bÍèØe…b+Y III"
+		dynasty = "≈ñ÷vÜñ"
+		birth_date = 1424.10.31
+		death_date = 1444.11.10
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+		leader = { name = "V…bÍèØe…b+Y III"		type = general		fire = 5	shock = 3	manuever = 4	siege = 4 }
+	}
+}
+		
+1434.6.1 = {
+	monarch = {
+		name = "V…bÍèØe…b+Y III"
+		dynasty = "≈ñ÷vÜñ"
+		birth_date = 1424.10.31
+		adm = 2
+		dip = 3
+		mil = 2
+		leader = { name = "V…bÍèØe…b+Y III"		type = general		fire = 5	shock = 3	manuever = 4	siege = 4 }
+	}
+}
+
+# Personal union with Hungary 1439-1444
+1444.10.1 = {
+  set_estate_privilege = estate_nobles_golden_liberty
+}
+1444.11.11 = {
+	government = monarchy
+	add_government_reform = feudalism_reform
+  monarch = {
+    name = "(zzMOg)"  # (Interregnum)
+    adm = 0
+    mil = 0
+    dip = 0
+    regent = yes
+  }
+}
+1447.6.25 = {
+  monarch = {
+    name = "aSPüs|Âe IV"  # aSPüs|Âe IV
+    dynasty = "≈ñ÷vÜñ"  # Jagiellon
+    birth_date = 1427.11.30
+    adm = 4
+    dip = 4
+    mil = 1
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = scholar_personality
+  add_ruler_personality = incorruptible_personality
+}
+1454.2.10 = {
+  queen = {
+    country_of_origin = SAX
+    name = "åÇSyQçTX"  # Elzbieta
+    dynasty = "ØQ »T^Øe!X"  # von Habsburg
+    birth_date = 1437.1.1
+    death_date = 1505.8.30
+    female = yes
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+
+1459.12.27 = {
+  heir = {
+    name = "lb eY‚l…byr"  # Jan Olbracht
+    monarch_name = "lb I eY‚l…byr"  # Jan I Olbracht
+    dynasty = "≈ñ÷vÜñ"  # Jagiellon
+    birth_date = 1459.12.27
+    death_date = 1501.6.17
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 1
+  }
+  clear_scripted_personalities = yes
+  add_heir_personality = silver_tongue_personality
+}
+
+1461.1.1 = {
+  leader = {
+    name = "ÆveYTX jgÅR"  # Piotr Dunin
+    type = general
+    fire = 2
+    shock = 3
+    manuever = 3
+    siege = 1
+    death_date = 1484.1.1
+  }
+}
+
+1465.1.1 = {
+  leader = {
+    name = "9ç)RKQØe nfÖm+YØe˙W"  # Feliks Paniewski
+    type = general
+    fire = 2
+    shock = 3
+    manuever = 2
+    siege = 1
+    death_date = 1488.1.1
+  }
+}
+
+1475.1.1 = {
+  leader = {
+    name = "Y+RØeÊt+Y ì^m(ÉÙu(É˙W"  # Dobieslaw Kurozwecki
+    type = general
+    fire = 2
+    shock = 3
+    manuever = 2
+    siege = 1
+    death_date = 1496.1.1
+  }
+}
+
+1492.6.8 = {
+  monarch = {
+    name = "lb I eY‚l…byr"  # Jan I Olbracht
+    dynasty = "≈ñ÷vÜñ"  # Jagiellon
+    birth_date = 1459.12.27
+    adm = 2
+    dip = 0
+    mil = 1
+  }
+  heir = {
+    name = "öNÜSqS'Y"  # Aleksander
+    monarch_name = "öNÜSqS'Y I"  # Aleksander I
+    dynasty = "≈ñ÷vÜñ"  # Jagiellon
+    birth_date = 1461.8.5
+    death_date = 1506.8.19
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 0
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = silver_tongue_personality
+  add_heir_personality = naive_personality
+}
+
+1495.2.15 = {
+  queen = {
+    country_of_origin = MOS
+    name = "wm&OZ"  # Helena
+    dynasty = "YuÃëKQ"  # Rurikovich
+    birth_date = 1476.5.19
+    death_date = 1513.1.20
+    female = yes
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+
+1501.6.18 = {
+  monarch = {
+    name = "öNÜSqS'Y I"  # Aleksander I
+    dynasty = "≈ñ÷vÜñ"  # Jagiellon
+    birth_date = 1461.8.5
+    adm = 3
+    dip = 0
+    mil = 0
+  }
+  heir = {
+    name = "Pü<hôÑyr"  # Pü<hôÑyr
+    monarch_name = "Pü<hôÑyr I ØeTXÃë"  # Pü<hôÑyr I Stary
+    dynasty = "≈ñ÷vÜñ"  # Jagiellon
+    birth_date = 1467.1.1
+    death_date = 1548.4.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = naive_personality
+  add_heir_personality = scholar_personality
+  add_heir_personality = charismatic_negotiator_personality
+}
+
+
+1506.8.20 = {
+  monarch = {
+    name = "Pü<hôÑyr I ØeTXÃë"  # Pü<hôÑyr I Stary
+    dynasty = "≈ñ÷vÜñ"  # Jagiellon
+    birth_date = 1467.1.1
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = scholar_personality
+  add_ruler_personality = charismatic_negotiator_personality
+}
+
+
+1512.2.8 = {
+  queen = {
+    country_of_origin = TRA
+    name = "≠Ç≠Ç…b"  # Barbara
+    dynasty = "Nb‚l'S"  # Z·polya
+    birth_date = 1490.1.1
+    death_date = 1515.10.2
+    female = yes
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1518.4.18 = {
+  queen = {
+    country_of_origin = MLO
+    name = "ZSZ"  # Bona
+    dynasty = "ØeèySNb"  # Sforza
+    birth_date = 1494.2.2
+    death_date = 1557.11.19
+    female = yes
+    adm = 1
+    dip = 5
+    mil = 2
+  }
+}
+
+
+1520.8.1 = {
+  heir = {
+    name = "Pü<hôÑyr eY‰SØeyr"  # Pü<hôÑyr eY‰SØeyr
+    monarch_name = "Pü<hôÑyr I eY‰SØeyr"  # Pü<hôÑyr I eY‰SØeyr
+    dynasty = "≈ñ÷vÜñ"  # Jagiellon
+    birth_date = 1520.8.1
+    death_date = 1572.7.7
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+  add_heir_personality = infertile_personality
+  add_heir_personality = industrious_personality
+}
+
+
+1521.1.1 = {
+  leader = {
+    name = "lb TXYtØe˙W"  # Jan Tarnowski
+    type = general
+    fire = 2
+    shock = 4
+    manuever = 4
+    siege = 1
+    death_date = 1561.5.16
+  }
+}
+1548.4.2 = {
+  monarch = {
+    name = "Pü<hôÑyr II eY‰SØeyr"  # Pü<hôÑyr II eY‰SØeyr
+    dynasty = "≈ñ÷vÜñ"  # Jagiellon
+    birth_date = 1520.8.1
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = infertile_personality
+  add_ruler_personality = industrious_personality
+}
+
+
+1543.5.6 = {
+  queen = {
+    country_of_origin = HAB
+    name = "åÇSyQçTX"  # Elzbieta
+    dynasty = "ØQ »T^Øe!X"  # ØQ Habsburg
+    birth_date = 1526.7.9
+    death_date = 1545.6.15
+    female = yes
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+1550.12.7 = {
+  queen = {
+    country_of_origin = LIT
+    name = "≠Ç≠Ç…b"  # Barbara
+    dynasty = "…bPüÙuLN"  # Radvilos
+    birth_date = 1520.12.6
+    death_date = 1551.5.8
+    female = yes
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+
+
+1553.7.30 = {
+  queen = {
+    country_of_origin = HAB
+    name = "aSTXÂeZ"  # Katarzyna
+    dynasty = "ØQ »T^Øe!X"  # ØQ Habsburg
+    birth_date = 1533.9.15
+    death_date = 1572.2.28
+    female = yes
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+
+1560.1.1 = {
+  leader = {
+    name = "^XÙTØeÇÑâR bSZSs|SØe˙W"  # Sebastian Lubomirski
+    type = general
+    fire = 2
+    shock = 3
+    manuever = 3
+    siege = 1
+    death_date = 1613.7.20
+  }
+}
+
+1565.1.1 = {
+  leader = {
+    name = "âRpgO KQÅúnfØe˙W"  # âR∑VÅú Kurbski
+    type = general
+    fire = 2
+    shock = 1
+    manuever = 3
+    siege = 1
+    death_date = 1575.1.1
+  }
+}
+
+1572.1.1 = { leader = {	name = "KQÃëØeXbV0…byQÙuS"   	type = general		fire = 5	shock = 6	manuever = 6	siege = 4	death_date = 1603.11.20 } }
+
+1573.5.12 = {
+	monarch = {
+		name = "®N)R I"
+		dynasty = "ÊtbSÊt"
+		birth_date = 1551.9.19
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1575.1.1 = {
+	monarch = {
+		name = "Øeyr·Q I"
+		dynasty = "ÙTXbÃë"
+		birth_date = 1533.9.27
+		adm = 5
+		dip = 2
+		mil = 6
+		leader = { name = "Øeyr·Q ÙTXbÃë"	type = general		fire = 4	shock = 5	manuever = 5	siege = 3 }
+	}
+}
+
+1581.1.1 = { leader = {	name = "lb∑Nb´ÉOØe˙W"		type = general		fire = 6	shock = 6	manuever = 6	siege = 5	death_date = 1605.6.3 } }
+
+1587.8.1 = {
+	monarch = {
+		name = "Pü<hôÑyr III"
+		dynasty = "Êt(Ñ"
+		birth_date = 1566.6.20
+		adm = 1
+		dip = 2
+		mil = 2
+		leader = { name = "Pü<hôÑyr III Êt(Ñ"	type = general		fire = 6	shock = 4	manuever = 6	siege = 3 }
+	}
+}
+
+1589.1.1 = { leader = {	name = "lb∑(ÑÆv»T"           	type = general		fire = 4	shock = 4	manuever = 5	siege = 3	death_date = 1611.1.1 } }
+
+1595.6.9 = {
+	heir = {
+		name = "V…bÍèØe…b+Y"
+		monarch_name = "V…bÍèØe…b+Y IV"
+		dynasty = "Êt(Ñ"
+		birth_date = 1595.6.9
+		death_date = 1648.5.20
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 4
+		leader = { name = "V…bÍèØe…b+Y IV Êt(Ñ"	type = general		fire = 3	shock = 3	manuever = 4	siege = 1 }
+	}
+}
+		
+1596.1.1 = { capital = 257 } # Warsaw
+
+1600.1.1 = { leader = {	name = "lb TN∑VÔQÙuGY"           	type = general		fire = 4	shock = 6	manuever = 6	siege = 2	death_date = 1621.9.24 } }
+
+1600.1.1 = { leader = {	name = "ØefW<SØeÊt+Y∑bSZSs|SØe˙W"  	type = general			fire = 3	shock = 3	manuever = 4	siege = 2	death_date = 1649.1.1 } }
+
+1605.1.1 = { leader = {	name = "S. POS˙W+YØe˙W"		type = general			fire = 3	shock = 4	manuever = 4	siege = 3	death_date = 1620.10.6 } }
+
+1615.1.1 = { leader = {	name = "Krzysztof …byQÙuS"   	type = general			fire = 4	shock = 5	manuever = 3	siege = 4	death_date = 1640.1.1 } }
+
+1617.1.1 = { leader = {	name = "âvó+Y"               	type = general			fire = 2	shock = 5	manuever = 3	siege = 3	death_date = 1622.1.1 } }
+
+1618.1.1 = { leader = {	name = "?ñ&O∑ÍèKQ¸f"		type = admiral			fire = 5	shock = 4	manuever = 3	siege = 1	death_date = 1627.1.1 } }
+
+1620.1.1 = { leader = {	name = "s|—y…b	T∑‚lXb˙W"	type = general			fire = 5	shock = 4	manuever = 3	siege = 4	death_date = 1651.11.20 } }
+
+1620.1.1 = { leader = {	name = "S. —yÖm—y+YØe˙W"	type = general			fire = 2	shock = 5	manuever = 5	siege = 1	death_date = 1646.3.11 } }
+
+1621.1.1 = { leader = {	name = "K. ?ñâ0å+YØe˙W"		type = conquistador		fire = 4	shock = 5	manuever = 5	siege = 1	death_date = 1656.4.7 } }
+
+1630.1.1 = { leader = {	name = "P.J. (ÑÆv»T"		type = general			fire = 4	shock = 3	manuever = 5	siege = 3	death_date = 1665.1.1 } }
+
+1632.4.30 = {
+	monarch = {
+		name = "V…bÍèØe…b+Y IV"
+		dynasty = "Êt(Ñ"
+		birth_date = 1595.6.9
+		adm = 4
+		dip = 5
+		mil = 4
+		leader = { name = "V…bÍèØe…b+Y IV Êt(Ñ"	type = general		fire = 3	shock = 3	manuever = 4	siege = 4 }
+	}
+}
+
+1632.4.30 = {
+	heir = {
+		name = "lb∑aSyQs|SyQ"
+		monarch_name = "lb II aSPüs|Âe"
+		dynasty = "Êt(Ñ"
+		birth_date = 1609.3.22
+		death_date = 1672.12.16
+		claim = 95
+		adm = 0
+		dip = 3
+		mil = 1
+	}
+}
+
+1640.1.1 = { leader = {	name = "ÙuØe˙ãÙuGY"		type = general		fire = 4	shock = 3	manuever = 4	siege = 4	death_date = 1651.8.20 } }
+
+1648.5.20 = {
+	monarch = {
+		name = "ér II aSPüs|Âe"
+		dynasty = "Êt(Ñ"
+		birth_date = 1609.3.22
+		adm = 0
+		dip = 3
+		mil = 1
+	}
+}
+
+1650.1.1 = { leader = {	name = "ØQ∑)nyr"            	type = general		fire = 5	shock = 4	manuever = 2	siege = 4	death_date = 1671.1.1 } }
+
+1651.1.1 = { leader = {	name = "bâ+YØe˙W"             	type = general		fire = 6	shock = 5	manuever = 5	siege = 5	death_date = 1658.1.1 } }
+
+1654.1.1 = { leader = {	name = "S.J. >ç^m˙ã+YØe˙W"		type = general		fire = 3	shock = 3	manuever = 3	siege = 4	death_date = 1690.1.1 } }
+
+1655.1.1 = { leader = {	name = "Øeyr·Q ôl<S6w˙W"	type = general		fire = 5	shock = 5	manuever = 4	siege = 3	death_date = 1665.2.16 } }
+
+1657.1.1 = { leader = {	name = "6wyQ∑bSZSs|SØe˙W"      	type = general		fire = 5	shock = 5	manuever = 4	siege = 2	death_date = 1667.1.1 } }
+
+1669.1.1 = {
+	monarch = {
+		name = "¶ûÔS I Korybut"
+		dynasty = "ÙuØe˙ã+YØe˙W"
+		birth_date = 1640.5.31
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1674.5.1 = {
+	monarch = {
+		name = "ér III"
+		dynasty = "0t+RØe˙W"
+		birth_date = 1629.8.17
+		adm = 2
+		dip = 5
+		mil = 6
+		leader = { name = "ér 0t+RØe˙W"	type = general		fire = 3	shock = 5	manuever = 6	siege = 1 }
+	}
+}
+
+1680.1.1 = { leader = {	name = "Johann Patkul"		type = general		fire = 2	shock = 1	manuever = 4	siege = 1	death_date = 1707.10.10 } }
+
+1697.1.1 = {
+	monarch = {
+		name = "eY‰SØeyr II Mocny"
+		dynasty = "ØQ ÙuN"
+		birth_date = 1670.5.12
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1700.1.1 = { leader = {	name = "ér K. (ÑÆv»T"		type = general		fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1726.1.1 } }
+
+1700.1.1 = {
+	monarch = {
+		name = "ØefW<SØe≥R I"
+		dynasty = "Leszczynski"
+		birth_date = 1677.10.20
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+
+1730.1.1 = { leader = {	name = "J.M. Pac"              	type = general		fire = 3	shock = 5	manuever = 4	siege = 1	death_date = 1780.1.1 } }
+
+1735.10.3 = {
+	monarch = {
+		name = "eY‰SØeyr III Sas"
+		dynasty = "ØQ ÙuN"
+		birth_date = 1696.10.17
+		adm = 1
+		dip = 3
+		mil = 0
+	}
+}
+
+1735.11.10 = { leader = { name = "¶ûÔS …byQÙuS"      	type = general		fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1762.5.22 } }
+
+1740.1.1 = { leader = {	name = ",g¶u+YØe˙W"             		type = general		fire = 4	shock = 5	manuever = 4	siege = 1	death_date = 1770.1.1 } }
+
+1755.1.1 = { leader = {	name = "ØefW<SØe≥R ‚l<SöNXb+YØe˙W"          type = general		fire = 4	shock = 4	manuever = 3	siege = 1	death_date = 1798.2.12 } }
+
+1762.10.9 = { leader = { name = "A. (ÑÆv»T"            	type = general		fire = 3	shock = 4	manuever = 3	siege = 1	death_date = 1775.9.13 } }
+
+1764.9.8 = {
+	monarch = {
+		name = "ØefW<SØe≥R II"
+		dynasty = "‚l<SöNXb+YØe˙W"
+		birth_date = 1732.1.17
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+
+1779.1.1 = { leader = {	name = "aSPüs|Âe nf…bØe˙W"	type = general		fire = 3	shock = 5	manuever = 3	siege = 1	death_date = 1779.10.11 } }
+
+1789.1.1 = { leader = {	name = "TXjgØe —yÓOØe—y"	type = general		fire = 3	shock = 4	manuever = 5	siege = 1	death_date = 1817.10.15 } }
+
+1789.1.1 = { leader = {	name = "J. ‚l<SöNXb+YØe˙W"        	type = general		fire = 3	shock = 4	manuever = 4	siege = 1	death_date = 1813.1.1 } }
+
+1900.1.1 = { technology_group = western }
+1910.1.1 = { religion = conservatism }
+
+1918.3.3 = {
+	monarch = {
+		name = "Dd?e‘YXTO"
+		adm = 2
+		mil = 2
+		religion = catholic
+		dip = 2
+		regent = yes
+	}
+}
+
+
+1918.11.11 = { government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = strengthen_executive_powers_reform
+	add_government_reform = single_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = powerful_head_of_state
+	set_legacy_government = constitutional_republic
+ }
+
+1918.11.11 = {
+	monarch = {
+		name = "¶umt+Y ÆvSœÇØe˙W"
+		adm = 2
+		mil = 3
+		religion = catholic
+		dip = 2
+	}
+}
+
+1922.12.11 = {
+	monarch = {
+		name = "†R^Ãë√WS ≥uÅúXbÙuGY"
+		adm = 3
+		mil = 3
+		religion = catholic
+		dip = 5
+	}
+}
+
+1922.12.16 = {
+	monarch = {
+		name = "löRO "
+		adm = 2
+		mil = 1
+		religion = catholic
+		dip = 2
+	}
+}
+
+1922.12.22 = {
+	monarch = {
+		name = "ØefW<SØe≥R Él^TN+YØe˙W"
+		adm = 3
+		dip = 4
+		mil = 3
+		religion = catholic
+	}
+}
+
+1926.5.14 = {
+	monarch = {
+		name = "löRO "
+		adm = 2
+		mil = 1
+		religion = catholic
+		dip = 2
+	}
+}
+
+1926.6.4 = {
+	monarch = {
+		name = "O<h≥uÓOØe ´Éâ˙W"
+		adm = 4
+		mil = 4
+		religion = catholic
+		dip = 1
+	}
+}
+
+1926.8.27 = { leader = {	name = "¶umt+Y ÆvSœÇØe˙W"        	type = general		fire = 2	shock = 4	manuever = 3	siege = 1	death_date = 1935.5.12 } }
+
+1945.5.8 = { government = republic
+	add_government_reform = oligarchy_reform
+	add_government_reform = strengthen_executive_powers_reform
+	add_government_reform = dictatorial_rule
+	add_government_reform = communist_government
+	add_government_reform = powerful_head_of_state
+	set_legacy_government = communist_dictatorship
+    religion = communism
+	}
+
+1945.5.8 = {
+	monarch = {
+		name = "ZS±ÉØeÊt+Y ‘kÅúyr"
+		adm = 4
+		dip = 2
+		mil = 4
+		religion = catholic
+	}
+}
+
+1952.11.20 = {
+	monarch = {
+		name = "öNÜSqS'Y NbÊtyQ˙W"
+		adm = 3
+		dip = 3
+		mil = 4
+		religion = catholic
+	}
+}
+
+1964.8.12 = {
+	monarch = {
+		name = "1r∑VNS∑eYÂg^"
+		adm = 2
+		mil = 3
+		religion = catholic
+		dip = 5
+	}
+}
+
+1968.4.10 = {
+	monarch = {
+		name = "löÃëâR0Øe|V»TSØe˙W"
+		adm = 1
+		mil = 4
+		religion = catholic
+		dip = 4
+	}
+}
+
+1970.12.23 = {
+	monarch = {
+		name = "¶umt+Y â&OÔQÙuyQ"
+		adm = 3
+		mil = 4
+		religion = catholic
+		dip = 2
+	}
+}
+
+1972.3.28 = {
+	monarch = {
+		name = "®N)R öN^ÜñØe˙W"
+		adm = 4
+		mil = 2
+		religion = catholic
+		dip = 4
+	}
+}
+
+1976.5.4 = {
+	monarch = {
+		name = "ÉlâR∑≈ñÅú˝lSØe˙W"
+		adm = 4
+		mil = 2
+		religion = catholic
+		dip = 4
+	}
+}
+
+1989.7.19 = { government = republic
+	add_government_reform = oligarchy_reform
+	add_government_reform = presidential_reform
+	add_government_reform = strengthen_executive_powers_reform
+	add_government_reform = single_party_system
+	add_government_reform = communist_government
+	add_government_reform = powerful_head_of_state
+	set_legacy_government = socialist_republic }
+
+1989.12.31 = { 
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+	religion = liberalism
+ }
+
+1990.12.22 = {
+	monarch = {
+		name = "±É^∑Êtáe(Ñ"
+		adm = 3
+		dip = 4
+		mil = 3
+		religion = catholic
+	}
+}
+
+1995.12.23 = {
+	monarch = {
+		name = "öNÜSqS'Y 8YØeÖm+YØe˙W"
+		adm = 4
+		dip = 4
+		mil = 3
+		religion = catholic
+	}
+}
+
+2004.1.1 = { decision = join_european_union }
+
+2005.12.23 = {
+	monarch = {
+		name = "±ÉGY∑aS¶îØe˙W"
+		adm = 3
+		mil = 3
+		religion = catholic
+		dip = 4
+	}
+}
+
+2010.4.10 = {
+	monarch = {
+		name = "^W<SØe≥R —y´ÉW+YØe˙W"
+		adm = 3
+		mil = 3
+		religion = catholic
+		dip = 5
+	}
+}
+
+2010.7.8 = {
+	monarch = {
+		name = "<h˜ñbÃë Schetyna"
+		adm = 2
+		mil = 3
+		religion = catholic
+		dip = 2
+	}
+}
+
+2010.8.6 = {
+	monarch = {
+		name = "^W<SØe≥R —y´ÉW+YØe˙W"
+		adm = 3
+		mil = 3
+		religion = catholic
+		dip = 4
+	}
+}
+
+2015.8.6 = {
+	monarch = {
+		name = "âR∑VÅú Duda"
+		adm = 4
+		mil = 2
+		religion = catholic
+		dip = 4
+	}
+}

@@ -1,0 +1,1389 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+technology_group = eastern
+primary_culture = bulgar
+religion = tengri_pagan_reformed
+capital = 299
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+469.1.1 = {
+  monarch = {
+    name = "„S³uKQ"  # Ernakh
+    dynasty = "'kú‹äSS"  # Onogur
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+473.1.1 = {
+  heir = {
+    name = "LNÐc¨š"  # Utigur
+    monarch_name = "LNÐc¨š"  # Utigur
+    dynasty = "'kú‹äSS"  # Onogur
+    birth_date = 473.1.1
+    death_date = 520.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+503.1.1 = {
+  monarch = {
+    name = "LNÐc¨š"  # Utigur
+    dynasty = "'kú‹äSS"  # Onogur
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+503.1.1 = {
+  heir = {
+    name = "<hW·V"  # Grod
+    monarch_name = "<hW·V"  # Grod
+    dynasty = "'kú‹äSS"  # Onogur
+    birth_date = 490.1.1
+    death_date = 528.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+520.1.1 = {
+  monarch = {
+    name = "<hW·V"  # Grod
+    dynasty = "'kú‹äSS"  # Onogur
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+520.1.1 = {
+  heir = {
+    name = "FzbS"  # Mugel
+    monarch_name = "FzbS"  # Mugel
+    dynasty = "'kú‹äSS"  # Onogur
+    birth_date = 498.1.1
+    death_date = 530.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+528.1.1 = {
+  monarch = {
+    name = "FzÖvS"  # Mugel
+    dynasty = "'kú‹äSS"  # Onogur
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+528.1.1 = {
+  heir = {
+    name = "PŸ<SS¯e"  # Chinialus
+    monarch_name = "PŸ<SS¯e"  # Chinialus
+    dynasty = "'kú‹äSS"  # Onogur
+    birth_date = 500.1.1
+    death_date = 570.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+530.1.1 = {
+  monarch = {
+    name = "PŸ<SS¯e"  # Chinialus
+    dynasty = "'kú‹äSS"  # Onogur
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+540.1.1 = {
+  heir = {
+    name = "R8—"  # Houdbaad
+    monarch_name = "R8—"  # Houdbaad
+    dynasty = "'kú‹äSS"  # Onogur
+    birth_date = 540.1.1
+    death_date = 617.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+570.1.1 = {
+  monarch = {
+    name = "R8—"  # Houdbaad
+    dynasty = "'kú‹äSS"  # Onogur
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+617.1.1 = {
+  monarch = {
+    name = "'kSu³u"  # Organa
+    dynasty = "„Ss|"  # Ermi
+    adm = 1
+    dip = 3
+    mil = 2
+  }
+}
+617.1.1 = {
+  heir = {
+    name = "bÀN˜"  # Gostun
+    monarch_name = "bÀN˜"  # Gostun
+    dynasty = "„Ss|"  # Ermi
+    birth_date = 600.1.1
+    death_date = 632.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+630.1.1 = {
+  monarch = {
+    name = "bÀN˜"  # Gostun
+    dynasty = "„Ss|"  # Ermi
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+632.1.2 = {
+  capital = 2614
+}
+632.1.1 = {
+  monarch = {
+    name = "“^^Ébyr"  # Kubrat
+    dynasty = "jgm"  # Dulo
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+635.1.1 = {
+  heir = {
+    name = "ôTyrôTfV"  # Batbayan
+    monarch_name = "ôTyrôTfV"  # Batbayan
+    dynasty = "jgm"  # Dulo
+    birth_date = 635.1.1
+    death_date = 681.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+665.1.1 = {
+  monarch = {
+    name = "ôTyrôTfV"  # Batbayan
+    dynasty = "jgm"  # Dulo
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+665.1.1 = {
+  heir = {
+    name = "?–¯e^œKQ"  # Asparukh
+    monarch_name = "?–¯e^œKQ"  # Asparukh
+    dynasty = "jgm"  # Dulo
+    birth_date = 640.1.1
+    death_date = 701.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+681.1.1 = {
+  monarch = {
+    name = "?–¯e^œKQ"  # Asparukh
+    dynasty = "jgm"  # Dulo
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+681.1.1 = {
+  heir = {
+    name = "yrôuS"  # Tervel
+    monarch_name = "yrôuS"  # Tervel
+    dynasty = "jgm"  # Dulo
+    birth_date = 675.1.1
+    death_date = 721.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+681.1.2 = {
+  capital = 4688
+}
+700.1.1 = {
+  monarch = {
+    name = "yrôuS"  # Tervel
+    dynasty = "jgm"  # Dulo
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+700.1.1 = {
+  heir = {
+    name = "Ó^S…h‰"  # Kormesiy
+    monarch_name = "Ó^S…h‰"  # Kormesiy
+    dynasty = "jgm"  # Dulo
+    birth_date = 690.1.1
+    death_date = 738.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 2
+  }
+}
+721.1.1 = {
+  monarch = {
+    name = "Ó^S…h‰"  # Kormesiy
+    dynasty = "jgm"  # Dulo
+    adm = 5
+    dip = 1
+    mil = 2
+  }
+}
+721.1.1 = {
+  heir = {
+    name = "^Xæt"  # Sevar
+    monarch_name = "^Xæt"  # Sevar
+    dynasty = "jgm"  # Dulo
+    birth_date = 700.1.1
+    death_date = 753.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+738.1.1 = {
+  monarch = {
+    name = "^Xæt"  # Sevar
+    dynasty = "jgm"  # Dulo
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+753.1.1 = {
+  monarch = {
+    name = "Ó^Ss|0tÀN"  # Kormisosh
+    dynasty = "ƒlúWS"  # Vokil
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+753.1.1 = {
+  heir = {
+    name = "ôu…m"  # Vinekh
+    monarch_name = "ôu…m"  # Vinekh
+    dynasty = "ƒlúWS"  # Vokil
+    birth_date = 720.1.1
+    death_date = 762.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+756.1.1 = {
+  monarch = {
+    name = "ôu…m"  # Vinekh
+    dynasty = "ƒlúWS"  # Vokil
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+756.6.1 = {
+  monarch = {
+    name = "^R(ƒ"  # Telets
+    dynasty = "(„¾R"  # Sabin
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+765.1.1 = {
+  monarch = {
+    name = "(„¾R"  # Sabin
+    dynasty = "ƒlúWS"  # Vokil
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+766.1.1 = {
+  monarch = {
+    name = "XbKQþV"  # Toktu
+    dynasty = "ƒlúWS"  # Vokil
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+767.1.1 = {
+  monarch = {
+    name = "^u"  # Pagan
+    dynasty = "ƒlúWS"  # Vokil
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+768.1.1 = {
+  monarch = {
+    name = "yr÷–Ì‘b"  # Telerig
+    dynasty = "ƒlúWS"  # Vokil
+    adm = 5
+    dip = 1
+    mil = 5
+  }
+}
+777.1.1 = {
+  monarch = {
+    name = "aS9N"  # Kardam
+    dynasty = "ƒlúWS"  # Vokil
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}
+803.1.1 = {
+  monarch = {
+    name = "KQœÆY I"  # Krum I
+    dynasty = "jgm"  # Dulo
+    adm = 4
+    dip = 4
+    mil = 6
+  }
+}
+803.1.1 = {
+  heir = {
+    name = "eYFzSTX<h"  # Omurtag
+    monarch_name = "eYFzSTX<h I"  # Omurtag I
+    dynasty = "jgm"  # Dulo
+    birth_date = 780.1.1
+    death_date = 831.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+810.1.1 = {
+  add_accepted_culture = bulgarian
+}
+814.4.13 = {
+  monarch = {
+    name = "eYFzSTX<h I"  # Omurtag I
+    dynasty = "jgm"  # Dulo
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+814.4.13 = {
+  heir = {
+    name = "›sÉbs|S"  # Malamir
+    monarch_name = "›sÉbs|S"  # Malamir I
+    dynasty = "jgm"  # Dulo
+    birth_date = 800.1.1
+    death_date = 836.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 1
+  }
+}
+831.1.1 = {
+  monarch = {
+    name = "›sÉbs|S"  # Malamir I
+    dynasty = "jgm"  # Dulo
+    adm = 5
+    dip = 4
+    mil = 1
+  }
+}
+831.1.1 = {
+  heir = {
+    name = "nf÷–‰‰R"  # Presian
+    monarch_name = "nf÷–‰‰R"  # Presian I
+    dynasty = "jgm"  # Dulo
+    birth_date = 800.1.1
+    death_date = 852.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+836.1.1 = {
+  monarch = {
+    name = "nf÷–‰‰R"  # Presian I
+    dynasty = "jgm"  # Dulo
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+836.1.1 = {
+  heir = {
+    name = "œÌ‘¯e"  # Boris
+    monarch_name = "œÌ‘¯e I"  # Boris I
+    dynasty = "jgm"  # Dulo
+    birth_date = 830.1.1
+    death_date = 907.5.2
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+852.1.1 = {
+  monarch = {
+    name = "œÌ‘¯e I"  # Boris I
+    dynasty = "jgm"  # Dulo
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+852.1.1 = {
+  heir = {
+    name = "VÉbúWs|S"  # Vladimir
+    monarch_name = "VÉbúWs|S I"  # Vladimir I
+    dynasty = "jgm"  # Dulo
+    birth_date = 830.1.1
+    death_date = 907.5.2
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+864.1.1 = {
+  religion = chalcedonism
+  primary_culture = bulgarian
+  add_accepted_culture = bulgar
+}
+867.1.1 = {
+  religion = orthodox
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+889.1.1 = {
+  monarch = {
+    name = "VÉbúWs|S I"  # Vladimir I
+    dynasty = "jgm"  # Dulo
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+889.1.1 = {
+  heir = {
+    name = "‰"  # Simeon
+    monarch_name = "‰ I"  # Simeon I
+    dynasty = "jgm"  # Dulo
+    birth_date = 864.1.1
+    death_date = 927.5.27
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+893.1.1 = {
+  monarch = {
+    name = "‰ I"  # Simeon I
+    dynasty = "jgm"  # Dulo
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+900.1.1 = {
+  heir = {
+    name = "|V—V"  # Peter
+    monarch_name = "|V—V I"  # Peter I
+    dynasty = "jgm"  # Dulo
+    birth_date = 900.1.1
+    death_date = 970.1.30
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 5
+  }
+}
+927.5.27 = {
+  monarch = {
+    name = "|V—V I"  # Peter I
+    dynasty = "jgm"  # Dulo
+    adm = 4
+    dip = 1
+    mil = 5
+  }
+}
+931.1.1 = {
+  heir = {
+    name = "œÌ‘¯e"  # Boris
+    monarch_name = "œÌ‘¯e II"  # Boris II
+    dynasty = "jgm"  # Dulo
+    birth_date = 931.1.1
+    death_date = 977.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+969.1.1 = {
+  monarch = {
+    name = "œÌ‘¯e II"  # Boris II
+    dynasty = "jgm"  # Dulo
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+969.1.1 = {
+  heir = {
+    name = "Wüf"  # Roman
+    monarch_name = "Wüf I"  # Roman I
+    dynasty = "jgm"  # Dulo
+    birth_date = 932.1.1
+    death_date = 997.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 5
+  }
+}
+971.1.1 = {
+  capital = 148
+}
+977.1.1 = {
+  monarch = {
+    name = "Wüf I"  # Roman I
+    dynasty = "jgm"  # Dulo
+    adm = 5
+    dip = 1
+    mil = 5
+  }
+}
+997.1.1 = {
+  monarch = {
+    name = "(„FzOS"  # Samuil I
+    dynasty = "Ñys|Xbnf)R"  # Cometopuli
+    adm = 5
+    dip = 1
+    mil = 4
+  }
+}
+997.1.1 = {
+  heir = {
+    name = " R+YÌ‘S ÉbYs|S"  # Gavril Radomir
+    monarch_name = " R+YÌ‘S ÉbYs|S"  # Gavril Radomir
+    dynasty = "Ñys|Xbnf)R"  # Cometopuli
+    birth_date = 980.1.1
+    death_date = 1015.8.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 2
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1014.10.6 = {
+  monarch = {
+    name = " R+YÌ‘S ÉbYs|S"  # Gavril Radomir
+    dynasty = "Ñys|Xbnf)R"  # Cometopuli
+    adm = 5
+    dip = 5
+    mil = 2
+  }
+}
+1014.10.6 = {
+  heir = {
+    name = "ON VÉbê¯eÉb+Y"  # Ivan Vladislav
+    monarch_name = "ON VÉbê¯eÉb+Y"  # Ivan Vladislav
+    dynasty = "Ñys|Xbnf)R"  # Cometopuli
+    birth_date = 980.1.1
+    death_date = 1018.2.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1015.8.1 = {
+  monarch = {
+    name = "ON VÉbê¯eÉb+Y"  # Ivan Vladislav
+    dynasty = "Ñys|Xbnf)R"  # Cometopuli
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1015.8.1 = {
+  heir = {
+    name = "nf÷–‰‰R"  # Presian
+    monarch_name = "nf÷–‰‰R II"  # Presian II
+    dynasty = "Ñys|Xbnf)R"  # Cometopuli
+    birth_date = 996.1.1
+    death_date = 1018.3.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1018.2.1 = {
+  monarch = {
+    name = "nf÷–‰‰R II"  # Presian II
+    dynasty = "Ñys|Xbnf)R"  # Cometopuli
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1020.1.1 = {
+  capital = 150
+}
+1100.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1185.1.1 = {
+  monarch = {
+    name = "iOTXS IV"  # Petar IV
+    dynasty = "?–îh"  # Asen
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1185.1.1 = {
+  heir = {
+    name = "aSmlb"  # Kaloyan
+    monarch_name = "aSmlb I"  # Kaloyan I
+    dynasty = "?–îh"  # Asen
+    birth_date = 1170.1.1
+    death_date = 1207.10.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+1197.1.1 = {
+  monarch = {
+    name = "aSmlb I"  # Kaloyan I
+    dynasty = "?–îh"  # Asen
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+1197.1.1 = {
+  heir = {
+    name = "ZSÌ‘S"  # Boril
+    monarch_name = "ZSÌ‘S I"  # Boril I
+    dynasty = "?–îh"  # Asen
+    birth_date = 1170.1.1
+    death_date = 1218.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1207.10.1 = {
+  monarch = {
+    name = "ZSÌ‘S I"  # Boril I
+    dynasty = "?–îh"  # Asen
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1207.10.1 = {
+  heir = {
+    name = "OáQ"  # Ivan
+    monarch_name = "OáQ II"  # Ivan II
+    dynasty = "?–îh"  # Asen
+    birth_date = 1190.1.1
+    death_date = 1241.6.24
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+1218.1.1 = {
+  monarch = {
+    name = "OáQ II"  # Ivan II
+    dynasty = "?–îh"  # Asen
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+1234.1.1 = {
+  heir = {
+    name = "KQWüf"  # Kaliman
+    monarch_name = "KQWüf I"  # Kaliman I
+    dynasty = "?–îh"  # Asen
+    birth_date = 1234.1.1
+    death_date = 1246.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 3
+  }
+}
+1241.6.24 = {
+  monarch = {
+    name = "KQWüf I"  # Kaliman I
+    dynasty = "?–îh"  # Asen
+    adm = 5
+    dip = 2
+    mil = 3
+  }
+}
+1241.6.24 = {
+  heir = {
+    name = "s|ÈTOS"  # Mikhail
+    monarch_name = "s|ÈTOS I"  # Mikhail I
+    dynasty = "?–îh"  # Asen
+    birth_date = 1240.1.1
+    death_date = 1256.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 1
+  }
+}
+1246.1.1 = {
+  monarch = {
+    name = "s|ÈTOS I"  # Mikhail I
+    dynasty = "?–îh"  # Asen
+    adm = 4
+    dip = 5
+    mil = 1
+  }
+}
+1246.1.1 = {
+  heir = {
+    name = "s|SS"  # Mitso
+    monarch_name = "s|SS I"  # Mitso I
+    dynasty = "?–îh"  # Asen
+    birth_date = 1230.1.1
+    death_date = 1257.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 1
+  }
+}
+1256.1.1 = {
+  monarch = {
+    name = "s|SS I"  # Mitso I
+    dynasty = "?–îh"  # Asen
+    adm = 4
+    dip = 4
+    mil = 1
+  }
+}
+1256.1.1 = {
+  heir = {
+    name = "TëXfWN cRk"  # Constantine Tikh
+    monarch_name = "TëXfWN cRk"  # Constantine Tikh
+    dynasty = "?–îh"  # Asen
+    birth_date = 1240.1.1
+    death_date = 1277.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+1257.1.1 = {
+  monarch = {
+    name = "TëXfWN cRk"  # Constantine Tikh
+    dynasty = "?–îh"  # Asen
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+1257.1.1 = {
+  heir = {
+    name = "Oôum"  # Ivylo
+    monarch_name = "Oôum I"  # Ivylo I
+    dynasty = "?–îh"  # Asen
+    birth_date = 1240.1.1
+    death_date = 1280.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1277.1.1 = {
+  monarch = {
+    name = "Oôum I"  # Ivylo I
+    dynasty = "?–îh"  # Asen
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1277.1.1 = {
+  heir = {
+    name = "OáQ"  # Ivan
+    monarch_name = "OáQ III"  # Ivan III
+    dynasty = "?–îh"  # Asen
+    birth_date = 1260.1.1
+    death_date = 1280.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+1279.1.1 = {
+  monarch = {
+    name = "OáQ III"  # Ivan III
+    dynasty = "?–îh"  # Asen
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+1280.1.1 = {
+  monarch = {
+    name = "<heYSúW i"  # Georgi I
+    dynasty = "ðlSðlS"  # Terter
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+1280.1.1 = {
+  heir = {
+    name = "òSÆRSyQ"  # Smilets
+    monarch_name = "òSÆRSyQ I"  # Smilets I
+    dynasty = "ðlSðlS"  # Terter
+    birth_date = 1270.1.1
+    death_date = 1298.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+1292.1.1 = {
+  monarch = {
+    name = "òSÆRSyQ I"  # Smilets I
+    dynasty = "ðlSðlS"  # Terter
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+1292.1.1 = {
+  heir = {
+    name = "OáQ"  # Ivan
+    monarch_name = "OáQ IV"  # Ivan IV
+    dynasty = "ðlSðlS"  # Terter
+    birth_date = 1270.1.1
+    death_date = 1330.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+1298.1.1 = {
+  monarch = {
+    name = "OáQ IV"  # Ivan IV
+    dynasty = "ðlSðlS"  # Terter
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+1298.1.1 = {
+  heir = {
+    name = "ågaS"  # Chaka
+    monarch_name = "ågaS I"  # Chaka I
+    dynasty = "ðlSðlS"  # Terter
+    birth_date = 1270.1.1
+    death_date = 1300.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 3
+  }
+}
+1299.1.1 = {
+  monarch = {
+    name = "ågaS I"  # Chaka I
+    dynasty = "ðlSðlS"  # Terter
+    adm = 1
+    dip = 4
+    mil = 3
+  }
+}
+1299.1.1 = {
+  heir = {
+    name = "‰eYY ¯eæ—Xb¯eÉb+Y"  # Teodore Svetoslav
+    monarch_name = "‰eYY ¯eæ—Xb¯eÉb+Y"  # Teodore Svetoslav
+    dynasty = "ðlSðlS"  # Terter
+    birth_date = 1270.1.1
+    death_date = 1322.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1300.1.1 = {
+  monarch = {
+    name = "‰eYY ¯eæ—Xb¯eÉb+Y"  # Teodore Svetoslav
+    dynasty = "ðlSðlS"  # Terter
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1305.1.1 = {
+  heir = {
+    name = "<heYSúW"  # Georgi
+    monarch_name = "<heYSúW II"  # Georgi II
+    dynasty = "ðlSðlS"  # Terter
+    birth_date = 1305.1.1
+    death_date = 1322.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1321.1.1 = {
+  monarch = {
+    name = "<heYSúW II"  # Georgi II
+    dynasty = "ðlSðlS"  # Terter
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1322.1.1 = {
+  monarch = {
+    name = "s|ÈTOS III"  # Mikhail III
+    dynasty = "^ÀNüf"  # Shishman
+    adm = 1
+    dip = 4
+    mil = 3
+  }
+}
+1322.1.1 = {
+  heir = {
+    name = "OáQ ¯eyráQ"  # Ivan Stephan
+    monarch_name = "OáQ ¯eyráQ"  # Ivan Stephan
+    dynasty = "^ÀNüf"  # Shishman
+    birth_date = 1301.1.1
+    death_date = 1373.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+1330.7.31 = {
+  monarch = {
+    name = "OáQ ¯eyráQ"  # Ivan Stephan
+    dynasty = "^ÀNüf"  # Shishman
+    birth_date = 1301.1.1
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+1330.7.31 = {
+  heir = {
+    name = "OáQ šN†SqS'Y"  # Ivan Alexander
+    monarch_name = "OáQ šN†SqS'Y"  # Ivan Alexander
+    dynasty = "^ÀNüf"  # Shishman
+    birth_date = 1310.1.1
+    death_date = 1371.2.17
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+1331.1.1 = {
+  monarch = {
+    name = "OáQ šN†SqS'Y"  # Ivan Alexander
+    dynasty = "^ÀNüf"  # Shishman
+    birth_date = 1310.1.1
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+1331.1.1 = {
+  heir = {
+    name = "OáQ ¯eÉbPŸs|S"  # Ivan Sratsimir
+    monarch_name = "OáQ ¯eÉbPŸs|S"  # Ivan Sratsimir
+    dynasty = "^ÀNüf"  # Shishman
+    birth_date = 1324.1.1
+    death_date = 1397.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+1371.2.17 = {
+  monarch = {
+    name = "OáQ ¯eÉbPŸs|S"  # Ivan Sratsimir
+    dynasty = "^ÀNüf"  # Shishman
+    birth_date = 1324.1.1
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+1393.1.1 = {
+  capital = 4687
+}
+1400.1.1 = {
+  capital = 150
+}
+1800.1.1 = {
+  set_legacy_government = constitutional_monarchy
+}
+1820.1.1 = {
+religion = liberalism
+ }
+1878.7.13 = {
+  monarch = {
+    name = "ÿDd?eO®‹	ÿ"  # (regency council)
+    adm = 2
+    dip = 2
+    mil = 2
+    religion = orthodox
+    regent = yes
+  }
+}
+1879.1.1 = {
+  capital = 1765
+}
+1879.4.29 = {
+  monarch = {
+    name = "šN†SqS'Y I"  # Alexander I
+    dynasty = "¯Q ôTÕn<h"  # von Battenberg
+    birth_date = 1857.4.5
+    adm = 2
+    dip = 3
+    mil = 4
+    religion = orthodox
+  }
+}
+1886.9.7 = {
+  monarch = {
+    name = "ÿDd?eO®‹	ÿ"  # (regency council)
+    adm = 2
+    dip = 2
+    mil = 2
+    religion = orthodox
+    regent = yes
+  }
+}
+1887.4.29 = {
+  monarch = {
+    name = "9êWS I"  # Fedinand I
+    dynasty = "¯Q („KQîh Ñy!X"  # von Saxe-Coburg
+    birth_date = 1861.2.26
+    adm = 5
+    dip = 2
+    mil = 4
+    religion = orthodox
+  }
+}
+1894.1.30 = {
+  heir = {
+    name = "œÌ‘¯e"  # Boris
+    monarch_name = "œÌ‘¯e III"  # Boris III
+    dynasty = "¯Q („KQîh Ñy!X"  # von Saxe-Coburg
+    birth_date = 1894.1.30
+    death_date = 1943.8.28
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = orthodox
+  }
+}
+1908.10.5 = {
+  technology_group = western
+  religion = liberalism
+}
+1918.10.3 = {
+  monarch = {
+    name = "œÌ‘¯e III"  # Boris III
+    dynasty = "¯Q („KQîh Ñy!X"  # von Saxe-Coburg
+    birth_date = 1894.1.30
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = orthodox
+  }
+}
+1937.6.16 = {
+  heir = {
+    name = "‰"  # Simeon
+    monarch_name = "‰ II"  # Simeon II
+    dynasty = "¯Q („KQîh Ñy!X"  # von Saxe-Coburg
+    birth_date = 1937.6.16
+    death_date = 3000.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 2
+    religion = orthodox
+  }
+}
+1943.8.28 = {
+  monarch = {
+    name = "‰ II"  # Simeon II
+    dynasty = "¯Q („KQîh Ñy!X"  # von Saxe-Coburg
+    birth_date = 1937.6.16
+    adm = 4
+    dip = 4
+    mil = 2
+    religion = orthodox
+  }
+}
+1945.5.8 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = presidential_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = communist_government
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = socialist_republic
+  religion = communism
+}
+1946.9.15 = {
+  monarch = {
+    name = "æt‰S ÑyÉbW+Y"  # Vasil Kolarov
+    birth_date = 1877.7.16
+    adm = 4
+    dip = 3
+    mil = 2
+    religion = orthodox
+  }
+}
+1947.12.9 = {
+  monarch = {
+    name = "fTN …mOR+Y"  # Mincho Neychev
+    birth_date = 1887.4.4
+    adm = 4
+    dip = 5
+    mil = 4
+    religion = orthodox
+  }
+}
+1950.5.27 = {
+  monarch = {
+    name = "<heYSúW ¾s|lbú‹+Y"  # Georgi Damyanov
+    birth_date = 1892.9.23
+    adm = 3
+    dip = 5
+    mil = 4
+    religion = orthodox
+  }
+}
+1958.11.27 = {
+  monarch = {
+    name = "<SäSÉb <heYSúW6w+Y"  # Nikolay Georgiev
+    birth_date = 1906.1.1
+    adm = 3
+    dip = 1
+    mil = 5
+    religion = orthodox
+  }
+}
+1964.4.23 = {
+  monarch = {
+    name = "<heYSúW yr÷–ïg+Y"  # Georgi Traykov
+    birth_date = 1898.4.14
+    adm = 2
+    dip = 4
+    mil = 4
+    religion = orthodox
+  }
+}
+1971.7.8 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = dictatorial_rule
+  add_government_reform = communist_government
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = communist_dictatorship
+}
+1971.7.8 = {
+  monarch = {
+    name = "XbYS åe+YÑy+Y"  # Todor Zhivkov
+    birth_date = 1911.9.7
+    adm = 1
+    dip = 5
+    mil = 5
+    religion = orthodox
+  }
+}
+1989.11.17 = {
+  monarch = {
+    name = "iOTXS FzÉbÄrú‹+Y"  # Petar Mladenov
+    birth_date = 1936.8.22
+    adm = 3
+    dip = 2
+    mil = 5
+    religion = orthodox
+  }
+}
+1990.7.6 = {
+  monarch = {
+    name = "¯efWÑy XbYm+Y"  # Stanko Todorov
+    birth_date = 1920.12.10
+    adm = 1
+    dip = 3
+    mil = 5
+    religion = orthodox
+  }
+}
+1990.7.17 = {
+  monarch = {
+    name = "<SäSÉb XbYm+Y"  # Nikolai Todorov
+    birth_date = 1921.6.6
+    adm = 1
+    dip = 4
+    mil = 5
+    religion = orthodox
+  }
+}
+1990.8.1 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = universal_suffrage_reform
+  add_government_reform = reinforce_republican_values_reform
+  add_government_reform = multi_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = ceremonial_president
+  set_legacy_government = presidental_republic
+  religion = liberalism
+}
+1990.8.1 = {
+  monarch = {
+    name = "òTóg òTR+Y"  # Zhelyu Zhelev
+    birth_date = 1935.3.3
+    adm = 4
+    dip = 1
+    mil = 5
+    religion = orthodox
+  }
+}
+1997.1.22 = {
+  monarch = {
+    name = "iOTXS ¯eXbšNú‹+Y"  # Petar Stoyanov
+    birth_date = 1952.5.25
+    adm = 5
+    dip = 3
+    mil = 1
+    religion = orthodox
+  }
+}
+2002.1.22 = {
+  monarch = {
+    name = "<heYSúW ^Sætú‹+Y"  # Georgi Parvanov
+    birth_date = 1957.6.28
+    adm = 2
+    dip = 5
+    mil = 4
+    religion = orthodox
+  }
+}
+2007.1.1 = {
+  decision = join_european_union
+}
+2012.1.22 = {
+  monarch = {
+    name = "Wîh nfR+Y…Q)RÃW+Y"  # Rosen Plevniev
+    birth_date = 1964.5.14
+    adm = 1
+    dip = 5
+    mil = 5
+    religion = orthodox
+  }
+}
+2017.1.22 = {
+  monarch = {
+    name = "œè• ÷–—V+Y"  # Rumen Radev
+    birth_date = 1963.6.18
+    adm = 2
+    dip = 4
+    mil = 4
+    religion = orthodox
+  }
+}

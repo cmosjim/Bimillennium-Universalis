@@ -1,0 +1,280 @@
+government = tribal
+add_government_reform = tribal_kingdom
+mercantilism = 0.1
+primary_culture = telegu
+religion = hinduism
+technology_group = early_indian
+capital = 547
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+475.1.1 = {
+  monarch = {
+    name = "ZWÃ‹"  # Sarabha
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 455.1.1
+    adm = 1
+    dip = 3
+    mil = 2
+  }
+}
+480.1.1 = {
+  heir = {
+    name = "±ŞN–W"  # Narendra
+    monarch_name = "±ŞN–W"  # Narendra
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 480.1.1
+    death_date = 540.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+500.1.1 = {
+  monarch = {
+    name = "±ŞN–W"  # Narendra
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 480.1.1
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+500.1.1 = {
+  heir = {
+    name = "éƒWZ±idW"  # Prasannamatra
+    monarch_name = "éƒWZ±idW"  # Prasannamatra
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 500.1.1
+    death_date = 550.1.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 4
+  }
+}
+525.1.1 = {
+  monarch = {
+    name = "éƒWZ±idW"  # Prasannamatra
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 500.1.1
+    adm = 1
+    dip = 5
+    mil = 4
+  }
+}
+525.1.1 = {
+  heir = {
+    name = "KO6wWKO"  # Jayaraja
+    monarch_name = "KO6wWKO"  # Jayaraja
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 520.1.1
+    death_date = 560.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+550.1.1 = {
+  monarch = {
+    name = "KO6wWKO"  # Jayaraja
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 520.1.1
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+550.1.1 = {
+  heir = {
+    name = "id±idN–W"  # Manamatra
+    monarch_name = "id±idN–W"  # Manamatra
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 530.1.1
+    death_date = 571.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 4
+  }
+}
+560.1.1 = {
+  monarch = {
+    name = "id±idN–W"  # Manamatra
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 530.1.1
+    adm = 3
+    dip = 0
+    mil = 4
+  }
+}
+560.1.1 = {
+  heir = {
+    name = "Ï‚ĞcFZW–"  # Sudevaraja
+    monarch_name = "Ï‚ĞcFZW– I"  # Sudevaraja I
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 541.1.1
+    death_date = 590.1.1
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 5
+  }
+}
+571.1.1 = {
+  monarch = {
+    name = "Ï‚ĞcFZW– I"  # Sudevaraja I
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 541.1.1
+    adm = 0
+    dip = 1
+    mil = 5
+  }
+}
+571.1.1 = {
+  heir = {
+    name = "éƒWËKO"  # Pravaraja
+    monarch_name = "éƒWËKO"  # Pravaraja
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 560.1.1
+    death_date = 620.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 1
+  }
+}
+590.1.1 = {
+  monarch = {
+    name = "éƒWËKO"  # Pravaraja
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 560.1.1
+    adm = 4
+    dip = 4
+    mil = 1
+  }
+}
+590.1.1 = {
+  heir = {
+    name = "×k6wæWW–"  # Vyaghraraja
+    monarch_name = "×k6wæWW–"  # Vyaghraraja
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 590.1.1
+    death_date = 650.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 1
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+620.1.1 = {
+  monarch = {
+    name = "×k6wæWW–"  # Vyaghraraja
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 590.1.1
+    adm = 0
+    dip = 0
+    mil = 1
+  }
+}
+620.1.1 = {
+  heir = {
+    name = "zKOW–"  # Durgaraja
+    monarch_name = "zKOW–"  # Durgaraja
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 620.1.1
+    death_date = 680.1.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 4
+  }
+}
+650.1.1 = {
+  monarch = {
+    name = "zKOW–"  # Durgaraja
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 620.1.1
+    adm = 0
+    dip = 5
+    mil = 4
+  }
+}
+650.1.1 = {
+  heir = {
+    name = "Ï‚WFZY"  # Suravala
+    monarch_name = "Ï‚WFZY"  # Suravala
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 650.1.1
+    death_date = 700.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+680.1.1 = {
+  monarch = {
+    name = "Ï‚WFZY"  # Suravala
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 650.1.1
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+680.1.1 = {
+  heir = {
+    name = "Ï‚ĞcFZW–"  # Sudevaraja
+    monarch_name = "Ï‚ĞcFZW– I"  # Sudevaraja II
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 680.1.1
+    death_date = 720.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+700.1.1 = {
+  monarch = {
+    name = "Ï‚ĞcFZW– II"  # Sudevaraja II
+    dynasty = "(„ÉbôT^Ì‘šN"  # Sarabhapuriya
+    birth_date = 680.1.1
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

@@ -1,0 +1,868 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 0.1
+primary_culture = croatian
+religion = slavic
+technology_group = eastern
+capital = 131
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+650.1.1 = {
+  monarch = {
+    name = "“^=O"  # Kuber
+    dynasty = "KQW0WšN"  # Hrvatski
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+650.1.1 = {
+  heir = {
+    name = "âlSØš"  # Porga
+    monarch_name = "âlSØš"  # Porga
+    dynasty = "KQW0WšN"  # Hrvatski
+    birth_date = 640.1.1
+    death_date = 740.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+670.1.1 = {
+  monarch = {
+    name = "âlSØš"  # Porga
+    dynasty = "KQW0WšN"  # Hrvatski
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+710.1.1 = {
+  heir = {
+    name = "^ês|S"  # Budimir
+    monarch_name = "^ês|S"  # Budimir
+    dynasty = "KQW0WšN"  # Hrvatski
+    birth_date = 710.1.1
+    death_date = 785.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+740.1.1 = {
+  monarch = {
+    name = "^ês|S"  # Budimir
+    dynasty = "KQW0WšN"  # Hrvatski
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+755.1.1 = {
+  heir = {
+    name = "ôu‚¯eÉb+Y"  # Viseslav
+    monarch_name = "ôu‚¯eÉb+Y"  # Viseslav
+    dynasty = "KQW0WšN"  # Hrvatski
+    birth_date = 755.1.1
+    death_date = 790.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+785.1.1 = {
+  monarch = {
+    name = "ôu‚¯eÉb+Y"  # Viseslav
+    dynasty = "KQW0WšN"  # Hrvatski
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+785.1.1 = {
+  heir = {
+    name = "ZSS³u"  # Borna
+    monarch_name = "ZSS³u"  # Borna
+    dynasty = "KQW0WšN"  # Hrvatski
+    birth_date = 760.1.1
+    death_date = 810.2.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+790.1.1 = {
+  monarch = {
+    name = "ZSS³u"  # Borna
+    dynasty = "KQW0WšN"  # Hrvatski
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+790.1.1 = {
+  heir = {
+    name = "VÉbê¯eÉb+Y"  # Vladislav
+    monarch_name = "VÉbê¯eÉb+Y"  # Vladislav
+    dynasty = "KQW0WšN"  # Hrvatski
+    birth_date = 780.1.1
+    death_date = 835.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 4
+  }
+}
+810.2.1 = {
+  monarch = {
+    name = "VÉbê¯eÉb+Y"  # Vladislav
+    dynasty = "KQW0WšN"  # Hrvatski
+    adm = 4
+    dip = 5
+    mil = 4
+  }
+}
+810.2.1 = {
+  heir = {
+    name = "s|¯eÉb+Y"  # Mislav
+    monarch_name = "s|¯eÉb+Y"  # Mislav
+    dynasty = "KQW0WšN"  # Hrvatski
+    birth_date = 805.1.1
+    death_date = 845.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+835.1.1 = {
+  monarch = {
+    name = "s|¯eÉb+Y"  # Mislav
+    dynasty = "KQW0WšN"  # Hrvatski
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+845.1.1 = {
+  monarch = {
+    name = "yr®vs|S I"  # Trpimir I
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 5
+    dip = 2
+    mil = 2
+  }
+}
+864.1.1 = {
+  monarch = {
+    name = "YlšbO"  # Domagoj
+    dynasty = "KQW0WšN"  # Hrvatski
+    adm = 5
+    dip = 2
+    mil = 3
+  }
+}
+864.1.1 = {
+  heir = {
+    name = "O)RÑy"  # Iljko
+    monarch_name = "O)RÑy"  # Iljko
+    dynasty = "KQW0WšN"  # Hrvatski
+    birth_date = 846.1.1
+    death_date = 878.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+870.1.1 = {
+  religion = catholic
+}
+876.1.1 = {
+  monarch = {
+    name = "O)RÑy"  # Iljko
+    dynasty = "KQW0WšN"  # Hrvatski
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+878.1.1 = {
+  monarch = {
+    name = "yQ·V¯eÉb+Y"  # Zdeslav
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+878.1.1 = {
+  heir = {
+    name = "^Éb<Ss|S"  # Branimir
+    monarch_name = "^Éb<Ss|S"  # Branimir
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 849.1.1
+    death_date = 892.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}
+879.5.1 = {
+  monarch = {
+    name = "^Éb<Ss|S"  # Branimir
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}
+879.5.1 = {
+  heir = {
+    name = "™„PŸs|S"  # Muncimir
+    monarch_name = "™„PŸs|S"  # Muncimir
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 862.1.1
+    death_date = 910.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 5
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+892.1.1 = {
+  monarch = {
+    name = "™„PŸs|S"  # Muncimir
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 1
+    dip = 3
+    mil = 5
+  }
+}
+892.1.1 = {
+  heir = {
+    name = "Xbs|¯eÉb+Y"  # Tomislav
+    monarch_name = "Xbs|¯eÉb+Y I"  # Tomislav I
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 880.1.1
+    death_date = 928.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 3
+  }
+}
+910.1.1 = {
+  monarch = {
+    name = "Xbs|¯eÉb+Y I"  # Tomislav I
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 5
+    dip = 2
+    mil = 3
+  }
+}
+910.1.1 = {
+  heir = {
+    name = "yr®vs|S"  # Trpimir
+    monarch_name = "yr®vs|S II"  # Trpimir II
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 898.1.1
+    death_date = 935.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+925.1.1 = {
+  government_rank = 2
+}
+928.1.1 = {
+  monarch = {
+    name = "yr®vs|S II"  # Trpimir II
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+928.1.1 = {
+  heir = {
+    name = "KQ÷–^s|S"  # Kresimir
+    monarch_name = "KQ÷–^s|S I"  # Kresimir I
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 905.1.1
+    death_date = 945.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+935.1.1 = {
+  monarch = {
+    name = "KQ÷–^s|S I"  # Kresimir I
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+935.1.1 = {
+  heir = {
+    name = "s|W¯eÉb+Y"  # Miroslav
+    monarch_name = "s|W¯eÉb+Y I"  # Miroslav I
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 915.1.1
+    death_date = 949.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+945.1.1 = {
+  monarch = {
+    name = "s|W¯eÉb+Y I"  # Miroslav I
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+945.1.1 = {
+  heir = {
+    name = "s|—ôuS KQ÷–‰s|S"  # Mihovil Kresimir
+    monarch_name = "s|—ôuS KQ÷–‰s|S II"  # Mihovil Kresimir II
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 919.1.1
+    death_date = 969.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+949.1.1 = {
+  monarch = {
+    name = "s|—ôuS KQ÷–‰s|S II"  # Mihovil Kresimir II
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+949.1.1 = {
+  heir = {
+    name = "¯e‚„¬‚ ·VSåe¯eÉb+Y"  # Stephen Drzislav
+    monarch_name = "¯e‚„¬‚ ·VSåe¯eÉb+Y"  # Stephen Drzislav
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 939.1.1
+    death_date = 997.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+969.1.1 = {
+  monarch = {
+    name = "¯e‚„¬‚ ·VSåe¯eÉb+Y"  # Stephen Drzislav
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+969.1.1 = {
+  heir = {
+    name = "¯eôuXb¯eÉb+Y Ï‚pQpg"  # Svetoslav Suronja
+    monarch_name = "¯eôuXb¯eÉb+Y Ï‚pQpg"  # Svetoslav Suronja
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 967.1.1
+    death_date = 1000.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 1
+  }
+}
+997.1.1 = {
+  monarch = {
+    name = "¯eôuXb¯eÉb+Y Ï‚pQpg"  # Svetoslav Suronja
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 5
+    dip = 5
+    mil = 1
+  }
+}
+997.1.1 = {
+  heir = {
+    name = "KQ÷–^s|S"  # Kresimir
+    monarch_name = "KQ÷–^s|S III"  # Kresimir III
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 970.1.1
+    death_date = 1030.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}
+1000.1.1 = {
+  monarch = {
+    name = "KQ÷–^s|S III"  # Kresimir III
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}
+1000.1.1 = {
+  heir = {
+    name = "¯ewcXo"  # Stjepan
+    monarch_name = "¯ewcXo I"  # Stjepan I
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 1000.1.1
+    death_date = 1058.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 5
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1030.1.1 = {
+  monarch = {
+    name = "¯ewcXo I"  # Stjepan I
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 5
+    dip = 4
+    mil = 5
+  }
+}
+1030.1.1 = {
+  heir = {
+    name = "iOTXS KQ÷–^s|S"  # Petar Kresimir
+    monarch_name = "iOTXS KQ÷–^s|S IV"  # Petar Kresimir IV
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 1028.1.1
+    death_date = 1075.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+1058.1.1 = {
+  monarch = {
+    name = "iOTXS KQ÷–^s|S IV"  # Petar Kresimir IV
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+1058.1.1 = {
+  heir = {
+    name = "ês|yrÌ‘LN¯e yQƒl<Ss|S"  # Demetrius Zvonimir
+    monarch_name = "ês|yrÌ‘LN¯e yQƒl<Ss|S"  # Demetrius Zvonimir
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 1045.1.1
+    death_date = 1089.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 3
+  }
+}
+1075.1.1 = {
+  monarch = {
+    name = "ês|yrÌ‘LN¯e yQƒl<Ss|S"  # Demetrius Zvonimir
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 5
+    dip = 2
+    mil = 3
+  }
+}
+1075.1.1 = {
+  heir = {
+    name = "¯ewcXo"  # Stjepan
+    monarch_name = "¯ewcXo II"  # Stjepan II
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 1059.1.1
+    death_date = 1090.12.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1089.1.1 = {
+  monarch = {
+    name = "¯ewcXo II"  # Stjepan II
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1089.1.1 = {
+  heir = {
+    name = "6w±ƒZ"  # Jelena
+    monarch_name = "6w±ƒZ II"  # Jelena II
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    birth_date = 1060.1.1
+    death_date = 3000.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 3
+    female = yes
+  }
+}
+1090.12.1 = {
+  monarch = {
+    name = "6w±ƒZ II"  # Jelena II
+    dynasty = "yr®vs|môuGY"  # Trpimirovic
+    adm = 2
+    dip = 4
+    mil = 3
+    female = yes
+  }
+}
+1091.8.1 = {
+  monarch = {
+    name = "?–S«ƒÀN"  # Álmos
+    dynasty = "?–^·V"  # Árpád
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1093.1.1 = {
+  monarch = {
+    name = "iOTXS"  # Petar
+    dynasty = "¯eætQYGY"  # Svacic
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1446.1.1 = {
+  monarch = {
+    name = "¦uğ"  # John
+    dynasty = "SÅ–Ğc"  # Hunyadi
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1446.1.1 = {
+  heir = {
+    name = "Éb¯em"  # László
+    monarch_name = "Éb¯em"  # László
+    dynasty = "SÅ–Ğc"  # Hunyadi
+    birth_date = 1433.1.1
+    death_date = 1457.3.16
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1454.1.1 = {
+  monarch = {
+    name = "Éb¯em"  # László
+    dynasty = "SÅ–Ğc"  # Hunyadi
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1456.1.1 = {
+  monarch = {
+    name = "kSüf II"  # Herman II
+    dynasty = "VpQÑyXo"  # Frankopan
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1464.1.1 = {
+  monarch = {
+    name = "s|SÑy"  # Mirko
+    dynasty = "Nbâl)R¯eúW"  # Zapoljski
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1466.1.1 = {
+  monarch = {
+    name = "OáQ"  # Ivan
+    dynasty = "şVyQ"  # Thuz
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1470.1.1 = {
+  monarch = {
+    name = "^±ƒyQ lš¾S"  # Blaz Madar
+    dynasty = "âl·VÛk<S(ƒúW"  # Podmanicki
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1472.1.1 = {
+  monarch = {
+    name = "¾s|‰R"  # Damjan
+    dynasty = "—ætyr"  # Horvat
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1499.1.1 = {
+  monarch = {
+    name = "wmSÇ‘<h OáQ"  # Herceg Ivan
+    dynasty = "KQ‡e"  # Korvin
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1500.1.1 = {
+  leader = {
+    name = "KQS¯eXb VpQÑyXo"  # Krsto Frankopan
+    type = general
+    fire = 2
+    shock = 4
+    manuever = 3
+    siege = 0
+    death_date = 1671.4.30
+  }
+}
+1508.1.1 = {
+  monarch = {
+    name = "OáQ"  # Ivan
+    dynasty = "i`Ëu¯eyr"  # Ernust
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1512.1.1 = {
+  monarch = {
+    name = "s|SÑy"  # Mirko
+    dynasty = "iO÷–<S"  # Perényi
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1513.1.1 = {
+  leader = {
+    name = "iOTXS âl)R¯eÉbôuGY"  # Petar Berislavic
+    type = general
+    fire = 3
+    shock = 4
+    manuever = 5
+    siege = 0
+    death_date = 1520.5.20
+  }
+}
+1521.1.1 = {
+  monarch = {
+    name = "OáQ"  # Ivan
+    dynasty = "aSSmôuGY"  # Karlovic
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1538.1.1 = {
+  leader = {
+    name = "<SäSÉb yQ—g¯eúW"  # Nikola Zrinski
+    type = general
+    fire = 4
+    shock = 5
+    manuever = 5
+    siege = 0
+    death_date = 1566.9.8
+  }
+}
+1582.1.1 = {
+  leader = {
+    name = "Xblš ôTaS Œ‚Y‚„"  # Toma Bakac Erdody
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1605.1.1
+  }
+}
+1626.1.1 = {
+  leader = {
+    name = "fkÑy KQS¯eXb VpQÑyXo"  # Vuk Krsto Frankopan
+    type = general
+    fire = 2
+    shock = 4
+    manuever = 4
+    siege = 0
+    death_date = 1652.1.1
+  }
+}
+1792.1.1 = {
+  leader = {
+    name = "lš‚„> bSaSôu³u"  # Matija Rukavina
+    type = general
+    fire = 2
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1802.1.1
+  }
+}
+1800.1.1 = {
+  set_legacy_government = constitutional_monarchy
+}
+1900.1.1 = {
+  technology_group = western
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1941.4.10 = {
+  monarch = {
+    name = "Œ‚«ƒ<S"  # Aimone
+    dynasty = "(„ƒlšN"  # Savoia
+    adm = 3
+    dip = 3
+    mil = 2
+    religion = catholic
+  }
+}
+1943.10.12 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = dictatorial_rule
+  add_government_reform = fascist_government
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = fascist_dictatorship
+  monarch = {
+    name = "‰Ryr ^æ—)RGY"  # Ante Pavelic
+    adm = 2
+    dip = 1
+    mil = 4
+    religion = catholic
+  }
+}
+1945.5.8 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = universal_suffrage_reform
+  add_government_reform = reinforce_republican_values_reform
+  add_government_reform = multi_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = ceremonial_president
+  set_legacy_government = presidental_republic
+}
+1991.10.8 = {
+  capital = 131
+}
+1991.10.8 = {
+  monarch = {
+    name = "VÉb<SeY şVcRüf"  # Franjo Tudman
+    adm = 5
+    dip = 4
+    mil = 2
+    religion = catholic
+  }
+}
+1999.11.26 = {
+  monarch = {
+    name = "VÉbyrÑy ^+Y±ƒ‚„GY"  # Vlatko Pavletic
+    adm = 3
+    dip = 3
+    mil = 2
+    religion = catholic
+  }
+}
+2000.2.2 = {
+  monarch = {
+    name = "yQÉbyrÑy XbÆYQYGY"  # Zlatko Tomcic
+    adm = 2
+    dip = 4
+    mil = 1
+    religion = catholic
+  }
+}
+2000.2.18 = {
+  monarch = {
+    name = "¯ewcXo …h‰GY"  # Stjepan Mesic
+    adm = 4
+    dip = 4
+    mil = 2
+    religion = catholic
+  }
+}
+2010.2.18 = {
+  monarch = {
+    name = "Oƒl ¦u‰âlôuGY"  # Ivo Josipovic
+    adm = 3
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+2013.7.1 = {
+  decision = join_european_union
+}
+2015.2.18 = {
+  monarch = {
+    name = "Ñy3t¾ <hÉbôTS-úWTXWôuGY"  # Kolinda Grabar-Kitarovic
+    adm = 4
+    dip = 4
+    mil = 2
+    religion = catholic
+    female = yes
+  }
+}

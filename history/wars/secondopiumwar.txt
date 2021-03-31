@@ -1,0 +1,19 @@
+name = ",rŒN!k&žGrb‰N"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 1816
+}
+
+1856.10.8 = {
+	add_attacker = GBR
+	add_attacker = FR2
+	add_defender = QNG
+}
+
+1860.10.18 = {
+	rem_attacker = GBR
+	rem_attacker = FR2
+	rem_defender = QNG
+}

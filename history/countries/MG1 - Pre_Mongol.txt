@@ -1,0 +1,135 @@
+government = mongol_steppe_horde
+add_government_reform = mongol_steppe_horde_reform
+government_rank = 3
+mercantilism = 0.1
+technology_group = eastern_nomad_group
+religion = tengri_pagan_reformed
+primary_culture = mongol
+capital = 2891	# Karakorum
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+
+1206.1.1 = {
+	monarch = {
+         name = "b	T`Wl"
+		#dynasty = " "
+		#1162t^5g31åeÿ1227t^8g25åe
+		birth_date = 1162.5.31
+		death_date = 1227.8.25
+		adm = 6
+		dip = 6
+		mil = 6
+	leader = { name = "b	T`Wl"	type = general	fire = 10  shock = 11	manuever = 9	siege = 9 }	
+	}
+}
+1206.1.1 = {
+	heir = {
+		name = "Öb÷–"
+		monarch_name = "Öb÷–"
+		
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 6
+		birth_date = 1192.1.1
+		death_date = 1229.9.13
+	}
+}
+1227.8.25 = {
+	monarch = {
+		name = "Öb÷–"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 6
+		leader = { name = "Öb÷–"	type = general	fire = 5	shock = 4	manuever = 3	siege = 3 }
+	}
+}
+1227.8.25 = {
+	heir = {
+		name = "z–ğS"
+		monarch_name = "z–ğS"
+		
+		claim = 95
+		adm = 6
+		dip = 5
+		mil = 6
+		birth_date = 1186.1.1
+		death_date = 1246.8.24
+	}
+}
+1229.9.13 = {
+	monarch = {
+		name = "z–ğS"
+		#dynasty = " "
+		
+		adm = 6
+		dip = 5
+		mil = 6
+		leader = { name = "z–ğS"	type = general	fire = 5	shock = 4	manuever = 3	siege = 3 }
+	}
+}
+1229.9.13 = {
+	heir = {
+		name = "51u"
+		monarch_name = "51u"
+		
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 6
+		birth_date = 1206.1.1
+		death_date = 1248.4.24
+	}
+}
+1246.8.24 = {
+	monarch = {
+		name = "51u"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 6
+	}
+}
+1248.4.24 = {
+	monarch = {
+		name = "(regency council)"
+		#dynasty = " "
+		regent = yes
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+1251.7.1 = {
+	monarch = {
+		name = "™„åT"
+		#dynasty = " "
+		
+		adm = 5
+		dip = 3
+		mil = 5
+	}
+}
+1259.8.11 = {
+	monarch = {
+		name = "(regency council)"
+		#dynasty = " "
+		regent = yes
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+1270.1.1 = { add_government_reform = early_gov_reform_10 }

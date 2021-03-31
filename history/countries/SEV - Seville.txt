@@ -1,0 +1,66 @@
+government = monarchy
+add_government_reform = iqta
+mercantilism = 0.1
+primary_culture = andalucian
+religion = sunni
+add_accepted_culture = berber
+technology_group = muslim
+capital = 224
+religious_school = maliki_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1023.1.1 = {
+  monarch = {
+    name = "aSâ∆Y"  # Abu al-Qasim
+    dynasty = "?ñÙT∑V"  # Abbadid
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1042.1.1 = {
+  monarch = {
+    name = "FzTXÍè∑V"  # Al-Mu'tadid
+    dynasty = "?ñÙT∑V"  # Abbadid
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+1069.1.1 = {
+  monarch = {
+    name = "FzTXs|∑V"  # Al-Mu'tamid
+    dynasty = "?ñÙT∑V"  # Abbadid
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

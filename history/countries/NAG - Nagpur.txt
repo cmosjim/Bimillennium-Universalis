@@ -1,0 +1,168 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+technology_group = early_indian
+primary_culture = marathi
+religion = hinduism
+capital = 546
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1690.1.1 = {
+  monarch = {
+    name = "±”·VÏ‚9N"  # Chand Sultan
+    dynasty = "·VeY Rê"  # Deogadhi
+    adm = 4
+    dip = 0
+    mil = 3
+  }
+}
+1739.1.1 = {
+  monarch = {
+    name = "WÇNöe I"  # Raghuji I
+    dynasty = "=Yßˆr"  # Bhonsle
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+1739.1.1 = {
+  heir = {
+    name = "–tYöe"  # Janoji
+    monarch_name = "–tYöe"  # Janoji
+    dynasty = "=Yßˆr"  # Bhonsle
+    birth_date = 1730.1.1
+    death_date = 1772.5.18
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 3
+  }
+}
+1755.3.2 = {
+  monarch = {
+    name = "–tYöe"  # Janoji
+    dynasty = "=Yßˆr"  # Bhonsle
+    adm = 2
+    dip = 0
+    mil = 3
+  }
+}
+1755.3.2 = {
+  heir = {
+    name = "ßˆFZöe"  # Sabaji
+    monarch_name = "ßˆFZöe"  # Sabaji
+    dynasty = "=Yßˆr"  # Bhonsle
+    birth_date = 1750.1.1
+    death_date = 1775.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1772.5.18 = {
+  monarch = {
+    name = "ßˆFZöe"  # Sabaji
+    dynasty = "=Yßˆr"  # Bhonsle
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1772.5.18 = {
+  heir = {
+    name = "WÇNöe"  # Raghuji
+    monarch_name = "WÇNöe II"  # Raghuji II
+    dynasty = "=Yßˆr"  # Bhonsle
+    birth_date = 1750.1.1
+    death_date = 1775.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 2
+  }
+}
+1775.1.1 = {
+  monarch = {
+    name = "WÇNöe II"  # Raghuji II
+    dynasty = "=Yßˆr"  # Bhonsle
+    adm = 1
+    dip = 0
+    mil = 2
+  }
+}
+1775.1.1 = {
+  heir = {
+    name = "©NşVöe"  # Mudhoji
+    monarch_name = "©NşVöe II"  # Mudhoji II
+    dynasty = "=Yßˆr"  # Bhonsle
+    birth_date = 1775.1.1
+    death_date = 1818.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1816.1.1 = {
+  monarch = {
+    name = "©NşVöe II"  # Mudhoji II
+    dynasty = "=Yßˆr"  # Bhonsle
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1816.1.1 = {
+  heir = {
+    name = "WÇNöe"  # Raghoji
+    monarch_name = "WÇNöe III"  # Raghoji III
+    dynasty = "=Yßˆr"  # Bhonsle
+    birth_date = 1800.1.1
+    death_date = 1853.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+1818.1.1 = {
+  monarch = {
+    name = "WÇNöe III"  # Raghoji III
+    dynasty = "=Yßˆr"  # Bhonsle
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}

@@ -1,0 +1,111 @@
+government = monarchy
+add_government_reform = iqta
+mercantilism = 0.1
+primary_culture = andalucian
+religion = sunni
+add_accepted_culture = berber
+technology_group = muslim
+capital = 333
+religious_school = maliki_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1076.1.1 = {
+  monarch = {
+    name = "O,g ?–<hÉbjS FzSTX¾"  # Ibn Aglab al-Murtada
+    dynasty = "?–<hÉbjS"  # Aglabid
+    adm = 1
+    mil = 3
+    dip = 5
+  }
+}
+1093.1.1 = {
+  monarch = {
+    name = "?–jSjgÉb ÉbÔk Ï‚±ƒüf"  # Abu-I-Rabi Sulayman
+    dynasty = "?–<hÉbjS"  # Aglabid
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1145.1.1 = {
+  monarch = {
+    name = "FzUØž·V I"  # Muhammad I
+    dynasty = "KO<S"  # Ghaniyid
+    adm = 5
+    mil = 2
+    dip = 4
+  }
+}
+1156.1.1 = {
+  monarch = {
+    name = "O™lKQ"  # Ishaq
+    dynasty = "KO<S"  # Ghaniyid
+    adm = 2
+    mil = 1
+    dip = 2
+  }
+}
+1183.1.1 = {
+  monarch = {
+    name = "FzUØž·V II"  # Muhammad II
+    dynasty = "KO<S"  # Ghaniyid
+    adm = 5
+    mil = 2
+    dip = 4
+  }
+}
+1184.1.1 = {
+  monarch = {
+    name = "?–Ì‘"  # 'Ali
+    dynasty = "KO<S"  # Ghaniyid
+    adm = 2
+    mil = 2
+    dip = 1
+  }
+}
+1185.1.1 = {
+  monarch = {
+    name = "FzUØž·V II"  # Muhammad II
+    dynasty = "KO<S"  # Ghaniyid
+    adm = 5
+    mil = 2
+    dip = 4
+  }
+}
+1187.1.1 = {
+  monarch = {
+    name = "öSwmšN"  # Yahya
+    dynasty = "KO<S"  # Ghaniyid
+    adm = 2
+    mil = 1
+    dip = 2
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

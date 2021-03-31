@@ -1,0 +1,178 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = maltese
+religion = catholic
+technology_group = western
+capital = 126
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1920.1.1 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = universal_suffrage_reform
+  add_government_reform = reinforce_republican_values_reform
+  add_government_reform = multi_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = abolish_presidency
+  set_legacy_government = parliamentary_republic
+  government_rank = 2
+}
+1964.9.21 = {
+  monarch = {
+    name = "TN»l ZSS<h eY)RôuS"  # Giorgio Borg Olivier
+    adm = 3
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+1971.6.21 = {
+  monarch = {
+    name = "YÆY fXb+Y"  # Dom Mintoff
+    adm = 2
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+1974.12.13 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = universal_suffrage_reform
+  add_government_reform = reinforce_republican_values_reform
+  add_government_reform = multi_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = ceremonial_president
+  set_legacy_government = presidental_republic
+  monarch = {
+    name = "‰RN<S ¦umt+Y lš«ƒ"  # Anthony Joseph Mamo
+    adm = 5
+    dip = 3
+    mil = 3
+    religion = catholic
+  }
+}
+1976.12.27 = {
+  monarch = {
+    name = "‰RN ^‚„	T<h"  # Anton Buttigieg
+    adm = 3
+    dip = 4
+    mil = 4
+    religion = catholic
+  }
+}
+1981.12.27 = {
+  monarch = {
+    name = "?–S=Oyr ^yQÒR"  # Albert Hyzler
+    adm = 2
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+1982.2.15 = {
+  monarch = {
+    name = "?– RŽƒ ôTôTÉb"  # Agatha Barbara
+    adm = 5
+    dip = 3
+    mil = 2
+    religion = catholic
+    female = yes
+  }
+}
+1987.2.15 = {
+  monarch = {
+    name = "ÝOW Ï‚ÃW÷–^"  # Paul Xuereb
+    adm = 4
+    dip = 3
+    mil = 2
+    religion = catholic
+  }
+}
+1989.4.4 = {
+  monarch = {
+    name = "‡eîhyr TXZSi`"  # Vincent Tabone
+    adm = 4
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+1994.4.4 = {
+  monarch = {
+    name = "LNb s|+Y(„·V ¦<SGY"  # Ugo Mifsud Bonnici
+    adm = 4
+    dip = 2
+    mil = 2
+    religion = catholic
+  }
+}
+1999.4.4 = {
+  monarch = {
+    name = "-WY ·V lšSÑy"  # Guido de Marco
+    adm = 3
+    dip = 2
+    mil = 4
+    religion = catholic
+  }
+}
+2004.4.4 = {
+  monarch = {
+    name = "1r·VNS ¬‚…QKQ ?–¾s|"  # Edward Fenech Adami
+    adm = 2
+    dip = 5
+    mil = 3
+    religion = catholic
+  }
+}
+2004.5.1 = {
+  decision = join_european_union
+}
+2009.4.4 = {
+  monarch = {
+    name = "TN»l ?–Éb"  # George Abela
+    adm = 5
+    dip = 3
+    mil = 5
+    religion = catholic
+  }
+}
+2014.4.4 = {
+  monarch = {
+    name = "›sKN ïf¯e ÑyÒReu nf÷–aS"  # Marie Louise Coleiro Preca
+    adm = 5
+    dip = 3
+    mil = 3
+    religion = catholic
+    female = yes
+  }
+}

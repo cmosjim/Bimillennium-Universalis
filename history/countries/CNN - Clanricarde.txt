@@ -1,0 +1,2118 @@
+government = tribal
+add_government_reform = barbarian_reform
+technology_group = barbarian
+primary_culture = irish
+religion = druidism
+capital = 376
+40.1.1 = {
+  monarch = {
+    name = "ÃW"  # Aodh
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+40.1.1 = {
+  heir = {
+    name = "eYÈT·V"  # Eochaidh
+    monarch_name = "eYÈT·V"  # Eochaidh
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 30.1.1
+    death_date = 80.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+60.1.1 = {
+  monarch = {
+    name = "eYÈT·V"  # Eochaidh
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+60.1.1 = {
+  heir = {
+    name = "‰R	T¯e ¬‚i`"  # Aonghus Fionn
+    monarch_name = "‰R	T¯e ¬‚i`"  # Aonghus Fionn
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 50.1.1
+    death_date = 100.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+80.1.1 = {
+  monarch = {
+    name = "‰R	T¯e ¬‚i`"  # Aonghus Fionn
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+80.1.1 = {
+  heir = {
+    name = "ÑySlšKQ LNSÕl¾"  # Cormac Ulfhada
+    monarch_name = "ÑySlšKQ LNSÕl¾"  # Cormac Ulfhada
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 70.1.1
+    death_date = 120.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 5
+  }
+}
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+100.1.1 = {
+  monarch = {
+    name = "ÑySlšKQ LNSÕl¾"  # Cormac Ulfhada
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 2
+    dip = 5
+    mil = 5
+  }
+}
+100.1.1 = {
+  heir = {
+    name = "f<h¯e òƒSyr"  # Aonghus Feirt
+    monarch_name = "f<h¯e òƒSyr"  # Aonghus Feirt
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 90.1.1
+    death_date = 140.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+120.1.1 = {
+  monarch = {
+    name = "f<h¯e òƒSyr"  # Aonghus Feirt
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+120.1.1 = {
+  heir = {
+    name = "9Éb¾KQ"  # Fearadach
+    monarch_name = "9Éb¾KQ"  # Fearadach
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 110.1.1
+    death_date = 160.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+140.1.1 = {
+  monarch = {
+    name = "9Éb¾KQ"  # Fearadach
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+140.1.1 = {
+  heir = {
+    name = "y<h¯e09‰R(„"  # Forgus Fiansa
+    monarch_name = "y<h¯e09‰R(„"  # Forgus Fiansa
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 130.1.1
+    death_date = 180.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+160.1.1 = {
+  monarch = {
+    name = "y<h¯e09‰R(„"  # Forgus Fiansa
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+160.1.1 = {
+  heir = {
+    name = "iIN·VÑ‘0KQœ¯w"  # Ceidghin Cruchain
+    monarch_name = "iIN·VÑ‘0KQœ¯w"  # Ceidghin Cruchain
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 150.1.1
+    death_date = 200.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+180.1.1 = {
+  monarch = {
+    name = "iIN·VÑ‘0KQœ¯w"  # Ceidghin Cruchain
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+180.1.1 = {
+  heir = {
+    name = "ÃW"  # Aodh
+    monarch_name = "ÃW"  # Aodh
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 170.1.1
+    death_date = 220.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+200.1.1 = {
+  monarch = {
+    name = "ÃW"  # Aodh
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+200.1.1 = {
+  heir = {
+    name = "eY·V0?–±ƒi`"  # Aodh Alainn
+    monarch_name = "eY·V0?–±ƒi`"  # Aodh Alainn
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 190.1.1
+    death_date = 240.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+220.1.1 = {
+  monarch = {
+    name = "eY·V0?–±ƒi`"  # Aodh Alainn
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+220.1.1 = {
+  heir = {
+    name = "<SšN0FzS"  # Nia Mor
+    monarch_name = "<SšN0FzS"  # Nia Mor
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 210.1.1
+    death_date = 260.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+240.1.1 = {
+  monarch = {
+    name = "<SšN0FzS"  # Nia Mor
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+240.1.1 = {
+  heir = {
+    name = "ïf R·V"  # Luighaidh
+    monarch_name = "ïf R·V"  # Luighaidh
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 230.1.1
+    death_date = 280.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+260.1.1 = {
+  monarch = {
+    name = "ïf R·V"  # Luighaidh
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+260.1.1 = {
+  heir = {
+    name = "eY·V0ïQeYi`"  # Aodh Caomh
+    monarch_name = "eY·V0ïQeYi`"  # Aodh Caomh
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 250.1.1
+    death_date = 300.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+280.1.1 = {
+  monarch = {
+    name = "eY·V0ïQeYi`"  # Aodh Caomh
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+280.1.1 = {
+  heir = {
+    name = "·^<S"  # Coinne
+    monarch_name = "·^<S"  # Coinne
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 270.1.1
+    death_date = 320.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 4
+  }
+}
+300.1.1 = {
+  monarch = {
+    name = "·^<S"  # Coinne
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 3
+    dip = 1
+    mil = 4
+  }
+}
+300.1.1 = {
+  heir = {
+    name = "s|ÒR·V·ğlS?–KQ"  # Muireadh Tireach
+    monarch_name = "s|ÒR·V·ğlS?–KQ"  # Muireadh Tireach
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 290.1.1
+    death_date = 357.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 4
+  }
+}
+320.1.1 = {
+  monarch = {
+    name = "s|ÒR·V·ğlS?–KQ"  # Muireadh Tireach
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 3
+    dip = 1
+    mil = 4
+  }
+}
+327.1.1 = {
+  heir = {
+    name = "'kÈTO·V0Fz<h…hN"  # Eochaid Mugmedon
+    monarch_name = "'kÈTO·V0Fz<h…hN"  # Eochaid Mugmedon
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 327.1.1
+    death_date = 365.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+357.1.1 = {
+  monarch = {
+    name = "'kÈTO·V0Fz<h…hN"  # Eochaid Mugmedon
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+357.1.1 = {
+  heir = {
+    name = "<SS0ú‹O	TšNÉbk"  # Niall Noigiallach
+    monarch_name = "<SS0ú‹O	TšNÉbk"  # Niall Noigiallach
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 335.1.1
+    death_date = 406.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+365.1.1 = {
+  monarch = {
+    name = "<SS0ú‹O	TšNÉbk"  # Niall Noigiallach
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+406.1.1 = {
+  monarch = {
+    name = "?–lšS R·V"  # Amalgaid
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+410.1.1 = {
+  heir = {
+    name = "³uyr"  # Nath
+    monarch_name = "³uyr"  # Nath
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    birth_date = 410.1.1
+    death_date = 445.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+}
+440.1.1 = {
+  monarch = {
+    name = "³uyr"  # Nath
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+}
+440.1.1 = {
+  heir = {
+    name = "Œ‚)RS0idSyr"  # Ailill Molt
+    monarch_name = "Œ‚)RS0idSyr"  # Ailill Molt
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    birth_date = 415.1.1
+    death_date = 482.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+445.1.1 = {
+  monarch = {
+    name = "Œ‚)RS0idSyr"  # Ailill Molt
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+450.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+  government_rank = 1
+}
+482.1.1 = {
+  monarch = {
+    name = "SO Õn R LNlš"  # Dauí Tenga Uma
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+500.1.1 = {
+  monarch = {
+    name = "'k9h0"  # Eógan Bél
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+520.1.1 = {
+  heir = {
+    name = "Œ‚Ì‘S0i`ís¾"  # Ailill Inbanda
+    monarch_name = "Œ‚Ì‘S0i`ís¾"  # Ailill Inbanda
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    birth_date = 520.1.1
+    death_date = 549.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+536.1.1 = {
+  technology_group = western
+}
+542.1.1 = {
+  monarch = {
+    name = "Œ‚Ì‘S0i`ís¾"  # Ailill Inbanda
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+549.1.1 = {
+  monarch = {
+    name = "ÃWáw·ÒVÆYRS³u"  # Echu Tirmcharna
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+549.1.1 = {
+  heir = {
+    name = "Œ‚·V"  # Áed
+    monarch_name = "Œ‚·V"  # Áed
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 526.1.1
+    death_date = 575.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 1
+  }
+}
+556.1.1 = {
+  monarch = {
+    name = "Œ‚·V"  # Áed
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 5
+    dip = 2
+    mil = 1
+  }
+}
+556.1.1 = {
+  heir = {
+    name = "ƒlşV"  # Uatu
+    monarch_name = "ƒlşV"  # Uatu
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 545.1.1
+    death_date = 600.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+575.1.1 = {
+  monarch = {
+    name = "ƒlşV"  # Uatu
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+600.1.1 = {
+  monarch = {
+    name = "Ñyüf"  # Colmán
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+622.1.1 = {
+  monarch = {
+    name = "W RÉbk"  # Rogallach
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+649.1.1 = {
+  monarch = {
+    name = "—g<h0Œk"  # Loingsech
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    adm = 3
+    dip = 5
+    mil = 5
+  }
+}
+649.1.1 = {
+  heir = {
+    name = "äS?–ÒR"  # Guaire
+    monarch_name = "äS?–ÒR"  # Guaire
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    birth_date = 625.1.1
+    death_date = 682.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 2
+  }
+}
+655.1.1 = {
+  monarch = {
+    name = "äS?–ÒR"  # Guaire
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    adm = 5
+    dip = 1
+    mil = 2
+  }
+}
+663.1.1 = {
+  monarch = {
+    name = "¯w ÕlÉb·V"  # Cenn Fáelad
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+682.1.1 = {
+  monarch = {
+    name = "“¯w"  # Dúnchad
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+682.1.1 = {
+  heir = {
+    name = "9S RS Œ‚‰v"  # Fergal Aidne
+    monarch_name = "9S RS Œ‚‰v"  # Fergal Aidne
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    birth_date = 653.1.1
+    death_date = 696.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+683.1.1 = {
+  monarch = {
+    name = "9S RS Œ‚‰v"  # Fergal Aidne
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+696.1.1 = {
+  monarch = {
+    name = "s|ÒR¾k·f)Rîh"  # Muiredach Muillethan
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 5
+    dip = 5
+    mil = 4
+  }
+}
+696.1.1 = {
+  heir = {
+    name = "ïQÉbk"  # Cellach
+    monarch_name = "ïQÉbk"  # Cellach
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 672.1.1
+    death_date = 707.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+700.1.1 = {
+  religion = chalcedonism
+}
+702.1.1 = {
+  monarch = {
+    name = "ïQÉbk"  # Cellach
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+705.1.1 = {
+  monarch = {
+    name = "àV·VGYTXGY"  # Indechtach
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+707.1.1 = {
+  monarch = {
+    name = "àV·VGYTXGY"  # Indechtach
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+707.1.1 = {
+  heir = {
+    name = "YÆY³uS"  # Domnall
+    monarch_name = "YÆY³uS"  # Domnall
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 693.1.1
+    death_date = 728.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+723.1.1 = {
+  monarch = {
+    name = "YÆY³uS"  # Domnall
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+723.1.1 = {
+  heir = {
+    name = "aSTXS"  # Cathal
+    monarch_name = "aSTXS"  # Cathal
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 698.1.1
+    death_date = 735.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 4
+  }
+}
+728.1.1 = {
+  monarch = {
+    name = "aSTXS"  # Cathal
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 5
+    dip = 1
+    mil = 4
+  }
+}
+728.1.1 = {
+  heir = {
+    name = "Œ‚·V·S^"  # Áed Balb
+    monarch_name = "Œ‚·V·S^"  # Áed Balb
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 705.1.1
+    death_date = 742.1.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 1
+  }
+}
+735.1.1 = {
+  monarch = {
+    name = "Œ‚·V·S^"  # Áed Balb
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 1
+    dip = 5
+    mil = 1
+  }
+}
+735.1.1 = {
+  heir = {
+    name = "iO<h¯e"  # Forggus
+    monarch_name = "iO<h¯e"  # Forggus
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 712.1.1
+    death_date = 756.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+742.1.1 = {
+  monarch = {
+    name = "iO<h¯e"  # Forggus
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+756.1.1 = {
+  monarch = {
+    name = "?–)RS·s|TGY"  # Ailill Medraige
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+764.1.1 = {
+  monarch = {
+    name = "jg^-àV·V÷–GY"  # Dub-Indrecht
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+768.1.1 = {
+  monarch = {
+    name = "U·ÑyÈT·V"  # Donn Cothaid
+    dynasty = "O òƒ„SkÉb"  # Uí Fiachrach
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+773.1.1 = {
+  monarch = {
+    name = "V±ƒGYS"  # Flaithrí
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+773.1.1 = {
+  heir = {
+    name = "?–yr RS"  # Artgal
+    monarch_name = "?–yr RS"  # Artgal
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 747.1.1
+    death_date = 782.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+777.1.1 = {
+  monarch = {
+    name = "?–yr RS"  # Artgal
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+777.1.1 = {
+  heir = {
+    name = "‚„®vÉbyr"  # Tipraite
+    monarch_name = "‚„®vÉbyr"  # Tipraite
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 752.1.1
+    death_date = 786.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+782.1.1 = {
+  monarch = {
+    name = "‚„®vÉbyr"  # Tipraite
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+782.1.1 = {
+  heir = {
+    name = "úWHY·V"  # Cináed
+    monarch_name = "úWHY·V"  # Cináed
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 756.1.1
+    death_date = 792.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+786.1.1 = {
+  monarch = {
+    name = "úWHY·V"  # Cináed
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+786.1.1 = {
+  heir = {
+    name = "ÑyÉb"  # Colla
+    monarch_name = "ÑyÉb"  # Colla
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 762.1.1
+    death_date = 796.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 2
+  }
+}
+792.1.1 = {
+  monarch = {
+    name = "ÑyÉb"  # Colla
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 5
+    dip = 5
+    mil = 2
+  }
+}
+792.1.1 = {
+  heir = {
+    name = "s|SäS¯e"  # Muirgius
+    monarch_name = "s|SäS¯e"  # Muirgius
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 766.1.1
+    death_date = 815.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+796.1.1 = {
+  monarch = {
+    name = "s|SäS¯e"  # Muirgius
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+796.1.1 = {
+  heir = {
+    name = "êšNSlšyr"  # Diarmait
+    monarch_name = "êšNSlšyr"  # Diarmait
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 785.1.1
+    death_date = 833.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+815.1.1 = {
+  monarch = {
+    name = "êšNSlšyr"  # Diarmait
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+815.1.1 = {
+  heir = {
+    name = "aSTXS"  # Cathal
+    monarch_name = "aSTXS"  # Cathal
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 803.1.1
+    death_date = 839.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+833.1.1 = {
+  monarch = {
+    name = "aSTXS"  # Cathal
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+833.1.1 = {
+  heir = {
+    name = "FzSÈT·V"  # Murchad
+    monarch_name = "FzSÈT·V"  # Murchad
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 809.1.1
+    death_date = 840.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+839.1.1 = {
+  monarch = {
+    name = "FzSÈT·V"  # Murchad
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+839.1.1 = {
+  heir = {
+    name = "9SäS¯e"  # Fergus
+    monarch_name = "9SäS¯e"  # Fergus
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 810.1.1
+    death_date = 843.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 5
+  }
+}
+840.1.1 = {
+  monarch = {
+    name = "9SäS¯e"  # Fergus
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 5
+    dip = 4
+    mil = 5
+  }
+}
+840.1.1 = {
+  heir = {
+    name = "¬‚¯e<SGYTX"  # Finsnechta
+    monarch_name = "¬‚¯e<SGYTX"  # Finsnechta
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 813.1.1
+    death_date = 848.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+843.1.1 = {
+  monarch = {
+    name = "¬‚¯e<SGYTX"  # Finsnechta
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+843.1.1 = {
+  heir = {
+    name = "Fz<h†–"  # Mugron
+    monarch_name = "Fz<h†–"  # Mugron
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 818.1.1
+    death_date = 872.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 1
+  }
+}
+848.1.1 = {
+  monarch = {
+    name = "Fz<h†–"  # Mugron
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 5
+    dip = 2
+    mil = 1
+  }
+}
+848.1.1 = {
+  heir = {
+    name = "·^—ôTS"  # Conchobar
+    monarch_name = "·^—ôTS"  # Conchobar
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 842.1.1
+    death_date = 882.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+867.1.1 = {
+  religion = catholic
+}
+872.1.1 = {
+  monarch = {
+    name = "·^—ôTS"  # Conchobar
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+872.1.1 = {
+  heir = {
+    name = "Œ‚·V"  # Áed
+    monarch_name = "Œ‚·V"  # Áed
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 852.1.1
+    death_date = 888.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+882.1.1 = {
+  monarch = {
+    name = "Œ‚·V"  # Áed
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+882.1.1 = {
+  heir = {
+    name = "ğl<h"  # Tadg
+    monarch_name = "ğl<h"  # Tadg
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    birth_date = 858.1.1
+    death_date = 900.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 5
+  }
+}
+888.1.1 = {
+  monarch = {
+    name = "ğl<h"  # Tadg
+    dynasty = "LN„S ^œàV"  # Uí Briúin
+    adm = 5
+    dip = 2
+    mil = 5
+  }
+}
+900.1.1 = {
+  monarch = {
+    name = "aSTXS"  # Cathal
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+900.1.1 = {
+  heir = {
+    name = "ğl<h"  # Tadg
+    monarch_name = "ğl<h"  # Tadg
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 895.1.1
+    death_date = 956.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+925.1.1 = {
+  monarch = {
+    name = "ğl<h"  # Tadg
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+926.1.1 = {
+  heir = {
+    name = "9S RS"  # Fergal
+    monarch_name = "9S RS"  # Fergal
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 926.1.1
+    death_date = 967.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+956.1.1 = {
+  monarch = {
+    name = "9S RS"  # Fergal
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+956.1.1 = {
+  heir = {
+    name = "·^—ôTS"  # Conchobar
+    monarch_name = "·^—ôTS"  # Conchobar
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 937.1.1
+    death_date = 973.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+967.1.1 = {
+  monarch = {
+    name = "·^—ôTS"  # Conchobar
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+967.1.1 = {
+  heir = {
+    name = "aSTXS"  # Cathal
+    monarch_name = "aSTXS"  # Cathal
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 943.1.1
+    death_date = 1010.1.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 2
+  }
+}
+973.1.1 = {
+  monarch = {
+    name = "aSTXS"  # Cathal
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 1
+    dip = 5
+    mil = 2
+  }
+}
+980.1.1 = {
+  heir = {
+    name = "ğl<h"  # Tadg
+    monarch_name = "ğl<h"  # Tadg
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 980.1.1
+    death_date = 1030.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1010.1.1 = {
+  monarch = {
+    name = "ğl<h"  # Tadg
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1010.1.1 = {
+  heir = {
+    name = "?–Syr·LNSÉbPŸ"  # Art Uallach
+    monarch_name = "?–Syr·LNSÉbPŸ"  # Art Uallach
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 1000.1.1
+    death_date = 1046.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 4
+  }
+}
+1030.1.1 = {
+  monarch = {
+    name = "?–Syr·LNSÉbPŸ"  # Art Uallach
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 1
+    dip = 3
+    mil = 4
+  }
+}
+1030.1.1 = {
+  heir = {
+    name = "Œ‚·V"  # Áed
+    monarch_name = "Œ‚·V"  # Áed
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 1016.1.1
+    death_date = 1067.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 4
+  }
+}
+1046.1.1 = {
+  monarch = {
+    name = "Œ‚·V"  # Áed
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 4
+    dip = 5
+    mil = 4
+  }
+}
+1046.1.1 = {
+  heir = {
+    name = "Œ‚·V"  # Áed
+    monarch_name = "Œ‚·V"  # Áed
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 1037.1.1
+    death_date = 1087.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+1067.1.1 = {
+  monarch = {
+    name = "Œ‚·V"  # Áed
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+1067.1.1 = {
+  heir = {
+    name = "œ„S·VÌ‘"  # Ruaidrí
+    monarch_name = "œ„S·VÌ‘"  # Ruaidrí
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 1057.1.1
+    death_date = 1092.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1087.1.1 = {
+  monarch = {
+    name = "œ„S·VÌ‘"  # Ruaidrí
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1087.1.1 = {
+  heir = {
+    name = "V±ƒk+RSTX6w"  # Flaithbertaigh
+    monarch_name = "V±ƒk+RSTX6w"  # Flaithbertaigh
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 1062.1.1
+    death_date = 1098.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+1092.1.1 = {
+  monarch = {
+    name = "V±ƒk+RSTX6w"  # Flaithbertaigh
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+1092.1.1 = {
+  heir = {
+    name = "YÆY³uS"  # Domnall
+    monarch_name = "YÆY³uS"  # Domnall
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 1068.1.1
+    death_date = 1106.1.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 3
+  }
+}
+1098.1.1 = {
+  monarch = {
+    name = "YÆY³uS"  # Domnall
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 1
+    dip = 5
+    mil = 3
+  }
+}
+1098.1.1 = {
+  heir = {
+    name = "ğl^tYôTk"  # Tairrdelbach
+    monarch_name = "ğl^tYôTk"  # Tairrdelbach
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 1076.1.1
+    death_date = 1156.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+1106.1.1 = {
+  monarch = {
+    name = "ğl^tYôTk"  # Tairrdelbach
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+1126.1.1 = {
+  heir = {
+    name = "œ„S·VÌ‘"  # Ruaidrí
+    monarch_name = "œ„S·VÌ‘"  # Ruaidrí
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 1126.1.1
+    death_date = 1186.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 1
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1156.1.1 = {
+  monarch = {
+    name = "œ„S·VÌ‘"  # Ruaidrí
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 4
+    dip = 4
+    mil = 1
+  }
+}
+1156.1.1 = {
+  heir = {
+    name = "·^—ôTS·f…hSúW"  # Conchobar Máenmaige
+    monarch_name = "·^—ôTS·f…hSúW"  # Conchobar Máenmaige
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 1156.1.1
+    death_date = 1190.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1186.1.1 = {
+  monarch = {
+    name = "·^—ôTS·f…hSúW"  # Conchobar Máenmaige
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1186.1.1 = {
+  heir = {
+    name = "aSTXS aSÉbk"  # Cathal Carragh
+    monarch_name = "aSTXS aSÉbk"  # Cathal Carragh
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 1160.1.1
+    death_date = 1202.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+1190.1.1 = {
+  monarch = {
+    name = "aSTXS aSÉbk"  # Cathal Carragh
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+}
+1190.1.1 = {
+  heir = {
+    name = "aSÈTS·KQW^·V<h"  # Cathal Crobderg
+    monarch_name = "aSÈTS·KQW^·V<h"  # Cathal Crobderg
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 1172.1.1
+    death_date = 1224.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1202.1.1 = {
+  monarch = {
+    name = "aSÈTS·KQW^·V<h"  # Cathal Crobderg
+    dynasty = "·^ú‹yr"  # Connacht
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1202.1.1 = {
+  heir = {
+    name = "Œ‚·VÈT"  # Aedh
+    monarch_name = "Œ‚·VÈT"  # Aedh
+    dynasty = "·^ú‹yr"  # Connacht
+    birth_date = 1194.1.1
+    death_date = 1228.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+1224.1.1 = {
+  monarch = {
+    name = "tåg·V idS"  # Richard Mór
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1194.1.1
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+1230.1.1 = {
+  heir = {
+    name = "ƒlSyr"  # Walter
+    monarch_name = "ƒlSyr"  # Walter
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1230.1.1
+    death_date = 1271.7.28
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 0
+  }
+}
+1243.1.1 = {
+  monarch = {
+    name = "ƒlSyr"  # Walter
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1230.1.1
+    adm = 4
+    dip = 0
+    mil = 0
+  }
+}
+1259.1.1 = {
+  heir = {
+    name = "tåg·'k<h"  # Richard Óg
+    monarch_name = "tåg·'k<h"  # Richard Óg
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1259.1.1
+    death_date = 1326.7.29
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 4
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1271.7.28 = {
+  monarch = {
+    name = "tåg·'k<h"  # Richard Óg
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1259.1.1
+    adm = 4
+    dip = 5
+    mil = 4
+  }
+}
+1312.9.13 = {
+  heir = {
+    name = "YÆY³uS U"  # William Donn
+    monarch_name = "YÆY³uS U"  # William Donn
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1312.9.13
+    death_date = 1333.9.13
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 5
+  }
+}
+1326.7.29 = {
+  monarch = {
+    name = "YÆY³uS U"  # William Donn
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1312.9.13
+    adm = 1
+    dip = 5
+    mil = 5
+  }
+}
+1326.7.29 = {
+  heir = {
+    name = "2S)RKQ"  # Ulick
+    monarch_name = "2S)RKQ"  # Ulick
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1303.1.1
+    death_date = 1353.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1333.9.13 = {
+  monarch = {
+    name = "2S)RKQ"  # Ulick
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1303.1.1
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1333.9.13 = {
+  heir = {
+    name = "tåg·'k<h"  # Richard Óg
+    monarch_name = "tåg·'k<h"  # Richard Óg
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1323.1.1
+    death_date = 1387.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}
+1353.1.1 = {
+  monarch = {
+    name = "tåg·'k<h"  # Richard Óg
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1323.1.1
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}
+1357.1.1 = {
+  heir = {
+    name = "2S)RKQ"  # Ulick
+    monarch_name = "2S)RKQ"  # Ulick
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1357.1.1
+    death_date = 1424.1.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 1
+  }
+}
+1387.1.1 = {
+  monarch = {
+    name = "2S)RKQ"  # Ulick
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1357.1.1
+    adm = 1
+    dip = 5
+    mil = 1
+  }
+}
+1394.1.1 = {
+  heir = {
+    name = "ZÉ^"  # William
+    monarch_name = "ZÉ^"  # William
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1394.1.1
+    death_date = 1430.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 0
+  }
+}
+1424.1.1 = {
+  monarch = {
+    name = "ZÉ^"  # William
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1394.1.1
+    adm = 1
+    dip = 4
+    mil = 0
+  }
+}
+1424.1.1 = {
+  heir = {
+    name = "2S)RKQ œ?–yQ"  # Ulick Ruadh
+    monarch_name = "2S)RKQ œ?–yQ"  # Ulick Ruadh
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1410.1.1
+    death_date = 1485.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1430.1.1 = {
+  monarch = {
+    name = "2S)RKQ œ?–yQ"  # Ulick Ruadh
+    dynasty = "=OKQ"  # Burke
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = scholar_personality
+  add_ruler_personality = cruel_personality
+}
+1440.1.1 = {
+  heir = {
+    name = "2S)RKQ òƒi`"  # Ulick Fionn
+    monarch_name = "2S)RKQ òƒi`"  # Ulick Fionn
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1440.1.1
+    death_date = 1509.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1485.1.1 = {
+  monarch = {
+    name = "2S)RKQ òƒi`"  # Ulick Fionn
+    dynasty = "=OKQ"  # Burke
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1485.1.1 = {
+  heir = {
+    name = "tåg·V eYÖv"  # Richard Óge
+    monarch_name = "tåg·V eYÖv"  # Richard Óge
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1480.1.1
+    death_date = 1519.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1509.1.1 = {
+  monarch = {
+    name = "tåg·V eYÖv"  # Richard Óge
+    dynasty = "=OKQ"  # Burke
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1509.1.1 = {
+  heir = {
+    name = "tåg·V idS"  # Richard Mór
+    monarch_name = "tåg·V idS"  # Richard Mór
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1482.1.1
+    death_date = 1530.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+1520.1.1 = {
+  monarch = {
+    name = "tåg·V eYÖv"  # Richard Óge
+    dynasty = "=OKQ"  # Burke
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+1520.1.1 = {
+  heir = {
+    name = "¦uğ"  # John
+    monarch_name = "¦uğ ¦KQ tåg·V idS"  # John mac Richard Mór
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1500.1.1
+    death_date = 1536.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1530.1.1 = {
+  monarch = {
+    name = "¦uğ ¦KQ tåg·V idS"  # John mac Richard Mór
+    dynasty = "=OKQ"  # Burke
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1530.1.1 = {
+  heir = {
+    name = "tåg·ôTaSGY"  # Richard Bacach
+    monarch_name = "tåg·ôTaSGY"  # Richard Bacach
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1520.1.1
+    death_date = 1538.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 2
+  }
+}
+1536.1.1 = {
+  monarch = {
+    name = "tåg·ôTaSGY"  # Richard Bacach
+    dynasty = "=OKQ"  # Burke
+    adm = 1
+    dip = 3
+    mil = 2
+  }
+}
+1536.1.1 = {
+  heir = {
+    name = "2S)RKQ·³uÖvWS"  # Ulick na gCeann
+    monarch_name = "2S)RKQ·³uÖvWS"  # Ulick na gCeann
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1505.1.1
+    death_date = 1544.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+1538.1.1 = {
+  monarch = {
+    name = "2S)RKQ·³uÖvWS"  # Ulick na gCeann
+    dynasty = "=OKQ"  # Burke
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+1538.1.1 = {
+  heir = {
+    name = "tåg"  # Richard
+    monarch_name = "tåg"  # Richard
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1520.1.1
+    death_date = 1582.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1544.1.1 = {
+  monarch = {
+    name = "tåg"  # Richard
+    dynasty = "=OKQ"  # Burke
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1544.1.1 = {
+  heir = {
+    name = "2S)RKQ"  # Ulick
+    monarch_name = "2S)RKQ"  # Ulick
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1540.1.1
+    death_date = 1601.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+1582.1.1 = {
+  monarch = {
+    name = "2S)RKQ"  # Ulick
+    dynasty = "=OKQ"  # Burke
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+1582.1.1 = {
+  heir = {
+    name = "tåg"  # Richard
+    monarch_name = "tåg"  # Richard
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1572.1.1
+    death_date = 1635.11.12
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1601.1.1 = {
+  monarch = {
+    name = "tåg"  # Richard
+    dynasty = "=OKQ"  # Burke
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1604.1.1 = {
+  heir = {
+    name = "2S)RKQ"  # Ulick
+    monarch_name = "2S)RKQ"  # Ulick
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1604.1.1
+    death_date = 1657.7.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+1635.11.12 = {
+  monarch = {
+    name = "2S)RKQ"  # Ulick
+    dynasty = "=OKQ"  # Burke
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+1635.11.12 = {
+  heir = {
+    name = "tåg"  # Richard
+    monarch_name = "tåg"  # Richard
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1620.1.1
+    death_date = 1666.8.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1657.7.1 = {
+  monarch = {
+    name = "tåg"  # Richard
+    dynasty = "=OKQ"  # Burke
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1657.7.1 = {
+  heir = {
+    name = "ZÉ^"  # William
+    monarch_name = "ZÉ^"  # William
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1650.1.1
+    death_date = 1687.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1666.8.1 = {
+  monarch = {
+    name = "ZÉ^"  # William
+    dynasty = "=OKQ"  # Burke
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1666.8.1 = {
+  heir = {
+    name = "tåg"  # Richard
+    monarch_name = "tåg"  # Richard
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1640.1.1
+    death_date = 1708.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1687.1.1 = {
+  monarch = {
+    name = "tåg"  # Richard
+    dynasty = "=OKQ"  # Burke
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1687.1.1 = {
+  heir = {
+    name = "¦uğ"  # John
+    monarch_name = "¦uğ"  # John
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1642.1.1
+    death_date = 1722.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1708.1.1 = {
+  monarch = {
+    name = "¦uğ"  # John
+    dynasty = "=OKQ"  # Burke
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1708.1.1 = {
+  heir = {
+    name = "ÈKQS"  # Michael
+    monarch_name = "ÈKQS"  # Michael
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1686.1.1
+    death_date = 1726.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+1722.1.1 = {
+  monarch = {
+    name = "ÈKQS"  # Michael
+    dynasty = "=OKQ"  # Burke
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+1722.1.1 = {
+  heir = {
+    name = "¦uğ·òSÆR¯e"  # John Smith
+    monarch_name = "¦uğ·òSÆR¯e"  # John Smith
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1720.11.11
+    death_date = 1782.4.21
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1726.1.1 = {
+  monarch = {
+    name = "¦uğ·òSÆR¯e"  # John Smith
+    dynasty = "=OKQ"  # Burke
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1742.1.8 = {
+  heir = {
+    name = "¨N)R"  # Henry
+    monarch_name = "¨N)R"  # Henry
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1742.1.8
+    death_date = 1797.12.8
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1782.4.21 = {
+  monarch = {
+    name = "¨N)R"  # Henry
+    dynasty = "=OKQ"  # Burke
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1782.4.21 = {
+  heir = {
+    name = "¦uğ"  # John
+    monarch_name = "¦uğ"  # John
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1744.9.22
+    death_date = 1808.7.27
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1797.12.8 = {
+  monarch = {
+    name = "¦uğ"  # John
+    dynasty = "=OKQ"  # Burke
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1802.12.20 = {
+  heir = {
+    name = "2S)RKQ"  # Ulick
+    monarch_name = "2S)RKQ"  # Ulick
+    dynasty = "=OKQ"  # Burke
+    birth_date = 1802.12.20
+    death_date = 1874.4.10
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+1808.7.27 = {
+  monarch = {
+    name = "2S)RKQ"  # Ulick
+    dynasty = "=OKQ"  # Burke
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+1850.1.1 = {
+  set_legacy_government = constitutional_monarchy
+}

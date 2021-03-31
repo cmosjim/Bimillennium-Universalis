@@ -1,0 +1,56 @@
+#2445 - Karamegdan
+latent_trade_goods = {
+	uranium
+}
+
+owner = WWS 
+controller = WWS
+add_core = WWS
+culture = khazak
+religion = tengri_pagan_reformed
+capital = "Karamegdan"
+trade_goods = unknown
+hre = no
+discovered_by = OIR
+discovered_by = CHG
+discovered_by = ottoman
+discovered_by = middle_eastern
+discovered_by = muslim
+discovered_by = nomad_group
+discovered_by = eastern_nomad_group
+discovered_by = western_nomad_group
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+260.1.1 = { owner = CBN controller = CBN add_core = CBN is_city = yes trade_goods = wool }
+495.1.1 = { owner = HEP controller = HEP add_core = HEP remove_core = CBN }
+502.1.1 = { owner = DLN controller = DLN add_core = DLN remove_core = HEP }
+541.1.1 = { owner = ROU controller = ROU add_core = ROU remove_core = DLN }
+555.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = ROU culture = turkic }
+583.1.1 = { owner = WGO controller = WGO add_core = WGO remove_core = GOK }
+659.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = WGO }
+662.1.1 = { owner = HZ2 controller = HZ2 add_core = HZ2 remove_core = TNG }
+679.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = HZ2 }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+702.1.1 = { owner = TRG controller = TRG add_core = TRG remove_core = WZ1 }
+766.1.1 = { owner = KLU controller = KLU add_core = KLU remove_core = TRG }
+942.1.1 = { owner = KKH controller = KKH add_core = KKH remove_core = KLU }
+1134.1.1 = { owner = KKT controller = KKT add_core = KKT remove_core = KKH }
+1219.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = KKT culture = khazak }
+1260.1.1 = { owner = CHG controller = CHG add_core = CHG remove_core = MGE }
+1266.1.1 =  { owner = WK1 controller = WK1 add_core = WK1 remove_core = CHG }
+1308.1.1 = { owner = CHG controller = CHG add_core = CHG remove_core = WK1 }
+1347.1.1 = { owner = DC1 controller = DC1 add_core = DC1 remove_core = CHG }
+1350.1.1 = { religion = sunni }
+1456.1.1 = { add_core = KZH }
+1456.1.1 = { owner = KZH controller = KZH remove_core = CHG } # Kazakh horde forms
+1622.1.1 = { discovered_by = RUS }
+1700.1.1 = { owner = ZUN controller = ZUN } # Dzungarian invasion
+1746.1.1 = { owner = KZH controller = KZH remove_core = ZUN } # Kazakh horde forms
+1760.1.1 = { owner = QNG controller = QNG add_core = QNG }
+1854.2.4 = { owner = RUS controller = RUS add_core = RUS remove_core = OIR  }
+1917.12.13 = { add_core = KZK remove_core = KOK }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV remove_core = RUS }
+1968.1.1 = { trade_goods = uranium }
+1991.12.16 = { owner = KZK controller = KZK remove_core = SOV remove_core = RUS capital = "Burybaital" }

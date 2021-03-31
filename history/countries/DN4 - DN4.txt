@@ -1,0 +1,45 @@
+government = monarchy
+add_government_reform = feudalism_reform
+mercantilism = 0.1
+primary_culture = manchu
+religion = mahayana
+technology_group = early_chinese
+capital = 731 #Sanggyeong
+
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+
+
+
+938.6.1 = {
+	monarch = {
+		name = "'YNNS"
+		adm = 2
+		dip = 5
+		mil = 5
+
+	}
+}
+
+976.1.1 = {
+	monarch = {
+		name = "LN„sf"
+		adm = 2
+		dip = 3
+		mil = 4
+
+	}
+}
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1636.5.15 = { technology_group = old_estern_asian }1949.10.1 = { technology_group = modern_chinese }

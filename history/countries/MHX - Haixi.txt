@@ -1,0 +1,210 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+technology_group = eastern_nomad_group
+primary_culture = manchu
+religion = tengri_pagan_reformed
+secondary_religion = confucianism
+capital = 730	# Hinggan
+
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+#1368.1.1 = { set_country_flag = no_forbidden_city }
+
+1444.1.1 = {
+	monarch = {
+		name = "öSk±Ébf9h¾SIl"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "öSk±Éb-^SKQfvVşV"
+		monarch_name = "öSk±Éb-^SKQfvVşV"
+		
+		birth_date = 1420.1.1
+		death_date = 1495.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1460.1.1 = {
+	monarch = {
+		name = "öSk±Éb-^SKQfvVşV"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1460.1.1 = {
+	heir = {
+		name = "öSk±ÉbPŸSvV<S"
+		monarch_name = "öSk±ÉbPŸSvV<S"
+		
+		birth_date = 1435.1.1
+		death_date = 1525.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1495.1.1 = {
+	monarch = {
+		name = "öSk±ÉbPŸSvV<S"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1495.1.1 = {
+	heir = {
+		name = "öSk±Éb‰TR<h"
+		monarch_name = "öSk±Éb‰TR<h"
+		
+		birth_date = 1480.1.1
+		death_date = 1550.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1525.1.1 = {
+	monarch = {
+		name = "öSk±Éb‰TR<h"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1525.1.1 = {
+	heir = {
+		name = "öSk±ÉbğSug"
+		monarch_name = "öSk±ÉbğSug"
+		
+		birth_date = 1510.1.1
+		death_date = 1565.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1550.1.1 = {
+	monarch = {
+		name = "öSk±ÉbğSug"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1550.1.1 = {
+	heir = {
+		name = "öSk±Ébhg	T.x"
+		monarch_name = "öSk±Ébhg	T.x"
+		
+		birth_date = 1540.1.1
+		death_date = 1584.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1565.1.1 = {
+	monarch = {
+		name = "öSk±Ébhg	T.x"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1565.1.1 = {
+	heir = {
+		name = "öSk±Éb³u—g^„y"
+		monarch_name = "öSk±Éb³u—g^„y"
+		
+		birth_date = 1540.1.1
+		death_date = 1613.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1584.1.1 = {
+	monarch = {
+		name = "öSk±Éb³u—g^„y"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1584.1.1 = {
+	heir = {
+		name = "öSk±ÉbÑ‘ğSów"
+		monarch_name = "öSk±ÉbÑ‘ğSów"
+		
+		birth_date = 1540.1.1
+		death_date = 1613.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1613.1.1 = {
+	monarch = {
+		name = "öSk±ÉbÑ‘ğSów"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+1636.5.15 = { technology_group = old_estern_asian }1949.10.1 = { technology_group = modern_chinese }

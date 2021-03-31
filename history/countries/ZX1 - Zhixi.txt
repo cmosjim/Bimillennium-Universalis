@@ -1,0 +1,70 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+mercantilism = 0.1
+primary_culture = chihan
+religion = liberalism
+technology_group = early_chinese
+capital = 1816	
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = {
+	government = modern_chinese_warlord
+	add_government_reform = modern_chinese_warlord_reform
+	religion = liberalism
+}
+
+
+#bËzN1925t^7g1åeÿÓumgN1948t^5g20åe0(W1925t^bËzTó1928t^KNô•ÿvQNS¬N„vSm?eœ^øv’NùRÙSÿ
+
+1917.7.1 = {
+	#¯QıV‹tÿ1859t^1g7åeÿ1919t^12g28åe	ÿ
+	monarch = {
+		name = "¯QıV‹t"
+		birth_date = 1859.1.7
+		death_date = 1919.12.28
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1919.12.28 = { 
+#ùf•ÿ1862t^12g12åeÿ1938t^5g17åe	ÿ
+	monarch = {
+		name = "ùf•"
+		birth_date = 1862.12.12
+		death_date = 1938.5.17
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+#1922t^4g28åerÑS,rN!kôvIYb‰Nÿôvû|ÖSÜwÿ
+#6g18åeÿôvIY2N¹eãNhˆ(Wæy‡v›Swmb—„vñ‚ıVKQSYu÷S›Q0‚Œr¢‹†NjPbag¦uÿ
+#åN†isQ1S=fÊNqSwmsQHN2N›QRLu¿uÿIY›Q²dúQsQYÿôv›QmN'YèR²dŞVŸS2–ÿ,rN!kôvIYb‰N±RJTÓumg0
+#1924.10.22åeHSYÿ(W1bˆRS¬N„vYR³SM‘TNÿNªg*gÑSÿÅ`S†˜†NS¬NÎWÿ
+#ÑS¨R†NS¬N?eØS0Ÿ”Ÿ>mN%„ëXuQSôV†NI`ßuœ^ÿSØ(Waw¦h-N„vùf•“b†NwegÿÚVy(W-NWSwmö^†^|iN0
+1924.10.22 = {
+	#4TiOZRÿ1874t^4g22åeÿ1939t^12g4åe	ÿ
+	monarch = {
+		name = "4TiOZR"
+		birth_date = 1874.4.22
+		death_date = 1939.12.4
+		adm = 4
+		dip = 5
+		mil = 6
+	}
+}
+
+1949.10.1 = { technology_group = modern_chinese }

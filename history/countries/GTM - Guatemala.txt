@@ -1,0 +1,440 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = western
+primary_culture = mexican
+religion = catholic
+capital = 2633
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1830.1.1 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  set_legacy_government = constitutional_republic
+}
+1838.5.31 = {
+  monarch = {
+    name = "lšÌ‘šNú‹ Ì‘æ—Éb ^¯e"  # Mariano Rivera Paz
+    adm = 3
+    mil = 3
+    dip = 2
+  }
+}
+1842.2.25 = {
+  monarch = {
+    name = "UO^X WS‰eY miO¯e ÷–KQ³u"  # José Venancio López Requena
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1842.5.14 = {
+  monarch = {
+    name = "lšÌ‘šNú‹ Ì‘æ—Éb ^¯e"  # Mariano Rivera Paz
+    adm = 3
+    mil = 3
+    dip = 2
+  }
+}
+1844.12.14 = {
+  monarch = {
+    name = "ÉbeS aS÷–Éb"  # Rafael Carrera
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1848.8.16 = {
+  monarch = {
+    name = "áw‰R ‰RN<SeY lšN…Q¯e"  # Juan Antonio Martínez
+    adm = 3
+    mil = 2
+    dip = 2
+  }
+}
+1848.11.28 = {
+  monarch = {
+    name = "UO^X S³uY ÃW¯eÑyætS"  # José Bernardo Escobar
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1849.1.3 = {
+  monarch = {
+    name = "lšÌ‘šNú‹ ^÷–·V¯e"  # Mariano Peredes
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1851.11.6 = {
+  monarch = {
+    name = "ÉbeS aS÷–Éb"  # Rafael Carrera
+    adm = 4
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+1865.4.14 = {
+  monarch = {
+    name = "iO·VW ·V Œ‚‰…Q³u-®v<SeYS"  # Pedro de Aycinena y Piñol
+    adm = 1
+    mil = 3
+    religion = catholic
+    dip = 3
+  }
+}
+1865.5.24 = {
+  monarch = {
+    name = "Ôkîhyr ^XS³u QhYætS"  # Vicente Cerna Sandoval
+    adm = 3
+    mil = 4
+    religion = catholic
+    dip = 2
+  }
+}
+1871.6.29 = {
+  monarch = {
+    name = "s|<hS  R‰šN <hÉb³uY¯e"  # Miguel García Granados
+    adm = 4
+    dip = 4
+    mil = 2
+    religion = catholic
+  }
+}
+1873.6.4 = {
+  monarch = {
+    name = "áw¯eXb œòƒú‹ ôTÌ‘eY¯e"  # Justo Rufino Barrios
+    adm = 4
+    mil = 2
+    religion = catholic
+    dip = 4
+  }
+}
+1885.4.6 = {
+  monarch = {
+    name = "üfªRÃWS ôTÌ‘šN¯e"  # Manuel Barillas
+    adm = 2
+    mil = 4
+    religion = catholic
+    dip = 3
+  }
+}
+1892.3.15 = {
+  monarch = {
+    name = "UO^X lšÌ‘šN ÷–³u ôTÌ‘eY¯e"  # José María Reina Barrios
+    adm = 3
+    mil = 4
+    religion = catholic
+    dip = 3
+  }
+}
+1898.2.8 = {
+  monarch = {
+    name = "üfªRÃWS ÃW¯eyrÉb¾ aS+Y÷–Éb"  # Manuel Estrada Cabrera
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = catholic
+  }
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1920.1.1 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1920.4.15 = {
+  monarch = {
+    name = "aSm¯e ÃW÷–Éb"  # Carlos Herrera
+    adm = 3
+    mil = 2
+    religion = catholic
+    dip = 3
+  }
+}
+1931.2.14 = {
+  monarch = {
+    name = "jŒSk LNôuÑy"  # Jorge Ubico
+    adm = 4
+    mil = 3
+    religion = catholic
+    dip = 2
+  }
+}
+1944.7.4 = {
+  monarch = {
+    name = "áw‰R 9·VÌ‘Ñy ^^X ôTS·V¯e"  # Juan Federico Ponce Vaides
+    adm = 3
+    dip = 1
+    mil = 1
+    religion = catholic
+  }
+}
+1944.10.20 = {
+  monarch = {
+    name = "i—‹T›Q‹Ngb?eÔYXTO"  # Revolutionary Government Junta
+    adm = 2
+    dip = 2
+    mil = 2
+    religion = catholic
+    regent = yes
+  }
+}
+1945.3.15 = {
+  monarch = {
+    name = "áw‰R UO^X ?–÷–ætm"  # Juan José Arévalo
+    adm = 4
+    mil = 2
+    religion = catholic
+    dip = 2
+  }
+}
+1951.3.15 = {
+  monarch = {
+    name = "ÈTÑyƒl ?–,g¯e äS¯eüf"  # Jacobo Árbenz Guzmán
+    adm = 2
+    dip = 3
+    mil = 3
+    religion = catholic
+  }
+}
+1954.7.8 = {
+  monarch = {
+    name = "aSm¯e aS¯e‚„eu ?–lš¯e"  # Carlos Castillo Armas
+    adm = 4
+    mil = 3
+    religion = catholic
+    dip = 3
+  }
+}
+1957.7.27 = {
+  monarch = {
+    name = "ïf¯e ?–şVW ˆQ(„÷–¯e miO¯e"  # Luis Arturo Ganzález López
+    adm = 2
+    dip = 2
+    mil = 3
+    religion = catholic
+  }
+}
+1957.10.26 = {
+  monarch = {
+    name = "	TRS«ƒ Vm÷–¯e ?–‡e¾<SeY"  # Guillermo Flores Avendaño
+    adm = 2
+    dip = 3
+    mil = 4
+    religion = catholic
+  }
+}
+1958.3.2 = {
+  monarch = {
+    name = "s|<hS OêbÉb¯e ÌRi`yr¯e"  # Miguel Ydígoras Fuentes
+    adm = 2
+    mil = 3
+    religion = catholic
+    dip = 5
+  }
+}
+1963.3.31 = {
+  monarch = {
+    name = "i`Ì‘KQ iOÉbSTX ?–Ï‚êšN"  # Enrique Peralta Azurdia
+    adm = 2
+    mil = 3
+    religion = catholic
+    dip = 2
+  }
+}
+1966.7.1 = {
+  monarch = {
+    name = "áw)ReY ^X(„S è•·V¯e ™„yr…Q<hW"  # Julio César Méndez Montenegro
+    adm = 5
+    mil = 2
+    religion = catholic
+    dip = 3
+  }
+}
+1970.7.1 = {
+  monarch = {
+    name = "aSm¯e üfªRÃWS ?–Éb³u eY0tÌ‘eY"  # Carlos Manuel Arana Osorio
+    adm = 1
+    mil = 3
+    religion = catholic
+    dip = 5
+  }
+}
+1974.7.1 = {
+  monarch = {
+    name = "úW6wS 'k¨N<SeY ³Rkœ·V  R‰šN"  # Kjell Eugenio Laugerud García
+    adm = 3
+    mil = 4
+    religion = catholic
+    dip = 2
+  }
+}
+1978.7.1 = {
+  monarch = {
+    name = "9SWSY WÆR'k bSaS¯e  R‰šN"  # Fernando Romeo Lucas García
+    birth_date = 1924.7.4
+    adm = 4
+    mil = 2
+    religion = catholic
+    dip = 4
+  }
+}
+1982.3.23 = {
+  monarch = {
+    name = "ÃWVÉbàV Ì‘eY¯e ™„yr"  # Efraín Ríos Montt
+    birth_date = 1926.6.16
+    adm = 3
+    mil = 2
+    religion = catholic
+    dip = 2
+  }
+}
+1983.8.8 = {
+  monarch = {
+    name = "eY¯eaS )nXb …h^šN ôuKQXb÷–¯e"  # Óscar Humberto Mejía Victores
+    birth_date = 1930.12.9
+    adm = 3
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+1986.1.14 = {
+  monarch = {
+    name = "Ôk<S‰eY ^X÷–0t"  # Vinicio Cerezo
+    birth_date = 1942.12.26
+    adm = 5
+    dip = 3
+    mil = 4
+    religion = catholic
+  }
+}
+1991.1.14 = {
+  monarch = {
+    name = "jŒSk ^XÉbú‹ ÃW)RšN¯e"  # Jorge Serrano Elías
+    birth_date = 1945.4.26
+    adm = 4
+    mil = 1
+    religion = catholic
+    dip = 2
+  }
+}
+1993.6.6 = {
+  monarch = {
+    name = "Ébs|W ·V±ƒf aS®veY"  # Ramiro de León Carpio
+    birth_date = 1942.1.12
+    adm = 3
+    mil = 3
+    religion = catholic
+    dip = 4
+  }
+}
+1996.1.14 = {
+  monarch = {
+    name = "?–SætW ?–SÏ‚"  # Álvaro Arzú
+    birth_date = 1946.3.14
+    adm = 4
+    mil = 2
+    religion = catholic
+    dip = 2
+  }
+}
+2000.1.14 = {
+  monarch = {
+    name = "?–¹e0t âl‚„eu"  # Alfonso Portillo
+    birth_date = 1951.9.24
+    adm = 4
+    mil = 2
+    religion = catholic
+    dip = 4
+  }
+}
+2004.1.14 = {
+  monarch = {
+    name = "eY¯eaS Sk"  # Óscar Berger
+    birth_date = 1946.8.11
+    adm = 2
+    mil = 3
+    religion = catholic
+    dip = 4
+  }
+}
+2008.1.14 = {
+  monarch = {
+    name = "?–SætW ÑymÆY"  # Álvaro Colom
+    birth_date = 1951.6.15
+    adm = 4
+    mil = 3
+    religion = catholic
+    dip = 5
+  }
+}
+2012.1.14 = {
+  monarch = {
+    name = "eYXb iO÷–¯e «ƒ)R³u"  # Otto Pérez Molina
+    birth_date = 1950.12.1
+    adm = 4
+    mil = 4
+    religion = catholic
+    dip = 3
+  }
+}
+2015.9.3 = {
+  monarch = {
+    name = "šN†Smg·VW lšSY³uY ?–	T÷–"  # Alejandro Maldonado Aguirre
+    birth_date = 1936.1.6
+    adm = 3
+    mil = 3
+    religion = catholic
+    dip = 3
+  }
+}
+2016.1.14 = {
+  monarch = {
+    name = "	Ts| «ƒÉb±ƒ¯e"  # Jimmy Morales
+    birth_date = 1969.3.18
+    adm = 5
+    mil = 2
+    religion = catholic
+    dip = 3
+  }
+}

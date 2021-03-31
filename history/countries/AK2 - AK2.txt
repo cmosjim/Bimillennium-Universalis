@@ -1,0 +1,19 @@
+government = republic
+set_legacy_government = constitutional_republic
+government_rank = 3
+technology_group = early_chinese
+religion = confucianism
+primary_culture = chihan
+
+750.1.1 = { technology_group = chinese }
+1939.1.1    = { 
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+ }
+1949.10.1 = { technology_group = modern_chinese }

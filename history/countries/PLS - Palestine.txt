@@ -1,0 +1,84 @@
+government = republic
+set_legacy_government = constitutional_republic
+mercantilism = 0.1
+primary_culture = palestinian
+religion = sunni
+technology_group = muslim
+historical_rival = ISR
+capital = 379
+religious_school = hanafi_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1900.1.1 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = presidential_reform
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1988.11.15 = {
+  monarch = {
+    name = "ÿzzMOg	ÿ"  # (vacant)
+    regent = yes
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1989.4.2 = {
+  monarch = {
+    name = "šN‰S ?–ÉbÕlyr"  # Yasser Arafat
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+2004.11.11 = {
+  monarch = {
+    name = "ÿzzMOg	ÿ"  # (vacant)
+    regent = yes
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+2005.5.8 = {
+  monarch = {
+    name = "lšÈTƒ·V ?–ôT¯e"  # Mahmoud Abbas
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}

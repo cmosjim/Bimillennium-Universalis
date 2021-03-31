@@ -1,0 +1,503 @@
+government = tribal
+add_government_reform = barbarian_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = barbarian
+religion = chalcedonism
+primary_culture = flemish
+capital = 90
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+600.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+  technology_group = western
+  government_rank = 1
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+862.1.1 = {
+  monarch = {
+    name = "çú∑V)n"  # Baldwin I
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+865.1.1 = {
+  heir = {
+    name = "çú∑V)n"  # Baldwin
+    monarch_name = "çú∑V)n II"  # Baldwin II
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    birth_date = 865.1.1
+    death_date = 918.9.10
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+867.1.1 = {
+  religion = catholic
+}
+879.1.1 = {
+  monarch = {
+    name = "çú∑V)n II"  # Baldwin II
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+890.1.1 = {
+  heir = {
+    name = "?ñ™RS+Y"  # Arnulf
+    monarch_name = "?ñ™RS+Y I"  # Arnulf I
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    birth_date = 890.1.1
+    death_date = 965.3.28
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+918.9.10 = {
+  monarch = {
+    name = "?ñ™RS+Y I"  # Arnulf I
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+961.1.1 = {
+  heir = {
+    name = "?ñ™RS+Y"  # Arnulf
+    monarch_name = "?ñ™RS+Y II"  # Arnulf II
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    birth_date = 961.1.1
+    death_date = 987.3.30
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}
+965.3.28 = {
+  monarch = {
+    name = "?ñ™RS+Y II"  # Arnulf II
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}
+980.1.1 = {
+  heir = {
+    name = "çú∑V)n"  # Baldwin
+    monarch_name = "çú∑V)n IV"  # Baldwin IV
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    birth_date = 980.1.1
+    death_date = 1035.5.30
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+987.3.30 = {
+  monarch = {
+    name = "çú∑V)n IV"  # Baldwin IV
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1012.8.19 = {
+  heir = {
+    name = "çú∑V)n"  # Baldwin
+    monarch_name = "çú∑V)n V"  # Baldwin V
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    birth_date = 1012.8.19
+    death_date = 1067.9.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 1
+  }
+}
+1035.5.30 = {
+  monarch = {
+    name = "çú∑V)n V"  # Baldwin V
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    adm = 4
+    dip = 5
+    mil = 1
+  }
+}
+1035.5.30 = {
+  heir = {
+    name = "çú∑V)n"  # Baldwin
+    monarch_name = "çú∑V)n VI"  # Baldwin VI
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    birth_date = 1030.1.1
+    death_date = 1070.7.17
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+1067.9.1 = {
+  monarch = {
+    name = "çú∑V)n VI"  # Baldwin VI
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+1067.9.1 = {
+  heir = {
+    name = "?ñ™RS+Y"  # Afnulf
+    monarch_name = "?ñ™RS+Y III"  # Afnulf III
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    birth_date = 1055.1.1
+    death_date = 1071.2.22
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1070.7.17 = {
+  monarch = {
+    name = "?ñ™RS+Y III"  # Afnulf III
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1070.7.17 = {
+  heir = {
+    name = "WçS"  # Robert
+    monarch_name = "WçS I"  # Robert I
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    birth_date = 1035.1.1
+    death_date = 1093.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+1071.2.22 = {
+  monarch = {
+    name = "WçS I"  # Robert I
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+1071.2.22 = {
+  heir = {
+    name = "WçS"  # Robert
+    monarch_name = "WçS II"  # Robert II
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    birth_date = 1065.1.1
+    death_date = 1111.10.5
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 5
+  }
+}
+1093.1.1 = {
+  monarch = {
+    name = "WçS II"  # Robert II
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    adm = 2
+    dip = 5
+    mil = 5
+  }
+}
+1093.1.1 = {
+  heir = {
+    name = "çú∑V)n"  # Baldwin
+    monarch_name = "çú∑V)n VII"  # Baldwin VII
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    birth_date = 1093.1.1
+    death_date = 1119.7.17
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1111.10.5 = {
+  monarch = {
+    name = "çú∑V)n VII"  # Baldwin VII
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1119.7.17 = {
+  monarch = {
+    name = "YS I"  # Charles I
+    dynasty = "√WØeyr∑V"  # Estridsen
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1127.3.2 = {
+  monarch = {
+    name = "Z…^ I"  # William I
+    dynasty = "∑V ˙ã¸fï^"  # de Normandie
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1128.7.28 = {
+  monarch = {
+    name = "Íè∑VÃëKQ I"  # Diederik I
+    dynasty = "∑V ÖhØe"  # de Metz
+    adm = 5
+    dip = 2
+    mil = 4
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1143.1.1 = {
+  heir = {
+    name = "SÅõR"  # Philip
+    monarch_name = "SÅõR I"  # Philip I
+    dynasty = "∑V ÖhØe"  # de Metz
+    birth_date = 1143.1.1
+    death_date = 1191.8.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+1168.1.17 = {
+  monarch = {
+    name = "SÅõR I"  # Philip I
+    dynasty = "∑V ÖhØe"  # de Metz
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+1168.1.17 = {
+  heir = {
+    name = "õs<hKNyr"  # Margaret
+    monarch_name = "õs<hKNyr I"  # Margaret I
+    dynasty = "∑V ÖhØe"  # de Metz
+    birth_date = 1161.1.1
+    death_date = 1194.11.15
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 5
+    female = yes
+  }
+}
+1191.8.1 = {
+  monarch = {
+    name = "õs<hKNyr I"  # Margaret I
+    dynasty = "∑V ÖhØe"  # de Metz
+    adm = 1
+    dip = 5
+    mil = 5
+    female = yes
+  }
+}
+1194.11.15 = {
+  monarch = {
+    name = "çú∑V)n IX"  # Baldwin IX
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+1194.11.15 = {
+  heir = {
+    name = "©ã"  # Joan
+    monarch_name = "©ã I"  # Joan I
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    birth_date = 1194.1.1
+    death_date = 1244.12.5
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 4
+    female = yes
+  }
+}
+1205.1.1 = {
+  monarch = {
+    name = "©ã I"  # Joan I
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    adm = 5
+    dip = 1
+    mil = 4
+    female = yes
+  }
+}
+1205.1.1 = {
+  heir = {
+    name = "õs<hKNyr"  # Margaret
+    monarch_name = "õs<hKNyr II"  # Margaret II
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    birth_date = 1202.6.2
+    death_date = 1280.2.10
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 2
+    female = yes
+  }
+}
+1244.12.5 = {
+  monarch = {
+    name = "õs<hKNyr II"  # Margaret II
+    dynasty = "∑V VpQ∑VØe"  # de Flanders
+    adm = 2
+    dip = 3
+    mil = 2
+    female = yes
+  }
+}
+1247.1.1 = {
+  monarch = {
+    name = "Z…^ II"  # William II
+    dynasty = "∑V SVÆv√WS"  # de Dampierre
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+1247.1.1 = {
+  heir = {
+    name = "ESO"  # Guy
+    monarch_name = "ESO I"  # Guy I
+    dynasty = "∑V SVÆv√WS"  # de Dampierre
+    birth_date = 1226.1.1
+    death_date = 1305.3.7
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+1251.6.6 = {
+  monarch = {
+    name = "ESO I"  # Guy I
+    dynasty = "∑V SVÆv√WS"  # de Dampierre
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+1251.6.6 = {
+  heir = {
+    name = "WçS"  # Robert
+    monarch_name = "WçS III"  # Robert III
+    dynasty = "∑V SVÆv√WS"  # de Dampierre
+    birth_date = 1249.1.1
+    death_date = 1322.9.17
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1305.3.7 = {
+  monarch = {
+    name = "WçS III"  # Robert III
+    dynasty = "∑V SVÆv√WS"  # de Dampierre
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1305.3.7 = {
+  heir = {
+    name = "Ôçf"  # Louis
+    monarch_name = "Ôçf I"  # Louis I
+    dynasty = "∑V SVÆv√WS"  # de Dampierre
+    birth_date = 1304.1.1
+    death_date = 1346.8.26
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 1
+  }
+}
+1322.9.17 = {
+  monarch = {
+    name = "Ôçf I"  # Louis I
+    dynasty = "∑V SVÆv√WS"  # de Dampierre
+    adm = 3
+    dip = 5
+    mil = 1
+  }
+}
+1330.10.25 = {
+  heir = {
+    name = "Ôçf"  # Louis
+    monarch_name = "Ôçf II"  # Louis II
+    dynasty = "∑V SVÆv√WS"  # de Dampierre
+    birth_date = 1330.10.25
+    death_date = 3000.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+1346.8.26 = {
+  monarch = {
+    name = "Ôçf II"  # Louis II
+    dynasty = "∑V SVÆv√WS"  # de Dampierre
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}

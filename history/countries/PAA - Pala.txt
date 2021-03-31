@@ -1,0 +1,211 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+technology_group = early_indian
+religion = mahayana
+primary_culture = bihari
+capital = 558
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+750.1.1 = {
+  monarch = {
+    name = "øw‚lW I"  # Gopala I
+    dynasty = "‚lW"  # Pala
+    adm = 4
+    dip = 1
+    mil = 5
+  }
+}
+780.1.1 = {
+  monarch = {
+    name = "æèid‚lW I"  # Dharmapala I
+    dynasty = "‚lW"  # Pala
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+810.1.1 = {
+  monarch = {
+    name = "–cFZ‚lW I"  # Devapala I
+    dynasty = "‚lW"  # Pala
+    adm = 2
+    mil = 4
+    dip = 5
+  }
+}
+850.1.1 = {
+  monarch = {
+    name = "idØë‡VNñW‚lW I"  # Mahendrapala I
+    dynasty = "‚lW"  # Pala
+    adm = 2
+    mil = 2
+    dip = 4
+  }
+}
+861.1.1 = {
+  monarch = {
+    name = "◊kÌcW√ã‚lW I"  # Vigrahapala I
+    dynasty = "‚lW"  # Pala
+    adm = 2
+    mil = 1
+    dip = 2
+  }
+}
+866.1.1 = {
+  monarch = {
+    name = "±êWMà±ê‚lW I"  # Narayanapala I
+    dynasty = "‚lW"  # Pala
+    adm = 2
+    dip = 1
+    mil = 3
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+920.1.1 = {
+  monarch = {
+    name = "Wñ‚lW I"  # Rajyapala I
+    dynasty = "‚lW"  # Pala
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+952.1.1 = {
+  monarch = {
+    name = "øw‚lW II"  # Gopala II
+    dynasty = "‚lW"  # Pala
+    adm = 1
+    mil = 3
+    dip = 5
+  }
+}
+969.1.1 = {
+  monarch = {
+    name = "◊kÌcW√ã‚lW II"  # Vigrahapala II
+    dynasty = "‚lW"  # Pala
+    adm = 4
+    mil = 2
+    dip = 4
+  }
+}
+995.1.1 = {
+  monarch = {
+    name = "idØë‚lW I"  # Mahipala I
+    dynasty = "‚lW"  # Pala
+    adm = 3
+    mil = 3
+    dip = 4
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1043.1.1 = {
+  monarch = {
+    name = "±ê6w‚lW I"  # Nayapala I
+    dynasty = "‚lW"  # Pala
+    adm = 1
+    mil = 3
+    dip = 5
+  }
+}
+1058.1.1 = {
+  monarch = {
+    name = "◊kÌcW√ã‚lW III"  # Vigrahapala III
+    dynasty = "‚lW"  # Pala
+    adm = 2
+    mil = 2
+    dip = 4
+  }
+}
+1075.1.1 = {
+  monarch = {
+    name = "idØë‚lW II"  # Mahipala II
+    dynasty = "‚lW"  # Pala
+    adm = 2
+    mil = 3
+    dip = 2
+  }
+}
+1080.1.1 = {
+  monarch = {
+    name = "ìèW‚lW II"  # Shurapala II
+    dynasty = "‚lW"  # Pala
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1082.1.1 = {
+  monarch = {
+    name = "Wid‚lW I"  # Ramapala I
+    dynasty = "‚lW"  # Pala
+    adm = 1
+    dip = 2
+    mil = 3
+  }
+}
+1124.1.1 = {
+  monarch = {
+    name = ".ûidW‚lW I"  # Kumarapala I
+    dynasty = "‚lW"  # Pala
+    adm = 1
+    mil = 3
+    dip = 5
+  }
+}
+1129.1.1 = {
+  monarch = {
+    name = "øw‚lW III"  # Gopala III
+    dynasty = "‚lW"  # Pala
+    adm = 2
+    mil = 2
+    dip = 4
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1143.1.1 = {
+  monarch = {
+    name = "idNñ±ê‚lW I"  # Madanapala I
+    dynasty = "‚lW"  # Pala
+    adm = 2
+    mil = 1
+    dip = 2
+  }
+}
+1162.1.1 = {
+  monarch = {
+    name = "øwëòNñ‚lW"  # Govindapala I
+    dynasty = "‚lW"  # Pala
+    adm = 2
+    dip = 1
+    mil = 3
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

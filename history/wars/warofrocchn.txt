@@ -1,0 +1,17 @@
+name = "ã‰>eb‰N"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 1821
+}
+
+1946.6.26 = {
+	add_attacker = ROC
+	add_defender = CW1
+}
+
+1949.10.1 = {
+	rem_attacker = ROC
+	rem_defender = CW1
+}

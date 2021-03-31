@@ -1,0 +1,63 @@
+government = gov_celestial_empire
+add_government_reform = celestial_empire
+government_rank = 3
+mercantilism = 0.1
+technology_group = early_chinese
+religion = buddhism
+primary_culture = sichuanese
+add_accepted_culture = chihan
+add_accepted_culture = xiang
+capital = 680 #Í‘†^
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1360.1.1 = {
+	monarch = {
+		name = "f‰sÍs"
+		#dynasty = " "
+		#f‰sÍsÿ1328t^10g2åeÿ1366t^3g17åe[1]	ÿ
+		birth_date = 1328.10.2
+		death_date = 1366.3.17
+		adm = 5
+		dip = 5
+		mil = 4
+		leader = { name = "f‰sÍs" 	type = general	fire = 7	shock = 6	manuever = 4	siege = 2 }
+	}
+}
+
+1367.1.1 = {
+	monarch = {
+		name = "fGS"
+		#fGSÿ1356t^ÿ1391t^	ÿÿ-NýVCQ+gfRfY?eCg+gãN‡v^0
+		birth_date = 1356.1.1
+		death_date = 1391.1.1		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1912.2.12 = {
+
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+	religion = liberalism
+}
+1949.10.1 = { technology_group = modern_chinese }
+

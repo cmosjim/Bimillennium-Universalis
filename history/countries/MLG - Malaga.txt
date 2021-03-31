@@ -1,0 +1,233 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = andalucian
+religion = sunni
+add_accepted_culture = berber
+technology_group = muslim
+capital = 4689
+religious_school = maliki_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1026.1.1 = {
+  monarch = {
+    name = "öSwmšN I"  # Yahya I
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 996.1.1
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1026.1.1 = {
+  heir = {
+    name = "O·VÌ‘¯e"  # Idris
+    monarch_name = "O·VÌ‘¯e  I"  # Idris I
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 1005.1.1
+    death_date = 1039.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+1035.1.1 = {
+  monarch = {
+    name = "O·VÌ‘¯e  I"  # Idris I
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 1005.1.1
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+1035.1.1 = {
+  heir = {
+    name = "öSwmšN"  # Yahya
+    monarch_name = "öSwmšN II"  # Yahya II
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 1009.1.1
+    death_date = 1040.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 1
+  }
+}
+1039.1.1 = {
+  monarch = {
+    name = "öSwmšN II"  # Yahya II
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 1009.1.1
+    adm = 5
+    dip = 3
+    mil = 1
+  }
+}
+1039.1.1 = {
+  heir = {
+    name = "ÈTQh"  # Hasan
+    monarch_name = "ÈTQh I"  # Hasan I
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 1010.1.1
+    death_date = 1042.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 2
+  }
+}
+1040.1.1 = {
+  monarch = {
+    name = "ÈTQh I"  # Hasan I
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 1010.1.1
+    adm = 1
+    dip = 0
+    mil = 2
+  }
+}
+1040.1.1 = {
+  heir = {
+    name = "O·VÌ‘¯e"  # Idris
+    monarch_name = "O·VÌ‘¯e II"  # Idris II
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 1012.1.1
+    death_date = 1047.1.1
+    claim = 95
+    adm = 5
+    dip = 0
+    mil = 4
+  }
+}
+1042.1.1 = {
+  monarch = {
+    name = "O·VÌ‘¯e II"  # Idris II
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 1012.1.1
+    adm = 5
+    dip = 0
+    mil = 4
+  }
+}
+1042.1.1 = {
+  heir = {
+    name = "FzUØ·V"  # Muhammad
+    monarch_name = "FzUØ·V I"  # Muhammad I
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 1017.1.1
+    death_date = 1053.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 5
+  }
+}
+1047.1.1 = {
+  monarch = {
+    name = "FzUØ·V I"  # Muhammad I
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 1017.1.1
+    adm = 3
+    dip = 1
+    mil = 5
+  }
+}
+1047.1.1 = {
+  heir = {
+    name = "O·VÌ‘¯e"  # Idris
+    monarch_name = "O·VÌ‘¯e III"  # Idris III
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 1023.1.1
+    death_date = 1053.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+1053.1.1 = {
+  monarch = {
+    name = "O·VÌ‘¯e II"  # Idris II
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 1012.1.1
+    adm = 5
+    dip = 0
+    mil = 4
+  }
+}
+1054.1.1 = {
+  monarch = {
+    name = "FzUØ·V II"  # Muhammad II
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 1024.1.1
+    adm = 1
+    dip = 5
+    mil = 1
+  }
+}
+1055.1.1 = {
+  monarch = {
+    name = "öSwmšN III"  # Yahya III
+    dynasty = "ÈTƒ·V"  # Hammudid
+    birth_date = 1020.1.1
+    adm = 5
+    dip = 2
+    mil = 2
+  }
+}
+1073.1.1 = {
+  monarch = {
+    name = "TXs|ÆY"  # Tamim
+    dynasty = "PŸÌ‘"  # Zirid
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1145.1.1 = {
+  monarch = {
+    name = "?–^ ÈTaSÆY"  # Abu'l-Hakam
+    dynasty = "ÈTYR"  # Hassunid
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1229.1.1 = {
+  monarch = {
+    name = "O,g ^œQ"  # Ibn Zannun
+    dynasty = "^œQ"  # Zannunid
+    adm = 2
+    dip = 0
+    mil = 1
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

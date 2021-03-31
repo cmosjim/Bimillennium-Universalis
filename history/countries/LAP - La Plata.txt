@@ -1,0 +1,656 @@
+government = republic
+add_government_reform = presidential_despot_reform
+technology_group = western
+religion = catholic
+primary_culture = iberian_la_platan
+capital = 778
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1815.1.31 = {
+  monarch = {
+    name = "aSm¯e lšÌ‘šN ·V ?–Sæ—šNS"  # Carlos María de Alvear
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+1815.4.21 = {
+  monarch = {
+    name = "O<h³u‰eY ?–Sæt÷–¯e Xblš¯e"  # Ignacio Álvarez Thomas
+    adm = 2
+    mil = 1
+    dip = 2
+  }
+}
+1816.4.16 = {
+  monarch = {
+    name = "‰RN<SeY ˆQ(„÷–¯e ·V ôTSaS^X"  # Antonio González de Balcarce
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1816.7.9 = {
+  monarch = {
+    name = "áw‰R lšN ·V nfÃW÷–N"  # Juan Martín de Puyerredón
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1819.6.9 = {
+  monarch = {
+    name = "UO^X †–·VeY"  # José Rondeau
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1820.2.11 = {
+  monarch = {
+    name = "áw‰R iO·VW ?–	T÷–"  # Juan Pedro Aguirre
+    adm = 1
+    mil = 3
+    dip = 2
+  }
+}
+1826.2.8 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  set_legacy_government = constitutional_republic
+}
+1826.2.8 = {
+  monarch = {
+    name = "S³uêú‹ Ì‘æt¾ôušN"  # Bernardino Rivadavia
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+1827.7.7 = {
+  monarch = {
+    name = "Ôkîhyr miO¯e O nfÉb…Q¯e"  # Vicente López y Planes
+    adm = 4
+    mil = 2
+    dip = 3
+  }
+}
+1827.8.18 = {
+  monarch = {
+    name = "üfªRÃWS Y÷–b"  # Manuel Dorrego
+    adm = 4
+    mil = 3
+    dip = 2
+  }
+}
+1828.12.13 = {
+  monarch = {
+    name = "áw‰R ÉbætR"  # Juan Lavalle
+    adm = 3
+    mil = 3
+    dip = 4
+  }
+}
+1829.8.26 = {
+  monarch = {
+    name = "áw‰R UO^X ÔkšN™„yr"  # Juan José Viamonte
+    adm = 4
+    mil = 4
+    dip = 2
+  }
+}
+1829.12.5 = {
+  monarch = {
+    name = "áw‰R üfªRÃWS ·V W(„¯e"  # Juan Manuel de Rosas
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1832.12.17 = {
+  monarch = {
+    name = "áw‰R Éb™„ ôTSaS^X"  # Juan Ramón Balcarce
+    adm = 2
+    mil = 5
+    dip = 2
+  }
+}
+1833.11.5 = {
+  monarch = {
+    name = "áw‰R UO^X ÔkšN™„yr"  # Juan José Viamonte
+    adm = 4
+    mil = 4
+    dip = 2
+  }
+}
+1834.10.1 = {
+  monarch = {
+    name = "üfªRÃWS Ôkîhyr lš(„"  # Manuel Vicente Maza
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+1835.3.7 = {
+  monarch = {
+    name = "áw‰R üfªRÃWS ·V W(„¯e"  # Juan Manuel de Rosas
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1852.2.3 = {
+  monarch = {
+    name = "áw¯eXb UO^X ·V LNSúW(„"  # Justo José de Urquiza
+    adm = 4
+    dip = 2
+    mil = 4
+    religion = catholic
+  }
+}
+1860.3.5 = {
+  monarch = {
+    name = "1W0WšNåT ·VSúW"  # Santiago Derqui
+    adm = 1
+    mil = 3
+    religion = catholic
+    dip = 5
+  }
+}
+1861.11.4 = {
+  monarch = {
+    name = "áw‰R ÃW¯eyrís iO·V…QÉb"  # Juan Esteban Pedernera
+    adm = 1
+    mil = 4
+    religion = catholic
+    dip = 1
+  }
+}
+1861.12.12 = {
+  monarch = {
+    name = "ôTXbm…h s|yr÷–"  # Bartolomé Mitre
+    adm = 3
+    mil = 4
+    religion = catholic
+    dip = 3
+  }
+}
+1861.12.17 = {
+  capital = 778
+}
+1868.10.12 = {
+  monarch = {
+    name = "Yfb y¯e‚„ú‹ („s|i`Xb"  # Domingo Faustino Sarmiento
+    adm = 4
+    mil = 2
+    religion = catholic
+    dip = 4
+  }
+}
+1874.10.12 = {
+  monarch = {
+    name = "<SäSÉb¯e ?–æ—)RšN…Q¾"  # Nicolás Avellaneda
+    adm = 4
+    mil = 3
+    religion = catholic
+    dip = 3
+  }
+}
+1880.10.12 = {
+  monarch = {
+    name = "áw)ReY ?–9h‚„ú‹ WaS"  # Julio Argentino Roca
+    adm = 3
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+1886.10.12 = {
+  monarch = {
+    name = "s|<hS NS÷–¯e ^XSüf"  # Miguel Juárez Celman
+    adm = 5
+    dip = 2
+    mil = 4
+    religion = catholic
+  }
+}
+1890.8.6 = {
+  monarch = {
+    name = "aSm¯e iOR<hÌ‘<S"  # Carlos Pellegrini
+    adm = 1
+    mil = 3
+    religion = catholic
+    dip = 5
+  }
+}
+1892.10.12 = {
+  monarch = {
+    name = "ïf¯e („i`¯e ùW<SšN"  # Luis Sáenz Peña
+    adm = 4
+    mil = 3
+    religion = catholic
+    dip = 4
+  }
+}
+1895.1.22 = {
+  monarch = {
+    name = "UO^X ÃWætÌ‘¯eXb LNÌ‘fkœ"  # José Evaristo Uriburu
+    adm = 5
+    mil = 3
+    religion = catholic
+    dip = 2
+  }
+}
+1898.10.12 = {
+  monarch = {
+    name = "áw)ReY ?–9h‚„ú‹ WaS"  # Julio Argentino Roca
+    adm = 3
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+1904.10.12 = {
+  monarch = {
+    name = "üfªRÃWS Ñ‘TX³u"  # Manuel Quintana
+    adm = 4
+    mil = 3
+    religion = catholic
+    dip = 4
+  }
+}
+1906.1.25 = {
+  monarch = {
+    name = "UO^X òƒ<hWšN ?–SÑyTX"  # José Figueroa Alcorta
+    adm = 3
+    mil = 3
+    religion = catholic
+    dip = 5
+  }
+}
+1910.10.12 = {
+  monarch = {
+    name = "WKQ („i`¯e ùW<SšN"  # Roque Sáenz Peña
+    adm = 2
+    mil = 5
+    religion = catholic
+    dip = 3
+  }
+}
+1914.8.9 = {
+  monarch = {
+    name = "ôuKQXbÌ‘ú‹ ·VÉbnfÉb(„"  # Victorino de la Plaza
+    adm = 3
+    mil = 3
+    religion = catholic
+    dip = 5
+  }
+}
+1916.10.12 = {
+  monarch = {
+    name = "Oâl)RXb OÌ‘bö^"  # Hipólito Yrigoyen
+    adm = 3
+    mil = 4
+    religion = catholic
+    dip = 2
+  }
+}
+1920.1.1 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1922.10.12 = {
+  monarch = {
+    name = "lš^Xm XbS8YXb ·V ?–Sæ—šNS"  # Marcelo Torcuato de Alvear
+    adm = 4
+    mil = 3
+    religion = catholic
+    dip = 4
+  }
+}
+1928.10.12 = {
+  monarch = {
+    name = "Oâl)RXb OÌ‘bö^"  # Hipólito Yrigoyen
+    adm = 3
+    mil = 4
+    religion = catholic
+    dip = 2
+  }
+}
+1930.9.6 = {
+  monarch = {
+    name = "UO^X 9)RKQ¯e LNÌ‘fkœ"  # José Félix Uriburu
+    adm = 2
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+1932.2.20 = {
+  monarch = {
+    name = "?–äS¯eN iO·VW áw¯eXb"  # Agustín Pedro Justo
+    adm = 4
+    dip = 2
+    mil = 3
+    religion = catholic
+  }
+}
+1938.2.20 = {
+  monarch = {
+    name = "W=OXb lšÌ‘šN eYS‚„¯e"  # Roberto María Ortiz
+    adm = 2
+    mil = 5
+    religion = catholic
+    dip = 3
+  }
+}
+1942.6.27 = {
+  monarch = {
+    name = "Éb™„ aS¯e‚„eu"  # Ramón Castillo
+    adm = 3
+    mil = 4
+    religion = catholic
+    dip = 2
+  }
+}
+1943.6.4 = {
+  monarch = {
+    name = "?–þVW Wîh"  # Arturo Rawson
+    adm = 1
+    mil = 1
+    religion = catholic
+    dip = 3
+  }
+}
+1943.6.7 = {
+  monarch = {
+    name = "iO·VW ôTÃRW Ébs|÷–¯e"  # Pedro Pablo Ramirez
+    adm = 4
+    mil = 1
+    religion = catholic
+    dip = 3
+  }
+}
+1944.3.11 = {
+  monarch = {
+    name = "ÃW·VSs|W áw)R‰R Õl÷–S"  # Edelmiro Julián Farrell
+    adm = 3
+    dip = 2
+    mil = 4
+    religion = catholic
+  }
+}
+1946.6.4 = {
+  monarch = {
+    name = "áw‰R Yfb ‡^†–"  # Juan Domingo Perón
+    adm = 5
+    mil = 2
+    religion = catholic
+    dip = 4
+  }
+}
+1950.1.1 = {
+  religion = liberalism
+}
+1955.9.23 = {
+  monarch = {
+    name = "1r·VNSY m³uSê"  # Eduardo Lonardi
+    adm = 1
+    dip = 1
+    mil = 4
+    religion = catholic
+  }
+}
+1955.11.13 = {
+  monarch = {
+    name = "iO·VW 'k¨N<SeY ?–pQfkœ"  # Pedro Eugenio Aramburu
+    adm = 3
+    mil = 5
+    religion = catholic
+    dip = 2
+  }
+}
+1958.5.1 = {
+  monarch = {
+    name = "?–þVW Vgê‰"  # Arturo Frondizi
+    adm = 4
+    mil = 2
+    religion = catholic
+    dip = 4
+  }
+}
+1962.3.29 = {
+  monarch = {
+    name = "UO^X lšÌ‘šN 	TY"  # José María Guido
+    adm = 5
+    mil = 2
+    religion = catholic
+    dip = 2
+  }
+}
+1963.10.12 = {
+  monarch = {
+    name = "?–þVW ÁXb O)RšN"  # Arturo Umberto Illia
+    adm = 3
+    dip = 1
+    mil = 3
+    religion = catholic
+  }
+}
+1966.6.29 = {
+  monarch = {
+    name = "áw‰R aSm¯e Á R<SšN"  # Juan Carlos Onganía
+    adm = 3
+    dip = 3
+    mil = 5
+    religion = catholic
+  }
+}
+1970.6.8 = {
+  monarch = {
+    name = "W=OXb )R‡e¯e˜"  # Roberto Levingston
+    adm = 1
+    mil = 5
+    religion = catholic
+    dip = 3
+  }
+}
+1971.5.26 = {
+  monarch = {
+    name = "šN†Smg·VW ÉbªR^X"  # Alejandro Lanusse
+    adm = 4
+    mil = 4
+    religion = catholic
+    dip = 2
+  }
+}
+1973.5.25 = {
+  monarch = {
+    name = "ÃWKQXbS UO^X NWâlÉb"  # Héctor José Cámpora
+    adm = 2
+    mil = 3
+    religion = catholic
+    dip = 2
+  }
+}
+1973.7.13 = {
+  monarch = {
+    name = "³RS ?–Sæ—Xb Éb¯e‚„Ì‘"  # Raúl Alberto Lastiri
+    adm = 2
+    mil = 3
+    religion = catholic
+    dip = 3
+  }
+}
+1973.10.12 = {
+  monarch = {
+    name = "áw‰R Yfb ‡^†–"  # Juan Domingo Perón
+    adm = 2
+    mil = 3
+    religion = catholic
+    dip = 3
+  }
+}
+1974.6.30 = {
+  monarch = {
+    name = "OŽƒS lšN…Q¯e ·V ‡^†–"  # Isabel Martínez de Perón
+    adm = 3
+    mil = 3
+    religion = catholic
+    dip = 5
+    female = yes
+  }
+}
+1976.3.29 = {
+  monarch = {
+    name = "jŒSk ÉbeS O›0WÉb"  # Jorge Rafael Videla
+    adm = 2
+    mil = 5
+    religion = catholic
+    dip = 4
+  }
+}
+1981.3.29 = {
+  monarch = {
+    name = "W=OXb 1r·VNSY ÔkeYÉb"  # Roberto Eduardo Viola
+    adm = 2
+    mil = 3
+    religion = catholic
+    dip = 2
+  }
+}
+1981.12.22 = {
+  monarch = {
+    name = "±ƒeYâlSY  RSÁ”Ì‘"  # Leopoldo Galtieri
+    adm = 2
+    mil = 4
+    religion = catholic
+    dip = 3
+  }
+}
+1982.7.1 = {
+  monarch = {
+    name = "÷–³uSY Ôk<SeY…Q"  # Reynaldo Bignone
+    birth_date = 1928.1.21
+    adm = 4
+    dip = 1
+    mil = 4
+    religion = catholic
+  }
+}
+1983.12.10 = {
+  monarch = {
+    name = "³RS ?–¹e›"  # Raúl Alfonsin
+    birth_date = 1927.3.12
+    adm = 4
+    mil = 3
+    religion = catholic
+    dip = 4
+  }
+}
+1989.7.8 = {
+  monarch = {
+    name = "aSm¯e …h…QÆY"  # Carlos Menem
+    birth_date = 1930.7.2
+    adm = 5
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+1999.12.10 = {
+  monarch = {
+    name = "9SWSY ·VÉbœ?–"  # Fernando de la Rúa
+    birth_date = 1937.9.15
+    adm = 3
+    mil = 2
+    religion = catholic
+    dip = 5
+  }
+}
+2001.12.22 = {
+  monarch = {
+    name = "?–SV W·VÌ‘<h¯e („?–"  # Adolfo Rodríguez Saá
+    birth_date = 1947.7.25
+    adm = 3
+    mil = 3
+    religion = catholic
+    dip = 2
+  }
+}
+2002.1.2 = {
+  monarch = {
+    name = "1r·VNSY jg?–S·V"  # Eduardo Duhalde
+    birth_date = 1941.10.5
+    adm = 4
+    mil = 2
+    religion = catholic
+    dip = 4
+  }
+}
+2003.5.25 = {
+  monarch = {
+    name = "…Q¯eXbS úWÀN…QS"  # Néstor Kirchner
+    birth_date = 1950.2.25
+    adm = 5
+    mil = 3
+    religion = catholic
+    dip = 2
+  }
+}
+2007.12.10 = {
+  monarch = {
+    name = "KQÌ‘¯e‚„Z 9SWS·V¯e ·V úWÀN…QS"  # Christina Fernández de Kirchner
+    birth_date = 1953.2.19
+    adm = 4
+    dip = 4
+    mil = 2
+    religion = catholic
+    female = yes
+  }
+}
+2015.12.10 = {
+  monarch = {
+    name = "ÛkÌ‘‰eY lšKQÌ‘"  # Mauricio Macri
+    birth_date = 1959.2.8
+    adm = 3
+    mil = 3
+    religion = catholic
+    dip = 4
+  }
+}

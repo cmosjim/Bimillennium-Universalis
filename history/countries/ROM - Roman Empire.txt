@@ -1,0 +1,857 @@
+government = monarchy
+add_government_reform = roman_empire_reform
+government_rank = 3
+primary_culture = roman
+add_accepted_culture = celtiberian
+add_accepted_culture = gallian
+add_accepted_culture = greek
+add_accepted_culture = illyrian
+historical_rival = PRT
+historical_rival = SAS
+religion = hellenism
+technology_group = roman_group
+capital = 118
+2.1.1 = {
+  decision = dummy_pax_romana
+}
+2.1.1 = {
+  monarch = {
+    name = "eYäS¯eı"
+    dynasty = "1gÌ‘šNKQ³RÄr"
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = righteous_personality
+  add_ruler_personality = just_personality
+}
+14.9.18 = {
+  monarch = {
+    name = "ĞcÌ‘LN¯e"
+    dynasty = "1gÌ‘šNKQ³RÄr"
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = strict_personality
+  add_ruler_personality = drunkard_personality
+}
+14.9.18 = {
+  heir = {
+    name = "aS)RäSÉb"
+    monarch_name = "aS)RäSÉb"
+    dynasty = "1gÌ‘šNKQ³RÄr"
+    birth_date = 12.8.31
+    death_date = 41.1.24
+    claim = 80
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+  add_heir_personality = babbling_buffoon_personality
+  add_heir_personality = cruel_personality
+}
+37.3.18 = {
+  monarch = {
+    name = "aS)RäSÉb"
+    dynasty = "1gÌ‘šNKQ³RÄr"
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = babbling_buffoon_personality
+  add_ruler_personality = cruel_personality
+}
+37.3.18 = {
+  heir = {
+    name = "KQ³RÄrNN"
+    monarch_name = "KQ³RÄrNN"
+    dynasty = "1gÌ‘šNKQ³RÄr"
+    birth_date = 2.1.1
+    death_date = 54.10.13
+    claim = 80
+    adm = 5
+    dip = 2
+    mil = 3
+  }
+  add_heir_personality = conqueror_personality
+  add_heir_personality = careful_personality
+}
+41.1.24 = {
+  monarch = {
+    name = "KQ³RÄrNN"
+    dynasty = "1gÌ‘šNKQ³RÄr"
+    adm = 5
+    dip = 2
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = conqueror_personality
+  add_ruler_personality = careful_personality
+}
+41.1.24 = {
+  heir = {
+    name = "<SW"
+    monarch_name = "<SW"
+    dynasty = "1gÌ‘šNKQ³RÄr"
+    birth_date = 37.12.15
+    death_date = 68.6.9
+    claim = 80
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+  add_heir_personality = cruel_personality
+  add_heir_personality = obsessive_perfectionist_personality
+}
+54.10.13 = {
+  monarch = {
+    name = "<SW"
+    dynasty = "1gÌ‘šNKQ³RÄr"
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = cruel_personality
+  add_ruler_personality = obsessive_perfectionist_personality
+}
+58.1.1 = {
+  leader = {
+    name = "ÑyS^W"
+    type = general
+    fire = 1
+    shock = 4
+    manuever = 2
+    siege = 1
+    death_date = 67.6.1
+  }
+}
+68.6.8 = {
+  monarch = {
+    name = " RSôT"
+    dynasty = "Ï‚S®vúWLN¯e"
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+  clear_scripted_personalities = yes
+}
+69.1.15 = {
+  monarch = {
+    name = "eYXb"
+    dynasty = "›sS“^¯e.’dSôuLN¯e"
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+69.4.17 = {
+  monarch = {
+    name = "ôuyrÌ‘LN¯e"
+    dynasty = "eYbS¯e"
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+69.7.1 = {
+  monarch = {
+    name = "ôu¯e^HQ"
+    dynasty = "VÉbôu"
+    adm = 4
+    dip = 3
+    mil = 6
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = bold_fighter_personality
+  add_ruler_personality = architectural_visionary_personality
+}
+69.7.1 = {
+  heir = {
+    name = "Titus"
+    monarch_name = "Titus"
+    dynasty = "VÉbôu"
+    birth_date = 39.12.30
+    death_date = 81.9.13
+    claim = 90
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+  add_heir_personality = kind_hearted_personality
+  add_heir_personality = entrepreneur_personality
+}
+79.6.24 = {
+  monarch = {
+    name = "ĞcşV¯e"
+    dynasty = "VÉbôu"
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = kind_hearted_personality
+  add_ruler_personality = entrepreneur_personality
+}
+81.9.14 = {
+  monarch = {
+    name = "şVÆR„U"
+    dynasty = "VÉbôu"
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = silver_tongue_personality
+  add_ruler_personality = loose_lips_personality
+}
+96.9.18 = {
+  monarch = {
+    name = "…mSæt"
+    dynasty = "…mSæt‰Rfe<S"
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+}
+97.7.1 = {
+  heir = {
+    name = "şVÉbw"
+    monarch_name = "şVÉbw"
+    dynasty = "…mSæt‰Rfe<S"
+    birth_date = 53.9.18
+    death_date = 117.8.9
+    claim = 90
+    adm = 5
+    dip = 5
+    mil = 6
+  }
+  add_heir_personality = conqueror_personality
+  add_heir_personality = inspiring_leader_personality
+}
+98.1.28 = {
+  monarch = {
+    name = "şVÉbw"
+    dynasty = "…mSæt‰Rfe<S"
+    adm = 5
+    dip = 5
+    mil = 6
+    leader = {
+      name = "şVÉbw"
+      type = general
+      fire = 2
+      shock = 4
+      manuever = 3
+      siege = 0
+    }
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = conqueror_personality
+  add_ruler_personality = inspiring_leader_personality
+}
+98.1.28 = {
+  heir = {
+    name = "ÈT·Vo‚"
+    monarch_name = "ÈT·Vo‚"
+    dynasty = "…mSæt‰Rfe<S"
+    birth_date = 76.1.24
+    death_date = 138.7.10
+    claim = 90
+    adm = 5
+    dip = 4
+    mil = 6
+  }
+  add_heir_personality = calm_personality
+  add_heir_personality = architectural_visionary_personality
+}
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+117.8.11 = {
+  monarch = {
+    name = "ÈT·Vo‚"
+    dynasty = "…mSæt‰Rfe<S"
+    adm = 5
+    dip = 4
+    mil = 6
+    leader = {
+      name = "ÈT·Vo‚"
+      type = general
+      fire = 3
+      shock = 3
+      manuever = 3
+      siege = 0
+    }
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = calm_personality
+  add_ruler_personality = architectural_visionary_personality
+}
+138.2.25 = {
+  heir = {
+    name = "‰RfeR.Õk2S"
+    monarch_name = "‰RfeR.Õk2S"
+    dynasty = "…mSæt‰Rfe<S"
+    birth_date = 86.9.19
+    death_date = 161.3.7
+    claim = 90
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+  add_heir_personality = calm_personality
+  add_heir_personality = scholar_personality
+}
+138.6.10 = {
+  monarch = {
+    name = "‰RfeR.Õk2S"
+    dynasty = "…mSæt‰Rfe<S"
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = calm_personality
+  add_ruler_personality = scholar_personality
+}
+139.7.15 = {
+  heir = {
+    name = "Marcus Aurelius"
+    monarch_name = "Marcus Aurelius"
+    dynasty = "…mSæt‰Rfe<S"
+    birth_date = 121.4.26
+    death_date = 180.3.17
+    claim = 90
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+  add_heir_personality = inspiring_leader_personality
+  add_heir_personality = scholar_personality
+}
+161.3.7 = {
+  monarch = {
+    name = "lšS“^¯e.eYRÌ‘LN¯e"
+    dynasty = "…mSæt‰Rfe<S"
+    adm = 4
+    dip = 4
+    mil = 5
+    leader = {
+      name = "lšS“^¯e.eYRÌ‘LN¯e"
+      type = general
+      fire = 2
+      shock = 4
+      manuever = 3
+      siege = 0
+    }
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = inspiring_leader_personality
+  add_ruler_personality = scholar_personality
+}
+161.8.31 = {
+  heir = {
+    name = "·^ƒ·V"
+    monarch_name = "·^ƒ·V"
+    dynasty = "…mSæt‰Rfe<S"
+    birth_date = 161.8.31
+    death_date = 192.12.31
+    claim = 90
+    adm = 0
+    dip = 1
+    mil = 2
+  }
+  add_heir_personality = craven_personality
+  add_heir_personality = babbling_buffoon_personality
+}
+165.1.1 = {
+  leader = {
+    name = "ôuœ¯e"
+    type = general
+    fire = 1
+    shock = 4
+    manuever = 4
+    siege = 1
+    death_date = 169.8.1
+  }
+}
+180.3.17 = {
+  decision = end_pax_romana
+}
+180.3.17 = {
+  monarch = {
+    name = "·^ƒ·V"
+    dynasty = "…mSæt‰Rfe<S"
+    adm = 0
+    dip = 1
+    mil = 2
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = craven_personality
+  add_ruler_personality = babbling_buffoon_personality
+}
+193.1.1 = {
+  monarch = {
+    name = "iO‚„³u"
+    dynasty = "iO‚„³uKQ¯e"
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+}
+193.3.28 = {
+  monarch = {
+    name = "Är,rLN¯e"
+    dynasty = "^Xôuœ.Är,rLN¯e"
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+193.6.1 = {
+  monarch = {
+    name = "^Xnf‚„s|LN¯e.^Xôuœ"
+    dynasty = "^Xôuœ"
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = bold_fighter_personality
+  add_ruler_personality = embezzler_personality
+}
+193.6.1 = {
+  heir = {
+    name = "aSÉbaSÉb"
+    monarch_name = "aSÉbaSÉb"
+    dynasty = "^Xôuœ"
+    birth_date = 188.4.4
+    death_date = 217.4.8
+    claim = 90
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+  add_heir_personality = cruel_personality
+  add_heir_personality = lawgiver_personality
+}
+211.2.5 = {
+  monarch = {
+    name = "aSÉbaSÉb"
+    dynasty = "^Xôuœ"
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = cruel_personality
+  add_ruler_personality = lawgiver_personality
+}
+217.4.9 = {
+  monarch = {
+    name = "lšKQÌ‘ªR¯e"
+    dynasty = "®vªR¯eòƒ)R¯e"
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+  clear_scripted_personalities = yes
+}
+218.6.8 = {
+  monarch = {
+    name = "ÃWÉbKOôTï¯e"
+    dynasty = "^Xôuœ"
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+222.3.12 = {
+  monarch = {
+    name = "šN†SqS'Y.^Xôuœ"
+    dynasty = "^Xôuœ"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = craven_personality
+  add_ruler_personality = infertile_personality
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+235.3.20 = {
+  decision = dummy_empire_declining
+}
+235.3.20 = {
+  monarch = {
+    name = "lšKQ‰s|ªR¯e I"
+    dynasty = "2SÌ‘LN¯eôubS¯e"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+238.3.22 = {
+  monarch = {
+    name = "bê‰R I"
+    dynasty = "îhâlW&O¯e"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+238.4.22 = {
+  monarch = {
+    name = "bSê‰R III"
+    dynasty = "lšKQ.‰RN<S"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+244.2.12 = {
+  monarch = {
+    name = "òƒ)Rnf I"
+    dynasty = "lšKQ.‰RN<S"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+249.10.1 = {
+  monarch = {
+    name = "Xbof.•^‰¯e"
+    dynasty = "·VîO"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+249.10.1 = {
+  heir = {
+    name = "—¯e‚„)R‰R"
+    monarch_name = "—¯e‚„)R‰R"
+    dynasty = "·VîO"
+    birth_date = 230.1.1
+    death_date = 251.9.30
+    claim = 90
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+251.6.14 = {
+  monarch = {
+    name = "—¯e‚„)R‰R"
+    dynasty = "·VîO"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+251.10.1 = {
+  monarch = {
+    name = " RbS¯e"
+    dynasty = "ƒlœ‰‰RªR¯e"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+253.8.1 = {
+  monarch = {
+    name = "Os|ŞªR¯e"
+    dynasty = "Os|ŞªR¯e"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+253.9.1 = {
+  monarch = {
+    name = "NSÒR)R‰R"
+    dynasty = "Ng!•<S"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+253.9.1 = {
+  heir = {
+    name = "sO)RÉb¯e"
+    monarch_name = "sO)RÉb¯e"
+    dynasty = "Ng!•<S"
+    birth_date = 218.1.1
+    death_date = 268.8.31
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+260.1.1 = {
+  monarch = {
+    name = "sO)RÉb¯e"
+    dynasty = "Ng!•<S"
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+268.9.1 = {
+  monarch = {
+    name = "KQ³RÄr II"
+    dynasty = "eYÌ‘eu"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+270.1.1 = {
+  monarch = {
+    name = "fĞcbS¯e"
+    dynasty = "eYÌ‘eu"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+270.9.1 = {
+  monarch = {
+    name = "eYÒRo‚"
+    dynasty = "œGYLN¯eYs|ĞcLN¯e"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = inspiring_leader_personality
+  add_ruler_personality = entrepreneur_personality
+}
+275.9.25 = {
+  monarch = {
+    name = "TX‰N–"
+    dynasty = "lšSKQ¯e"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+  clear_scripted_personalities = yes
+}
+276.6.1 = {
+  monarch = {
+    name = "Vm^t‰R"
+    dynasty = "lšSKQ¯e"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+276.9.1 = {
+  monarch = {
+    name = "nfW^¯e"
+    dynasty = "eYäS¯eı"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+282.10.1 = {
+  monarch = {
+    name = "aSœ¯e"
+    dynasty = "eYäS¯eı"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+283.8.1 = {
+  monarch = {
+    name = "aSœ¯e"
+    dynasty = "eYäS¯eı"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+284.11.19 = {
+  government = monarchy
+  add_government_reform = autocracy_reform
+}
+284.11.20 = {
+  monarch = {
+    name = "4bKQÌ‘HQ"
+    dynasty = "eYäS¯eı"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = lawgiver_personality
+  add_ruler_personality = zealot_personality
+}
+305.3.1 = {
+  monarch = {
+    name = "TëXfWN I LN¯e"
+    dynasty = "TëXfWN"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = inspiring_leader_personality
+  add_ruler_personality = tolerant_personality
+}
+306.7.1 = {
+  monarch = {
+    name = "^Xôuœ II"
+    dynasty = "TëXfWN"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+  clear_scripted_personalities = yes
+}
+307.4.1 = {
+  monarch = {
+    name = "TëXfWN I"
+    dynasty = "TëXfWN"
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = chalcedonism
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = inspiring_leader_personality
+  add_ruler_personality = tolerant_personality
+}
+311.8.1 = {
+  monarch = {
+    name = "Î‰Ëu¯e I"
+    dynasty = "TëXfWN"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+  clear_scripted_personalities = yes
+}
+324.9.18 = {
+  monarch = {
+    name = "TëXfWN I"
+    dynasty = "TëXfWN"
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = chalcedonism
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = inspiring_leader_personality
+  add_ruler_personality = tolerant_personality
+}
+330.1.1 = {
+  capital = 151
+}
+337.3.22 = {
+  monarch = {
+    name = "TëXfWN II"
+    dynasty = "TëXfWN"
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = arianism
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = tolerant_personality
+  add_ruler_personality = benevolent_personality
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+360.2.18 = {
+  monarch = {
+    name = "1g)R‰R II"
+    dynasty = "TëXfWN"
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = chalcedonism
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = scholar_personality
+  add_ruler_personality = zealot_personality
+}
+363.6.26 = {
+  monarch = {
+    name = "pgôu‰R"
+    dynasty = "TëXfWN"
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = chalcedonism
+  }
+  clear_scripted_personalities = yes
+}
+364.2.26 = {
+  monarch = {
+    name = "æt&ON<S‰R I"
+    dynasty = "æt&ON<S‰R"
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = chalcedonism
+  }
+}
+375.12.17 = {
+  monarch = {
+    name = "æt&ON<S‰R II"
+    dynasty = "æt&ON<S‰R"
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = chalcedonism
+  }
+}
+380.2.27 = {
+  religion = chalcedonism
+}
+392.3.15 = {
+  monarch = {
+    name = "ÄreYY‰ I"
+    dynasty = "ÄreYY‰"
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = lawgiver_personality
+  add_ruler_personality = zealot_personality
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

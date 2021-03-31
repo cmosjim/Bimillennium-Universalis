@@ -1,0 +1,524 @@
+government = gov_celestial_empire
+add_government_reform = celestial_empire
+government_rank = 3
+mercantilism = 0.1
+technology_group = early_chinese
+religion = daoism
+primary_culture = chihan
+capital = 700
+
+100.1.1 = {
+	add_government_reform = early_cn_gov_reform_1
+}
+
+230.1.1 = {
+	add_government_reform = early_cn_gov_reform_2
+}
+
+360.1.1 = {
+	add_government_reform = early_cn_gov_reform_3
+}
+
+490.1.1 = {
+	add_government_reform = early_cn_gov_reform_4
+}
+
+618.6.18 = {
+	monarch = {
+		name = "Ngn"
+		dynasty = "***"
+		birth_date = 566.12.21
+		death_date = 635.6.25
+		adm = 5
+		dip = 5
+		mil = 6
+		leader = {
+			name = "Ngn"
+			type = general
+			fire = 7
+			shock = 7
+			manuever = 3
+			siege = 3
+		}
+	}
+	heir = {
+		name = "Ngú^b"
+		claim = 100
+		adm = 5
+		dip = 4
+		mil = 4
+		birth_date = 589.2.1
+		death_date = 626.7.2
+	}
+}
+
+618.6.18 = {
+	add_country_modifier = {
+		name = "md_chuanguoyuxi"
+		duration = -1
+	}
+	set_country_flag = TNG_Emperor_LiYuan
+}
+
+620.1.1 = {
+	add_government_reform = early_cn_gov_reform_5
+}
+
+622.1.1 = {
+	set_country_flag = p_flg_ever_annan
+	set_country_flag = flg_ever_annan
+	add_country_modifier = {
+		name = "md_building_annanduhufu"
+		duration = 36000
+	}
+}
+
+626.9.4 = {
+	clr_country_flag = TNG_Emperor_LiYuan
+	set_country_flag = TNG_Emperor_LiShimin
+	set_country_flag = TNG_Open_Zhenguan
+}
+
+626.9.4 = {
+	monarch = {
+		name = "NgNl"
+		dynasty = "***"
+		birth_date = 599.1.23
+		death_date = 649.7.10
+		adm = 6
+		dip = 6
+		mil = 6
+		leader = {
+			name = "NgNl"
+			type = general
+			fire = 7
+			shock = 7
+			manuever = 5
+			siege = 5
+		}
+	}
+	queen = {
+		name = "•YRàe¢W"
+		dynasty = "***"
+		country_of_origin = TNG
+		birth_date = 601.3.15
+		death_date = 636.7.28
+		female = yes
+		adm = 5
+		dip = 6
+		mil = 4
+	}
+	heir = {
+		name = "NgbŒN"
+		claim = 100
+		adm = 5
+		dip = 4
+		mil = 3
+		birth_date = 618.2.1
+		death_date = 645.1.5
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
+	add_ruler_personality = conqueror_personality
+	add_country_modifier = {
+		name = "more_heir_chance_8"
+		duration = -1
+	}
+	set_country_flag = flg_has_concert_pic36
+	set_country_flag = flg_marry_finished
+	set_variable = {
+		which = num_of_talking_wife
+		value = 27
+	}
+	remove_country_modifier = md_no_consort
+}
+
+636.7.28 = {
+	add_country_modifier = {
+		name = md_no_consort
+		duration = -1
+	}
+	remove_country_modifier = more_heir_chance_8
+	clr_country_flag = flg_has_concert_pic36
+	clr_country_flag = flg_marry_finished
+}
+
+640.1.1 = {
+	add_country_modifier = {
+		name = "md_building_AN4duhufu"
+		duration = 36500
+	}
+}
+
+643.1.1 = {
+	heir = {
+		name = "Ng»l"
+		claim = 100
+		adm = 5
+		dip = 5
+		mil = 3
+		birth_date = 628.7.21
+		death_date = 683.12.27
+	}
+}
+
+649.7.15 = {
+	monarch = {
+		name = "Ng»l"
+		dynasty = "***"
+		birth_date = 628.7.21
+		death_date = 683.12.27
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+	queen = {
+		name = "fkšZZ"
+		dynasty = "***"
+		country_of_origin = TNG
+		birth_date = 624.1.1
+		death_date = 705.12.16
+		female = yes
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+649.7.15 = {
+	clr_country_flag = TNG_Open_Zhenguan
+	clr_country_flag = TNG_Emperor_LiShimin
+	set_country_flag = TNG_Emperor_Third
+	clear_scripted_personalities = yes
+	add_ruler_personality = benevolent_personality
+	add_country_modifier = {
+		name = "more_heir_chance_5"
+		duration = -1
+	}
+	set_country_flag = flg_has_concert_pic203
+	set_country_flag = flg_marry_finished
+	set_variable = {
+		which = num_of_talking_wife
+		value = 18
+	}
+	set_country_flag = TNG_Queen_WuZetian
+	remove_country_modifier = md_no_consort
+}
+
+684.1.3 = {
+	clr_country_flag = TNG_Emperor_Third
+	remove_country_modifier = more_heir_chance_5
+	add_country_modifier = {
+		name = md_no_consort
+		duration = -1
+	}
+	clr_country_flag = flg_has_concert_pic203
+	clr_country_flag = flg_marry_finished
+	set_country_flag = TNG_Emperor_4th
+}
+
+684.1.3 = {
+	monarch = {
+		name = "Ng>f"
+		dynasty = "***"
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+684.2.27 = {
+	monarch = {
+		name = "Ngæe"
+		dynasty = "***"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+690.9.9 = {
+	clr_country_flag = TNG_Emperor_4th
+	set_country_flag = WuZhou_Build
+}
+
+690.10.16 = {
+	remove_country_modifier = md_chuanguoyuxi
+}
+
+705.2.21 = {
+	monarch = {
+		name = "Ng>f"
+		dynasty = "***"
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+705.2.21 = {
+	add_country_modifier = {
+		name = "md_chuanguoyuxi"
+		duration = -1
+	}
+}
+
+705.12.16 = {
+	clr_country_flag = TNG_Queen_WuZetian
+}
+
+710.7.8 = {
+	monarch = {
+		name = "NgÍ‘ƒ"
+		dynasty = "***"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+709.1.1 = {
+	add_country_modifier = {
+		name = "md_building_BT1duhufu"
+		duration = 36500
+	}
+}
+
+710.7.25 = {
+	monarch = {
+		name = "Ngæe"
+		dynasty = "***"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+712.9.8 = {
+	monarch = {
+		name = "Ng†–úW"
+		dynasty = "***"
+		adm = 6
+		dip = 6
+		mil = 5
+	}
+}
+
+750.1.1 = {
+	add_government_reform = early_cn_gov_reform_6
+}
+
+750.1.1 = {
+	technology_group = chinese
+}
+
+756.8.12 = {
+	monarch = {
+		name = "Ng¨N"
+		dynasty = "***"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+762.5.16 = {
+	monarch = {
+		name = "NgkŒ"
+		dynasty = "***"
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+779.6.12 = {
+	monarch = {
+		name = "Ng"
+		dynasty = "***"
+		adm = 4
+		dip = 2
+		mil = 1
+	}
+}
+
+790.1.1 = {
+	remove_country_modifier = md_building_BT1duhufu
+}
+
+805.2.28 = {
+	monarch = {
+		name = "Ngõ‹"
+		dynasty = "***"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+805.9.5 = {
+	monarch = {
+		name = "Ng¯u"
+		dynasty = "***"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+808.1.1 = {
+	remove_country_modifier = md_building_AN4duhufu
+}
+
+820.2.20 = {
+	monarch = {
+		name = "NgR`"
+		dynasty = "***"
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+824.2.29 = {
+	monarch = {
+		name = "Ngin"
+		dynasty = "***"
+		adm = 0
+		dip = 1
+		mil = 1
+	}
+}
+
+# òSğy0u2—KNØS00‹NTÿNgfôf«ˆ¦R˜R³”6R
+826.1.13 = {
+	monarch = {
+		name = "Ngf"
+		dynasty = "***"
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+# Ufk—RáOIYSYeÿÎN845t^VËYÖN'YÄ‰!jNäNSbûQiOYeÿòSğyOfmpÕl0d–Spe(W•‰R„vúRb–Y
+# ÿhQıVNb	gúRb–«ˆÆbÁkÿçP<S«ˆëØ×OÿúRb–Ì‘„vtY¶–«ˆÊ‘>eÿúRb–Nb	g„v0u0W«ˆ¡l6e:NıV	g0
+840.2.10 = {
+	monarch = {
+		name = "Ngp"
+		dynasty = "***"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+# OASRP%„vUgHT°súQ0-NtQ0„vS·^NSb—ÿ
+# òSğy'Y-NKN»l0±R—R=fUg-NgåNTSpeÔkƒ	gjO:N„v‡v^ÿ
+# æSYÿU±R—RØTC…0ŞV¥upˆ®Vÿ>muQ6eY†N³lmnKN0Wÿs^šR†NTC…ÿ
+846.4.25 = {
+	monarch = {
+		name = "NgñV"
+		dynasty = "***"
+		adm = 4
+		dip = 4
+		mil = 6
+	}
+}
+
+859.9.7 = {
+	monarch = {
+		name = "Ng<o"
+		dynasty = "***"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+861.1.1 = {
+	clr_country_flag = p_flg_ever_annan
+	clr_country_flag = flg_ever_annan
+	remove_country_modifier = md_building_annanduhufu
+}
+
+866.7.1 = {
+	set_country_flag = p_flg_ever_annan
+	set_country_flag = flg_ever_annan
+	add_country_modifier = {
+		name = "md_building_annanduhufu"
+		duration = 36000
+	}
+}
+
+873.8.16 = {
+	monarch = {
+		name = "NgQ"
+		dynasty = "***"
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+880.1.1 = {
+	add_government_reform = early_cn_gov_reform_7
+}
+
+888.4.20 = {
+	monarch = {
+		name = "NgTf"
+		dynasty = "***"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+904.9.26 = {
+	monarch = {
+		name = "Ng÷g"
+		dynasty = "***"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+905.1.1 = {
+	clr_country_flag = p_flg_ever_annan
+	clr_country_flag = flg_ever_annan
+	remove_country_modifier = md_building_annanduhufu
+}
+
+907.6.1 = {
+	remove_country_modifier = md_chuanguoyuxi
+}
+
+1010.1.1 = {
+	add_government_reform = early_cn_gov_reform_8
+}
+
+1140.1.1 = {
+	add_government_reform = early_cn_gov_reform_9
+}
+
+1270.1.1 = {
+	add_government_reform = early_cn_gov_reform_10
+}
+
+1912.2.12 = {
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+	religion = liberalism
+}
+
+1949.10.1 = {
+	technology_group = modern_chinese
+}

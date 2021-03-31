@@ -1,0 +1,11 @@
+spriteTypes = {	
+
+		spriteType = {
+		name = "GFX_advisor_chalimate"
+		texturefile = "gfx//interface//advisors//chalimate.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}

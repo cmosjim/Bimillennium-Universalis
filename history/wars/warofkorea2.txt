@@ -1,0 +1,18 @@
+name = "gœœb‰N"
+war_goal = {
+	type = take_core
+	casus_belli = cb_core
+	province = 3314
+}
+1950.10.19 = {
+	add_attacker = SKO
+	add_attacker = USA
+	add_defender = NOK
+	add_defender = CHN
+}
+1953.7.1 = {
+    rem_attacker = SKO
+	rem_attacker = USA
+	rem_defender = NOK
+	rem_defender = CHN
+}

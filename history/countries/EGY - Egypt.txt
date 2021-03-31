@@ -1,0 +1,765 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+technology_group = middle_eastern
+religion = sunni
+primary_culture = al_misr_arabic
+capital = 361
+religious_school = shafii_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+627.1.1 = {
+  technology_group = muslim
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+868.9.15 = {
+  monarch = {
+    name = "Œ‚ÈTÈ·V"  # Ahmad
+    dynasty = "z&O"  # Tulunid
+    birth_date = 835.9.20
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+868.9.15 = {
+  heir = {
+    name = "áwlšVæ—"  # Khumarawayh
+    monarch_name = "áwlšVæ—"  # Khumarawayh
+    dynasty = "z&O"  # Tulunid
+    birth_date = 864.1.1
+    death_date = 896.1.18
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 3
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+884.5.10 = {
+  monarch = {
+    name = "áwlšVæ—"  # Khumarawayh
+    dynasty = "z&O"  # Tulunid
+    birth_date = 864.1.1
+    adm = 1
+    dip = 2
+    mil = 3
+  }
+}
+884.5.10 = {
+  heir = {
+    name = " ROÀN"  # Jaysh
+    monarch_name = " ROÀN"  # Jaysh
+    dynasty = "z&O"  # Tulunid
+    birth_date = 882.1.1
+    death_date = 869.11.1
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 1
+  }
+}
+896.1.18 = {
+  monarch = {
+    name = " ROÀN"  # Jaysh
+    dynasty = "z&O"  # Tulunid
+    birth_date = 882.1.1
+    adm = 0
+    dip = 1
+    mil = 1
+  }
+}
+896.1.18 = {
+  heir = {
+    name = "ÈT&O"  # Harun
+    monarch_name = "ÈT&O"  # Harun
+    dynasty = "z&O"  # Tulunid
+    birth_date = 839.1.1
+    death_date = 904.12.30
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+869.11.1 = {
+  monarch = {
+    name = "ÈT&O"  # Harun
+    dynasty = "z&O"  # Tulunid
+    birth_date = 839.1.1
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+869.11.1 = {
+  heir = {
+    name = "fís"  # Shayban
+    monarch_name = "fís"  # Shayban
+    dynasty = "z&O"  # Tulunid
+    birth_date = 850.1.1
+    death_date = 905.1.10
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 0
+  }
+}
+904.12.30 = {
+  monarch = {
+    name = "fís"  # Shayban
+    dynasty = "z&O"  # Tulunid
+    birth_date = 850.1.1
+    adm = 2
+    dip = 2
+    mil = 0
+  }
+}
+935.8.26 = {
+  capital = 361
+  monarch = {
+    name = "FzUØ·V"  # Muhammad
+    dynasty = "Okfê"  # Ikshidid
+    birth_date = 882.2.8
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+935.8.26 = {
+  heir = {
+    name = "LNªR1gS"  # Unujur
+    monarch_name = "LNªR1gS"  # Unujur
+    dynasty = "Okfê"  # Ikshidid
+    birth_date = 916.1.1
+    death_date = 961.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 1
+  }
+}
+946.7.24 = {
+  monarch = {
+    name = "LNªR1gS"  # Unujur
+    dynasty = "Okfê"  # Ikshidid
+    birth_date = 916.1.1
+    adm = 4
+    dip = 0
+    mil = 1
+  }
+}
+946.7.24 = {
+  heir = {
+    name = "?–Ì‘"  # Ali
+    monarch_name = "?–Ì‘"  # Ali
+    dynasty = "Okfê"  # Ikshidid
+    birth_date = 931.1.1
+    death_date = 966.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+961.1.1 = {
+  monarch = {
+    name = "?–Ì‘"  # Ali
+    dynasty = "Okfê"  # Ikshidid
+    birth_date = 931.1.1
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+961.1.1 = {
+  heir = {
+    name = "Œ‚ÈTÈ·V"  # Ahmad
+    monarch_name = "Œ‚ÈTÈ·V"  # Ahmad
+    dynasty = "Okfê"  # Ikshidid
+    birth_date = 956.1.1
+    death_date = 987.7.13
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}
+966.1.1 = {
+  monarch = {
+    name = "aSÌRS"  # Kafur
+    dynasty = "Okfê"  # Ikshidid
+    birth_date = 905.1.1
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+966.1.1 = {
+  heir = {
+    name = "Œ‚ÈTÈ·V"  # Ahmad
+    monarch_name = "Œ‚ÈTÈ·V"  # Ahmad
+    dynasty = "Okfê"  # Ikshidid
+    birth_date = 956.1.1
+    death_date = 987.7.13
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}
+968.4.1 = {
+  monarch = {
+    name = "Œ‚ÈTÈ·V"  # Ahmad
+    dynasty = "Okfê"  # Ikshidid
+    birth_date = 956.1.1
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}
+969.6.1 = {
+  capital = 4466
+  monarch = {
+    name = "ÈTQh"  # Al-Hasan
+    dynasty = "Okfê"  # Ikshidid
+    birth_date = 939.1.1
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1171.1.1 = {
+  capital = 361
+  monarch = {
+    name = "(„ÉbN"  # Saladin
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1137.1.1
+    adm = 6
+    dip = 5
+    mil = 6
+  }
+}
+1171.1.1 = {
+  heir = {
+    name = "?–PŸyQ LN¯eüf"  # Al-Aziz Uthman
+    monarch_name = "?–PŸyQ LN¯eüf"  # Al-Aziz Uthman
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1171.1.1
+    death_date = 1198.11.29
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+1193.3.4 = {
+  monarch = {
+    name = "?–PŸyQ LN¯eüf"  # Al-Aziz Uthman
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1171.1.1
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+1193.3.4 = {
+  heir = {
+    name = "üfÏ‚S ³uåuS FzUØ·V"  # Al-Mansur Nasir al-Din Muhammad
+    monarch_name = "üfÏ‚S ³uåuS FzUØ·V"  # Al-Mansur Nasir al-Din Muhammad
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1189.1.1
+    death_date = 1216.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 1
+  }
+}
+1198.11.29 = {
+  monarch = {
+    name = "üfÏ‚S ³uåuS FzUØ·V"  # Al-Mansur Nasir al-Din Muhammad
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1189.1.1
+    adm = 0
+    dip = 2
+    mil = 1
+  }
+}
+1200.2.1 = {
+  monarch = {
+    name = "?–êÒR I"  # Al-Adil I
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1145.6.1
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+1200.2.1 = {
+  heir = {
+    name = "aSs|ÒR"  # Al-Kamil
+    monarch_name = "aSs|ÒR"  # Al-Kamil
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1177.1.1
+    death_date = 1238.3.6
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1218.8.1 = {
+  monarch = {
+    name = "aSs|ÒR"  # Al-Kamil
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1177.1.1
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1221.1.1 = {
+  heir = {
+    name = "?–êÒR"  # Al-Adil
+    monarch_name = "?–êÒR II"  # Al-Adil II
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1221.1.1
+    death_date = 1248.2.9
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 3
+  }
+}
+1238.3.6 = {
+  monarch = {
+    name = "?–êÒR II"  # Al-Adil II
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1221.1.1
+    adm = 0
+    dip = 1
+    mil = 3
+  }
+}
+1240.6.1 = {
+  monarch = {
+    name = "(„Ì‘k"  # As-Salih
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1205.11.5
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1240.6.1 = {
+  heir = {
+    name = "Fz?–NbÆY şVpQ™lk"  # Al-Muazzam Turanshah
+    monarch_name = "Fz?–NbÆY şVpQ™lk"  # Al-Muazzam Turanshah
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1225.1.1
+    death_date = 1250.5.2
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+1249.11.22 = {
+  monarch = {
+    name = "Fz?–NbÆY şVpQ™lk"  # Al-Muazzam Turanshah
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1225.1.1
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+1249.11.22 = {
+  heir = {
+    name = "?–ÀNÉb+Y Fz™l"  # Al-Ashraf Musa
+    monarch_name = "?–ÀNÉb+Y Fz™l"  # Al-Ashraf Musa
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1244.1.1
+    death_date = 1260.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+1250.5.2 = {
+  capital = 382
+}
+1250.5.2 = {
+  monarch = {
+    name = "³uLR O.ty"  # An-Nasir Yusuf
+    dynasty = "?–2S^"  # Ayyubid
+    birth_date = 1228.1.1
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1260.1.1 = {
+  capital = 361
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1805.5.17 = {
+  religious_school = hanafi_school
+  monarch = {
+    name = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1769.3.4
+    adm = 6
+    dip = 3
+    mil = 5
+    leader = {
+      name = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+      type = general
+      fire = 1
+      shock = 4
+      manuever = 5
+      siege = 0
+    }
+  }
+}
+1805.5.17 = {
+  heir = {
+    name = "fjSÉb1k"  # Ibrahim
+    monarch_name = "fjSÉb1k"  # Ibrahim
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1789.1.1
+    death_date = 1848.11.20
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 2
+  }
+}
+1848.3.2 = {
+  monarch = {
+    name = "fjSÉb1k"  # Ibrahim
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1789.1.1
+    adm = 4
+    dip = 5
+    mil = 2
+  }
+}
+1848.3.2 = {
+  heir = {
+    name = "?–Ôb`"  # Abbas
+    monarch_name = "?–Ôb¯e I"  # Abbas I
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1812.7.1
+    death_date = 1854.7.13
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+1848.11.20 = {
+  monarch = {
+    name = "?–Ôb¯e I"  # Abbas I
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1812.7.1
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+1848.11.20 = {
+  heir = {
+    name = "(„—V"  # Sa-id
+    monarch_name = "(„—V"  # Sa-id
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1822.3.17
+    death_date = 1863.1.18
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 0
+  }
+}
+1854.7.13 = {
+  monarch = {
+    name = "(„—V"  # Sa-id
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1822.3.17
+    adm = 5
+    dip = 2
+    mil = 0
+  }
+}
+1854.7.13 = {
+  heir = {
+    name = "O¯e›sêN"  # Isma'il
+    monarch_name = "O¯e›sêN"  # Isma'il
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1830.12.31
+    death_date = 1895.3.2
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 2
+  }
+}
+1863.1.18 = {
+  monarch = {
+    name = "O¯e›sêN"  # Isma'il
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1830.12.31
+    adm = 5
+    dip = 1
+    mil = 2
+  }
+}
+1863.1.18 = {
+  heir = {
+    name = "v–òƒKQ"  # Tawfik
+    monarch_name = "v–òƒKQ"  # Tawfik
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1852.11.15
+    death_date = 1892.1.7
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 3
+  }
+}
+1879.6.26 = {
+  monarch = {
+    name = "v–òƒKQ"  # Tawfik
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1852.11.15
+    adm = 0
+    dip = 1
+    mil = 3
+  }
+}
+1879.6.26 = {
+  heir = {
+    name = "?–Ôb`"  # Abbas
+    monarch_name = "?–Ôb¯e II"  # Abbas II
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1874.7.14
+    death_date = 1944.12.19
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 4
+  }
+}
+1892.1.7 = {
+  monarch = {
+    name = "?–Ôb¯e II"  # Abbas II
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1874.7.14
+    adm = 4
+    dip = 0
+    mil = 4
+  }
+}
+1892.1.7 = {
+  heir = {
+    name = "wmÊs aSs|ÒR"  # Hussein Kamel
+    monarch_name = "wmÊs aSs|ÒR"  # Hussein Kamel
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1853.11.21
+    death_date = 1917.10.9
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 4
+  }
+}
+1914.12.19 = {
+  monarch = {
+    name = "wmÊs aSs|ÒR"  # Hussein Kamel
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1853.11.21
+    adm = 2
+    dip = 2
+    mil = 4
+  }
+}
+1914.12.19 = {
+  heir = {
+    name = "y?–·V"  # Fuad
+    monarch_name = "y?–·V I"  # Fuad I
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1868.3.26
+    death_date = 1936.4.28
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+1917.10.9 = {
+  monarch = {
+    name = "y?–·V I"  # Fuad I
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1868.3.26
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+1920.2.11 = {
+  heir = {
+    name = "ÕlœKQ"  # Farouk
+    monarch_name = "ÕlœKQ I"  # Farouk I
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1920.2.11
+    death_date = 1965.3.18
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+1936.4.28 = {
+  monarch = {
+    name = "ÕlœKQ I"  # Farouk I
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1920.2.11
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+1952.1.16 = {
+  heir = {
+    name = "y?–·V"  # Fuad
+    monarch_name = "y?–·V II"  # Fuad II
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1952.1.16
+    death_date = 1953.6.18
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 0
+  }
+}
+1952.7.26 = {
+  monarch = {
+    name = "y?–·V II"  # Fuad II
+    dynasty = "FzUØ·V ?–Ì‘"  # Muhammad Ali
+    birth_date = 1952.1.16
+    adm = 2
+    dip = 2
+    mil = 0
+  }
+}
+1953.6.18 = {
+  government = republic
+  add_government_reform = presidential_reform
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+  monarch = {
+    name = "FzUØ·V·³u	T^"  # Muhammad Naguib
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1956.6.23 = {
+  monarch = {
+    name = " R¦S·?–jSjgÒR·³uiS"  # Gamal Abdel Nasser
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1970.10.15 = {
+  monarch = {
+    name = "‰RætS·(„¾yr"  # Anwar Sadat
+    adm = 5
+    dip = 2
+    mil = 1
+  }
+}
+1971.9.2 = {
+  capital = 361
+}
+1981.10.6 = {
+  monarch = {
+    name = "Ï‚òƒ·?–^·TXÒRjS"  # Sufi Abu Taleb
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1981.10.14 = {
+  monarch = {
+    name = "áw¯e<S·FzôTÉbKQ"  # Hosni Mubarak
+    adm = 2
+    dip = 1
+    mil = 4
+  }
+}
+2011.2.11 = {
+  monarch = {
+    name = "FzUØ·V·¯OiàV·fWTXôu"  # Supreme Council of the Armed Forces
+    adm = 2
+    dip = 2
+    mil = 2
+    regent = yes
+  }
+}
+2012.6.30 = {
+  monarch = {
+    name = "FzUØ·V Fz^"  # Mohamed Morsi
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+2013.7.4 = {
+  monarch = {
+    name = "?–·V)R·üfÏ‚S"  # Andy Mansour
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+2014.6.8 = {
+  monarch = {
+    name = "?–jSjgÒR-ÕlTXk·^X‰"  # Abdel Fattah el-Sisi
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}

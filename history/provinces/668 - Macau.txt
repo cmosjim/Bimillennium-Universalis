@@ -1,0 +1,77 @@
+#668 - Macau
+
+owner = HND
+controller = HND
+culture = cantonese
+religion = confucianism
+capital = "Macau"
+trade_goods = fish
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 1
+is_city = yes
+add_core = HND
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = early_indian
+discovered_by = indian
+discovered_by = muslim
+discovered_by = middle_eastern
+discovered_by = ottoman
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+center_of_trade = 1
+
+2.1.1 = { 
+	add_permanent_province_modifier = {
+	name = pearl_estuary_modifier
+	duration = -1
+	}
+}
+
+8.12.1 = { owner = DR1 controller = DR1 add_core = DR1 remove_core = HND }
+29.12.1 = { owner = HND controller = HND add_core = HND remove_core = DR1 }
+191.1.1 = { owner = ZOF controller = ZOF add_core = ZOF add_core = ZIX remove_core = HND }
+206.1.1 = { owner = ZIX controller = ZIX add_core = ZIX remove_core = ZOF }
+210.1.1 = { owner = SNC controller = SNC add_core = SNC remove_core = ZIX }
+229.4.1 = { owner = WUU controller = WUU add_core = WUU remove_core = SNC }
+280.3.15 = { owner = JN1 controller = JN1 add_core = JN1 remove_core = WUU }
+420.1.1 = { owner = LSO controller = LSO add_core = LSO remove_core = JN1 }
+479.1.1 = { owner = QIC controller = QIC add_core = QIC remove_core = LSO }
+502.1.1 = { owner = LN1 controller = LN1 add_core = LN1 remove_core = QIC }
+557.1.1 = { owner = CEN controller = CEN add_core = CEN remove_core = LN1 }
+589.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CEN }
+618.6.18 = { owner = FA2 controller = FA2 add_core = FA2 remove_core = SUI }
+622.7.1 = { owner = TNG controller = TNG add_core = TNG remove_core = FA2 }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+705.2.21 = { owner = TNG controller = TNG add_core = TNG remove_core = WZ1 }
+
+907.6.1 = { owner = HNH controller = HNH add_core = HNH remove_core = TNG }
+971.1.1 = { owner = SNG controller = SNG add_core = SNG remove_core = HNH }
+1279.3.19 = { owner = YUA controller = YUA add_core = YUA remove_core = SNG }
+1367.1.1 = { owner = HE2 controller = HE2 add_core = HE2 remove_core = YUA }
+1368.1.23 = { owner = MNG controller = MNG add_core = MNG remove_core = HE2 }
+
+1514.1.1 = { discovered_by = POR }
+# 1550.1.1 - Portuguese trading post
+1647.4.1 = { owner = QNG controller = QNG add_core = QNG }
+1648.4.15 = { controller = MNG owner = MNG }
+1650.11.11 = { owner = QNG controller = QNG }
+1659.1.1 = { owner = QNG controller = QNG add_core = QNG } # The Qing Conquest of China finishes
+1670.1.1 = { owner = POR controller = POR add_core = POR remove_core = MNG } # Leased by Portugal
+1751.1.1 = { base_tax = 4 base_manpower = 2 }
+1775.1.1 = { base_tax = 7 }
+1801.1.1 = { base_tax = 9 base_production = 4  }
+1825.1.1 = { base_tax = 10 }
+1851.1.1 = { base_tax = 14 base_manpower = 3 }
+1875.1.1 = { base_tax = 16 base_production = 5 base_manpower = 4 }
+1901.1.1 = { base_tax = 18 base_production = 8  religion = liberalism }
+1912.2.12 = { base_tax = 19 add_core = CHN }
+1925.1.1 = { base_tax = 20 base_production = 10 base_manpower = 5 }
+1951.1.1 = { base_tax = 21 base_production = 11 base_manpower = 6 }
+1975.1.1 = { base_tax = 22 base_production = 14 }
+1999.12.20 = { owner = CHN controller = CHN remove_core = POR }
+2000.1.1 = { base_tax = 17 base_manpower = 8 }

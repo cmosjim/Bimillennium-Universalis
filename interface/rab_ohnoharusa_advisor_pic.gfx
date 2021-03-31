@@ -1,0 +1,10 @@
+spriteTypes = {	
+		spriteType = {
+		name = "GFX_advisor_ohnoharusa"
+		texturefile = "gfx//interface//advisors//ohnoharusa.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+}

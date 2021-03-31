@@ -1,0 +1,137 @@
+government = republic
+add_government_reform = oligarchy_reform
+set_legacy_government = administrative_republic
+government_rank = 1
+primary_culture = venetian
+religion = catholic
+technology_group = western
+capital = 108
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1221.1.1 = {
+  monarch = {
+    name = "pQZSÇÑ˙ã ^Ùu±É)R"  # Rambertino Buvelelli
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1226.1.1 = {
+  monarch = {
+    name = "√W˝lÃë˙ã III ∑V Wlö˙ã"  # Ezzelino III de Romano
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1259.10.7 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+  monarch = {
+    name = "löØeÇÑ˙ã I"  # Mastino I
+    dynasty = "∑V…b ØeaS…b"  # della Scala
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1277.10.17 = {
+  monarch = {
+    name = "?ñSçXb I"  # Alberto I
+    dynasty = "∑V…b ØeaS…b"  # della Scala
+    adm = 1
+    dip = 3
+    mil = 4
+  }
+}
+1301.9.3 = {
+  monarch = {
+    name = "ÙTSXbmÖheY I"  # Bartolomeo I
+    dynasty = "∑V…b ØeaS…b"  # della Scala
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1304.3.8 = {
+  monarch = {
+    name = "?ñSZSO˙ã I"  # Alboino I
+    dynasty = "∑V…b ØeaS…b"  # della Scala
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+1311.10.28 = {
+  monarch = {
+    name = "?ñSçXb II"  # Alberto II
+    dynasty = "∑V…b ØeaS…b"  # della Scala
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1352.9.13 = {
+  monarch = {
+    name = "NW<hpQ∑V II"  # Cangrande II
+    dynasty = "∑V…b ØeaS…b"  # della Scala
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1359.12.14 = {
+  monarch = {
+    name = "*XâÀuÃë I"  # Cansignorio I
+    dynasty = "∑V…b ØeaS…b"  # della Scala
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1375.10.19 = {
+  monarch = {
+    name = "ÙTSXbmÖheY II"  # Bartolomeo II
+    dynasty = "∑V…b ØeaS…b"  # della Scala
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1381.7.12 = {
+  monarch = {
+    name = "âRN<SeY I"  # Antonio I
+    dynasty = "∑V…b ØeaS…b"  # della Scala
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}

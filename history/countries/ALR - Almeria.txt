@@ -1,0 +1,93 @@
+government = monarchy
+add_government_reform = iqta
+mercantilism = 0.1
+primary_culture = andalucian
+religion = sunni
+add_accepted_culture = berber
+technology_group = muslim
+capital = 222
+religious_school = maliki_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1011.1.1 = {
+  monarch = {
+    name = "Êt∑VIl"  # Wadhah
+    dynasty = "?ñSÖh)RöN"  # el Ahmerig
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1020.1.1 = {
+  monarch = {
+    name = ">çÃëâR"  # Jayran
+    dynasty = "ØeKQS‘k"  # el Schkleby
+    adm = 1
+    dip = 2
+    mil = 3
+  }
+}
+1028.1.1 = {
+  monarch = {
+    name = "?ñ^ aSâ∆Y VywmS"  # Abul Kasim Zohair
+    dynasty = "?ñSÖh)RöN"  # el Ahmerig
+    adm = 1
+    mil = 3
+    dip = 5
+  }
+}
+1041.1.1 = {
+  monarch = {
+    name = "?ñ^ ?ñÊtKQ löâR"  # Abul Awac Maan
+    dynasty = "?ñSÖh)RöN"  # el Ahmerig
+    adm = 2
+    mil = 2
+    dip = 4
+  }
+}
+1051.1.1 = {
+  monarch = {
+    name = "FzUÿû∑V FzTX^∆Y"  # Muhammand al Mutasim
+    dynasty = "?ñSÖh)RöN"  # el Ahmerig
+    adm = 3
+    mil = 1
+    dip = 4
+  }
+}
+1087.1.1 = {
+  monarch = {
+    name = "åÇ»T»è∑V LN+Ræè…b ?ñ^ ÖhSN ONb æèLN…b"  # Ahmed Ubaidallah Abu Merwan Izza ed Dawlah
+    dynasty = "?ñSÖh)RöN"  # el Ahmerig
+    adm = 2
+    dip = 1
+    mil = 3
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

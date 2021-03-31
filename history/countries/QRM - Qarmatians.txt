@@ -1,0 +1,83 @@
+government = tribal
+add_government_reform = tribal_federation
+mercantilism = 0.1
+technology_group = muslim
+primary_culture = gulf_arabic
+religion = shiite
+capital = 394
+religious_school = ismaili_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+899.1.1 = {
+  monarch = {
+    name = "?–^ iIN·V >³uÔk"  # Abu-Sa'id Jannabi
+    dynasty = "aSSlšyr>m"  # Qarmatian
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+923.1.1 = {
+  monarch = {
+    name = "?–^TX^S >³uÔk"  # Abu-Tahir Al-Jannabi
+    dynasty = "aSSlšyr>m"  # Qarmatian
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+944.1.1 = {
+  monarch = {
+    name = "Œ‚ÈTÈ·V ?–^-TX^S"  # Ahmad Abu Tahir
+    dynasty = "aSSlšyr>m"  # Qarmatian
+    adm = 2
+    dip = 1
+    mil = 3
+  }
+}
+970.1.1 = {
+  monarch = {
+    name = "?–^ aS› („Oê"  # Abul Kassim Sa'id
+    dynasty = "aSSlšyr>m"  # Qarmatian
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+972.1.1 = {
+  monarch = {
+    name = "?–^ Å–“^^ O.ty"  # Abu Yaqub Yousuf
+    dynasty = "aSSlšyr>m"  # Qarmatian
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

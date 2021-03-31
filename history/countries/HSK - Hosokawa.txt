@@ -1,0 +1,603 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+#aristocracy_plutocracy = -5
+#centralization_decentralization = 4
+#innovative_narrowminded = 4
+#mercantilism_freetrade = -5
+mercantilism = 0.1
+#offensive_defensive = -1
+#land_naval = -4
+#quality_quantity = -1
+#serfdom_freesubjects = -5
+primary_culture = japanese
+religion = shinto
+technology_group = early_chinese
+capital = 1021	# Settsu
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1000.1.1 = {
+	set_country_flag = daimyo
+}
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1330.1.1 = {
+  monarch = {
+    name = "∆u›TåTl"  # Kazuuji
+    #dynasty = "∆u›T"  # Hosokawa
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1342.10.13 = {
+  monarch = {
+    name = "∆u›Tnl"  # Kiyouji
+    #dynasty = "∆u›T"  # Hosokawa
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1362.1.1 = {
+  monarch = {
+    name = "∆u›TVçKN"  # Yoriyuki
+    #dynasty = "∆u›T"  # Hosokawa
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+1362.1.1 = {
+  heir = {
+    name = "∆u›TVçCQ"  # Yorimoto
+    monarch_name = "∆u›TVçCQ"  # Yorimoto
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1343.1.1
+    death_date = 1397.6.2
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1392.3.25 = {
+  monarch = {
+    name = "∆u›TVçCQ"  # Yorimoto
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1343.1.1
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1392.3.25 = {
+  heir = {
+    name = "∆u›T·nCQ"  # Mitsumoto
+    monarch_name = "∆u›T·nCQ"  # Mitsumoto
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1378.1.1
+    death_date = 1426.11.15
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1397.6.2 = {
+  monarch = {
+    name = "∆u›T·nCQ"  # Mitsumoto
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1378.1.1
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1399.1.1 = {
+  heir = {
+    name = "∆u›TcCQ"  # Mochimoto
+    monarch_name = "∆u›TcCQ"  # Mochimoto
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1399.1.1
+    death_date = 1429.8.14
+    claim = 90
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1426.11.15 = {
+  monarch = {
+    name = "∆u›TcCQ"  # Mochimoto
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1399.1.1
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1429.8.14 = {
+  monarch = {
+    name = "∆u›TcKN"  # Mochiyuki
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1399.1.1
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1430.1.1 = {
+  heir = {
+    name = "∆u›T‹wCQ"  # Katsumoto
+    monarch_name = "∆u›T‹wCQ"  # Katsumoto
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1430.1.1
+    death_date = 1473.6.6
+    claim = 90
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+1442.9.8 = {
+  monarch = {
+    name = "∆u›T‹wCQ"  # Katsumoto
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1430.1.1
+    adm = 3
+    dip = 4
+    mil = 3
+  }
+}
+1466.1.1 = {
+  heir = {
+    name = "∆u›T?eCQ"  # Masamoto
+    monarch_name = "∆u›T?eCQ"  # Masamoto
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1466.1.1
+    death_date = 1507.8.1
+    claim = 90
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1473.11.15 = {
+  monarch = {
+    name = "∆u›T?eCQ"  # Masamoto
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1466.1.1
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = infertile_personality
+}
+1489.1.1 = {
+  heir = {
+    name = "∆u›TÑoKN"  # Sumiyuki
+    monarch_name = "∆u›TÑoKN"  # Sumiyuki
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1489.1.1
+    death_date = 1507.9.7
+    claim = 60
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+
+1493.1.1 = {
+	set_country_flag = marionett_master
+}
+
+1503.5.1 = {
+  heir = {
+    name = "∆u›TÑoCQ"  # Sumimoto
+    monarch_name = "∆u›TÑoCQ"  # Sumimoto
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1489.1.1
+    death_date = 1520.6.24
+    claim = 70
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1507.8.1 = {
+  monarch = {
+    name = "∆u›TÑoKN"  # Sumiyuki
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1399.1.1
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1507.9.7 = {
+  monarch = {
+    name = "∆u›TÑoCQ"  # Sumitomo
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1489.1.1
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1514.1.1 = {
+  heir = {
+    name = "∆u›TtfCQ"  # Harumoto
+    monarch_name = "∆u›TtfCQ"  # Harumoto
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1514.1.1
+    death_date = 1563.3.24
+    claim = 80
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1520.6.24 = {
+  monarch = {
+    name = "∆u›Tÿö˝V"  # Takakuni
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1484.1.1
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1531.7.21 = {
+  monarch = {
+    name = "∆u›TtfCQ"  # Harumoto
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1514.1.1
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1548.1.1 = {
+  heir = {
+    name = "∆u›T-fCQ"  # Akimoto
+    monarch_name = "∆u›T-fCQ"  # Akimoto
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1548.1.1
+    death_date = 1592.1.1
+    claim = 70
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+
+1549.7.18 = {
+	clr_country_flag = marionett_master
+}
+
+1549.6.24 = {
+  monarch = {
+    name = "∆u›TïÜ^"  # Nagayoshi
+    dynasty = "	NãY"  # Miyoshi
+    adm = 5
+    dip = 5
+    mil = 4
+  }
+}
+
+1563.8.1 = {
+  heir = {
+    name = "∆u›TINÁu"  # Yoshitsugu
+    monarch_name = "∆u›TINÁu"  # Yoshitsugu
+    dynasty = "	NãY"  # Miyoshi
+    birth_date = 1549.1.1
+    death_date = 1573.12.10
+    claim = 70
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+
+1564.8.10 = {
+  monarch = {
+    name = "∆u›TINÁu"  # Yoshitsugu
+    dynasty = "	NãY"  # Miyoshi
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+
+1573.12.11 = {
+  monarch = {
+    name = "∆u›T-fCQ"  # Akimoto
+    #dynasty = "∆u›T"  # Hosokawa
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1575.1.1 = {
+  capital = 1019
+}
+1582.7.2 = {
+  monarch = {
+    name = "∆u›T‰ÖkR"  # Fujitaka
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1534.6.3
+    adm = 4
+    dip = 5
+    mil = 2
+  }
+}
+1582.7.2 = {
+  heir = {
+    name = "∆u›T‡VtQ"  # Tadaoki
+    monarch_name = "∆u›T‡VtQ"  # Tadaoki
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1563.11.28
+    death_date = 1646.1.18
+    claim = 90
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+1582.7.2 = {
+	capital = 1831 # Tanba
+}
+
+1583.1.1 = {
+  monarch = {
+    name = "∆u›T‡VtQ"  # Tadaoki
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1563.11.28
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+1586.12.21 = {
+  heir = {
+    name = "∆u›T‡V)R"  # Tadatoshi
+    monarch_name = "∆u›T‡V)R"  # Tadatoshi
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1586.12.21
+    death_date = 1641.4.26
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+
+1632.1.1 = {
+  capital = 1014
+  monarch = {
+    name = "∆u›T‡V)R"  # Tadatoshi
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1586.12.21
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1632.1.1 = {
+  heir = {
+    name = "∆u›TIQS"  # Mitsunao
+    monarch_name = "∆u›TIQS"  # Mitsunao
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1619.10.26
+    death_date = 1650.1.28
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1636.5.15 = { technology_group = old_estern_asian }
+1641.4.26 = {
+  monarch = {
+    name = "∆u›TIQS"  # Mitsunao
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1619.10.26
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1643.2.26 = {
+  heir = {
+    name = "∆u›T≤u)R"  # Tsunatoshi
+    monarch_name = "∆u›T≤u)R"  # Tsunatoshi
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1643.2.26
+    death_date = 1714.12.18
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1650.1.28 = {
+  monarch = {
+    name = "∆u›T≤u)R"  # Tsunatoshi
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1643.2.26
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1676.12.24 = {
+  heir = {
+    name = "∆u›T±R™u"  # Nobunori
+    monarch_name = "∆u›T±R™u"  # Nobunori
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1676.12.24
+    death_date = 1732.8.16
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1712.1.1 = {
+  monarch = {
+    name = "∆u›T±R™u"  # Nobunori
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1676.12.24
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1716.6.16 = {
+  heir = {
+    name = "∆u›TóRkR"  # Munetaka
+    monarch_name = "∆u›TóRkR"  # Munetaka
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1716.6.16
+    death_date = 1747.9.19
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1718.1.1 = {
+  capital = 1014
+}
+1732.8.16 = {
+  monarch = {
+    name = "∆u›TóRkR"  # Munetaka
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1716.6.16
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1747.9.19 = {
+  monarch = {
+    name = "∆u›TÕë2ç"  # Shigetaka
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1721.1.23
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1758.5.31 = {
+  heir = {
+    name = "∆u›Tªlt^"  # Harutoshi
+    monarch_name = "∆u›Tªlt^"  # Harutoshi
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1758.5.31
+    death_date = 1787.10.26
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+
+1785.11.27 = {
+  monarch = {
+    name = "∆u›Tªlt^"  # Harutoshi
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1758.5.31
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+
+1787.10.26 = {
+  monarch = {
+    name = "∆u›TPüyQ"  # Narishige
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1755.6.5
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+
+1797.2.9 = {
+  heir = {
+    name = "∆u›TPüh"  # Naritatsu
+    monarch_name = "∆u›TPüh"  # Naritatsu
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1797.2.9
+    death_date = 1826.3.20
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+
+1804.10.19 = {
+  heir = {
+    name = "∆u›TPü≤b"  # Narimori
+    monarch_name = "∆u›TPü≤b"  # Narimori
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1804.10.19
+    death_date = 1860.6.6
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+
+1810.11.10 = {
+  monarch = {
+    name = "∆u›TPüh"  # Naritatsu
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1797.2.9
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+
+1826.3.20 = {
+  monarch = {
+    name = "∆u›TPü≤b"  # Narimori
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1804.10.19
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1835.7.23 = {
+  heir = {
+    name = "∆u›Tˆó¶ê"  # Yoshikuni
+    monarch_name = "∆u›Tˆó¶ê"  # Yoshikuni
+    #dynasty = "∆u›T"  # Hosokawa
+    birth_date = 1835.7.23
+    death_date = 1876.10.23
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+
+1949.10.1 = { technology_group = modern_chinese }

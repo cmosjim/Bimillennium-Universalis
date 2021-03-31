@@ -1,0 +1,120 @@
+government = monarchy
+add_government_reform = autocracy_reform
+technology_group = muslim
+religion = sunni
+primary_culture = tunisian
+capital = 354
+religious_school = maliki_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1951.12.24 = {
+  monarch = {
+    name = "O·VÌ‘¯e  I"  # Idris I
+    dynasty = "^XªR‰"  # Senussi
+    birth_date = 1889.3.2
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+1969.9.1 = {
+  government = republic
+  add_government_reform = revolutionary_republic_normal_reform
+  monarch = {
+    name = "Fz?–ÈS aSNbòƒ"  # Muammar Gaddafi
+    birth_date = 1940.1.1
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+2011.3.5 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+  government_rank = 2
+  monarch = {
+    name = "Fz¯eTXÕl ?–jSjgÒR >)RÒR"  # Mustafa Abdul Jalil
+    birth_date = 1952.1.1
+    adm = 5
+    dip = 2
+    mil = 2
+  }
+}
+2012.8.8 = {
+  monarch = {
+    name = "FzUØ·V ?–Ì‘ („)RÆY"  # Mohammed Ali Salim
+    birth_date = 1935.1.1
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+2012.8.9 = {
+  monarch = {
+    name = "FzUØ·V lš>Ì‘šN+Y"  # Mohammed Magariaf
+    birth_date = 1940.1.1
+    adm = 4
+    dip = 4
+    mil = 1
+  }
+}
+2013.5.28 = {
+  monarch = {
+    name = "	TLN›s ?–›s·V ?–Ğc R"  # Giuma Ahmed Atigha
+    birth_date = 1950.1.1
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+2013.6.25 = {
+  monarch = {
+    name = "ªRÌ‘ ?–^ ikl"  # Nouri Abusahmain
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+2014.8.5 = {
+  monarch = {
+    name = "?–úWÉb („)Rk O(„"  # Aguila Saleh Issa
+    birth_date = 1944.1.1
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}

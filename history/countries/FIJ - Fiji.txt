@@ -1,0 +1,167 @@
+government = republic
+add_government_reform = oligarchy_reform
+mercantilism = 0.1
+technology_group = western
+primary_culture = polynesian
+religion = protestant
+capital = 1242
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1920.1.1 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = universal_suffrage_reform
+  add_government_reform = reinforce_republican_values_reform
+  add_government_reform = multi_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = abolish_presidency
+  set_legacy_government = parliamentary_republic
+}
+1970.10.10 = {
+  monarch = {
+    name = "aSs|^X^X lšÉb"  # Kamisese Mara
+    birth_date = 1929.11.8
+    adm = 5
+    dip = 2
+    mil = 4
+    religion = protestant
+  }
+}
+1987.4.13 = {
+  monarch = {
+    name = "‚„«ƒ‰ ôTN·VÉb"  # Timoci Bavadra
+    birth_date = 1934.9.22
+    adm = 3
+    dip = 2
+    mil = 2
+    religion = protestant
+  }
+}
+1987.10.7 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+  monarch = {
+    name = "‰‚„æ—<S pQ^aS"  # Sitiveni Rabuka
+    birth_date = 1948.9.13
+    adm = 3
+    dip = 3
+    mil = 4
+    religion = protestant
+  }
+}
+1987.12.5 = {
+  monarch = {
+    name = "iO³ušN aS³ufWôTþV  R<S³R"  # Penaia Ganilau
+    birth_date = 1918.7.28
+    adm = 4
+    dip = 4
+    mil = 3
+    religion = protestant
+  }
+}
+1993.12.16 = {
+  monarch = {
+    name = "aSs|^X^X lšÉb"  # Kamisese Mara
+    birth_date = 1929.11.8
+    adm = 5
+    dip = 2
+    mil = 4
+    religion = protestant
+  }
+}
+2000.5.29 = {
+  monarch = {
+    name = "VpQKQ ÆYÜb<SlšÉblš"  # Frank Bainimarama
+    birth_date = 1954.4.27
+    adm = 2
+    dip = 3
+    mil = 4
+    religion = protestant
+  }
+}
+2000.7.13 = {
+  monarch = {
+    name = "¦umtÕl OmOm"  # Josefa Iloilo
+    birth_date = 1920.12.29
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = protestant
+  }
+}
+2006.12.5 = {
+  monarch = {
+    name = "VpQKQ ÆYÜb<SlšÉblš"  # Frank Bainimarama
+    birth_date = 1954.4.27
+    adm = 2
+    dip = 3
+    mil = 4
+    religion = protestant
+  }
+}
+2007.1.4 = {
+  monarch = {
+    name = "¦umtÕl OmOm"  # Josefa Iloilo
+    birth_date = 1920.12.29
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = protestant
+  }
+}
+2009.7.30 = {
+  monarch = {
+    name = "ÃWiO)R HYÉb‚„w"  # Epeli Nailatikau
+    birth_date = 1941.7.5
+    adm = 3
+    dip = 4
+    mil = 1
+    religion = protestant
+  }
+}
+2015.11.12 = {
+  monarch = {
+    name = "TN»l TRWyr"  # George Konrote
+    birth_date = 1947.12.26
+    adm = 5
+    dip = 4
+    mil = 2
+    religion = protestant
+  }
+}

@@ -1,0 +1,108 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = chihan
+capital = 1816
+
+#ukR‹sRo‚ÿ29t^37t^(WMO
+#u‚‚‹sR)hÿ43t^81t^(WMO
+#uw˜‹sRFUÿ81t^104t^(WMO
+#uV—‹sRRÿ104t^116t^(WMO
+#uà`‹sRr^ÿ116t^164t^(WMO
+#u`‹sRkŒÿ164t^ÿt^(WMO
+#u.s‹sRfÿÿt^211t^(WMO
+#u‹sRêsÿ211t^çuMOÿ213t^9eSZSu–‹s
+
+29.1.1 = {
+	monarch = {
+		name = "Ro‚"
+		#dynasty = " "
+		
+		adm = 5
+		dip = 4
+		mil = 6
+   
+	}
+}
+
+37.1.1 = {
+	monarch = {
+		name = "R)h"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+81.1.1 = {
+	monarch = {
+		name = "RFU"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+104.1.1 = {
+	monarch = {
+		name = "RR"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+116.1.1 = {
+	monarch = {
+		name = "Rr^"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+164.1.1 = {
+	monarch = {
+		name = "RkŒ"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+180.1.1 = {
+	monarch = {
+		name = "Rf"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = { government = modern_chinese_warlord add_government_reform = modern_chinese_warlord_reform religion = liberalism }
+1949.10.1 = { technology_group = modern_chinese }

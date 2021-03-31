@@ -1,0 +1,34 @@
+#1052 - Stanovoy
+
+culture = yakut
+religion = shamanist
+capital = "Stanovoy"
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+native_size = 30
+native_ferocity = 1
+native_hostileness = 5
+1251.1.1 = { owner = MGE controller = MGE add_core = MGE }
+1260.1.1 = { owner = BE2 controller = BE2 add_core = BE2 remove_core = MGE }
+1273.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1389.1.1 = { owner = BE2 controller = BE2 add_core = BE2 remove_core = YUA }
+1643.1.1 = { discovered_by = RUS } # Vasily Poyarkov
+1647.1.1 = {	owner = RUS
+		controller = RUS
+	   	religion = orthodox
+	   	culture = russian
+		
+	   } # Pyotr Beketov
+1678.1.1 = { add_core = RUS }
+1700.1.1 = { citysize = 500 trade_goods = fur }
+1800.1.1 = { is_city = yes }
+
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1975.1.1 = { capital = "Neryungri" }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+
+
+

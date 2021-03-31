@@ -1,0 +1,87 @@
+#711 - Qarqan
+
+latent_trade_goods = {
+	coal
+}
+
+owner = XIY
+controller = XIY
+add_core = XIY
+culture = tocharian
+religion = mahayana
+capital = "Qarqan"
+trade_goods = wool
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+is_city = yes
+add_core = HOT
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = western_nomad_group
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+16.1.1 = { owner = QM2 controller = QM2 add_core = QM2 }
+74.1.1 = { owner = XIY controller = XIY }
+76.1.1 = { owner = QM2 controller = QM2 }
+83.1.1 = { owner = XIY controller = XIY }
+105.1.1 = { owner = QM2 controller = QM2 }
+125.1.1 = { owner = XI1 controller = XI1 add_core = XI1 remove_core = XIY }
+184.1.1 = { owner = QM2 controller = QM2 add_core = QM2  remove_core = XI1 }
+221.1.1 = {  owner = LO1 controller = LO1  add_core = LO1 remove_core = QM2 }
+345.1.1 = { owner = QN1 controller = QN1 add_core = QN1 remove_core = LO1 }
+376.1.1 = { owner = LO1 controller = LO1 add_core = LO1 remove_core = QN1 }
+407.1.1 = { owner = LNG controller = LNG add_core = LNG remove_core = LO1 }
+420.1.1 = { owner = LO1 controller = LO1 remove_core = LNG }
+436.1.1 = { owner = ROU controller = ROU add_core = ROU }
+442.1.1 = { owner = BE1 controller = BE1 add_core = BE1 remove_core = ROU }
+445.1.1 = { owner = LO1 controller = LO1 add_core = LO1 remove_core = BE1 }
+448.1.1 = { owner = NWE controller = NWE add_core = NWE remove_core = LO1 }
+470.1.1 = { owner = ROU controller = ROU add_core = ROU remove_core = NWE }
+491.1.1 = { owner = DLN controller = DLN add_core = DLN remove_core = ROU }
+498.1.1 = { owner = HEP controller = HEP add_core = HEP remove_core = DLN }
+555.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = HEP }
+583.1.1 = { owner = WGO controller = WGO add_core = WGO remove_core = GOK }
+648.1.1 = { owner = AN4 controller = AN4 add_core = AN4 remove_core = WGO }
+670.1.1 = { owner = TO1 controller = TO1 add_core = TO1 remove_core = AN4 }
+673.1.1 = { owner = AN4 controller = AN4 add_core = AN4 remove_core = TO1 }
+687.1.1 = { owner = TO1 controller = TO1 add_core = TO1 remove_core = AN4 }
+692.1.1 = { owner = AN4 controller = AN4 add_core = AN4 remove_core = TO1 }
+720.1.1 = { culture = uyghur }765.1.1 = { religion = manichaeism }
+797.1.1 = { owner = TO1 controller = TO1 add_core = TO1 remove_core = AN4 }
+866.1.1 = { owner = AN1 controller = AN1 add_core = AN1 remove_core = TO1 }
+930.1.1 = { owner = GA2 controller = GA2 add_core = GA2 remove_core = AN1 }
+1133.1.1 = { owner = LIO controller = LIO add_core = LIO remove_core = GA2 }
+1134.1.1 = { owner = KKT controller = KKT add_core = KKT remove_core = LIO }
+1209.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = KKT }
+1260.5.5 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1296.1.1 = { owner = WK1 controller = WK1 add_core = WK1 remove_core = YUA }
+1310.1.1 = { owner = CHG controller = CHG add_core = CHG remove_core = WK1 }
+1347.1.1 = { owner = DC1 controller = DC1 add_core = DC1 remove_core = CHG }
+1487.1.1 = {  owner = DU1 controller = DU1 add_core = DU1 remove_core = DC1 }
+1514.1.1 = { owner = YQ1 controller = YQ1 add_core = YQ1 remove_core = DU1 }
+1514.1.1 = { religion = sunni }
+1680.1.1 = { owner = ZUN controller = ZUN add_core = ZUN remove_core = YQ1 }
+1693.1.1 = { owner = YQ1 controller = YQ1 add_core = YQ1 remove_core = ZUN }
+1703.1.1 = { owner = ZUN controller = ZUN add_core = ZUN remove_core = YQ1 } 
+1755.1.1 = { owner = DS1 controller = DS1 add_core = DS1 remove_core = ZUN } 
+1759.1.1 = { owner = QNG controller = QNG add_core = QNG remove_core = DS1 }  # Part of the Manchu empire
+1850.1.1 = { capital = "Qiemo" }
+1850.1.2 = { remove_core = ZUN }
+1870.1.1 = { owner = YE1 controller = YE1 add_core = YE1 remove_core = QNG }
+1877.1.1 = { owner = QNG controller = QNG add_core = QNG remove_core = YE1 } # Part of the Manchu empire
+1890.1.1 = { discovered_by = western }
+1912.2.12 = { owner = BNN controller = BNN add_core = BNN remove_core = QNG }
+1917.7.6 = { owner = JS1 controller = JS1 add_core = JS1 remove_core = BNN }
+1920.1.1 = { trade_goods = coal }
+1944.9.11 = { owner = ROC controller = ROC add_core = ROC remove_core = JS1 }
+1940.1.1 = {  discovered_by = eastern
+		discovered_by = muslim
+		discovered_by = ottoman
+		discovered_by = asian
+	     }
+1949.10.1 = { owner = CHN controller = CHN add_core = CHN remove_core = ROC }

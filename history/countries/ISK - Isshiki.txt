@@ -1,0 +1,254 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+primary_culture = japanese
+religion = shinto
+technology_group = early_chinese
+capital = 4315	# Tango
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1330.3.7 = {
+  monarch = {
+    name = "Nr‚ƒl"  # Noriuji
+   # dynasty = "Nr‚"  # Isshiki
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1340.1.1 = {
+  heir = {
+    name = "Nr‚-fR"  # Akinori
+    monarch_name = "Nr‚-fR"  # Akinori
+   # dynasty = "Nr‚"  # Issiki
+    birth_date = 1340.1.1
+    death_date = 1406.6.22
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1369.3.26 = {
+  monarch = {
+    name = "Nr‚-fR"  # Akinori
+   # dynasty = "Nr‚"  # Isshiki
+    death_date = 1406.6.22
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1369.3.26 = {
+  heir = {
+    name = "Nr‚ánƒ"  # Mitsunori
+    monarch_name = "Nr‚ánƒ"  # Mitsunori
+   # dynasty = "Nr‚"  # Issiki
+    birth_date = 1368.1.1
+    death_date = 1409.1.25
+    claim = 90
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1406.6.22 = {
+  monarch = {
+    name = "Nr‚ánƒ"  # Mitsunori
+   # dynasty = "Nr‚"  # Isshiki
+    birth_date = 1368.1.1
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1406.6.1 = {
+  heir = {
+    name = "Nr‚IN="  # Yoshitsura
+    monarch_name = "Nr‚IN="  # Yoshitsura
+   # dynasty = "Nr‚"  # Issiki
+    birth_date = 1400.1.1
+    death_date = 1440.6.14
+    claim = 90
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1409.1.25 = {
+  monarch = {
+    name = "Nr‚IN="  # Yoshitsura
+   # dynasty = "Nr‚"  # Issiki
+    birth_date = 1400.1.1
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1420.1.1 = {
+  heir = {
+    name = "Nr‚INôv"  # Yoshinao
+    monarch_name = "Nr‚INôv"  # Yoshinao
+   # dynasty = "Nr‚"  # Issiki
+    birth_date = 1420.1.1
+    death_date = 1500.1.1
+    claim = 90
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1440.5.15 = {
+  monarch = {
+    name = "Nr‚Ye²N"  # Norichika
+   # dynasty = "Nr‚"  # Issiki
+    birth_date = 1419.1.1
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = greedy_personality
+}
+1451.12.21 = {
+  monarch = {
+    name = "Nr‚INôv"  # Yoshinao
+   # dynasty = "Nr‚"  # Issiki
+    birth_date = 1420.1.1
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1466.1.1 = {
+  heir = {
+    name = "Nr‚IN%f"  # Yoshiharu
+    monarch_name = "Nr‚IN%f"  # Yoshiharu
+   # dynasty = "Nr‚"  # Issiki
+    birth_date = 1466.1.1
+    death_date = 1484.9.23
+    claim = 90
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1474.1.1 = {
+  monarch = {
+    name = "Nr‚IN%f"  # Yoshiharu
+   # dynasty = "Nr‚"  # Issiki
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1474.1.1 = {
+  heir = {
+    name = "Nr‚INÀy"  # Yoshihide
+    monarch_name = "Nr‚INÀy"  # Yoshihide
+   # dynasty = "Nr‚"  # Issiki
+    birth_date = 1468.1.1
+    death_date = 1498.6.18
+    claim = 90
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1484.9.23 = {
+  monarch = {
+    name = "Nr‚INÀy"  # Yoshihide
+   # dynasty = "Nr‚"  # Issiki
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1498.6.18 = {
+  monarch = {
+    name = "Nr‚IN	g"  # Yoshiari
+   # dynasty = "Nr‚"  # Issiki
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1505.1.1 = {
+  heir = {
+    name = "Nr‚INn"  # Yoshikiyo
+    monarch_name = "Nr‚INn"  # Yoshikiyo
+   # dynasty = "Nr‚"  # Issiki
+    birth_date = 1505.1.1
+    death_date = 1540.1.11
+    claim = 90
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1510.1.1 = {
+  monarch = {
+    name = "Nr‚INn"  # Yoshikiyo
+   # dynasty = "Nr‚"  # Issiki
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1523.1.1 = {
+  heir = {
+    name = "Nr‚INx^"  # Yoshiyuki
+    monarch_name = "Nr‚INx^"  # Yoshiyuki
+   # dynasty = "Nr‚"  # Issiki
+    birth_date = 1523.1.1
+    death_date = 1570.1.1
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1540.1.1 = {
+  monarch = {
+    name = "Nr‚INx^"  # Yoshiyuki
+   # dynasty = "Nr‚"  # Issiki
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1540.1.1 = {
+  heir = {
+    name = "Nr‚INS"  # Yoshimichi
+    monarch_name = "Nr‚INS"  # Yoshimichi
+   # dynasty = "Nr‚"  # Issiki
+    birth_date = 1530.1.1
+    death_date = 1579.1.1
+    claim = 90
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1558.1.1 = {
+  monarch = {
+    name = "Nr‚INS"  # Yoshimichi
+   # dynasty = "Nr‚"  # Issiki
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1636.5.15 = { technology_group = old_estern_asian }
+1949.10.1 = { technology_group = modern_chinese }

@@ -1,0 +1,2522 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+primary_culture = cosmopolitan_french
+culture_group_union = french
+religion = catholic
+technology_group = barbarian
+historical_rival = BUR
+capital = 183
+national_focus = DIP
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+500.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+}
+536.1.1 = {
+  technology_group = western
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+987.7.3 = {
+  monarch = {
+    name = "éN<h I"
+    dynasty = "aSiO"
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+987.7.3 = {
+  heir = {
+    name = "W=Oyr"
+    monarch_name = "W=Oyr II"
+    dynasty = "aSiO"
+    birth_date = 972.3.27
+    death_date = 1031.7.20
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+996.10.24 = {
+  monarch = {
+    name = "W=Oyr II"
+    dynasty = "aSiO"
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+1008.5.4 = {
+  heir = {
+    name = "®N)R"
+    monarch_name = "®N)R I"
+    dynasty = "aSiO"
+    birth_date = 1008.5.4
+    death_date = 1060.8.4
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 2
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1031.7.20 = {
+  monarch = {
+    name = "®N)R I"
+    dynasty = "aSiO"
+    adm = 1
+    dip = 4
+    mil = 2
+  }
+}
+1052.5.23 = {
+  heir = {
+    name = "SÅõR"
+    monarch_name = "SÅõR I"
+    dynasty = "aSiO"
+    birth_date = 1052.5.23
+    death_date = 1108.7.29
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1060.8.4 = {
+  monarch = {
+    name = "SÅõR I"
+    dynasty = "aSiO"
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1081.12.1 = {
+  heir = {
+    name = "ÔçfÎX"
+    monarch_name = "ÔçfÎX VI"
+    dynasty = "aSiO"
+    birth_date = 1081.12.1
+    death_date = 1137.8.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1108.7.29 = {
+  monarch = {
+    name = "ÔçfÎX VI"
+    dynasty = "aSiO"
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1120.1.1 = {
+  heir = {
+    name = "ÔçfÎX"
+    monarch_name = "ÔçfÎX VII"
+    dynasty = "aSiO"
+    birth_date = 1120.1.1
+    death_date = 1180.9.18
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+1137.8.1 = {
+  monarch = {
+    name = "ÔçfÎX VII"
+    dynasty = "aSiO"
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1165.8.21 = {
+  heir = {
+    name = "SÅõR"
+    monarch_name = "SÅõR II"
+    dynasty = "aSiO"
+    birth_date = 1165.8.21
+    death_date = 1223.7.14
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 6
+  }
+}
+1180.9.18 = {
+  monarch = {
+    name = "SÅõR II"
+    dynasty = "aSiO"
+    adm = 5
+    dip = 5
+    mil = 6
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = charismatic_negotiator_personality
+  add_ruler_personality = inspiring_leader_personality 
+}
+1187.9.5 = {
+  heir = {
+    name = "ÔçfÎX"
+    monarch_name = "ÔçfÎX VIII"
+    dynasty = "aSiO"
+    birth_date = 1187.9.5
+    death_date = 1226.11.8
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1223.7.14 = {
+  monarch = {
+    name = "ÔçfÎX VIII"
+    dynasty = "aSiO"
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1223.7.14 = {
+  heir = {
+    name = "ÔçfÎX"
+    monarch_name = "ÔçfÎX IX"
+    dynasty = "aSiO"
+    birth_date = 1214.4.25
+    death_date = 1270.8.25
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+1226.11.8 = {
+  monarch = {
+    name = "ÔçfÎX IX"
+    dynasty = "aSiO"
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+1245.4.30 = {
+  heir = {
+    name = "SÅõR"
+    monarch_name = "SÅõR III"
+    dynasty = "aSiO"
+    birth_date = 1245.4.30
+    death_date = 1285.10.5
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 1
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1270.8.25 = {
+  monarch = {
+    name = "SÅõR III"
+    dynasty = "aSiO"
+    adm = 4
+    dip = 1
+    mil = 1
+  }
+}
+1270.8.25 = {
+  heir = {
+    name = "SÅõR"
+    monarch_name = "SÅõR IV"
+    dynasty = "aSiO"
+    birth_date = 1268.4.1
+    death_date = 1314.11.29
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+1285.10.5 = {
+  monarch = {
+    name = "SÅõR IV"
+    dynasty = "aSiO"
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+1289.10.4 = {
+  heir = {
+    name = "ÔçfÎX"
+    monarch_name = "ÔçfÎX X"
+    dynasty = "aSiO"
+    birth_date = 1289.10.4
+    death_date = 1316.6.5
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 5
+  }
+}
+1314.11.29 = {
+  monarch = {
+    name = "ÔçfÎX X"
+    dynasty = "aSiO"
+    adm = 2
+    dip = 5
+    mil = 5
+  }
+}
+1316.6.5 = {
+  monarch = {
+    name = "ˇDd?eOÆã	ˇ"  # (regency council)
+    regent = yes
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1316.11.15 = {
+  monarch = {
+    name = "¶u I"
+    dynasty = "aSiO"
+    adm = 2
+    dip = 4
+    mil = 1
+  }
+}
+1316.11.20 = {
+  monarch = {
+    name = "SÅõR V"
+    dynasty = "aSiO"
+    adm = 5
+    dip = 3
+    mil = 3
+  }
+}
+1316.11.20 = {
+  heir = {
+    name = "Âgt"
+    monarch_name = "Âgt IV"
+    dynasty = "aSiO"
+    birth_date = 1294.6.19
+    death_date = 1328.2.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1322.1.3 = {
+  monarch = {
+    name = "Âgt IV"
+    dynasty = "aSiO"
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1328.2.1 = {
+  monarch = {
+    name = "SÅõR VI"
+    dynasty = "ÊtbSÊt"
+    adm = 5
+    dip = 2
+    mil = 1
+  }
+}
+1328.2.1 = {
+  heir = {
+    name = "¶u"
+    monarch_name = "¶u II"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1319.4.16
+    death_date = 1364.4.8
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 5
+  }
+}
+1350.8.22 = {
+  monarch = {
+    name = "¶u II"
+    dynasty = "ÊtbSÊt"
+    adm = 1
+    dip = 3
+    mil = 5
+  }
+}
+1350.8.22 = {
+  heir = {
+    name = "Âgt"
+    monarch_name = "Âgt V"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1338.1.21
+    death_date = 1380.9.16
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+1364.4.8 = {
+  monarch = {
+    name = "Âgt V"
+    dynasty = "ÊtbSÊt"
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+ 	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_heir_personality = lawgiver_personality 
+}
+1368.12.3 = {
+  heir = {
+    name = "Âgt"
+    monarch_name = "Âgt VI"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1368.12.3
+    death_date = 1422.10.21
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+1380.9.16 = {
+  monarch = {
+    name = "YS XI"  # YS mQN
+    dynasty = "ÊtbSÊt"
+    birth_date = 1368.12.3
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+1391.12.25 = {
+  leader = {
+    name = "©ã II∑“R»è√W∑^!ïwyr"  # ©ãåNN∑“R»è√W∑^!ïwyr
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1421.6.21
+  }
+}
+1402.1.1 = {
+  leader = {
+    name = "YS∑Íè'?ñS^˜ñ"
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1415.10.25
+  }
+}
+1403.2.22 = {
+  heir = {
+    name = "Âgt"
+    monarch_name = "Âgt VII"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1403.2.22
+    death_date = 1461.7.22
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1418.1.1 = {
+  leader = {
+    name = "åÇÇÑâR∑∑V∑Ùu<SeY“R"
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1443.1.11
+  }
+}
+1422.10.22 = {
+  monarch = {
+    name = "Âgt VII"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1403.2.22
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+  queen = {
+    country_of_origin = PRO
+    name = "õsKN"  # Marie
+    dynasty = "∑V âR9É"  # d'Anjou
+    birth_date = 1404.10.14
+    death_date = 1463.11.29
+    female = yes
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+1423.7.3 = {
+  heir = {
+    name = "ÔçfÎX"
+    monarch_name = "ÔçfÎX XI"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1423.7.3
+    death_date = 1483.8.30
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+  clear_scripted_personalities = yes
+  add_heir_personality = intricate_web_weaver_personality
+  add_ruler_personality = inspiring_leader_personality
+  add_ruler_personality = well_advised_personality
+  add_queen_personality = zealot_personality
+}
+1425.1.1 = {
+  leader = {
+    name = "öNmt"
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 1
+    death_date = 1457.9.23
+  }
+}
+1427.1.1 = {
+  leader = {
+    name = "¶u∑’lØeyrS+Y"
+    type = general
+    fire = 4
+    shock = 3
+    manuever = 3
+    siege = 1
+    death_date = 1468.11.24
+  }
+}
+1429.1.1 = {
+  leader = {
+    name = "	TS∑∑V∑±ÉØe"
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1435.1.1
+  }
+}
+
+#1429.4.29 = {
+#  leader = {
+#    name = "1WsYç∑V"
+#    type = general
+#    fire = 3
+#    shock = 6
+#    manuever = 4
+#    siege = 0
+#    female = yes
+#    death_date = 1430.5.23
+#  }
+#}
+
+1435.1.1 = {
+  leader = {
+    name = "S∑nfåÅ∑Qhyr±ÉO"
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 1
+    death_date = 1461.10.7
+  }
+}
+1439.1.1 = {
+  leader = {
+    name = "¶u^wÉ"
+    type = general
+    fire = 4
+    shock = 4
+    manuever = 1
+    siege = 3
+    death_date = 1463.7.5
+    personality = siege_specialist_personality
+  }
+}
+1455.1.1 = {
+  add_army_professionalism = 0.1
+}
+1461.7.22 = {
+  monarch = {
+    name = "ÔçfÎX XI"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1423.7.3
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+  queen = {
+    country_of_origin = SAV
+    name = "Ymyr"  # Carlotta
+    dynasty = "Íè (ÑOO"  # di Savoia
+    birth_date = 1443.1.1
+    death_date = 1483.12.1
+    female = yes
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = intricate_web_weaver_personality
+  add_ruler_personality = lawgiver_personality
+  add_queen_personality = calm_personality
+}
+1470.6.30 = {
+  heir = {
+    name = "Âgt"
+    monarch_name = "Âgt VIII"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1470.6.30
+    death_date = 1498.4.7
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 6
+  }
+}
+1477.1.6 = {
+  add_accepted_culture = burgundian
+}
+1483.8.30 = {
+  monarch = {
+    name = "Âgt VIII"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1470.6.30
+    adm = 4
+    dip = 2
+    mil = 6
+  }
+  heir = {
+    name = "ÔçfÎX"
+    monarch_name = "ÔçfÎX XII"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1462.6.27
+    death_date = 1515.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+  queen = {
+    country_of_origin = BRI
+    name = "âRÆY"  # Anne
+    dynasty = "∑V ∑V“R"  # de Dreux
+    birth_date = 1477.1.25
+    death_date = 1514.1.9
+    female = yes
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+  clear_scripted_personalities = yes
+  add_queen_personality = fertile_personality
+  add_heir_personality = calm_personality
+}
+1488.7.27 = {
+  leader = {
+    name = "yr´É±É"
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1525.2.24
+  }
+}
+1488.9.10 = {
+  add_accepted_culture = breton
+}
+1495.1.1 = {
+  leader = {
+    name = "≈ñKQ∑∑V∑…b^ÃëØe"
+    type = general
+    fire = 2
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1525.2.24
+  }
+}
+1495.1.1 = {
+  leader = {
+    name = "ÔçfÎX æèSlö<SöNKQ"
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 2
+    siege = 0
+    death_date = 1503.4.28
+  }
+}
+1497.1.1 = {
+  leader = {
+    name = "nf‘∑^˝ê"
+    type = admiral
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1528.8.1
+  }
+}
+1498.4.7 = {
+  monarch = {
+    name = "ÔçfÎX XII"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1462.6.27
+    adm = 2
+    dip = 3
+    mil = 5
+  }
+  heir = {
+    name = "’lpQ0tÊt"
+    monarch_name = "’lpQ0tÊt I"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1494.9.12
+    death_date = 1547.3.31
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 6
+  }
+  queen = {
+    country_of_origin = FRA
+    name = "©ãZ"  # Jeanne
+    dynasty = "∑V ÊtbSÊt"  # de Valois
+    birth_date = 1464.4.23
+    death_date = 1498.12.17
+    female = yes
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+  clear_scripted_personalities = yes
+  add_queen_personality = zealot_personality
+  add_ruler_personality = calm_personality
+  add_ruler_personality = just_personality
+  add_heir_personality = scholar_personality
+}
+1499.1.8 = {
+  queen = {
+    country_of_origin = BRI
+    name = "âRÆY"  # Anne
+    dynasty = "∑V ∑V“R"  # de Dreux
+    birth_date = 1477.1.25
+    death_date = 1514.1.9
+    female = yes
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1509.1.1 = {
+  leader = {
+    name = "Æv√WS∑çöN∑V"
+    type = general
+    fire = 4
+    shock = 4
+    manuever = 4
+    siege = 1
+    death_date = 1524.4.30
+  }
+}
+1511.1.1 = {
+  leader = {
+    name = "†RØeN∑∑VÃR?ñ"
+    type = general
+    fire = 2
+    shock = 4
+    manuever = 3
+    siege = 0
+    death_date = 1512.4.11
+  }
+}
+1515.1.1 = {
+  government = monarchy
+  add_government_reform = autocracy_reform
+}
+1515.1.1 = {
+  leader = {
+    name = "iO∑VW∑≥uÊtW"
+    type = general
+    fire = 3
+    shock = 2
+    manuever = 2
+    siege = 3
+    death_date = 1528.8.28
+  }
+}
+1515.1.1 = {
+  monarch = {
+    name = "’lpQ0tÊt I"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1494.9.12
+    adm = 5
+    dip = 2
+    mil = 6
+  }
+  queen = {
+    country_of_origin = FRA
+    name = "KQ≥R∑V"  # Claude
+    dynasty = "∑V ÊtbSÊt"  # de Valois
+    birth_date = 1499.10.13
+    death_date = 1524.7.20
+    female = yes
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+  clear_scripted_personalities = yes
+  add_queen_personality = fertile_personality
+  add_ruler_personality = scholar_personality
+  add_ruler_personality = expansionist_personality
+}
+1515.9.1 = {
+  leader = {
+    name = "eY„N ∑V ÃRÊt"  # Odet de Foix
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1528.8.15
+  }
+}
+1519.3.31 = {
+  heir = {
+    name = "®N)R"
+    monarch_name = "®N)R II"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1519.3.31
+    death_date = 1559.7.10
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1521.1.1 = {
+  leader = {
+    name = "KQm∑V∑∑V∑móg"
+    type = general
+    fire = 2
+    shock = 4
+    manuever = 2
+    siege = 1
+    death_date = 1550.4.12
+  }
+}
+1522.1.1 = {
+  leader = {
+    name = "	T6wm"
+    type = explorer
+    fire = 1
+    shock = 1
+    manuever = 5
+    siege = 0
+    death_date = 1528.1.1
+  }
+}
+1525.1.1 = {
+  leader = {
+    name = "ÚÉ)Rnf∑∑V∑Âg=Oyr"
+    type = admiral
+    fire = 2
+    shock = 2
+    manuever = 2
+    siege = 0
+    death_date = 1543.6.7
+  }
+}
+1530.7.4 = {
+  queen = {
+    country_of_origin = HAB
+    name = "√W±ÉeY˙ã˜ñ"  # Eleonore
+    dynasty = "ØQ »T^Øe!X"  # von Habsburg
+    birth_date = 1496.11.15
+    death_date = 1558.2.25
+    female = yes
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+  add_queen_personality = zealot_personality
+}
+1534.1.1 = {
+  leader = {
+    name = "≈ñKQ∑aSÇÑöN"
+    type = explorer
+    fire = 2
+    shock = 2
+    manuever = 4
+    siege = 0
+    death_date = 1542.10.1
+  }
+}
+1534.8.15 = {
+  decision = join_the_counter_reformation
+  decision = conventicle_act
+  decision = act_of_uniformity
+}
+1536.1.1 = {
+  leader = {
+    name = "âRÖQôÑ´ÉgâlQ5r"
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1567.1.1
+  }
+}
+1544.1.1 = {
+  leader = {
+    name = "KQm∑V∑âRÖQZS"
+    type = admiral
+    fire = 2
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1552.11.2
+  }
+}
+1547.1.1 = {
+  leader = {
+    name = "†RØe^S∑∑V—y)R<S"
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1562.1.1
+  }
+}
+1547.3.31 = {
+  monarch = {
+    name = "®N)R II"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1519.3.31
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+  heir = {
+    name = "’lpQ0tÊt"
+    monarch_name = "’lpQ0tÊt II"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1544.1.19
+    death_date = 1560.12.5
+    claim = 95
+    adm = 0
+    mil = 1
+    dip = 0
+  }
+  queen = {
+    country_of_origin = LAN
+    name = "aSyr3t"  # Caterina
+    dynasty = "∑V é,rGY"  # de' Medici
+    birth_date = 1519.4.13
+    death_date = 1589.1.9
+    female = yes
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+  clear_scripted_personalities = yes
+  add_queen_personality = cruel_personality
+  add_ruler_personality = lawgiver_personality
+  add_ruler_personality = zealot_personality
+}
+1550.1.1 = {
+  decision = judiciary_act
+  decision = agricultural_cultivation
+}
+1552.1.1 = {
+  leader = {
+    name = "ÔçfÎX I∑∑^∑V"
+    type = general
+    fire = 2
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1562.1.1
+  }
+}
+1552.1.1 = {
+  leader = {
+    name = "’lpQ0tÊt∑÷vØe"
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1563.2.18
+  }
+}
+1553.1.1 = {
+  leader = {
+    name = "i`∑ÙuuÅRi`"
+    type = explorer
+    fire = 3
+    shock = 1
+    manuever = 4
+    siege = 0
+    death_date = 1557.1.1
+  }
+}
+1559.7.10 = {
+  monarch = {
+    name = "’lpQ0tÊt II"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1544.1.19
+    adm = 0
+    dip = 0
+    mil = 1
+  }
+  queen = {
+    country_of_origin = SCO
+    name = "õsKN"  # Mary
+    dynasty = "Øe˛VöNyr"  # Stuart
+    birth_date = 1542.12.8
+    death_date = 1587.2.8
+    female = yes
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+  heir = {
+    name = "Âgt"
+    monarch_name = "Âgt IX"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1550.6.27
+    death_date = 1574.5.30
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+  clear_scripted_personalities = yes
+  add_queen_personality = intricate_web_weaver_personality
+}
+1560.12.5 = {
+  monarch = {
+    name = "Âgt IX"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1550.6.27
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+1560.12.5 = {
+  heir = {
+    name = "®N)R"
+    monarch_name = "®N)R III"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1551.9.19
+    death_date = 1589.8.2
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+1562.1.1 = {
+  leader = {
+    name = "©ã∑ÃëZS"
+    type = conquistador
+    fire = 3
+    shock = 2
+    manuever = 4
+    siege = 0
+    death_date = 1565.10.12
+  }
+}
+1562.1.1 = {
+  set_country_flag = religious_turmoil
+  set_country_flag = religious_intolerance
+}
+1570.11.26 = {
+  queen = {
+    country_of_origin = HAB
+    name = "OKNéÉãv"  # Elisabeth
+    dynasty = "ØQ »T^Øe!X"  # von Habsburg
+    birth_date = 1554.6.5
+    death_date = 1592.1.22
+    female = yes
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+  add_queen_personality = kind_hearted_personality
+}
+1574.5.30 = {
+  monarch = {
+    name = "®N)R III"
+    dynasty = "ÊtbSÊt"
+    birth_date = 1551.9.19
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+  heir = {
+    name = "®N)R"
+    monarch_name = "®N)R IV"
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    birth_date = 1553.12.13
+    death_date = 1610.5.14
+    claim = 95
+    adm = 6
+    dip = 6
+    mil = 6
+    leader = {
+      name = "®N)R IV"
+      type = general
+      fire = 4
+      shock = 4
+      manuever = 2
+      siege = 0
+    }
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = well_advised_personality
+  add_ruler_personality = tolerant_personality
+}
+1575.10.4 = {
+  leader = {
+    name = "®N)R ∑V 	TØe"  # ®N)R de Guise
+    type = general
+    fire = 2
+    shock = 4
+    manuever = 2
+    siege = 1
+    death_date = 1588.12.23
+  }
+}
+1589.8.2 = {
+  monarch = {
+    name = "®N)R IV"
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    birth_date = 1553.12.13
+    adm = 6
+    dip = 6
+    mil = 6
+    leader = {
+      name = "®N)R IV"
+      type = general
+      fire = 4
+      shock = 4
+      manuever = 2
+      siege = 0
+    }
+  }
+}
+1589.8.3 = {
+  leader = {
+    name = "’lpQ0tÊt ∑V ¶êÖQ"  # ’lpQ0tÊt de Bonne
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1626.9.21
+  }
+}
+1589.8.8 = {
+  government = monarchy
+  add_government_reform = autocracy_reform
+}
+1598.4.13 = {
+  clr_country_flag = religious_turmoil
+  clr_country_flag = religious_intolerance
+  decision = enact_edict_de_nantes
+}
+1600.1.1 = {
+  decision = enlist_privateers
+}
+1601.9.27 = {
+  heir = {
+    name = "ÔçfÎX"
+    monarch_name = "ÔçfÎX XIII"
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    birth_date = 1601.9.27
+    death_date = 1643.5.14
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1603.3.15 = {
+  leader = {
+    name = "(Ñ*S ∑V SnfpQ"  # Samuel de Champlain
+    type = conquistador
+    fire = 4
+    shock = 4
+    manuever = 3
+    siege = 0
+    death_date = 1620.1.1
+  }
+}
+1610.5.14 = {
+  monarch = {
+    name = "ÔçfÎX XIII"
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    birth_date = 1601.9.27
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1630.1.1 = {
+  leader = {
+    name = "®N)R ∑V ÇÑ˜ñ≥u"  # Henri de Turenne
+    type = general
+    fire = 5
+    shock = 5
+    manuever = 5
+    siege = 1
+    death_date = 1675.7.27
+  }
+}
+1634.1.1 = {
+  leader = {
+    name = "©ã <S—y±É"  # Jean Nicollet
+    type = conquistador
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1642.11.1
+  }
+}
+1635.1.1 = {
+  leader = {
+    name = "©ã ?ñSíÇ ∑V lö6w"  # Jean Armand de Mail
+    type = admiral
+    fire = 3
+    shock = 4
+    manuever = 3
+    siege = 0
+    death_date = 1646.6.14
+  }
+}
+1635.1.1 = {
+  leader = {
+    name = "®N)R ∑V 0tÍèØe"  # Henri de Sourdis
+    type = admiral
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1641.1.1
+  }
+}
+1635.1.1 = {
+  leader = {
+    name = "®N)R ∑V ?ñSì^S"  # Henri d'Harcourt
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1666.7.25
+  }
+}
+1635.1.1 = {
+  leader = {
+    name = "=O≥u∑V ∑V (ÑKQÓh Oõõs"  # Bernard de Saxe-Weimar
+    type = general
+    fire = 3
+    shock = 4
+    manuever = 3
+    siege = 0
+    death_date = 1639.7.18
+  }
+}
+1635.5.1 = {
+  join_league = protestant
+}
+1638.1.1 = {
+  leader = {
+    name = "©ã-›OW ∑V ^X*S"  # Chevalier Paul
+    type = admiral
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1666.1.1
+  }
+}
+1638.9.5 = {
+  heir = {
+    name = "ÔçfÎX"
+    monarch_name = "ÔçfÎX XIV"
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    birth_date = 1638.9.5
+    death_date = 1715.9.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 6
+  }
+}
+1640.1.1 = {
+  leader = {
+    name = "Ôçf II ∑V TR„N"  # ÔçfÎX II de Cond
+    type = general
+    fire = 4
+    shock = 4
+    manuever = 4
+    siege = 0
+    death_date = 1675.1.1
+  }
+}
+1643.5.14 = {
+  monarch = {
+    name = "ÔçfÎX XIV"
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    birth_date = 1638.9.5
+    adm = 5
+    dip = 5
+    mil = 6
+  }
+  add_army_professionalism = 0.2
+  clear_scripted_personalities = yes
+  add_ruler_personality = lawgiver_personality
+  add_ruler_personality = entrepreneur_personality
+  add_ruler_personality = expansionist_personality
+}
+1643.5.15 = {
+  remove_accepted_culture = burgundian
+  remove_accepted_culture = breton
+}
+1648.10.24 = {
+  leave_league = protestant
+}
+1650.1.1 = {
+  leader = {
+    name = "öN=O…bU∑ÍèÔQ≥u"
+    type = admiral
+    fire = 4
+    shock = 4
+    manuever = 4
+    siege = 0
+    death_date = 1684.12.31
+  }
+}
+1653.1.1 = {
+  leader = {
+    name = "©ã ∑V aSÙTÑ"  # ©ã de aSÙTÑ
+    type = admiral
+    fire = 2
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1693.1.1
+  }
+}
+1654.1.1 = {
+  leader = {
+    name = "∑V.<hWØe)R6wS"  # M. des Groseilliers
+    type = conquistador
+    fire = 3
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1669.1.1
+  }
+}
+1660.1.1 = {
+  leader = {
+    name = "Vg0tÊt ∑V ¨Ç∑V"  # Francois de Vende
+    type = admiral
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1669.6.25
+  }
+}
+1660.6.9 = {
+  queen = {
+    country_of_origin = SPA
+    name = "õsKNöN yråÖéÉ"  # Marq Teresa
+    dynasty = "ØQ »T^Øe!X"  # von Habsburg
+    birth_date = 1639.9.10
+    death_date = 1683.7.30
+    female = yes
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+  add_queen_personality = charismatic_negotiator_personality
+}
+1661.3.9 = {
+  government = monarchy
+  add_government_reform = autocracy_reform
+}
+1665.1.1 = {
+  leader = {
+    name = "∑V ÊtSçS"  # De Valbelle
+    type = admiral
+    fire = 2
+    shock = 3
+    manuever = 2
+    siege = 0
+    death_date = 1690.1.1
+  }
+}
+1667.5.24 = {
+  leader = {
+    name = "Vg0tÊt ∑V bSÓh!X"  # F. de Luxembourg
+    type = general
+    fire = 3
+    shock = 4
+    manuever = 4
+    siege = 1
+    death_date = 1695.1.4
+  }
+}
+1669.1.1 = {
+  leader = {
+    name = "&O∑V …b (Ñ“R"  # Rende La Salle
+    type = conquistador
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1687.3.19
+  }
+}
+1670.1.1 = {
+  leader = {
+    name = "9çÍèWS ∑V ˜ñóg÷v"  # F. de Relingue
+    type = admiral
+    fire = 2
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1704.8.24
+  }
+}
+1672.1.1 = {
+  leader = {
+    name = "Y˛V˜ñ˙ã"  # F. de Chateaurenault
+    type = admiral
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1716.1.1
+  }
+}
+1672.1.1 = {
+  leader = {
+    name = "f^)RôÑ"  # T. C. Amblimont
+    type = admiral
+    fire = 4
+    shock = 4
+    manuever = 2
+    siege = 0
+    death_date = 1694.1.1
+  }
+}
+1672.9.12 = {
+  leader = {
+    name = "Ôçf ∑V Vôüyr≥uKQ"  # ÔçfÎX de Frontenac
+    type = conquistador
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1689.11.28
+  }
+}
+1673.1.1 = {
+  leader = {
+    name = "…b V˜ñØe˙ã"  # H. de La Fresnoe
+    type = conquistador
+    fire = 1
+    shock = 2
+    manuever = 4
+    siege = 0
+    death_date = 1722.3.22
+  }
+}
+1673.5.1 = {
+  leader = {
+    name = "ÔçfÎX TN)Ryr"  # ÔçfÎX Jolliet
+    type = conquistador
+    fire = 2
+    shock = 2
+    manuever = 4
+    siege = 0
+    death_date = 1700.5.1
+  }
+}
+1675.1.1 = {
+  leader = {
+    name = "Vg0tÊt ∑V …bVO…b∑V"  # F. de la La Feuillade
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 2
+    siege = 0
+    death_date = 1691.1.1
+  }
+}
+1675.1.1 = {
+  leader = {
+    name = "Ôçf ∑V ÙuÉl∑ã"  # ÔçfÎX de Vivonne
+    type = admiral
+    fire = 4
+    shock = 4
+    manuever = 2
+    siege = 0
+    death_date = 1688.3.1
+  }
+}
+1675.1.26 = {
+  leader = {
+    name = "?ñpQ ∑V —yÑSyrm!ç"  # Alain de Coetlogpn
+    type = admiral
+    fire = 3
+    shock = 4
+    manuever = 3
+    siege = 0
+    death_date = 1730.6.7
+  }
+}
+1678.1.1 = {
+  leader = {
+    name = "aSs|S ∑V TX…bS"  # Camille de Tallard
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1704.8.13
+  }
+}
+1678.9.1 = {
+  leader = {
+    name = "9N<SS jgÅúØe"  # Daniel Duluth
+    type = conquistador
+    fire = 2
+    shock = 3
+    manuever = 2
+    siege = 0
+    death_date = 1710.2.25
+  }
+}
+1681.1.1 = {
+  leader = {
+    name = "Ôçf ∑V ^+YÑ>r"  # ÔçfÎX de Boufflers
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 1
+    death_date = 1711.8.22
+  }
+}
+1682.5.1 = {
+  decision = move_the_court_to_versailles
+}
+1683.10.9 = {
+  queen = {
+    country_of_origin = FRA
+    name = "Vg0tÊtN"  # Francoise
+    dynasty = "∑V ¸fyrúQ"  # de Maintenon
+    birth_date = 1635.11.26
+    death_date = 1719.4.15
+    female = yes
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+  add_queen_personality = zealot_personality
+}
+1685.10.1 = {
+  decision = revoke_edict_de_nantes
+}
+1688.1.1 = {
+  leader = {
+    name = "Ôçf ∑V ¨Ç∑V"  # ÔçfÎX de Vende
+    type = general
+    fire = 4
+    shock = 4
+    manuever = 5
+    siege = 0
+    death_date = 1712.6.11
+  }
+}
+1689.1.1 = {
+  leader = {
+    name = "∑V ˙ã?ñ6w"  # A.J. de Noailles
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1708.10.2
+  }
+}
+1690.1.1 = {
+  leader = {
+    name = "âRÆY ∑V ˛VSÙuS"  # Anne de Tourville
+    type = admiral
+    fire = 3
+    shock = 5
+    manuever = 4
+    siege = 0
+    death_date = 1697.9.20
+  }
+}
+1701.1.1 = {
+  leader = {
+    name = "Ôçf-öNÜSqS'Y ∑V ‚l¡e"  # L. Alexandre de Bourbon
+    type = admiral
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1718.9.24
+  }
+}
+1701.1.1 = {
+  leader = {
+    name = "KQ≥R∑V ∑V Ùu…bS"  # Claude de Villars
+    type = general
+    fire = 5
+    shock = 5
+    manuever = 4
+    siege = 1
+    death_date = 1734.6.17
+  }
+}
+1701.1.1 = {
+  leader = {
+    name = "©ã ∑V ÅúÙuS"  # ©ã de Rouville
+    type = conquistador
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1713.1.1
+  }
+}
+1703.1.1 = {
+  leader = {
+    name = "9çÍèWS ∑V löSQh"  # Ferdinand de Marsin
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 2
+    siege = 0
+    death_date = 1706.9.7
+  }
+}
+1710.2.15 = {
+  heir = {
+    name = "ÔçfÎX"
+    monarch_name = "ÔçfÎX XV"
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    birth_date = 1710.2.15
+    death_date = 1774.5.10
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1711.9.21 = {
+  leader = {
+    name = "“RÖQ Íè÷v yrÅúâR"  # Ren Dugay-Trouin
+    type = admiral
+    fire = 3
+    shock = 4
+    manuever = 5
+    siege = 0
+    death_date = 1736.9.27
+  }
+}
+1714.1.1 = {
+  leader = {
+    name = "√WÇÑâR ∑V =OSôÑyr"  # Etienne de Bourgmont
+    type = conquistador
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1724.1.1
+  }
+}
+1715.9.1 = {
+  monarch = {
+    name = "ÔçfÎX XV"
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    birth_date = 1710.2.15
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = architectural_visionary_personality
+  add_ruler_personality = calm_personality
+  add_ruler_personality = cruel_personality
+}
+1725.9.4 = {
+  queen = {
+    country_of_origin = PLC
+    name = "õsKNöN"  # Maria
+    dynasty = "±É¿N4tØe˙W"  # Leszczynski
+    birth_date = 1703.6.23
+    death_date = 1768.6.24
+    female = yes
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+  add_queen_personality = calm_personality
+}
+1727.7.21 = {
+  leader = {
+    name = "Æv√WS-=O™RÊt jglö"  # Pierre Benoij Dumas
+    type = conquistador
+    fire = 1
+    shock = 1
+    manuever = 5
+    siege = 0
+    death_date = 1735.7.11
+  }
+}
+1731.1.1 = {
+  leader = {
+    name = "ﬁò)Rfm ∑V Él∑V“RO"  # P. de la Valendrye
+    type = conquistador
+    fire = 2
+    shock = 2
+    manuever = 4
+    siege = 0
+    death_date = 1749.12.5
+  }
+}
+1733.1.1 = {
+  leader = {
+    name = "çSõS"  # C.L. de Belle-Isle
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 2
+    siege = 1
+    death_date = 1757.1.1
+  }
+}
+1734.8.1 = {
+  leader = {
+    name = "´ÉÃëØe ∑V (ÑKQÓh"  # Maurice de Saxe
+    type = general
+    fire = 4
+    shock = 5
+    manuever = 4
+    siege = 1
+    death_date = 1750.12.30
+  }
+}
+1740.5.1 = {
+  leader = {
+    name = "Ôçf ∑V TRTX∑V"  # ÔçfÎX de Contades
+    type = general
+    fire = 1
+    shock = 2
+    manuever = 2
+    siege = 0
+    death_date = 1759.1.1
+  }
+}
+1741.1.1 = {
+  leader = {
+    name = "ÔçfN Vg0tÊtN ∑V ‚l¡e"  # L. F. de Bourbon
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1747.1.1
+  }
+}
+1745.1.1 = {
+  leader = {
+    name = "Ôçf ∑V ŒûÂwYu"  # ÔçfÎX de Richelieu
+    type = general
+    fire = 4
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1758.1.1
+  }
+}
+1748.1.1 = {
+  leader = {
+    name = "Âgt ∑V œÇ‘kØe"  # Âgt de Soubise
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1774.1.1
+  }
+}
+1748.1.1 = {
+  leader = {
+    name = "√WlöÀu√WS ∑V åÇ	T8l"  # Emmanuel d'Aiguillon
+    type = general
+    fire = 2
+    shock = 3
+    manuever = 5
+    siege = 0
+    death_date = 1753.1.1
+  }
+}
+1748.1.1 = {
+  leader = {
+    name = "Vg0tÊt ∑V 0åVò"  # Francois de Chevert
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1758.1.1
+  }
+}
+1748.1.1 = {
+  leader = {
+    name = "XblöØe ∑V …b)R"  # Thomas de Lally
+    type = general
+    fire = 3
+    shock = 4
+    manuever = 4
+    siege = 0
+    death_date = 1761.1.16
+  }
+}
+1748.1.1 = {
+  leader = {
+    name = "ÙuKQXb ∑V ^WO"  # Victor de Broglie
+    type = general
+    fire = 4
+    shock = 4
+    manuever = 4
+    siege = 0
+    death_date = 1761.1.1
+  }
+}
+1750.1.1 = {
+  set_country_flag = haiti_nationalism
+}
+1750.1.1 = {
+  leader = {
+    name = "©ã-?ñSíÇ ÍèØew"  # ©ã Armand Dieskau
+    type = general
+    fire = 3
+    shock = 4
+    manuever = 3
+    siege = 0
+    death_date = 1755.1.1
+  }
+}
+1750.2.7 = {
+  leader = {
+    name = "∑V…b …b†R)R0t<S√W"  # de la Galissonibîe
+    type = admiral
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1756.10.26
+  }
+}
+1751.1.1 = {
+  leader = {
+    name = "√WlöÀu√WS ∑V …b ´Éyr"  # Emmanuel de la Motte
+    type = admiral
+    fire = 3
+    shock = 2
+    manuever = 4
+    siege = 0
+    death_date = 1764.10.23
+  }
+}
+1754.8.23 = {
+  heir = {
+    name = "ÔçfÎX"
+    monarch_name = "ÔçfÎX XVI"
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    birth_date = 1754.8.23
+    death_date = 1793.1.21
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 4
+  }
+}
+1756.1.1 = {
+  leader = {
+    name = "Ôçf ∑V ôÑyraS∆Y"  # ÔçfÎX de Montcalm
+    type = general
+    fire = 4
+    shock = 6
+    manuever = 3
+    siege = 0
+    death_date = 1759.9.14
+  }
+}
+1766.11.15 = {
+  leader = {
+    name = "Ôçf ∑V ^r^ÙuS"  # L. de Bougainville
+    type = explorer
+    fire = 4
+    shock = 4
+    manuever = 4
+    siege = 0
+    death_date = 1769.3.16
+  }
+}
+1769.1.1 = {
+  leader = {
+    name = "löÃë¡-ÍèV˜ñ≥u"  # N. Marion-Dufresne
+    type = explorer
+    fire = 1
+    shock = 1
+    manuever = 4
+    siege = 0
+    death_date = 1772.7.12
+  }
+}
+1772.1.1 = {
+  leader = {
+    name = "O+Y ∑V ÔQS÷vg"  # Yves de Kergu¯ïen
+    type = explorer
+    fire = 1
+    shock = 1
+    manuever = 4
+    siege = 0
+    death_date = 1775.1.1
+  }
+}
+1774.1.1 = {
+  leader = {
+    name = "V“RÃëeY ∑V g<h“R"  # Fleuriot de Langle
+    type = explorer
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1788.1.1
+  }
+}
+1774.5.10 = {
+  monarch = {
+    name = "ÔçfÎX XVI"
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    birth_date = 1754.8.23
+    adm = 4
+    dip = 0
+    mil = 4
+  }
+  queen = {
+    country_of_origin = HAB
+    name = "õsKN âRXbÊt<Syr"  # Maria Antonia
+    dynasty = "ØQ »T^Øe!X"  # von Habsburg
+    birth_date = 1753.9.2
+    death_date = 1810.11.13
+    female = yes
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+  clear_scripted_personalities = yes
+  add_queen_personality = naive_personality
+  add_ruler_personality = naive_personality
+  add_ruler_personality = loose_lips_personality
+}
+1776.1.1 = {
+  leader = {
+    name = "TKQ ∑V 	TS"  # Luc de Guichen
+    type = admiral
+    fire = 3
+    shock = 3
+    manuever = 2
+    siege = 0
+    death_date = 1790.1.13
+  }
+}
+1776.1.1 = {
+  leader = {
+    name = "Vg0tÊt ∑V <h…bØe"  # Francois de Grasse
+    type = admiral
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1782.4.1
+  }
+}
+1780.1.1 = {
+  leader = {
+    name = "©ã ∑V WSZS"  # ©ã de Rochambeau
+    type = general
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1792.1.1
+  }
+}
+1780.1.1 = {
+  leader = {
+    name = "Âgt ∑V lSHY"  # Âgt de Ternay
+    type = admiral
+    fire = 2
+    shock = 2
+    manuever = 3
+    siege = 0
+    death_date = 1780.1.1
+  }
+}
+1781.1.1 = {
+  leader = {
+    name = "Æv√WS ∑V ŸSVg"  # Pierre de Suffren
+    type = admiral
+    fire = 4
+    shock = 6
+    manuever = 4
+    siege = 0
+    death_date = 1788.12.8
+  }
+}
+1782.1.1 = {
+  leader = {
+    name = "Âgt ∑V lSHY"  # Âgt de Bussy
+    type = general
+    fire = 4
+    shock = 5
+    manuever = 5
+    siege = 0
+    death_date = 1785.1.1
+  }
+}
+1785.1.1 = {
+  leader = {
+    name = "∑V0fyr“RaSØeXb"  # A. d'entrecastreaux
+    type = explorer
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1793.7.21
+  }
+}
+1785.1.1 = {
+  set_country_flag = revolution
+}
+1785.3.27 = {
+  heir = {
+    name = "ÔçfÎX"
+    monarch_name = "ÔçfÎX XVII"
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    birth_date = 1785.3.27
+    death_date = 1795.6.8
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+}
+1785.8.1 = {
+  leader = {
+    name = "©ã ∑V ^bSØe"  # ©ã de La Palouse
+    type = explorer
+    fire = 1
+    shock = 1
+    manuever = 5
+    siege = 0
+    death_date = 1788.1.26
+  }
+}
+1786.5.5 = {
+  set_country_flag = financial_crisis
+}
+1788.12.27 = {
+  set_country_flag = road_to_bankruptcy
+}
+1789.7.14 = {
+  set_country_flag = revolution
+  set_legacy_government = constitutional_monarchy
+}
+1791.1.1 = {
+  decision = abolish_slavery_act
+}
+1792.9.21 = {
+  government = republic
+  add_government_reform = revolutionary_republic_reform
+  revolution_target = yes
+  government_rank = 3
+}
+1792.9.21 = {
+  leader = {
+    name = "Ôçf-†R^Ãë√WS ntGk"  # ÔçfÎX Gabriel Suchet
+    type = general
+    fire = 5
+    shock = 5
+    manuever = 4
+    siege = 2
+    death_date = 1826.1.23
+  }
+}
+1792.9.21 = {
+  leader = {
+    name = "Ôçf <S‰S…b æèfk"  # ÔçfÎX Nicolas Davout
+    type = general
+    fire = 5
+    shock = 5
+    manuever = 5
+    siege = 2
+    death_date = 1817.1.1
+  }
+}
+1792.9.21 = {
+  monarch = {
+    name = "˝VllQO"  # La Convention nationale
+    adm = 3
+    dip = 0
+    mil = 4
+    regent = yes
+  }
+}
+1793.1.1 = {
+  leader = {
+    name = "KQ≥R∑V-ÙuKQXb iOpQ"  # Claude Victor-Perrin
+    type = general
+    fire = 4
+    shock = 3
+    manuever = 3
+    siege = 1
+    death_date = 1814.4.6
+  }
+}
+1793.6.1 = {
+  leader = {
+    name = "ˇb4x—N ‚lˇbÙT"  # NapolaDn Bonaparte
+    type = general
+    fire = 9
+    shock = 9
+    manuever = 6
+    siege = 7
+    death_date = 1799.11.10
+  }
+}
+1794.1.1 = {
+  leader = {
+    name = "<S‰S…b œÇSyr"  # Nicolas Soult
+    type = general
+    fire = 4
+    shock = 3
+    manuever = 3
+    siege = 1
+    death_date = 1851.11.26
+  }
+}
+1794.1.1 = {
+  leader = {
+    name = "çS≥uYyr"  # ©ã B. Bernadotte
+    type = general
+    fire = 4
+    shock = 4
+    manuever = 3
+    siege = 0
+    death_date = 1810.11.2
+  }
+}
+1794.1.1 = {
+  leader = {
+    name = "mg ‰SÙu¡ 1WâS"  # L. Gouvion Saint-Cyr
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 0
+    death_date = 1814.4.6
+  }
+}
+1795.11.2 = {
+  monarch = {
+    name = "cw?eú^"  # Le Directoire
+    adm = 3
+    dip = 0
+    mil = 4
+    regent = yes
+  }
+}
+1796.1.1 = {
+  leader = {
+    name = "Æv√WS Âgt ÙuS≥u+Y"  # Pierre Âgt Villeneuve
+    type = admiral
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1805.10.21
+  }
+}
+1796.8.1 = {
+  leader = {
+    name = "s|GkS HYO"  # Michel Ney
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 0
+    death_date = 1815.12.7
+  }
+}
+1797.1.1 = {
+  leader = {
+    name = "√WÇÑâR ¶ûKQU≥u"  # -^ienne MacDonald
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 4
+    siege = 1
+    death_date = 1814.4.11
+  }
+}
+1797.1.1 = {
+  leader = {
+    name = "’lpQ0tÊt∑RêeOS"  # ’lpQ0tÊt Lefebvre
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 3
+    siege = 2
+    death_date = 1807.7.9
+  }
+}
+1799.1.1 = {
+  leader = {
+    name = "1r∑VNS ´ÉSwc"  # ¨Ñouard Mortier
+    type = general
+    fire = 5
+    shock = 4
+    manuever = 4
+    siege = 1
+    death_date = 1835.7.28
+  }
+}
+1799.11.9 = {
+  leader = {
+    name = "ÂÇ?ñS∑*…b"  # Joachim Murat
+    type = general
+    fire = 4
+    shock = 4
+    manuever = 6
+    siege = 2
+    death_date = 1806.1.1
+  }
+}
+1799.11.9 = {
+  leader = {
+    name = "©ã …b≥u"  # ©ã Lannes
+    type = general
+    fire = 4
+    shock = 5
+    manuever = 4
+    siege = 2
+    death_date = 1809.5.31
+  }
+}
+1799.11.10 = {
+  monarch = {
+    name = "ˇb4x—N I"  # NapolaDn I
+    adm = 6
+    dip = 3
+    mil = 6
+    culture = sardinian
+    dynasty = "‚lˇbÙT"  # Bonaparte
+    birth_date = 1769.8.15
+    leader = {
+      name = "ˇb4x—N"  # NapolaDn
+      type = general
+      fire = 9
+      shock = 9
+      manuever = 6
+      siege = 7
+    }
+  }
+  add_army_professionalism = 0.4
+  clear_scripted_personalities = yes
+  add_ruler_personality = inspiring_leader_personality
+  add_ruler_personality = calm_personality
+}
+1800.1.1 = {
+  leader = {
+    name = "eY‰SØeyr löSôÑ"  # Auguste Marmont
+    type = general
+    fire = 3
+    shock = 3
+    manuever = 5
+    siege = 2
+    death_date = 1814.4.6
+  }
+}
+1802.1.1 = {
+  leader = {
+    name = "©ã-ÙTnfÇÑØe0çâ√WS"  # ©ã B. Bessibîes
+    type = general
+    fire = 3
+    shock = 2
+    manuever = 4
+    siege = 1
+    death_date = 1813.5.1
+  }
+}
+1804.5.18 = {
+  government = monarchy
+  add_government_reform = revolutionary_empire_reform
+  queen = {
+    country_of_origin = FRA
+    name = "¶umt¨Ç"  # Josephine
+    dynasty = "∑V ZS?ñSÖQ"  # de Beauharnais
+    birth_date = 1763.6.23
+    death_date = 1810.1.10
+    female = yes
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+  add_queen_personality = infertile_personality
+}
+1804.5.18 = {
+  government = monarchy
+  add_government_reform = revolutionary_empire_reform
+  queen = {
+    country_of_origin = FRA
+    name = "¶umt¨Ç"  # Josephine
+    dynasty = "∑V ZS?ñSÖQ"  # de Beauharnais
+    birth_date = 1763.6.23
+    death_date = 1810.1.10
+    female = yes
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+  add_queen_personality = infertile_personality
+}
+queen = {
+  country_of_origin = FRA
+  name = "¶umt¨Ç"  # Josephine
+  dynasty = "∑V ZS?ñSÖQ"  # de Beauharnais
+  birth_date = 1763.6.23
+  death_date = 1810.1.10
+  female = yes
+  adm = 2
+  dip = 2
+  mil = 2
+}
+add_queen_personality = infertile_personality
+1810.4.1 = {
+  queen = {
+    country_of_origin = HAB
+    name = "õsKN ÔçféÉ"  # Maria Ludovica
+    dynasty = "ØQ »T^Øe!X"  # von Habsburg
+    birth_date = 1791.12.12
+    death_date = 1841.12.17
+    female = yes
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+  add_queen_personality = careful_personality
+}
+1811.3.20 = {
+  heir = {
+    name = "ˇb4x—N"  # NapolaDn
+    monarch_name = "ˇb4x—N II"  # NapolaDn II
+    dynasty = "‚lˇbÙT"  # Bonaparte
+    birth_date = 1811.3.20
+    death_date = 1832.7.22
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1814.4.11 = {
+  monarch = {
+    name = "ÔçfÎX XVIII"
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    birth_date = 1755.11.17
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1814.4.11 = {
+  set_legacy_government = administrative_monarchy
+  government_rank = 2
+  clr_country_flag = revolution
+  revolution_target = no
+  decision = dummy_clear_revolution
+}
+1814.4.11 = {
+  monarch = {
+    name = "Ôçf XVIII"  #  XVIII
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    birth_date = 1755.11.17
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1814.4.11 = {
+  heir = {
+    name = "Âgt"
+    monarch_name = "Âgt X"
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    birth_date = 1757.10.9
+    death_date = 1836.11.6
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+1820.1.1 = { religion = liberalism }
+1824.9.16 = {
+  monarch = {
+    name = "Âgt X"
+    dynasty = "∑V ‚l¡e"  # de Bourbon
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+1830.8.2 = {
+  monarch = {
+    name = "ÔçfØe-ﬁò)Rfm I"  # ÔçfÎX-Philippe I
+    dynasty = "∑V eYógØe"  # de Orluyns
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1848.2.23 = {
+  government = republic
+  add_government_reform = revolutionary_republic_reform
+  government_rank = 3
+}
+1848.2.23 = {
+  monarch = {
+    name = "≈ñT^-YS0jg¶ê0∑VÑSS"  # Jacques-Âgt Dupont de l'Eure
+    birth_date = 1767.2.27
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+1848.5.9 = {
+  monarch = {
+    name = "gbLà‘YXTO"  # (executive commission)
+    adm = 1
+    dip = 1
+    mil = 1
+    regent = yes
+  }
+}
+1848.6.28 = {
+  monarch = {
+    name = "Ôçf-'k¡N.aS¨Ç≈ñKQ"
+    birth_date = 1802.10.15
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1848.12.20 = {
+  monarch = {
+    name = "ˇb4x—N III"  # NapolaDn III
+    birth_date = 1808.4.20
+    dynasty = "‚lˇbÙT"  # Bonaparte
+    adm = 2
+    dip = 0
+    mil = 2
+  }
+}
+1851.12.2 = {
+  government = monarchy
+  add_government_reform = revolutionary_empire_reform
+}
+1856.3.16 = {
+  heir = {
+    name = "ˇb4x—N"  # NapolaDn
+    monarch_name = "ˇb4x—N IV"  # NapolaDn IV
+    dynasty = "‚lˇbÙT"  # Bonaparte
+    birth_date = 1856.3.16
+    death_date = 1879.6.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}

@@ -1,0 +1,190 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+technology_group = eastern_nomad_group
+religion = tengri_pagan_reformed
+primary_culture = oirats
+capital = 718
+historical_rival = KHA
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+
+#Khans of the Oirats (Kalmyks, Dzungars)
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1409.1.1 = {
+	monarch = {
+		name = "lö»T(g"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1409.1.1 = {
+	heir = {
+		name = "1Å0k"
+		monarch_name = "1Å0k"
+		birth_date = 1380.1.1
+		death_date = 1439.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+1416.1.1 = {
+	monarch = {
+		name = "1Å0k"
+		 
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+1439.1.1 = {
+	monarch = {
+		name = "mNHQ"
+		 
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+1439.1.1 = {
+	heir = {
+		name = "?ñ1Y^(g?Q"
+		monarch_name = "?ñ1Y^(g?Q"
+		birth_date = 1424.1.1
+		death_date = 1478.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1454.1.1 = {
+
+	monarch = {
+		name = "?ñ1Y^(g?Q"
+		 
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1454.1.1 = {
+	heir = {
+		name = "KQÇ"
+		monarch_name = "KQÇ"
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+1478.1.1 = {
+
+	monarch = {
+		name = "KQÇ"
+		 
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+1478.1.1 = {
+	heir = {
+		name = "âQU"
+		monarch_name = "âQU"
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+1486.1.1 = {
+
+	monarch = {
+		name = "âQU"
+		 
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+1486.1.1 = {
+	heir = {
+		name = "jSmQ"
+		monarch_name = "jSmQ"
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1495.1.1 = {
+
+	monarch = {
+		name = "jSmQ"
+		 
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1530.1.1 = {
+
+	monarch = {
+		name = "¡ÌêZi"
+		 
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1559.1.1 = {
+
+	monarch = {
+		name = "^…bS	T"
+		 
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1586.1.1 = { religion = vajrayana }
+
+1612.1.1 = {
+
+	monarch = {
+		name = "»TáU˝VLR"
+		 
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1623.1.1 = { capital = 714 }
+

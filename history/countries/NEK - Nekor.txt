@@ -1,0 +1,301 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = berber
+religion = sunni
+technology_group = muslim
+capital = 4268
+religious_school = maliki_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+710.1.1 = {
+  monarch = {
+    name = "(„)Rk I"  # Salih I
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 680.1.1
+    adm = 3
+    dip = 0
+    mil = 1
+  }
+}
+719.1.1 = {
+  heir = {
+    name = "FzTX‰ÆY"  # Al-Mu'tasim
+    monarch_name = "FzTX‰ÆY I"  # Al-Mu'tasim I
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 719.1.1
+    death_date = 755.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 1
+  }
+}
+749.1.1 = {
+  monarch = {
+    name = "FzTX‰ÆY I"  # Al-Mu'tasim I
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 719.1.1
+    adm = 3
+    dip = 0
+    mil = 1
+  }
+}
+749.1.1 = {
+  heir = {
+    name = "O·VÌ‘¯e"  # Idris
+    monarch_name = "O·VÌ‘¯e  I"  # Idris I
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 725.1.1
+    death_date = 760.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+755.1.1 = {
+  monarch = {
+    name = "O·VÌ‘¯e  I"  # Idris I
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 725.1.1
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+755.1.1 = {
+  heir = {
+    name = "iIN·V"  # Sa'id
+    monarch_name = "iIN·V I"  # Sa'id I
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 730.1.1
+    death_date = 803.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 0
+  }
+}
+760.1.1 = {
+  monarch = {
+    name = "iIN·V I"  # Sa'id I
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 730.1.1
+    adm = 4
+    dip = 2
+    mil = 0
+  }
+}
+773.1.1 = {
+  heir = {
+    name = "(„)Rk"  # Salih
+    monarch_name = "(„)Rk II"  # Salih II
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 773.1.1
+    death_date = 864.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 3
+  }
+}
+803.1.1 = {
+  monarch = {
+    name = "(„)Rk II"  # Salih II
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 773.1.1
+    adm = 3
+    dip = 0
+    mil = 3
+  }
+}
+834.1.1 = {
+  heir = {
+    name = "iIN·V"  # Sa'id
+    monarch_name = "iIN·V II"  # Sa'id II
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 834.1.1
+    death_date = 917.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+864.1.1 = {
+  monarch = {
+    name = "iIN·V II"  # Sa'id II
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 834.1.1
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+887.1.1 = {
+  heir = {
+    name = "(„)Rk"  # Salih
+    monarch_name = "(„)Rk III"  # Salih III
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 887.1.1
+    death_date = 927.1.1
+    claim = 95
+    adm = 0
+    dip = 3
+    mil = 1
+  }
+}
+917.1.1 = {
+  monarch = {
+    name = "(„)Rk III"  # Salih III
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 887.1.1
+    adm = 0
+    dip = 3
+    mil = 1
+  }
+}
+917.1.1 = {
+  heir = {
+    name = "?–jSjgÒR-ôTê"  # Abd al-Badi'
+    monarch_name = "?–jSjgÒR-ôTê"  # Abd al-Badi'
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 897.1.1
+    death_date = 930.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 4
+  }
+}
+927.1.1 = {
+  monarch = {
+    name = "?–jSjgÒR-ôTê"  # Abd al-Badi'
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 897.1.1
+    adm = 5
+    dip = 2
+    mil = 4
+  }
+}
+927.1.1 = {
+  heir = {
+    name = "?–^ ?–2S^ O¯e…hS"  # Abu Ayyub Isma'il
+    monarch_name = "?–^ ?–2S^ O¯e…hS"  # Abu Ayyub Isma'il
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 900.1.1
+    death_date = 936.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+930.1.1 = {
+  monarch = {
+    name = "?–^ ?–2S^ O¯e…hS"  # Abu Ayyub Isma'il
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 900.1.1
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+930.1.1 = {
+  heir = {
+    name = "Fz(„"  # Musa
+    monarch_name = "Fz(„ I"  # Musa I
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 906.1.1
+    death_date = 940.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 5
+  }
+}
+936.1.1 = {
+  monarch = {
+    name = "Fz(„ I"  # Musa I
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 906.1.1
+    adm = 3
+    dip = 5
+    mil = 5
+  }
+}
+936.1.1 = {
+  heir = {
+    name = "?–jSjgÒR-(„s|"  # Abd as-Sami'
+    monarch_name = "?–jSjgÒR-(„s|"  # Abd as-Sami'
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 910.1.1
+    death_date = 947.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+940.1.1 = {
+  monarch = {
+    name = "?–jSjgÒR-(„s|"  # Abd as-Sami'
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 910.1.1
+    adm = 3
+    dip = 2
+    mil = 5
+  }
+}
+940.1.1 = {
+  heir = {
+    name = "Jurthum"
+    monarch_name = "Jurthum I"
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 920.1.1
+    death_date = 1019.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+947.1.1 = {
+  monarch = {
+    name = "Jurthum I"
+    dynasty = "ôTªR („)Rk"  # Banu Salih
+    birth_date = 920.1.1
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

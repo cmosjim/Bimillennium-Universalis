@@ -1,0 +1,703 @@
+spriteTypes = {	
+
+		spriteType = {
+		name = "GFX_advisor_ma_loan"
+		texturefile = "gfx//interface//advisors//ma_loan.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_cai_lun"
+		texturefile = "gfx//interface//advisors//cai_lun.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_deng_rang"
+		texturefile = "gfx//interface//advisors//deng_rang.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_jiang_shi"
+		texturefile = "gfx//interface//advisors//jiang_shi.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_jiang_ge"
+		texturefile = "gfx//interface//advisors//jiang_ge.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_liu_xin"
+		texturefile = "gfx//interface//advisors//liu_xin.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_chou_lan"
+		texturefile = "gfx//interface//advisors//chou_lan.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_hu_guang"
+		texturefile = "gfx//interface//advisors//hu_guang.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_zhang_rang"
+		texturefile = "gfx//interface//advisors//zhang_rang.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_zhen_chong"
+		texturefile = "gfx//interface//advisors//zhen_chong.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_huang_fu_gui"
+		texturefile = "gfx//interface//advisors//huang_fu_gui.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_huang_fu_song"
+		texturefile = "gfx//interface//advisors//huang_fu_song.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	
+		spriteType = {
+		name = "GFX_advisor_cao_teng"
+		texturefile = "gfx//interface//advisors//cao_teng.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_dou_wu"
+		texturefile = "gfx//interface//advisors//dou_wu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_dou_xian"
+		texturefile = "gfx//interface//advisors//dou_xian.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_dou_zhi_female"
+		texturefile = "gfx//interface//advisors//dou_zhi.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+		spriteType = {
+		name = "GFX_advisor_dou_zhi"
+		texturefile = "gfx//interface//advisors//dou_zhi.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_dou_ji"
+		texturefile = "gfx//interface//advisors//dou_ji.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_dan_chao"
+		texturefile = "gfx//interface//advisors//dan_chao.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_cai_yong"
+		texturefile = "gfx//interface//advisors//cai_yong.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_geng_bing"
+		texturefile = "gfx//interface//advisors//geng_bing.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_he_chang"
+		texturefile = "gfx//interface//advisors//he_chang.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_jia_fu"
+		texturefile = "gfx//interface//advisors//jia_fu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_ban_chao"
+		texturefile = "gfx//interface//advisors//ban_chao.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_ban_zho_female"
+		texturefile = "gfx//interface//advisors//ban_zho.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+		spriteType = {
+		name = "GFX_advisor_ban_zho"
+		texturefile = "gfx//interface//advisors//ban_zho.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_yu_xu"
+		texturefile = "gfx//interface//advisors//yu_xu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_zhang_heng"
+		texturefile = "gfx//interface//advisors//zhang_heng.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_liu_yan"
+		texturefile = "gfx//interface//advisors//liu_yan.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_deng_zhi"
+		texturefile = "gfx//interface//advisors//deng_zhi.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_deng_xun"
+		texturefile = "gfx//interface//advisors//deng_xun.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_deng_sui_female"
+		texturefile = "gfx//interface//advisors//deng_sui.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+		spriteType = {
+		name = "GFX_advisor_deng_sui"
+		texturefile = "gfx//interface//advisors//deng_sui.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_wang_fu"
+		texturefile = "gfx//interface//advisors//wang_fu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_zhang_jian"
+		texturefile = "gfx//interface//advisors//zhang_jian.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_zhu_jun"
+		texturefile = "gfx//interface//advisors//zhu_jun.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_advisor_u_fu_ro"
+		texturefile = "gfx//interface//advisors//u_fu_ro.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_pu_nu"
+		texturefile = "gfx//interface//advisors//pu_nu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_fon_ho"
+		texturefile = "gfx//interface//advisors//fon_ho.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_yan_chou"
+		texturefile = "gfx//interface//advisors//yan_chou.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_chen_fan"
+		texturefile = "gfx//interface//advisors//chen_fan.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_pen_ho"
+		texturefile = "gfx//interface//advisors//pen_ho.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_zhang_bao"
+		texturefile = "gfx//interface//advisors//zhang_bao.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_zhang_lian"
+		texturefile = "gfx//interface//advisors//zhang_lian.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_mayuan_yi"
+		texturefile = "gfx//interface//advisors//mayuan_yi.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_zhang_man_cheng"
+		texturefile = "gfx//interface//advisors//Zhang_man_cheng.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_advisor_guan_hai"
+		texturefile = "gfx//interface//advisors//guan_hai.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	
+	spriteType = {
+		name = "GFX_advisor_guan_yu"
+		texturefile = "gfx//interface//advisors//guan_yu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_zhang_fei"
+		texturefile = "gfx//interface//advisors//zhang_fei.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}			
+	
+	spriteType = {
+		name = "GFX_advisor_gao_shun"
+		texturefile = "gfx//interface//advisors//gao_shun.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_advisor_ma_chao"
+		texturefile = "gfx//interface//advisors//ma_chao.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_sun_qian"
+		texturefile = "gfx//interface//advisors//sun_qian.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_zhou_yu"
+		texturefile = "gfx//interface//advisors//zhou_yu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+	spriteType = {
+		name = "GFX_advisor_cheng_pu"
+		texturefile = "gfx//interface//advisors//cheng_pu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_yan_liang"
+		texturefile = "gfx//interface//advisors//yan_liang.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	spriteType = {
+		name = "GFX_advisor_wen_chou"
+		texturefile = "gfx//interface//advisors//wen_chou.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_xun_yu"
+		texturefile = "gfx//interface//advisors//xun_yu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_advisor_lu_bu"
+		texturefile = "gfx//interface//advisors//lu_bu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	
+	spriteType = {
+		name = "GFX_advisor_jia_xu"
+		texturefile = "gfx//interface//advisors//jia_xu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_li_lu"
+		texturefile = "gfx//interface//advisors//li_lu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_cheng_yu"
+		texturefile = "gfx//interface//advisors//cheng_yu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_advisor_zhang_xun"
+		texturefile = "gfx//interface//advisors//zhang_xun.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	spriteType = {
+		name = "GFX_advisor_diao_chan"
+		texturefile = "gfx//interface//advisors//diao_chan.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_advisor_diao_chan_female"
+		texturefile = "gfx//interface//advisors//diao_chan.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_advisor_wang_uan"
+		texturefile = "gfx//interface//advisors//wang_uan.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	
+		spriteType = {
+		name = "GFX_advisor_yang_feng"
+		texturefile = "gfx//interface//advisors//yang_feng.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}			
+
+		spriteType = {
+		name = "GFX_advisor_xia_hou_yuan"
+		texturefile = "gfx//interface//advisors//xia_hou_yuan.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+	
+		spriteType = {
+		name = "GFX_advisor_xia_hou_dun"
+		texturefile = "gfx//interface//advisors//xia_hou_dun.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+		spriteType = {
+		name = "GFX_advisor_zhuge_liang"
+		texturefile = "gfx//interface//advisors//zhuge_liang.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}		
+
+
+		spriteType = {
+		name = "GFX_advisor_hoang_chung"
+		texturefile = "gfx//interface//advisors//hoang_chung.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+	
+		spriteType = {
+		name = "GFX_advisor_zhang_zhao"
+		texturefile = "gfx//interface//advisors//zhang_zhao.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+		
+	}			
+	
+
+		spriteType = {
+		name = "GFX_advisor_zhao_yun"
+		texturefile = "gfx//interface//advisors//zhao_yun.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+		
+	}			
+
+		spriteType = {
+		name = "GFX_advisor_zhang_liao"
+		texturefile = "gfx//interface//advisors//zhang_liao.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+		
+	}	
+		spriteType = {
+		name = "GFX_advisor_xu_chu"
+		texturefile = "gfx//interface//advisors//xu_chu.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+		
+	}	
+	
+		spriteType = {
+		name = "GFX_advisor_sima_yi"
+		texturefile = "gfx//interface//advisors//sima_yi.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+		
+	}	
+		spriteType = {
+		name = "GFX_advisor_lu_xun"
+		texturefile = "gfx//interface//advisors//lu_xun.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+		
+	}		
+	
+		spriteType = {
+		name = "GFX_advisor_taishi_ci"
+		texturefile = "gfx//interface//advisors//taishi_ci.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+		
+	}	
+	
+	
+		spriteType = {
+		name = "GFX_advisor_yue_fei"
+		texturefile = "gfx//interface//advisors//yue_fei.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+		
+	}		
+	
+}

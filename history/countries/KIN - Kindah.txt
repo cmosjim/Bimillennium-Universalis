@@ -1,0 +1,69 @@
+government = tribal
+add_government_reform = tribal_federation
+technology_group = middle_eastern
+primary_culture = bedouin_arabic
+religion = south_arabian
+capital = 2534
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+425.1.1 = {
+  monarch = {
+    name = "áwpg ?–úWÒR FzÉbS"  # Hujr 'Akil al-Murar
+    dynasty = "¯w·V"  # Kindah
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+458.1.1 = {
+  monarch = {
+    name = "?–s|S üfÏ‚S"  # 'Amr al-Mansur
+    dynasty = "¯w·V"  # Kindah
+    adm = 5
+    mil = 2
+    dip = 4
+  }
+}
+480.1.1 = {
+  capital = 405
+}
+489.1.1 = {
+  monarch = {
+    name = "ÈTÌ‘¯e TXÉbís"  # Al-Harith Talaban
+    dynasty = "¯w·V"  # Kindah
+    adm = 2
+    mil = 1
+    dip = 2
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+490.1.1 = {
+  religion = jewish
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

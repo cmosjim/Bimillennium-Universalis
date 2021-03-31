@@ -1,0 +1,75 @@
+government = republic
+set_legacy_government = constitutional_republic
+mercantilism = 0.1
+primary_culture = mbundu
+religion = catholic
+technology_group = muslim
+capital = 1167
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1975.11.11 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = presidential_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = communist_government
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = socialist_republic
+  monarch = {
+    name = "‰RN<SeY ?–bÀN‚„Ìu …QþV"  # António Agostinho Neto
+    adm = 4
+    dip = 3
+    mil = 1
+    religion = catholic
+  }
+}
+1979.9.10 = {
+  monarch = {
+    name = "å‚ýl 1r·VNSY Y¯e QhXb¯e"  # José Eduardo dos Santos
+    adm = 3
+    dip = 2
+    mil = 3
+    religion = catholic
+  }
+}
+1992.8.25 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}

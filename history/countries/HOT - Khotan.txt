@@ -1,0 +1,392 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+technology_group = eastern_nomad_group
+religion = mahayana
+primary_culture = tocharian
+capital = 710	# Khotan
+
+2.1.1 = {
+	monarch = {
+		name = "ﬁOóg"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+51.1.1 = {
+	monarch = {
+		name = "TóV"
+		#dynasty = " "
+	
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+60.1.1 = {
+	monarch = {
+		name = "^∑V"
+		#dynasty = " "
+	
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+
+110.1.1 = {
+	monarch = {
+		name = ">eMR"
+		#dynasty = " "
+	
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+
+132.1.1 = {
+	monarch = {
+		name = "˙^"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+152.1.1 = {
+	monarch = {
+		name = "âR˝V"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+
+446.1.1 = {
+	monarch = {
+		name = "Ày¡N"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+471.1.1 = {
+	monarch = {
+		name = "FZWåNN"
+		#dynasty = " "
+	
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+
+477.1.1 = {
+	monarch = {
+		name = "Wid	NN"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+500.1.1 = {
+	monarch = {
+		name = "Ç˝êW"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+560.1.1 = {
+	monarch = {
+		name = "	Sﬂè"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+590.1.1 = {
+	monarch = {
+		name = "QS:y√u"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+620.1.1 = {
+	monarch = {
+		name = "	SﬂèKS∆R"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+642.1.1 = {
+	monarch = {
+		name = "Ow·O"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+665.1.1 = {
+	monarch = {
+		name = "Owƒñ"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+691.1.1 = {
+	monarch = {
+		name = "	Sﬂèle"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+720.1.1 = { primary_culture = uyghur }
+
+724.1.1 = {
+	monarch = {
+		name = "	Sﬂè:w"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+
+725.1.1 = {
+	monarch = {
+		name = "O^b"
+		#dynasty = " "
+	
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+
+736.1.1 = {
+	monarch = {
+		name = "Oñæè"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+740.1.1 = {
+	monarch = {
+		name = "	SﬂèÍs"
+		#dynasty = " "
+	
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+
+745.1.1 = {
+	monarch = {
+		name = "	Sﬂè‹w"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+
+
+764.1.1 = {
+	monarch = {
+		name = "	Sﬂè‹f"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+791.1.1 = {
+	monarch = {
+		name = "	Sﬂèÿã"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+829.1.1 = {
+	monarch = {
+		name = "	Sﬂèﬂè6w"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+
+
+
+844.1.1 = {
+	monarch = {
+		name = "	SﬂèWSTX"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+859.1.1 = {
+	monarch = {
+		name = "	SﬂèÊt±ê"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+888.1.1 = {
+	monarch = {
+		name = "	Sﬂè‘k´ãWid"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+912.1.1 = {
+	monarch = {
+		name = "	SﬂèÁPLN‚l"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 5
+		mil = 6
+	}
+}
+
+967.1.1 = {
+	monarch = {
+		name = "	SﬂèœÇ…b"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+978.1.1 = {
+	monarch = {
+		name = "	SﬂèæèËx"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+986.1.1 = {
+	monarch = {
+		name = "	SﬂèÁPKOWid"
+		#dynasty = " "
+	
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+999.1.1 = {
+	monarch = {
+		name = "	Sﬂè(Ñ<hõsùO"
+		#dynasty = " "
+	
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1636.5.15 = { technology_group = old_estern_asian }
+1912.2.12 = {
+
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+	religion = liberalism
+}
+1949.10.1 = { technology_group = modern_chinese }
+

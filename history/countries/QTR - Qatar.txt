@@ -1,0 +1,158 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+mercantilism = 0.1
+primary_culture = gulf_arabic
+religion = sunni
+technology_group = muslim
+capital = 395
+religious_school = hanbali_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1868.1.1 = {
+  monarch = {
+    name = "FzUÿû∑V ,g (Ñ<S"  # Mohammed bin Thani
+    dynasty = "?ñ“R(Ñ<S"  # Al-Thani
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1913.7.17 = {
+  monarch = {
+    name = "?ñjSjg…b ,g >çâ∆Y"  # Abdullah bin Jassim
+    dynasty = "?ñ“R(Ñ<S"  # Al-Thani
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+1913.7.17 = {
+  heir = {
+    name = "?ñÃë ,g ?ñjSjg…b"  # Ali bin Abdullah
+    monarch_name = "?ñÃë ,g ?ñjSjg…b"  # Ali bin Abdullah
+    dynasty = "?ñ“R(Ñ<S"  # Al-Thani
+    birth_date = 1895.6.5
+    death_date = 1974.8.31
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1971.9.3 = {
+  monarch = {
+    name = "åÇ»T»è∑V ,g ?ñÃë"  # Ahmad bin Ali
+    dynasty = "?ñ“R(Ñ<S"  # Al-Thani
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1971.9.3 = {
+  heir = {
+    name = "»T)R’l ,g »Tlö∑V"  # Khalifa bin Hamad
+    monarch_name = "»T)R’l ,g »Tlö∑V"  # Khalifa bin Hamad
+    dynasty = "?ñ“R(Ñ<S"  # Al-Thani
+    birth_date = 1932.9.17
+    death_date = 3000.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+1972.2.22 = {
+  monarch = {
+    name = "»T)R’l ,g »Tlö∑V"  # Khalifa bin Hamad
+    dynasty = "?ñ“R(Ñ<S"  # Al-Thani
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+1972.2.22 = {
+  heir = {
+    name = "»Tlö∑V ,g »T)R’l"  # Hamad bin Khalifa
+    monarch_name = "»Tlö∑V ,g »T)R’l"  # Hamad bin Khalifa
+    dynasty = "?ñ“R(Ñ<S"  # Al-Thani
+    birth_date = 1952.1.1
+    death_date = 3000.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1995.6.27 = {
+  monarch = {
+    name = "»Tlö∑V ,g »T)R’l"  # Hamad bin Khalifa
+    dynasty = "?ñ“R(Ñ<S"  # Al-Thani
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1995.6.27 = {
+  heir = {
+    name = "TXs|∆Y.,g.»T»è∑V"  # Tamim bin Hamad
+    monarch_name = "TXs|∆Y.,g.»T»è∑V"  # Tamim bin Hamad
+    dynasty = "?ñ“R(Ñ<S"  # Al-Thani
+    birth_date = 1980.6.3
+    death_date = 3000.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+2013.6.25 = {
+  monarch = {
+    name = "TXs|∆Y.,g.»T»è∑V"  # Tamim bin Hamad
+    dynasty = "?ñ“R(Ñ<S"  # Al-Thani
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+2013.6.25 = {
+  heir = {
+    name = "»Tlö∑V ,g TXs|∆Y"  # Hamad bin Tamim
+    monarch_name = "»Tlö∑V ,g TXs|∆Y"  # Hamad bin Tamim
+    dynasty = "?ñ“R(Ñ<S"  # Al-Thani
+    birth_date = 2008.1.1
+    death_date = 3000.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}

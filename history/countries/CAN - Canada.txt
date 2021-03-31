@@ -1,0 +1,305 @@
+government = republic
+set_legacy_government = constitutional_republic
+mercantilism = 0.1
+technology_group = western
+religion = protestant
+primary_culture = british_canadian
+historical_friend = USA
+capital = 3024
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1867.1.1 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = universal_suffrage_reform
+  add_government_reform = reinforce_republican_values_reform
+  add_government_reform = multi_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = abolish_presidency
+  set_legacy_government = parliamentary_republic
+  add_accepted_culture = french_canadian
+}
+1867.7.1 = {
+  monarch = {
+    name = "¶u ¶ûKQU≥u"  # John MacDonald
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = protestant
+  }
+}
+1873.11.7 = {
+  monarch = {
+    name = "öNÜSqS'Y ¶ûØwPü"  # Alexander MacKenzie
+    adm = 4
+    dip = 2
+    mil = 3
+    religion = protestant
+  }
+}
+1878.10.17 = {
+  monarch = {
+    name = "¶u ¶ûKQU≥u"  # John MacDonald
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = protestant
+  }
+}
+1891.6.16 = {
+  monarch = {
+    name = "¶u ?ñ=Oyr"  # John Abbott
+    adm = 3
+    dip = 1
+    mil = 3
+    religion = protestant
+  }
+}
+1892.12.5 = {
+  monarch = {
+    name = "¶u dlnfÓh"  # John Thompson
+    adm = 2
+    dip = 2
+    mil = 4
+    religion = protestant
+  }
+}
+1892.12.21 = {
+  monarch = {
+    name = "¶ûØwPü çúZS"  # MacKenzie Bowell
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = protestant
+  }
+}
+1896.5.1 = {
+  monarch = {
+    name = "ÂgSØe TX¿s"  # Charles Tupper
+    adm = 4
+    dip = 5
+    mil = 1
+    religion = protestant
+  }
+}
+1896.7.11 = {
+  monarch = {
+    name = "ZSVÃë∑V ≥R˜ñS"  # Wilfrid Laurier
+    adm = 5
+    dip = 3
+    mil = 3
+    religion = protestant
+  }
+}
+1900.1.1 = {
+  religion = liberalism
+}
+1911.10.10 = {
+  monarch = {
+    name = "W=Oyr ZSâv"  # Robert Borden
+    adm = 4
+    dip = 5
+    mil = 1
+    religion = protestant
+  }
+}
+1920.7.10 = {
+  monarch = {
+    name = "?ñmt s|i`"  # Arthur Meighen
+    adm = 5
+    dip = 3
+    mil = 2
+    religion = protestant
+  }
+}
+1921.12.29 = {
+  monarch = {
+    name = "Z…^ ¶ûØwPü —ë"  # William MacKenzie King
+    adm = 4
+    dip = 5
+    mil = 1
+    religion = protestant
+  }
+}
+1926.6.29 = {
+  monarch = {
+    name = "?ñmt s|i`"  # Arthur Meighen
+    adm = 5
+    dip = 3
+    mil = 2
+    religion = protestant
+  }
+}
+1926.9.25 = {
+  monarch = {
+    name = "Z…^ ¶ûØwPü —ë"  # William MacKenzie King
+    adm = 4
+    dip = 5
+    mil = 1
+    religion = protestant
+  }
+}
+1930.8.7 = {
+  monarch = {
+    name = "tÂg∑V çÖQyr"  # Richard Bennett
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = protestant
+  }
+}
+1935.10.23 = {
+  monarch = {
+    name = "Z…^ ¶ûØwPü —ë"  # William MacKenzie King
+    adm = 4
+    dip = 5
+    mil = 1
+    religion = protestant
+  }
+}
+1948.11.15 = {
+  monarch = {
+    name = "ÔçfØe ≥R&Oyr"  # Louis Laurent
+    adm = 2
+    dip = 5
+    mil = 3
+    religion = protestant
+  }
+}
+1957.6.21 = {
+  monarch = {
+    name = "¶u Íè¨ÇçKQ"  # John Diefenbaker
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = protestant
+  }
+}
+1963.4.22 = {
+  monarch = {
+    name = "±ÉØeyr ÆvSê"  # Lester Pearson
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = protestant
+  }
+}
+1968.4.20 = {
+  monarch = {
+    name = "Æv√WS yrÅúY"  # Pierre Trudeau
+    adm = 6
+    dip = 2
+    mil = 2
+    religion = protestant
+  }
+}
+1979.6.4 = {
+  monarch = {
+    name = "TN KQ…bKQ"  # Joe Clark
+    adm = 2
+    dip = 3
+    mil = 2
+    religion = protestant
+  }
+}
+1980.3.3 = {
+  monarch = {
+    name = "Æv√WS yrÅúY"  # Pierre Trudeau
+    adm = 6
+    dip = 2
+    mil = 2
+    religion = protestant
+  }
+}
+1984.6.30 = {
+  monarch = {
+    name = "¶u yr≥u"  # John Turner
+    adm = 2
+    dip = 2
+    mil = 3
+    religion = protestant
+  }
+}
+1984.9.17 = {
+  monarch = {
+    name = "^Vçi` löSW<S"  # Brian Mulroney
+    adm = 5
+    dip = 4
+    mil = 1
+    religion = protestant
+  }
+}
+1993.6.25 = {
+  monarch = {
+    name = "—ë NWçS"  # Kim Campbell
+    adm = 4
+    dip = 3
+    mil = 2
+    religion = protestant
+    female = yes
+  }
+}
+1993.11.4 = {
+  monarch = {
+    name = "©ã KQ˜ñÇÑâR"  # Jean ChrÈtien
+    adm = 4
+    dip = 2
+    mil = 4
+    religion = protestant
+  }
+}
+2003.12.12 = {
+  monarch = {
+    name = "›OW löN"  # Paul Martin
+    adm = 4
+    dip = 4
+    mil = 3
+    religion = protestant
+  }
+}
+2006.2.6 = {
+  monarch = {
+    name = "ØeÇÑ¨Ç »T¿s"  # Stephen Harper
+    adm = 6
+    dip = 3
+    mil = 2
+    religion = protestant
+  }
+}
+2015.11.4 = {
+  monarch = {
+    name = ">çØe˜^ yrÅúY"  # Justin Trudeau
+    adm = 3
+    dip = 5
+    mil = 3
+    religion = protestant
+  }
+}

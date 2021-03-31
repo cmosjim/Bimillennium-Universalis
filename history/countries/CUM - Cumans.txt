@@ -1,0 +1,335 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+primary_culture = cuman
+religion = tengri_pagan_reformed
+technology_group = western_nomad_group
+capital = 479
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = nomad_group
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+900.1.1 = {
+  secondary_religion = sunni
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1037.1.1 = {
+  capital = 466
+}
+1037.1.1 = {
+  monarch = {
+    name = "^Åú¿N"  # Blush
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1007.1.1
+    adm = 0
+    dip = 5
+    mil = 2
+  }
+}
+1037.1.1 = {
+  heir = {
+    name = "ôlÔç"  # Sharu
+    monarch_name = "ôlÔç"  # Sharu
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1030.1.1
+    death_date = 1061.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 5
+  }
+}
+1060.1.1 = {
+  monarch = {
+    name = "ôlÔç"  # Sharu
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1030.1.1
+    adm = 3
+    dip = 0
+    mil = 5
+  }
+}
+1060.1.1 = {
+  heir = {
+    name = "0taSS"  # Sokal
+    monarch_name = "0taSS"  # Sokal
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1031.1.1
+    death_date = 1070.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 5
+  }
+}
+1061.1.1 = {
+  monarch = {
+    name = "0taSS"  # Sokal
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1031.1.1
+    adm = 0
+    dip = 0
+    mil = 5
+  }
+}
+1061.1.1 = {
+  heir = {
+    name = "?ñ^Xnf"  # Asep
+    monarch_name = "?ñ^Xnf"  # Asep
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1040.1.1
+    death_date = 1082.1.1
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 1
+  }
+}
+1070.1.1 = {
+  monarch = {
+    name = "?ñ^Xnf"  # Asep
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1040.1.1
+    adm = 2
+    dip = 0
+    mil = 1
+  }
+}
+1070.1.1 = {
+  heir = {
+    name = "˛V<hS"  # Tugor
+    monarch_name = "˛V<hS"  # Tugor
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1052.1.1
+    death_date = 1096.1.1
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 3
+  }
+}
+1082.1.1 = {
+  monarch = {
+    name = "˛V<hS"  # Tugor
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1052.1.1
+    adm = 2
+    dip = 0
+    mil = 3
+  }
+}
+1082.1.1 = {
+  heir = {
+    name = "¶êöNKQ"  # Bonyak
+    monarch_name = "¶êöNKQ"  # Bonyak
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1066.1.1
+    death_date = 1111.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 0
+  }
+}
+1096.1.1 = {
+  monarch = {
+    name = "¶êöNKQ"  # Bonyak
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1066.1.1
+    adm = 4
+    dip = 3
+    mil = 0
+  }
+}
+1096.1.1 = {
+  heir = {
+    name = "eYyrWKQ"  # Otrok
+    monarch_name = "eYyrWKQ"  # Otrok
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1081.1.1
+    death_date = 1115.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+1111.1.1 = {
+  monarch = {
+    name = "eYyrWKQ"  # Otrok
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1081.1.1
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+1111.1.1 = {
+  heir = {
+    name = "?ñ2S^"  # Ayyup
+    monarch_name = "?ñ2S^"  # Ayyup
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1085.1.1
+    death_date = 1118.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+1115.1.1 = {
+  monarch = {
+    name = "?ñ2S^"  # Ayyup
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1085.1.1
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+1115.1.1 = {
+  heir = {
+    name = "√W^KQ"  # Aepak
+    monarch_name = "√W^KQ"  # Aepak
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1088.1.1
+    death_date = 1120.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+1118.1.1 = {
+  monarch = {
+    name = "√W^KQ"  # Aepak
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1088.1.1
+    adm = 4
+    dip = 5
+    mil = 3
+  }
+}
+1118.1.1 = {
+  heir = {
+    name = "Ôg^öNKQ"  # Kobyak
+    monarch_name = "Ôg^öNKQ"  # Kobyak
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1090.1.1
+    death_date = 1183.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+1120.1.1 = {
+  monarch = {
+    name = "Ôg^öNKQ"  # Kobyak
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1090.1.1
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1153.1.1 = {
+  heir = {
+    name = "TRp`KQ"  # Konchak
+    monarch_name = "TRp`KQ"  # Konchak
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1153.1.1
+    death_date = 1194.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1183.1.1 = {
+  monarch = {
+    name = "TRp`KQ"  # Konchak
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1153.1.1
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1183.1.1 = {
+  heir = {
+    name = "—yyrˆ^"  # Kotyan
+    monarch_name = "—yyrˆ^"  # Kotyan
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1164.1.1
+    death_date = 1223.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+1194.1.1 = {
+  monarch = {
+    name = "—yyrˆ^"  # Kotyan
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1164.1.1
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+1210.1.1 = {
+  heir = {
+    name = "=OyQ"  # Bortz
+    monarch_name = "=OyQ"  # Bortz
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1210.1.1
+    death_date = 1260.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1223.1.1 = {
+  monarch = {
+    name = "=OyQ"  # Bortz
+    dynasty = "¶îﬂR"  # Kipchak
+    birth_date = 1210.1.1
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1236.1.1 = {
+  capital = 2607
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

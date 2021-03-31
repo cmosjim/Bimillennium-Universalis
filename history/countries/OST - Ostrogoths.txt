@@ -1,0 +1,497 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+primary_culture = gothic
+religion = germanic
+technology_group = barbarian
+historical_friend = GVI
+capital = 282
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+220.1.1 = {
+  monarch = {
+    name = "TXYtâØe"  # Tanausis
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 190.1.1
+    adm = 4
+    dip = 3
+    mil = 0
+  }
+}
+220.1.1 = {
+  heir = {
+    name = "‰SÍè…b"  # Gudila
+    monarch_name = "‰SÍè…b"  # Gudila
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 200.1.1
+    death_date = 240.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+230.1.1 = {
+  monarch = {
+    name = "‰SÍè…b"  # Gudila
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 200.1.1
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+230.1.1 = {
+  heir = {
+    name = "^ÅúOØeTX"  # Buruista
+    monarch_name = "^ÅúOØeTX"  # Buruista
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 210.1.1
+    death_date = 250.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+240.1.1 = {
+  monarch = {
+    name = "^ÅúOØeTX"  # Buruista
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 210.1.1
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+240.1.1 = {
+  heir = {
+    name = "<SÊt"  # Cniva
+    monarch_name = "<SÊt"  # Cniva
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 220.1.1
+    death_date = 270.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+250.1.1 = {
+  monarch = {
+    name = "<SÊt"  # Cniva
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 220.1.1
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+250.1.1 = {
+  heir = {
+    name = "^tØe^"  # Respa
+    monarch_name = "^tØe^"  # Respa
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 240.1.1
+    death_date = 290.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 0
+  }
+}
+270.1.1 = {
+  monarch = {
+    name = "^tØe^"  # Respa
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 240.1.1
+    adm = 5
+    dip = 4
+    mil = 0
+  }
+}
+270.1.1 = {
+  heir = {
+    name = "Ùu˝êKQ"  # Veduc
+    monarch_name = "Ùu˝êKQ"  # Veduc
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 260.1.1
+    death_date = 310.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+290.1.1 = {
+  monarch = {
+    name = "Ùu˝êKQ"  # Veduc
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 260.1.1
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+290.1.1 = {
+  heir = {
+    name = "œÇSbSöN"  # Thuruar
+    monarch_name = "œÇSbSöN"  # Thuruar
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 280.1.1
+    death_date = 330.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+310.1.1 = {
+  monarch = {
+    name = "œÇSbSöN"  # Thuruar
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 280.1.1
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+310.1.1 = {
+  heir = {
+    name = "?ñÃëöNÃëKQ"  # Ariaric
+    monarch_name = "?ñÃëöNÃëKQ"  # Ariaric
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 300.1.1
+    death_date = 340.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 3
+  }
+}
+330.1.1 = {
+  monarch = {
+    name = "?ñÃëöNÃëKQ"  # Ariaric
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 300.1.1
+    adm = 3
+    dip = 0
+    mil = 3
+  }
+}
+330.1.1 = {
+  heir = {
+    name = "?ñ'kÃëKQ"  # Aoric
+    monarch_name = "?ñ'kÃëKQ"  # Aoric
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 310.1.1
+    death_date = 350.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 0
+  }
+}
+340.1.1 = {
+  monarch = {
+    name = "?ñ'kÃëKQ"  # Aoric
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 310.1.1
+    adm = 5
+    dip = 2
+    mil = 0
+  }
+}
+340.1.1 = {
+  heir = {
+    name = "<hçÃëKQ"  # Geberic
+    monarch_name = "<hçÃëKQ"  # Geberic
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 320.1.1
+    death_date = 360.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 0
+  }
+}
+350.1.1 = {
+  monarch = {
+    name = "<hçÃëKQ"  # Geberic
+    dynasty = "ÂTyr"  # Goth
+    birth_date = 320.1.1
+    adm = 3
+    dip = 4
+    mil = 0
+  }
+}
+350.1.1 = {
+  monarch = {
+    name = "ÑSS¸f≥uÃëKQ"  # Ermanaric
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 376.1.1
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+376.1.1 = {
+  monarch = {
+    name = ")nOTXS"  # Vinithar
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 346.1.1
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+376.1.1 = {
+  heir = {
+    name = "NN<SôÑyr"  # Hunimund
+    monarch_name = "NN<SôÑyr"  # Hunimund
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 360.1.1
+    death_date = 410.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 4
+  }
+}
+390.1.1 = {
+  monarch = {
+    name = "NN<SôÑyr"  # Hunimund
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 360.1.1
+    adm = 2
+    dip = 2
+    mil = 4
+  }
+}
+390.1.1 = {
+  heir = {
+    name = "˛VÃëØeôÑyr"  # Thorismund
+    monarch_name = "˛VÃëØeôÑyr"  # Thorismund
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 380.1.1
+    death_date = 430.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+410.1.1 = {
+  monarch = {
+    name = "˛VÃëØeôÑyr"  # Thorismund
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 380.1.1
+    adm = 5
+    dip = 3
+    mil = 2
+  }
+}
+410.1.1 = {
+  heir = {
+    name = "Êt…blöS"  # Valamar
+    monarch_name = "Êt…blöS"  # Valamar
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 400.1.1
+    death_date = 453.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 4
+  }
+}
+430.1.1 = {
+  monarch = {
+    name = "Êt…blöS"  # Valamar
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 400.1.1
+    adm = 3
+    dip = 1
+    mil = 4
+  }
+}
+430.1.1 = {
+  heir = {
+    name = "^eYYlöS"  # Theodomar
+    monarch_name = "^eYYlöS"  # Theodomar
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 423.1.1
+    death_date = 475.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+453.1.1 = {
+  monarch = {
+    name = "^eYYlöS"  # Theodomar
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 423.1.1
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+454.1.1 = {
+  heir = {
+    name = "âeY∑VÃëKQ"  # Theoderic
+    monarch_name = "âeY∑VÃëKQ"  # Theoderic
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 454.1.1
+    death_date = 526.8.30
+    claim = 95
+    adm = 6
+    dip = 5
+    mil = 6
+  }
+}
+455.1.1 = {
+  capital = 140
+}
+470.1.1 = {
+  religion = arianism
+}
+475.1.1 = {
+  monarch = {
+    name = "âeY∑VÃëKQ"  # Theoderic
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 454.1.1
+    adm = 6
+    dip = 5
+    mil = 6
+  }
+}
+489.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+493.1.1 = {
+  capital = 114
+}
+516.1.1 = {
+  heir = {
+    name = "?ñTX…bÃëKQ"  # Athalaric
+    monarch_name = "?ñTX…bÃëKQ"  # Athalaric
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 516.1.1
+    death_date = 534.10.2
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+526.8.30 = {
+  monarch = {
+    name = "?ñTX…bÃëKQ"  # Athalaric
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 516.1.1
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+526.8.30 = {
+  heir = {
+    name = "ƒreYæè»Tyr"  # Theodahad
+    monarch_name = "ƒreYæè»Tyr"  # Theodahad
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 480.1.1
+    death_date = 536.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+534.10.2 = {
+  monarch = {
+    name = "ƒreYæè»Tyr"  # Theodahad
+    dynasty = "?ñ»è“R"  # Amal
+    birth_date = 480.1.1
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+536.1.1 = {
+  technology_group = western
+}
+536.1.1 = {
+  monarch = {
+    name = "ÙuÇÑ	TØe"  # Vitiges
+    dynasty = "Ùu–c	T<h"  # Vitigid
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+540.1.1 = {
+  monarch = {
+    name = "SÍèÙT∑V"  # Ildibad
+    dynasty = "SÍèÙTÍè∑V"  # Ildibadid
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+541.1.1 = {
+  monarch = {
+    name = "˜ñÃëKQ"  # Eraric
+    dynasty = "NÂTyr"  # Ostrogoth
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+541.6.1 = {
+  monarch = {
+    name = "YÍè…b"  # Totila
+    dynasty = "NÂTyr"  # Ostrogoth
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+552.7.1 = {
+  monarch = {
+    name = "yröN"  # Teia
+    dynasty = "NÂTyr"  # Ostrogoth
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

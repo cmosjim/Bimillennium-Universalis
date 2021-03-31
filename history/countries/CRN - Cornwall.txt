@@ -1,0 +1,278 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = western
+primary_culture = welsh
+religion = chalcedonism
+capital = 233
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+640.1.1 = {
+  government = monarchy
+  add_government_reform = salic_reform
+}
+710.1.1 = {
+  monarch = {
+    name = "O^XS"  # Ithel
+    dynasty = "∑^ÉlS"  # Cornwall
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+710.1.1 = {
+  heir = {
+    name = "jg¨ÇÊtS"  # Dyfnwal
+    monarch_name = "jg¨ÇÊtS"  # Dyfnwal
+    dynasty = "∑^ÉlS"  # Cornwall
+    birth_date = 700.1.1
+    death_date = 750.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 1
+  }
+}
+730.1.1 = {
+  monarch = {
+    name = "jg¨ÇÊtS"  # Dyfnwal
+    dynasty = "∑^ÉlS"  # Cornwall
+    adm = 4
+    dip = 5
+    mil = 1
+  }
+}
+730.1.1 = {
+  heir = {
+    name = "aSSY)R"  # Cawrdolli
+    monarch_name = "aSSY)R"  # Cawrdolli
+    dynasty = "∑^ÉlS"  # Cornwall
+    birth_date = 720.1.1
+    death_date = 770.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  monarch = {
+    name = "aSSY)R"  # Cawrdolli
+    dynasty = "∑^ÉlS"  # Cornwall
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+750.1.1 = {
+  heir = {
+    name = "'kØeÊtyr"  # Oswallt
+    monarch_name = "'kØeÊtyr"  # Oswallt
+    dynasty = "∑^ÉlS"  # Cornwall
+    birth_date = 740.1.1
+    death_date = 790.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 4
+  }
+}
+770.1.1 = {
+  monarch = {
+    name = "'kØeÊtyr"  # Oswallt
+    dynasty = "∑^ÉlS"  # Cornwall
+    adm = 3
+    dip = 5
+    mil = 4
+  }
+}
+770.1.1 = {
+  heir = {
+    name = "kçSWS"  # Hernam
+    monarch_name = "kçSWS"  # Hernam
+    dynasty = "∑^ÉlS"  # Cornwall
+    birth_date = 760.1.1
+    death_date = 810.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+790.1.1 = {
+  monarch = {
+    name = "kçSWS"  # Hernam
+    dynasty = "∑^ÉlS"  # Cornwall
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+790.1.1 = {
+  heir = {
+    name = "ónf—ë"  # Hopkin
+    monarch_name = "ónf—ë"  # Hopkin
+    dynasty = "∑^ÉlS"  # Cornwall
+    birth_date = 780.1.1
+    death_date = 830.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+810.1.1 = {
+  monarch = {
+    name = "ónf—ë"  # Hopkin
+    dynasty = "∑^ÉlS"  # Cornwall
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+810.1.1 = {
+  heir = {
+    name = "´Éæè+Y"  # Mordaf
+    monarch_name = "´Éæè+Y"  # Mordaf
+    dynasty = "∑^ÉlS"  # Cornwall
+    birth_date = 800.1.1
+    death_date = 850.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+830.1.1 = {
+  monarch = {
+    name = "´Éæè+Y"  # Mordaf
+    dynasty = "∑^ÉlS"  # Cornwall
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+830.1.1 = {
+  heir = {
+    name = "9çVSâv"  # Fferferdyn
+    monarch_name = "9çVSâv"  # Fferferdyn
+    dynasty = "∑^ÉlS"  # Cornwall
+    birth_date = 820.1.1
+    death_date = 865.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+850.1.1 = {
+  monarch = {
+    name = "9çVSâv"  # Fferferdyn
+    dynasty = "∑^ÉlS"  # Cornwall
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+850.1.1 = {
+  heir = {
+    name = "SVöNSØe"  # Donyarth
+    monarch_name = "SVöNSØe"  # Donyarth
+    dynasty = "∑^ÉlS"  # Cornwall
+    birth_date = 835.1.1
+    death_date = 876.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+865.1.1 = {
+  monarch = {
+    name = "SVöNSØe"  # Donyarth
+    dynasty = "∑^ÉlS"  # Cornwall
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+865.1.1 = {
+  heir = {
+    name = "√WYu∑V"  # Eluid
+    monarch_name = "√WYu∑V"  # Eluid
+    dynasty = "∑^ÉlS"  # Cornwall
+    birth_date = 846.1.1
+    death_date = 885.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+867.1.1 = {
+  religion = catholic
+}
+876.1.1 = {
+  monarch = {
+    name = "√WYu∑V"  # Eluid
+    dynasty = "∑^ÉlS"  # Cornwall
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+876.1.1 = {
+  heir = {
+    name = "?ñ…b˙ãLNØe"  # Alanorus
+    monarch_name = "?ñ…b˙ãLNØe"  # Alanorus
+    dynasty = "∑^ÉlS"  # Cornwall
+    birth_date = 855.1.1
+    death_date = 3000.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+885.1.1 = {
+  monarch = {
+    name = "?ñ…b˙ãLNØe"  # Alanorus
+    dynasty = "∑^ÉlS"  # Cornwall
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+962.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

@@ -1,0 +1,149 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = senegambian
+religion = sunni
+technology_group = muslim
+capital = 1114
+religious_school = maliki_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1900.1.1 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1973.9.24 = {
+  monarch = {
+    name = "ÔçfØe∑aS^…bS"  # Luis Cabral
+    adm = 4
+    dip = 3
+    mil = 2
+    religion = sunni
+  }
+}
+1980.11.14 = {
+  monarch = {
+    name = "ÂÇf∑çS≥uY∑Ùu√W…b"  # Jo„o Bernardo Vieira
+    adm = 2
+    dip = 4
+    mil = 3
+    religion = sunni
+  }
+}
+1999.5.14 = {
+  monarch = {
+    name = "löpQ ÙTaSO (Ñ<SöN"  # Malam Bacai Sanh·
+    adm = 5
+    dip = 3
+    mil = 1
+    religion = sunni
+  }
+}
+2000.2.17 = {
+  monarch = {
+    name = "fÙT ≈ñ…b"  # Kumba Ial·
+    adm = 4
+    dip = 2
+    mil = 3
+    religion = sunni
+  }
+}
+2003.9.28 = {
+  monarch = {
+    name = "i`ÃëKQ∑iO˜ñ…b∑W(Ñ"  # Henrique Rosa
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = sunni
+  }
+}
+2005.10.1 = {
+  monarch = {
+    name = "ÂÇf∑çS≥uY∑Ùu√W…b"  # Jo„o Bernardo Vieira
+    adm = 2
+    dip = 4
+    mil = 3
+    religion = sunni
+  }
+}
+2009.9.8 = {
+  monarch = {
+    name = "löpQ ÙTaSO (Ñ<SöN"  # Malam Bacai Sanh·
+    adm = 5
+    dip = 3
+    mil = 1
+    religion = sunni
+  }
+}
+2012.1.9 = {
+  monarch = {
+    name = "˜ñôÑY iO˜ñ…b"  # Raimundo Pereira
+    adm = 4
+    dip = 2
+    mil = 2
+    religion = sunni
+  }
+}
+2012.4.12 = {
+  monarch = {
+    name = "lölöjg∑ì^…bõs"  # Mamadu Ture Kuruma
+    adm = 3
+    dip = 3
+    mil = 4
+    religion = sunni
+  }
+}
+2012.5.11 = {
+  monarch = {
+    name = "lö™R√WS∑^XÃëÃR∑<SöNlöÂÇ"  # Manuel Serifo Nhamadjo
+    adm = 3
+    dip = 3
+    mil = 2
+    religion = sunni
+  }
+}
+2014.6.23 = {
+  monarch = {
+    name = "ÂÇ˝l∑löÃëeY∑ÊtØe"  # JosÈ M·rio Vaz
+    adm = 3
+    dip = 4
+    mil = 3
+    religion = sunni
+  }
+}

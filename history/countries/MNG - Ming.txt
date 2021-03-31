@@ -1,0 +1,530 @@
+government = gov_celestial_empire
+add_government_reform = celestial_empire
+government_rank = 3
+technology_group = early_chinese
+religion = confucianism
+primary_culture = chihan
+capital = 1821	# Nanjing
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+
+1362.1.1 = {
+	monarch = {
+		name = "1gCQ‹t"
+		birth_date = 1328.10.21
+		death_date = 1398.6.24
+		adm = 5
+		dip = 5
+		mil = 6
+		leader = { name = "1gCQ‹t"	 type = general	fire = 8	shock = 9 manuever = 6	siege = 6 }
+	}
+	queen = {
+		name = "lšÀyñ‚"
+		#kRHaØš‡vT¬™lÿ1332t^7g18åeÿ1382t^9g23åe	ÿ
+		birth_date = 1332.7.18
+		death_date = 1382.9.23
+		female = yes
+		adm = 6
+		dip = 6
+		mil = 3
+	}
+	add_country_modifier = {
+		name = "more_heir_chance_2"
+		duration = -1
+	}
+	clear_scripted_personalities = yes
+	set_country_flag = flg_has_concert_pic202
+	set_country_flag = flg_marry_finished	
+	add_ruler_personality = conqueror_personality 
+	add_ruler_personality = strict_personality	
+	set_country_flag = flg_zu_yuan_zhan		
+}
+
+1368.1.1 = {
+	heir = {
+		name = "1gh"	# 
+		monarch_name = "1gh"
+		
+		birth_date = 1355.10.10
+		death_date = 1392.5.17
+		claim = 95
+		adm = 6
+		dip = 4
+		mil = 4
+	}
+}
+
+1392.5.18 = {
+	heir = {
+		name = "1gAQ¹u"
+		monarch_name = "1gAQ¹u"
+		
+		birth_date = 1377.12.5
+		death_date = 1402.7.13
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+1382.9.23 = {
+	clr_country_flag = flg_has_concert_pic202
+	clr_country_flag = flg_marry_finished	
+	remove_country_modifier = "more_heir_chance_2"
+}
+
+1398.6.24 = {
+	monarch = {
+		name = "1gAQ¹u"
+		birth_date = 1377.12.5
+		death_date = 1402.7.13
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+1398.6.24 = {
+		clr_country_flag = flg_zu_yuan_zhan
+}
+
+
+1399.1.1 = { set_country_flag = no_forbidden_city }
+
+1402.7.13 = {
+	monarch = {
+		name = "1gãh"
+		#fbVy1gãhÿ1360t^5g2åeÿ1424t^8g12åe	ÿÿb1z8lj^ÿ
+		birth_date = 1360.5.2
+		death_date = 1424.8.12
+		adm = 5
+		dip = 5
+		mil = 6
+		leader = { name = "1gãh"	type = general	fire = 8	shock = 8	manuever = 6	siege = 4 }
+	}
+}
+
+1402.7.13 = {
+	heir = {
+		name = "1gØšËp"
+		monarch_name = "1gØšËp"
+		
+		birth_date = 1378.8.16
+		death_date = 1425.5.29
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1405.1.1 = { leader = {	name = "ÑŒT"	type = explorer	fire = 6	shock = 6	manuever = 7	siege = 0	death_date = 1433.1.1 } }
+
+1420.1.1 = { capital = 1816 } # Beijing
+
+1424.8.12 = {
+	monarch = {
+		name = "1gØšËp"
+		#fÁN—R1gØš¾qÿ1378t^8g16åeÿ1425t^5g29åe	ÿÿt^m†*m™qÿ
+		birth_date = 1378.8.16
+		death_date = 1425.5.29
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1424.8.12 = {
+	heir = {
+		name = "1g»wúW"
+		monarch_name = "1g»wúW"
+		
+		birth_date = 1398.2.25
+		death_date = 1435.1.31
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 4
+		leader = { name = "1g»wúW"	type = general fire = 3	shock = 3	manuever = 3	siege = 0 }
+	}
+}
+		
+1425.5.29 = {
+	monarch = {
+		name = "1g»wúW"
+		#f±R—R1g»wúWÿ1399t^3g16åeÿ1435t^1g31åe	ÿ
+		birth_date = 1399.3.16
+		death_date = 1435.1.31
+		adm = 4
+		dip = 4
+		mil = 4
+		leader = { name = "1g»wúW"	type = general fire = 7	shock = 6	manuever = 5	siege = 0 }
+	}
+		clear_scripted_personalities = yes
+		add_ruler_personality = benevolent_personality 
+}
+
+1427.11.29 = {
+	heir = {
+		name = "1gAyG•"
+		monarch_name = "1gAyG•"
+		
+		birth_date = 1427.11.29
+		death_date = 1464.2.23
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1435.1.31 = {
+	monarch = {
+		name = "1gAyG•"
+		birth_date = 1427.11.29
+		death_date = 1464.2.23
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1449.11.23 = {
+	monarch = {
+		name = "1gAy°”"
+		birth_date = 1428.9.21
+		death_date = 1457.3.14
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1457.2.23 = {
+	monarch = {
+		name = "1gAyG•"
+		#fñ‚—R1gAy®“ÿ1427t^11g29åeÿ1464t^2g23åe	ÿÿf±R—R1g»wúWw•PR
+		birth_date = 1427.11.29
+		death_date = 1464.2.23
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1457.2.23 = {
+	heir = {
+		name = "1gÁ‰ñm"
+		monarch_name = "1gÁ‰ñm"
+		
+		birth_date = 1447.12.9
+		death_date = 1487.9.9
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+#1460.1.1 = { offensive_defensive = 1	land_naval = -4 } # Repairing the Great Wall
+
+1464.3.24 = {
+	monarch = {
+		name = "1gÁ‰ñm"
+		birth_date = 1447.12.9
+		death_date = 1487.9.9
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+		clear_scripted_personalities = yes
+		add_ruler_personality = embezzler_personality	
+	
+}
+
+1470.7.30 = {
+	heir = {
+		name = "1gQOj"
+		monarch_name = "1gQOj"
+		
+		birth_date = 1470.7.30
+		death_date = 1505.6.8
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1487.9.10 = {
+	monarch = {
+		name = "1gQOj"
+		birth_date = 1470.7.30
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+		clear_scripted_personalities = yes
+		add_ruler_personality = just_personality 	
+}
+
+1491.10.26 = {
+	heir = {
+		name = "1gšSgq"
+		monarch_name = "1gšSgq"
+		
+		birth_date = 1491.10.26
+		death_date = 1521.4.20
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 1
+	}
+}
+
+1505.6.9 = {
+	monarch = {
+		name = "1gšSgq"
+		birth_date = 1491.10.26
+		death_date = 1521.4.20
+		adm = 2
+		dip = 5
+		mil = 1
+	}
+}
+
+1521.4.21 = {
+	monarch = {
+		name = "1gšSœq"
+		birth_date = 1507.9.16
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+
+
+1522.1.1 = { leader = {	name = "bçuIQ"	type = general	fire = 7	shock = 7	manuever = 5	siege = 4	death_date = 1585.1.1 } }
+1537.3.4 = {
+	heir = {
+		name = "1g‹¢W"
+		monarch_name = "1g‹¢W"
+		
+		birth_date = 1537.3.4
+		death_date = 1572.7.5
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+#1557.1.1 = { innovative_narrowminded = 2 mercantilism_freetrade = -5 } # The Closure of China
+
+#1563.1.1 = { land_naval = -5 offensive_defensive = -1 } # Qi Jiguang's Army Reforms
+
+1567.1.24 = {
+	monarch = {
+		name = "1g‹¢W"
+		birth_date = 1537.3.4
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = drunkard_personality 	
+	
+}
+
+1567.1.24 = {
+	heir = {
+		name = "1gÊµ”"
+		monarch_name = "1gÊµ”"
+		
+		birth_date = 1563.9.4
+		death_date = 1620.8.18
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 5
+	}
+}
+
+1572.7.5 = {
+	monarch = {
+		name = "1gÊµ”"
+		birth_date = 1563.9.4
+		adm = 1
+		dip = 4
+		mil = 5
+	}
+}
+
+
+
+#1581.1.1 = { innovative_narrowminded = 0 } # The Arrival of the Jesuits
+
+1582.8.28 = {
+	heir = {
+		name = "1g8^m"
+		monarch_name = "1g8^m"
+		
+		birth_date = 1582.8.28
+		death_date = 1620.9.26
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1593.1.1 = { leader = {	name = "Ng‚YŒg"		type = general		fire = 3	shock = 2	manuever = 1	siege = 0	death_date = 1598.4.3 } }
+
+1600.1.1 = { set_country_flag = total_war_series set_country_flag = total_war }
+
+#1610.1.1 = { centralization_decentralization = 0 } # Defacto control of northeast China is lost
+
+1619.1.1 = { leader = {	name = "ˆTq"		type = general		fire = 4	shock = 5	manuever = 6	siege = 0	death_date = 1630.1.12 } }
+
+1620.8.27 = {
+	monarch = {
+		name = "1g8^m"
+		birth_date = 1582.8.28
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1620.8.27 = {
+	heir = {
+		name = "1g1u!h"
+		monarch_name = "1g1u!h"
+		
+		birth_date = 1605.12.23
+		death_date = 1627.9.30
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1620.9.28 = {
+	monarch = {
+		name = "1g1u!h"
+		birth_date = 1605.12.23
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1620.9.28 = {
+	heir = {
+		name = "1g1uÀh"
+		monarch_name = "1g1uÀh"
+		
+		birth_date = 1611.2.6
+		death_date = 1644.4.25
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1627.9.30 = {
+	monarch = {
+		name = "1g1uÀh"
+		birth_date = 1611.2.6
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+
+#1633.1.1 = { leader = { name = "Li Zicheng"            	type = general	rank = 0	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1644.5.27 } }
+#1640.1.1 = { leader = {	name = "Zhang Xianzhang"       	type = general	rank = 0	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1665.1.1 } }
+# mN.^.^ÙVÿÙ›NºNı=fdÛS›Q„vÀNHNöePØSbfãNS›Q†Ne
+# N›N9h,gN=f¨PT„v`HN¾‹šRb¨PT†Nÿÿ”^å‹ôv¥c¾‹šRb:NTIN
+
+1644.1.1 = {
+	monarch = {
+		name = "1g1u'T"
+		birth_date = 1607.1.1
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1645.6.20 = {
+	monarch = {
+		name = "1gw.•"
+		
+		birth_date = 1602.1.1
+		death_date = 1646.1.1
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+
+
+#1645.6.20 = { centralization_decentralization = 2 } # Zhu Yousong's death signals the end of the Ming dynasty.
+#(WMO	1645t^8g18åeÿ1646t^10g6åe
+#úQuÿ 1602 t^ 5 g 25 åeÿ-NWWS‹–^
+#Nÿ 1646 t^ 10 gÿ-NW	
+
+1645.8.18 = {
+	monarch = {
+		name = "1gw.•"
+		
+		birth_date = 1602.5.25
+		adm = 4
+		dip = 2
+		mil = 1
+	}
+}
+#ÿ1623t^11g1åeÿ1662t^6g1åe	ÿ
+#1g1u”iÿ1646t^12g24åeÿ1662t^4g(WMO	ÿ
+1646.12.24 = {
+	monarch = {
+		name = "1g1u”i"
+		#dynasty = " "
+		birth_date = 1623.11.1
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1912.2.12 = {
+
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+	religion = liberalism
+}
+1949.10.1 = { technology_group = modern_chinese }

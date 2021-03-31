@@ -1,0 +1,41 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+government_rank = 1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = cantonese
+capital = 720
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+#UOwÿ1321t^ÿ1388t^	ÿ
+1359.1.1 = {
+	monarch = {
+		name = "UOw"
+		birth_date =  1321.1.1
+		death_date =  1388.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+		leader = { name = "UOw"	type = general	fire = 6	shock = 6	manuever = 3	siege = 2 }
+	}
+}
+1360.1.1 = {
+	heir = {
+		name = "UO®i"
+		monarch_name = "UO®i"
+		claim = 100
+		adm = 4
+		dip = 2
+		mil = 1
+	}
+}

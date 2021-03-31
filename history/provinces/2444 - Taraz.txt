@@ -1,0 +1,50 @@
+#2444 - Taraz
+
+owner = KGJ
+controller = KGJ
+culture = khazak
+religion = tengri_pagan_reformed
+capital = "Taraz"
+trade_goods = cloth
+base_tax = 1
+base_production = 1
+base_manpower = 3
+hre = no
+discovered_by = nomad_group
+discovered_by = eastern_nomad_group
+discovered_by = western_nomad_group
+discovered_by = ottoman
+discovered_by = middle_eastern
+discovered_by = muslim
+is_city = yes
+add_core = KGJ
+
+280.1.1 = { owner = CBN controller = CBN add_core = CBN remove_core = KGJ }
+495.1.1 = { owner = HEP controller = HEP add_core = HEP remove_core = CBN }
+555.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = HEP culture = turkic }
+583.1.1 = { owner = WGO controller = WGO add_core = WGO remove_core = GOK }
+659.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = WGO }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+705.2.21 = { owner = TNG controller = TNG add_core = TNG remove_core = WZ1 }
+708.1.1 = { owner = TRG controller = TRG add_core = TRG remove_core = TNG }
+766.1.1 = { owner = KLU controller = KLU add_core = KLU remove_core = TRG }
+934.1.1 = { religion = sunni }
+942.1.1 = { owner = KKH controller = KKH add_core = KKH remove_core = KLU }
+1134.1.1 = { owner = CK1 controller = CK1 add_core = CK1 remove_core = KKH }
+1137.1.1 = { owner = KKT controller = KKT add_core = KKT remove_core = CK1 }
+1219.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = KKT culture = khazak }
+1260.1.1 = { owner = CHG controller = CHG add_core = CHG remove_core = MGE }
+1266.1.1 =  { owner = WK1 controller = WK1 add_core = WK1 remove_core = CHG }
+1304.1.1 = { owner = CHG controller = CHG add_core = CHG remove_core = WK1 }
+1347.1.1 = { owner = DC1 controller = DC1 add_core = DC1 remove_core = CHG }
+1456.1.1 = { add_core = KZH }
+1456.1.1 = { owner = KZH controller = KZH remove_core = DC1 } # Kazakh horde forms
+1622.1.1 = { discovered_by = RUS }
+1723.1.1 = { owner = ZUN controller = ZUN } # Dzungarian invasion
+1746.1.1 = { owner = KZH controller = KZH remove_core = ZUN } # Kazakh horde forms
+1760.1.1 = { owner = QNG controller = QNG add_core = QNG }
+1810.1.1 = { owner = KOK controller = KOK add_core = KOK }
+1864.1.1   = { owner = RUS controller = RUS add_core = RUS remove_core = KOK }
+1917.12.13 = { add_core = KZK remove_core = KZH }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV remove_core = RUS }
+1991.12.16 = { owner = KZK controller = KZK remove_core = SOV remove_core = RUS }

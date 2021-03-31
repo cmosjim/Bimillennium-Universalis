@@ -1,0 +1,80 @@
+#1838 - Hefei
+
+latent_trade_goods = {
+	coal
+}
+
+owner = HND
+controller = HND
+culture = jianghuai
+religion = confucianism
+capital = "Hefei"
+trade_goods = grain
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+is_city = yes
+add_core = HND
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+
+8.12.1 = { owner = NEW controller = NEW add_core = NEW remove_core = HND }
+23.10.1 = { owner = LX1 controller = LX1 add_core = LX1 remove_core = NEW }
+30.10.1 = { owner = HND controller = HND add_core = HND remove_core = LX1  }
+191.1.1 = { owner = CNW controller = CNW add_core = CNW remove_core = HND }
+193.1.1 = { owner = UAZ controller = UAZ add_core = UAZ remove_core = CNW }
+197.2.1 = { owner = ZMG controller = ZMG add_core = ZMG remove_core = UAZ }
+199.1.1 = { owner = SNJ controller = SNJ add_core = SNJ remove_core = ZMG }
+200.5.5 = { owner = SNC controller = SNC add_core = SNC remove_core = SNJ }
+229.4.1 = { owner = WUU controller = WUU add_core = WUU remove_core = SNC }
+266.2.4 = { owner = JN1 controller = JN1 add_core = JN1 remove_core = WUU }
+420.1.1 = { owner = LSO controller = LSO add_core = LSO remove_core = JN1 }
+479.1.1 = { owner = QIC controller = QIC add_core = QIC remove_core = LSO }
+502.1.1 = { owner = LN1 controller = LN1 add_core = LN1 remove_core = QIC }
+550.6.7 = { owner = BAQ controller = BAQ add_core = BAQ remove_core = LN1 }
+577.2.28 = { owner = CEN controller = CEN add_core = CEN remove_core = BAQ }
+589.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CEN }
+618.6.18 = { owner = DFW controller = DFW add_core = DFW remove_core = SUI }
+619.10.1 = { owner = TNG controller = TNG add_core = TNG remove_core = DFW }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+705.2.21 = { owner = TNG controller = TNG add_core = TNG remove_core = WZ1 }
+907.6.1 = { owner = YW1 controller = YW1 add_core = YW1 remove_core = TNG }
+937.1.1 = { owner = NT1 controller = NT1 add_core = NT1 remove_core = YW1 }
+955.1.1 = { owner = HZ1 controller = HZ1 add_core = HZ1 remove_core = NT1 }
+960.1.1 = { owner = SNG controller = SNG add_core = SNG remove_core = HZ1 }
+1260.5.5 = { owner = KHA controller = KHA add_core = KHA remove_core = SNG }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1358.1.1 = { owner = ZU2 controller = ZU2 add_core = ZU2 remove_core = YUA }
+1368.1.23 = { owner = MNG controller = MNG add_core = MNG remove_core = ZU2 }
+1595.1.1 = { discovered_by = SPA }
+1645.6.14 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		}
+1751.1.1 = { base_tax = 5 base_production = 5 base_manpower = 5 }
+1853.1.1 = { owner = TP1 controller = TP1 add_core = TP1 religion = worship_god remove_core = QNG } # Taiping rebellion
+1863.5.1 = { owner = QNG controller = QNG add_core = QNG remove_core = TP1 religion = confucianism  } # Taiping rebellion 
+1875.1.1 = { base_tax = 6 base_production = 6 }
+1911.11.4 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB }
+1912.2.12 = { revolt = {} owner = BNN controller = BNN add_core = BNN  remove_core = QNG }
+1917.7.6 = { owner = WX1 controller = WX1 add_core = WX1 remove_core = BNN }
+1920.1.1 = { owner = ZX1 controller = ZX1 add_core = ZX1 remove_core = WX1 trade_goods = coal }
+1925.12.1 = { owner = WJ1 controller = WJ1 add_core = WJ1 remove_core = ZX1 }
+1927.3.1 = { owner = FX1 controller = FX1 add_core = FX1 remove_core = WJ1 }
+1928.12.29 = { owner = ROC controller = ROC add_core = ROC remove_core = FX1 }
+1930.1.1 = { base_tax = 5 base_production = 5 base_manpower = 5 }
+1938.1.1 = { owner = JAP controller = JAP }
+1940.3.1 = { owner = WW1 controller = WW1 add_core = WW1 remove_core = ROC }
+1945.8.16 = { owner = ROC controller = ROC add_core = ROC remove_core = WW1 }
+1949.6.1 = { owner = CW1 controller = CW1 add_core = CW1 remove_core = ROC }
+1949.10.1 = { owner = CHN controller = CHN add_core = CHN remove_core = CW1 }
+1950.1.1 = { base_tax = 6 base_production = 7 base_manpower = 7 }
+1957.1.1 = { religion = communism }
+1966.5.1 = { base_tax = 3 base_production = 4 base_manpower = 5 }
+1975.1.1 = { base_tax = 8 base_production = 10 base_manpower = 11 }
+1995.1.1 = { base_tax = 11 base_production = 11 base_manpower = 12 }
+2000.1.1 = { base_tax = 14 base_production = 14 base_manpower = 14 }
+2010.1.1 = { base_tax = 16 base_production = 16 base_manpower = 15 }

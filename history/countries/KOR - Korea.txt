@@ -1,0 +1,682 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = korean
+religion = buddhism
+technology_group = early_chinese
+capital = 735	# Hanseong
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1392.1.1 = { religion = confucianism }
+
+1392.7.18 = {
+	monarch = {
+		name = "NgbBh"
+		
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+
+1392.7.18 = {
+	heir = {
+		name = "Ng≥Çúg"
+		monarch_name = "Ng≥Çúg"
+		
+		birth_date = 1357.7.1
+		death_date = 1419.9.26
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1398.9.1 = {
+	monarch = {
+		name = "Ng≥Çúg"
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1398.9.1 = {
+	heir = {
+		name = "Ng≥Ç‹è"
+		monarch_name = "Ng≥Ç‹è"
+		
+		birth_date = 1367.5.18
+		death_date = 1422.5.10
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+1400.11.13 = {
+	monarch = {
+		name = "Ng≥Ç‹è"
+		
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+1400.11.13 = {
+	heir = {
+		name = "NgCQck"
+		monarch_name = "NgCQck"
+		
+		birth_date = 1397.5.6
+		death_date = 1450.5.18
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1418.9.18 = {
+	monarch = {
+		name = "NgCQck"
+		
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1418.9.18 = {
+	heir = {
+		name = "NgâèKN"
+		monarch_name = "NgâèKN"
+		
+		birth_date = 1414.1.1
+		death_date = 1452.6.12
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1450.5.18 = {
+	monarch = {
+		name = "NgâèKN"
+		
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1450.5.18 = {
+	heir = {
+		name = "NgÔzóR"
+		monarch_name = "NgÔzóR"
+		
+		birth_date = 1441.1.1
+		death_date = 1457.1.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1452.6.12 = {
+	monarch = {
+		name = "NgÔzóR"
+		
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1452.6.12 = {
+	heir = {
+		name = "NgHt"
+		monarch_name = "NgHt"
+		
+		birth_date = 1417.1.1
+		death_date = 1468.1.1
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+
+1456.1.1 = {
+	monarch = {
+		name = "NgHt"
+		
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+
+1456.1.1 = {
+	heir = {
+		name = "Ngfgq"
+		monarch_name = "Ngfgq"
+		
+		birth_date = 1450.1.1
+		death_date = 1469.1.10
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1468.10.2 = {
+	monarch = {
+		name = "Ngfgq"
+		
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1468.10.2 = {
+	heir = {
+		name = "NgbóR"
+		monarch_name = "NgbóR"
+		
+		birth_date = 1457.1.1
+		death_date = 1494.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1469.1.10 = {
+	monarch = {
+		name = "NgbóR"
+		
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1476.1.1 = {
+	heir = {
+		name = "Ng’qqST"
+		monarch_name = "Ng’qqST"
+		
+		birth_date = 1476.1.1
+		death_date = 1506.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1495.1.30 = {
+	monarch = {
+		name = "Ng’qqST"
+		
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1495.1.30 = {
+	heir = {
+		name = "Ng?`"
+		monarch_name = "Ng?`"
+		
+		birth_date = 1488.1.1
+		death_date = 1544.12.5
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+1506.1.1 = {
+	monarch = {
+		name = "Ng?`"
+		
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+1515.1.1 = {
+	heir = {
+		name = "Ng)Y‰w"
+		monarch_name = "Ng)Y‰w"
+		
+		birth_date = 1515.1.1
+		death_date = 1545.8.18
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1544.12.5 = {
+	monarch = {
+		name = "Ng)Y‰w"
+		
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1544.12.5 = {
+	heir = {
+		name = "NgÿS"
+		monarch_name = "NgÿS"
+		
+		birth_date = 1534.1.1
+		death_date = 1567.8.13
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1545.8.18 = {
+	monarch = {
+		name = "NgÿS"
+		
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1552.1.1 = {
+	heir = {
+		name = "Ng±RVy"
+		monarch_name = "Ng±RVy"
+		
+		birth_date = 1552.1.1
+		death_date = 1608.3.7
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+1567.8.13 = {
+	monarch = {
+		name = "Ng±RVy"
+		
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+1574.1.1 = {
+	heir = {
+		name = "NgÚs"
+		monarch_name = "NgÚs"
+		
+		birth_date = 1574.1.1
+		death_date = 1641.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1576.1.1 = { leader = {	name = "NgÇ„Å"            	type = admiral	fire = 6	shock = 6	manuever = 6	siege = 0	death_date = 1598.11.1 } }
+
+#1588.1.1 = { land_naval = 1 } # Construction of Turtle Ships
+
+1608.3.7 = {
+	monarch = {
+		name = "NgÚs"
+		
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+# Coup
+
+1623.4.13 = {
+	monarch = {
+		name = "NgåT=O"
+		
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1623.4.13 = {
+	heir = {
+		name = "NgYón"
+		monarch_name = "NgYón"
+		
+		birth_date = 1619.1.1
+		death_date = 1659.6.24
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1636.5.15 = { technology_group = old_estern_asian }
+
+1637.1.1 = {
+	government_rank = 1
+}
+
+1645.6.30 = {
+	government_rank = 2
+}
+
+1645.7.1 = {
+	government_rank = 1
+}
+
+1649.7.5 = {
+	monarch = {
+		name = "NgYón"
+		
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1649.7.5 = {
+	heir = {
+		name = "NgofÙv"
+		monarch_name = "NgofÙv"
+		
+		birth_date = 1641.1.1
+		death_date = 1674.9.19
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+#1654.1.1 = { land_naval = 0 quality_quantity = -1 } # Hyo-jong's northern expedition
+
+1659.6.24 = {
+	monarch = {
+		name = "NgofÙv"
+		
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1661.8.15 = {
+	heir = {
+		name = "Ngfnf"
+		monarch_name = "Ngfnf"
+		
+		birth_date = 1661.8.15
+		death_date = 1720.7.13
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1674.9.19 = {
+	monarch = {
+		name = "Ngfnf"
+		
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1688.1.1 = {
+	heir = {
+		name = "Ngf"
+		monarch_name = "Ngf"
+		
+		birth_date = 1688.1.1
+		death_date = 1724.10.7
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1720.7.13 = {
+	monarch = {
+		name = "Ngf"
+		
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1720.7.13 = {
+	heir = {
+		name = "NgIQ‘S"
+		monarch_name = "NgIQ‘S"
+		
+		birth_date = 1694.9.13
+		death_date = 1776.3.5
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+1724.10.7 = {
+	monarch = {
+		name = "NgIQ‘S"
+		
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+1752.9.22 = {
+	heir = {
+		name = "NgXy"
+		monarch_name = "NgXy"
+		
+		birth_date = 1752.9.22
+		death_date = 1800.6.28
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+
+1776.1.1 = {
+	monarch = {
+		name = "NgXy"
+		
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1790.1.1 = {
+	heir = {
+		name = "Ngús"
+		monarch_name = "Ngús"
+		
+		birth_date = 1790.1.1
+		death_date = 1834.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+
+1800.8.19 = {
+	monarch = {
+		name = "Ngús"
+		
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+1827.9.8 = {
+	heir = {
+		name = "Ngáeî^"
+		monarch_name = "Ngáeî^"
+		
+		birth_date = 1827.9.8
+		death_date = 1849.7.25
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+1834.12.13 = {
+	monarch = {
+		name = "Ngáeî^"
+		
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+1834.12.13 = {
+	heir = {
+		name = "NgSêGS"
+		monarch_name = "NgSêGS"
+		
+		birth_date = 1831.7.25
+		death_date = 1864.1.15
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}
+
+1849.7.25 = {
+	monarch = {
+		name = "NgSêGS"
+		
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}
+
+1852.9.8 = {
+	heir = {
+		name = "Ngf+Y"
+		monarch_name = "Ngf+Y"
+		
+		birth_date = 1852.9.8
+		death_date = 1919.1.21
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1863.12.13 = {
+	monarch = {
+		name = "Ngf+Y"
+		
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1874.3.25 = {
+	heir = {
+		name = "Ngckiè"
+		monarch_name = "Ngckiè"
+		
+		birth_date = 1874.3.25
+		death_date = 1926.4.24
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+1897.10.1 = { government_rank = 3 }
+1907.7.20 = {
+	monarch = {
+		name = "Ngckiè"
+		
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+
+1920.1.1 = { religion = liberalism }
+1930.1.1 = { technology_group = asian }
+1945.8.15 = { government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = strengthen_executive_powers_reform
+	add_government_reform = single_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = powerful_head_of_state
+	set_legacy_government = constitutional_republic
+ government_rank = 2 }
+ 
+#1910t^
+#8g22Âe - 0ÂeÈóTv^ag¶u0ˇ´àÂe,gTv^0
+#8g29Âe - VæãgúúI`cwú^
+#Âeªlˆeg :N1910t^8g29ÂeÛÅ1945t^8g15ÂeÙï

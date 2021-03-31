@@ -1,0 +1,83 @@
+government = theocracy
+add_government_reform = caliphate_theocratic_reform
+government_rank = 3
+technology_group = muslim
+religion = sunni
+primary_culture = bedouin_arabic
+capital = 384
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+622.1.1 = {
+  decision = dummy_rise_of_islam
+}
+622.1.1 = {
+  monarch = {
+    name = "FzUÿû∑V"  # Muhammad
+    adm = 6
+    dip = 6
+    mil = 6
+  }
+}
+632.6.8 = {
+  monarch = {
+    name = "?ñ^ çKQS"  # Abu Bakr
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+634.8.23 = {
+  monarch = {
+    name = "eYlöS"  # 'Umar
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+644.11.6 = {
+  monarch = {
+    name = "LNØe¸f"  # Uthman
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+656.1.1 = {
+  capital = 409
+}
+656.6.20 = {
+  monarch = {
+    name = "?ñÃë"  # Ali
+    adm = 1
+    mil = 5
+    dip = 5
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

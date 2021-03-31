@@ -1,0 +1,282 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+#aristocracy_plutocracy = -5
+#centralization_decentralization = 3
+#innovative_narrowminded = 3
+#mercantilism_freetrade = -5
+mercantilism = 0.1
+#offensive_defensive = -3
+#land_naval = -5
+#quality_quantity = -2
+#serfdom_freesubjects = -5
+primary_culture = japanese
+religion = shinto
+technology_group = early_chinese
+capital = 1023	# Echizen
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1000.1.1 = {
+	set_country_flag = daimyo
+}
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+
+1339.1.1 = {
+	heir = {
+		name = "g”Nlof"
+		monarch_name = "g”Nlof"
+		#dynasty = "Shoni"
+		birth_date = 1339.1.1
+		death_date = 1405.1.28
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1372.6.3 = {
+	monarch = {
+		name = "g”Nlof" 
+		#dynasty = " "
+		#dynasty = "Asakura"
+#		birth_date = 1339.1.1
+#		death_date = 1405.1.28
+		adm = 2
+		dip = 2
+		mil = 2
+		}
+}
+
+1372.6.3 = {
+	heir = {
+		name = "g”Nçof"
+		monarch_name = "g”Nçof"
+		#dynasty = "Asakura"
+		birth_date = 1358.1.1
+		death_date = 1436.6.30
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1405.1.28 = {
+	monarch = {
+		name = "g”Nçof" 
+		#dynasty = " "
+		#dynasty = "Asakura"
+#		birth_date = 1358.1.1
+#		death_date = 1436.6.30
+		adm = 2
+		dip = 2
+		mil = 2
+		}
+}
+
+1405.1.28 = {
+	heir = {
+		name = "g”NYeof"
+		monarch_name = "g”NYeof"
+		#dynasty = "Asakura"
+		birth_date = 1380.1.1
+		death_date = 1463.9.2
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1436.6.30 = {
+	monarch = {
+		name = "g”NYeof" 
+		#dynasty = " "
+		#dynasty = "Asakura"
+		adm = 2
+		dip = 2
+		mil = 5
+		}
+}
+
+1436.6.30 = {
+	heir = {
+		name = "g”N∂Rof"
+		monarch_name = "g”N∂Rof"
+		#dynasty = "Asakura"
+		birth_date = 1402.1.1
+		death_date = 1451.1.22
+		claim = 90
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+
+1422.9.2 = {
+	monarch = {
+		name = "g”N∂Rof" 
+		#dynasty = " "
+		#dynasty = "Asakura"
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+
+1451.1.22 = {
+	heir = {
+		name = "g”NOeof"
+		monarch_name = "g”NOeof"
+		#dynasty = "Asakura"
+		birth_date = 1428.6.2
+		death_date = 1481.8.21
+		claim = 90
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1463.9.2 = {
+	monarch = {
+		name = "g”NOeof" 
+		#dynasty = " "
+		#dynasty = "Asakura"
+#		birth_date = 1428.6.2
+#		death_date = 1481.8.21
+		adm = 4
+		dip = 4
+		mil = 5
+		}
+}
+
+1463.9.2 = {
+	heir = {
+		name = "g”Nlof"
+		monarch_name = "g”Nlof"
+		#dynasty = "Asakura"
+		birth_date = 1449.4.27
+		death_date = 1486.8.3
+		claim = 90
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1481.8.21 = {
+	monarch = {
+		name = "g”Nlof" 
+		#dynasty = " "
+		
+#		birth_date = 1449.4.27
+#		death_date = 1486.8.3
+		adm = 3
+		dip = 3
+		mil = 3
+		}
+}
+
+##1481.8.21 = { innovative_narrowminded = 2 }
+
+1481.8.21 = {
+	heir = {
+		name = "g”Nçof"
+		monarch_name = "g”Nçof"
+		#dynasty = "Asakura"
+		birth_date = 1473.3.3
+		death_date = 1512.4.11
+		claim = 90
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1486.8.3 = {
+	monarch = {
+		name = "g”Nçof" 
+		#dynasty = " "
+		#dynasty = "Asakura"
+#		birth_date = 1473.3.3
+#		death_date = 1512.4.11
+		adm = 4
+		dip = 3
+		mil = 4
+		}
+}
+
+1493.11.22 = {
+	heir = {
+		name = "g”NkRof"
+		monarch_name = "g”NkRof"
+		#dynasty = "Asakura"
+		birth_date = 1493.11.22
+		death_date = 1548.4.30
+		claim = 90
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+##1503.1.1 = { centralization_decentralization = 2 }
+
+##1506.1.1 = { innovative_narrowminded = 1 }
+
+1512.4.11 = {
+	monarch = {
+		name = "g”NkRof" 
+		#dynasty = " "
+		#dynasty = "Asakura"
+#		birth_date = 1493.11.22
+#		death_date = 1548.4.30
+		adm = 5
+		dip = 4
+		mil = 4
+		}
+}
+
+1533.10.12 = {
+	heir = {
+		name = "g”NINof"
+		monarch_name = "g”NINof"
+		#dynasty = "Asakura"
+		birth_date = 1533.10.12
+		death_date = 1573.9.16
+		claim = 80
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1548.4.30 = {
+	monarch = {
+		name = "g”NINof" 
+		#dynasty = " "
+		#dynasty = "Asakura"
+#		birth_date = 1533.10.12
+#		death_date = 1573.9.16
+		adm = 3
+		dip = 2
+		mil = 2
+		}
+}
+1636.5.15 = { technology_group = old_estern_asian }
+1944.1.1 = { technology_group = asian }

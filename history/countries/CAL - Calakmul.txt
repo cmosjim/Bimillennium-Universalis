@@ -1,0 +1,416 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = yucatec
+religion = mesoamerican_religion
+technology_group = mesoamerican
+historical_rival = TIK
+capital = 2639
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+450.1.1 = {
+  monarch = {
+    name = "2SKQ™R∆Y ﬂRi` I"  # Yuknoom Ch'een I
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 430.1.1
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+490.1.1 = {
+  heir = {
+    name = "˝êi`aS‘kKQØe"  # Tuun K'ab' Hix
+    monarch_name = "˝êi`aS‘kKQØe"  # Tuun K'ab' Hix
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 490.1.1
+    death_date = 550.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+520.1.1 = {
+  monarch = {
+    name = "˝êi`aS‘kKQØe"  # Tuun K'ab' Hix
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 490.1.1
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+520.1.1 = {
+  heir = {
+    name = ")Y¡ã"  # Sky Witness
+    monarch_name = ")Y¡ã"  # Sky Witness
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 520.1.1
+    death_date = 572.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}
+550.1.1 = {
+  monarch = {
+    name = ")Y¡ã"  # Sky Witness
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 520.1.1
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}
+550.1.1 = {
+  heir = {
+    name = "≈ñKQØe ¶u^yr"  # Yax Yopaat
+    monarch_name = "≈ñKQØe ¶u^yr"  # Yax Yopaat
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 542.1.1
+    death_date = 579.9.2
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 1
+  }
+}
+572.1.1 = {
+  monarch = {
+    name = "≈ñKQØe ¶u^yr"  # Yax Yopaat
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 542.1.1
+    adm = 5
+    dip = 2
+    mil = 1
+  }
+}
+572.1.1 = {
+  heir = {
+    name = "wS«Ü"  # Scroll Serpent
+    monarch_name = "wS«Ü"  # Scroll Serpent
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 549.1.1
+    death_date = 611.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+579.9.2 = {
+  monarch = {
+    name = "wS«Ü"  # Scroll Serpent
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 549.1.1
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+581.1.1 = {
+  heir = {
+    name = "2SKQ™R∆Y 0W∞è"  # Yuknoom Ti' Chan
+    monarch_name = "2SKQ™R∆Y 0W∞è"  # Yuknoom Ti' Chan
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 581.1.1
+    death_date = 622.3.28
+    claim = 95
+    adm = 0
+    dip = 4
+    mil = 5
+  }
+}
+611.1.1 = {
+  monarch = {
+    name = "2SKQ™R∆Y 0W∞è"  # Yuknoom Ti' Chan
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 581.1.1
+    adm = 0
+    dip = 4
+    mil = 5
+  }
+}
+611.1.1 = {
+  heir = {
+    name = "TX”u∆Y KSaSÙTaSKQ"  # Tajoom Uk'ab K'ahk'
+    monarch_name = "TX”u∆Y KSaSÙTaSKQ"  # Tajoom Uk'ab K'ahk'
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 592.1.1
+    death_date = 630.10.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+622.3.28 = {
+  monarch = {
+    name = "TX”u∆Y KSaSÙTaSKQ"  # Tajoom Uk'ab K'ahk'
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 592.1.1
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+622.3.28 = {
+  heir = {
+    name = "2SKQ™R∆Y —û∑V"  # Yuknoom Head
+    monarch_name = "2SKQ™R∆Y —û∑V"  # Yuknoom Head
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 600.1.1
+    death_date = 636.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 5
+  }
+}
+630.10.1 = {
+  monarch = {
+    name = "2SKQ™R∆Y —û∑V"  # Yuknoom Head
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 600.1.1
+    adm = 0
+    dip = 2
+    mil = 5
+  }
+}
+630.10.1 = {
+  heir = {
+    name = "2SKQ™R∆Y ﬂRi`"  # Yuknoom Ch'een
+    monarch_name = "2SKQ™R∆Y ﬂRi` II"  # Yuknoom Ch'een II
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 600.9.11
+    death_date = 686.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+636.1.1 = {
+  monarch = {
+    name = "2SKQ™R∆Y ﬂRi` II"  # Yuknoom Ch'een II
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 600.9.11
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+649.10.6 = {
+  heir = {
+    name = "2SKQ™R∆Y OﬂRKQ aSkçKQ"  # Yuknoom Yich'aak K'ahk'
+    monarch_name = "2SKQ™R∆Y OﬂRKQ aSkçKQ"  # Yuknoom Yich'aak K'ahk'
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 649.10.6
+    death_date = 695.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 1
+  }
+}
+686.1.1 = {
+  monarch = {
+    name = "2SKQ™R∆Y OﬂRKQ aSkçKQ"  # Yuknoom Yich'aak K'ahk'
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 649.10.6
+    adm = 0
+    dip = 2
+    mil = 1
+  }
+}
+686.1.1 = {
+  heir = {
+    name = "¬à0W"  # Split Earth
+    monarch_name = "¬à0W"  # Split Earth
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 665.1.1
+    death_date = 702.1.1
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 1
+  }
+}
+695.1.1 = {
+  monarch = {
+    name = "¬à0W"  # Split Earth
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 665.1.1
+    adm = 0
+    dip = 1
+    mil = 1
+  }
+}
+695.1.1 = {
+  heir = {
+    name = "2SKQ™R∆Y ˛VKQZS"  # Yuknoom Took' K'awiil
+    monarch_name = "2SKQ™R∆Y ˛VKQZS"  # Yuknoom Took' K'awiil
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 672.1.1
+    death_date = 731.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 0
+  }
+}
+702.1.1 = {
+  monarch = {
+    name = "2SKQ™R∆Y ˛VKQZS"  # Yuknoom Took' K'awiil
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 672.1.1
+    adm = 2
+    dip = 3
+    mil = 0
+  }
+}
+702.1.1 = {
+  heir = {
+    name = "Êtlö aSÙuS"  # Wamaw K'awil
+    monarch_name = "Êtlö aSÙuS"  # Wamaw K'awil
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 701.1.1
+    death_date = 745.1.1
+    claim = 95
+    adm = 0
+    dip = 4
+    mil = 3
+  }
+}
+731.1.1 = {
+  monarch = {
+    name = "Êtlö aSÙuS"  # Wamaw K'awil
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 701.1.1
+    adm = 0
+    dip = 4
+    mil = 3
+  }
+}
+731.1.1 = {
+  heir = {
+    name = "'Y«Ü"  # Great Serpent
+    monarch_name = "'Y«Ü"  # Great Serpent
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 715.1.1
+    death_date = 771.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 5
+  }
+}
+745.1.1 = {
+  monarch = {
+    name = "'Y«Ü"  # Great Serpent
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 715.1.1
+    adm = 5
+    dip = 2
+    mil = 5
+  }
+}
+745.1.1 = {
+  heir = {
+    name = "^Üñ aSZS"  # B'olon K'awiil
+    monarch_name = "^Üñ aSZS"  # B'olon K'awiil
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 741.1.1
+    death_date = 820.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+771.1.1 = {
+  monarch = {
+    name = "^Üñ aSZS"  # B'olon K'awiil
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 741.1.1
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+790.1.1 = {
+  heir = {
+    name = "^ç iOyr"  # Chan Pet
+    monarch_name = "^ç iOyr"  # Chan Pet
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 790.1.1
+    death_date = 900.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+820.1.1 = {
+  monarch = {
+    name = "^ç iOyr"  # Chan Pet
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 790.1.1
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+870.1.1 = {
+  heir = {
+    name = "√W ˛VKQ"  # Aj Took'
+    monarch_name = "√W ˛VKQ"  # Aj Took'
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 870.1.1
+    death_date = 987.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+900.1.1 = {
+  monarch = {
+    name = "√W ˛VKQ"  # Aj Took'
+    dynasty = "aS…bKQFzS"  # Calakmul
+    birth_date = 870.1.1
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

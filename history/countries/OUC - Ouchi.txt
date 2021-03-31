@@ -1,0 +1,257 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+#aristocracy_plutocracy = -4
+#centralization_decentralization = 4
+#innovative_narrowminded = 3
+#mercantilism_freetrade = -3
+mercantilism = 0.1
+
+primary_culture = japanese
+religion = shinto
+technology_group = early_chinese
+capital = 1017	# Nagato
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1000.1.1 = {
+	set_country_flag = daimyo
+}
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1320.1.1 = {
+  monarch = {
+    name = "'Y…QVx^"  # Hiroyuki
+    #dynasty = "'Y…Q"  # Ouchi
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1325.1.1 = {
+  heir = {
+    name = "'Y…QVN"  # Hiroyo
+    monarch_name = "'Y…QVN"  # Hiroyo
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1325.1.1
+    death_date = 1380.12.12
+    claim = 80
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1352.4.20 = {
+  monarch = {
+    name = "'Y…QVN"  # Hiroyo
+    #dynasty = "'Y…Q"  # Ouchi
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1356.1.1 = {
+  heir = {
+    name = "'Y…QINV"  # Yoshihiro
+    monarch_name = "'Y…QINV"  # Yoshihiro
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1325.1.1
+    death_date = 1400.1.17
+    claim = 80
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1380.12.12 = {
+  monarch = {
+    name = "'Y…QINV"  # Yoshihiro
+    #dynasty = "'Y…Q"  # Ouchi
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1394.3.23 = {
+  heir = {
+    name = "'Y…QcN"  # Mochiyo
+    monarch_name = "'Y…QcN"  # Mochiyo
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1394.3.23
+    death_date = 1441.8.14
+    claim = 70
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1400.1.7 = {
+  monarch = {
+    name = "'Y…QVƒ"  # Hiroshige
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1394.3.23
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1401.1.1 = {
+  monarch = {
+    name = "'Y…QÛvÁ‰"  # Morimi
+    #dynasty = "'Y…Q"  # Ouchi
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+1431.1.1 = {
+  monarch = {
+    name = "'Y…QcN"  # Mochiyo
+    #dynasty = "'Y…Q"  # Ouchi
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1431.1.1 = {
+  heir = {
+    name = "'Y…QYeV"  # Norihiro
+    monarch_name = "'Y…QYeV"  # Norihiro
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1420.3.20
+    death_date = 1465.9.3
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1441.1.1 = {
+  monarch = {
+    name = "'Y…QYeV"  # Norihiro
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1420.3.20
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+  clear_scripted_personalities = yes
+  add_ruler_personality = silver_tongue_personality
+}
+1446.8.27 = {
+  heir = {
+    name = "'Y…Q?eV"  # Masahiro
+    monarch_name = "'Y…Q?eV"  # Masahiro
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1446.8.27
+    death_date = 1495.10.6
+    claim = 90
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+1465.9.3 = {
+  monarch = {
+    name = "'Y…Q?eV"  # Masahiro
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1446.9.18
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+1477.4.7 = {
+  heir = {
+    name = "'Y…QINtQ"  # Yoshioki
+    monarch_name = "'Y…QINtQ"  # Yoshioki
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1477.4.7
+    death_date = 1529.1.29
+    claim = 90
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+1495.10.6 = {
+  monarch = {
+    name = "'Y…QINtQ"  # Yoshioki
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1477.4.7
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+1507.12.18 = {
+  heir = {
+    name = "'Y…QIN†–"  # Yoshitaka
+    monarch_name = "'Y…QIN†–"  # Yoshitaka
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1507.12.18
+    death_date = 1551.9.30
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1528.1.29 = {
+  monarch = {
+    name = "'Y…QIN†–"  # Yoshitaka
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1507.12.18
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1544.1.1 = {
+  heir = {
+    name = "'Y…QIN•"  # Yoshinaga
+    monarch_name = "'Y…QIN•"  # Yoshinaga
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1532.1.1
+    death_date = 1557.5.1
+    claim = 70
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1545.1.1 = {
+  heir = {
+    name = "'Y…QIN†–"  # Yoshitaka
+    monarch_name = "'Y…QIN†–"  # Yoshitaka
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1545.1.1
+    death_date = 1551.10.1
+    claim = 90
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1551.10.1 = {
+  monarch = {
+    name = "'Y…QIN•"  # Yoshinaga
+    #dynasty = "'Y…Q"  # Ouchi
+    birth_date = 1532.1.1
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+
+1636.5.15 = { technology_group = old_estern_asian }	
+1949.10.1 = { technology_group = asian }

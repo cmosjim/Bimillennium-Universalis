@@ -1,0 +1,17 @@
+name = "ï•‹sNn›QKNb"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 700
+}
+
+1644.1.1 = {
+	add_attacker = QNG
+	add_defender = CSH
+}
+
+1645.2.1 = {
+	rem_attacker = QNG
+	rem_defender = CSH
+}

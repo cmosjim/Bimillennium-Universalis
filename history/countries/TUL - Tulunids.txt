@@ -1,0 +1,46 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = al_misr_arabic
+religion = sunni
+technology_group = muslim
+capital = 361	# Cairo
+
+868.1.1 = {
+	monarch = {
+		name = "Ahmad bin Tulun"
+		dynasty = "Tulunid"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+884.1.1 = {
+	monarch = {
+		name = "Khumarawayh ibn Ahmad"
+		dynasty = "Tulunid"
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
+
+896.1.1 = {
+	monarch = {
+		name = "Harun ibn Khumarawayh"
+		dynasty = "Tulunid"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+904.1.1 = {
+	monarch = {
+		name = "Shayban ibn Ahmad"
+		dynasty = "Tulunid"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

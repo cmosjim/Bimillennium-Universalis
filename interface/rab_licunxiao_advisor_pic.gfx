@@ -1,0 +1,15 @@
+spriteTypes = {	
+
+		spriteType = {
+		name = "GFX_advisor_licunxiao"
+		texturefile = "gfx//interface//advisors//licunxiao.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	 spriteType = {
+		name = "li_cunxiao_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_ASIAN/li_cunxiao_eventPicture.dds"
+	}
+}

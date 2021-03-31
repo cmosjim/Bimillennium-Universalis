@@ -1,0 +1,85 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+primary_culture = uzbehk
+religion = tengri_pagan_reformed
+technology_group = eastern_nomad_group
+capital = 459
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+659.1.1 = {
+  monarch = {
+    name = "LNÀNËz"  # Ushyly
+    dynasty = "z‘šËe"  # Türgesh
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+699.1.1 = {
+  monarch = {
+    name = "2SyQËzKQ"  # Yuzlik
+    dynasty = "z‘šËe"  # Türgesh
+    adm = 4
+    dip = 1
+    mil = 5
+  }
+}
+706.1.1 = {
+  monarch = {
+    name = "(„aSS"  # Sakal
+    dynasty = "z‘šËe"  # Türgesh
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+717.1.1 = {
+  monarch = {
+    name = "Ï‚„y"  # Suluk
+    dynasty = "z‘šËe"  # Türgesh
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+730.1.1 = {
+  monarch = {
+    name = "×kKO"  # Bilge
+    dynasty = "z‘šËe"  # Türgesh
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = nomad_group
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

@@ -1,0 +1,479 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+#aristocracy_plutocracy = -5
+#centralization_decentralization = 4
+#innovative_narrowminded = 4
+#mercantilism_freetrade = -5
+mercantilism = 0.1
+#offensive_defensive = -2
+#land_naval = -3
+#quality_quantity = -3
+#serfdom_freesubjects = -5
+primary_culture = japanese
+religion = shinto
+technology_group = early_chinese
+capital = 1825	# Aki
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1000.1.1 = {
+	set_country_flag = daimyo
+}
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1341.1.1 = {
+  monarch = {
+    name = "€k)RCQ%f"  # Motoharu
+    #dynasty = "€k)R"  # Mori
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1347.1.1 = {
+  heir = {
+    name = "€k)R^?b"  # Hirofusa
+    monarch_name = "€k)R^?b"  # Hirofusa
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1347.1.1
+    death_date = 1385.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1386.1.1 = {
+  heir = {
+    name = "€k)RIQ?b"  # Mitsufusa
+    monarch_name = "€k)RIQ?b"  # Mitsufusa
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1386.1.1
+    death_date = 1436.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1401.1.1 = {
+  monarch = {
+    name = "€k)RIQ?b"  # Mitsufusa
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1412.1.1 = {
+  heir = {
+    name = "€k)RUqCQ"  # Hiromoto
+    monarch_name = "€k)RUqCQ"  # Hiromoto
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1412.1.1
+    death_date = 1464.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1436.1.1 = {
+  monarch = {
+    name = "€k)RUqCQ"  # Hiromoto
+    #dynasty = "€k)R"  # Mori
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1444.1.1 = {
+  heir = {
+    name = "€k)R0NCQ"  # Toyomoto
+    monarch_name = "€k)R0NCQ"  # Toyomoto
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1444.1.1
+    death_date = 1476.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1464.1.1 = {
+  monarch = {
+    name = "€k)R0NCQ"  # Toyomoto
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1444.1.1
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1466.1.1 = {
+  heir = {
+    name = "€k)RVCQ"  # Hiromoto
+    monarch_name = "€k)RVCQ"  # Hiromoto
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1466.1.1
+    death_date = 1506.2.3
+    claim = 90
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1476.1.1 = {
+  monarch = {
+    name = "€k)RVCQ"  # Hiromoto
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1466.1.1
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1492.1.1 = {
+  heir = {
+    name = "€k)RtQCQ"  # Okimoto
+    monarch_name = "€k)RtQCQ"  # Okimoto
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1492.1.1
+    death_date = 1516.9.21
+    claim = 90
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1506.2.3 = {
+  monarch = {
+    name = "€k)RtQCQ"  # Okimoto
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1492.1.1
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1515.1.1 = {
+  heir = {
+    name = "€k)Rx^åg8N"  # Komatsumaru
+    monarch_name = "€k)Rx^åg8N"  # Komatsumaru
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1515.1.1
+    death_date = 1523.8.25
+    claim = 90
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1516.9.21 = {
+  monarch = {
+    name = "€k)Rx^åg8N"  # Komatsumaru
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1515.1.1
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1523.8.25 = {
+  monarch = {
+    name = "€k)RCQ1S"  # Motonari
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1497.4.16
+    adm = 5
+    dip = 6
+    mil = 4
+  }
+}
+1523.8.25 = {
+  heir = {
+    name = "€k)RÜñCQ"  # Takamoto
+    monarch_name = "€k)RÜñCQ"  # Takamoto
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1523.1.1
+    death_date = 1563.9.18
+    claim = 90
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1563.9.18 = {
+  heir = {
+    name = "€k)RâèCQ"  # Terumoto
+    monarch_name = "€k)RâèCQ"  # Terumoto
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1553.2.4
+    death_date = 1625.6.2
+    claim = 90
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1571.7.6 = {
+  monarch = {
+    name = "€k)RâèCQ"  # Terumoto
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1553.2.4
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1571.7.6 = {
+  heir = {
+    name = "€k)R¿y1S"  # Hidenari
+    monarch_name = "€k)R¿y1S"  # Hidenari
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1571.7.6
+    death_date = 1651.2.24
+    claim = 90
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1623.1.1 = {
+  monarch = {
+    name = "€k)R¿y1S"  # Hidenari
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1595.11.19
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+
+1636.5.15 = { technology_group = old_estern_asian }
+
+1639.12.14 = {
+  heir = {
+    name = "€k)R≤u^"  # Tsunahiro
+    monarch_name = "€k)R≤u^"  # Tsunahiro
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1639.12.14
+    death_date = 1689.6.4
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1651.2.24 = {
+  monarch = {
+    name = "€k)R≤u^"  # Tsunahiro
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1639.12.14
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1668.3.3 = {
+  heir = {
+    name = "€k)R	T1S"  # Yoshinari
+    monarch_name = "€k)R	T1S"  # Yoshinari
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1668.3.3
+    death_date = 1694.3.2
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1689.6.4 = {
+  monarch = {
+    name = "€k)R	T1S"  # Yoshinari
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1668.3.3
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1689.6.4 = {
+  heir = {
+    name = "€k)R	T^"  # Yoshihiro
+    monarch_name = "€k)R	T^"  # Yoshihiro
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1673.2.28
+    death_date = 1707.11.16
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1694.3.2 = {
+  monarch = {
+    name = "€k)R	T^"  # Yoshihiro
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1673.2.28
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1707.11.16 = {
+  monarch = {
+    name = "€k)R	TCQ"  # Yoshimoto
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1677.9.20
+    adm = 6
+    dip = 3
+    mil = 3
+  }
+}
+1717.8.12 = {
+  heir = {
+    name = "€k)RóR^"  # Munehiro
+    monarch_name = "€k)RóR^"  # Munehiro
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1717.8.12
+    death_date = 1751.3.1
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1731.10.13 = {
+  monarch = {
+    name = "€k)RóR^"  # Munehiro
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1717.8.12
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1751.3.1 = {
+  monarch = {
+    name = "€k)RÕë1S"  # Shigetaka
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1725.10.15
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1754.8.3 = {
+  heir = {
+    name = "€k)Rªl≤N"  # Haruchika
+    monarch_name = "€k)Rªl≤N"  # Haruchika
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1754.8.3
+    death_date = 1791.7.12
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1789.11.23 = {
+  monarch = {
+    name = "€k)Rªl≤N"  # Haruchika
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1754.8.3
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1789.11.23 = {
+  heir = {
+    name = "€k)RPü?b"  # Narifusa
+    monarch_name = "€k)RPü?b"  # Narifusa
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1782.12.14
+    death_date = 1809.3.29
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1791.7.12 = {
+  monarch = {
+    name = "€k)RPü?b"  # Narifusa
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1782.12.14
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1809.3.29 = {
+  monarch = {
+    name = "€k)RPüôq"  # Narihiro
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1784.1.1
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+
+1636.5.15 = { technology_group = old_estern_asian }	
+
+
+1824.1.1 = {
+  monarch = {
+    name = "€k)RPüCQ"  # Narimoto
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1794.4.23
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1824.1.1 = {
+  heir = {
+    name = "€k)RPüôq"  # Narihiro
+    monarch_name = "€k)RPüôq"  # Narihiro
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1814.7.3
+    death_date = 1837.2.4
+    claim = 90
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1836.10.17 = {
+  monarch = {
+    name = "€k)RPüôq"  # Narihiro
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1814.7.3
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1837.2.4 = {
+  monarch = {
+    name = "€k)Rle≤N"  # Takachika
+    #dynasty = "€k)R"  # Mori
+    birth_date = 1819.3.15
+    adm = 6
+    dip = 6
+    mil = 6
+  }
+}
+
+1949.10.1 = { technology_group = asian }

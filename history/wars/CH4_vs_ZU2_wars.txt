@@ -1,0 +1,19 @@
+name = "1‘3–VnKNb"
+
+#1‘‹–VnKN0bÿ1363t^8g30åe%1363t^10g4åe	ÿ
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 1821
+}
+
+1363.8.30 = {
+	add_attacker = CH4
+	add_defender = ZU2
+}
+
+1363.10.4 = {
+	rem_attacker = CH4
+	rem_defender = ZU2
+}

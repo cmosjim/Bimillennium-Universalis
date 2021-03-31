@@ -1,0 +1,288 @@
+#1.core.gfx : vs the Rab_MapFontchi.fnt / dds
+#2.eventwindow.gfx : events_BG_top
+#3.eventwindow.gui : adjust events windows size
+#		    name ="event_bg_middle"
+#			spriteType = "GFX_event_bg_middle"
+#		    position = { x = -43 y = 470 } ###
+#			Orientation = "UPPER_LEFT"
+#4.医疗体系
+#4-1.file : macrobuildinterface.gui
+#	將建築界面變大
+#	windowType = {
+#		name = "new_buildings_entry"
+#		backGround=""
+#		position = { x=0 y =0}	
+#	#	size = { x=400 y = 320}
+#		size = { x=800 y = 320}
+#		
+#		
+#	XXX	把以下的arrow disable 
+#	#	iconType = {
+#	#		name = "storehouse_to_windmill_arrow"
+#	#		position = { x = 52 y = 41 }
+#	#		spriteType = "GFX_building_upgrade_icon"
+#	#	}			
+#
+#	#	iconType = {
+#	#		name = "windmill_to_workshop_arrow"
+#	#		position = { x = 102 y = 41 }
+#	#		spriteType = "GFX_building_upgrade_icon"
+#	#	}	
+#
+#	
+#
+#		provinceview.gui
+#
+#  1) 把選擇建築的背景圖像更換大的版本
+#	  
+#		file: select_building_large_bg2.dds
+#		pic path define file : provinceview.gfx
+#		pic path gfx	:gfx_select_building_large_bg2
+#
+#	2) 有多的建築icon banner
+#		
+#		file: macro_buildings_category_strip.dds
+#		pic path define file: macrobuildinterface.gfx
+#		pic path define: GFX_macro_buildings_category_strip
+#		同時定義最大數量strip
+#		noOfFrames = ?
+#	
+#	3) 批量建築的背景圖
+#		file: macrobuildbackground.dds
+#		pic path define file: macrobuildinterface_override.gui
+#		pic path define:  GFX_macro_build_interface
+#		noOfFrames = 1
+#
+#	4) 批量建築的右手邊各項button 位置調整 ( not building icon )culture . core ...etc.
+#		file : macrobuildinterface_override.gui
+#		adjust checkbox : original x= 486 change 486 + 230 = 716 
+#		checkbox list as shown :land_units_button , navy_units_button , core_button , missionary_button
+#										:autonomy_button ....etc.	
+#		dont forget the "close_gold" and "close_button" : x = 469 change 469 + 230 = 699 
+#  5) 批量建築的右手邊"有效的範圍"必須打開以上的修改才會出現
+#		file : macrobuildinterface_override.gui
+#		key name : macro_build_interface
+#		x, y 均要增加
+#
+#	#	size = { x=392 y = 568} <===old
+#	#	392+288 = 680
+#		size = { x= 680 y = 440 }	
+#
+#  6) 批量建築的右手邊"有效的範圍"必須打開以上的修改才會出現
+#		file : macrobuildinterface_override.gui
+#		key name : content_list
+#			#size = { x= 454 y = 426 } #was x= 400
+#			size = { x= 714 y = 426 } #was x= 400
+#
+#
+#4.2 file: macrobuildinterface.gfx
+#
+#		spriteType = {
+#		name = "GFX_macro_buildings_category_strip"
+#		texturefile = "gfx//interface//macro_buildings_category_strip.dds"
+#		noOfFrames = 12
+#	}
+#
+#	spriteType = {
+#		name = "GFX_rab_banner_right_4"
+#		texturefile = "gfx//interface//rab_banner_right_4.dds"
+#	}
+#		
+#			
+#5.儒家和道教的神祉 we have 10 addition
+#	file : countryreligionview.gfx
+#	
+#	#rab_
+#	spriteType = {
+#		name = "GFX_hindu_deities_strip"
+#		texturefile = "gfx//interface//hindu_deities_strip.dds"
+#	#	noOfFrames = 84
+#		noOfFrames = 94
+#	}
+#
+#6.道教的神祉:
+#	file : countryreligionview.gui
+#	
+#	####################################
+#	#rab_modify_deity_item_location#####
+#	####################################
+#	################# personal deity		
+#	windowType = {
+#		name = "personal_deity_item"
+#		backGround =""
+#		position = { x=10 y=-20 }	
+#		size = { x=50 y=46 }
+#		moveable = 0
+#		dontRender = ""
+#		horizontalBorder = ""
+#		Orientation = "UPPER_LEFT"
+#				
+#		iconType =
+#		{
+#			name ="deity_item_icon"
+#			spriteType = "GFX_hindu_deities_strip"
+#		#	position = { x= 5 y = -4 } 
+#			position = { x= 96 y = -4 } 
+#		}
+#		
+#		instantTextBoxType = {
+#			name = "deity_item_name"
+#			position = { x= -42 y = 7 }
+#			font = "vic_18"
+#			borderSize = {x = 0 y = 0}
+#			text = "DeityName"	
+#		#	maxWidth = 32
+#			maxWidth = 128
+#			maxHeight = 24
+#			Orientation = "UPPER_LEFT"
+#			format = center
+#		}
+#		
+#		instantTextBoxType = {
+#			name = "deity_item_effect"
+#		#	position = { x = 58 y = -2 }
+#			position = { x = 149 y = -2 }
+#			font = "vic_18"
+#			borderSize = {x = 0 y = 0}
+#			text = "DeityEffect"	
+#			maxWidth = 256
+#			maxHeight = 24
+#			Orientation = "UPPER_LEFT"
+#			format = left
+#		}
+#		################################################
+#		######rab_modify_deity_item_location_end#########	
+#		################################################
+##==========================		
+# 7-1 
+# 2017-08-24 ex add one and  我們多了道教和儒教拜上帝會 : 
+# 2020-01-05 add more 我們多了 滿州薩滿 和xy 制定的4 宗教
+# file : countryview.gfx
+##    
+#
+###rab_
+#	spriteType = {
+#		name = "GFX_icon_religion"
+#		texturefile = "gfx//interface//icon_religion.tga"
+#		noOfFrames = 59
+####		loadType = "INGAME"
+#		
+#	}
+#
+#spriteType = {
+#	name = "GFX_country_icon_religion"
+#	texturefile = "gfx//interface//country_icon_religion.dds"
+#	noOfFrames = 59	#rab_
+#}
+#
+#spriteType = {
+#	name = "GFX_icon_religion_small"
+#	texturefile = "gfx//interface//icon_religion_small.tga"
+#	noOfFrames = 59   #rab_
+#	loadType = "INGAME"
+#}
+#
+# file : provinceview.gfx
+#	spriteType = {
+#		name = "GFX_province_view_religion"
+#		texturefile = "gfx//interface//province_view_religion.tga"
+#		noOfFrames = 59
+#		loadType = "INGAME"
+#	}
+#	
+#	
+###==========================	
+# file : ledger.gfx
+#
+## rab_
+#	spriteType = {
+#		name = "GFX_religion_icon_strip"
+#		texturefile = "gfx\\interface\\icon_religion_small.dds"
+#		transparencecheck = yes
+#		noOfFrames = 54
+#	}
+#
+#
+#9-1 多了王莽災難: file :countrystabilityview.gfx
+#
+##rab_ add
+#	spriteType = {
+#		name = "GFX_disaster_wangmang_disaster"
+#		texturefile = "gfx//interface//disasters//wangmang_disaster.dds"
+#		noOfFrames = 3
+#		loadType = "INGAME"
+#	}		
+##rab_ add
+##10-1 多了將軍點數	general_stuff.gfx
+#	#rab_ add to 20 2017/01/21
+#	spriteType = {
+#		name = "GFX_stars_small"
+#		texturefile = "gfx//interface//dots.tga"
+#		noOfFrames = 20 #was 13
+#		#transparencecheck = yes
+#		allwaystransparent = yes
+#	}
+#
+##11-1 修正rab_modify_deity_item_location
+#	file: countryreligionview.gui
+#	####################################
+#	#rab_modify_deity_item_location#####
+#	####################################
+#	################# personal deity		
+#	windowType = {
+#		name = "personal_deity_item"
+#		backGround =""
+#		position = { x=10 y=-20 }	
+#		size = { x=50 y=46 }
+#		moveable = 0
+#		dontRender = ""
+#		horizontalBorder = ""
+#		Orientation = "UPPER_LEFT"
+#				
+#		iconType =
+#		{
+#			name ="deity_item_icon"
+#			spriteType = "GFX_hindu_deities_strip"
+#		#	position = { x= 5 y = -4 } 
+#			position = { x= 96 y = -4 } 
+#		}
+#		
+#		instantTextBoxType = {
+#			name = "deity_item_name"
+#			position = { x= -42 y = 7 }
+#			font = "vic_18"
+#			borderSize = {x = 0 y = 0}
+#			text = "DeityName"	
+#		#	maxWidth = 32
+#			maxWidth = 128
+#			maxHeight = 24
+#			Orientation = "UPPER_LEFT"
+#			format = center
+#		}
+#		
+#		instantTextBoxType = {
+#			name = "deity_item_effect"
+#		#	position = { x = 58 y = -2 }
+#			position = { x = 149 y = -2 }
+#			font = "vic_18"
+#			borderSize = {x = 0 y = 0}
+#			text = "DeityEffect"	
+#			maxWidth = 256
+#			maxHeight = 24
+#			Orientation = "UPPER_LEFT"
+#			format = left
+#		}
+#		################################################
+#		######rab_modify_deity_item_location_end#########	
+#		################################################
+##11-2 修正 deity
+#	file: countryreligionview.gfx
+#
+# 	spriteType = {
+#		name = "GFX_hindu_deities_strip"
+#		texturefile = "gfx//interface//hindu_deities_strip.dds"
+#	#	noOfFrames = 84 #  rab_
+#		noOfFrames = 94  
+#	}
+# 
+#

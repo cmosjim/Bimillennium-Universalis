@@ -1,0 +1,393 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+primary_culture = luri
+religion = sunni
+technology_group = muslim
+capital = 4461
+religious_school = hanafi_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1155.1.1 = {
+  monarch = {
+    name = "?ñ^TX^S"  # Abu Tahir
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1125.1.1
+    adm = 5
+    dip = 0
+    mil = 4
+  }
+}
+1174.1.1 = {
+  heir = {
+    name = "»TNb…bØenf"  # Hazarasp
+    monarch_name = "»TNb…bØenf"  # Hazarasp
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1174.1.1
+    death_date = 1248.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 1
+  }
+}
+1204.1.1 = {
+  monarch = {
+    name = "»TNb…bØenf"  # Hazarasp
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1174.1.1
+    adm = 4
+    dip = 5
+    mil = 1
+  }
+}
+1218.1.1 = {
+  heir = {
+    name = "Olö∑V"  # Imad
+    monarch_name = "Olö∑V"  # Imad
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1218.1.1
+    death_date = 1252.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+1248.1.1 = {
+  monarch = {
+    name = "Olö∑V"  # Imad
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1218.1.1
+    adm = 3
+    dip = 5
+    mil = 2
+  }
+}
+1248.1.1 = {
+  heir = {
+    name = "™RØe…byr"  # Nusrat
+    monarch_name = "™RØe…byr I"  # Nusrat I
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1222.1.1
+    death_date = 1257.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 0
+  }
+}
+1252.1.1 = {
+  monarch = {
+    name = "™RØe…byr I"  # Nusrat I
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1222.1.1
+    adm = 3
+    dip = 2
+    mil = 0
+  }
+}
+1252.1.1 = {
+  heir = {
+    name = "æè…b"  # Takla
+    monarch_name = "æè…b I"  # Takla I
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1227.1.1
+    death_date = 1259.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+1257.1.1 = {
+  monarch = {
+    name = "æè…b I"  # Takla I
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1227.1.1
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+1257.1.1 = {
+  heir = {
+    name = "ôl∆YØe"  # Shams
+    monarch_name = "ôl∆YØe I"  # Shams I
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1229.1.1
+    death_date = 1274.1.1
+    claim = 95
+    adm = 0
+    dip = 3
+    mil = 2
+  }
+}
+1259.1.1 = {
+  monarch = {
+    name = "ôl∆YØe I"  # Shams I
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1229.1.1
+    adm = 0
+    dip = 3
+    mil = 2
+  }
+}
+1259.1.1 = {
+  heir = {
+    name = "O.tèy ôl?ñ"  # Yusuf Shah
+    monarch_name = "O.tèy ôl?ñ I"  # Yusuf Shah I
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1244.1.1
+    death_date = 1288.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1274.1.1 = {
+  monarch = {
+    name = "O.tèy ôl?ñ I"  # Yusuf Shah I
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1244.1.1
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+1274.1.1 = {
+  heir = {
+    name = "…bâöNjS"  # Afrasiab
+    monarch_name = "…bâöNjS I"  # Afrasiab I
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1258.1.1
+    death_date = 1296.1.1
+    claim = 95
+    adm = 5
+    dip = 0
+    mil = 4
+  }
+}
+1288.1.1 = {
+  monarch = {
+    name = "…bâöNjS I"  # Afrasiab I
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1258.1.1
+    adm = 5
+    dip = 0
+    mil = 4
+  }
+}
+1288.1.1 = {
+  heir = {
+    name = "™RØe…byr"  # Nusrat
+    monarch_name = "™RØe…byr II"  # Nusrat II
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1266.1.1
+    death_date = 1330.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+1296.1.1 = {
+  monarch = {
+    name = "™RØe…byr II"  # Nusrat II
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1266.1.1
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+1300.1.1 = {
+  heir = {
+    name = "O.tèy ôl?ñ"  # Yusuf Shah
+    monarch_name = "O.tèy ôl?ñ  II"  # Yusuf Shah II
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1300.1.1
+    death_date = 1340.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 3
+  }
+}
+1330.1.1 = {
+  monarch = {
+    name = "O.tèy ôl?ñ  II"  # Yusuf Shah II
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1300.1.1
+    adm = 5
+    dip = 3
+    mil = 3
+  }
+}
+1330.1.1 = {
+  heir = {
+    name = "…bâöNjS"  # Afrasiab
+    monarch_name = "…bâöNjS II"  # Afrasiab II
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1310.1.1
+    death_date = 1355.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+1340.1.1 = {
+  monarch = {
+    name = "…bâöNjS II"  # Afrasiab II
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1310.1.1
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+1340.1.1 = {
+  heir = {
+    name = "ôl∆YØe"  # Shams
+    monarch_name = "ôl∆YØe II"  # Shams II
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1325.1.1
+    death_date = 1378.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+1355.1.1 = {
+  monarch = {
+    name = "ôl∆YØe II"  # Shams II
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1325.1.1
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+1355.1.1 = {
+  heir = {
+    name = "lö)RKQ ÆvS åÇ»T»è∑V"  # Malik Pir Ahmad
+    monarch_name = "lö)RKQ ÆvS åÇ»T»è∑V"  # Malik Pir Ahmad
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1348.1.1
+    death_date = 1408.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+1378.1.1 = {
+  monarch = {
+    name = "lö)RKQ ÆvS åÇ»T»è∑V"  # Malik Pir Ahmad
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1348.1.1
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+1378.1.1 = {
+  heir = {
+    name = "?ñ^ içIN∑V"  # Abu Sa'id
+    monarch_name = "?ñ^ içIN∑V"  # Abu Sa'id
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1378.1.1
+    death_date = 1417.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1408.1.1 = {
+  monarch = {
+    name = "?ñ^ içIN∑V"  # Abu Sa'id
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1378.1.1
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1408.1.1 = {
+  heir = {
+    name = "ØOiç‡V"  # Husayn
+    monarch_name = "ØOiç‡V ôl?ñ I"  # Husayn I
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1387.1.1
+    death_date = 1424.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 0
+  }
+}
+1417.1.1 = {
+  monarch = {
+    name = "ØOiç‡V ôl?ñ I"  # Husayn I
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1387.1.1
+    adm = 5
+    dip = 4
+    mil = 0
+  }
+}
+1417.1.1 = {
+  heir = {
+    name = "	TöNØe"  # Ghiyath
+    monarch_name = "	TöNØe"  # Ghiyath
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1400.1.1
+    death_date = 1440.1.1
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 3
+  }
+}
+1424.1.1 = {
+  monarch = {
+    name = "	TöNØe"  # Ghiyath
+    dynasty = "»TNb…bØenf"  # Hazaraspid
+    birth_date = 1400.1.1
+    adm = 2
+    dip = 0
+    mil = 3
+  }
+}

@@ -1,0 +1,53 @@
+#738 - Sakam
+
+culture = polynesian
+religion = animism
+capital = "Hsinchu"
+trade_goods = unknown
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 1
+native_size = 60
+native_ferocity = 1
+native_hostileness = 5
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG
+center_of_trade = 1
+
+1544.1.1 = { discovered_by = POR }
+1624.1.1 = { discovered_by = NED }
+1626.1.1 = { discovered_by = SPA } # Spanish occupation
+1662.6.6 = { owner = DN3 controller = DN3 add_core = DN3 religion = confucianism } # Captured by Zheng Chenggong
+1683.9.1 = {
+	owner = QNG
+	controller = QNG
+	add_core = QNG
+	remove_core = DN3
+} # Submitted to Manchu control
+1720.1.1 = { culture = chimin }
+1751.1.1 = { base_tax = 7 base_production = 9 base_manpower = 6 }
+1775.1.1 = { base_tax = 9 base_production = 10 base_manpower = 7 }
+1786.1.1 = { unrest = 5 } # Rebellion
+1788.1.1 = { unrest = 0 }
+
+1801.1.1 = { base_tax = 11 base_production = 11 base_manpower = 7 }
+1825.1.1 = { base_tax = 12 base_production = 11 base_manpower = 7 }
+1851.1.1 = { base_tax = 13 base_production = 11 base_manpower = 8 }
+1875.1.1 = { base_tax = 14 base_production = 12 base_manpower = 8 }
+1895.4.17 = { owner = JAP controller = JAP add_core = JAP capital = "Takau" }
+1901.1.1 = { base_tax = 14 base_production = 13 base_manpower = 8 }
+1912.2.12 = { remove_core = QNG }
+1925.1.1 = { base_tax = 14 base_production = 13 base_manpower = 9 }
+1930.1.1 = { trade_goods = grain }
+1945.8.15 = { owner = ROC controller = ROC add_core = ROC remove_core = JAP }
+1949.12.1 = { owner = TWN controller = TWN add_core = TWN add_core = CHN remove_core = ROC  religion = liberalism }
+1951.1.1 = { base_tax = 14 base_production = 14 base_manpower = 11 }
+1975.1.1 = { base_tax = 15 base_production = 14 base_manpower = 12 }
+2000.1.1 = { base_tax = 15 base_production = 15 base_manpower = 12 }

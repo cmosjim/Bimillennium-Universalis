@@ -1,0 +1,20 @@
+spriteTypes = {	
+
+		spriteType = {
+		name = "GFX_advisor_jeanne"
+		texturefile = "gfx//interface//advisors//jeanne.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+		spriteType = {
+		name = "GFX_advisor_jeanne_female"
+		texturefile = "gfx//interface//advisors//jeanne.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+}

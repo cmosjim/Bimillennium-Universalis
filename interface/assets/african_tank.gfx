@@ -1,0 +1,28 @@
+objectTypes = {	
+	
+	###################################################################################################################
+	#####                                                                                                         #####
+	#####                                                  African Tank                                          #####
+	#####                                                                                                         #####
+	###################################################################################################################
+		
+	pdxmesh = {
+		name = "african_tank"
+		file = "gfx/models/Units/african_tank.mesh"			
+
+		animation = { id = "attack"	type = "african_tank_attack_animation" }
+		animation = { id = "idle"	type = "african_tank_idle_animation" }
+		animation = { id = "walk"	type = "african_tank_moving_animation" }
+		animation = { id = "death"	type = "african_tank_idle_animation" }
+		animation = { id = "retreat"	type = "african_tank_moving_animation" }
+
+	#	animation = { id = "horse_attack"	type = "cavalry_rider_attack_animation" }		
+	#	animation = { id = "horse_idle"		type = "cavalry_rider_idle_animation" }
+	#	animation = { id = "horse_walk"		type = "cavalry_rider_moving_animation" }	
+	#	animation = { id = "horse_death"		type = "cavalry_rider_death_animation" }
+	#	animation = { id = "horse_retreat"		type = "cavalry_rider_moving_animation" }		
+		
+		scale = 1.3
+	}	
+	
+}

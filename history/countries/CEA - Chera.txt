@@ -1,0 +1,312 @@
+government = monarchy
+add_government_reform = nayankara_reform
+primary_culture = malayalam
+religion = hinduism
+technology_group = early_indian
+capital = 534
+2.1.1 = {
+  monarch = {
+    name = "KSl GY…b…bâv"  # Uthiyan Cheralathan
+    dynasty = "Ùu±êÙu&O,g"  # Vanavaramban
+    adm = 4
+    dip = 5
+    mil = 0
+  }
+}
+40.1.1 = {
+  heir = {
+    name = "ÖQ∆Y GY…b…bâv"  # Nedum Cheralathan
+    monarch_name = "ÖQ∆Y GY…b…bâv"  # Nedum Cheralathan
+    dynasty = "Ùu±êÙu&O,g"  # Vanavaramban
+    birth_date = 40.1.1
+    death_date = 100.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+60.1.1 = {
+  monarch = {
+    name = "ÖQ∆Y GY…b…bâv"  # Nedum Cheralathan
+    dynasty = "Ùu±êÙu&O,g"  # Vanavaramban
+    birth_date = 40.1.1
+    adm = 2
+    dip = 5
+    mil = 3
+  }
+}
+80.1.1 = {
+  heir = {
+    name = "ÙuS ÔQ(É ì^˛Váe"  # Vel Kezhu Kuttuvan
+    monarch_name = "ÙuS ÔQ(Éì^˛Váe"  # Vel Kezhu Kuttuvan
+    dynasty = "Ùu±êÙu&O,g"  # Vanavaramban
+    birth_date = 80.1.1
+    death_date = 140.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+100.1.1 = {
+  monarch = {
+    name = "ÙuS ÔQ(Éì^˛Váe"  # Vel Kezhu Kuttuvan
+    dynasty = "Ùu±êÙu&O,g"  # Vanavaramban
+    birth_date = 80.1.1
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+140.1.1 = {
+  monarch = {
+    name = "?ñ^ç ÚTW"  # Athan Cheral
+    dynasty = "åÇ&O‚l˜ñ"  # Irumporai
+    birth_date = 110.1.1
+    adm = 4
+    dip = 5
+    mil = 4
+  }
+}
+150.1.1 = {
+  heir = {
+    name = "O…b∆Y ÚTW"  # Ilam Cheral
+    monarch_name = "O…b∆Y ÚTW"  # Ilam Cheral
+    dynasty = "åÇ&O‚l˜ñ"  # Irumporai
+    birth_date = 150.1.1
+    death_date = 220.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 5
+  }
+}
+180.1.1 = {
+  monarch = {
+    name = "O…b∆Y ÚTW"  # Ilam Cheral
+    dynasty = "åÇ&O‚l˜ñ"  # Irumporai
+    birth_date = 150.1.1
+    adm = 4
+    dip = 0
+    mil = 5
+  }
+}
+200.1.1 = {
+  heir = {
+    name = "¸fTXSQYS"  # Mantaral Cheral
+    monarch_name = "¸fTXSQYS"  # Mantaral Cheral
+    dynasty = "åÇ&O‚l˜ñ"  # Irumporai
+    birth_date = 200.1.1
+    death_date = 260.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+220.1.1 = {
+  monarch = {
+    name = "¸fTXSQYS"  # Mantaral Cheral
+    dynasty = "åÇ&O‚l˜ñ"  # Irumporai
+    birth_date = 200.1.1
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+600.1.1 = {
+  monarch = {
+    name = "pQ∆YQYS"  # Ilamcheral
+    dynasty = "ÚTW"  # Chera
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+650.1.1 = {
+  monarch = {
+    name = "iOpQaSSVb"  # Perumkadungo
+    dynasty = "ÚTW"  # Chera
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+700.1.1 = {
+  monarch = {
+    name = "pQaSSVb"  # Ilamkadungo
+    dynasty = "ÚTW"  # Chera
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+750.1.1 = {
+  monarch = {
+    name = "aS≥uaSS"  # Kanaikal
+    dynasty = "ÚTW"  # Chera
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+800.1.1 = {
+  monarch = {
+    name = "ì^…båaSS Àçid"  # Kulashekhara Varman
+    dynasty = "ì^…båaSS"  # Kulasekhara
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+820.1.1 = {
+  monarch = {
+    name = "…b>ç¿NKQ»T…b Àçid"  # Rajashekhara Varman
+    dynasty = "ì^…båaSS"  # Kulasekhara
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+844.6.1 = {
+  monarch = {
+    name = "ØeTX™R …bÙu ÊtS¸f"  # Sthanu Ravi Varman
+    dynasty = "ì^…båaSS"  # Kulasekhara
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+885.6.1 = {
+  monarch = {
+    name = "Wid Àçid ì^…båaSS I"  # Rama Varma Kulashekhara I
+    dynasty = "ì^…båaSS"  # Kulasekhara
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+917.6.1 = {
+  monarch = {
+    name = "bæè …bÙu Àçid"  # Goda Ravi Varma
+    dynasty = "ì^…båaSS"  # Kulasekhara
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+944.6.1 = {
+  monarch = {
+    name = "‡Vjg «R(Ñ Àçid"  # Indu Kotha Varma
+    dynasty = "ì^…båaSS"  # Kulasekhara
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+962.6.1 = {
+  monarch = {
+    name = "FZ¿NÊèW …bÙu Àçid I"  # Bhaskara Ravi Varman I
+    dynasty = "ì^…båaSS"  # Kulasekhara
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1019.6.1 = {
+  monarch = {
+    name = "FZ¿NÊèW …bÙu Àçid II"  # Bhaskara Ravi Varman II
+    dynasty = "ì^…båaSS"  # Kulasekhara
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1021.6.1 = {
+  monarch = {
+    name = "◊kW éU…b…b"  # Vira Kerala
+    dynasty = "ì^…båaSS"  # Kulasekhara
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1028.6.1 = {
+  monarch = {
+    name = "WñÁP√ã"  # Rajasimha
+    dynasty = "ì^…båaSS"  # Kulasekhara
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+1043.6.1 = {
+  monarch = {
+    name = "FZ¿NÊèW …bÙu Àçid III"  # Bhaskara Ravi Varman III
+    dynasty = "ì^…båaSS"  # Kulasekhara
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1090.1.1 = {
+  monarch = {
+    name = "Wid Àçid ì^…båaSS II"  # Rama Varma Kulashekhara II
+    dynasty = "ì^…båaSS"  # Kulasekhara
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+1090.1.1 = {
+  monarch = {
+    name = "Wid Àçid ì^…båaSS II"  # Rama Varma Kulashekhara II
+    dynasty = "ì^…båaSS"  # Kulasekhara
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+1102.1.1 = {
+  monarch = {
+    name = "«R(Ñ Àçid"  # Kotha Varma
+    dynasty = "ì^…båaSS"  # Kulasekhara
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

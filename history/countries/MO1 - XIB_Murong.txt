@@ -1,0 +1,114 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+technology_group = eastern_nomad_group
+religion = tengri_pagan_reformed
+primary_culture = donghu
+capital = 725
+
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+220.1.1 = {
+	monarch = {
+		name = "«ƒ²bË"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 5
+        leader = { 
+                name = "«ƒ²bË"	
+                type = general	
+                #rank = 0	
+                fire = 3	
+                shock = 4	
+                manuever = 5	
+                siege = 2 
+				}
+	}
+}
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+
+245.1.1 = {
+	monarch = {
+		name = "Ua¹R(gö^"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 4
+		mil = 4
+        leader = { 
+                name = "Ua¹R(gö^"	
+                type = general	
+                #rank = 0	
+                fire = 3	
+                shock = 3	
+                manuever = 3	
+                siege = 2 }
+	}
+}
+
+271.1.1 = {
+	monarch = {
+		name = "Ua¹R‰mRV"
+		#dynasty = " "
+	
+		adm = 5
+		dip = 5
+		mil = 4
+		        leader = { 
+                name = "Ua¹R‰mRV"	
+                type = general	
+                #rank = 0	
+                fire = 5	
+                shock = 4	
+                manuever = 3	
+                siege = 2 
+				}
+	}
+}
+
+
+283.1.1 = {
+	monarch = {
+		name = "Ua¹Rw"
+		#dynasty = " "
+	
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+
+285.1.1 = {
+	monarch = {
+		name = "Ua¹RVm`"
+		#dynasty = " "
+		
+		adm = 5
+		dip = 5
+		mil = 6
+        leader = { 
+                name = "Ua¹RVm`"	
+                type = general	
+                #rank = 0	
+                fire = 4	
+                shock = 5	
+                manuever = 5	
+                siege = 2 }
+	}
+}
+
+
+
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }

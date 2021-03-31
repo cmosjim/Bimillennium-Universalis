@@ -1,0 +1,840 @@
+government = republic
+add_government_reform = revolutionary_republic_normal_reform
+mercantilism = 0.1
+technology_group = western
+primary_culture = mexican
+religion = catholic
+capital = 852
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1810.9.16 = {
+  monarch = {
+    name = "s|<hS OæèSb"  # Miguel Hidalgo
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1811.7.30 = {
+  monarch = {
+    name = "UO^X õsKNöN ´É˜ñmØe"  # JosÈ MarÌa Morelos
+    adm = 5
+    dip = 4
+    mil = 5
+  }
+}
+1815.12.2 = {
+  monarch = {
+    name = "‘kÓhyr <h˜ñW"  # Vicente Guerrero
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+1821.9.27 = {
+  government = monarchy
+  add_government_reform = revolutionary_empire_reform
+}
+1821.9.27 = {
+  monarch = {
+    name = "(Dd?eOÆã)"  # (regency council)
+    regent = yes
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1822.5.19 = {
+  monarch = {
+    name = "eY‰SØeN `!"  # AgustÌn I
+    dynasty = "∑V O˛VSÙu∑V"  # de Iturbide
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+1823.3.19 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  set_legacy_government = constitutional_republic
+  government_rank = 2
+}
+1823.3.19 = {
+  monarch = {
+    name = "(4Nˆe?eú^)"  # (provisional government)
+    regent = yes
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1824.10.10 = {
+  monarch = {
+    name = "‹t∑VWnf ÙuY)RöN"  # Guadelupe Victoria
+    adm = 5
+    dip = 3
+    mil = 3
+  }
+}
+1829.4.1 = {
+  monarch = {
+    name = "‘kÓhyr <h˜ñW"  # Vicente Guerrero
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1829.12.17 = {
+  monarch = {
+    name = "UO^X õsKNöN ZSaS≥u<h…b"  # JosÈ MarÌa Bocanegra
+    adm = 1
+    dip = 3
+    mil = 2
+  }
+}
+1829.12.23 = {
+  monarch = {
+    name = "iO∑VW Êó±ÉyQ"  # Pedro VÈlez
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+1830.1.1 = {
+  monarch = {
+    name = "?ñ≥uØeTXâeY ^ØeTX¸fyr"  # Anastasio Bustamante
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1832.8.14 = {
+  monarch = {
+    name = "ÖhSTN FzyQ˙W"  # Melchor M˙zquiz
+    adm = 1
+    dip = 3
+    mil = 2
+  }
+}
+1832.12.24 = {
+  monarch = {
+    name = "¸f™R√WS bÖhØe iO∑V…b(Ñ"  # Manuel GÛmez Pedraza
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1833.4.1 = {
+  monarch = {
+    name = "Êt&ON bÖhØe ’lÃëöNØe"  # Valentin GÛmez FarÌas
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1833.5.16 = {
+  monarch = {
+    name = "âRN<SeY miOyQ ∑V 1WâRZ"  # Antonio LÛpez de Santa Anna
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1833.6.3 = {
+  monarch = {
+    name = "Êt&ON bÖhØe ’lÃëöNØe"  # Valentin GÛmez FarÌas
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1833.6.18 = {
+  monarch = {
+    name = "âRN<SeY miOyQ ∑V 1WâRZ"  # Antonio LÛpez de Santa Anna
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1833.7.5 = {
+  monarch = {
+    name = "Êt&ON bÖhØe ’lÃëöNØe"  # Valentin GÛmez FarÌas
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1833.10.27 = {
+  monarch = {
+    name = "âRN<SeY miOyQ ∑V 1WâRZ"  # Antonio LÛpez de Santa Anna
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1833.12.16 = {
+  monarch = {
+    name = "Êt&ON bÖhØe ’lÃëöNØe"  # Valentin GÛmez FarÌas
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1834.4.24 = {
+  monarch = {
+    name = "âRN<SeY miOyQ ∑V 1WâRZ"  # Antonio LÛpez de Santa Anna
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1835.1.28 = {
+  monarch = {
+    name = "s|<hS ÙT…br^"  # Miguel Barrag·n
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1836.2.27 = {
+  monarch = {
+    name = "UO^X ·wØeXb —ym"  # JosÈ Justo Corro
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1837.4.19 = {
+  monarch = {
+    name = "?ñ≥uØeTXâeY ^ØeTX¸fyr"  # Anastasio Bustamante
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1839.3.18 = {
+  monarch = {
+    name = "âRN<SeY miOyQ ∑V 1WâRZ"  # Antonio LÛpez de Santa Anna
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1839.7.11 = {
+  monarch = {
+    name = "<S‰S…bØe ^…bÉl"  # Nicol·s Bravo
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1839.7.19 = {
+  monarch = {
+    name = "?ñ≥uØeTXâeY ^ØeTX¸fyr"  # Anastasio Bustamante
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1841.9.22 = {
+  monarch = {
+    name = "VgâØe—y »TÙuS √WRÙu)RöN"  # Francisco Javier Echeverria
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+1841.10.10 = {
+  monarch = {
+    name = "âRN<SeY miOyQ ∑V 1WâRZ"  # Antonio LÛpez de Santa Anna
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1842.10.26 = {
+  monarch = {
+    name = "<S‰S…bØe ^…bÉl"  # Nicol·s Bravo
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1843.3.4 = {
+  monarch = {
+    name = "âRN<SeY miOyQ ∑V 1WâRZ"  # Antonio LÛpez de Santa Anna
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1843.10.4 = {
+  monarch = {
+    name = "Êt&ON aS≥u)RPO"  # Valentin Canalizo
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+1844.6.4 = {
+  monarch = {
+    name = "âRN<SeY miOyQ ∑V 1WâRZ"  # Antonio LÛpez de Santa Anna
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1844.9.12 = {
+  monarch = {
+    name = "UO^X NS—ë ∑V √W˜ñ…b"  # JosÈ JoaquÌn de Herrera
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1844.9.21 = {
+  monarch = {
+    name = "Êt&ON aS≥u)RPO"  # Valentin Canalizo
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+1844.12.6 = {
+  monarch = {
+    name = "UO^X NS—ë ∑V √W˜ñ…b"  # JosÈ JoaquÌn de Herrera
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1845.12.31 = {
+  monarch = {
+    name = "löÃëöN˙ã ^˜ñ∑VØe"  # Mariano Paredes
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1846.7.28 = {
+  monarch = {
+    name = "<S‰S…bØe ^…bÉl"  # Nicol·s Bravo
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1846.8.5 = {
+  monarch = {
+    name = "UO^X löÃëöN˙ã (Ñ…bØe"  # JosÈ Mariano Salas
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1846.12.23 = {
+  monarch = {
+    name = "Êt&ON bÖhØe ’lÃëöNØe"  # Valentin GÛmez FarÌas
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1847.3.21 = {
+  monarch = {
+    name = "âRN<SeY miOyQ ∑V 1WâRZ"  # Antonio LÛpez de Santa Anna
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1847.4.2 = {
+  monarch = {
+    name = "iO∑VW õsKNöN ∑V âRZöN"  # Pedro MarÌa de Anaya
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1847.5.20 = {
+  monarch = {
+    name = "âRN<SeY miOyQ ∑V 1WâRZ"  # Antonio LÛpez de Santa Anna
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1847.9.16 = {
+  monarch = {
+    name = "¸f™R√WS ∑V …b Xo<SöN"  # Manuel de la PeÒa
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1847.11.13 = {
+  monarch = {
+    name = "iO∑VW õsKNöN ∑V âRZöN"  # Pedro MarÌa de Anaya
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1848.1.8 = {
+  monarch = {
+    name = "¸f™R√WS ∑V …b Xo<SöN"  # Manuel de la PeÒa
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1848.6.3 = {
+  monarch = {
+    name = "UO^X NS—ë ∑V √W˜ñ…b"  # JosÈ JoaquÌn de Herrera
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1851.1.15 = {
+  monarch = {
+    name = "löÃëöN˙ã öN˜ñØeTX"  # Mariano Arista
+    adm = 5
+    dip = 3
+    mil = 3
+    religion = catholic
+  }
+}
+1853.1.5 = {
+  monarch = {
+    name = "·wâR ÙTÇÑØeyr ^XÙTmØe"  # Juan Bautista Ceballos
+    adm = 1
+    dip = 4
+    mil = 1
+    religion = catholic
+  }
+}
+1853.2.8 = {
+  monarch = {
+    name = "¸f™R√WS õsKNöN &OÙT,r<S"  # Manuel Maria Lombardini
+    adm = 2
+    dip = 2
+    mil = 3
+    religion = catholic
+  }
+}
+1853.4.20 = {
+  monarch = {
+    name = "âRN<SeY miOyQ ∑V 1WâRZ"  # Antonio LÛpez de Santa Anna
+    adm = 1
+    dip = 2
+    mil = 4
+    religion = catholic
+  }
+}
+1855.8.9 = {
+  monarch = {
+    name = "löN aS˜ñ…b"  # MartÌn Carrera
+    adm = 3
+    dip = 2
+    mil = 1
+    religion = catholic
+  }
+}
+1855.9.12 = {
+  monarch = {
+    name = "˜ñFzm ÍèöNØe ∑V …b Ùu†R"  # RÛmulo DÌaz de la Vega
+    adm = 1
+    dip = 2
+    mil = 4
+    religion = catholic
+  }
+}
+1855.10.4 = {
+  monarch = {
+    name = "·wâR ?ñSÊt˜ñØe"  # Juan ¡lvarez
+    adm = 1
+    dip = 3
+    mil = 1
+    religion = catholic
+  }
+}
+1855.12.11 = {
+  monarch = {
+    name = "O<h≥uâeY —yôÑèyyr"  # Ignacio Comonfort
+    adm = 4
+    dip = 5
+    mil = 2
+    religion = catholic
+  }
+}
+1857.12.18 = {
+  monarch = {
+    name = ",g<SXb NS˜ñØe"  # Benito Ju·rez
+    adm = 5
+    dip = 3
+    mil = 4
+    religion = catholic
+  }
+}
+1863.7.11 = {
+  government = monarchy
+  add_government_reform = revolutionary_empire_reform
+}
+1863.7.11 = {
+  monarch = {
+    name = "ˇDd?eOÆã	ˇ"  # (regency council)
+    regent = yes
+    adm = 2
+    dip = 2
+    mil = 2
+    religion = catholic
+  }
+}
+1864.4.10 = {
+  monarch = {
+    name = "löKQâs|)RâR `!"  # Maximilian I
+    dynasty = "ØQ »T^Øe!X"  # von Habsburg
+    adm = 2
+    dip = 2
+    mil = 2
+    religion = catholic
+  }
+}
+1867.6.19 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  set_legacy_government = constitutional_republic
+  government_rank = 2
+}
+1867.6.19 = {
+  monarch = {
+    name = ",g<SXb NS˜ñØe"  # Benito Ju·rez
+    adm = 5
+    dip = 3
+    mil = 4
+    religion = catholic
+  }
+}
+1872.7.18 = {
+  monarch = {
+    name = "^XÙTØeÇÑâR )RSY ∑V yr>çæè"  # Sebasti·n Lerdo de Tejada
+    adm = 4
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+1876.10.26 = {
+  monarch = {
+    name = "‚lS^óÃëeY ÍèöNØe"  # Porfirio DÌaz
+    adm = 4
+    dip = 3
+    mil = 5
+    religion = catholic
+  }
+}
+1876.12.6 = {
+  monarch = {
+    name = "·wâR ÖQ‚lFz^X˙ã Ëï∑VyQ"  # Juan Nepomuceno MÈndez
+    adm = 4
+    dip = 4
+    mil = 2
+    religion = catholic
+  }
+}
+1877.2.17 = {
+  monarch = {
+    name = "‚lS^óÃëeY ÍèöNØe"  # Porfirio DÌaz
+    adm = 4
+    dip = 3
+    mil = 5
+    religion = catholic
+  }
+}
+1880.12.1 = {
+  monarch = {
+    name = "¸f™R√WS àQ(Ñ˜ñØe Vm˜ñØe"  # Manuel Gonz·lez Flores
+    adm = 3
+    dip = 3
+    mil = 5
+    religion = catholic
+  }
+}
+1884.12.1 = {
+  monarch = {
+    name = "‚lS^óÃëeY ÍèöNØe"  # Porfirio DÌaz
+    adm = 4
+    dip = 3
+    mil = 5
+    religion = catholic
+  }
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1911.5.25 = {
+  monarch = {
+    name = "VgâØe—y ±Éf ∑V …b ÙT…b"  # Francisco LeÛn de la Barra
+    adm = 4
+    dip = 3
+    mil = 2
+    religion = catholic
+  }
+}
+1911.11.6 = {
+  monarch = {
+    name = "VgâØe—y lö∑VW"  # Francisco Madero
+    adm = 4
+    dip = 4
+    mil = 2
+    religion = catholic
+  }
+}
+1913.2.18 = {
+  monarch = {
+    name = "ÙuKQXbÃëöN˙ã ·w√WTX"  # Victoriano Huerta
+    adm = 3
+    dip = 3
+    mil = 4
+    religion = catholic
+  }
+}
+1914.7.15 = {
+  monarch = {
+    name = "VgâØe—y aSÊt»TS"  # Francisco Carvajal
+    adm = 2
+    dip = 3
+    mil = 2
+    religion = catholic
+  }
+}
+1914.8.14 = {
+  monarch = {
+    name = "Êó™RØeÍèöN˙ã aSpQNb"  # Venustiano Carranza
+    adm = 3
+    dip = 3
+    mil = 5
+    religion = catholic
+  }
+}
+1920.1.1 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1920.6.1 = {
+  monarch = {
+    name = "?ñSê+Y ∑V …b ·w√WTX"  # Adolfo de la Huerta
+    adm = 4
+    dip = 2
+    mil = 2
+    religion = catholic
+  }
+}
+1920.12.1 = {
+  monarch = {
+    name = "?ñSÊtW eY^˜ñ!ç"  # ¡lvaro ObregÛn
+    adm = 4
+    dip = 5
+    mil = 2
+    religion = catholic
+  }
+}
+1924.12.1 = {
+  monarch = {
+    name = "nf…bTX—y O)RöN aS˜ñØe"  # Plutarco ElÌas Calles
+    adm = 5
+    dip = 3
+    mil = 2
+    religion = catholic
+  }
+}
+1928.12.1 = {
+  monarch = {
+    name = "√Ws|eu ‚l∑VØe 	TS"  # Emilio Portes Gil
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = catholic
+  }
+}
+1930.2.5 = {
+  monarch = {
+    name = "^Øe8YS eYSÇÑØe bS‘keY"  # Pasqual Ortiz Rubio
+    adm = 4
+    dip = 3
+    mil = 2
+    religion = catholic
+  }
+}
+1932.9.4 = {
+  monarch = {
+    name = "?ñç…bY ‚l∑VÃëbØe"  # Abelardo Podriguez
+    adm = 3
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+1934.12.1 = {
+  monarch = {
+    name = "…b(ÑW aS∑V≥uØe ∑VS Ãë¶u"  # L·zaro C·rdenas del Rio
+    adm = 4
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+1940.12.1 = {
+  monarch = {
+    name = "¸f™R√WS ?ñÙu…b aSlöTN"  # Manuel ¡vila Camacho
+    adm = 5
+    dip = 3
+    mil = 2
+    religion = catholic
+  }
+}
+1946.12.1 = {
+  monarch = {
+    name = "s|<hS ?ñ±É¸f ÙTS∑VØe"  # Miguel Alem·n ValdÈs
+    adm = 3
+    dip = 5
+    mil = 3
+    religion = catholic
+  }
+}
+1952.12.1 = {
+  monarch = {
+    name = "?ñSê+Y ÅúyQ —yÍè≥uØe"  # Adolfo Ruiz Cortines
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = catholic
+  }
+}
+1958.12.1 = {
+  monarch = {
+    name = "?ñSê+Y miOyQ õsÇÑeYØe"  # Adolfo LÛpez Mateos
+    adm = 5
+    dip = 3
+    mil = 3
+    religion = catholic
+  }
+}
+1964.12.1 = {
+  monarch = {
+    name = "‰SØeTXÉl ÍèöNØe eYæèØe"  # Gustavo DÌaz Ordaz
+    adm = 4
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+1970.12.1 = {
+  monarch = {
+    name = "ÔçfØe √WRÙu)RöN"  # Luis Echeverria
+    adm = 4
+    dip = 5
+    mil = 2
+    religion = catholic
+  }
+}
+1976.12.1 = {
+  monarch = {
+    name = "UO^X miOyQ =OÇÑeu"  # JosÈ LÛpez Portillo
+    adm = 3
+    dip = 4
+    mil = 4
+    religion = catholic
+  }
+}
+1982.12.1 = {
+  monarch = {
+    name = "s|<hS ∑V …b lö∑VÃë"  # Miguel de la Madrid
+    adm = 5
+    dip = 4
+    mil = 2
+    religion = catholic
+  }
+}
+1988.12.1 = {
+  monarch = {
+    name = "aSmØe (Ñ)R≥uØe ∑V bSTXÃë"  # Carlos Salinas de Gortari
+    adm = 3
+    dip = 5
+    mil = 3
+    religion = catholic
+  }
+}
+1994.12.1 = {
+  monarch = {
+    name = "√WÖQØeXb ^XÍèeu"  # Ernesto Zedillo
+    adm = 4
+    dip = 4
+    mil = 3
+    religion = catholic
+  }
+}
+2000.12.1 = {
+  monarch = {
+    name = "ÙuÓhyr èyKQØe"  # Vicente Fox
+    adm = 5
+    dip = 5
+    mil = 1
+    religion = catholic
+  }
+}
+2006.12.1 = {
+  monarch = {
+    name = "ÚÉ)Rnf aSS∑VÜñ"  # Felipe CalderÛn
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = catholic
+  }
+}
+2012.12.1 = {
+  monarch = {
+    name = "i`ÃëKQ Xo<SöN ÖmXb"  # Enrique PeÒa Nieto
+    adm = 3
+    dip = 5
+    mil = 3
+    religion = catholic
+  }
+}

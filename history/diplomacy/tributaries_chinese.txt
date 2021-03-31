@@ -1,0 +1,62 @@
+#南宋对金朝贡
+dependency = {
+	subject_type = "tributary_state"
+	first = GNN
+	second = SNG
+	start_date = 1141.1.30
+	end_date = 1161.1.1
+}
+#宋对西夏保证独立
+guarantee = {
+	first = SNG
+	second = XIA
+	start_date = 1044.1.1
+	end_date = 1066.1.1
+}
+#大理对宋朝贡
+dependency = {
+	subject_type = "tributary_state"
+	first = SNG
+	second = CDL
+	start_date = 1115.1.1
+	end_date = 1244.1.1
+}
+#高丽对辽第一次朝贡
+dependency = {
+	subject_type = "tributary_state"
+	first = LIO
+	second = GOY
+	start_date = 993.1.1
+	end_date = 1009.12.31
+}
+#高丽对辽第二次朝贡
+dependency = {
+	subject_type = "tributary_state"
+	first = LIO
+	second = GOY
+	start_date = 1011.11.11
+	end_date = 1013.12.31
+}
+#高丽对辽第三次朝贡
+dependency = {
+	subject_type = "tributary_state"
+	first = LIO
+	second = GOY
+	start_date = 1019.11.11
+	end_date = 1116.3.1
+}
+#高丽对金朝贡
+dependency = {
+	subject_type = "tributary_state"
+	first = GNN
+	second = GOY
+	start_date = 1142.1.1
+	end_date = 1224.5.1
+}
+#金对西夏保证独立
+guarantee  = {
+	first = GNN
+	second = XIA
+	start_date = 1125.3.15
+	end_date = 1226.12.31
+}

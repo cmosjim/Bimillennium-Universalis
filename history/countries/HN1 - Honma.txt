@@ -1,0 +1,226 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+primary_culture = japanese
+religion = shinto
+technology_group = early_chinese
+capital = 3183	# Sado
+
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1000.1.1 = {
+	set_country_flag = daimyo
+}
+
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+
+#1.
+#2.
+#3.
+#4.
+#5.
+#6.
+#7.
+#8.
+#9.
+#10.
+#11.
+#12.
+#13.
+1274.1.1 = {
+	monarch = {
+		name = ",gô•ýwEN"
+		
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+
+}
+1280.1.1 = {
+	monarch = {
+		name = ",gô•àV²u"
+		
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+
+}
+1300.1.1 = {
+	monarch = {
+		name = ",gô•—RàV"
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+
+}
+1320.1.1 = {
+	monarch = {
+		name = ",gô•ðlšR"
+		
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+
+}
+1330.1.1 = {
+	monarch = {
+		name = ",gô•<˜ôv"
+		
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+
+}
+1350.1.1 = {
+	monarch = {
+		name = ",gô•ðl±R"
+		
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+
+}
+1370.1.1 = {
+	monarch = {
+		name = ",gô•	gôv"
+		
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+
+}
+1390.1.1 = {
+	monarch = {
+		name = ",gô•ôv¬Q"
+		
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+
+}
+1410.1.1 = {
+	monarch = {
+		name = ",gô•	gÍ‘"
+		
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+
+}
+1440.1.1 = {
+	monarch = {
+		name = ",gô•Í‘ôv"
+		
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+
+}
+
+1460.1.1 = {
+	monarch = {
+		name = ",gô•ðlÍ‘"
+		
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+
+}
+
+1480.1.1 = {
+	monarch = {
+		name = ",gô•ðlôv"
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+
+}
+
+1500.1.1 = {
+	monarch = {
+		name = ",gô•	gðl"
+		#dynasty = " "
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1552.1.1 = {
+	monarch = {
+		name = ",gô•ðlØš"
+		#dynasty = " "
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1570.1.1 = {
+	monarch = {
+		name = ",gô•ðlöe"
+		#dynasty = " "
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+
+1587.1.1 = {
+	monarch = {
+		name = ",gô•ªRðl"
+		#dynasty = " "
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1623.1.1 = {
+	monarch = {
+		name = ",gô•ðlÀy"
+		#dynasty = " "
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+1636.5.15 = { technology_group = old_estern_asian }
+1655.1.1 = {
+	monarch = {
+		name = ",gô•'Y	T"
+		#dynasty = " "
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+
+1949.10.1 = { technology_group = modern_chinese }

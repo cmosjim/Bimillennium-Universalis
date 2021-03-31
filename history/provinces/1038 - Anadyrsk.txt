@@ -1,0 +1,38 @@
+#1038 - Karalveyem
+
+culture = yukagyr
+religion = shamanist
+capital = "Karalveyem"
+trade_goods = unknown
+hre = no
+discovered_by = KMC
+discovered_by = CHV
+discovered_by = CHU
+discovered_by = HOD
+base_tax = 1
+base_production = 1
+base_manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 3
+
+1648.1.1 = { discovered_by = RUS } # Semyon Dezhnev
+1768.1.1 = {
+		owner = RUS
+		controller = RUS
+	   	religion = orthodox
+	   	culture = russian
+		citysize = 388
+		trade_goods = fish
+	   }
+
+1850.1.1   = { discovered_by = western }
+1868.1.1   = { add_core = RUS }
+1900.1.1   = { is_city = yes }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV remove_core = RUS }
+1920.1.1   = { discovered_by = eastern discovered_by = muslim discovered_by = ottoman discovered_by = asian }
+1967.4.6   = { capital = "Pevek" }
+1991.12.25 = { owner = RUS controller = RUS add_core = RUS remove_core = SOV }
+
+
+

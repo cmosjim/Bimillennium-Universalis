@@ -1,0 +1,187 @@
+government = monarchy
+add_government_reform = feudalism_reform
+mercantilism = 0.1
+primary_culture = manchu
+religion = mahayana
+technology_group = early_chinese
+capital = 731 #Sanggyeong
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+698.1.1 = {
+	monarch = {
+		name = "'YZycƒ"
+		#dynasty = " "
+		
+		adm = 4
+		mil = 5
+		dip = 4
+	}
+}
+
+719.1.1 = {
+	monarch = {
+		name = "'Yfkz‚"
+		#dynasty = " "
+		
+		adm = 3
+		mil = 6
+		dip = 3
+	}
+}
+
+737.1.1 = {
+	monarch = {
+		name = "'Y¦”ƒ"
+		#dynasty = " "
+		
+		adm = 5
+		mil = 3
+		dip = 4
+	}
+}
+
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+793.1.1 = {
+	monarch = {
+		name = "'YCQIN"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+794.1.1 = {
+	monarch = {
+		name = "'YNS™s"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+794.6.1 = {
+	monarch = {
+		name = "'YiT˜t"
+		#dynasty = " "
+		
+		adm = 4
+		mil = 4
+		dip = 5
+	}
+}
+
+808.1.1 = {
+	monarch = {
+		name = "'YCQjt"
+		#dynasty = " "
+		
+		adm = 2
+		mil = 2
+		dip = 2
+	}
+}
+
+812.1.1 = {
+	monarch = {
+		name = "'YŠIN"
+		#dynasty = " "
+		
+		adm = 2
+		mil = 3
+		dip = 2
+	}
+}
+
+817.1.1 = {
+	monarch = {
+		name = "'YfàV"
+		#dynasty = " "
+		
+		adm = 1
+		mil = 3
+		dip = 5
+	}
+}
+
+818.1.1 = {
+	monarch = {
+		name = "'YÁNÀy"
+		#dynasty = " "
+		
+		adm = 6
+		mil = 5
+		dip = 4
+	}
+}
+
+830.1.1 = {
+	monarch = {
+		name = "'YkV—"
+		#dynasty = " "
+		
+		adm = 3
+		mil = 3
+		dip = 3
+	}
+}
+
+857.1.1 = {
+	monarch = {
+		name = "'YT†Cf"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+871.1.1 = {
+	monarch = {
+		name = "'Y„s!•"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+
+895.1.1 = {
+	monarch = {
+		name = "'Y®sNt"
+		#dynasty = " "
+		
+		adm = 1
+		mil = 3
+		dip = 2
+	}
+}
+
+906.1.1 = {
+	monarch = {
+		name = "'YòŠT‹"
+		#dynasty = " "
+		
+		adm = 2
+		mil = 2
+		dip = 4
+	}
+}
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+
+1636.5.15 = { technology_group = old_estern_asian }	1949.10.1 = { technology_group = modern_chinese }

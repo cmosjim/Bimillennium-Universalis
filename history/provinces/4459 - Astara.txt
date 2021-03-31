@@ -1,0 +1,98 @@
+#421 - Shirvan
+
+latent_trade_goods = {
+	oil
+}
+
+owner = ARM
+controller = ARM
+culture = aghwan
+religion = zoroastrian
+capital = "Astara"
+trade_goods = fish
+hre = no
+discovered_by = nomad_group
+discovered_by = eastern_nomad_group
+discovered_by = western_nomad_group
+discovered_by = roman_group
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = middle_eastern
+discovered_by = muslim
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = ARM
+117.1.1 = { owner = ROM controller = ROM add_core = ROM }
+121.1.1 = { owner = ARM controller = ARM remove_core = ROM }
+253.1.1 = { owner = SAS controller = SAS add_core = SAS }
+300.1.1 = { remove_core = CAA }
+639.1.1 = { owner = RSD controller = RSD add_core = RSD remove_core = SAS }
+661.7.28 = { owner = UMA controller = UMA add_core = UMA remove_core = RSD }
+750.8.6 = { owner = ABA controller = ABA add_core = ABA remove_core = UMA }
+850.1.1 = { culture = azerbaijani }
+880.1.1 = { religion = shiite }
+919.1.1 = { owner = AZE controller = AZE add_core = AZE remove_core = ABA }
+1054.1.1 = { owner = SEL controller = SEL add_core = SEL }
+1100.1.1 = { owner = SRV controller = SRV add_core = SRV remove_core = SEL }
+1236.1.1 = { owner = MGE controller = MGE add_core = MGE }
+1260.1.1 = { owner = SRV controller = SRV add_core = SRV remove_core = MGE }
+1335.1.1 = { owner = CHB controller = CHB add_core = CHB remove_core = SRV }
+1360.1.1 = { owner = JAL controller = JAL add_core = JAL remove_core = CHB }
+1393.5.1 = { owner = QAR controller = QAR add_core = QAR remove_core = JAL }
+1399.1.1 = { owner = TIM controller = TIM add_core = TIM remove_core = QAR }
+1408.1.1 = { owner = QAR controller = QAR add_core = QAR remove_core = TIM } # Qara Koyunlu
+1469.2.4 = { owner = AKK controller = AKK add_core = AKK remove_core = QAR }
+1504.1.1 = { owner = PER controller = PER add_core = PER remove_core = AKK } # Ismail conquers Tabriz and defeats Alwand
+1579.1.1 = {
+	owner = KRY
+	controller = KRY
+	add_core = KRY
+}
+1592.1.1 = {
+	owner = PER
+	controller = PER	
+	add_core = PER
+	remove_core = KRY
+} # Safavid Conquest
+1669.1.1 = { unrest = 3 } # Plundered by Stenka Razin
+1673.1.1 = { discovered_by = ENG }
+1707.5.12 = { discovered_by = GBR }
+1722.1.1 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = PER
+} # Occupied by Peter the Great
+1734.1.1 = {
+	owner = PER
+	controller = PER
+	add_core = PER
+	remove_core = RUS
+}
+1747.1.1 = {
+	owner = ARL
+	controller = ARL
+} # Shah Nadir is killed, local khanates emerged
+1808.1.1 = {
+	owner = PER
+	controller = PER
+}
+
+1828.2.22 = { owner = RUS controller = RUS add_core = RUS } # The Treaty of Turkmenchay
+1850.1.1 = { base_production = 2 }
+1872.1.1   = { trade_goods = oil }
+1875.1.1 = { base_tax = 2 base_manpower = 2 }
+1900.1.1 = { base_production = 3 base_manpower = 3 }
+1918.5.28  = { owner = AZE controller = AZE add_core = AZE }
+1920.4.28  = { owner = RUS controller = RUS }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV remove_core = RUS }
+1925.1.1 = { base_manpower = 4 }
+1950.1.1 = { base_production = 4 }
+1975.1.1 = { base_tax = 3 base_production = 5 }
+1991.8.30  = { owner = AZE controller = AZE remove_core = SOV remove_core = RUS }
+2000.1.1 = { base_tax = 4 base_production = 6 }
+
+
+

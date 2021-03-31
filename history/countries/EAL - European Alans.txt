@@ -1,0 +1,349 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+primary_culture = swabian
+religion = germanic
+technology_group = barbarian
+capital = 67
+2.1.1 = {
+  monarch = {
+    name = "?–·Vu¾Sœ¯e"  # Adgandestrius
+    dynasty = "aS‚„"  # Chatti
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+80.1.1 = {
+  monarch = {
+    name = "›s‰¯e"  # Masyus
+    dynasty = "^XÆY¬O"  # Semnone
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+160.1.1 = {
+  monarch = {
+    name = "ÿDd?eO®‹	ÿ"  # (regency council)
+    regent = yes
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+409.6.1 = {
+  primary_culture = galician
+  capital = 231
+  monarch = {
+    name = "kS…hÌ‘KQ"  # Hermeric
+    dynasty = "Ï‚ôuGl"  # Suebi
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+409.6.1 = {
+  heir = {
+    name = "÷–^Éb"  # Rechila
+    monarch_name = "÷–^Éb"  # Rechila
+    dynasty = "Ï‚ôuGl"  # Suebi
+    birth_date = 408.1.1
+    death_date = 448.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+438.1.1 = {
+  monarch = {
+    name = "÷–^Éb"  # Rechila
+    dynasty = "Ï‚ôuGl"  # Suebi
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+438.1.1 = {
+  heir = {
+    name = "÷–‰šN"  # Rechiar
+    monarch_name = "÷–‰šN"  # Rechiar
+    dynasty = "Ï‚ôuGl"  # Suebi
+    birth_date = 418.1.1
+    death_date = 456.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+448.1.1 = {
+  monarch = {
+    name = "÷–‰šN"  # Rechiar
+    dynasty = "Ï‚ôuGl"  # Suebi
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+448.1.1 = {
+  heir = {
+    name = "Œ‚+Y"  # Aioulf
+    monarch_name = "Œ‚+Y"  # Aioulf
+    dynasty = "Ï‚ôuGl"  # Suebi
+    birth_date = 426.1.1
+    death_date = 457.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+456.1.1 = {
+  monarch = {
+    name = "Œ‚+Y"  # Aioulf
+    dynasty = "Ï‚ôuGl"  # Suebi
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+456.1.1 = {
+  heir = {
+    name = "Ng^™„·V"  # Richimund
+    monarch_name = "Ng^™„·V"  # Richimund
+    dynasty = "Ï‚ôuGl"  # Suebi
+    birth_date = 427.1.1
+    death_date = 464.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+457.1.1 = {
+  monarch = {
+    name = "Ng^™„·V"  # Richimund
+    dynasty = "Ï‚ôuGl"  # Suebi
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+457.1.1 = {
+  heir = {
+    name = "ks|³uÌ‘KQ"  # Hermeneric
+    monarch_name = "ks|³uÌ‘KQ"  # Hermeneric
+    dynasty = "Ï‚ôuGl"  # Suebi
+    birth_date = 434.1.1
+    death_date = 490.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+464.1.1 = {
+  monarch = {
+    name = "ks|³uÌ‘KQ"  # Hermeneric
+    dynasty = "Ï‚ôuGl"  # Suebi
+    adm = 2
+    dip = 4
+    mil = 4
+  }
+}
+464.1.1 = {
+  heir = {
+    name = "Z)R™„·V"  # Veremund
+    monarch_name = "Z)R™„·V"  # Veremund
+    dynasty = "Ï‚ôuGl"  # Suebi
+    birth_date = 460.1.1
+    death_date = 520.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+466.1.1 = {
+  religion = arianism
+}
+477.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+490.1.1 = {
+  monarch = {
+    name = "Z)R™„·V"  # Veremund
+    dynasty = "Ï‚ôuGl"  # Suebi
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+490.1.1 = {
+  heir = {
+    name = "‰eYY™„"  # Theodemund
+    monarch_name = "‰eYY™„"  # Theodemund
+    dynasty = "Ï‚ôuGl"  # Suebi
+    birth_date = 490.1.1
+    death_date = 550.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+520.1.1 = {
+  monarch = {
+    name = "‰eYY™„"  # Theodemund
+    dynasty = "Ï‚ôuGl"  # Suebi
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+520.1.1 = {
+  heir = {
+    name = "aSÉbÌ‘KQ"  # Chararic
+    monarch_name = "aSÉbÌ‘KQ"  # Chararic
+    dynasty = "Ï‚ôuGl"  # Suebi
+    birth_date = 520.1.1
+    death_date = 558.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 1
+  }
+}
+550.1.1 = {
+  monarch = {
+    name = "aSÉbÌ‘KQ"  # Chararic
+    dynasty = "Ï‚ôuGl"  # Suebi
+    adm = 5
+    dip = 3
+    mil = 1
+  }
+}
+550.1.1 = {
+  heir = {
+    name = "?–Ì‘šNØ"  # Ariamir
+    monarch_name = "?–Ì‘šNØ"  # Ariamir
+    dynasty = "Ï‚ôuGl"  # Suebi
+    birth_date = 528.1.1
+    death_date = 561.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 3
+  }
+}
+558.1.1 = {
+  monarch = {
+    name = "?–Ì‘šNØ"  # Ariamir
+    dynasty = "Ï‚ôuGl"  # Suebi
+    adm = 1
+    dip = 4
+    mil = 3
+  }
+}
+558.1.1 = {
+  heir = {
+    name = "ĞceY·V›s"  # Theodemar
+    monarch_name = "ĞceY·V›s"  # Theodemar
+    dynasty = "Ï‚ôuGl"  # Suebi
+    birth_date = 531.1.1
+    death_date = 570.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+561.1.1 = {
+  monarch = {
+    name = "ĞceY·V›s"  # Theodemar
+    dynasty = "Ï‚ôuGl"  # Suebi
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+}
+561.1.1 = {
+  heir = {
+    name = "s|W"  # Miro
+    monarch_name = "s|W"  # Miro
+    dynasty = "Ï‚ôuGl"  # Suebi
+    birth_date = 540.1.1
+    death_date = 583.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+561.5.1 = {
+  religion = chalcedonism
+}
+570.1.1 = {
+  monarch = {
+    name = "s|W"  # Miro
+    dynasty = "Ï‚ôuGl"  # Suebi
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+570.1.1 = {
+  heir = {
+    name = "Œ‚=OÌ‘KQ"  # Eboric
+    monarch_name = "Œ‚=OÌ‘KQ"  # Eboric
+    dynasty = "Ï‚ôuGl"  # Suebi
+    birth_date = 553.1.1
+    death_date = 584.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+583.1.1 = {
+  monarch = {
+    name = "Œ‚=OÌ‘KQ"  # Eboric
+    dynasty = "Ï‚ôuGl"  # Suebi
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

@@ -1,0 +1,276 @@
+government = gov_celestial_empire
+add_government_reform = celestial_empire
+government_rank = 3
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+secondary_religion = daoism
+primary_culture = chihan
+capital = 688	# Kaifeng
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+
+
+960.1.1 = {
+	monarch = {
+		name = "uç!S‰w"
+		#dynasty = " "
+		
+		adm = 6
+		dip = 6
+		mil = 6
+		#927t^3g21Âe
+		birth_date = 927.3.21
+		leader = { name = "uç!S‰w"	type = general	fire = 11	shock = 11	manuever = 7	siege = 4	} 
+	}
+	add_ruler_personality = lawgiver_personality
+	#set_ruler_flag = zhaokuangyin
+	set_country_flag = wudailsjs
+	set_global_flag = wudaigejujieshu
+	
+}
+
+976.11.14 = {
+	monarch = {
+		name = "uçIQIN"
+		#dynasty = " "
+		
+		adm = 5
+		dip = 3
+		mil = 1
+	}
+	set_country_flag = fushengzhuying 
+}
+
+976.11.14 = {
+	set_country_flag = jipinjiruo
+	set_ruler_flag = zhaoguangyi	
+	#set_country_flag = fushengzhuying 
+}	
+997.5.8 = {
+	monarch = {
+		name = "uçR`"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1022.3.23 = {
+	monarch = {
+		name = "uçoy"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1063.4.30 = {
+	monarch = {
+		name = "uçŸf"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1067.1.25 = {
+	monarch = {
+		name = "uç|ò"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1085.4.1 = {
+	monarch = {
+		name = "uçfq"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+1100.2.23 = {
+	monarch = {
+		name = "uçvO"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+	religion = daoism
+}
+1125.1.18 = {
+	monarch = {
+		name = "uçSh"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+#1125t^ Vó∑^KNÿS
+1125.9.1 = {
+	set_global_flag = songjinzhanyi
+}
+
+1127.1.1 = { capital = 684 }
+
+1127.1.10 = {
+	leader = { name = "≥Sﬁò" type = general fire = 10 shock = 10 manuever = 7 siege = 6 death_date = 1142.1.27  }
+	leader = { name = "ÈóN‡V" type = general fire = 6 shock = 5 manuever = 5 siege = 2 death_date = 1151.9.15  }
+	leader = { name = ".V O" type = general fire = 3 shock = 5 manuever = 4 siege = 1 death_date = 1154.1.1  }
+	leader = { name = "RIQN" type = general fire = 10 shock = 10 manuever = 7 siege = 6 death_date = 1142.6.1  }
+	set_global_flag = songjinzhanyi222
+	clr_global_flag = songjinzhanyi
+	set_global_flag = songjinduizhi
+}		
+	
+1127.6.12 = {
+	monarch = {
+		name = "uçÑg"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 0
+	}
+}
+
+1130.7.24 = {
+	monarch = {
+		name = "uç…e"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1141.1.1 = { clr_global_flag = songjinzhanyi222 }	
+1162.7.24 = {
+	monarch = {
+		name = "uçCQpt"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1189.2.18 = {
+	monarch = {
+		name = "uç«`"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1194.7.24 = {
+	monarch = {
+		name = "uçib"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1224.9.17 = {
+	monarch = {
+		name = "uçf"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1264.11.16 = {
+	monarch = {
+		name = "uçjR"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1274.8.12 = {
+	monarch = {
+		name = "uç>f"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1276.6.14 = {
+	monarch = {
+		name = "uç0f"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1278.5.10 = {
+	monarch = {
+		name = "uçHf"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+
+1912.2.12 = {
+
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+	religion = liberalism
+}
+1949.10.1 = { technology_group = modern_chinese }

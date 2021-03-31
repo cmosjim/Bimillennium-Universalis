@@ -1,0 +1,60 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+mercantilism = 0.1
+primary_culture = chihan
+religion = liberalism
+technology_group = early_chinese
+capital = 664	
+
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = {
+	government = modern_chinese_warlord
+	add_government_reform = modern_chinese_warlord_reform
+	religion = liberalism
+}
+1912.3.1 = {
+	monarch = {
+		name = "RN>f"
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1922.8.4 = {
+	monarch = {
+		name = "ÅàVyÌî"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1926.6.6 = {
+	monarch = {
+		name = "hTâb"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+
+1932.2.1 = {
+	monarch = {
+		name = "ãs∂R»p"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

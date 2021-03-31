@@ -1,0 +1,126 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+primary_culture = turkish
+religion = tengri_pagan_reformed
+technology_group = eastern_nomad_group
+capital = 717 
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+
+682.1.1 = {
+	monarch = {
+		name = "?ñÚS±ê®öÑTÑy"
+		#dynasty = " "
+
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+
+694.1.1 = {
+	monarch = {
+		name = "?ñÚS±êÿûjU"
+		#dynasty = " "
+
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+716.1.1 = {
+	monarch = {
+		name = "?ñÚS±êSÒO"
+		#dynasty = " "
+	
+		adm = 1
+		dip = 4
+		mil = 5
+	}
+}
+
+
+716.6.1 = {
+	monarch = {
+		name = "?ñÚS±êÿûÿhﬁè"
+		#dynasty = " "
+		
+	
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+734.1.1 = {
+	monarch = {
+		name = "O6q"
+		
+	
+		adm = 0
+		dip = 1
+		mil = 4
+	}
+}
+
+
+734.6.1 = {
+	monarch = {
+		name = "âv)R"
+		
+	
+		adm = 4
+		dip = 1
+		mil = 0
+	}
+}
+
+742.1.1 = {
+	monarch = {
+		name = "LNœÇs|"
+
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+744.1.1 = {
+	monarch = {
+		name = "?ñÚS±êkçÜñS"
+
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1636.5.15 = { technology_group = old_estern_asian }
+1912.2.12 = {
+
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+	religion = liberalism
+}
+1949.10.1 = { technology_group = modern_chinese }
+

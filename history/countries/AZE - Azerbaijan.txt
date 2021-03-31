@@ -1,0 +1,491 @@
+government = monarchy
+add_government_reform = iqta
+mercantilism = 0.1
+primary_culture = persian
+religion = sunni
+technology_group = muslim
+capital = 2281
+religious_school = shafii_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+889.1.1 = {
+  monarch = {
+    name = "FzUÿû∑V"  # Muhammad
+    dynasty = "içIN∑V"  # Sajid
+    birth_date = 859.1.1
+    adm = 2
+    dip = 1
+    mil = 5
+  }
+}
+889.1.1 = {
+  heir = {
+    name = "O.tèy"  # Yusuf
+    monarch_name = "O.tèy"  # Yusuf
+    dynasty = "içIN∑V"  # Sajid
+    birth_date = 871.1.1
+    death_date = 928.1.1
+    claim = 95
+    adm = 5
+    dip = 0
+    mil = 2
+  }
+}
+901.1.1 = {
+  capital = 424
+}
+901.1.1 = {
+  monarch = {
+    name = "O.tèy"  # Yusuf
+    dynasty = "içIN∑V"  # Sajid
+    birth_date = 871.1.1
+    adm = 5
+    dip = 0
+    mil = 2
+  }
+}
+901.1.1 = {
+  heir = {
+    name = "?ñ^ Fz(ÑÚÉS ?ñ’l`"  # Abu'l-Musafir al-Fath
+    monarch_name = "?ñ^ Fz(ÑÚÉS ?ñ’l`"  # Abu'l-Musafir al-Fath
+    dynasty = "içIN∑V"  # Sajid
+    birth_date = 898.1.1
+    death_date = 929.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 5
+  }
+}
+928.1.1 = {
+  monarch = {
+    name = "?ñ^ Fz(ÑÚÉS ?ñ’l`"  # Abu'l-Musafir al-Fath
+    dynasty = "içIN∑V"  # Sajid
+    birth_date = 898.1.1
+    adm = 0
+    dip = 2
+    mil = 5
+  }
+}
+929.1.1 = {
+  capital = 2283
+  religion = shiite
+  religious_school = ismaili_school
+}
+929.1.1 = {
+  monarch = {
+    name = "FzUÿû∑V"  # Muhammad
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 899.1.1
+    adm = 0
+    dip = 2
+    mil = 1
+  }
+}
+929.1.1 = {
+  heir = {
+    name = "löSVyÌs"  # Marzuban
+    monarch_name = "löSVyÌs"  # Marzuban I
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 912.1.1
+    death_date = 957.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 5
+  }
+}
+942.1.1 = {
+  monarch = {
+    name = "löSVyÌs"  # Marzuban I
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 912.1.1
+    adm = 5
+    dip = 4
+    mil = 5
+  }
+}
+942.1.1 = {
+  heir = {
+    name = "9ÉØefW"  # Justan
+    monarch_name = "9ÉØefW I"  # Justan I
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 927.1.1
+    death_date = 960.1.1
+    claim = 95
+    adm = 5
+    dip = 0
+    mil = 5
+  }
+}
+957.1.1 = {
+  monarch = {
+    name = "9ÉØefW I"  # Justan I
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 927.1.1
+    adm = 5
+    dip = 0
+    mil = 5
+  }
+}
+957.1.1 = {
+  heir = {
+    name = "OØeõsÍN"  # Isma'il
+    monarch_name = "OØeõsÍN"  # Isma'il
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 930.1.1
+    death_date = 962.1.1
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 3
+  }
+}
+960.1.1 = {
+  monarch = {
+    name = "OØeõsÍN"  # Isma'il
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 930.1.1
+    adm = 2
+    dip = 0
+    mil = 3
+  }
+}
+960.1.1 = {
+  heir = {
+    name = "fjS…b1k"  # Ibrahim
+    monarch_name = "fjS…b1k I"  # Ibrahim I
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 932.1.1
+    death_date = 979.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 0
+  }
+}
+962.1.1 = {
+  monarch = {
+    name = "fjS…b1k I"  # Ibrahim I
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 932.1.1
+    adm = 4
+    dip = 0
+    mil = 0
+  }
+}
+962.1.1 = {
+  heir = {
+    name = "löSVyÌs"  # Marzuban
+    monarch_name = "löSVyÌs II"  # Marzuban II
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 949.1.1
+    death_date = 990.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+979.1.1 = {
+  monarch = {
+    name = "löSVyÌs II"  # Marzuban II
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 949.1.1
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+979.1.1 = {
+  heir = {
+    name = "fjS…b1k"  # Ibrahim
+    monarch_name = "fjS…b1k II"  # Ibrahim II
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 960.1.1
+    death_date = 1020.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+990.1.1 = {
+  monarch = {
+    name = "fjS…b1k II"  # Ibrahim II
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 960.1.1
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+990.1.1 = {
+  heir = {
+    name = "9ÉØefW"  # Justan
+    monarch_name = "9ÉØefW II"  # Justan II
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 990.1.1
+    death_date = 1050.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1020.1.1 = {
+  monarch = {
+    name = "9ÉØefW II"  # Justan II
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 990.1.1
+    adm = 1
+    dip = 4
+    mil = 1
+  }
+}
+1020.1.1 = {
+  heir = {
+    name = "FzØeTXÚÉS"  # Mustafir
+    monarch_name = "FzØeTXÚÉS"  # Mustafir
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 1020.1.1
+    death_date = 1062.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+1050.1.1 = {
+  monarch = {
+    name = "FzØeTXÚÉS"  # Mustafir
+    dynasty = "íd…bS"  # Sallarid
+    birth_date = 1020.1.1
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+1100.1.1 = {
+  primary_culture = azerbaijani
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1150.1.1 = {
+  capital = 416
+}
+1157.5.8 = {
+  religion = sunni
+  religious_school = hanafi_school
+  monarch = {
+    name = "ôl∆YØeN OSV	TyQ"  # Shams al-Din Eldig¸z
+    dynasty = "OSV	TyQ"  # Eldiguzid
+    birth_date = 1127.1.1
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1157.5.8 = {
+  heir = {
+    name = "FzUÿû∑V öNU ÙT…bõR"  # Mohammed Jahan Pahlavan
+    monarch_name = "FzUÿû∑V öNU ÙT…bõR"  # Mohammed Jahan Pahlavan
+    dynasty = "OSV	TyQ"  # Eldiguzid
+    birth_date = 1145.1.1
+    death_date = 1186.1.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 1
+  }
+}
+1175.1.1 = {
+  monarch = {
+    name = "FzUÿû∑V öNU ÙT…bõR"  # Mohammed Jahan Pahlavan
+    dynasty = "OSV	TyQ"  # Eldiguzid
+    birth_date = 1145.1.1
+    adm = 1
+    dip = 5
+    mil = 1
+  }
+}
+1175.1.1 = {
+  heir = {
+    name = "KQjR“R ?ñSØepQ"  # Qizil Arslan
+    monarch_name = "KQjR“R ?ñSØepQ"  # Qizil Arslan
+    dynasty = "OSV	TyQ"  # Eldiguzid
+    birth_date = 1156.1.1
+    death_date = 1191.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 4
+  }
+}
+1186.1.1 = {
+  monarch = {
+    name = "KQjR“R ?ñSØepQ"  # Qizil Arslan
+    dynasty = "OSV	TyQ"  # Eldiguzid
+    birth_date = 1156.1.1
+    adm = 3
+    dip = 1
+    mil = 4
+  }
+}
+1186.1.1 = {
+  heir = {
+    name = "?ñ^ çKQS"  # Abu Bakr
+    monarch_name = "?ñ^ çKQS"  # Abu Bakr
+    dynasty = "OSV	TyQ"  # Eldiguzid
+    birth_date = 1161.1.1
+    death_date = 1210.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+1191.1.1 = {
+  monarch = {
+    name = "?ñ^ çKQS"  # Abu Bakr
+    dynasty = "OSV	TyQ"  # Eldiguzid
+    birth_date = 1161.1.1
+    adm = 3
+    dip = 2
+    mil = 1
+  }
+}
+1191.1.1 = {
+  heir = {
+    name = "LNyQ+RKQ"  # Uzbek
+    monarch_name = "LNyQ+RKQ"  # Uzbek
+    dynasty = "OSV	TyQ"  # Eldiguzid
+    birth_date = 1180.1.1
+    death_date = 1225.1.1
+    claim = 95
+    adm = 0
+    dip = 4
+    mil = 1
+  }
+}
+1210.1.1 = {
+  monarch = {
+    name = "LNyQ+RKQ"  # Uzbek
+    dynasty = "OSV	TyQ"  # Eldiguzid
+    birth_date = 1180.1.1
+    adm = 0
+    dip = 4
+    mil = 1
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1800.1.1 = {
+  capital = 421
+}
+1900.1.1 = {
+  technology_group = eastern
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1918.5.28 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = universal_suffrage_reform
+  add_government_reform = reinforce_republican_values_reform
+  add_government_reform = multi_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = abolish_presidency
+  set_legacy_government = parliamentary_republic
+}
+1918.5.28 = {
+  capital = 421
+}
+1918.5.28 = {
+  monarch = {
+    name = "’lyrkç ?ñÃë Wl —yOØe˙W"  # Fath Ali Khan Khoyski
+    adm = 4
+    dip = 3
+    mil = 5
+    religion = sunni
+  }
+}
+1919.4.14 = {
+  monarch = {
+    name = "HYâjS 2Sâ+Yç)R"  # Nasib Yusifbeyli
+    adm = 4
+    dip = 2
+    mil = 3
+    religion = sunni
+  }
+}
+1991.8.30 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1991.8.30 = {
+  monarch = {
+    name = "?ñöNyQ FzTX)RZS+Y"  # Ayaz Mutallibov
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = sunni
+  }
+}
+1992.6.16 = {
+  monarch = {
+    name = "?ñ^’lyQ √W)RGY+RO"  # Abulfaz Alchibey
+    adm = 6
+    dip = 2
+    mil = 4
+    religion = sunni
+  }
+}
+1993.10.3 = {
+  monarch = {
+    name = "÷væèS ?ñ)R6w+Y"  # Heydar Aliyev
+    adm = 4
+    dip = 2
+    mil = 3
+    religion = sunni
+  }
+}
+2003.10.31 = {
+  monarch = {
+    name = "O)R»T∆Y ?ñ)R6w+Y"  # Ilham Aliyev
+    adm = 4
+    dip = 5
+    mil = 1
+    religion = sunni
+  }
+}

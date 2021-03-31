@@ -1,0 +1,32 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "asian_tank"
+		file = "gfx/models/Units/asian_tank.mesh"		
+		
+
+		animation = { id = "attack"		type = "asian_tank_attack_animation" }
+		animation = { id = "idle"		type = "asian_tank_idle_animation" }
+		animation = { id = "walk"		type = "asian_tank_moving_animation" }
+		animation = { id = "death"		type = "asian_tank_idle_animation" }
+		animation = { id = "retreat"	type = "asian_tank_moving_animation" }
+		
+		scale = 1.3
+	}
+
+	pdxmesh = {
+		name = "JAP_tank_heavy"
+		file = "gfx/models/Units/JAP_tank_heavy.mesh"		
+		
+
+		animation = { id = "attack"		type = "JAP_tank_heavy_attack_animation" }
+		animation = { id = "idle"		type = "JAP_tank_heavy_idle_animation" }
+		animation = { id = "walk"		type = "JAP_tank_heavy_moving_animation" }
+		animation = { id = "death"		type = "JAP_tank_heavy_idle_animation" }
+		animation = { id = "retreat"	type = "JAP_tank_heavy_moving_animation" }
+		
+		scale = 1.3
+	}
+
+	
+}

@@ -1,0 +1,160 @@
+government = gov_celestial_empire
+add_government_reform = celestial_empire
+government_rank = 3
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = zhongyuan
+capital = 2492 # Luoyang
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+220.1.1 = {
+	monarch = {
+		name = "ùfN"
+		#dynasty = " "
+		
+		birth_date = 187.1.1
+		adm = 5
+		dip = 3
+		mil = 3
+		leader = {
+				name = "ùfN"
+		        type = general	
+                #rank = 0	
+                fire = 3	
+                shock = 3	
+                manuever = 2
+                siege = 3
+		}
+	}
+}
+220.1.1 = {
+	set_global_flag = shizushidaixy 	
+}
+220.1.1 = {
+	add_country_modifier = {
+		name = "md_chuanguoyuxi"
+		duration = -1
+	}	
+}	
+226.6.29 = {
+	monarch = {
+		name = "ùfáS"
+		#dynasty = " "
+		
+		birth_date = 205.1.1
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+232.1.1 = {
+	heir = {
+		name = "ùf³‚"
+		monarch_name = "ùf³‚"
+		
+		birth_date = 232.1.1
+		death_date = 274.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+239.1.23 = {
+	monarch = {
+		name = "ùf³‚"
+		#dynasty = " "
+		
+		birth_date = 232.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+241.1.1 = {
+	heir = {
+		name = "ùfæš"
+		monarch_name = "ùfæš"
+		
+		birth_date = 241.1.1
+		death_date = 261.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+255.1.1 = {
+	monarch = {
+		name = "ùfæš"
+		#dynasty = " "
+		
+		birth_date = 241.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+255.1.1 = {
+	heir = {
+		name = "ùfBY"
+		monarch_name = "ùfBY"
+		
+		birth_date = 246.1.1
+		death_date = 303.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+260.1.1 = {
+	monarch = {
+		name = "ùfBY"		
+		#dynasty = " "
+		
+		birth_date = 246.1.1
+		death_date = 303.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+266.2.4 = {
+	remove_country_modifier = md_chuanguoyuxi
+}
+
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+
+581.3.4 = {
+	clr_global_flag = shizushidaixy 
+}
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = {
+
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+	religion = liberalism
+}
+1949.10.1 = { technology_group = modern_chinese }

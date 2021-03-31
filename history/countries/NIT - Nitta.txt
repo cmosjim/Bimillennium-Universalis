@@ -1,0 +1,201 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+mercantilism = 0.1
+primary_culture = japanese
+religion = shinto
+technology_group = early_chinese
+capital = 1843	# Kozuke
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1000.1.1 = {
+	set_country_flag = daimyo
+}
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1192.7.12 = {
+	monarch = {
+		name = "°e0uINÍ‘"
+		##dynasty = "Nitta"
+		birth_date = 1135.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1192.7.12 = {
+	heir = {
+		name = "°e0uIN|Q"
+		monarch_name = "°e0uIN|Q"
+		##dynasty = "Nitta"
+		birth_date = 1139.1.1
+		death_date = 1206.4.17
+		claim = 95
+		adm = 0
+		dip = 4
+		mil = 1
+	}
+}
+
+1194.1.1 = {
+	monarch = {
+		name = "°e0uIN|Q"
+		##dynasty = "Nitta"
+		birth_date = 1139.1.1
+		adm = 0
+		dip = 4
+		mil = 1
+	}
+}
+
+1194.1.1 = {
+	heir = {
+		name = "°e0uckIN"
+		monarch_name = "°e0uckIN"
+		##dynasty = "Nitta"
+		birth_date = 1187.1.1
+		death_date = 1257.1.1
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 3
+	}
+}
+
+1195.12.9 = {
+	monarch = {
+		name = "°e0uckIN"
+		##dynasty = "Nitta"
+		birth_date = 1187.1.1
+		adm = 0
+		dip = 2
+		mil = 3
+	}
+}
+
+1208.1.1 = {
+	heir = {
+		name = "°e0u?el"
+		monarch_name = "°e0u?el"
+		##dynasty = "Nitta"
+		birth_date = 1208.1.1
+		death_date = 1271.3.30
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}
+
+1257.1.1 = {
+	monarch = {
+		name = "°e0u?el"
+		##dynasty = "Nitta"
+		birth_date = 1208.1.1
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}
+
+1257.1.1 = {
+	heir = {
+		name = "°e0uúWl"
+		monarch_name = "°e0uúWl"
+		##dynasty = "Nitta"
+		birth_date = 1253.1.1
+		death_date = 1324.7.2
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1271.3.30 = {
+	monarch = {
+		name = "°e0uúWl"
+		##dynasty = "Nitta"
+		birth_date = 1253.1.1
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+1274.1.1 = {
+	heir = {
+		name = "°e0uËSl"
+		monarch_name = "°e0uËSl"
+		##dynasty = "Nitta"
+		birth_date = 1274.1.1
+		death_date = 1318.1.21
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 0
+	}
+}
+
+1314.8.23 = {
+	monarch = {
+		name = "°e0uËSl"
+		##dynasty = "Nitta"
+		birth_date = 1274.1.1
+		adm = 5
+		dip = 5
+		mil = 0
+	}
+}
+
+1314.8.23 = {
+	heir = {
+		name = "°e0uIN"
+		monarch_name = "°e0uIN"
+		##dynasty = "Nitta"
+		birth_date = 1300.1.1
+		death_date = 1338.8.17
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1318.1.21 = {
+	monarch = {
+		name = "°e0uIN"
+		##dynasty = "Nitta"
+		birth_date = 1300.1.1
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1331.1.1 = {
+	heir = {
+		name = "°e0uINtQ"
+		monarch_name = "°e0uINtQ"
+		##dynasty = "Nitta"
+		birth_date = 1331.1.1
+		death_date = 1368.9.3
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}
+1636.5.15 = { technology_group = old_estern_asian }
+1949.10.1 = { technology_group = modern_chinese }

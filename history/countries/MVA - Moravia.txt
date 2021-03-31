@@ -1,0 +1,88 @@
+government = monarchy
+add_government_reform = feudalism_reform
+mercantilism = 0.1
+primary_culture = czech
+religion = slavic
+capital = 265
+technology_group = western
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+830.1.1 = {
+  monarch = {
+    name = "«ƒOs|S I"  # Mojmír I
+    dynasty = "«ƒ	Ts|S"  # Mojmírid
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+831.1.1 = {
+  religion = chalcedonism
+}
+846.1.1 = {
+  monarch = {
+    name = "Éb¯ecR¯eÉb+Y"  # Rastislav
+    dynasty = "«ƒ	Ts|S"  # Mojmírid
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+867.1.1 = {
+  religion = catholic
+}
+870.1.1 = {
+  monarch = {
+    name = "¯eÉbƒls|S"  # Slavomír
+    dynasty = "«ƒ	Ts|S"  # Mojmírid
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+871.1.1 = {
+  monarch = {
+    name = "¯eætXbnfbSKQ I"  # Svatopluk I
+    dynasty = "«ƒ	Ts|S"  # Mojmírid
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+894.6.1 = {
+  monarch = {
+    name = "«ƒOs|S II"  # Mojmír II
+    dynasty = "«ƒ	Ts|S"  # Mojmírid
+    adm = 5
+    dip = 4
+    mil = 3
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

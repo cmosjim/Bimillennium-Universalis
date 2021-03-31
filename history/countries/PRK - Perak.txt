@@ -1,0 +1,414 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = malayan
+religion = sunni
+technology_group = early_chinese
+capital = 595	# Perak
+religious_school = shafii_school
+
+# Melaka Dynasty
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1528.1.1 = {
+  monarch = {
+    name = "FzNbÕlS ™l?– I"  # Muzaffar Shâh I
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+  add_piety = 0.1
+}
+1528.1.1 = {
+  heir = {
+    name = "üfÏ‚S ™l?–"  # Mansûr Shâh
+    monarch_name = "üfÏ‚S ™l?–"  # Mansûr Shâh
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1510.1.1
+    death_Date = 1577.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1549.1.1 = {
+  monarch = {
+    name = "üfÏ‚S ™l?–"  # Mansûr Shâh
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+
+1549.1.1 = {
+  heir = {
+    name = "Œ‚ÈTÈ·V TXpgN ™l?–"  # Ahmad Tajuddin Shâh
+    monarch_name = "Œ‚ÈTÈ·V TXpgN ™l?–"  # Ahmad Tajuddin Shâh
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1535.1.1
+    death_Date = 1584.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1577.1.1 = {
+  monarch = {
+    name = "Œ‚ÈTÈ·V TXpgN ™l?–"  # Ahmad Tajuddin Shâh
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1577.1.1 = {
+  heir = {
+    name = "TX1gÒR ?–Ì‘¬‚ ™l?–"  # Tajul Ariffin Shâh
+    monarch_name = "TX1gÒR ?–Ì‘¬‚ ™l?–"  # Tajul Ariffin Shâh
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1560.1.1
+    death_Date = 1594.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1584.1.1 = {
+  monarch = {
+    name = "TX1gÒR ?–Ì‘¬‚ ™l?–"  # Tajul Ariffin Shâh
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1584.1.1 = {
+  heir = {
+    name = "?–ÉbN ™l?–"  # Alauddin Shâh
+    monarch_name = "?–ÉbN ™l?–"  # Alauddin Shâh
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1572.1.1
+    death_Date = 1609.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1594.1.1 = {
+  monarch = {
+    name = "?–ÉbN ™l?–"  # Alauddin Shâh
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1594.1.1 = {
+  heir = {
+    name = "FzaS¾ÆY ™l?–"  # Mukaddam Shâh
+    monarch_name = "FzaS¾ÆY ™l?–"  # Mukaddam Shâh
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1590.1.1
+    death_Date = 1619.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1609.1.1 = {
+  monarch = {
+    name = "FzaS¾ÆY ™l?–"  # Mukaddam Shâh
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1609.1.1 = {
+  heir = {
+    name = "üfÏ‚S ™l?–"  # Mansûr Shâh
+    monarch_name = "üfÏ‚S ™l?– II"  # Mansûr Shâh II
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1600.1.1
+    death_Date = 1627.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1619.1.1 = {
+  monarch = {
+    name = "üfÏ‚S ™l?– II"  # Mansûr Shâh II
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 2
+    dip = 1
+    mil = 2
+  }
+}
+1619.1.1 = {
+  heir = {
+    name = "lšÈTƒ·V ™l?–"  # Mahmûd Shâh
+    monarch_name = "lšÈTƒ·V ™l?–"  # Mahmûd Shâh
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1614.1.1
+    death_Date = 1630.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1627.1.1 = {
+  monarch = {
+    name = "lšÈTƒ·V ™l?–"  # Mahmûd Shâh
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+1627.1.1 = {
+  heir = {
+    name = "(„ÉbkN ™l?–"  # Sallehuddin Shâh
+    monarch_name = "(„ÉbkN ™l?–"  # Sallehuddin Shâh
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1620.1.1
+    death_Date = 1635.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+1630.1.1 = {
+  monarch = {
+    name = "(„ÉbkN ™l?–"  # Sallehuddin Shâh
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+1635.1.1 = {
+  monarch = {
+    name = "FzNbÕlS ™l?– II"  # Muzaffar Shâh II
+    dynasty = "!•šNKQ"  # Siak
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+
+1636.5.15 = { technology_group = old_estern_asian }
+
+
+
+1650.1.1 = {
+  heir = {
+    name = "lšÈTƒ·V O¯eNW·VS ™l?–"  # Mahmûd Iskandar Shâh
+    monarch_name = "lšÈTƒ·V O¯eNW·VS ™l?–"  # Mahmûd Iskandar Shâh
+    dynasty = "!•šNKQ"  # Siak
+    birth_date = 1650.1.1
+    death_Date = 1720.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1654.1.1 = {
+  monarch = {
+    name = "lšÈTƒ·V O¯eNW·VS ™l?–"  # Mahmûd Iskandar Shâh
+    dynasty = "!•šNKQ"  # Siak
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1670.1.1 = {
+  heir = {
+    name = "?–ÉbN FzÈTšNyr ™l?–"  # Alauddin Mughayat Shâh
+    monarch_name = "?–ÉbN FzÈTšNyr ™l?–"  # Alauddin Mughayat Shâh
+    dynasty = "!•šNKQ"  # Siak
+    birth_date = 1670.1.1
+    death_Date = 1728.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1720.1.1 = {
+  monarch = {
+    name = "?–ÉbN FzÈTšNyr ™l?–"  # Alauddin Mughayat Shâh
+    dynasty = "!•šNKQ"  # Siak
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1720.1.1 = {
+  heir = {
+    name = "FzNbÕlS ™l?–"  # Muzaffar Shâh
+    monarch_name = "FzNbÕlS ™l?– III"  # Muzaffar Shâh III
+    dynasty = "!•šNKQ"  # Siak
+    birth_date = 1690.1.1
+    death_Date = 1754.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1728.1.1 = {
+  monarch = {
+    name = "FzNbÕlS ™l?– III"  # Muzaffar Shâh III
+    dynasty = "!•šNKQ"  # Siak
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1728.1.1 = {
+  heir = {
+    name = "O¯eNW·VS VyaSHYàV ™l?–"  # Iskandar Zulkarnain Shâh
+    monarch_name = "O¯eNW·VS VyaSHYàV ™l?–"  # Iskandar Zulkarnain Shâh
+    dynasty = "!•šNKQ"  # Siak
+    birth_date = 1720.1.1
+    death_Date = 1765.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1754.1.1 = {
+  monarch = {
+    name = "O¯eNW·VS VyaSHYàV ™l?–"  # Iskandar Zulkarnain Shâh
+    dynasty = "!•šNKQ"  # Siak
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1754.1.1 = {
+  heir = {
+    name = "lšÈTƒ·V ™l?–"  # Mahmûd Shâh
+    monarch_name = "lšÈTƒ·V ™l?– II"  # Mahmûd Shâh II
+    dynasty = "!•šNKQ"  # Siak
+    birth_date = 1740.1.1
+    death_Date = 1786.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1765.1.1 = {
+  monarch = {
+    name = "lšÈTƒ·V ™l?– II"  # Mahmûd Shâh II
+    dynasty = "!•šNKQ"  # Siak
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1765.1.1 = {
+  heir = {
+    name = "?–ÉbN üfÏ‚S ™l?–"  # Alauddin Mansûr Shâh
+    monarch_name = "?–ÉbN üfÏ‚S ™l?–"  # Alauddin Mansûr Shâh
+    dynasty = "!•šNKQ"  # Siak
+    birth_date = 1745.1.1
+    death_Date = 1786.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1773.1.1 = {
+  monarch = {
+    name = "?–ÉbN üfÏ‚S ™l?–"  # Alauddin Mansûr Shâh
+    dynasty = "!•šNKQ"  # Siak
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1773.1.1 = {
+  heir = {
+    name = "Œ‚ÈTÈ·VN ™l?–"  # Ahmaddin Shâh
+    monarch_name = "Œ‚ÈTÈ·VN ™l?–"  # Ahmaddin Shâh
+    dynasty = "!•šNKQ"  # Siak
+    birth_date = 1765.1.1
+    death_Date = 1806.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1786.1.1 = {
+  monarch = {
+    name = "Œ‚ÈTÈ·VN ™l?–"  # Ahmaddin Shâh
+    dynasty = "!•šNKQ"  # Siak
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1786.1.1 = {
+  heir = {
+    name = "?–jSjgÒR lš)RKQ üfÏ‚S ™l?–"  # Abdul Malik Mansur Shâh
+    monarch_name = "?–jSjgÒR lš)RKQ üfÏ‚S ™l?–"  # Abdul Malik Mansur Shâh
+    dynasty = "!•šNKQ"  # Siak
+    birth_date = 1780.1.1
+    death_Date = 1825.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+1806.1.1 = {
+  monarch = {
+    name = "?–jSjgÒR lš)RKQ üfÏ‚S ™l?–"  # Abdul Malik Mansûr Shâh
+    dynasty = "!•šNKQ"  # Siak
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+1806.1.1 = {
+  heir = {
+    name = "?–jSjgÉb Fz?–NbÆY ™l?–"  # Abdullah Muazzam Shâh
+    monarch_name = "?–jSjgÉb Fz?–NbÆY ™l?–"  # Abdullah Muazzam Shâh
+    dynasty = "!•šNKQ"  # Siak
+    birth_date = 1800.1.1
+    death_Date = 1830.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+
+1949.10.1 = { technology_group = asian }

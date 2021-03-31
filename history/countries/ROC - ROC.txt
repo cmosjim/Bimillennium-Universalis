@@ -1,0 +1,118 @@
+government = republic
+set_legacy_government = constitutional_republic
+primary_culture = chihan
+religion = liberalism
+technology_group = early_chinese
+capital = 1821	
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1910.1.1 = { religion = liberalism }
+1937.7.7 = { set_global_flag = wii_periods }
+
+
+#bËzŽN1925t^7g1åeÿÓumgŽN1948t^5g20åe0(W1925t^bËzTó1928t^KNô•ÿvQNS¬N„vSm?eœ^øv’NùRÙSÿ
+
+1925.7.1 = {
+	monarch = {
+		name = "jlFQí”"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1883.5.4
+	}
+}
+
+1927.4.18 = { 
+	monarch = {
+		name = "‹„ËNów"
+		adm = 4
+		dip = 3
+		mil = 6
+		# 1887 t^ 10 g 31 åe
+		birth_date = 1887.10.31
+		leader = {
+				name = "‹„ËNów"
+				type = general	
+				#rank = 0
+				fire = 8
+				shock = 7
+				manuever = 4
+				siege = 4
+		}
+	}
+}
+
+1928.2.7 = { 
+	monarch = {
+		name = "-ŒàeOu"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+1928.10.10 = {
+	monarch = {
+		name = "‹„ËNów"
+		adm = 4
+		dip = 3
+		mil = 6
+		birth_date = 1887.10.31		
+		leader = {
+				name = "‹„ËNów"
+				type = general	
+				#rank = 0
+				fire = 8
+				shock = 7
+				manuever = 4
+				siege = 4
+		}		
+	}
+}
+
+1932.1.1 = {
+	monarch = {
+		name = "—gîh"
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+#capital Í‘†^^(1937 12 - 1946t^5g5åe)
+1937.7.7 = { set_global_flag = wii_periods }
+1937.12.1 = { capital = 680 }
+1943.6.1 = {
+	monarch = {
+		name = "‹„ËNów"
+		adm = 4
+		dip = 3
+		mil = 6
+		birth_date = 1887.10.31		
+		leader = {
+				name = "‹„ËNów"
+				type = general	
+				#rank = 0
+				fire = 8
+				shock = 7
+				manuever = 4
+				siege = 4
+		}			
+	}
+}
+1945.8.15 = { clr_global_flag = wii_periods }
+1946.5.5 = { capital = 1821 }
+1946.6.26 = { set_global_flag = guogongneizhan2 }
+1949.10.1 = { capital = 679 }
+1949.10.1 = { technology_group = modern_chinese }
+
+#?eœ^ÁŽVðSS	1949t^12g => TWN

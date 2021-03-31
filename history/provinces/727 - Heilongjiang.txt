@@ -1,0 +1,64 @@
+#727 - Tuwan
+
+culture = donghu
+religion = manchu_shamanism
+capital = "Tuwan"
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+owner = FU1
+controller = FU1
+add_core = FU1 
+is_city = yes
+443.1.1 = { owner = SNS controller = SNS add_core = SNS remove_core = FU1 } 
+557.1.1 = { owner = DKR controller = DKR add_core = DKR remove_core = SNS }
+967.1.1 = { owner = LIO controller = LIO add_core = LIO remove_core = DKR }
+1116.1.1 = { owner = GNN controller = GNN add_core = GNN remove_core = LIO }
+1206.1.1 = { trade_goods = fish religion = tengri_pagan_reformed }
+1216.1.1 = { owner = DX1 controller = DX1 add_core = DX1 remove_core = GNN }
+1233.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = DX1 }
+
+1260.5.5 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1368.1.1 = { owner = MHX controller = MHX add_core = MHX remove_core = YUA }
+1370.1.1 = { religion = confucianism }
+
+1613.2.1 = {	owner = MJZ
+				controller = MJZ
+				add_core = MJZ
+				remove_core = MHX
+			} # Jianzhou conquest
+1616.1.1 = {	owner = MCH
+				controller = MCH
+				add_core = MCH
+				remove_core = MJZ
+			} # The Later Jin Khanate
+1636.5.15 = {	owner = QNG
+				controller = QNG
+				add_core = QNG
+				remove_core = MCH
+			} # The Qing Dynasty
+1709.1.1 = { discovered_by = SPA }
+1875.1.1 = { base_tax = 3 }
+1897.1.1 = { culture = dongbe }
+1901.1.1 = { base_tax = 10 base_production = 10 }
+1912.2.12 = { owner = BNN controller = BNN add_core = BNN remove_core = QNG capital = "Yichun" }
+1917.7.6 = { owner = FX1 controller = FX1 add_core = FX1 remove_core = BNN }
+1917.7.6 = { owner = FX1 controller = FX1 add_core = FX1 remove_core = BNN }
+1928.12.29 = { owner = ROC controller = ROC add_core = ROC remove_core = FX1 }
+1932.2.4 = { controller = JAP }
+1932.2.18 = { owner = MCK controller = MCK add_core = MCK remove_core = ROC }
+1945.8.15 = { owner = CW1 controller = CW1 add_core = CW1 remove_core = MCK religion = communism  }
+1949.10.1 = { owner = CHN controller = CHN add_core = CHN remove_core = CW1 }
+1975.1.1 = { base_tax = 11 base_production = 11 base_manpower = 12 }
+1985.1.1 = { base_tax = 13 base_production = 12 base_manpower = 13 }
+2000.1.1 = { base_tax = 14 base_production = 13 base_manpower = 14 }
+2010.1.1 = { base_tax = 15 base_production = 14 base_manpower = 15 }

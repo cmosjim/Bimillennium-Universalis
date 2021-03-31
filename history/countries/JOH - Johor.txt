@@ -1,0 +1,335 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = malayan
+religion = sunni
+technology_group = early_chinese
+capital = 597
+religious_school = shafii_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = chinese
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1528.1.1 = {
+  monarch = {
+    name = "?–ÉbLNN Ì‘šN ƒ II"  # Alauddin Riayat Shah II
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 4
+    dip = 4
+    mil = 4
+  }
+  add_piety = 0.1
+}
+1528.1.1 = {
+  heir = {
+    name = "FzNbÕlS ™l"  # Muzaffar Shah
+    monarch_name = "FzNbÕlS ™l II"  # Muzaffar Shah II
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1523.1.1
+    death_Date = 1570.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1564.1.1 = {
+  monarch = {
+    name = "FzNbÕlS ™l II"  # Muzaffar Shah II
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1564.1.1 = {
+  heir = {
+    name = "?–^ı >Ì‘œ ™l"  # Abd al-Jalîl Shah
+    monarch_name = "?–^ı >Ì‘œ ™l"  # Abd al-Jalîl Shah
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1562.1.1
+    death_Date = 1571.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1570.1.1 = {
+  monarch = {
+    name = "?–^ı >Ì‘œ ™l"  # Abd al-Jalîl Shah
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1571.1.1 = {
+  monarch = {
+    name = "?–^ı >Ì‘œ ™l II"  # Abd al-Jalîl Shah II
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1575.1.1 = {
+  heir = {
+    name = "?–ÉbLNN Ì‘šN ƒ"  # Alauddin Riayat Shah
+    monarch_name = "?–ÉbLNN Ì‘šN ƒ III"  # Alauddin Riayat Shah III
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1575.1.1
+    death_Date = 1615.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1597.1.1 = {
+  monarch = {
+    name = "?–ÉbLNN Ì‘šN ƒ III"  # Alauddin Riayat Shah III
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1597.1.1 = {
+  heir = {
+    name = "?–ı ›sÅ– ƒ"  # Abdullah Ma'ayat Shah
+    monarch_name = "?–ı ›sÅ– ƒ"  # Abdullah Ma'ayat Shah
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1572.1.1
+    death_Date = 1623.3.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1615.1.1 = {
+  monarch = {
+    name = "?–ı ›sÅ– ƒ"  # Abdullah Ma'ayat Shah
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1615.1.1 = {
+  heir = {
+    name = "?–^ı >Ì‘œ ™l"  # Abd al-Jalîl Shah
+    monarch_name = "?–jSjgÒR >)RÒR ™l?– III"  # Abd al-Jalîl Shah III
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1590.1.1
+    death_Date = 1677.3.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1623.3.1 = {
+  monarch = {
+    name = "?–jSjgÒR >)RÒR ™l?– III"  # Abd al-Jalîl Shah III
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1630.1.1 = {
+  heir = {
+    name = "fjSÉb1k ™l"  # Ibrahîm Shah
+    monarch_name = "fjSÉb1k ™l"  # Ibrahîm Shah
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1630.1.1
+    death_Date = 1685.2.16
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1636.5.15 = {
+  technology_group = old_estern_asian
+}
+1677.1.1 = {
+  monarch = {
+    name = "fjSÉb1k ™l"  # Ibrahîm Shah
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1677.1.1 = {
+  heir = {
+    name = "lšÈTƒ·V ™l?–"  # Mahmûd Shah
+    monarch_name = "lšÈTƒ·V ™l?– II"  # Mahmûd Shah II
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1675.1.1
+    death_Date = 1699.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+1685.2.16 = {
+  monarch = {
+    name = "lšÈTƒ·V ™l?– II"  # Mahmûd Shah II
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+1699.1.1 = {
+  monarch = {
+    name = "?–^ı >Ì‘œ ™l IV"  # Abd al-Jalîl Shah IV
+    dynasty = "ØvN–Ã‹W"  # Bendahara
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1720.1.1 = {
+  monarch = {
+    name = "?–ı ågt Éb» ƒ"  # Abd al-Jalîl Rahmat Shah
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1720.1.1 = {
+  heir = {
+    name = "?–jSjgÒR >)RÒR Fz?–NbÆY ™l?–"  # Abd al-Jalîl Muazzam Shah
+    monarch_name = "?–jSjgÒR >)RÒR Fz?–NbÆY ™l?–"  # Abd al-Jalîl Muazzam Shah
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1710.1.1
+    death_Date = 1761.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1722.1.1 = {
+  monarch = {
+    name = "?–jSjgÒR >)RÒR Fz?–NbÆY ™l?–"  # Abd al-Jalîl Muazzam Shah
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1730.1.1 = {
+  heir = {
+    name = "Œ‚ÈTÈ·V Ì‘šNšNyr ™l"  # Ahmad Riayat Shah
+    monarch_name = "Œ‚ÈTÈ·V Ì‘šNšNyr ™l"  # Ahmad Riayat Shah
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1730.1.1
+    death_Date = 1761.7.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1761.1.1 = {
+  monarch = {
+    name = "Œ‚ÈTÈ·V Ì‘šNšNyr ™l"  # Ahmad Riayat Shah
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1761.7.1 = {
+  monarch = {
+    name = "lšÈTƒ·V ™l?–"  # Mahmûd Shah
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1765.1.1 = {
+  heir = {
+    name = "?–jSjgÒR Ébküf ™l"  # Abd al-Rahman Shah
+    monarch_name = "?–jSjgÒR Ébküf ™l"  # Abd al-Rahman Shah
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1765.1.1
+    death_Date = 1819.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1812.1.1 = {
+  monarch = {
+    name = "?–jSjgÒR Ébküf ™l"  # Abd al-Rahman Shah
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1776.1.1 = {
+  heir = {
+    name = "¯OiàV ™l"  # Hussein Shah
+    monarch_name = "¯OiàV ™l"  # Husseinn Shah
+    dynasty = "lšmQ2u"  # Melaka
+    birth_date = 1776.1.1
+    death_Date = 1835.9.5
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 1
+  }
+}
+1819.1.1 = {
+  monarch = {
+    name = "¯OiàV ™l"  # Hussein Shah
+    dynasty = "lšmQ2u"  # Melaka
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+1949.10.1 = {
+  technology_group = asian
+}

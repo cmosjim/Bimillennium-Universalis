@@ -1,0 +1,125 @@
+government = republic
+set_legacy_government = constitutional_republic
+mercantilism = 0.1
+primary_culture = bulgarian
+religion = orthodox
+technology_group = eastern
+capital = 148
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1900.1.1 = {
+  technology_group = western
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1945.1.1 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = universal_suffrage_reform
+  add_government_reform = reinforce_republican_values_reform
+  add_government_reform = multi_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = ceremonial_president
+  set_legacy_government = presidental_republic
+}
+1991.9.8 = {
+  monarch = {
+    name = "úWW <h)RbW+Y"  # Kiro Gligorov
+    adm = 4
+    dip = 4
+    mil = 2
+    religion = orthodox
+  }
+}
+1995.10.4 = {
+  monarch = {
+    name = "¯eXblb ‰RY+Y"  # Stojan Andov
+    adm = 2
+    dip = 2
+    mil = 3
+    religion = orthodox
+  }
+}
+1995.11.17 = {
+  monarch = {
+    name = "úWW <h)RbW+Y"  # Kiro Gligorov
+    adm = 4
+    dip = 4
+    mil = 2
+    religion = orthodox
+  }
+}
+1999.11.19 = {
+  monarch = {
+    name = "(„ƒl KQ)R«ƒ+Y¯eúW"  # Savo Klimovski
+    adm = 2
+    dip = 3
+    mil = 3
+    religion = orthodox
+  }
+}
+1999.12.15 = {
+  monarch = {
+    name = "œÌ‘¯e yrÉbOÑy+Y¯eúW"  # Boris Trajkovski
+    adm = 4
+    dip = 2
+    mil = 3
+    religion = orthodox
+  }
+}
+2004.2.26 = {
+  monarch = {
+    name = "ógnfTN ¦uS¾ú‹+Y¯eúW"  # Ljupco Jordanovski
+    adm = 4
+    dip = 2
+    mil = 3
+    religion = orthodox
+  }
+}
+2004.5.12 = {
+  monarch = {
+    name = "^pQÑy (ƒS‡eÑy+Y¯eúW"  # Branko Crvenkovski
+    adm = 2
+    dip = 4
+    mil = 3
+    religion = orthodox
+  }
+}
+2009.5.12 = {
+  monarch = {
+    name = "<heYSúW ONú‹+Y"  # Gjorge Ivanov
+    adm = 4
+    dip = 5
+    mil = 2
+    religion = orthodox
+  }
+}

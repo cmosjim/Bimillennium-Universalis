@@ -1,0 +1,289 @@
+government = gov_celestial_empire
+add_government_reform = celestial_empire
+government_rank = 3
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = jin
+capital = 2492	# m3–
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+
+
+
+265.1.1 = {
+	monarch = {
+		name = "øSlšp"
+		#dynasty = " "
+		
+		dip = 4
+		adm = 2
+		mil = 2
+	}
+}
+
+290.5.17 = {
+	monarch = {
+		name = "øSlšwˆ"
+		#dynasty = " "
+	
+		dip = 3
+		adm = 3
+		mil = 2
+	}
+}
+
+292.1.1 = {
+	monarch = {
+		name = "øSlšwˆ"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 4
+		mil = 5
+	}
+}
+
+300.1.1 = {
+	monarch = {
+		name = "øSlšwˆ"
+		#dynasty = " "
+	
+		dip = 3
+		adm = 3
+		mil = 5
+	}
+}
+
+301.1.1 = {
+	monarch = {
+		name = "øSlš&O"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 1
+		mil = 4
+	}
+}
+
+301.4.1 = {
+	monarch = {
+		name = "øSlšwˆ"
+		#dynasty = " "
+	
+		dip = 3
+		adm = 2
+		mil = 3
+	}
+}
+
+302.12.1 = {
+	monarch = {
+		name = "øSlšwˆ"
+		#dynasty = " "
+	
+		dip = 4
+		adm = 6
+		mil = 5
+	}
+}
+
+304.1.1 = {
+	monarch = {
+		name = "øSlšwˆ"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 1
+		mil = 4
+	}
+}
+
+304.11.31 = {
+	monarch = {
+		name = "øSlšwˆ"
+		#dynasty = " "
+	
+		dip = 5
+		adm = 2
+		mil = 5
+	}
+}
+
+306.1.1 = {
+	monarch = {
+		name = "øSlšwˆ"
+		#dynasty = " "
+	
+		dip = 5
+		adm = 3
+		mil = 5
+	}
+}
+
+307.1.8 = {
+	monarch = {
+		name = "øSlšËp"
+		#dynasty = " "
+	
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+
+313.3.14 = {
+	monarch = {
+		name = "øSlšº"
+		#dynasty = " "
+		
+		dip = 3
+		adm = 5
+		mil = 1
+	}
+}
+		
+#317t^4g6åe 8l	VKNxyTÁıWS¬N
+317.4.6 ={ capital = 1821 }
+318.2.7 = {
+	monarch = {
+		name = "øSlšw"
+		#dynasty = " "
+		
+		dip = 3
+		adm = 2
+		mil = 3
+	}
+}
+
+323.1.3 = {
+	monarch = {
+		name = "øSlšÍu"
+		#dynasty = " "
+		
+		dip = 4
+		adm = 2
+		mil = 3
+	}
+}
+
+325.10.18 = {
+	monarch = {
+		name = "øSlšMˆ"
+		#dynasty = " "
+		
+		dip = 4
+		adm = 2
+		mil = 1
+	}
+}
+
+342.7.26 = {
+	monarch = {
+		name = "øSlš³S"
+		#dynasty = " "
+		
+		dip = 2
+		adm = 3
+		mil = 4
+	}
+}
+
+344.11.17 = {
+	monarch = {
+		name = "øSlšCw"
+		#dynasty = " "
+		
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+
+361.7.10 = {
+	monarch = {
+		name = "øSlšN"
+		#dynasty = " "
+		
+		dip = 4
+		adm = 3
+		mil = 2
+	}
+}
+365.3.30 = {
+	monarch = {
+		name = "øSlšUY"
+		#dynasty = " "
+		
+		dip = 3
+		adm = 2
+		mil = 5
+	}
+}
+371.1.6 = {
+	monarch = {
+		name = "øSlš1f"
+		#dynasty = " "
+		
+		dip = 5
+		adm = 3
+		mil = 2
+	}
+}
+372.9.12 = {
+	monarch = {
+		name = "øSlšÜf"
+		#dynasty = " "
+		
+		dip = 3
+		adm = 4
+		mil = 3
+	}
+}
+
+396.1.1 = {
+	monarch = {
+		name = "øSlš·V—R"
+		#dynasty = " "
+		
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+
+419.1.28 = {
+	monarch = {
+		name = "øSlš·V‡e"
+		#dynasty = " "
+		
+		dip = 2
+		adm = 3
+		mil = 3
+	}
+}
+
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+
+1912.2.12 = {
+
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+	religion = liberalism
+}
+1949.10.1 = { technology_group = modern_chinese }

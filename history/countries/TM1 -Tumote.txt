@@ -1,0 +1,88 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+technology_group = eastern_nomad_group
+religion = tengri_pagan_reformed
+secondary_religion = vajrayana
+primary_culture = mongol
+capital = 3236	# Karakorum
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1533.1.1 = {
+	monarch = {
+		name = "ÙT?QêiRW"
+		
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1542.1.1 = {
+	monarch = {
+		name = "^NÜ^»T"
+		
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+
+
+1582.1.1 = {
+	monarch = {
+		name = "ÙT?QêiRW"
+		
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+
+
+1586.1.1 = {
+	monarch = {
+		name = "wõRKQ"
+		
+		adm = 5
+		dip = 1
+		mil = 2
+	}
+}
+
+
+
+1613.1.1 = {
+	monarch = {
+		name = "jS1YTQ"
+		
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+1627.1.1 = {
+	monarch = {
+		name = "ƒO(g^"
+		
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+

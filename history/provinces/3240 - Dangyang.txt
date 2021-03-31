@@ -1,0 +1,70 @@
+#3240 - Dangyang
+
+owner = HND
+controller = HND
+culture = chihan
+religion = confucianism
+capital = "SV3?"
+trade_goods = grain
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+is_city = yes
+add_core = HND
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+
+8.12.1 = { owner = NEW controller = NEW add_core = NEW remove_core = HND }
+22.1.1 = { owner = LL1 controller = LL1 add_core = LL1 remove_core = NEW }
+23.10.6 = { owner = WX2 controller = WX2 add_core = WX2 remove_core = LL1 }
+25.9.1 = { owner = CH1 controller = CH1 add_core = CH1 remove_core = WX2 }
+26.1.1 = { owner = YN1 controller = YN1 add_core = YN1 remove_core = CH1 }
+29.1.1 = { owner = HND controller = HND add_core = HND remove_core = YN1 }
+191.1.1 = { owner = LBB controller = LBB add_core = LBB remove_core = HND }
+210.1.1 = { owner = LUP controller = LUP add_core = LUP remove_core = LBB }
+220.1.1 = { owner = SNC controller = SNC add_core = SNC remove_core = LUP }
+229.4.1 = { owner = WUU controller = WUU add_core = WUU remove_core = HND remove_core = SNC }
+280.3.15 = { owner = JN1 controller = JN1 add_core = JN1 remove_core = WUU }
+420.1.1 = { owner = LSO controller = LSO add_core = LSO remove_core = JN1 }
+479.1.1 = { owner = QIC controller = QIC add_core = QIC remove_core = LSO }
+502.1.1 = { owner = LN1 controller = LN1 add_core = LN1 remove_core = QIC }
+557.1.1 = { owner = CZH controller = CZH add_core = CZH remove_core = LN1 }
+581.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CZH }
+617.7.1 = { owner = ZJ1 controller = ZJ1 add_core = ZJ1 remove_core = SUI }
+619.10.1 = { owner = TNG controller = TNG add_core = TNG remove_core = ZJ1 }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+705.2.21 = { owner = TNG controller = TNG add_core = TNG remove_core = WZ1 }
+907.1.1 = { owner = ZU1 controller = ZU1 add_core = ZU1 remove_core = TNG }
+923.5.13 = { owner = HT1 controller = HT1 add_core = HT1 remove_core = ZU1 }
+924.1.1 = { owner = JGN controller = JGN add_core = JGN remove_core = HT1 }
+963.1.1 = { owner = SNG controller = SNG add_core = SNG remove_core = JGN }
+1276.1.1 = { owner = YUA controller = YUA add_core = YUA add_core = CXI remove_core = SNG }
+1333.1.1 = { base_tax = 4 base_production = 4 base_manpower = 4 }																 
+1357.1.1 = { owner = HH2 controller = HH2 add_core = HH2 remove_core = YUA }
+1360.1.1 = { owner = CH4 controller = CH4 add_core = CH4 remove_core = HH2 }
+1362.1.1 = { owner = ZH2 controller = ZH2 add_core = ZH2 remove_core = CH4 }
+1368.6.1 = { owner = MNG controller = MNG add_core = MNG remove_core = ZH2 }
+1643.5.1 = { owner = CXI controller = CXI } # Zhang Xianzhong's Xi empire
+1645.6.14 = { owner = QNG controller = QNG add_core = QNG remove_core = MNG }
+1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+1750.1.1 = { base_tax = 5 base_production = 5 base_manpower = 5 }
+1901.1.1 = { base_tax = 6 base_production = 6 base_manpower = 6 }
+1911.10.20 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Wuchang uprising
+1912.2.12 = { revolt = {} owner = BNN controller = BNN add_core = BNN remove_core = QNG remove_core = CXI }
+1917.7.6 = { owner = ZX1 controller = ZX1 add_core = ZX1 remove_core = BNN }
+1925.1.1 = { owner = XB1 controller = XB1 add_core = XB1 remove_core = ZX1 }
+1925.12.1 = { owner = ZX1 controller = ZX1 add_core = ZX1 remove_core = XB1 }
+1927.3.1 = { owner = GJ1 controller = GJ1 add_core = GJ1 remove_core = ZX1 }
+1928.1.1 = { base_tax = 7 base_production = 7 base_manpower = 7 }
+1928.12.29 = { owner = ROC controller = ROC add_core = ROC remove_core = GJ1 }
+1949.10.1 = { owner = CHN controller = CHN add_core = CHN remove_core = ROC }
+1951.1.1 = { base_tax = 9 base_manpower = 8 }
+1957.1.1 = { religion = communism }
+1975.1.1 = { base_tax = 10 base_production = 11 base_manpower = 9 }
+2000.1.1 = { base_tax = 11 base_production = 12 base_manpower = 10 }
+2010.1.1 = { base_tax = 12 base_production = 13 base_manpower = 11 }

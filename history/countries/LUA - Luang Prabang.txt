@@ -1,0 +1,195 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = lao
+religion = buddhism
+technology_group = early_chinese
+capital = 615
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = chinese
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1636.5.15 = {
+  technology_group = old_estern_asian
+}
+1707.1.1 = {
+  monarch = {
+    name = "úW(„J"  # Kitsarat
+    dynasty = "ÃRÉb¦"  # Prabang
+    adm = 5
+    dip = 6
+    mil = 6
+  }
+}
+1707.1.1 = {
+  heir = {
+    name = "ÁNW"  # Khamane Noi
+    monarch_name = "ÁNW"  # Khamane Noi
+    dynasty = "ÃRÉb¦"  # Prabang
+    birth_Date = 1700.1.1
+    death_Date = 1727.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1726.1.1 = {
+  monarch = {
+    name = "ÁNW"  # Khamane Noi
+    dynasty = "ÃRÉb¦"  # Prabang
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1726.1.1 = {
+  heir = {
+    name = "àVÖNYR"  # Int'a Som
+    monarch_name = "àVÖNYR"  # Int'a Som
+    dynasty = "ÃRÉb¦"  # Prabang
+    birth_Date = 1710.1.1
+    death_Date = 1776.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1727.1.1 = {
+  monarch = {
+    name = "àVÖNYR"  # Int'a Som
+    dynasty = "ÃRÉb¦"  # Prabang
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1750.1.1 = {
+  heir = {
+    name = "0tê R büf"  # Sotika Koumane
+    monarch_name = "0tê R büf"  # Sotika Koumane
+    dynasty = "ÃRÉb¦"  # Prabang
+    birth_Date = 1750.1.1
+    death_Date = 1781.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 1
+  }
+}
+1771.1.1 = {
+  government_rank = 1
+}
+1776.1.1 = {
+  monarch = {
+    name = "0tê R büf"  # Sotika Koumane
+    dynasty = "ÃRÉb¦"  # Prabang
+    adm = 2
+    dip = 4
+    mil = 1
+  }
+}
+1776.1.1 = {
+  heir = {
+    name = "ìSÁ"  # Tiao Vong
+    monarch_name = "ìSÁ"  # Tiao Vong
+    birth_Date = 1770.1.1
+    death_Date = 1787.1.1
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1778.1.1 = {
+  government_rank = 2
+}
+1779.1.1 = {
+  government_rank = 1
+}
+1781.1.1 = {
+  monarch = {
+    name = "ìSÁ"  # Tiao Vong
+    dynasty = "ÃRÉb¦"  # Prabang
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1781.1.1 = {
+  heir = {
+    name = "?–ªRœTX"  # Anourout
+    monarch_name = "?–ªRœTX"  # Anourout
+    dynasty = "ÃRÉb¦"  # Prabang
+    birth_Date = 1780.1.1
+    death_date = 1817.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1787.1.1 = {
+  monarch = {
+    name = "?–ªRœTX"  # Anourout
+    dynasty = "ÃRÉb¦"  # Prabang
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1787.1.1 = {
+  heir = {
+    name = "üfTX şVÉb"  # Mantha Thourath
+    monarch_name = "üfTX şVÉb"  # Mantha Thourath
+    dynasty = "ÃRÉb¦"  # Prabang
+    birth_Date = 1787.1.1
+    death_Date = 1840.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1817.1.1 = {
+  monarch = {
+    name = "üfTX şVÉb"  # Mantha Thourath
+    dynasty = "ÃRÉb¦"  # Prabang
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1920.1.1 = {
+  technology_group = asian
+}

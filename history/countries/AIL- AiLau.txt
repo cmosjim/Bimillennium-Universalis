@@ -1,0 +1,97 @@
+government = tribal
+add_government_reform = tribal_kingdom
+mercantilism = 0.1
+technology_group = early_chinese
+religion = animism
+primary_culture = bai
+capital = 2465	
+
+26.1.1 = {
+	monarch = {
+		name = "Œ‚†–"
+		#dynasty = " "
+		
+
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+33.1.1 = {
+	monarch = {
+		name = "QhÕ…"
+		#dynasty = " "
+		
+
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+45.1.1 = {
+	monarch = {
+		name = "ógb"
+		#dynasty = " "
+		
+
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}
+
+
+
+48.1.1 = {
+	monarch = {
+		name = "HbŸ|"
+		#dynasty = " "
+		
+
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+
+69.1.1 = {
+	monarch = {
+		name = "ógŒŒ"
+		#dynasty = " "
+		
+
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+76.1.1 = {
+	monarch = {
+		name = "‰|br"
+		#dynasty = " "
+		
+
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+
+1636.5.15 = { technology_group = old_estern_asian }	1949.10.1 = { technology_group = modern_chinese }

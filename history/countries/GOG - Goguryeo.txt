@@ -1,0 +1,307 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = donghu
+religion = manchu_shamanism
+technology_group = early_chinese
+capital = 2553 #Gungnae
+
+2.1.1 = {
+	monarch = {
+		name = "1g™„"
+		
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+22.1.1 = {
+
+	monarch = {
+		name = "	tƒt‹s"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+
+42.1.1 = {
+
+	monarch = {
+		name = "Øšàed`"
+	
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+
+48.1.1 = {
+	monarch = {
+		name = "Øšã‰çV"
+		dynasty = "Ua,g‹s"
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+53.1.1 = {
+	monarch = {
+		name = "*YVy‹s"
+
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+146.1.1 = {
+	monarch = {
+		name = "ØšBb"
+
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+165.1.1 = {
+	monarch = {
+		name = "Øš=OúV"
+
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+179.1.1 = {
+	monarch = {
+		name = "ØšO7YŒ"
+
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+197.1.1 = {
+	monarch = {
+		name = "Øš÷^O"
+
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+227.1.1 = {
+	monarch = {
+		name = "ØšçVMOES"
+
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+248.1.1 = {
+	monarch = {
+		name = "Øš6qV"
+
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+270.1.1 = {
+	monarch = {
+		name = "ØšoƒbS"
+
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+292.1.1 = {
+	monarch = {
+		name = "Øšøv+Y"
+
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+300.1.1 = {
+	monarch = {
+		name = "ØšYNV"
+
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+331.1.1 = {
+	monarch = {
+		name = "Øš¯e1u"
+
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+371.1.1 = {
+	monarch = {
+		name = "ØšN+Y"
+
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+#
+#nc0	NýVòS°‹0Nb‹ÿØšåSKNS‹Q—g‹sŒNt^ÿ372t^	ÿÿ-NýVMRæyýVTû‚ZWcz˜SÕl^
+#ÊSOwMegÏufN0iOÏPÿS‹Q—g‹sÛVt^ÿæyçP?–S¦NMRegVlbiOÕlÿÌt^ÿ‹s:NŒNçP
+#ú^–wè•úRŒTOVpQúRÿÙ=fé—ýViOúRú^Qr„vVïzÿiOYe1udkckV.OeQé—ýV
+#
+
+375.1.1 = { religion = mahayana }
+384.1.1 = {
+	monarch = {
+		name = "ØšOÞ"
+
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+391.1.1 = {
+	monarch = {
+		name = "ØšŒ·V"
+		dynasty = "‹Y*Y‹s"
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+413.1.1 = {
+	monarch = {
+		name = "ØšèTÞ"
+		dynasty = "•ÿR‹s"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+427.1.1 = { capital = 1845 } #Pyongyang
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+491.1.1 = {
+	monarch = {
+		name = "ØšW‘N"
+		dynasty = "‰Rl„‹s"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+519.1.1 = {
+	monarch = {
+		name = "ØštQ‰R"
+		dynasty = "‰RŸS‹s"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+531.1.1 = {
+	monarch = {
+		name = "ØšR÷^"
+		dynasty = "3–ŸS‹s"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+
+545.1.1 = {
+	monarch = {
+		name = "Øšs^b"
+
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+559.1.1 = {
+	monarch = {
+		name = "Øš3–b"
+
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+#tZ3–‹såN(W612t^„v‹–NØšåSKN„vb‰N-NbŸRµb!c‹–Žp^ŒvN'Y›Q„vÛIewû•T0
+590.1.1 = {
+	monarch = {
+		name = "ØšCQ"
+		dynasty = "tZ3–‹s"
+		adm = 3
+		dip = 3
+		mil = 6
+	}
+}
+
+
+618.1.1 = {
+	monarch = {
+		name = "Øšú^fk"
+
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+#ØšåSKN,r28ãNýV‹sRÏ…‹sØšÏ…«ˆUgØOO†ÿ9hncøSlšIQ0D»lt’0„v°‹‹ÿ
+#ØšåSKN5ÏeÊS'YèRÌR7bNpeASNŒvÓY«ˆÁeQ-NŸST0Wÿ‡eQ-NýVTlÏe-N0
+#æS	gèRYu(WËNÿb:N2nwmýV„vãlÿwvQYOSèR‡eQz¥SÊS°eW0êdkÿ
+#ØšåSKNýV¶RNQXR(WŽNN0IempØšåSKNTÿUgŽN676t^ûN‹TRÏ…‹s0ËNÞTýcwgœœ‹s0
+#©‹ÖN¡rtËNÞTýcwœ^0681t^ÿRÏ…‹s«ˆAm>eÛVÝTÿ682t^»SN0
+642.1.1 = {
+	monarch = {
+		name = "ØšÏ…"
+
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+901.1.1 = { capital = 733 } #Songwak
+905.1.1 = { capital = 2512 } #Cheolwon
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1912.2.12 = { government = modern_chinese_warlord add_government_reform = modern_chinese_warlord_reform religion = liberalism }
+1949.10.1 = { technology_group = modern_chinese }
+750.1.1 = { technology_group = chinese }

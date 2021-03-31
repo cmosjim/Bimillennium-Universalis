@@ -1,0 +1,82 @@
+#2888 - Chuguchak
+
+owner = XIO
+controller = XIO
+add_core = XIO
+is_city = yes
+culture = oirats
+religion = tengri_pagan_reformed
+capital = "Chugachak"
+trade_goods = livestock
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = western_nomad_group
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+
+260.1.1 = { owner = CBN controller = CBN add_core = CBN remove_core = XIO }
+324.1.1 = { owner = DLN controller = DLN add_core = DLN remove_core = CBN }
+407.1.1 = { owner = ROU controller = ROU add_core = ROU remove_core = DLN }
+498.1.1 = { owner = DLN controller = DLN add_core = DLN remove_core = ROU }
+535.1.1 = { owner = ROU controller = ROU add_core = ROU remove_core = DLN }
+555.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = ROU culture = turkic }
+628.1.1 = { owner = WGO controller = WGO add_core = WGO remove_core = GOK }
+658.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = GOK remove_core = WGO }
+662.1.1 = { owner = HZ2 controller = HZ2 add_core = HZ2 remove_core = TNG }
+679.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = HZ2 }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+705.2.21 = { owner = TNG controller = TNG add_core = TNG remove_core = WZ1 }
+709.1.1 = { owner = BT1 controller = BT1 add_core = BT1 remove_core = TNG }
+712.1.1 = { owner = HO3 controller = HO3 add_core = HO3 remove_core = BT1 }
+719.1.1 = { owner = TRG controller = TRG add_core = TRG remove_core = HO3 }
+738.1.1 = { owner = KLU controller = KLU add_core = KLU remove_core = TRG }
+763.1.1 = { religion = manichaeism }
+942.1.1 = { owner = KKH controller = KKH add_core = KKH remove_core = KLU }
+1133.1.1 = { owner = LIO controller = LIO add_core = LIO remove_core = KKH }
+1134.1.1 = { owner = NE1 controller = NE1 add_core = NE1 remove_core = LIO }
+1140.1.1 = { religion = mahayana }
+1204.1.1 = { owner = QY1 controller = QY1 add_core = QY1 remove_core = NE1 }
+1206.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = QY1 }
+1218.1.1 = { culture = oirats }
+1220.1.1 = { religion = tengri_pagan_reformed }
+1260.1.1 = { owner = CHG controller = CHG add_core = CHG remove_core = MGE }
+1266.1.1 =  { owner = WK1 controller = WK1 add_core = WK1 remove_core = CHG }
+1310.1.1 = { owner = CHG controller = CHG add_core = CHG remove_core = WK1 }
+1347.1.1 = { owner = DC1 controller = DC1 add_core = DC1 remove_core = CHG }
+1350.1.1 = { religion = sunni }
+1402.1.1 = { owner = OIR controller = OIR add_core = OIR remove_core = DC1 }
+1509.1.1 = { owner = TU2 controller = TU2 add_core = TU2 remove_core = DC1 religion = buddhism }
+1570.1.1 = { owner = YQ1 controller = YQ1 add_core = YQ1 remove_core = TU2 }
+1570.1.1 = {  religion = sunni }
+1622.1.1 = { discovered_by = RUS }
+1635.1.1 = {	owner = ZUN
+		controller = ZUN
+		add_core = ZUN
+		}
+1755.1.1 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		}
+
+1767.1.1 = { base_manpower = 3 }
+1810.1.1 = { base_production = 2 }
+1850.1.1 = { citysize = 30000 remove_core = OIR }
+1850.1.2 = { remove_core = ZUN }
+1853.1.1 = { base_tax = 2 }
+1896.1.1 = { base_tax = 3 }
+1912.2.12 = { owner = BNN controller = BNN add_core = BNN remove_core = QNG }
+1917.7.6 = { owner = JS1 controller = JS1 add_core = JS1 remove_core = BNN }
+1939.1.1 = { base_production = 3 }
+1944.9.11 = { owner = ROC controller = ROC add_core = ROC remove_core = JS1 }
+1944.11.12 = { revolt = { type = nationalist_rebels size = 1 } controller = REB } #Second Republic of East Turkestan
+1946.6.1 = { revolt = {} } 
+1949.10.1 = { owner = CHN controller = CHN add_core = CHN remove_core = ROC }
+1949.10.20 = { revolt = {} controller = CHN }
+1955.1.1 = { trade_goods = oil capital = "Karamay" }
+2000.1.1 = { base_production = 5 }

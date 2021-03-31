@@ -1,0 +1,129 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+technology_group = barbarian
+primary_culture = briton
+religion = druidism
+capital = 239
+2.1.1 = {
+  monarch = {
+    name = "Nl—ylö™R"  # Tincomarus
+    dynasty = "?ñyr˜ñÙTyr"  # Atrebate
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+8.1.1 = {
+  monarch = {
+    name = "√W9SÅúØe"  # Eppillus
+    dynasty = "?ñyr˜ñÙTyr"  # Atrebate
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+15.1.1 = {
+  monarch = {
+    name = "ÙuÃëaS"  # Verica
+    dynasty = "?ñyr˜ñÙTyr"  # Atrebate
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+300.1.1 = {
+  primary_culture = welsh
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+410.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+  government_rank = 1
+}
+410.1.1 = {
+  monarch = {
+    name = "iO‘keY KQ…bVW"  # Peibio Clafrog
+    dynasty = "√WSÙf"  # Ergyng
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+480.1.1 = {
+  monarch = {
+    name = "åÇV∑VS"  # Efrddyl
+    dynasty = "√WSÙf"  # Ergyng
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+536.1.1 = {
+  technology_group = western
+}
+540.1.1 = {
+  monarch = {
+    name = "—ë)n"  # Cynfyn
+    dynasty = "√WSÙf"  # Ergyng
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+615.1.1 = {
+  monarch = {
+    name = "‰SSÉljg"  # Gwrfoddw
+    dynasty = "√WSÙf"  # Ergyng
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+619.1.1 = {
+  monarch = {
+    name = "bS9h.èyS"  # Gwrgan Fawr
+    dynasty = "√WSÙf"  # Ergyng
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+645.1.1 = {
+  monarch = {
+    name = "?ñØeÅúOØe"  # Athrwys
+    dynasty = "√WSÙf"  # Ergyng
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

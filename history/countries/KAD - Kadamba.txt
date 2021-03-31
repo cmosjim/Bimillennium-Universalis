@@ -1,0 +1,483 @@
+government = monarchy
+add_government_reform = nayankara_reform
+primary_culture = kannada
+religion = hinduism
+technology_group = early_indian
+capital = 2211
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+345.1.1 = {
+  monarch = {
+    name = "¬™2SÉb©…id"  # Mayurasharma
+    dynasty = "æfFZ"  # Kadamba
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+365.1.1 = {
+  monarch = {
+    name = "RV›s"  # Kangavarma
+    dynasty = "æfFZ"  # Kadamba
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+390.1.1 = {
+  monarch = {
+    name = "ôT	TTXÈT"  # Bagitarha
+    dynasty = "æfFZ"  # Kadamba
+    adm = 3
+    dip = 5
+    mil = 4
+  }
+}
+415.1.1 = {
+  monarch = {
+    name = "W`"  # Raghu
+    dynasty = "æfFZ"  # Kadamba
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+435.1.1 = {
+  monarch = {
+    name = "äSyr¯eTXËid"  # Kakusthavarma
+    dynasty = "æfFZ"  # Kadamba
+    adm = 1
+    dip = 5
+    mil = 2
+  }
+}
+455.1.1 = {
+  monarch = {
+    name = "1W^Ëid"  # Santivarma
+    dynasty = "æfFZ"  # Kadamba
+    adm = 2
+    dip = 2
+    mil = 4
+  }
+}
+460.1.1 = {
+  monarch = {
+    name = "lšÌ‘T–wËid"  # Mrigeshavarma
+    dynasty = "æfFZ"  # Kadamba
+    adm = 3
+    dip = 3
+    mil = 6
+  }
+}
+480.1.1 = {
+  monarch = {
+    name = "ÀNÕlüf·VÈTĞcËid"  # Srivamandhativarma
+    dynasty = "æfFZ"  # Kadamba
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+485.1.1 = {
+  monarch = {
+    name = "ÉbôuËid"  # Ravivarma
+    dynasty = "æfFZ"  # Kadamba
+    adm = 2
+    dip = 1
+    mil = 3
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+519.1.1 = {
+  monarch = {
+    name = "Ã‹¨hËid"  # Harivarma
+    dynasty = "æfFZ"  # Kadamba
+    adm = 4
+    dip = 1
+    mil = 1
+  }
+}
+525.1.1 = {
+  monarch = {
+    name = "×kntYYSlš"  # Vishnuvarma
+    dynasty = "æfFZ"  # Kadamba
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+535.1.1 = {
+  monarch = {
+    name = "^ÆYÈTËid"  # Simhavarma
+    dynasty = "æfFZ"  # Kadamba
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+960.1.1 = {
+  capital = 531
+  religion = jainism
+}
+960.1.1 = {
+  monarch = {
+    name = "™lmt˜OĞcFZ i"  # Shashthadeva I
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 930.1.1
+    adm = 3
+    dip = 4
+    mil = 0
+  }
+}
+960.1.1 = {
+  heir = {
+    name = "±KOËid"  # Nagavarma
+    monarch_name = "±KOËid I"  # Nagavarma I
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 950.1.1
+    death_date = 1000.1.1
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 4
+  }
+}
+980.1.1 = {
+  monarch = {
+    name = "±KOËid I"  # Nagavarma I
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 950.1.1
+    adm = 0
+    dip = 1
+    mil = 4
+  }
+}
+980.1.1 = {
+  heir = {
+    name = "äSÃ‹WĞcFZ"  # Guhalladeva
+    monarch_name = "äSÃ‹WĞcFZ I"  # Guhalladeva I
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 970.1.1
+    death_date = 1020.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1000.1.1 = {
+  monarch = {
+    name = "äSÃ‹WĞcFZ I"  # Guhalladeva I
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 970.1.1
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1000.1.1 = {
+  heir = {
+    name = "™lmt˜OĞcFZ"  # Shashthadeva
+    monarch_name = "™lmt˜OĞcFZ i"  # Shashthadeva II
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 990.1.1
+    death_date = 1038.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 3
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1020.1.1 = {
+  monarch = {
+    name = "™lmt˜OĞcFZ i"  # Shashthadeva II
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 990.1.1
+    adm = 4
+    dip = 0
+    mil = 3
+  }
+}
+1020.1.1 = {
+  heir = {
+    name = "äSÃ‹WĞcFZ"  # Guhalladeva
+    monarch_name = "äSÃ‹WĞcFZ II"  # Guhalladeva II
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1008.1.1
+    death_date = 1042.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+1038.1.1 = {
+  monarch = {
+    name = "äSÃ‹WĞcFZ II"  # Guhalladeva II
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1008.1.1
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+1038.1.1 = {
+  heir = {
+    name = "×kWËidĞcFZ"  # Veeravarmadeva
+    monarch_name = "×kWËidĞcFZ I"  # Veeravarmadeva I
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1012.1.1
+    death_date = 1054.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 0
+  }
+}
+1042.1.1 = {
+  monarch = {
+    name = "×kWËidĞcFZ I"  # Veeravarmadeva I
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1012.1.1
+    adm = 4
+    dip = 3
+    mil = 0
+  }
+}
+1042.1.1 = {
+  heir = {
+    name = "–6wKzËY"  # Jayakeshi
+    monarch_name = "–6wKzËY I"  # Jayakeshi I
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1024.1.1
+    death_date = 1080.1.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 1
+  }
+}
+1054.1.1 = {
+  monarch = {
+    name = "–6wKzËY I"  # Jayakeshi I
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1024.1.1
+    adm = 1
+    dip = 5
+    mil = 1
+  }
+}
+1054.1.1 = {
+  heir = {
+    name = "äSÃ‹WĞcFZ"  # Guhalladeva
+    monarch_name = "äSÃ‹WĞcFZ III"  # Guhalladeva III
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1050.1.1
+    death_date = 1125.1.1
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 3
+  }
+}
+1080.1.1 = {
+  monarch = {
+    name = "äSÃ‹WĞcFZ III"  # Guhalladeva III
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1050.1.1
+    adm = 0
+    dip = 0
+    mil = 3
+  }
+}
+1095.1.1 = {
+  heir = {
+    name = "–6wKzËY"  # Jayakeshi
+    monarch_name = "–6wKzËY II"  # Jayakeshi II
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1095.1.1
+    death_date = 1148.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1125.1.1 = {
+  monarch = {
+    name = "–6wKzËY II"  # Jayakeshi II
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1095.1.1
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1125.1.1 = {
+  heir = {
+    name = "nFZ(Y ^ÉbidêĞcFZ"  # Shivachitta Paramadideva
+    monarch_name = "nFZ(Y ^ÉbidêĞcFZ"  # Shivachitta Paramadideva
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1118.1.1
+    death_date = 1179.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 2
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1148.1.1 = {
+  monarch = {
+    name = "nFZ(Y ^ÉbidêĞcFZ"  # Shivachitta Paramadideva
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1118.1.1
+    adm = 3
+    dip = 0
+    mil = 2
+  }
+}
+1149.1.1 = {
+  heir = {
+    name = "×k–6w?–íY"  # Vijayaditya
+    monarch_name = "×k–6w?–íY II"  # Vijayaditya II
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1149.1.1
+    death_date = 1188.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 0
+  }
+}
+1179.1.1 = {
+  monarch = {
+    name = "×k–6w?–íY II"  # Vijayaditya II
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1149.1.1
+    adm = 1
+    dip = 3
+    mil = 0
+  }
+}
+1179.1.1 = {
+  heir = {
+    name = "–6wKzËY"  # Jayakeshi
+    monarch_name = "–6wKzËY III"  # Jayakeshi III
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1158.1.1
+    death_date = 1216.1.1
+    claim = 95
+    adm = 3
+    dip = 0
+    mil = 0
+  }
+}
+1188.1.1 = {
+  monarch = {
+    name = "–6wKzËY III"  # Jayakeshi III
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1158.1.1
+    adm = 3
+    dip = 0
+    mil = 0
+  }
+}
+1188.1.1 = {
+  heir = {
+    name = "Ï‚×kĞcFZ ^)RéƒFZ±idW"  # Sovideva Tribhuvanamalla
+    monarch_name = "Ï‚×kĞcFZ ^)RéƒFZ±idW"  # Sovideva Tribhuvanamalla
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1186.1.1
+    death_date = 1246.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 1
+  }
+}
+1216.1.1 = {
+  monarch = {
+    name = "Ï‚×kĞcFZ ^)RéƒFZ±idW"  # Sovideva Tribhuvanamalla
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1186.1.1
+    adm = 5
+    dip = 3
+    mil = 1
+  }
+}
+1216.1.1 = {
+  heir = {
+    name = "™lmt˜OĞcFZ"  # Shashthadeva
+    monarch_name = "™lmt˜OĞcFZ iII"  # Shashthadeva III
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1216.1.1
+    death_date = 1265.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1246.1.1 = {
+  monarch = {
+    name = "™lmt˜OĞcFZ iII"  # Shashthadeva III
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1216.1.1
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1246.1.1 = {
+  heir = {
+    name = "æidĞcFZ"  # Kamadeva
+    monarch_name = "æidĞcFZ I"  # Kamadeva I
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1235.1.1
+    death_date = 1310.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 5
+  }
+}
+1265.1.1 = {
+  monarch = {
+    name = "æidĞcFZ I"  # Kamadeva I
+    dynasty = "æfFZ"  # Kadamba
+    birth_date = 1235.1.1
+    adm = 4
+    dip = 0
+    mil = 5
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}

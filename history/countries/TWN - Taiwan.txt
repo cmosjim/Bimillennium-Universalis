@@ -1,0 +1,116 @@
+government = republic
+set_legacy_government = constitutional_republic
+mercantilism = 0.1
+primary_culture = chihan
+religion = confucianism
+technology_group = early_chinese
+capital = 2858	# Taipei
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+
+1911.1.1 = {
+	government = republic
+	add_government_reform = oligarchy_reform
+	add_government_reform = presidential_reform
+	add_government_reform = strengthen_executive_powers_reform
+	add_government_reform = single_party_system
+	add_government_reform = powerful_head_of_state
+	religion = liberalism
+}
+
+
+1949.10.1 = { technology_group = modern_chinese }
+
+1949.12.1 = {
+	monarch = {
+		name = "‹„ËNów"
+		birth_date = 1887.10.31
+		
+		adm = 4
+		dip = 4
+		mil = 6
+	}
+}
+
+1975.4.6 = {
+	monarch = {
+		name = "%N¶Ræm"
+		birth_date = 1905.10.23
+		
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1978.5.20 = {
+	monarch = {
+		name = "‹„ÏuıV"
+		birth_date = 1910.4.27
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+#1986 t^ 9 g 28 åe DPP
+#1987t^7g14åeÿI`ßu‹„ÏuıV˜^I`ßuäNÿ±RJTğSŒn0W:SêTt^7g15åeÌQhfö–öewã‰%N
+1987.7.14 = {
+	government = republic
+	add_government_reform = taiwan_republic
+}
+
+1988.1.13 = {
+	monarch = {
+		name = "Ng‰v‰"
+		birth_date = 1923.1.15		
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+1996.1.1 = {
+	government = republic
+	add_government_reform = presidential_reform
+}	
+2000.5.20 = {
+	monarch = {
+		name = "H–4lAb"
+		birth_date = 1950.10.12		
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+2008.5.20 = {
+	monarch = {
+		name = "lšñ‚kN"
+		birth_date = 1950.7.13		
+		
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}
+
+2016.5.20 = {
+	monarch = {
+		name = "!…ñ‚‡e"
+		birth_date = 1956.8.31		
+		
+		adm = 3
+		dip = 3
+		mil = 2
+		female = yes
+	}
+}

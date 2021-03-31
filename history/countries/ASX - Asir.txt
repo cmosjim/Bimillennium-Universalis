@@ -1,0 +1,203 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = yemeni_culture
+religion = south_arabian
+technology_group = middle_eastern
+capital = 4400
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+630.1.1 = {
+  religion = sunni
+  religious_school = hanbali_school
+  technology_group = muslim
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1063.1.1 = {
+  monarch = {
+    name = "ÈTÆYNb"  # Hamza
+    dynasty = "Ï‚±ƒüf"  # Sulaymanid
+    birth_date = 1033.1.1
+    adm = 4
+    dip = 3
+    mil = 1
+  }
+}
+1063.1.1 = {
+  heir = {
+    name = "šNÈT6w"  # Yahya
+    monarch_name = "öSwmšN"  # Yahya
+    dynasty = "Ï‚±ƒüf"  # Sulaymanid
+    birth_date = 1047.1.1
+    death_date = 1117.1.1
+    claim = 95
+    adm = 4
+    dip = 0
+    mil = 5
+  }
+}
+1077.1.1 = {
+  monarch = {
+    name = "öSwmšN"  # Yahya
+    dynasty = "Ï‚±ƒüf"  # Sulaymanid
+    birth_date = 1047.1.1
+    adm = 4
+    dip = 0
+    mil = 5
+  }
+}
+1087.1.1 = {
+  heir = {
+    name = " R<SÆY"  # Ghanim
+    monarch_name = " R<SÆY"  # Ghanim
+    dynasty = "Ï‚±ƒüf"  # Sulaymanid
+    birth_date = 1087.1.1
+    death_date = 1134.1.1
+    claim = 95
+    adm = 5
+    dip = 0
+    mil = 1
+  }
+}
+1117.1.1 = {
+  monarch = {
+    name = " R<SÆY"  # Ghanim
+    dynasty = "Ï‚±ƒüf"  # Sulaymanid
+    birth_date = 1087.1.1
+    adm = 5
+    dip = 0
+    mil = 1
+  }
+}
+1117.1.1 = {
+  heir = {
+    name = "ætÈT¯e"  # Wahhas
+    monarch_name = "ætÈT¯e"  # Wahhas
+    dynasty = "Ï‚±ƒüf"  # Sulaymanid
+    birth_date = 1104.1.1
+    death_date = 1164.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+1134.1.1 = {
+  monarch = {
+    name = "ætÈT¯e"  # Wahhas
+    dynasty = "Ï‚±ƒüf"  # Sulaymanid
+    birth_date = 1104.1.1
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1140.1.1 = {
+  heir = {
+    name = "aS‰ÆY"  # Qasim
+    monarch_name = "aS‰ÆY"  # Qasim
+    dynasty = "Ï‚±ƒüf"  # Sulaymanid
+    birth_date = 1140.1.1
+    death_date = 1174.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+1164.1.1 = {
+  monarch = {
+    name = "aS‰ÆY"  # Qasim
+    dynasty = "Ï‚±ƒüf"  # Sulaymanid
+    birth_date = 1140.1.1
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+1200.1.1 = {
+  capital = 2537
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1906.1.1 = {
+  monarch = {
+    name = "FzUØž·V"  # Muhammad
+    dynasty = "O·VÌ‘¯e"  # Idrisid
+    birth_date = 1876.1.1
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1906.1.1 = {
+  heir = {
+    name = "?–Ì‘"  # Ali
+    monarch_name = "?–Ì‘"  # Ali
+    dynasty = "O·VÌ‘¯e"  # Idrisid
+    birth_date = 1890.1.1
+    death_date = 1922.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 0
+  }
+}
+1920.1.1 = {
+  monarch = {
+    name = "?–Ì‘"  # Ali
+    dynasty = "O·VÌ‘¯e"  # Idrisid
+    birth_date = 1890.1.1
+    adm = 2
+    dip = 2
+    mil = 0
+  }
+}
+1920.1.1 = {
+  heir = {
+    name = "O·VÌ‘‰"  # Idrissi
+    monarch_name = "O·VÌ‘‰"  # Idrissi
+    dynasty = "O·VÌ‘¯e"  # Idrisid
+    birth_date = 1892.1.1
+    death_date = 1940.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 3
+  }
+}
+1922.1.1 = {
+  monarch = {
+    name = "O·VÌ‘‰"  # Idrissi
+    dynasty = "O·VÌ‘¯e"  # Idrisid
+    birth_date = 1892.1.1
+    adm = 1
+    dip = 0
+    mil = 3
+  }
+}

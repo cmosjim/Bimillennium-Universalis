@@ -1,0 +1,1358 @@
+government = monarchy
+add_government_reform = nayankara_reform
+technology_group = early_indian
+religion = hinduism
+primary_culture = tamil
+capital = 536 #Madurai
+
+#Pandyas
+2.1.1 = {
+	monarch = {
+		name = "Nan Maran"
+		dynasty = "Pandya"
+		adm = 4
+		dip = 0
+		mil = 4
+	}
+}
+
+30.1.1 = {
+	heir = {
+		name = "Nedunjeliyan"
+		monarch_name = "Nedunjeliyan III"
+		dynasty = "Pandya"
+		birth_date = 30.1.1
+		death_date = 100.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 0
+	}
+}
+
+50.1.1 = {
+	monarch = {
+		name = "Nedunjeliyan III"
+		dynasty = "Pandya"
+		birth_date = 30.1.1
+		adm = 2
+		dip = 3
+		mil = 0
+	}
+}
+
+80.1.1 = {
+	heir = {
+		name = "Maran Valudi"
+		monarch_name = "Maran Valudi"
+		dynasty = "Pandya"
+		birth_date = 80.1.1
+		death_date = 150.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+100.1.1 = {
+	monarch = {
+		name = "Maran Valudi"
+		dynasty = "Pandya"
+		birth_date = 80.1.1
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+120.1.1 = {
+	heir = {
+		name = "Kadalan Valuthi"
+		monarch_name = "Kadalan Valuthi"
+		dynasty = "Pandya"
+		birth_date = 120.1.1
+		death_date = 200.1.1
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+150.1.1 = {
+	monarch = {
+		name = "Kadalan Valuthi"
+		dynasty = "Pandya"
+		birth_date = 120.1.1
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+170.1.1 = {
+	heir = {
+		name = "Musiri Mutriya"
+		monarch_name = "Musiri Mutriya"
+		dynasty = "Pandya"
+		birth_date = 170.1.1
+		death_date = 240.1.1
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 5
+	}
+}
+
+200.1.1 = {
+	monarch = {
+		name = "Musiri Mutriya"
+		dynasty = "Pandya"
+		birth_date = 170.1.1
+		adm = 1
+		dip = 4
+		mil = 5
+	}
+}
+
+220.1.1 = {
+	heir = {
+		name = "Kadalul Maintha"
+		monarch_name = "Kadalul Maintha"
+		dynasty = "Pandya"
+		birth_date = 220.1.1
+		death_date = 300.1.1
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+240.1.1 = {
+	monarch = {
+		name = "Kadalul Maintha"
+		dynasty = "Pandya"
+		birth_date = 220.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+590.1.1 = {
+	monarch = {
+		name = "Kadungon"
+		dynasty = "Pandya"
+		birth_date = 560.1.1
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+590.1.1 = {
+	heir = {
+		name = "Avani Sulamani"
+		monarch_name = "Avani Sulamani"
+		dynasty = "Pandya"
+		birth_date = 590.1.1
+		death_date = 645.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 4
+	}
+}
+
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+620.1.1 = {
+	monarch = {
+		name = "Avani Sulamani"
+		dynasty = "Pandya"
+		birth_date = 590.1.1
+		adm = 1
+		dip = 1
+		mil = 4
+	}
+}
+
+620.1.1 = {
+	heir = {
+		name = "Jayantavarman"
+		monarch_name = "Jayantavarman"
+		dynasty = "Pandya"
+		birth_date = 615.1.1
+		death_date = 670.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}
+
+645.1.1 = {
+	monarch = {
+		name = "Jayantavarman"
+		dynasty = "Pandya"
+		birth_date = 615.1.1
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}
+
+645.1.1 = {
+	heir = {
+		name = "Arikesari Maravarman"
+		monarch_name = "Arikesari Maravarman"
+		dynasty = "Pandya"
+		birth_date = 640.1.1
+		death_date = 700.1.1
+		claim = 95
+		adm = 0
+		dip = 5
+		mil = 4
+	}
+}
+
+670.1.1 = {
+	monarch = {
+		name = "Arikesari Maravarman"
+		dynasty = "Pandya"
+		birth_date = 640.1.1
+		adm = 0
+		dip = 5
+		mil = 4
+	}
+}
+
+670.1.1 = {
+	heir = {
+		name = "Kochadaiyan Ranadhiran"
+		monarch_name = "Kochadaiyan Ranadhiran"
+		dynasty = "Pandya"
+		birth_date = 670.1.1
+		death_date = 735.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+700.1.1 = {
+	monarch = {
+		name = "Kochadaiyan Ranadhiran"
+		dynasty = "Pandya"
+		birth_date = 670.1.1
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+705.1.1 = {
+	heir = {
+		name = "Maravarman Rajasimha"
+		monarch_name = "Maravarman Rajasimha I"
+		dynasty = "Pandya"
+		birth_date = 705.1.1
+		death_date = 765.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+735.1.1 = {
+	monarch = {
+		name = "Maravarman Rajasimha I"
+		dynasty = "Pandya"
+		birth_date = 705.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+735.1.1 = {
+	heir = {
+		name = "Nedunjadayan"
+		monarch_name = "Nedunjadayan"
+		dynasty = "Pandya"
+		birth_date = 735.1.1
+		death_date = 815.1.1
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 3
+	}
+}
+
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = indian }
+
+765.1.1 = {
+	monarch = {
+		name = "Nedunjadayan"
+		dynasty = "Pandya"
+		birth_date = 735.1.1
+		adm = 0
+		dip = 2
+		mil = 3
+	}
+}
+
+785.1.1 = {
+	heir = {
+		name = "Maravarman Rajasimha"
+		monarch_name = "Maravarman Rajasimha II"
+		dynasty = "Pandya"
+		birth_date = 785.1.1
+		death_date = 817.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+815.1.1 = {
+	monarch = {
+		name = "Maravarman Rajasimha II"
+		dynasty = "Pandya"
+		birth_date = 785.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+815.1.1 = {
+	heir = {
+		name = "Varaguna"
+		monarch_name = "Varaguna I"
+		dynasty = "Pandya"
+		birth_date = 787.1.1
+		death_date = 835.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+817.1.1 = {
+	monarch = {
+		name = "Varaguna I"
+		dynasty = "Pandya"
+		birth_date = 787.1.1
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+817.1.1 = {
+	heir = {
+		name = "Srimara Srivallabha"
+		monarch_name = "Srimara Srivallabha"
+		dynasty = "Pandya"
+		birth_date = 805.1.1
+		death_date = 862.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 0
+	}
+}
+
+835.1.1 = {
+	monarch = {
+		name = "Srimara Srivallabha"
+		dynasty = "Pandya"
+		birth_date = 805.1.1
+		adm = 2
+		dip = 4
+		mil = 0
+	}
+}
+
+835.1.1 = {
+	heir = {
+		name = "Varaguna"
+		monarch_name = "Varaguna II"
+		dynasty = "Pandya"
+		birth_date = 832.1.1
+		death_date = 885.1.1
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 3
+	}
+}
+
+862.1.1 = {
+	monarch = {
+		name = "Varaguna II"
+		dynasty = "Pandya"
+		birth_date = 832.1.1
+		adm = 0
+		dip = 2
+		mil = 3
+	}
+}
+
+862.1.1 = {
+	heir = {
+		name = "Viranarayanan"
+		monarch_name = "Viranarayanan"
+		dynasty = "Pandya"
+		birth_date = 855.1.1
+		death_date = 905.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+885.1.1 = {
+	monarch = {
+		name = "Viranarayanan"
+		dynasty = "Pandya"
+		birth_date = 855.1.1
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+885.1.1 = {
+	heir = {
+		name = "Maravarman Rajasimha"
+		monarch_name = "Maravarman Rajasimha III"
+		dynasty = "Pandya"
+		birth_date = 875.1.1
+		death_date = 920.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+905.1.1 = {
+	monarch = {
+		name = "Maravarman Rajasimha III"
+		dynasty = "Pandya"
+		birth_date = 875.1.1
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+905.1.1 = {
+	heir = {
+		name = "Sundara"
+		monarch_name = "Sundara I"
+		dynasty = "Pandya"
+		birth_date = 890.1.1
+		death_date = 950.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+920.1.1 = {
+	monarch = {
+		name = "Sundara I"
+		dynasty = "Pandya"
+		birth_date = 890.1.1
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+920.1.1 = {
+	heir = {
+		name = "Vira"
+		monarch_name = "Vira I"
+		dynasty = "Pandya"
+		birth_date = 920.1.1
+		death_date = 980.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+
+950.1.1 = {
+	monarch = {
+		name = "Vira I"
+		dynasty = "Pandya"
+		birth_date = 920.1.1
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+
+950.1.1 = {
+	heir = {
+		name = "Vira"
+		monarch_name = "Vira II"
+		dynasty = "Pandya"
+		birth_date = 950.1.1
+		death_date = 1000.1.1
+		claim = 95
+		adm = 5
+		dip = 0
+		mil = 1
+	}
+}
+
+980.1.1 = {
+	monarch = {
+		name = "Vira II"
+		dynasty = "Pandya"
+		birth_date = 950.1.1
+		adm = 5
+		dip = 0
+		mil = 1
+	}
+}
+
+980.1.1 = {
+	heir = {
+		name = "Amarabhujanga Tivrakopa"
+		monarch_name = "Amarabhujanga Tivrakopa"
+		dynasty = "Pandya"
+		birth_date = 970.1.1
+		death_date = 1020.1.1
+		claim = 95
+		adm = 4
+		dip = 0
+		mil = 1
+	}
+}
+
+1000.1.1 = {
+	monarch = {
+		name = "Amarabhujanga Tivrakopa"
+		dynasty = "Pandya"
+		birth_date = 970.1.1
+		adm = 4
+		dip = 0
+		mil = 1
+	}
+}
+
+1000.1.1 = {
+	heir = {
+		name = "Jatavarman Sundara"
+		monarch_name = "Jatavarman Sundara I"
+		dynasty = "Pandya"
+		birth_date = 990.1.1
+		death_date = 1040.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1020.1.1 = {
+	monarch = {
+		name = "Jatavarman Sundara I"
+		dynasty = "Pandya"
+		birth_date = 990.1.1
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1020.1.1 = {
+	heir = {
+		name = "Maravarman Vikrama"
+		monarch_name = "Maravarman Vikrama"
+		dynasty = "Pandya"
+		birth_date = 1010.1.1
+		death_date = 1060.1.1
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+1040.1.1 = {
+	monarch = {
+		name = "Maravarman Vikrama"
+		dynasty = "Pandya"
+		birth_date = 1010.1.1
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+1040.1.1 = {
+	heir = {
+		name = "Maravarman Parakrama"
+		monarch_name = "Maravarman Parakrama"
+		dynasty = "Pandya"
+		birth_date = 1030.1.1
+		death_date = 1080.1.1
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+1060.1.1 = {
+	monarch = {
+		name = "Maravarman Parakrama"
+		dynasty = "Pandya"
+		birth_date = 1030.1.1
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+1060.1.1 = {
+	heir = {
+		name = "Jatavarman"
+		monarch_name = "Jatavarman"
+		dynasty = "Pandya"
+		birth_date = 1050.1.1
+		death_date = 1101.1.1
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+1080.1.1 = {
+	monarch = {
+		name = "Jatavarman"
+		dynasty = "Pandya"
+		birth_date = 1050.1.1
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+1080.1.1 = {
+	heir = {
+		name = "Seervallabha Manakulachala"
+		monarch_name = "Seervallabha Manakulachala"
+		dynasty = "Pandya"
+		birth_date = 1071.1.1
+		death_date = 1132.1.1
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1101.1.1 = {
+	monarch = {
+		name = "Seervallabha Manakulachala"
+		dynasty = "Pandya"
+		birth_date = 1071.1.1
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1102.1.1 = {
+	heir = {
+		name = "Maaravarman Seervallaban"
+		monarch_name = "Maaravarman Seervallaban"
+		dynasty = "Pandya"
+		birth_date = 1102.1.1
+		death_date = 1161.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+}
+
+1132.1.1 = {
+	monarch = {
+		name = "Maaravarman Seervallaban"
+		dynasty = "Pandya"
+		birth_date = 1102.1.1
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+}
+
+1132.1.1 = {
+	heir = {
+		name = "Parakrama"
+		monarch_name = "Parakrama I"
+		dynasty = "Pandya"
+		birth_date = 1131.1.1
+		death_date = 1162.1.1
+		claim = 95
+		adm = 4
+		dip = 0
+		mil = 4
+	}
+}
+
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1161.1.1 = {
+	monarch = {
+		name = "Parakrama I"
+		dynasty = "Pandya"
+		birth_date = 1131.1.1
+		adm = 4
+		dip = 0
+		mil = 4
+	}
+}
+
+1161.1.1 = {
+	heir = {
+		name = "Kulasekara"
+		monarch_name = "Kulasekara III"
+		dynasty = "Pandya"
+		birth_date = 1132.1.1
+		death_date = 1170.1.1
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 0
+	}
+}
+
+1162.1.1 = {
+	monarch = {
+		name = "Kulasekara III"
+		dynasty = "Pandya"
+		birth_date = 1132.1.1
+		adm = 5
+		dip = 3
+		mil = 0
+	}
+}
+
+1162.1.1 = {
+	heir = {
+		name = "Vira"
+		monarch_name = "Vira III"
+		dynasty = "Pandya"
+		birth_date = 1140.1.1
+		death_date = 1175.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1170.1.1 = {
+	monarch = {
+		name = "Vira III"
+		dynasty = "Pandya"
+		birth_date = 1140.1.1
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1170.1.1 = {
+	heir = {
+		name = "Jatavarman Srivallaban"
+		monarch_name = "Jatavarman Srivallaban"
+		dynasty = "Pandya"
+		birth_date = 1145.1.1
+		death_date = 1190.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1175.1.1 = {
+	monarch = {
+		name = "Jatavarman Srivallaban"
+		dynasty = "Pandya"
+		birth_date = 1145.1.1
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1175.1.1 = {
+	heir = {
+		name = "Jatavarman Kulasekaran"
+		monarch_name = "Jatavarman Kulasekaran I"
+		dynasty = "Pandya"
+		birth_date = 1160.1.1
+		death_date = 1212.1.1
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+1190.1.1 = {
+	monarch = {
+		name = "Jatavarman Kulasekaran I"
+		dynasty = "Pandya"
+		birth_date = 1160.1.1
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+1190.1.1 = {
+	heir = {
+		name = "Parakrama"
+		monarch_name = "Parakrama II"
+		dynasty = "Pandya"
+		birth_date = 1182.1.1
+		death_date = 1216.1.1
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1212.1.1 = {
+	monarch = {
+		name = "Parakrama II"
+		dynasty = "Pandya"
+		birth_date = 1182.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1212.1.1 = {
+	heir = {
+		name = "Maravarman Sundara"
+		monarch_name = "Maravarman Sundara I"
+		dynasty = "Pandya"
+		birth_date = 1186.1.1
+		death_date = 1238.1.1
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}
+
+1216.1.1 = {
+	monarch = {
+		name = "Maravarman Sundara I"
+		dynasty = "Pandya"
+		birth_date = 1186.1.1
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}
+
+1216.1.1 = {
+	heir = {
+		name = "Maravarman Sundara"
+		monarch_name = "Maravarman Sundara II"
+		dynasty = "Pandya"
+		birth_date = 1208.1.1
+		death_date = 1251.1.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}
+
+1238.1.1 = {
+	monarch = {
+		name = "Maravarman Sundara II"
+		dynasty = "Pandya"
+		birth_date = 1208.1.1
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}
+
+1238.1.1 = {
+	heir = {
+		name = "Jatavarman Sundara"
+		monarch_name = "Jatavarman Sundara II"
+		dynasty = "Pandya"
+		birth_date = 1221.1.1
+		death_date = 1268.1.1
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 0
+	}
+}
+
+1251.1.1 = {
+	monarch = {
+		name = "Jatavarman Sundara II"
+		dynasty = "Pandya"
+		birth_date = 1221.1.1
+		adm = 5
+		dip = 3
+		mil = 0
+	}
+}
+
+1251.1.1 = {
+	heir = {
+		name = "Maravarman Kulasekara"
+		monarch_name = "Maravarman Kulasekara I"
+		dynasty = "Pandya"
+		birth_date = 1238.1.1
+		death_date = 1309.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}
+
+1268.1.1 = {
+	monarch = {
+		name = "Maravarman Kulasekara I"
+		dynasty = "Pandya"
+		birth_date = 1238.1.1
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}
+
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1280.1.1 = {
+	heir = {
+		name = "Vira"
+		monarch_name = "Vira IV"
+		dynasty = "Pandya"
+		birth_date = 1280.1.1
+		death_date = 1345.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+1309.1.1 = {
+	monarch = {
+		name = "Vira IV"
+		dynasty = "Pandya"
+		birth_date = 1280.1.1
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+#Last Pandyas - Unsubdued by the Madurai Sultanate and continues to exist after Madurai is annexed by Vijayanagar
+1345.1.1 = { capital = 2215 } #Tirunelveli
+
+1345.1.1 = {
+	monarch = {
+		name = "Sundara IV"
+		dynasty = "Pandya"
+		birth_date = 1315.1.1
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1350.1.1 = {
+	heir = {
+		name = "Vira"
+		monarch_name = "Vira V"
+		dynasty = "Pandya"
+		birth_date = 1350.1.1
+		death_date = 1422.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1380.1.1 = {
+	monarch = {
+		name = "Vira V"
+		dynasty = "Pandya"
+		birth_date = 1350.1.1
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1400.1.1 = {
+	heir = {
+		name = "Parakrama"
+		monarch_name = "Parakrama I"
+		dynasty = "Pandya"
+		birth_date = 1400.1.1
+		death_date = 1463.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1422.1.1 = {
+	monarch = {
+		name = "Parakrama I"
+		dynasty = "Pandya"
+		birth_date = 1400.1.1
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1431.1.1 = {
+	heir = {
+		name = "Vira"
+		monarch_name = "Vira VI"
+		dynasty = "Pandya"
+		birth_date = 1410.1.1
+		death_date = 1475.1.1
+		claim = 95
+		ADM = 3
+		DIP = 2
+		MIL = 1
+	}
+}
+
+1437.1.1 = {
+	monarch = {
+		name = "Vira VI"
+		dynasty = "Pandya"
+		ADM = 3
+		DIP = 2
+		MIL = 1
+	}
+}
+
+1437.1.1 = {
+	heir = {
+		name = "Vira"
+		monarch_name = "Vira VII"
+		dynasty = "Pandya"
+		birth_date = 1430.1.1
+		death_date = 1516.1.1
+		claim = 95
+		ADM = 4
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1475.1.1 = {
+	monarch = {
+		name = "Vira VII"
+		dynasty = "Pandya"
+		ADM = 4
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1475.1.1 = {
+	heir = {
+		name = "Parakrama"
+		monarch_name = "Parakrama II"
+		dynasty = "Pandya"
+		birth_date = 1450.1.1
+		death_date = 1543.1.1
+		claim = 95
+		ADM = 2
+		DIP = 1
+		MIL = 3
+	}
+}
+
+1516.1.1 = {
+	monarch = {
+		name = "Parakrama II"
+		dynasty = "Pandya"
+		ADM = 2
+		DIP = 1
+		MIL = 3
+	}
+}
+
+1516.1.1 = {
+	heir = {
+		name = "Vikrama"
+		monarch_name = "Vikrama"
+		dynasty = "Pandya"
+		birth_date = 1480.1.1
+		death_date = 1565.1.1
+		claim = 95
+		ADM = 3
+		DIP = 1
+		MIL = 4
+	}
+}
+#Annexed
+
+#Independent from Vijayanagar:
+#Madurai Nayaka dynasty, Nayaka = vassal king, but from sources it seems the Madurai Nayakas took it as their dynasty name?
+
+1529.1.1 = {
+	monarch = {
+		name = "Vishvanatha"
+		dynasty = "Nayaka"
+		ADM = 4
+		DIP = 4
+		MIL = 5
+	}
+}
+
+1529.1.1 = {
+	heir = {
+		name = "Kumara Periaya Krishnappa"
+		monarch_name = "Kumara Periaya Krishnappa"
+		dynasty = "Nayaka"
+		birth_date = 1527.1.1
+		death_date = 1572.1.1
+		claim = 95
+		ADM = 1
+		DIP = 2
+		MIL = 4
+	}
+}
+
+1564.1.1 = {
+	monarch = {
+		name = "Kumara Periaya Krishnappa"
+		dynasty = "Nayaka"
+		ADM = 1
+		DIP = 2
+		MIL = 4
+	}
+}
+
+1564.1.1 = {
+	heir = {
+		name = "Krishnappa Periaya"
+		monarch_name = "Krishnappa Periaya"
+		dynasty = "Nayaka"
+		birth_date = 1560.1.1
+		death_date = 1595.3.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1572.1.1 = {
+	monarch = {
+		name = "Krishnappa Periaya"
+		dynasty = "Nayaka"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1572.1.1 = {
+	heir = {
+		name = "Lingayya Kumara"
+		monarch_name = "Lingayya Kumara"
+		dynasty = "Nayaka"
+		birth_date = 1570.1.1
+		death_date = 1601.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1595.3.1 = {
+	monarch = {
+		name = "Lingayya Kumara"
+		dynasty = "Nayaka"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1595.3.1 = {
+	heir = {
+		name = "Mutu Krishnappa"
+		monarch_name = "Mutu Krishnappa"
+		dynasty = "Nayaka"
+		birth_date = 1590.1.1
+		death_date = 1609.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1601.1.1 = {
+	monarch = {
+		name = "Mutu Krishnappa"
+		dynasty = "Nayaka"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1601.1.1 = {
+	heir = {
+		name = "Muttu Virappa"
+		monarch_name = "Muttu Virappa I"
+		dynasty = "Nayaka"
+		birth_date = 1590.1.1
+		death_date = 1623.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1609.1.1 = {
+	monarch = {
+		name = "Muttu Virappa I"
+		dynasty = "Nayaka"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1623.1.1 = {
+	monarch = {
+		name = "Tirumala"
+		dynasty = "Nayaka"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1659.1.1 = {
+	monarch = {
+		name = "Muttu Virappa II"
+		dynasty = "Nayaka"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1662.1.1 = {
+	monarch = {
+		name = "Chokkanatha I"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1678.1.1 = {
+	monarch = {
+		name = "Muttu Linga"
+		dynasty = "Nayaka"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1680.1.1 = {
+	monarch = {
+		name = "Chokkanatha I"
+		dynasty = "Nayaka"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+#Restored
+
+1682.1.1 = {
+	monarch = {
+		name = "Muttu Varappa III"
+		dynasty = "Nayaka"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1689.1.1 = {
+	monarch = {
+		name = "Chokkanatha II"
+		dynasty = "Nayaka"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1731.1.1 = {
+	monarch = {
+		name = "Minakshi"
+		dynasty = "Nayaka"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+#Annexed by the Carnatic in April 1736
+

@@ -1,0 +1,93 @@
+government = republic
+set_legacy_government = constitutional_republic
+primary_culture = papuan
+religion = catholic
+technology_group = early_chinese
+capital = 635 # Dili
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1556.1.1 = { primary_culture = portugese }
+1636.5.15 = { technology_group = old_estern_asian }
+1910.1.1 = { religion = liberalism }
+1950.1.1 = { technology_group = asian }
+
+2002.5.20 = {
+	monarch = {
+		name = "ôl≥u≥u.‰SØeíÇ"
+		birth_date = 1946.6.20
+		adm = 4
+		dip = 3
+		mil = 5
+		religion = catholic
+	}
+}
+
+2007.5.20 = {
+	monarch = {
+		name = "ÂÇ˝l.…b´ÉØe.eYSTX"
+		birth_date = 1949.12.26
+		adm = 5
+		dip = 2
+		mil = 3
+		religion = catholic
+	}
+}
+
+
+2008.2.11 = {
+	monarch = {
+		name = "ÙuÓhyr ‰Syr˜ñØe"
+		birth_date = 1955.1.22
+		adm = 3
+		dip = 2
+		mil = 4
+		religion = catholic
+	}
+}
+
+2008.2.13 = {
+	monarch = {
+		name = "9çSWSY.∑V.?ñ≥Ró"
+		birth_date = 1963.2.26
+		adm = 3
+		dip = 3
+		mil = 3
+		religion = catholic
+	}
+}
+
+
+2012.5.20 = {
+	monarch = {
+		name = "vñS.löfW.Åú?ñKQ"
+		birth_date = 1956.10.10
+		adm = 4
+		dip = 2
+		mil = 2
+		religion = catholic
+	}
+}
+
+2017.5.20 = {
+	monarch = {
+		name = "VgâØe—y.‰Syr˜ñØe"
+		birth_date = 1954.9.7
+		adm = 5
+		dip = 3
+		mil = 1
+		religion = catholic
+	}
+}
+1636.5.15 = { technology_group = old_estern_asian }
+1949.10.1 = { technology_group = asian }

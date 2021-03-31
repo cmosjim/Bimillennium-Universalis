@@ -1,0 +1,38 @@
+government = mongol_steppe_horde
+add_government_reform = mongol_steppe_horde_reform
+mercantilism = 0.1
+technology_group = eastern_nomad_group
+religion = tengri_pagan_reformed
+primary_culture = mongol
+capital = 3251
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+
+1186.1.1 = { 
+	monarch = {
+		name = "1Å—û1Å?ñ"
+		#dynasty = " "
+		adm = 3
+		dip = 3
+		mil = 3
+		leader = { 
+                name = "1Å—û1Å?ñ"	
+                type = general	
+                #rank = 0	
+                fire = 3
+                shock = 3	
+                manuever = 3
+                siege = 2
+		}
+	}
+}
+

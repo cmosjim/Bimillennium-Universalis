@@ -1,0 +1,75 @@
+#703 - Chengde
+
+owner = WWH
+controller = WWH
+culture = donghu
+religion = tengri_pagan_reformed
+capital = "Chengde"
+trade_goods = wool
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 1
+is_city = yes
+add_core = WWH
+add_core = HND
+fort_et = yes #The Great Wall
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+207.1.1 = {  owner = XIB controller = XIB add_core = XIB remove_core = WWH }
+238.1.1 = { owner = UXB controller = UXB add_core = UXB remove_core = XIB } 
+345.1.1 = { owner = DA1 controller = DA1 add_core = DA1 remove_core = UXB }
+376.1.1 = { owner = QIN controller = QIN add_core = QIN remove_core = DA1 }
+385.1.1 = { owner = DA1 controller = DA1 add_core = DA1 remove_core = QIN }
+398.1.1 = { owner = NWE controller = NWE add_core = NWE remove_core = DA1 }
+432.1.1 = { owner = KHT controller = KHT add_core = KHT remove_core = NWE }
+552.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = KHT }
+648.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = GOK }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+692.1.1 = { owner = HO3 controller = HO3 add_core = HO3 remove_core = WZ1 }
+715.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = HO3 }
+735.1.1 = { owner = HO3 controller = HO3 add_core = HO3 remove_core = TNG }
+744.1.1 = { owner = UIG controller = UIG add_core = UIG remove_core = HO3 }
+843.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = UIG }
+885.1.1 = { owner = KHT controller = KHT add_core = KHT remove_core = TNG }
+947.1.1 = { owner = LIO controller = LIO add_core = LIO remove_core = KHT }
+1122.1.1 = { owner = GNN controller = GNN add_core = GNN remove_core = LIO }
+1206.1.1 = { owner = MGE controller = MGE add_core = MGE culture = chahar }
+1260.5.5 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE remove_core = GNN }
+1265.1.1 = { religion = vajrayana }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1389.1.1 = { owner = KRC controller = KRC add_core = KRC remove_core = YUA }
+1608.1.1 = { discovered_by = SPA }
+1624.1.1 = {	owner = MCH
+		controller = MCH
+		add_core = MCH
+		remove_core = KRC
+	    } # The Later Jin Khanate
+1636.5.15 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		remove_core = MCH
+		capital = "Chifeng"
+	    } # The Qing Dynasty
+1709.1.1 = { discovered_by = SPA }
+
+1762.1.1 = { base_production = 3 }
+1800.1.1 = { base_tax = 3 }
+1837.1.1 = { base_tax = 4 }
+1875.1.1 = { base_tax = 5 }
+1897.1.1 = { culture = hebei }
+1912.2.12 = { owner = BNN controller = BNN add_core = BNN  remove_core = QNG }
+1913.1.1 = { base_production = 4 }
+1917.7.6 = { owner = WX1 controller = WX1 add_core = WX1 remove_core = BNN }
+1920.1.1 = { owner = FX1 controller = FX1 add_core = FX1 remove_core = WX1 }
+1928.12.29 = { owner = ROC controller = ROC add_core = ROC remove_core = FX1 }
+1933.5.26 = { owner = TM2 controller = TM2 add_core = TM2 }
+1934.1.1 = { owner = MCK controller = MCK add_core = MCK }
+1945.8.15 = { owner = CW1 controller = CW1 add_core = CW1 remove_core = ROC remove_core = TM2 religion = communism }
+1949.10.1 = { owner = CHN controller = CHN add_core = CHN remove_core = CW1 }
+1951.1.1 = { base_production = 5 }
+2000.1.1 = { base_manpower = 5 }

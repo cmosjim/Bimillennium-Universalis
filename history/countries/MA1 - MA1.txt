@@ -1,0 +1,96 @@
+government = republic
+add_government_reform = oligarchy_reform
+technology_group = western
+religion = protestant
+primary_culture = korean
+capital = 735
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1920.1.1 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = universal_suffrage_reform
+  add_government_reform = reinforce_republican_values_reform
+  add_government_reform = multi_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = abolish_presidency
+  set_legacy_government = parliamentary_republic
+}
+
+#0 1945t^9g11åeÿ12g17åe
+#?–QYZS·V·‡eîh·?–ú‹·VSS
+#0 1945t^12g18åeÿ1947t^9g11åe
+#šN‰V·L·ÒRGYSS
+#0 1947t^10g30ÿ1948t^8g15åe
+#ZÉ^·VÌ‘^·ê‰RSS
+#0 1948t^8g15åeÿ1949t^6g
+#
+#ågS¯e·G·ks|KQSS
+
+1945.9.11 = {
+  monarch = {
+    name = "?–QYZS·V.‡eîh.?–ú‹·V"
+    adm = 4
+    dip = 4
+    mil = 2
+    religion = liberalism
+  }
+}
+1945.12.18 = {
+  monarch = {
+    name = "šN‰V.ÒRGY"  # Anerood Jugnauth
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = liberalism
+  }
+}
+1947.10.30 = {
+  monarch = {
+    name = "ZÉ^.VÌ‘^.ê‰R"  # Anerood Jugnauth
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = liberalism
+  }
+}
+1948.8.15 = {
+  monarch = {
+    name = "ågS¯e.G.ks|KQ"  # Anerood Jugnauth
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = liberalism
+  }
+}

@@ -1,0 +1,284 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = chihan
+capital = 1816	
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+785.1.1 = {
+	monarch = {
+		name = "RNm"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 2
+		mil = 4
+
+	}
+}
+810.1.1 = {
+	monarch = {
+		name = "RI`"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 2
+		mil = 3
+
+	}
+}
+821.1.1 = {
+	monarch = {
+		name = ".VVV—"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 2
+		mil = 1
+
+	}
+}
+821.2.1 = {
+	monarch = {
+		name = "RŸ`"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 4
+		mil = 4
+
+	}
+}
+821.2.1 = {
+	monarch = {
+		name = "1gKQ‡"
+		#dynasty = " "
+	
+		dip = 5
+		adm = 2
+		mil = 1
+
+	}
+}
+826.1.1 = {
+	monarch = {
+		name = "1gö^ãU"
+		#dynasty = " "
+	
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+826.6.1 = {
+	monarch = {
+		name = "Ng‹IN"
+		#dynasty = " "
+	
+		dip = 4
+		adm = 3
+		mil = 4
+	}
+}
+831.1.1 = {
+	monarch = {
+		name = "hg×VÚ‹"
+		#dynasty = " "
+	
+		dip = 5
+		adm = 2
+		mil = 4
+	}
+}
+
+834.1.1 = {
+	monarch = {
+		name = "òSCQàV"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+841.1.1 = {
+	monarch = {
+		name = "H–Lˆðl"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 4
+		mil = 4
+	}
+}
+841.4.1 = {
+	monarch = {
+		name = ".VÛu"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 5
+		mil = 4
+	}
+}
+841.7.1 = {
+	monarch = {
+		name = ".VòNfk"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 5
+		mil = 4
+	}
+}
+849.1.1 = {
+	monarch = {
+		name = ".Vôv¹e"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+849.6.1 = {
+	monarch = {
+		name = "hTt"
+		#dynasty = " "
+	
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+
+850.1.1 = {
+	monarch = {
+		name = ".VAQ8O"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+872.1.1 = {
+	monarch = {
+		name = ".VŽrO"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 3
+		mil = 4
+	}
+}
+872.6.1 = {
+	monarch = {
+		name = ".VlQ.t"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+875.1.1 = {
+	monarch = {
+		name = "NgƒËR"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 3
+		mil = 4
+	}
+}
+
+876.1.1 = {
+	monarch = {
+		name = "NgïS>N"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 2
+		mil = 1
+	}
+}
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+
+885.1.1 = {
+	monarch = {
+		name = "NghQàV"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 2
+		mil = 3
+	}
+}
+886.1.1 = {
+	monarch = {
+		name = "Ng!SZ"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 2
+		mil = 4
+	}
+}
+893.1.1 = {
+	monarch = {
+		name = "Ng!Syr"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+895.1.1 = {
+	monarch = {
+		name = "RÁNm`"
+		#dynasty = " "
+	
+		dip = 2
+		adm = 1
+		mil = 3
+		leader = { name = "RÁNm`"	type = general	fire = 4	shock = 4	manuever = 3	siege = 2 }
+	}
+
+}
+
+911.8.1 = {
+	monarch = {
+		name = "RˆRIQ"
+		#dynasty = " "
+	
+		dip = 1
+		adm = 1
+		mil = 2
+
+	}
+}
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = {
+	government = modern_chinese_warlord
+	add_government_reform = modern_chinese_warlord_reform
+	religion = liberalism
+}
+
+1949.10.1 = { technology_group = modern_chinese }
+

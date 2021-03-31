@@ -1,0 +1,143 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 3
+primary_culture = russian
+religion = orthodox
+technology_group = western
+unit_type = eastern
+historical_rival = USA
+historical_friend = CW1
+capital = 295	# Moskva
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+
+				#democracy_reform
+				#oligarchic_reform
+				#military_government
+1900.1.1 = { 
+	government = republic
+	set_legacy_government = communist_dictatorship
+	add_government_reform = strengthen_executive_powers_reform
+	add_government_reform = single_party_system
+	add_government_reform = powerful_head_of_state
+	add_government_reform = communist_government	
+}
+
+1910.1.1 = { religion = communism }
+
+1922.12.30 = {
+	monarch = {
+		name = "iO…bÍès|S∑OÃëGY∑RÅR"
+		adm = 5
+		dip = 3
+		mil = 3
+		religion = orthodox
+	}
+}
+
+1924.1.21 = {
+	monarch = {
+		name = "¶umt+Y∑Ùu(ÑÃëeY˙ãÙuGY∑Øe'Yóg"
+		adm = 2
+		dip = 2
+		mil = 5
+		religion = communism
+	}
+}
+
+1937.10.1  = { leader = {	name = "Aleksandr Vasilevsky"	type = general		fire = 5	shock = 4	manuever = 3	siege = 2	death_date = 1959.1.1 } }
+1938.7.1   = { leader = {	name = "Ivan Konev"		type = general		fire = 3	shock = 5	manuever = 2	siege = 2	death_date = 1962.1.1 } }
+1940.6.1   = { leader = {	name = "Georgy Zhukov"		type = general		fire = 6	shock = 4	manuever = 2	siege = 3	death_date = 1957.10.26 } }
+
+1952.10.16 = {
+	monarch = {
+		name = "<S‰S…b∑s|»TOmÙuGY∑¿NÙuS<SKQ"
+		adm = 3
+		dip = 2
+		mil = 2
+		religion = orthodox
+	}
+}
+
+1953.3.15 = {
+	monarch = {
+		name = "KQ)Ryr∑ˆS+YR´ÉÙuGY∑OW^m+Y"
+		adm = 2
+		dip = 3
+		mil = 3
+		religion = orthodox
+	}
+}
+
+1953.9.14 = {
+	monarch = {
+		name = "<S˙WTX∑0åS÷v6wÙuGY∑kçÅúSf+Y"
+		adm = 2
+		dip = 3
+		mil = 4
+		religion = orthodox
+	}
+}
+
+1957.10.1 = { decision = dummy_space_program }
+
+1964.10.14 = {
+	monarch = {
+		name = "Rf<S∑V∑OÃëGY∑^)RyQÖm+Y"
+		adm = 4
+		dip = 3
+		mil = 3
+		religion = orthodox
+	}
+}
+
+1982.11.12 = {
+	monarch = {
+		name = "2SÃë∑V…b˙Ws|WÙuGY∑âR∑Vm‚l+Y"
+		adm = 2
+		dip = 4
+		mil = 3
+		religion = orthodox
+	}
+}
+
+1984.2.13 = {
+	monarch = {
+		name = "∑^ØefWN∑LNØecR˙ãÙuGY∑QYSt^—y"
+		adm = 3
+		dip = 3
+		mil = 3
+		religion = orthodox
+	}
+}
+
+1986.2.20 = { decision = dummy_space_station }
+
+1985.3.11 = {
+	monarch = {
+		name = "s|»TOS∑0åS÷v6wÙuGY∑bSÙTTN+Y"
+		adm = 3
+		dip = 4
+		mil = 3
+		religion = orthodox
+	}
+}
+
+1991.8.24 = {
+	monarch = {
+		name = "V…b˙Ws|S∑âRN˙ãÙuGY∑OÊt¿N—y"
+		adm = 3
+		dip = 2
+		mil = 3
+		religion = orthodox
+	}
+}

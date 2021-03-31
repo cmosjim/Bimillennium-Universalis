@@ -1,0 +1,297 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = occitain
+capital = 204
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1040.1.1 = {
+  monarch = {
+    name = "	T<h¯e"  # Guigues I
+    dynasty = "·V ?–S¦"  # de Albon
+    adm = 2
+    dip = 4
+    mil = 5
+  }
+}
+1040.1.1 = {
+  heir = {
+    name = "	T<h¯e"  # Guigues
+    monarch_name = "	T<h¯e II"  # Guigues II
+    dynasty = "·V ?–S¦"  # de Albon
+    birth_date = 1020.1.1
+    death_date = 1079.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+1070.1.1 = {
+  monarch = {
+    name = "	T<h¯e II"  # Guigues II
+    dynasty = "·V ?–S¦"  # de Albon
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+1070.1.1 = {
+  heir = {
+    name = "	T<h¯e"  # Guigues
+    monarch_name = "	T<h¯e III"  # Guigues III
+    dynasty = "·V ?–S¦"  # de Albon
+    birth_date = 1050.1.1
+    death_date = 1133.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+1079.1.1 = {
+  monarch = {
+    name = "	T<h¯e III"  # Guigues III
+    dynasty = "·V ?–S¦"  # de Albon
+    adm = 3
+    dip = 4
+    mil = 5
+  }
+}
+1095.1.1 = {
+  heir = {
+    name = "	T<h¯e"  # Guigues
+    monarch_name = "	T<h¯e IV"  # Guigues IV
+    dynasty = "·V ?–S¦"  # de Albon
+    birth_date = 1095.1.1
+    death_date = 1142.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1133.1.1 = {
+  monarch = {
+    name = "	T<h¯e IV"  # Guigues IV
+    dynasty = "·V ?–S¦"  # de Albon
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+1133.1.1 = {
+  heir = {
+    name = "	T<h¯e"  # Guigues
+    monarch_name = "	T<h¯e V"  # Guigues V
+    dynasty = "·V ?–S¦"  # de Albon
+    birth_date = 1120.1.1
+    death_date = 1162.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 4
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1142.1.1 = {
+  monarch = {
+    name = "	T<h¯e V"  # Guigues V
+    dynasty = "·V ?–S¦"  # de Albon
+    adm = 1
+    dip = 3
+    mil = 4
+  }
+}
+1161.1.1 = {
+  heir = {
+    name = "šNyrKN¯e"  # Béatrice
+    monarch_name = "šNyrKN¯e I"  # Béatrice I
+    dynasty = "·V ?–S¦"  # de Albon
+    birth_date = 1161.1.1
+    death_date = 1228.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 3
+    female = yes
+  }
+}
+1162.1.1 = {
+  monarch = {
+    name = "šNyrKN¯e I"  # Béatrice I
+    dynasty = "·V ?–S¦"  # de Albon
+    adm = 5
+    dip = 2
+    mil = 3
+    female = yes
+  }
+}
+1228.1.1 = {
+  monarch = {
+    name = "	T<h¯e VI"  # Guigues VI
+    dynasty = "·V ÃRn‚,r"  # de Bourgogne
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+1228.1.1 = {
+  heir = {
+    name = "	T<h¯e"  # Guigues
+    monarch_name = "	T<h¯e VII"  # Guigues VII
+    dynasty = "·V ÃRn‚,r"  # de Bourgogne
+    birth_date = 1225.1.1
+    death_date = 1269.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 5
+  }
+}
+1237.1.1 = {
+  monarch = {
+    name = "	T<h¯e VII"  # Guigues VII
+    dynasty = "·V ÃRn‚,r"  # de Bourgogne
+    adm = 1
+    dip = 4
+    mil = 5
+  }
+}
+1263.1.1 = {
+  heir = {
+    name = "Ís"  # Jean
+    monarch_name = "Ís I"  # Jean I
+    dynasty = "·V ÃRn‚,r"  # de Bourgogne
+    birth_date = 1263.1.1
+    death_date = 1282.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+1269.1.1 = {
+  monarch = {
+    name = "Ís I"  # Jean I
+    dynasty = "·V ÃRn‚,r"  # de Bourgogne
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1282.1.1 = {
+  monarch = {
+    name = "¨N=Oyr I"  # Humbert I
+    dynasty = "·V ÉbþVêXo"  # de La Tour-du-Pin
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1282.1.1 = {
+  heir = {
+    name = "Ís"  # Jean
+    monarch_name = "Ís II"  # Jean II
+    dynasty = "·V ÉbþVêXo"  # de La Tour-du-Pin
+    birth_date = 1280.1.1
+    death_date = 1318.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1307.1.1 = {
+  monarch = {
+    name = "Ís II"  # Jean II
+    dynasty = "·V ÉbþVêXo"  # de La Tour-du-Pin
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1309.1.1 = {
+  heir = {
+    name = "	T<h¯e"  # Guigues
+    monarch_name = "	T<h¯e VIII"  # Guigues VIII
+    dynasty = "·V ÉbþVêXo"  # de La Tour-du-Pin
+    birth_date = 1309.1.1
+    death_date = 1333.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+1318.1.1 = {
+  monarch = {
+    name = "	T<h¯e VIII"  # Guigues VIII
+    dynasty = "·V ÉbþVêXo"  # de La Tour-du-Pin
+    adm = 4
+    dip = 1
+    mil = 2
+  }
+}
+1318.1.1 = {
+  heir = {
+    name = "¨N=Oyr"  # Humbert
+    monarch_name = "¨N=Oyr II"  # Humbert II
+    dynasty = "·V ÉbþVêXo"  # de La Tour-du-Pin
+    birth_date = 1312.1.1
+    death_date = 1355.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+1333.1.1 = {
+  monarch = {
+    name = "¨N=Oyr II"  # Humbert II
+    dynasty = "·V ÉbþVêXo"  # de La Tour-du-Pin
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+1515.1.1 = {
+  government = monarchy
+  add_government_reform = autocracy_reform
+}
+1589.8.3 = {
+  set_legacy_government = administrative_monarchy
+}
+1661.3.9 = {
+  government = monarchy
+  add_government_reform = autocracy_reform
+}

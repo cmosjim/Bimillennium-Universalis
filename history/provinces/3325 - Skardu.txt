@@ -1,0 +1,67 @@
+#3325 - Skardu
+
+owner = XIY
+controller = XIY
+culture = kashmiri
+religion = mahayana
+capital = "Skardu"
+trade_goods = wool
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = XIY
+discovered_by = early_indian
+discovered_by = indian
+discovered_by = muslim
+discovered_by = middle_eastern
+discovered_by = ottoman
+discovered_by = western_nomad_group
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+16.1.1 = { owner = WR1 controller = WR1 add_core = WR1 }
+74.1.1 = { owner = XIY controller = XIY add_core = XIY }
+76.1.1 = { owner = WR1 controller = WR1 }
+83.1.1 = { owner = XIY controller = XIY }
+107.1.1 = { owner = WR1 controller = WR1 }
+125.1.1 = { owner = XI1 controller = XI1 add_core = XI1 }
+184.1.1 = { owner = WR1 controller = WR1  remove_core = XI1 }
+221.1.1 = {  owner = SL1 controller = SL1 add_core = SL1 remove_core = WR1 }
+250.1.1 = { owner = KSH controller = KSH remove_core = SL1 }
+450.1.1 = { owner = HEP controller = HEP add_core = HEP }
+569.1.1 = { owner = KSH controller = KSH remove_core = HEP }
+737.1.1 = { owner = AN4 controller = AN4 add_core = AN4 }
+760.1.1 = { religion = vajrayana }
+791.1.1 = { owner = TO1 controller = TO1 add_core = TO1 remove_core = AN4 }
+840.1.1 = { owner = KKH controller = KKH add_core = KKH remove_core = TO1 }
+914.1.1 = { owner = LDK controller = LDK add_core = LDK remove_core = KKH remove_core = KSH remove_core = AL1 }
+1220.1.1 = { owner = MGE controller = MGE add_core = MGE }
+1260.1.1 = { owner = CHG controller = CHG add_core = CHG remove_core = MGE }
+1346.1.1 = { owner = LDK controller = LDK add_core = LDK remove_core = CHG }
+
+1410.1.1 = { religion = shiite } #Converted to islam in early 15th century
+1450.1.1 = {
+	owner = KSH
+	controller = KSH
+	add_core = KSH
+} #Shah Mirs
+1570.1.1 = {
+	owner = LDK
+	controller = LDK
+	remove_core = KSH
+}
+1690.1.1 = { discovered_by = ENG }
+1707.5.12 = { discovered_by = GBR }
+1753.1.1 = { owner = QNG controller = QNG add_core = QNG }
+1834.1.1 = { owner = PUN controller = PUN add_core = PUN }
+1849.1.1 = { owner = GBR controller = GBR add_core = GBR remove_core = PUN }
+1930.12.29 = { add_core = PAK remove_core = LDK add_core = KSH capital = "Gilgit" } # Capital of the Pakistani part of Kasmir
+1947.8.14 = { owner = PAK controller = PAK remove_core = GBR }
+
+
+

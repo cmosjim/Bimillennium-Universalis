@@ -1,0 +1,72 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 1
+primary_culture = persian
+religion = shiite
+technology_group = muslim
+capital = 432
+religious_school = ismaili_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+932.1.1 = {
+  monarch = {
+    name = "FzUØž·V"  # Muhammad
+    dynasty = "O)RšN¯e"  # Ilyasid
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+967.1.1 = {
+  monarch = {
+    name = "O)RšN¯e"  # Ilyasa
+    dynasty = "O)RšN¯e"  # Ilyasid
+    adm = 1
+    dip = 1
+    mil = 0
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1335.1.1 = {
+  primary_culture = mongol
+  monarch = {
+    name = "“^yr^ N"  # Kutb al-Din
+    dynasty = "KQSüf"  # Kermani
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+1350.1.1 = {
+  primary_culture = persian
+}
+1504.1.1 = {
+  religious_school = jafari_school
+}

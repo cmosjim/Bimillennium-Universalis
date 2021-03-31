@@ -1,0 +1,137 @@
+government = ancient_chinese_togofu
+add_government_reform = ancient_chinese_togofu_reform
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = chihan
+capital = 713 #Karasahr
+
+#FO¶î 1t^13t^
+#NgT 16t^23t^
+#Hñfw 74t^75t^
+#ÌsÖç 91t^102t^
+#˚NS 102t^106t^
+#µkµy 106t^107t^
+
+
+1.1.1 = {
+	monarch = {
+		name = "FO¶î"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+16.1.1 = {
+	monarch = {
+		name = "NgT"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+
+23.1.1 = {
+	monarch = {
+		name = "(regency council)"
+		#dynasty = " "
+		regent = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+74.1.1 = {
+	monarch = {
+		name = "Hñfw"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+76.1.1 = {
+	monarch = {
+		name = "(regency council)"
+		#dynasty = " "
+		regent = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+
+91.1.1 = {
+	monarch = {
+		name = "ÌsÖç0fkS0"
+		#dynasty = " "
+		
+		adm = 5
+		dip = 6
+		mil = 6
+		leader = {
+            name = "ÌsÖç0fkS0"  # Chao Ban
+            type = general
+            fire = 8
+            shock = 9
+            manuever = 8
+            siege = 4
+        }
+	}
+}
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+102.1.1 = {
+	monarch = {
+		name = "˚NS"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+106.1.1 = {
+	monarch = {
+		name = "µkµy"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+108.1.1 = {
+	monarch = {
+		name = "(regency council)"
+		#dynasty = " "
+		regent = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+420.1.1 = { primary_culture = uyghur }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }

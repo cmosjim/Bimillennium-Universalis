@@ -1,0 +1,57 @@
+government = dalailama_monastic
+add_government_reform = dalailama_monastic_reform
+mercantilism = 0.2
+primary_culture = tibetan
+religion = tibetan_buddhism
+technology_group = early_chinese
+capital = 677 # Lhasa
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1636.5.15 = { technology_group = old_estern_asian }
+
+#1879t^7g31åe-1933t^12g17åeşV‰v	Vªc
+#1934t^ó1941t^gô•şfÅbûN‰Ï…„vDd?e0íp=c|TşVKQşV”NN
+#1940t^2g22åe9NX	Vªc
+
+1879.7.31 = {
+	monarch = {
+		name = "şV‰v	Vªc"       
+		#dynasty = " "
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+
+}
+
+1933.12.17 = {
+	monarch = {
+		name = "íp=c|TşVKQşV”NN"       
+		#dynasty = " "
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+
+}
+1940.2.22 = {
+	monarch = {
+		name = "9NX	Vªc"       
+		#dynasty = " "
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+1949.10.1 = { technology_group = modern_chinese }

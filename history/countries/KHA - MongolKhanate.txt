@@ -1,0 +1,817 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+technology_group = eastern_nomad_group
+religion = tengri_pagan_reformed
+secondary_religion = vajrayana
+primary_culture = mongol
+capital = 2891	# Karakorum
+historical_rival = OIR #so they will try to break free
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+
+#Mongol Khans of the Northern Yuan Dynasty
+1260.1.1 = {
+	government_rank = 3
+	monarch = {
+		name = "˝V≈V»p"
+		#dynasty = " "
+		
+		adm = 5
+		dip = 6
+		mil = 6
+		leader = { 
+                name = "˝V≈V»p"	
+                type = general	
+                #rank = 0	
+                fire = 10
+                shock = 9
+                manuever = 5
+                siege = 5
+		}		
+	}
+}
+## ˇ1267t^2g25Âe	ˇ
+1267.2.25 = {
+	capital = 1816
+}
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1271.12.18 = {
+	government = gov_celestial_empire
+	add_government_reform = celestial_empire
+}	
+1368.1.1 = {
+	government_rank = 1
+	monarch = {
+		name = "•Y0k^fwS"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1368.1.1 = {	
+	heir = {
+		name = "1r7s∆ãtæèJÅ"
+		monarch_name = "1r7s∆ãtæèJÅ"
+	
+		birth_date = 1340.1.23
+		death_date = 1378.4.28
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+}
+
+1370.5.23 = {
+	monarch = {
+		name = "1r7s∆ãtæèJÅ"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+}
+
+1370.5.23 = {
+	heir = {
+		name = "1Å‰S`^(g?Q"
+		monarch_name = "1Å‰S`^(g?Q"
+		
+		birth_date = 1342.1.1
+		death_date = 1388.11.1
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+1378.4.28 = {
+	monarch = {
+		name = "1Å‰S`^(g?Q"
+		#dynasty = " "
+		
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+1378.4.28 = {
+	heir = {
+		name = "mNêÌè?Q"
+		monarch_name = "mNêÌè?Q"
+		
+		birth_date = 1358.1.1
+		death_date = 1392.1.1
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 4
+	}
+}
+
+1388.11.1 = {
+	monarch = {
+		name = "mNêÌè?Q"
+		#dynasty = " "
+		
+		adm = 5
+		dip = 1
+		mil = 4
+	}
+}
+
+1388.11.1 = {
+	heir = {
+		name = "ùò“R=OKQ"
+		monarch_name = "ùò“R=OKQ"
+		
+		birth_date = 1361.1.1
+		death_date = 1400.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1390.1.1 = { capital = 2893 }
+
+1392.1.1 = {
+	monarch = {
+		name = "ùò“R=OKQ"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1392.1.1 = {
+	heir = {
+		name = "dW^(g?Q"
+		monarch_name = "dW^(g?Q"
+		
+		birth_date = 1384.1.1
+		death_date = 1402.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}
+
+1400.1.1 = {
+	monarch = {
+		name = "dW^(g?Q"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}
+
+1400.1.1 = {
+	heir = {
+		name = "<õõRdç"
+		monarch_name = "<õõRdç"
+		
+		birth_date = 1380.1.1
+		death_date = 1415.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1402.1.1 = {
+	monarch = {
+		name = "<õõRdç"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1402.1.1 = {
+	heir = {
+		name = "°e¶NLRyk"
+		monarch_name = "°e¶NLRyk"
+		
+		birth_Date = 1380.1.1
+		death_Date = 1425.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1415.1.1 = {
+	monarch = {
+		name = "°e¶NLRyk"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1415.1.1 = {
+	heir = {
+		name = "?ñ±SWl"
+		monarch_name = "?ñ±SWl"
+		
+		birth_date = 1390.1.1
+		death_date = 1438.1.1
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 4
+	}
+}
+
+1425.1.1 = {
+	monarch = {
+		name = "?ñ±SWl"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 1
+		mil = 4
+	}
+}
+
+1425.1.1 = {
+	heir = {
+		name = "1Å1ÅN±Ç"
+		monarch_name = "1Å1ÅN±Ç"
+		
+		birth_date = 1416.1.1
+		death_date = 1454.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1433.1.1 = {
+	monarch = {
+		name = "1Å1ÅN±Ç"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+#˙Qu	1423t^
+#ªSN	1453t^
+
+1433.1.2 = {
+	heir = {
+		name = "?ñvVYSNm"
+		monarch_name = "?ñvVYSNm"
+		
+		birth_date = 1423.1.1
+		death_date = 1453.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1451.1.1 = {
+	monarch = {
+		name = "?ñvVYSNm"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1453.1.1 = {
+	monarch = {
+		name = "mNHQ"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1453.1.1 = {
+	monarch = {
+		name = "lö?Q‰S?Q	T`"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+
+1465.1.1 = {
+	monarch = {
+		name = "id&OWl"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1475.1.1 = {
+	monarch = {
+		name = "·n˝êÅú"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1475.1.1 = {
+	heir = {
+		name = "æèˆ^Wl"
+		monarch_name = "æèˆ^Wl"
+		
+		birth_Date = 1464.1.1
+		death_Date = 1517.1.1
+		claim = 95
+		adm = 6
+		dip = 5
+		mil = 6
+	}
+}
+
+#æèˆ^WlÅVg¶N`lö‡V0kpir0¶NjSLRˇﬂuN.oWSôÑ‰S0T∫NyvQHNôÑ‰SÑv0-NtQKNIN00
+
+1479.1.1 = {
+	monarch = {
+		name = "æèˆ^Wl"
+		#dynasty = " "
+		
+		adm = 6
+		dip = 5
+		mil = 6
+	}
+}
+
+1490.1.1 = {
+	heir = {
+		name = "ÙTSØeZSWyr"
+		monarch_name = "ÙTSØeZSWyr"
+		
+		birth_Date = 1490.1.1
+		death_date = 1519.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1517.1.1 = {
+	monarch = {
+		name = "ÙTSØeZSWyr"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1517.1.1 = {	
+	heir = {
+		name = "ZSÍè"
+		monarch_name = "ZSÍè"
+		
+		birth_date = 1504.1.1
+		death_date = 1547.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1519.1.1 = {
+	monarch = {
+		name = "ZSÍè"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1520.1.1 = {
+	heir = {
+		name = "SbegYRì^åÅWl"
+		monarch_name = "SbegYRì^åÅWl"
+		
+		birth_Date = 1520.1.1
+		death_Date = 1557.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1547.1.1 = {
+	monarch = {
+		name = "SbegYRì^åÅWl"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1547.1.1 = {
+	heir = {
+		name = "˛VÏNNb(ÑKQ˛VWl"
+		monarch_name = "˛VÏNNb(ÑKQ˛VWl"
+		
+		birth_Date = 1547.1.1
+		death_date = 1592.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1557.1.1 = {
+	monarch = {
+		name = "˛VÏNNb(ÑKQ˛VWl"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1557.1.1 = {
+	heir = {
+		name = "^ˆ^âV∞èWl"
+		monarch_name = "^ˆ^âV∞èWl"
+		
+		birth_Date = 1554.1.1
+		death_date = 1604.1.1
+		claim = 95 
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1592.1.1 = {
+	monarch = {
+		name = "^ˆ^âV∞èWl"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1592.1.1 = {
+	heir = {
+		name = "óg9N|T˛VKQ˛VWl"
+		monarch_name = "óg9N|T˛VKQ˛VWl"
+		
+		birth_date = 1588.1.1
+		death_date = 1634.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1603.1.1 = {
+	monarch = {
+		name = "óg9N|T˛VKQ˛VWl"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1604.2.3 = {
+	heir = {
+		name = "ùòÚT"
+		monarch_name = "ùòÚT"
+		
+		birth_date = 1601.1.1
+		death_date = 1641.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+
+
+#1634t^1635t^
+
+1634.1.1 = {
+	monarch = {
+		name = "ùòÚT"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1800.1.1 = { religion = vajrayana }
+
+1911.12.29 = {
+	government_rank = 2
+	government = theocracy
+add_government_reform = leading_clergy_reform
+	technology_group = chinese
+	capital = 2891	# Ulan-Bator
+	monarch = {
+		name = "ZS<hY<h9h"
+		#dynasty = " "
+		adm = 3
+		dip = 3
+		mil = 2
+		religion = vajrayana
+	}
+}
+
+1924.11.26 = {
+	government = republic
+	add_government_reform = oligarchy_reform
+	add_government_reform = strengthen_executive_powers_reform
+	add_government_reform = dictatorial_rule
+	add_government_reform = communist_government
+	add_government_reform = powerful_head_of_state
+	set_legacy_government = communist_dictatorship
+	religion = communism
+	monarch = {
+		name = "±êÌsSêS	TNb9NÙT"
+		#dynasty = " "
+		adm = 3
+		dip = 4
+		mil = 3
+		religion = vajrayana
+	}
+}
+
+
+
+1924.11.29 = {
+	monarch = {
+		name = "ZS“R˙W∑V.9hâv"
+		#dynasty = " "
+		adm = 2
+		dip = 3
+		mil = 2
+		religion = vajrayana
+	}
+}
+
+1927.11.16 = {
+	monarch = {
+		name = "‹Y”N.æè(gNœÇ&O"
+		#dynasty = " "
+		adm = 4
+		dip = 2
+		mil = 3
+		religion = vajrayana
+	}
+}
+
+1929.1.24 = {
+	monarch = {
+		name = "óSm.TNÙTqS"
+		#dynasty = " "
+		adm = 2
+		dip = 4
+		mil = 3
+		religion = vajrayana
+	}
+}
+
+1930.4.27 = {
+	monarch = {
+		name = "W0tS.…bu"
+		#dynasty = " "
+		adm = 3
+		dip = 2
+		mil = 3
+		religion = vajrayana
+	}
+}
+
+1932.7.2 = {
+	monarch = {
+		name = "?ñWS∑V.?ñõsS"
+		#dynasty = " "
+		adm = 3
+		dip = 2
+		mil = 4
+		religion = vajrayana
+	}
+}
+
+1936.3.22 = {
+	monarch = {
+		name = "9NØepQ‘k“R<h.Sê<håg"
+		#dynasty = " "
+		adm = 2
+		dip = 4
+		mil = 3
+		religion = vajrayana
+	}
+}
+1940.1.1 = { technology_group = asian }
+1940.7.6 = {
+	monarch = {
+		name = "àQGY—ë.^¸fûXÍè"
+		#dynasty = " "
+		adm = 4
+		dip = 4
+		mil = 2
+		religion = vajrayana
+	}
+}
+
+1953.9.23 = {
+	monarch = {
+		name = "œÇkçÙTXbS.fV	Tõs"
+		#dynasty = " "
+		adm = 2
+		dip = 3
+		mil = 2
+		female = yes
+			religion = vajrayana
+	}
+}
+
+1954.7.7 = {
+	monarch = {
+		name = "Nb(gØeg.Qh^"
+		#dynasty = " "
+		adm = 4
+		dip = 2
+		mil = 3
+			religion = vajrayana
+	}
+}
+
+1972.5.20 = {
+	monarch = {
+		name = "Âgr^…b(g.jg<hSœÇ&O"
+		#dynasty = " "
+		adm = 2
+		dip = 4
+		mil = 3
+			religion = vajrayana
+	}
+}
+
+1972.6.29 = {
+	monarch = {
+		name = "0t˙ã¸f.Åú^Qh"
+		#dynasty = " "
+		adm = 4
+		dip = 2
+		mil = 3
+			religion = vajrayana
+	}
+}
+
+1974.6.11 = {
+	monarch = {
+		name = "2SfwsO.˝lâvÙTS"
+		#dynasty = " "
+		adm = 3
+		dip = 2
+		mil = 3
+			religion = vajrayana
+	}
+}
+
+1984.8.23 = {
+	monarch = {
+		name = "<SöN(g.Nb<hÊt…bS"
+		#dynasty = " "
+		adm = 3
+		dip = 2
+		mil = 4
+			religion = vajrayana
+	}
+}
+
+1984.12.12 = {
+	monarch = {
+		name = "‹YÙT.ÙTyrôÑkç"
+		#dynasty = " "
+		adm = 2
+		dip = 4
+		mil = 3
+			religion = vajrayana
+	}
+}
+
+1990.3.21 = {
+	monarch = {
+		name = "mV(Ñ“Rõs.eYvQSÙTyr"
+		#dynasty = " "
+		adm = 2
+		dip = 4
+		mil = 2
+			religion = vajrayana
+	}
+}
+
+1992.2.12 = {
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = strengthen_executive_powers_reform
+	add_government_reform = single_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = powerful_head_of_state
+	set_legacy_government = constitutional_republic
+	religion = liberalism
+ }
+
+1997.6.20 = {
+	monarch = {
+		name = "±êZiKQ.ÙTVÌsÍè"
+		#dynasty = " "
+		adm = 5
+		dip = 3
+		mil = 2
+			religion = vajrayana
+	}
+}
+
+2005.6.24 = {
+	monarch = {
+		name = "±ê(gÙTS.i`kçÙTöNS"
+		#dynasty = " "
+		adm = 4
+		dip = 2
+		mil = 3
+			religion = vajrayana
+	}
+}
+
+2009.6.18 = {
+	monarch = {
+		name = "Âg^öN.ùò“Rç<hSêS	T"
+		#dynasty = " "
+		adm = 3
+		dip = 4
+		mil = 3
+			religion = vajrayana
+	}
+}

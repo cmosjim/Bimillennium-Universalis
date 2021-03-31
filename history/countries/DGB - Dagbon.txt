@@ -1,0 +1,570 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = dagomba
+religion = shamanism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 2335
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1442.1.1 = {
+  monarch = {
+    name = "+RÃë‰S„N…b"  # Bierigudeera
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1454.1.1 = {
+  monarch = {
+    name = "æèÃë‰S„N…b"  # Darigudeera
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1469.1.1 = {
+  monarch = {
+    name = "POS‰S"  # Zolgu
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1486.1.1 = {
+  monarch = {
+    name = "óR¸f"  # Zongma
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1506.1.1 = {
+  monarch = {
+    name = "ÅRs|Xb<S"  # Ningmitooni
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1514.1.1 = {
+  monarch = {
+    name = "Íèlö<S"  # Dimani
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1527.1.1 = {
+  monarch = {
+    name = "lbPO√W"  # Yanzoe
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1543.1.1 = {
+  monarch = {
+    name = "æèÃë˝l‰S"  # Darizegu
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1554.1.1 = {
+  monarch = {
+    name = "bSW"  # Luro
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1570.1.1 = {
+  monarch = {
+    name = "ÇÑ˛V<hÃë"  # Titugri
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1589.1.1 = {
+  monarch = {
+    name = "Nb<h)R"  # Zagli
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1609.1.1 = {
+  monarch = {
+    name = "POì^)R"  # Zokuli
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1627.1.1 = {
+  monarch = {
+    name = "!çb‘k)R"  # Gungobili
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1648.1.1 = {
+  monarch = {
+    name = "^ç	T≥u"  # Zangina
+    dynasty = "≥u"  # Naa
+    DIP = 4
+    ADM = 4
+    MIL = 2
+  }
+}
+1677.1.1 = {
+  monarch = {
+    name = "âRæè<S â<h)R"  # Andani Sigli
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1687.1.1 = {
+  monarch = {
+    name = "æR+R‰S"  # Binbiegu
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1700.1.1 = {
+  monarch = {
+    name = "†RÃëÙT"  # Gariba
+    dynasty = "≥u"  # Naa
+    DIP = 2
+    ADM = 1
+    MIL = 2
+  }
+}
+1720.1.1 = {
+  monarch = {
+    name = "Pü^)R∆Y (Ñ"  # Ziblim Saa
+    dynasty = "≥u"  # Naa
+    birth_date = 1690.1.1
+    adm = 5
+    dip = 2
+    mil = 5
+  }
+}
+1720.1.1 = {
+  heir = {
+    name = "Pü^)R∆Y Ìs9Næè"  # Ziblim Bandamda
+    monarch_name = "Pü^)R∆Y Ìs9Næè"  # Ziblim Bandamda
+    dynasty = "≥u"  # Naa
+    birth_date = 1705.1.1
+    death_date = 1740.1.1
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 0
+  }
+}
+1735.1.1 = {
+  monarch = {
+    name = "Pü^)R∆Y Ìs9Næè"  # Ziblim Bandamda
+    dynasty = "≥u"  # Naa
+    birth_date = 1705.1.1
+    adm = 0
+    dip = 1
+    mil = 0
+  }
+}
+1735.1.1 = {
+  heir = {
+    name = "âRæè<S mlÙTS†R"  # Andani Djangbarga
+    monarch_name = "âRæè<S mlÙTS†R"  # Andani Djangbarga
+    dynasty = "≥u"  # Naa
+    birth_date = 1710.1.1
+    death_date = 1780.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+1740.1.1 = {
+  monarch = {
+    name = "âRæè<S mlÙTS†R"  # Andani Djangbarga
+    dynasty = "≥u"  # Naa
+    birth_date = 1710.1.1
+    adm = 4
+    dip = 1
+    mil = 3
+  }
+}
+1750.1.1 = {
+  heir = {
+    name = "lö»Tlö"  # Mahama
+    monarch_name = "lö»Tlö I"  # Mahama I
+    dynasty = "≥u"  # Naa
+    birth_date = 1750.1.1
+    death_date = 1800.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 0
+  }
+}
+1780.1.1 = {
+  monarch = {
+    name = "lö»Tlö I"  # Mahama I
+    dynasty = "≥u"  # Naa
+    birth_date = 1750.1.1
+    adm = 2
+    dip = 5
+    mil = 0
+  }
+}
+1780.1.1 = {
+  heir = {
+    name = "Pü^)R∆Y ì^&Oì^"  # Ziblim Kulunku
+    monarch_name = "Pü^)R∆Y ì^&Oì^"  # Ziblim Kulunku
+    dynasty = "≥u"  # Naa
+    birth_date = 1770.1.1
+    death_date = 1820.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 2
+  }
+}
+1800.1.1 = {
+  monarch = {
+    name = "Pü^)R∆Y ì^&Oì^"  # Ziblim Kulunku
+    dynasty = "≥u"  # Naa
+    birth_date = 1770.1.1
+    adm = 5
+    dip = 1
+    mil = 2
+  }
+}
+1800.1.1 = {
+  heir = {
+    name = "œÇ¸fO ÊTÉlÃë"  # Sumani Zwole
+    monarch_name = "œÇ¸fO ÊTÉlÃë"  # Sumani Zwole
+    dynasty = "≥u"  # Naa
+    birth_date = 1790.1.1
+    death_date = 1840.1.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 4
+  }
+}
+1820.1.1 = {
+  monarch = {
+    name = "œÇ¸fO ÊTÉlÃë"  # Sumani Zwole
+    dynasty = "≥u"  # Naa
+    birth_date = 1790.1.1
+    adm = 0
+    dip = 5
+    mil = 4
+  }
+}
+1820.1.1 = {
+  heir = {
+    name = "≈ñT^"  # Yakubu
+    monarch_name = "≈ñT^ I"  # Yakubu I
+    dynasty = "≥u"  # Naa
+    birth_date = 1810.1.1
+    death_date = 1864.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 5
+  }
+}
+1840.1.1 = {
+  monarch = {
+    name = "≈ñT^ I"  # Yakubu I
+    dynasty = "≥u"  # Naa
+    birth_date = 1810.1.1
+    adm = 3
+    dip = 5
+    mil = 5
+  }
+}
+1840.1.1 = {
+  heir = {
+    name = "?ñjSjg…bO"  # Abdulai
+    monarch_name = "?ñjSjg…bO I"  # Abdulai I
+    dynasty = "≥u"  # Naa
+    birth_date = 1834.1.1
+    death_date = 1876.1.1
+    claim = 95
+    adm = 1
+    dip = 5
+    mil = 3
+  }
+}
+1864.1.1 = {
+  monarch = {
+    name = "?ñjSjg…bO I"  # Abdulai I
+    dynasty = "≥u"  # Naa
+    birth_date = 1834.1.1
+    adm = 1
+    dip = 5
+    mil = 3
+  }
+}
+1864.1.1 = {
+  heir = {
+    name = "âRæè<S"  # Andani
+    monarch_name = "âRæè<S II"  # Andani II
+    dynasty = "≥u"  # Naa
+    birth_date = 1846.1.1
+    death_date = 1899.1.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 5
+  }
+}
+1876.1.1 = {
+  monarch = {
+    name = "âRæè<S II"  # Andani II
+    dynasty = "≥u"  # Naa
+    birth_date = 1846.1.1
+    adm = 0
+    dip = 5
+    mil = 5
+  }
+}
+1876.1.1 = {
+  heir = {
+    name = "4blö<S"  # Daimani
+    monarch_name = "4blö<S"  # Daimani
+    dynasty = "≥u"  # Naa
+    birth_date = 1869.1.1
+    death_date = 1917.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1899.1.1 = {
+  monarch = {
+    name = "4blö<S"  # Daimani
+    dynasty = "≥u"  # Naa
+    birth_date = 1869.1.1
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1899.1.1 = {
+  heir = {
+    name = "?ñjSjg…bO"  # Abdulai
+    monarch_name = "?ñjSjg…bO II"  # Abdulai II
+    dynasty = "≥u"  # Naa
+    birth_date = 1887.1.1
+    death_date = 1938.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 0
+  }
+}
+1917.1.1 = {
+  monarch = {
+    name = "?ñjSjg…bO II"  # Abdulai II
+    dynasty = "≥u"  # Naa
+    birth_date = 1887.1.1
+    adm = 5
+    dip = 4
+    mil = 0
+  }
+}
+1917.1.1 = {
+  heir = {
+    name = "lö»Tlö"  # Mahama
+    monarch_name = "lö»Tlö II"  # Mahama II
+    dynasty = "≥u"  # Naa
+    birth_date = 1908.1.1
+    death_date = 1948.2.6
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1938.1.1 = {
+  monarch = {
+    name = "lö»Tlö II"  # Mahama II
+    dynasty = "≥u"  # Naa
+    birth_date = 1908.1.1
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1938.1.1 = {
+  heir = {
+    name = "lö»Tlö"  # Mahama
+    monarch_name = "lö»Tlö III"  # Mahama III
+    dynasty = "≥u"  # Naa
+    birth_date = 1918.1.1
+    death_date = 1953.1.1
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 1
+  }
+}
+1948.2.6 = {
+  monarch = {
+    name = "lö»Tlö III"  # Mahama III
+    dynasty = "≥u"  # Naa
+    birth_date = 1918.1.1
+    adm = 0
+    dip = 1
+    mil = 1
+  }
+}
+1948.2.6 = {
+  heir = {
+    name = "?ñjSjg…bO"  # Abdulai
+    monarch_name = "?ñjSjg…bO III"  # Abdulai III
+    dynasty = "≥u"  # Naa
+    birth_date = 1923.1.1
+    death_date = 1968.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 1
+  }
+}
+1953.1.1 = {
+  monarch = {
+    name = "?ñjSjg…bO III"  # Abdulai III
+    dynasty = "≥u"  # Naa
+    birth_date = 1923.1.1
+    adm = 5
+    dip = 4
+    mil = 1
+  }
+}
+1953.1.1 = {
+  heir = {
+    name = "âRæè<S"  # Andani
+    monarch_name = "âRæè<S III"  # Andani III
+    dynasty = "≥u"  # Naa
+    birth_date = 1938.1.1
+    death_date = 1969.9.12
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 0
+  }
+}
+1968.1.1 = {
+  monarch = {
+    name = "âRæè<S III"  # Andani III
+    dynasty = "≥u"  # Naa
+    birth_date = 1938.1.1
+    adm = 4
+    dip = 4
+    mil = 0
+  }
+}
+1968.1.1 = {
+  heir = {
+    name = "?ñjSjg…bO"  # Abdulai
+    monarch_name = "?ñjSjg…bO IV"  # Abdulai IV
+    dynasty = "≥u"  # Naa
+    birth_date = 1939.1.1
+    death_date = 1974.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 5
+  }
+}
+1969.9.12 = {
+  monarch = {
+    name = "?ñjSjg…bO IV"  # Abdulai IV
+    dynasty = "≥u"  # Naa
+    birth_date = 1939.1.1
+    adm = 1
+    dip = 1
+    mil = 5
+  }
+}
+1969.9.12 = {
+  heir = {
+    name = "≈ñT^"  # Yakubu
+    monarch_name = "≈ñT^ II"  # Yakubu II
+    dynasty = "≥u"  # Naa
+    birth_date = 1940.1.1
+    death_date = 2002.3.27
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 5
+  }
+}
+1974.1.1 = {
+  monarch = {
+    name = "≈ñT^ II"  # Yakubu II
+    dynasty = "≥u"  # Naa
+    birth_date = 1940.1.1
+    adm = 1
+    dip = 0
+    mil = 5
+  }
+}

@@ -1,0 +1,160 @@
+government = tribal
+add_government_reform = tribal_kingdom
+mercantilism = 0.1
+primary_culture = lao
+religion = mahayana
+technology_group = early_chinese
+capital = 615
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = chinese
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1636.5.15 = {
+  technology_group = old_estern_asian
+}
+1900.1.1 = {
+  set_legacy_government = constitutional_monarchy
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1915.1.1 = {
+  technology_group = asian
+}
+1953.10.22 = {
+  monarch = {
+    name = "‰(„úe ¯Q"  # Sisavang Vong
+    dynasty = "tÃRÉb¦"  # Luang Phrabang
+    birth_date = 1885.7.14
+    adm = 1
+    mil = 3
+    dip = 5
+  }
+}
+1953.10.22 = {
+  heir = {
+    name = "‰(„úe æt¾³u"  # Sisavang Vatthana
+    monarch_name = "‰(„úe æt¾³u"  # Sisavang Vatthana
+    dynasty = "tÃRÉb¦"  # Luang Phrabang
+    birth_date = 1907.11.13
+    death_date = 1978.5.13
+    claim = 95
+    adm = 4
+    mil = 2
+    dip = 4
+  }
+}
+1959.10.20 = {
+  monarch = {
+    name = "‰(„úe æt¾³u"  # Sisavang Vatthana
+    birth_date = 1907.11.13
+    dynasty = "tÃRÉb¦"  # Luang Phrabang
+    adm = 4
+    mil = 2
+    dip = 4
+  }
+}
+1959.10.20 = {
+  heir = {
+    name = "¯Q („úe"  # Vong Savang
+    monarch_name = "¯Q („úe"  # Vong Savang
+    dynasty = "tÃRÉb¦"  # Luang Phrabang
+    birth_date = 1931.9.27
+    death_date = 1978.5.2
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+}
+1975.12.2 = {
+  monarch = {
+    name = "Ï‚ÑSªR¯Q"  # Souphanouvong
+    birth_date = 1909.7.13
+    adm = 2
+    mil = 4
+    dip = 2
+  }
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = presidential_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = communist_government
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = socialist_republic
+}
+1991.8.15 = {
+  monarch = {
+    name = "ïQqS 0NZIl"  # Kaysone Phomvilane
+    birth_date = 1920.12.13
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1992.11.25 = {
+  monarch = {
+    name = "ú‹ÈT ¯Q™lN"  # Nouhak Phoumsavanh
+    birth_date = 1910.4.9
+    adm = 4
+    mil = 3
+    dip = 2
+  }
+}
+1998.2.24 = {
+  monarch = {
+    name = "NWãN ‰Xofe"  # Khamtai Siphandon
+    birth_date = 1924.2.8
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+2006.6.8 = {
+  monarch = {
+    name = "1glšÌ‘ iÅ–‚˜"  # Choummaly Sayasone
+    birth_date = 1936.3.6
+    adm = 2
+    mil = 4
+    dip = 4
+  }
+}
+2016.1.22 = {
+  monarch = {
+    name = ",glb ƒlÉb	T"  # Bounnhang Vorachith
+    birth_date = 1938.8.15
+    adm = 4
+    mil = 3
+    dip = 3
+  }
+}

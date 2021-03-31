@@ -1,0 +1,16 @@
+spriteTypes = {	
+
+		spriteType = {
+		name = "GFX_advisor_chenqingzhi"
+		texturefile = "gfx//interface//advisors//chenqingzhi.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+
+        spriteType = {
+		name = "CHEN_QINGZHI_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_ASIAN/chen_qingzhi_eventPicture.dds"
+	}
+}

@@ -1,0 +1,280 @@
+##汉与都护府
+
+#NEW = 8.12.1~16.1.1
+
+
+# Far east
+dependency = {
+	subject_type = "duhufu_state"
+	first = HND
+	second = XIY
+	start_date = 2.1.1
+	end_date = 8.11.30
+}
+dependency = {
+	subject_type = "duhufu_state"	
+	first = NEW
+	second = XIY
+	start_date = 8.12.1
+	end_date = 15.12.31
+}
+dependency = {
+	subject_type = "duhufu_state"	
+	first = HND
+	second = XIY
+	start_date = 74.1.1
+	end_date = 76.1.1
+}
+
+dependency = {
+	subject_type = "duhufu_state"	
+	first = HND
+	second = XIY
+	start_date = 78.1.1
+	end_date = 107.1.1
+}
+
+dependency = {
+	subject_type = "duhufu_state"
+	first = HND
+	second = XI1
+	start_date = 125.1.1
+	end_date = 184.1.1
+}
+
+dependency = {
+	subject_type = "duhufu_state"
+	first = TNG
+	second = AN3
+	start_date = 622.1.1
+	end_date = 690.10.16
+}
+
+dependency = {
+	subject_type = "duhufu_state"
+	first = TNG
+	second = AN4
+	start_date = 640.1.1
+	end_date = 690.10.16
+}
+
+dependency = {
+	subject_type = "duhufu_state"
+	first = WZ1
+	second = AN3
+	start_date = 690.10.16
+	end_date = 705.2.21
+}
+
+dependency = {
+	subject_type = "duhufu_state"
+	first = WZ1
+	second = AN4
+	start_date = 690.10.16
+	end_date = 705.2.21
+}
+
+dependency = {
+	subject_type = "duhufu_state"
+	first = TNG
+	second = AN3
+	start_date = 705.2.21
+	end_date = 861.1.1
+}
+
+
+dependency = {
+	subject_type = "duhufu_state"
+	first = TNG
+	second = AN4
+	start_date = 705.2.21
+	end_date = 808.1.1
+}
+
+dependency = {
+	subject_type = "duhufu_state"
+	first = TNG
+	second = BT1
+	start_date = 709.1.1
+	end_date = 790.1.1
+}
+
+dependency = {
+	subject_type = "duhufu_state"
+	first = TNG
+	second = AN3
+	start_date = 866.7.1
+	end_date = 905.1.1
+}
+
+
+
+
+
+vassal = {
+	first = GOG
+	second = DON
+	start_date = 313.1.1
+	end_date = 420.1.1
+}
+
+#69-76 AIL vassal to HND
+vassal = {
+	first = HND
+	second = AIL
+	start_date = 69.1.1
+	end_date = 75.12.31
+}
+#文齐与汉朝
+alliance = {
+	first = HND
+	second = WQ1
+	start_date = 25.8.5
+	end_date = 36.1.1
+}
+vassal = {
+	first = QNG
+	second = WDC
+	start_date = 1661.1.1
+	end_date = 1673.12.1
+}
+#元梁
+alliance = {
+	first = YUA
+	second = YU2
+	start_date = 1371.1.1
+	end_date = 1382.1.1
+}
+#唐朝
+vassal = {
+	first = TNG
+	second = TRG 
+	start_date = 650.1.1
+	end_date = 669.12.30
+}
+
+vassal = {
+	first = TNG
+	second = SOG 
+	start_date = 659.1.1
+	end_date = 669.12.30
+}
+
+#金與齊
+vassal = {
+	first = GNN
+	second = DQ3 
+	start_date = 1130.7.1
+	end_date = 1137.11.18
+}
+#元朝
+vassal = {
+	first = MGE
+	second = DL1 
+	start_date = 1214.1.1
+	end_date = 1232.12.30
+}
+alliance = {
+	first = YUA
+	second = YU2
+	start_date = 1371.1.1
+	end_date = 1382.1.1
+}
+#MGE  - 朝显藩属
+#1258-1271
+vassal = {
+	first = MGE
+	second = GOY 
+	start_date = 1258.1.1
+	end_date = 1271.1.1
+}
+#元朝  - 朝显藩属
+#1271-1356
+vassal = {
+	first = YUA
+	second = GOY 
+	start_date = 1271.1.1
+	end_date = 1356.1.1
+}
+
+
+##1649 顺治六年，孙可望致书南明永历政权，愿「联合恢剿」
+alliance = {
+	first = MNG
+	second = CXI
+	start_date = 1649.1.1
+	end_date = 1666.1.1
+}
+
+vassal = {
+	first = QNG
+	second = PC1
+	start_date = 1662.4.1
+	end_date = 1673.12.1
+}
+
+
+#汪伪政权
+vassal = {
+	first = JAP
+	second = WW1 
+	start_date = 1940.3.1
+	end_date = 1945.8.15
+}
+
+#抗日合作
+alliance = {
+	first = ROC
+	second = CW1
+	start_date = 1937.9.23
+	end_date = 1946.1.1
+}
+
+alliance = {
+	first = ROC
+	second = NM1
+	start_date = 1937.7.7
+	end_date = 1946.1.1
+}
+
+alliance = {
+	first = ROC
+	second = QM1
+	start_date = 1937.7.7
+	end_date = 1946.1.1
+}
+
+alliance = {
+	first = ROC
+	second = JX1
+	start_date = 1937.7.7
+	end_date = 1946.1.1
+}
+
+alliance = {
+	first = ROC
+	second = DX2
+	start_date = 1937.7.7
+	end_date = 1946.1.1
+}
+
+alliance = {
+	first = ROC
+	second = GX1
+	start_date = 1937.7.7
+	end_date = 1946.1.1
+}
+#蒙古和西夏
+vassal = {
+	first = MGE
+	second = XIA 
+	start_date = 1211.1.1
+	end_date = 1227.8.28
+}
+#元朝和王保保
+alliance = {
+	first = YUA
+	second = ZH2
+	start_date = 1359.1.1
+	end_date = 1371.1.1
+}	

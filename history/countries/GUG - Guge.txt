@@ -1,0 +1,325 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = tibetan
+religion = vajrayana
+technology_group = early_chinese
+capital = 2452
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+630.1.1 = { religion = vajrayana }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+775.1.1 = { religion = tibetan_buddhism }
+837.1.1 = { religion = tibetan_bon }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+978.1.1 = { religion = tibetan_buddhism }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+
+1396.1.1 = {
+	monarch = {
+		name = "WSZW∑V"
+	
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}
+
+1396.1.1 = {
+	heir = {
+		name = "WS˙înfi`∑V"
+		monarch_name = "WS˙înfi`∑V"
+	
+		birth_Date = 1390.1.1
+		death_Date = 1449.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1424.1.1 = {
+	monarch = {
+		name = "WS˙înfi`∑V"
+	
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1424.1.1 = {
+	heir = {
+		name = "WSQhsO∑V"
+		monarch_name = "WSQhsO∑V"
+	
+		birth_Date = 1404.1.1
+		death_Date = 1470.1.1
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1449.1.1 = {
+	monarch = {
+		name = "WSQhsO∑V"
+	
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1449.1.1 = {
+	heir = {
+		name = "WÙTQhWÙTâv"
+		monarch_name = "WÙTQhWÙTâv"
+	
+		birth_Date = 1429.1.1
+		death_Date = 1485.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1470.1.1 = {
+	monarch = {
+		name = "WÙTQhWÙTâv"
+	
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1470.1.1 = {
+	heir = {
+		name = "1Å(Ñ^<h^…b"
+		monarch_name = "1Å(Ñ^<h^…b"
+	
+		birth_Date = 1460.1.1
+		death_Date = 1510.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1485.1.1 = {
+	monarch = {
+		name = "1Å(Ñ^<h^…b"
+	
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1485.1.1 = {
+	heir = {
+		name = "(ÑaS∑V"
+		monarch_name = "(ÑaS∑V"
+	
+		birth_Date = 1470.1.1
+		death_Date = 1537.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1510.1.1 = {
+	monarch = {
+		name = "(ÑaS∑V"
+	
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1510.1.1 = {
+	heir = {
+		name = "	TåÅÙTmV∑VaS∑V"
+		monarch_name = "	TåÅÙTmV∑VaS∑V"
+	
+		birth_Date = 1480.1.1
+		death_Date = 1555.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+1537.1.1 = {
+	monarch = {
+		name = "	TåÅÙT‚l∑VaS∑V"
+	
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+1537.1.1 = {
+	heir = {
+		name = "éU<hÙT‚l"
+		monarch_name = "éU<hÙT‚l"
+	
+		birth_Date = 1510.1.1
+		death_Date = 1570.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1555.1.1 = {
+	monarch = {
+		name = "éU<hÙT‚l"
+	
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1555.1.1 = {
+	heir = {
+		name = "WSéUÙT‚l"
+		monarch_name = "WSéUÙT‚l"
+	
+		birth_Date = 1540.1.1
+		death_Date = 1590.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1570.1.1 = {
+	monarch = {
+		name = "WSéUÙT‚l"
+	
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1570.1.1 = {
+	heir = {
+		name = "“R<SidÙT‚l"
+		monarch_name = "“R<SidÙT‚l"
+	
+		birth_Date = 1550.1.1
+		death_Date = 1605.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1590.1.1 = {
+	monarch = {
+		name = "“R<SidÙT‚l"
+	
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1590.1.1 = {
+	heir = {
+		name = "“R<h^ÙT‚l"
+		monarch_name = "“R<h^ÙT‚l"
+	
+		birth_Date = 1570.1.1
+		death_Date = 1618.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+}
+
+1605.1.1 = {
+	monarch = {
+		name = "“R<h^ÙT‚l"
+	
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1605.1.1 = {
+	heir = {
+		name = "“RWS	V<h^∑V"
+		monarch_name = "“RWS	V<h^∑V"
+	
+		birth_Date = 1570.1.1
+		death_Date = 1621.1.1
+		claim = 95
+		adm = 3
+		dip = 0
+		mil = 4
+	}
+}
+
+1618.1.1 = {
+	monarch = {
+		name = "“RWS	V<h^∑V"
+	
+		adm = 3
+		dip = 0
+		mil = 4
+	}
+}
+
+1618.1.1 = {
+	heir = {
+		name = "“RéUÓO<h^∑V"
+		monarch_name = "“RéUÓO<h^∑V"
+	
+		birth_Date = 1600.1.1
+		death_Date = 1635.1.1
+		claim = 95
+		adm = 3
+		dip = 0
+		mil = 0
+	}
+}
+
+1621.1.1 = {
+	monarch = {
+		name = "“RéUÓO<h^∑V"
+	
+		adm = 3
+		dip = 0
+		mil = 0
+	}
+}
+1636.5.15 = { technology_group = old_estern_asian }
+1642.1.1 = { government = dalailama_monastic add_government_reform = dalailama_monastic_reform  }
+#Annexed by Laddakh 1630
+
+1949.10.1 = { technology_group = modern_chinese }

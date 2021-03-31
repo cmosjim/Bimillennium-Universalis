@@ -1,0 +1,112 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = bemba
+religion = catholic
+technology_group = muslim
+capital = 2851
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1900.1.1 = {
+  government = republic
+  add_government_reform = oligarchy_reform
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1910.1.1 = {
+  religion = liberalism
+}
+1964.10.24 = {
+  monarch = {
+    name = "¯w<S¯e aSÁ¾"  # Kenneth Kaunda
+    adm = 2
+    dip = 5
+    mil = 3
+    religion = protestant
+  }
+}
+1991.11.2 = {
+  monarch = {
+    name = "V÷–·VÌ‘KQ GYbSôT"  # Frederick Chiluba
+    adm = 5
+    dip = 3
+    mil = 1
+    religion = protestant
+  }
+}
+2002.1.2 = {
+  monarch = {
+    name = "Rôu ÆYæt³uæt(„"  # Levy Mwanawasa
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = protestant
+  }
+}
+2008.6.29 = {
+  monarch = {
+    name = "œ®všN ís¾"  # Rupiah Banda
+    adm = 5
+    dip = 4
+    mil = 1
+    religion = protestant
+  }
+}
+2011.9.23 = {
+  monarch = {
+    name = "ÈKQS („TX"  # Michael Sata
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = protestant
+  }
+}
+2014.10.28 = {
+  monarch = {
+    name = "ÖvO ¯eÑyyr"  # Guy Scott
+    adm = 2
+    dip = 3
+    mil = 2
+    religion = protestant
+  }
+}
+2015.1.25 = {
+  monarch = {
+    name = "ÃW·V R &OäS"  # Edgar Lungu
+    adm = 4
+    dip = 3
+    mil = 2
+    religion = protestant
+  }
+}

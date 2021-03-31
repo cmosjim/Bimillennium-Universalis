@@ -1,0 +1,599 @@
+government = tribal
+add_government_reform = barbarian_reform
+mercantilism = 0.1
+technology_group = barbarian
+religion = druidism
+primary_culture = irish
+capital = 375
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+450.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+  government_rank = 1
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+536.1.1 = {
+  technology_group = western
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+700.1.1 = {
+  religion = chalcedonism
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+867.1.1 = {
+  religion = catholic
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1118.1.1 = {
+  monarch = {
+    name = "TX∑V"  # Tadgh
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1088.1.1
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+1118.1.1 = {
+  heir = {
+    name = "—ySlöKQ"  # Cormac
+    monarch_name = "—ySlöKQ"  # Cormac
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1093.1.1
+    death_date = 1138.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+1123.1.1 = {
+  monarch = {
+    name = "—ySlöKQ"  # Cormac
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1093.1.1
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+1123.1.1 = {
+  heir = {
+    name = "Y˙ã"  # Donogh
+    monarch_name = "Y˙ã"  # Donogh
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1108.1.1
+    death_date = 1143.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1138.1.1 = {
+  monarch = {
+    name = "Y˙ã"  # Donogh
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1108.1.1
+    adm = 2
+    dip = 4
+    mil = 2
+  }
+}
+1138.1.1 = {
+  heir = {
+    name = "Dermod MÛr"
+    monarch_name = "Dermod MÛr"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1113.1.1
+    death_date = 1185.1.1
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 1
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1143.1.1 = {
+  monarch = {
+    name = "Dermod MÛr"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1113.1.1
+    adm = 4
+    dip = 5
+    mil = 1
+  }
+}
+1155.1.1 = {
+  heir = {
+    name = "Y≥uS idS"  # Donal MÛr
+    monarch_name = "Y≥uS idS"  # Donal MÛr
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1155.1.1
+    death_date = 1206.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 1
+  }
+}
+1185.1.1 = {
+  monarch = {
+    name = "Y≥uS idS"  # Donal MÛr
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1155.1.1
+    adm = 0
+    dip = 2
+    mil = 1
+  }
+}
+1185.1.1 = {
+  heir = {
+    name = "¨Ç9h"  # Fingen
+    monarch_name = "¨Ç9h"  # Fingen
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1176.1.1
+    death_date = 1207.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+1206.1.1 = {
+  monarch = {
+    name = "¨Ç9h"  # Fingen
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1176.1.1
+    adm = 2
+    dip = 5
+    mil = 4
+  }
+}
+1206.1.1 = {
+  heir = {
+    name = "ÍèöNSlöyr jg≥u ∑VWOÅR"  # Diarmait Duna Droignein
+    monarch_name = "ÍèöNSlöyr jg≥u ∑VWOÅR"  # Diarmait Duna Droignein
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1177.1.1
+    death_date = 1229.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}
+1207.1.1 = {
+  monarch = {
+    name = "ÍèöNSlöyr jg≥u ∑VWOÅR"  # Diarmait Duna Droignein
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1177.1.1
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}
+1207.1.1 = {
+  heir = {
+    name = "—ySlöKQ ¨Çi`"  # Cormac Fionn
+    monarch_name = "—ySlöKQ ¨Çi`"  # Cormac Fionn
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1199.1.1
+    death_date = 1247.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 1
+  }
+}
+1229.1.1 = {
+  monarch = {
+    name = "—ySlöKQ ¨Çi`"  # Cormac Fionn
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1199.1.1
+    adm = 2
+    dip = 4
+    mil = 1
+  }
+}
+1229.1.1 = {
+  heir = {
+    name = "Domnall Got Cairprech"
+    monarch_name = "Domnall Got Cairprech"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1217.1.1
+    death_date = 1251.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+1247.1.1 = {
+  monarch = {
+    name = "Domnall Got Cairprech"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1217.1.1
+    adm = 4
+    dip = 4
+    mil = 5
+  }
+}
+1247.1.1 = {
+  heir = {
+    name = "Finghin"
+    monarch_name = "Finghin"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1221.1.1
+    death_date = 1261.1.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 1
+  }
+}
+1251.1.1 = {
+  monarch = {
+    name = "Finghin"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1221.1.1
+    adm = 0
+    dip = 5
+    mil = 1
+  }
+}
+1251.1.1 = {
+  heir = {
+    name = "—ySlöKQ"  # Cormac
+    monarch_name = "—ySlöKQ"  # Cormac
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1231.1.1
+    death_date = 1262.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+1259.1.1 = {
+  capital = 4503
+}
+1261.1.1 = {
+  monarch = {
+    name = "—ySlöKQ"  # Cormac
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1231.1.1
+    adm = 1
+    dip = 1
+    mil = 4
+  }
+}
+1261.1.1 = {
+  heir = {
+    name = "Domnall Ruad"
+    monarch_name = "Domnall Ruad"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1232.1.1
+    death_date = 1302.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1262.1.1 = {
+  monarch = {
+    name = "Domnall Ruad"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1232.1.1
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1272.1.1 = {
+  heir = {
+    name = "Donal Oge"
+    monarch_name = "Donal Oge"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1272.1.1
+    death_date = 1306.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 5
+  }
+}
+1302.1.1 = {
+  monarch = {
+    name = "Donal Oge"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1272.1.1
+    adm = 2
+    dip = 5
+    mil = 5
+  }
+}
+1302.1.1 = {
+  heir = {
+    name = "Donogh Carrthain"
+    monarch_name = "Donogh Carrthain"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1276.1.1
+    death_date = 1310.1.1
+    claim = 95
+    adm = 0
+    dip = 4
+    mil = 1
+  }
+}
+1306.1.1 = {
+  monarch = {
+    name = "Donogh Carrthain"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1276.1.1
+    adm = 0
+    dip = 4
+    mil = 1
+  }
+}
+1306.1.1 = {
+  heir = {
+    name = "Diarmait Oge"
+    monarch_name = "Diarmait Oge"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1280.1.1
+    death_date = 1326.1.1
+    claim = 95
+    adm = 0
+    dip = 3
+    mil = 5
+  }
+}
+1310.1.1 = {
+  monarch = {
+    name = "Diarmait Oge"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1280.1.1
+    adm = 0
+    dip = 3
+    mil = 5
+  }
+}
+1310.1.1 = {
+  heir = {
+    name = "—ySlöKQ"  # Cormac
+    monarch_name = "—ySlöKQ"  # Cormac
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1296.1.1
+    death_date = 1359.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 1
+  }
+}
+1326.1.1 = {
+  monarch = {
+    name = "—ySlöKQ"  # Cormac
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1296.1.1
+    adm = 5
+    dip = 5
+    mil = 1
+  }
+}
+1329.1.1 = {
+  heir = {
+    name = "Donal Oge"
+    monarch_name = "Donal Oge"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1329.1.1
+    death_date = 1390.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1359.1.1 = {
+  monarch = {
+    name = "Donal Oge"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1329.1.1
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1360.1.1 = {
+  heir = {
+    name = "Tadgh na Mainistreach"
+    monarch_name = "Tadgh na Mainistreach"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1360.1.1
+    death_date = 1428.1.1
+    claim = 95
+    adm = 2
+    dip = 0
+    mil = 4
+  }
+}
+1390.1.1 = {
+  monarch = {
+    name = "Tadgh na Mainistreach"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1360.1.1
+    adm = 2
+    dip = 0
+    mil = 4
+  }
+}
+1398.1.1 = {
+  heir = {
+    name = "Domhnall an Dana"
+    monarch_name = "Domhnall an Dana"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1398.1.1
+    death_date = 1469.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+1428.1.1 = {
+  monarch = {
+    name = "Domhnall an Dana"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1398.1.1
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+1439.1.1 = {
+  heir = {
+    name = "Tadgh Liath"
+    monarch_name = "Tadgh Liath"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1439.1.1
+    death_date = 1503.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 3
+  }
+}
+1469.1.1 = {
+  monarch = {
+    name = "Tadgh Liath"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1439.1.1
+    adm = 1
+    dip = 4
+    mil = 3
+  }
+}
+1473.1.1 = {
+  heir = {
+    name = "Y∆Y≥uS"  # Domnall
+    monarch_name = "Y∆Y≥uS"  # Domnall
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1473.1.1
+    death_date = 1508.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+1503.1.1 = {
+  monarch = {
+    name = "Y∆Y≥uS"  # Domnall
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1473.1.1
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+1503.1.1 = {
+  heir = {
+    name = "Cormac Ladhrach"
+    monarch_name = "Cormac Ladhrach"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1478.1.1
+    death_date = 1516.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 0
+  }
+}
+1508.1.1 = {
+  monarch = {
+    name = "Cormac Ladhrach"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1478.1.1
+    adm = 2
+    dip = 4
+    mil = 0
+  }
+}
+1508.1.1 = {
+  heir = {
+    name = "Domhnall an Druiminin"
+    monarch_name = "Domhnall an Druiminin"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1486.1.1
+    death_date = 1558.1.1
+    claim = 95
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+1516.1.1 = {
+  monarch = {
+    name = "Domhnall an Druiminin"
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1486.1.1
+    adm = 3
+    dip = 5
+    mil = 3
+  }
+}
+1540.1.1 = {
+  heir = {
+    name = "Y∆Y≥uS"  # Domhnall
+    monarch_name = "Y∆Y≥uS"  # Domhnall
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1540.1.1
+    death_date = 1596.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 0
+  }
+}
+1558.1.1 = {
+  monarch = {
+    name = "Y∆Y≥uS"  # Domhnall
+    dynasty = "¶ûaS!ï"  # MacCarthy
+    birth_date = 1540.1.1
+    adm = 3
+    dip = 4
+    mil = 0
+  }
+}
+1617.1.1 = {
+  set_legacy_government = administrative_monarchy
+}
+1707.1.1 = {
+  set_legacy_government = constitutional_monarchy
+}

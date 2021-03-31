@@ -1,0 +1,50 @@
+#440 - Qaraqalpak
+
+owner = KHW
+controller = KHW
+add_core = KHW
+is_city = yes
+culture = uzbehk
+religion = zoroastrian
+capital = "Kath"
+trade_goods = salt
+hre = no
+discovered_by = nomad_group
+discovered_by = eastern_nomad_group
+discovered_by = western_nomad_group
+discovered_by = ottoman
+discovered_by = middle_eastern
+discovered_by = muslim
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+80.1.1 = { owner = KUS controller = KUS add_core = KUS }
+241.1.1 = { owner = SAS controller = SAS add_core = SAS }
+260.1.1 = { owner = KHW controller = KHW remove_core = KUS }
+420.1.1 = { owner = HEP controller = HEP add_core = HEP }
+559.1.1 = { owner = SAS controller = SAS add_core = SAS remove_core = HEP }
+583.1.1 = { owner = WGO controller = WGO add_core = WGO remove_core = SAS }
+659.1.1 = { owner = SOG controller = SOG add_core = SOG remove_core = WGO }
+800.1.1 = { religion = sunni }
+822.1.1 = { owner = TAH controller = TAH add_core = TAH remove_core = SOG }
+873.1.1 = { owner = SAM controller = SAM add_core = SAM remove_core = TAH }
+999.1.1 = { owner = GHZ controller = GHZ add_core = GHZ remove_core = SAM }
+1000.1.1 = { base_tax = 3 base_production = 3 }
+1037.1.1 = { owner = SEL controller = SEL add_core = SEL remove_core = GHZ }
+1097.1.1 = { owner = KHW controller = KHW add_core = KHW remove_core = SEL }
+1200.1.1 = { base_manpower = 3 }
+1221.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = KHW } # Mongols razed the city and massacred the population
+1260.1.1 = { owner = GLH controller = GLH add_core = GLH remove_core = MGE }
+1347.1.1 = { owner = XC1 controller = XC1 add_core = XC1 remove_core = CHG }
+1360.1.1 = { owner = DC1 controller = DC1 add_core = DC1 remove_core = XC1 }
+1370.1.1 = { owner = TIM controller = TIM add_core = TIM remove_core = DC1 }1370.1.1 = { owner = TIM controller = TIM add_core = TIM capital = "Chimbay" remove_core = GLH }
+1409.5.13 = { owner = TRS controller = TRS add_core = TRS remove_core = TIM }#Ulugh Beg is made Governor of Samarkand
+1456.1.1 = { add_core = KZH }
+1500.1.1 = { owner = UZ1 controller = UZ1 add_core = UZ1 remove_core = TRS }
+1511.1.1 = { owner = KHI controller = KHI add_core = KHI remove_core = UZ1 } # Khiva separates from Uzbeks
+1920.1.1  = { owner = RUS controller = RUS add_core = RUS }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV remove_core = RUS }
+1924.10.27 = { add_core = UZB remove_core = KHI remove_core = UZ1 }
+1932.1.1   = { capital = "Nukus" }
+1991.12.8  = { owner = UZB controller = UZB remove_core = SOV remove_core = RUS }

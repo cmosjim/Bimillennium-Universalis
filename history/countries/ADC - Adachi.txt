@@ -1,0 +1,121 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+primary_culture = japanese
+religion = shinto
+technology_group = early_chinese
+capital = 4484	# Mikawa
+	
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1192.7.12 = {
+	monarch = {
+		name = "‰R¾ofÛv"
+		#dynasty = "Adachi"
+		birth_date = 1170.1.1
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+1210.1.1 = {
+	heir = {
+		name = "‰R¾INof"
+		monarch_name = "‰R¾INof"
+		#dynasty = "Adachi"
+		birth_date = 1210.1.1
+		death_date = 1253.6.30
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+1219.2.13 = {
+	monarch = {
+		name = "‰R¾INof"
+		#dynasty = "Adachi"
+		birth_date = 1210.1.1
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+1231.1.1 = {
+	heir = {
+		name = "‰R¾ðlÛv"
+		monarch_name = "‰R¾ðlÛv"
+		#dynasty = "Adachi"
+		birth_date = 1231.1.1
+		death_date = 1285.12.14
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1253.6.30 = {
+	monarch = {
+		name = "‰R¾ðlÛv"
+		#dynasty = "Adachi"
+		birth_date = 1231.1.1
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1259.1.1 = {
+	heir = {
+		name = "‰R¾—Rof"
+		monarch_name = "‰R¾—Rof"
+		#dynasty = "Adachi"
+		birth_date = 1259.1.1
+		death_date = 1285.12.14
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1285.12.14 = {
+	monarch = {
+		name = "‰R¾—Rof"
+		#dynasty = "Adachi"
+		birth_date = 1285.1.1
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1310.1.1 = {
+	heir = {
+		name = "‰R¾öe>f"
+		monarch_name = "‰R¾öe>f"
+		#dynasty = "Adachi"
+		birth_date = 1310.1.1
+		death_date = 1333.7.4
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 0
+	}
+}
+1636.5.15 = { technology_group = old_estern_asian }
+1944.1.1 = { technology_group = asian }

@@ -1,0 +1,74 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = chihan
+capital = 2488	# Henyang
+#∑^ôq^Æã≤dÈÖˇ4T	NBhéNTt^ASåNgwçuQÕSn
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1636.5.15 = { technology_group = qing_chinese }
+1661.1.1 = {
+	monarch = {
+		name = "4T	NBh"
+		#dynasty = " "
+		
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1661.1.1 = {
+	heir = {
+		name = "4TNXo"
+		monarch_name = "4TNXo"
+		claim = 100
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+1661.6.1 = { capital = 2488 }
+1673.12.28 = {
+	add_country_modifier = {
+		name = "md_fan_qing_fuming"
+		duration = 3650
+	}
+}
+1678.1.1 = {
+	government = gov_celestial_empire
+	add_government_reform = celestial_empire
+}
+
+1661.6.1 = { capital = 2485 }# Henyang
+
+1678.8.1 = { 
+	monarch = {
+		name = "4TNXo"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+1680.10.1 = { capital = 674 }
+1681.10.29 = {
+	remove_country_modifier = md_fan_qing_fuming
+}
+
+1949.10.1 = { technology_group = modern_chinese }

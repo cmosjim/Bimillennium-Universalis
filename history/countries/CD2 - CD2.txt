@@ -1,0 +1,34 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+government_rank = 1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = chihan
+capital = 669
+historical_rival = YUA
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+#H–ËSšRÿ1330ÿ1368t^	ÿÿmN	gjOH–	gšRÿWRýV‰RÿÈSô‹WR‰RýV08lS
+1321.1.1 = {
+	monarch = {
+		name = "H–ËSšR"
+		birth_date = 1330.1.1
+		death_date = 1368.1.1
+		adm = 4
+		dip = 5
+		mil = 4
+		leader = { name = "H–ËSšR"	 type = general	fire = 6	shock = 6 manuever = 5	siege = 4 }
+	}	
+	
+}	
+
+1949.10.1 = { technology_group = modern_chinese }

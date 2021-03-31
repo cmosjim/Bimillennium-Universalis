@@ -1,0 +1,98 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = zhongyuan
+capital = 3229	
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+187.1.1 = { 
+	monarch = {
+		
+		name = "ùfÍd"
+		#ùfÍdÿ155t^ÿ220t^3g15åe	ÿÿWRmR·V
+		birth_date = 155.1.1
+		death_date = 220.3.15
+		adm = 6
+		dip = 5
+		mil = 6
+		leader = { 
+                name = "ùfÍd"	
+                type = general	
+                #rank = 0	
+                fire = 6	
+                shock = 6	
+                manuever = 5
+                siege = 5
+		}
+	}
+}
+
+187.1.1 = { 
+	heir = {
+		name = "ùfN"
+		birth_date = 187.1.1
+		death_date = 226.6.29
+		claim = 100		
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+
+}
+	
+194.1.1 = { capital = 2502 }
+195.1.1 = { capital = 3229 }
+199.1.1 = {
+	add_country_modifier = {
+		name = "md_chuanguoyuxi"
+		duration = -1
+	}	
+}	
+220.1.1 = {
+	monarch = {
+		name = "ùfN"
+		#dynasty = " "
+		
+		birth_date = 187.1.1
+		adm = 5
+		dip = 3
+		mil = 3
+		leader = {
+				name = "ùfN"
+		        type = general	
+                #rank = 0	
+                fire = 5	
+                shock = 5
+                manuever = 4
+                siege = 5
+		}
+	}
+}
+
+220.1.1 = {
+	remove_country_modifier = md_chuanguoyuxi
+}
+
+220.1.2 = { capital = 2492}
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = {
+	government = modern_chinese_warlord
+	add_government_reform = modern_chinese_warlord_reform
+	religion = liberalism
+}
+
+1949.10.1 = { technology_group = modern_chinese }

@@ -1,0 +1,71 @@
+government = gov_celestial_empire
+add_government_reform = celestial_empire
+government_rank = 3
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = chihan
+capital = 3172
+
+#URnSŞTÿ)YRCQt^ÿ742	ÿÿ9e:NvbÎ˜á0
+#ó·VŒNt^ÿ757	ÿÿƒw—Rx^4NvbÎ˜áÿTt^6e
+#Y•‰R0m3–ÿASŒNg¾‹näQÔœ^ÿ÷S‰¬Nÿ
+#Nbı0¬NFQ0³lWS0*YŸSTğy”N¬N0
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+
+
+890.1.1 = {
+	monarch = {
+		name = "Ngƒ"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+907.1.1 = {
+	add_country_modifier = {
+		name = "wudaigeju"
+		duration = -1 
+	}
+}
+924.1.1 = {
+	remove_country_modifier = wudaigeju
+}
+937.9.4 = {
+	monarch = {
+		name = "NgÎNîf"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1912.2.12 = {
+
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+	religion = liberalism
+}
+1949.10.1 = { technology_group = modern_chinese }
+
+

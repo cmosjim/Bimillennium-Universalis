@@ -1,0 +1,117 @@
+government = monarchy
+add_government_reform = mandala_reform
+primary_culture = javanese
+technology_group = early_chinese
+religion = hinduism
+capital = 2414
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = chinese
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1045.1.1 = {
+  monarch = {
+    name = "pgšNætƒ"  # Jayawarsa
+    dynasty = "O¯ešN³u"  # Isyana
+    adm = 3
+    mil = 5
+    dip = 2
+  }
+}
+1115.1.1 = {
+  monarch = {
+    name = "aS…hÀNætÉb"  # Kameshvara
+    dynasty = "O¯ešN³u"  # Isyana
+    adm = 4
+    mil = 2
+    dip = 4
+  }
+}
+1130.1.1 = {
+  monarch = {
+    name = "pgšNôTšN"  # Jayabhaya
+    dynasty = "O¯ešN³u"  # Isyana
+    adm = 2
+    mil = 1
+    dip = 2
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1160.1.1 = {
+  monarch = {
+    name = "(„ôuÀNƒlÉb"  # Sarwweshwara
+    dynasty = "O¯ešN³u"  # Isyana
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1170.1.1 = {
+  monarch = {
+    name = "Œ‚^t6wÀNƒlÉb"  # Aryyeshwara
+    dynasty = "O¯ešN³u"  # Isyana
+    adm = 5
+    dip = 3
+    mil = 4
+  }
+}
+1180.1.1 = {
+  monarch = {
+    name = "u·VÉb"  # Gandra
+    dynasty = "O¯ešN³u"  # Isyana
+    adm = 1
+    mil = 3
+    dip = 5
+  }
+}
+1190.1.1 = {
+  monarch = {
+    name = "¯e^t RS"  # Shrngga
+    dynasty = "O¯ešN³u"  # Isyana
+    adm = 4
+    mil = 2
+    dip = 4
+  }
+}
+1200.1.1 = {
+  monarch = {
+    name = "¯wTXÉbšN"  # Kertalaya
+    dynasty = "O¯ešN³u"  # Isyana
+    adm = 2
+    mil = 3
+    dip = 2
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1636.5.15 = {
+  technology_group = old_estern_asian
+}
+1949.10.1 = {
+  technology_group = asian
+}

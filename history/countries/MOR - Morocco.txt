@@ -1,0 +1,1842 @@
+government = monarchy
+add_government_reform = iqta
+mercantilism = 0.1
+primary_culture = moroccan
+religion = shiite # Zaidi islam
+technology_group = muslim
+capital = 343	# Fez
+religious_school = zaidi_school
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+789.1.1 = {
+	monarch = {
+		name = "O·VÌ‘¯e I"
+		dynasty = "O·VÌ‘¯e"
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+789.1.1 = {
+	heir = {
+		name = "O·VÌ‘¯e"
+		monarch_name = "O·VÌ‘¯e II"
+		dynasty = "O·VÌ‘¯e"
+		birth_date = 761.1.1
+		death_date = 828.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 5
+	}
+}
+
+791.1.1 = {
+	monarch = {
+		name = "O·VÌ‘¯e II"
+		dynasty = "O·VÌ‘¯e"
+		adm = 1
+		dip = 2
+		mil = 5
+	}
+}
+
+798.1.1 = {
+	heir = {
+		name = "FzUØ·V"
+		monarch_name = "FzUØ·V I"
+		dynasty = "O·VÌ‘¯e"
+		birth_date = 798.1.1
+		death_date = 836.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+828.1.1 = {
+	monarch = {
+		name = "FzUØ·V I"
+		dynasty = "O·VÌ‘¯e"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+828.1.1 = {
+	heir = {
+		name = "?–Ì‘"
+		monarch_name = "?–Ì‘ I"
+		dynasty = "O·VÌ‘¯e"
+		birth_date = 806.1.1
+		death_date = 848.1.1
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}
+
+836.1.1 = {
+	monarch = {
+		name = "?–Ì‘ I"
+		dynasty = "O·VÌ‘¯e"
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}
+
+836.1.1 = {
+	heir = {
+		name = "öSwmšN"
+		monarch_name = "öSwmšN I"
+		dynasty = "O·VÌ‘¯e"
+		birth_date = 818.1.1
+		death_date = 864.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+848.1.1 = {
+	monarch = {
+		name = "öSwmšN I"
+		dynasty = "O·VÌ‘¯e"
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+848.1.1 = {
+	heir = {
+		name = "öSwmšN"
+		monarch_name = "öSwmšN II"
+		dynasty = "O·VÌ‘¯e"
+		birth_date = 834.1.1
+		death_date = 874.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+864.1.1 = {
+	monarch = {
+		name = "öSwmšN II"
+		dynasty = "O·VÌ‘¯e"
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+864.1.1 = {
+	heir = {
+		name = "?–Ì‘"
+		monarch_name = "?–Ì‘ II"
+		dynasty = "O·VÌ‘¯e"
+		birth_date = 844.1.1
+		death_date = 883.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+874.1.1 = {
+	monarch = {
+		name = "?–Ì‘ II"
+		dynasty = "O·VÌ‘¯e"
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+874.1.1 = {
+	heir = {
+		name = "öSwmšN"
+		monarch_name = "öSwmšN III"
+		dynasty = "O·VÌ‘¯e"
+		birth_date = 853.1.1
+		death_date = 904.1.1
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+883.1.1 = {
+	monarch = {
+		name = "öSwmšN III"
+		dynasty = "O·VÌ‘¯e"
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
+
+883.1.1 = {
+	heir = {
+		name = "öSwmšN"
+		monarch_name = "öSwmšN IV"
+		dynasty = "O·VÌ‘¯e"
+		birth_date = 874.1.1
+		death_date = 925.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+
+904.1.1 = {
+	monarch = {
+		name = "öSwmšN IV"
+		dynasty = "O·VÌ‘¯e"
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+
+904.1.1 = {
+	heir = {
+		name = "ÈTQh I ÈT RÆY"
+		monarch_name = "ÈTQh I ÈT RÆY"
+		dynasty = "O·VÌ‘¯e"
+		birth_date = 895.1.1
+		death_date = 937.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+925.1.1 = {
+	monarch = {
+		name = "ÈTQh I ÈT RÆY"
+		dynasty = "O·VÌ‘¯e"
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+925.1.1 = {
+	heir = {
+		name = "aS‰ÆY uªR"
+		monarch_name = "aS‰ÆY uªR"
+		dynasty = "O·VÌ‘¯e"
+		birth_date = 907.1.1
+		death_date = 948.1.1
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+937.1.1 = {
+	monarch = {
+		name = "aS‰ÆY uªR"
+		dynasty = "O·VÌ‘¯e"
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+937.1.1 = {
+	heir = {
+		name = "?–^0Œ‚ÀN0Œ‚ÈTÈ·V"
+		monarch_name = "?–^0Œ‚ÀN0Œ‚ÈTÈ·V"
+		dynasty = "O·VÌ‘¯e"
+		birth_date = 918.1.1
+		death_date = 954.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+948.1.1 = {
+	monarch = {
+		name = "?–^0Œ‚ÀN0Œ‚ÈTÈ·V"
+		dynasty = "O·VÌ‘¯e"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+948.1.1 = {
+	heir = {
+		name = "ÈTQh0,g0NWœQ"
+		monarch_name = "ÈTQh0,g0NWœQ"
+		dynasty = "O·VÌ‘¯e"
+		birth_date = 920.1.1
+		death_date = 974.1.1
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+954.1.1 = {
+	monarch = {
+		name = "ÈTQh0,g0NWœQ"
+		dynasty = "O·VÌ‘¯e"
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+985.1.1 = { religion = sunni religious_school = m?–Ì‘ki_school }
+
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1040.1.1 = { capital = 344 } # Marrakech
+
+1040.1.1 = {
+	monarch = {
+		name = "?–jSjgÉb"
+		dynasty = "?–S«ƒÉbôu·V"
+		birth_date = 1010.1.1
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+1040.1.1 = {
+	heir = {
+		name = "?–^0ôTKQ"
+		monarch_name = "?–^0ôTKQ"
+		dynasty = "?–S«ƒÉbôu·V"
+		birth_date = 1029.1.1
+		death_date = 1087.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1059.7.7 = {
+	monarch = {
+		name = "?–^0ôTKQ"
+		dynasty = "?–S«ƒÉbôu·V"
+		birth_date = 1029.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1059.7.7 = {
+	heir = {
+		name = "¦umt+Y"
+		monarch_name = "¦umt+Y"
+		dynasty = "?–S«ƒÉbôu·V"
+		birth_date = 1019.1.1
+		death_date = 1106.1.1
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 1
+	}
+}
+
+1087.1.1 = {
+	monarch = {
+		name = "¦umt+Y"
+		dynasty = "?–S«ƒÉbôu·V"
+		birth_date = 1019.1.1
+		adm = 5
+		dip = 2
+		mil = 1
+	}
+}
+
+1087.1.1 = {
+	heir = {
+		name = "?–Ì‘"
+		monarch_name = "?–Ì‘"
+		dynasty = "?–S«ƒÉbôu·V"
+		birth_date = 1084.1.1
+		death_date = 1143.1.26
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+1106.1.1 = {
+	monarch = {
+		name = "?–Ì‘"
+		dynasty = "?–S«ƒÉbôu·V"
+		birth_date = 1084.1.1
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+1113.1.1 = {
+	heir = {
+		name = "TXÀN¬‚"
+		monarch_name = "TXÀN¬‚"
+		dynasty = "?–S«ƒÉbôu·V"
+		birth_date = 1113.1.1
+		death_date = 1145.3.23
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}
+
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1143.1.26 = {
+	monarch = {
+		name = "TXÀN¬‚"
+		dynasty = "?–S«ƒÉbôu·V"
+		birth_date = 1113.1.1
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}
+
+1144.1.1 = {
+	heir = {
+		name = "fjSÉb1k"
+		monarch_name = "fjSÉb1k"
+		dynasty = "?–S«ƒÉbôu·V"
+		birth_date = 1144.1.1
+		death_date = 1147.1.1
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 0
+	}
+}
+
+1145.3.23 = {
+	monarch = {
+		name = "fjSÉb1k"
+		dynasty = "?–S«ƒÉbôu·V"
+		birth_date = 1144.1.1
+		adm = 0
+		dip = 2
+		mil = 0
+	}
+}
+
+1145.3.23 = {
+	heir = {
+		name = "føSÈT<h"
+		monarch_name = "føSÈT<h"
+		dynasty = "?–S«ƒÉbôu·V"
+		birth_date = 1100.1.1
+		death_date = 1147.4.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1147.1.1 = {
+	monarch = {
+		name = "føSÈT<h"
+		dynasty = "?–S«ƒÉbôu·V"
+		birth_date = 1100.1.1
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1147.4.1 = {
+	religious_school = shafii_school #Actually Zahiri
+	monarch = {
+		name = "?–jSjgÒR.UaOe"
+		dynasty = "?–SidÈT·V"
+		birth_date = 1094.1.1
+		dip = 5
+		adm = 5
+		mil = 6
+		}
+	}
+
+1147.4.1 = {
+	heir = {
+		name = "?–^0šNäS^ ¦umt+Y"
+		monarch_name = "?–^0šNäS^ ¦umt+Y I"
+		dynasty = "?–SidÈT·V"
+		birth_date = 1135.1.1
+		death_date = 1184.10.14
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+	
+1163.5.1 = {
+	monarch={
+		name = "?–^0šNäS^ ¦umt+Y I"
+		dynasty = "?–SidÈT·V"
+		birth_date = 1135.1.1
+		dip = 5
+		adm = 5
+		mil = 5
+		}
+	}
+
+1163.5.1 = {
+	heir = {
+		name = "?–^ ¦umt+Y Å–äS^ üfÏ‚S"
+		monarch_name = "?–^ ¦umt+Y Å–äS^ üfÏ‚S"
+		dynasty = "?–SidÈT·V"
+		birth_date = 1160.1.1
+		death_date = 1199.1.23
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+		
+1184.10.14={
+	monarch={
+		name="?–^ ¦umt+Y Å–äS^ üfÏ‚S"
+		dynasty="?–SidÈT·V"
+		birth_date = 1160.1.1
+		dip = 5
+		adm = 5
+		mil = 5
+		}
+	}
+
+1184.10.14 = {
+	heir = {
+		name = "FzUØ·V ‰R ³uiS"
+		monarch_name = "FzUØ·V ‰R ³uiS"
+		dynasty = "?–SidÈT·V"
+		birth_date = 1180.1.1
+		death_date = 1213.5.1
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+		
+1199.1.23={
+	monarch={
+		name="FzUØ·V ‰R ³uiS"
+		dynasty="?–SidÈT·V"
+		birth_date = 1180.1.1
+		dip = 4
+		adm = 5
+		mil = 5
+		}
+	}
+
+1203.1.1 = {
+	heir = {
+		name = "?–^0šNäS^ ¦umt+Y"
+		monarch_name = "?–^0šNäS^ ¦umt+Y II"
+		dynasty = "?–SidÈT·V"
+		birth_date = 1203.1.1
+		death_date = 1224.3.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+		
+1213.5.1={
+	monarch={
+		name="?–^0šNäS^ ¦umt+Y II"
+		dynasty="?–SidÈT·V"
+		birth_date = 1203.1.1
+		dip = 4
+		adm = 4
+		mil = 5
+		}
+	}
+
+1213.5.1 = {
+	heir = {
+		name = "?–jSjgÒR0æt^·V"
+		monarch_name = "?–jSjgÒR0æt^·V I"
+		dynasty = "?–SidÈT·V"
+		birth_date = 1180.1.1
+		death_date = 1224.9.1
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1224.3.1={
+	monarch={
+		name="?–jSjgÒR0æt^·V I"
+		dynasty="?–SidÈT·V"
+		birth_date = 1180.1.1
+		dip = 3
+		adm = 4
+		mil = 3
+		}
+	}
+
+1224.3.1 = {
+	heir = {
+		name = "?–jSjgÉb Œ‚êS"
+		monarch_name = "?–jSjgÉb Œ‚êS"
+		dynasty = "?–SidÈT·V"
+		birth_date = 1190.1.1
+		death_date = 1227.10.4
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+		
+1224.9.1={
+	monarch={
+		name="?–jSjgÉb Œ‚êS"
+		dynasty="?–SidÈT·V"
+		birth_date = 1190.1.1
+		dip = 4
+		adm = 4
+		mil = 3
+		}
+	}
+
+1227.10.4={
+	monarch={
+		name="öSwmšN"
+		dynasty="?–SidÈT·V"
+		birth_date = 1200.1.1
+		dip = 2
+		adm = 3
+		mil = 3
+		}
+	}
+		
+1229.6.1={
+	monarch={
+		name="O·VÌ‘¯e I"
+		dynasty="?–SidÈT·V"
+		birth_date = 1190.1.1
+		dip = 4
+		adm = 2
+		mil = 2
+		}
+	}
+
+1229.6.1 = {
+	heir = {
+		name = "?–jSjgÒR0æt^·V"
+		monarch_name = "?–jSjgÒR0æt^·V II"
+		dynasty = "?–SidÈT·V"
+		birth_date = 1210.1.1
+		death_date = 1242.12.4
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+		
+1232.10.17={
+	monarch={
+		name="?–jSjgÒR0æt^·V II"
+		dynasty="?–SidÈT·V"
+		birth_date = 1210.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+		}
+	}
+
+1232.10.17 = {
+	heir = {
+		name = "?–^ ÈTQh ?–(„ê FzTXê·V"
+		monarch_name = "?–^ ÈTQh ?–(„ê FzTXê·V"
+		dynasty = "?–SidÈT·V"
+		birth_date = 1210.1.1
+		death_date = 1248.5.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+		
+1242.12.4={
+	monarch={
+		name="?–^ ÈTQh ?–(„ê FzTXê·V"
+		dynasty="?–SidÈT·V"
+		birth_date = 1210.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+		}
+	}
+
+1248.5.1={
+	monarch={
+		name="Umar"
+		dynasty="?–SidÈT·V"
+		birth_date = 1220.1.1
+		dip = 2
+		adm = 3
+		mil = 1
+		}
+	}
+		
+1266.5.1={
+	monarch={
+		name="O·VÌ‘¯e II"
+		dynasty="?–SidÈT·V"
+		birth_date = 1230.1.1
+		dip = 1
+		adm = 2
+		mil = 1
+		}
+	}
+
+1269.1.1 = {
+	religious_school = m?–Ì‘ki_school
+	monarch = {
+		name = "?–^ ¦umt+Y Å–T^"
+		dynasty = "lšÌ‘<S·V"
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+1269.1.1 = {
+	heir = {
+		name = "?–^ Å–T^ ¦umt+Y"
+		monarch_name = "?–^ Å–T^ ¦umt+Y"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1250.1.1
+		death_date = 1307.5.13
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+}
+
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1286.3.20 = {
+	monarch = {
+		name = "?–^ Å–T^ ¦umt+Y"
+		dynasty = "lšÌ‘<S·V"
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+}
+
+1286.3.20 = {
+	heir = {
+		name = "?–^ („Ôkyr ?–s|S"
+		monarch_name = "?–^ („Ôkyr ?–s|S"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1283.1.1
+		death_date = 1308.7.28
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+
+1307.5.13 = {
+	monarch = {
+		name = "?–^ („Ôkyr ?–s|S"
+		dynasty = "lšÌ‘<S·V"
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+
+1307.5.13 = {
+	heir = {
+		name = "?–^ ÉbÔk Ï‚±ƒüf"
+		monarch_name = "?–^ ÉbÔk Ï‚±ƒüf"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1289.3.1
+		death_date = 1310.11.23
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+}
+
+1308.7.28 = {
+	monarch = {
+		name = "?–^ ÉbÔk Ï‚±ƒüf"
+		dynasty = "lšÌ‘<S·V"
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+}
+
+1308.7.28 = {
+	heir = {
+		name = "?–^ („O·V·eY¯eüf"
+		monarch_name = "?–^ („O·V·eY¯eüf II"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1276.12.1
+		death_date = 1331.8.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 4
+	}
+}
+
+1310.11.23 = {
+	monarch = {
+		name = "?–^ („O·V·eY¯eüf II"
+		dynasty = "lšÌ‘<S·V"
+		adm = 2
+		dip = 1
+		mil = 4
+	}
+}
+
+1310.11.23 = {
+	heir = {
+		name = "?–^ ÈTQh"
+		monarch_name = "?–^ ÈTQh"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1297.1.1
+		death_date = 1351.5.24
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}
+
+1331.8.1 = {
+	monarch = {
+		name = "?–^ ÈTQh"
+		dynasty = "lšÌ‘<S·V"
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}
+
+1331.8.1 = {
+	heir = {
+		name = "?–^ OWS ÕlÌ‘¯e"
+		monarch_name = "?–^ OWS ÕlÌ‘¯e"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1329.1.1
+		death_date = 1358.1.10
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1348.1.1 = {
+	monarch = {
+		name = "?–^ OWS ÕlÌ‘¯e"
+		dynasty = "lšÌ‘<S·V"
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1348.1.1 = {
+	heir = {
+		name = "?–^0ôTKQ"
+		monarch_name = "?–^0ôTKQ"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1328.1.1
+		death_date = 1359.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+1358.1.1 = {
+	monarch = {
+		name = "?–^0ôTKQ"
+		dynasty = "lšÌ‘<S·V"
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+1358.1.1 = {
+	heir = {
+		name = "fjSÉb1k"
+		monarch_name = "fjSÉb1k"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1329.1.1
+		death_date = 1361.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1359.1.1 = {
+	monarch = {
+		name = "fjSÉb1k"
+		dynasty = "lšÌ‘<S·V"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1359.1.1 = {
+	heir = {
+		name = "TXZi¬‚"
+		monarch_name = "TXZi¬‚"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1331.1.1
+		death_date = 1362.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1361.1.1 = {
+	monarch = {
+		name = "TXZi¬‚"
+		dynasty = "lšÌ‘<S·V"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1361.1.1 = {
+	heir = {
+		name = "FzUØ·V"
+		monarch_name = "FzUØ·V II"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1332.1.1
+		death_date = 1366.1.1
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+1362.1.1 = {
+	monarch = {
+		name = "FzUØ·V II"
+		dynasty = "lšÌ‘<S·V"
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+1362.1.1 = {
+	heir = {
+		name = "?–^ ÕlÌ‘¯e ?–jSjgÒR ?–PŸyQ"
+		monarch_name = "?–^ ÕlÌ‘¯e ?–jSjgÒR ?–PŸyQ I"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1336.1.1
+		death_date = 1372.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1366.1.1 = {
+	monarch = {
+		name = "?–^ ÕlÌ‘¯e ?–jSjgÒR ?–PŸyQ I"
+		dynasty = "lšÌ‘<S·V"
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1366.1.1 = {
+	heir = {
+		name = "FzUØ·V"
+		monarch_name = "FzUØ·V III"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1342.1.1
+		death_date = 1374.1.1
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}
+
+1372.1.1 = {
+	monarch = {
+		name = "FzUØ·V III"
+		dynasty = "lšÌ‘<S·V"
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}
+
+1372.1.1 = {
+	heir = {
+		name = "Œ‚ÈTÈ·V"
+		monarch_name = "Œ‚ÈTÈ·V"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1344.1.1
+		death_date = 1393.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 4
+	}
+}
+
+1374.1.1 = {
+	monarch = {
+		name = "Œ‚ÈTÈ·V"
+		dynasty = "lšÌ‘<S·V"
+		adm = 1
+		dip = 1
+		mil = 4
+	}
+}
+
+1374.1.1 = {
+	heir = {
+		name = "?–jSjg ?–PŸyQ"
+		monarch_name = "?–jSjg ?–PŸyQ II"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1363.1.1
+		death_date = 1396.1.1
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1393.1.1 = {
+	monarch = {
+		name = "?–jSjg ?–PŸyQ II"
+		dynasty = "lšÌ‘<S·V"
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1393.1.1 = {
+	heir = {
+		name = "?–jSjgÉb"
+		monarch_name = "?–jSjgÉb II"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1366.1.1
+		death_date = 1398.3.19
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 2
+	}
+}
+
+1396.1.1 = {
+	monarch = {
+		name = "?–jSjgÉb II"
+		dynasty = "lšÌ‘<S·V"
+		adm = 5
+		dip = 1
+		mil = 2
+	}
+}
+
+1396.1.1 = {
+	heir = {
+		name = "?–^-(„O·V·eY¯eüf"
+		monarch_name = "?–^-(„O·V·eY¯eüf III"
+		dynasty = "lšÌ‘<S·V"
+		birth_date = 1370.1.1
+		death_date = 1420.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+1398.3.19 = {
+  monarch = {
+    name = "?–^ iIN·V eY¯eüf III"  # ?–^-(„O·V·eY¯eüf III
+    dynasty = "lš—g"  # lšÌ‘<S·V
+    adm = 1
+    dip = 2
+    mil = 3
+  }
+  add_piety = 0.4
+}
+
+1399.1.1 = {
+  heir = {
+    name = "?–jSjgÒR ÈTKQ"  # ?–jSjgalhaqq
+    monarch_name = "?–jSjgÒR ÈTKQ II"  # ?–jSjgalhaqq II
+    dynasty = "lš—g"  # lšÌ‘<S·V
+    birth_date = 1399.1.1
+    death_Date = 1465.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 0
+  }
+}
+
+1420.1.1 = {
+  monarch = {
+    name = "?–jSjgÒR ÈTKQ II"  # ?–jSjgalhaqq II
+    dynasty = "lš—g"  # lšÌ‘<S·V
+    adm = 0
+    dip = 2
+    mil = 1
+  }
+  capital = 343
+}
+1465.1.1 = {
+  monarch = {
+    name = "FzUØ·V O,g ?–Ì‘ ?–ÆYÉb<S Vyğl"  # Mohammed ibn ?–Ì‘ Amrani-Joutey
+    dynasty = "O·VÌ‘¯e"  # O·VÌ‘¯e
+    adm = 2
+    dip = 1
+    mil = 0
+  }
+}
+1544.1.1 = {
+  monarch = {
+    name = "FzUØ·V I"  # FzUØ·V I
+    dynasty = "(„?–ê"  # Saadi
+    adm = 4
+    dip = 4
+    mil = 5
+    leader = {
+      name = "FzUØ·V I"  # FzUØ·V I
+      type = general
+      fire = 3
+      shock = 3
+      manuever = 2
+      siege = 0
+    }
+  }
+  capital = 344
+  add_piety = 1.0
+}
+1544.1.1 = {
+  heir = {
+    name = "?–jSjgÉb"  # '?–jSjg Allâh
+    monarch_name = "?–jSjgÉb"  # '?–jSjg Allâh
+    dynasty = "(„?–ê"  # Saadi
+    birth_date = 1527.6.1
+    death_date = 1574.1.24
+    claim = 95
+    adm = 6
+    dip = 3
+    mil = 4
+  }
+}
+1557.10.24 = {
+  monarch = {
+    name = "?–jSjgÉb I"  # '?–jSjg Allâh I
+    dynasty = "(„?–ê"  # Saadi
+    adm = 6
+    dip = 3
+    mil = 4
+  }
+}
+1557.10.24 = {
+  heir = {
+    name = "FzUØ·V"  # FzUØ·V
+    monarch_name = "FzUØ·V II"  # FzUØ·V II
+    dynasty = "(„?–ê"  # Saadi
+    birth_date = 1557.1.1
+    death_date = 1576.9.12
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 1
+    leader = {
+      name = "FzUØ·V II"  # FzUØ·V II
+      type = general
+      fire = 3
+      shock = 3
+      manuever = 3
+      siege = 0
+    }
+  }
+}
+1574.1.24 = {
+  monarch = {
+    name = "FzUØ·V II"  # FzUØ·V II
+    dynasty = "(„?–ê"  # Saadi
+    adm = 3
+    dip = 3
+    mil = 1
+    leader = {
+      name = "FzUØ·V II"  # FzUØ·V II
+      type = general
+      fire = 3
+      shock = 3
+      manuever = 3
+      siege = 0
+    }
+  }
+}
+1574.1.24 = {
+  heir = {
+    name = "?–^ lšSN"  # ?–^ Marwan
+    monarch_name = "?–^ lšSN"  # ?–^ Marwan
+    dynasty = "(„?–ê"  # Saadi
+    birth_date = 1554.1.1
+    death_Date = 1578.8.5
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1576.1.1 = {
+  monarch = {
+    name = "?–^ lšSN"  # ?–^ Marawan
+    dynasty = "(„?–ê"  # Saadi
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1576.1.1 = {
+  heir = {
+    name = "Œ‚ÈTÈ·V"  # Œ‚ÈTÈ·V
+    monarch_name = "Œ‚ÈTÈ·V II"  # Œ‚ÈTÈ·V II
+    dynasty = "(„?–ê"  # Saadi
+    birth_date = 1549.1.1
+    death_date = 1603.8.20
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 6
+  }
+}
+1578.8.5 = {
+  monarch = {
+    name = "Œ‚ÈTÈ·V II"  # Œ‚ÈTÈ·V II
+    dynasty = "(„?–ê"  # Saadi
+    adm = 5
+    dip = 4
+    mil = 6
+  }
+}
+1578.8.5 = {
+  heir = {
+    name = "?–jSjgÉb"  # '?–jSjg Allâh
+    monarch_name = "?–jSjgÉb II"  # '?–jSjg Allâh II
+    dynasty = "(„?–ê"  # Saadi
+    birth_date = 1564.1.1
+    death_Date = 1609.8.3
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 1
+  }
+}
+1589.1.1 = {
+  leader = {
+    name = "1g¾S ^Y"  # Jawdar Pasha
+    type = conquistador
+    fire = 5
+    shock = 4
+    manuever = 4
+    siege = 0
+    death_date = 1599.1.1
+  }
+}
+1603.8.20 = {
+  monarch = {
+    name = "?–jSjgÉb II"  # '?–jSjg Allâh II
+    dynasty = "(„?–ê"  # Saadi
+    adm = 1
+    dip = 0
+    mil = 1
+  }
+}
+1603.8.20 = {
+  heir = {
+    name = "NbO9N"  # Zaydân
+    monarch_name = "NbO9N"  # Zaydân
+    dynasty = "(„?–ê"  # Saadi
+    birth_date = 1580.1.1
+    death_date = 1627.9.29
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 1
+  }
+}
+1609.8.3 = {
+  monarch = {
+    name = "NbO9N"  # Zaydân
+    dynasty = "(„?–ê"  # Saadi
+    adm = 0
+    dip = 1
+    mil = 1
+  }
+}
+1609.8.3 = {
+  heir = {
+    name = "?–jSjgÒR lš)RKQ"  # '?–jSjg M?–Ì‘k
+    monarch_name = "?–jSjgÒR lš)RKQ"  # '?–jSjg M?–Ì‘k
+    dynasty = "(„?–ê"  # Saadi
+    birth_date = 1590.1.1
+    death_Date = 1631.2.11
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 1
+  }
+}
+1627.9.29 = {
+  monarch = {
+    name = "?–jSjgÒR lš)RKQ"  # '?–jSjg M?–Ì‘k
+    dynasty = "(„?–ê"  # Saadi
+    adm = 0
+    dip = 0
+    mil = 1
+  }
+}
+1627.9.29 = {
+  heir = {
+    name = "æt)R·V"  # Walîd
+    monarch_name = "æt)R·V"  # Walîd
+    dynasty = "(„?–ê"  # Saadi
+    birth_date = 1600.1.1
+    death_date = 1636.2.21
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+1631.1.1 = {
+  monarch = {
+    name = "æt)R·V"  # Walîd
+    dynasty = "(„?–ê"  # Saadi
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+1631.1.1 = {
+  heir = {
+    name = "FzUØ·V"  # FzUØ·V
+    monarch_name = "FzUØ·V III"  # FzUØ·V III
+    dynasty = "(„?–ê"  # Saadi
+    birth_date = 1603.1.1
+    death_date = 1655.1.30
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+1636.2.21 = {
+  monarch = {
+    name = "FzUØ·V III"  # FzUØ·V III
+    dynasty = "(„?–ê"  # Saadi
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+1655.1.30 = {
+  monarch = {
+    name = "æt)R·V"  # Walîd
+    dynasty = "(„?–ê"  # Saadi
+    adm = 0
+    dip = 0
+    mil = 0
+  }
+}
+1659.6.1 = {
+  monarch = {
+    name = "?–jSjgÒR aSÌ‘ÆY O,g ?–Ôk ôTKQS"  # ?–jSjg Karim ibn Abi-Bakr
+    dynasty = "™lôT<S"  # Shabani
+    adm = 2
+    dip = 3
+    mil = 1
+  }
+}
+1659.6.1 = {
+  heir = {
+    name = "FzUØ·V"  # FzUØ·V
+    monarch_name = "FzUØ·V III"  # FzUØ·V III
+    dynasty = "(„?–ê"  # Saadi
+    birth_date = 1640.1.1
+    death_date = 1668.9.7
+    claim = 95
+    adm = 0
+    dip = 0
+    mil = 1
+  }
+}
+1668.7.1 = {
+  monarch = {
+    name = "?–^ ôTKQS O,g ?–jSjgÒR aSÌ‘ÆY"  # ?–^0ôTKQ ibn ?–jSjg Karim
+    dynasty = "™lôT<S"  # Shabani
+    adm = 0
+    dip = 0
+    mil = 1
+  }
+}
+1668.9.7 = {
+  monarch = {
+    name = "Éb^·V"  # ar-Rashid
+    dynasty = "?–Ébôu"  # ?–Ébôuyr
+    adm = 4
+    dip = 3
+    mil = 5
+    leader = {
+      name = "Éb^·V"  # ar-Rashid
+      type = general
+      fire = 4
+      shock = 3
+      manuever = 4
+      siege = 1
+    }
+  }
+  add_piety = 1.0
+}
+1668.9.7 = {
+  heir = {
+    name = "O¯e…hS"  # Ismâ'îl
+    monarch_name = "O¯e…hS"  # Ismâ'îl
+    dynasty = "?–Ébôu"  # ?–Ébôuyr
+    birth_date = 1645.1.1
+    death_Date = 1727.3.22
+    claim = 95
+    adm = 6
+    dip = 5
+    mil = 6
+    leader = {
+      name = "føS›sêN"  # Ismâ'îl
+      type = general
+      fire = 3
+      shock = 2
+      manuever = 3
+      siege = 1
+    }
+  }
+}
+1672.3.28 = {
+  monarch = {
+    name = "O¯e…hS"  # Ismâ'îl
+    dynasty = "?–Ébôu"  # ?–Ébôuyr
+    adm = 6
+    dip = 5
+    mil = 6
+    leader = {
+      name = "O¯e…hS"  # Ismâ'îl
+      type = general
+      fire = 3
+      shock = 2
+      manuever = 3
+      siege = 1
+    }
+  }
+  capital = 346
+}
+1677.1.1 = {
+  heir = {
+    name = "Œ‚ÈTÈ·V"  # Œ‚ÈTÈ·V
+    monarch_name = "Œ‚ÈTÈ·V"  # Œ‚ÈTÈ·V
+    dynasty = "?–Ébôu"  # ?–Ébôuyr
+    birth_date = 1677.1.1
+    death_date = 1729.3.5
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 1
+  }
+}
+1727.3.22 = {
+  monarch = {
+    name = "Œ‚ÈTÈ·V"  # Œ‚ÈTÈ·V
+    dynasty = "?–Ébôu"  # ?–Ébôuyr
+    adm = 1
+    dip = 0
+    mil = 1
+  }
+  capital = 344
+}
+1727.3.22 = {
+  heir = {
+    name = "?–jSjgÉb"  # '?–jSjg Allâh
+    monarch_name = "?–jSjgÉb"  # '?–jSjg Allâh
+    dynasty = "?–Ébôu"  # ?–Ébôuyr
+    birth_date = 1678.1.1
+    death_Date = 1757.11.10
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+1729.3.7 = {
+  monarch = {
+    name = "?–jSjgÉb"  # '?–jSjg Allâh
+    dynasty = "?–Ébôu"  # ?–Ébôuyr
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+1739.3.7 = {
+  heir = {
+    name = "FzUØ·V"  # FzUØ·V
+    monarch_name = "FzUØ·V III"  # FzUØ·V III
+    dynasty = "?–Ébôu"  # ?–Ébôuyr
+    birth_date = 1739.3.7
+    death_Date = 1790.4.12
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1757.11.10 = {
+  monarch = {
+    name = "FzUØ·V III"  # FzUØ·V III
+    dynasty = "?–Ébôu"  # ?–Ébôuyr
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1757.11.10 = {
+  heir = {
+    name = "6wPŸ·V"  # Yazid
+    monarch_name = "6wPŸ·V"  # Yazid
+    dynasty = "?–Ébôu"  # ?–Ébôuyr
+    birth_date = 1750.1.1
+    death_date = 1792.2.15
+    claim = 95
+    adm = 0
+    dip = 3
+    mil = 0
+  }
+}
+1790.4.12 = {
+  monarch = {
+    name = "6wPŸ·V"  # Yazîd
+    dynasty = "?–Ébôu"  # ?–Ébôuyr
+    adm = 0
+    dip = 3
+    mil = 0
+  }
+}
+1790.4.12 = {
+  heir = {
+    name = "Ï‚±ƒüf"  # Sulaymân
+    monarch_name = "Ï‚±ƒüf"  # Sulaymân
+    dynasty = "?–Ébôu"  # ?–Ébôuyr
+    birth_date = 1760.1.1
+    death_Date = 1822.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 3
+  }
+}
+1792.2.15 = {
+  monarch = {
+    name = "Ï‚±ƒüf"  # Sulaymân
+    dynasty = "?–Ébôu"  # ?–Ébôuyr
+    adm = 0
+    dip = 2
+    mil = 3
+  }
+}
+
+1792.2.15 = {
+	heir = {
+		name = "?–=O·VÉbüf"
+		monarch_name = "?–=O·VÉbüf"
+		dynasty = "?–Ébôuyr"
+		birth_date = 1778.1.1
+		death_date = 1859.8.24
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1822.11.28 = {
+	monarch = {
+		name = "?–=O·VÉbüf"
+		dynasty = "?–Ébôuyr"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1822.11.28 = {
+	heir = {
+		name = "FzUØ·V"
+		monarch_name = "FzUØ·V IV"
+		dynasty = "?–Ébôuyr"
+		birth_date = 1802.1.1
+		death_date = 1873.9.16
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 4
+	}
+}
+
+1859.8.24 = {
+	monarch = {
+		name = "FzUØ·V IV"
+		dynasty = "?–Ébôuyr"
+		adm = 1
+		dip = 4
+		mil = 4
+	}
+}
+
+1859.8.24 = {
+	heir = {
+		name = "ÈTQh"
+		monarch_name = "ÈTQh I"
+		dynasty = "?–Ébôuyr"
+		birth_date = 1836.1.1
+		death_date = 1894.6.7
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}
+
+1873.9.16 = {
+	monarch = {
+		name = "ÈTQh I"
+		dynasty = "?–Ébôuyr"
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}
+
+1878.2.24 = {
+	heir = {
+		name = "?–jSjgÉbPŸyQ"
+		monarch_name = "?–jSjgÉbPŸyQ"
+		dynasty = "?–Ébôuyr"
+		birth_date = 1878.2.24
+		death_date = 1943.6.10
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1894.6.7 = {
+	monarch = {
+		name = "?–jSjgÉbPŸyQ"
+		dynasty = "?–Ébôuyr"
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1894.6.7 = {
+	heir = {
+		name = "?–jSjgÒRÈTòƒ·V"
+		monarch_name = "?–jSjgÒRÈTòƒ·V"
+		dynasty = "?–Ébôuyr"
+		birth_date = 1876.2.24
+		death_date = 1937.4.4
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1908.1.4 = {
+	monarch = {
+		name = "?–jSjgÒRÈTòƒ·V"
+		dynasty = "?–Ébôuyr"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1908.1.4 = {
+	heir = {
+		name = "O.ty"
+		monarch_name = "O.ty"
+		dynasty = "?–Ébôuyr"
+		birth_date = 1882.1.1
+		death_date = 1927.11.17
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1909.8.10 = {
+	heir = {
+		name = "FzUØ·V"
+		monarch_name = "FzUØ·V V"
+		dynasty = "?–Ébôuyr"
+		birth_date = 1909.8.10
+		death_date = 1961.2.26
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+1950.1.1 = { set_legacy_government = constitutional_monarchy }
+1956.3.2 = { capital = 2568 } #Rabat
+
+1957.8.14 = {
+	monarch = {
+		name = "FzUØ·V V"
+		dynasty = "?–Ébôuyr"
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+1957.8.14 = {
+	heir = {
+		name = "ÈTQh"
+		monarch_name = "ÈTQh II"
+		dynasty = "?–Ébôuyr"
+		birth_date = 1929.7.9
+		death_date = 1999.7.23
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}
+
+1961.2.26 = {
+	monarch = {
+		name = "ÈTQh II"
+		dynasty = "?–Ébôuyr"
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}
+
+1963.8.21 = {
+	heir = {
+		name = "FzUØ·V"
+		monarch_name = "FzUØ·V VI"
+		dynasty = "?–Ébôuyr"
+		birth_date = 1963.8.21
+		death_date = 3000.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1999.7.23 = {
+	monarch = {
+		name = "FzUØ·V VI"
+		dynasty = "?–Ébôuyr"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+2003.5.8 = {
+	heir = {
+		name = "Fz±ƒ ÈTQh"
+		monarch_name = "Fz±ƒ ÈTQh"
+		dynasty = "?–Ébôuyr"
+		birth_date = 2003.5.8
+		death_date = 3000.1.1
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

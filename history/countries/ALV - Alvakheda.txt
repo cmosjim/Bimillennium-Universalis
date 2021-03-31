@@ -1,0 +1,708 @@
+government = monarchy
+add_government_reform = nayankara_reform
+primary_culture = kannada
+religion = hinduism
+technology_group = early_indian
+capital = 2213
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+450.1.1 = {
+  monarch = {
+    name = "^Øe^–c"  # Pashupathi
+    dynasty = "?ñ|i‚l"  # Alupa
+    adm = 4
+    dip = 2
+    mil = 4
+  }
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+510.1.1 = {
+  monarch = {
+    name = "?ñSû^∑V…b"  # Alupendra
+    dynasty = "?ñ|i‚l"  # Alupa
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+540.1.1 = {
+  monarch = {
+    name = "jgTXbS^"  # Duttalupa
+    dynasty = "?ñ|i‚l"  # Alupa
+    adm = 3
+    dip = 0
+    mil = 1
+  }
+}
+570.1.1 = {
+  monarch = {
+    name = "Ìs	T–cFZ I"  # Bankideva I
+    dynasty = "?ñ|i‚l"  # Alupa
+    adm = 2
+    dip = 1
+    mil = 1
+  }
+}
+600.1.1 = {
+  monarch = {
+    name = "?ñ|iFZWZ I"  # Aluvarasa I
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 570.1.1
+    adm = 1
+    dip = 2
+    mil = 3
+  }
+}
+600.1.1 = {
+  heir = {
+    name = "Bl±êZKOW"  # Gunasagara
+    monarch_name = "Bl±êZKOW"  # Gunasagara
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 600.1.1
+    death_date = 663.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 0
+  }
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+630.1.1 = {
+  monarch = {
+    name = "Bl±êZKOW"  # Gunasagara
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 600.1.1
+    adm = 0
+    dip = 2
+    mil = 0
+  }
+}
+633.1.1 = {
+  heir = {
+    name = "(çYWFZ√ã±ê"  # Chitravahana
+    monarch_name = "(çYWFZ√ã±ê I"  # Chitravahana I
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 633.1.1
+    death_date = 730.1.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 3
+  }
+}
+663.1.1 = {
+  monarch = {
+    name = "(çYWFZ√ã±ê I"  # Chitravahana I
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 633.1.1
+    adm = 0
+    dip = 5
+    mil = 3
+  }
+}
+700.1.1 = {
+  heir = {
+    name = "?ñ|iFZWZ"  # Aluvarasa
+    monarch_name = "?ñ|iFZWZ II"  # Aluvarasa II
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 700.1.1
+    death_date = 760.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 3
+  }
+}
+730.1.1 = {
+  monarch = {
+    name = "?ñ|iFZWZ II"  # Aluvarasa II
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 700.1.1
+    adm = 1
+    dip = 4
+    mil = 3
+  }
+}
+730.1.1 = {
+  heir = {
+    name = "(çYWFZ√ã±ê"  # Chitravahana
+    monarch_name = "(çYWFZ√ã±ê II"  # Chitravahana II
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 730.1.1
+    death_date = 790.1.1
+    claim = 95
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+750.1.1 = {
+  technology_group = indian
+}
+760.1.1 = {
+  monarch = {
+    name = "(çYWFZ√ã±ê II"  # Chitravahana II
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 730.1.1
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}
+760.1.1 = {
+  heir = {
+    name = "W±êZKOW"  # Ranasagara
+    monarch_name = "W±êZKOW"  # Ranasagara
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 760.1.1
+    death_date = 820.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+790.1.1 = {
+  monarch = {
+    name = "W±êZKOW"  # Ranasagara
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 760.1.1
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+790.1.1 = {
+  heir = {
+    name = "‘k◊kZKOW"  # Pritvisagara
+    monarch_name = "‘k◊kZKOW"  # Pritvisagara
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 790.1.1
+    death_date = 850.1.1
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 2
+  }
+}
+820.1.1 = {
+  monarch = {
+    name = "‘k◊kZKOW"  # Pritvisagara
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 790.1.1
+    adm = 0
+    dip = 1
+    mil = 2
+  }
+}
+820.1.1 = {
+  heir = {
+    name = "idWid"  # Marama
+    monarch_name = "idWid"  # Marama
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 820.1.1
+    death_date = 875.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 1
+  }
+}
+850.1.1 = {
+  monarch = {
+    name = "idWid"  # Marama
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 820.1.1
+    adm = 5
+    dip = 2
+    mil = 1
+  }
+}
+850.1.1 = {
+  heir = {
+    name = "◊kidW^√e"  # Vimaladitya
+    monarch_name = "◊kidW^√e"  # Vimaladitya
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 845.1.1
+    death_date = 900.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+875.1.1 = {
+  monarch = {
+    name = "◊kidW^√e"  # Vimaladitya
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 845.1.1
+    adm = 1
+    dip = 2
+    mil = 2
+  }
+}
+875.1.1 = {
+  heir = {
+    name = "?ñSÊt WæñbY6w"  # Alva Rananjaya
+    monarch_name = "?ñSÊt WæñbY6w"  # Alva Rananjaya
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 870.1.1
+    death_date = 930.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 4
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+900.1.1 = {
+  monarch = {
+    name = "?ñSÊt WæñbY6w"  # Alva Rananjaya
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 870.1.1
+    adm = 5
+    dip = 5
+    mil = 4
+  }
+}
+900.1.1 = {
+  heir = {
+    name = "Nñ`YbS‚l"  # Dattalupa
+    monarch_name = "Nñ`YbS‚l"  # Dattalupa
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 900.1.1
+    death_date = 960.1.1
+    claim = 95
+    adm = 5
+    dip = 0
+    mil = 0
+  }
+}
+930.1.1 = {
+  monarch = {
+    name = "Nñ`YbS‚l"  # Dattalupa
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 900.1.1
+    adm = 5
+    dip = 0
+    mil = 0
+  }
+}
+930.1.1 = {
+  heir = {
+    name = "!çYÀçid"  # Kundavarma
+    monarch_name = "!çYÀçid"  # Kundavarma
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 930.1.1
+    death_date = 980.1.1
+    claim = 95
+    adm = 0
+    dip = 5
+    mil = 0
+  }
+}
+960.1.1 = {
+  monarch = {
+    name = "!çYÀçid"  # Kundavarma
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 930.1.1
+    adm = 0
+    dip = 5
+    mil = 0
+  }
+}
+960.1.1 = {
+  heir = {
+    name = "ñ6wÁP√ã"  # Jayasimha
+    monarch_name = "ñ6wÁP√ã"  # Jayasimha
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 950.1.1
+    death_date = 1010.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 5
+  }
+}
+980.1.1 = {
+  monarch = {
+    name = "ñ6wÁP√ã"  # Jayasimha
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 950.1.1
+    adm = 1
+    dip = 3
+    mil = 5
+  }
+}
+980.1.1 = {
+  heir = {
+    name = "Ìs	T–cFZ ?ñSû^∑V…b"  # Bankideva Alupendra
+    monarch_name = "Ìs	T–cFZ ?ñSû^∑V…b"  # Bankideva Alupendra
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 980.1.1
+    death_date = 1050.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1010.1.1 = {
+  monarch = {
+    name = "Ìs	T–cFZ ?ñSû^∑V…b"  # Bankideva Alupendra
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 980.1.1
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1020.1.1 = {
+  heir = {
+    name = "Àç–cjt–c6w"  # Pattiyodeya
+    monarch_name = "Àç–cjt–c6w I"  # Pattiyodeya I
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1020.1.1
+    death_date = 1080.1.1
+    claim = 95
+    adm = 0
+    dip = 1
+    mil = 0
+  }
+}
+1050.1.1 = {
+  monarch = {
+    name = "Àç–cjt–c6w I"  # Pattiyodeya I
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1020.1.1
+    adm = 0
+    dip = 1
+    mil = 0
+  }
+}
+1050.1.1 = {
+  heir = {
+    name = "ÒOWñKOW"  # Kulashekara
+    monarch_name = "ÒOWñKOW I"  # Kulashekara I
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1050.1.1
+    death_date = 1110.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+1080.1.1 = {
+  monarch = {
+    name = "ÒOWñKOW I"  # Kulashekara I
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1050.1.1
+    adm = 3
+    dip = 1
+    mil = 2
+  }
+}
+1080.1.1 = {
+  heir = {
+    name = "KO◊k ?ñSû^∑V…b"  # Kavi Alupendra
+    monarch_name = "KO◊k ?ñSû^∑V…b"  # Kavi Alupendra
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1080.1.1
+    death_date = 1160.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+}
+1110.1.1 = {
+  monarch = {
+    name = "KO◊k ?ñSû^∑V…b"  # Kavi Alupendra
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1080.1.1
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+}
+1130.1.1 = {
+  heir = {
+    name = "Àç–cjt–c6w"  # Pattiyodeya
+    monarch_name = "Àç–cjt–c6w II"  # Pattiyodeya II
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1130.1.1
+    death_date = 1220.1.1
+    claim = 95
+    adm = 0
+    dip = 2
+    mil = 0
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1160.1.1 = {
+  monarch = {
+    name = "Àç–cjt–c6w II"  # Pattiyodeya II
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1130.1.1
+    adm = 0
+    dip = 2
+    mil = 0
+  }
+}
+1190.1.1 = {
+  heir = {
+    name = "!çNñ±ê"  # Kundana
+    monarch_name = "!çNñ±ê"  # Kundana
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1190.1.1
+    death_date = 1230.1.1
+    claim = 95
+    adm = 0
+    dip = 3
+    mil = 5
+  }
+}
+1220.1.1 = {
+  monarch = {
+    name = "!çNñ±ê"  # Kundana
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1190.1.1
+    adm = 0
+    dip = 3
+    mil = 5
+  }
+}
+1220.1.1 = {
+  heir = {
+    name = "FZW,Ç–cFZ"  # Vallabhadeva
+    monarch_name = "FZW,Ç–cFZ"  # Vallabhadeva
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1200.1.1
+    death_date = 1250.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 3
+  }
+}
+1230.1.1 = {
+  monarch = {
+    name = "FZW,Ç–cFZ"  # Vallabhadeva
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1200.1.1
+    adm = 1
+    dip = 0
+    mil = 3
+  }
+}
+1230.1.1 = {
+  heir = {
+    name = "Ùu…bXoæèöN"  # Virapandya
+    monarch_name = "Ùu…bXoæèöN I"  # Virapandya I
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1220.1.1
+    death_date = 1275.1.1
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1250.1.1 = {
+  monarch = {
+    name = "Ùu…bXoæèöN I"  # Virapandya I
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1220.1.1
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1250.1.1 = {
+  heir = {
+    name = "FZWid√ã–cFZ"  # Ballamahadevi
+    monarch_name = "FZWid√ã–cFZ"  # Ballamahadevi
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1245.1.1
+    death_date = 1285.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 0
+    female = yes
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1275.1.1 = {
+  monarch = {
+    name = "FZWid√ã–cFZ"  # Ballamahadevi
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1245.1.1
+    adm = 1
+    dip = 4
+    mil = 0
+    female = yes
+  }
+}
+1275.1.1 = {
+  heir = {
+    name = "Ìs	T–cFZ"  # Bankideva
+    monarch_name = "Ìs	T–cFZ II"  # Bankideva II
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1255.1.1
+    death_date = 1310.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1285.1.1 = {
+  monarch = {
+    name = "Ìs	T–cFZ II"  # Bankideva II
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1255.1.1
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1285.1.1 = {
+  heir = {
+    name = "œÇO–cFZ"  # Soyideva
+    monarch_name = "œÇO–cFZ I"  # Soyideva I
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1280.1.1
+    death_date = 1335.1.1
+    claim = 95
+    adm = 0
+    dip = 4
+    mil = 2
+  }
+}
+1310.1.1 = {
+  monarch = {
+    name = "œÇO–cFZ I"  # Soyideva I
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1280.1.1
+    adm = 0
+    dip = 4
+    mil = 2
+  }
+}
+1310.1.1 = {
+  heir = {
+    name = "ÒOWñKOW"  # Kulashekara
+    monarch_name = "ÒOWñKOW"  # Kulashekara II
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1305.1.1
+    death_date = 1346.1.1
+    claim = 95
+    adm = 1
+    dip = 4
+    mil = 0
+  }
+}
+1335.1.1 = {
+  monarch = {
+    name = "ÒOWñKOW II"  # Kulashekara II
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1305.1.1
+    adm = 1
+    dip = 4
+    mil = 0
+  }
+}
+1335.1.1 = {
+  heir = {
+    name = "Ìs	T–cFZ"  # Bankideva
+    monarch_name = "Ìs	T–cFZ III"  # Bankideva III
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1316.1.1
+    death_date = 1355.1.1
+    claim = 95
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}
+1346.1.1 = {
+  monarch = {
+    name = "Ìs	T–cFZ III"  # Bankideva III
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1316.1.1
+    adm = 1
+    dip = 0
+    mil = 0
+  }
+}
+1346.1.1 = {
+  heir = {
+    name = "ÒOWñKOW"  # Kulashekara
+    monarch_name = "ÒOWñKOW III"  # Kulashekara III
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1325.1.1
+    death_date = 1390.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1355.1.1 = {
+  monarch = {
+    name = "ÒOWñKOW III"  # Kulashekara III
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1325.1.1
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+1370.1.1 = {
+  heir = {
+    name = "Ùu…bXoæèöN"  # Virapandya
+    monarch_name = "Ùu…bXoæèöN II"  # Virapandya II
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1370.1.1
+    death_date = 1444.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}
+1390.1.1 = {
+  monarch = {
+    name = "Ùu…bXoæèöN II"  # Virapandya II
+    dynasty = "?ñ|i‚l"  # Alupa
+    birth_date = 1370.1.1
+    adm = 5
+    dip = 1
+    mil = 3
+  }
+}

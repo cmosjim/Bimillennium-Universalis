@@ -1,0 +1,292 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+technology_group = eastern_nomad_group
+primary_culture = tocharian
+religion = mahayana
+capital = 2554
+
+
+###‚ (30) bHS 58
+###àV (3) bPR 88
+###^ (3) ›oS 91
+
+
+58.1.1 = {
+	monarch = {
+		name = "‚"
+		#dynasty = " "
+	
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+88.1.1 = {
+	monarch = {
+		name = "àV"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+91.1.1 = {
+	monarch = {
+		name = "^"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+
+94.1.1 = {
+	monarch = {
+		name = "CQmR"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+###CQmR (34) 2uHS 94-127
+###™Ÿ‰R (9) š^PR 280
+###™ŸO (17) ñTI‘ 289
+###™Ÿ™q (39) NÅR 306
+###ålAm (40) YNóT 345
+###.8SQS± (63) YNI‘ 385
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+
+
+280.1.1 = {
+	monarch = {
+		name = "™Ÿ‰R"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+289.1.1 = {
+	monarch = {
+		name = "™ŸO"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+
+306.1.1 = {
+	monarch = {
+		name = "™Ÿ™q"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+345.1.1 = {
+	monarch = {
+		name = "ålAm"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+
+385.1.1 = {
+	monarch = {
+		name = ".8SQS±"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+###UŒT (1) bPR 448
+###fGk (48) ñTN 449
+###òf	V,rŒNPR (4) NN 497
+###™Ÿz‘š=e (40) YNN 605
+###™ŸhFZÆQ (2) 2u° 644
+###™Ÿ›…FZ?–±=e (5) YNóT 645
+
+
+448.1.1 = {
+	monarch = {
+		name = "UŒT"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+449.1.1 = {
+	monarch = {
+		name = "fGk"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+
+497.1.1 = {
+	monarch = {
+		name = "òf	V,rŒNPR"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+605.1.1 = {
+	monarch = {
+		name = "™Ÿz‘š=e"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+
+644.1.1 = {
+	monarch = {
+		name = "™ŸhFZÆQ"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+645.1.1 = {
+	monarch = {
+		name = "™Ÿ›…FZ?–±=e"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+}
+
+###™ŸHQ±ÆQ (1) ñTI‘ 649
+###™Ÿz‘š=e (2) š^b 650
+###™ŸéZz (68) ›¥N 651
+###™Ÿ	qTÂbö^ (25) ñT*g 719
+###™Ÿ•‰R (8) NN 737
+###™Ÿz‘šËe (21) YNI‘ 745
+###™Ÿ‚Y—g (25) N*g 767
+
+
+649.1.1 = {
+	monarch = {
+		name = "™ŸHQ±ÆQ"
+		#dynasty = " "
+		
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+
+651.1.1 = {
+	monarch = {
+		name = "™ŸéZz"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+
+
+719.1.1 = {
+	monarch = {
+		name = "™Ÿ	qTÂbö^"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+
+
+737.1.1 = {
+	monarch = {
+		name = "™Ÿ•‰R"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+
+745.1.1 = {
+	monarch = {
+		name = "™Ÿz‘šËe"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+
+
+767.1.1 = {
+	monarch = {
+		name = "™Ÿ‚Y—g"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+
+
+
+
+

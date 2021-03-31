@@ -1,0 +1,40 @@
+#2905 - Chara
+culture = evenk
+religion = tengri_pagan_reformed
+capital = "Chara"
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+owner = DLN
+controller = DLN
+add_core = DLN
+
+407.1.1 = { owner = ROU controller = ROU add_core = ROU remove_core = DLN }
+552.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = ROU culture = turkic }
+560.1.1 = { discovered_by = nomad_group }
+628.1.1 = {  owner = SH1 controller = SH1 add_core = SH1 remove_core = GOK }
+967.1.1 = { owner = LIO controller = LIO add_core = LIO remove_core = SH1 }
+1133.1.1 = { owner = ZL1 controller = ZL1 add_core = ZL1 remove_core = LIO }
+1200.1.1 = { base_tax = 4 base_production = 4 base_manpower = 7 }
+1202.1.1 = { owner = QY1 controller = QY1 add_core = QY1 remove_core = ZL1 }
+1206.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = QY1 }
+1207.1.1 = {  trade_goods = wool  culture = buryat }
+1260.5.5 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1368.1.1 = { owner = BRT controller = BRT add_core = BRT remove_core = YUA }
+
+1635.1.1 = {
+		discovered_by = RUS
+		owner = RUS
+		controller = RUS
+	   	religion = orthodox
+	   	culture = russian
+		base_tax = 2
+		base_production = 2
+		base_tax = 2
+	   }
+1637.1.1 = { add_core = RUS remove_core = BRT }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV remove_core = RUS }
+1991.12.25 = { owner = RUS controller = RUS add_core = RUS remove_core = SOV }

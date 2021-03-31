@@ -1,0 +1,393 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+primary_culture = cosmopolitan_french
+culture_group_union = french
+religion = catholic
+capital = 183 # Paris
+
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1800.1.1 = { 
+	government = republic
+	add_government_reform = presidential_reform
+	add_government_reform = parliamentary_reform
+	add_government_reform = strengthen_executive_powers_reform
+	add_government_reform = single_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = powerful_head_of_state
+	set_legacy_government = constitutional_republic
+	government_rank = 3
+}
+1820.1.1 = { religion = liberalism }
+1870.9.4 = {
+	monarch = {
+		name = "Ôçf.1gS.yrWÂw"
+		birth_date = 1815.3.12
+		adm = 1
+		dip = 4
+		mil = 4
+		religion = catholic
+	}
+}
+
+1871.2.17 = {
+	monarch = {
+		name = "?ñSê+Y0ØhmNS"
+		birth_date = 1797.4.15
+		adm = 4
+		dip = 3
+		mil = 3
+		religion = catholic
+	}
+}
+
+1873.5.24 = {
+	monarch = {
+		name = "^yrÃëØe0¶ûKQlö*m"
+		birth_date = 1808.6.13
+		adm = 2
+		dip = 3
+		mil = 3
+		religion = catholic
+	}
+}
+
+1879.1.30 = {
+	monarch = {
+		name = "Q“R0<h˜ñÙu"
+		birth_date = 1807.8.15
+		adm = 2
+		dip = 3
+		mil = 2
+		religion = catholic
+	}
+}
+
+1887.12.3 = {
+	monarch = {
+		name = "õs)R0Vg0tÊt0(ÑÍè0aS˙ã"
+		birth_date = 1837.8.11
+		adm = 3
+		dip = 4
+		mil = 3
+		religion = catholic
+	}
+}
+
+1894.6.27 = {
+	monarch = {
+		name = "©ã0aSâs|S-iOÃë√W"
+		birth_date = 1847.11.8
+		adm = 2
+		dip = 3
+		mil = 4
+		religion = catholic
+	}
+}
+
+1895.1.17 = {
+	monarch = {
+		name = "ÚÉ)R0èyS"
+		birth_date = 1841.1.30
+		adm = 4
+		dip = 3
+		mil = 3
+		religion = catholic
+	}
+}
+
+1899.2.18 = {
+	monarch = {
+		name = "√Ws|“R0bSç"
+		birth_date = 1838.12.30
+		adm = 3
+		dip = 4
+		mil = 2
+		religion = catholic
+	}
+}
+
+1906.2.18 = {
+	monarch = {
+		name = "?ñSíÇ0’l)R√W"
+		birth_date = 1841.11.6
+		adm = 3
+		dip = 3
+		mil = 4
+		religion = catholic
+	}
+}
+
+1907.1.1   = { leader = {	name = "Ferdinand Foch"	type = general		fire = 4	shock = 4	manuever = 2	siege = 1	death_date = 1923.1.1 } }
+
+1913.2.18 = {
+	monarch = {
+		name = "˜ñôÑ0nfi`†R±É"
+		birth_date = 1860.8.20
+		adm = 4
+		dip = 2
+		mil = 4
+		religion = catholic
+	}
+}
+
+1920.9.23 = {
+	monarch = {
+		name = "öNÜSqS'Y0s|“RpQ"
+		birth_date = 1859.2.10
+		adm = 3
+		dip = 3
+		mil = 5
+		religion = catholic
+	}
+}
+
+1924.6.13 = {
+	monarch = {
+		name = "†RØeN0jgÖh<h"
+		birth_date = 1863.8.1
+		adm = 4
+		dip = 4
+		mil = 2
+		religion = catholic
+	}
+}
+
+1931.6.13 = {
+	monarch = {
+		name = "›OW0jgé"
+		birth_date = 1857.3.22
+		adm = 3
+		dip = 2
+		mil = 3
+		religion = catholic
+	}
+}
+
+1932.5.10 = {
+	monarch = {
+		name = "?ñSç0“R^&O"
+		birth_date = 1871.8.29
+		adm = 4
+		dip = 5
+		mil = 3
+		religion = catholic
+	}
+}
+
+1939.1.1  = { 
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = universal_suffrage_reform
+	add_government_reform = reinforce_republican_values_reform
+	add_government_reform = multi_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = ceremonial_president
+	set_legacy_government = presidental_republic
+ }
+1940.6.14 = { capital = 1169 } #Brazzaville
+
+1940.6.14 = {
+	monarch = {
+		name = "YS04bÿöPN"
+		birth_date = 1890.11.22
+		adm = 3
+		dip = 4
+		mil = 6
+		religion = catholic
+	}
+}
+
+1942.11.16 = { capital = 338 } #Algiers
+
+1944.8.25 = { capital = 183 }
+
+1946.1.26 = {
+	monarch = {
+		name = "9ç)RKQØe0‰SâR"
+		birth_date = 1884.10.4
+		adm = 2
+		dip = 3
+		mil = 2
+		religion = catholic
+	}
+}
+
+1946.7.24 = {
+	monarch = {
+		name = "TNªl0ÆvjgS"
+		birth_date = 1899.10.5
+		adm = 3
+		dip = 1
+		mil = 3
+		religion = catholic
+	}
+}
+
+1946.11.28 = {
+	monarch = {
+		name = "jS0eYÃëeYS"
+		birth_date = 1884.8.27
+		adm = 4
+		dip = 4
+		mil = 3
+		religion = catholic
+	}
+}
+
+1946.12.16 = {
+	monarch = {
+		name = "±Éf0^Åú∆Y"
+		birth_date = 1872.4.9
+		adm = 3
+		dip = 2
+		mil = 1
+		religion = catholic
+	}
+}
+
+1947.1.16 = {
+	monarch = {
+		name = "jS0eYÃëeYS"
+		birth_date = 1884.8.27
+		adm = 4
+		dip = 4
+		mil = 3
+		religion = catholic
+	}
+}
+
+1954.1.16 = {
+	monarch = {
+		name = "“RÖQ0—yÇÑ"
+		birth_date = 1882.3.20
+		adm = 3
+		dip = 2
+		mil = 4
+		religion = catholic
+	}
+}
+
+1958.1.1 = { decision = join_european_union }
+
+1959.1.8 = {
+	monarch = {
+		name = "YS04bÿöPN"
+		birth_date = 1890.11.22
+		adm = 3
+		dip = 4
+		mil = 6
+		religion = catholic
+	}
+}
+
+1969.4.28 = {
+	monarch = {
+		name = "?ñpQ0‚l√W"
+		birth_date = 1909.4.17
+		adm = 3
+		dip = 3
+		mil = 2
+		religion = catholic
+	}
+}
+
+1969.7.20 = {
+	monarch = {
+		name = "TNªl0û^’k¶^"
+		birth_date = 1911.7.5
+		adm = 4
+		dip = 3
+		mil = 4
+		religion = catholic
+	}
+}
+
+1974.4.2 = {
+	monarch = {
+		name = "?ñpQ0‚l√W"
+		birth_date = 1909.4.17
+		adm = 3
+		dip = 3
+		mil = 2
+		religion = catholic
+	}
+}
+
+1974.5.27 = {
+	monarch = {
+		name = "Êt“RÃë0cRØeaS0∑VØefW"
+		birth_date = 1926.2.2
+		adm = 4
+		dip = 4
+		mil = 2
+		religion = catholic
+	}
+}
+
+1981.5.21 = {
+	monarch = {
+		name = "’lpQ0tÊt0∆Ryrg"
+		birth_date = 1916.10.26
+		adm = 4
+		dip = 4
+		mil = 3
+		religion = catholic
+	}
+}
+
+1995.5.17 = {
+	monarch = {
+		name = ">çŸu0-^»TKQ"
+		birth_date = 1932.11.29
+		adm = 3
+		dip = 4
+		mil = 3
+		religion = catholic
+	}
+}
+
+1999.1.1 = { decision = adopt_the_euro }
+
+2007.5.16 = {
+	monarch = {
+		name = "<S‰S…b0(Ñ—y	T"
+		birth_date = 1955.1.28
+		adm = 5
+		dip = 3
+		mil = 2
+		religion = catholic
+	}
+}
+
+2012.5.15 = {
+	monarch = {
+		name = "’lpQ0tÊt0'kpQ∑V"
+		birth_date = 1954.8.12
+		adm = 3
+		dip = 3
+		mil = 2
+		religion = catholic
+	}
+}
+
+2012.5.15 = {
+	monarch = {
+		name = "åÇ¸fÀu0löKQèR"
+		birth_date = 1977.12.21
+		adm = 3
+		dip = 4
+		mil = 2
+		religion = catholic
+	}
+}

@@ -1,0 +1,476 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 0.1
+religion = chalcedonism
+primary_culture = catalan
+technology_group = western
+capital = 213
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+487.1.1 = {
+  government = monarchy
+  add_government_reform = salic_reform
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+785.1.1 = {
+  monarch = {
+    name = "W¯eTX<S"  # Rostany
+    dynasty = "·V kW³u"  # de Girona
+    adm = 2
+    dip = 2
+    mil = 1
+  }
+}
+801.1.1 = {
+  monarch = {
+    name = "Éb I"  # Berà I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+801.1.1 = {
+  heir = {
+    name = "pQâl"  # Rampó
+    monarch_name = "pQâl I"  # Rampó I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    birth_date = 780.1.1
+    death_date = 826.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+820.1.1 = {
+  monarch = {
+    name = "pQâl I"  # Rampó I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+820.1.1 = {
+  heir = {
+    name = "S³uyr"  # Bernat
+    monarch_name = "S³uyr"  # Bernat I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    birth_date = 800.1.1
+    death_date = 844.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+826.1.1 = {
+  monarch = {
+    name = "S³uyr I"  # Bernat I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    adm = 5
+    dip = 5
+    mil = 5
+  }
+}
+826.1.1 = {
+  heir = {
+    name = "Ï‚<SV÷–·V"  # Sunifred
+    monarch_name = "Ï‚<SV÷–·V I"  # Sunifred I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    birth_date = 800.1.1
+    death_date = 848.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 5
+  }
+}
+844.1.1 = {
+  monarch = {
+    name = "Ï‚<SV÷–·V I"  # Sunifred I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    adm = 4
+    dip = 1
+    mil = 5
+  }
+}
+844.1.1 = {
+  heir = {
+    name = "	TRÆY"  # Guillem
+    monarch_name = "	TRÆY I"  # Guillem I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    birth_date = 810.1.1
+    death_date = 850.1.1
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+848.1.1 = {
+  monarch = {
+    name = "	TRÆY I"  # Guillem I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+848.1.1 = {
+  heir = {
+    name = "?–S&O"  # Aleran
+    monarch_name = "?–S&O I"  # Aleran I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    birth_date = 810.1.1
+    death_date = 852.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+850.1.1 = {
+  monarch = {
+    name = "?–S&O I"  # Aleran I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+850.1.1 = {
+  heir = {
+    name = "eY¾SÌ‘KQ"  # Odalric
+    monarch_name = "eY¾SÌ‘KQ I"  # Odalric I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    birth_date = 810.1.1
+    death_date = 858.1.1
+    claim = 95
+    adm = 5
+    dip = 2
+    mil = 2
+  }
+}
+852.1.1 = {
+  monarch = {
+    name = "eY¾SÌ‘KQ I"  # Odalric I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    adm = 5
+    dip = 2
+    mil = 2
+  }
+}
+852.1.1 = {
+  heir = {
+    name = "IlVÌ‘·V"  # Humfrid
+    monarch_name = "IlVÌ‘·V I"  # Humfrid I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    birth_date = 820.1.1
+    death_date = 864.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+858.1.1 = {
+  monarch = {
+    name = "IlVÌ‘·V I"  # Humfrid I
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+858.1.1 = {
+  heir = {
+    name = "S³uyr"  # Bernat
+    monarch_name = "S³uyr II"  # Bernat II
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    birth_date = 830.1.1
+    death_date = 878.1.1
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+865.1.1 = {
+  monarch = {
+    name = "S³uyr II"  # Bernat II
+    dynasty = "·V ôT^XW±"  # de Barcelona
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+867.1.1 = {
+  religion = catholic
+}
+878.1.1 = {
+  monarch = {
+    name = "ZSV÷–·V I"  # Wilfred I
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+878.1.1 = {
+  heir = {
+    name = "ZSV÷–·V"  # Wilfred
+    monarch_name = "ZSV÷–·V II"  # Wilfred II
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    birth_date = 870.1.1
+    death_date = 911.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+897.1.1 = {
+  monarch = {
+    name = "ZSV÷–·V II"  # Wilfred II
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    adm = 2
+    dip = 5
+    mil = 2
+  }
+}
+897.1.1 = {
+  heir = {
+    name = "Ï‚…mS"  # Sunyer
+    monarch_name = "Ï‚…mS I"  # Sunyer I
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    birth_date = 890.1.1
+    death_date = 947.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 5
+  }
+}
+911.1.1 = {
+  monarch = {
+    name = "Ï‚…mS I"  # Sunyer I
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    adm = 2
+    dip = 5
+    mil = 5
+  }
+}
+930.1.1 = {
+  heir = {
+    name = "ZS÷–)R"  # Borrell
+    monarch_name = "ZS÷–)R II"  # Borrell II
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    birth_date = 930.1.1
+    death_date = 992.1.1
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+947.1.1 = {
+  monarch = {
+    name = "ZS÷–)R II"  # Borrell II
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+962.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+}
+972.1.1 = {
+  heir = {
+    name = "Éb™„ ZS÷–S"  # Ramon Borrell
+    monarch_name = "Éb™„ ZS÷–S I"  # Ramon Borrell I
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    birth_date = 972.1.1
+    death_date = 1018.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 2
+  }
+}
+992.1.1 = {
+  monarch = {
+    name = "Éb™„ ZS÷–S I"  # Ramon Borrell I
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    adm = 5
+    dip = 1
+    mil = 2
+  }
+}
+1005.1.1 = {
+  heir = {
+    name = "&O<hS Éb™„"  # Berenguer Ramon
+    monarch_name = "&O<hS Éb™„ I"  # Berenguer Ramon I
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    birth_date = 1005.1.1
+    death_date = 1035.5.26
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1018.1.1 = {
+  monarch = {
+    name = "&O<hS Éb™„ I"  # Berenguer Ramon I
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1023.1.1 = {
+  heir = {
+    name = "Éb™„ &O<hS"  # Ramon Berenguer
+    monarch_name = "Éb™„ &O<hS I"  # Ramon Berenguer I
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    birth_date = 1023.1.1
+    death_date = 1076.1.1
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1035.5.26 = {
+  monarch = {
+    name = "Éb™„ &O<hS I"  # Ramon Berenguer I
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    adm = 3
+    dip = 1
+    mil = 3
+  }
+}
+1054.1.1 = {
+  heir = {
+    name = "Éb™„ &O<hS"  # Ramon Berenguer
+    monarch_name = "Éb™„ &O<hS II"  # Ramon Berenguer II
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    birth_date = 1054.1.1
+    death_date = 1082.12.5
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+1076.1.1 = {
+  monarch = {
+    name = "Éb™„ &O<hS II"  # Ramon Berenguer II
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    adm = 1
+    dip = 3
+    mil = 3
+  }
+}
+1076.1.1 = {
+  heir = {
+    name = "&O<hS Éb™„"  # Berenguer Ramon
+    monarch_name = "&O<hS Éb™„ II"  # Berenguer Ramon II
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    birth_date = 1055.1.1
+    death_date = 1097.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+1082.12.5 = {
+  monarch = {
+    name = "&O<hS Éb™„ II"  # Berenguer Ramon II
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    adm = 4
+    dip = 1
+    mil = 4
+  }
+}
+1082.12.5 = {
+  heir = {
+    name = "Éb™„ &O<hS"  # Ramon Berenguer
+    monarch_name = "Éb™„ &O<hS III"  # Ramon Berenguer III
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    birth_date = 1082.1.1
+    death_date = 1131.1.1
+    claim = 95
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+1097.1.1 = {
+  monarch = {
+    name = "Éb™„ &O<hS III"  # Ramon Berenguer III
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    adm = 5
+    dip = 1
+    mil = 1
+  }
+}
+1113.1.1 = {
+  heir = {
+    name = "Éb™„ &O<hS"  # Ramon Berenguer
+    monarch_name = "Éb™„ &O<hS IV"  # Ramon Berenguer IV
+    dynasty = "·V Ï‚<SV÷–·V"  # de Sunifred
+    birth_date = 1113.1.1
+    death_date = 1162.8.6
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+1131.1.1 = {
+  monarch = {
+    name = "Éb™„-&O<hS"  # Ramon Berenguer IV
+    dynasty = "·V Ï‚<SV÷–"  # de Sunifred
+    adm = 5
+    dip = 4
+    mil = 2
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1759.8.12 = {
+  government = monarchy
+  add_government_reform = autocracy_reform
+}

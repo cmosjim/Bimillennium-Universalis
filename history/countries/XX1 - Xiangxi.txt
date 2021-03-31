@@ -1,0 +1,60 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+mercantilism = 0.1
+primary_culture = chihan
+religion = liberalism
+technology_group = early_chinese
+capital = 2470
+
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+1911.1.1 = {
+	government = modern_chinese_warlord
+	add_government_reform = modern_chinese_warlord_reform
+	religion = liberalism
+}
+
+1911.10.22 = {
+	monarch = {
+		name = "&q¾ğS"
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
+
+
+#10g31åeÿÂS®‹b–®‹•0ËzªR>m–™†˜-Œö^ÿ•Vr¨R°e›Q-N„vÍS¨R›QºN…h¨™Ir>NLˆ›Q‹N?eØSÿŒNg†N&q¾ğSŒTH–jO°eÿ-Œö^ÿ•êûNVnWS›Q?eœ^ıcw0
+1911.10.31 = {
+	monarch = {
+		name = "-Œö^ÿ•"
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+#1920t^6gÿN-Œö^ÿ•Tßvÿqš»y1uS¬NıVl?eœ^åb4b„v–vû|›QºNÿVnWScw›Q.Vle'S0
+#11gÿûQ%VnWSwcw›Q|Qw•-Œö^ÿ•ÿb:NXn›QI`øSäN|QVnWSw•0
+#12gÿìSVVnWSw®‹Oÿïyg!P®‹Twwê»lÿR6RwªR0
+
+1920.11.1 = {
+	monarch = {
+		name = "uR`Õ`"
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+1949.10.1 = { technology_group = modern_chinese }

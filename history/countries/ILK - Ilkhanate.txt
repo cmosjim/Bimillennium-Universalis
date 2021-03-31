@@ -1,0 +1,123 @@
+government = tribal
+add_government_reform = steppe_horde
+mercantilism = 0.1
+technology_group = western_nomad_group
+religion = vajrayana
+primary_culture = persian
+capital = 2281 # Maragha
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = nomad_group }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+
+1256.1.1 = {
+	monarch = {
+		name = "íeÈpNQ"
+		#dynasty = " "
+	
+		adm = 4
+		dip = 4
+		mil = 6
+	}
+}
+
+1265.1.1 = { capital = 416 } # Tabriz
+
+1265.1.1 = {
+	monarch = {
+		name = "?–kQÈT"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1282.1.1 = {
+	monarch = {
+		name = "4äSí?Q"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+1284.1.1 = {
+	monarch = {
+		name = "?–œQm"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+1291.1.1 = {
+	monarch = {
+		name = "wmTı"
+		#dynasty = " "
+		
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}
+
+1295.1.1 = {
+	monarch = {
+		name = "Übı"
+		#dynasty = " "
+		
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1295.6.1 = {
+	monarch = {
+		name = "T^"
+		#dynasty = " "
+		
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+1296.1.1 = { religion = shiite religious_school = jafari_school }
+
+1304.5.11 = {
+	monarch = {
+		name = "ŒRwı"
+		#dynasty = " "
+		
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+1306.1.1 = { capital = 2283 } # Soltaniyeh
+
+1316.12.16 = {
+	monarch = {
+		name = "NiàV"
+		#dynasty = " "
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

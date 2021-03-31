@@ -1,0 +1,289 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+capital = 332
+religious_school = hanafi_school
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1307.1.1 = {
+  monarch = {
+    name = "ılO…QN aSÉb> O"  # Zeyneddin Karaca Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    adm = 4
+    dip = 1
+    mil = 5
+  }
+}
+1323.1.1 = {
+  heir = {
+    name = "vVS^XN ÈT)RÒR"  # Garseddin Halil
+    monarch_name = "vVS^XN ÈT)RÒR O"  # Garseddin Halil Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    birth_date = 1323.1.1
+    death_date = 3000.1.1
+    claim = 95
+    adm = 4
+    dip = 1
+    mil = 1
+  }
+}
+1353.1.1 = {
+  monarch = {
+    name = "vVS^XN ÈT)RÒR O"  # Garseddin Halil Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    adm = 4
+    dip = 1
+    mil = 1
+  }
+}
+1356.1.1 = {
+  heir = {
+    name = "™lís ¸‹)R"  # Saban Süli
+    monarch_name = "™lís ¸‹)R O"  # Saban Süli Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    birth_date = 1356.1.1
+    death_date = 3000.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1386.1.1 = {
+  monarch = {
+    name = "™lís ¸‹)R O"  # Saban Süli Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    adm = 3
+    dip = 3
+    mil = 2
+  }
+}
+1386.1.1 = {
+  heir = {
+    name = "(„¾aS"  # Sadaka
+    monarch_name = "(„¾aS O"  # Sadaka Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    birth_date = 1368.1.1
+    death_date = 3000.1.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 1
+  }
+}
+1398.1.1 = {
+  monarch = {
+    name = "(„¾aS O"  # Sadaka Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    adm = 5
+    dip = 3
+    mil = 1
+  }
+}
+1398.1.1 = {
+  heir = {
+    name = "³u‰÷–N FzUØ·V"  # Nasireddin Mehmed
+    monarch_name = "³u‰÷–N FzUØ·V O"  # Nasireddin Mehmed Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    birth_date = 1369.1.1
+    death_date = 3000.1.1
+    claim = 95
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+1399.1.1 = {
+  monarch = {
+    name = "³u‰÷–N FzUØ·V O"  # Nasireddin Mehmed Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    adm = 2
+    dip = 4
+    mil = 3
+  }
+}
+1412.1.1 = {
+  heir = {
+    name = "Ï‚±ƒüf"  # Sulaymân
+    monarch_name = "Ï‚±ƒüf O"  # Sulaymân Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    birth_date = 1412.1.1
+    death_date = 3000.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1442.1.1 = {
+  monarch = {
+    name = "Ï‚±ƒüf O"  # Sulaymân Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1442.1.1 = {
+  heir = {
+    name = "lš)RKQ"  # Malik
+    monarch_name = "lš)RKQ ?–pQ O"  # Malik Arslân Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    birth_date = 1420.1.1
+    death_date = 1465.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1454.1.1 = {
+  monarch = {
+    name = "lš)RKQ ?–pQ O"  # Malik Arslân Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1454.1.1 = {
+  heir = {
+    name = "^¾KQ"  # Bûdâq
+    monarch_name = "^¾KQ O"  # Bûdâq Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    birth_date = 1430.1.1
+    death_date = 1465.10.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 3
+  }
+}
+1465.1.1 = {
+  monarch = {
+    name = "^¾KQ O"  # Bûdâq Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    adm = 2
+    dip = 1
+    mil = 3
+  }
+}
+1465.1.1 = {
+  heir = {
+    name = "(„kÏ‚ætS"  # Shâhsuwâr
+    monarch_name = "(„kÏ‚ætS"  # Shâhsuwâr
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    birth_date = 1430.1.1
+    death_date = 1472.1.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1465.10.1 = {
+  monarch = {
+    name = "(„kÏ‚ætS"  # Shâhsuwâr
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1465.10.1 = {
+  heir = {
+    name = "^¾KQ"  # Bûdâq
+    monarch_name = "^¾KQ O"  # Bûdâq Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    birth_date = 1450.1.1
+    death_date = 1479.1.1
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 3
+  }
+}
+1472.1.1 = {
+  monarch = {
+    name = "^¾KQ O"  # Bûdâq Beg
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    adm = 2
+    dip = 1
+    mil = 3
+  }
+}
+1472.1.1 = {
+  heir = {
+    name = "?–YuNl ^yQaS·V"  # 'Alâ' ad-Dîn Buzqûrd
+    monarch_name = "?–YuNl ^yQaS·V"  # 'Alâ' ad-Dîn Buzqûrd
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    birth_date = 1460.1.1
+    death_date = 1515.6.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1479.1.1 = {
+  monarch = {
+    name = "?–YuNl ^yQaS·V"  # 'Alâ' ad-Dîn Buzqûrd
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1479.1.1 = {
+  heir = {
+    name = "?–Ì‘"  # 'Alî
+    monarch_name = "?–Ì‘ O II"  # 'Alî Beg II
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    birth_date = 1479.1.1
+    death_date = 1540.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1515.6.1 = {
+  monarch = {
+    name = "?–Ì‘ O II"  # 'Alî Beg II
+    dynasty = "jgSaSêSeYbS"  # Dulkadiroglu
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}

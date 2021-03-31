@@ -1,0 +1,22 @@
+objectTypes = {	
+	
+	###################################################################################################################
+	#####                                                                                                         #####
+	#####                                                  Eastern Tank                                           #####
+	#####                                                                                                         #####
+	###################################################################################################################
+		
+	pdxmesh = {
+		name = "eastern_tank"
+		file = "gfx/models/Units/eastern_tank.mesh"			
+
+		animation = { id = "attack"	type = "eastern_tank_attack_animation" }
+		animation = { id = "idle"	type = "eastern_tank_idle_animation" }
+		animation = { id = "walk"	type = "eastern_tank_moving_animation" }
+		animation = { id = "death"	type = "eastern_tank_idle_animation" }
+		animation = { id = "retreat"	type = "eastern_tank_moving_animation" }
+	
+		scale = 1.3
+	}	
+	
+}

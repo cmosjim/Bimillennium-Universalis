@@ -1,0 +1,66 @@
+#2553 - Hetu Ala
+
+owner = GOG
+controller = GOG
+add_core = GOG 
+culture = donghu
+religion = manchu_shamanism
+capital = "Gungnae"
+trade_goods = iron
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+is_city = yes
+
+discovered_by = early_chinese
+discovered_by = chinese
+discovered_by = qing_chinese
+discovered_by = modern_chinese
+discovered_by = eastern_nomad_group
+discovered_by = nomad_group
+246.1.1 = { owner = WEI controller = WEI }
+266.2.4 = { owner = JN1 controller = JN1 add_core = JN1 remove_core = WEI }
+290.1.1 = { owner = GOG controller = GOG add_core = GOG remove_core = JN1 }
+372.1.1 = { religion = mahayana }
+668.10.1 = { owner = TNG controller = TNG add_core = TNG remove_core = GOG }
+690.10.16 = { owner = WZ1 controller = WZ1 add_core = WZ1 remove_core = TNG }
+705.2.21 = { owner = TNG controller = TNG add_core = TNG remove_core = WZ1 }
+781.1.1 = { owner = BLH controller = BLH add_core = BLH remove_core = TNG capital = "Seogyeong" }
+926.1.14 = { owner = DN4 controller = DN4 add_core = DN4 remove_core = BLH }
+940.1.1 = { culture = manchu }
+947.1.1 = { owner = LIO controller = LIO add_core = LIO remove_core = DN4 }
+1116.1.1 = { owner = GNN controller = GNN add_core = GNN remove_core = LIO }
+1120.1.1 = { religion = confucianism }
+1216.1.1 = { owner = DX1 controller = DX1 add_core = DX1 remove_core = GNN }
+1233.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = DX1 }
+1260.5.5 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1368.1.1 = { owner = MJZ controller = MJZ add_core = MJZ remove_core = YUA }
+1616.1.1 = { owner = MCH
+		controller = MCH
+		add_core = MCH
+		remove_core = MJZ
+	    } # The Later Jin Khanate
+1636.5.15 = { owner = QNG controller = QNG add_core = QNG remove_core = MCH }
+1709.1.1 = { discovered_by = SPA }
+1752.1.1 = { base_tax = 6 }
+1779.1.1 = { base_tax = 7 }
+1806.1.1 = { base_production = 6 }
+1834.1.1 = { base_manpower = 4 }
+1861.1.1 = { base_manpower = 5 }
+1888.1.1 = { base_manpower = 6 }
+1897.1.1 = { culture = dongbe }
+1902.1.1 = { capital = "Tonghua" }
+1912.2.12 = { owner = BNN controller = BNN add_core = BNN remove_core = QNG }
+1915.1.1 = { base_manpower = 7 }
+1917.7.6 = { owner = FX1 controller = FX1 add_core = FX1 remove_core = BNN }
+1928.12.29 = { owner = ROC controller = ROC add_core = ROC remove_core = FX1 }
+1932.1.3 = { controller = JAP }
+1932.2.18 = { owner = MCK controller = MCK add_core = MCK }
+1943.1.1 = { base_production = 7 }
+1945.8.15 = { owner = CW1 controller = CW1 add_core = CW1  remove_core = MCK remove_core = ROC religion = communism }
+1949.10.1 = { owner = CHN controller = CHN add_core = CHN  remove_core = CW1 }
+1971.1.1 = { base_production = 8 }
+1994.4.1 = { capital = "Baishan" }
+2000.1.1 = { base_tax = 8 base_manpower = 8 }

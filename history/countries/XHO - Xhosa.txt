@@ -1,0 +1,149 @@
+government = tribal
+add_government_reform = tribal_despotism
+mercantilism = 0.1
+primary_culture = nguni
+religion = shamanism
+technology_group = sub_saharan
+capital = 1180
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1727.1.1 = {
+  monarch = {
+    name = "¯eOƒl"  # Tshiwo
+    dynasty = "Ñy(„"  # Xhosa
+    birth_date = 1697.1.1
+    adm = 3
+    dip = 3
+    mil = 1
+  }
+}
+1727.1.1 = {
+  heir = {
+    name = "Õlm"  # Phalo
+    monarch_name = "Õlm"  # Phalo
+    dynasty = "Ñy(„"  # Xhosa
+    birth_date = 1710.1.1
+    death_date = 1775.1.1
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1736.1.1 = {
+  monarch = {
+    name = "Õlm"  # Phalo
+    dynasty = "Ñy(„"  # Xhosa
+    birth_date = 1697.1.1
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1736.1.1 = {
+  heir = {
+    name = "ÉbÉbÔk"  # Rarabe
+    monarch_name = "ÉbÉbÔk"  # Rarabe
+    dynasty = "Ñy(„"  # Xhosa
+    birth_date = 1722.1.1
+    death_date = 1782.1.1
+    claim = 95
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+1775.1.1 = {
+  monarch = {
+    name = "ÉbÉbÔk"  # Rarabe
+    dynasty = "Ñy(„"  # Xhosa
+    birth_date = 1722.1.1
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+1775.1.1 = {
+  heir = {
+    name = "ÆYÉbLN"  # Mlawu
+    monarch_name = "ÆYÉbLN"  # Mlawu
+    dynasty = "Ñy(„"  # Xhosa
+    birth_date = 1750.1.1
+    death_date = 1782.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 0
+  }
+}
+1782.1.1 = {
+  monarch = {
+    name = "i`·VÉbÆYÔk"  # Ndlambe
+    dynasty = "Ñy(„"  # Xhosa
+    birth_date = 1740.1.1
+    adm = 3
+    dip = 3
+    mil = 0
+  }
+}
+1797.1.1 = {
+  monarch = {
+    name = "i`<hGYaS"  # Ngqika
+    dynasty = "KOOaS"  # Gaika
+    birth_date = 1770.1.1
+    adm = 3
+    dip = 4
+    mil = 4
+  }
+}
+1820.1.1 = {
+  heir = {
+    name = "QhêÒR"  # Sandile
+    monarch_name = "QhêÒR"  # Sandile
+    dynasty = "KOOaS"  # Gaika
+    birth_date = 1820.1.1
+    death_date = 1878.6.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+1829.11.13 = {
+  monarch = {
+    name = "QhêÒR"  # Sandile
+    dynasty = "KOOaS"  # Gaika
+    birth_date = 1820.1.1
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}

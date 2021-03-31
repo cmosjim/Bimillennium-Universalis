@@ -1,0 +1,192 @@
+government = tribal
+add_government_reform = tribal_federation
+mercantilism = 0.1
+primary_culture = yemeni_culture
+religion = south_arabian
+technology_group = middle_eastern
+capital = 389
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+650.1.1 = {
+  religion = sunni
+  technology_group = muslim
+  government = monarchy
+  add_government_reform = iqta
+  religious_school = shafii_school
+  capital = 4405
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1435.1.1 = {
+  monarch = {
+    name = "FzUØ·V O,g ?–Ì‘"  # Muhammad ibn 'Ali
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 3
+    dip = 3
+    mil = 3
+  }
+}
+1493.1.1 = {
+  monarch = {
+    name = ">ÕlS"  # Jafar
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1516.1.1 = {
+  monarch = {
+    name = "ôT·VS O,g ?–jSjgÉb"  # Badr ibn 'Abdallah
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 3
+    dip = 2
+    mil = 4
+  }
+}
+1565.1.1 = {
+  monarch = {
+    name = "?–jSjgÉb"  # Abdallah
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1620.1.1 = {
+  monarch = {
+    name = "Œ‚ÈTÈ·V"  # Ahmad
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1654.1.1 = {
+  capital = 389
+}
+1670.1.1 = {
+  monarch = {
+    name = ">ÕlS O,g ?–jSjgÉb"  # Jafar ibn Abdallah
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1690.1.1 = {
+  monarch = {
+    name = ">ÕlS O,g ôT·VS"  # Jafar ibn Badr
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1707.1.1 = {
+  monarch = {
+    name = "?–jSjgÉb O,g ôT·VS"  # Abdallah ibn Badr
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1725.1.1 = {
+  monarch = {
+    name = "?–s|S O,g ôT·VS"  # Amr ibn Badr
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1760.1.1 = {
+  monarch = {
+    name = "Œ‚ÈTÈ·V O,g Œ‚ÈTÈ·V"  # Ahmad ibn Ahmad
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1800.1.1 = {
+  monarch = {
+    name = "Fzk› ,g Œ‚ÈTÈ·V"  # Muhsin bin Ahmad
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1830.1.1 = {
+  monarch = {
+    name = " RÌ‘jS O,g Fzk›"  # Ghalib ibn Muhsin
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 4
+    dip = 2
+    mil = 1
+  }
+}
+1880.1.1 = {
+  monarch = {
+    name = "üfÏ‚S O,g  R)RjS"  # Al-Mansur ibn Ghalib
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1929.5.1 = {
+  monarch = {
+    name = "?–Ì‘ O,g üfÏ‚S"  # 'Ali ibn al-Mansur
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 4
+    dip = 2
+    mil = 2
+  }
+}
+1938.1.1 = {
+  monarch = {
+    name = ">ÕlS O,g üfÏ‚S"  # Jafar ibn al-Mansur
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 1
+    dip = 5
+    mil = 2
+  }
+}
+1949.4.24 = {
+  monarch = {
+    name = "¯OiàV O,g ?–Ì‘"  # Al-Husain ibn 'Ali
+    dynasty = "?–ÒRaS‚„Ì‘"  # Al Kathiri
+    adm = 1
+    dip = 1
+    mil = 2
+  }
+}

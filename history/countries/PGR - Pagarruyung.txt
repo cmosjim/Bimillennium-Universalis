@@ -1,0 +1,159 @@
+government = monarchy
+add_government_reform = mandala_reform
+mercantilism = 0.1
+primary_culture = sumatran
+religion = buddhism
+technology_group = early_chinese
+capital = 619	# Pagarruyung
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+1347.1.1 = {
+  monarch = {
+    name = "?–•^Ğc6wËid"  # Adityawarman
+    dynasty = "ÛkÌ‘"  # Mauli
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1375.1.1 = {
+  monarch = {
+    name = "?–ÊV¿YËid"  # Ananggawarman
+    dynasty = "ÛkÌ‘"  # Mauli
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1417.1.1 = {
+  monarch = {
+    name = "O±6wN–"  # Inayat
+    dynasty = "ÛkÌ‘"  # Mauli
+    adm = 3
+    dip = 4
+    mil = 2
+  }
+}
+1459.1.1 = {
+  monarch = {
+    name = "¿Y–FZ•^"  # Gadzabadi
+    dynasty = "ÛkÌ‘"  # Mauli
+    adm = 2
+    dip = 2
+    mil = 2
+  }
+}
+1489.1.1 = {
+  monarch = {
+    name = ".wW–"  # Menradza
+    dynasty = "ÛkÌ‘"  # Mauli
+    adm = 2
+    dip = 1
+    mil = 3
+  }
+}
+1519.1.1 = {
+  monarch = {
+    name = "däN¿YwP"  # Tsalenggathu
+    dynasty = "ÛkÌ‘"  # Mauli
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1549.1.1 = {
+  monarch = {
+    name = "ÍdW"  # Tsau-Lha
+    dynasty = "ÛkÌ‘"  # Mauli
+    adm = 3
+    dip = 2
+    mil = 3
+  }
+}
+1579.1.1 = {
+  monarch = {
+    name = "O±6wN–"  # Inayat
+    dynasty = "ÛkÌ‘"  # Mauli
+    adm = 3
+    dip = 2
+    mil = 2
+  }
+}
+1600.1.1 = {
+  religion = sunni
+  religious_school = shafii_school
+  add_piety = -0.10
+}
+
+1636.5.15 = { technology_group = old_estern_asian }
+
+1639.1.1 = {
+  monarch = {
+    name = "è•ÉbNb"  # Menradza
+    dynasty = "ÛkÌ‘"  # Mauli
+    adm = 1
+    dip = 2
+    mil = 3
+  }
+}
+
+
+1668.1.1 = {
+  monarch = {
+    name = "Œ‚ÈTÈ·V™l?–"  # Ahmadsyah
+    dynasty = "ÛkÌ‘"  # Mauli
+    adm = 4
+    dip = 4
+    mil = 3
+  }
+}
+1674.1.1 = {
+  monarch = {
+    name = "àV·VSlš™l?–"  # Indermasyah
+    dynasty = "ÛkÌ‘"  # Mauli
+    adm = 4
+    dip = 3
+    mil = 3
+  }
+}
+1730.1.1 = {
+  monarch = {
+    name = " RNbôTê"  # Gadzabadi
+    dynasty = "ÛkÌ‘"  # Mauli
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1759.1.1 = {
+  monarch = {
+    name = "è•ÉbNb"  # Menradza
+    dynasty = "ÛkÌ‘"  # Mauli
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1780.1.1 = {
+  monarch = {
+    name = "FzR™l?–"  # Muningsyah
+    dynasty = "ÛkÌ‘"  # Mauli
+    adm = 1
+    dip = 3
+    mil = 1
+  }
+}
+
+	
+1949.10.1 = { technology_group = asian }

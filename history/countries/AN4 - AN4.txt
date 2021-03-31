@@ -1,0 +1,562 @@
+government = ancient_chinese_togofu
+add_government_reform = ancient_chinese_togofu_reform
+mercantilism = 0.1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = chihan
+add_accepted_culture = chihan
+capital = 713 #Karasahr
+#âRâ˝êwã
+#R˙^KNâRâ˝êwãú^qQ€V˚N˝êwãˇ640t^-658t^	ˇˇ
+#
+#,r1˚Nˇ¨U+^gˇ640t^N642t^ˇsSU*YóRûå¿âAS€Vt^ÛÅU*YóRûå¿âASmQt^	ˇ|QâﬁTHRÚSˇ
+#,r2˚NˇÌêkRj`ˇ642t^649t^ˇsSU*YóRûå¿âASmQt^ÛÅU*YóRûå¿âåNAS	Nt^	ˇ|QâﬁTHRÚSˇ
+#,r3˚NˇÙgÚTZˇ649t^651t^ˇsSU*YóRûå¿âåNAS	Nt^ÛÅUÿöóR8lÀVåNt^	ˇOc¿râO≠^	NﬁT¯äÕéãN|QâRâ˝êwã0âﬁTHRÚS
+#,r4˚Nˇ¥ûzfinˇ651t^658t^ˇsSUÿöóR8lÀVåNt^ÛÅUÿöóRoòva	Nt^	ˇÊTMöià'YSÕé|QâRâ˝êwã0âﬁTHRÚS)YqS1ulQ [14]
+#âRâ'Y˝êwã
+#R˙^KNâRâ'Y˝êwãú^qQ5˚N'Y˝êwãˇ658t^-667t^	ˇˇ
+#
+#,r1˚NˇJiƒwˇUÿöóRoòva	Nt^ÛÅUÿöóRçügåNt^ˇ658t^662t^	ˇ
+#,r2˚NˇÜwm?eˇUÿöóRçügåNÛÅ	Nt^ˇ662-663	ˇ
+#,r3˚Nˇÿö‚å(UÿöóRçüg	Nt^ÛÅUÿöóRüû∑VCQt^ˇ663-664	ˇ
+#,r4˚Nˇ9SAZfkπV[15]ˇUÿöóRüû∑VCQt^ÛÅåNt^ˇ664-665	ˇ
+#,r5˚NˇÙàLà	QˇUÿöóRüû∑VåNt^ÛÅUÿöóRåNSåNt^ˇ665667	ˇ
+#âRâ˝êwã
+#çQ˙^KNâRâ˝êwãú^qQ7˚N˝êwãˇ667t^ˇ685t^	ˇˇ
+#
+#,r1˚Nˇvñ'Y	gˇ667t^ˇ669t^ˇsSUÿöóRåNSåNt^ÛÅKu‡zåNt^	ˇˇ
+#,r2˚NˇcÑˆRÆNˇUÿöóRKu‡zåNt^ÛÅ∏T®NåNt^ˇ669ˇ671	ˇ
+#,r3˚NˇTzfØèˇUÿöóR∏T®NåNt^ÛÅNCQåNt^ˇ671ˇ675	ˇ
+#,r4˚Nˇjg˜aˆRˇUÿöóR∏T®NåNt^ÛÅQÛú€Vt^ˇ671ˇ679	ˇ
+#,r5˚Nˇãsπe¸ˇUÿöóRøä2óCQt^ÛÅ8lÜñåNt^ˇ679ˇ681	ˇ
+#,r6˚NˇNgSê+^ˇUÿöóR8lÜñåNt^ˇ681	ˇ
+#,r7˚Nˇjg˜aˆRˇUÿöóRãïwCQt^ÛÅ8lÛmCQt^ˇ68lˇ682	ˇ
+#,r8˚NˇNgVyÜñˇUÿöóR8lÛmåNt^ÛÅU-NóRÇWÒbCQt^ˇ683ˇ685	ˇ
+#âRâ'Y˝êwã
+#çQ˙^KNâRâ'Y˝êwãú^qQ2˚N'Y˝êwãˇ686t^-689t^	ˇ
+#
+#,r1˚NˇãsNúgˇUwóRÇWÒbåNt^ÛÅ	Nt^ˇ686687	ˇ
+#,r2˚Nˇªï´n‰SˇUwóRÇWÒb	Nt^ÛÅUwóR8lfCQt^ˇ687689	ˇ
+#âRâ˝êwã
+#	N˙^KNâRâËêwãú^qQiQ˚N˝êwãˇ689t^ˇ691t^	ˇˇ
+#
+#fåeˇUwóR8lfCQt^ÛÅfkhT)YàcåNt^ˇ689ˇ691	ˇ
+#âRâ'Y˝êwã
+#	N˙^KNâRâ'Y˝êwãú^'Y˝êwãˇ693t^-752t^	ˇ
+#
+#,r1˚Nˇ1äKkfˇfkhTwï˝XåNt^ÛÅfkhT,Ñrkê)YCQt^ˇ693696	ˇ
+#*gKN˚Nˇ-ëkR,gˇ0ƒnﬁTHRÚS-ëkR,gìX◊Vòí0ˇ0SdñùåﬁTHRÚSˇIèâRâ˝êwãˇÂNæuN*XcäËêˇIèƒnﬁTHRÚS00Vw∆fCQt^RSˇ%fÀymQASN0	ˇ
+#,r2˚NˇlQkR≈ñVóˇfkhT,Ñrkê)YCQt^ÛÅfkhTVw∆fCQt^ˇ696698	ˇ
+#,r3˚Nˇ0u⁄cTˇfkhTVw∆fCQt^ÛÅfkhTwïâR€Vt^ˇ698704	ˇ
+#,r4˚NˇÌêCQ=cˇU-NóR^yçüåNt^ÛÅofçüåNt^ˇ706N708	ˇ
+#,r5˚NˇhTÂNå`ˇU-NóRofçüåNt^ˇ708ˇ*gKN˚N	ˇ
+#,r6˚NˇÌêCQ=cˇU-NóRofçüåNt^ÛÅofÚñCQt^ˇ708N710	ˇ
+#,r7˚Nˇ5VÑshàˇU-NóRofÚñCQt^ÛÅUÑsóRHQ)YCQt^ˇ710N712	ˇ
+#,r8˚NˇãR∑VCQ[16]ˇUÑsóRHQ)YåNt^ÛÅãïCQåNt^ˇ713N714	ˇ
+#,r9˚NˇBTOütˇUÑsóRãïCQåNt^ÛÅ	Nt^ˇ714N715	ˇ
+#,r10˚NˇÌêTÜÿtˇUÑsóRãïCQ	Nt^ˇ715717	ˇ
+#,r11˚NˇÔêãsNg„UÙvˇUÑsóRãïCQ€Vt^ˇ716ˇYêò	ˇ
+#,r12˚NˇkñãsNg„UGSˇUÑsóRãïCQ€Vt^ˇ716ˇYêò	ˇ
+#,r13˚Nˇon	V‡`ˇ717719	ˇ
+#,r14˚Nˇ5VkRiTˇ719724	ˇ
+#,r15˚Nˇjgπfˇ724726	ˇ
+#,r16˚Nˇôç2òûåˇ726727	ˇ
+#,r17˚Nˇ5V–gˇUÑsóRãïCQåNASNt^RSˇ733t^MR	ˇ
+#,r–g˚NˇNﬂO…aCQˇÑsóRt^ìï˚N	ˇ[17]
+#,r18˚Nˇˆ^ãsNgmˇUÑsóRãïCQASîNt^ÛÅåNAS	Nt^ˇ727735ˇYêò	ˇ
+#,r19˚Nˇôç+T‡zˇ727729	ˇ
+#,r20˚NˇBTO3tˇ729730	ˇ
+#,r21˚Nˇon	V‡`ˇ730	ˇ
+#,r22˚NˇÜO‹fˇ731	ˇ
+#,r23˚NˇêVKkXãˇ731733	ˇ
+#,r24˚NˇãsõeØeˇ733738	ˇ
+#,r25˚Nˇ˚N+^)R[18]
+#,r26˚NˇÀÑ	VKêˇ738739	ˇ
+#,r27˚Nˇ0u¡N,t[19]ˇUÑsóRãïCQåNASkQt^ÛÅ)YˆRCQt^ˇ740742	ˇ
+#,r28˚Nˇ+YôÑHógäˇ742747	ˇ
+#,r29˚NˇÿöŸNùÇˇ747750	ˇ
+#,r30˚Nˇãsckãâˇ751752	ˇ
+#,r31˚NˇS8^nˇ752755	ˇ
+#,r32˚Nˇ±|∞RˇUÖwóRÛÅ∑VCQ	èÛÅåN	èˇ756757t^	ˇˇÛÅ∑VåN	èÛÅU„NóR8llCQt^ˇ757t^764t^	ˇ
+#,r33˚NˇNg„UmiˇUÖwóRÛÅ∑VåN	èˇ757	ˇâRâ'Y˝êwã9eÆìâ˝êwãˇNg„Umi∫pÆìâ0S≠^Làﬂq¿r¶^OˇYêò*g1S˚N0
+#,r34˚NˇTÉ^óCQÆyˇUÖwóRåNCQåNt^ˇ759	ˇ„NòÆìâ0S≠^Làﬂq¿r¶^OˇYêò*g1S˚N0
+#,r35˚NÊRõñNÑv,r34˚NˇÌêfˇ'Y∆fAS€Vt^ˇ779t^	ˇ∫pâRâ€VÆìYuåV0˙^-NåNt^ˇ781t^	ˇˇckVäQS∫pâRâ'Y˝êwã0€VÆì¿r¶^O0ˇ779t^795t^	ˇ
+#âRÚSKNÇNåVÔSwKNâRâ˝êwã
+#
+#ÊRõñNÑv,r31˚Nˇ>r1g–gˇ765t^ˇ778t^ U„NóR8llCQt^ÛÅ'Y∆fAS	Nt^01S˚N0
+2.1.1 =  { set_country_flag = flg_overlord_abandon_alliance }
+100.1.1 = { add_government_reform = early_cn_gov_reform_1 }
+230.1.1 = { add_government_reform = early_cn_gov_reform_2 }
+360.1.1 = { add_government_reform = early_cn_gov_reform_3 }
+490.1.1 = { add_government_reform = early_cn_gov_reform_4 }
+620.1.1 = { add_government_reform = early_cn_gov_reform_5 }
+
+640.1.1 = {
+	monarch = {
+		name = "TN^g"
+		adm = 3
+		dip = 3
+		mil = 5
+  }
+}
+
+642.1.1 = {
+	monarch = {
+		name = "ÌêkRj`"
+		adm = 5
+		dip = 5
+		mil = 2
+  }
+}
+
+649.1.1 = {
+	monarch = {
+		name = "ÙgÚTZ"
+		adm = 3
+		dip = 3
+		mil = 2
+  }
+}
+
+651.1.1 = {
+	monarch = {
+		name = "Úfzfin"
+		adm = 3
+		dip = 3
+		mil = 5
+  }
+}
+
+658.1.1 = {
+	monarch = {
+		name = "hgƒw"
+		adm = 3
+		dip = 3
+		mil = 4
+  }
+}
+
+662.1.1 = {
+	monarch = {
+		name = "œÇwm?e"
+		adm = 3
+		dip = 3
+		mil = 4
+  }
+}
+
+663.1.1 = {
+	monarch = {
+		name = "ÿö2ç"
+		adm = 3
+		dip = 3
+		mil = 4
+  }
+}
+
+664.1.1 = {
+	monarch = {
+		name = "9SZfkâV"
+		adm = 3
+		dip = 3
+		mil = 4
+  }
+}
+
+665.1.1 = {
+	monarch = {
+		name = "ÙàLàÌO"
+		adm = 3
+		dip = 4
+		mil = 4
+  }
+}
+
+667.1.1 = {
+	monarch = {
+		name = "vñ'Y	g"
+		adm = 4
+		dip = 4
+		mil = 4
+  }
+}
+
+669.1.1 = {
+	monarch = {
+		name = "cÑùRÆN"
+		adm = 4
+		dip = 4
+		mil = 4
+  }
+}
+
+671.1.1 = {
+	monarch = {
+		name = "jg`ùR"
+		adm = 4
+		dip = 4
+		mil = 4
+  }
+}
+
+679.1.1 = {
+	monarch = {
+		name = "ãsπe¸"
+		adm = 4
+		dip = 4
+		mil = 4
+  }
+}
+
+681.1.1 = {
+	monarch = {
+		name = "NgSê^"
+		adm = 1
+		dip = 1
+		mil = 2
+  }
+}
+
+681.6.1 = {
+	monarch = {
+		name = "jg`ùR"
+		adm = 4
+		dip = 4
+		mil = 4
+  }
+}
+
+683.1.1 = {
+	monarch = {
+		name = "NgVyÜñ"
+		adm = 1
+		dip = 2
+		mil = 2
+  }
+}
+
+686.1.1 = {
+	monarch = {
+		name = "ãsNúg"
+		adm = 4
+		dip = 4
+		mil = 2
+  }
+}
+
+
+687.1.1 = {
+	monarch = {
+		name = "ñ)n‰S"
+		adm = 4
+		dip = 4
+		mil = 2
+  }
+}
+
+689.1.1 = {
+	monarch = {
+		name = "fåe"
+		adm = 4
+		dip = 4
+		mil = 4
+  }
+}
+
+693.1.1 = {
+	monarch = {
+		name = "∏ã¶îf"
+		adm = 4
+		dip = 4
+		mil = 5
+  }
+}
+
+696.1.1 = {
+	monarch = {
+		name = "lQYR≈ñVó"
+		adm = 2
+		dip = 4
+		mil = 5
+  }
+}
+
+698.1.1 = {
+	monarch = {
+		name = "0ulbT"
+		adm = 6
+		dip = 4
+		mil = 2
+  }
+}
+
+706.1.1 = {
+	monarch = {
+		name = "ÌêCQ=c"
+		adm = 3
+		dip = 4
+		mil = 4
+  }
+}
+
+710.1.1 = {
+	monarch = {
+		name = ".VÑshà"
+		adm = 3
+		dip = 5
+		mil = 4
+  }
+}
+
+713.1.1 = {
+	monarch = {
+		name = "ãR∑VCQ"
+		adm = 4
+		dip = 5
+		mil = 4
+  }
+}
+
+714.1.1 = {
+	monarch = {
+		name = "TOüt"
+		adm = 4
+		dip = 2
+		mil = 4
+  }
+}
+
+715.1.1 = {
+	monarch = {
+		name = "ÌêTÜÿt"
+		adm = 4
+		dip = 5
+		mil = 4
+  }
+}
+
+716.1.1 = {
+	monarch = {
+		name = "Ng„UGS"
+		adm = 4
+		dip = 5
+		mil = 3
+  }
+}
+
+717.1.1 = {
+	monarch = {
+		name = "dl	V‡`"
+		adm = 3
+		dip = 5
+		mil = 3
+  }
+}
+
+719.1.1 = {
+	monarch = {
+		name = ".VkRiT"
+		adm = 2
+		dip = 5
+		mil = 3
+  }
+}
+
+724.1.1 = {
+	monarch = {
+		name = "jgπf"
+		adm = 2
+		dip = 3
+		mil = 3
+  }
+}
+
+726.1.1 = {
+	monarch = {
+		name = "uçêòç"
+		adm = 2
+		dip = 3
+		mil = 3
+  }
+}
+
+727.1.1 = {
+	monarch = {
+		name = "uç+T‡z"
+		adm = 2
+		dip = 3
+		mil = 5
+  }
+}
+
+729.1.1 = {
+	monarch = {
+		name = "TO3t"
+		adm = 2
+		dip = 3
+		mil = 5
+  }
+}
+
+730.1.1 = {
+	monarch = {
+		name = "dl	V‡`"
+		adm = 3
+		dip = 5
+		mil = 3
+  }
+}
+
+731.1.1 = {
+	monarch = {
+		name = "eg‹f"
+		adm = 3
+		dip = 5
+		mil = 3
+  }
+}
+
+731.6.1 = {
+	monarch = {
+		name = "êV¶î∆ã"
+		adm = 3
+		dip = 5
+		mil = 5
+  }
+
+}
+
+733.6.1 = {
+	monarch = {
+		name = "ãsõeØe"
+		adm = 3
+		dip = 5
+		mil = 5
+  }
+}
+
+738.1.1 = {
+	monarch = {
+		name = "÷v	V–è"
+		adm = 3
+		dip = 1
+		mil = 5
+  }
+}
+
+740.1.1 = {
+	monarch = {
+		name = "0u¡N,t"
+		adm = 2
+		dip = 1
+		mil = 4
+  }
+}
+
+742.1.1 = {
+	monarch = {
+		name = "+YôÑupgä"
+		adm = 4
+		dip = 5
+		mil = 4
+  }
+}
+
+747.1.1 = {
+	monarch = {
+		name = "ÿöŸNùÇ"
+		adm = 4
+		dip = 5
+		mil = 5
+		leader = { 
+            name = "ÿöŸNùÇ"	
+            type = general	
+            fire = 5	
+            shock = 4	
+            manuever = 4
+            siege = 3
+		}
+	}
+}
+
+750.1.1 = { add_government_reform = early_cn_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+
+751.1.1 = {
+	monarch = {
+		name = "ãsck¡â"
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+752.1.1 = {
+	monarch = {
+		name = "S8^n"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+
+756.1.1 = {
+	monarch = {
+		name = "±|∞R"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+757.1.1 = {
+	monarch = {
+		name = "Ng„UN"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+759.1.1 = {
+	monarch = {
+		name = "TÉ^óCQ<y"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+759.1.1 = {
+	monarch = {
+		name = "TÉ^óCQ<y"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+765.1.1 = {
+	monarch = {
+		name = "S1g–g"
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+779.1.1 = {
+	monarch = {
+		name = "Ìêf"
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+880.1.1 = { add_government_reform = early_cn_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_cn_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_cn_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_cn_gov_reform_10 }
+
+1949.10.1 = { technology_group = modern_chinese }

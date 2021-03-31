@@ -1,0 +1,153 @@
+government = monarchy
+add_government_reform = autocracy_reform
+mercantilism = 0.1
+primary_culture = israeli
+religion = jewish
+historical_rival = PLS
+technology_group = muslim
+capital = 2151
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1910.1.1 = {
+  government = republic
+  add_government_reform = parliamentary_reform
+  add_government_reform = parliamentary_reform
+  add_government_reform = strengthen_executive_powers_reform
+  add_government_reform = single_party_system
+  add_government_reform = democracy_reform
+  add_government_reform = powerful_head_of_state
+  set_legacy_government = constitutional_republic
+}
+1920.1.1 = {
+  technology_group = western
+}
+1922.1.1 = {
+  religion = liberalism
+}
+1948.5.14 = {
+  monarch = {
+    name = "'YkS ,g ‰StâR"  # David Ben-Gurion
+    adm = 4
+    dip = 3
+    mil = 3
+    religion = jewish
+  }
+}
+1948.5.16 = {
+  monarch = {
+    name = "»TO∆Y Oõ(É¸f"  # Chaim Weizmann
+    adm = 5
+    dip = 2
+    mil = 3
+    religion = jewish
+  }
+}
+1952.12.16 = {
+  monarch = {
+    name = "ONbKQ ,g yQÙu"  # Yitzhak Ben-Zvi
+    adm = 2
+    dip = 5
+    mil = 3
+    religion = jewish
+  }
+}
+1963.5.21 = {
+  monarch = {
+    name = "Nb“R¸f YNbS"  # Zalman Shazar
+    adm = 4
+    dip = 3
+    mil = 4
+    religion = jewish
+  }
+}
+1973.5.24 = {
+  monarch = {
+    name = "OV˜ñ∆Y aSPüS"  # Ephraim Katzir
+    adm = 5
+    dip = 3
+    mil = 2
+    religion = jewish
+  }
+}
+1978.5.29 = {
+  monarch = {
+    name = "ONbKQ ≥uØQ"  # Yitzhak Navon
+    adm = 3
+    dip = 4
+    mil = 3
+    religion = jewish
+  }
+}
+1983.5.5 = {
+  monarch = {
+    name = "»TO∆Y kçSPOKQ"  # Chaim Herzog
+    adm = 4
+    dip = 4
+    mil = 2
+    religion = jewish
+  }
+}
+1993.5.13 = {
+  monarch = {
+    name = "√W˝lS Oõ(É¸f"  # Ezer Weizman
+    adm = 3
+    dip = 2
+    mil = 4
+    religion = jewish
+  }
+}
+2000.8.1 = {
+  monarch = {
+    name = "idâ aSﬂR+Y"  # Moshe Katsav
+    adm = 5
+    dip = 3
+    mil = 3
+    religion = jewish
+  }
+}
+2007.7.15 = {
+  monarch = {
+    name = "âôÑ iO˜ñØe"  # Shimon Peres
+    adm = 3
+    dip = 3
+    mil = 4
+    religion = jewish
+  }
+}
+2014.7.24 = {
+  monarch = {
+    name = "Åúáe Ãë+Yóg"  # Reuven Rivlin
+    adm = 3
+    dip = 3
+    mil = 3
+    religion = jewish
+  }
+}

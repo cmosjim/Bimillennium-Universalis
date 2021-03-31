@@ -1,0 +1,33 @@
+government = ancient_chinese_warlord
+add_government_reform = ancient_chinese_warlord_reform
+government_rank = 1
+technology_group = early_chinese
+religion = confucianism
+primary_culture = mongol
+add_accepted_culture = chihan
+capital = 720
+
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
+360.1.1 = { add_government_reform = early_gov_reform_3 }
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
+750.1.1 = { technology_group = chinese }
+880.1.1 = { add_government_reform = early_gov_reform_7 }
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
+#iR…^(gRQÿÿÿ1365t^	ÿÈSjOiR…5”(gRQÿCQg+gt^S˜0™„äSÏeceêSNQlÿ’dÒRêSNQÕ`l0Êsùz6^	ÿºN0
+1359.1.1 = {
+	monarch = {
+		name = "iRW"
+		dynasty = "^(g?Q"
+		birth_date =  1330.1.1
+		death_date =  1365.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+		leader = { name = "iRW^(g?Q"	type = general	fire = 6	shock = 5	manuever = 3	siege = 2 }
+	}
+}

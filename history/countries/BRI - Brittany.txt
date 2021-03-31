@@ -1,0 +1,723 @@
+government = tribal
+add_government_reform = barbarian_reform
+primary_culture = breton
+religion = chalcedonism
+technology_group = barbarian
+capital = 172
+100.1.1 = {
+  add_government_reform = early_gov_reform_1
+}
+230.1.1 = {
+  add_government_reform = early_gov_reform_2
+}
+360.1.1 = {
+  add_government_reform = early_gov_reform_3
+}
+490.1.1 = {
+  add_government_reform = early_gov_reform_4
+}
+500.1.1 = {
+  government = monarchy
+  add_government_reform = feudalism_reform
+  government_rank = 1
+}
+536.1.1 = {
+  technology_group = western
+}
+620.1.1 = {
+  add_government_reform = early_gov_reform_5
+}
+750.1.1 = {
+  add_government_reform = early_gov_reform_6
+}
+846.1.1 = {
+  monarch = {
+    name = "˙ãf'k"  # Nominoe
+    dynasty = "˙ãf'k∑V"  # Nominoid
+    adm = 1
+    dip = 1
+    mil = 1
+  }
+}
+846.1.1 = {
+  heir = {
+    name = "√WÃëØe‚l"  # Erispoe
+    monarch_name = "√WÃëØe‚l"  # Erispoe
+    dynasty = "˙ãf'k∑V"  # Nominoid
+    birth_date = 820.1.1
+    death_date = 857.11.12
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+851.3.7 = {
+  monarch = {
+    name = "√WÃëØe‚l"  # Erispoe
+    dynasty = "˙ãf'k∑V"  # Nominoid
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+857.11.12 = {
+  monarch = {
+    name = "(ÑmôÑ"  # Salomon
+    dynasty = "(ÑWôÑ∑V"  # Salomonid
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+867.1.1 = {
+  religion = catholic
+}
+874.1.1 = {
+  monarch = {
+    name = "^ØeKQfW"  # Pasquitan
+    dynasty = "∑V Êt∑ã"  # de Vannes
+    adm = 4
+    dip = 3
+    mil = 5
+  }
+}
+877.1.1 = {
+  monarch = {
+    name = "?ñpQ I"  # Alan I
+    dynasty = "∑V Êt∑ã"  # de Vannes
+    adm = 4
+    dip = 3
+    mil = 4
+  }
+}
+880.1.1 = {
+  add_government_reform = early_gov_reform_7
+}
+938.1.1 = {
+  monarch = {
+    name = "?ñpQ II"  # Alan II
+    dynasty = "∑V WSyr"  # de Nantes
+    adm = 1
+    dip = 3
+    mil = 5
+  }
+}
+938.1.1 = {
+  heir = {
+    name = "∑VWb"  # Drogo
+    monarch_name = "∑VWb I"  # Drogo I
+    dynasty = "∑V WSyr"  # de Nantes
+    birth_date = 922.1.1
+    death_date = 960.1.1
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+952.1.1 = {
+  monarch = {
+    name = "∑VWb I"  # Drogo I
+    dynasty = "∑V WSyr"  # de Nantes
+    adm = 2
+    dip = 3
+    mil = 4
+  }
+}
+952.1.1 = {
+  heir = {
+    name = "ó√WS"  # HoÎl
+    monarch_name = "ó√WS I"  # Hoel I
+    dynasty = "∑V WSyr"  # de Nantes
+    birth_date = 930.1.1
+    death_date = 981.1.1
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+960.1.1 = {
+  monarch = {
+    name = "ó√WS I"  # HoÎl I
+    dynasty = "∑V WSyr"  # de Nantes
+    adm = 1
+    dip = 2
+    mil = 4
+  }
+}
+960.1.1 = {
+  heir = {
+    name = "÷v±ÉKQ"  # Guerech
+    monarch_name = "÷v±ÉKQ I"  # Guerech I
+    dynasty = "∑V WSyr"  # de Nantes
+    birth_date = 951.1.1
+    death_date = 988.1.1
+    claim = 95
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+981.1.1 = {
+  monarch = {
+    name = "÷v±ÉKQ I"  # Guerech I
+    dynasty = "∑V WSyr"  # de Nantes
+    adm = 4
+    dip = 2
+    mil = 5
+  }
+}
+981.1.1 = {
+  heir = {
+    name = "?ñpQ"  # Alan
+    monarch_name = "?ñpQ"  # Alan
+    dynasty = "∑V WSyr"  # de Nantes
+    birth_date = 958.1.1
+    death_date = 990.1.1
+    claim = 95
+    adm = 5
+    dip = 5
+    mil = 1
+  }
+}
+988.1.1 = {
+  monarch = {
+    name = "?ñpQ"  # Alan
+    dynasty = "∑V WSyr"  # de Nantes
+    adm = 5
+    dip = 5
+    mil = 1
+  }
+}
+990.1.1 = {
+  monarch = {
+    name = "ÔgWS"  # Konan I
+    dynasty = "∑V ˜ñi`"  # de Rennes
+    adm = 1
+    dip = 4
+    mil = 5
+  }
+}
+990.1.1 = {
+  heir = {
+    name = "NbV˜ñ"  # Jafrez
+    monarch_name = "NbV˜ñ I"  # Jafrez I
+    dynasty = "∑V ˜ñi`"  # de Rennes
+    birth_date = 980.1.1
+    death_date = 1008.11.20
+    claim = 95
+    adm = 2
+    dip = 1
+    mil = 4
+  }
+}
+992.6.27 = {
+  monarch = {
+    name = "NbV˜ñ I"  # Jafrez I
+    dynasty = "∑V ˜ñi`"  # de Rennes
+    adm = 2
+    dip = 1
+    mil = 4
+  }
+}
+997.1.1 = {
+  heir = {
+    name = "?ñpQ"  # Alan
+    monarch_name = "?ñpQ III"  # Alan III
+    dynasty = "∑V ˜ñi`"  # de Rennes
+    birth_date = 997.1.1
+    death_date = 1040.10.1
+    claim = 95
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+1008.11.20 = {
+  monarch = {
+    name = "?ñpQ III"  # Alan III
+    dynasty = "∑V ˜ñi`"  # de Rennes
+    adm = 5
+    dip = 3
+    mil = 5
+  }
+}
+1010.1.1 = {
+  add_government_reform = early_gov_reform_8
+}
+1033.1.1 = {
+  heir = {
+    name = "ÔgWS"  # Konan
+    monarch_name = "ÔgWS II"  # Konan II
+    dynasty = "∑V ˜ñi`"  # de Rennes
+    birth_date = 1033.1.1
+    death_date = 1066.12.11
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1040.10.1 = {
+  monarch = {
+    name = "ÔgWS II"  # Konan II
+    dynasty = "∑V ˜ñi`"  # de Rennes
+    adm = 2
+    dip = 3
+    mil = 2
+  }
+}
+1040.10.1 = {
+  heir = {
+    name = "»TÙuyQ"  # Hawiz
+    monarch_name = "»TÙuyQ I"  # Hawiz I
+    dynasty = "∑V ˜ñi`"  # de Rennes
+    birth_date = 1037.1.1
+    death_date = 1072.8.19
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 3
+    female = yes
+  }
+}
+1066.12.11 = {
+  monarch = {
+    name = "»TÙuyQ I"  # Hawiz I
+    dynasty = "∑V ˜ñi`"  # de Rennes
+    adm = 3
+    dip = 4
+    mil = 3
+    female = yes
+  }
+}
+1084.1.1 = {
+  monarch = {
+    name = "?ñpQ IV"  # Alan IV
+    dynasty = "∑V —y™RÊt6w"  # de Cornouaille
+    adm = 1
+    dip = 1
+    mil = 3
+  }
+}
+1093.1.1 = {
+  heir = {
+    name = "ÔgWS"  # Konan
+    monarch_name = "ÔgWS III"  # Konan III
+    dynasty = "∑V —y™RÊt6w"  # de Cornouaille
+    birth_date = 1093.1.1
+    death_date = 1148.9.17
+    claim = 95
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+1112.1.1 = {
+  monarch = {
+    name = "ÔgWS III"  # Konan III
+    dynasty = "∑V —y™RÊt6w"  # de Cornouaille
+    adm = 3
+    dip = 1
+    mil = 1
+  }
+}
+1114.1.1 = {
+  heir = {
+    name = "çSTX"  # Berta
+    monarch_name = "çSTX I"  # Berta I
+    dynasty = "∑V —y™RÊt6w"  # de Cornouaille
+    birth_date = 1114.1.1
+    death_date = 1156.1.1
+    claim = 95
+    adm = 3
+    dip = 4
+    mil = 1
+    female = yes
+  }
+}
+1140.1.1 = {
+  add_government_reform = early_gov_reform_9
+}
+1148.9.17 = {
+  monarch = {
+    name = "çSTX I"  # Berta I
+    dynasty = "∑V —y™RÊt6w"  # de Cornouaille
+    adm = 3
+    dip = 4
+    mil = 1
+    female = yes
+  }
+}
+1156.1.1 = {
+  monarch = {
+    name = "ÔgWS IV"  # Konan IV
+    dynasty = "∑V û^ÇÑ6w+YS"  # de PenthiËvre
+    adm = 3
+    dip = 4
+    mil = 1
+  }
+}
+1161.6.12 = {
+  heir = {
+    name = "∑^ØefWéÉ"  # Konstanza
+    monarch_name = "∑^ØefWéÉ"  # Konstanza
+    dynasty = "∑V û^ÇÑ6w+YS"  # de PenthiËvre
+    birth_date = 1161.6.12
+    death_date = 1201.9.5
+    claim = 95
+    adm = 3
+    dip = 2
+    mil = 4
+    female = yes
+  }
+}
+1171.2.20 = {
+  monarch = {
+    name = "∑^ØefWéÉ"  # Konstanza
+    dynasty = "∑V û^ÇÑ6w+YS"  # de PenthiËvre
+    adm = 3
+    dip = 2
+    mil = 4
+    female = yes
+  }
+}
+1201.9.5 = {
+  monarch = {
+    name = "?ñÇÑS"  # Artur I
+    dynasty = "—ë¿ñ±Ç"  # Plantagenet
+    adm = 4
+    dip = 2
+    mil = 3
+  }
+}
+1203.4.3 = {
+  monarch = {
+    name = "?ñÃëN"  # Alis
+    dynasty = "∑V ˛V?ñS"  # de Thouars
+    adm = 3
+    dip = 4
+    mil = 1
+    female = yes
+  }
+}
+1221.10.21 = {
+  monarch = {
+    name = "©ã I"  # Jean I
+    dynasty = "∑V ∑V“R"  # de Dreux
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1239.1.3 = {
+  heir = {
+    name = "©ã"  # Jean
+    monarch_name = "©ã II"  # Jean II
+    dynasty = "∑V ∑V“R"  # de Dreux
+    birth_date = 1239.1.3
+    death_date = 1305.11.16
+    claim = 95
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+1270.1.1 = {
+  add_government_reform = early_gov_reform_10
+}
+1286.10.8 = {
+  monarch = {
+    name = "©ã II"  # Jean II
+    dynasty = "∑V ∑V“R"  # de Dreux
+    adm = 2
+    dip = 5
+    mil = 1
+  }
+}
+1286.10.8 = {
+  heir = {
+    name = "?ñÇÑS"  # Artur
+    monarch_name = "?ñÇÑS II"  # Artur II
+    dynasty = "∑V ∑V“R"  # de Dreux
+    birth_date = 1262.7.2
+    death_date = 1312.8.27
+    claim = 95
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+1305.11.16 = {
+  monarch = {
+    name = "?ñÇÑS II"  # Artur II
+    dynasty = "∑V ∑V“R"  # de Dreux
+    adm = 4
+    dip = 5
+    mil = 5
+  }
+}
+1305.11.16 = {
+  heir = {
+    name = "©ã"  # Jean
+    monarch_name = "©ã III"  # Jean III
+    dynasty = "∑V ∑V“R"  # de Dreux
+    birth_date = 1286.3.8
+    death_date = 1341.4.30
+    claim = 95
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1312.8.27 = {
+  monarch = {
+    name = "©ã III"  # Jean III
+    dynasty = "∑V ∑V“R"  # de Dreux
+    adm = 5
+    dip = 4
+    mil = 4
+  }
+}
+1312.8.27 = {
+  heir = {
+    name = "©ã"  # Jean
+    monarch_name = "©ã IV"  # Jean IV
+    dynasty = "∑V ∑V“R"  # de Dreux
+    birth_date = 1293.1.1
+    death_date = 1345.9.26
+    claim = 95
+    adm = 1
+    dip = 2
+    mil = 5
+  }
+}
+1341.4.30 = {
+  monarch = {
+    name = "©ã IV"  # Jean IV
+    dynasty = "∑V ∑V“R"  # de Dreux
+    adm = 1
+    dip = 2
+    mil = 5
+  }
+}
+1341.4.30 = {
+  heir = {
+    name = "©ã"  # Jean
+    monarch_name = "©ã V"  # Jean V
+    dynasty = "∑V ∑V“R"  # de Dreux
+    birth_date = 1339.1.1
+    death_date = 1399.11.1
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+1345.9.16 = {
+  monarch = {
+    name = "©ã V"  # Jean V
+    dynasty = "∑V ∑V“R"  # de Dreux
+    adm = 3
+    dip = 3
+    mil = 5
+  }
+}
+1389.12.24 = {
+  heir = {
+    name = "©ã"  # Jean
+    monarch_name = "©ã VI"  # Jean VI
+    dynasty = "∑V ∑V“R"  # de Dreux
+    birth_date = 1389.12.24
+    death_date = 1442.8.29
+    claim = 95
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1399.11.1 = {
+  monarch = {
+    name = "©ã VI"  # Jean VI
+    dynasty = "∑V ∑V“R"  # de Dreux
+    adm = 2
+    dip = 3
+    mil = 3
+  }
+}
+1414.5.14 = {
+  heir = {
+    name = "Vg0tÊt"  # FranÁois
+    monarch_name = "Vg0tÊt I"  # FranÁois I
+    dynasty = "∑V ∑V“R"  # de Dreux
+    birth_date = 1414.5.14
+    death_date = 1450.7.18
+    claim = 95
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1442.8.29 = {
+  monarch = {
+    name = "Vg0tÊt I"  # FranÁois I
+    dynasty = "∑V ∑V“R"  # de Dreux
+    adm = 2
+    dip = 2
+    mil = 3
+  }
+}
+1442.8.29 = {
+  heir = {
+    name = "Æv√WS"  # Pierre
+    monarch_name = "Æv√WS II"  # Pierre II
+    dynasty = "∑V ∑V“R"  # de Dreux
+    birth_date = 1418.1.1
+    death_date = 1457.9.23
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1450.7.20 = {
+  monarch = {
+    name = "Æv√WS II"  # Pierre II
+    dynasty = "∑V ∑V“R"  # de Dreux
+    adm = 3
+    dip = 3
+    mil = 4
+  }
+}
+1450.7.20 = {
+  heir = {
+    name = "?ñÇÑS"  # Artur
+    monarch_name = "?ñÇÑS III"  # Artur III
+    dynasty = "∑V ∑V“R"  # de Dreux
+    birth_date = 1393.8.24
+    death_date = 1458.12.26
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 5
+    leader = {
+      name = "?ñÇÑS ∑V Ãë¿NôÑ"  # Arthur de Richemont
+      type = general
+      fire = 4
+      shock = 4
+      manuever = 4
+      siege = 1
+    }
+  }
+}
+1457.9.23 = {
+  monarch = {
+    name = "?ñÇÑS III"  # Artur III
+    dynasty = "∑V ∑V“R"  # de Dreux
+    adm = 4
+    dip = 3
+    mil = 5
+    leader = {
+      name = "?ñÇÑS ∑V Ãë¿NôÑ"  # Arthur de Richemont
+      type = general
+      fire = 4
+      shock = 4
+      manuever = 4
+      siege = 1
+    }
+  }
+}
+1457.9.23 = {
+  heir = {
+    name = "Vg0tÊt"  # FranÁois
+    monarch_name = "Vg0tÊt II"  # FranÁois II
+    dynasty = "∑V ∑V“R"  # de Dreux
+    birth_date = 1433.6.23
+    death_date = 1488.9.9
+    claim = 95
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1458.12.27 = {
+  monarch = {
+    name = "Vg0tÊt II"  # FranÁois II
+    dynasty = "∑V ∑V“R"  # de Dreux
+    adm = 4
+    dip = 4
+    mil = 2
+  }
+}
+1477.1.25 = {
+  heir = {
+    name = "âRÆY"  # Anne
+    monarch_name = "âRÆY I"  # Anne I
+    dynasty = "∑V ∑V“R"  # de Dreux
+    birth_date = 1477.1.25
+    death_date = 1514.1.9
+    claim = 95
+    adm = 6
+    dip = 5
+    mil = 2
+    female = yes
+  }
+}
+1488.9.10 = {
+  monarch = {
+    name = "âRÆY I"  # Anne I
+    dynasty = "∑V ∑V“R"  # de Dreux
+    adm = 6
+    dip = 5
+    mil = 2
+    female = yes
+  }
+}
+1499.10.14 = {
+  heir = {
+    name = "KQm∑V"  # Claude
+    monarch_name = "KQm∑V I"  # Claude I
+    dynasty = "∑V ÊtbSÊt"  # de Valois
+    birth_date = 1499.10.14
+    death_date = 1525.7.20
+    claim = 95
+    adm = 3
+    dip = 3
+    mil = 3
+    female = yes
+  }
+}
+1514.1.10 = {
+  monarch = {
+    name = "KQm∑V I"  # Claude I
+    dynasty = "∑V ÊtbSÊt"  # de Valois
+    adm = 3
+    dip = 3
+    mil = 3
+    female = yes
+  }
+}
+1518.2.28 = {
+  heir = {
+    name = "Vg0tÊt"  # FranÁois
+    monarch_name = "Vg0tÊt III"  # FranÁois III
+    dynasty = "∑V ÊtbSÊt"  # de Valois
+    birth_date = 1518.2.28
+    death_date = 1536.8.10
+    claim = 95
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
+1524.7.21 = {
+  monarch = {
+    name = "Vg0tÊt III"  # FranÁois III
+    dynasty = "∑V ÊtbSÊt"  # de Valois
+    adm = 4
+    dip = 3
+    mil = 2
+  }
+}
