@@ -1,0 +1,53 @@
+#*Ys^)YW`S˜Ðg›NwýNïSåNú^Ëz"Vw«^" ŸRýw:+0“+adm local_tax_modifier = 200% 
+#*Ys^)YW`S˜Ðg›NwýNïSåNú^Ëz"YegW" ŸRýw:+ºN›R local_regiment_cost = -0.8 local_manpower_modifier = 200%
+
+country_decisions = {
+
+	KHT_build_LIO = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = KHT
+		}
+		allow = {
+			NOT = { exists = LIO }
+			owns = 722
+			owns = 2549
+			owns = 3200
+			owns = 3246
+			owns = 3336
+			owns = 3278
+			owns = 2891
+			num_of_cities = 25
+			#OR = {
+			#	technology_group = early_chinese
+			#	technology_group = chinese
+			#}	
+		}
+		effect = {
+			add_treasury = 500
+			add_prestige = 30
+			if = {
+				limit = {
+					NOT = { has_reform = celestial_empire }
+				}
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire
+				set_government_rank = 3
+			}
+			#every_province = {
+			#	limit = {
+			#		is_core = KHT
+			#	}
+			#		add_core = LIO
+			#		remove_core = KHT
+			#}			
+			change_tag = LIO			
+			swap_free_idea_group = yes			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

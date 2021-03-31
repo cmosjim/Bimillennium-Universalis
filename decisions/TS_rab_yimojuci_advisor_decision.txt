@@ -1,0 +1,29 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_yimojuci = {
+		major = yes
+		potential = {
+			
+			advisor = yimojuci
+			
+		}
+		allow = {
+			advisor = yimojuci
+		}
+		effect = {
+			remove_advisor = yimojuci
+			define_general = {
+				name = "O¨XES!k0›Q^0"
+				female = yes
+				fire = 6
+				shock = 6
+				manuever = 5
+				siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,362 @@
+#AVIALABLE CUSTOM LOCALISATION KEYS
+#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
+# To not display anything, you can use 'localisation_key = ""'
+# Please add one example sentence for each key.
+
+#As this list grow organize with categories.
+#Current loc keys in this file:
+#GetTributaryOverlord
+#GetOldEra
+#GetLocalPowerStructure
+#GetGovernmentSupporters
+#GetNoblesReplacementForOtherGovernments
+
+
+### Titular for Overlord
+#Ex: "On a mission to visit the [Son of Heaven]"
+defined_text = {
+    name = GetProvinceDevelopLimit
+
+    text = {
+        localisation_key = string_a_special_terrain
+        trigger = {
+			has_province_flag = flg_a_special_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_special_terrain
+        trigger = {
+			has_province_flag = flg_b_special_terrain	
+        }
+    }
+	text = {
+        localisation_key = string_a_farmlands_terrain
+        trigger = {
+			has_province_flag = flg_a_farmlands_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_farmlands_terrain
+        trigger = {
+			has_province_flag = flg_b_farmlands_terrain	
+        }
+    }
+	text = {
+        localisation_key = string_a_coastline_terrain
+        trigger = {
+			has_province_flag = flg_a_coastline_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_coastline_terrain
+        trigger = {
+			has_province_flag = flg_b_coastline_terrain	
+        }
+    }
+	text = {
+        localisation_key = string_a_forest_terrain
+        trigger = {
+			has_province_flag = flg_a_forest_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_forest_terrain
+        trigger = {
+			has_province_flag = flg_b_forest_terrain	
+        }
+    }
+   text = {
+        localisation_key = string_a_hills_terrain
+        trigger = {
+			has_province_flag = flg_a_hills_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_hills_terrain
+        trigger = {
+			has_province_flag = flg_b_hills_terrain	
+        }
+    }
+	text = {
+        localisation_key = string_a_woods_terrain
+        trigger = {
+			has_province_flag = flg_a_woods_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_woods_terrain
+        trigger = {
+			has_province_flag = flg_b_woods_terrain	
+        }
+    }
+	    text = {
+        localisation_key = string_a_mountain_terrain
+        trigger = {
+			has_province_flag = flg_a_mountain_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_mountain_terrain
+        trigger = {
+			has_province_flag = flg_b_mountain_terrain	
+        }
+    }
+	text = {
+        localisation_key = string_a_grasslands_terrain
+        trigger = {
+			has_province_flag = flg_a_grasslands_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_grasslands_terrain
+        trigger = {
+			has_province_flag = flg_b_grasslands_terrain	
+        }
+    }
+   text = {
+        localisation_key = string_a_plains_terrain
+        trigger = {
+			has_province_flag = flg_a_plains_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_plains_terrain
+        trigger = {
+			has_province_flag = flg_b_plains_terrain	
+        }
+    }
+	text = {
+        localisation_key = string_a_jungle_terrain
+        trigger = {
+			has_province_flag = flg_a_jungle_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_jungle_terrain
+        trigger = {
+			has_province_flag = flg_b_jungle_terrain	
+        }
+    }
+	    text = {
+        localisation_key = string_a_marsh_terrain
+        trigger = {
+			has_province_flag = flg_a_marsh_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_marsh_terrain
+        trigger = {
+			has_province_flag = flg_b_marsh_terrain	
+        }
+    }
+	text = {
+        localisation_key = string_a_desert_terrain
+        trigger = {
+			has_province_flag = flg_a_desert_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_desert_terrain
+        trigger = {
+			has_province_flag = flg_b_desert_terrain	
+        }
+    }
+   text = {
+        localisation_key = string_a_coastal_desert_terrain
+        trigger = {
+			has_province_flag = flg_a_coastal_desert_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_coastal_desert_terrain
+        trigger = {
+			has_province_flag = flg_b_coastal_desert_terrain	
+        }
+    }
+	text = {
+        localisation_key = string_a_glacier_terrain
+        trigger = {
+			has_province_flag = flg_a_glacier_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_glacier_terrain
+        trigger = {
+			has_province_flag = flg_b_glacier_terrain	
+        }
+    }
+	    text = {
+        localisation_key = string_a_drylands_terrain
+        trigger = {
+			has_province_flag = flg_a_drylands_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_drylands_terrain
+        trigger = {
+			has_province_flag = flg_b_drylands_terrain	
+        }
+    }
+	text = {
+        localisation_key = string_a_steppe_terrain
+        trigger = {
+			has_province_flag = flg_a_steppe_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_steppe_terrain
+        trigger = {
+			has_province_flag = flg_b_steppe_terrain	
+        }
+    }
+   text = {
+        localisation_key = string_a_savannah_terrain
+        trigger = {
+			has_province_flag = flg_a_savannah_terrain	
+        }
+    }
+   text = {
+        localisation_key = string_b_savannah_terrain
+        trigger = {
+			has_province_flag = flg_b_savannah_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_a_highlands_terrain
+        trigger = {
+			has_province_flag = flg_a_highlands_terrain	
+        }
+    }	
+    text = {
+        localisation_key = string_b_highlands_terrain
+        trigger = {
+			has_province_flag = flg_b_highlands_terrain	
+        }
+    }
+	text = {
+        localisation_key = string_a_hekouzhognzhen_terrain
+        trigger = {
+			has_province_flag = flg_a_hekouzhognzhen_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_hekouzhognzhen_terrain
+        trigger = {
+			has_province_flag = flg_b_hekouzhognzhen_terrain	
+        }
+    }
+	text = {
+        localisation_key = string_a_tianxian_terrain
+        trigger = {
+			has_province_flag = flg_a_tianxian_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_tianxian_terrain
+        trigger = {
+			has_province_flag = flg_b_tianxian_terrain	
+        }
+    }
+	text = {
+        localisation_key = string_a_putongguanai_terrain
+        trigger = {
+			has_province_flag = flg_a_putongguanai_terrain	
+        }
+    }
+    text = {
+        localisation_key = string_b_putongguanai_terrain
+        trigger = {
+			has_province_flag = flg_b_putongguanai_terrain	
+        }
+    }
+}
+
+defined_text = {
+    name = GetProvinceClimate
+    text = {
+        localisation_key = string_arctic_climate
+        trigger = {
+			has_province_flag = flg_arctic_climate	
+        }
+    }
+}
+
+defined_text = {
+	name = GetTotalDevSum
+    text = {
+        localisation_key = string_total_dev_sum
+        trigger = {
+			always = yes
+        }
+    }	
+}
+
+defined_text = {
+	name = GetRoadBuilding
+    text = {
+        localisation_key = string_pov_road
+        trigger = {
+			has_building = road
+        }
+    }	
+}	
+
+defined_text = {
+	name = GetHighWayBuilding
+    text = {
+        localisation_key = string_pov_highway
+        trigger = {
+			has_building = highway
+        }
+    }	
+}	
+	
+defined_text = {
+	name = GetRailBuilding
+    text = {
+        localisation_key = string_pov_railroad
+        trigger = {
+			has_building = railroad
+        }
+    }	
+}
+
+defined_text = {
+	name = GetMassBuilding
+    text = {
+        localisation_key = string_pov_mass_transit_system
+        trigger = {
+			has_building = mass_transit_system
+        }
+    }	
+}
+
+defined_text = {
+	name = GetUniversityBuilding
+    text = {
+        localisation_key = string_pov_university
+        trigger = {
+			has_building = university
+        }
+    }	
+}
+
+defined_text = {
+	name = GetHospitalBuilding
+    text = {
+        localisation_key = string_pov_hospital
+        trigger = {
+			has_building = hospital
+        }
+    }	
+}
+
+defined_text = {
+	name = GetOilTradeGoods
+    text = {
+        localisation_key = string_pov_oil
+        trigger = {
+			trade_goods = oil
+        }
+    }	
+}

@@ -1,0 +1,47 @@
+country_decisions = {
+	#贞观之治
+	TNG_Zhenguan_Reign = {
+		major = yes
+		potential = {
+			tag = TNG
+			has_country_flag = TNG_Open_Zhenguan
+			has_country_flag = TNG_Emperor_LiShimin
+			NOT = {
+				has_country_flag = TNG_Event_Zhenguan
+			}
+		}
+		allow = {
+			treasury = 1500
+			monthly_income = 40
+			#manpower_percentage = 0.5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+		effect = {
+			country_event = {
+				id = KC_TNG_events.2
+			}
+		}
+	}
+	#还政于李
+	TNG_Right_Back = {
+		major = yes
+		potential = {
+			tag = TG1
+		}
+		allow = {
+			tag = TG1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+		effect = {
+			country_event = {
+				id = KC_TNG_events.7
+			}
+		}
+	}
+}

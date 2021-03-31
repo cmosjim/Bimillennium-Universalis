@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_wangxizhi= {
+		major = yes
+		potential = {
+			
+			advisor = wangxizhi
+			
+		}
+		allow = {
+			advisor = wangxizhi
+		}
+		effect = {
+			remove_advisor = wangxizhi
+			define_general = {
+				name = "‹s²KN 0z‚=g¶R0"
+				fire = 1
+				shock = 1
+				manuever = 1
+				siege = 1
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

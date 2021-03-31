@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_liuxin = {
+		major = yes
+		potential = {
+			
+			advisor = liuxin
+			
+		}
+		allow = {
+			advisor = liuxin
+		}
+		effect = {
+			remove_advisor = liuxin
+			define_general = {
+				name = "RFkË%‡e˜R¼%"
+				fire = 2
+				shock = 2
+				manuever = 2
+				siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

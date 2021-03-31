@@ -1,0 +1,75 @@
+#(warlord)_country_build_( choose-君主立宪 or 共和 )	现代军阀成立国家 
+#modern_warlord_build_AK1_country#中华帝国(袁世凯的)
+#modern_warlord_build_AK2_country#中华联邦(共和制)
+
+country_decisions = {
+
+	modern_warlord_build_AK1_country = {
+		major = yes
+		potential = {
+			has_reform = modern_chinese_warlord_reform
+			NOT = { tag = GJ1 }
+			NOT = { tag = CW1 }
+			NOT = { tag = AK2 }
+		}		
+		allow = {
+			is_subject = no
+			num_of_cities = 150
+			check_chinese_empire_not_exists = yes
+			OR = {
+				religion = conservatism
+				religion = fascism
+			}			
+		}
+		effect = {
+			country_event = {
+				id = rab_modern_empire_events.1
+			}	
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+	modern_warlord_build_AK2_country = {
+		major = yes
+		potential = {
+			has_reform = modern_chinese_warlord_reform
+			NOT = { tag = GJ1 }
+			NOT = { tag = CW1 }
+			NOT = { tag = AK1 } 
+		}		
+		allow = {
+			is_subject = no
+			num_of_cities = 200
+			NOT = { exists = AK2 } #中华联邦(共和制)
+			government_rank = 3
+			religion = liberalism
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = ROOT
+				}
+					add_core = AK2
+					remove_core = ROOT
+			}		
+			change_tag = AK2
+			swap_free_idea_group = yes
+			add_prestige = 25
+			change_government = republic			
+			add_government_reform = parliamentary_reform
+			add_government_reform = strengthen_executive_powers_reform
+			add_government_reform = single_party_system
+			add_government_reform = democracy_reform
+			add_government_reform = powerful_head_of_state
+			set_legacy_government = constitutional_republic	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

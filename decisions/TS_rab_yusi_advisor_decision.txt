@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_yusi = {
+		major = yes
+		potential = {
+			
+			advisor = yusi
+			
+		}
+		allow = {
+			advisor = yusi
+		}
+		effect = {
+			remove_advisor = yusi
+			define_general = {
+				name = "^†jl0fkS0"
+				fire = 5
+				shock = 5
+				manuever = 3
+				siege = 6
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

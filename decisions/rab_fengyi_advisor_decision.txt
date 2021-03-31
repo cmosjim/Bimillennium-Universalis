@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_fengyi = {
+		major = yes
+		potential = {
+			
+			advisor = fengyi
+			
+		}
+		allow = {
+			advisor = fengyi
+		}
+		effect = {
+			remove_advisor = fengyi
+			define_general = {
+				name = "¯QV0fkS0"
+				fire = 6
+				shock = 6
+				manuever = 3
+				siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,132 @@
+country_decisions = {
+
+	first_monetary_reform = {
+		major = yes
+		potential = {
+			tag = NEW
+			NOT = { has_country_flag = firstmonetaryreformflag }
+		}
+		effect = {
+			add_treasury = 500
+			add_country_modifier = {
+				name = first_monetary_reform
+				duration = 730
+			}
+			set_country_flag = firstmonetaryreformflag 
+			hidden_effect = {
+				set_variable = {
+					which = monetary_reform
+					value = 1
+				}	
+			}
+		}
+	}
+
+	second_monetary_reform = {
+		major = yes
+		potential = {
+			tag = NEW
+			NOT = { has_country_modifier = first_monetary_reform }
+			NOT = { has_country_flag = secondmonetaryreformflag }
+			check_variable = {
+				which = monetary_reform
+				value = 1
+			}	
+		}
+		effect = {
+			add_treasury = 500
+			add_country_modifier = {
+				name = second_monetary_reform
+				duration = 730
+			}
+			set_country_flag = secondmonetaryreformflag 
+			hidden_effect = {
+				change_variable = {
+					which = monetary_reform
+					value = 1
+				}	
+			}
+		}
+	}
+	
+	third_monetary_reform = {
+		major = yes
+		potential = {
+			tag = NEW
+			NOT = { has_country_modifier = second_monetary_reform }
+			NOT = { has_country_flag = thirdmonetaryreformflag }
+			check_variable = {
+				which = monetary_reform
+				value = 2
+			}	
+		}
+		effect = {
+			add_treasury = 500
+			add_country_modifier = {
+				name = third_monetary_reform
+				duration = 730
+			}
+			set_country_flag = thirdmonetaryreformflag
+			hidden_effect = {
+				change_variable = {
+					which = monetary_reform
+					value = 1
+				}	
+			}
+		}
+	}
+
+	fourth_monetary_reform = {
+		major = yes
+		potential = {
+			tag = NEW
+			NOT = { has_country_modifier = third_monetary_reform }
+			NOT = { has_country_flag = fourthmonetaryreformflag }
+			check_variable = {
+				which = monetary_reform
+				value = 3
+			}	
+		}
+		effect = {
+			add_treasury = 500
+			add_country_modifier = {
+				name = fourth_monetary_reform
+				duration = 730
+			}
+			set_country_flag = fourthmonetaryreformflag 
+			hidden_effect = {
+				change_variable = {
+					which = monetary_reform
+					value = 1
+				}	
+			}
+		}
+	}
+
+	fifth_monetary_reform = {
+		major = yes
+		potential = {
+			tag = NEW
+			NOT = { has_country_modifier = fourth_monetary_reform }
+			NOT = { has_country_flag = fifthmonetaryreformflag }
+			check_variable = {
+				which = monetary_reform
+				value = 4
+			}	
+		}
+		effect = {
+			add_treasury = 500
+			add_country_modifier = {
+				name = fifth_monetary_reform
+				duration = 730
+			}
+			set_country_flag = fifthmonetaryreformflag 
+			hidden_effect = {
+				change_variable = {
+					which = monetary_reform
+					value = 1
+				}	
+			}
+		}
+	}
+}

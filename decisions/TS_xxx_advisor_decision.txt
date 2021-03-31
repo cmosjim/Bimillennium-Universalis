@@ -1,0 +1,55 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_chiang_kai_shek = {
+		major = yes
+		potential = {
+			
+			advisor = chiang_kai_shek
+			
+		}
+		allow = {
+			advisor = chiang_kai_shek
+		}
+		effect = {
+			remove_advisor = chiang_kai_shek
+			define_general = {
+				name = "‹„ËNów0øSäN˜R0"
+				fire = 7
+				shock = 8
+				manuever = 2
+				siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+################################################	
+	advisors_convert_generals_he_yingqin = {
+		major = yes
+		potential = {
+			
+			advisor = he_yingqin
+			
+		}
+		allow = {
+			advisor = he_yingqin
+		}
+		effect = {
+			remove_advisor = he_yingqin
+			define_general = {
+				name = "UO”^¦”0›Q˜R0"
+				fire = 5
+				shock = 4
+				manuever = 3
+				siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+################################################	
+}

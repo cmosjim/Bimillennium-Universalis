@@ -1,0 +1,43 @@
+#country_decisions = {
+#	
+#	rab_meeting_decision = {
+#		major = yes
+#		potential = {
+#			has_country_flag = wenhuanzhi1
+#			has_country_flag = wenwuzhi1
+#			has_country_flag = wuqizhi1
+#			
+#            NOT = { has_country_modifier = md_cele_meeting }
+#		}
+#		allow = {
+#
+#		}
+#		effect = {
+#			
+#		}
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+#	rab_wenhuan_decision = {
+#		major = yes
+#		potential = {
+#			has_country_flag = wenhuanzhi1
+#            NOT = { has_country_flag = wenhuanzhi2 }
+#		}
+#		allow = {
+#
+#		}
+#		effect = {
+#			set_country_flag = wenhuanzhi2
+#			country_event = {
+#				id = rab_wenhuan.2
+#			}	
+#		
+#		}
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}	
+#}
+#

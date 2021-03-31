@@ -1,0 +1,34 @@
+#German will create nazi empire.
+country_decisions = {
+#1934t^8g19åehQllQ•bckVnxšR^yrÒR„v·VıV0CQ–™0
+#·VıVàeagöN•bM–fN=fc1945t^5g8åe
+#2019.1.2 1.28
+	GER_build_NZ1 = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = GER
+			is_year = 1925 
+			NOT = { is_year = 1945 }
+			NOT = { has_country_flag = tmp_rab_NZ1_events_1 }
+			NOT = { has_global_flag = NZ1_wii_fail }
+		}
+		allow = {
+			has_ruler = "?–S+Y·^yrÒR"
+			NOT = { exists = NZ1 }
+			NOT = { exists = NZ2 }
+			exists = GBR
+			exists = FR2
+			exists = USA
+		}
+		effect = {
+			set_country_flag = tmp_rab_NZ1_events_1
+			country_event = {
+				id = rab_NZ1_events.1
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

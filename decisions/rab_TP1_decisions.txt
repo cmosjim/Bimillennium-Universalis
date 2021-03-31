@@ -1,0 +1,359 @@
+#太平天國占領某些省份可以建立"聖庫" 功能:+錢+adm local_tax_modifier = 200% 
+#太平天國占領某些省份可以建立"教會團" 功能:+人力 local_regiment_cost = -0.8 local_manpower_modifier = 200%
+#2018.12.26 fit to 1.28
+country_decisions = {
+
+	682_golden_store_build = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = TP1
+			government = theocracy
+			682 = {
+				NOT = { has_province_modifier = pov_golden_store }
+			}
+			
+				NOT = { has_country_flag = CITY_55_LIMIT }
+			
+		}
+		allow = {
+			owns = 682
+		}
+		effect = {
+			682 = {
+				add_province_modifier = {
+					name = "pov_golden_store"
+					duration = -1
+				}
+			}
+			add_treasury = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	667_golden_store_build = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = TP1
+			government = theocracy
+			667 = {
+				NOT = { has_province_modifier = pov_golden_store }
+			}
+				NOT = { has_country_flag = CITY_55_LIMIT }
+
+		}
+		allow = {
+			owns = 667
+		}
+		effect = {
+			667 = {
+				add_province_modifier = {
+					name = "pov_golden_store"
+					duration = -1
+				}
+			}
+			add_treasury = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	1821_golden_store_build = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = TP1
+			government = theocracy
+			1821 = {
+				NOT = { has_province_modifier = pov_golden_store }
+			}
+
+				NOT = { has_country_flag = CITY_55_LIMIT }
+
+		}
+		allow = {
+			owns = 1821
+		}
+		effect = {
+			1821 = {
+				add_province_modifier = {
+					name = "pov_golden_store"
+					duration = -1
+				}
+			}
+			add_treasury = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	2484_golden_store_build = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = TP1
+			government = theocracy
+			2484 = {
+				NOT = { has_province_modifier = pov_golden_store }
+			}
+				NOT = { has_country_flag = CITY_55_LIMIT }
+
+		}
+		allow = {
+			owns = 2484
+		}
+		effect = {
+			2484 = {
+				add_province_modifier = {
+					name = "pov_golden_store"
+					duration = -1
+				}
+			}
+			add_treasury = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	3162_golden_store_build = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = TP1
+			government = theocracy
+			3162 = {
+				NOT = { has_province_modifier = pov_golden_store }
+			}
+				NOT = { has_country_flag = CITY_55_LIMIT }
+
+		}
+		allow = {
+			owns = 3162
+		}
+		effect = {
+			3162 = {
+				add_province_modifier = {
+					name = "pov_golden_store"
+					duration = -1
+				}
+			}
+			add_treasury = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	3239_golden_store_build = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = TP1
+			government = theocracy
+			3239 = {
+				NOT = { has_province_modifier = pov_golden_store }
+			}
+				NOT = { has_country_flag = CITY_55_LIMIT }
+
+		}
+		allow = {
+			owns = 3239
+		}
+		effect = {
+			3239 = {
+				add_province_modifier = {
+					name = "pov_golden_store"
+					duration = -1
+				}
+			}
+			add_treasury = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	1824_golden_store_build = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = TP1
+			government = theocracy
+			1824 = {
+				NOT = { has_province_modifier = pov_golden_store }
+			}
+				NOT = { has_country_flag = CITY_55_LIMIT }
+
+		}
+		allow = {
+			owns = 1824
+		}
+		effect = {
+			1824 = {
+				add_province_modifier = {
+					name = "pov_golden_store"
+					duration = -1
+				}
+			}
+			add_treasury = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	680_golden_store_build = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = TP1
+			government = theocracy
+			680 = {
+				NOT = { has_province_modifier = pov_golden_store }
+			}
+				NOT = { has_country_flag = CITY_55_LIMIT }
+
+		}
+		allow = {
+			owns = 680
+		}
+		effect = {
+			680 = {
+				add_province_modifier = {
+					name = "pov_golden_store"
+					duration = -1
+				}
+			}
+			add_treasury = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	1829_church_power_build = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = TP1
+			government = theocracy
+			1829 = {
+				NOT = { has_province_modifier = pov_church_power }
+			}
+				NOT = { has_country_flag = CITY_55_LIMIT }
+
+		}
+		allow = {
+			owns = 1829
+		}
+		effect = {
+			1829 = {
+				add_province_modifier = {
+					name = "pov_church_power"
+					duration = -1
+				}
+			}
+			add_treasury = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	2479_church_power_build = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = TP1
+			government = theocracy
+			2479 = {
+				NOT = { has_province_modifier = pov_church_power }
+			}
+				NOT = { has_country_flag = CITY_55_LIMIT }
+
+		}
+		allow = {
+			owns = 2479
+		}
+		effect = {
+			2479 = {
+				add_province_modifier = {
+					name = "pov_church_power"
+					duration = -1
+				}
+			}
+			add_treasury = -5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+#太平天國之洪夏帝國
+	Build_HN2_TP1 = {
+		major = yes
+		potential = {
+			NOT = { exists = HN2 }
+			tag = TP1
+		}
+		allow = {
+			NOT = { exists = QNG }
+			#core_percentage = 0.8
+			is_subject = no
+			south_china_region = {
+				type = all 
+				owned_by = ROOT
+			}
+			north_china_region = {
+				type = all 
+				owned_by = ROOT
+			}
+			xinan_region = {
+				type = all 
+				owned_by = ROOT
+			}
+			tibet_region = {
+				type = all 
+				owned_by = ROOT
+			}	
+			mongolia_region = {
+				type = all 
+				owned_by = ROOT
+			}	
+			liaoning_area = {
+				type = all 
+				owned_by = ROOT
+			}
+			jilin_area = {
+				type = all 
+				owned_by = ROOT
+			}
+			heilongjiang_area = {
+				type = all 
+				owned_by = ROOT
+			}
+		}	
+	effect = {
+		every_province = {
+			limit = {
+				is_core = ROOT
+			}
+				add_core = HN2
+				remove_core = ROOT
+		}			
+		change_tag = HN2
+		swap_free_idea_group = yes
+		change_government = gov_celestial_empire
+		add_government_reform = celestial_empire
+		set_government_rank = 3
+	}			
+		ai_will_do = {
+			factor = 1
+		}	
+	}	
+}

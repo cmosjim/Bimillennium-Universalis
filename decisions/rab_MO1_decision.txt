@@ -1,0 +1,36 @@
+#Ua…Ñ˙^ÀzåV’q |êqgJSˆS
+country_decisions = {
+
+	MO1_build_HY1 = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = MO1
+		}
+		allow = {
+			NOT = { exists = HY1 }
+			owns = 2509
+			owns = 703
+			owns = 2552
+			num_of_cities = 12
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = ROOT
+				}
+					add_core = HY1
+					remove_core = ROOT
+			}			
+			change_tag = HY1
+			swap_free_idea_group = yes
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}	
+	

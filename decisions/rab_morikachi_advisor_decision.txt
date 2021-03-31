@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_morikachi = {
+		major = yes
+		potential = {
+			
+			advisor = morikachi
+			
+		}
+		allow = {
+			advisor = morikachi
+		}
+		effect = {
+			remove_advisor = morikachi
+			define_general = {
+				name = "ïóRbËê€v≤N0fkS0"
+				fire = 3
+				shock = 2
+				manuever = 2
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

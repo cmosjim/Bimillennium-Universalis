@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_explorer_erik_thorvaldsson= {
+		major = yes
+		potential = {
+			
+			advisor = erik_thorvaldsson
+			
+		}
+		allow = {
+			advisor = erik_thorvaldsson
+		}
+		effect = {
+			remove_advisor = erik_thorvaldsson
+			define_explorer = {
+				name = "???иж????? ???????бу???бд???????????????"
+				fire = 3
+				shock = 4
+				manuever = 8
+				siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

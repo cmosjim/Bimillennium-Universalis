@@ -1,0 +1,87 @@
+country_decisions = {
+	yicixizheng = {
+		major = yes
+		potential = {
+			tag = MGE
+			is_year = 1207
+		    has_country_modifier = nomadic_conquest
+			NOT = { has_country_flag = mengguxizheng1 }
+			NOT = { has_country_flag = mengguxizheng }
+		}
+		allow = {
+			owns = 1816
+			OR = {
+				NOT = { exists = XIA }
+				XIA = { is_subject_of = ROOT }		
+			}
+		}
+		effect = {
+			set_country_flag = mengguxizheng
+			set_country_flag = mengguxizheng1 
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
+
+country_decisions = {
+	ncixizheng = {
+		major = yes
+		potential = {
+			tag = MGE
+			is_year = 1207
+		    has_country_modifier = nomadic_conquest
+			has_country_flag = mengguxizheng1
+			NOT = { has_country_flag = mengguxizheng }
+		}
+		allow = {
+        owns = 1816
+		OR = { NOT = { exists = XIA }
+               XIA = { is_subject_of = ROOT }		}
+		NOT = { exists = GNN }
+		owns = 688
+		NOT = { has_ruler_flag = mengguxizhengrl }
+		}
+		effect = {
+		    set_ruler_flag = mengguxizhengrl
+			if = { limit = { NOT = { has_country_flag = mengguxizhengn } }
+            set_country_flag = mengguxizhengn
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
+
+country_decisions = {
+	huiguicaoyuany = {
+		major = yes
+		potential = {
+			tag = YUA
+			is_year = 1207
+            has_country_flag = yuanmogeju11
+		}
+		allow = {
+        tag = YUA
+		NOT = { any_owned_province = { superregion = china_superregion } }
+		}
+		effect = {
+		   change_tag = TAT
+		   change_government = tribal
+		   add_government_reform = steppe_horde
+		   change_unit_type = eastern_nomad_group
+		   change_technology_group = eastern_nomad_group
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

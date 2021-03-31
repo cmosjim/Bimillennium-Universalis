@@ -1,0 +1,41 @@
+#SšNÆušN0W:SÿZg500¹pTÍ‘ú^^ıVÙuˆN°e„vıV¶RtõVNÄ–ÃVÿ
+#SšNÆušN8lEN±RğyÿÁı‰RaSÉbv^9eTÈTşV(„ÿTX R2¹pÑSUS¦^
+#1.28
+country_decisions = {
+
+	CAP_build_HT2 = {
+		major = yes
+		potential = {
+			tag = CAP
+		}
+		allow = {
+			is_subject = no
+			NOT = { exists = HT2 }
+			num_of_cities = 35
+			owns = 2369
+			owns = 319
+			owns = 328
+			owns = 2361
+			owns = 332
+		}
+		effect = {
+			change_tag = HT2
+			swap_free_idea_group = yes
+			add_prestige = 50
+			set_capital = 326
+			anatolia_region = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+				add_permanent_claim = HT2
+			}
+			326 = { change_province_name = "ÈTşV(„" rename_capital = "ÈTşV(„" }			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}	
+	

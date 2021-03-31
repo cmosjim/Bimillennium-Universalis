@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_qijiguang = {
+		major = yes
+		potential = {
+			
+			advisor = qijiguang
+			
+		}
+		allow = {
+			advisor = qijiguang
+		}
+		effect = {
+			remove_advisor = qijiguang
+			define_general = {
+				name = "bçuIQ0fkS0"
+				fire = 8
+				shock = 6
+				manuever = 4
+				siege = 6
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

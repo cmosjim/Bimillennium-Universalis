@@ -1,0 +1,222 @@
+#2021-03-20 condition putinto allow 
+country_decisions = {
+	checkfld = {
+		major = yes
+		potential = {
+			has_country_flag = tianchaodaguo 
+             NOT = { has_country_flag = tianchaodaguo2  }
+		}
+		allow = {
+			nodifangguan = yes
+		}
+		effect = {
+			set_country_flag = tianchaodaguo2
+			country_event = {
+				id = xy_zainan.4
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+country_decisions = {
+	plusfld = {
+		major = yes
+		potential = {
+			has_country_flag = tianchaodaguo 
+		}
+		allow = {
+			nodifangguan = yes			
+		}
+		effect = {
+			change_variable = {
+				which = num_of_fenquandu
+				value = 1
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+country_decisions = {
+	substractfld = {
+		major = yes
+		potential = {
+			has_country_flag = tianchaodaguo 
+		}
+		allow = {
+			nodifangguan = yes
+			OR = {
+				NOT = {
+					has_country_flag = jiangdifqd 
+				}
+				had_country_flag = { flag = jiangdifqd days = 3650 }
+			}
+			check_variable = {
+				which = num_of_fenquandu
+				value = 1
+			}
+			stability = 1
+		}
+		effect = {
+		set_country_flag = jiangdifqd
+			subtract_variable = {
+				which = num_of_fenquandu
+				value = 1
+			}	
+			add_stability = -3
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                NOT = {
+					tag = SNG
+                }
+            }
+		}
+	}
+}
+
+country_decisions = {
+    substractfldmil = {
+        major = yes
+        potential = {
+            has_country_flag = tianchaodaguo
+        }
+        allow = {
+			nodifangguan = yes	
+            OR = {
+                MIL = 5
+                ADM = 5
+            }
+            OR = {
+                NOT = {
+                    has_country_flag = jiangdifqdmil
+                }
+                had_country_flag = {
+                    flag = jiangdifqdmil days = 3650
+                }
+            }
+            check_variable = {
+                which = num_of_fenquandu
+                value = 1
+            }
+            stability = 1
+        }
+        effect = {
+            set_country_flag = jiangdifqdmil
+            subtract_variable = {
+                which = num_of_fenquandu
+                value = 1
+            }
+        }
+        ai_will_do = {
+            factor = 1
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = {
+                    tag = SNG
+                }
+            }
+        }
+    }
+}
+
+country_decisions = {
+	buqinzirenmingdfg = {
+		major = yes
+		potential = {
+			has_country_flag = tianchaodaguo 
+			any_subject_country = { is_subject_of_type = difang_vassal  }
+		}
+		allow = {
+			nodifangguan = yes	
+			NOT = { has_country_flag = auto_difangchn }
+		}
+		effect = {
+			set_country_flag = auto_difangchn
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+country_decisions = {
+	qinzirenmingdfg = {
+		major = yes
+		potential = {
+			has_country_flag = tianchaodaguo 
+			any_subject_country = { is_subject_of_type = difang_vassal  }
+		}
+		allow = {
+			nodifangguan = yes			
+			has_country_flag = auto_difangchn 
+		}
+		effect = {
+		clr_country_flag = auto_difangchn
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+country_decisions = {
+	shishenyoudaidc = {
+		major = yes
+		potential = {
+			has_country_flag = tianchaodaguo 
+			any_subject_country = { is_subject_of_type = difang_vassal  }
+			NOT = { has_country_modifier = shishenyoudai }
+		}
+		allow = {
+			nodifangguan = yes		
+			NOT = { has_country_modifier = shishenyoudai }
+		}
+		effect = {
+		add_country_modifier = {
+				name = "shishenyoudai"
+				duration = -1
+			} 
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+                factor = 0
+                NOT = {
+                        tag = MNG
+                }
+            }
+		}
+	}
+}
+
+country_decisions = {
+	shishenyoudaidcqx = {
+		major = yes
+		potential = {
+			has_country_flag = tianchaodaguo 
+			has_country_modifier = shishenyoudai 
+		}
+		allow = {
+			nodifangguan = yes	
+			has_country_modifier = shishenyoudai 
+		}
+		effect = {
+		remove_country_modifier = shishenyoudai
+		add_stability = -6
+		change_variable = {
+				which = num_of_fenquandu
+				value = 2
+			}
+		}
+		ai_will_do = {
+        factor = 0
+		}
+	}
+}

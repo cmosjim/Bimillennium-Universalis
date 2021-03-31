@@ -1,0 +1,97 @@
+#反清復明
+#2018.12.27 fit to 1.28
+country_decisions = {
+
+	PC1_fan_qing_fuming = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = PC1
+			exists = QNG
+			QNG = { num_of_cities = 50}
+			NOT = { exists = MNG }
+			NOT = { has_country_modifier = md_fan_qing_fuming }
+		}
+		allow = {
+			NOT = { num_of_cities = 30 }
+			stability = 0
+			DIP = 2
+		}
+		effect = {
+			capital_scope = {
+				ROOT = {
+				cavalry = PREV
+				cavalry = PREV
+				cavalry = PREV
+				cavalry = PREV
+				cavalry = PREV
+				cavalry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV
+				}
+			}
+			add_country_modifier = {
+				name = "md_fan_qing_fuming"
+				duration = 3650
+			}
+			if = { 
+				limit = {
+					NOT = { war_with = QNG }	
+				}	
+				QNG = {
+					declare_war_with_cb = {
+						who = ROOT
+						casus_belli = cb_chinese_unification
+					}	
+				}
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	PC1_build_WDC = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = PC1
+		}
+		allow = {
+			owns = 682
+			owns = 679
+			owns = 2485
+			num_of_cities = 30
+			NOT = { has_country_modifier = md_fan_qing_fuming }
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = PC1
+				}
+					add_core = WDC
+					remove_core = PC1
+			}	
+			change_tag = WDC
+			swap_free_idea_group = yes
+			change_government = monarchy 
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			set_capital = 2485	
+			add_prestige = 25
+			add_treasury = 100
+			add_mil_power = 20
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

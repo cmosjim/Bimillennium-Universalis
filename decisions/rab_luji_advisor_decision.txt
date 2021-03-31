@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_luji= {
+		major = yes
+		potential = {
+			
+			advisor = luji
+			
+		}
+		allow = {
+			advisor = luji
+		}
+		effect = {
+			remove_advisor = luji
+			define_general = {
+				name = "F–:g 0›Q^0"
+				fire = 4
+				shock = 4
+				manuever = 3
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

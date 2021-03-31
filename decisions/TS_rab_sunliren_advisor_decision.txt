@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_sunliren = {
+		major = yes
+		potential = {
+			
+			advisor = sunliren
+			
+		}
+		allow = {
+			advisor = sunliren
+		}
+		effect = {
+			remove_advisor = sunliren
+			define_general = {
+				name = "YRËzºN0S›Q0"
+				fire = 7
+				shock = 7
+				manuever = 4
+				siege = 6
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

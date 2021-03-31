@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_zuti= {
+		major = yes
+		potential = {
+			
+			advisor = zuti
+			
+		}
+		allow = {
+			advisor = zuti
+		}
+		effect = {
+			remove_advisor = zuti
+			define_general = {
+				name = "Vyê 0SõQ0"
+				fire = 5
+				shock = 6
+				manuever = 5
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_wangdao= {
+		major = yes
+		potential = {
+			
+			advisor = wangdao
+			
+		}
+		allow = {
+			advisor = wangdao
+		}
+		effect = {
+			remove_advisor = wangdao
+			define_general = {
+				name = "‹süR 0›Q^0"
+				fire = 4
+				shock = 4
+				manuever = 3
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

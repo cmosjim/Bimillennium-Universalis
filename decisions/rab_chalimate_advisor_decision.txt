@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_chalimate = {
+		major = yes
+		potential = {
+			
+			advisor = chalimate
+			
+		}
+		allow = {
+			advisor = chalimate
+		}
+		effect = {
+			remove_advisor = chalimate
+			define_general = {
+				name = "ågt-lšyrË%Á”2•ågt¼%"
+				fire = 6
+				shock = 7
+				manuever = 5
+				siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

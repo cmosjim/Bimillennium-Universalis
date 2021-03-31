@@ -1,0 +1,22 @@
+#2019-09-07 modify UTF8
+country_decisions = {
+	checkwwz = {
+		major = yes
+		potential = {
+			has_country_flag = wenwuzhi1
+             NOT = { has_country_flag = wenwuzhi2 }
+		}
+		allow = {
+				
+		}
+		effect = {
+			set_country_flag = wenwuzhi2
+			country_event = {
+				id = xy_wenwu.2
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

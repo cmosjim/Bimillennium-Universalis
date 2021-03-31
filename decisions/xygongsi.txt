@@ -1,0 +1,41 @@
+country_decisions = {
+    east_indiatradecomany = {
+        major = yes
+        potential = {
+			dip_tech = 60
+        }
+        allow = {
+			NOT = { exists = IND }
+			capital_scope = {
+				NOT = { superregion = india_superregion } 
+			}
+			num_of_owned_provinces_with = {
+				value = 30
+				NOT = {
+					superregion = india_superregion 
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 30
+				superregion = india_superregion
+			}
+        }
+        effect = {
+			every_province = { 
+			limit = {
+				owned_by = ROOT
+				superregion = india_superregion
+			}
+			cede_province = IND
+			add_core = IND
+			}
+			create_subject = {
+                       subject_type = maoyigongsi_asia
+                       subject = IND
+			}
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

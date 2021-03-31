@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_chenqingzhi= {
+		major = yes
+		potential = {
+			
+			advisor = chenqingzhi
+			
+		}
+		allow = {
+			advisor = chenqingzhi
+		}
+		effect = {
+			remove_advisor = chenqingzhi
+			define_general = {
+				name = "H–†^KN0fkS0"
+				fire = 6
+				shock = 8
+				manuever = 8
+				siege = 8
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

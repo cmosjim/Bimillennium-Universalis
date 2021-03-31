@@ -1,0 +1,44 @@
+country_decisions = {
+
+	GE1_build_TNG = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = GE1
+		}
+		allow = {
+			NOT = { exists = TG1 }
+			num_of_cities = 50
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						region = xinan_region
+						region = north_china_region
+						region = south_china_region
+					}	
+				}
+				amount = 20
+			}	
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = ROOT
+				}
+					add_core = TG1
+					remove_core = ROOT
+			}			
+			change_tag = TG1
+			swap_free_idea_group = yes
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			set_country_flag = flg_new_tang_created
+			swap_non_generic_missions = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+}	

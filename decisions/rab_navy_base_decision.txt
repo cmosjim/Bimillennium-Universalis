@@ -1,0 +1,340 @@
+
+country_decisions = {
+#################################################
+# #build_okinawa_navy_base: 首席強權可以建立沖繩海軍基地
+#################################################	
+	demo_build_okinawa_navy_base = {
+		#This is for history files
+		potential = {
+		#年代
+			always = no
+		}
+		allow = {
+
+		}
+		effect = {
+			1015 = {
+				add_province_modifier = {
+					name = "pov_okinawa_navy_base"
+					duration = -1
+				}
+				add_building = fort_17th 				
+			}
+			save_global_event_target_as = tag_okinawa_navy_base
+			JA1 = {
+				save_global_event_target_as = tag_okinawa_navy_base_from
+			}	
+			set_global_flag = flg_tag_okinawa_navy_base_done	
+		}
+		ai_will_do = {
+			factor = 1
+		}		
+	}	
+	build_okinawa_navy_base_owns = {
+		major = yes
+		potential = {
+		#年代
+			dip_tech = 70
+			NOT = { has_country_flag = tmp_build_okinawa_navy_base }
+			1015 = {
+				NOT = { has_province_modifier = pov_okinawa_navy_base }
+			}
+			owns = 1015
+		}
+		allow = {
+			dip_tech = 88
+			custom_trigger_tooltip = {
+				tooltip = tp_top_power_rank
+				NOT = { great_power_rank = 2 }
+			}
+			is_at_war = no
+		}
+		effect = {
+			1015 = {
+				add_province_modifier = {
+					name = "pov_okinawa_navy_base"
+					duration = -1
+				}
+				add_building = fort_17th 				
+			}
+			save_global_event_target_as = tag_okinawa_navy_base
+			set_country_flag = self_okinawa_navy_base
+		}
+		ai_will_do = {
+			factor = 1
+		}			
+	}
+	
+	build_okinawa_navy_base = {
+		#major = yes
+		potential = {
+		#年代
+			dip_tech = 70
+			NOT = { has_country_flag = tmp_build_okinawa_navy_base }
+			1015 = {
+				NOT = { has_province_modifier = pov_okinawa_navy_base }
+			}
+			NOT = { owns = 1015 }
+		}
+		allow = {
+			dip_tech = 88
+			custom_trigger_tooltip = {
+				tooltip = tp_top_power_rank
+				NOT = { great_power_rank = 2 }
+			}
+			is_at_war = no
+			1015 = {
+				is_empty = no
+				owner = {
+					has_opinion = {
+						who = ROOT
+						value = 10
+					}						
+				}
+			}
+		}
+		effect = {
+			if = { 
+				limit = {
+					has_country_flag = self_okinawa_navy_base
+				}
+					clr_country_flag = self_okinawa_navy_base
+			}	
+			set_country_flag = tmp_build_okinawa_navy_base
+			1015 = {
+				owner = {
+					country_event = {
+						id = okinawa_navy_base_events.1
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}			
+	}
+	check_okinawa_navy_base_light_ship = {
+		#major = yes
+		potential = {
+			1015 = {
+				has_province_modifier = pov_okinawa_navy_base
+			}
+			NOT = { has_country_flag = tmp_check_okinawa_navy_base_light_ship }
+			OR = {
+				tag = event_target:tag_okinawa_navy_base
+				has_country_flag = self_okinawa_navy_base
+			}
+			has_global_flag = flg_tag_okinawa_navy_base_done
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = tmp_check_okinawa_navy_base_light_ship
+			country_event = {
+				id = okinawa_navy_base_light_ship.2
+			}	
+		}
+		ai_will_do = {
+			#factor = 1
+			#modifier = {
+			#	factor = 0
+			#	check_variable = {
+			#		which = num_of_okinawa_light_ship
+			#		value = 199
+			#	}	
+			#}
+			factor = 0
+		}	
+	}			
+	
+	
+	destroy_okinawa_navy_base = {
+		#major = yes
+		potential = {
+			1015 = {
+				has_province_modifier = pov_okinawa_navy_base
+			}
+			NOT = { has_country_flag = tmp_destroy_okinawa_navy_base }
+			OR = {
+				tag = event_target:tag_okinawa_navy_base
+				has_country_flag = self_okinawa_navy_base
+			}
+			has_global_flag = flg_tag_okinawa_navy_base_done	
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			if = { 
+				limit = {
+					has_country_flag = self_okinawa_navy_base
+				}
+					clr_country_flag = self_okinawa_navy_base
+			}			
+			set_country_flag = tmp_destroy_okinawa_navy_base
+			country_event = {
+				id = okinawa_navy_base_events.7
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+		}			
+	}	
+#################################################
+# #check_okinawa_navy_base_heavy_ship: 
+#################################################	
+
+
+	check_okinawa_navy_base_heavy_ship = {
+		#major = yes
+		potential = {
+			1015 = {
+				has_province_modifier = pov_okinawa_navy_base
+			}
+			NOT = { has_country_flag = tmp_check_okinawa_navy_base_heavy_ship }
+			OR = {
+				tag = event_target:tag_okinawa_navy_base
+				has_country_flag = self_okinawa_navy_base
+			}
+			has_global_flag = flg_tag_okinawa_navy_base_done	
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = tmp_check_okinawa_navy_base_heavy_ship
+			country_event = {
+				id = okinawa_navy_base_heavy_ship.2
+			}	
+		}
+		ai_will_do = {
+			#factor = 1
+			#modifier = {
+			#	factor = 0
+			#	check_variable = {
+			#		which = num_of_okinawa_heavy_ship
+			#		value = 100
+			#	}	
+			#}
+			factor = 0
+		}	
+	}
+#################################################
+# #check_okinawa_navy_base_galley: 
+#################################################	
+
+
+	check_okinawa_navy_base_galley = {
+		#major = yes
+		potential = {
+			1015 = {
+				has_province_modifier = pov_okinawa_navy_base
+			}
+			NOT = { has_country_flag = tmp_check_okinawa_navy_base_galley }
+			OR = {
+				tag = event_target:tag_okinawa_navy_base
+				has_country_flag = self_okinawa_navy_base
+			}
+			has_global_flag = flg_tag_okinawa_navy_base_done	
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = tmp_check_okinawa_navy_base_galley
+			country_event = {
+				id = okinawa_navy_base_galley.2
+			}	
+		}
+		ai_will_do = {
+			#factor = 1
+			#modifier = {
+			#	factor = 0
+			#	check_variable = {
+			#		which = num_of_okinawa_galley
+			#		value = 100
+			#	}	
+			#}
+			factor = 0
+		}	
+	}	
+#################################################
+# #check_okinawa_navy_base_transport: 
+#################################################	
+
+
+	check_okinawa_navy_base_transport = {
+		#major = yes
+		potential = {
+			1015 = {
+				has_province_modifier = pov_okinawa_navy_base
+			}
+			NOT = { has_country_flag = tmp_check_okinawa_navy_base_transport }
+			OR = {
+				tag = event_target:tag_okinawa_navy_base
+				has_country_flag = self_okinawa_navy_base
+			}
+			has_global_flag = flg_tag_okinawa_navy_base_done	
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = tmp_check_okinawa_navy_base_transport
+			country_event = {
+				id = okinawa_navy_base_transport.2
+			}	
+		}
+		ai_will_do = {
+			#factor = 1
+			#modifier = {
+			#	factor = 0
+			#	check_variable = {
+			#		which = num_of_okinawa_transport
+			#		value = 20
+			#	}	
+			#}
+			factor = 0
+		}	
+	}		
+#################################################
+# #check_okinawa_navy_base_infantry: 
+#################################################	
+
+
+	check_okinawa_navy_base_infantry = {
+		#major = yes
+		potential = {
+			1015 = {
+				has_province_modifier = pov_okinawa_navy_base
+			}
+			NOT = { has_country_flag = tmp_check_okinawa_navy_base_infantry }
+			OR = {
+				tag = event_target:tag_okinawa_navy_base
+				has_country_flag = self_okinawa_navy_base
+			}
+			has_global_flag = flg_tag_okinawa_navy_base_done	
+		}
+		allow = {
+			
+		}
+		effect = {
+			set_country_flag = tmp_check_okinawa_navy_base_infantry
+			country_event = {
+				id = okinawa_navy_base_infantry.2
+			}	
+		}
+		ai_will_do = {
+			#factor = 1
+			#modifier = {
+			#	factor = 0
+			#	check_variable = {
+			#		which = num_of_okinawa_infantry
+			#		value = 20
+			#	}	
+			#}
+			factor = 0
+		}	
+	}		
+}

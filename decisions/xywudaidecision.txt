@@ -1,0 +1,326 @@
+#2019-09-07 modify UTF8
+
+country_decisions = {
+	wudaixuanchengdi = {
+		major = yes
+		potential = {
+			has_country_modifier = wudaigeju
+			NOT = { has_country_modifier = wudaidiguo }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					mil = 6
+				} 
+			}
+		}
+		allow = {
+		is_at_war = no
+		total_development = 400
+		OR = {
+			NOT = {
+				any_country = {
+					has_country_modifier = wudaidiguo  
+				} 
+			}
+			any_country = {
+				has_country_modifier = wudaidiguo
+				NOT = { tag = ROOT } 
+				OR = {
+					NOT = { num_of_cities = ROOT }
+					NOT = { mil = 3 }
+					AND = {
+						NOT = { num_of_infantry = ROOT }
+						NOT = { num_of_cavalry = ROOT }
+					}
+				}
+			}
+		}
+			num_of_cities = 50
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						any_country = {  has_country_modifier = wudaidiguo  } 
+					} 
+				}
+               add_country_modifier = {
+					name = "wudaidiguo"
+					duration = -1 
+				}
+				set_emperor_of_china = ROOT
+			}
+			if  = {
+				limit = {
+					any_country = {  has_country_modifier = wudaidiguo  }  
+				}
+				random_country = { limit = { has_country_modifier = wudaidiguo } 
+				set_country_flag = wudaidiguozhizheng  
+					ROOT = { 
+						set_country_flag = wudaidiguozhizheng
+						declare_war_with_cb = {
+							who = PREV
+							casus_belli = cb_imperial
+						}	 
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
+
+country_decisions = {
+	wudaigaigewen = {
+		major = yes
+		potential = {
+			has_country_modifier = wudaigeju
+			NOT = { has_country_modifier = wudaiwengai }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					ruler_has_personality = lawgiver_personality
+					adm = 3
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			NOT = {
+				num_of_loans = 1 
+			}
+			has_country_modifier = wudaidiguo	
+		}
+		effect = {
+			 add_country_modifier = {
+				name = "wudaiwengai"
+				duration = -1 
+			}
+			if = {
+			limit = {
+				NOT = { ruler_has_personality = lawgiver_personality } 
+				}
+				add_country_modifier = {
+					name = "wudaidfgbm"
+					duration = 3650 
+				}   
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
+
+country_decisions = {
+
+	wudaigaigewu1 = {
+		major = yes
+		potential = {
+			has_country_modifier = wudaigeju
+			NOT = { has_country_modifier = wudaiwugai }
+			NOT = { ruler_has_personality = benevolent_personality }
+			ai = no
+		}
+		allow = {
+			is_at_war = no
+			stability = 3
+			has_country_modifier = wudaidiguo
+		}
+		effect = {
+			add_country_modifier = {
+					name = "wudaiwugai"
+					duration = -1 
+				}
+			add_country_modifier = {
+				name = "wudaijfbm"
+				duration = 3650 
+			}  
+ 		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
+
+country_decisions = {
+
+	wudaigaigewu2 = {
+		major = yes
+		potential = {
+			has_country_modifier = wudaigeju
+			NOT = { has_country_modifier = wudaiwugai }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					ruler_has_personality = benevolent_personality
+					mil = 3
+				}
+			}
+		}
+		allow = {
+			ruler_has_personality = benevolent_personality
+			is_at_war = no
+			has_country_modifier = wudaidiguo
+			treasury = 1000
+		}
+		effect = {
+			add_country_modifier = {
+				name = "wudaiwugai"
+				duration = -1 
+			}
+			add_years_of_income = -0.20
+			add_stability_or_adm_power = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 500
+	}
+}
+country_decisions = {
+
+	wudaigaigeguan = {
+		major = yes
+		potential = {
+			has_country_modifier = wudaigeju
+			NOT = { has_country_modifier = wudaiguangai }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					ruler_has_personality = well_advised_personality
+					dip = 3
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			NOT = { corruption = 1 }
+			has_country_modifier = wudaidiguo
+		}
+		effect = {
+			add_country_modifier = {
+				name = "wudaiguangai"
+				duration = -1 
+			}
+			if = {
+				limit = {
+					NOT = {
+						ruler_has_personality = well_advised_personality 
+					} 
+				}
+				add_country_modifier = {
+					name = "wudaigcdd"
+					duration = 3650 
+				}   
+			}
+ 		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
+
+country_decisions = {
+
+	wudaitongzhan = {
+		major = yes
+		potential = {
+		OR = {
+                  any_neighbor_country = {
+				NOT = { mil = 5 } 
+				OR = { 
+					NOT = { adm = 5 } 
+					NOT = { dip = 5 } 
+				}
+				has_country_modifier = wudaigeju 
+				NOT = { has_country_modifier = wudaishuailuo } 
+			}
+			NOT = { has_ruler_modifier = wudaixingqi } 
+			}
+			has_country_flag = wudailsjs
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					is_at_war = no
+					NOT = { num_of_loans = 1 }
+					mil = 5 
+				}
+			}
+			NOT = {  has_country_modifier = wudaigeju } 
+			any_country = { has_country_modifier = wudaigeju }
+		}
+		allow = {
+		OR = {
+			any_neighbor_country = {
+				NOT = { mil = 5 } 
+				OR = { 
+					NOT = { adm = 5 } 
+					NOT = { dip = 5 } 
+				}
+				has_country_modifier = wudaigeju 
+				NOT = { has_country_modifier = wudaishuailuo } 
+			}
+			NOT = { has_ruler_modifier = wudaixingqi } 
+			}
+   		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_ruler_modifier = wudaixingqi } 
+				}
+				add_ruler_modifier = {
+					name = "wudaixingqi"
+					duration = -1 
+				} 
+			}
+			every_neighbor_country = {
+				limit = {
+					NOT = {
+						has_country_modifier = wudaishuailuo 
+					}
+					NOT = { mil = 5 } 
+					OR = {
+						NOT = { adm = 5 } 
+						NOT = { dip = 5 } 
+					}  
+					has_country_modifier = wudaigeju  
+				} 
+				add_country_modifier = {
+					name = "wudaishuailuo"
+					duration = 3650 
+				}  
+			}
+		if = {
+			limit = { ai = yes
+  NOT = { has_ruler_flag = zhaokuangyin } }
+			random_neighbor_country = {
+				limit = {
+					has_country_modifier = wudaishuailuo 
+				}
+				ROOT = {
+					declare_war_with_cb = {
+						who = PREV
+						casus_belli = cb_imperial
+					}  
+				}   
+			}    
+		}
+ 	}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

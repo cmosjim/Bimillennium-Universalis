@@ -1,0 +1,38 @@
+#拓跋鲜卑 建立 代国
+#2018.12.26 fit to 1.28
+country_decisions = {
+
+	TXB_build_DA1 = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = TXB
+			NOT = { is_year = 386 }
+		}
+		allow = {
+			NOT = { exists = DA1 }
+			owns = 702
+			owns = 3242
+			owns = 722
+			num_of_cities = 14
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = ROOT
+				}
+					add_core = DA1
+					remove_core = ROOT
+			}			
+			change_tag = DA1
+			swap_free_idea_group = yes
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

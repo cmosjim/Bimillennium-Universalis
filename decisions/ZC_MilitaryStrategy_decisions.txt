@@ -1,0 +1,333 @@
+country_decisions = {
+
+	Rome_square = {
+		major = yes
+		potential = {
+			OR = {
+				tag = ROM
+				tag = BYZ
+				tag = ROW
+				has_reform = roman_empire_reform
+				has_reform = roman_republic_reform
+				has_reform = imperial_roman_republic
+			}
+			NOT = { has_country_modifier = Rome_square }
+			NOT = { has_country_modifier = testudo }
+			NOT = { mil_tech = 54 }
+		}
+		allow = {
+			is_at_war = yes
+			MIL_power = 30
+		}
+		effect = {
+			add_MIL_power = -30
+			add_country_modifier = {
+				name = Rome_square
+				duration = -1
+			}
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	cancel_Rome_square = {
+		major = yes
+		potential = {
+			has_country_modifier = Rome_square
+		}
+		effect = {
+			remove_country_modifier = Rome_square
+		}
+	}
+
+	testudo = {
+		major = yes
+		potential = {
+			OR = {
+				tag = ROM
+				tag = BYZ
+				tag = ROW
+				has_reform = roman_empire_reform
+				has_reform = roman_republic_reform
+				has_reform = imperial_roman_republic
+			}
+			NOT = { has_country_modifier = Rome_square }
+			NOT = { has_country_modifier = testudo }
+			NOT = { mil_tech = 54 }
+		}
+		allow = {
+			is_at_war = yes
+			MIL_power = 30
+		}
+		effect = {
+			add_MIL_power = -30
+			add_country_modifier = {
+				name = testudo
+				duration = -1
+			}
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	cancel_testudo = {
+		major = yes
+		potential = {
+			has_country_modifier = testudo
+		}
+		effect = {
+			remove_country_modifier = testudo
+		}
+	}
+
+}
+
+country_decisions = {
+	
+	feng_lin_huo_shan = {
+		major = yes
+		potential = {
+			#capital_scope = {
+			#	OR = {
+			#		region = north_china_region
+			#		region = xinan_region
+			#		region = south_china_region
+			#		region = manchuria_region
+			#		region = korea_region
+			#		region = japan_region
+			#		region = mongolia_region
+			#		region = tibet_region
+			#		region = central_asia_region
+			#	}
+			#}
+			NOT = {
+				OR = {
+					has_country_modifier = ji_ru_feng
+					has_country_modifier = xu_ru_lin
+					has_country_modifier = qin_lve_ru_huo
+					has_country_modifier = bu_dong_ru_shan
+					has_country_modifier = nan_zhi_ru_yin
+					has_country_modifier = dong_ru_lei_ting
+				}
+			}
+			NOT = { is_year = 1900 } #End of Qing
+		}
+		allow = {
+			is_at_war = yes
+			MIL_power = 30
+			check_variable = {
+				which = num_of_milbook
+				value = 1
+			}				
+		}
+		effect = {
+			if = {
+				limit = {
+					ai = yes
+				}
+				add_country_modifier = {
+					name = "ai_MilitaryStrategy"
+					duration = 60
+				}
+			}				
+			country_event = { id = MilitaryStrategy.1 }
+		}
+		ai_will_do = {
+			factor = 1 
+			modifier = {
+				factor = 0
+				has_country_modifier = ai_MilitaryStrategy
+			}			
+		}
+		ai_importance = 400
+	}
+}
+
+
+country_decisions = {
+
+	ji_ru_feng = {
+		major = yes
+		potential = {
+			has_country_modifier = ji_ru_feng
+		}
+		allow = {
+			is_at_war = yes
+		}
+		effect = {
+			remove_country_modifier = ji_ru_feng
+		}
+		ai_will_do = {
+			factor = 1 
+			modifier = {
+				factor = 0
+				has_country_modifier = ai_MilitaryStrategy
+			}			
+		}		
+	}
+
+	xu_ru_lin = {
+		major = yes
+		potential = {
+			has_country_modifier = xu_ru_lin
+		}
+		allow = {
+			is_at_war = yes
+		}
+		effect = {
+			remove_country_modifier = xu_ru_lin
+		}
+		ai_will_do = {
+			factor = 1 
+			modifier = {
+				factor = 0
+				has_country_modifier = ai_MilitaryStrategy
+			}			
+		}		
+	}
+
+	qin_lve_ru_huo = {
+		major = yes
+		potential = {
+			has_country_modifier = qin_lve_ru_huo
+		}
+		allow = {
+			is_at_war = yes
+		}
+		effect = {
+			remove_country_modifier = qin_lve_ru_huo
+		}
+		ai_will_do = {
+			factor = 1 
+			modifier = {
+				factor = 0
+				has_country_modifier = ai_MilitaryStrategy
+			}			
+		}		
+	}
+
+	bu_dong_ru_shan = {
+		major = yes
+		potential = {
+			has_country_modifier = bu_dong_ru_shan
+		}
+		allow = {
+			is_at_war = yes
+		}
+		effect = {
+			remove_country_modifier = bu_dong_ru_shan
+		}
+		ai_will_do = {
+			factor = 1 
+			modifier = {
+				factor = 0
+				has_country_modifier = ai_MilitaryStrategy
+			}			
+		}		
+	}
+
+	nan_zhi_ru_yin = {
+		major = yes
+		potential = {
+			has_country_modifier = nan_zhi_ru_yin
+		}
+		allow = {
+			is_at_war = yes
+		}
+		effect = {
+			remove_country_modifier = nan_zhi_ru_yin
+		}
+		ai_will_do = {
+			factor = 1 
+			modifier = {
+				factor = 0
+				has_country_modifier = ai_MilitaryStrategy
+			}			
+		}		
+	}
+
+	dong_ru_lei_ting = {
+		major = yes
+		potential = {
+			has_country_modifier = dong_ru_lei_ting
+		}
+		allow = {
+			is_at_war = yes
+		}
+		effect = {
+			remove_country_modifier = dong_ru_lei_ting
+		}
+		ai_will_do = {
+			factor = 1 
+			modifier = {
+				factor = 0
+				has_country_modifier = ai_MilitaryStrategy
+			}			
+		}		
+	}
+
+	hannibal_mercenaries = {
+		major = yes
+		potential = {
+			tag = CTG
+			NOT = { has_country_modifier = hannibal_mercenaries }
+		}
+		allow = {
+			is_at_war = yes
+			MIL_power = 30
+		}
+		effect = {
+			add_MIL_power = -30
+			add_country_modifier = {
+				name = hannibal_mercenaries
+				duration = -1
+			}
+		}
+	}
+
+	cancel_hannibal_mercenaries = {
+		major = yes
+		potential = {
+			tag = CTG
+			has_country_modifier = hannibal_mercenaries
+		}
+		allow = {
+			is_at_war = yes
+		}
+		effect = {
+			remove_country_modifier = hannibal_mercenaries
+		}
+	}
+
+	macedonian_square = {
+		major = yes
+		potential = {
+			tag = ALX
+			NOT = { has_country_modifier = macedonian_square }
+			NOT = { mil_tech = 54 }
+		}
+		allow = {
+			is_at_war = yes
+			MIL_power = 30
+		}
+		effect = {
+			add_MIL_power = -30
+			add_country_modifier = {
+				name = macedonian_square
+				duration = -1
+			}
+		}
+	}
+
+	cancel_macedonian_square = {
+		major = yes
+		potential = {
+			tag = ALX
+			has_country_modifier = macedonian_square
+		}
+		allow = {
+			is_at_war = yes
+		}
+		effect = {
+			remove_country_modifier = macedonian_square
+		}
+	}
+}

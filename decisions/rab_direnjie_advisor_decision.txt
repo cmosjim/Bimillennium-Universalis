@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_direnjie = {
+		major = yes
+		potential = {
+			
+			advisor = direnjie
+			
+		}
+		allow = {
+			advisor = direnjie
+		}
+		effect = {
+			remove_advisor = direnjie
+			define_general = {
+				name = "ÄrÁNpg0‡e˜R0"
+				fire = 4
+				shock = 5
+				manuever = 3
+				siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

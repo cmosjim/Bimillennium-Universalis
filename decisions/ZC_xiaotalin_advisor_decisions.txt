@@ -1,0 +1,27 @@
+country_decisions = {
+	advisors_convert_generals_xiaotalin = {
+		major = yes
+		potential = {
+			
+			advisor = xiaotalin
+			
+		}
+		allow = {
+			advisor = xiaotalin
+		}
+		effect = {
+			remove_advisor = xiaotalin
+			define_general = {
+				name = "'„cÛQ0fkS0"
+				fire = 6
+				shock = 7
+				manuever = 7
+				siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

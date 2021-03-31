@@ -1,0 +1,93 @@
+
+#ountry_decisions = {
+#	reverse_Tributary_System = {
+#		major = yes
+#		potential = {
+#				any_known_country = {
+#					has_country_modifier = easten_big_country
+#				}
+#
+#				OR = {
+#						capital_scope = { region = xinan_region }
+#						capital_scope = { region = burma_region }
+#						capital_scope = { region = indo_china_region }
+#						capital_scope = { region = indonesia_region }
+#						capital_scope = { region = tibet_region }
+#						capital_scope = { region = central_asia_region }							
+#						capital_scope = { region = korea_region }
+#						capital_scope = { region = manchuria_region }							
+#				}
+#				NOT = { has_country_flag = tributary_to_done }
+#				NOT = { 
+#					OR = {
+#						government = celestial_empire
+#						government = celestial_empire_2
+#						government = ancient_chinese_warlord
+#					}
+#				}			
+#		}
+#	
+#		allow = {
+#			any_known_country = {
+#			
+#				has_country_modifier = easten_big_country
+#				is_at_war = no
+#				treasury = 100
+#				NOT = { truce_with = ROOT }
+#				
+#				NOT = {
+#					OR = {
+#						has_opinion_modifier = {
+#							who = ROOT
+#							modifier = op_tribute_appreciate
+#						}
+#						has_opinion_modifier = {
+#							who = ROOT
+#							modifier = op_tribute_normal
+#						}
+#						has_opinion_modifier = {
+#							who = ROOT
+#							modifier = op_tribute_celestial_refuse
+#						}
+#						has_opinion_modifier = {
+#							who = ROOT
+#							modifier = op_tribute_celestial_be_refuse
+#						}						
+#					}
+#				}					
+#			}
+#		}		
+#		effect = {
+#			country_event = {
+#				id = reverse_Tributary_events.100
+#			}
+#			hidden_effect = {
+#				set_country_flag = tributary_to_done
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				factor = 0
+#				OR = {
+#					has_ruler_modifier = ra_ch3
+#					has_ruler_modifier = ra_ch7
+#					has_ruler_modifier = ra_ch9
+#					num_of_cities = 2
+#					is_at_war = yes	
+#					is_subject = yes
+#					NOT = { adm_power = 40 }
+#					NOT = { mil_power = 40 }
+#					NOT = { dip_power = 40 }
+#					treasury = 2000
+#					AND = {
+#						NOT = { adm_power = 100 }
+#						NOT = { mil_power = 100 }
+#						NOT = { dip_power = 100 }
+#						treasury = 700
+#					}
+#				}	
+#			}		
+#		}
+#	}
+#

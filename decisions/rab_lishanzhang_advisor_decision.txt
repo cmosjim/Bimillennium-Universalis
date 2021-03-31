@@ -1,0 +1,29 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_lishanzhang = {
+		major = yes
+		potential = {
+			
+			advisor = lishanzhang
+			
+		}
+		allow = {
+			advisor = lishanzhang
+		}
+		effect = {
+			remove_advisor = lishanzhang
+			define_general = {
+				
+				name = "Ng„U•0›Q^0"
+				fire = 7
+				shock = 7
+				manuever = 5
+				siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

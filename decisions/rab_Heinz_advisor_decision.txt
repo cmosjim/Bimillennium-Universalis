@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_Heinz = {
+		major = yes
+		potential = {
+			
+			advisor = Heinz
+			
+		}
+		allow = {
+			advisor = Heinz
+		}
+		effect = {
+			remove_advisor = Heinz
+			define_general = {
+				name = "wmàV(ƒ.äS·V—g0›Q˜R0"
+				fire = 9
+				shock = 8
+				manuever = 8
+				siege = 8
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

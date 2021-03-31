@@ -1,0 +1,30 @@
+country_decisions = {
+################################################	
+	old_estern_asian_tech = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = southeastasian_group
+				culture_group = korean_g
+				culture_group = japanese_g
+			}	
+			technology_group = chinese
+			NOT = { has_country_flag = flg_ever_old_estern_asian }	
+		}
+		allow = {
+			mil_tech = 64
+		}
+		effect = {
+			add_treasury = -100
+			add_mil_power = -50
+			change_technology_group = old_estern_asian
+			change_unit_type = old_estern_asian
+			set_country_flag = flg_ever_old_estern_asian
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+

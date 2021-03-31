@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_dongxiang = {
+		major = yes
+		potential = {
+			
+			advisor = dongxiang
+			
+		}
+		allow = {
+			advisor = dongxiang
+		}
+		effect = {
+			remove_advisor = dongxiang
+			define_admiral = {
+				name = "NaNs^kQΐ0CQ^0"
+				fire = 7
+				shock = 6
+				manuever = 5
+				trait = naval_showman_personality
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

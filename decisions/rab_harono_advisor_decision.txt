@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_harono = {
+		major = yes
+		potential = {
+			
+			advisor = harono
+			
+		}
+		allow = {
+			advisor = harono
+		}
+		effect = {
+			remove_advisor = harono
+			define_general = {
+				name = "'YÎ‘»l•0‡e˜R0"
+				fire = 2
+				shock = 1
+				manuever = 2
+				siege = 1
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

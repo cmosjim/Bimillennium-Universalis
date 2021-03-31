@@ -1,0 +1,29 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_liuguoxuan = {
+		major = yes
+		potential = {
+			
+			advisor = liuguoxuan
+			
+		}
+		allow = {
+			advisor = liuguoxuan
+		}
+		effect = {
+			remove_advisor = liuguoxuan
+			define_general = {
+
+				name = "R˝Viè0fkS0"
+				fire = 7
+				shock = 6
+				manuever = 5
+				siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

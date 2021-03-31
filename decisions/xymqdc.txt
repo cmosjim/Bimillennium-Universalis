@@ -1,0 +1,171 @@
+country_decisions = {
+
+	nvzhentiaoting = {
+	    major = yes
+	    potential = {
+	        tag = MNG
+	        exists = KOR
+	        any_country = {
+	            primary_culture = manchu
+	            is_subject_of = ROOT
+	        }
+	        NOT = {
+	            has_global_flag = nuergandusi
+	        }
+	    }
+	    allow = {
+	        tag = MNG
+	        exists = KOR
+	        any_country = {
+	            primary_culture = manchu
+	            is_subject_of = ROOT
+	        }
+	    }
+	    effect = {
+	        set_global_flag = nuergandusi
+	        custom_tooltip = KOR_BAN_DW
+	        add_prestige = 20
+	    }
+	    ai_will_do = {
+	        factor = 1
+	    }
+	}
+
+}
+
+country_decisions = {
+
+	fangqibaqi = {
+	    major = yes
+	    potential = {
+	        tag = QNG
+	        has_idea = manchu_eight_banners
+	    }
+	    allow = {
+	        has_idea = manchu_eight_banners
+	        NOT = {
+	            has_idea = daqinglule
+	        }
+	    }
+	    effect = {
+	        swap_free_idea_group = yes
+	        add_prestige = 20
+	    }
+	    ai_will_do = {
+	        factor = 1
+	    }
+	}
+
+}
+
+country_decisions = {
+
+	chuangguandong = {
+	    major = yes
+	    potential = {
+	        OR = {
+	            tag = QNG
+	            culture_group = east_asian
+	        }
+	        NOT = {
+	            has_global_flag = chuangguandong
+	        }
+	        OR = {
+	            ai = no
+	            AND = {
+	                ai = yes
+	                is_year = 1895
+	            }
+	        }
+	    }
+	    allow = {
+	        adm_tech = 75
+	        total_development = 1500
+	        num_of_owned_provinces_with = {
+	            value = 15
+	            region = manchuria_region
+	        }
+	    }
+	    effect = {
+	        set_global_flag = chuangguandong
+	        every_owned_province = {
+	            limit = {
+	                region = manchuria_region
+	            }
+	            add_base_tax = 3
+	            add_base_production = 3
+	            add_base_manpower = 1
+				reload_pov_limit = yes	
+	        }
+	        every_owned_province = {
+	            limit = {
+	                region = manchuria_region
+	                NOT = {
+	                    culture_group = east_asian
+	                }
+	            }
+	            change_culture = dongbe
+	        }
+	    }
+	    ai_will_do = {
+	        factor = 1
+	    }
+	}
+}
+
+country_decisions = {
+	convert_culture_chinese = {
+	    major = yes
+	    potential = {
+			OR = {
+				has_reform = celestial_empire
+				tag = BL1 #rab_ add
+				tag = ZH2 #rab_ add
+			}	
+	        NOT = {
+	            culture_group = east_asian
+	        }
+	        NOT = {
+	            has_country_flag = caoyuanbuluo1
+	        }
+	    }
+	    allow = {
+	        NOT = {
+	            culture_group = east_asian
+	        }
+	        NOT = {
+	            has_country_flag = caoyuanbuluo1
+	        }
+	        capital_scope = {
+	            culture_group = east_asian
+	        }
+			OR = {
+				AND = {
+					OR = {
+						tag = BL1
+						tag = ZH2
+					}	
+					num_of_owned_provinces_with = {
+						value = 50
+						culture_group = east_asian
+					}
+				}	
+				num_of_owned_provinces_with = {
+					value = 100
+					culture_group = east_asian
+				}	
+			}	
+	    }
+	    effect = {
+	        capital_scope = {
+	            ROOT = {
+	                change_primary_culture = PREV
+	            }
+	        }
+	        add_stability = -3
+	    }
+	    ai_will_do = {
+	        factor = 0
+	    }
+	}
+}

@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_cuihao= {
+		major = yes
+		potential = {
+			
+			advisor = cuihao
+			
+		}
+		allow = {
+			advisor = cuihao
+		}
+		effect = {
+			remove_advisor = cuihao
+			define_general = {
+				name = "Tim0›Q^0"
+				fire = 0
+				shock = 0
+				manuever = 3
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

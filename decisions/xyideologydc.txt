@@ -1,0 +1,139 @@
+country_decisions = {
+
+	panyifascism = {
+		major = yes
+		potential = {
+        religion_group = ideology
+		NOT = { religion = fascism  }
+		OR = {
+        ai = no
+		AND = {
+        ai = yes
+		dominant_religion = fascism
+		}
+		}
+		}
+		allow = {
+		is_subject = no
+		has_institution = nationalism_institution
+        any_owned_province = {
+        religion = fascism
+		culture_group = ROOT
+		is_state = yes
+		}
+		}
+		effect = {
+		every_owned_province = {
+		limit = {
+        religion = ROOT
+		culture_group = ROOT
+		}
+		change_religion = fascism
+		}
+		change_religion = fascism
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
+country_decisions = {
+
+	panyibaoshou = {
+		major = yes
+		potential = {
+	NOT = { religion_group = ideology }
+    has_institution = industrialization
+		}
+		allow = {
+   OR = {
+       	government = monarchy 
+	AND = {
+	government = republic
+    has_reform = presidential_despot_reform
+	}
+		}
+	NOT = { religion_group = ideology }
+    has_institution = industrialization
+	}
+		effect = {
+        change_religion = conservatism
+		  capital_scope = { change_religion = conservatism }
+		  if = { limit = {
+          	government = republic
+			has_reform = presidential_despot_reform
+		  }
+			change_government = monarchy 
+		  }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+country_decisions = {
+
+	panyiziyou = {
+		major = yes
+		potential = {
+	NOT = { religion_group = ideology }
+    has_institution = industrialization
+		}
+		allow = {
+	NOT = { religion_group = ideology }
+    has_institution = industrialization
+		}
+		effect = {
+      change_religion = liberalism
+		capital_scope = { change_religion = liberalism }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}
+
+country_decisions = {
+
+	guanbihuibaobaoshou = {
+		major = yes
+		potential = {
+	    religion_group = ideology
+		}
+		allow = {
+	NOT = {
+				has_country_flag = guanbibaoshoutishi
+			}
+		}
+		effect = {
+      set_country_flag = guanbibaoshoutishi
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}
+
+country_decisions = {
+
+	kaiqihuibaobaoshou = {
+		major = yes
+		potential = {
+	    religion_group = ideology
+		}
+		allow = {
+				has_country_flag = guanbibaoshoutishi
+		}
+		effect = {
+      clr_country_flag = guanbibaoshoutishi
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

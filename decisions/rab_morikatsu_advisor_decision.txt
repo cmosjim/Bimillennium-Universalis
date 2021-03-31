@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_morikatsu = {
+		major = yes
+		potential = {
+			
+			advisor = morikatsu
+			
+		}
+		allow = {
+			advisor = morikatsu
+		}
+		effect = {
+			remove_advisor = morikatsu
+			define_general = {
+				name = "Ûk)RÜw8l0fkS0"
+				fire = 6
+				shock = 4
+				manuever = 4
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

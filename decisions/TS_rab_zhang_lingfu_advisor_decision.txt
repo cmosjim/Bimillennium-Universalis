@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_zhang_lingfu = {
+		major = yes
+		potential = {
+			
+			advisor = zhang_lingfu
+			
+		}
+		allow = {
+			advisor = zhang_lingfu
+		}
+		effect = {
+			remove_advisor = zhang_lingfu
+			define_general = {
+				name = ".Vup+u0S›Q0"
+				fire = 7
+				shock = 7
+				manuever = 4
+				siege = 6
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_liulaozhi= {
+		major = yes
+		potential = {
+			
+			advisor = liulaozhi
+			
+		}
+		allow = {
+			advisor = liulaozhi
+		}
+		effect = {
+			remove_advisor = liulaozhi
+			define_general = {
+				name = "RbrKN 0fkS0"
+				fire = 6
+				shock = 6
+				manuever = 3
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

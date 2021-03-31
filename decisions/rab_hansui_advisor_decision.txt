@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_hansui = {
+		major = yes
+		potential = {
+			
+			advisor = hansui
+			
+		}
+		allow = {
+			advisor = hansui
+		}
+		effect = {
+			remove_advisor = hansui
+			define_general = {
+				name = "ÈóBê0fkS0"
+				fire = 5
+				shock = 7
+				manuever = 6
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

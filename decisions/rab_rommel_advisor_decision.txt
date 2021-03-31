@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_rommel = {
+		major = yes
+		potential = {
+			
+			advisor = rommel
+			
+		}
+		allow = {
+			advisor = rommel
+		}
+		effect = {
+			remove_advisor = rommel
+			define_general = {
+				name = "†–ŽS0CQ^0"
+				fire = 8
+				shock = 10
+				manuever = 9
+				siege = 8
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,49 @@
+
+#明治维新(JAP) ==> look disaster
+#md_meiji_reform 
+
+#成立大東亞共榮圈
+#Greater_East_Asia_CoProsperity_Sphere
+#md_fanaticism_war
+#三月亡华(JAP)
+#md_three_month
+#2018.12.20 to 1.28
+country_decisions = {
+
+######################################################################	
+#	進行明治維新md_meiji_reform
+######################################################################
+	start_meiji_reform = {
+		major = yes
+		potential = {
+			OR = {
+				tag = JA1
+				tag = JAP
+			}	
+			is_year = 1840
+			NOT = { is_year = 1900 } #this moment must writting into history files.
+		}		
+		allow = {
+			is_subject = no
+			is_at_war = no 
+			num_of_cities = 40
+			custom_trigger_tooltip = {
+				tooltip = tp_none_process_meiji_refrom
+				NOT = { has_country_modifier = md_meiji_reform }
+				NOT = { has_country_modifier = md_process_meiji_reform }
+				NOT = { has_country_flag = flg_meiji_reform_ever }
+			}
+		}
+		effect = {
+			custom_tooltip = tp_start_meiji_reform
+			country_event = {
+				id = rab_JAP_events.5
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+}

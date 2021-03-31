@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_yuzhujian = {
+		major = yes
+		potential = {
+			
+			advisor = yuzhujian
+			
+		}
+		allow = {
+			advisor = yuzhujian
+		}
+		effect = {
+			remove_advisor = yuzhujian
+			define_general = {
+				name = "¡êQr˙^0fkS0"
+				fire = 6
+				shock = 5
+				manuever = 4
+				siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

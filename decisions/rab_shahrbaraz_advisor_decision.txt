@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_shahrbaraz = {
+		major = yes
+		potential = {
+			
+			advisor = shahrbaraz
+			
+		}
+		allow = {
+			advisor = shahrbaraz
+		}
+		effect = {
+			remove_advisor = shahrbaraz
+			define_general = {
+				name = "ôlkçÙT“RyQ0fkS0"
+				fire = 8
+				shock = 7
+				manuever = 6
+				siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

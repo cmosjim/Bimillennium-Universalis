@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_akashi = {
+		major = yes
+		potential = {
+			
+			advisor = akashi
+			
+		}
+		allow = {
+			advisor = akashi
+		}
+		effect = {
+			remove_advisor = akashi
+			define_general = {
+				name = "fówhQ‰v0fkS0"
+				fire = 5
+				shock = 5
+				manuever = 3
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,276 @@
+#2021-02-28 modify by xy
+country_decisions = {
+    coldwar_overlord = {
+        major = yes
+        potential = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 100
+            }
+            total_development = 5000
+            NOT = {
+                AND = {
+                    any_country = {
+                        has_country_flag = gongchanlingxiu
+                    }
+                    religion = communism
+                }
+            }
+            NOT = {
+                AND = {
+                    any_country = {
+                        has_country_flag = ziyoulingxiu
+                    }
+                    religion = liberalism
+                }
+            }
+            OR = {
+                religion = communism
+                religion = liberalism
+            }
+            NOT = {
+                has_country_flag = coldwar_overlord1
+            }
+        }
+        allow = {
+		 dip_tech = 86
+            is_at_war = no
+			custom_trigger_tooltip = {
+			tooltip = recently_no_fascism_government_tooltip		
+				NOT = {
+					any_country = {
+						religion = fascism
+					}
+				}
+			}
+            OR = {
+				custom_trigger_tooltip = {
+					tooltip = recently_communism_index_92_government_tooltip							
+					religion = communism
+					NOT = {
+						any_country = {
+							religion = communism
+							OR = {
+								check_variable = {
+									which = num_of_industrialindex
+									value = 92
+								}
+							}
+						}
+					}
+                }
+				custom_trigger_tooltip = {
+				tooltip = recently_liberalism_index_92_government_tooltip	
+					religion = liberalism					
+					NOT = {
+						any_country = {
+							religion = liberalism
+							OR = {
+								check_variable = {
+									which = num_of_industrialindex
+									value = 92
+								}
+							}
+						}
+					}
+				}
+            }
+
+            any_country = {
+                NOT = {
+                    capital_scope = {
+                        continent = africa
+                    }
+                }
+                reverse_check_chinese_warlord = yes
+                NOT = {
+                    has_reform = modern_chinese_warlord_reform
+                }
+                religion = ROOT
+            }
+        }
+        effect = {
+            if = {
+                limit = {
+                    religion = communism
+                }
+                set_country_flag = gongchanlingxiu
+            }
+            if = {
+                limit = {
+                    religion = liberalism
+                }
+                set_country_flag = ziyoulingxiu
+            }
+            set_country_flag = coldwar_overlord1
+            every_country = {
+                limit = {
+                    reverse_check_chinese_warlord = yes
+                    NOT = {
+                        capital_scope = {
+                            continent = africa
+                        }
+                    }
+                    NOT = {
+                        is_colonial_nation = yes
+                    }
+                    NOT = {
+                        has_country_flag = coldwar_overlord1
+                    }
+                    NOT = {
+                        has_reform = modern_chinese_warlord_reform
+                    }
+                    religion = ROOT
+                }
+                country_event = {
+                    id = xy_coldwar.3
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}
+
+country_decisions = {
+    cultural_revolution_dc = {
+        major = yes
+        potential = {
+            NOT = {
+                has_country_flag = had_cultural_revolution_dc
+            }
+            reverse_check_chinese_warlord = yes
+            NOT = {
+                has_reform = modern_chinese_warlord_reform
+            }
+            is_year = 1900
+            religion = communism
+            NOT = {
+                has_country_modifier = people_wake_com
+            }
+            NOT = {
+                has_country_flag = communism_sec_revolution
+            }
+            NOT = {
+                has_country_modifier = false_communism
+            }
+            NOT = {
+                has_country_flag = choosing_cdwar_5
+            }
+        }
+        allow = {}
+        effect = {
+            country_event = {
+                id = xy_coldwar.7
+            }
+            set_country_flag = had_cultural_revolution_dc
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = {
+                    AND = {
+                        tag = CHN 
+						is_year = 1966
+                    }
+                }
+            }
+        }
+    }
+}
+#金融收割
+country_decisions = {
+    ideology_harvest = {
+        major = yes
+        potential = {
+            OR = {
+                AND = {
+                    has_country_flag = gongchanlingxiu
+                    religion = communism
+                }
+                AND = {
+                    has_country_flag = ziyoulingxiu
+                    religion = liberalism
+                }
+            }
+            any_country = {
+                has_country_flag = zyhpyb_overlord
+            }
+        }
+        allow = {}
+        effect = {
+            random_country = {
+                limit = {
+                    has_country_flag = zyhpyb_overlord
+                }
+                country_event = {
+                    id = xy_coldwar.17
+                }
+            }
+            every_country = {
+                limit = {
+                    is_subject_of_type = ideology_union_state is_subject_of = ROOT
+                }
+                country_event = {
+                    id = xy_coldwar.18
+                }
+            }
+            country_event = {
+                id = xy_coldwar.19
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}
+# 要求革命
+country_decisions = {
+    require_cultural_revolution = {
+        major = yes
+        potential = {
+            has_country_flag = gongchanlingxiu
+            religion = communism
+            has_country_modifier = people_wake_com
+        }
+        allow = {
+            has_country_flag = gongchanlingxiu
+            religion = communism
+            has_country_modifier = people_wake_com
+            any_subject_country = {
+                is_subject_of_type = ideology_union_state
+                NOT = {
+                    has_country_modifier = cultural_revolution_md
+                }
+                NOT = {
+                    has_country_modifier = people_wake_com
+                }
+            }
+        }
+        effect = {
+            every_subject_country = {
+                limit = {
+                    is_subject_of_type = ideology_union_state
+				NOT = {
+                    has_country_modifier = cultural_revolution_md
+                }
+                NOT = {
+                    has_country_modifier = people_wake_com
+                }
+                }
+                add_country_modifier = {
+                    name = "cultural_revolution_md"
+                    duration = -1
+                }
+                add_stability = -3
+                custom_tooltip = tp_stt_wenge
+                set_country_flag = had_cultural_revolution_dc
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

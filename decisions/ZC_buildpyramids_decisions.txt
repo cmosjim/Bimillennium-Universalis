@@ -1,0 +1,56 @@
+country_decisions = {
+	construct_egyptian_pyramids = {
+       		major = yes
+        		potential = {
+            			has_country_flag = build_egyptian_pyramids_enabled
+			NOT = { has_country_flag = egyptian_pyramids_flag }
+			ai = no
+			361 = {
+				range = ROOT
+				NOT = { has_great_project = egyptian_pyramids }
+			}
+       	 	}
+        		allow = {
+            			owns = 361
+            			is_subject = no
+            			treasury = 2000
+			manpower = 10
+        		}
+        		effect = {
+           	 		add_treasury = -2000
+			add_manpower = -10
+           	 		361 = {
+            		    		add_great_project = egyptian_pyramids
+            			}
+			set_country_flag = egyptian_pyramids_flag
+        		}
+        		ai_will_do = {
+            			factor = 0
+        		}
+	}
+
+	build_pyramids = {
+		major = yes
+		potential = {
+			owns = 361
+			has_country_flag = stop_pyramids_construction_flag
+			NOT = { has_ruler_modifier = build_pyramids }
+			NOT = { has_ruler_modifier = successful_construction }
+		}
+		allow = {
+			treasury = 1000
+			manpower = 3
+		}
+		effect = {
+			add_treasury = -1000
+			add_manpower = -3
+			add_prestige = 15
+			add_legitimacy = 15
+			change_adm = 1
+			add_ruler_modifier = {
+				name = build_pyramids
+			}
+		}
+	}
+}
+}

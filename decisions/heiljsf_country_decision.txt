@@ -1,0 +1,115 @@
+country_decisions = {
+	#秦变大秦帝国	DQN=>DQE
+	DQN_country_build_DQE = {
+	major = yes
+		potential = {
+			tag = DQN 
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 700		# 
+				province_id = 2492		# 
+				province_id = 679		# 
+				# province_id = 667		# 
+                # province_id = 684
+                province_id = 1816
+                province_id = 3190
+                province_id = 3187
+                province_id = 4892
+			}
+			NOT = { owned_by = ROOT }
+		}
+        
+		allow = {
+			NOT = { exists = DQE }
+			tag = DQN 
+			num_of_cities = 110
+            owns_core_province = 700
+            owns_core_province = 2492
+            owns_core_province = 679
+            # owns_core_province = 667
+            # owns_core_province = 684
+            owns_core_province = 1816
+            owns_core_province = 3190
+            owns_core_province = 3187
+            owns_core_province = 4892
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = DQN
+				}
+					add_core = DQE
+					remove_core = DQN
+			}			
+			change_tag = DQE
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#秦变大秦	QG2=>DC2
+	QG2_country_build_DC2 = {
+	major = yes
+		potential = {
+			tag = QG2 
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 700		# 
+				province_id = 2492		# 
+				province_id = 679		#
+				# province_id = 667		# 
+                # province_id = 684
+                province_id = 1816
+                province_id = 3190
+                province_id = 3187
+                province_id = 4892
+			}
+			NOT = { owned_by = ROOT }
+		}
+        
+		allow = {
+			NOT = { exists = DC2 }
+			tag = QG2 
+			num_of_cities = 100
+            owns_core_province = 700
+            owns_core_province = 2492
+            owns_core_province = 679
+            # owns_core_province = 667
+            # owns_core_province = 684
+            owns_core_province = 1816
+            owns_core_province = 3190
+            owns_core_province = 3187
+            owns_core_province = 4892
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = QG2
+				}
+					add_core = DC2
+					remove_core = QG2
+			}			
+			change_tag = DC2
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}

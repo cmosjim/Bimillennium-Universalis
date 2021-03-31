@@ -1,0 +1,61 @@
+# 2019-05-04當世界上的國家有 wudaigeju 的modifier ， 則不能拋棄天命
+country_decisions = {
+
+	positive_get_mandate_decision = {
+		major = yes
+		potential = {
+			has_global_flag = empire_of_china_dismantled 
+			ai = no
+			NOT = { has_country_flag = tmp_positive_get_mandate_decision }
+			is_emperor_of_china = no
+		}		
+		allow = {
+			OR = {
+				has_reform = celestial_empire
+				has_reform = ancient_chinese_warlord_reform
+				has_reform = chinese_feudatory_reform
+				tag = TP1
+			}
+		}
+		effect = {
+			hidden_effect = {
+				set_country_flag = tmp_positive_get_mandate_decision
+				set_country_flag = flg_positive_get_mandate
+			}	
+			country_event = {
+				id = rab_mandate_events.1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	#dismantle_empire_of_china = yes
+	
+	positive_dismantle_mandate_decision = { 
+		major = yes
+		potential = {
+			is_emperor_of_china = yes
+			ai = no
+			NOT = { has_country_flag = tmp_positive_dismantle_mandate_decision }
+		}		
+		allow = {
+			is_at_war = no
+			NOT = {
+				any_country = {
+					has_country_modifier = wudaigeju
+				}
+			}	
+		}
+		effect = {
+			set_country_flag = tmp_positive_dismantle_mandate_decision
+			country_event = {
+				id = rab_mandate_events.2
+			}			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+}	

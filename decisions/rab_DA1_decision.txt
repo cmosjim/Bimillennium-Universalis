@@ -1,0 +1,43 @@
+#”bÀçúúQS„N˝V ˙^Àz SOõ
+country_decisions = {
+
+	DA1_build_NWE = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = DA1
+			is_year = 386 
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no		
+			NOT = { exists = NWE }
+			owns_core_province = 3230 
+			owns_core_province = 2504  
+			owns_core_province = 2503  
+			owns_core_province = 721  
+			owns_core_province = 2551  
+			owns_core_province = 3337  
+			owns_core_province = 3253 
+			num_of_cities = 26
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = ROOT
+				}
+					add_core = NWE
+					remove_core = ROOT
+			}			
+			change_tag = NWE
+			swap_free_idea_group = yes
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

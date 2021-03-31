@@ -1,0 +1,29 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_jeanne = {
+		major = yes
+		potential = {
+			
+			advisor = jeanne
+			
+		}
+		allow = {
+			advisor = jeanne
+		}
+		effect = {
+			remove_advisor = jeanne
+			define_general = {
+				name = "ç∑V01WsY0"
+				female = yes
+				fire = 9
+				shock = 10
+				manuever = 9
+				siege = 8
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

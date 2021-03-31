@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_dalibei = {
+		major = yes
+		potential = {
+			
+			advisor = dalibei
+			
+		}
+		allow = {
+			advisor = dalibei
+		}
+		effect = {
+			remove_advisor = dalibei
+			define_general = {
+				name = "Tr̑iR0fkS0"
+				fire = 5
+				shock = 6
+				manuever = 3
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

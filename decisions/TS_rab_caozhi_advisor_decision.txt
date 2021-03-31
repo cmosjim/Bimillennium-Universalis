@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_caozhi = {
+		major = yes
+		potential = {
+			
+			advisor = caozhi
+			
+		}
+		allow = {
+			advisor = caozhi
+		}
+		effect = {
+			remove_advisor = caozhi
+			define_general = {
+				name = "ùfi0'Y‡ejŒ0"
+				fire = 3
+				shock = 3
+				manuever = 3
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_xichao= {
+		major = yes
+		potential = {
+			
+			advisor = xichao
+			
+		}
+		allow = {
+			advisor = xichao
+		}
+		effect = {
+			remove_advisor = xichao
+			define_general = {
+				name = "◊êÖç 0åÎX0"
+				fire = 3
+				shock = 2
+				manuever = 1
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

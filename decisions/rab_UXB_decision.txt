@@ -1,0 +1,90 @@
+#宇文鲜卑 建立 北周
+#宇文鲜卑 回歸 契丹草原
+
+
+country_decisions = {
+
+	UXB_build_CZH = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = UXB
+		}
+		allow = {
+			NOT = { exists = CZH }
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						region = xinan_region
+						region = north_china_region
+						region = south_china_region
+					}	
+				}
+				amount = 20
+			}	
+			num_of_cities = 30
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = ROOT
+				}
+					add_core = CZH
+					remove_core = ROOT
+			}			
+			change_tag = CZH
+			swap_free_idea_group = yes
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+############################################################	
+
+	UXB_build_KHT = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = UXB
+			is_year = 300
+		}
+		allow = {
+			NOT = { exists = KHT }
+			owns = 723
+			owns = 725
+			owns = 3200
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 15			
+				}			
+			num_of_cities = 20
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = ROOT
+				}
+					add_core = KHT
+					remove_core = ROOT
+			}			
+			change_tag = KHT
+			swap_free_idea_group = yes
+			add_country_modifier = {
+				name = "md_back_to_grassland"
+				duration = 8000
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

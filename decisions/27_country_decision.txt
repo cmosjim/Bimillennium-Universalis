@@ -1,0 +1,256 @@
+country_decisions = {
+
+	#拥有长安以及20座城获得汉赵专属理念
+	guangfu_hanshi = {
+		potential = {
+			tag = HZZ
+			NOT = { has_country_flag = hanshizhongxing }
+		}
+		allow = {
+			owns = 700
+			num_of_cities = 20
+		}
+		effect = {
+			set_country_flag = hanshizhongxing
+			swap_free_idea_group = yes
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	
+	#谕中原檄
+	yuzhongyuanxi = {
+		potential = {
+			OR = {
+				tag = MNG
+				tag = ZU2
+			}
+			exists = YUA
+			NOT = { has_country_flag = quzhuhulu_huifuzhonghua }
+		}
+		allow = {
+			owns = 1821
+		}
+		effect = {
+			add_country_modifier = {
+				name = "quzhuhulu_huifuzhonghua"
+				duration = 3650
+			}
+			capital_scope = {
+				ROOT = {
+				cavalry = PREV
+				cavalry = PREV
+				infantry = PREV
+				infantry = PREV
+				artillery = PREV
+	
+				}
+			}
+			random_owned_province = {
+				limit = { has_port = yes }
+				ROOT = {
+					galley = PREV
+					galley = PREV
+					transport = PREV
+					transport = PREV
+				}
+			}
+			set_country_flag = quzhuhulu_huifuzhonghua
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	#变法 一条鞭法
+	bianfa = {
+		potential = {
+			OR = {
+				tag = MNG
+				tag = DNM
+			}
+			NOT = { has_country_modifier = yi_tiao_bian_fa }
+		}
+		allow = {
+			adm_tech = 52
+			OR = {
+				has_country_modifier = tudi_jianbing
+				advisor = zhangjuzheng
+			}
+		}
+		effect = {
+			add_stability = -1
+			add_prestige = 10
+			add_meritocracy = 10
+			remove_country_modifier = tudi_jianbing
+			country_event = {
+				id = MNG_events_namespace.3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	##洪武肃贪
+	#hongwu_sutan = {
+	#	potential = {
+	#		OR = {
+	#			tag = MNG
+	#			tag = DNM
+	#		}
+	#		NOT = { has_country_modifier = fanfu_sutan }
+	#	}
+	#	allow = {
+	#		adm = 3
+	#	}
+	#	effect = {
+	#		add_stability = -3
+	#		add_prestige = 5
+	#		add_meritocracy = -20
+	#		add_country_modifier = {
+	#			name = "fanfu_sutan"
+	#			duration = 3650
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
+	
+	#振兴三大营
+	build_sandaying = {
+		potential = {
+			OR = {
+				tag = MNG
+				tag = DNM
+			}
+			NOT = { has_country_modifier = sandaying }
+			NOT = { mil_tech = 80 }
+		}
+		allow = {
+			mil_tech = 46
+		}
+		effect = {
+			add_treasury = -10000
+			add_mil_tech = 1
+			add_country_modifier = {
+				name = "sandaying"
+				duration = 10950
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	#海宋变法
+	SN1_bianfa = {
+		potential = {
+			tag = SNG
+			NOT = { has_country_flag = SNG_overseas }
+			is_year = 1279
+		}
+		allow = {
+			is_at_war = no
+			OR = {
+				NOT = {
+					any_owned_province = {
+						superregion = china_superregion 
+					}
+				}
+				any_owned_province = { 
+					OR = {
+						area = taiwan_north_area
+						area = taiwan_south_area
+					}
+				}
+			}
+			NOT = { num_of_cities = 10 }
+			capital_scope = {
+				OR = {
+					area = kyushu_area #rab_ correct
+					area = northern_kyushu
+					area = taiwan_north_area
+					area = taiwan_south_area
+				}
+			}
+		}
+		effect = {
+			set_country_flag = SNG_overseas
+			swap_free_idea_group = yes
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_army_tradition = 50
+			change_religion = confucianism
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	#收编女真各部
+	shoubian_nvzhen = {
+		potential = {
+			OR = {
+				tag = TG1
+				tag = TG2
+			}
+			NOT = { has_country_modifier = manchu_warrior }
+			has_country_flag = shoubian_nvzhen 
+		}
+		allow = {
+			NOT = { exists = GNN }
+		}
+		effect = {
+			add_accepted_culture = manchu
+			add_treasury = -10000
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "manchu_warrior"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	#军事改革
+	#junshi_gaige = {
+	#	potential = {
+	#		OR = {
+	#			tag = TG1
+	#			tag = TG2
+	#		}
+	#		has_country_modifier = xinchao_yazheng
+	#		NOT = { is_year = 1800 }
+	#	}
+	#	allow = {
+	#		mil_tech = 52
+	#		army_professionalism = 0.6
+	#		innovativeness = 60
+	#		treasury = 10000
+	#	}
+	#	effect = {
+	#		add_treasury = -10000
+	#		change_innovativeness = -20
+	#		add_mil_power = 100
+	#		country_event = { 
+	#			id = GYDT_events_namespace.4
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}		
+	#}
+}

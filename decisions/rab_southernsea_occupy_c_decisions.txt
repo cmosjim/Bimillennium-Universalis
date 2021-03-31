@@ -1,0 +1,355 @@
+#2018.12.20 to fit 1.28
+country_decisions = {
+##########################################################
+# 				_c-dç‹ty
+#
+#save_global_event_target_as = tag_southernsea_a_opp
+#offense_war_southern_c : when war add flag
+#
+#########################################################
+#set_country_flag = flg_southernsea_c_occupy
+#save_global_event_target_as = tag_southernsea_c_occupy
+#defense_war_southern_c : when war add flag 
+#
+#
+##########################################################
+	
+	occupy_southernsea_c_decision = {
+		major = yes
+		potential = {
+		is_year = 1950
+			any_owned_province = { 
+				OR = {
+					area = taiwan_north_area 
+					area = taiwan_south_area  
+					area = guangdong_area 
+					area = fujian_area 
+					area = vietnam_area 
+					area = champa_area 
+					area = luzon_area 
+					area = great_moluccas_area 
+					area = mindanao_area
+					area = brunei_area
+					area = sarawak_area
+					area = johor_area
+					area = malaya_area
+				}
+				has_port = yes
+			}
+			#block
+			NOT = { has_country_flag = tmp_southernsea_a }
+			NOT = { has_country_flag = tmp_southernsea_a_view }
+			NOT = { has_country_flag = tmp_southernsea_b }
+			NOT = { has_country_flag = tmp_southernsea_b_view }			
+			NOT = { has_country_flag = tmp_southernsea_c }
+			NOT = { has_country_flag = tmp_southernsea_c_view }	
+			NOT = { has_country_flag = tmp_southernsea_d }
+			NOT = { has_country_flag = tmp_southernsea_d_view }				
+			
+			NOT = { has_country_flag = flg_southernsea_c_occupy }
+
+			NOT = {
+				any_country = {
+					has_country_flag = flg_southernsea_c_occupy
+				}
+			}
+		}
+		allow = {
+			NOT = { has_country_modifier = md_had_occupy_southernsea }							
+			is_at_war = no
+			OR = {
+				is_subject = no 	
+				AND = {
+					is_subject = yes
+					is_subject_of_type = ideology_union_state
+				}
+				AND = {
+					is_subject = yes
+					is_subject_of_type = germanic_state
+				}				
+				AND = {
+					is_subject = yes
+					is_subject_of_type = older_germanic_state
+				}
+				AND = {
+					is_subject = yes
+					is_subject_of_type = tributary_state
+				}	
+			}
+		}
+		effect = {
+			set_country_flag = tmp_southernsea_c
+			country_event = {
+				id = southernsea_occupy_c_events.1
+			}
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				NOT = { treasury = 25 }
+			}
+			modifier = {
+				factor = 0
+				capital_scope = { continent = europe }
+			}
+			modifier = {
+				factor = 0
+				capital_scope = { continent = south_america }
+			}		
+			modifier = {
+				factor = 0
+				capital_scope = { continent = north_america }
+			}			
+		}
+	}
+	
+#if you want to occupy should to raise a war with event_target:mars_occupy_tag
+	fight_southernsea_c_decision = {
+		major = yes
+		potential = {
+		is_year = 1950
+			any_owned_province = { 
+				OR = {
+					area = taiwan_north_area 
+					area = taiwan_south_area  
+					area = guangdong_area 
+					area = fujian_area 
+					area = vietnam_area 
+					area = champa_area 
+					area = luzon_area 
+					area = great_moluccas_area 
+					area = mindanao_area
+					area = brunei_area
+					area = sarawak_area
+					area = johor_area
+					area = malaya_area
+				}
+				has_port = yes
+			}
+			NOT = { has_country_flag = tmp_southernsea_a }
+			NOT = { has_country_flag = tmp_southernsea_a_view }
+			NOT = { has_country_flag = tmp_southernsea_b }
+			NOT = { has_country_flag = tmp_southernsea_b_view }			
+			NOT = { has_country_flag = tmp_southernsea_c }
+			NOT = { has_country_flag = tmp_southernsea_c_view }	
+			NOT = { has_country_flag = tmp_southernsea_d }
+			NOT = { has_country_flag = tmp_southernsea_d_view }	
+			
+			NOT = { has_country_flag = flg_southernsea_c_occupy }
+			any_country = {
+				has_country_flag = flg_southernsea_c_occupy
+				NOT = { tag = ROOT }
+				exists = yes
+			}
+			
+		}
+		allow = {
+			NOT = { truce_with = event_target:tag_southernsea_c_occupy }
+			NOT = { has_country_modifier = md_had_occupy_southernsea }							
+			event_target:tag_southernsea_c_occupy = {
+			#
+			# To avoid when player just finish a war and choose options or just view island
+			#
+				NOT = { 
+					OR = {
+						has_country_flag = tmp_southernsea_a
+						has_country_flag = tmp_southernsea_a_view
+						has_country_flag = tmp_southernsea_b
+						has_country_flag = tmp_southernsea_b_view
+						has_country_flag = tmp_southernsea_c
+						has_country_flag = tmp_southernsea_c_view	
+						has_country_flag = tmp_southernsea_d
+						has_country_flag = tmp_southernsea_d_view	
+						has_country_flag = defense_war_southern_c
+						alliance_with = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			
+			is_at_war = no
+			OR = {
+				is_subject = no 	
+				AND = {
+					is_subject = yes
+					is_subject_of_type = ideology_union_state
+				}
+				AND = {
+					is_subject = yes
+					is_subject_of_type = germanic_state
+				}				
+				AND = {
+					is_subject = yes
+					is_subject_of_type = older_germanic_state
+				}
+				AND = {
+					is_subject = yes
+					is_subject_of_type = tributary_state
+				}	
+			}		
+		}
+		effect = {
+			set_country_flag = tmp_southernsea_c	
+			country_event = {
+				id = southernsea_occupy_c_events.2
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {	
+
+					NOT = { army_size = event_target:tag_southernsea_c_occupy }
+
+					reverse_has_opinion = { who = event_target:tag_southernsea_c_occupy value = 45 }				
+
+					NOT = { treasury = 800 }
+
+					NOT = { stability = 0 }	
+				
+					NOT = { MIL = 2 }
+				}	
+			}
+			modifier = {
+				factor = 0
+				capital_scope = { continent = europe }
+			}
+			modifier = {
+				factor = 0
+				capital_scope = { continent = south_america }
+			}		
+			modifier = {
+				factor = 0
+				capital_scope = { continent = north_america }
+			}			
+		}
+	}
+
+
+#if you have occupy mars_area_c , you could view your mars_c area report.
+# process = 0%~99% 100%
+	view_southernsea_c_decision = {
+	
+		major = yes
+		potential = {
+			is_year = 1950
+			has_country_flag = flg_southernsea_c_occupy
+			NOT = { has_country_flag = tmp_southernsea_a }
+			NOT = { has_country_flag = tmp_southernsea_a_view }
+			NOT = { has_country_flag = tmp_southernsea_b }
+			NOT = { has_country_flag = tmp_southernsea_b_view }			
+			NOT = { has_country_flag = tmp_southernsea_c }
+			NOT = { has_country_flag = tmp_southernsea_c_view }	
+			NOT = { has_country_flag = tmp_southernsea_d }
+			NOT = { has_country_flag = tmp_southernsea_d_view }				
+		}
+		allow = {
+			OR = {
+				is_subject = no 	
+				AND = {
+					is_subject = yes
+					is_subject_of_type = ideology_union_state
+				}
+				AND = {
+					is_subject = yes
+					is_subject_of_type = germanic_state
+				}				
+				AND = {
+					is_subject = yes
+					is_subject_of_type = older_germanic_state
+				}
+				AND = {
+					is_subject = yes
+					is_subject_of_type = tributary_state
+				}	
+			}	
+		}
+		effect = {
+			if= {
+				limit = { check_variable = { which = pop_southernsea_c value = 100 } }
+				country_event = {
+					id = southernsea_occupy_c_events.4
+				}				
+			}
+			if= {
+				limit = { NOT = { check_variable = { which = pop_southernsea_c value = 100 } } }
+				country_event = {
+					id = southernsea_occupy_c_events.3
+				}				
+			}	
+			set_country_flag = tmp_southernsea_c_view			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	peace_southernsea_c_decision = {
+	major = yes
+		potential = {
+		is_year = 1950
+			OR = {
+				AND = {
+					war_with = event_target:tag_southernsea_c_occupy
+					has_country_flag = offense_war_southern_c
+				}
+				AND = {
+					war_with = event_target:tag_southernsea_c_opp
+					has_country_flag = defense_war_southern_c
+				}
+			}
+			NOT = {
+				OR = {
+					has_country_flag = tmp_southernsea_a_view
+					has_country_flag = tmp_southernsea_a
+					has_country_flag = tmp_southernsea_b_view
+					has_country_flag = tmp_southernsea_b
+					has_country_flag = tmp_southernsea_c_view
+					has_country_flag = tmp_southernsea_c
+					has_country_flag = tmp_southernsea_d_view
+					has_country_flag = tmp_southernsea_d
+					
+					has_country_flag = defense_war_southern_c_peace
+					has_country_flag = offense_war_southern_c_peace
+				}
+			}
+		}
+		allow = {
+			OR = {
+				had_country_flag = {
+					flag = offense_war_southern_c
+					days = 30
+				}
+				had_country_flag = {
+					flag = defense_war_southern_c
+					days = 30
+				}					
+			}
+		}
+		effect = {
+			if = {
+				limit = { has_country_flag = offense_war_southern_c }
+				
+				set_country_flag = offense_war_southern_c_peace
+				country_event = {
+					id = southernsea_cal_c_events.7
+				}	
+			}
+			if = {
+				limit = { has_country_flag = defense_war_southern_c }
+				
+				event_target:tag_southernsea_c_opp = {
+					set_country_flag = defense_war_southern_c_peace
+					country_event = {
+						id = southernsea_cal_c_events.3
+					}
+				}	
+			}			
+		}
+		ai_will_do = {
+			factor = 0
+		}		
+	}
+}

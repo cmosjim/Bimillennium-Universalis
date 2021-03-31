@@ -1,0 +1,264 @@
+country_decisions = {
+	recruit_special_ZC_shushanjun = {
+		major = yes
+		potential = {
+			has_country_flag = shushanjun_flag
+			NOT = { mil_tech = 40 }
+		}			
+		allow = {
+			NOT = { army_size_percentage = 1 }
+			NOT = { has_country_modifier = md_recruit_once_done }													
+			custom_trigger_tooltip = {
+				tooltip = tp_recruit_special_units_army
+				any_owned_province = {
+					has_building = special_mil_research
+					NOT = { has_construction = army }
+				}
+				NOT = { has_country_flag = tmp_recruit_special_ZC_shushanjun }
+			}
+			manpower = 1			
+		}
+ 		effect = {
+			hidden_effect = {
+				set_country_flag = tmp_recruit_special_ZC_shushanjun
+				set_variable = {
+					which = var_recruit_num
+					value = 0
+				}
+			}
+				add_country_modifier = {
+					name = "md_recruit_once_done"
+					duration = 365
+				}	
+			country_event = {
+				id = recruit_special_units.19
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			} 
+			modifier = {
+				factor = 0				
+				army_size_percentage = 0.5
+			} 
+		}			
+	}
+}
+
+country_decisions = {
+	recruit_special_ZC_pishijun = {
+		major = yes
+		potential = {
+			OR = {
+				tag = LIO
+				tag = KHT
+			}
+			mil_tech = 33
+			NOT = { mil_tech = 40 }
+		}			
+		allow = {
+			NOT = { army_size_percentage = 1 }
+			NOT = { has_country_modifier = md_recruit_once_done }													
+			custom_trigger_tooltip = {
+				tooltip = tp_recruit_special_units_army
+				any_owned_province = {
+					has_building = special_mil_research
+					NOT = { has_construction = army }
+				}
+				NOT = { has_country_flag = tmp_recruit_special_ZC_pishijun }
+			}
+			manpower = 1			
+		}
+ 		effect = {
+			hidden_effect = {
+				set_country_flag = tmp_recruit_special_ZC_pishijun
+				set_variable = {
+					which = var_recruit_num
+					value = 0
+				}
+			}
+				add_country_modifier = {
+					name = "md_recruit_once_done"
+					duration = 365
+				}	
+			country_event = {
+				id = recruit_special_units.20
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			} 
+			modifier = {
+				factor = 0				
+				army_size_percentage = 0.5
+			} 
+		}			
+	}
+}
+
+country_decisions = {
+	recruit_special_ZC_england_longbowman = {
+		major = yes
+		potential = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = english
+				tag = ENG
+			}
+			mil_tech = 44
+			NOT = { mil_tech = 50 }
+		}			
+		allow = {
+			NOT = { army_size_percentage = 1 }
+			NOT = { has_country_modifier = md_recruit_once_done }													
+			custom_trigger_tooltip = {
+				tooltip = tp_recruit_special_units_army
+				any_owned_province = {
+					has_building = special_mil_research
+					NOT = { has_construction = army }
+				}
+				NOT = { has_country_flag = tmp_recruit_special_ZC_england_longbowman }
+			}
+			manpower = 1			
+		}
+ 		effect = {
+			hidden_effect = {
+				set_country_flag = tmp_recruit_special_ZC_england_longbowman
+				set_variable = {
+					which = var_recruit_num
+					value = 0
+				}
+			}
+				add_country_modifier = {
+					name = "md_recruit_once_done"
+					duration = 365
+				}	
+			country_event = {
+				id = recruit_special_units.21
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			} 
+			modifier = {
+				factor = 0				
+				army_size_percentage = 0.5
+			} 
+		}			
+	}
+}
+
+country_decisions = {
+	recruit_special_ZC_mamluk_cavalry = {
+		major = yes
+		potential = {
+			culture_group = turko_semitic
+			mil_tech = 39
+			NOT = { mil_tech = 45 }
+		}			
+		allow = {
+			NOT = { army_size_percentage = 1 }
+			NOT = { has_country_modifier = md_recruit_once_done }													
+			custom_trigger_tooltip = {
+				tooltip = tp_recruit_special_units_army
+				any_owned_province = {
+					has_building = special_mil_research
+					NOT = { has_construction = army }
+				}
+				NOT = { has_country_flag = tmp_recruit_special_ZC_mamluk_cavalry }
+			}
+			manpower = 1			
+		}
+ 		effect = {
+			hidden_effect = {
+				set_country_flag = tmp_recruit_special_ZC_mamluk_cavalry
+				set_variable = {
+					which = var_recruit_num
+					value = 0
+				}
+			}
+				add_country_modifier = {
+					name = "md_recruit_once_done"
+					duration = 365
+				}	
+			country_event = {
+				id = recruit_special_units.22
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			} 
+			modifier = {
+				factor = 0				
+				army_size_percentage = 0.5
+			} 
+		}			
+	}
+}
+
+country_decisions = {
+	recruit_special_ZC_norman_cavalry = {
+		major = yes
+		potential = {
+			OR = {
+				culture_group = scandinavian
+				religion = norse_pagan_reformed
+				tag = NRM
+			}
+			mil_tech = 32
+			NOT = { mil_tech = 39 }
+		}			
+		allow = {
+			NOT = { army_size_percentage = 1 }
+			NOT = { has_country_modifier = md_recruit_once_done }													
+			custom_trigger_tooltip = {
+				tooltip = tp_recruit_special_units_army
+				any_owned_province = {
+					has_building = special_mil_research
+					NOT = { has_construction = army }
+				}
+				NOT = { has_country_flag = tmp_recruit_special_ZC_norman_cavalry }
+			}
+			manpower = 1			
+		}
+ 		effect = {
+			hidden_effect = {
+				set_country_flag = tmp_recruit_special_ZC_norman_cavalry
+				set_variable = {
+					which = var_recruit_num
+					value = 0
+				}
+			}
+				add_country_modifier = {
+					name = "md_recruit_once_done"
+					duration = 365
+				}	
+			country_event = {
+				id = recruit_special_units.23
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { treasury = 50 }
+			} 
+			modifier = {
+				factor = 0				
+				army_size_percentage = 0.5
+			} 
+		}			
+	}
+}

@@ -1,0 +1,116 @@
+
+country_decisions = {
+
+	rename_to_legitimism = {
+		major = yes
+		potential = {
+			is_subject = no
+			OR = {
+				#唐
+				tag = NT1
+				tag = HT1
+				tag = NH1
+				#漢
+				tag = HNH
+				tag = BH1
+				tag = CGH
+				tag = CH4
+				tag = HH1
+				#晉
+				tag = HJ1
+				tag = QJ1
+				#楚	
+				tag = HO4
+				tag = CUU
+				tag = BCU #from 隋末
+				#秦
+				tag = XQX #from 隋末
+				tag = CN1
+				tag = HO1	
+				#梁
+				tag = ZU1
+				tag = DL6
+				tag = BL2
+			}	
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no		
+			owns_core_province = 667  
+			owns_core_province = 673  
+			owns_core_province = 689  
+			owns_core_province = 2487  
+			owns_core_province = 3257  
+			num_of_cities = 50
+			NOT = { has_country_flag = flg_override_country_name }
+		}
+		effect = {
+			set_country_flag = flg_override_country_name
+			if = {
+				limit =  {
+					OR = {
+						tag = NT1
+						tag = HT1
+						tag = NH1
+					}	
+				}
+				override_country_name = NAME_OF_TNG
+			}				
+			if = {
+				limit =  {
+					OR = {
+						tag = HNH
+						tag = BH1
+						tag = CGH
+						tag = CH4
+						tag = HH1
+					}	
+				}
+				override_country_name = NAME_OF_HAN
+			}
+			if = {
+				limit =  {
+					OR = {
+						tag = HJ1
+						tag = QJ1
+					}	
+				}
+				override_country_name = NAME_OF_JIN
+			}	
+			if = {
+				limit =  {
+					OR = {
+						tag = HO4
+						tag = CUU
+						tag = BCU
+					}	
+				}
+				override_country_name = NAME_OF_ZUU
+			}
+			if = {
+				limit =  {
+					OR = {
+						tag = XQX
+						tag = CN1
+						tag = HO1
+					}	
+				}
+				override_country_name = NAME_OF_QIN
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = ZU1
+						tag = DL6
+						tag = BL2
+					}
+				}
+				override_country_name = NAME_OF_LIN
+			}				
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

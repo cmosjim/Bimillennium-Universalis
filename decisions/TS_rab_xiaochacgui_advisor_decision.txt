@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_xiaochacgui = {
+		major = yes
+		potential = {
+			
+			advisor = xiaochacgui
+			
+		}
+		allow = {
+			advisor = xiaochacgui
+		}
+		effect = {
+			remove_advisor = xiaochacgui
+			define_general = {
+				name = "'Ñg5ç0fkS0"
+				fire = 7
+				shock = 9
+				manuever = 5
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

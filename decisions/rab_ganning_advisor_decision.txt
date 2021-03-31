@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_ganning = {
+		major = yes
+		potential = {
+			
+			advisor = ganning
+			
+		}
+		allow = {
+			advisor = ganning
+		}
+		effect = {
+			remove_advisor = ganning
+			define_general = {
+				name = "uÅR0fkS0"
+				fire = 7
+				shock = 8
+				manuever = 5
+				siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

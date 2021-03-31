@@ -1,0 +1,22 @@
+country_decisions = {
+
+	shah_stimulation = {
+		major = yes
+		potential = {
+			has_country_flag = shah_name_flag
+		}
+		allow = {
+			treasury = 50
+			ADM_power = 25
+			is_at_war = yes
+		}
+		effect = {
+			add_treasury = -50
+			add_ADM_power = -25
+			add_country_modifier = {
+				name = shah_stimulation
+				duration = 730
+			}
+		}
+	}
+}

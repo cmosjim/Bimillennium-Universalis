@@ -1,0 +1,461 @@
+country_decisions = {
+
+	#刘武周成立北汉
+	LWZ_country_build_BH1 = {
+	major = yes
+		potential = {
+			tag = LWZ 
+		}
+		
+		allow = {
+			NOT = { exists = BH1 }
+			tag = LWZ 
+			num_of_cities = 50
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = LWZ
+				}
+					add_core = BH1
+					remove_core = LWZ
+			}			
+			change_tag = BH1
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#林士弘成立大楚
+	LSH_country_build_CH5 = {
+	major = yes
+		potential = {
+			tag = LSH 
+		}
+		
+		allow = {
+			NOT = { exists = CH5 }
+			tag = LSH 
+			num_of_cities = 50
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = LSH
+				}
+					add_core = CH5
+					remove_core = LSH
+			}			
+			change_tag = CH5
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#萧铣重建大梁
+	XX2_country_build_LN1 = {
+	major = yes
+		potential = {
+			tag = XX2 
+		}
+		
+		allow = {
+			NOT = { exists = LN1 }
+			tag = XX2 
+			num_of_cities = 50
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = XX2
+				}
+					add_core = LN1
+					remove_core = XX2
+			}			
+			change_tag = LN1
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#朱粲建立北楚
+	ZJ1_country_build_BCU = {
+	major = yes
+		potential = {
+			tag = ZJ1 
+		}
+		
+		allow = {
+			NOT = { exists = BCU }
+			tag = ZJ1 
+			num_of_cities = 50
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = ZJ1
+				}
+					add_core = BCU
+					remove_core = ZJ1
+			}			
+			change_tag = BCU
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#梁师都建立北梁
+	LSD_country_build_BL2 = {
+	major = yes
+		potential = {
+			tag = LSD 
+		}
+		
+		allow = {
+			NOT = { exists = BL2 }
+			tag = LSD 
+			num_of_cities = 50
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = LSD
+				}
+					add_core = BL2
+					remove_core = LSD
+			}			
+			change_tag = BL2
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#杜伏威建立大吴
+	DFW_country_build_WUD = {
+	major = yes
+		potential = {
+			tag = DFW 
+		}
+		
+		allow = {
+			NOT = { exists = WUD }
+			tag = DFW 
+			num_of_cities = 50
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = DFW
+				}
+					add_core = WUD
+					remove_core = DFW
+			}			
+			change_tag = WUD
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#窦建德建立大夏
+	DJD_country_build_XA2 = {
+	major = yes
+		potential = {
+			tag = DJD 
+		}
+		
+		allow = {
+			NOT = { exists = XA2 }
+			tag = DJD 
+			num_of_cities = 50
+			OR = {
+					owns = 700
+					owns = 679
+					owns = 1821
+					owns = 2492
+				}
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = DJD
+				}
+					add_core = XA2
+					remove_core = DJD
+			}			
+			change_tag = XA2
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#沈法兴建立东梁
+	SFX_country_build_DL6 = {
+	major = yes
+		potential = {
+			tag = SFX 
+		}
+		
+		allow = {
+			NOT = { exists = DL6 }
+			tag = SFX 
+			num_of_cities = 50
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = SFX
+				}
+					add_core = DL6
+					remove_core = SFX
+			}			
+			change_tag = DL6
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#瓦岗军建立大魏（李）
+	WG2_country_build_WLM = {
+	major = yes
+		potential = {
+			tag = WG2 
+		}
+		
+		allow = {
+			NOT = { exists = WLM }
+			tag = WG2 
+			OR = {
+					owns = 700
+					owns = 679
+					owns = 1821
+				}
+			num_of_cities = 50
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = WG2
+				}
+					add_core = WLM
+					remove_core = WG2
+			}			
+			change_tag = WLM
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#王世充建立大郑
+	WSC_country_build_ZHG = {
+	major = yes
+		potential = {
+			tag = WSC 
+		}
+		
+		allow = {
+			NOT = { exists = ZHG }
+			tag = WSC 
+			num_of_cities = 50
+			OR = {
+					owns = 700
+					owns = 679
+					owns = 1821
+					owns = 2492
+				}
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = WSC
+				}
+					add_core = ZHG
+					remove_core = WSC
+			}			
+			change_tag = ZHG
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#薛举建立西秦
+	XJ1_country_build_XQX = {
+	major = yes
+		potential = {
+			tag = XJ1 
+		}
+		
+		allow = {
+			NOT = { exists = XQX }
+			tag = XJ1 
+			num_of_cities = 50
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = XJ1
+				}
+					add_core = XQX
+					remove_core = XJ1
+			}			
+			change_tag = XQX
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#冯盎建立南越
+	FA2_country_build_NYF = {
+	major = yes
+		potential = {
+			tag = FA2 
+		}
+		
+		allow = {
+			NOT = { exists = NYF }
+			tag = FA2 
+			num_of_cities = 50
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = FA2
+				}
+					add_core = NYF
+					remove_core = FA2
+			}			
+			change_tag = NYF
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#李轨成立大凉
+	LG2_country_build_DIL = {
+	major = yes
+		potential = {
+			tag = LG2 
+		}
+		
+		allow = {
+			NOT = { exists = DIL }
+			tag = LG2 
+			num_of_cities = 50
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = LG2
+				}
+					add_core = DIL
+					remove_core = LG2
+			}			
+			change_tag = DIL
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+
+			set_government_rank = 3
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

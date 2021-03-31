@@ -1,0 +1,1892 @@
+country_decisions = {
+	advisors_convert_generals_ma_loan = {
+		major = yes
+		potential = {
+		
+			advisor = ma_loan
+	
+			
+		}
+		allow = {
+			advisor = ma_loan
+		}
+		effect = {
+			remove_advisor = ma_loan
+			define_conquistador = {
+			name = "löçá0áeòR0"
+			fire = 1
+			shock = 1
+			manuever = 3
+			siege = 1
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+	advisors_convert_generals_cai_lun = {
+		major = yes
+		potential = {
+		
+			advisor = cai_lun
+
+		}
+		allow = {
+		
+			advisor = cai_lun
+		}
+		effect = {
+			remove_advisor = cai_lun
+			define_general = {
+			name = "!Ö&O0¶RòR0"
+			fire = 2
+			shock = 1
+			manuever = 1
+			siege = 1
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+	#################################################
+		advisors_convert_generals_deng_rang = {
+		major = yes
+		potential = {
+			advisor = deng_rang
+		
+			
+		}
+		allow = {
+			advisor = deng_rang
+		}
+		effect = {
+			remove_advisor = deng_rang
+			define_general = {
+			name = "ìê©ã0fkS0"
+			fire = 4
+			shock = 4
+			manuever = 3
+			siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+
+	#################################################
+		advisors_convert_generals_jiang_shi = {
+		major = yes
+		potential = {
+		
+				advisor = jiang_shi
+		
+		}
+		allow = {
+			advisor = jiang_shi
+		}
+		effect = {
+			remove_advisor = jiang_shi
+			define_explorer = {
+			name = "‹Y◊ã0¶RòR0"
+			fire = 0
+			shock = 1
+			manuever = 0
+			siege = 1
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+	#################################################
+		advisors_convert_generals_jiang_ge = {
+		major = yes
+		potential = {
+						
+				advisor = jiang_ge
+			
+			
+		}
+		allow = {
+			advisor = jiang_ge
+		}
+		effect = {
+			remove_advisor = jiang_ge
+			define_conquistador = {
+			name = "mlió0áeòR0"
+			fire = 0
+			shock = 1
+			manuever = 1
+			siege = 1
+			}
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+	
+		#################################################
+		advisors_convert_generals_liu_xin = {
+		major = yes
+		potential = {
+			
+			advisor = liu_xin
+			
+			}
+			
+		
+		allow = {
+			advisor = liu_xin
+		}
+		effect = {
+			remove_advisor = liu_xin
+			define_general = {
+			name = "R·O0fkS0"
+			fire = 3
+			shock = 3
+			manuever = 3
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+	#################################################
+		advisors_convert_generals_chou_lan = {
+		major = yes
+		potential = {
+							
+				advisor = chou_lan
+					
+		}
+		allow = {
+			advisor = chou_lan
+		}
+		effect = {
+			remove_advisor = chou_lan
+			define_general = {
+			name = "«N»â0áeòR0"
+			fire = 1
+			shock = 0
+			manuever = 1
+			siege = 1
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+	#################################################
+		advisors_convert_generals_hu_guang = {
+		major = yes
+		potential = {
+			
+				advisor = hu_guang
+		
+		}
+		allow = {
+			advisor = hu_guang
+		}
+		effect = {
+			remove_advisor = hu_guang
+			define_general = {
+			name = "·w^0áeòR0"
+			fire = 1
+			shock = 2
+			manuever = 1
+			siege = 1
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+
+	#################################################
+		advisors_convert_generals_zhang_rang = {
+		major = yes
+		potential = {
+			
+					advisor = zhang_rang
+		
+		}
+		allow = {
+			advisor = zhang_rang
+		}
+		effect = {
+			remove_advisor = zhang_rang
+			define_explorer = {
+			name = ".V©ã0¶RòR0"
+			fire = 2
+			shock = 1
+			manuever = 1
+			siege = 0
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+	#################################################
+		advisors_convert_generals_zhen_chong = {
+		major = yes
+		potential = {
+			
+			advisor = zhen_chong
+		
+		}
+		allow = {
+			advisor = zhen_chong
+		}
+		effect = {
+			remove_advisor = zhen_chong
+			define_general = {
+			name = "—êO0¶RòR0"
+			fire = 2
+			shock = 2
+			manuever = 2
+			siege = 1
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}		
+	#################################################
+		advisors_convert_generals_huang_fu_gui = {
+		major = yes
+		potential = {
+			advisor = huang_fu_gui
+		}
+		allow = {
+			advisor = huang_fu_gui
+		}
+		effect = {
+			remove_advisor = huang_fu_gui
+			define_general = {
+			name = "áv+uƒâ0fkS0"
+			fire = 4
+			shock = 4
+			manuever = 3
+			siege = 3
+			}
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}	
+	#################################################
+		advisors_convert_generals_cao_teng = {
+		major = yes
+		potential = {
+			advisor = cao_teng
+		}
+		allow = {
+			advisor = cao_teng
+		}
+		effect = {
+			remove_advisor = cao_teng
+			define_general = {
+			name = "˘fåÅ0¶RòR0"
+			fire = 2
+			shock = 2
+			manuever = 1
+			siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.4
+		}
+	}
+	#################################################
+		advisors_convert_generals_dou_wu = {
+		major = yes
+		potential = {
+				advisor = dou_wu
+		}
+		allow = {
+			advisor = dou_wu
+		}
+		effect = {
+			remove_advisor = dou_wu
+			define_general = {
+			name = "¶zfk0Yb0"
+			fire = 5
+			shock = 4
+			manuever = 4
+			siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#################################################
+		advisors_convert_generals_dou_xian = {
+		major = yes
+		potential = {
+			
+			advisor = dou_xian
+			
+		}
+		allow = {
+			advisor = dou_xian
+		}
+		effect = {
+			remove_advisor = dou_xian
+			define_general = {
+			name = "¶z™R0Yb0"
+			fire = 8
+			shock = 8
+			manuever = 4
+			siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#################################################
+	advisors_convert_generals_dan_chao = {
+		major = yes
+		potential = {
+			
+			advisor = dan_chao
+			
+		}
+		allow = {
+			advisor = dan_chao
+		}
+		effect = {
+			remove_advisor = dan_chao
+			define_explorer = {
+			name = "USÖç0¶RòR0"
+			fire = 1
+			shock = 1
+			manuever = 2
+			siege = 0
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+
+	#################################################	
+	advisors_convert_generals_cai_yong = {
+		major = yes
+		potential = {
+			
+			advisor = cai_yong
+			
+		}
+		allow = {
+			advisor = cai_yong
+		}
+		effect = {
+			remove_advisor = cai_yong
+			define_conquistador = {
+			name = "!Öïê0áeòR0"
+			fire = 1
+			shock = 1
+			manuever = 0
+			siege = 1
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+#################################################	
+	advisors_convert_generals_geng_bing = {
+		major = yes
+		potential = {
+			
+		advisor = geng_bing
+		}
+		allow = {
+			advisor = geng_bing
+		}
+		effect = {
+			remove_advisor = geng_bing
+			define_general = {
+			name = "?w…y0fkS0"
+			fire = 4
+			shock = 4
+			manuever = 4
+			siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+#################################################	
+	advisors_convert_generals_he_chang = {
+		major = yes
+		potential = {
+				advisor = he_chang
+			
+		}
+		allow = {
+			advisor = he_chang
+		}
+		effect = {
+			remove_advisor = he_chang
+			define_conquistador = {
+			name = "UO^e0áeòR0"
+			fire = 1
+			shock = 1
+			manuever = 0
+			siege = 0
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+#################################################	
+	advisors_convert_generals_jia_fu = {
+		major = yes
+		potential = {
+			
+			advisor = jia_fu
+		}
+		allow = {
+			advisor = jia_fu
+		}
+		effect = {
+			remove_advisor = jia_fu
+			define_general = {
+			name = ">çY0fkS0"
+			fire = 4
+			shock = 4
+			manuever = 3
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+#################################################	
+	advisors_convert_generals_ban_chao = {
+		major = yes
+		potential = {
+			advisor = ban_chao
+		}
+		allow = {
+			advisor = ban_chao
+		}
+		effect = {
+			remove_advisor = ban_chao
+			define_general = {
+			name = "ÌsÖç0fkS0"
+			fire = 7
+			shock = 7
+			manuever = 8
+			siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+#################################################	
+	advisors_convert_generals_ban_zho = {
+		major = yes
+		potential = {
+			
+			advisor = ban_zho
+		}
+		allow = {
+			advisor = ban_zho
+		}
+		effect = {
+			remove_advisor = ban_zho
+			define_explorer = {
+			name = "Ìs-f0áeòR0"
+			fire = 2
+			shock = 2
+			manuever = 1
+			siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+	#################################################	
+	advisors_convert_generals_yu_xu = {
+		major = yes
+		potential = {
+			
+			advisor = yu_xu
+		}
+		allow = {
+			advisor = yu_xu
+		}
+		effect = {
+			remove_advisor = yu_xu
+			define_general = {
+			name = "^ÜÈã0fkS0"
+			fire = 4
+			shock = 4
+			manuever = 4
+			siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+#################################################	
+	advisors_convert_generals_zhang_heng = {
+		major = yes
+		potential = {
+			advisor = zhang_heng
+			
+		}
+		allow = {
+			advisor = zhang_heng
+		}
+		effect = {
+			remove_advisor = zhang_heng
+			define_general = {
+			name = ".Vaà0áeòR0"
+			fire = 0
+			shock = 1
+			manuever = 1
+			siege = 1
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+
+#################################################	
+	advisors_convert_generals_liu_yan = {
+		major = yes
+		potential = {
+			
+			advisor = liu_yan
+			
+		}
+		allow = {
+			advisor = liu_yan
+		}
+		effect = {
+			remove_advisor = liu_yan
+			define_general = {
+			name = "R	q0fkS0"
+			fire = 3
+			shock = 4
+			manuever = 3
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+
+################################################	
+	advisors_convert_generals_deng_zhi = {
+		major = yes
+		potential = {
+			advisor = deng_zhi
+		}
+		allow = {
+			advisor = deng_zhi
+		}
+		effect = {
+			remove_advisor = deng_zhi
+			define_general = {
+			name = "ìêòö0Yb0"
+			fire = 4
+			shock = 4
+			manuever = 3
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}		
+	
+################################################	
+		advisors_convert_generals_deng_xun = {
+		major = yes
+		potential = {
+			
+			advisor = deng_xun
+			
+		}
+		allow = {
+			advisor = deng_xun
+		}
+		effect = {
+			remove_advisor = deng_xun
+			define_general = {
+			name = "ìê≠ã0Yb0"
+			fire = 4
+			shock = 4
+			manuever = 3
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}		
+	
+###############################################	
+	advisors_convert_generals_wang_fu = {
+		major = yes
+		potential = {
+			
+			advisor = wang_fu
+			
+		}
+		allow = {
+			advisor = wang_fu
+		}
+		effect = {
+			remove_advisor = wang_fu
+			define_general = {
+			name = "ãs+u0¶RòR0"
+			fire = 2
+			shock = 3
+			manuever = 3
+			siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}			
+###############################################	
+	advisors_convert_generals_zhang_jian = {
+		major = yes
+		potential = {
+			advisor = zhang_jian
+			
+		}
+		allow = {
+			advisor = zhang_jian
+		}
+		effect = {
+			remove_advisor = zhang_jian
+			define_explorer = {
+			name = ".VÌO0áeòR0"
+			fire = 0
+			shock = 1
+			manuever = 1
+			siege = 0
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}			
+################################################	
+	advisors_convert_generals_huang_fu_song = {
+		major = yes
+		potential = {
+			
+			advisor = huang_fu_song
+		}
+		allow = {
+			advisor = huang_fu_song
+		}
+		effect = {
+			remove_advisor = huang_fu_song
+			define_general = {
+			name = "áv+uiT0fkS0"
+			fire = 4
+			shock = 4
+			manuever = 4
+			siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+################################################	
+	advisors_convert_generals_zhu_jun = {
+		major = yes
+		potential = {
+			
+			advisor = zhu_jun
+			
+		}
+		allow = {
+			advisor = zhu_jun
+		}
+		effect = {
+			remove_advisor = zhu_jun
+			define_general = {
+			name = "1g O0fkS0"
+			fire = 4
+			shock = 5
+			manuever = 4
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+	
+
+################################################	
+	advisors_convert_generals_u_fu_ro = {
+		major = yes
+		potential = {
+			
+			advisor = u_fu_ro
+			
+		}
+		allow = {
+			advisor = u_fu_ro
+		}
+		effect = {
+			remove_advisor = u_fu_ro
+			define_general = {
+			name = "éN+YW0fkS0"
+			fire = 3
+			shock = 5
+			manuever = 4
+			siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+	
+
+################################################	
+	advisors_convert_generals_pu_nu = {
+		major = yes
+		potential = {
+			
+			advisor = pu_nu
+			
+		}
+		allow = {
+			advisor = pu_nu
+		}
+		effect = {
+			remove_advisor = pu_nu
+			define_general = {
+			name = "≤ÑtY0fkS0"
+			fire = 3
+			shock = 3
+			manuever = 3
+			siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+	
+
+
+################################################	
+	advisors_convert_generals_fon_ho = {
+		major = yes
+		potential = {
+			
+			advisor = fon_ho
+			
+		}
+		allow = {
+			advisor = fon_ho
+		}
+		effect = {
+			remove_advisor = fon_ho
+			define_general = {
+			name = "0êØO0fkS0"
+			fire = 3
+			shock = 3
+			manuever = 3
+			siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+
+################################################	
+	advisors_convert_generals_pen_ho = {
+		major = yes
+		potential = {
+			
+			advisor = pen_ho
+			
+		}
+		allow = {
+			advisor = pen_ho
+		}
+		effect = {
+			remove_advisor = pen_ho
+			define_general = {
+			name = "OPUO0fkS0"
+			fire = 3
+			shock = 3
+			manuever = 3
+			siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+################################################	
+	advisors_convert_generals_dou_ji = {
+		major = yes
+		potential = {
+			
+			advisor = dou_ji
+			
+		}
+		allow = {
+			advisor = dou_ji
+		}
+		effect = {
+			remove_advisor = dou_ji
+			define_general = {
+			name = "¶z:g0Yb0"
+			fire = 4
+			shock = 4
+			manuever = 4
+			siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+	
+	
+
+
+################################################	
+	advisors_convert_generals_zhang_bao = {
+		major = yes
+		potential = {
+			
+			advisor = zhang_bao
+			
+		}
+		allow = {
+			advisor = zhang_bao
+		}
+		effect = {
+			remove_advisor = zhang_bao
+			define_general = {
+			name = ".VùR0fkS0"
+			fire = 6
+			shock = 6
+			manuever = 4
+			siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+	
+	
+
+
+################################################	
+	advisors_convert_generals_zhang_lian = {
+		major = yes
+		potential = {
+			
+			advisor = zhang_lian
+			
+		}
+		allow = {
+			advisor = zhang_lian
+		}
+		effect = {
+			remove_advisor = zhang_lian
+			define_general = {
+			name = ".VÅh0fkS0"
+			fire = 5
+			shock = 4
+			manuever = 4
+			siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+	
+	
+
+
+
+################################################	
+	advisors_convert_generals_mayuan_yi = {
+		major = yes
+		potential = {
+			
+			advisor = mayuan_yi
+			
+		}
+		allow = {
+			advisor = mayuan_yi
+		}
+		effect = {
+			remove_advisor = mayuan_yi
+			define_general = {
+			name = "löCQIN0fkS0"
+			fire = 5
+			shock = 5
+			manuever = 6
+			siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	
+
+
+
+################################################	
+	advisors_convert_generals_zhang_man_cheng = {
+		major = yes
+		potential = {
+			
+			advisor = zhang_man_cheng
+			
+		}
+		allow = {
+			advisor = zhang_man_cheng
+		}
+		effect = {
+			remove_advisor = zhang_man_cheng
+			define_general = {
+			name = ".V¸fb0fkS0"
+			fire = 4
+			shock = 6
+			manuever = 2
+			siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+	
+	
+
+
+
+################################################	
+	advisors_convert_generals_guan_hai = {
+		major = yes
+		potential = {
+			
+			advisor = guan_hai
+			
+		}
+		allow = {
+			advisor = guan_hai
+		}
+		effect = {
+			remove_advisor = guan_hai
+			define_general = {
+			name = "°r•N0fkS0"
+			fire = 4
+			shock = 4
+			manuever = 2
+			siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+	
+	
+
+
+
+################################################	
+	advisors_convert_generals_xia_hou_yuan = {
+		major = yes
+		potential = {
+			
+			advisor = xia_hou_yuan
+			
+		}
+		allow = {
+			advisor = xia_hou_yuan
+		}
+		effect = {
+			remove_advisor = xia_hou_yuan
+			define_general = {
+			name = "YØOn0fkS0"
+			fire = 7
+			shock = 8
+			manuever = 5
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+	
+################################################	
+	advisors_convert_generals_xia_hou_dun = {
+		major = yes
+		potential = {
+			
+			advisor = xia_hou_dun
+			
+		}
+		allow = {
+			advisor = xia_hou_dun
+		}
+		effect = {
+			remove_advisor = xia_hou_dun
+			define_general = {
+			name = "YØO«`0fkS0"
+			fire = 6
+			shock = 5
+			manuever = 4
+			siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+################################################	
+	advisors_convert_generals_guan_yu = {
+		major = yes
+		potential = {
+			
+			advisor = guan_yu
+			
+		}
+		allow = {
+			advisor = guan_yu
+		}
+		effect = {
+			remove_advisor = guan_yu
+			define_general = {
+			name = "sQÀ0fkS0"
+			fire = 9
+			shock = 9
+			manuever = 3
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
+
+################################################	
+	advisors_convert_generals_zhang_fei = {
+		major = yes
+		potential = {
+			
+			advisor = zhang_fei
+			
+		}
+		allow = {
+			advisor = zhang_fei
+		}
+		effect = {
+			remove_advisor = zhang_fei
+			define_general = {
+			name = ".Vﬁò0fkS0"
+			fire = 9
+			shock = 10
+			manuever = 3
+			siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.2
+		}
+	}	
+	
+
+
+################################################	
+	advisors_convert_generals_gao_shun = {
+		major = yes
+		potential = {
+			
+			advisor = gao_shun
+			
+		}
+		allow = {
+			advisor = gao_shun
+		}
+		effect = {
+			remove_advisor = gao_shun
+			define_general = {
+			name = "ÿözò0fkS0"
+			fire = 4
+			shock = 8
+			manuever = 8
+			siege = 6
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+################################################	
+	advisors_convert_generals_ma_chao = {
+		major = yes
+		potential = {
+			
+			advisor = ma_chao
+			
+		}
+		allow = {
+			advisor = ma_chao
+		}
+		effect = {
+			remove_advisor = ma_chao
+			define_general = {
+			name = "löÖç0fkS0"
+			fire = 8
+			shock = 9
+			manuever = 5
+			siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+		
+	
+
+
+################################################	
+	advisors_convert_generals_sun_qian = {
+		major = yes
+		potential = {
+			
+			advisor = sun_qian
+			
+		}
+		allow = {
+			advisor = sun_qian
+		}
+		effect = {
+			remove_advisor = sun_qian
+			define_general = {
+			name = "kRåN0áeòR0"
+			fire = 1
+			shock = 1
+			manuever = 2
+			siege = 1
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+		
+	
+
+
+
+################################################	
+	advisors_convert_generals_zhou_yu = {
+		major = yes
+		potential = {
+			
+			advisor = zhou_yu
+			
+		}
+		allow = {
+			advisor = zhou_yu
+		}
+		effect = {
+			remove_advisor = zhou_yu
+			define_general = {
+			name = "hTjt0õQ^0"
+			fire = 6
+			shock = 6
+			manuever = 8
+			siege = 6
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+		
+################################################	
+	advisors_convert_generals_cheng_pu = {
+		major = yes
+		potential = {
+			
+			advisor = cheng_pu
+			
+		}
+		allow = {
+			advisor = cheng_pu
+		}
+		effect = {
+			remove_advisor = cheng_pu
+			define_general = {
+			name = "znf0fkS0"
+			fire = 4
+			shock = 6
+			manuever = 3
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+
+
+################################################	
+	advisors_convert_generals_yan_liang = {
+		major = yes
+		potential = {
+			
+			advisor = yan_liang
+			
+		}
+		allow = {
+			advisor = yan_liang
+		}
+		effect = {
+			remove_advisor = yan_liang
+			define_general = {
+			name = "úòoÇ0fkS0"
+			fire = 7
+			shock = 7
+			manuever = 2
+			siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+################################################	
+	advisors_convert_generals_wen_chou = {
+		major = yes
+		potential = {
+			
+			advisor = wen_chou
+			
+		}
+		allow = {
+			advisor = wen_chou
+		}
+		effect = {
+			remove_advisor = wen_chou
+			define_general = {
+			name = "áeN0fkS0"
+			fire = 7
+			shock = 7
+			manuever = 2
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+################################################	
+	advisors_convert_generals_xun_yu = {
+		major = yes
+		potential = {
+			
+			advisor = xun_yu
+			
+		}
+		allow = {
+			advisor = xun_yu
+		}
+		effect = {
+			remove_advisor = xun_yu
+			define_general = {
+			name = "NÉb0õQ^0"
+			fire = 2
+			shock = 3
+			manuever = 2
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+
+################################################	
+	advisors_convert_generals_lu_bu = {
+		major = yes
+		potential = {
+			
+			advisor = lu_bu
+			
+		}
+		allow = {
+			advisor = lu_bu
+		}
+		effect = {
+			remove_advisor = lu_bu
+			define_general = {
+			name = "T^0fkS0"
+			fire = 10
+			shock = 11
+			manuever = 8
+			siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+################################################	
+	advisors_convert_generals_jia_xu = {
+		major = yes
+		potential = {
+			
+			advisor = jia_xu
+			
+		}
+		allow = {
+			advisor = jia_xu
+		}
+		effect = {
+			remove_advisor = jia_xu
+			define_general = {
+			name = ">çÈã0õQ^0"
+			fire = 4
+			shock = 2
+			manuever = 2
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}	
+################################################	
+	advisors_convert_generals_li_lu = {
+		major = yes
+		potential = {
+			
+			advisor = li_lu
+			
+		}
+		allow = {
+			advisor = li_lu
+		}
+		effect = {
+			remove_advisor = li_lu
+			define_general = {
+			name = "NgQ0õQ^0"
+			fire = 2
+			shock = 1
+			manuever = 2
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+################################################	
+	advisors_convert_generals_cheng_yu = {
+		major = yes
+		potential = {
+			
+			advisor = cheng_yu
+			
+		}
+		allow = {
+			advisor = cheng_yu
+		}
+		effect = {
+			remove_advisor = cheng_yu
+			define_general = {
+			name = "z1f0õQ^0"
+			fire = 2
+			shock = 2
+			manuever = 2
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	
+################################################	
+	advisors_convert_generals_zhang_xun = {
+		major = yes
+		potential = {
+			
+			advisor = zhang_xun
+			
+		}
+		allow = {
+			advisor = zhang_xun
+		}
+		effect = {
+			remove_advisor = zhang_xun
+			define_general = {
+			name = ".VÀR0fkS0"
+			fire = 5
+			shock = 4
+			manuever = 3
+			siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+################################################	
+	advisors_convert_generals_diao_chan = {
+		major = yes
+		potential = {
+			
+			advisor = diao_chan
+			
+		}
+		allow = {
+			advisor = diao_chan
+		}
+		effect = {
+			remove_advisor = diao_chan
+			define_general = {
+			female = yes
+			name = "ÇåIá0õQ^0"
+			fire = 5
+			shock = 5
+			manuever = 5
+			siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+################################################	
+	advisors_convert_generals_wang_uan = {
+		major = yes
+		potential = {
+			
+			advisor = wang_uan
+			
+		}
+		allow = {
+			advisor = wang_uan
+		}
+		effect = {
+			remove_advisor = wang_uan
+			define_general = {
+			name = "ãsAQ0áeòR0"
+			fire = 1
+			shock = 1
+			manuever = 2
+			siege = 1
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+################################################	
+	advisors_convert_generals_yang_feng = {
+		major = yes
+		potential = {
+			
+			advisor = yang_feng
+			
+		}
+		allow = {
+			advisor = yang_feng
+		}
+		effect = {
+			remove_advisor = yang_feng
+			define_general = {
+			name = "hgIY0fkS0"
+			fire = 5
+			shock = 4
+			manuever = 5
+			siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+################################################	
+	advisors_convert_generals_zhuge_liang = {
+		major = yes
+		potential = {
+			
+			advisor = zhuge_liang
+			
+		}
+		allow = {
+			advisor = zhuge_liang
+		}
+		effect = {
+			remove_advisor = zhuge_liang
+			define_general = {
+			name = "¯ãiÑÆN0õQ^0"
+			fire = 7
+			shock = 6
+			manuever = 7
+			siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0.8
+		}
+	}
+
+################################################	
+	advisors_convert_generals_hoang_chung = {
+		major = yes
+		potential = {
+			
+			advisor = hoang_chung
+			
+		}
+		allow = {
+			advisor = hoang_chung
+		}
+		effect = {
+			remove_advisor = hoang_chung
+			define_general = {
+			name = "ƒû‡V0fkS0"
+			fire = 8
+			shock = 6
+			manuever = 7
+			siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+################################################	
+	advisors_convert_generals_zhang_zhao = {
+		major = yes
+		potential = {
+			
+			advisor = zhang_zhao
+			
+		}
+		allow = {
+			advisor = zhang_zhao
+		}
+		effect = {
+			remove_advisor = zhang_zhao
+			define_general = {
+			name = ".V-f0áeòR0"
+			fire = 1
+			shock = 1
+			manuever = 1
+			siege = 1
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+################################################	
+	advisors_convert_generals_zhao_yun = {
+		major = yes
+		potential = {
+			
+			advisor = zhao_yun
+			
+		}
+		allow = {
+			advisor = zhao_yun
+		}
+		effect = {
+			remove_advisor = zhao_yun
+			define_general = {
+			name = "uçëN0fkS0"
+			fire = 11
+			shock = 10
+			manuever = 4
+			siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+################################################	
+	advisors_convert_generals_zhang_liao = {
+		major = yes
+		potential = {
+			
+			advisor = zhang_liao
+			
+		}
+		allow = {
+			advisor = zhang_liao
+		}
+		effect = {
+			remove_advisor = zhang_liao
+			define_general = {
+			name = ".VÀè0fkS0"
+				fire = 6
+				shock = 6
+				manuever = 4
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+################################################	
+	advisors_convert_generals_xu_chu = {
+		major = yes
+		potential = {
+			
+			advisor = xu_chu
+			
+		}
+		allow = {
+			advisor = xu_chu
+		}
+		effect = {
+			remove_advisor = xu_chu
+			define_general = {
+			name = "∏ãâ0fkS0"
+				fire = 6
+				shock = 8
+				manuever = 3
+				siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+################################################	
+	advisors_convert_generals_sima_yi = {
+		major = yes
+		potential = {
+			
+			advisor = sima_yi
+			
+		}
+		allow = {
+			advisor = sima_yi
+		}
+		effect = {
+			remove_advisor = sima_yi
+			define_general = {
+				name = "¯Slöˇa0õQ^0"
+				fire = 7
+				shock = 6
+				manuever = 5
+				siege = 7
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+################################################	
+	advisors_convert_generals_lu_xun = {
+		major = yes
+		potential = {
+			
+			advisor = lu_xun
+			
+		}
+		allow = {
+			advisor = lu_xun
+		}
+		effect = {
+			remove_advisor = lu_xun
+			define_general = {
+				name = "Fñê0õQ^0"
+				fire = 6
+				shock = 6
+				manuever = 6
+				siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+################################################	
+	advisors_convert_generals_taishi_ci = {
+		major = yes
+		potential = {
+			
+			advisor = taishi_ci
+			
+		}
+		allow = {
+			advisor = taishi_ci
+		}
+		effect = {
+			remove_advisor = taishi_ci
+			define_general = {
+				name = "*YÚSHa0fkS0"
+				fire = 7
+				shock = 7
+				manuever = 6
+				siege = 6
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+################################################	
+	advisors_convert_generals_yue_fei = {
+		major = yes
+		potential = {
+			
+			advisor = yue_fei
+			
+		}
+		allow = {
+			advisor = yue_fei
+		}
+		effect = {
+			remove_advisor = yue_fei
+			define_general = {
+				name = "≥Sﬁò0fkS0"
+				fire = 10
+				shock = 11
+				manuever = 4
+				siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+}
+
+
+
+
+
+
+
+
+

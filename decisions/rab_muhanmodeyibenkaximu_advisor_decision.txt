@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_muhanmodeyibenkaximu = {
+		major = yes
+		potential = {
+			
+			advisor = muhanmodeyibenkaximu
+			
+		}
+		allow = {
+			advisor = muhanmodeyibenkaximu
+		}
+		effect = {
+			remove_advisor = muhanmodeyibenkaximu
+			define_general = {
+				name = "FzUØž·V.O,g.aS‰(g0I`cw0"
+				fire = 7
+				shock = 8
+				manuever = 5
+				siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

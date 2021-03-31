@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_shlang = {
+		major = yes
+		potential = {
+			
+			advisor = shlang
+			
+		}
+		allow = {
+			advisor = shlang
+		}
+		effect = {
+			remove_advisor = shlang
+			define_general = {
+				name = "Ëet0fkS0"
+				fire = 8
+				shock = 8
+				manuever = 5
+				siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,50 @@
+country_decisions = {
+
+	rebuild_achaemenid_dynasty = {
+		major = yes
+		potential = {
+			culture_group = iranian
+			religion = zoroastrian
+			NOT = { has_country_flag = formed_achaemenid_dynasty_flag }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2007
+				province_id = 382
+				province_id = 411
+				province_id = 410
+				province_id = 4412
+				province_id = 2289
+				province_id = 361
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			owns = 2007
+			owns = 382
+			owns = 411
+			owns = 410
+			owns = 4412
+			owns = 2289
+			owns = 361
+		}	
+		effect = {
+			change_tag = ACM
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			set_country_flag = formed_achaemenid_dynasty_flag
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

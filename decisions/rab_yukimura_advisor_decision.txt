@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_yukimura = {
+		major = yes
+		potential = {
+			
+			advisor = yukimura
+			
+		}
+		allow = {
+			advisor = yukimura
+		}
+		effect = {
+			remove_advisor = yukimura
+			define_general = {
+				name = "w0ux^Qg0åe,g,rNuQ0"
+				fire = 9
+				shock = 8
+				manuever = 9
+				siege = 8
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

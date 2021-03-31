@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_banhuanzensilan = {
+		major = yes
+		potential = {
+			
+			advisor = banhuanzensilan
+			
+		}
+		allow = {
+			advisor = banhuanzensilan
+		}
+		effect = {
+			remove_advisor = banhuanzensilan
+			define_general = {
+				name = "g±WÅV€VŒê0SõQ0"
+				fire = 8
+				shock = 8
+				manuever = 5
+				siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

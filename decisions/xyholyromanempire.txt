@@ -1,0 +1,70 @@
+country_decisions = {
+
+	jiesanshenluo = {
+		major = yes
+		potential = {
+        NOT = { has_global_flag = shenluojiesanle }
+		hre_size = 2 
+		}
+		allow = {
+		emperor = { capital_scope = { controlled_by = ROOT } }
+		OR = {
+		calc_true_if = {
+					all_country = {
+						is_elector = yes
+						OR = { capital_scope = { controlled_by = ROOT }
+						alliance_with = ROOT
+						is_subject_of = ROOT
+						}
+					}
+					amount = 4
+				}
+		AND = {
+		is_elector = yes
+		calc_true_if = {
+					all_country = {
+						is_elector = yes
+						OR = { capital_scope = { controlled_by = ROOT }
+						alliance_with = ROOT
+						is_subject_of = ROOT
+						}
+					}
+					amount = 3
+				}
+			}
+		}
+		emperor = { NOT = { has_country_flag = holyromanempire_older } }
+		}
+		effect = {
+        jiesanshenluo_effect = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+country_decisions = {
+
+	xuanbudulisl = {
+		major = yes
+		potential = {
+		NOT = { has_country_flag = duligermanic_state }
+        is_subject_of_type = older_germanic_state
+		is_at_war = no
+		}
+		allow = {
+		liberty_desire = 70
+		}
+		effect = {
+        set_country_flag = duligermanic_state
+		clr_country_flag = shenluochengyuan
+		declare_war_with_cb = {
+				who = emperor
+				casus_belli = cb_independence_war
+		}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

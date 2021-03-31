@@ -1,0 +1,104 @@
+country_decisions = {
+	#重建大隋
+	Sui_Rebuild = {
+		major = yes
+		potential = {
+			tag = SDF
+			NOT = {
+				exists = SUI
+			}
+		}
+		allow = {
+			owns = 700
+			num_of_cities = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+		effect = {
+			country_event = {
+				id = KC_SuiEnd_events.1
+			}
+		}
+	}
+	#建立大唐
+	TNG_Build = {
+		major = yes
+		potential = {
+			tag = LY2
+			NOT = {
+				exists = TNG
+			}
+		}
+		allow = {
+			owns = 700
+			num_of_cities = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+		effect = {
+			hidden_effect = {
+				every_province = {
+					limit = {
+						is_core = ROOT
+					}
+					add_core = TNG
+					remove_core = ROOT
+				}
+				700 = {
+					add_core = ROOT
+				}
+				swap_free_idea_group = yes
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire
+				set_government_rank = 3
+				set_country_flag = huge_chinese_empire_flg
+			}
+			change_tag = TNG
+			700 = {
+				move_capital_effect = yes
+			}
+		}
+	}
+	#王簿成立大齐
+	WB1_country_build_QIW = {
+		major = yes
+		potential = {
+			tag = WB1
+		}
+		allow = {
+			tag = WB1
+			num_of_cities = 50
+			OR = {
+				owns = 700
+				owns = 679
+				owns = 1821
+				owns = 2492
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+		effect = {
+			hidden_effect = {
+				every_province = {
+					limit = {
+						is_core = ROOT
+					}
+					add_core = QIW
+					remove_core = ROOT
+				}
+				swap_free_idea_group = yes
+				change_government = gov_celestial_empire
+				add_government_reform = celestial_empire
+				set_government_rank = 3
+				set_country_flag = huge_chinese_empire_flg
+			}
+			change_tag = QIW
+		}
+	}
+}

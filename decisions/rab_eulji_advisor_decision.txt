@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_eulji = {
+		major = yes
+		potential = {
+			
+			advisor = eulji
+			
+		}
+		allow = {
+			advisor = eulji
+		}
+		effect = {
+			remove_advisor = eulji
+			define_general = {
+				name = "YN=e‡e·V0'YùRbS0"
+				fire = 6
+				shock = 8
+				manuever = 5
+				siege = 7
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

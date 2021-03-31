@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_lidaoyuan= {
+		major = yes
+		potential = {
+			
+			advisor = lidaoyuan
+			
+		}
+		allow = {
+			advisor = lidaoyuan
+		}
+		effect = {
+			remove_advisor = lidaoyuan
+			define_general = {
+				name = "ÊêSêCQ0åÎX0"
+				fire = 1
+				shock = 1
+				manuever = 0
+				siege = 0
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

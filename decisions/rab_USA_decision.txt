@@ -1,0 +1,37 @@
+country_decisions = {
+
+	USA_bomb_JA1 = {
+		major = yes
+		potential = {
+			is_subject = no
+			tag = USA
+			JA1 = {
+				has_country_modifier = md_fanaticism_war
+			}
+			NOT = { has_global_flag = JA1_wii_fail }
+			JAP = { NOT = { has_country_flag = flg_been_bomb } }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tp_jap_warlose_5_times
+				NOT = { has_country_flag = tmp_USA_bomb_JA1 }
+				JA1 = {
+					is_at_war = yes
+					check_variable = {
+						which = var_total_win_times
+						value = 15
+					}	
+				}
+			}
+		}
+		effect = {
+			set_country_flag = tmp_USA_bomb_JA1
+			country_event = {
+				id = rab_USA_events.1
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

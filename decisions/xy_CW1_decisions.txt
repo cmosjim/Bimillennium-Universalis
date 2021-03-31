@@ -1,0 +1,211 @@
+country_decisions = {
+
+	chinese_socialistrefrom = {
+		major = yes
+		potential = {
+			OR = {
+			AND = { tag = CW1
+			has_global_flag = guogongneizhan2
+			}
+			tag = CHN
+			}
+			NOT = { has_country_flag = socialistrefrom_cw1 }
+			NOT = { started_in = 1958.1.1 }
+		}
+		allow = {
+			OR = { tag = CW1
+			tag = CHN
+			}
+		}
+		effect = {
+		set_country_flag = socialistrefrom_cw1
+		country_event = {
+				id = xy_rocchn.9
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
+country_decisions = {
+
+	chinese_cw1_zhanlvefangyu = {
+		major = yes
+		potential = {
+			has_global_flag = guogongneizhan2
+            tag = CW1
+			war_with = ROC
+			NOT = { has_country_flag = cw1_hadzhanlvefangyu }
+		}
+		allow = {
+			tag = CW1
+			war_with = ROC
+			ROC = { has_country_modifier = roc_neizhanjingong }
+		}
+		effect = {
+		set_country_flag = cw1_hadzhanlvefangyu
+		country_event = {
+				id = xy_rocchn.11
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
+country_decisions = {
+
+	chinese_cw1_zhanlvefangong = {
+		major = yes
+		potential = {
+			has_global_flag = guogongneizhan2
+            tag = CW1
+			war_with = ROC
+			NOT = { has_country_flag = cw1_hadzhanlvefangong }
+		}
+		allow = {
+			tag = CW1
+			war_with = ROC
+			ROC = {
+            has_country_flag = roc_neizhanjingong_flg
+			NOT = { has_country_modifier = roc_neizhanjingong } }
+		}
+		effect = {
+		set_country_flag = cw1_hadzhanlvefangong
+		country_event = {
+				id = xy_rocchn.12
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
+country_decisions = {
+
+	chinese_cw1_dujiagnzhanyi = {
+		major = yes
+		potential = {
+			has_global_flag = guogongneizhan2
+            tag = CW1
+			war_with = ROC
+			NOT = { has_country_flag = cw1_dujiangzhanyi }
+		}
+		allow = {
+		OR = {
+        ai = yes
+		AND = {
+		ai = no
+		controls = 3166
+		controls = 3162
+		}
+		}
+			tag = CW1
+			war_with = ROC
+			ROC = {
+			 has_country_modifier = roc_neizhankuibai  }
+		}
+		effect = {
+		set_country_flag = cw1_dujiangzhanyi
+		country_event = {
+				id = xy_rocchn.14
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
+country_decisions = {
+
+	yaoqiuxizang = {
+		major = yes
+		potential = {
+		has_global_flag = morden_warlordchina_happened
+		tag = CHN
+		any_province = {  region = tibet_region NOT = { area = bhutan_area } NOT = { owned_by = ROOT } }
+		NOT = { has_country_flag = had_yaoqiuxizang  }
+		}
+		allow = {
+        any_province = {  region = tibet_region NOT = { area = bhutan_area } NOT = { owned_by = ROOT } }
+		}
+		effect = {
+		every_province = { limit = { region = tibet_region NOT = { area = bhutan_area } NOT = { owned_by = ROOT } } add_core = ROOT set_province_flag = xizangjiefang 
+		}
+		every_country = { limit = { any_owned_province = { has_province_flag = xizangjiefang  } } 
+		country_event = {
+				id = xy_rocchn.15
+			} }
+		set_country_flag = had_yaoqiuxizang
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
+country_decisions = {
+
+	yaoqiusovzhiyuan = {
+		major = yes
+		potential = {
+		has_global_flag = kangmeiyuanchao2
+		tag = CHN
+		war_with = USA
+		war_with = SKO
+		USA = { war_with = NOK }
+		exists = SOV
+		SOV = { has_country_flag = gongchanlingxiu }
+		NOT = { has_country_flag = qiuzhusulian1 }
+		}
+		allow = {
+		}
+		effect = {
+		set_country_flag = qiuzhusulian1
+        SOV = { country_event = {
+				id = xy_rocchn.24
+			} }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+country_decisions = {
+
+	shangshanxiaxiangdc = {
+		major = yes
+		potential = {
+		has_country_flag = hezuoshe1
+		tag = CHN
+		NOT = { has_country_flag = shangshanxx_event }
+		}
+		allow = {
+		NOT = { has_country_modifier = shangshanxiaxiangmd }
+		NOT = {  check_variable = {
+                        which = num_of_industrialindex
+                        value = 80
+                    } }
+		}
+		effect = {
+		country_event = {
+				id = xy_rocchn.33
+			}
+		set_country_flag = shangshanxx_event
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+		NOT = {
+			num_of_loans = 1
+			}
+			}
+		}
+	}
+}

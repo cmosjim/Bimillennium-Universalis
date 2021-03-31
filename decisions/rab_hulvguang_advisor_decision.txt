@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_hulvguang= {
+		major = yes
+		potential = {
+			
+			advisor = hulvguang
+			
+		}
+		allow = {
+			advisor = hulvguang
+		}
+		effect = {
+			remove_advisor = hulvguang
+			define_general = {
+				name = "›e‹VIQ0fkS0"
+				fire = 6
+				shock = 7
+				manuever = 5
+				siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

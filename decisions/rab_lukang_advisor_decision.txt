@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_lukang = {
+		major = yes
+		potential = {
+			
+			advisor = lukang
+			
+		}
+		allow = {
+			advisor = lukang
+		}
+		effect = {
+			remove_advisor = lukang
+			define_general = {
+				name = "F–—b0fkS0"
+				fire = 6
+				shock = 7
+				manuever = 4
+				siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

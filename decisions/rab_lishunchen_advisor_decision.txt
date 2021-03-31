@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_lishunchen = {
+		major = yes
+		potential = {
+			
+			advisor = lishunchen
+			
+		}
+		allow = {
+			advisor = lishunchen
+		}
+		effect = {
+			remove_advisor = lishunchen
+			define_general = {
+				name = "NgÇ„Å0fkS0"
+				fire = 6
+				shock = 7
+				manuever = 5
+				siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

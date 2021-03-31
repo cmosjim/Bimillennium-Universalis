@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_yanyan = {
+		major = yes
+		potential = {
+			
+			advisor = yanyan
+			
+		}
+		allow = {
+			advisor = yanyan
+		}
+		effect = {
+			remove_advisor = yanyan
+			define_general = {
+				name = "%Nœ˜0fkS0"
+				fire = 6
+				shock = 7
+				manuever = 4
+				siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

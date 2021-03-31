@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_lingcao = {
+		major = yes
+		potential = {
+			
+			advisor = lingcao
+			
+		}
+		allow = {
+			advisor = lingcao
+		}
+		effect = {
+			remove_advisor = lingcao
+			define_general = {
+				name = "ÌQÍd0fkS0"
+				fire = 6
+				shock = 6
+				manuever = 5
+				siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

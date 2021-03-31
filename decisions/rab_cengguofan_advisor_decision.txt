@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_cengguofan = {
+		major = yes
+		potential = {
+			
+			advisor = cengguofan
+			
+		}
+		allow = {
+			advisor = cengguofan
+		}
+		effect = {
+			remove_advisor = cengguofan
+			define_general = {
+				name = "þfýVé…0fkS0"
+				fire = 6
+				shock = 7
+				manuever = 5
+				siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

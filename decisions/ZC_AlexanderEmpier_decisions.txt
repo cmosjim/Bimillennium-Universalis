@@ -1,0 +1,45 @@
+country_decisions = {
+
+	rebuild_alexander_empirexy = {  #modified_by_xy
+		major = yes
+		potential = {
+			OR = { 
+			NOT = { exists = ROM } 
+			ROM = { NOT = { num_of_cities = 10 } }
+			}
+			OR = { 
+			NOT = { exists = BYZ } 
+			BYZ = { NOT = { num_of_cities = 10 } }
+			}
+			NOT = { tag = ROW }
+            NOT = { exists = GRE }
+			primary_culture = greek
+			NOT = { religion_group = ideology }
+			NOT = { has_country_flag = formed_alexander_empire_flag }
+			 NOT = { num_of_cities = 10 }
+		}
+		provinces_to_highlight = {
+			OR = { culture = greek
+			province_id = 4910
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+        NOT = { num_of_cities = 10 }
+		calc_true_if = {
+	all_owned_province = {
+		culture = greek
+	}
+	amount = 3
+    }
+
+		}	
+		effect = {
+		country_event = { id = xy_alx.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

@@ -1,0 +1,40 @@
+#2018.12.19 fit to 1.28
+country_decisions = {
+
+	forming_china_nation = {
+		major = yes
+		potential = {
+			tag = CW1
+		}
+		allow = {
+			is_subject = no
+			is_nomad = no
+			tag = CW1
+			NOT = { exists = CHN } 
+			owns_core_province = 1816
+			owns_core_province = 1821
+			owns_core_province = 680
+			num_of_cities = 25
+		}
+		effect = {
+			change_tag = CHN
+			swap_non_generic_missions = yes
+			swap_free_idea_group = yes
+			change_government = republic
+			add_government_reform = china_socialism
+			set_legacy_government = socialist_republic
+			add_prestige = 25
+			set_capital = 1816
+			if = {
+				limit = { has_global_flag = guogongneizhan2 }
+				country_event = {
+					id = xy_rocchn.7
+				} 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

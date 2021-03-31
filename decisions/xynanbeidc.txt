@@ -1,0 +1,27 @@
+country_decisions = {
+	kejugaige = {
+		major = yes
+		potential = {
+			has_global_flag = shizushidaixy 
+			has_country_flag = tianchaodaguo
+		}
+		allow = {
+					 adm = 6 
+			 mil = 4 
+		 NOT = { 
+		 check_variable = {
+            which = num_of_fenquandu
+            value = 5
+        }
+		}
+		}
+		effect = {
+		country_event = {
+				id = xy_nanbei.3
+			} 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

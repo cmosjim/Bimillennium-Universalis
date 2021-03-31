@@ -1,0 +1,61 @@
+#2018.12.19 fit to 1.28
+#2020-03-05 xy modify 
+country_decisions = {
+
+	GJ1_Build_ROC = {
+		major = yes
+		potential = {
+			tag = GJ1
+			is_subject = no
+		}		
+		allow = {
+			num_of_cities = 45
+			owns = 1821
+			is_at_war = no
+			NOT = { exists = QNG }
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = ROC
+			swap_free_idea_group = yes
+			change_government = republic			
+			add_government_reform = constitutional_republic
+			ROC = {
+				add_core = 1821			
+				set_capital = 1821
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 300
+	}
+
+		GJ1_KILL_YX1 = {
+		major = yes
+		potential = {
+			tag = GJ1
+			is_subject = no
+			NOT = { has_global_flag = kill_YX1_done }
+		}		
+		allow = {
+			owns = 2475 
+			owns = 2476
+			NOT = { exists = YX1 }
+		}
+		effect = {
+			add_prestige = 20
+			add_country_modifier = {
+				name = "md_Inspiration_skill"
+				duration = 1800
+			}
+			hidden_effect = {
+				set_global_flag = kill_YX1_done
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 300
+	}
+}

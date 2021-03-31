@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_zhuyou = {
+		major = yes
+		potential = {
+			
+			advisor = zhuyou
+			
+		}
+		allow = {
+			advisor = zhuyou
+		}
+		effect = {
+			remove_advisor = zhuyou
+			define_general = {
+				name = "1gQO0fkS0"
+				fire = 7
+				shock = 8
+				manuever = 3
+				siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,27 @@
+country_decisions = {
+	advisors_convert_generals_hanyanhui = {
+		major = yes
+		potential = {
+			
+			advisor = hanyanhui
+			
+		}
+		allow = {
+			advisor = hanyanhui
+		}
+		effect = {
+			remove_advisor = hanyanhui
+			define_general = {
+				name = "é—ö^ËV0ŒëX0"
+				fire = 2
+				shock = 2
+				manuever = 2
+				siege = 1
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_aric = {
+		major = yes
+		potential = {
+			
+			advisor = aric
+			
+		}
+		allow = {
+			advisor = aric
+		}
+		effect = {
+			remove_advisor = aric
+			define_general = {
+				name = "?–Ì‘GY0fkS0"
+				fire = 5
+				shock = 5
+				manuever = 3
+				siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_panan= {
+		major = yes
+		potential = {
+			
+			advisor = panan
+			
+		}
+		allow = {
+			advisor = panan
+		}
+		effect = {
+			remove_advisor = panan
+			define_general = {
+				name = "Xo‰R 0z‚=g¶R0"
+				fire = 2
+				shock = 2
+				manuever = 3
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

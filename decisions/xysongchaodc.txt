@@ -1,0 +1,132 @@
+#2019-09-07 modify UTF8
+#2019-11-04 from xy:
+#			1816 = { controlled_by = SNG }
+#			730 = { controlled_by = SNG }
+#			fuyanbeishi
+
+			
+country_decisions = {
+	beidinghuanglong = {
+		major = yes
+		potential = {
+			has_global_flag = songjinduizhi
+			tag = SNG
+			GNN = {
+				any_owned_province = {
+					OR = {
+						region = north_china_region
+						region = xinan_region
+						region = south_china_region
+					}
+				} 
+			}
+		}
+		allow = {
+		    war_with = GNN
+			war_score_against = {
+				who = GNN
+				value = 30
+			}  
+			1816 = { controlled_by = SNG }
+			730 = { controlled_by = SNG }
+		}
+		effect = {
+			 GNN = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = north_china_region
+							region = xinan_region
+							region = south_china_region
+							area = liaoning_area
+							area = liaoning_east_area
+						}
+					}
+					cede_province = SNG add_core = SNG							
+				}
+						
+			}
+			add_prestige = 50
+			add_treasury = 3000
+			clr_global_flag = songjinduizhi
+			GNN = {
+				change_tag = MCH
+				change_government = tribal
+				add_government_reform = steppe_horde
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
+country_decisions = {
+	fuyanbeishi = {
+		major = yes
+		potential = {
+			has_global_flag = songjinduizhi
+			NOT = { has_country_flag = fuyanbeishi1 }
+			tag = SNG
+            any_province = {
+				culture_group = east_asian 
+				OR = {
+					region = north_china_region
+					region = xinan_region
+					region = south_china_region
+				} 
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+		   treasury = 400
+		}
+		effect = {
+			set_country_flag = fuyanbeishi1
+			add_treasury = -400
+			every_province = { 
+			limit = {
+			culture_group = east_asian 
+				OR = {
+					region = north_china_region
+					region = xinan_region
+					region = south_china_region
+				} 
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_core = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+country_decisions = {
+	liuwangsng = {
+		major = yes
+		potential = {
+        NOT = { total_development = 200 }
+			tag = SNG
+			 YUA = { 
+				has_country_flag = mengsngerzhanjx
+				war_with = ROOT
+			 }
+			 NOT = { has_country_flag = hadliuwangsng }
+		}
+		allow = {
+		}
+		effect = {
+		set_country_flag = hadliuwangsng 
+			country_event = {
+			id = xy_songchao.39
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

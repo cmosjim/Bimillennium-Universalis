@@ -1,0 +1,34 @@
+#2018.12.19 fit to 1.28
+country_decisions = {	
+	DN2_country_build_XIA = {
+	major = yes
+		potential = {
+			tag = DN2
+		}
+		
+		allow = {
+			num_of_cities = 10
+			#core_percentage = 0.6
+		}
+		effect = {
+			every_province = {
+				limit = {
+					is_core = DN2
+				}
+					add_core = XIA
+					remove_core = DN2
+			}		
+			change_tag = XIA
+			swap_free_idea_group = yes
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			country_event = {
+				id = rab_DN2_events.1
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}	

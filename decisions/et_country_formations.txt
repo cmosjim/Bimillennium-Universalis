@@ -1,0 +1,2256 @@
+###################################################################
+#
+#  成立"現有"國家的決議?合 ，如果是想像的中華帝國和中華地區的成立國家
+#  則是在?別的rab_XXX_decisions.txt
+#	
+#	AndalusianNation.txt	=>安达卢西亚
+#	ArabNation.txt			=>阿拉伯
+#	BritishNation.txt		=>GBR
+#	CroatianNation.txt		=>克罗地亚
+#	EgyptianNation.txt		=>埃及
+#	EnglishNation.txt		=>成立英國
+###################################################################
+
+# 必須檢查: 
+# 成立朝鮮 / 成立蒙古帝國 /成立巴克特里亞 / 成立吐蕃FA1 / 
+# 光復土蕃: 適用國家: ZHA AL1 LS1 DO2 SP1 LDK GUG NW1 TS1 /成立和碩特汗國 : 適用國家: GUG / ZB2 / GR1 / DG2
+#
+# 2018-12-19 fit to 1.28 
+# 2019-02-23 normal missions will also translate with change tag .
+# 2019-10-14 成立朝鮮 must be after 1392 years. (korean_nation)
+# 2019-10-14 nomadic_conquest modifier shorten to 50 years
+# 2019-11-19 成立蒙古帝國 no more nomadic_conquest modifier add-on
+country_decisions = {
+
+###################################################################
+# 
+# 1.成立蒙古帝國 原版eu4 的MGE也是蒙古帝國
+#
+###################################################################
+	mongol_empire = {
+		major = yes
+		potential = {
+			NOT = { exists = MGE }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = EUR }
+			NOT = { tag = YUA }
+			NOT = { tag = ROM }
+			
+			OR = {
+				has_reform = mongol_steppe_horde_reform
+				culture_group = mongolic
+			}	
+			is_year = 1000
+			NOT = { is_year = 1550 }
+			NOT = { has_country_flag = mongol_empire_flag }
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 717
+			owns_core_province = 2893
+			owns_core_province = 2891
+			owns_core_province = 2892
+			owns_core_province = 719
+			owns_core_province = 3247
+			owns_core_province = 3251
+			NOT = {
+				calc_true_if = {
+					all_country = {
+						has_reform = mongol_steppe_horde_reform
+					}
+					amount = 3
+				}
+			}
+			num_of_cities = 40
+			is_at_war = no
+			is_free_or_tributary_trigger = yes			
+			custom_trigger_tooltip = {
+				tooltip = mongolia_decision_tooltip
+				mongolia_region = {
+					type = all
+					OR = {
+						is_empty = yes
+						owned_by = ROOT
+					}
+				}
+			}			
+		}
+		effect = {
+			#add_country_modifier = {
+			#	name = "nomadic_conquest"
+			#	duration = 18250
+			#}
+
+			change_tag = MGE
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+			add_prestige = 25			
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_treasury = 1000
+			change_government = tribal
+			add_government_reform = great_mongol_state_reform
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = mongol_empire_flag
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 3
+					}
+				}
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					is_emperor_of_china = yes
+				}
+				dismantle_empire_of_china = yes
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 2.成立挪威
+#
+###################################################################
+	norwegian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = NOR }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = EUR }
+			NOT = { tag = SCA }
+			primary_culture = norwegian
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 17
+				province_id = 24
+				province_id = 23
+				province_id = 20
+				province_id = 21
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 17
+			owns_core_province = 24
+			owns_core_province = 23	
+			owns_core_province = 20
+			owns_core_province = 21
+		}
+		effect = {
+			northern_norway = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NOR
+			}
+			eastern_norway = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NOR
+			}
+			western_norway = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NOR
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = NOR
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 3.成立瑞典
+#
+###################################################################
+	swedish_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = SWE }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = EUR }
+			NOT = { tag = SCA }
+			primary_culture = swedish
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1
+				province_id = 4
+				province_id = 2
+				province_id = 3
+				province_id = 7
+				province_id = 1985
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 1
+			owns_core_province = 4
+			owns_core_province = 2	
+			owns_core_province = 3
+			owns_core_province = 7
+			owns_core_province = 1985
+		}
+		effect = {
+			svealand_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SWE
+			}
+			norrland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SWE
+			}
+			gotaland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SWE
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = SWE
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 4.成立丹麦
+#
+###################################################################
+	danish_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = DAN }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = EUR }
+			NOT = { tag = SCA }
+			primary_culture = danish
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 12
+				province_id = 14
+				province_id = 15
+				province_id = 1984
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}		
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 12
+			owns_core_province = 14
+			owns_core_province = 15	
+			owns_core_province = 1984
+		}
+		effect = {
+			skaneland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = DAN
+			}
+			jutland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = DAN
+			}
+			denmark_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = DAN
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = DAN
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			swap_non_generic_missions = yes
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 5.成立布列塔尼"
+#
+###################################################################
+	breton_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = BRI }
+			NOT = { tag = FRA }
+			NOT = { tag = PAP }
+			NOT = { tag = EUR }
+			NOT = { tag = HLR }
+			OR = {
+				primary_culture = breton
+				primary_culture = briton
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 172
+				province_id = 171
+				province_id = 170
+				province_id = 169
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 172
+			owns_core_province = 171
+			owns_core_province = 170
+			owns_core_province = 169
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = BRI
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { primary_culture = briton }
+				change_primary_culture = breton
+				set_capital = 169 #rab_ fixed
+				every_owned_province = {
+					limit = { culture = briton area = brittany_area }
+					change_culture = breton
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 6.成立JAP
+#
+###################################################################
+	japanese_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = JAP }
+			NOT = { exists = JA1 }
+			#NOT = { is_year = 1870 }			
+			primary_culture = japanese
+
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1020
+				province_id = 1021
+				province_id = 1030
+				province_id = 1028
+				province_id = 1017
+				province_id = 1818
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}		
+		allow = {
+			is_subject = no
+			is_at_war = no
+			adm_tech = 58
+			owns_core_province = 1020
+			owns_core_province = 1021
+			owns_core_province = 1030
+			owns_core_province = 1028
+			owns_core_province = 1017
+			owns_core_province = 1818
+				calc_true_if = {
+					all_owned_province = {
+						region = japan_region 
+					}
+					amount = 25
+				}		
+			has_reform = shogunate #// so , if you want to be JAP you should get shogunate reform first. refer Japan.txt
+		}
+		effect = {
+			remove_government_reform = shogunate
+			custom_tooltip = unite_japan_subject_tooltip
+			change_tag = JAP
+			remove_government_reform = shogunate
+			remove_government_reform = daimyo
+			remove_government_reform = indep_daimyo
+			add_government_reform = despotic_monarchy
+			set_global_flag = formed_japan_flag #rab_ add 20200107
+				every_subject_country = {
+					limit = {
+						has_reform = daimyo
+					}
+					ROOT = {
+						free_vassal = PREV
+					}
+					remove_government_reform = daimyo
+					set_legacy_government = despotic_monarchy
+				}
+				every_country = {
+					limit = {
+						has_reform = indep_daimyo
+					}				
+					remove_government_reform = indep_daimyo
+					add_government_reform = despotic_monarchy
+				}
+				every_country = {
+					limit = {
+						has_reform = daimyo
+					}				
+					remove_government_reform = daimyo
+					add_government_reform = despotic_monarchy
+				}				
+	
+			set_global_flag = formed_japan_flag
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 7.成立KOR朝鲜 _rab : because the korea_region is diff from et .
+#
+###################################################################
+	korean_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = KOR }
+			primary_culture = korean
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1013
+				province_id = 735
+				province_id = 736
+				province_id = 737
+				province_id = 733
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}		
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 1013
+			owns_core_province = 735
+			owns_core_province = 736
+			owns_core_province = 737
+			owns_core_province = 733
+			is_year = 1392
+		}
+		effect = {
+			korea_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = KOR
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = KOR
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 8.成立泰国
+#
+###################################################################
+	thai_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = THL }
+			culture_group = thai
+			NOT = { primary_culture = lao }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 600
+				province_id = 601
+				province_id = 589
+				province_id = 592
+				province_id = 603
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}		
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 600
+			owns_core_province = 601
+			owns_core_province = 589
+			owns_core_province = 592
+			owns_core_province = 603
+		}
+		effect = {
+			central_thai_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = THL
+			}
+			northern_thai_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = THL
+			}
+			tenasserim_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = THL
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = THL
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 9.成立缅甸
+#
+###################################################################
+	burmese_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = BRM }
+			NOT = { tag = MNM }
+			culture_group = burman
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 586
+				province_id = 1815
+				province_id = 590
+				province_id = 585
+				province_id = 584
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}		
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 586
+			owns_core_province = 1815
+			owns_core_province = 590
+			owns_core_province = 585
+			owns_core_province = 584
+		}
+		effect = {
+			burma_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BRM
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = BRM
+			swap_free_idea_group = yes
+			swap_non_generic_missions = yes			
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 10.成立柬埔寨
+#
+###################################################################
+	cambodian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = CMB }
+			primary_culture = khmer
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 604
+				province_id = 609
+				province_id = 2391
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}		
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 604
+			owns_core_province = 609
+			owns_core_province = 2391
+		}
+		effect = {
+			cambodia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = CMB
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = CMB
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 11.成立越南
+#
+###################################################################
+	vietnamese_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = VTN }
+			primary_culture = vietnamese
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 616
+				province_id = 613
+				province_id = 610
+				province_id = 605
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}		
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 616
+			owns_core_province = 613
+			owns_core_province = 610
+			owns_core_province = 605
+		}
+		effect = {
+			vietnam_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = VTN
+			}
+			champa_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = VTN
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = VTN
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 12.成立老挝
+#
+###################################################################
+	laotian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = LAO }
+			primary_culture = lao
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 614
+				province_id = 615
+				province_id = 1844
+				province_id = 611
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}		
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 614
+			owns_core_province = 615
+			owns_core_province = 1844
+			owns_core_province = 611
+		}
+		effect = {
+			south_laos_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = LAO
+			}
+			north_laos_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = LAO
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}			
+			add_prestige = 25
+			change_tag = LAO
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+##	chinese_republic = {
+##		major = yes
+##		potential = {
+##			normal_or_historical_nations = yes
+##			OR = {
+##				ai = no
+##				is_playing_custom_nation = no
+##			}
+##			NOT = { exists = CHN }
+##			OR = {
+##				primary_culture = chihan
+##				primary_culture = cantonese
+##				primary_culture = manchu
+##			}
+##		}
+##		allow = {
+##			adm_tech = 76
+##			NOT = { government = monarchy }
+##			is_subject = no
+##			is_at_war = no
+##			owns_core_province = 1816
+##			owns_core_province = 695
+##			owns_core_province = 1822
+##			owns_core_province = 667
+##			owns_core_province = 679
+##		}
+##		effect = {
+##			random_owned_province = {
+##				add_base_tax = 1
+##			}
+##			add_country_modifier = {
+##				name = "centralization_modifier"
+##				duration = 7300
+##			}
+##			add_prestige = 25
+##			change_tag = CHN
+##		}
+##		ai_will_do = {
+##			factor = 1
+##		}
+##	}
+###################################################################
+# 
+# 13.成立土耳其
+#
+###################################################################
+	form_turkey = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			primary_culture = turkish
+			NOT = { exists = TKY }
+			NOT = { tag = EUR }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 151
+				province_id = 317
+				province_id = 318
+				province_id = 326
+				province_id = 327
+				province_id = 331
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}		
+		allow = {
+			adm_tech = 82
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 151
+			owns_core_province = 317
+			owns_core_province = 318
+			owns_core_province = 326
+			owns_core_province = 327
+			owns_core_province = 331
+		}
+		effect = {
+			random_owned_province = {
+				limit = { culture = turkish }
+				add_base_tax = 1
+					export_to_variable = {
+						which = var_pov_adm
+						value = base_tax
+					}		
+			}
+			add_prestige = 25
+			change_tag = TKY
+			swap_non_generic_missions = yes
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				government = monarchy
+				NOT = { has_reform = parliamentary_monarchy }
+				NOT = { has_reform = constitutional_monarchy }
+				NOT = { has_reform = multi_party_system }
+			}
+		}
+	}
+###################################################################
+# 
+# 14.成立比利时
+#
+###################################################################
+	form_belgium = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = NED }
+			NOT = { tag = FRA }
+			NOT = { tag = EUR }
+			OR = {
+				primary_culture = flemish
+				primary_culture = wallonian
+			}
+			NOT = { exists = BEL }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 92
+				province_id = 90
+				province_id = 1744
+				province_id = 1865
+				province_id = 91
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}		
+		allow = {
+			adm_tech = 76
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 92
+			owns_core_province = 90
+			owns_core_province = 1744
+			owns_core_province = 1865
+			owns_core_province = 91
+		}
+		effect = {
+			random_owned_province = {
+				add_base_tax = 1
+				reload_pov_limit = yes				
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = BEL
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 15.成立南斯拉夫
+#
+###################################################################
+	form_yugoslavia = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			culture_group = south_slavic
+			NOT = { exists = YUG }
+			NOT = { tag = EUR }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 141
+				province_id = 1827
+				province_id = 138
+				province_id = 140
+				province_id = 131
+				province_id = 1826
+				province_id = 139
+				province_id = 136
+				province_id = 1828
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 76
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 141
+			owns_core_province = 1827
+			owns_core_province = 138
+			owns_core_province = 140
+			owns_core_province = 131
+			owns_core_province = 1826
+			owns_core_province = 139
+			owns_core_province = 136
+			owns_core_province = 1828
+		}
+		effect = {
+			random_owned_province = {
+				limit = { culture_group = south_slavic }
+				add_base_tax = 1
+				reload_pov_limit = yes	
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = YUG
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 16.成立以色列
+#
+###################################################################
+	form_israel = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			religion = jewish
+			NOT = { exists = ISR }
+			NOT = { has_country_flag = israel_formed }
+		}
+		provinces_to_highlight = {
+			province_id = 379
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			religion = jewish
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 379
+		}
+		effect = {
+			set_country_flag = israel_formed
+			change_tag = ISR
+			swap_non_generic_missions = yes
+			add_prestige = 100
+			ISR = { set_capital = 379 }
+			379 = { add_base_tax = 2 reload_pov_limit = yes	}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 17.成立土库曼
+#
+###################################################################
+	turkmeni_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = TRK }
+			NOT = { tag = MUG }
+			primary_culture = turkmeni
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 437
+				province_id = 2293
+				province_id = 438
+				province_id = 443
+				province_id = 439
+				province_id = 2430
+				province_id = 445
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 437
+			owns_core_province = 2293
+			owns_core_province = 438
+			owns_core_province = 443
+			owns_core_province = 439
+			owns_core_province = 2430
+			owns_core_province = 445
+		}
+		effect = {
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = TRK
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 18.成立乌兹别克
+#
+###################################################################
+	uzbek_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = UZB }
+			NOT = { tag = MUG }
+			primary_culture = uzbehk
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 441
+				province_id = 1973
+				province_id = 442
+				province_id = 454
+				province_id = 453
+				province_id = 457
+				province_id = 2433
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 441
+			owns_core_province = 1973
+			owns_core_province = 442
+			owns_core_province = 454
+			owns_core_province = 453
+			owns_core_province = 457
+			owns_core_province = 2433
+		}
+		effect = {
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = UZB
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 19.成立吉尔吉斯
+#
+###################################################################
+	kyrgyz_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = KYR }
+			NOT = { tag = MUG }
+			primary_culture = kirgiz
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2434
+				province_id = 2435
+				province_id = 459
+				province_id = 458
+				province_id = 460
+				province_id = 2444
+				province_id = 461
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 2434
+			owns_core_province = 2435
+			owns_core_province = 459
+			owns_core_province = 458
+			owns_core_province = 460
+			owns_core_province = 2444
+			owns_core_province = 461
+		}
+		effect = {
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = KYR
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 20.成立哈萨克
+#
+###################################################################
+	kazakh_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = KZK }
+			NOT = { tag = MUG }
+			primary_culture = khazak
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 456
+				province_id = 1969
+				province_id = 2443
+				province_id = 477
+				province_id = 476
+				province_id = 2447
+				province_id = 2442
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 456
+			owns_core_province = 1969
+			owns_core_province = 2443
+			owns_core_province = 477
+			owns_core_province = 476
+			owns_core_province = 2447
+			owns_core_province = 2442
+		}
+		effect = {
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = KZK
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 21.塔吉克
+#
+###################################################################	
+	tajik_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = TJK }
+			NOT = { tag = MUG }
+			primary_culture = tajik
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 452
+				province_id = 1967
+				province_id = 1968
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 452
+			owns_core_province = 1967
+			owns_core_province = 1968
+		}
+		effect = {
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = TJK
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+###################################################################
+# 
+# 21.成立美利坚
+#
+###################################################################
+	form_usa = {
+		major = yes
+		potential ={
+			tag = CSA
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = USA }
+		}	
+		provinces_to_highlight = {
+			OR = {
+				province_id = 953
+				province_id = 952
+				province_id = 965
+				province_id = 968
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			owns_core_province = 953
+			owns_core_province = 952
+			owns_core_province = 965
+			owns_core_province = 968
+		}
+        effect = {
+            change_tag = USA
+			swap_non_generic_missions = yes
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}			
+            add_prestige = 100
+            952 = { add_base_tax = 1 reload_pov_limit = yes	}
+        }
+	}
+###################################################################
+# 
+# 22.成立白俄罗斯
+#
+###################################################################
+	form_belarus = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = BLR }
+			NOT = { tag = EUR }
+			NOT = { tag = RUS }
+			NOT = { tag = KRU }
+			primary_culture = byelorussian
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 275
+				province_id = 276
+				province_id = 277
+				province_id = 278
+				province_id = 1941
+				province_id = 292
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 74
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 275
+			owns_core_province = 276
+			owns_core_province = 277
+			owns_core_province = 278
+			owns_core_province = 1941
+			owns_core_province = 292
+		}
+		effect = {
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = BLR
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 23.成立捷克斯洛伐克
+#
+###################################################################
+	form_czechoslovakia = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = CZS }
+			NOT = { tag = EUR }
+			OR = {
+				primary_culture = czech
+				primary_culture = slovak
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 266
+				province_id = 265
+				province_id = 267
+				province_id = 1772
+				province_id = 154
+				province_id = 162
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 74
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 266
+			owns_core_province = 265
+			owns_core_province = 267
+			owns_core_province = 1772
+			owns_core_province = 154
+			owns_core_province = 162
+		}
+		effect = {
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = CZS
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 24.成立马达加斯加
+#
+###################################################################
+	form_madagascar = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = MDG }
+			OR = {
+				primary_culture = madagascan
+				primary_culture = madagasque
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1193
+				province_id = 1194
+				province_id = 1792
+				province_id = 3145
+				province_id = 3146
+				province_id = 3147
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 1193
+			owns_core_province = 1194
+			owns_core_province = 1792
+			owns_core_province = 3145
+			owns_core_province = 3146
+			owns_core_province = 3147
+		}
+		effect = {
+			madagascar_highlands_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MDG
+			}
+			betsimasaraka_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MDG
+			}
+			sakalava_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MDG
+			}
+			southern_madagascar = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MDG
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = MDG
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 25.成立芬兰
+#
+###################################################################
+	finnish_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = FIN }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = EUR }
+			NOT = { tag = SCA }
+			primary_culture = finnish
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 27
+				province_id = 28
+				province_id = 29
+				province_id = 30
+				province_id = 31
+				province_id = 19
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 27
+			owns_core_province = 28
+			owns_core_province = 29
+			owns_core_province = 30
+			owns_core_province = 31
+			owns_core_province = 19
+		}
+		effect = {
+			finland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = FIN
+			}
+			bothnia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = FIN
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = FIN
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###################################################################
+# 
+# 26.成立吐蕃FA1
+#
+###################################################################
+	tibetan_nation_TO1 = {
+	
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { exists = TO1 }
+			is_colonial_nation = no
+			NOT = { 
+				OR = {
+					has_reform = celestial_empire
+					has_reform = ancient_chinese_warlord_reform
+					has_reform = chinese_feudatory_reform
+					tag = TP1
+				}	
+			}
+			is_year = 100
+			NOT = { is_year = 1370 }
+			NOT = { has_country_flag = formed_tibet_flag }			
+			tag = FA1
+		}
+		provinces_to_highlight = {
+			region = tibet_region
+			NOT = { owned_by = ROOT }
+		}		
+		allow = {
+			is_at_war = no
+			is_subject = no
+			is_nomad = no
+			tibet_region = {
+				type = all 
+				owned_by = ROOT			
+			}
+			OR = {
+				religion = tibetan_bon
+				religion = tibetan_buddhism
+			}	
+			capital_scope = { region = tibet_region }
+		}
+		effect = {
+			country_event = {
+				id = rab_TO1_events.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+######################################################################
+#
+# 27.光復土蕃: 適用國家: ZHA AL1 LS1 DO2 SP1 LDK GUG NW1 TS1
+#
+######################################################################
+	recovery_TO1_decision = {
+		potential = {
+			NOT = { 
+				OR = {
+					has_reform = celestial_empire
+					has_reform = ancient_chinese_warlord_reform
+					has_reform = chinese_feudatory_reform
+					tag = TP1
+				}	
+			}
+			#is_colonial_nation = no
+			OR = {
+				tag = ZHA	
+				tag = AL1	
+				tag = LS1	
+				tag = DO2	
+				tag = SP1	
+				tag = LDK	
+				tag = GUG	
+				tag = NW1	
+				tag = TS1	
+			}
+			NOT = { exists = TO1 }
+			NOT = { has_country_flag = formed_tibet_flag }		
+			is_year = 850
+			NOT = { is_year = 1618 }				
+		}	
+		allow = {
+				calc_true_if = {
+					all_owned_province = {
+						region = tibet_region 
+					}
+					amount = 25
+				}
+			OR = {
+				religion = tibetan_bon
+				religion = tibetan_buddhism
+			}					
+			#core_percentage = 0.7
+			is_at_war = no
+			is_subject = no
+			is_nomad = no
+		
+		}
+		effect = {
+			country_event = {
+				id = rab_TO1_events.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}	
+		ai_importance = 400		
+	}
+######################################################################
+#
+# 28.成立和碩特汗國 : 適用國家: GUG / ZB2 / GR1 / DG2
+#
+######################################################################	
+
+	recovery_KSD_decision = {
+		potential = {
+			NOT = { 
+				has_reform = celestial_empire
+			}
+			is_colonial_nation = no
+			OR = {
+				tag = GUG	
+				tag = ZB2	
+				tag = GR1	
+				tag = DG2
+				tag = ZHA	
+				tag = AL1	
+				tag = LS1	
+				tag = DO2	
+				tag = SP1	
+				tag = LDK	
+				tag = NW1	
+				tag = TS1	
+				
+			}
+			NOT = { exists = KSD }
+			is_year = 1618
+			NOT = { is_year = 1855 }				
+		}	
+		allow = {
+				calc_true_if = {
+					all_owned_province = {
+						region = tibet_region 
+					}
+					amount = 25
+				}
+			#core_percentage = 0.7
+			is_at_war = no
+			is_subject = no
+			is_nomad = no
+		
+		}
+		effect = {
+			country_event = {
+				id = rab_KSD_events.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}	
+		ai_importance = 400		
+	}
+
+###########################################################
+#
+# Below are ex 1.5.2 add countries
+#
+###########################################################	
+######################################################################
+#
+# 29.成立古埃及 : 
+#
+######################################################################	
+	old_egypt_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = EGP }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = EUR }
+			OR = {
+				primary_culture = old_egyptian
+				primary_culture = nubian
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 358
+				province_id = 361
+				province_id = 362
+				province_id = 2526
+				province_id = 2524
+				province_id = 2523
+				province_id = 360
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 358
+			owns_core_province = 361
+			owns_core_province = 362
+			owns_core_province = 2526
+			owns_core_province = 2524
+			owns_core_province = 2523
+			owns_core_province = 360
+		}
+		effect = {
+			egypt_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = EGP
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = EGP
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###########################################################
+#
+# Below are ex 1.6.2 add countries
+#
+###########################################################	
+######################################################################
+#
+# 30.成立庫德斯坦 : 
+#
+######################################################################		
+	kurdistan_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = KRD }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = EUR }
+			primary_culture = kurdish
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 418
+				province_id = 4415
+				province_id = 4414
+				province_id = 4418
+				province_id = 4417
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 418
+			owns_core_province = 4415
+			owns_core_province = 4414
+			owns_core_province = 4418
+			owns_core_province = 4417
+		}
+		effect = {
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			change_tag = KRD
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+######################################################################
+#
+# 30.成立巴克特里亞: 
+#
+######################################################################		
+	bactria_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			primary_culture = bactrian
+			NOT = { tag = GRB }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = EUR }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 445
+				province_id = 450
+				province_id = 454
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			NOT = { exists = GRB }
+			owns_core_province = 445
+			owns_core_province = 450
+			owns_core_province = 454
+		}
+		effect = {
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 50
+			change_tag = GRB
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_capital = 450 #rab_ fixed
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}	

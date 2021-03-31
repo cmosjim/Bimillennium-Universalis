@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_jiuhu = {
+		major = yes
+		potential = {
+			
+			advisor = jiuhu
+			
+		}
+		allow = {
+			advisor = jiuhu
+		}
+		effect = {
+			remove_advisor = jiuhu
+			define_general = {
+				name = "©S7bË%1W·V*YPR¼%"
+				fire = 2
+				shock = 2
+				manuever = 2
+				siege = 2
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,66 @@
+#2020-09-27 add missios for NEW , 搭配ZC_new_missions 必須完成消弭叛亂軍閥=>幣制改革=>大新盛世
+country_decisions = {
+	#大新盛世
+	Dasinshenzhi = {
+		major = yes
+		potential = {
+			tag = NEW
+			NOT = { has_country_flag = flg_done_Dasinshenzhi }
+		}
+		allow = {
+			is_subject = no
+			custom_trigger_tooltip = {
+				tooltip = conquest_warlords_finish_tooltip			
+				OR = {
+					has_country_flag = flg_NEW_conquest_warlords #完成弭平動亂event	
+					AND = {
+						has_country_flag = flg_WA3_NE2_LL1_WX2_create
+						NOT = { exists = WA3 }
+						NOT = { exists = NE2 }
+						NOT = { exists = LL1 }
+						NOT = { exists = WX2 }
+					}
+				}
+			}	
+			custom_trigger_tooltip = {
+				tooltip = monetary_finish_tooltip
+				has_country_flag = fifthmonetaryreformflag #完成ZC做作五次幣制改革	
+			}
+			NOT = { has_country_modifier = fifth_monetary_reform }				
+		}
+		effect = {
+			set_country_flag = flg_done_Dasinshenzhi
+			country_event = {
+				id = rab_events.840
+			}	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}	
+	
+
+country_decisions = {
+	#搜尋名主
+	SearchWangSon = {
+		major = yes
+		potential = {
+			tag = WA2
+			NOT = { has_country_flag = flg_done_SearchWangSon }
+			ai = no
+		}
+		allow = {
+			is_at_war = no
+		}	
+		effect = {
+			set_country_flag = flg_done_SearchWangSon
+			country_event = {
+				id = rab_WA2_events.1
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}	

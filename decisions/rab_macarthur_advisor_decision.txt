@@ -1,0 +1,29 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_macarthur = {
+		major = yes
+		potential = {
+			
+			advisor = macarthur
+			
+		}
+		allow = {
+			advisor = macarthur
+		}
+		effect = {
+			remove_advisor = macarthur
+			define_general = {
+				female = yes
+				name = "¦žKQ?–mt0S›Q0"
+				fire = 8
+				shock = 9
+				manuever = 6
+				siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

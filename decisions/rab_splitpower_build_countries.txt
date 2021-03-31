@@ -1,0 +1,388 @@
+#2018.12.19 fit to 1.28
+
+#VV1 东齐义军 (萧) ->QIC 齐
+#VV2 冀军(王) ->DY5 大燕
+#VV3 豫军(陶)->DL3 大梁王朝
+#VV4 晋军(司馬)->JN1	大晉		
+#VV5 太原军(陈)->ZZ4赵国  HZZ_ideas
+#VV6 隴州軍(李)->QIG岐國
+#VV7 川蜀義軍(劉)->SHU蜀漢 
+#VV8 湘楚軍(马)->CUU南楚
+#VV9 粵軍(何)->YUE粵國
+#VV0 江東義軍(孫)->WUU吳
+#VW0 閩浙聯軍(杨)->YW1(大吳)
+
+country_decisions = {	
+	VV0_country_build_WUU = {
+	major = yes
+		potential = {
+			tag = VV0
+		}
+		allow = {
+			OR = {
+					owns = 700
+					owns = 679
+					owns = 1821
+					ai = yes
+				}
+			num_of_cities = 50
+			NOT = { exists = WUU }
+			is_at_war = no
+			is_subject = no
+		}
+		effect = {
+			change_tag = WUU
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			country_event = {
+				id = rab_acient_a.5
+			}		
+        clr_country_flag = was_difangguanliao			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_decisions = {	
+	VV1_country_build_QIC = {
+	major = yes
+		potential = {
+			tag = VV1
+		}
+		allow = {
+			OR = {
+					owns = 700
+					owns = 679
+					owns = 1821
+					ai = yes
+				}
+			num_of_cities = 50
+			NOT = { exists = QIC }
+			is_at_war = no
+			is_subject = no
+		}
+		effect = {
+			change_tag = QIC
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			country_event = {
+				id = rab_acient_a.5
+			}		
+		clr_country_flag = was_difangguanliao		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_decisions = {	
+	VV2_country_build_DY5 = {
+	major = yes
+		potential = {
+			tag = VV2
+		}
+		allow = {
+			OR = {
+					owns = 700
+					owns = 679
+					owns = 1821
+					ai = yes
+				}
+			num_of_cities = 50
+			NOT = { exists = DY5 }
+			is_at_war = no
+			is_subject = no
+		}
+		effect = {
+			change_tag = DY5
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			country_event = {
+				id = rab_acient_a.5
+			}		
+		clr_country_flag = was_difangguanliao		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+
+country_decisions = {	
+	VV3_country_build_DL3 = {
+	major = yes
+		potential = {
+			tag = VV3
+		}
+		allow = {
+			OR = {
+					owns = 700
+					owns = 679
+					owns = 1821
+					ai = yes
+				}
+			num_of_cities = 50
+			NOT = { exists = DL3 }
+			is_at_war = no
+			is_subject = no
+		}
+		effect = {
+			change_tag = DL3
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			country_event = {
+				id = rab_acient_a.5
+			}			
+		clr_country_flag = was_difangguanliao		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_decisions = {	
+	VV4_country_build_JN1 = {
+	major = yes
+		potential = {
+			tag = VV4
+		}
+		allow = {
+			OR = {
+					owns = 700
+					owns = 679
+					owns = 1821
+					ai = yes
+				}
+			num_of_cities = 50
+			NOT = { exists = JN1 }
+			is_at_war = no
+			is_subject = no
+		}
+		effect = {
+			change_tag = JN1
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			country_event = {
+				id = rab_acient_a.5
+			}			
+		clr_country_flag = was_difangguanliao		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_decisions = {	
+	VV5_country_build_ZA2 = {
+	major = yes
+		potential = {
+			tag = VV5
+		}
+		allow = {
+			OR = {
+					owns = 700
+					owns = 679
+					owns = 1821
+					ai = yes
+				}
+			num_of_cities = 50
+			NOT = { exists = ZA2 }
+			is_at_war = no
+			is_subject = no
+		}
+		effect = {
+			change_tag = ZA2
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			country_event = {
+				id = rab_acient_a.5
+			}			
+			clr_country_flag = was_difangguanliao	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_decisions = {	
+	VV6_country_build_QIG = {
+	major = yes
+		potential = {
+			tag = VV6
+		}
+		allow = {
+			OR = {
+					owns = 700
+					owns = 679
+					owns = 1821
+					ai = yes
+				}
+			num_of_cities = 50
+			NOT = { exists = QG1 }
+			is_at_war = no
+			is_subject = no
+		}
+		effect = {
+			change_tag = QG1
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			country_event = {
+				id = rab_acient_a.5
+			}		
+		clr_country_flag = was_difangguanliao		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_decisions = {	
+	VV7_country_build_SHU = {
+	major = yes
+		potential = {
+			tag = VV7
+		}
+		allow = {
+			OR = {
+					owns = 700
+					owns = 679
+					owns = 1821
+					ai = yes
+				}
+			num_of_cities = 50
+			NOT = { exists = SHU }
+			is_at_war = no
+			is_subject = no
+		}
+		effect = {
+			change_tag = SHU
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			country_event = {
+				id = rab_acient_a.5
+			}			
+			clr_country_flag = was_difangguanliao	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_decisions = {	
+	VV8_country_build_WUU = {
+	major = yes
+		potential = {
+			tag = VV8
+		}
+		allow = {
+			OR = {
+					owns = 700
+					owns = 679
+					owns = 1821
+					ai = yes
+				}
+			num_of_cities = 50
+			NOT = { exists = CUU }
+			is_at_war = no
+			is_subject = no
+		}
+		effect = {
+			change_tag = CUU
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			country_event = {
+				id = rab_acient_a.5
+			}			
+			clr_country_flag = was_difangguanliao	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_decisions = {	
+	VV9_country_build_YUE = {
+	major = yes
+		potential = {
+			tag = VV9
+		}
+		allow = {
+			OR = {
+					owns = 700
+					owns = 679
+					owns = 1821
+					ai = yes
+				}
+			num_of_cities = 50
+			NOT = { exists = YUE  }
+			is_at_war = no
+			is_subject = no
+		}
+		effect = {
+			change_tag = YUE 
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			country_event = {
+				id = rab_acient_a.5
+			}			
+			clr_country_flag = was_difangguanliao	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_decisions = {	
+	VW0_country_build_YW1 = {
+	major = yes
+		potential = {
+			tag = VW0
+		}
+		allow = {
+			OR = {
+					owns = 700
+					owns = 679
+					owns = 1821
+					ai = yes
+				}
+			num_of_cities = 50
+			NOT = { exists = YW1 }
+			is_at_war = no
+			is_subject = no
+		}
+		effect = {
+			change_tag = YW1
+			change_government = gov_celestial_empire
+			add_government_reform = celestial_empire
+			set_government_rank = 3
+			country_event = {
+				id = rab_acient_a.5
+			}			
+			clr_country_flag = was_difangguanliao	
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

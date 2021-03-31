@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_boershu = {
+		major = yes
+		potential = {
+			
+			advisor = boershu
+			
+		}
+		allow = {
+			advisor = boershu
+		}
+		effect = {
+			remove_advisor = boershu
+			define_general = {
+				name = "ZSS.g0fkS0"
+				fire = 8
+				shock = 8
+				manuever = 7
+				siege = 6
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

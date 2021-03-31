@@ -1,0 +1,84 @@
+country_decisions = {
+#rab_ modify to fit our mod
+##############################################
+#			filename: et_country_formations.txt
+#			# 26.成立吐蕃FA1 only for FA1
+#			tibetan_nation_TO1:
+#			year  632 ---  1370  ==> build TO1
+#
+#			 27.光復土蕃: 適用國家: 所有西藏軍閥 except FA1
+#			recovery_TO1_decision:
+#			year  632 ---  1618  ==> build TO1
+###################################################
+##############################################
+#			filename: et_country_formations.txt
+#			# 28.成立和碩特汗國 : 所有西藏軍閥 except FA1
+#			recovery_KSD_decision
+#			year  1618 ---  1855  ==> build KSD
+###################################################
+##############################################
+#			filename: TibenNation.txt
+#			# 成立烏斯藏 : 
+#			tibetan_nation_TIB
+#			year  1618 ---  1890  ==> build TIB
+###################################################
+#2019.03.24 modify tibetan_nation_TIB for visiable when root must be religion as correct religion.
+	tibetan_nation_TIB = {
+		major = yes
+		potential = {
+			OR = {
+				religion = tibetan_bon
+				religion = tibetan_buddhism
+			}	
+			normal_or_historical_nations = yes
+			NOT = { exists = TIB }
+			NOT = { has_country_flag = formed_tibet_flag }
+			is_colonial_nation = no
+			NOT = { 
+				OR = {
+					has_reform = celestial_empire
+					has_reform = ancient_chinese_warlord_reform
+					has_reform = chinese_feudatory_reform
+					tag = TP1
+				}	
+			}
+			is_year = 1618
+			NOT = { is_year = 1890 }			
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			#is_nomad = no
+				calc_true_if = {
+					all_owned_province = {
+						region = tibet_region 
+					}
+					amount = 25
+				}
+			NOT = { num_of_cities = 35 }
+			capital_scope = { region = tibet_region }
+		}
+		effect = {
+			change_tag = TIB
+			remove_non_electors_emperors_from_empire_effect = yes
+			every_province = {
+				limit = {
+					region = tibet_region
+					NOT = { area = tarim_basin_area }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TIB
+			}
+			add_prestige = 25
+			set_country_flag = formed_tibet_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

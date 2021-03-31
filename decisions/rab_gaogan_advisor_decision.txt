@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_gaogan = {
+		major = yes
+		potential = {
+			
+			advisor = gaogan
+			
+		}
+		allow = {
+			advisor = gaogan
+		}
+		effect = {
+			remove_advisor = gaogan
+			define_general = {
+				name = "ؚr^0fkS0"
+				fire = 5
+				shock = 6
+				manuever = 3
+				siege = 4
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

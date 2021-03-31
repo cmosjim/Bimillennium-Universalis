@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_huanchong= {
+		major = yes
+		potential = {
+			
+			advisor = huanchong
+			
+		}
+		allow = {
+			advisor = huanchong
+		}
+		effect = {
+			remove_advisor = huanchong
+			define_general = {
+				name = "Sh²Q0fkS0"
+				fire = 5
+				shock = 6
+				manuever = 3
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

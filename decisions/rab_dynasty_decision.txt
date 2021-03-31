@@ -1,0 +1,18 @@
+#2020-12-17 you could clear dynasty when you has nodynasty or others.
+country_decisions = {
+	#¤j·sdynasty
+	clr_dynasty_decision = {
+		potential = {
+			culture_group = east_asian
+		}
+		allow = {
+		}
+		effect = {
+			set_dynasty = ZZ4
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}	
+	

@@ -1,0 +1,21 @@
+country_decisions = {
+	form_china_taiwan = {
+		major = yes
+		potential = {
+			tag = TWN
+			is_year = 1947
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			NOT = { exists = CHN }
+		}
+		effect = {
+			add_prestige = 50
+			add_government_reform = china_socialism
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

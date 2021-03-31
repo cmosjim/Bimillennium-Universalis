@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_gengbingwen = {
+		major = yes
+		potential = {
+			
+			advisor = gengbingwen
+			
+		}
+		allow = {
+			advisor = gengbingwen
+		}
+		effect = {
+			remove_advisor = gengbingwen
+			define_general = {
+				name = "?w³p‡e0fkS0"
+				fire = 7
+				shock = 7
+				manuever = 5
+				siege = 5
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

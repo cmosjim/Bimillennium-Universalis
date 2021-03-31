@@ -1,0 +1,49 @@
+country_decisions = {
+
+	colony_xydc = {
+		major = yes
+		potential = {
+        is_year = 1444
+		ai = no
+		NOT = { has_country_flag = colony_xy11 }
+		}
+		allow = {
+		has_idea_group = exploration_ideas
+		}
+		effect = {
+		set_country_flag = colony_xy11
+        add_government_reform = early_gov_reform_5c
+		add_government_reform = early_gov_reform_6c
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+country_decisions = {
+
+	colony_xydc2 = {
+		major = yes
+		potential = {
+        any_country = { is_colonial_nation_of = ROOT
+		}
+		}
+		allow = {
+	 any_country = { is_colonial_nation_of = ROOT
+        NOT = { liberty_desire = 50 }
+		NOT = { primary_culture = ROOT }
+		}
+		}
+		effect = {
+		add_dip_power = -100
+		random_country = { limit = { is_colonial_nation_of = ROOT
+        NOT = { liberty_desire = 50 }
+		NOT = { primary_culture = ROOT } }
+		change_primary_culture = ROOT
+		}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

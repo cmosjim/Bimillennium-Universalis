@@ -1,0 +1,28 @@
+country_decisions = {
+################################################	
+	advisors_convert_generals_lulingqi = {
+		major = yes
+		potential = {
+			
+			advisor = lulingqi
+			
+		}
+		allow = {
+			advisor = lulingqi
+		}
+		effect = {
+			remove_advisor = lulingqi
+			define_general = {
+				name = "T²sîu0fkS0"
+				fire = 12
+				shock = 11
+				manuever = 4
+				siege = 3
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

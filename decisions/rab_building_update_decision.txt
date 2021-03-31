@@ -1,0 +1,28 @@
+#Building update 
+#水井=>自來水廠
+#time = >1950
+#country_decisions = {
+#
+#	windmill_update_decision = {
+#		major = yes
+#		potential = {
+#			is_year = 1900
+#			NOT = { has_country_flag = tmp_rab_building_update }
+#		}
+#		allow = {
+#			any_owned_province = {
+#				has_building = windmill
+#			}	
+#		}
+#		effect = {
+#			set_country_flag = tmp_rab_building_update
+#			country_event = {
+#				id = rab_building_update.1
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#}
