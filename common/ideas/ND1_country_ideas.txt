@@ -1,0 +1,53 @@
+AN3_ideas = {
+	start = {
+		mercenary_manpower = 0.5
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		naval_morale = 0.2
+	}
+	
+	trigger = {
+		OR = {
+			tag = AN3
+			tag = JH2
+		}	
+	}
+
+	free = yes
+	
+	religionanna = {
+		tolerance_own = 1
+		global_missionary_strength = 0.02
+	}
+	
+	louangjung = {
+		infantry_power = 0.2
+	}
+
+	duhufuduty = {
+		capture_ship_chance = 0.1
+		merc_maintenance_modifier = -0.25
+	}
+	
+	oneyearmultigrown = {
+		production_efficiency = 0.1
+		global_supply_limit_modifier = 0.20
+	}
+
+	anyanwang = {
+		global_unrest = -2
+		prestige = 1
+	}
+
+	yuandynastydefend = {
+		shock_damage = 0.1
+	}
+	
+	kurgujiedu = {
+		num_accepted_cultures = 2
+	}
+
+}
+

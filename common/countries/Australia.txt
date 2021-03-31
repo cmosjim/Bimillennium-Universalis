@@ -1,0 +1,127 @@
+graphical_culture = westerngfx
+colonial_parent = GBR
+random_nation_chance = 0
+color = {
+  144
+  60
+  75
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  defensive_ideas
+  religious_ideas
+  trade_ideas
+  economic_ideas
+  plutocracy_ideas
+  diplomatic_ideas
+  offensive_ideas
+  spy_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_longbow
+  gaelic_mercenary
+  gaelic_free_shooter
+  irish_charge
+  anglofrench_line
+  british_redcoat
+  british_hussar
+  british_square
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "Ymyr #0" = -1  # Charlotte #0
+  "‰R^W‰Z #0" = -1  # Ambrosia #0
+  "ôuY)RšN #0" = -1  # Victoria #0
+  "ôuKQXb #0" = 0  # Victor #0
+  "2S)R‰¯e #0" = 0  # Ulysses #0
+  "¯eXo^X #0" = 0  # Spencer #0
+  "‰Sôu¯eyr #0" = 0  # Silvester #0
+  "¯eÑyyr #0" = 0  # Scott #0
+  "W›R #0" = 0  # Rowan #0
+  "|V—V #0" = 0  # Peter #0
+  "<SäSÉb¯e #0" = 0  # Nicholas #0
+  "™„åTlš)R #0" = 0  # Montgomery #0
+  "ÈKQS #0" = 0  # Michael #0
+  "lšîO #0" = 0  # Matthew #0
+  "Rf¯e #0" = 0  # Lewis #0
+  "ÒRWO #0" = 0  # Leroy #0
+  "³R&O¯e #0" = 0  # Laurence #0
+  "ïQ‡e #0" = 0  # Kevin #0
+  "2SÌ‘LN¯e #0" = 0  # Julius #0
+  "¦umt+Y #0" = 0  # Joseph #0
+  "wƒlš #0" = 0  # Homer #0
+  "TN»l #0" = 0  # George #0
+  "<h÷–bÌ‘ #0" = 0  # Gregory #0
+  "pgÉb·V #0" = 0  # Gerard #0
+  "V÷–·VÌ‘KQ #0" = 0  # Frederick #0
+  "2S¯eTX¯e #0" = 0  # Eustace #0
+  "“¯w #0" = 0  # Duncan #0
+  "9N<S¯e #0" = 0  # Denis #0
+  "·^Éb·V #0" = 0  # Conrad #0
+  "KQÌ‘¯eXbV #0" = 0  # Christopher #0
+  "tåg·V #0" = 0  # Richard #0
+  "^Vi` #0" = 0  # Brian #0
+  ",gpgf #0" = 0  # Benjamin #0
+  "ÉbS+Y #0" = 0  # Ralph #0
+  "‰R^W¯e #0" = 0  # Ambrose #0
+  "Xblš¯e #0" = 10  # Thomas #0
+  "šNmt #0" = 10  # Arthur #0
+  "¦uð #0" = 15  # John #0
+  "ZÉ^ #0" = 15  # William #0
+  "ÉbKQ&O #0" = 20  # Lachlan #0
+  "òƒ)Rnf #0" = 20  # Phillip #0
+}
+leader_names = {
+  "=OKQ"  # Bourke
+  "¾—g"  # Darling
+  "^Ì‘¯eís"  # Brisbane
+  "¦ž8YÌ‘"  # Macquarie
+  "^±ƒ"  # Bligh
+  "Ñ‘"  # King
+  "ôTyrÒR"  # Butler
+  "¨Nyr"  # Hunter
+  "òƒ)Rnf"  # Phillip
+  "9N<S"  # Denison
+  "òƒ(ƒWO"  # Fitzroy
+  "S«ƒS"  # Belmore
+  "W¾R"  # Robinson
+  "m+Yyr¯e"  # Loftus
+  "aS—g˜"  # Carrington
+  "¾+Y"  # Duff
+  "Ilnf‰v"  # Hampden
+  "Ôk‰VÆY"  # Beauchamp
+  "Wîh"  # Rawson
+  "RÆY¯ey·V"  # Chelmsford
+  "šNu"  # Yagan
+  "¯eyrÌ‘KQpQ"  # Strickland
+  "4bôuîh"  # Davidson
+  "<h÷–"  # Grey
+  "V—g·V¯e"  # Flinders
+  "ôT¯e"  # Bass
+}
+ship_names = {
+  "‰·V<S"  # Sidney
+  "ÑyWüf·V"  # Coromandel
+  "Å–Éb"  # Yarra
+  "“ôT˜"  # Dumbarton
+  " R¯eÑyàV"  # Gascoyne
+  "Às¯e"  # Perth
+  "áwf"  # Huon
+  "¯eþVšNyr"  # Stuart
+  "—KQ¯e=OÌ‘"  # Hawkesbury
+  "þV‡eôT"  # Toowoomba
+  "lšÌ‘=OÒR"  # Maryborough
+  "ú‹üf"  # Norman
+  "ætÉbmR R"  # Warramunga
+  "^ÉblšTX"  # Parramatta
+}

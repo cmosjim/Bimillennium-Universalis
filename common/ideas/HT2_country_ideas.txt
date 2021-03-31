@@ -1,0 +1,41 @@
+HT2_ideas = {
+	start = {
+		cavalry_power = 0.2
+		land_forcelimit_modifier = 0.1
+	}
+	
+	bonus = {
+		defensiveness = 0.2
+	}
+	
+	trigger = {
+	   tag = HT2
+	}
+
+	free = yes
+	
+	tiechigoudu = {
+		technology_cost = -0.1
+		idea_cost = -0.1
+	}
+	tieliepin = {
+		heir_chance = 0.5
+	}
+	hittfadian = {
+		stability_cost_modifier = -0.1
+		years_of_nationalism = -5
+	}
+	tsowshegown = {
+		diplomatic_upkeep = 1
+		core_creation = -0.1
+	}
+	cardaishi = {
+		diplomatic_reputation = 1
+	}
+	newhittpeople = {
+		global_tax_modifier = 0.1
+	}
+	sountoyn = {
+		monthly_splendor = 2
+	}
+}

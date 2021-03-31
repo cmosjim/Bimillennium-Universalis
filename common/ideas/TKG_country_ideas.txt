@@ -1,0 +1,48 @@
+#northern xio
+TKG_ideas = {
+	start = {
+		ae_impact = -0.20
+	}
+	
+	bonus = {
+		fire_damage = 0.20
+	}
+	
+	trigger = {
+		OR = {
+			tag = TKG
+			tag = DT1
+		}
+	}
+
+	free = yes
+	
+	zhengyi_dajiang_jun = {
+		land_morale = 0.10
+	}
+
+	mufan_tizhi = {
+		core_creation = -0.15
+	}
+
+	one_country_one_city = {
+		global_unrest = -2
+		stability_cost_modifier = -0.1
+	}
+
+	wujia_zhu_fadu = {
+		army_tradition = 0.5
+	}
+
+	ren_bear_ren = {
+		tolerance_heathen = 3
+	}
+
+	canjin_jiaodaizhi = {
+		diplomatic_reputation = 2
+		global_tax_modifier = 0.1
+	}
+	chau_chau_alliance = {
+		defensiveness = 0.2
+	}
+}

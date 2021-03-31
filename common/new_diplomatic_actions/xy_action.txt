@@ -1,0 +1,1304 @@
+static_actions = # static_actions is a reserved token.
+{
+	# alert_index maps to the frame of the alert icon
+	royal_marriage = 										{ alert_index = 1 alert_tooltip = ICON_RM }
+	requestpeace = 										{ alert_index = 2 alert_tooltip = ICON_PEACE  } # alert_index will be overwritten in code for this one.
+	allianceaction = 										{ alert_index = 3 alert_tooltip = ICON_ALLIANCE }
+# 4 is currently unused.
+	integrationaction = 									{ alert_index = 5 alert_tooltip = ICON_ANNEX }
+	annexationaction =									{ alert_index = 5 alert_tooltip = ICON_ANNEX }
+	vassalaction = 										{ alert_index = 6 alert_tooltip = ICON_VASSAL }
+	milaccess = 											{ alert_index = 7 alert_tooltip = ICON_ASKMIL }
+	fleet_access = 										{ alert_index = 8 alert_tooltip = ICON_ASKFLEET }
+	offermilaccess = 										{ alert_index = 9 alert_tooltip = ICON_OFFACC }
+	callaction = 											{ alert_index = 10 alert_tooltip = ICON_CALLALLY } # This one is referred to in the code (settings.cpp)
+	offerloan = 												{ alert_index = 11 alert_tooltip = ICON_OFFERLOAN }
+	sellprov = 												{ alert_index = 12 alert_tooltip = ICON_PROVSALE }
+		#13 is cursed
+	request_to_join_federation = 						{ alert_index = 14 alert_tooltip = ICON_FEDERATIONREQUEST }
+	invite_to_federation = 								{ alert_index = 15 alert_tooltip = ICON_FEDERATIONINVITE }
+	transfer_trade_power = 							{ alert_index = 16 alert_tooltip = TRANSFER_TRADE_POWER }
+	religious_unity_action = 							{ alert_index = 17 alert_tooltip = ICON_RELIGIOUS_UNITY }
+		# 18 is used by requestpeace
+	form_coalition = 										{ alert_index = 19 alert_tooltip = ICON_FORM_COALITION }
+	enforce_peace = 										{ alert_index = 20 alert_tooltip = ICON_ENFORCE_PEACE } # This one may be overwritten in code.
+	grant_electorate = 									{ alert_index = 21 alert_tooltip = ICON_GRANT_ELECTORATE }
+	demand_unlawful_territory_action = 			{ alert_index = 22 alert_tooltip = ICON_DEMAND_UNLAWFUL_TERRITORY }
+		# 23 is used by requestpeace
+		# 24 is used by requestpeace
+		# 25 is used by requestpeace
+		# 26 is used by requestpeace
+		# 27 is used by enforce_peace (when actor is coalition leader) with tooltip "ICON_ENFORCE_PEACE_COALITION_LEADER"
+	support_independence_action = 					{ alert_index = 28 alert_tooltip = support_independence }
+	steer_trade = 										{ alert_index = 29 alert_tooltip = ICON_STEER_TRADE }
+	ask_for_march = 										{ alert_index = 30 alert_tooltip = ICON_MARCH }
+	sell_ships_action = 									{ alert_index = 31 alert_tooltip = ICON_FLEETSALE }
+	grant_freecity = 										{ alert_index = 32 alert_tooltip = ICON_GRANT_FREECITY }
+# 33 is currently unused
+	invite_to_trade_league = 							{ alert_index = 34 alert_tooltip = ICON_TRADELEAGUEINVITE }
+	request_to_join_trade_league = 					{ alert_index = 35 alert_tooltip = ICON_TRADELEAGUEREQUEST }
+	sharemap = 											{ alert_index = 36 alert_tooltip = ICON_REQUESTSHAREMAP } # alert_tooltip gets special treatment in the code
+	condottieri_action = 								{ alert_index = 37 alert_tooltip = ICON_CONDOTTIERI }
+	offer_fleet_access = 								{ alert_index = 38 alert_tooltip = ICON_OFFERFLEET }
+	break_alliance = 										{ alert_index = 39 alert_tooltip = ICON_BREAK_ALLIANCE }
+	tributary_state_action = 							{ alert_index = 40 alert_tooltip = ICON_TRIBUTARY }
+	ask_for_tributary_state_action = 				{ alert_index = 41 alert_tooltip = ICON_ASK_TRIBUTARY }
+	knowledge_sharing = 								{ alert_index = 42 alert_tooltip = ICON_KNOWLEDGESHARE } #The answer to life
+# 43 is currently unused
+	charter_company = 								{ alert_index = 44 alert_tooltip = ICON_CHARTERCOMPANY }
+}
+# THIS / ROOT is actor, FROM is the 'acted'
+# Default categories: influence / covert / relations
+# 2020-10-09 can help subject to increase industrial_index
+deyizhitongyi = {
+    category = influence
+    require_acceptance = yes
+
+    alert_index = 43
+    alert_tooltip = ICON_DEYIZHITONGYI
+
+    is_visible = {
+        culture_group = germanic
+        NOT = {
+            hre_size = 2
+        }
+        FROM = {
+            culture_group = germanic
+        }
+        total_development = 500
+        NOT = {
+            tag = SWI
+        }
+        NOT = {
+            primary_culture = dutch
+        }
+    }
+    is_allowed = {
+        is_year = 1490
+        FROM = {
+            is_at_war = no
+        }
+        is_at_war = no
+        has_regency = no
+        OR = {
+            ai = no
+            NOT = {
+                num_of_subjects = 20
+            }
+        }
+        NOT = {
+            border_distance = {
+                who = FROM
+                distance = 500
+            }
+        }
+        NOT = {
+            FROM = {
+                is_enemy = PREV
+            }
+        }
+        FROM = {
+            OR = {
+                is_subject = no
+                AND = {
+                    is_subject = yes
+                    NOT = {
+                        is_subject_of_type = germanic_state
+                    }
+                    NOT = {
+                        is_colonial_nation = yes
+                    }
+                    OR = {
+                        overlord = {
+                            NOT = {
+                                culture_group = germanic
+                            }
+                        }
+                        is_subject_of = PREV
+                    }
+                }
+            }
+        }
+        FROM = {
+            is_part_of_hre = no
+        }
+        FROM = {
+            reverse_check_chinese_warlord = yes
+        }
+        knows_country = FROM
+		custom_trigger_tooltip = {
+			custom_tooltip = tp_wii_tomon_countries
+			NOT = {
+				OR = {
+					has_country_flag = win_wii_with_JA1
+					has_country_flag = win_wii_with_NZ1
+				}
+			}
+		}			
+    }
+    on_accept = {
+        create_subject = {
+            subject_type = germanic_state
+            subject = FROM
+        }
+    }
+    on_decline = {
+        # NOTHING
+    }
+    ai_acceptance = {
+        add_entry = {
+            name = DIPLO_HAS_SUBJECTS
+            limit = {
+                FROM = {
+                    num_of_subjects = 1
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -1000
+            }
+        }
+        add_entry = {
+            name = TY_GER_REGION
+            limit = {
+                OR = {
+                    AND = {
+                        FROM = {
+                            capital_scope = {
+                                region = north_german_region
+                            }
+                        }
+                        ROOT = {
+                            capital_scope = {
+                                region = north_german_region
+                            }
+                        }
+                    }
+                    AND = {
+                        FROM = {
+                            capital_scope = {
+                                region = south_german_region
+                            }
+                        }
+                        ROOT = {
+                            capital_scope = {
+                                region = south_german_region
+                            }
+                        }
+                    }
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = 50
+            }
+        }
+        add_entry = {
+            name = BT_GER_REGION
+            limit = {
+                NOT = {
+                    OR = {
+                        AND = {
+                            FROM = {
+                                capital_scope = {
+                                    region = north_german_region
+                                }
+                            }
+                            ROOT = {
+                                capital_scope = {
+                                    region = north_german_region
+                                }
+                            }
+                        }
+                        AND = {
+                            FROM = {
+                                capital_scope = {
+                                    region = south_german_region
+                                }
+                            }
+                            ROOT = {
+                                capital_scope = {
+                                    region = south_german_region
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -50
+            }
+        }
+        add_entry = {
+            name = MAX_CITIES_NUM
+            limit = {
+                FROM = {
+                    num_of_cities = 50
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -500
+            }
+        }
+        add_entry = {
+            name = FROM_IS_EMPEROR
+            limit = {
+                FROM = {
+                    is_emperor = yes
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -1000
+            }
+        }
+        add_entry = {
+            name = ARMY_SIZE_COMPARED_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = army_size
+            }
+            export_to_variable = {
+                variable_name = he_value
+                value = army_size
+                who = FROM
+            }
+            subtract_variable = {
+                which = ai_value
+                which = he_value
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 1
+            }
+        }
+        add_entry = {
+            name = NAVY_SIZE_COMPARED_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = navy_size
+            }
+            export_to_variable = {
+                variable_name = he_value
+                value = navy_size
+                who = FROM
+            }
+            subtract_variable = {
+                which = ai_value
+                which = he_value
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 0.5
+            }
+        }
+        add_entry = {
+            name = PRESTIGE_COMPARED_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = prestige
+            }
+            export_to_variable = {
+                variable_name = he_value
+                value = prestige
+                who = FROM
+            }
+            subtract_variable = {
+                which = ai_value
+                which = he_value
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 2
+            }
+        }
+        add_entry = {
+            name = ADMTECH_COMPARED_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = adm_tech
+            }
+            export_to_variable = {
+                variable_name = he_value
+                value = adm_tech
+                who = FROM
+            }
+            subtract_variable = {
+                which = ai_value
+                which = he_value
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 10
+            }
+        }
+        add_entry = {
+            name = NUMCITIES_COMPARED_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = num_of_cities
+            }
+            export_to_variable = {
+                variable_name = he_value
+                value = num_of_cities
+                who = FROM
+            }
+            multiply_variable = {
+                which = he_value
+                value = 4
+            }
+            subtract_variable = {
+                which = ai_value
+                which = he_value
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 1
+            }
+        }
+        add_entry = {
+            name = OPINION_TOWARD_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = opinion
+                who = FROM
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 4
+            }
+        }
+        add_entry = {
+            name = TRUST_TOWARD_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = trust
+                who = FROM
+            }
+            subtract_variable = {
+                which = ai_value
+                value = 50
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 2
+            }
+        }
+    }
+    ai_will_do = {
+        always = yes
+    }
+}
+
+fenxianggongye = {
+    category = influence
+    require_acceptance = no
+
+    alert_index = 43
+    alert_tooltip = ICON_DEYIZHITONGYI
+
+    is_visible = {
+        has_country_flag = industrial_indexzhi1
+        FROM = {
+            has_country_flag = industrial_indexzhi1
+        }
+    }
+    is_allowed = {
+        total_development = 500
+        check_variable = {
+            which = num_of_industrialindex
+            value = 80
+        }
+        FROM = {
+            NOT = {
+                check_variable = {
+                    which = num_of_industrialindex
+                    value = 60
+                }
+            }
+        }
+        FROM = {
+		OR = {
+		AND = {
+            NOT = {
+                total_development = 200
+            }
+            NOT = {
+                num_of_cities = 6
+            }
+			}
+			is_subject_of = ROOT
+			}
+        }
+        NOT = {
+            border_distance = {
+                who = FROM
+                distance = 200
+            }
+        }
+        NOT = {
+            FROM = {
+                is_enemy = PREV
+            }
+        }
+        FROM = {
+            OR = {
+                AND = {
+                    is_subject = no
+                    FROM = {
+                        has_opinion = {
+                            who = ROOT
+                            value = 100
+                        }
+                    }
+                    has_opinion = {
+                        who = FROM
+                        value = 100
+                    }
+                }
+                AND = {
+                    is_subject = yes
+                    is_subject_of = ROOT
+                }
+            }
+        }
+        FROM = {
+            reverse_check_chinese_warlord = yes
+        }
+        knows_country = FROM
+    }
+    on_accept = {
+        country_event = {
+            id = xy_industry.17
+        }
+        FROM = {
+            country_event = {
+                id = xy_industry.16
+            }
+        }
+    }
+    ai_will_do = {
+        always = yes
+    }
+}
+
+abandon_germanic_state = {
+    category = influence
+    require_acceptance = no
+
+    is_visible = {
+        FROM = {
+            is_subject_of_type = germanic_state
+        }
+        overlord_of = FROM
+    }
+    is_allowed = {
+        FROM = {
+            is_subject_of_type = germanic_state
+        }
+        overlord_of = FROM
+    }
+    on_accept = {
+        FROM = {
+            overlord = {
+                free_vassal = PREV
+            }
+        }
+    }
+    ai_will_do = {
+        always = no
+    }
+}
+
+form_ideology_union = {
+    category = influence
+    require_acceptance = yes
+
+    alert_index = 43
+    alert_tooltip = ICON_DEYIZHITONGYI
+
+    is_visible = {
+        OR = {
+            has_country_flag = gongchanlingxiu
+            has_country_flag = ziyoulingxiu
+        }
+        check_variable = {
+            which = num_of_industrialindex
+            value = 100
+        }
+        total_development = 5000
+    }
+    is_allowed = {
+        is_subject = no
+        OR = {
+            AND = {
+                religion = communism
+                has_country_flag = gongchanlingxiu
+            }
+            AND = {
+                religion = liberalism
+                has_country_flag = ziyoulingxiu
+            }
+        }
+		custom_trigger_tooltip = {
+		tooltip = recently_no_fascism_government_tooltip		
+			NOT = {
+				any_country = {
+					religion = fascism
+				}
+			}
+		}
+        dip_tech = 86
+        FROM = {
+            is_at_war = no
+        }
+        is_at_war = no
+        is_great_power = yes
+        NOT = {
+            FROM = {
+                is_enemy = PREV
+            }
+        }
+        FROM = {
+            OR = {
+                is_subject = no
+                AND = {
+                    is_subject = yes
+                    NOT = {
+                        is_subject_of_type = ideology_union_state
+                    }
+                    NOT = {
+                        is_colonial_nation = yes
+                    }
+                }
+            }
+        }
+        FROM = {
+            reverse_check_chinese_warlord = yes
+        }
+        FROM = {
+            NOT = {
+                capital_scope = {
+                    continent = africa
+                }
+            }
+        }
+        FROM = {
+            NOT = {
+                has_reform = modern_chinese_warlord_reform
+            }
+        }
+        knows_country = FROM
+        FROM = {
+            religion = ROOT
+        }
+    }
+    on_accept = {
+        create_subject = {
+            subject_type = ideology_union_state
+            subject = FROM
+        }
+        FROM = {
+            set_country_flag = hadbeen_ideologyunionstate
+        }
+    }
+    on_decline = {
+        # NOTHING
+    }
+    ai_acceptance = {
+        add_entry = {
+            name = MAX_CITIES_NUM
+            limit = {
+                FROM = {
+                    num_of_cities = 50
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -50
+            }
+        }
+        add_entry = {
+            name = MAX_development_1000
+            limit = {
+                FROM = {
+                    total_development = 1000
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -50
+            }
+        }
+        add_entry = {
+            name = MAX_development_2000
+            limit = {
+                FROM = {
+                    total_development = 2000
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -100
+            }
+        }
+        add_entry = {
+            name = IS_CHINA_IDEO
+            limit = {
+                FROM = {
+                    culture_group = east_asian
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -50
+            }
+        }
+        add_entry = {
+            name = IS_CHINA_IDEO2
+            limit = {
+                FROM = {
+                    OR = {
+                        tag = CW1
+                        tag = CHN
+                    }
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -1000
+            }
+        }
+        add_entry = {
+            name = FROM_IS_EMPEROR
+            limit = {
+                FROM = {
+                    is_emperor = yes
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -1000
+            }
+        }
+        add_entry = {
+            name = FROM_IS_INDUSTRILINDEX
+            limit = {
+                FROM = {
+                    check_variable = {
+                        which = num_of_industrialindex
+                        value = 80
+                    }
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -1000
+            }
+        }
+        add_entry = {
+            name = ARMY_SIZE_COMPARED_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = army_size
+            }
+            export_to_variable = {
+                variable_name = he_value
+                value = army_size
+                who = FROM
+            }
+            subtract_variable = {
+                which = ai_value
+                which = he_value
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 1
+            }
+        }
+        add_entry = {
+            name = NAVY_SIZE_COMPARED_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = navy_size
+            }
+            export_to_variable = {
+                variable_name = he_value
+                value = navy_size
+                who = FROM
+            }
+            subtract_variable = {
+                which = ai_value
+                which = he_value
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 0.5
+            }
+        }
+        add_entry = {
+            name = PRESTIGE_COMPARED_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = prestige
+            }
+            export_to_variable = {
+                variable_name = he_value
+                value = prestige
+                who = FROM
+            }
+            subtract_variable = {
+                which = ai_value
+                which = he_value
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 2
+            }
+        }
+        add_entry = {
+            name = ADMTECH_COMPARED_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = adm_tech
+            }
+            export_to_variable = {
+                variable_name = he_value
+                value = adm_tech
+                who = FROM
+            }
+            subtract_variable = {
+                which = ai_value
+                which = he_value
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 10
+            }
+        }
+        add_entry = {
+            name = NUMCITIES_COMPARED_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = num_of_cities
+            }
+            export_to_variable = {
+                variable_name = he_value
+                value = num_of_cities
+                who = FROM
+            }
+            multiply_variable = {
+                which = he_value
+                value = 6
+            }
+            subtract_variable = {
+                which = ai_value
+                which = he_value
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 1
+            }
+        }
+        add_entry = {
+            name = OPINION_TOWARD_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = opinion
+                who = FROM
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 4
+            }
+        }
+        add_entry = {
+            name = TRUST_TOWARD_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = trust
+                who = FROM
+            }
+            subtract_variable = {
+                which = ai_value
+                value = 50
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 2
+            }
+        }
+    }
+    ai_will_do = {
+        always = yes
+    }
+}
+
+abandon_ideology_union_state = {
+    category = influence
+    require_acceptance = no
+
+    is_visible = {
+        FROM = {
+            is_subject_of_type = ideology_union_state
+        }
+        overlord_of = FROM
+    }
+    is_allowed = {
+        FROM = {
+            is_subject_of_type = ideology_union_state
+        }
+        overlord_of = FROM
+    }
+    on_accept = {
+        FROM = {
+            overlord = {
+                free_vassal = PREV
+            }
+        }
+    }
+    ai_will_do = {
+        always = no
+    }
+}
+
+subject_abandon_ideology_union_state = {
+    category = influence
+    require_acceptance = no
+
+    is_visible = {
+        is_subject_of_type = ideology_union_state
+        FROM = {
+            overlord_of = ROOT
+        }
+    }
+    is_allowed = {
+        is_subject_of_type = ideology_union_state
+        FROM = {
+            overlord_of = ROOT
+        }
+    }
+    on_accept = {
+        overlord = {
+            free_vassal = ROOT
+        }
+        add_stability = -3
+    }
+    ai_will_do = {
+        check_variable = {
+            which = num_of_industrialindex
+            value = 90
+        }
+        liberty_desire = 80
+    }
+}
+
+transfer_prd_linedp = {
+    category = influence
+    require_acceptance = yes
+
+    alert_index = 43
+    alert_tooltip = ICON_DEYIZHITONGYI
+
+    is_visible = {
+        OR = {
+            has_country_flag = ziyoulingxiu
+            is_subject_of_type = ideology_union_state
+        }
+    }
+    is_allowed = {
+        NOT = {
+            has_country_modifier = transfer_pdcline
+        }
+        check_variable = {
+            which = num_of_industrialindex
+            value = 80
+        }
+        FROM = {
+            NOT = {
+                has_country_flag = ziyoulingxiu
+            }
+        }
+        FROM = {
+            NOT = {
+                has_country_flag = gongchanlingxiu
+            }
+        }
+        FROM = {
+            NOT = {
+                AND = {
+                    is_subject_of_type = ideology_union_state overlord = {
+                        has_country_flag = gongchanlingxiu
+                    }
+                }
+            }
+        }
+        FROM = {
+            ROOT = {
+                NOT = {
+                    tech_difference = 5
+                }
+            }
+        }
+        FROM = {
+            is_at_war = no
+        }
+        FROM = {
+            NOT = {
+                has_country_modifier = betransfered_pdcline
+            }
+        }
+        variable_arithmetic_trigger = {
+            custom_tooltip = from_total_development_is_1bi3_times_bigger_than_ours
+            export_to_variable = {
+                which = our_total_development
+                value = trigger_value:total_development
+            }
+            export_to_variable = {
+                which = from_total_development
+                value = trigger_value:total_development
+                who = FROM
+            }
+            multiply_variable = {
+                which = our_total_development 
+				value = 3
+            }
+            check_variable = {
+                which = our_total_development 
+				which = from_total_development
+            }
+        }
+    }
+    on_accept = {
+        subtract_variable = {
+            which = num_of_industrialindex
+            value = 3
+        }
+        add_country_modifier = {
+            name = "transfer_pdcline"
+            duration = 1095
+        }
+        FROM = {
+            change_variable = {
+                which = num_of_industrialindex
+                value = 3
+            }
+            add_country_modifier = {
+                name = "betransfered_pdcline"
+                duration = 365
+            }
+            add_treasury = -1500
+        }
+    }
+    ai_acceptance = {
+        add_entry = {
+            name = OPINION_TOWARD_US
+            export_to_variable = {
+                variable_name = ai_value
+                value = opinion
+                who = FROM
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 2
+            }
+        }
+        add_entry = {
+            name = 1_LOANS_MT
+            limit = {
+                FROM = {
+                    num_of_loans = 1
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -20
+            }
+        }
+        add_entry = {
+            name = 3_LOANS_MT
+            limit = {
+                FROM = {
+                    num_of_loans = 3
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -50
+            }
+        }
+        add_entry = {
+            name = 80_PLUS_INDS
+            limit = {
+                FROM = {
+                    check_variable = {
+                        which = num_of_industrialindex
+                        value = 80
+                    }
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -50
+            }
+        }
+        add_entry = {
+            name = 90_PLUS_INDS
+            limit = {
+                FROM = {
+                    check_variable = {
+                        which = num_of_industrialindex
+                        value = 90
+                    }
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -100
+            }
+        }
+        add_entry = {
+            name = 100_PLUS_INDS
+            limit = {
+                FROM = {
+                    check_variable = {
+                        which = num_of_industrialindex
+                        value = 100
+                    }
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -1000
+            }
+        }
+        add_entry = {
+            name = LOW_60_INDUS
+            limit = {
+                FROM = {
+                    NOT = {
+                        is_subject_of_type = ideology_union_state
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = num_of_industrialindex
+                            value = 60
+                        }
+                    }
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = 50
+            }
+        }
+        add_entry = {
+            name = NO_HOS_AIIND
+            limit = {
+                ai_attitude = {
+                    who = FROM
+                    attitude = attitude_hostile
+                }
+            }
+            export_to_variable = {
+                which = ai_value
+                value = -1000
+            }
+        }
+    }
+    ai_will_do = {
+        OR = {
+            NOT = {
+                has_country_flag = ziyoulingxiu
+            }
+            AND = {
+                has_country_flag = ziyoulingxiu
+                check_variable = {
+                    which = num_of_industrialindex
+                    value = 105
+                }
+            }
+            AND = {
+                has_country_flag = ziyoulingxiu
+                NOT = {
+                    any_country = {
+                        has_country_flag = gongchanlingxiu
+                    }
+                }
+            }
+        }
+    }
+}
+
+yuanjulitousong = {
+    category = influence
+    require_acceptance = no
+
+    is_visible = {
+        overlord_of = FROM
+        dip_tech = 85
+    }
+    is_allowed = {
+	FROM = { capital_scope = { controlled_by = FROM } }
+	NOT = {
+	FROM = {
+	same_continent = ROOT
+    }
+    }
+        any_owned_province = {
+		same_continent = capital
+		num_of_units_in_province = {
+    who = owner
+    amount = 50
+     }
+		}
+    }
+    on_accept = {
+        random_owned_province = {
+		limit = {
+	num_of_units_in_province = {
+    who = owner
+    amount = 50
+     }
+	 same_continent = capital
+		}
+		kill_units = {
+                    who = ROOT
+                    amount = 50
+                }
+		}
+		FROM = { capital_scope = { 
+		ROOT = {
+		set_variable = {
+							which = transport_mil_ts
+							value = 1
+						} 
+				}
+		while = { 
+		limit = {
+
+   NOT = {	ROOT = {	check_variable = {
+						which = transport_mil_ts
+						value = 26
+					}  } }
+	 }
+     infantry = ROOT
+	 ROOT = {
+	 change_variable = {
+							which = transport_mil_ts
+							value = 1
+						} 
+			}			
+	 } 
+	 ROOT = {
+		set_variable = {
+							which = transport_mil_ts
+							value = 1
+						} 
+				}
+	while = { 
+		limit = {
+
+   NOT = {	ROOT = {	check_variable = {
+						which = transport_mil_ts
+						value = 11
+					}  } }
+	 }
+     cavalry = ROOT
+	 ROOT = {
+	 change_variable = {
+							which = transport_mil_ts
+							value = 1
+						} 
+			}	
+	 }
+	 ROOT = {
+	 set_variable = {
+							which = transport_mil_ts
+							value = 1
+						} 
+		}
+	 while = { 
+		limit = {
+
+   NOT = {	ROOT = {	check_variable = {
+						which = transport_mil_ts
+						value = 16
+					}  } }
+	 }
+     artillery = ROOT
+	 ROOT = {
+	 change_variable = {
+							which = transport_mil_ts
+							value = 1
+						} 
+			}	
+	 }
+		
+		} }
+    }
+    ai_will_do = {
+       any_country = {  
+                     war_with = ROOT
+					 FROM = { is_neighbor_of = PREV }
+ }
+ NOT = { any_country = { same_continent = ROOT war_with = ROOT } }
+    }
+}
+renmingdifangguan = {
+    category = influence
+    require_acceptance = no
+
+    is_visible = {
+	overlord_of = FROM
+        FROM = {
+		is_subject_of_type = difang_vassal
+        }
+    }
+    is_allowed = {
+        overlord_of = FROM
+        FROM = {
+             is_subject_of_type = difang_vassal
+        }
+    }
+    on_accept = {
+	FROM = {
+	country_event = {
+                id =  xy_zainan.68
+            }
+			}
+    }
+    ai_will_do = {
+         always = no
+    }
+}
+
+diyilieqiangjjwj = {
+    category = influence
+    require_acceptance = no
+
+    is_visible = {
+	FROM = {
+	NOT = { great_power_rank = 2 }
+	}
+	is_institution_enabled = industrialization
+    }
+    is_allowed = {
+       hidden_trigger = {
+	    always = no
+	   }
+	   FROM = {
+	   check_variable = {
+							which = sum_of_economycrisis
+							value = 1000
+						} 
+						}
+    }
+    on_accept = {
+    }
+    ai_will_do = {
+         always = no
+    }
+}

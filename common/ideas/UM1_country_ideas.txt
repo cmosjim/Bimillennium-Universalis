@@ -1,0 +1,37 @@
+UM1_ideas = {
+	start = {
+		yearly_army_professionalism = 0.1
+		drill_gain_modifier = 0.2
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+
+	trigger = {
+		tag = UM1
+	}
+	free = yes
+
+	zountongernalin = {
+		discipline = 0.05
+	}
+	uymingtongbou = {
+		global_tax_modifier = 0.15
+	}
+	canceltifayifu = {
+		global_unrest = -2
+	}
+	fanqngfuming = {
+		land_morale = 0.1
+	}
+	uymingmeaning = {
+		production_efficiency = 0.1
+	}
+	jingnaingwangjua = {
+		governing_capacity = 150
+	}
+	shandonthreekountu = {
+		merchants = 1
+	}
+}

@@ -1,0 +1,693 @@
+#This is new creted by rab
+#2020-01-20 xy modify , swap colonist buff to colonist_placement_chance
+#2020-03-16 youxiaobugei_4 fixed 
+xingjun_ideas = {
+	category = MIL
+
+	bonus = {
+		army_tradition_decay = -0.01
+	}
+
+	trigger = {
+		adm_tech = 4
+	}
+
+	zhongzhichengcheng_1 = {
+		land_morale = 0.1
+	}
+	qianlibenxi_2 = {
+		movement_speed = 0.1
+	}
+	quanguodongyuan_3 = {
+		manpower_recovery_speed = 0.1
+	}
+	youxiaobugei_4 = {
+		global_supply_limit_modifier = 0.1
+	}
+	huguozhijun_5 = {
+		land_forcelimit_modifier = 0.2
+	}
+	yuxuefenzhan_6 = {
+		infantry_power = 0.1
+	}
+	quanminjiebing_7 = {
+		global_regiment_cost = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.45
+	}
+}
+
+junjiang_ideas = {
+	category = MIL
+	bonus = {
+		general_cost = -0.1
+	}
+	trigger = {
+		adm_tech = 4
+	}
+	zhuanzhuzuozhan_1 = {
+		leader_land_fire = 1
+	}
+	kuamaxingjun_2 = {
+		leader_land_manuever = 1
+	}
+	bingfamoulue_3 = {
+		leader_siege = 1
+		siege_ability = 0.1
+	}
+	
+	guangzhaomingjiang_4 = {
+		free_leader_pool = 2
+	}
+	zhijunyanming_5 = {
+		discipline = 0.05
+	}
+	jushiwushuang_6 = {
+		prestige_from_land = 0.1
+	}
+	minyijiang_7 = {
+		hostile_attrition = 1
+	}
+	ai_will_do = {
+		factor = 0.45
+	}
+}
+
+yuanyang_ideas = {
+	category = MIL
+
+	bonus = {
+		navy_tradition_decay = -0.01
+	}
+
+	trigger = {
+		adm_tech = 4
+	}
+
+	jingzhungongji_1 = {
+		galley_power = 0.1
+	}
+	wuweijingshen_2 = {
+		naval_morale = 0.1
+	}
+	jianchuanweixiu_3 = {
+		global_ship_repair = 0.15
+	}
+	haishangdiguo_4 = {
+		naval_forcelimit_modifier = 0.2
+	}
+	yongyuecanjun_5 = {
+		sailors_recovery_speed = 0.15
+	}
+	haijunshangjiang_6 = {
+		leader_naval_fire = 1
+		leader_naval_shock = 1
+	}
+	hanghaijichu_7 = {
+		ship_durability = 0.1
+	}
+
+	ai_will_do = {
+		factor = 0.45
+	}
+}
+
+zhongqi_ideas = {
+	category = MIL
+
+	bonus = {
+		army_tradition_from_battle = 0.05
+	}
+
+	trigger = {
+		adm_tech = 4
+	}
+
+	zhongjiatieqi_1 = {
+		cavalry_power = 0.1
+	}
+	laobingdaixinbing_2 = {
+		cavalry_cost = -0.1
+	}
+	tieqichongfeng_3 = {
+		shock_damage = 0.1
+	}
+	qibingkuozhang_4 = {
+		cav_to_inf_ratio = 0.2
+	}
+	qibingjunhun_5 = {
+		leader_land_shock = 1
+	}
+	jisuxingjun_6 = {
+		movement_speed = 0.1
+	}
+	junfeibakong_7 = {
+		land_maintenance_modifier = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.45
+	}
+}
+
+xingshang_ideas = {
+	category = DIP
+
+	bonus = {
+		caravan_power = 0.1
+	}
+
+	trigger = {
+		adm_tech = 4
+	}
+
+	shinonggongshang_1 = {
+		merchants = 1
+	}
+	huhangjiandui_2 = {
+		global_ship_trade_power = 0.2
+	}
+	shangguzhidao_3 = {
+		trade_efficiency = 0.1
+	}
+	liudongmaoyi_4 = {
+		trade_steering = 0.2
+	}
+	bianjingfengsuo_5 = {
+		embargo_efficiency = 0.2
+	}
+	daxingshangye_6 = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	sichouzhilu_7 = {
+		trade_range_modifier = 0.2
+	}
+
+	ai_will_do = {
+		factor = 0.45
+	}
+}
+
+shichen_ideas = {
+	category = DIP
+
+	bonus = {
+		reduced_stab_impacts = yes
+	}
+
+	trigger = {
+		adm_tech = 4
+                }
+
+	chushisifang_1 = {
+		diplomats = 1
+	}
+	nengyanshanbian_2 = {
+		improve_relation_modifier = 0.2
+	}
+	kuaimajiabian_3 = {
+		envoy_travel_time = -0.3
+	}
+	weilinsihai_4 = {
+		diplomatic_reputation = 2
+	}
+	waijiaocaineng_5 = {
+		diplomatic_upkeep = 2
+	}
+	shenrujiceng_6 = {
+		diplomatic_annexation_cost = -0.15
+	}
+	tanpandashi_7 = {
+		province_warscore_cost = -0.2
+	}
+
+	ai_will_do = {
+		factor = 0.45
+	}
+}
+
+shentou_ideas = {
+	category = DIP
+
+	bonus = {
+		min_autonomy_in_territories = -0.1
+	}
+
+	trigger = {
+		adm_tech = 4
+                }
+
+	dixiaxitong_1 = {
+		spy_offence = 0.2
+	}
+	gaocengshentou_2 = {
+		diplomatic_reputation = 3
+	}
+	guojiaxiaolv_3 = {
+		unjustified_demands = -0.2
+	}
+	dicengyingxiang_4 = {
+		ae_impact = -0.2
+	}
+	jianjuefanfu_5 = {
+		yearly_corruption = -0.15
+	}
+	yinmizhichi_6 = {
+		rebel_support_efficiency = 0.5
+	}
+	kewangziyou_7 = {
+		reduced_liberty_desire = 15
+	}
+
+	ai_will_do = {
+		factor = 0.45
+	}
+}
+
+jingying_ideas = {
+	category = DIP
+
+	bonus = {
+		reform_progress_growth = 0.1
+	}
+
+	trigger = {
+		adm_tech = 4
+                }
+
+	zhouyoulieguo_1 = {
+		global_institution_spread = 0.1
+	}
+	wenhuatongyi_2 = {
+		num_accepted_cultures = 2
+	}
+	minzutuanjie_3 = {
+		promote_culture_cost = -0.2
+	}
+	xinshisixiang_4 = {
+		advisor_pool = 1
+	}
+	xingzhengjiaoyu_5 = {
+		monarch_admin_power = 1
+	}
+	waijiaojiaoyu_6 = {
+		monarch_diplomatic_power = 1
+	}
+	junshijiaoyu_7 = {
+		monarch_military_power = 1
+	}
+
+	ai_will_do = {
+		factor = 0.45
+	}
+}
+
+shenquan_ideas = {
+	category = ADM
+
+	bonus = {
+		missionary_maintenance_cost = -0.2
+	}
+
+	trigger = {
+		adm_tech = 4
+	}
+
+	guozhushenquan_1 = {
+		missionaries = 1
+	}
+	dingguojiao_2 = {
+		tolerance_own = 2
+	}
+	zongjiaoshengdian_3 = {
+		global_missionary_strength = 0.025
+	}
+	zongjiaorongyao_4 = {
+		prestige_per_development_from_conversion = 0.5
+	}
+	zongjiaokuangre_5 = {
+		warscore_cost_vs_other_religion = -0.25
+	}
+	yiduanshengpan_6 = {
+		global_heretic_missionary_strength = 0.02
+	}
+	xinyangchuanbo_7 = {
+		cb_on_religious_enemies = yes
+	}
+
+	ai_will_do = {
+		factor = 0.45
+	}
+}
+
+rongren_ideas = {
+	category = ADM
+
+	bonus = {
+		years_of_nationalism = -5
+	}
+
+	trigger = {
+		adm_tech = 4
+	}
+
+	zongjiaohexie_1 = {
+		yearly_harmony = 1.5
+	}
+	guojiawending_2 = {
+		global_unrest = -2
+	}
+	wanjiaotongzong_3 = {
+		religious_unity = 0.2
+	}
+	rongheyiduan_4 = {
+		tolerance_heretic = 2
+	}
+	tonggentongyuan_5 = {
+		harmonization_speed = 0.33
+	}
+	shututonggui_6 = {
+		tolerance_heathen = 2
+	}
+	dayitong_7 = {
+		enforce_religion_cost = -0.5
+	}
+
+	ai_will_do = {
+		factor = 0.45
+	}
+}
+
+zhuanzheng_ideas = {
+	category = ADM
+
+	bonus = {
+		all_power_cost = -0.05
+	}
+
+	trigger = {
+		adm_tech = 4
+	}
+
+	shuizhigaige_1 = {
+		global_tax_modifier = 0.1
+	}
+	guanligaige_2 = {
+		governing_capacity = 200
+	}
+	neigegaizhi_3 = {
+		core_creation = -0.2
+	}
+	wendingzhengfu_4 = {
+		stability_cost_modifier = -0.2
+	}
+	difanghuanxue_5 = {
+		global_autonomy = -0.05
+	}
+	tianmingsuogui_6 = {
+		imperial_mandate = 0.05
+		imperial_authority_value = 0.03
+	}
+	zhongwangsuogui_7 = {
+		prestige_decay = -0.01
+	}
+
+	ai_will_do = {
+		factor = 0.45
+	}
+}
+
+guanli_ideas = {
+	category = ADM
+
+	bonus = {
+		administrative_efficiency = 0.1
+	}
+
+	trigger = {
+		adm_tech = 4
+                }
+
+	xiaolvshengchan_1 = {
+		production_efficiency = 0.1
+	}
+	jianzhuguihua_2 = {
+		build_time = -0.2
+        build_cost = -0.1
+	}
+	sheliyinhang_3 = {
+		inflation_reduction = 0.1
+	}
+	sixiangpengzhuang_4 = {
+		monthly_splendor = 1
+	}
+	neizhengchuli_5 = {
+		advisor_cost = -0.15
+	}
+	yinhangtouzi_6 = {
+		global_tax_modifier = 0.1
+	}
+	touzijianshe_7 = {
+		development_cost = -0.1
+	}
+
+	ai_will_do = {
+		factor = 0.45
+	}
+}
+
+#below 3 is from 2091/03/12
+kaituo_ideas = {
+	category = ADM
+
+	bonus = {
+		build_cost = -0.1
+	}
+
+	trigger = {
+		adm_tech = 20
+	}
+
+	xindeshijie_1 = {
+		colonist_placement_chance = 0.10
+	}
+	lingdikongzhi_2 = {
+		governing_capacity = 200
+	}
+	xindaluzhengce_3 = {
+		global_tariffs = 0.1
+	}
+	maoyidaoliu_4 = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	minzuzhuanyi_5 = {
+		expel_minorities_cost = -0.2
+	}
+	maoyitouzi_6 = {
+		center_of_trade_upgrade_cost = -0.15
+		trade_company_investment_cost = -0.15
+	}
+	maoyizhanzheng_7 = {
+		cb_on_overseas = yes
+	}
+
+	ai_will_do = {
+		factor = 0.45	
+	}
+}
+
+qianyi_ideas = {
+	category = DIP
+
+	bonus = {
+		autonomy_change_time = -0.2
+	}
+
+	trigger = {
+		adm_tech = 20
+	}
+
+	jixiaozhimin_1 = {
+		colonist_placement_chance = 0.10
+		#vassal_forcelimit_bonus = 0.10
+	}
+	weizhizhengfu_2 = {
+		range = 0.25
+	}
+	buchangzhengce_3 = {
+		global_colonial_growth = 10
+	}
+	shenghuoyoudai_4 = {
+		colonist_placement_chance = 0.1
+	}
+	xindehangxian_5 = {
+		envoy_travel_time = -0.2
+	}
+	jianyuejianzhu_6 = {
+		build_time = -0.15
+	}
+	zhiminzhanzheng_7 = {
+		cb_on_primitives = yes
+	}
+
+	ai_will_do = {
+		factor = 0.45	
+	}
+}
+
+junqu_ideas = {
+	category = MIL
+
+	bonus = {
+		years_of_nationalism = -5
+	}
+
+	trigger = {
+		adm_tech = 20
+	}
+
+	junshikuozhang_1 = {
+		land_forcelimit_modifier = 0.15
+		naval_forcelimit_modifier = 0.15
+	}
+	junshijieguan_2 = {
+		global_autonomy = -0.05
+	}
+	buduiruzhu_3 = {
+		global_colonial_growth = 20
+	}
+	junguanqu_4 = {
+		min_autonomy_in_territories = -0.1
+	}
+	junduizhenya_5 = {
+		native_uprising_chance = -0.5
+	}
+	junshitongxing_6 = {
+		range = 0.25
+	}
+	junqubianjie_7 = {
+		idea_claim_colonies = yes
+	}
+
+	ai_will_do = {
+		factor = 0.45	
+    }
+}
+
+#2021-01-28 rab_ add 
+liberalism_mil_ideas = {
+	category = MIL
+
+	bonus = {
+		discipline = 0.15
+	}
+	
+	trigger = {
+		adm_tech = 81
+		NOT = { has_idea_group = order_ideas }
+		religion = liberalism
+	}
+	
+	liberalism_recruit = {
+		free_leader_pool = 5
+	}
+	liberalism_army = {
+		mercenary_cost = -0.1
+		merc_maintenance_modifier = -0.5
+	}
+	liberalism_generals = {
+		land_morale = 0.25
+		leader_land_fire = 2
+	}
+	liberalism_military_develop = {
+		infantry_power = 0.15
+		cavalry_power = 0.25
+	}
+	liberalism_military_thinkers = {
+		shock_damage = 0.10
+	}
+	liberalism_resettlement = {
+		culture_conversion_cost = -0.25
+		core_creation = -0.25
+	}
+	liberalism_total_war = {
+		manpower_recovery_speed = 0.25
+		land_attrition = -0.25
+	}
+	
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 10
+			OR = {
+				government = republic
+				has_reform = parliamentary_monarchy
+				religion = liberalism
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_reform = socialist_republic
+				has_reform = communist_dictatorship
+				has_reform = fascist_dictatorship
+				NOT = { religion = liberalism }
+			}
+		}
+	}
+}
+
+
+liberalism_adm_ideas = {
+	category = ADM
+
+	bonus = {
+		all_power_cost = -0.1
+	}
+	
+	trigger = {
+		adm_tech = 81
+		NOT = { has_idea_group = order_ideas }
+		religion = liberalism
+	}
+	
+	liberalism_ADM_1 = {
+		global_tax_modifier = 0.2
+	}
+	liberalism_ADM_2 = {
+		country_admin_power = 2
+	}
+	liberalism_ADM_3 = {
+		production_efficiency = 0.25
+	}
+	liberalism_ADM_4 = {
+		idea_cost = -0.1
+	}
+	liberalism_ADM_5 = {
+		build_cost = -0.25
+	}
+	liberalism_ADM_6 = {
+		yearly_corruption = -0.2
+		governing_capacity_modifier = 0.1
+	}
+	liberalism_ADM_7 = {
+		global_autonomy = -0.1
+		stability_cost_modifier = -0.25
+	}
+	
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 20
+			religion = liberalism
+		}
+		modifier = {
+			factor = 0
+			NOT = { religion = liberalism }
+		}
+	}
+}
+
+

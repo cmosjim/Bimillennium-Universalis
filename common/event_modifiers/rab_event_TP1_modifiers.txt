@@ -1,0 +1,20 @@
+##################################################################################################
+# scriptable and usable for event-system below.
+##################################################################################################
+
+pov_golden_store = {
+
+	local_tax_modifier = 2.0
+	picture = "pov_golden_store"
+
+}
+
+pov_church_power = {
+
+	local_regiment_cost = -0.8
+	local_manpower_modifier = 2.0
+	picture = "pov_church_power"
+}
+
+
+hints_timer = { }

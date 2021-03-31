@@ -1,0 +1,49 @@
+CEN_ideas = {
+	start = {
+		missionaries = 1
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		naval_morale = 0.2
+	}
+	
+	trigger = {
+	   tag = CEN
+	}
+
+	free = yes
+	
+	name_with_country = {
+		merc_maintenance_modifier = -0.25
+	}
+
+	omit_luxury = {
+		prestige_from_land = 1.0
+		global_missionary_strength = 0.02
+	}
+	
+	monarch_intelligence = {
+		idea_cost = -0.1
+	}
+	
+	abandon_family_punish = {
+		stability_cost_modifier = -0.15
+	}
+
+	encourage_literature = {
+		global_unrest = -1
+		prestige = 1
+	}
+
+	shido_hongyuan = {
+		mercenary_manpower = 0.5
+		global_manpower_modifier = 0.2
+	}
+	
+	hwanan_develop = {
+		global_foreign_trade_power = 0.10
+		merchants = 1
+	}
+
+}

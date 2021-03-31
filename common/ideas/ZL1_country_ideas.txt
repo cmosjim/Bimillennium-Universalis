@@ -1,0 +1,46 @@
+#northern xio
+ZL2_ideas = {
+	start = {
+		global_tax_modifier = 0.15
+		technology_cost = -0.1
+	}
+	
+	bonus = {
+		land_morale = 0.2
+	}
+	
+	trigger = {
+		tag = ZL2
+	}
+
+	free = yes
+	
+	shengren_guxiang = {
+		prestige_decay = -0.02
+	}
+
+	gong_qi_bu_gongchan = {
+		heir_chance = 0.5
+	}
+
+	tianran_lianggang = {
+		naval_maintenance_modifier = -0.25
+	}
+	
+	deguo_xiashuidao = {
+		naval_forcelimit_modifier = 0.25
+	}
+
+	nengqunengshen = {
+		unjustified_demands = -0.5
+	}
+
+	anfenshoouji = {
+		stability_cost_modifier = -0.1
+	}
+
+	duoziduofu = {
+		global_manpower_modifier = 0.1
+		land_maintenance_modifier = -0.1
+	}
+}

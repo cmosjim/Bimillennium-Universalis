@@ -1,0 +1,163 @@
+graphical_culture = asiangfx
+special_unit_culture = south_east_asian_special
+color = {
+  136
+  117
+  90
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  qianyi_ideas
+  rongren_ideas
+  junqu_ideas
+  defensive_ideas
+  offensive_ideas
+  spy_ideas
+  trade_ideas
+  diplomatic_ideas
+  economic_ideas
+  religious_ideas
+  quantity_ideas
+}
+historical_units = {
+  east_asian_spearmen
+  eastern_bow
+  asian_arquebusier
+  asian_charge_cavalry
+  asian_mass_infantry
+  asian_musketeer
+  reformed_asian_musketeer
+  reformed_asian_cavalry
+}
+monarch_names = {
+  "nIƒ #0" = -1  # Thanh Thao #0
+  "³‚<„ #0" = -1  # Phuong Nga #0
+  "µx‰s #0" = -1  # Bich Ngoc #0
+  "àñm #0" = -1  # Thuy Tram #0
+  "Ñ‘ñ‚ #0" = -1  # Kim Anh #0
+  "ôuky #0" = 20  # Duy Hop #0
+  "IQ5 #0" = 10  # Quang Toan #0
+  "à` #0" = 10  # Hue #0
+  "ôu&Œ #0" = 20  # Duy Khiem #0
+  "ôugy #0" = 20  # Duy Dieu #0
+  "ôusy #0" = 20  # Duy Than #0
+  "ôuey #0" = 20  # Duy Tuong #0
+  "ôuJy #0" = 20  # Duy Phuong #0
+  "ôuŸy #0" = 20  # Duy Duong #0
+  "le‡R #0" = 20  # Kinh Vu #0
+  "leËR #0" = 20  # Kinh Khoan #0
+  "lem` #0" = 20  # Kinh Cung #0
+  "lebk #0" = 20  # Kinh Chi #0
+  "ƒKm #0" = 20  # Mau Hop #0
+  "yn #0" = 20  # Phuc Nguyen #0
+  "ywm #0" = 20  # Phuc Hai #0
+  "„^—R #0" = 20  # Trang Tong #0
+  "‰vp #0" = 20  # Dang Doanh #0
+  "‰v¸^ #0" = 20  # Dang Dung #0
+  "?i #0" = 20  # Xuan #0
+  "i #0" = 20  # Y #0
+  "Fo #0" = 20  # Oanh #0
+  "ìo #0" = 20  # Tuan #0
+  "n4 #0" = 20  # Thuan #0
+  "ó“ #0" = 20  # Tranh #0
+  "`Ú‹ #0" = 20  # Tu Thanh #0
+  "œRl #0" = 20  # Nghi Dan #0
+  "¦úW #0" = 20  # Bang Co #0
+  "CQ™Ÿ #0" = 20  # Nguyen Long #0
+  ")R #0" = 20  # Loi #0
+  "cRib #0" = 10  # Quy Khoang #0
+  "sØmÜ #0" = 10  # Ngoi #0
+  "IlÍ‚ #0" = 10  # Han Thuong #0
+  "cR›r #0" = 10  # Quy Ly #0
+  "PØüÝ #0" = 10  # An #0
+}
+leader_names = {
+  "H–"  # Tran
+  "áw"  # Ho
+  "Îž"  # Lê
+  "Ng"  # Ly
+  "4T"  # Ngo
+  "«ƒ"  # Mac
+  "Ñ"  # Trinh
+  ".–"  # Nguyen
+  "Äž"  # Huynh
+  "Xo"  # Phan
+  "ƒ"  # Pham
+  "fk"  # Vu
+  "“"  # Dang
+  "ôˆ"  # Bui
+  "jg"  # Do
+  "hg"  # Duong
+  "mV"  # Banh
+  "Øš"  # Cao
+  "hT"  # Chau
+  "1g"  # Chu
+  "Ÿ”"  # Chung
+  "öS"  # Diep
+  "-Œ"  # Dam
+  "v–"  # Dao
+  "N"  # Dinh
+  "µk"  # Doan
+  "ml"  # Giang
+  "Y"  # Ha
+  "é—"  # Han
+  "ëw"  # Kieu
+  "Ñ‘"  # Kim
+  "W"  # La
+  "Ò–"  # Lac
+  "Ý„"  # Lam
+  "óg"  # Lieu
+  "F–"  # Luc
+  "h"  # Luong
+  "R"  # Luu
+  "lš"  # Ma
+  "¦ž"  # Mach
+  "…h"  # Mai
+  "%N"  # Nghiem
+  "…P"  # Pho
+  "¯Q"  # Phung
+  "í"  # Quach
+  "IQ"  # Quang
+  "Cg"  # Quyen
+  "0Œ"  # Ta
+  "ów"  # Thach
+  "!…"  # Thai
+  "Ëe"  # Thi
+  "4l"  # Thuy
+  "'„"  # Tieu
+  "Ï‚"  # To
+  "YR"  # Ton
+  "„^"  # Trang
+  "u"  # Trieu
+  ".V"  # Truong
+  "‡e"  # Van
+  "8l"  # Vinh
+  "‹s"  # Vuong
+}
+ship_names = {
+  "H–Zq"  # Tran Canh
+  "H–åeÜp"  # Tran Hoang
+  "H–f"  # Tran Khâm
+  "H–Çp"  # Tran Thuyên
+  "H–cY"  # Tran Manh
+  "H–úe"  # Tran Vuong
+  "H–­f"  # Tran Hao
+  "hgåe<y"  # Duong Nhat Lê
+  "H–Šf"  # Tran Phu
+  "H–Ôf"  # Tran Kính
+  "H–pØ*Ü"  # Tran Hien
+  "H–™˜"  # Tran Ngung
+  "H–PØüÝ"  # Tran An
+  "*Y—R"  # Thái Tông
+  "1W—R"  # Thánh Tông
+  "ÁN—R"  # Nhân Tông
+  "ñ‚—R"  # Anh Tông
+  "f—R"  # Minh Tông
+  "ªR—R"  # Hien Tông
+  "Õˆ—R"  # Du Tông
+  "z‚—R"  # Nghe Tông
+  "w—R"  # Due Tông
+  "z˜—R"  # Thuan Tông
+}

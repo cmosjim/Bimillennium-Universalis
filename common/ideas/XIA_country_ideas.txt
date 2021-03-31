@@ -1,0 +1,42 @@
+XIA_ideas = {
+	start = {
+		global_manpower_modifier = 0.2
+		cavalry_cost = -0.15
+	}
+
+	bonus = {
+		army_tradition = 2
+	}
+
+	trigger = {
+	OR = {
+		tag = XIA
+		tag = DN2
+		}
+	}
+	free = yes
+
+	xixia_words = {
+		adm_tech_cost_modifier = -0.15
+	}
+	use_terrain_benefit = {
+		infantry_power = 0.1
+	}
+	monopoly_hexi_corridor = {
+		trade_efficiency = 0.15
+	}
+	cheng_tain_si_ta = {
+		global_missionary_strength = 0.01
+		prestige = 1
+	}
+	quanmin_jiebing = {
+		global_manpower_modifier = 0.15
+	}
+	qun_mu_si = {
+		production_efficiency = 0.1
+	}
+	tiansheng_update_law = {
+		stability_cost_modifier = -0.15
+		global_spy_defence = 0.2
+	}
+}

@@ -1,0 +1,120 @@
+graphical_culture = muslimgfx
+color = {
+  150
+  55
+  224
+}
+historical_idea_groups = {
+  early_adm_ideas
+  early_mil_ideas
+  early_trade_ideas
+  early_religious_ideas
+  xingjun_ideas
+  junqu_ideas
+  defensive_ideas
+  offensive_ideas
+  administrative_ideas
+  economic_ideas
+  trade_ideas
+  religious_ideas
+  diplomatic_ideas
+  spy_ideas
+}
+historical_units = {
+  mamluk_archer
+  mamluk_cavalry_charge
+  mamluk_duel
+  mamluk_musket_charge
+  muslim_mass_infantry
+  muslim_dragoon
+  ali_bey_reformed_infantry
+}
+monarch_names = {
+  "Âg^S #0" = 0  # Zahir #0
+  "Êt^∑V #0" = 0  # Wahid #0
+  "LNõsS #0" = 0  # Umar #0
+  "TXÃëKQ #0" = 0  # Tariq #0
+  "(Ñs|S #0" = 0  # Samir #0
+  "^XkçS #0" = 0  # Sakhr #0
+  "(ÑÚÉ #0" = 0  # Safi #0
+  "…b^∑V #0" = 0  # RashÓd #0
+  "…b^∆Y #0" = 0  # Rahim #0
+  "ì^iç #0" = 0  # Qusay #0
+  "aSâ∆Y #0" = 0  # Qasim #0
+  "≥u	T^ #0" = 0  # Najib #0
+  "FzØeTX’l #0" = 0  # Mustafa #0
+  "¸fœÇS #0" = 0  # Mansur #0
+  "lö)RKQ #0" = 0  # Malik #0
+  "»T)RKQ #0" = 0  # Khaliq #0
+  "1gHY∑V #0" = 0  # Junayd #0
+  ">ç»è“R #0" = 0  # Jamal #0
+  ">ç’lS #0" = 0  # Ja'far #0
+  ">çÙTS #0" = 0  # Jabbar #0
+  "OKQÙTS #0" = 0  # Iqbal #0
+  "·w(Ñ∆Y #0" = 0  # Husam #0
+  "»T^∆Y #0" = 0  # Hashim #0
+  "wmæèS #0" = 0  # Haidar #0
+  "èy?ñ∑V #0" = 0  # Fuad #0
+  "9çæèØe #0" = 0  # Firdaus #0
+  "’lÅúKQ #0" = 0  # Faruq #0
+  "’lÃëØe #0" = 0  # Faris #0
+  "’lkç∑V #0" = 0  # Fahd #0
+  "æèLN∑V #0" = 0  # Dawud #0
+  "ÙT^S" = 0  # Basir #0
+  "ÙT…baSyr #0" = 0  # Barakat #0
+  "åÇ¸f #0" = 0  # Ayman #0
+  "'?ñjSjg“R aSÃë∆Y #0" = 0  # 'Abd al-Karim #0
+  "≥uØeS #0" = 5  # Nasr #0
+  "OØeõsÍN #0" = 10  # Isma'Ól #0
+  "(Ñ?ñ∑V #0" = 20  # Sa'd #0
+  "?ñÃë #0" = 20  # 'AlÓ #0
+  "O.tèy #0" = 60  # Y˚suf #0
+  "FzUÿû∑V #0" = 60  # Muhammad #0
+}
+leader_names = {
+  "O,g ?ñjSjg“R …bkç¸f"  # Ibn Abd al-Rahman
+  "O,g ?ñÙT∑V"  # Ibn Abbad
+  "O,g ?ñjSjg…b"  # Ibn Abd Allah
+  "O,g ?ñ‘k »T+YØe"  # Ibn Abi Hafs
+  "O,g-?ñNbÚÉ"  # Ibn al-Azafi
+  "O,g ?ñÃë"  # Ibn Ali
+  "O,g»TNW"  # Ibn Hakan
+  "O,g »TFz∑V"  # Ibn Hammud
+  "O,g wm(Ñ∆Y"  # Ibn Hisam
+  "O,g ØOiç‡V"  # Ibn Husayn
+  "O,g O∑VÃëØe"  # Ibn Idris
+  "O,g OôlKQ"  # Ibn Ishaq
+  "O,g OØeõsÍN"  # Ibn Isma'il
+  "O,g ¶ûS˙e"  # Ibn Marwan
+  "O,g FzUÿû∑V"  # Ibn Muhammad
+  "O,g ≥uØeS"  # Ibn Nasr
+  "O,g aSâ∆Y"  # Ibn Qasim
+  "O,g (ÑS"  # Ibn Sa'd
+  "O,g œÇ±É¸f"  # Ibn Sulayman
+  "LNlöSKNPR"  # Ibn Umar
+  "LN¶ûKNPR"  # Ibn Ummay
+  "LNyr¸fKNPR"  # Ibn Utman
+  "öN’lSKNPR"  # Ibn Ya'far
+  "O,g içIN+Y"  # Ibn Yahy‡
+  "O,g O.tèy"  # Ibn Yusuf
+}
+ship_names = {
+  "FzUÿû∑V O,g ≥uØeS"  # Muhammed ibn Nasr
+  "FzUÿû∑V ’lGY"  # Muhammed al-Faqih
+  "FzUÿû∑V III"  # Muhammed III
+  "≥uØeS"  # Nasr
+  "OØeõsÍN I"  # Ismail I
+  "FzUÿû∑V IV"  # Muhammed IV
+  "¶umt+YNN"  # Yusuf I
+  "FzUÿû∑VîNN"  # Muhammed V
+  "OØeõsÍN II"  # Ismail II
+  "FzUÿû∑VmQN"  # Muhammed VI
+  "tmt+YåNN"  # Yusuf II
+  "FzUÿû∑VNN"  # Muhammed VII
+  "¶umt+Y	NN"  # Yusuf III
+  "FzUÿû∑VkQN"  # Muhammed VIII
+  "FzUÿû∑VkNN"  # Muhammed IX
+  "¶umt+Y€VN"  # Yusuf IV
+  "O.tèy V"  # Yusuf V
+  "FzUÿû∑V X"  # Muhammed X
+}

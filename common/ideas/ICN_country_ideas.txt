@@ -1,0 +1,42 @@
+
+ICN_ideas = {
+	start = {
+		global_unrest = -2
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		manpower_recovery_speed = 0.2
+	}
+	
+	trigger = {
+		tag = ICN
+	}
+
+	free = yes
+	
+	jinshu_shihuan = {
+		prestige = 1
+		range = 0.2
+	}
+	icn_huobi_zhidu = {
+		inflation_reduction = 0.15
+	}
+	icn_Jieqing = {
+		global_tax_modifier = 0.10
+	}
+	icn_zhanche = {
+		infantry_power = 0.1
+		cavalry_power = 0.1
+	}
+	icn_free = {
+		ae_impact = -0.10
+		prestige_from_land = 0.1
+	}
+	icn_budicar = {
+		land_forcelimit_modifier = 0.1
+	}
+	icn_rome_att = {
+		discipline = 0.1
+	}	
+}

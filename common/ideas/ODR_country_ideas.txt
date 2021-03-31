@@ -1,0 +1,41 @@
+
+ODR_ideas = {
+	start = {
+		global_manpower_modifier = 0.2
+		land_maintenance_modifier = -0.1
+	}
+	
+	bonus = {
+		capture_ship_chance = 0.15
+	}
+	
+	trigger = {
+		tag = ODR
+	}
+
+	free = yes
+	
+	manhwndade = {
+		hostile_attrition = 1.0
+	}
+	cilawha = {
+		global_institution_spread = 0.15
+		diplomats = 1
+	}
+	barrganziwan = {
+		legitimacy = 1
+	}
+	arase_birthplace = {
+		prestige = 1
+		land_morale = 0.1
+	}
+	sanrantusizhe = {
+		privateer_efficiency = 0.2
+	}
+	shouzhizer = {
+		advisor_cost = -0.25
+	}
+	dianusizhe = {
+		discipline = 0.1
+	}	
+}

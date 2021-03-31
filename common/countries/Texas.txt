@@ -1,0 +1,435 @@
+graphical_culture = westerngfx
+colonial_parent = SPA
+random_nation_chance = 0
+color = {
+  173
+  22
+  27
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  shichen_ideas
+  defensive_ideas
+  religious_ideas
+  offensive_ideas
+  trade_ideas
+  spy_ideas
+  diplomatic_ideas
+  administrative_ideas
+  economic_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  chevauchee
+  western_longbow
+  gaelic_mercenary
+  gaelic_free_shooter
+  french_caracolle
+  irish_charge
+  anglofrench_line
+  french_dragoon
+  british_redcoat
+  british_hussar
+  british_square
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "Prospect #0" = 0
+  "Squire #0" = 0
+  "Tapley #0" = 0
+  "âôÑ #0" = 0  # Simon #0
+  "^XSâv #0" = 0  # Seldon #0
+  "WØe #0" = 0  # Ross #0
+  "W=Oyr #0" = 0  # Robert #0
+  "tÂgÓh #0" = 0  # Richardson #0
+  "|VóV #0" = 0  # Peter #0
+  "iO∑VW #0" = 0  # Pedro #0
+  "»èSØe #0" = 0  # Miles #0
+  "»èÔQöN #0" = 0  # Micajah #0
+  "s|öNS #0" = 0  # Mial #0
+  "löÇÑöNØe #0" = 0  # Matias #0
+  "löì^Øe #0" = 0  # Marcus #0
+  "¸fåg #0" = 0  # Manson #0
+  "±É*S #0" = 0  # Lemuel #0
+  "gØemyr #0" = 0  # Launcelot #0
+  "¶ufNöN #0" = 0  # Joshua #0
+  "UO^X #0" = 0  # JosÈ #0
+  "pgâ #0" = 0  # Jesse #0
+  "≈ñT^ #0" = 0  # Jacob #0
+  "pgKQê #0" = 0  # Jackson #0
+  "eY…b^X #0" = 0  # Horace #0
+  "O…b∆Y #0" = 0  # Hiram #0
+  "‹tæèbSiO #0" = 0  # Guadalupe #0
+  "<hóg #0" = 0  # Green #0
+  "bâv #0" = 0  # Gordon #0
+  "pg…b∑V #0" = 0  # Gerald #0
+  "†RSÙT #0" = 0  # Galba #0
+  "VÃë¸f #0" = 0  # Freeman #0
+  "O±ÉS #0" = 0  # Eliel #0
+  "√W∑V)n #0" = 0  # Edwin #0
+  "1r∑VNSY #0" = 0  # Eduardo #0
+  "YS¨Ç #0" = 0  # Dolphin #0
+  "æèlöTN #0" = 0  # Damacio #0
+  "∑^…b∑V #0" = 0  # Conrad #0
+  "KQ)R+YpQ #0" = 0  # Cleveland #0
+  "KQ±É,g #0" = 0  # Claiborne #0
+  "KQÃëØeXbV #0" = 0  # Christopher #0
+  "^X(ÑÃëeY #0" = 0  # Cesario #0
+  "=O∑V #0" = 0  # Byrd #0
+  "=OKQ #0" = 0  # Burke #0
+  "^Ãë^Y #0" = 0  # Brigido #0
+  "?ñ(Ñ #0" = 0  # Asa #0
+  "âR^XS´É #0" = 0  # Anselmo #0
+  "âRN<SeY #0" = 0  # Antonio #0
+  "?ñ´ÉØe #0" = 0  # Amos #0
+  "âR^WâeY #0" = 0  # Ambrosio #0
+  "?ñSlö&O #0" = 0  # Almaron #0
+  "öNÜSqS∑VW #0" = 0  # Alexandro #0
+  "?ñS=Oyr #0" = 0  # Albert #0
+  "s|…bZS #0" = 10  # Mirabeau #0
+  "√W‘k<S˝l #0" = 10  # Ebenezer #0
+  "âRÓh #0" = 10  # Anson #0
+  "âR∑VÅú #0" = 15  # Andrew #0
+  "âRÆY #0" = -1  # Anne #0
+  "(Ñ…b #0" = -1  # Sarah #0
+  "∑VZS…b #0" = -1  # Deborah #0
+  "iO…b #0" = -1  # Perla #0
+  "lö…b^…b #0" = -1  # Marciela #0
+  "≥R…b #0" = -1  # Laura #0
+  "ØeÇÑ¨Ç #0" = 25  # Stephen #0
+  "Z…^ #0" = 0  # William #0
+  "^yrÃëKQ #0" = 0  # Patrick #0
+  "¶umt+Y #0" = 15  # Joseph #0
+  "TN≥uÓh #0" = 0  # Jonathan #0
+  "åÇ(ÑKQ #0" = 0  # Isaac #0
+  "V˜ñ∑VÃëKQ #0" = 0  # Frederick #0
+  "VgâØe #0" = 0  # Francis #0
+  ",gpgf #0" = 0  # Benjamin #0
+  "tÂg∑V #0" = 0  # Richard #0
+  "'YkS #0" = 20  # David #0
+  "^X*S #0" = 20  # Samuel #0
+  "®N)R #0" = 0  # Henry #0
+  "ÂgSØe #0" = 0  # Charles #0
+  "¶u #0" = 0  # John #0
+  "yä∆YØe #0" = 25  # James #0
+  "TNªl #0" = 0  # George #0
+  "‘kÓhyr #0" = 0  # Vicente #0
+  "XbÃëÙueY #0" = 0  # Toribio #0
+  "¸f™R√WS #0" = 0  # Manuel #0
+  "bSâeY #0" = 0  # Lucio #0
+  "O<h≥uâeY #0" = 0  # Ignacio #0
+  "9N<SS #0" = 0  # Daniel #0
+  "(ÑSÊtY #0" = 0  # Salvador #0
+}
+leader_names = {
+  "Amabillo"
+  "åÇ&O"  # Allen
+  "Alsbury"
+  "âR∑VÅúØe"  # Andrews
+  "Andross"
+  "Arocha"
+  "Arreola"
+  "Autry"
+  "Badgett"
+  "Badillo"
+  "ç)R"  # Bailey
+  "çKQ"  # Baker
+  "ÙT…b∑V"  # Ballard
+  "Ballentine"
+  "Barcena"
+  "Baugh"
+  "Bastain"
+  "Bayliss"
+  "Baylor"
+  "Bergara"
+  "^±ÉS"  # Blair
+  "Blazeby"
+  "Bonham"
+  "Bourne"
+  "ZSÙu"  # Bowie
+  "çú¸f"  # Bowman
+  "^g"  # Brown
+  "^NWWS"  # Buchanan
+  "=Oi`Øe"  # Burns
+  "ÙTyr“R"  # Butler
+  "aS‡V"  # Cain
+  "NWçS"  # Campbell
+  "Carey"
+  "aS´É≥u"  # Carmona
+  "KQ…bKQ"  # Clark
+  "Cloud"
+  "—yKQ&O"  # Cochran
+  "Cottle"
+  "Courtman"
+  "KQ≥Rèy∑V"  # Crawford
+  "KQWKQyr"  # Crockett
+  "Crossman"
+  "KQÅúyQ"  # Cruz
+  "Cummings"
+  "NWÅRâR"  # Cunningham
+  "Curvier"
+  "Darst"
+  "4bÙuØe"  # Davis
+  "Day"
+  "Daymon"
+  "Dearduff"
+  "De la Garza"
+  "Debichi"
+  "Dennison"
+  "DeSauque"
+  "Despallier"
+  "Dewall"
+  "Dickinson"
+  "Dickson"
+  "Dillard"
+  "Dimmitt"
+  "Dimpkins"
+  "Duvalt"
+  "Edwards"
+  "Eigenauer"
+  "Elliott"
+  "Elm"
+  "Enriques"
+  "Espalier"
+  "Esparza"
+  "Evans"
+  "Ewing"
+  "Fauntleroy"
+  "Fishbaugh"
+  "Flanders"
+  "Flores"
+  "VmO∑V"  # Floyd
+  "Forsyth"
+  "Fuentes"
+  "Fuqua"
+  "Garnett"
+  "Garrand"
+  "Garrett"
+  "Garvin"
+  "Gaston"
+  "Gibson"
+  "Goodrich"
+  "Gray"
+  "Green"
+  "Grimes"
+  "Gurrea"
+  "<h˜ñW"  # Guerrero
+  "Gwin"
+  "Harris"
+  "»TÃëÓh"  # Harrison
+  "Hawkins"
+  "Hays"
+  "Heiskell"
+  "Herndon"
+  "Herrera"
+  "Hersee"
+  "Highsmith"
+  "Holland"
+  "Holloway"
+  "Howell"
+  "Hunter"
+  "Hutchinson"
+  "Irwin"
+  "Jackson"
+  "Jameson"
+  "Jennings"
+  "JimÈnez"
+  "Johnson"
+  "Jones"
+  "Kenny"
+  "Kent"
+  "Kerr"
+  "Kimble"
+  "Kin"
+  "—ë"  # King
+  "Lewis"
+  "Lightfoot"
+  "Lindley"
+  "Linn"
+  "Lockhart"
+  "Losoya"
+  "Main"
+  "Malone"
+  "Marshall"
+  "Martin"
+  "Maverick"
+  "McCafferty"
+  "McClelland"
+  "McCoy"
+  "McDowell"
+  "McGee"
+  "McGregor"
+  "McKinney"
+  "McNeilly"
+  "Melton"
+  "Menchaca"
+  "Miller"
+  "Mills"
+  "Millsaps"
+  "Mitchasson"
+  "Mitchell"
+  "Moore"
+  "Morman"
+  "Morrison"
+  "Musselman"
+  "Morgan"
+  "Nash"
+  "Nava"
+  "Navan"
+  "Neggan"
+  "Nelson"
+  "Nobles"
+  "Northcross"
+  "Nowlan"
+  "O'Neill"
+  "Olamio"
+  "Oury"
+  "Pacheco"
+  "Pagan"
+  "Parker"
+  "Parks"
+  "Patton"
+  "Perry"
+  "Petrasweiz"
+  "Pollard"
+  "Ramirez"
+  "Reynolds"
+  "Robertys"
+  "Robertson"
+  "Rodriguez"
+  "Rose"
+  "Roth"
+  "Rusk"
+  "Rutherford"
+  "Ryan"
+  "Rawson"
+  "Sanders"
+  "Scurlock"
+  "SeguÌn"
+  "Sewell"
+  "Shied"
+  "Simmons"
+  "Smith"
+  "Sowell"
+  "Spratt"
+  "Starr"
+  "Stewart"
+  "Stockton"
+  "Summerlin"
+  "Summers"
+  "Sutherland"
+  "Taylor"
+  "Thomas"
+  "dlnfÓh"  # Thompson
+  "Thurston"
+  "Trammel"
+  "Travis"
+  "Tumlinson"
+  "Tylee"
+  "Walker"
+  "Êt∑V"  # Ward
+  "Warnell"
+  "Waters"
+  "Wells"
+  "White"
+  "Williamson"
+  "Wills"
+  "Wilson"
+  "Wolf"
+  "Wright"
+  "Washington"
+  "Zanco"
+  "Zepeda"
+}
+ship_names = {
+  "Austin"
+  "Archer"
+  "Asp"
+  "Apalacheola"
+  "Appleton"
+  "Anderson"
+  "Aransas"
+  "Brazos"
+  "Brashear"
+  "Beaumont"
+  "Bryant"
+  "Black Horse"
+  "Charleston"
+  "Colorado"
+  "Charlotte"
+  "Cruz de Honor"
+  "Clark"
+  "Crisp"
+  "Cochrane"
+  "Doloritas"
+  "Dos Amigos"
+  "ƒñpû"  # Eagle
+  "Felix"
+  "Galveston"
+  "Glide"
+  "Gray"
+  "Gibbons"
+  "Goliad"
+  "Glenn"
+  "Goodall"
+  "Gordon"
+  "Greenhorn"
+  "Hornet"
+  "Hinton"
+  "Hondo"
+  "Haveslin"
+  "Horseback"
+  "Independencia"
+  "Iron Jacket"
+  "Justice"
+  "Kennedy"
+  "Kiowa"
+  "Louisville"
+  "ÍÅ1u"  # Liberty
+  "Lone Star"
+  "Lothrop"
+  "Longhorn"
+  "Moore"
+  "Morgan"
+  "Nueces"
+  "Navasota"
+  "Neches"
+  "Nocona"
+  "Oliver"
+  "O'Shaunessy"
+  "Progreso"
+  "Postell"
+  "Pecos"
+  "TR¿ñ"  # Peacock
+  "Popinjay"
+  "Pedernales"
+  "Quanah"
+  "Regenerador"
+  "Rosa Alvina"
+  "Rio Grande"
+  "8n†O"  # Ranger
+  "Sisaleno"
+  "San Jacinto"
+  "San Antonio"
+  "San Bernard"
+  ")YNá"  # Scorpion
+  "Striped Pig"
+  "Seegar"
+  "Snow"
+  "Silvero"
+  "pá«Ü"  # Viper
+  "Washington"
+  "Wharton"
+  "Wheelwright"
+  "Williamson"
+  "Wilbur"
+  "Yucateco"
+  "Zavala"
+}

@@ -1,0 +1,49 @@
+DS3_ideas = {
+	start = {
+		discipline = 0.05
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		land_attrition = -0.25
+	}
+	
+	trigger = {
+	   tag = DS3
+	}
+
+	free = yes
+	
+	geaguwen = {
+		development_cost = -0.1
+	}
+
+	wuyishitain = {
+		imperial_mandate = 0.1
+		global_missionary_strength = 0.02
+	}
+	
+	wenhowshounyen = {
+		culture_conversion_cost = -0.25
+	}
+	
+	shendietowchi = {
+		diplomatic_reputation = 1
+	}
+
+	luznsitoun = {
+		administrative_efficiency = 0.2
+		movement_speed = 0.1
+	}
+
+	huwbichiuan = {
+		discovered_relations_impact = -0.25
+		spy_offence = 0.2
+	}
+	
+	nulizhidu = {
+		global_manpower_modifier = 0.1
+		manpower_recovery_speed = 0.1
+	}
+
+}

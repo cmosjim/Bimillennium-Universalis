@@ -1,0 +1,51 @@
+GE1_ideas = {
+	start = {
+		cavalry_power = 0.25
+		infantry_cost = -0.1
+	}
+	
+	bonus = {
+		army_tradition = 0.2
+	}
+	
+	trigger = {
+		OR = {
+			tag = GE1
+			tag = GE2
+		}
+	}
+
+	free = yes
+	
+	zhangyichao_chiei = {
+		global_unrest = -2
+		prestige_from_land = 0.15
+	}
+
+	jieduyaya = {
+		stability_cost_modifier = -0.2
+	}
+	
+	juansiwei_ge = {
+		discipline = 0.05
+	}
+	
+	set_water_system_ge = {
+		production_efficiency = 0.15
+	}
+
+	caoyijin = {
+		num_accepted_cultures = 2
+		years_of_nationalism = -5
+	}
+
+	de_chu_yeio_dei = {
+		trade_efficiency = 0.1
+		defensiveness = 0.25
+	}
+	
+	spirit_forever_ge = {
+		idea_cost = -0.1
+	}
+
+}

@@ -1,0 +1,142 @@
+graphical_culture = easterngfx
+color = {
+  205
+  38
+  38
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  qianyi_ideas
+  rongren_ideas
+  junqu_ideas
+  defensive_ideas
+  expansion_ideas
+  religious_ideas
+  offensive_ideas
+  naval_ideas
+  spy_ideas
+  economic_ideas
+  quality_ideas
+}
+historical_units = {
+  bardiche_infantry
+  druzhina_cavalry
+  slavic_stradioti
+  eastern_militia
+  muscovite_musketeer
+  muscovite_caracolle
+  muscovite_soldaty
+  muscovite_cossack
+  russian_petrine
+  russian_lancer
+  russian_green_coat
+  russian_cuirassier
+  eastern_skirmisher
+  eastern_uhlan
+  eastern_carabinier
+  russian_mass
+}
+leader_names = {
+  "?–nfÉbKQ›"  # Apraksin
+  "ôT<hÉbcRf"  # Bagration
+  "ôTKQ)R ·V Xb)R"  # Barclay de Tolly
+  "ÔkÔkÑy+Y"  # Bibikoff
+  "ZSê¯eÑy"  # Bodisco
+  "ZSbS+Y›"  # Boruffsin
+  "b)R‘S"  # Golitzin
+  "ïQ^Éb"  # Kaibula
+  "aS¯eúW"  # Kamenski
+  "KQœPO+Y"  # Kolzoff
+  "^Ñy+Y"  # Mensjikov
+  "Fz¯ecR¯eÉb+Y¯eúW"  # Mustislavski
+  "eY¯eyrüf XbS¯eğl"  # Ostermann Tolstoy
+  "ôTR(ƒúW"  # Paletskij
+  "±ƒ6w+Y¯eúW"  # Rajevski
+  "‚ætm+Y"  # Schuvalov
+  "0ŒRs|pg+Y"  # Sjeremetjev
+  "¯ecRG<SšNyrôu+Y"  # Sjtjenjatvev
+  "ĞcîhjŒîh"  # Tiesenhusen
+  "æt‰Ì‘6wôuGY"  # Vasiljevitj
+  "¯Q ^KQ¯ek+Y‰v"  # von Buxhoevden
+  "¯Q KQú‹R"  # von Knorring
+  "¯Q Éb‰"  # von Lascy
+}
+monarch_names = {
+  "Roman #2" = 5
+  "Izyaslav #1" = 5
+  "Svyatoslav #4" = 5
+  "Svyatopolk #1" = 5
+  "Lev #1" = 0
+  "Agafya #0" = -1
+  "Svetlana #0" = -1
+  "Yuliya #0" = -1
+  "ÆY¯ecR¯eÉb+Y #3" = 10  # Mstislav #3
+  "¾ôu·V #1" = 5  # Davyd #1
+  "šNWâlSKQ #1" = 5  # Yaropolk #1
+  "Å–W¯eÉb+Y #2" = 10  # Yaroslav #2
+  "W¯ecR¯eÉb+Y #1" = 5  # Rostislav #1
+  "ObS #1" = 5  # Igor #1
+  "V0Œƒlm·V #3" = 20  # Vsevolod #3
+  "VÉbúWs|S #2" = 70  # Vladimir #2
+  "VÉbúWs|S ON #1" = 5  # Vladimir-Ivan #1
+  "Å–+YÖv<S #0" = 0  # Yevgeniy #0
+  "šNÑ‘ #0" = 0  # Yakim #0
+  "ætRÌ‘ #0" = 0  # Valeriy #0
+  "wcŞcR #0" = 0  # Terentiy #0
+  "0ŒSÖv #0" = 0  # Sergei #0
+  "(„ôuÌ‘ #0" = 0  # Saveliy #0
+  "ÉbYs|S #0" = 0  # Radomir #0
+  "|V—V #0" = 0  # Pyotr #0
+  "nfWïgÔk #0" = 0  # Prokopiy #0
+  "İOW #0" = 0  # Pavel #0
+  "eY<S› #0" = 0  # Onisim #0
+  "eYR<h #0" = 0  # Oleg #0
+  "<SúWiOS #0" = 0  # Nikifor #0
+  "³uNbÌ‘ #0" = 0  # Nazariy #0
+  "s|ÈTOS #0" = 0  # Mikhail #0
+  "lšyre #0" = 0  # Matveiy #0
+  "›sïQ^t #0" = 0  # Makariy #0
+  "Éb+Y&O‚„ #0" = 0  # Lavrentiy #0
+  "¦u‰+Y #0" = 0  # Iosif #0
+  "àVú‹¯wcR #0" = 0  # Innokentiy #0
+  " RVR #0" = 0  # Gavriil #0
+  "ÄreYòƒÉbKQyr #0" = 0  # Feofilakt #0
+  "9eYY‰ #0" = 0  # Feodosiy #0
+  "YW9 #0" = 0  # Dorofey #0
+  "9N<SS #0" = 0  # Daniil #0
+  "œÌ‘¯e #0" = 10  # Boris #0
+  "?–SaScR #0" = 0  # Arkadiy #0
+  "‰R³uXb)R #0" = 0  # Anatoliy #0
+  "?–RKQ0Œ #0" = 0  # Alexei #0
+  "šN†SqS'Y #2" = 5  # Aleksandr #2
+  "?–úWÆY #0" = 0  # Akim #0
+  "?–Õl³u‰ #0" = 0  # Afanasiy #0
+  "9eYY #0" = 0  # Fyodor #0
+  "0Œ×‚ #0" = 0  # Semen #0
+  "‰R·VÈp #2" = 10  # Andrei #2
+  "2SÌ‘ #1" = 5  # Yuriy #1
+  "·Vs|yrÌ‘ #0" = 0  # Dmitriy #0
+  "OáQ #0" = 0  # Ivan #0
+  "æt‰Ì‘ #1" = 5  # Vasiliy #1
+}
+ship_names = {
+  "Dmitri Donskoi"
+  "Vasiliy I"
+  "D. Aleksandrovich"
+  "Rurik"
+  "Ivan Kalita"
+  "Moscha"
+  "Volga"
+  "Schorna"
+  "Coluna"
+  "Cortiza"
+  "Mosnisk"
+  "Olescho"
+  "Piersek"
+  "Troitzkoy"
+  "Wolok"
+  "Klin"
+  "Iausa"
+}

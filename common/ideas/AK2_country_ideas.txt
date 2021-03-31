@@ -1,0 +1,41 @@
+#northern xio
+AK2_ideas = {
+	start = {
+		land_maintenance_modifier = -0.2
+		idea_cost = -0.2
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = AK2
+	}
+
+	free = yes
+	
+	anfu_yu_tonghe = {
+		core_creation = -0.2
+	}
+	huaxia_gongtongti = {
+		land_morale = 0.15
+	}
+	bimianzhongyang_ducai = {
+		global_unrest = -5
+	}
+	benefit_federalism = {
+		range = 0.2
+		global_colonial_growth = 30
+	}
+	jianjie_xuanju = {
+		ae_impact = -0.10
+		advisor_cost = -0.5
+	}
+	lianshengzizhi = {
+		global_manpower_modifier = 0.2
+	}
+	waijiao_dulixing = {
+		diplomatic_reputation = 2
+	}	
+}

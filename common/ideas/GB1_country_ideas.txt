@@ -1,0 +1,44 @@
+GB1_ideas = {
+	start = {
+		discipline = 0.05
+		mercenary_cost = -0.25
+	}
+
+	bonus = {
+		colonists = 1
+    }
+
+    trigger = {
+        tag = GBR
+		great_power_rank = 1
+		religion_group = ideology
+	}
+	free = yes		#will be added at load.
+
+	GB1_ideas.1 = {
+		merchants = 2
+		global_trade_power = 0.2
+	}
+	GB1_ideas.2 = {
+		heavy_ship_power = 0.15
+		naval_morale = 0.2
+	}
+	GB1_ideas.3 = {
+		treasure_fleet_income = 0.3
+		reduced_liberty_desire = 40
+	}
+	GB1_ideas.4 = {
+		global_manpower_modifier = 0.5
+		trade_efficiency = 0.2
+	}
+	GB1_ideas.5 = {
+		global_trade_goods_size_modifier = 0.20
+	}
+	GB1_ideas.6 = {
+		production_efficiency = 0.2
+	}
+	GB1_ideas.7 = {
+		army_tradition = 0.5
+		infantry_power = 0.15
+	}
+}

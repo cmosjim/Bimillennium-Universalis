@@ -1,0 +1,52 @@
+DAQ_ideas = {
+	start = {
+		mercenary_cost = -0.25
+		infantry_power = 0.10
+	}
+	
+	bonus = {
+		heavy_ship_cost = -0.2
+	}
+	
+	trigger = {
+	OR = {
+	   tag = DAQ
+	   tag = DQI
+	   tag = ZB1
+	   tag = DQ1
+	   tag = QIC
+	   }
+	}
+
+	free = yes
+	
+	qijia_principle = {
+		discipline = 0.05
+	}
+	
+	ge_wu_zhi_zhi = {
+		idea_cost = -0.10
+	}
+	
+	qilu_culture_da = {
+		core_creation = -0.25
+	}
+
+	confucius_descendants = {
+		prestige = 1
+		missionaries = 1
+	}
+	
+	shandong_peninsula_da = {
+		naval_forcelimit_modifier = 0.2
+		naval_morale = 0.1
+	}
+
+	great_qi_year = {
+		heir_chance = 0.5
+	}
+
+	spring_and_autumn = {
+		army_tradition = 1.0
+	}
+}

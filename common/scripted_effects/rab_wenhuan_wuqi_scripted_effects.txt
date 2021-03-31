@@ -1,0 +1,740 @@
+
+
+add_wenhuan_1_effect = {
+	custom_tooltip = tp_add_wenhuan_1_effect
+hidden_effect = {
+	set_variable = {
+		which = huan_value
+		value = 100
+	}	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 100
+				}		
+			}		
+		}
+		change_variable = {
+			which = num_of_wenhuanzhi
+			value = 1
+		}
+	}
+	subtract_variable = {
+		which = huan_value
+		which = num_of_wenhuanzhi
+	}	
+}	
+}
+
+add_wenhuan_2_effect = {
+	custom_tooltip = tp_add_wenhuan_2_effect
+hidden_effect = {
+	set_variable = {
+		which = huan_value
+		value = 100
+	}		
+	change_variable = {
+		which = num_of_wenhuanzhi
+		value = 2
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wenhuanzhi
+			value = 100
+		}		
+	}
+	subtract_variable = {
+		which = huan_value
+		which = num_of_wenhuanzhi
+	}
+}	
+}
+
+add_wenhuan_3_effect = {
+	custom_tooltip = tp_add_wenhuan_3_effect
+hidden_effect = {
+	set_variable = {
+		which = huan_value
+		value = 100
+	}	
+	change_variable = {
+		which = num_of_wenhuanzhi
+		value = 3
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wenhuanzhi
+			value = 100
+		}		
+	}
+	subtract_variable = {
+		which = huan_value
+		which = num_of_wenhuanzhi
+	}	
+}	
+}
+
+add_wenhuan_5_effect = {
+	custom_tooltip = tp_add_wenhuan_5_effect
+hidden_effect = {
+	set_variable = {
+		which = huan_value
+		value = 100
+	}	
+	change_variable = {
+		which = num_of_wenhuanzhi
+		value = 5
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wenhuanzhi
+			value = 100
+		}		
+	}
+	subtract_variable = {
+		which = huan_value
+		which = num_of_wenhuanzhi
+	}	
+}	
+}
+
+add_wenhuan_10_effect = {
+	custom_tooltip = tp_add_wenhuan_10_effect
+hidden_effect = {
+	set_variable = {
+		which = huan_value
+		value = 100
+	}	
+	change_variable = {
+		which = num_of_wenhuanzhi
+		value = 10
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wenhuanzhi
+			value = 100
+		}		
+	}
+	subtract_variable = {
+		which = huan_value
+		which = num_of_wenhuanzhi
+	}	
+}	
+}
+add_wenhuan_50_effect = {
+	custom_tooltip = tp_add_wenhuan_50_effect
+hidden_effect = {
+	set_variable = {
+		which = huan_value
+		value = 100
+	}	
+	change_variable = {
+		which = num_of_wenhuanzhi
+		value = 50
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wenhuanzhi
+			value = 100
+		}		
+	}
+	subtract_variable = {
+		which = huan_value
+		which = num_of_wenhuanzhi
+	}	
+}	
+}
+
+subtract_wenhuan_1_effect = {
+	custom_tooltip = tp_subtract_wenhuan_1_effect
+hidden_effect = {
+	set_variable = {
+		which = huan_value
+		value = 100
+	}		
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 1
+			}		
+		}
+		subtract_variable = {
+			which = num_of_wenhuanzhi
+			value = 1
+		}		
+	}
+	subtract_variable = {
+		which = huan_value
+		which = num_of_wenhuanzhi
+	}	
+}	
+}
+subtract_wenhuan_2_effect = {
+	custom_tooltip = tp_subtract_wenhuan_2_effect
+hidden_effect = {
+	set_variable = {
+		which = huan_value
+		value = 100
+	}		
+	subtract_variable = {
+		which = num_of_wenhuanzhi
+		value = 2
+	}	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 0
+				}		
+			}
+		}		
+		set_variable = {
+			which = num_of_wenhuanzhi
+			value = 0
+		}		
+	}
+	subtract_variable = {
+		which = huan_value
+		which = num_of_wenhuanzhi
+	}	
+}	
+}
+
+subtract_wenhuan_3_effect = {
+	custom_tooltip = tp_subtract_wenhuan_3_effect
+hidden_effect = {
+	set_variable = {
+		which = huan_value
+		value = 100
+	}		
+	subtract_variable = {
+		which = num_of_wenhuanzhi
+		value = 3
+	}	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 0
+				}		
+			}
+		}		
+		set_variable = {
+			which = num_of_wenhuanzhi
+			value = 0
+		}		
+	}
+	subtract_variable = {
+		which = huan_value
+		which = num_of_wenhuanzhi
+	}	
+}	
+}
+
+subtract_wenhuan_5_effect = {
+	custom_tooltip = tp_subtract_wenhuan_5_effect
+hidden_effect = {
+	set_variable = {
+		which = huan_value
+		value = 100
+	}		
+	subtract_variable = {
+		which = num_of_wenhuanzhi
+		value = 5
+	}	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 0
+				}		
+			}
+		}		
+		set_variable = {
+			which = num_of_wenhuanzhi
+			value = 0
+		}		
+	}
+	subtract_variable = {
+		which = huan_value
+		which = num_of_wenhuanzhi
+	}	
+}	
+}
+
+subtract_wenhuan_10_effect = {
+	custom_tooltip = tp_subtract_wenhuan_10_effect
+hidden_effect = {
+	set_variable = {
+		which = huan_value
+		value = 100
+	}		
+	subtract_variable = {
+		which = num_of_wenhuanzhi
+		value = 10
+	}	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 0
+				}		
+			}
+		}		
+		set_variable = {
+			which = num_of_wenhuanzhi
+			value = 0
+		}		
+	}
+	subtract_variable = {
+		which = huan_value
+		which = num_of_wenhuanzhi
+	}	
+}	
+}
+
+subtract_wenhuan_50_effect = {
+	custom_tooltip = tp_subtract_wenhuan_50_effect
+hidden_effect = {
+	set_variable = {
+		which = huan_value
+		value = 100
+	}		
+	subtract_variable = {
+		which = num_of_wenhuanzhi
+		value = 50
+	}	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenhuanzhi
+					value = 0
+				}		
+			}
+		}		
+		set_variable = {
+			which = num_of_wenhuanzhi
+			value = 0
+		}		
+	}
+	subtract_variable = {
+		which = huan_value
+		which = num_of_wenhuanzhi
+	}	
+}	
+}
+
+################################################################
+#
+#
+#
+################################################################
+
+add_wuqi_1_effect = {
+	custom_tooltip = tp_add_wuqi_1_effect
+hidden_effect = {
+	set_variable = {
+		which = qi_value
+		value = 100
+	}		
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 100
+				}		
+			}		
+		}
+		change_variable = {
+			which = num_of_wuqizhi
+			value = 1
+		}		
+	}
+	subtract_variable = {
+		which = qi_value
+		which = num_of_wuqizhi
+	}	
+}	
+}
+
+add_wuqi_2_effect = {
+	custom_tooltip = tp_add_wuqi_2_effect
+hidden_effect = {
+	set_variable = {
+		which = qi_value
+		value = 100
+	}	
+	change_variable = {
+		which = num_of_wuqizhi
+		value = 2
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wuqizhi
+			value = 100
+		}		
+	}
+	subtract_variable = {
+		which = qi_value
+		which = num_of_wuqizhi
+	}	
+}	
+}
+
+add_wuqi_3_effect = {
+	custom_tooltip = tp_add_wuqi_3_effect
+hidden_effect = {
+	set_variable = {
+		which = qi_value
+		value = 100
+	}	
+	change_variable = {
+		which = num_of_wuqizhi
+		value = 3
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wuqizhi
+			value = 100
+		}		
+	}
+	subtract_variable = {
+		which = qi_value
+		which = num_of_wuqizhi
+	}	
+}	
+}
+
+add_wuqi_5_effect = {
+	custom_tooltip = tp_add_wuqi_5_effect
+hidden_effect = {
+	set_variable = {
+		which = qi_value
+		value = 100
+	}	
+	change_variable = {
+		which = num_of_wuqizhi
+		value = 5
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wuqizhi
+			value = 100
+		}		
+	}
+	subtract_variable = {
+		which = qi_value
+		which = num_of_wuqizhi
+	}	
+}	
+}
+
+add_wuqi_10_effect = {
+	custom_tooltip = tp_add_wuqi_10_effect
+hidden_effect = {
+	set_variable = {
+		which = qi_value
+		value = 100
+	}	
+	change_variable = {
+		which = num_of_wuqizhi
+		value = 10
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wuqizhi
+			value = 100
+		}		
+	}
+	subtract_variable = {
+		which = qi_value
+		which = num_of_wuqizhi
+	}	
+}	
+}
+
+add_wuqi_50_effect = {
+	custom_tooltip = tp_add_wuqi_50_effect
+hidden_effect = {
+	set_variable = {
+		which = qi_value
+		value = 100
+	}	
+	change_variable = {
+		which = num_of_wuqizhi
+		value = 50
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wuqizhi
+			value = 100
+		}		
+	}
+	subtract_variable = {
+		which = qi_value
+		which = num_of_wuqizhi
+	}	
+}	
+}
+
+subtract_wuqi_1_effect = {
+	custom_tooltip = tp_subtract_wuqi_1_effect
+hidden_effect = {
+	set_variable = {
+		which = qi_value
+		value = 100
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wuqizhi
+				value = 1
+			}		
+		}
+		subtract_variable = {
+			which = num_of_wuqizhi
+			value = 1
+		}		
+	}
+	subtract_variable = {
+		which = qi_value
+		which = num_of_wuqizhi
+	}
+}	
+}	
+
+subtract_wuqi_2_effect = {
+	custom_tooltip = tp_subtract_wuqi_2_effect
+hidden_effect = {
+	set_variable = {
+		which = qi_value
+		value = 100
+	}	
+	subtract_variable = {
+		which = num_of_wuqizhi
+		value = 2
+	}	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 0
+				}		
+			}
+		}		
+		set_variable = {
+			which = num_of_wuqizhi
+			value = 0
+		}		
+	}
+	subtract_variable = {
+		which = qi_value
+		which = num_of_wuqizhi
+	}	
+}
+}	
+
+
+subtract_wuqi_3_effect = {
+	custom_tooltip = tp_subtract_wuqi_3_effect
+hidden_effect = {
+	set_variable = {
+		which = qi_value
+		value = 100
+	}	
+	subtract_variable = {
+		which = num_of_wuqizhi
+		value = 3
+	}	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 0
+				}		
+			}
+		}		
+		set_variable = {
+			which = num_of_wuqizhi
+			value = 0
+		}		
+	}
+	subtract_variable = {
+		which = qi_value
+		which = num_of_wuqizhi
+	}	
+}
+}	
+
+
+subtract_wuqi_5_effect = {
+	custom_tooltip = tp_subtract_wuqi_5_effect
+hidden_effect = {
+	set_variable = {
+		which = qi_value
+		value = 100
+	}	
+	subtract_variable = {
+		which = num_of_wuqizhi
+		value = 5
+	}	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wuqizhi
+					value = 0
+				}		
+			}
+		}		
+		set_variable = {
+			which = num_of_wuqizhi
+			value = 0
+		}		
+	}
+	subtract_variable = {
+		which = qi_value
+		which = num_of_wuqizhi
+	}
+}	
+}	
+
+
+subtract_wuqi_10_effect = {
+	custom_tooltip = tp_subtract_wuqi_10_effect
+	hidden_effect = {
+		set_variable = {
+			which = qi_value
+			value = 100
+		}	
+		subtract_variable = {
+			which = num_of_wuqizhi
+			value = 10
+		}	
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = num_of_wuqizhi
+						value = 0
+					}		
+				}
+			}		
+			set_variable = {
+				which = num_of_wuqizhi
+				value = 0
+			}		
+		}
+		subtract_variable = {
+			which = qi_value
+			which = num_of_wuqizhi
+		}	
+	}
+}	
+	
+subtract_wuqi_50_effect = {
+	custom_tooltip = tp_subtract_wuqi_50_effect
+	hidden_effect = {
+		set_variable = {
+		custom_tooltip = tp_set_variable
+			which = qi_value
+			value = 100
+		}	
+		subtract_variable = {
+			which = num_of_wuqizhi
+			value = 50
+		}	
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = num_of_wuqizhi
+						value = 0
+					}		
+				}
+			}		
+			set_variable = {
+				which = num_of_wuqizhi
+				value = 0
+			}		
+		}
+		subtract_variable = {
+			which = qi_value
+			which = num_of_wuqizhi
+		}
+	}	
+}	
+		
+
+	

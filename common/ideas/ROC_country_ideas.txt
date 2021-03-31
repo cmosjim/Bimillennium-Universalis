@@ -1,0 +1,38 @@
+ROC_ideas = {
+	start = {
+		build_cost = -0.10
+		navy_tradition = 1
+	}
+
+	bonus = {
+		naval_maintenance_modifier = -0.2
+	}
+	
+	trigger = {
+		tag = ROC
+	}
+	free = yes		#will be added at load.
+	
+	roc_nationalism = {
+ 		tolerance_heathen = 2
+		num_accepted_cultures = 1
+	}
+	roc_democracy = {
+		stability_cost_modifier = -0.15
+	}
+	roc_livelihood = {
+		global_tax_modifier = 0.1
+	}
+	roc_league = {
+		diplomats = 1
+	}
+	whampoa_military_academy = {
+		discipline = 0.05
+	}
+	flag_of_roc = {
+		legitimacy = 1
+	}
+	roc_unified_ideas = {
+		enemy_core_creation = 0.15
+	}
+}

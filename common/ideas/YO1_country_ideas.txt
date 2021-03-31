@@ -1,0 +1,45 @@
+YO1_ideas = {
+	start = {
+		trade_efficiency = 0.1
+		shock_damage = 0.1
+	}
+	
+	bonus = {
+		global_supply_limit_modifier = 0.33
+	}
+	
+	trigger = {
+		tag = YO1
+	}
+	free = yes		#will be added at load.
+	
+	wushenbuchenyoir = {
+		defensiveness = 0.25
+	}
+	
+	alotoflanguageused = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 1
+	}
+	
+	milotor = {
+		monarch_admin_power = 1
+	}
+	
+	painhushenhwa = {
+		governing_capacity = 100
+	}
+	
+	huwangenchenlu = {
+		ae_impact = -0.2
+	}
+	
+	wuyeow = {
+		land_morale = 0.1
+	}
+	
+	yoyeyoeour = {
+		recover_army_morale_speed = 0.1
+		manpower_recovery_speed = 0.1
+	}
+}

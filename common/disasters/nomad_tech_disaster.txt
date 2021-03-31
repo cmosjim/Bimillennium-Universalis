@@ -1,0 +1,70 @@
+#2018.11.20 check 1.25 to 1.27 finish
+#从东方游牧转成早期中华科技组
+nomad_tech_disaster = {
+	potential = {
+			technology_group = eastern_nomad_group
+	}
+
+	can_start = {
+			has_any_disaster = no
+			has_country_flag = flg_reform_eastnomad
+	}
+	#这个是未触发start之前的停止
+	can_stop = {
+		has_any_disaster = yes
+	}
+
+	progress = {
+		modifier = {
+			factor = 33 
+			stability = 1
+		}
+		modifier = {
+			factor = 2
+			stability = 0
+		}
+		modifier = {
+			factor = 5
+			horde_unity = 90
+		}
+		modifier = {
+			factor = 5
+			num_of_cities = 40
+		}
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}			
+	}
+	
+	
+	#灾难从开启状态到灰白 ,　此时已经每月灾难了
+	#触发on_end event = 終止每月灾难
+	
+	can_end = {
+		custom_trigger_tooltip = {
+		tooltip = tp_end_reform_eastnomad
+		NOT = { has_country_flag = flg_reform_eastnomad }
+		NOT = { has_country_modifier = tech_change_process }
+		}	
+	}
+	
+	modifier = {
+			global_unrest = 2
+			stability_cost_modifier = 0.15
+	}
+	on_start = nomad_tech_disaster.100 # 
+
+	on_end = nomad_tech_disaster.200 # 
+	
+	on_monthly = {
+		events = {
+		}	
+		random_events = {
+			1000 = 0
+			150 = nomad_tech_disaster.1
+			150 = nomad_tech_disaster.2
+			150 = nomad_tech_disaster.3
+		}
+	}
+}

@@ -1,0 +1,44 @@
+#northern xio
+JJ1_ideas = {
+	start = {
+		defensiveness = 0.25
+		land_maintenance_modifier = -0.1
+	}
+	
+	bonus = {
+		inflation_reduction = 0.1
+		war_exhaustion_cost = -0.33
+	}
+	
+	trigger = {
+		tag = JJ1
+	}
+
+	free = yes
+	
+	jingjueguguo = {
+		diplomatic_reputation = 1
+	}
+	shanggu_yunji = {
+		trade_range_modifier = 0.1
+		merchants = 1
+	}
+	qielu_wen = {
+		diplomats = 1
+	}
+	fifth_starts_from_china = {
+		prestige = 1
+		yearly_corruption = -0.1
+	}
+	supi_arrounds_force = {
+		discipline = 0.05
+		mercenary_discipline = 0.05
+	}
+	jianiang_meijiu = {
+		production_efficiency = 0.15
+	}
+	youerbuji = {
+		cavalry_power = 0.1
+		leader_land_manuever = 1
+	}	
+}

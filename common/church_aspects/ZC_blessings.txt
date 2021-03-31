@@ -1,0 +1,303 @@
+zeus_aspect = {
+       	sprite = "GFX_zeus_icon"
+       	cost = 200                        
+       	trigger = {
+                 	NOT = {
+                        		prestige = 100
+                 	}
+       	}
+       	effect = {
+		if = {
+			limit = { NOT = { has_ruler_modifier = zeus_god } }
+                 		add_prestige = 25
+		}
+		else = {
+			add_stability = 1
+		}
+       	}
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+hera_aspect = {
+       	sprite = "GFX_hera_icon"
+       	cost = 100   
+	trigger = {
+		corruption = 0
+	}                     
+       	effect = {
+                 	if = {
+			limit = { NOT = { has_ruler_modifier = hera_god } }
+                 		add_corruption = -1
+		}
+		else = {
+			add_corruption = -2
+		}
+       	}
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+poseidon_aspect = {
+       	sprite = "GFX_poseidon_icon"
+       	cost = 200        
+	trigger = {
+		NOT = { navy_size_percentage = 1 }
+	}          
+       	effect = {
+                 	if = {
+			limit = { NOT = { has_ruler_modifier = poseidon_god } }
+                 		random_owned_province = {
+    				limit = { has_port = yes }
+    				ROOT = {
+        					galley = PREV
+    				}
+			}
+		}
+		else = {
+			random_owned_province = {
+    				limit = { has_port = yes }
+    				ROOT = {
+        					heavy_ship = PREV
+    				}
+			}
+		}
+       	}
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+demeter_aspect = {
+       	sprite = "GFX_demeter_icon"
+       	cost = 100     
+	trigger = {
+		is_bankrupt = no
+	}                   
+       	effect = {
+                 	if = {
+			limit = { NOT = { has_ruler_modifier = demeter_god } }
+                 		add_years_of_income = 0.5
+		}
+		else = {
+			capital_scope = {
+				add_base_production = 1
+			}
+		}
+       	}
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+athena_aspect = {
+       	sprite = "GFX_athena_icon"
+       	cost = 75                        
+       	trigger = {
+                 	NOT = {
+                        		army_size_percentage = 1
+                 	}
+       	}
+       	effect = {
+		if = { 
+			limit = { NOT = { has_ruler_modifier = athena_god } }
+                 		capital_scope = {
+    				ROOT = {
+        					infantry = PREV
+    				}
+			}
+		}
+		else = {
+			add_army_tradition = 10
+		}
+       	}
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+apollo_aspect = {
+       	sprite = "GFX_apollo_icon"
+       	cost = 100    
+	trigger = {
+		dip_power = 0
+	}                    
+       	effect = {
+                 	if = {
+			limit = { NOT = { has_ruler_modifier = apollo_god } }
+			add_DIP_power = 50
+		}
+		else = {
+			add_DIP_power = 100
+		}
+       	}
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+artemis_aspect = {
+       	sprite = "GFX_artemis_icon"
+       	cost = 50                        
+       	trigger = {
+                 	NOT = {
+                        		army_size_percentage = 1
+                 	}
+       	}
+       	effect = {
+                 	if = { 
+			limit = { NOT = { has_ruler_modifier = artemis_god } }
+                 		capital_scope = {
+    				ROOT = {
+        					cavalry = PREV
+    				}
+			}
+		}
+		else = {
+			add_manpower = 3
+		}
+       	}
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+ares_aspect = {
+       	sprite = "GFX_ares_icon"
+       	cost = 100                        
+       	trigger = {
+                 	NOT = {
+                        		army_professionalism = 1
+                 	}
+       	}
+       	effect = {
+                 	if = {
+			limit = { NOT = { has_ruler_modifier = ares_god } }
+			add_army_professionalism = 0.01
+		}
+		else = {
+			add_army_professionalism = 0.03
+       		}
+       	}
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+aphrodite_aspect = {
+       	sprite = "GFX_aphrodite_icon"
+       	cost = 200                      
+       	potential = {
+		has_dlc = "Rights of Man"
+		government = monarchy
+		NOT = { has_reform = iqta }
+		NOT = { has_reform = mamluk_government }
+		NOT = { has_reform = ottoman_government }
+	}
+	trigger = {
+		is_lesser_in_union = no
+		has_regency = no
+	}
+       	effect = {
+		if = { 
+			limit = { NOT = { has_ruler_modifier = aphrodite_god } }
+                 		define_heir = {
+				max_random_adm = 2
+				max_random_dip = 2
+				max_random_mil = 2
+				hide_skills = yes
+			}
+		}
+		else = {
+			define_heir = {
+				max_random_adm = 4
+				max_random_dip = 4
+				max_random_mil = 4
+				hide_skills = yes
+			}
+		}
+       	}
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+hephaestus_aspect = {
+       	sprite = "GFX_hephaestus_icon"
+       	cost = 100    
+	trigger = {
+		army_tradition = 0
+	}                    
+       	effect = {
+                 	if = { 
+			limit = { NOT = { has_ruler_modifier = hephaestus_god } }
+			create_general = { 
+				tradition = 30
+				add_fire = 1
+			}
+		}
+		else = { 
+			create_general = { 
+				tradition = 60
+				add_fire = 1
+			}
+		}
+       	}
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+hermes_aspect = {
+       	sprite = "GFX_hermes_icon"
+       	cost = 40                      
+       	trigger = {
+                 	is_at_war = yes
+       	}
+       	effect = {
+                 	if = { 
+			limit = { NOT = { has_ruler_modifier = hermes_god } }
+			random_country = {
+				limit = { war_with = ROOT }
+				add_spy_network_from = {
+					who = ROOT
+					value = 20
+				}
+			}
+		}
+		else = { 
+			random_country = {
+				limit = { war_with = ROOT }
+				add_spy_network_from = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+       	}
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+hestia_aspect = {
+       	sprite = "GFX_hestia_icon"
+       	cost = 100                        
+       	trigger = {
+                 	adm_power = 0
+       	}
+       	effect = {
+                 	if = {
+			limit = { NOT = { has_ruler_modifier = hestia_god } }
+			add_ADM_power = 50
+		}
+		else = {
+			add_ADM_power = 100
+		}
+       	}
+	ai_will_do = {
+		factor = 2
+	}
+}

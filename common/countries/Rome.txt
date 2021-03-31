@@ -1,0 +1,153 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 204  23  23 }
+
+historical_idea_groups = {
+	early_adm_ideas
+	early_mil_ideas
+	shichen_ideas
+	early_religious_ideas
+	shentou_ideas
+	jingying_ideas
+	rongren_ideas
+	defensive_ideas
+	offensive_ideas
+	exploration_ideas
+	administrative_ideas
+	economic_ideas
+	trade_ideas
+	religious_ideas
+	diplomatic_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	italian_condotta
+	spanish_tercio
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+}
+
+monarch_names = {
+	"KQ³RÄr #0" = 30
+	"‰RN<S #0" = 30
+	"lš“^¯e #0" = 30
+	"^Xnf‚„s|LN¯e #0" = 30
+	"lšKQ‰s|ªR¯e #0" = 20
+	"^XV^t¯e #0" = 20
+	"b3wê #0" = 20
+	"şVÉbw #0" = 10
+	"æt±ƒ^t‰R #0" = 10
+	"eYÒRo‚ #0" = 10
+	"TëXfWN #0" = 10
+	"1g)R‰R #0" = 10
+	"æt&O÷^<S‰R #0" = 10
+	"ôuyrÌ‘LN¯e #0" = 10
+	"^œşV¯e #0" = 0
+	"ĞcşV¯e #0" = 10
+	"şVÆR„U #0" = 10
+	"·^ƒ·V #0" = 10
+	"ônêLN¯e #0" = 10
+	"lšKQÌ‘ªR¯e #0" = 10
+	"—¯e‚„)R‰R #0" = 10
+	"ÃWs|)R‰R #0" = 10
+	"sO)RÉb¯e #0" = 10
+	"fĞcbS¯e #0" = 10
+	"ğl‰TX #0" = 10
+	"lšeu #0" = 10
+	"nfW^¯e #0" = 0
+	"aSªR¯e #0" = 0
+	"aSÌ‘ªR¯e #0" = 0
+	"æt±ƒÌ‘LN¯e #0" = 0
+	"1W ROLN¯e #0" = 0
+	"HYôuLN¯e #0" = 0
+	"fTX¯e #0" = 0
+	"ĞcÌ‘LN¯e #0" = 0
+	"bSîO¯e #0" = 0
+	"nf^)RLN¯e #0" = 0
+	"ïQúW)RLN¯e #0" = 0
+	"^X¯eĞcO¯e #0" = 0
+	"?–tYÒR¯e #0" = 0
+	"1g)RöS¯e #0" = 0
+	"?–‡^LN¯eKQ #0" = 0
+	"'Y‰‡^?– #0" = 0
+}
+
+leader_names = {
+    "lšKQ‰ÆY¯e" "KQWœ¯e" "åTyr" "åe3wüf" "ÖvbS¯e" "šN†SqS'Y" "®vLN¯e" "ôTS^Éb" "±ƒ®v¦^LN¯e" "jg¯elšvQ˜"
+	"eYœ¯e" "s|ÒR<S" "lšpgS" "ïg^œS" "?–‰ÎªR¯e" "?–^TXLN¯e" "?–<hêLN¯e" "?–ÕlSaSLN¯e" "?–äS)RïSÉb" "?–NY	t¯e"
+	"?–^t‰R" "?–Xb)R¯e" "?–‰<SLN¯e" "eYbS¯e" "?–‚„)RLN¯e" "eYÒReu" "ôTS^¯e" "ôTSôT‚„eY" "ôT(„¯e" "ZS<S9îO¯e"
+	"ZS<S(„¯e" "ïQúW)RLN¯e" "GYªR¯e" "SnfS<SLN¯e" "ïQSbS³u¯e" "aS‰LN¯e" "‰iW" "aS·VKQ¯e" "KQ³RÄrLN¯e"
+	"Ñy)ReYpQ³u¯e" "æy³u" "KQHYÌ‘LN¯e" "Ñy&OaSËu¯e" "KQbS¯e" "·V‰LN¯e" "·VKQ‰nf¯e" "ônêLN¯e" "Ys|ĞcLN¯e"
+	"·VœÏ‚¯e" "jgœ¯e" "9ÏgLN¯e" "VÉbs|<S¯e" "òƒÆY^Ì‘šN" "yòƒLN¯e" "VWòƒ+Y·V¯e" "ZRSôuLN¯e" "y)RLN¯e" "y¯eÑy¯e"
+	" RÔkËu¯e" " RSôT" "<h)RLN¯e" "¯O¯eêLN¯e	T" "ÉbÃWóg¯e" "ÉbĞcLN¯e" "Ng!•<S" "bSaSÉb¯e" "KO^t¯e" ")RôuLN¯e"
+	"WÌ‘LN¯e" "bSğlîO¯e" "lšS)RLN¯e" "üf)R„S¯e" "lšGYï¯e" "Uas|LN" "lšKQ‰s|‰R" "ú‹ôTªR¯e" "eYâlĞclš" "'k¯eXbÌ‘LN¯e"
+	"^®vÌ‘LN¯e" "ZSÌ‘ªR¯e" "iOSiOS³u" "iOĞcYu¯e" "iOyrW<SLN¯e" "®v0t" "nf³RĞcLN¯e" "ì„iO2S¯e" "mVâl<S"
+	"mV®vbSLN¯e" "âl¯eT*¯e" "nf^tÆY¯e" "NYOşV¯e" "NYàVĞcSo‚" "NYàVĞcLN¯e" "WGk¯e" "²„œTXKQ" "(„SôuêªR¯e"
+	"¯eKQ›R¦<S" "^XlbªR¯e" "^XÆYnfW<SLN¯e" "r‚S5r" "^XYYu" "^XSôu)RLN¯e" "^XKQ¯eşV¯e" "‰^X±" "ËeNS"
+	"¯eĞcÌ‘Ñy" "Ï‚ÃWXb<SLN¯e" "Ï‚Éb" "0tnf¯e" "ğl&OĞcLN¯e" "ğl&OâlLN¯e" "LNS›³u¯e" "ôunf’d<SLN¯e"
+}
+
+ship_names = {
+	"±Ôkyr" "1gú‹" "HYnfXb·‹¯e" "s|…mæt" "lšS¯e" "ôu³u¯e" "?–âlW" "Û‰RZ" "OSu" "Ø“^Ì‘LN¯e" "7Œ^yf"
+	"yrÒR¯e" "0tS" "bS³u" ")Ræ—S" "WÔk<h¯e" "iOmÉb" "1Wòƒ)Rfm" "iO<S" "îh—gsY^y" "(„şVSªR¯e" "pg³u¯e" "zfgaKN^y" "0Wñr÷S"
+	"vp^yf" "bSGYZ" "eYäS¯eı" "eYWÉb" "eYÉb" "R‘^yôTKQ¯e" "aS3wè•TX" "aS³u" "KQ±ƒè•‚„Z" "KQW?–‰Z" "ÑyÉbĞc³u"
+	"·^ÑyêšN" "“^ôT" "±Ôkyr" "“^Éb" "“^ÏgÒR" "ÄrôuÉb"
+	"Ys|jgaS" "„Si—Ì‘šN" "Oâl³u" "Õl›s" "V³u" "y¯eĞcyr¯e" "iO=OS¯e" "òƒ‰ƒòf¾øS"
+	"9&O‚„ú‹" "òƒW<SšN" "òƒ0t<SšN" "ySşVZ" "y³R¯e" "™‚^tZ" "kÉbKQÒR¯e" "kNiOÉb" "kÉbĞc³u¯e"
+	"wƒú‹¯e" "wƒÉb" "sY^y—¯eĞc)RZ" "—ú‹)RšN" "5ƒªR¯e" "àVôuêšN" "OÌ‘¯e" "ckINsY^y1g¯eĞcĞcšN" "1gşVS³u"
+	"2S‡eşV¯e" "ÉbpQĞcZ"
+	"ÉbôuS³u" ")RÉbÌ‘TX¯e" "ê1usY^y" ")RÔk‚„Z" ")Rlš" "bS?–" "R‘—usY^y¨XÄryrÌ‘±" "…h†–<SšN" "s|^šN" "idS¯e"
+	"«ƒ<STX" "FzS‰šN" "FzTX" "…mIR‰TX¯e" "…m¨X‰¯e" "<S„y" "ZôuWTX" "ú‹Z" "ú‹KQ¯e" "'kôT³u" "^ÉbşV" "^SşVÉb"
+	"^ĞcÉb³u" "^KQ¯e" "Wlš»lN÷S" "sY^yiOm<SšN" "T†lesY^y®v„STX¯e" "¥Q‹snfïXb" "4lœgsY^yâl«ƒZ" "âlÌ‘›s" "âlşVªR¯e^y" "âl¯eyrZTX"
+	"âlĞc³u" "nfm^X‡^…m" "nfWôu‰v" "fmÄrUĞcšN" "nfĞcšN" "NY^t‚„¯e" "ïs|³u" "bS¯e³u" "ƒÉbÆušN"
+	"™lbS`" "qSïQ×‹" "¯eaSšN" "^X“^^tTX¯e" "^X	TĞcZ" "^X™„<SšN" "qSĞcšN" "aw.wKN^yîOnfú‹¯e" "0tS" "1WÍk¼`Lk"
+	"™lyr&OşV" "Ï‚?–—VÉb" "Ï‚›sªR¯e" "yrÆY>m¯eTXyr¯e" "ÖvšN" "ğS=O³l^y" "·VŒKQ)Ryr" "yrÌ‘ôušN"
+	"LNÉbú‹¯e" "æt“^³u" "ætm<SZ" "ôuú‹TX¯e" "Üw)RsY^y" "ôu3wşV¯e" "ôuaSâlTX" "ôu3wÔkLN¯e" "wm<h›R¯eKNñg"
+	"OœĞcZ"
+}
+
+army_names = {
+
+		",rkN›QâV0‰ísYr0"
+		",rÿ^›QâV0æt÷–)RšNôuKQyr)R0"
+		",rŒN›QâV0?–·V2Syr)R0"
+		",rŒN›QâV0eYäS¯eTX0"
+		",rAS›QâV0i—s|±0"
+		",rmQ›QâV0ôuKQyr)R0"
+		",rASÛV›QâV0i—s|±0"
+		",rkQ›QâV0eYäS¯eTX0"
+		",rASN›QâV0KQ³RÄršN0"
+		",rAS”N›QâV0?–âlÌ‘±)R¯e0"
+		",rAS	N›QâV0i—s|±0"
+		",rN›QâV0KQ³RÄršN0"
+		",r”N›QâV0?–Sp`S0"
+		",r”N›QâV0lšvQ˜0"
+		",rN›QâV0IN'Y)R0"
+		",rÛV›QâV0KQWÃW‰šN0"
+		",rASŒN›QâV0ÌRSs|±TX0"
+		",rmQ›QâV09ÉbTX0"
+		",rÛV›QâV0¯eGYĞcaS0"
+		",r	N›QâV0ØšbS0"
+		",rAS›QâV0V^tŒ‰¯e0"
+		",rÿ^ŒN›QâV0šN†SqS'Y0"
+		",r	N›QâV0fpQ<S R0"
+		",r	N›QâV0eYäS¯eTX0"
+		",rN›QâV0i—s|±0"
+		
+}
+
+
+fleet_names = {
+	"Wlš‰¹e0‚–" "WlšÉb‡e³u0‚–" "WlššN†SqSSS0‚–" "NR ˜0‚–" "åe3wüf0‚–" "Wlš)RÔkšN0‚–"
+	"Wlšid(„aS0‚–" "WlšùW—g‰šN0‚–" "WlšXoĞcaS0‚–" "Wlš?–¯eTXyr0‚–" "^·V÷–Ğcú‹œÆY0‚–"
+	"Wlš?–S?–SOaS0‚–" "WlšôTôTÌ‘KQÆY0‚–" "WlšÑy«ƒ0‚–" "Wlšîh!XaS0‚–" "Wlš¬‚<SşV0‚–"
+	"W¾<S0‚–	Xoú‹<SaS0‚–" "‰¯eKQÌ‘aS0‚–"
+}

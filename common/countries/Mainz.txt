@@ -1,0 +1,130 @@
+graphical_culture = westerngfx
+color = {
+  178
+  145
+  87
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  zhongqi_ideas
+  rongren_ideas
+  shenquan_ideas
+  religious_ideas
+  trade_ideas
+  defensive_ideas
+  economic_ideas
+  diplomatic_ideas
+  offensive_ideas
+  spy_ideas
+  quantity_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  austrian_white_coat
+  prussian_uhlan
+  austrian_jaeger
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "Anselm Kasimir #0" = 20
+  "Berthold #0" = 20
+  "Damian Hartrad #0" = 20
+  "Daniel Brendel #0" = 20
+  "Dieter #0" = 20
+  "Dietrich #0" = 20
+  "Emmerich Joseph #0" = 20
+  "Georg Friedrich #0" = 20
+  "Jakob #0" = 20
+  "Karl Heinrich #0" = 20
+  "Lothar Friedrich #0" = 20
+  "Philipp Karl #0" = 20
+  "Sebastian #0" = 20
+  "Uriel #0" = 20
+  "Wolfgang #0" = 20
+  "Siegfried #3" = 10
+  "Gerhard #2" = 10
+  "Werner #2" = 10
+  "Gottfried #0" = 0
+  "Hieronymus #0" = 0
+  "Markus #0" = 0
+  "Sylvia #0" = -1
+  "Wilhelmine #0" = -1
+  "Alexis #0" = -1
+  "ÉbeS #0" = 0  # Raphael #0
+  "KQÌ‘¯e‚„‰R #3" = 10  # Christian #3
+  "|V—V #1" = 15  # Peter #1
+  "lš‚„šN¯e #1" = 15  # Matthias #1
+  "ï·Vôu^ #1" = 15  # Ludwig #1
+  "wmàVÌ‘^ #3" = 10  # Heinrich #3
+  "mTXS Vg(ƒ #0" = 20  # Lothar Franz #0
+  "aSS ğleYYS #0" = 20  # Karl Theodor #0
+  "¦uğ ËeO›KQÈT·V #0" = 20  # Johann Schweikhard #0
+  "¦uğ òƒ)Rnf #0" = 20  # Johann Philipp #0
+  "¦uğ VÌ‘·VÌ‘^ aSS #0" = 20  # Johann Friedrich Karl #0
+  "¦uğ šNSV #0" = 20  # Johann Adam #0
+  "VÌ‘·VÌ‘^ aSS ¦umt+Y #0" = 20  # Friedrich Karl Joseph #0
+  "Vg(ƒ ï·Vôu^ #0" = 20  # Franz Ludwig #0
+  "‰R^XSÆY Vg(ƒ #0" = 20  # Anselm Franz #0
+  "¦uğ #1" = 20  # Johann #1
+  "?–S+Y #1" = 20  # Adolf #1
+  "·^Éb·V #2" = 20  # Konrad #2
+  "?–S^÷–^yr #1" = 40  # Albrecht #1
+}
+leader_names = {
+  "Alfter"
+  "Allendorf"
+  "Assmann"
+  "Barth"
+  "Becker"
+  "Betz"
+  "Bopp"
+  "Bornschlegel"
+  "Dörrenbecher"
+  "Dude"
+  "Fust"
+  "Eins"
+  "Göhler"
+  "Grob"
+  "Haas"
+  "wm·V<h"  # Heidelberger
+  "Ickstadt"
+  "Lawall"
+  "Pittschaft"
+  "Schmitt"
+  "3u<h"  # Schoeneberger
+  "Storck"
+  "Volz"
+}
+ship_names = {
+  "St. Theonest"
+  "St. Georg"
+  "St. Peter"
+  "Udenmünster"
+  "St. Christoph"
+  "St. Lambert"
+  "St. Quintin"
+  "St. Maria"
+  "1W¦uğ<S¯e"  # St. Johannes
+  "St. Emmeran"
+  "St. Ignaz"
+  "Hagenmünster"
+  "St. Aureus"
+  "St. Nicomedes"
+  "St. Alban"
+}
+army_names = {
+  "Erzbischofliche Garde"
+  "$PROVINCE$›Q"  # Armee von $PROVINCE$
+}

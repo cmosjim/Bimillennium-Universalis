@@ -1,0 +1,105 @@
+#3/6/2021 Mr27
+#土地兼并
+
+tudi_jianbing_disaster = {
+
+	potential = {
+		OR = {
+			tag = MNG
+			tag = DNM
+		}
+		has_country_modifier = huangmingzuxun
+	}
+	
+	can_start = {
+		has_any_disaster = no
+		has_reform = celestial_empire
+		NOT = { has_country_modifier = tudi_jianbing }
+		NOT = { has_country_modifier = fanfu_sutan }
+		NOT = { has_country_modifier = yi_tiao_bian_fa }
+	}
+	
+	can_stop = {
+		has_any_disaster = yes
+		NOT = { num_of_loans = 1 }
+		NOT = { corruption = 0.1 }
+		OR = {
+			has_country_modifier = fanfu_sutan
+			has_country_modifier = yi_tiao_bian_fa
+		}
+	}
+	
+	down_progress = {
+		factor = 0.5
+	}
+	
+	progress = {
+		#君主行政高可以减进度
+		modifier = {
+			factor = -1
+			NOT = { adm = 5 }
+		}
+		
+		#君主行政太低
+		modifier = {
+			factor = 3
+			NOT = { adm = 1 }
+		}
+		
+		#腐败高
+		modifier = {
+			factor = 5
+			corruption = 1
+		}
+		
+		#腐败低
+		modifier = {
+			factor = -1
+			NOT = { corruption = 0.1 }
+		}
+		
+		#自治度
+		modifier = {
+			factor = 1
+			average_autonomy = 30
+		}
+		
+		#过扩
+		modifier = {
+			factor = 1
+			overextension_percentage = 0.75
+		}
+		
+		#亲王阶级
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 50
+				}
+			}
+		}
+		
+		#教士阶级
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 50
+				}
+			}
+		}
+	}
+	
+	can_end = {
+        NOT = { has_reform = celestial_empire }
+	}
+	
+	modifier = {
+		global_unrest = 10
+	}
+	
+	on_start = MNG_events_namespace.2
+}

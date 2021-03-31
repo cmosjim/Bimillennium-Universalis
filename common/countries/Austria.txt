@@ -1,0 +1,245 @@
+graphical_culture = westerngfx
+color = {
+  220
+  220
+  220
+}
+revolutionary_colors = {
+  5
+  0
+  5
+}
+historical_score = 4400
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  influence_ideas
+  diplomatic_ideas
+  economic_ideas
+  defensive_ideas
+  religious_ideas
+  offensive_ideas
+  administrative_ideas
+  quality_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  austrian_white_coat
+  austrian_jaeger
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "›sKNšN #0" = -1  # Kunigunde #0
+  "OKNŽƒ‹v #0" = -1  # Maria #0
+  "TN‰RZ #0" = -1  # Elisabeth #0
+  "wm&OZ #0" = -1  # Joanna #0
+  "­‚­‚Éb #0" = -1  # Barbara #0
+  "‰RZ #0" = -1  # Eleanor #0
+  "^X‰‰ƒšN Œ…ZTX #0" = -1  # Anna #0
+  "›sKNšN ›s<h¾RZ #0" = -1  # Cecilia Renata  #0
+  "›sKNšN ›s<hKNyr #0" = -1  # Maria Magdalena #0
+  "lšKQ‰s|‰ƒ‰R®Y #0" = -1  # Maximiliane #0
+  "ætS^ R #0" = -1  # Walburga #0
+  "yr÷–Žƒ …Q‚„KQTX #0" = -1  # Theresa Benedicta #0
+  "¦uðZ #0" = -1  # Johanna #0
+  "›sKN ‰RXbæt<Syr #0" = -1  # Maria Antonia #0
+  "›sKNšN ¦umtÕl #0" = -1  # Maria Josepha #0
+  "›sKNšN ?–›s‰ƒZ #0" = -1  # Maria Amalia #0
+  "›sKNšN aSm3tZ #0" = -1  # Maria Carolina #0
+  "›sKNšN ‰RZ #0" = -1  # Maria Anna #0
+  "›sKNšN OKNŽƒ‹v #0" = -1  # Maria Elisabeth #0
+  "›sKNšN yrŒ…Žƒ #0" = -15  # Maria Theresia #0
+  "ƒlS+YˆQ #0" = 0  # Wolfgang #0
+  "ZÉ^ #0" = 0  # Wilhelm #0
+  "ôuKQY #0" = 0  # Viktor #0
+  "LNSÌ‘^ #0" = 0  # Ulrich #0
+  "¯eyráQ #0" = 0  # Stefan #0
+  "PŸ<hVÌ‘·V #0" = 0  # Siegfried #0
+  "eYXb #0" = 0  # Otto #0
+  "eY¯eaSS #0" = 0  # Oskar #0
+  "s|YÃWS #0" = 0  # Michael #0
+  "¦uS<h #0" = 0  # Jörg #0
+  "¦u?–^ÆY #0" = 0  # Joachim #0
+  "Å–T^ #0" = 0  # Jakob #0
+  "wmàVÌ‘^ #0" = 0  # Heinrich #0
+  "ˆQmt #0" = 0  # Günther #0
+  "<hÈT·V #0" = 0  # Gerhard #0
+  "VmÌ‘‰R #0" = 0  # Florian #0
+  "KQ±ƒè•¯e #0" = 0  # Clemens #0
+  "KQÌ‘¯eXb+Y #0" = 0  # Cristoph #0
+  "^œú‹ #0" = 0  # Bruno #0
+  ",gú‹ #0" = 0  # Benno #0
+  "?–SV÷–·V #0" = 0  # Alfred #0
+  "?–S+Y #0" = 0  # Adolf #0
+  "±ƒ³u #0" = 10  # Rainer #0
+  "ï·Vôu^ #0" = 10  # Ludwig #0
+  "¦uð #0" = 10  # Johann #0
+  "VgyQ aSS #0" = 10  # Franz Karl #0
+  "‰RN #0" = 10  # Anton #0
+  "šN†SqS'Y #0" = 10  # Alexander #0
+  "œS+Y #4" = 10  # Rudolf #4
+  ")ReYâl·V #7 ZÉ^" = 10  # Leopold #7 Wilhelm
+  "aSS #0 ¦umt+Y" = 15  # Karl #0 Joseph
+  "¦uð )ReYâl·V #0" = 15  # Johann Leopold #0
+  "¦uð aSS #0" = 15  # Johann Karl #0
+  "òƒ)Rnf #0" = 15  # Philipp #0
+  "<heYS<h #0" = 15  # Georg #0
+  "eêWS #0‡eVrS" = 15  # Ferdinand #0 Wenzel
+  "i`¯eyr #1" = 15  # Ernst #1
+  ")ReYâl·V #7¦uð" = 15  # Leopold #7 Johann
+  "lš‚„šN¯e #0" = 20  # Matthias #0
+  "Ébê¯eÉb+Y #0" = 20  # Ladislav #0
+  "Vg(ƒ #0 ¯eyráQ" = 20  # Franz #0 Stefan
+  "VÌ‘·VÌ‘^ #4" = 20  # Friedrich #4
+  ")ReYâl·V #7" = 20  # Leopold #7
+  "lšKQ‰s|)R‰R #0" = 40  # Maximilian #0
+  "aSS #0" = 40  # Karl #0
+  "¦umt+Y #0" = 40  # Joseph #0
+  "Vg(ƒ #0" = 40  # Franz #0
+  "?–S^÷–^yr #3" = 40  # Albrecht #3
+  "eêWS #0" = 60  # Ferdinand #0
+}
+leader_names = {
+  "¯Q ÈT^¯e!X"  # von Habsburg
+  "¯Q NS&O¯efW"  # von Waldstein
+  "¯Q 6wup"  # von Ihering
+  "i^XS"  # Seyssel
+  "¨NÆYÌ‘^"  # Haemrich
+  "¯Q ÃWËeyrÈTPŸ"  # von Esterhazy
+  "¯Q eY=O<h"  # von Oberg
+  "¯Q ™™i`!X"  # von Schönburg
+  "¯Q 8Yyr"  # von Quadt
+  "KQyr÷–S"  # Ketterer
+  "¯Q ¯eþV,gwk"  # von Stubenrauch
+  "¯Q ÈT(ƒòƒS·V"  # von Hatzfeldt
+  "¯Q HYnfS<h"  # von Neippberg
+  "m^Ñyôu(ƒ"  # Lobkowitz
+  "s|yrSôTk"  # Mittelbach
+  "¯Q ³RN"  # von Laudon
+  "?–S‡e(ƒúW"  # Alvintzky
+  "¯Q —i`!X"  # von Hohenberg
+  "„SS¦žS"  # Erlmayr
+  "¯Q òSTXKQ"  # von Stark
+  "ÈàVS"  # Meinl
+  "yrüf"  # Bethmann
+  "Ñy—g"  # Kolin
+  "wmàVÌ‘^"  # Heinrich
+  "¯Q Ng·V^X"  # von Riedesel
+  "V÷–ËeTXyr"  # Freystadt
+  "¯Q <hÕn!X"  # von Guttenberg
+  "VpQPŸ(ƒ"  # Frantsits
+  "¯Q Ëev–¬‚<h"  # von Stauffenberg
+  "¯Q aSnf¬‚<h"  # von Kapfenberg
+  "NbKQm+Y¯eúW"  # Zakrzewsky
+  "ËeT·VS"  # Schrüder
+  "0tSNb^+Y"  # Sauerzapff
+  "s|ªRGY"  # Minucci
+  "Ï‚±ƒSNm(ƒúW"  # Sulerzycki
+  "Ëe‚„GYËeðlàV"  # Stichsenstein
+  "ÈT<hYi`"  # Hagedorn
+  "Œ‚&O=O<h"  # Arenberg
+  "ZSWôuGY"  # Boroewitsch
+  "Ëeðl<h"  # Steiger
+  "ðl<hXb+Y"  # Tegethoff
+  "^^XKQ"  # Buseck
+  "+R%m¯eúW"  # Byszynski
+  "(ƒZ<h"  # Zwerger
+  "aS¯e^"  # Casper
+  "¯Q 3u^&O"  # von Schönbrunn
+  "âlS"  # Poll
+  "¯Q Ëeæt‘S<h"  # von Schwarzenberg
+}
+ship_names = {
+  "âVÓuKN›R"  # Viribus Unitis
+  "yrŒ…‰šN"  # Theresia
+  "eY0W)R"  # Austria
+  "ÈT^¯e!X"  # Habsburg
+  "‚„WS"  # Tirol
+  "^œKQ7u5r"  # Baron Bruck
+  "wS7u5r"  # Baron Call
+  "Sæ—·V÷–"  # Belvedre
+  "Xoú‹<SšN"  # Pannonia
+  "(„SßRk"  # Salzach
+  "ôumN³u"  # Wien
+  "nf¯eTXýl"  # Pustazer
+  "yr±ƒîh"  # Traisen
+  "9êWS·V'YlQ"  # Erzherzog Ferdinand
+  "kÉbKQÒR¯e"  # Herkules
+  "ÉbÑylš"  # Lacroma
+  "yrÌ‘¯eyr"  # Triest
+  "…Šgô"  # Plus Ultra
+  "'kå‚Éb"  # Aurora
+  "áO)YÁ"  # Albatros
+  "^XO¾"  # Saida
+  "ú‹ætÉb"  # Novara
+  "‡v^"  # Imperator
+  "	NMONSO"  # Trinitas
+  "ÌS4Ypž"  # Doppeladler
+  "1WòS‚„¬‚"  # Sankt Stephan
+  "òƒ)RKQ¯e"  # Felix
+  "eY0W)R‡v^"  # Austria Imperare
+  "‘œ|œ"  # Lachs
+  "±ƒTX"  # Leitha
+  "Lk)RšN"  # Goliath
+  "ÂSYR"  # Samson
+  "ôuý=O³u"  # Vindobona
+  "N&P"  # Inexhaustus
+  "àeÈa"  # Invulnerabilis
+  "^ôu¾œ¯e"  # Pavidarus
+  "y‚„TX¯e"  # Fortitas
+  "ÃWè•‚„LN¯e"  # Emenentius
+  "1WƒlS+YˆQ"  # Sankt Wolfgang
+  "ôu	TÉb‚„šN"  # Vigilatia
+  "wm%ž"  # Möwe
+  "áOðNN^g"  # Fides et Spes
+  "4l–Y"  # Nixe
+  "ÒkÇ†"  # Natter
+  "sY^y"  # Nymphe
+  "Ñ‘irµ^"  # Taurus
+  "›s)RšNyrŒ…ŽƒsY‡v"  # Kaiserin Maria Theresia
+  "ætjŒ"  # Wachau
+  "YYt"  # Donau
+  "R‘†™"  # Inn
+  "—g·Vk†"  # Lindwurm
+  "îhTX"  # Zenta
+  "NbÉb"  # Zara
+  "–ÆY"  # Fiume
+  "?–^·V"  # Arpad
+  "ôT,g!X"  # Babenberg
+  "yQÌ‘<S"  # Zrinyi
+  "âlÉb"  # Pola
+  "wN†"  # Tiger
+  "ž^¯eÒR"  # Panther
+  "syŒ"  # Leopard
+  "²NkS"  # Trabant
+  "kSf"  # Satellit
+}
+army_names = {
+  "eYS›Q"  # K.u.K Armee
+  "ÈT^¯e!X›QâV"  # Habsburgische Armee
+  "^ýV›QâV"  # Kaiserliche Armee
+  "âl‰s|šN›QâV"  # Armee von Böhmen
+  "SYr)R›QâV"  # Armee von Ungarn
+  "a'Y)R›QâV"  # Armee von Italien
+  "‰Ì‘‰šN›QâV"  # Armee von Schlesien
+  "$PROVINCE$›Q"  # Armee von $PROVINCE$
+}
+fleet_names = {
+  "šN—VÌ‘šNwm0‚–"  # Adriatik Flotte
+  "ÈT^¯e!X0‚–"  # Habsburgische Flotte
+  "^ýV0‚–"  # Kaiserliche Flotte
+}

@@ -1,0 +1,62 @@
+zeus_god = {
+	global_missionary_strength = 0.02
+	stability_cost_modifier = -0.1
+}
+
+hera_god = {
+	may_recruit_female_generals = yes
+	global_manpower_modifier = 0.2
+}
+
+poseidon_god = {
+	naval_morale = 0.1
+        	global_trade_goods_size_modifier = 0.05
+}
+
+demeter_god = {
+	development_cost = -0.1
+	production_efficiency = 0.1
+}
+
+athena_god = {
+	land_morale = 0.05
+	idea_cost = -0.05
+	global_autonomy = -0.05
+}
+
+apollo_god = {
+	diplomatic_reputation = 1
+	technology_cost = -0.1
+	global_institution_spread = 0.2
+}
+
+artemis_god = {
+	cavalry_power = 0.2
+	land_attrition = -0.1
+}
+
+ares_god = {
+	discipline = 0.05
+	war_exhaustion = -0.05
+}
+
+aphrodite_god = {
+	heir_chance = 0.25
+        	improve_relation_modifier = 0.2
+}
+
+hephaestus_god = {
+	global_regiment_cost = -0.1
+	reinforce_speed = 0.2
+}
+
+hermes_god = {
+	merchants = 1
+	diplomats = 1
+}
+
+hestia_god = {
+	global_unrest = -1
+	manpower_recovery_speed = 0.25
+}
+

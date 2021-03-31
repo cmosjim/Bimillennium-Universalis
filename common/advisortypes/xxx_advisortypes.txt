@@ -1,0 +1,46 @@
+
+chiang_kai_shek = {
+	monarch_power = MIL
+	# Bonus
+    land_morale = 0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+he_yingqin = {
+	monarch_power = MIL
+	# Bonus
+    land_attrition = -0.5
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+yue_fei = {
+	monarch_power = MIL
+	# Bonus
+    land_morale = 0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

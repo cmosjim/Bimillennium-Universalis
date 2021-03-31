@@ -1,0 +1,41 @@
+VKE_ideas = {
+	start = {
+		global_sailors_modifier = 0.25
+		galley_power = 0.2
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = VKE
+	}
+	free = yes
+	
+	VKE_viking_raids = {
+		capture_ship_chance = 0.15
+		naval_morale = 0.15
+	}
+	VKE_norse_exploration = {
+		range = 0.4
+		global_colonial_growth = 10
+	}
+	VKE_norse_colonization = {
+		colonists = 1
+		may_explore = yes
+	}
+	VKE_adopt_feudal_system = {
+		production_efficiency = 0.10
+		prestige_decay = -0.01
+	}
+	VKE_valhalla_awaits = {
+		land_morale = 0.15
+	}
+	VKE_fishing_norse = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	VKE_implement_hogting = {
+		state_governing_cost = -0.15
+	}
+}

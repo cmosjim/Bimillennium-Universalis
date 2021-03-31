@@ -1,0 +1,68 @@
+#2018.11.20 finish check 1.25 to 1.27
+wangmang_disaster = {
+	potential = {
+		tag = NEW
+	}
+
+	can_start = {
+		has_any_disaster = no
+		OR = {
+			has_ruler = "‹sËƒ"
+			has_country_flag = flg_wangmong_reform
+		}	
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			NOT = { has_country_flag = flg_wangmong_reform }
+		}
+	}
+
+	progress = {
+		modifier = {
+			factor = 2.78
+			has_country_flag = flg_wangmong_reform
+			exists = ZZ2
+		}
+	}
+	
+	can_end = {
+		NOT = { has_country_flag = flg_wangmong_reform }
+	}
+	modifier = {
+			global_unrest = 3
+			stability_cost_modifier = 0.1
+	}
+	on_start = wangmang_dis.100 # 
+
+	on_end = wangmang_dis.200 # should occur on can_end delete flg_wangmong_reform flg 
+	
+	on_monthly = {
+		events = {
+		}	
+		random_events = {
+			1000 = 0
+			50 = wangmang_dis.1
+			50 = wangmang_dis.2
+			50 = wangmang_dis.3
+			50 = wangmang_dis.4
+			50 = wangmang_dis.5
+			50 = wangmang_dis.6
+			50 = wangmang_dis.7
+			50 = wangmang_dis.8
+			50 = wangmang_dis.9
+			50 = wangmang_dis.10
+			50 = wangmang_dis.11
+			50 = wangmang_dis.12
+			50 = wangmang_dis.13
+			50 = wangmang_dis.14
+			50 = wangmang_dis.15
+			50 = wangmang_dis.16
+			50 = wangmang_dis.17
+			50 = wangmang_dis.18		
+			50 = wangmang_dis.19
+
+		}
+	}
+}

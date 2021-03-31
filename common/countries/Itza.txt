@@ -1,0 +1,214 @@
+graphical_culture = southamericagfx
+color = {
+  94
+  236
+  191
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  zhongqi_ideas
+  rongren_ideas
+  shenquan_ideas
+  religious_ideas
+  defensive_ideas
+  offensive_ideas
+  maritime_ideas
+  trade_ideas
+  spy_ideas
+  diplomatic_ideas
+  economic_ideas
+}
+historical_units = {
+  mesoamerican_spearmen
+  central_american_horsemen
+  maya_tribal_warfare
+  maya_forest_warfare
+  maya_gunpowder_warfare
+  westernized_mayan
+  maya_guerilla_warfare
+}
+leader_names = {
+  "?ñ—ë0tKQ"  # Ahkinxoc
+  "?ñ¶ûTXNWì^S"  # Ahmetakkukul
+  "?ñÿûKQ"  # Ahmok
+  "?ñ≥uì^—yiO"  # Ahnakukpech
+  "?ñ·lnf ?ñGY"  # Ahpop-Achi
+  "?ñ…b≥u"  # Arana
+  "ÙTNW"  # Bakan
+  "ÙTpQ∆Y"  # Balam
+  "ZSS"  # Bor
+  "NW<SKQ"  # Canek
+  "ÔQeY=O"  # Chaob
+  "Âg∆Y"  # Chiam
+  "»T™RO<h"  # Hnuyg
+  "aS¶u∆Y"  # Kayom
+  "˙Wóg"  # KÌin
+  "‰S‰SõsyQ"  # Kukumatz
+  "´ÉﬂRì^eY"  # Mochcouoh
+  "≥uÂgNW"  # Nachancan
+  "˙ãóÂg¶u∆Y"  # Nohochacyum
+  "^aSS"  # Pacal
+  "NY˝l ÙTpQ∆Y"  # Quitze Balam
+  "yrì^™R¸f"  # Tecunuman
+  "ÊtTXvQ"  # Vataki
+  "¶ulöaSØe"  # Yumcaax
+  "POyQ"  # Zotz
+}
+monarch_names = {
+  "Cotuja #0" = 0
+  "Gucamatz #0" = 0
+  "Hnuyg #0" = 0
+  "Kan Bahlun Mo #0" = 0
+  "Kayom #0" = 0
+  "Kukumatz #0" = 0
+  "Mochcouoh #0" = 0
+  "Nohochacyum #0" = 0
+  "Oxib Queh #0" = 0
+  "Tecunuman #0" = 0
+  "Tutul Xiu #0" = 0
+  "Tziquin #0" = 0
+  "Vataki #0" = 0
+  "Yumcaaz #0" = 0
+  "Zotz #0" = 0
+  "Sacnite #0" = -1
+  "Namox Chel #0" = -1
+  "Itzel  #0" = -1
+  "w≥uâV #0" = 0  # Conache #0
+  "w«R≈ñ #0" = 0  # Cocoja #0
+  "«RÔQ^ #0" = 0  # Cocaib #0
+  "ZSS #0" = 0  # Bor #0
+  "ÙTNW #0" = 0  # Bakan #0
+  "?ñ…b≥u #0" = 0  # Arana #0
+  "?ñ·lnf ?ñGY #0" = 0  # Ahpop-Achi #0
+  "?ñÿûKQ #0" = 0  # Ahmok #0
+  "?ñ—ë0tKQ #0" = 0  # Ahkinxok #0
+  "?ñ NW #0" = 0  # Ah Can #0
+  "≈ñKQØe ^KQ #1" = 10  # Yax Pac #1
+  "≈ñKQØe ì^KQ ÿûKQ #1" = 10  # Yax Kuk Mok #1
+  "NW SS #1" = 10  # Kan Boar #1
+  "ÂgâR FzâR #1" = 10  # Chaan Muan #1
+  "ÙTyQ ÂgâR #1" = 10  # Butz Chan #1
+  "öNKQÓh ÙT…b∆Y #1" = 15  # Yaxum Balam #1
+  "^aSS ÙT…b∆Y #1" = 15  # Pacal Balam #1
+  "ì^ √WKQØe #1" = 15  # Cu Ix #1
+  "Âg∆Y ÙT&O #1" = 15  # Cham Bahlun #1
+  "?ñ aSaSeY #1" = 15  # Ah Cacao #1
+  "ÊtNbvQ aS∆Y #0" = 20  # Vahxaqui Caam #0
+  "^aSS #1" = 20  # Pacal #1
+  "—y—y∆Y #1" = 20  # Cocom #1
+  "ÙTpQ∆Y NY˝l #0" = 20  # Balam Quitze #0
+  "NW åÇKQ #0" = 60  # Can Ek #0
+}
+ship_names = {
+  "AkÈ"
+  "Ah Puch"
+  "Altun Ha"
+  "Bonampak"
+  "Becan"
+  "Bolonchen"
+  "Chaac"
+  "Camazotz"
+  "CancuÈn"
+  "Caracol"
+  "Cerros"
+  "Chacchoben"
+  "Chacmultun"
+  "Chinikiha"
+  "Chinkultic"
+  "Chunchucmil"
+  "Civiltuk"
+  "Calakmul"
+  "Copan"
+  "Coba"
+  "Chichen Itza"
+  "Dzibilchaltun"
+  "Dzibilnocac"
+  "Dzilam"
+  "Dos Pilas"
+  "Cahal Pech"
+  "Edzn·"
+  "Ekab"
+  "Ek'Balam"
+  "Gumarcaj"
+  "Gucumatz"
+  "Hocchob"
+  "Hormiguero"
+  "Hunahpu"
+  "Huracan"
+  "Ixbalanque"
+  "Ixchel"
+  "Ixtab"
+  "Ichmac"
+  "Ichmul"
+  "Itzan"
+  "Ixil"
+  "Iximche"
+  "Ixlu"
+  "Izamal"
+  "Ix Chel"
+  "Labn·"
+  "Louisville"
+  "Lubaantun"
+  "Lubaantun"
+  "Jaina"
+  "Jolja"
+  "Joya de CerÈn"
+  "Kaminaljuyu"
+  "Kabah"
+  "Kiuic"
+  "Kantunil Kin"
+  "Lamanai"
+  "Mayapan"
+  "Machaquila"
+  "Mani"
+  "Muluchtzekel"
+  "Muyil"
+  "Nakum"
+  "Nakbe"
+  "Naranjo"
+  "Nebaj"
+  "Nim Li Punit"
+  "Okop"
+  "Oxcutzcab"
+  "Oxkintok"
+  "Palenque"
+  "Pomon·"
+  "Pusilha"
+  "Piedras Negras"
+  "Quirigua"
+  "Rio Azul"
+  "Rio Bec"
+  "Sayil"
+  "Seibal"
+  "Sisila"
+  "Tonina"
+  "Tikal"
+  "Tulum"
+  "Tancah"
+  "Tazumal"
+  "Tecoh"
+  "TopoxtÈ"
+  "Uxmal"
+  "Uaxactun"
+  "Ucanal"
+  "Uci"
+  "Utatlan"
+  "Wak·"
+  "Xcalumkin"
+  "Xcaret"
+  "Xcorralche"
+  "Xcucsuc"
+  "Xculoc"
+  "Xlapak"
+  "Xpuhil"
+  "Xultun"
+  "Xunantunich"
+  "Yaklmai"
+  "Yaxchilan"
+  "Yaxha"
+  "Yo'okop"
+  "Zipacna"
+  "Zaculeu"
+}

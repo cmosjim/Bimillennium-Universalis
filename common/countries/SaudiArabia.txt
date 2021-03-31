@@ -1,0 +1,124 @@
+graphical_culture = muslimgfx
+color = {
+  0
+  128
+  53
+}
+historical_idea_groups = {
+  early_religious_ideas
+  early_trade_ideas
+  early_mil_ideas
+  early_adm_ideas
+  xingjun_ideas
+  zhongqi_ideas
+  qianyi_ideas
+  kaituo_ideas
+  defensive_ideas
+  offensive_ideas
+  administrative_ideas
+  economic_ideas
+  trade_ideas
+  religious_ideas
+  diplomatic_ideas
+  spy_ideas
+}
+historical_units = {
+  mamluk_archer
+  muslim_cavalry_archers
+  mamluk_duel
+  mamluk_musket_charge
+  muslim_mass_infantry
+  muslim_dragoon
+  ali_bey_reformed_infantry
+}
+monarch_names = {
+  "Âg^S #0" = 10  # Zahir #0
+  "Êt^∑V #0" = 10  # Wahid #0
+  "TX»T #0" = 10  # Tahar #0
+  "^XkçS #0" = 10  # Sakhr #0
+  "(ÑÚÉ #0" = 10  # Safi #0
+  "…b^∑V #0" = 10  # RashÓd #0
+  "…b^∆Y #0" = 10  # Rahim #0
+  "˜ñ^∑V 30" = 10  # Rachid #0
+  "aSâ∆Y #0" = 10  # Qasim #0
+  "≥u	T^ #0" = 10  # Najib #0
+  "ÿûèyÍè #0" = 10  # Moufdi #0
+  "s|bS∑V #0" = 10  # Miloud #0
+  "lö)RKQ #0" = 10  # Malek #0
+  "lökçèy #0" = 10  # Mahfoud #0
+  "…bkçæèS #0" = 10  # Lakhdar #0
+  "aSyr=O #0" = 10  # Kateb #0
+  "1gHY∑V #0" = 10  # Junayd #0
+  ">ç»è“R #0" = 10  # Jamal #0
+  ">çÙTS #0" = 10  # Jabbar #0
+  "·wØe<S #0" = 10  # Hosni #0
+  "»T^∆Y #0" = 10  # Hashim #0
+  "»TQh #0" = 10  # Hasan #0
+  "wmæèS #0" = 10  # Haidar #0
+  "’lÃëØe #0" = 10  # Faris #0
+  "æèLN∑V #0" = 10  # Dawud #0
+  "ÙT^S" = 10  # Basir #0
+  "ÙT…baSyr #0" = 10  # Barakat #0
+  "?ñ…b∆Y #0" = 10  # Ahlam #0
+  "?ñjSjgaSÍèS #0" = 10  # Abdelkader #0
+  "öN<hFz…bØe #0" = 10  # Yaghmuras‚n #0
+  "eYØe¸f #0" = 10  # Uthm‚n #0
+  "^X)R∆Y #0" = 10  # Selim #0
+  "O.tèy #0" = 10  # Y˚suf #0
+  "LNõsS #0" = 10  # 'Umar #0
+  "Fz(Ñ #0" = 10  # M˚s‚ #0
+  "?ñjSjg“R #0" = 10  # Abdul #0
+  "?ñjSjg…b #0" = 20  # Abdull‚h #0
+  "FzØeTX’l #0" = 10  # Mustafa #0
+  "fjS…b1k #0" = 10  # Ibrahim #0
+  "ØOiç‡V #0" = 10  # Husayn #0
+  "åÇ»T»è∑V #0" = 10  # Ahmed #0
+  "?ñÃë #0" = 10  # Ali #0
+  "FzUÿû∑V #0" = 30  # Mohammed #0
+}
+leader_names = {
+  "^X“Rs|"  # Selmi
+  "?ñlö…b"  # Amara
+  "‘k»TS"  # Behar
+  "O±ÉØe"  # Ilaes
+  "Ìs	T<S"  # Benzine
+  "O(Ñ∑V"  # Essaid
+  "»TyQ<S"  # Hacini
+  ",g∞R"  # Benzai
+  "^pg∑V…b"  # Boudjedra
+  "pgÙT…b"  # Djaballah
+  ">çyr"  # Djaout
+  "∑V6wÙT"  # Djebar
+  "9ç≥Ri`"  # Feraoun
+  "kçs|æè"  # Hmida
+  "ÔQSaSS"  # Kelkal
+  "löæè<S"  # Madani
+  "lö)RKQ"  # Malek
+  "Öh…b"  # Merah
+  "s|Fz<S"  # Mimouni
+  "FzØeTX†RHY∆Y"  # Mostaghanemi
+  "(ÑÍè"  # Sadi
+  "˝lÅú?ñS"  # Zeroual
+}
+ship_names = {
+  "?ñ’à<S0W"  # Aljuneid
+  "¸fœÇS eYlöS"  # Mansur Umar
+  "NbayQ"  # Zaizz
+  "Nb‘k∑V"  # Zabid
+  "FzNb’lS O.tèy"  # Muzaffar Yusuf
+  "lö)RKQ Fz≈ñkç∑V"  # Malik al-Mujahid
+  "0åkç eYØe¸f"  # Shaykh Uthman
+  "?ñ“RaSÊtóV"  # Al-Kawd
+  "Êt»TGY…b"  # Whaqra
+  "ÊtÍèÙT±ê"  # Wadi Bana
+  "TXOyQ"  # Ta'izz
+  "?ñTXW‘b"  # At-Tubah
+  "∑V»TÙT∑V"  # Dhubab
+  "öNÙTS »T…bìh"  # Jabal Kharaz
+  "Fz(ÑOS"  # Musaymir
+  "löÙuöN"  # Mawiyah
+  "pg‹b“R ?ñ»T(Ñ"  # Jabal al-Hasha
+  "OjS"  # Ibb
+  "˙WTXÙT"  # Qa'tabah
+  "pg‹b“R TXõsS"  # Jabal Thamar
+}

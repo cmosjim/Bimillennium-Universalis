@@ -1,0 +1,76 @@
+#l_english:
+# HZZ_ideas:0 "汉赵理念"
+# HZZ_ideas_start:0 "汉赵传统"
+# HZZ_ideas_bonus:0 "汉赵野心"
+# sanzuwuzong:0 "三祖五宗"
+# sanzuwuzong_desc:0 "我太祖光文皇帝刘渊曾设汉高祖刘邦、汉世祖刘秀、汉昭烈帝刘备、汉文帝刘恒、汉武帝刘彻、汉宣帝刘询、汉明帝刘庄和汉章帝刘炟等八位西汉、东汉和蜀汉皇帝的牌位，尊前三者为三祖，后五者为五宗。是为汉室正统。"
+# han_fuxing:0 "大汉复兴"
+# han_fuxing_desc:0 "昔我太祖高皇帝以神武应期，廓开大业。太宗孝文皇帝重以明德，升平汉道。世宗孝武皇帝拓土攘夷，地过唐日。中宗孝宣皇帝搜扬俊乂，多士盈朝。是我祖宗道迈三王，功高五帝，故卜年倍于夏商，卜世过于姬氏。而后王莽乱政，董卓猖勃，曹操父子凶逆相寻，致使皇纲渐颓，天步艰难，国统频绝。纵使我昭烈帝雄才大略，何图天未悔祸，后帝窘辱。自社稷沦丧，宗庙之不血食四十年于兹矣。今天诱其衷，悔祸皇汉，使司马氏父子兄弟迭相残灭。黎庶涂炭，靡所控告。孤今猥为群公所推，绍修三祖之业。顾兹尫暗，战惶靡厝。但以大耻未雪，社稷无主，衔胆栖冰，勉从群议。"
+# yidang_jinshi:0 "一当晋十"
+# yidang_jinshi_desc:0 "当为崇冈峻阜，何能为培塿乎！夫帝王岂有常哉，大禹出于西戎，文王生于东夷，顾惟德所授耳。今见众十余万，皆一当晋十，鼓行而摧乱晋，犹拉枯耳。上可成汉高之业，下不失为魏氏。"
+# renshan:0 "仁善之君"
+# renshan_desc:0 "我太祖光文皇帝刘渊虽然顺应天时，率领匈奴各部族起兵反晋，但对其部众的暴行没有任何容忍。任何对百姓的烧杀抢掠都会被处以重罚。是真正的仁义之师。"
+# guanzhong_land:0 "关中平原"
+# guanzhong_land_desc:0 "汉赵占据的关中平原是中国的经济重心，自秦汉以来的政治中心，乃兵家必争之地。"
+# wenwushuangquan:0 "文武双全"
+# wenwushuangquan_desc:0 "我太祖光文皇帝刘渊能文善武，天纵之才。晋武帝司马炎赞曰：刘元海容仪机鉴，虽由余、日磾无以加也。"
+# zhongjie_xijin:0 "终结西晋"
+# zhongjie_xijin_desc:0 "烈宗昭武皇帝刘聪命刘曜攻克长安，并生擒晋愍帝司马邺。后于平阳将其赐死。自此西晋灭亡。"
+ 
+ HZZ_ideas = {
+	start = {
+		discipline = 0.10
+		army_tradition = 2
+	}
+	bonus = {
+		governing_capacity_modifier = 0.20
+	}
+	
+	trigger = {
+		OR = { 
+			tag = ZA2
+			AND = {
+				tag = HZZ
+				has_country_flag = hanshizhongxing
+			}
+		}	
+	}
+
+	free = yes
+	
+	#三祖五宗
+	sanzuwuzong = {
+		diplomatic_reputation = 1
+		prestige = 1
+	}
+	#大汉复兴
+	han_fuxing = {
+		land_morale = 0.2
+		core_creation = -0.2
+	}
+	#一当晋十
+	yidang_jinshi = {
+		leader_land_shock = 2
+		shock_damage = 0.30
+	}
+	#仁善之君
+	renshan = {
+		global_unrest = -2
+		ae_impact = -0.2
+	}
+	#关中平原
+	guanzhong_land = {
+		global_manpower_modifier = 0.2
+		production_efficiency = 0.2
+	}
+	#文武双全
+	wenwushuangquan = {
+		country_admin_power = 1
+		monarch_military_power = 2
+	}
+	#终结西晋
+	zhongjie_xijin = {
+		years_of_nationalism = -5
+		siege_ability = 0.2
+	}
+}

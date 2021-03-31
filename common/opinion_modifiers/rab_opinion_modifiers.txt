@@ -1,0 +1,171 @@
+##############
+# RAB_ ADD
+##############
+duhufu_is_hegemon = {
+	opinion = 120
+}
+
+opinion_good_friend = {
+	opinion = 150
+	yearly_decay = 1
+}	
+
+shen_liu_alliance = {
+	opinion = 200
+	yearly_decay = 1
+}	
+#王保保對於大元的態度
+
+ZH2_att_YUA = {
+	opinion = 200
+}
+
+refuse_navy_base = {
+	opinion = -200
+	yearly_decay = 1
+}
+is_duhufu_state = {
+	opinion = 50
+}
+op_same_enemy_atwar = {
+	opinion = 200
+	yearly_decay = 0.1
+}
+op_HND_email_insult = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+op_HND_email_agree = {
+	opinion = 100
+	yearly_decay = 2
+}
+op_vassal_betray = {
+	opinion = -100
+	yearly_decay = 1
+}
+op_HND_LIL_HATE = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+op_HND_DOG_HATE = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+op_kill_TGG_support = { 
+	opinion = 100
+	yearly_decay = 2
+	max = 100
+}
+op_kill_Father = { 
+	opinion = -150
+	yearly_decay = 2
+}
+
+op_enemy_kill_TGG_support = {
+	opinion = -100
+	yearly_decay = 2
+	max = -100
+}
+
+op_fight_togher = {
+	opinion = 25
+	yearly_decay = 2
+	max = 50
+}
+op_culture_togher = {
+	opinion = 25
+	max = 50
+}
+op_refuse_fight_togher = {
+	opinion = -25
+	yearly_decay = 2
+	max = -50
+}
+
+op_refuse_togher_me = {
+	opinion = 25
+	yearly_decay = 2
+	max = 50
+}
+
+#给予武器特产+mil
+#给予奇珍异兽+dip
+#给予香料兽皮轻裘+adm
+###############(root = celestial)###############
+op_tribute_appreciate = {
+	opinion = 40
+	yearly_decay = 2
+	max = 60
+}
+
+op_tribute_normal = {
+	opinion = 30
+	yearly_decay = 2
+	max = 60
+}
+
+
+#朝贡国主动朝贡之后 东方大国拒绝之后东方大国对朝贡国的opinion(root = celestial)
+op_tribute_celestial_refuse = {
+	opinion = -10
+	yearly_decay = 1
+}
+
+#天朝要求朝贡，朝贡国拒绝(root = celestial) 
+op_tribute_celestial_be_refuse = {
+	opinion = -30
+	yearly_decay = 1
+}
+
+###朝贡国对东方大国 产生的opinion
+###op_positive_tribute_normal : 朝贡国主动/被动朝贡之后 东方大国接受普通朝贡之后 朝贡国对东方大国 产生的opinion
+###op_positive_tribute_appreciate : 朝贡国主动/被动朝贡之后 东方大国接受超激朝贡之后 朝贡国对东方大国 产生的opinion
+###op_tribute_refuse : 朝贡国主动朝贡之后 东方大国拒绝之后 朝贡国对东方大国的opinion
+###op_tribute_refuse_request : 朝贡国被动的 结果朝贡国拒绝 ，朝贡国 对 东方大国 产生的opinion
+###东方大国对朝贡国 产生的opinion
+###op_tribute_normal: 朝贡国主动/被动朝贡之后 东方大国接受普通朝贡之后 东方大国对朝贡国 产生的opinion
+###op_tribute_appreciate : 朝贡国主动/被动朝贡之后 东方大国接受超激朝贡之后 东方大国对朝贡国 产生的opinion
+###op_tribute_celestial_refuse : 朝贡国主动朝贡之后 东方大国拒绝之后东方大国对朝贡国的opinion
+###op_tribute_celestial_be_refuse : 朝贡国被动的 结果朝贡国拒绝 ，东方大国对朝贡国 产生的opinion
+
+#############################
+
+
+#天朝不给朝贡(root = 朝贡国)
+op_tribute_refuse = {
+	opinion = -30
+	yearly_decay = 1
+}
+
+#天朝要朝贡 朝贡国拒绝(root = 朝贡国)
+op_tribute_refuse_request = {
+	opinion = -10
+	yearly_decay = 1
+}
+
+#POSITIVE MEANS WHICH NATIONS POSITIVE TO TRIBUTE.(root = 朝贡国)
+op_positive_tribute_appreciate = {
+	opinion = 30
+	yearly_decay = 1	
+	max = 60
+}
+#POSITIVE MEANS WHICH NATIONS POSITIVE TO TRIBUTE.(root = 朝贡国)
+op_positive_tribute_normal = {
+	opinion = 20
+	yearly_decay = 1	
+	max = 40
+}
+#汉贼不两立
+op_han_hate = {
+	opinion = -50
+}
+op_kill_hu_hate = {
+	opinion = -100
+}
+#远房亲戚之渊源
+op_relation_source = {
+	opinion = 280
+}

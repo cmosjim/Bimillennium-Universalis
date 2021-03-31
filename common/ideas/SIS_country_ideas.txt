@@ -1,0 +1,35 @@
+SIS_ideas = {
+	start = {
+		shock_damage_received = -0.1
+		infantry_cost = -0.1
+	}
+	bonus = {
+		infantry_power = 0.1
+	}
+	trigger = {
+		tag = SIS
+	}
+	free = yes
+	
+	sis_lake_hamun = {
+		production_efficiency = 0.1
+	}
+	sis_saffarid_legacy = {
+		prestige = 1
+	}
+	sis_subjugation_of_tribes = {
+		global_autonomy = -0.05
+	}
+	sis_loyal_service = {
+		army_tradition = 0.5
+	}
+	sis_overland_trade_routes = {
+		global_own_trade_power = 0.1
+	}
+	sis_chronicles_of_sistan = {
+		legitimacy = 1
+	}
+	sis_scholars_of_sistan = {
+		global_institution_spread = 0.1
+	}
+}

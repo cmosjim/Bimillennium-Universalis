@@ -1,0 +1,1721 @@
+#2021-02-06 xy add celestial_empire_guanliao
+gov_celestial_empire = {
+	reform_levels = {
+		celestial_empire_level_0_develop = {
+			reforms = {
+				celestial_empire
+				tribal_despotism
+				celestial_empire_guanliao			 
+			}
+		}
+		#zhilitixi_reform = {
+		#	reforms = {
+		#		china_guanliaozhi
+		#		fengjianzhi
+		#		shanghuizhi
+		#		junquzhi
+		#		modernguanliaozhi
+		#	}
+		#}
+		early_reform_level_1 = { 
+			reforms = { 
+				early_cn_gov_reform_1 
+				early_cn_gov_reform_1b 
+			} 
+		}
+		early_reform_level_2 = { reforms = { early_cn_gov_reform_2 early_cn_gov_reform_2b } }
+		early_reform_level_3 = { reforms = { early_cn_gov_reform_3 early_cn_gov_reform_3b } }
+		early_reform_level_4 = { reforms = { early_cn_gov_reform_4 early_cn_gov_reform_4b } }
+		early_reform_level_5 = { reforms = { early_cn_gov_reform_5 early_cn_gov_reform_5b early_gov_reform_5c } }
+		early_reform_level_6 = { reforms = { early_cn_gov_reform_6 early_cn_gov_reform_6b early_gov_reform_6c } }
+		early_reform_level_7 = { reforms = { early_cn_gov_reform_7 early_cn_gov_reform_7b } }
+		early_reform_level_8 = { reforms = { early_cn_gov_reform_8 early_cn_gov_reform_8b } }
+		early_reform_level_9 = { reforms = { early_cn_gov_reform_9 early_cn_gov_reform_9b } }
+		early_reform_level_10 = { reforms = { early_cn_gov_reform_10 early_cn_gov_reform_10b } }		
+		#遠交近攻
+		celestial_empire_level_1_develop = {
+			reforms = {
+				dip_develop_1_reform #敦邻政策
+				dip_develop_2_reform #谈判专家
+			}
+		}		
+		#內政歸戶		
+		celestial_empire_level_2_develop = {
+			reforms = {
+				adm_develop_1_reform #行政效率
+				adm_develop_2_reform #公文制度改良
+			}
+		}
+		#制度考核
+		celestial_empire_level_3_develop = {
+			reforms = {
+				adm_develop_3_reform #行政掌管
+				adm_develop_4_reform #清廉立法
+			}
+		}
+		#兵法研讀
+		celestial_empire_level_4_develop = {
+			reforms = {
+				mil_develop_1_reform #器械库藏改良
+				mil_develop_2_reform #马厩改良
+			}
+		}
+		#改革軍制
+		celestial_empire_level_5_develop = {
+			reforms = {
+				mil_develop_3_reform #军纪申令
+				mil_develop_4_reform #将领训练
+ 			}
+		}
+		#宗教撫民	
+		celestial_empire_level_6_develop = {
+			reforms = {
+				religion_develop_1_reform #增加宗教事务
+				religion_develop_2_reform #异端的传教
+ 			}
+		}
+		#貨暢其流
+		celestial_empire_level_7_develop = {
+			reforms = {
+				trade_develop_1_reform #放松贸易禁令
+				trade_develop_2_reform #鼓励商流
+			}
+		}
+		#放諸四海
+		celestial_empire_level_8_develop = {
+			reforms = {
+				colony_develop_1_reform  #邁向海權
+				colony_develop_2_reform  #增设殖民
+				trade_develop_3_reform #繁荣政策
+				trade_develop_4_reform #奖励商务
+ 			}
+		}
+		#詩書禮樂
+		celestial_empire_level_9_develop = {
+			reforms = {
+				unrest_develop_1_reform #文词书画
+				unrest_develop_2_reform #民惟邦本
+			}
+		}
+		#科研體現
+		celestial_empire_level_10_develop = {
+			reforms = {
+				tech_develop_1_reform #倡议科学
+				tech_develop_2_reform #学以致用
+			}
+		}
+		#成本控制
+		celestial_empire_level_11_develop = {
+			reforms = {
+				costdown_develop_1_reform #简约宫廷建设
+				costdown_develop_2_reform #发展评估政策
+			}
+		}
+		#富國強兵
+		celestial_empire_level_12_develop = {
+			reforms = {
+				mil_develop_5_reform #厉兵秣马
+				tech_develop_3_reform #务实慎用
+				tax_develop_1_reform #税务改良
+			}
+		}		
+	}	
+	basic_reform = celestial_empire_mechanic
+	legacy_government = {
+		celestial_empire_legacy
+	}
+	exclusive_reforms = {
+		celestial_empire
+		ancient_chinese_togofu_reform
+		ancient_chinese_warlord_reform
+		modern_chinese_warlord_reform
+		chinese_parliament_monarchy
+		chinese_feudatory_reform
+		eastern_theocracy_reform
+		mongol_steppe_horde_reform
+		dalailama_monastic_reform				   
+		celestial_empire_guanliao
+	}	
+	color = { 55 100 55 }	
+}
+
+
+ancient_chinese_warlord = {
+	
+	reform_levels = {
+		ancient_chinese_warlord_level_0_develop = {
+			reforms = {
+				ancient_chinese_warlord_reform
+				chinese_feudatory_reform
+				tribal_despotism
+			}
+		}
+		early_reform_level_1 = { reforms = { early_cn_gov_reform_1 early_cn_gov_reform_1b } }
+		early_reform_level_2 = { reforms = { early_cn_gov_reform_2 early_cn_gov_reform_2b } }
+		early_reform_level_3 = { reforms = { early_cn_gov_reform_3 early_cn_gov_reform_3b } }
+		early_reform_level_4 = { reforms = { early_cn_gov_reform_4 early_cn_gov_reform_4b } }
+		early_reform_level_5 = { reforms = { early_cn_gov_reform_5 early_cn_gov_reform_5b early_gov_reform_5c } }
+		early_reform_level_6 = { reforms = { early_cn_gov_reform_6 early_cn_gov_reform_6b early_gov_reform_6c } }
+		early_reform_level_7 = { reforms = { early_cn_gov_reform_7 early_cn_gov_reform_7b } }
+		early_reform_level_8 = { reforms = { early_cn_gov_reform_8 early_cn_gov_reform_8b } }
+		early_reform_level_9 = { reforms = { early_cn_gov_reform_9 early_cn_gov_reform_9b } }
+		early_reform_level_10 = { reforms = { early_cn_gov_reform_10 early_cn_gov_reform_10b } }		
+		
+		ancient_chinese_warlord_level_1_develop = {
+			reforms = {
+				adm_develop_1_reform
+			}
+		}
+		ancient_chinese_warlord_level_2_develop = {
+			reforms = {
+				mil_develop_1_reform
+			}
+		}
+		ancient_chinese_warlord_level_3_develop = {
+			reforms = {
+				religion_develop_1_reform
+			}
+		}
+		ancient_chinese_warlord_level_4_develop = {
+			reforms = {
+				trade_develop_1_reform
+			}
+		}
+		ancient_chinese_warlord_level_5_develop = {
+			reforms = {
+				unrest_develop_1_reform
+			}
+		}
+		ancient_chinese_warlord_level_6_develop = {
+			reforms = {
+				unrest_develop_2_reform
+			}
+		}
+		ancient_chinese_warlord_level_7_develop = {
+			reforms = {
+				costdown_develop_1_reform
+			}
+		}
+		ancient_chinese_warlord_level_8_develop = {
+			reforms = {
+				trade_develop_1_reform
+			}
+		}
+	}	
+	basic_reform = ancient_chinese_warlord_mechanic
+	legacy_government = {
+		ancient_chinese_warlord_legacy
+	}
+	exclusive_reforms = {
+		celestial_empire
+		ancient_chinese_togofu_reform
+		ancient_chinese_warlord_reform
+		modern_chinese_warlord_reform
+		chinese_parliament_monarchy
+		chinese_feudatory_reform
+		eastern_theocracy_reform
+		mongol_steppe_horde_reform
+		dalailama_monastic_reform				   
+		celestial_empire_guanliao
+	}	
+	color = { 179 25 25 }
+}
+
+modern_chinese_warlord = {
+	
+		
+	#accepted culture is important.
+	
+	reform_levels = {
+		modern_chinese_warlord_level_0_develop = {
+			reforms = {
+				modern_chinese_warlord_reform
+				oligarchy_reform
+			}
+		}
+		#zhilitixi_reform = {
+		#	reforms = {
+		#		china_guanliaozhi
+		#		fengjianzhi
+		#		shanghuizhi
+		#		junquzhi
+		#		modernguanliaozhi
+		#	}
+		#}
+		early_reform_level_1 = { reforms = { early_cn_gov_reform_1 early_cn_gov_reform_1b } }
+		early_reform_level_2 = { reforms = { early_cn_gov_reform_2 early_cn_gov_reform_2b } }
+		early_reform_level_3 = { reforms = { early_cn_gov_reform_3 early_cn_gov_reform_3b } }
+		early_reform_level_4 = { reforms = { early_cn_gov_reform_4 early_cn_gov_reform_4b } }
+		early_reform_level_5 = { reforms = { early_cn_gov_reform_5 early_cn_gov_reform_5b early_gov_reform_5c } }
+		early_reform_level_6 = { reforms = { early_cn_gov_reform_6 early_cn_gov_reform_6b early_gov_reform_6c } }
+		early_reform_level_7 = { reforms = { early_cn_gov_reform_7 early_cn_gov_reform_7b } }
+		early_reform_level_8 = { reforms = { early_cn_gov_reform_8 early_cn_gov_reform_8b } }
+		early_reform_level_9 = { reforms = { early_cn_gov_reform_9 early_cn_gov_reform_9b } }
+		early_reform_level_10 = { reforms = { early_cn_gov_reform_10 early_cn_gov_reform_10b } }	
+		
+		modern_chinese_warlord_level_1_develop = {
+			reforms = {			
+				modern_chinese_warlord_mil_develop_1_reform
+				modern_chinese_warlord_mil_develop_2_reform
+				modern_chinese_warlord_mil_develop_3_reform
+			}
+		}
+		modern_chinese_warlord_level_2_develop = {
+			reforms = {			
+				modern_chinese_warlord_edu_develop_1_reform
+				modern_chinese_warlord_edu_develop_2_reform
+				modern_chinese_warlord_edu_develop_3_reform
+			}
+		}		
+		modern_chinese_warlord_level_3_develop = {
+			reforms = {			
+				democracy_reform
+				oligarchic_reform
+				military_government
+				communist_government
+				fascist_government
+			}
+		}
+		modern_chinese_warlord_level_4_develop = {
+			reforms = {			
+				modern_chinese_warlord_adm_develop_1_reform
+				modern_chinese_warlord_adm_develop_2_reform
+				modern_chinese_warlord_dip_develop_1_reform
+				modern_chinese_warlord_dip_develop_2_reform
+				modern_chinese_warlord_adj_develop_1_reform
+				modern_chinese_warlord_adj_develop_2_reform				
+		
+			}
+		}
+	}	
+	basic_reform = modern_chinese_warlord_mechanic
+	legacy_government = {
+		modern_chinese_warlord_legacy
+	}
+	exclusive_reforms = {
+		celestial_empire
+		ancient_chinese_togofu_reform
+		ancient_chinese_warlord_reform
+		modern_chinese_warlord_reform
+		chinese_parliament_monarchy
+		chinese_feudatory_reform
+		eastern_theocracy_reform
+		mongol_steppe_horde_reform
+		dalailama_monastic_reform			   
+		celestial_empire_guanliao						   
+	}	
+	color = { 100 25 25 }
+}
+
+ancient_chinese_togofu = {
+	reform_levels = {
+		celestial_empire_level_0_develop = {
+			reforms = {
+				ancient_chinese_togofu_reform
+				tribal_despotism
+			}
+		}
+		#zhilitixi_reform = {
+		#	reforms = {
+		#		china_guanliaozhi
+		#		fengjianzhi
+		#		shanghuizhi
+		#		junquzhi
+		#		modernguanliaozhi
+		#	}
+		#}
+		early_reform_level_1 = { reforms = { early_cn_gov_reform_1 early_cn_gov_reform_1b } }
+		early_reform_level_2 = { reforms = { early_cn_gov_reform_2 early_cn_gov_reform_2b } }
+		early_reform_level_3 = { reforms = { early_cn_gov_reform_3 early_cn_gov_reform_3b } }
+		early_reform_level_4 = { reforms = { early_cn_gov_reform_4 early_cn_gov_reform_4b } }
+		early_reform_level_5 = { reforms = { early_cn_gov_reform_5 early_cn_gov_reform_5b early_gov_reform_5c } }
+		early_reform_level_6 = { reforms = { early_cn_gov_reform_6 early_cn_gov_reform_6b early_gov_reform_6c } }
+		early_reform_level_7 = { reforms = { early_cn_gov_reform_7 early_cn_gov_reform_7b } }
+		early_reform_level_8 = { reforms = { early_cn_gov_reform_8 early_cn_gov_reform_8b } }
+		early_reform_level_9 = { reforms = { early_cn_gov_reform_9 early_cn_gov_reform_9b } }
+		early_reform_level_10 = { reforms = { early_cn_gov_reform_10 early_cn_gov_reform_10b } }		
+		#遠交近攻
+		celestial_empire_level_1_develop = {
+			reforms = {
+				dip_develop_1_reform #敦邻政策
+				dip_develop_2_reform #谈判专家
+			}
+		}		
+		#內政歸戶		
+		celestial_empire_level_2_develop = {
+			reforms = {
+				adm_develop_1_reform #行政效率
+				adm_develop_2_reform #公文制度改良
+			}
+		}
+		#制度考核
+		celestial_empire_level_3_develop = {
+			reforms = {
+				adm_develop_3_reform #行政掌管
+				adm_develop_4_reform #清廉立法
+			}
+		}
+		#兵法研讀
+		celestial_empire_level_4_develop = {
+			reforms = {
+				mil_develop_1_reform #器械库藏改良
+				mil_develop_2_reform #马厩改良
+			}
+		}
+		#改革軍制
+		celestial_empire_level_5_develop = {
+			reforms = {
+				mil_develop_3_reform #军纪申令
+				mil_develop_4_reform #将领训练
+ 			}
+		}
+		#宗教撫民	
+		celestial_empire_level_6_develop = {
+			reforms = {
+				religion_develop_1_reform #增加宗教事务
+				religion_develop_2_reform #异端的传教
+ 			}
+		}
+		#貨暢其流
+		celestial_empire_level_7_develop = {
+			reforms = {
+				trade_develop_1_reform #放松贸易禁令
+				trade_develop_2_reform #鼓励商流
+			}
+		}
+		#放諸四海
+		celestial_empire_level_8_develop = {
+			reforms = {
+				colony_develop_1_reform  #邁向海權
+				colony_develop_2_reform  #增设殖民
+				trade_develop_3_reform #繁荣政策
+				trade_develop_4_reform #奖励商务
+ 			}
+		}
+		#詩書禮樂
+		celestial_empire_level_9_develop = {
+			reforms = {
+				unrest_develop_1_reform #文词书画
+				unrest_develop_2_reform #民惟邦本
+			}
+		}
+		#科研體現
+		celestial_empire_level_10_develop = {
+			reforms = {
+				tech_develop_1_reform #倡议科学
+				tech_develop_2_reform #学以致用
+			}
+		}
+		#成本控制
+		celestial_empire_level_11_develop = {
+			reforms = {
+				costdown_develop_1_reform #简约宫廷建设
+				costdown_develop_2_reform #发展评估政策
+			}
+		}
+		#富國強兵
+		celestial_empire_level_12_develop = {
+			reforms = {
+				mil_develop_5_reform #厉兵秣马
+				tech_develop_3_reform #务实慎用
+				tax_develop_1_reform #税务改良
+			}
+		}		
+	}
+	basic_reform = ancient_chinese_togofu_mechanic
+	legacy_government = {
+		ancient_chinese_togofu_legacy
+	}
+	exclusive_reforms = {
+		celestial_empire
+		ancient_chinese_togofu_reform
+		ancient_chinese_warlord_reform
+		modern_chinese_warlord_reform
+		chinese_parliament_monarchy
+		chinese_feudatory_reform
+		eastern_theocracy_reform
+		mongol_steppe_horde_reform
+		dalailama_monastic_reform				   
+	}	
+	color = { 67 15 124 }
+}	
+	
+mongol_steppe_horde = {
+	
+	reform_levels = {
+		celestial_empire_level_0_develop = {
+			reforms = {
+				mongol_steppe_horde_reform
+				tribal_despotism
+			}
+		}
+		#zhilitixi_reform = {
+		#	reforms = {
+		#		china_guanliaozhi
+		#		fengjianzhi
+		#		shanghuizhi
+		#		junquzhi
+		#		modernguanliaozhi
+		#	}
+		#}
+		early_reform_level_1 = { reforms = { early_cn_gov_reform_1 early_cn_gov_reform_1b } }
+		early_reform_level_2 = { reforms = { early_cn_gov_reform_2 early_cn_gov_reform_2b } }
+		early_reform_level_3 = { reforms = { early_cn_gov_reform_3 early_cn_gov_reform_3b } }
+		early_reform_level_4 = { reforms = { early_cn_gov_reform_4 early_cn_gov_reform_4b } }
+		early_reform_level_5 = { reforms = { early_cn_gov_reform_5 early_cn_gov_reform_5b early_gov_reform_5c } }
+		early_reform_level_6 = { reforms = { early_cn_gov_reform_6 early_cn_gov_reform_6b early_gov_reform_6c } }
+		early_reform_level_7 = { reforms = { early_cn_gov_reform_7 early_cn_gov_reform_7b } }
+		early_reform_level_8 = { reforms = { early_cn_gov_reform_8 early_cn_gov_reform_8b } }
+		early_reform_level_9 = { reforms = { early_cn_gov_reform_9 early_cn_gov_reform_9b } }
+		early_reform_level_10 = { reforms = { early_cn_gov_reform_10 early_cn_gov_reform_10b } }		
+		#遠交近攻
+		celestial_empire_level_1_develop = {
+			reforms = {
+				dip_develop_1_reform #敦邻政策
+				dip_develop_2_reform #谈判专家
+			}
+		}		
+		#內政歸戶		
+		celestial_empire_level_2_develop = {
+			reforms = {
+				adm_develop_1_reform #行政效率
+				adm_develop_2_reform #公文制度改良
+			}
+		}
+		#制度考核
+		celestial_empire_level_3_develop = {
+			reforms = {
+				adm_develop_3_reform #行政掌管
+				adm_develop_4_reform #清廉立法
+			}
+		}
+		#兵法研讀
+		celestial_empire_level_4_develop = {
+			reforms = {
+				mil_develop_1_reform #器械库藏改良
+				mil_develop_2_reform #马厩改良
+			}
+		}
+		#改革軍制
+		celestial_empire_level_5_develop = {
+			reforms = {
+				mil_develop_3_reform #军纪申令
+				mil_develop_4_reform #将领训练
+ 			}
+		}
+		#宗教撫民	
+		celestial_empire_level_6_develop = {
+			reforms = {
+				religion_develop_1_reform #增加宗教事务
+				religion_develop_2_reform #异端的传教
+ 			}
+		}
+		#貨暢其流
+		celestial_empire_level_7_develop = {
+			reforms = {
+				trade_develop_1_reform #放松贸易禁令
+				trade_develop_2_reform #鼓励商流
+			}
+		}
+		#放諸四海
+		celestial_empire_level_8_develop = {
+			reforms = {
+				colony_develop_1_reform  #邁向海權
+				colony_develop_2_reform  #增设殖民
+				trade_develop_3_reform #繁荣政策
+				trade_develop_4_reform #奖励商务
+ 			}
+		}
+		#詩書禮樂
+		celestial_empire_level_9_develop = {
+			reforms = {
+				unrest_develop_1_reform #文词书画
+				unrest_develop_2_reform #民惟邦本
+			}
+		}
+		#科研體現
+		celestial_empire_level_10_develop = {
+			reforms = {
+				tech_develop_1_reform #倡议科学
+				tech_develop_2_reform #学以致用
+			}
+		}
+		#成本控制
+		celestial_empire_level_11_develop = {
+			reforms = {
+				costdown_develop_1_reform #简约宫廷建设
+				costdown_develop_2_reform #发展评估政策
+			}
+		}
+		#富國強兵
+		celestial_empire_level_12_develop = {
+			reforms = {
+				mil_develop_5_reform #厉兵秣马
+				tech_develop_3_reform #务实慎用
+				tax_develop_1_reform #税务改良
+			}
+		}		
+	}
+	basic_reform = mongol_steppe_horde_mechanic
+	legacy_government = {
+		mongol_steppe_horde_legacy
+	}
+	exclusive_reforms = {
+		celestial_empire
+		ancient_chinese_togofu_reform
+		ancient_chinese_warlord_reform
+		modern_chinese_warlord_reform
+		chinese_parliament_monarchy
+		chinese_feudatory_reform
+		eastern_theocracy_reform
+		mongol_steppe_horde_reform
+		dalailama_monastic_reform				   
+	}	
+	color = { 33 25 25 }
+}
+
+dalailama_monastic = {
+	
+	reform_levels = {
+		oligarchy_merchant_class_noble_elite = {
+			reforms = {
+				dalailama_monastic_reform
+				tribal_despotism
+			}
+		}
+		#zhilitixi_reform = {
+		#	reforms = {
+		#		china_guanliaozhi
+		#		fengjianzhi
+		#		shanghuizhi
+		#		junquzhi
+		#		modernguanliaozhi
+		#	}
+		#}
+		early_reform_level_1 = { reforms = { early_cn_gov_reform_1 early_cn_gov_reform_1b } }
+		early_reform_level_2 = { reforms = { early_cn_gov_reform_2 early_cn_gov_reform_2b } }
+		early_reform_level_3 = { reforms = { early_cn_gov_reform_3 early_cn_gov_reform_3b } }
+		early_reform_level_4 = { reforms = { early_cn_gov_reform_4 early_cn_gov_reform_4b } }
+		early_reform_level_5 = { reforms = { early_cn_gov_reform_5 early_cn_gov_reform_5b early_gov_reform_5c } }
+		early_reform_level_6 = { reforms = { early_cn_gov_reform_6 early_cn_gov_reform_6b early_gov_reform_6c } }
+		early_reform_level_7 = { reforms = { early_cn_gov_reform_7 early_cn_gov_reform_7b } }
+		early_reform_level_8 = { reforms = { early_cn_gov_reform_8 early_cn_gov_reform_8b } }
+		early_reform_level_9 = { reforms = { early_cn_gov_reform_9 early_cn_gov_reform_9b } }
+		early_reform_level_10 = { reforms = { early_cn_gov_reform_10 early_cn_gov_reform_10b } }		
+	}
+	basic_reform = dalailama_monastic_mechanic
+	legacy_government = {
+		dalailama_monastic_legacy
+	}
+	exclusive_reforms = {
+		celestial_empire
+		ancient_chinese_togofu_reform
+		ancient_chinese_warlord_reform
+		modern_chinese_warlord_reform
+		chinese_parliament_monarchy
+		chinese_feudatory_reform
+		eastern_theocracy_reform
+		mongol_steppe_horde_reform
+		dalailama_monastic_reform					   
+	}	
+	color = { 179 111 25 }
+}
+#################################### rab_ END
+monarchy = {
+	reform_levels = {
+		feudalism_vs_autocracy = {
+			reforms = {
+				imperial_parliament_monarchy #rab_
+				chinese_parliament_monarchy #rab_
+				feudalism_reform
+				autocracy_reform
+				plutocratic_reform
+				indian_sultanate_reform
+				nayankara_reform
+				misl_confederacy_reform
+				rajput_kingdom
+				#Specific:
+				grand_duchy_reform
+				daimyo
+				indep_daimyo
+				elective_monarchy
+				iqta
+				ottoman_government
+				prussian_monarchy
+				austrian_dual_monarchy
+				principality
+				tsardom
+				mamluk_government
+				feudal_theocracy
+				#celestial_empire
+				shogunate
+				english_monarchy
+				mandala_reform
+				revolutionary_empire_reform
+				holy_state_reform
+				austrian_archduchy_reform
+				caliphate_reform
+				roman_empire_reform
+				salic_reform
+				imperial_march_reform
+				# feudal_empire_reform
+				grand_principality
+				#warlord_state rab_ delete in 1.30.4
+				viking_pirate_reform
+			}
+		}
+		#zhilitixi_reform = {
+		#	reforms = {
+		#		china_guanliaozhi
+		#		fengjianzhi
+		#		shanghuizhi
+		#		junquzhi
+		#		modernguanliaozhi
+		#	}
+		#}
+		early_reform_level_1 = { 
+			reforms = { 
+				early_gov_reform_1 
+				early_gov_reform_1b 
+				rome_1_reform #罗马化
+			} 
+		}    
+		early_reform_level_2 = { 
+			reforms = { 
+				early_gov_reform_2 
+				early_gov_reform_2b 
+				rome_31_reform #三子权
+				rome_32_reform #儿童补助计划
+			} 
+		}    
+		early_reform_level_3 = { 
+			reforms = {
+				early_gov_reform_3 
+				early_gov_reform_3b 
+				rome_15_reform  #罗马行省
+			} 
+		}    
+		early_reform_level_4 = { 
+			reforms = { 
+				early_gov_reform_4 
+				early_gov_reform_4b 
+				rome_11_reform #常备军团
+				rome_12_reform #日耳曼雇佣军
+			} 
+		}    
+		early_reform_level_5 = { 
+			reforms = { 
+				early_cn_gov_reform_5 
+				early_cn_gov_reform_5b 
+				early_gov_reform_5c 
+				rome_10_reform #戏剧与角斗
+			} 
+		}
+		early_reform_level_6 = { 
+			reforms = {
+	 			early_cn_gov_reform_6 
+				early_cn_gov_reform_6b 
+				early_gov_reform_6c 
+				rome_23_reform #农民剥削
+			} 
+		}
+		early_reform_level_7 = { 
+			reforms = { 
+				early_gov_reform_7 
+				early_gov_reform_7b 
+				rome_20_reform #罗马边防
+			} 
+		}    
+		early_reform_level_8 = { 
+			reforms = { 
+				early_gov_reform_8 
+				early_gov_reform_8b 
+				rome_21_reform #元首顾问会
+			} 
+		}    
+		early_reform_level_9 = { 
+			reforms = { 
+				early_gov_reform_9 
+				early_gov_reform_9b 
+				rome_18_reform #税收-贸易模式
+				rome_19_reform #大地产
+			} 
+		}    
+		early_reform_level_10 = { 
+			reforms = { 
+				early_gov_reform_10 
+				early_gov_reform_10b 
+				rome_7_reform #亚历山大
+				rome_8_reform #凯撒
+				rome_9_reform #汉尼拔
+			} 
+		}
+		hereditary_vs_nobility = { 
+			reforms = {
+				enforce_privileges_reform
+				quash_noble_power_reform
+				enforce_trader_privileges_reform
+				bengali_reform
+				sufi_syncretism_reform
+				poligar_reform
+				khalsa_reform
+				deccani_society_reform
+				mughal_government
+				black_army_reform
+				legion_of_honor_reform
+				imperial_nobility_reform
+				rome_27_reform #职位担任
+			}
+		}
+		bureaucracy = { #has_institution = renaissance
+			reforms = {
+				centralize_reform
+				decentralize_reform
+				sidhi_recruitment
+				mansabdari_reform
+				council_of_the_indies_reform
+				penal_colonies_reform
+				liberte_reform
+				fraternite_reform
+				rome_28_reform #十一抽杀律
+				rome_29_reform #蛮族训练
+				rome_30_reform #攻城阵型
+			}
+		}
+		growth_of_administration = { #has_institution = new_world_i
+			reforms = {
+				clergy_in_administration_reform
+				of_noble_bearing_reform
+				meritocratic_focus_reform
+				dakhni_culture_reform
+				zabt_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
+				revolutionary_principle_reform
+				equality_principle_reform
+				imperial_principle_reform
+				rome_13_reform #殉教
+				rome_14_reform #圣区
+			}
+		}
+		deliberative_assembly = { #has_institution = printing_press
+			reforms = {
+				parliamentary_reform
+				royal_decree_reform
+				aristocratic_court_reform
+				general_estates_reform
+				states_general_reform
+				legislative_sejm
+				integrated_sejmiks
+				feuillant_reform
+				two_chamber_reform
+				imperial_decree_reform
+				rome_24_reform #森林战术
+				rome_25_reform #高筑城墙
+			}
+		}
+		absolute_rule_vs_constitutional = { #has_institution = global_trade
+			reforms = {
+				letat_cest_moi_reform
+				regional_representation_reform
+				consulate_reform
+				military_electorate_reform
+			}
+		}
+		separation_of_power = { #has_institution = enlightenment
+			reforms = {
+				political_absolutism_reform
+				legislative_houses_reform
+				become_a_republic_reform
+				install_theocratic_government_reform
+				emperor_of_the_revolution_reform
+				enlightened_monarchy_reform
+				become_rev_republic_reform
+			}
+		}
+		political_parties_monarchy = { #has_institution = imperialism
+			reforms = {
+				multi_party_system
+				authoritarian_rule
+				rome_2_reform #英培拉多
+				rome_3_reform #普林凯普斯
+			}
+		}
+		ruling_class_monarchy = { #has_institution = nationalism_institution
+			reforms = {
+				democracy_reform
+				oligarchic_reform
+				military_government
+				fascist_government
+				rome_4_reform #普林斯制
+				rome_5_reform #多米那特制
+			}
+		}
+		head_of_state_monarchy = { #has_institution = globalization
+			reforms = {
+				ceremonial_monarch
+				royal_power
+				rome_33_reform #我们的海
+				rome_34_reform #欧洲霸权
+			}
+		}
+	}
+
+	basic_reform = monarchy_mechanic
+
+	legacy_government = {
+		despotic_monarchy
+		feudal_monarchy
+		administrative_monarchy
+		constitutional_monarchy
+		enlightened_despotism
+		revolutionary_empire
+		parliamentary_monarchy
+		english_monarchy_legacy
+		mamluk_government_legacy
+		feudal_theocracy_legacy
+		elective_monarchy_legacy
+		#celestial_empire_legacy
+		ottoman_government_legacy
+		prussian_monarchy_legacy
+		iqta_legacy
+		daimyo_legacy
+		shogunate_legacy
+		indep_daimyo_legacy
+		principality_legacy
+		tsardom_legacy
+		holy_state_legacy
+		caliphate
+		imperial_roman_republic
+		salic_monarchy
+		viking_pirate_legacy
+	}
+
+	# Each group of exclusive reforms are mutually exclusive to each other
+
+	#Flavor
+	exclusive_reforms = {
+		iqta
+		indian_sultanate_reform
+		mamluk_government
+		tsardom
+		principality
+		parliamentary_reform
+		english_monarchy
+		states_general_reform
+	}
+	
+	# Dictatorships etc
+	exclusive_reforms = {
+		military_dictatorship_reform
+		protectorate_parliament_reform
+		prussian_republic_reform
+		admiralty_reform
+		nepotism_reform
+		lottery_reform
+		dutch_republic
+	}
+
+	#States General works with few others
+	exclusive_reforms = {
+		mamluk_government
+		feudal_theocracy
+		states_general_reform
+		mughal_government
+		ottoman_government
+		revolutionary_empire_reform
+		prussian_monarchy
+		elective_monarchy
+		#celestial_empire
+	}
+
+	#Flavor
+	exclusive_reforms = {
+		daimyo
+		indep_daimyo		
+		shogunate
+		states_general_reform
+		parliamentary_reform
+	}
+
+	#Effects conflict with each other
+	exclusive_reforms = {
+		mughal_government
+		decentralize_reform
+	}
+	#rab_ add 2020-10-15
+	exclusive_reforms = {
+		imperial_parliament_monarchy
+		prussian_monarchy
+	}	
+
+	color = { 179 25 25 }
+}
+
+republic = {
+	basic_reform = republic_mechanic
+
+	color = { 65 155 220 }
+	legacy_government = {
+		china_socialism_legacy #rab_
+		taiwan_republic_legacy #rab_
+		bureaucratic_despotism
+		revolutionary_republic
+		constitutional_republic
+		republican_dictatorship
+		administrative_republic
+		socialist_republic
+		parliamentary_republic
+		presidental_republic
+		military_junta
+		communist_dictatorship
+		fascist_dictatorship
+		noble_republic
+		oligarchic_republic
+		pirate_republic
+		merchant_republic
+		venetian_merchant_republic
+		imperial_city
+		trading_city_legacy
+		ambrosian_republic_legacy
+		dutch_republic_legacy
+		colonial_government_legacy
+		american_republic_legacy
+		federal_republic_legacy
+		peasants_republic_legacy
+		veche_republic_legacy
+		cossacks_legacy_reform
+		roman_republic
+		pirate_kingdom
+		war_against_the_world_government
+		black_market_consortium_government
+		military_dictatorship
+		signoria
+		protectorate_parliament_legacy
+		prussian_republic
+		united_cantons_legacy
+	}
+	reform_levels = {
+		oligarchy_merchant_class_noble_elite = {
+			reforms = {
+				china_socialism #rab_
+				taiwan_republic #rab_		 
+				imperial_parliament_monarchy #rab_				
+				oligarchy_reform
+				merchants_reform
+				venice_merchants_reform
+				pirate_republic_reform
+				noble_elite_reform
+				free_city
+				trading_city
+				ambrosian_republic
+				veche_republic
+				american_republic
+				federal_republic
+				colonial_government
+				dutch_republic
+				peasants_republic
+				revolutionary_republic_reform
+				junior_revolutionary_republic_reform
+				presidential_despot_reform
+				cossacks_reform
+				military_dictatorship_reform
+				signoria_reform
+				protectorate_parliament_reform
+				prussian_republic_reform
+				united_cantons_reform
+				roman_republic_reform
+			}
+		}
+		#zhilitixi_reform = {
+		#	reforms = {
+		#		china_guanliaozhi
+		#		fengjianzhi
+		#		shanghuizhi
+		#		junquzhi
+		#		modernguanliaozhi
+		#	}
+		#}
+		early_reform_level_1 = { 
+			reforms = { 
+				early_gov_reform_1 
+				early_gov_reform_1b 
+				rome_1_reform #罗马化
+			} 
+		}    
+		early_reform_level_2 = { 
+			reforms = { 
+				early_gov_reform_2 
+				early_gov_reform_2b 
+				rome_31_reform #三子权
+				rome_32_reform #儿童补助计划
+			} 
+		}    
+		early_reform_level_3 = { 
+			reforms = { 
+				early_gov_reform_3 
+				early_gov_reform_3b 
+				rome_15_reform  #罗马行省
+			} 
+		}    
+		early_reform_level_4 = { 
+			reforms = { 
+				early_gov_reform_4 
+				early_gov_reform_4b 
+				rome_11_reform #常备军团
+				rome_12_reform #日耳曼雇佣军
+			} 
+		}    
+		early_reform_level_5 = { 
+			reforms = { 
+				early_gov_reform_5 
+				early_gov_reform_5b 
+				early_gov_reform_5c 
+				rome_10_reform #戏剧与角斗
+			} 
+		}
+		early_reform_level_6 = { 
+			reforms = { 
+				early_gov_reform_6 
+				early_gov_reform_6b 
+				early_gov_reform_6c 
+				rome_22_reform #早期农业和手工业
+			} 
+		}
+		early_reform_level_7 = { 
+			reforms = { 
+				early_gov_reform_7 
+				early_gov_reform_7b 
+				rome_20_reform #罗马边防
+			} 
+		}    
+		early_reform_level_8 = { 
+			reforms = { 
+				early_gov_reform_8 
+				early_gov_reform_8b 
+				rome_21_reform #元首顾问会
+			}
+ 		}    
+		early_reform_level_9 = { 
+			reforms = { 
+				early_gov_reform_9 
+				early_gov_reform_9b 
+				rome_18_reform #税收-贸易模式
+				rome_19_reform #大地产
+			} 
+		}    
+		early_reform_level_10 = { 
+			reforms = { 
+				early_gov_reform_10 
+				early_gov_reform_10b 
+				rome_7_reform #亚历山大
+				rome_8_reform #凯撒
+				rome_9_reform #汉尼拔
+			} 
+		}
+		republican_virtues = { #has_institution = feudalism
+			reforms = {
+				republican_authoritarianism_reform
+				nepotism_reform
+				republicanism_reform
+				council_of_captains_reform
+				articles_of_agreement_reform
+				smugglers_haven_reform
+				liberte_reform
+				egalite_reform
+				fraternite_reform
+			}
+		}
+		frequent_elections_vs_consolidation_of_power = { #has_institution = renaissance
+			reforms = {
+				very_frequent_elections_reform
+				frequent_elections_reform
+				balance_of_power_reform
+				consolidation_of_power_reform
+				consolidation_of_power_2_reform
+				consolidate_power_in_doge_reform
+				consolidate_power_in_cities_reform
+				very_long_term_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
+				lottery_reform
+				council_of_the_indies_reform
+				legislative_assembly_reform
+				national_constituent_reform
+			}
+		}
+		federalism_vs_unitarism_vs_confederacy = { #has_institution = renaissance
+			reforms = {
+				provincial_governments_reform
+				administrative_divisions_reform
+				union_of_states_reform
+				penal_colonies_reform
+				rome_17_reform #罗马银行
+			}
+		}
+		parliamentary_vs_presidential = { #has_institution = new_world_i
+			reforms = {
+				parliamentary_reform
+				presidential_reform
+				pirate_king_reform
+				war_against_the_world_doctrine_reform
+				black_market_consortium_reform
+				imperial_diplomacy_reform
+				municipal_self_defense_reform
+				feuillant_reform
+				two_chamber_reform
+			}
+		}
+		consolidation_of_power_category = { #has_institution = printing_press
+			reforms = {
+				broaden_executive_powers_reform
+				devolution_of_powers_reform
+				absolute_president_reform
+				revolutionary_council_reform
+				rome_24_reform #森林战术
+				rome_25_reform #高筑城墙
+			}
+		}
+		guiding_principle_of_administration = { #has_institution = printing_press
+			reforms = {
+				political_principle_reform
+				moral_principle_reform
+				revolutionary_principle_reform
+				equality_principle_reform
+				imperial_principle_reform
+				rome_28_reform #十一抽杀律
+				rome_29_reform #蛮族训练
+				rome_30_reform #攻城阵型
+			}
+		}
+		electorate = { #has_institution = global_trade
+			reforms = {
+				landholders_reform
+				citizenry_reform
+				admiralty_reform
+				equal_electorate_reform
+				three_classes_reform
+				military_electorate_reform
+			}
+		}
+		office_selection = { #has_institution = manufactories
+			reforms = {
+				appointment_by_committee_reform
+				bureaucratic_aparatus_reform
+				universal_suffrage_reform
+				rome_26_reform #包税经商
+			}
+		}
+		question_of_dictatorship = { #has_institution = enlightenment
+			reforms = {
+				seize_executive_power_reform
+				proclaim_divine_guidance_reform
+				strengthen_executive_powers_reform
+				reinforce_republican_values_reform
+				pirates_become_republic_reform
+				president_for_life_reform
+				government_for_people_reform
+				become_rev_empire_reform
+				rome_16_reform  #谨慎扩张
+			}
+		}
+		political_parties_republic = { #has_institution = imperialism
+			reforms = {
+				multi_party_system
+				single_party_system
+				dictatorial_rule
+				rome_2_reform #英培拉多
+				rome_3_reform #普林凯普斯
+			}
+		}
+		ruling_class_republic = { #has_institution = nationalism_institution
+			reforms = {
+				democracy_reform
+				oligarchic_reform
+				military_government
+				communist_government
+				fascist_government
+				rome_4_reform #普林斯制
+				rome_6_reform #重整官阶制度
+			}
+		}
+		head_of_state_republic = { #has_institution = globalization
+			reforms = {
+				ceremonial_president
+				abolish_presidency
+				powerful_head_of_state
+				rome_33_reform #我们的海
+				rome_34_reform #欧洲霸权
+			}
+		}
+	}
+	exclusive_reforms = {
+		parliamentary_reform
+		dutch_republic
+		merchants_reform
+		veche_republic
+		federal_republic
+		free_city
+		trading_city
+		american_republic
+		revolutionary_republic_reform
+		pirate_republic_reform
+		protectorate_parliament_reform
+		prussian_republic_reform
+	}
+	exclusive_reforms = {
+		lottery_reform
+		venice_merchants_reform
+		dutch_republic
+		pirate_republic_reform
+		admiralty_reform
+		prussian_republic_reform
+		military_dictatorship_reform
+	}
+	exclusive_reforms = {
+		free_city
+		administrative_divisions_reform
+	}
+	exclusive_reforms = {
+		free_city
+		presidential_reform
+	}
+	exclusive_reforms = {
+		feuillant_reform
+		military_electorate_reform
+	}
+}
+
+tribal = {
+	color = { 220 165 95 }
+	basic_reform = tribe_mechanic
+
+	legacy_government = {
+		tribal_despotism_legacy
+		tribal_kingdom_legacy
+		tribal_democracy_legacy
+		tribal_federation_legacy
+		steppe_horde_legacy
+		siberian_native_council
+		barbarian_tribe
+	}
+
+	reform_levels = {
+		tribal_administration = {
+			reforms = {
+				steppe_horde
+				tribal_federation
+				tribal_despotism
+				tribal_kingdom
+				siberian_tribe
+				gond_kingdom
+				great_mongol_state_reform
+				barbarian_reform
+			}
+		}
+		#zhilitixi_reform = {
+		#	reforms = {
+		#		china_guanliaozhi
+		#		fengjianzhi
+		#		shanghuizhi
+		#		junquzhi
+		#		modernguanliaozhi
+		#	}
+		#}
+		early_reform_level_1 = { reforms = { early_gov_reform_1 early_gov_reform_1b } }
+		early_reform_level_2 = { reforms = { early_gov_reform_2 early_gov_reform_2b } }
+		early_reform_level_3 = { reforms = { early_gov_reform_3 early_gov_reform_3b } }
+		early_reform_level_4 = { reforms = { early_gov_reform_4 early_gov_reform_4b } }
+		early_reform_level_5 = { reforms = { early_gov_reform_5 early_gov_reform_5b early_gov_reform_5c } }
+		early_reform_level_6 = { reforms = { early_gov_reform_6 early_gov_reform_6b early_gov_reform_6c } }
+		early_reform_level_7 = { reforms = { early_gov_reform_7 early_gov_reform_7b } }
+		early_reform_level_8 = { reforms = { early_gov_reform_8 early_gov_reform_8b } }
+		early_reform_level_9 = { reforms = { early_gov_reform_9 early_gov_reform_9b } }
+		early_reform_level_10 = { reforms = { early_gov_reform_10 early_gov_reform_10b } }
+		tribal_cultural_values = {
+			reforms = {
+				martial_society_reform
+				civil_society_reform
+			}
+		}
+		tribal_religion = {
+			reforms = {
+				religious_societies_reform
+				lip_service_reform
+			}
+		}
+		tribal_modernization = {
+			reforms = {
+				centralize_tribal_power_reform
+				retain_tribal_hierarchy_reform
+			}
+		}
+		tribal_reformation = {
+			reforms = {
+				horde_barbaric_despoilers_reform
+				horde_tribal_unity_reform
+				tribe_becomes_monarchy_reform
+				tribe_becomes_republic_reform
+				tribe_becomes_theocracy_reform
+				tribe_becomes_horde_reform
+			}
+		}
+	}
+}
+
+native = {
+	basic_reform = native_basic_reform
+
+	legacy_government = {
+		native_council_legacy
+	}
+	color = { 194 127 209 }
+}
+
+
+theocracy = {
+	color = { 75 170 75 }
+	basic_reform = theocracy_mechanic
+
+	legacy_government = {
+		papal_government
+		theocratic_government
+		monastic_order_government
+		holy_state_legacy
+	}
+	reform_levels = {
+		theocratic_leadership = {
+			reforms = {
+				leading_clergy_reform
+				monastic_order_reform
+				papacy_reform
+				holy_state_reform
+				united_cantons_reform
+				caliphate_theocratic_reform 
+			}
+		}
+		#zhilitixi_reform = {
+		#	reforms = {
+		#		china_guanliaozhi
+		#		fengjianzhi
+		#		shanghuizhi
+		#		junquzhi
+		#		modernguanliaozhi
+		#	}
+		#}
+		early_reform_level_1 = { reforms = { early_gov_reform_1 early_gov_reform_1b } }
+		early_reform_level_2 = { reforms = { early_gov_reform_2 early_gov_reform_2b } }
+		early_reform_level_3 = { reforms = { early_gov_reform_3 early_gov_reform_3b } }
+		early_reform_level_4 = { reforms = { early_gov_reform_4 early_gov_reform_4b } }
+		early_reform_level_5 = { reforms = { early_gov_reform_5 early_gov_reform_5b early_gov_reform_5c } }
+		early_reform_level_6 = { reforms = { early_gov_reform_6 early_gov_reform_6b early_gov_reform_6c } }
+		early_reform_level_7 = { reforms = { early_gov_reform_7 early_gov_reform_7b } }
+		early_reform_level_8 = { reforms = { early_gov_reform_8 early_gov_reform_8b } }
+		early_reform_level_9 = { reforms = { early_gov_reform_9 early_gov_reform_9b } }
+		early_reform_level_10 = { reforms = { early_gov_reform_10 early_gov_reform_10b } }
+		internal_vs_external_mission = {
+			reforms = {
+				internal_mission_reform
+				external_mission_reform
+				mission_to_civilize_reform
+				mission_to_kill_pirates_reform
+			}
+		}
+		divine_cause = {
+			reforms = {
+				safeguard_holy_sites_reform
+				combat_heresy_reform
+				expel_heathens_reform
+				guru_advisors_reform
+				kingdom_of_god_reform
+			}
+		}
+		clergy_in_administration = {
+			reforms = {
+				subservient_administrators_reform
+				religious_administrators_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
+				loyal_nobility_reform
+				pious_merchants_reform
+				monastic_breweries_reform
+				warrior_monks_reform
+			}
+		}
+		secularization = {
+			reforms = {
+				partial_secularisation_reform
+				maintain_religious_head_reform
+				hereditary_religious_leadership_reform
+				crown_leader_reform
+				proclaim_republic_reform
+				battle_pope_reform
+				conciliarism_reform
+			}
+		}
+		separation_of_power_theocracy = {
+			reforms = {
+				clerical_commission_reform
+				divine_guidance_reform
+				theocratic_democracy_reform
+				regionally_elected_commanders
+				monastic_elections_reform
+				commander_king_reform
+				admiral_king_reform
+			}
+		}
+		nature_of_faith = {
+			reforms = {
+				church_and_state_reform
+				religious_harmony_reform
+				god_and_man_reform
+				organising_our_religion_reform
+			}
+		}
+		faith_and_the_world = {
+			reforms = {
+				religion_in_one_country_reform
+				religious_permanent_revolution_reform
+				many_fingers_of_god_reform
+				priestly_autonomy_reform
+				proclaim_religious_head_reform
+				all_under_tengri_reform
+			}
+		}
+	}
+}
+
+pre_dharma_mapping = {
+	despotic_monarchy = {
+		government = monarchy
+		legacy_government = despotic_monarchy
+	}
+	feudal_monarchy = {
+		government = monarchy
+		legacy_government = feudal_monarchy
+	}
+	administrative_monarchy = {
+		government = monarchy
+		legacy_government = administrative_monarchy
+	}
+	constitutional_monarchy = {
+		government = monarchy
+		legacy_government = constitutional_monarchy
+	}
+	enlightened_despotism = {
+		government = monarchy
+		legacy_government = enlightened_despotism
+	}
+	revolutionary_empire = {
+		government = monarchy
+		legacy_government = revolutionary_empire
+	}
+	merchant_republic = {
+		government = republic
+		legacy_government = merchant_republic
+	}
+	oligarchic_republic = {
+		government = republic
+		legacy_government = oligarchic_republic
+	}
+	noble_republic = {
+		government = republic
+		legacy_government = noble_republic
+	}
+	administrative_republic = {
+		government = republic
+		legacy_government = administrative_republic
+	}
+	republican_dictatorship = {
+		government = republic
+		legacy_government = republican_dictatorship
+	}
+	constitutional_republic = {
+		government = republic
+		legacy_government = constitutional_republic
+	}
+	bureaucratic_despotism = {
+		government = republic
+		legacy_government = bureaucratic_despotism
+	}
+	revolutionary_republic = {
+		government = republic
+		legacy_government = revolutionary_republic
+	}
+	theocratic_government = {
+		government = theocracy
+		legacy_government = theocratic_government
+	}
+	monastic_order_government = {
+		government = theocracy
+		legacy_government = monastic_order_government
+	}
+	papal_government = {
+		government = theocracy
+		legacy_government = papal_government
+	}
+	steppe_horde = {
+		government = tribal
+		legacy_government = steppe_horde_legacy
+	}
+	tribal_despotism = {
+		government = tribal
+		legacy_government = tribal_despotism_legacy
+	}
+	tribal_kingdom = {
+		government = tribal
+		legacy_government = tribal_kingdom_legacy
+	}
+	tribal_federation = {
+		government = tribal
+		legacy_government = tribal_federation_legacy
+	}
+	tribal_democracy = {
+		government = tribal
+		legacy_government = tribal_federation_legacy
+	}
+	native_council = {
+		government = native
+		legacy_government = native_council_legacy
+	}
+	siberian_native_council = {
+		government = tribal
+		legacy_government = siberian_native_council
+	}
+	english_monarchy = {
+		government = monarchy
+		legacy_government = english_monarchy_legacy
+	}
+	mamluk_government = {
+		government = monarchy
+		legacy_government = mamluk_government_legacy
+	}
+	feudal_theocracy = {
+		government = monarchy
+		legacy_government = feudal_theocracy_legacy
+	}
+	elective_monarchy = {
+		government = monarchy
+		legacy_government = elective_monarchy_legacy
+	}
+	imperial_city = {
+		government = republic
+		legacy_government = imperial_city
+	}
+	trading_city = {
+		government = republic
+		legacy_government = imperial_city_legacy
+	}
+	ambrosian_republic = {
+		government = republic
+		legacy_government = ambrosian_republic_legacy
+	}
+	dutch_republic = {
+		government = republic
+		legacy_government = dutch_republic_legacy
+	}
+	celestial_empire = { #rab_ modify 
+		government = gov_celestial_empire
+		legacy_government = celestial_empire_legacy
+	}
+	ottoman_government = {
+		government = monarchy
+		legacy_government = ottoman_government_legacy
+	}
+	prussian_monarchy = {
+		government = monarchy
+		legacy_government = prussian_monarchy_legacy
+	}
+	iqta = {
+		government = monarchy
+		legacy_government = iqta_legacy
+	}
+	daimyo = {
+		government = monarchy
+		legacy_government = daimyo_legacy
+	}
+	shogunate = {
+		government = monarchy
+		legacy_government = shogunate_legacy
+	}
+	indep_daimyo = {
+		government = monarchy
+		legacy_government = indep_daimyo_legacy
+	}
+	colonial_government = {
+		government = republic
+		legacy_government = colonial_government_legacy
+	}
+	china_socialism = {
+		government = republic
+		legacy_government = china_socialism_legacy
+	}	
+	taiwan_republic = {
+		government = republic
+		legacy_government = taiwan_republic_legacy
+	}	
+	american_republic = {
+		government = republic
+		legacy_government = american_republic_legacy
+	}
+	federal_republic = {
+		government = republic
+		legacy_government = federal_republic_legacy
+	}
+	peasants_republic = {
+		government = republic
+		legacy_government = peasants_republic_legacy
+	}
+	veche_republic = {
+		government = republic
+		legacy_government = veche_republic_legacy
+	}
+	principality = {
+		government = monarchy
+		legacy_government = principality_legacy
+	}
+	tsardom = {
+		government = monarchy
+		legacy_government = tsardom_legacy
+	}
+	pirate_republic_reform = {
+		government = republic
+		legacy_government = pirate_republic
+	}
+#####################rab_ add START 
+	ancient_chinese_warlord_reform = {
+		government = ancient_chinese_warlord
+		legacy_government = ancient_chinese_warlord_legacy
+	}
+	modern_chinese_warlord_reform = {
+		government = modern_chinese_warlord
+		legacy_government = modern_chinese_warlord_legacy
+	}
+	ancient_chinese_togofu_reform = {
+		government = ancient_chinese_togofu
+		legacy_government = ancient_chinese_togofu_legacy
+	}	
+	mongol_steppe_horde_reform = {
+		government = mongol_steppe_horde
+		legacy_government = mongol_steppe_horde_legacy
+	}
+	dalailama_monastic_reform = {
+		government = dalailama_monastic
+		legacy_government = dalailama_monastic_legacy
+	}
+#####################rab_ add END
+	all_mechanics = {
+		government = monarchy
+		legacy_government = despotic_monarchy
+	}
+
+	caliphate = {
+		government = monarchy
+		legacy_government = caliphate
+	}
+
+	viking_pirate_reform = {
+		government = monarchy
+		legacy_government = viking_pirate_legacy
+	}
+}

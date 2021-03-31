@@ -1,0 +1,136 @@
+yayoi_era = {
+	production_efficiency = 0.05
+	infantry_power = 0.05
+	cavalry_power = 0.05
+}
+
+kofun_era = {
+	global_autonomy = -0.02
+	legitimacy = 0.5
+	global_unrest = -1
+}
+
+asuka_era = {
+	tolerance_own = 1
+	tolerance_heretic = 1
+	tolerance_heathen = 1
+}
+
+nara_era = {
+	global_tax_modifier = 0.05
+	stability_cost_modifier = -0.1
+	improve_relation_modifier = 0.1
+}
+
+heian_era = {
+	development_cost = -0.05
+	advisor_cost = -0.05
+	prestige = 0.5
+}
+
+shogunate_era = {
+	harsh_treatment_cost = -0.15
+	spy_offence = 0.1
+	land_forcelimit_modifier = 0.1
+}
+
+great_japan_era = {
+	technology_cost = -0.05
+	global_regiment_cost = -0.05
+	discipline = 0.025
+}
+
+eastern_peace = {
+	production_efficiency = 0.1
+	trade_efficiency = 0.1
+}
+
+learn_from_china = {
+	local_institution_spread = 0.1
+	idea_cost = -0.05
+	technology_cost = -0.05
+}
+
+hokkaido_explorer = {
+	colonist_placement_chance = 0.05
+	range = 0.2
+}
+
+yamato_govern = {
+	global_autonomy = -0.05
+}
+
+surname_system = {
+	nobles_loyalty_modifier = 0.05
+	legitimacy = 0.5
+}
+
+tribe_system = {
+	production_efficiency = 0.05
+	burghers_loyalty_modifier = 0.05
+}
+
+state_system = {
+	state_governing_cost = -0.1
+	state_maintenance_modifier = -0.2
+}
+
+seventeen_article_constitution = {
+	global_unrest = -2
+	stability_cost_modifier = -0.1
+	adm_tech_cost_modifier = -0.1
+}
+
+taika_reform = {
+	global_unrest = -2
+	prestige = 1
+	adm_tech_cost_modifier = -0.1
+	infantry_power = 0.1
+}
+
+laws_and_decrees = {
+	global_tax_modifier = 0.1
+	global_autonomy = -0.05
+	global_manpower_modifier = 0.15
+}
+
+first_migration = {
+	colonists = 1
+}
+
+zhu_mu = {
+	local_unrest = -1
+	local_tax_modifier = 0.1
+}
+
+da_xian_ling = {
+	local_unrest = -1
+	local_tax_modifier = 0.1
+}
+
+shinto_mainstream = {
+	tolerance_own = 2
+	innovativeness_gain = -0.2
+	advisor_cost = 0.1
+}
+
+mahayana_mainstream = {
+	diplomatic_reputation = 2
+	embracement_cost = -0.1
+	tolerance_own = -2
+}
+
+dazaifu_govern = {
+	local_tax_modifier = 0.05
+	local_institution_spread = 0.05
+	trade_goods_size_modifier = 0.025
+}
+
+tagajou_town_hall = {
+	fort_level = 1
+}
+
+san_shi_yi_shen = {
+	production_efficiency = 0.1
+	global_colonial_growth = 15
+}

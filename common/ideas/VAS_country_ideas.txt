@@ -1,0 +1,39 @@
+VAS_ideas = {
+	start = {
+		hostile_attrition = 1.5
+		land_forcelimit_modifier = 0.1
+	}
+	
+	bonus = {
+		diplomatic_reputation = 2
+	}
+	
+	trigger = {
+	   tag = VAS
+	}
+
+	free = yes
+	
+	selfenouthlife = {
+		production_efficiency = 0.1
+	}
+	sintsendaha = {
+		range = 0.25
+		colonists = 1
+	}	
+	genlandiwarrior = {
+		land_morale= 0.1
+	}
+	godtalking = {
+		global_spy_defence = 0.33
+	}
+	bigbasikr = {
+		enemy_core_creation = 0.5
+	}
+	hawrbaer = {
+		global_tax_modifier = 0.15
+	}
+	union_carsitir = {
+		improve_relation_modifier = 0.2
+	}
+}

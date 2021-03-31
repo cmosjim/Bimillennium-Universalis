@@ -1,0 +1,46 @@
+TO1_ideas = {
+	start = {
+		defensiveness = 0.4
+		discipline = 0.05
+	}
+	
+	bonus = {
+		global_missionary_strength = 0.03
+	}
+	
+	trigger = {
+		tag = TO1
+	}
+
+	free = yes
+
+	zangjia = {
+		fire_damage_received = -0.1
+		reserves_organisation = 0.3
+	}
+
+	highland_agriculture = {
+		production_efficiency = 0.1
+	}
+
+	xizang_union = {
+		prestige = 1
+	}
+
+	zangwen = {
+		technology_cost = -0.1
+	}
+
+	farmland_and_slaves = {
+		global_unrest = -1
+		global_manpower_modifier = 0.15
+	}
+
+	leader_songtsen_gampo = {
+		infantry_power = 0.1
+	}
+
+	zang_medicine = {
+		manpower_recovery_speed = 0.2
+	}
+}

@@ -1,0 +1,71 @@
+#l_english:
+# DNM_ideas:0 "大明郑氏理念"
+# DNM_ideas_start:0 "大明郑氏传统"
+# DNM_ideas_bonus:0 "大明郑氏野心"
+# zhongxijiehe:0 "中西结合"
+# zhongxijiehe_desc:0 "在反清复明的过程中，明郑接触了大量以西班牙为首的欧洲文明，渐渐学会了西方那一套。"
+# youshi_huoli:0 "优势火力"
+# youshi_huoli_desc:0 "在与清朝的长期军事抗争中，尽管在骑兵上处于劣势，但明郑也发展出了属于自己的优势，那就是对火器的进一步开发与使用。"
+# haidao_chuantong:0 "海盗传统"
+# haidao_chuantong_desc:0 "郑氏祖上是海贼出身。尽管如今已经很少有人敢于提及这一点，但其海军依然秉承着当年的传统。"
+# ming_zhengtong:0 "大明正统"
+# ming_zhengtong_desc:0 "作为唯一坚持到底，也是唯一成功的反清复明势力，郑氏有理由宣称自己是现今唯一的大明正统。"
+# back_zhongyuan:0 "重返中原"
+# back_zhongyuan_desc:0 "经过漫长的斗争，汉人终于又重新主宰了这一片土地，对家园的建设和对满人的处理也摆上了台面。"
+# lujunxueshuo:0 "陆军学说"
+# lujunxueshuo_desc:0 "在与清朝的战争中，明郑的陆军学说得到了长足的进步。据闻皇帝陛下在将军会议中的军事论述得到了几百个军事学家的一致通过。"
+# hanxuegexing:0 "汉学革新"
+# hanxuegexing_desc:0 "明郑入主中原后带来了大量来自西方世界的新理念，与中原王朝原本的学说相结合后，产生了更适应中原王朝国情的新汉学。"
+ DNM_ideas = {
+	start = {
+		all_power_cost = -0.1
+		technology_cost = -0.1
+	}
+	bonus = {
+		free_policy = 1
+	}
+	
+	trigger = {
+		tag = MNG
+		has_country_flag = flg_recovery_by_DN3
+	}
+
+	free = yes
+	#中西结合
+	zhongxijiehe = {
+		global_colonial_growth = 25
+		global_trade_power = 0.2
+	}
+	#优势火力
+	youshi_huoli = {
+		infantry_fire = 1
+		backrow_artillery_damage = 1.0
+	}
+	#海盗传统
+	haidao_chuantong = {
+		navy_tradition = 0.5
+		capture_ship_chance = 0.2
+		leader_naval_manuever = 1
+	}
+	#大明正统
+	ming_zhengtong = {
+		core_creation = -0.15
+		years_of_nationalism = -5
+	}
+	#重返中原
+	back_zhongyuan = {
+		administrative_efficiency = 0.1
+		development_cost = -0.2
+		num_accepted_cultures = 1
+	}
+	#陆军学说
+	lujunxueshuo = {
+		army_tradition = 0.5
+		discipline = 0.05
+	}
+	#汉学革新
+	hanxuegexing = {
+		global_missionary_strength = 0.1
+		country_admin_power = 1
+	}
+}

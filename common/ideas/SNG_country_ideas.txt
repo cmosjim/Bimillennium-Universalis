@@ -1,0 +1,42 @@
+SNG_ideas = {
+	start = {
+		tolerance_heretic = 3
+		tolerance_heathen = 2
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+
+	trigger = {
+		OR = {
+			tag = SNG
+			tag = LT1
+		}	
+	}
+	free = yes
+
+	masters_of_innovation_song = {
+		technology_cost = -0.1
+	}
+	naval_power_song = {
+		naval_morale = 0.10
+		movement_speed = 0.10
+	}
+	economic_revolution_song = {
+		production_efficiency = 0.1
+		global_tax_modifier = 0.10
+	}
+	revival_of_confucianism_song = {
+		tolerance_own = 2
+	}
+	gunpowder_warfare_song = {
+		leader_land_fire = 1
+	}
+	flexible_alliances_song = {
+		global_unrest = -2
+	}
+	strong_maritime_trade_song = {
+		merchants = 1
+	}
+}

@@ -1,0 +1,166 @@
+graphical_culture = asiangfx
+color = {
+  80
+  10
+  165
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_mil_ideas
+  xingjun_ideas
+  kaituo_ideas
+  junqu_ideas
+  trade_ideas
+  maritime_ideas
+  defensive_ideas
+  offensive_ideas
+  economic_ideas
+  diplomatic_ideas
+  spy_ideas
+  religious_ideas
+}
+historical_units = {
+  east_asian_spearmen
+  eastern_bow
+  asian_arquebusier
+  asian_charge_cavalry
+  asian_mass_infantry
+  asian_musketeer
+  reformed_asian_musketeer
+  reformed_asian_cavalry
+}
+leader_names = {
+  "?–^jgÕlTXk"  # Abdulfatah
+  "Œ‚ÈTÈ·V"  # Ahmad
+  "ÃWs|S"  # Amir
+  "‰RætS"  # Anwar
+  "Azmi"
+  "ôTşVTX"  # Batuta
+  "Chairul"
+  "ÈTÆYNb"  # Hamzah
+  "Hasanuddin"
+  "Ibnu"
+  "Kyai"
+  "Mahat"
+  "FzkTXS"  # Mukhtar
+  "Najamuddin"
+  "Natzar"
+  "Nazmizan"
+  "Roem"
+  "Syarifuddin"
+  "Zulkifli"
+}
+monarch_names = {
+  "Mengtsekya #0" = 20
+  "Muhammad 'Alî #0" = 20
+  "'Abd al-Mubin #0" = 20
+  "Muhyî ad-Dîn #0" = 20
+  "Nasr ad-Dîn #0" = 20
+  "Kamâl ad-Dîn #0" = 20
+  "Alâ' ad-Dîn #0" = 20
+  "Sayf ad-Dîn #0" = 20
+  "Muhammad Jamâl ad-Dîn #0" = 20
+  "Muhammad Tâj ad-Dîn #0" = 20
+  "'Umniya #0" = -1
+  "Hafeeza #0" = -1
+  "Aisha #0" = -1
+  "Azura #0" = -1
+  "?–jSjgÒR >)RÒR #0" = 20  # 'Abd al-Jalîl #0
+  "ÈTQh #0" = 20  # Hasan #0
+  "iIN+Y Ì‘> #0" = 20  # Sayf ar-Rijal #0
+  "?–^ı  RÈT #0" = 20  # 'Abd al-Qahhar #0
+  "ZSSúWšN #0" = 20  # Bulkiah #0
+  "Ï‚±ƒüf #0" = 20  # Sulaymân #0
+  "Œ‚ÈTÈ·V #0" = 20  # Ahmad #0
+  "FzUØ·V #0" = 20  # Muhammad #0
+  "kbW #0" = 20  # Tsau-Lha #0
+  "¿Y–FZ•^ #0" = 20  # Gadzabadi #0
+  "däN¿YwP #0" = 20  # Tsalenggathu #0
+  ".wW– #0" = 20  # Menradza #0
+  "¯OiàV ?–Ì‘ )RšN #0" = 20  # Husayn 'Alî Ri'âyat #0
+  "O¯eNW·VS TX<S #0" = 20  # Iskandar Tanî #0
+  "?–Ì‘ Fz RÅ–yr #0" = 20  # 'Alî Mugâyat #0
+  "O³ušNyr #0" = 20  # Inayat #0
+  "Ébù` ÈT› #0" = 10  # Rajah Qasim #0
+  "?–^ı Ébküf ™l #0" = 10  # 'Abd ar-Rahmân Shâh #0
+  "lš+g )RšN ™l #0" = 10  # Mahmûd Ri'âyat Shâh #0
+  "Ua`S ™l #0" = 10  # Mu'azzam Shâh #0
+  "egî† ôT·V?Q ™l #0" = 10  # Sulaymân Badr Shâh #0
+  "Ébklšyr ™l?– #0" = 10  # Rahmat Shâh #0
+  "fjSÉb1k ™l #0" = 10  # Ibrâhîm Shâh #0
+  "lššN ™l #0" = 10  # Ma'ayat Shâh #0
+  "?–jSjgÒR >)RÒR ™l?– #0" = 10  # 'Abd al-Jalîl Shâh #0
+  "lšÈTƒ·V ™l?– #0" = 10  # Mahmûd Shâh #0
+  ")RšN ™l #0" = 10  # Riayat Shah #0
+  "üfÏ‚S ™l?– #0" = 10  # Mansûr Shâh #0
+  "FzNbÕlS ™l?– #0" = 10  # Muzaffar Shâh #0
+  "?–^ ™l^·V #0" = 10  # Abu Syahid #0
+  "«ƒÈT+g ™l #0" = 10  # Muhammad Shâh #0
+  "…h Ryr O¯eNW·VS #0" = 10  # Megat Iskander #0
+  "ÜbÌ‘÷Ï‚LR #0" = 10  # Paramesvara #0
+  "Qh ?–	T #0" = 10  # Sam Agi #0
+}
+ship_names = {
+  "Parameswara"
+  "O¯eNW·VSÏ‚9N"  # Sultan Iskandar
+  "Bendahara"
+  "Laksamana"
+  "Temenggung"
+  "Penghulu bendahari"
+  "Shahbandar"
+  "Hukum Kanun"
+  "Undang-Undang"
+  "Pulau Bakung"
+  "Pulau Lingga"
+  "Kepulauan"
+  "Pulau Singkep"
+  "Kepulauan Riau"
+  "Pulau Rempang"
+  "Pulau Kundur"
+  "Pulau Padang"
+  "Pulau Bengkaus"
+  "Pulau Tinggi"
+  "Pulau Sibu"
+  "Pulau Tioman"
+  "Pulau Aur"
+  "Pulau Rupat"
+  "Pulau Rangsang"
+  "Pulau Tebing Tinggi"
+  "Sungai Belait"
+  "Sungai Tutong"
+  "Sungai Tembureng"
+  "Batang"
+  "Trusan"
+  "Sungai Pandaruan"
+  "Lungai Limbang"
+  "Batang Baram"
+  "Sungai Bakong"
+  "Sungai Tutoh"
+  "Sungai Tinjar"
+  "Kuala Belait"
+  "Batu Danau"
+  "Kuala Medamit"
+  "Bangar"
+  "Penanjong"
+  "Lumut"
+  "Telingan"
+  "Labi"
+  "Sukang"
+  "Kuala Baram"
+  "Siak"
+  "Samandara"
+  "Malik ul Salih"
+  "Malik Al-Salih"
+  "Teunom"
+  "Peusangen"
+  "Jamboaye"
+  "Alas"
+  "Tripa"
+  "Simpang-kiri"
+  "Peg Serbeulangit"
+  "Peg Pusat"
+  "Gunung Peuetsagoe"
+  "Pulau we"
+  "Pulau Breueh"
+}

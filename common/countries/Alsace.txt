@@ -1,0 +1,205 @@
+graphical_culture = westerngfx
+color = {
+  246
+  223
+  15
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  defensive_ideas
+  religious_ideas
+  diplomatic_ideas
+  economic_ideas
+  innovativeness_ideas
+  spy_ideas
+  offensive_ideas
+  trade_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  french_caracolle
+  anglofrench_line
+  french_dragoon
+  french_bluecoat
+  french_cuirassier
+  french_impulse
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "1r›s #0" = -1  # Emma #0
+  "KQÌ‘¯e‚„šNZ #0" = -1  # Christiane #0
+  "šN†SÊs·VÉb #0" = -1  # Alexandra #0
+  "¯eyráQ #0" = 0  # Stefan #0
+  "±ƒ³u #0" = 0  # Rainer #0
+  "ˆQmt #0" = 0  # Günther #0
+  "Vg(ƒ #0" = 0  # Franz #0
+  "eêWS #0" = 0  # Ferdinand #0
+  "ÃWÌ‘^ #0" = 0  # Erich #0
+  "ôTS·VS #0" = 0  # Baldur #0
+  "?–SV÷–·V #0" = 0  # Alfred #0
+  "?–S+Y #0" = 0  # Adolf #0
+  "ƒlSyr #1" = 5  # Walter #1
+  "eYXb #1" = 5  # Otto #1
+  "pQ=Oyr #1" = 5  # Lambert #1
+  "“^ú‹ #1" = 5  # Kuno #1
+  "byrVÌ‘·V #1" = 5  # Gottfried #1
+  "<h^ÈTyr #1" = 5  # Gebhard #1
+  "ÃW=OÈT·V #1" = 5  # Eberhard #1
+  "^œú‹ #1" = 5  # Bruno #1
+  "ôTSjg #1" = 5  # Balduin #1
+  "ôuS³u #2" = 5  # Werner #2
+  "wmàVÌ‘^ #4" = 5  # Heinrich #4
+  "ï·Vôu^ #1" = 10  # Ludwig #1
+  "œS+Y #2" = 10  # Rudolf #2
+  "VÌ‘·VÌ‘^ #2" = 10  # Friedrich #2
+  "^KQÈT·V #2" = 10  # Burkhard #2
+  "yr—S·V #2" = 10  # Berthold #2
+  "ZÉ^ ÃW! #0" = 20  # Wilhelm Egon #0
+  "œnf÷–^yr #0" = 20  # Rupprecht #0
+  "ïf ÒR…Q #0" = 20  # Louis René #0
+  "ïf¯e ·^¯efWN #0" = 20  # Louis Constantine #0
+  ")ReYâl·V ZÉ^ #0" = 20  # Leopold Wilhelm #0
+  ")ReYâl·V #0" = 20  # Leopold #0
+  "aSS #0" = 20  # Karl #0
+  "¦uğ <heYS<h #0" = 20  # Johann Georg #0
+  "Vg(ƒ ÃW! #0" = 20  # Franz Egon #0
+  "OÉbyQlš¯e #0" = 20  # Erasmus #0
+  "?–S^÷–^yr #0" = 20  # Albrecht #0
+  "·^Éb·V #3" = 20  # Konrad #3
+  "¦uğ #3" = 20  # Johann #3
+  "?–S’‚ #0" = 40  # Armand #0
+  "ZÉ^ #1" = 40  # Wilhelm #1
+}
+leader_names = {
+  "·V ‰R·Vœ"  # d'Andleau
+  "·V ?–i`¯e<h"  # d'Arnsberg
+  "·V i`ôuS"  # de Bainville
+  "·V ôTS‚„¯e"  # de Baltis
+  "·V &O9yQ"  # de Berenfelz
+  "·V SïQÆY"  # de Berckheim
+  "·V i`—Syr"  # de Béonholdt
+  "·V SY9h"  # de Beroldingen
+  "ZSKQ ·V ^Éb¯ewmÆY"  # Bock de Blasheim
+  "ZSKQ ·V ÃWÒR¯e!X"  # Bock de Erlenburg
+  "·V ZSKQ—gšš"  # de Bocklinsau
+  "·V ¾S<h"  # de Dalberg
+  "·V jg¦¯e ÔkGY"  # de Deux-Ponts-Bitche
+  "·V Y³uk"  # de Dornach
+  "·V ÕlS¯wËeğlàV"  # de Falkenstein
+  "·V V±ƒ¯w¯efW"  # de Fleckenstein
+  "·V V¯eÕn!X"  # de Furstenberg
+  "Öv—g ·V ?–SyrwmÆY"  # Gailing d'Altheim
+  "·V 	TS¯e!X"  # de Gielsberg
+  "·V ÈT9hôTk"  # de Hagenbach
+  "·V ÈTYt )R^Õn<h"  # de Hanau-Lichtenberg
+  "·V —¨NËeğlàV"  # de Hohenstein
+  "·V ¨N<hËeğlàV"  # de Hungerstein
+  "·V úWmVwmÆY"  # de Kippenheim
+  "·V úW^wmÆY"  # de Kircheim
+  "·V pQ·VKQ"  # de Landeck
+  "·V pQ‰vÌ‘"  # de Landenberg
+  "—g³ub æ—¯eyr!X"  # Linange-Westerburg
+  "·V bSnf¬‚"  # de Lupfen
+  "·V bSîh!X"  # de Lutzelburg
+  "·V «ƒSè•yr"  # de Morimont
+  "·V Ua&OwmÆY"  # de Mullenheim
+  "·V ™„KQ"  # de Munck
+  "·V ^¯eTXyr"  # de Pfasttatt
+  "·V ÉbÆYËeğlàV"  # de Ramstein
+  "·V Éb¯e(„ÆYjŒîh"  # de Rathsamhausen
+  "·V ÷–	T¯ewmÆY"  # de Réguisheim
+  "·V VtQËeğlàV"  # de Reichenstein
+  "Vy ±ƒ5ƒ"  # zu Rhein
+  "·V ±ƒ5ƒòƒS·V"  # de Rheinfeld
+  "·V Ñâl®vÃWS"  # de Ribeaupierre
+  "·V Íui`!X"  # de Schaunburg
+  "·V ËeÆR(ƒ!X"  # de Schmitzbourg
+  "·V ‚Yt"  # de Schoenau
+  "·V ‰Ñ‘9h"  # de Sickingen
+  "·V ‚„SËeğlàV"  # de Thierstein
+  "·V şVSKQwmÆY"  # de Turckheim
+  "·V LNÕnwmÆY"  # d'Uttenheim
+  "·V ætmt&OwmÆY"  # de Wasselnheim
+  "·V ôuyr¯ewmÆY"  # de Weitersheim
+  "·V ôuS¯e!X"  # de Wildsberg
+  "·V )nyr^‰V"  # de Winterbescher
+  "OS+Y"  # Wolff
+  "·V ƒlSÆY¯e"  # de Wormser
+  "·V RW,g"  # de Zurlauben
+}
+ship_names = {
+  "?–SyrúWKQ"  # Altkirch
+  "?–«ƒËeZS"  # Ammerschwihr
+  "fYS^XÆY"  # Andolsheim
+  "ôTS"  # Barr
+  ",g9S·V"  # Benfeld
+  "ÔkÀNôu±ƒS"  # Bischwiller
+  "ÔkGY"  # Bitche
+  "ZSSôu±ƒS"  # Bollwiller
+  "^Tlšyr"  # Brumath
+  "^XSHY"  # Cernay
+  "ÑySlš"  # Colmar
+  "ê¬‚yrS"  # Dieffenthal
+  "f‰^XÆY"  # Ensisheim
+  "ÃWS¯efW"  # Erstein
+  "Öv^ôu±ƒS"  # Guebwiller
+  "?–<hú‹"  # Haguenau
+  "¨NætS·V"  # Honwald
+  "eYS^Sôu"  # Horbourg-Wihr
+  "‰R¯e^KQ"  # Hunspach
+  "·^yr^³R"  # Kanterbrau
+  "ïQılS"  # Kaysersberg
+  "³RÕnôTk"  # Lautenbach
+  "³Ryr!X"  # Lauterburg
+  "&OôTk"  # Lembach
+  "lšSÑyÒR^XÆY"  # Marckolsheim
+  "«ƒS^XÆY"  # Molsheim
+  "s|SjŒîh"  # Mulhausen
+  "’‚¯eyr"  # Munster
+  "s|PŸ<h"  # Mutzig
+  "°e^Ì‘(„KQ"  # Neuf-Brisach
+  "eYÉb¯eÉbKQ"  # Oberhaslach
+  "eYSHY"  # Obernai
+  "eYS^ÆY"  # Olsheim
+  "eYS"  # Orbey
+  "÷–ÀNeY¬‚"  # Reichshoffen
+  ")RKQZS"  # Riquewihr
+  "œÕlKQ"  # Rouffach
+  "(„æ—S³u"  # Saverne
+  "0ŒSôuÒR"  # Scherwiller
+  "¯e^S…h"  # Schirmeck
+  "^X±ƒ¯eTX"  # Sélestat
+  "Ï‚òƒSôuS"  # Souffelweyer
+  "Ï‚+Y±ƒ…QÆY"  # Soufflenheim
+  "Ï‚(ƒlšyr"  # Soultzmatt
+  "¯eyrÉb¯e!X"  # Strassburg
+  "fWi`"  # Thann
+  "şVSKQwmÆY"  # Turckheim
+  "úe‰vwmÆY"  # Vendenheim
+  "`îh!X"  # Wissemburg
+  "ôuyrSwmÆY"  # Wittelsheim
+}
+army_names = {
+  "?–S(„¯e›Q"  # Armée d'Alsace
+  "±ƒ5ƒ›Q"  # Armée du Rhin
+  "ZRåe›Q"  # Armée des Vosges
+  "Qhåe›Q"  # Armée du Sundgau
+  "klÉb›Q"  # Armée du Jura
+  "eYîhòƒS·V›Q"  # Armée de l'Ochsenfeld
+  "ÉbÈT·Vyr›Q"  # Armée de la Hardt
+  "Twßv›Q"  # Armée de la Décapole
+  "¯eyrÉb¯e!X›Q"  # Armée de Strasbourg
+  "$PROVINCE$›Q"  # Armée de $PROVINCE$
+}

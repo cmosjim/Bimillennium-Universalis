@@ -1,0 +1,161 @@
+#
+#num_of_wenhuanzhi 文宦值 : 此值越大代表文官升任 反之為宦官
+#num_of_wuqizhi 武戚值 : 此值越大代表武官升任 反之為外戚
+#
+ #num_of_wenhuanzhi:0 "文官派系影響力"
+ #wenhuan_50up:0 "文官派系當權影?"
+ #wenhuan_90up:0 "文官派系專權朝廷影?"
+ #wenhuan_50lower:0 "宦官派系當權影響"
+ #wenhuan_10lower:0 "宦官派系專權朝廷影?"
+ #
+ #num_of_wuqizhi:0 "武將派系影響力"
+ #wuqi_50up:0 "武將派系當權影?"
+ #wuqi_90up:0 "武將派系專權朝廷影?"
+ #wuqi_50lower:0 "武將派系當權影響"
+ #wuqi_10lower:0 "武將派系專權朝廷影?"
+ #2019.01.31 改成只有90up的modifier debuff..
+############################################
+#
+# 文宦值
+#
+############################################
+#wenhuan_60up = {
+#	potential = {
+#		has_country_flag = wenhuanzhi1 
+#	}
+#
+#	trigger = {
+#		check_variable = {
+#			which = num_of_wenwuzhi
+#			value = 50
+#		}
+#		check_variable = {
+#			which = num_of_wenhuanzhi
+#			value = 60
+#		}	
+#		NOT = {
+#			check_variable = {
+#			which = num_of_wenhuanzhi
+#			value = 90
+#			}
+#		}
+#	}
+#	war_exhaustion = -0.15
+#	administrative_efficiency = 0.1
+#	reform_progress_growth = 0.1
+#	global_ship_cost = 0.15
+#	
+#}
+
+
+wenhuan_90up = {
+	potential = {
+		has_country_flag = wenwuzhi1
+		has_country_flag = wenhuanzhi1 
+		has_reform = celestial_empire
+	}
+	trigger = {
+		check_variable = {
+			which = num_of_wenwuzhi
+			value = 50
+		}
+		check_variable = {
+			which = num_of_wenhuanzhi
+			value = 90
+		}	
+	}
+	
+	yearly_corruption = 0.25
+	land_morale = -0.25
+	global_unrest = 15
+	global_ship_cost = 0.5
+	administrative_efficiency = 0.15
+	movement_speed = -0.25
+}
+
+
+wenhuan_85up = {
+	potential = {
+		has_country_flag = wenwuzhi1
+		has_country_flag = wenhuanzhi1 
+		has_reform = celestial_empire
+	}
+	trigger = {
+		check_variable = {
+			which = num_of_wenwuzhi
+			value = 50
+		}
+		check_variable = {
+			which = num_of_wenhuanzhi
+			value = 85
+		}		
+		NOT = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 90
+			}	
+		}
+	}
+	
+	global_unrest = 5
+	movement_speed = -0.05
+
+}
+
+wenhuan_15lower = {
+	potential = {
+		has_country_flag = wenwuzhi1
+		has_country_flag = wenhuanzhi1 
+		has_reform = celestial_empire
+	}
+
+	trigger = {
+		check_variable = {
+			which = num_of_wenwuzhi
+			value = 50
+		}	
+		check_variable = {
+			which = num_of_wenhuanzhi
+			value = 10
+		}		
+		NOT = {
+			check_variable = {
+				which = num_of_wenhuanzhi
+				value = 15
+			}
+		}
+	}
+	
+	global_unrest = 5
+	discipline = -0.05
+
+}
+
+wenhuan_10lower = {
+	potential = {
+		has_country_flag = wenwuzhi1
+		has_country_flag = wenhuanzhi1 
+		has_reform = celestial_empire
+	}
+
+	trigger = {
+		check_variable = {
+			which = num_of_wenwuzhi
+			value = 50
+		}	
+		NOT = {
+			check_variable = {
+			which = num_of_wenhuanzhi
+			value = 10
+			}
+		}
+	}
+	
+	global_unrest = 15
+	global_colonial_growth = 15
+	range = 0.25
+	land_morale = -0.25
+	discipline = -0.15
+	shock_damage = -0.1
+}
+

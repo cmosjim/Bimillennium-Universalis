@@ -1,0 +1,40 @@
+#Ideas from Extended Vanilla Experience
+
+
+DLH_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.10
+		global_manpower_modifier = 0.20
+	}
+	
+	bonus = {
+		global_missionary_strength = 0.01
+	}
+	
+	trigger = {
+		tag = DLH
+	}
+	free = yes
+	
+	defender_of_india = {
+		prestige = 1
+	}
+	monetary_system = {
+		 global_tax_modifier = 0.10
+	}
+	hardened_army = {
+		discipline = 0.05
+	}
+	muslim_india = {
+		missionaries = 1
+	}
+	exotic_produce = {
+		trade_efficiency = 0.10
+	}
+	defensive_strategy = {
+		defensiveness = 0.20
+	}
+	delhi_morale = {
+		land_morale = 0.15
+	}
+}

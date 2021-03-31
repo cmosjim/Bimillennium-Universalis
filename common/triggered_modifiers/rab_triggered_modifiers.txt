@@ -1,0 +1,2602 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+# For benfits for small countries. ==> on country decision.
+#
+#	chinese_bureaucracy 	: 儒家 官僚 武将 宦官
+#	chinese_bureaucracy_2	: 外戚 官僚 武将 宦官 
+#	easten_big_country		: 东方大国
+#	keep_xx_grasslands 		: 游牧民族获得的草原省份数量+骑兵buff
+#	taiping_rebellion 		: 太平天国之乱
+#	20171014 Because re-load will lose factions , higher frequencey loading , so clear self-define bureaurcracy 
+#	overload_capacity 		: 军阀政体如果不变身的debuff
+#	tank_age_come			: 坦克时代来临
+#####################################################3
+#	2019-03-13 delete control_silk_road modifiers
+#	2019-03-13 create anti-nuclear weapon trigger modifiers
+#	2019-11-19 add nomadic_conquest from xy's suggestion.
+#	2020-02-29 add YUAN trouble when chinese warlod exists
+# ( decadence_in_end purpose to limit strength on main country when in the time of the age of decadence )
+#  2020-07-28 add num_of_cities limitation of ancient_warlord reform 
+over_warlord_limit_basic = {
+    potential = {
+		has_reform = ancient_chinese_warlord_reform
+	}
+	trigger = {
+		num_of_cities = 130
+		NOT = { num_of_cities = 180 }
+	}
+	global_unrest = 2
+	administrative_efficiency = -0.1
+	yearly_corruption = 0.1
+	global_tax_modifier = -0.1
+}
+
+over_warlord_limit_large = {
+    potential = {
+		has_reform = ancient_chinese_warlord_reform
+	}
+	trigger = {
+		num_of_cities = 180
+		NOT = { num_of_cities = 230 }
+
+	}
+	discipline = -0.15
+	global_unrest = 5
+	administrative_efficiency = -0.5
+	yearly_corruption = 0.25
+	global_tax_modifier = -0.25
+}
+
+over_warlord_limit_huge = {
+    potential = {
+		has_reform = ancient_chinese_warlord_reform
+	}
+	trigger = {
+		num_of_cities = 230
+		
+	}
+	discipline = -0.5
+	global_unrest = 15
+	administrative_efficiency = -0.75
+	yearly_corruption = 0.5
+	global_tax_modifier = -0.5
+	global_manpower_modifier = -0.75
+}
+
+nomadic_conquest = { 
+    potential = {
+		is_year = 1206
+		NOT = { is_year = 1259 }
+		tag = MGE
+	}
+	trigger = {
+			is_year = 1206
+		NOT = { is_year = 1259 }
+		tag = MGE
+		NOT = { has_country_flag = youmuzhognzhi }
+	}
+	global_unrest = -2
+	global_tax_modifier = 0.5
+	global_manpower_modifier = 0.5
+	land_morale = 1.0
+	discipline = 0.2
+	infantry_cost = -0.5
+	cavalry_cost = -0.5
+	land_forcelimit_modifier = 0.5
+	leader_land_fire = 2
+	leader_land_shock = 3
+	leader_siege = 1
+	monarch_military_power = 5
+}
+
+
+#############calculate anti-nuclear building 
+#keep_1_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 1
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 2
+#			}			
+#		}	
+#	}
+#}	
+#
+#keep_2_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 2
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 3
+#			}			
+#		}	
+#	}
+#}
+#keep_3_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 3
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 4
+#			}			
+#		}	
+#	}
+#}
+#
+#keep_4_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 4
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 5
+#			}			
+#		}	
+#	}
+#}
+#keep_5_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 5
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 6
+#			}			
+#		}	
+#	}
+#}
+#
+#keep_6_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 6
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 7
+#			}			
+#		}	
+#	}
+#}
+#
+#keep_7_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 7
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 8
+#			}			
+#		}	
+#	}
+#}
+#
+#keep_8_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 8
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 9
+#			}			
+#		}	
+#	}
+#}
+#
+#keep_9_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 9
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 10
+#			}			
+#		}	
+#	}
+#}
+#
+#keep_10_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 10
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 11
+#			}			
+#		}	
+#	}
+#}
+#
+#keep_11_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 11
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 12
+#			}			
+#		}	
+#	}
+#}
+#keep_12_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 12
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 13
+#			}			
+#		}	
+#	}
+#}
+#
+#keep_13_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 13
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 14
+#			}			
+#		}	
+#	}
+#}
+#keep_14_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 14
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 15
+#			}			
+#		}	
+#	}
+#}
+#keep_15_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 15
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 16
+#			}			
+#		}	
+#	}
+#}
+#keep_16_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 16
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 17
+#			}			
+#		}	
+#	}
+#}
+#keep_17_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 17
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 18
+#			}			
+#		}	
+#	}
+#}
+#keep_18_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 18
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 19
+#			}			
+#		}	
+#	}
+#}
+#
+#keep_19_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 19
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 20
+#			}			
+#		}	
+#	}
+#}
+#
+#keep_20_anti_nuclear_building = {
+#	potential = {
+#			
+#	}
+#	trigger = {
+#		calc_true_if = {
+#			all_owned_province = {
+#				has_building = anti_nuclear
+#			}
+#			amount = 20
+#		}
+#		NOT = {
+#			calc_true_if = {
+#				all_owned_province = {
+#					has_building = anti_nuclear
+#				}
+#				amount = 21
+#			}			
+#		}	
+#	}
+#}
+
+
+######游牧民族获得的草原省份数量######
+
+keep_4_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 4			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 5			
+				}
+			}
+	}
+		cavalry_power = 0.1
+		global_tax_modifier = 0.15
+		production_efficiency = 0.15
+}
+keep_5_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 5			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 6			
+				}
+			}
+	}
+		cavalry_power = 0.12
+		global_tax_modifier = 0.18
+		production_efficiency = 0.16
+}
+
+keep_6_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 6			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+
+					}
+					amount = 7			
+				}
+			}
+					
+	}
+		cavalry_power = 0.14
+		global_tax_modifier = 0.2
+		production_efficiency = 0.18
+}
+keep_7_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 7			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 8			
+				}
+			}
+					
+	}
+		cavalry_power = 0.16
+		global_tax_modifier = 0.21
+		production_efficiency = 0.2
+}
+keep_8_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 8		
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 9		
+				}
+			}
+					
+	}
+		cavalry_power = 0.17
+		global_tax_modifier = 0.22
+		production_efficiency = 0.22
+}
+keep_9_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 9			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 10			
+				}
+			}
+					
+	}
+		cavalry_power = 0.18
+		global_tax_modifier = 0.23
+		production_efficiency = 0.23
+}
+keep_10_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 10			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 11		
+				}
+			}
+					
+	}
+		cavalry_power = 0.2
+		global_tax_modifier = 0.25
+		production_efficiency = 0.25
+}
+keep_11_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 11			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 12			
+				}
+			}
+					
+	}
+		cavalry_power = 0.22
+		global_tax_modifier = 0.26
+		production_efficiency = 0.22
+}
+
+keep_12_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 12		
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 13	
+				}
+			}
+					
+	}
+		cavalry_power = 0.22
+		global_tax_modifier = 0.27
+		production_efficiency = 0.22
+}
+
+keep_13_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 13			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 14	
+				}
+			}
+					
+	}
+		cavalry_power = 0.25
+		global_tax_modifier = 0.28
+		production_efficiency = 0.25
+}
+keep_14_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 14			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 15			
+				}
+			}
+					
+	}
+		cavalry_power = 0.26
+		global_tax_modifier = 0.28
+		production_efficiency = 0.28
+		
+}
+keep_15_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 15			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 16		
+				}
+			}
+					
+	}
+		cavalry_power = 0.28
+		global_tax_modifier = 0.28
+		production_efficiency = 0.3
+}
+keep_16_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 16			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 17	
+				}
+			}
+					
+	}
+		cavalry_power = 0.3
+		global_tax_modifier = 0.3
+		production_efficiency = 0.32
+}
+keep_17_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 17		
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 18	
+				}
+			}
+					
+	}
+		cavalry_power = 0.32
+		global_tax_modifier = 0.32
+		production_efficiency = 0.35		
+}
+keep_18_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 18		
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 19	
+				}
+			}
+					
+	}
+		cavalry_power = 0.34
+		global_tax_modifier = 0.34
+		production_efficiency = 0.36	
+}
+keep_19_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 19	
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 20	
+				}
+			}
+					
+	}
+		cavalry_power = 0.36
+		global_tax_modifier = 0.35
+		production_efficiency = 0.38
+}
+keep_20_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 20	
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 21	
+				}
+			}
+					
+	}
+		cavalry_power = 0.38
+		global_tax_modifier = 0.38
+		production_efficiency = 0.4
+}
+keep_21_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 21
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 22	
+				}
+			}
+					
+	}
+		cavalry_power = 0.39
+		global_tax_modifier = 0.40
+		production_efficiency = 0.42
+}
+keep_22_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 22	
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 23	
+				}
+			}
+					
+	}
+		cavalry_power = 0.40
+		global_tax_modifier = 0.42
+		production_efficiency = 0.45		
+}
+keep_23_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 23	
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 30	
+				}
+			}
+					
+	}
+		cavalry_power = 0.42
+		global_tax_modifier = 0.45
+		production_efficiency = 0.48	
+}
+keep_30_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 30
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 45	
+				}
+			}
+					
+	}
+		cavalry_power = 0.43
+		global_tax_modifier = 0.47
+		production_efficiency = 0.5
+}
+keep_45_grasslands = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							region = east_siberia_region
+							region = west_siberia_region
+							region = mongolia_region
+							region = manchuria_region
+							region = central_asia_region
+							region = ural_region
+							region = crimea_region
+							region = khorasan_region
+							region = russia_region
+						}						
+						OR = {
+							has_terrain = grasslands
+							has_terrain = steppe
+						}
+					}
+					amount = 45	
+				}
+					
+	}
+		cavalry_power = 0.5
+		global_tax_modifier = 0.5
+		production_efficiency = 0.5
+}
+
+###############################################
+
+######游牧民族获得的debuff省份数量######
+
+keep_4_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 4			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 5			
+				}
+			}
+	}
+		cavalry_power = -0.05
+		global_tax_modifier = -0.1
+		production_efficiency = -0.1
+}
+keep_5_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 5			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 6			
+				}
+			}
+	}
+		cavalry_power = -0.08
+		global_tax_modifier = -0.13
+}
+
+keep_6_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 6			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+
+					}
+					amount = 7			
+				}
+			}
+					
+	}
+		cavalry_power = -0.1
+		global_tax_modifier = -0.16
+}
+keep_7_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 7			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 8			
+				}
+			}
+					
+	}
+		cavalry_power = -0.12
+		global_tax_modifier = -0.18
+}
+keep_8_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 8		
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 9		
+				}
+			}
+					
+	}
+		cavalry_power = -0.15
+		global_tax_modifier = -0.1
+		global_tax_modifier = -0.2
+}
+keep_9_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 9			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 10			
+				}
+			}
+					
+	}
+		cavalry_power = -0.2
+		global_tax_modifier = -0.2
+		global_tax_modifier = -0.25
+}
+keep_10_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 10			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 11		
+				}
+			}
+					
+	}
+		cavalry_power = -0.22
+		global_tax_modifier = -0.25
+		production_efficiency = -0.27
+}
+keep_11_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 11			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 12			
+				}
+			}
+					
+	}
+		cavalry_power = -0.22
+		global_tax_modifier = -0.28
+		production_efficiency = -0.3
+}
+
+keep_12_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 12		
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 13	
+				}
+			}
+					
+	}
+		cavalry_power = -0.24
+		global_tax_modifier = -0.32
+		production_efficiency = -0.32
+}
+
+keep_13_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 13			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 14	
+				}
+			}
+					
+	}
+		cavalry_power = -0.27
+		global_tax_modifier = -0.4
+		production_efficiency = -0.34
+}
+keep_14_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 14			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 15			
+				}
+			}
+					
+	}
+		cavalry_power = -0.3
+		global_tax_modifier = -0.45
+		production_efficiency = -0.36
+		
+}
+keep_15_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 15			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 16		
+				}
+			}
+					
+	}
+		cavalry_power = -0.32
+		global_tax_modifier = -0.5
+		production_efficiency = -0.37
+}
+keep_16_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 16			
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 17	
+				}
+			}
+					
+	}
+		cavalry_power = -0.33
+		global_tax_modifier = -0.55
+		production_efficiency = -0.38
+}
+keep_17_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 17		
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 18	
+				}
+			}
+					
+	}
+		cavalry_power = -0.34
+		global_tax_modifier = -0.6
+		production_efficiency = -0.4
+}
+keep_18_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 18		
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 19	
+				}
+			}
+					
+	}
+		cavalry_power = -0.35
+		global_tax_modifier = -0.65
+		production_efficiency = -0.45
+}
+keep_19_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 19	
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 20	
+				}
+			}
+					
+	}
+		cavalry_power = -0.36
+		global_tax_modifier = -0.7
+		production_efficiency = -0.5
+}
+keep_20_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 20	
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 21	
+				}
+			}
+					
+	}
+		cavalry_power = -0.38
+		global_tax_modifier = -0.75
+		production_efficiency = -0.55
+}
+keep_21_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 21
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 22	
+				}
+			}
+					
+	}
+		cavalry_power = -0.39
+		global_tax_modifier = -0.80
+		production_efficiency = -0.65
+}
+keep_22_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 22	
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 23	
+				}
+			}
+					
+	}
+		cavalry_power = -0.40
+		global_tax_modifier = -0.85
+		production_efficiency = -0.7
+}
+keep_23_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 23	
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 30	
+				}
+			}
+					
+	}
+		cavalry_power = -0.45
+		global_tax_modifier = -0.9
+		production_efficiency = -0.75
+}
+keep_30_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 30
+				}
+			NOT = {	
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 45	
+				}
+			}
+					
+	}
+		cavalry_power = -0.43
+		global_tax_modifier = -0.95
+		production_efficiency = -0.78
+}
+keep_45_farms = {
+	potential = {
+		OR = {
+			technology_group = nomad_group
+			technology_group = western_nomad_group
+			technology_group = eastern_nomad_group
+		}
+	}
+	trigger = {
+				calc_true_if = {
+					all_owned_province = {
+					
+						OR = {
+							has_terrain = farmlands
+							has_terrain = hills
+						}
+					}
+					amount = 45	
+				}
+					
+	}
+		cavalry_power = -0.5
+		global_tax_modifier = -1.0
+		production_efficiency = -0.8
+}
+##############################################################
+
+taiping_rebellion = {
+	potential = {
+		num_of_cities = 55
+		tag = QNG
+	}
+	trigger = {
+		exists = TP1
+	}
+	
+	land_morale = -0.1
+	discipline = -0.05
+	army_tradition = -1
+	global_unrest = 5
+}
+
+#tank_age_come = {
+#	potential = {
+#		mil_tech = 80 
+#	}
+#	trigger = {
+#		mil_tech = 83
+#	}
+#		cavalry_power = 1.0
+#		cavalry_cost = 1.25
+#}

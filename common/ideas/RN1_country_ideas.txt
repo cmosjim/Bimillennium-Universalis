@@ -1,0 +1,49 @@
+#northern xio
+RN1_ideas = {
+	start = {
+		infantry_cost = -0.1
+		global_tax_modifier = 0.1
+	}
+	
+	bonus = {
+		navy_tradition = 0.5
+		manpower_recovery_speed = 0.1
+	}
+	
+	trigger = {
+	   tag = RN1
+	}
+
+	free = yes
+	
+	qihuojun = {
+		land_morale = 0.1
+	}
+
+	anti_shishi = {
+		prestige = 1 
+		leader_land_fire = 1
+	}
+
+	ningju_minzu_qinghuai = {
+		global_manpower_modifier = 0.1
+	}
+	
+	xiaoyong_shanzhan = {
+		army_tradition = 1
+	}
+
+	fuhanxing = {
+		ae_impact = -0.15
+	}
+
+	fen_xiang_guo = {
+		enemy_core_creation = 0.25
+		discipline = 0.05
+	}
+
+	ye_cheng = {
+		trade_efficiency = 0.15
+		production_efficiency = 0.1
+	}
+}

@@ -1,0 +1,61 @@
+october_revolution = {
+	potential = {
+	   tag = RUS
+	   religion = conservatism
+	   NOT = { has_global_flag = suliancunzai }
+	   NOT = { exists = SOV }
+	   has_institution = nationalism_institution
+	}
+	can_start = {
+		has_any_disaster = no
+		NOT = { exists = SOV }
+        tag = RUS
+	    religion = conservatism
+		has_institution = nationalism_institution
+	}
+
+	can_stop = {
+	OR = {
+    NOT = { tag = RUS }
+	NOT = { religion = conservatism }
+	}
+ }
+	progress = {
+	    modifier = {
+			factor = 0.1
+			NOT = {
+			started_in = 1850.1.1
+			}
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.5
+			started_in = 1900.1.1
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 30
+			started_in = 1917.1.1
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.1
+			num_of_loans = 2
+		}
+		modifier = {
+			factor = 0.1
+			num_of_loans = 5
+		}
+		
+	}
+	modifier = {
+	}	
+	can_end = {
+    has_global_flag = suliancunzai
+	OR = {
+    NOT = { tag = RUS }
+	NOT = { religion = conservatism }
+	}
+	}
+		on_start = xy_sov.1
+}

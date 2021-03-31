@@ -1,0 +1,237 @@
+#2020-09-28 add overlord_enforce_peace_attacking = yes 
+duhufu_state = {}
+
+duhufu_state = {
+	#If similar subject added check if it needs to be added to these scripted triggers:
+	#is_subject_except_tributary_trigger
+	#is_free_or_tributary_trigger
+	#2019-02-26 gets_help_with_rebels = yes
+	#2020-02-26 let duhufu could be ally with others when you diplomacy accept it. 
+	copy_from = default
+
+	# Graphics:
+	sprite = GFX_subject_colony_icon
+	diplomacy_overlord_sprite = GFX_diplomacy_leadduhufu
+	diplomacy_subject_sprite = GFX_diplomacy_subduhufu
+
+	# Properties:
+	can_send_missionary_to_subject = yes
+	transfer_trade_power = no #if it is yes , will occur provide colonist highlight , but actually not happed.
+	can_fight_independence_war = no
+	joins_overlords_wars = yes
+	joins_colonial_wars = yes
+	is_voluntary = no
+	can_send_tribute = no #check it
+	overlord_can_attack = no
+	eats_overlords_colonies = yes
+	takes_diplo_slot = no			#not occupy dip relations.
+	has_power_projection = yes
+	base_liberty_desire = -95
+	relative_power_class = 1
+	can_have_subjects_of_other_types = no
+	uses_military_focus = yes
+	overlord_protects_external = yes
+	counts_for_borders = no
+	can_use_claims = yes
+	share_rebel_popup = yes
+	can_transfer_in_peace = no
+	gets_help_with_rebels = yes
+	can_set_mil_focus = yes
+	separatists_become_subjects = no
+	allows_taking_land_without_independence = yes
+	overlord_can_fabricate_for = yes
+	max_government_rank = 0
+	cities_required_for_bonuses = 10
+	liberty_desire_negative_prestige = 0.0
+	liberty_desire_development_ratio = 0.0
+	forcelimit_bonus = 1.0
+	trust_on_start = 100
+	diplomacy_view_class = 1
+	overlord_enforce_peace_attacking = yes
+
+	
+	overlord_opinion_modifier = is_duhufu_state
+	subject_opinion_modifier = is_duhufu_state
+	
+	can_fight = {
+		independent_nations = yes
+		#NOT = { same_overlord = tributary_state }
+		#same_overlord = duhufu_state
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		#NOT = { same_overlord = tributary_state }
+		#NOT = { same_overlord = duhufu_state }
+		other_overlord = all
+	}
+	can_ally = {
+		independent_nations = yes
+		same_overlord = tributary_state
+		same_overlord = duhufu_state
+		other_overlord = all
+	}
+	can_marry = {
+	}
+
+	# Subject Interactions:
+	# (immediate)
+	conscript_general = yes
+	takeondebt = yes
+	enforce_religion = no
+	enforce_culture = yes
+	grant_core_claim = yes
+	sacrifice_ruler = yes
+	bestow_gifts = yes
+	send_additional_troops = yes
+	demand_artifacts = yes
+	demand_additional_tribute = no
+	placate_rulers = yes
+	place_relative_on_throne = no
+	embargo_rivals = yes
+	press_sailors = no
+	knowledge_sharing = yes
+	replace_governor = no
+	siphon_income = yes
+	modifier_subject = {
+		modifier = duhufu_state_behind_overlord_tech_adm
+		trigger = {
+			ROOT = {
+				NOT = { adm_tech = FROM }
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = duhufu_state_behind_overlord_tech_dip
+		trigger = {
+			ROOT = {
+				NOT = { dip_tech = FROM }
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = duhufu_state_behind_overlord_tech_mil
+		trigger = {
+			ROOT = {
+				NOT = { mil_tech = FROM }
+			}
+		}
+	}
+}
+
+
+duhufu_state_color = {
+	copy_from = default
+
+	# Graphics:
+	sprite = GFX_subject_colony_icon
+	diplomacy_overlord_sprite = GFX_diplomacy_leadduhufu
+	diplomacy_subject_sprite = GFX_diplomacy_subduhufu
+
+	# Properties:
+	can_send_missionary_to_subject = yes
+	transfer_trade_power = no #if it is yes , will occur provide colonist highlight , but actually not happed.
+	can_fight_independence_war = no
+	joins_overlords_wars = yes
+	joins_colonial_wars = yes
+	is_voluntary = no
+	can_send_tribute = no #check it
+	overlord_can_attack = no
+	eats_overlords_colonies = yes
+	takes_diplo_slot = no			#not occupy dip relations.
+	has_power_projection = yes
+	base_liberty_desire = -95
+	relative_power_class = 1
+	can_have_subjects_of_other_types = no
+	uses_military_focus = yes
+	overlord_protects_external = yes
+	counts_for_borders = no
+	can_use_claims = yes
+	share_rebel_popup = yes
+	can_transfer_in_peace = no
+	gets_help_with_rebels = yes
+	can_set_mil_focus = yes
+	separatists_become_subjects = no
+	allows_taking_land_without_independence = yes
+	overlord_can_fabricate_for = yes
+	has_colonial_parent = yes
+	max_government_rank = 0
+	cities_required_for_bonuses = 10
+	liberty_desire_negative_prestige = 0.0
+	liberty_desire_development_ratio = 0.0
+	forcelimit_bonus = 1.0
+	trust_on_start = 100
+	diplomacy_view_class = 1
+	overlord_enforce_peace_attacking = yes
+	
+	
+	
+	overlord_opinion_modifier = is_duhufu_state
+	subject_opinion_modifier = is_duhufu_state
+	
+	can_fight = {
+		independent_nations = yes
+		#NOT = { same_overlord = tributary_state }
+		#NOT = { same_overlord = duhufu_state }
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		#NOT = { same_overlord = tributary_state }
+		#NOT = { same_overlord = duhufu_state }
+		other_overlord = all
+	}
+	can_ally = {
+		independent_nations = yes
+		same_overlord = tributary_state
+		same_overlord = duhufu_state
+		other_overlord = all
+	}
+	can_marry = {
+	}
+
+	# Subject Interactions:
+	# (immediate)
+	conscript_general = yes
+	takeondebt = yes
+	enforce_religion = no
+	enforce_culture = yes
+	grant_core_claim = yes
+	sacrifice_ruler = yes
+	bestow_gifts = yes
+	send_additional_troops = yes
+	demand_artifacts = yes
+	demand_additional_tribute = no
+	placate_rulers = yes
+	place_relative_on_throne = no
+	embargo_rivals = yes
+	press_sailors = no
+	knowledge_sharing = yes
+	replace_governor = yes
+	siphon_income = yes
+	modifier_subject = {
+		modifier = duhufu_state_behind_overlord_tech_adm
+		trigger = {
+			ROOT = {
+				NOT = { adm_tech = FROM }
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = duhufu_state_behind_overlord_tech_dip
+		trigger = {
+			ROOT = {
+				NOT = { dip_tech = FROM }
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = duhufu_state_behind_overlord_tech_mil
+		trigger = {
+			ROOT = {
+				NOT = { mil_tech = FROM }
+			}
+		}
+	}
+}
+

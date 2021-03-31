@@ -1,0 +1,22 @@
+# South Asian War Elephant
+
+type = cavalry
+unit_type = early_chinese
+trigger = {
+	NOT = {
+		capital_scope = {
+			OR = {
+				region = indo_china_region
+				region = burma_region
+				region = malaya_region
+			}	
+		}
+	}	
+}	
+maneuver = 1
+offensive_morale = 2
+defensive_morale = 1
+offensive_fire = 0
+defensive_fire = 0
+offensive_shock = 1
+defensive_shock = 1

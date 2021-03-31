@@ -1,0 +1,46 @@
+#northern xio
+FX1_ideas = {
+	start = {
+		cavalry_power = 0.2
+		land_forcelimit_modifier = 0.2
+	}
+	
+	bonus = {
+		land_morale = 0.15
+	}
+	
+	trigger = {
+		tag = FX1
+	}
+
+	free = yes
+	
+	minfeng_biao_han = {
+		war_exhaustion_cost = -0.10
+	}
+
+	dongbei_daxue = {
+		idea_cost = -0.1
+	}
+
+	lulin_haohan = {
+		mercenary_manpower = 0.4
+	}
+	
+	shijiuruming = {
+		stability_cost_modifier = -0.1
+	}
+
+	jiduan_qihou = {
+		defensiveness = 0.2
+	}
+
+	aihu_zi_min = {
+		prestige = 1
+	}
+
+	quanmin_wise_bing = {
+		global_manpower_modifier = 0.2
+	}
+
+}

@@ -1,0 +1,53 @@
+SAIBEI_ideas = {
+	start = {
+		land_morale = 0.15
+		discipline = 0.05
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.33
+	}
+
+	trigger = {
+	OR = {
+		tag = GON
+		tag = GOV
+		tag = GV1
+		tag = GV2
+		tag = GV3
+		tag = TGG
+		tag = ZON
+		tag = MTN
+		tag = GUO
+		tag = LIZ
+		tag = GAO
+		tag = HZZ
+		tag = LU2
+		tag = TM3
+		tag = MB1
+		}
+	}
+	free = yes
+
+	xiliang_cavalry = {
+		cavalry_power = 0.15
+	}
+	religion_start = {
+		missionaries = 1
+	}
+	kazuo_when_customs = {
+		defensiveness = 0.2
+	}
+	good_grazing_land = {
+		land_maintenance_modifier = -0.1
+	}
+	silk_road_saibei = {
+		trade_efficiency = 0.15
+	}
+	saibei_border = {
+		improve_relation_modifier = 0.35
+	}
+	cave_life = {
+		infantry_cost = -0.15
+	}
+}

@@ -1,0 +1,44 @@
+LO1_ideas = {
+	start = {
+		trade_efficiency = 0.1
+		prestige = 1
+	}
+	
+	bonus = {
+		global_trade_power = 0.15
+	}
+	
+	trigger = {
+		tag = LO1
+	}
+	free = yes		#will be added at load.
+	
+	silk_road_trade_shs = {
+		caravan_power = 0.2
+	}
+	
+	land_of_many_monks_shs = {
+		tolerance_own = 2
+	}
+	
+	nomad_raids_shs = {
+		shock_damage_received = -0.1
+	}
+	
+	desert_country_shs = {
+		land_attrition = -0.15
+	}
+	
+	strong_chinese_ties_shs = {
+		technology_cost = -0.1
+		global_foreign_trade_power = 0.1
+	}
+	
+	contested_nation_shs = {
+		diplomatic_reputation = 1
+	}
+	
+	religious_converts_shs = {
+		global_missionary_strength = 0.01
+	}
+}

@@ -1,0 +1,108 @@
+socialism_evolve = {
+	potential = {
+	reverse_check_chinese_warlord = yes
+		NOT = { has_reform = modern_chinese_warlord_reform }
+		religion = communism
+		is_year = 1900
+		NOT = { 
+		has_country_modifier = people_wake_com
+	has_country_modifier = cultural_revolution_md  }
+	}
+	can_start = {
+		is_year = 1900
+		religion = communism
+		NOT = { 
+		has_country_modifier = people_wake_com
+	has_country_modifier = cultural_revolution_md  }
+	}
+
+	can_stop = {
+	OR = { NOT = { religion = communism }
+	has_country_modifier = people_wake_com
+	has_country_modifier = cultural_revolution_md
+	}
+	}
+
+	progress = {
+		modifier = {
+			factor = 0.5
+			is_year = 1980
+		}
+		modifier = {
+			factor = 0.04
+			is_year = 1950
+		}
+		modifier = {
+			factor = 0.01
+			NOT = { has_country_modifier = people_wake_com }
+		}
+		modifier = {
+			factor = 0.05
+			NOT = { adm = 6 }
+		}
+		modifier = {
+			factor = 10
+			started_in = 1975.1.1
+			is_year = 1989
+	    }
+	}
+	
+	modifier = {
+	}	
+	can_end = {
+    	NOT = { religion = communism }
+		has_country_modifier = false_communism
+	}
+		on_start = xy_coldwar.5
+}
+
+cultural_revolution = {
+	potential = {
+		religion = communism
+		has_country_modifier = cultural_revolution_md
+		NOT = { has_country_modifier = people_wake_com }
+	}
+	can_start = {
+	
+		religion = communism
+		has_country_modifier = cultural_revolution_md
+		NOT = { has_country_modifier = people_wake_com }
+	}
+
+	can_stop = {
+	OR = { NOT = { religion = communism }
+	has_country_modifier = people_wake_com
+	}
+	}
+
+	progress = {
+		modifier = {
+		    factor = 1
+			religion = communism
+		}
+		modifier = {
+		    factor = 0.5
+			adm = 5
+		}
+		modifier = {
+		    factor = 0.5
+			dip = 5
+		}
+		modifier = {
+		    factor = 0.5
+			mil = 5
+		}
+	
+	
+	}
+	modifier = {
+	}	
+	can_end = {
+	OR = {
+    	NOT = { religion = communism }
+		NOT = { has_country_modifier = cultural_revolution_md }
+		has_country_modifier = people_wake_com
+		}
+	}
+		on_start = xy_coldwar.6
+}

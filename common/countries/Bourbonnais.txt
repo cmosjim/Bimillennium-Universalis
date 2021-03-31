@@ -1,0 +1,197 @@
+graphical_culture = westerngfx
+color = {
+  0
+  140
+  165
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  defensive_ideas
+  trade_ideas
+  religious_ideas
+  diplomatic_ideas
+  economic_ideas
+  innovativeness_ideas
+  offensive_ideas
+  spy_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  french_caracolle
+  anglofrench_line
+  french_dragoon
+  french_bluecoat
+  french_cuirassier
+  french_impulse
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "›sKN #0" = -1  # Marie #0
+  "›s<hKNyr #0" = -1  # Marguerite #0
+  "Ï‚Ês #0" = -10  # Suzanne #0
+  "‡eîhyr #0" = 0  # Vincent #0
+  "‚„ZSS #0" = 0  # Thibault #0
+  "‰SN #0" = 0  # Sylvain #0
+  "^XSåe #0" = 0  # Serge #0
+  "^XôT¯e‚„‰R #0" = 0  # Sébastien #0
+  "WpQ #0" = 0  # Roland #0
+  "÷–ú‹ #0" = 0  # Renaud #0
+  "ÉbLNS #0" = 0  # Raoul #0
+  "<SäSÉb #0" = 0  # Nicolas #0
+  "s|GkS #0" = 0  # Michel #0
+  "lšKQ‰s|Þ #0" = 0  # Maximilien #0
+  "«ƒÌ‘¯e #0" = 0  # Maurice #0
+  "lšîO #0" = 0  # Matthieu #0
+  "lšN #0" = 0  # Martin #0
+  "QÒR #0" = 0  # Jules #0
+  "¦umt+Y #0" = 0  # Joseph #0
+  "©‹ ôT‚„¯eyr #0" = 0  # Jean-Baptiste #0
+  "O<SšN¯e #0" = 0  # Ignace #0
+  "ªu'SÆY #0" = 0  # Guillaume #0
+  "TN»l #0" = 0  # Georges #0
+  "KQm·V #0" = 0  # Claude #0
+  "^±ƒ¯e #0" = 0  # Blaise #0
+  "=OªRæt #0" = 0  # Benoît #0
+  "ôTðlÒRs| #0" = 0  # Barthélemy #0
+  "?–S’‚ #0" = 0  # Armand #0
+  "‰R^œætyQ #0" = 0  # Ambroise #0
+  "šN†SqS'Y #0" = 0  # Alexandre #0
+  "W=Oyr #1" = 1  # Robert #1
+  "ESO #1" = 1  # Guy #1
+  "?–·VlšS #1" = 1  # Adhémar #1
+  "?–SSZS #10" = 1  # Archambault #10
+  "S›R #0" = 5  # Philippe #0
+  "Vg0tæt #0" = 10  # François #0
+  "¨N)R #0" = 10  # Henri #0
+  "ïf #2" = 10  # Louis #2
+  "®vÃWS #1" = 20  # Pierre #1
+  "©‹ #0" = 40  # Jean #0
+  "‰RXbN #0" = 20  # Antoine #0
+  "ågt #0" = 80  # Charles #0
+}
+leader_names = {
+  "·V ?–‰ ·V ?–Ì‘"  # d'Arcy d'Ally
+  "d'Arfeuil"
+  "d'Arnoux"
+  "Aujay de la Dure"
+  "·V ôTS"  # de Bar
+  "de Barbançois"
+  "de Barbarin"
+  "de Basmaison"
+  "·V ZSætS"  # de Beauvoir
+  "de Bellenaves"
+  "de Bodinat"
+  "de Boisé"
+  "de Bonnefont"
+  "de Bonnevie"
+  "de Boucaumont"
+  "·VâlÁe Ôk^X"  # de Bourbon-Busset
+  "de Bressoles"
+  "·V ^ÒRO"  # de Breuil
+  "de Buchepot"
+  "·V ÉbÔk‰6wS"  # de la Bussière
+  "de Buysson"
+  "de Chabannes de La Palice"
+  "de Champfeu"
+  "de Chazeron"
+  "Cordeboeuf de Beauverger"
+  "de Faucompré"
+  "de Fontanges"
+  "de Frémont"
+  "de Genestaux"
+  "de Groing"
+  "de Grossouvre"
+  "du Gué"
+  "Hutteau d'Origny"
+  "de La Baume"
+  "de La Boulaye"
+  "de La Vallière"
+  "de Magnoux"
+  "du Mas de l'Isle"
+  "de Monestay"
+  "Motier de La Fayette"
+  "de Neufchaises"
+  "de Neuville"
+  "du Peschin"
+  "de la Roche-Aymon"
+  "de Rochedragon"
+  "de Saint-Julien"
+  "de Troussebois"
+  "d'Ussel"
+  "de Villaines"
+  "de Villars"
+}
+ship_names = {
+  "le Barrais-Bussoles"
+  "ÒR ZSæt"  # le Beauvoir
+  "ÒR ÒRÌ‘+Y"  # le Bellerive
+  "ÒR i"  # le Bessay
+  "ÒR Œg"  # le Besson
+  "ÒRâlÁe g‰"  # le Bourbon-Lancy
+  "ÒRâlÁe ÉbSSZS"  # le Bourbon-l'Archambaut
+  "ÒR ÔkKQ‰ÃW"  # le Buxières
+  "le Cérilly"
+  "le Chantelle"
+  "le Châtelguyon"
+  "le Chavroches"
+  "le Chevagne"
+  "ÒR TR^™Ÿ·V"  # le Combronde
+  "ÒR Ñy’‚yrÌ‘"  # le Commentry
+  "ÒR “^ÒR+YS"  # le Couleuvre
+  "ÒR KQ÷–Qhíp"  # le Cressanges
+  "ÒR HS^X"  # le Cusset
+  "ÒR h®v6wS"  # le Dompierre
+  "l'Ebreuil"
+  "ÒR  R³u"  # le Gannat
+  "ÒR Å–)R<S"  # le Jaligny
+  "ÒR Éb^)R¯e"  # le Lapalisse
+  "le Le Montet"
+  "ÒR lšS‰Éb"  # le Marcillat
+  "ÒR Øž·‹"  # le Meaulne
+  "ÒR «ƒ…Q¯ewc"  # le Monestier
+  "ÒR ™„ðlES"  # le Montaigut
+  "ÒR ™„yrTR^œ"  # le Montcombroux
+  "ÒR ™„TŒg"  # le Montluçon
+  "ÒR ™„yrlšWS"  # le Montmarault
+  "ÒR ™„XbS"  # le Montord
+  "ÒR FzpQ"  # le Moulins
+  "ÒR …QÌ‘"  # le Néris
+  "ÒR ·‹O±ƒ÷–?–"  # le Neuilly-le-Réal
+  "ÒR ®vÁ(„"  # le Pionsat
+  "1W'kísÒR™„<SšNÒR"  # le Saint-Aubin-le-Monial
+  "1WÃWbSæt"  # le Saint-Éloy
+  "1WŒ‚‚„‰R·VôuKQ"  # le Saint-Étienne-de-Vicq
+  "1WåeSüf"  # le Saint-Germain
+  "1WO±ƒS"  # le Saint-Hilaire
+  "1W±ƒÁ"  # le Saint-Léon
+  "1W®v6wSÉbæt"  # le Saint-Pierre-Laval
+  "1WnfSQh"  # le Saint-Pourçain
+  "1W÷–s|"  # le Saint-Rémy
+  "1W¦uS"  # le Saint-Yorre
+  "ÒR Ï‚ôu<S"  # le Souvigny
+  "ÒR æt÷–·‹"  # le Varennes
+  "ÒR ôu^"  # le Vichy
+  "ÒR O<hg·V"  # l'Ygrande
+}
+army_names = {
+  "âlÁe›Q"  # Armée du Bourbonnais
+  "âlÁe›Q"  # Armée de Bourbon
+  ")Rlš…m›Q"  # Armée de Limagne
+  "?–R›Q"  # Armée de l'Allier
+  "lšSÀN›Q"  # Armée de la Marche
+  "ZSå‚±ƒ›Q"  # Armée du Beaujolais
+  "y÷–›Q"  # Armée du Forez
+  "$PROVINCE$›Q"  # Armée de $PROVINCE$
+}

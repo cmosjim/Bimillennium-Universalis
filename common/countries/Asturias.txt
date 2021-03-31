@@ -1,0 +1,235 @@
+graphical_culture = westerngfx
+color = {
+  104
+  173
+  230
+}
+historical_idea_groups = {	
+  early_trade_ideas
+  early_adm_ideas
+  early_mil_ideas
+  early_religious_ideas
+  shentou_ideas
+  kaituo_ideas
+  exploration_ideas
+  religious_ideas
+  offensive_ideas
+  expansion_ideas
+  influence_ideas
+  maritime_ideas
+  quality_ideas
+  defensive_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  spanish_tercio
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  austrian_white_coat
+  austrian_jaeger
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "ôT±ƒÌ‘šNú‹ #0" = 0  # Valeriano #0
+  "Xblš¯e #0" = 0  # Tomás #0
+  "W·VÌ‘b #0" = 0  # Rodrigo #0
+  "Éb™„ #0" = 0  # Ramón #0
+  "eYN #0" = 0  # Odón #0
+  "ªR<SeY #0" = 0  # Nuño #0
+  "s|<hS #0" = 0  # Miguel #0
+  "miO #0" = 0  # Lope #0
+  "±ƒ5ƒ #0" = 0  # Laín #0
+  "O<h³u‰eY #0" = 0  # Ignacio #0
+  "ÃWSWSY #0" = 0  # Hernando #0
+  "kè•	TY #0" = 0  # Hermenegildo #0
+  "äSÁ”÷–¯e #0" = 0  # Gutierre #0
+  "!(„m #0" = 0  # Gonzalo #0
+  "b¦ž¯e #0" = 0  # Gómez #0
+  " R‰šN  #0" = 0  # García #0
+  "Vg‰¯eÑy #0" = 0  # Francisco #0
+  "Õl·VÌ‘KQ #0" = 0  # Fadrique #0
+  "ÃW¯eyrís #0" = 0  # Esteban #0
+  "Yfb #0" = 0  # Domingo #0
+  "íb #0" = 0  # Diego #0
+  "KQÌ‘¯eXbôTS #0" = 0  # Cristobal #0
+  "SyrpQ #0" = 0  # Bertrán #0
+  "S³uY #0" = 0  # Bernardo #0
+  "ôTSTX(„ #0" = 0  # Baltasar #0
+  "?–SætW #0" = 0  # Álvaro #0
+  "?–†–0t #0" = 0  # Alonso #0
+  "LNÉbaS #0" = -5  # Urraca #0
+  "›s)RšN #0" = -5  # María #0
+  "áw‰RZ #0" = -10  # Juana #0
+  "OŽƒS #0" = -10  # Isabel #0
+  "iO·VW #0" = 1  # Pedro #0
+  "i`Ì‘KQ #0" = 5  # Enrique #0
+  "aSm¯e #0" = 10  # Carlos #0
+  "9)RiO #0" = 10  # Felipe #0
+  "áw‰R #0" = 10  # Juan #0
+  "Ébs|W #0" = 10  # Ramiro #0
+  "QhTN #0" = 10  # Sancho #0
+  "9SWSY #0" = 20  # Fernando #0
+  "?–¹e0t #0" = 40  # Alfonso #0
+}
+leader_names = {
+  "·V ?–	T÷–"  # de Aguirre
+  "·V ?–ÉbSTR"  # de Alarcón
+  "·V Xb±ƒY"  # de Toledo
+  "·V ‰R·V÷–·V"  # de Andrade
+  "·V ?–šNÉb"  # de Ayala
+  "·V ôT^"  # de Bazán
+  "·V ³uôuyQ"  # de Benavides
+  "NWâllš…Q¯e"  # Campomanes
+  "·V aS¯e‚„)RšN"  # de Castilla
+  "·V Éb^XS¾"  # de la Cerda
+  "‰i`ÌRb¯e"  # Cienfuegos
+  "åT&O^"  # Colón
+  "ÑyW³uY"  # Coronado
+  "ÑySyr¯e"  # Cortés
+  "·V Xb±ƒY"  # de Toledo
+  "·V ÑySYæt"  # de Córdoba
+  "·V ÉbNYæt"  # de la Cueva
+  "·V òƒ<hW?–"  # de Figueroa
+  "0N^XaS"  # Fonseca
+  " RSôu¯e"  # Gálvez
+  "b¦ž¯e"  # Gómez
+  "·V äS¯eüf"  # de Guzmán
+  "^è•<S¯e ·V ‰¯e…QW¯e"  # Jiménez de Cisneros
+  "·V ÷–æt"  # de Leiva
+  "miO¯e ·V ÈTW"  # López de Haro
+  "·V 2—±"  # de Luna
+  "·VÉbÉb"  # de Lara
+  "·V Éb¯eÑy"  # de Velasco
+  "·V ÔkR±"  # de Villena
+  "·V è•Y(„"  # de Mendoza
+  "³uSætÃW¯e"  # Narváez
+  "·V …Q^Ì‘ÈT"  # de Nebrija
+  "ªR…m¯e ·V ôTSâlšN"  # Nuñez de Balboa
+  "·V eYk¾"  # de Ojeda
+  "eY÷–)RšN³u"  # Orellana
+  "eY0tÌ‘eY"  # Osorio
+  "®vè•yrS"  # Pimentel
+  "s^Œg"  # Pinzón
+  "®v(„W"  # Pizarro
+  "ž^^X ·V ±ƒf"  # Ponce de León
+  "âlXbaS÷–W"  # Portocarrero
+  "·V WÈT¯e"  # de Rojas
+  "ðl±ƒ¯e ^†–"  # Tellez-Girón
+  "·V Ébôu R"  # de la Vega
+  "·V Vy<S R"  # de Zúñiga
+}
+ship_names = {
+  "±ƒf"  # León
+  "šNSäSñ‚Ä–"  # Argonauta
+  "?–¯eþVÌ‘šN¯e"  # Asturias
+  "šNŒgîh"  # Asunción
+  "?–yr÷–ôuY"  # Atrevido
+  "Í‚pž"  # Azor
+  "aSTXbú‹æt"  # Cartagonova
+  "aS¯e‚„)RšN"  # Castilla
+  "ÑžÎW!X"  # Castillo Negro
+  "aS¯eXb3w"  # Castor
+  "Ä–ž2uk†"  # Ciervo Volante
+  "sYÆN"  # Doncella
+  "™Ÿ"  # Dragón
+  "Ârr"  # El Gran Grin
+  "ÃWS÷–‚„W"  # El Retiro
+  "O³u¯e"  # Eneas
+  "Î˜^y"  # Eolo
+  "^g"  # Esperanza
+  "1Wup"  # Espíritu Santo
+  "ÃW¯eyr÷–lšjgÉb"  # Extremadura
+  "Âr`"  # Furor
+  " R)R‰šN"  # Galicia
+  "'Y<hÌ‘¬‚"  # Gran Grifón
+  "spž"  # Halcón
+  "kÉbKQÒR¯e"  # Hércules
+  "OŽƒÉb"  # Isabela
+  "1g‡^yr"  # Júpiter
+  "„gó`"  # La Concepción
+  "›s<h¾±ƒZ"  # La Magdalena
+  "üfªRÃWÉb"  # La Manuela
+  "‰IQ"  # Ligera
+  "W=O lšÌ‘ú‹"  # Lobo Marino
+  "lšSyr"  # Marte
+  "¨XN)R"  # Mercurio
+  "<Snf˜"  # Neptuno
+  "SsY"  # Niña
+  "s7bµ^"  # Orión
+  "‹vKž"  # Paloma Blanca
+  "Õk R0t"  # Pegaso
+  "iOW lšÌ‘ú‹"  # Perro Marino
+  "s^TX"  # Pinta
+  "¥Q‹sf"  # Plutón
+  "âlTKQ¯e"  # Pollux
+  "?–¯eþVÌ‘šN¯e²N‹s"  # Príncipe de Asturias
+  "S¿u"  # Rayo
+  "Ì‘S ?–¹e0t"  # Real Alfonso
+  "Ì‘S i`Ì‘KQ"  # Real Enrique
+  "Ì‘S áw‰R"  # Real Juan
+  "÷–O iOÉb¦u"  # Rey Pelayo
+  "÷–O W·VÌ‘b"  # Rey Rodrigo
+  "1W ‰R·VÈp¯e"  # San Andrés
+  "1W ‰RN<SeY"  # San Antonio
+  "1W ôTXbW*"  # San Bartolomé
+  "1W S³u"  # San Bernabé
+  "1W KQÌ‘¯eXbôTS"  # San Cristobal
+  "1W i`Ì‘KQ"  # San Enrique
+  "1W ÃW¯eyrís"  # San Esteban
+  "1W 9SWSY"  # San Fernando
+  "1WVg‰¯eÑy"  # San Francisco
+  "1W  R^Ì‘ÃW"  # San Gabriel
+  "1WO‰YW"  # San Isidoro
+  "1WkW<S«ƒ"  # San Jerónimo
+  "1WUO^X"  # San José
+  "1Wáw‰R"  # San Juan
+  "1Wáw‰R ôT‚„¯eTX"  # San Juan Bautista
+  "1W±ƒf·VW"  # San Leandro
+  "1Ws|<hS"  # San Miguel
+  "1WiO·VW"  # San Pedro
+  "1WÉbeS"  # San Rafael
+  "1W(„SætY"  # San Salvador
+  "^XôT¯e‚„‰R"  # San Sebastian
+  "1W‰RZ"  # Santa Ana
+  "1WôTôTÉb"  # Santa Bárbara
+  "1WÔk?–yrKN¯e"  # Santa Beatriz
+  "1WaSTX)RZ"  # Santa Catalina
+  "1WKQœ¯e"  # Santa Cruz
+  "1W¾òƒ"  # Santa Fe
+  "1WOŽƒS"  # Santa Isabel
+  "1Wáw¯eTX"  # Santa Justa
+  "1W›s)RšN"  # Santa María
+  "1W›sSTX"  # Santa Marta
+  "1WKNTX"  # Santa Rita
+  "1WyrŒ…Žƒ"  # Santa Teresa
+  "1W0WšNåT"  # Santiago
+  "1W	NN"  # Santísima Trinidad
+  "1WYfb"  # Santo Domingo
+  "^XìX"  # Sirena
+  "P``"  # Terror
+  "Xb÷–Y"  # Toledo
+  "yrËz<S¾"  # Trinidad
+  "yrÌ‘T"  # Tritón
+  "ìrÒ‰‹Q"  # Unicornio
+  "Üw)Rw"  # Vencedora
+  "‡eþVÉb"  # Ventura
+  "ôuY)RšN"  # Victoria
+  "Hgf‹"  # Vigilante
+  "Ôk¯eV"  # Vizcaya
+  "kpqS"  # Vulcano
+  "Vy<S R"  # Zúñiga
+}
+army_names = {
+  "ÑkS›Q"  # Guardia Real
+  "$PROVINCE$›Q"  # Ejército de $PROVINCE$
+}
+fleet_names = {
+  "Armada Real"
+  "$PROVINCE$0‚–"  # Flota de $PROVINCE$
+}

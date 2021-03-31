@@ -1,0 +1,56 @@
+Rome_square = {
+	infantry_power = 0.15
+	cavalry_power = -0.25
+}
+
+testudo = {
+	fire_damage_received = -0.1
+	siege_ability = 0.2
+	movement_speed = -0.75
+	shock_damage_received = 0.1
+}
+
+ji_ru_feng = {
+	movement_speed = 0.2
+	land_attrition = 0.15
+}
+
+xu_ru_lin = {
+	recover_army_morale_speed = 0.1
+	reinforce_speed = 0.2
+	shock_damage_received = 0.1
+}
+
+qin_lve_ru_huo = {
+	fire_damage = 0.15
+	defensiveness = -0.25
+}
+
+bu_dong_ru_shan = {
+	defensiveness = 0.25
+	shock_damage_received = -0.1
+	fire_damage_received = -0.1
+	movement_speed = -0.5
+}
+
+nan_zhi_ru_yin = {
+	spy_offence = 0.5
+	global_spy_defence = 0.5
+	improve_relation_modifier = -0.2
+}
+
+dong_ru_lei_ting = {
+	shock_damage = 0.2
+	discipline = -0.05
+}
+
+hannibal_mercenaries = {
+	land_attrition = 0.2
+	merc_maintenance_modifier = -0.2
+	mercenary_manpower = 0.15
+}
+
+macedonian_square = {
+	discipline = 0.1
+	fire_damage_received = 0.25
+}

@@ -1,0 +1,161 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 193  26  14 }
+
+revolutionary_colors = { 5  13  0 }
+
+preferred_religion = protestant
+
+historical_idea_groups = {
+	early_religious_ideas
+	early_mil_ideas
+	early_trade_ideas
+	early_adm_ideas
+	xingjun_ideas
+	junjiang_ideas
+	zhongqi_ideas
+	administrative_ideas
+	exploration_ideas
+	quality_ideas
+	maritime_ideas
+	economic_ideas
+	expansion_ideas
+	trade_ideas
+	naval_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	chevauchee
+	western_longbow
+	gaelic_mercenary
+	gaelic_free_shooter
+	french_caracolle
+	irish_charge
+	anglofrench_line
+	french_dragoon
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+
+		"¨N)R #3" = 100
+		"1r·VNS #3" = 60
+		"ågS¯e #0" = 40
+		"yŠÆY¯e #0" = 40
+		"ZÉ^ #2" = 20
+		"tåg·V #2" = 20
+		"›sKN #0" = -20
+		"òƒ)Rnf #0" = 20
+		"¨N)R #3 V÷–·VÌ‘KQ" = 10
+		"‰R®Y #0" = -10
+		"šNmt #0" = 10
+		"ågS¯e #0yŠÆY¯e" = 10
+		"ÃW·V R #0" = 10
+		"OKNƒ‹v #0" = -10
+		"r #0" = -10
+		"Xblš¯e #0" = 10
+		"ÃW·V™„ #0" = 5
+		"TN»l #0" = 5
+		"›s<hKNyr #0" = -1
+		"¦uğ" = 1
+		"Å–T #0" = 0
+		"IlV±ƒ #0" = 0
+		"W=Oyr #0" = 0
+		"¯e‚„¬‚ #1" = 1
+		"šNSV #0" = 0
+		"šN†SqS'Y #0" = 0
+		"?–S=Oyr #0" = 0
+		"?–SV÷–·V #0" = 0
+		"‰R^W¯e #0" = 0
+		"‰R·Vœ #0" = 0
+		"‰RN<S #0" = 0
+		"?–GYZSS·V #0" = 0
+		",gpgf #0" = 0
+		"KQÌ‘¯eXbV #0" = 0
+		"9N<SS #0" = 0
+		"'YkS #0" = 0
+		"'k…Q¯eyr #0" = 0
+		"Vg‰¯e #0" = 0
+		"pgVÌ‘ #0" = 0
+		"ÖvÃW #0" = 0
+		"—÷––w #0" = 0
+		"OS #0" = 0
+		"Œ‚(„KQ #0" = 0
+		"pgÌ‘s| #0" = 0
+		"TN³uîh #0" = 0
+		"¦umt+Y #0" = 0
+		"³R&O¯e #0" = 0
+		"lšîO #0" = 0
+		"<S^s|°‹ #0" = 0
+		"eY)RV #0" = 0
+		"^X*S #0" = 0
+		"‰`<S #0" = 0
+}
+
+leader_names = {
+		"?–SlšS" "?–Ø¯eyr" "‰Rîh"
+		"‹vÑ‘Il" "^÷–Y" "KQÜb&O^S" "bi`" "÷–¯e" "y·V^" "œKQ,g.^±ƒKQ" "·Vy·V" "ZS¯eÑyi`" "ôT¬‚"
+		"KQÉb&O¯e" "KQ)Ry·V" "KQ&OZ" "SNW=OpQ" "KQ—g˜" "·^ƒl)R¯e" "KQ±ƒ+Y" "aSâlyr" "aSS˜" "aS‡eê"
+		"9N®vS" "4bôu¯e" "·V÷–KQ" "ÃW^XKQ¯e" "9SÕlKQ¯e" "VW^^S"
+		"<hm¯eyr" "	TS=Oyr"
+		"—NS·V" "k=Oyr" "—KQ" "—·V" "k¯eN" "ÈT·Vîh"
+		"±ƒ¯eyr" "lšS=OÒR" "s|·VS˜" "idS" "ú‹îh" "=OpQú‹" "yKQ"
+		"WKQ.W<S·V" "W)R" "0tSyQ" "=OÌ‘" "(„Ø" "^Xyr(„" "yKQQh" "·V¯e" "òSÆR¯e"
+		"TXS=Oyr" "TXS˜"
+		"?–KQ¯e^Ì‘GY"
+		"ƒlÌ‘KQ" "ƒlS+Y"
+		"¦uKQ"
+}
+
+army_names = {
+	"‡v¶RF–›Q" "Ï‚<hpQF–›Q" "1rSpQF–›Q"
+}
+
+fleet_names = {
+	"‡v¶Rwm›Q" "İ„r‚-N–" "¢ur‚-N–" "‹vr‚-N–" "Swm0‚–" "wmáS0‚–"
+}
+
+
+ship_names = {
+	
+	"?–^S÷S"
+	"’Qi–÷S"
+	"?–>KQ¯e÷S"
+	"Å–R÷S"
+	"šN†SqS'Y÷S"
+	"‰R®Y RpQyr÷S"
+	"šŠ÷S"
+	"‡v¶R¹e‚"
+	"áOÃV÷S"
+	"NR ˜÷S"
+	"‹vÑ‘Il÷S"
+	"ågS¯e÷S"
+	"úWcw÷S"
+	"‹TĞ÷S"
+	"àeOu÷S"
+	"1r·VNS÷S"
+	"—NS·V÷S"
+	"OKNƒ‹v÷S"
+	"ÃWSyrÆY÷S"
+	"ÃW^XKQ¯e÷S"
+	"ÜV÷S"
+	"ÃW‰ƒú‹÷S"
+	"iVy†÷S"
+	"'YÈT)R÷S"
+	"¢uîr÷S"
+	"?–VS÷S"
+	"Ø‰÷S"
+	"^X‡e÷S"
+	"ğli`÷S"
+}
+
+

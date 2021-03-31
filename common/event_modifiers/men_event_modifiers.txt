@@ -1,0 +1,46 @@
+luosifu.9 = { 
+    land_morale = -0.4
+    global_manpower_modifier = -0.8
+    land_forcelimit_modifier = -0.8
+    production_efficiency = -0.6
+    trade_efficiency = -0.6
+    global_unrest = 10
+    global_autonomy = 0.05
+}
+
+luosifu.11 = { 
+    land_morale = -0.4
+    global_manpower_modifier = -0.6
+    land_forcelimit_modifier = -0.6
+    production_efficiency = -0.45
+    trade_efficiency = -0.45
+    global_unrest = 5
+    global_autonomy = 0.05
+	build_time = -0.1
+}
+
+luosifu.12 = { 
+    land_morale = -0.4
+    global_manpower_modifier = -0.4
+    land_forcelimit_modifier = -0.4
+    production_efficiency = -0.3
+    trade_efficiency = -0.3
+    global_unrest = 3
+	build_time = -0.15
+}
+
+luosifu.13 = { 
+    land_morale = -0.4
+    global_manpower_modifier = -0.1
+    land_forcelimit_modifier = -0.1
+    production_efficiency = -0.15
+    trade_efficiency = -0.15
+    global_unrest = 2
+	build_time = -0.20
+}
+
+luosifu.14 = { 
+    build_time = -0.25
+	global_regiment_recruit_speed = -0.20
+	global_ship_recruit_speed = -0.30
+}

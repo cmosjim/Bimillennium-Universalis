@@ -1,0 +1,45 @@
+#northern xio
+LSO_ideas = {
+	start = {
+		infantry_power = 0.1
+		merc_maintenance_modifier = -0.2	
+	}
+	
+	bonus = {
+		leader_land_fire = 1
+	}
+	
+	trigger = {
+	   tag = LSO
+	}
+
+	free = yes
+	
+	beginning_of_southern_dynasties = {
+		land_morale = 0.1
+	}
+
+	wu_de_zhong_shi = {
+		naval_maintenance_modifier = -0.2
+	}
+
+	tu_duan = {
+		global_tax_modifier = 0.1
+	}
+
+	xiang_wai_shijie = {
+		diplomatic_upkeep = 1
+	}
+
+	zhuangyuan_jingji = {
+		global_trade_goods_size_modifier = 0.1
+	}
+
+	juan_burujin = {
+		production_efficiency = 0.1
+		prestige = 1
+	}
+	yuan_jiati = {
+		idea_cost = -0.1
+	}
+}

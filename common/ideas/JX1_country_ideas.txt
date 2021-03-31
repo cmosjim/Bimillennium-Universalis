@@ -1,0 +1,44 @@
+#northern xio
+JX1_ideas = {
+	start = {
+		defensiveness = 0.2
+		land_maintenance_modifier = -0.15
+	}
+	
+	bonus = {
+		inflation_reduction = 0.1
+		war_exhaustion_cost = -0.33
+	}
+	
+	trigger = {
+		tag = JX1
+		NOT = { has_country_flag = flg_CHINESE_EMPIRE_TAG }
+	}
+
+	free = yes
+	
+	liuzhengxuanyan = {
+		global_tax_modifier = 0.1
+	}
+	zhongyong_zhengce = {
+		diplomats = 1
+		diplomatic_reputation = 2
+	}
+	pianan_yiyu = {
+		prestige_from_land = 0.5
+		stability_cost_modifier = -0.1
+	}
+	anjuleye = {
+		global_manpower_modifier = 0.15
+	}
+	fuyu_wangguo = {
+		production_efficiency = 0.15
+	}
+	yong_bing_zizhong = {
+		discipline = 0.1
+	}
+	bao_jing_anmin = {
+		manpower_recovery_speed = 0.2
+		land_attrition = -0.1
+	}	
+}

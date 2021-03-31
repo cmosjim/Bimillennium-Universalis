@@ -1,0 +1,269 @@
+graphical_culture = easterngfx
+color = {
+  190
+  35
+  37
+}
+revolutionary_colors = {
+  1
+  0
+  4
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  qianyi_ideas
+  rongren_ideas
+  junqu_ideas
+  defensive_ideas
+  offensive_ideas
+  trade_ideas
+  spy_ideas
+  diplomatic_ideas
+  economic_ideas
+  religious_ideas
+  quantity_ideas
+}
+historical_units = {
+  eastern_medieval_infantry
+  eastern_knights
+  slavic_stradioti
+  eastern_militia
+  muscovite_musketeer
+  muscovite_caracolle
+  muscovite_soldaty
+  muscovite_cossack
+  russian_petrine
+  russian_lancer
+  russian_green_coat
+  russian_cuirassier
+  eastern_skirmisher
+  eastern_uhlan
+  eastern_carabinier
+  russian_mass
+}
+monarch_names = {
+  "Grigol #0" = 0
+  "Ivane #0" = 0
+  "·Vê‰…h‚„ #0" = -1  # Dedisimedi #0
+  "“^÷–Ês #0" = -1  # Khoreshan #0
+  "›sKNšNÆY #0" = -1  # Mariam #0
+  "‰RZ #0" = -1  # Ana #0
+  "ÃW3tZ #0" = -1  # Elene #0
+  "<Sú‹ #0" = -1  # Nino #0
+  "cR³u¬N #0" = -5  # Tinatin #0
+  "KQwcN #0" = -5  # Ketevan #0
+  "¾÷–lb #0" = -5  # Darejan #0
+  "…Q¯eU ¾÷–lb #0" = -10  # Nestan-Darejan #0
+  "2—Ï‚9N #1" = -10  # Rusudan #1
+  "TX›sKN #1" = -20  # Tamar #1
+  "(„	T¯e #0" = 0  # Sargis #0
+  "œyrÍu #0" = 0  # Botso #0
+  "ÆYılyrßR^KQ #0" = 0  # Mzetchabuk #0
+  "ôTjgS #0" = 0  # Baadur #0
+  "?–<h^ R #0" = 0  # Aghbugha #0
+  "lšªRRkS #0" = 0  # Manuchar #0
+  "aS #0" = 0  # Beka #0
+  "KQætKQæt÷– #0" = 0  # Qvarqvare #0
+  "‚„«ƒyr #0" = 0  # Timote #0
+  "ıl<h³uKQ #0" = 0  # Zegnak #0
+  "^Xyrüf #0" = 0  # Seteman #0
+  "nfXb #0" = 0  # Puto #0
+  "ÉbÔk6w #0" = 0  # Rabia #0
+  ")R^Ì‘yr #0" = 0  # Liparit #0
+  "æts|GY #0" = 0  # Vamiq #0
+  "™lüf¾VÒR #0" = 0  # Shamandavle #0
+  "aSÈTS #0" = 0  # Kakhaber #0
+  "eYêšN #0" = 0  # Otia #0
+  "aSyr‰šN #0" = 0  # Katsia #0
+  "ÜbyŠ #0" = 0  # Bezhan #0
+  "¾şVšN #0" = 0  # Datua #0
+  "¦u?–…Q #0" = 0  # Ioane #0
+  " RS0ŒN #0" = 0  # Garsevan #0
+  "<SKQWyQ #0" = 0  # Nikoloz #0
+  "ÔkNm³u #0" = 0  # Bidzina #0
+  "Ï‚ÆYôTyr #0" = 0  # Sumbat #0
+  "yQôušN·V #0" = 0  # Zviad #0
+  "VyÉb^ #0" = 0  # Zurab #0
+  "NbNb #0" = 0  # Zaza #0
+  "NbS #0" = 0  # Zaal #0
+  "ªcyr…m #0" = 0  # Tsotne #0
+  "XbS<SKQ #0" = 0  # Tornike #0
+  "^TX #0" = 0  # Paata #0
+  "ON…m #0" = 0  # Ivane #0
+  "<hÌ‘bS #0" = 0  # Grigol #0
+  "	Tôu #0" = 0  # Givi #0
+  "‰RjgaS^S #0" = 0  # Andukapar #0
+  "eYØšTX<S<h #0" = 0  # Aghatang #0
+  "¯eyrXoú‹yQ #0" = 0  # Stepanoz #0
+  "XbS<hæt #0" = 0  # Torgva #0
+  "ôTS #0" = 0  # Bebur #0
+  "·Vs|yrÌ‘ #2" = 20  # Demetre #2
+  "±ƒN #0" = 15  # Levan #0
+  "W¯eXbÆY #0" = 10  # Rostom #0
+  "ïQÑy¯eW #0" = 10  # Kaikhosro #0
+  "OÃW^X #0" = 15  # Iese #0
+  "ôTaSS #0" = 5  # Bakar #0
+  "?–SGYS #0" = 10  # Archil #0
+  "ğlFzÉbyQ #0" = 40  # Teimuraz #0
+  "‰™„ #0" = 40  # Simon #0
+  "bS?–S(„^ #0" = 40  # Luarsab #0
+  "·^¯efWN #0" = 40  # Konstantine #0
+  "ÃWSKQS #0" = 40  # Erekle #0
+  "šN†SqS'Y #0" = 20  # Aleksandre #0
+  "ôT<hÉbyr #5" = 40  # Bagrat #5
+  "ætkfW #3" = 60  # Vakhtang #3
+  "'YkS #9" = 60  # David #9
+  "TN»l #6" = 120  # Giorgi #6
+}
+leader_names = {
+  " RôTÀNôu)R"  # Gabashvili
+  "ÖvÖvGYÑyÌ‘"  # Gegechkori
+  "?–s|ÉbkætÌ‘"  # Amilakhvari
+  "?–s|÷–cRÔk"  # Amirejibi
+  "ôTÉbTXÀNôu)R"  # Baratashvili
+  "^TXÀNôu)R"  # Bebutashvili
+  "<hTXúWÀNôu)R"  # Begtabegishvili
+  "‰VSKQılÀNôu)R"  # Cherkezeshvili
+  "ågÈTĞc"  # Chkhetidze
+  " RôTÀNôu)R"  # Gabashvili
+  "Å–æt^ÀNôu)R"  # Javakhishvili
+  "kSkLN)Rıl"  # Kherkheulidze
+  "Ñyæ—<Snf…Qôu)R"  # Kvenipneveli
+  "lš RÉbÀNôu)R"  # Maghalashvili
+  "s|KQÉbıl"  # Mikeladze
+  "FzkÉb<S"  # Mukhrani
+  "FzkpQôTXb<S"  # Mukhranbatoni
+  "eYSŞ<S"  # Orbeliani
+  "ÉbcRÀNôu)R"  # Ratishvili
+  "‰¾«ƒ<S"  # Sidamoni
+  "0tÉb RÀNôu)R"  # Solagashvili
+  "PŸPŸÀNôu)R"  # Tsitsishvili
+  "şVSKQ¯eTX<SÀNôu)R"  # Turkestanishvili
+  "?–ôT^ıl"  # Abashidze
+  "?–^aScR"  # Abkhazi
+  "‰R·VW<SaSÀNôu)R"  # Andronikashvili
+  "ôTôT‚„ÀNôu)R"  # Babadishvili
+  "p`+Yp`ætıl"  # Chavchavadze
+  "‰VSKQılÀNôu)R"  # Cherkezeshvili
+  "TNmaSÀNôu)R"  # Cholokashvili
+  "äSÉbs|ÀNôu)R"  # Guramishvili
+  "äSS<h<Sıl"  # Gurgenidze
+  "lb‚„6wÌ‘"  # Jandieri
+  "¦uÌ‘Å–ıl"  # Jorjadze
+  "Ñy^ÉbÀNôu)R"  # Kobulashvili
+  ")Rf<Sıl"  # Lionidze
+  "WôT‚„ÀNôu)R"  # Robatishvili
+  "œ‰ÀNôu)R"  # Rusishvili
+  "™l^<Sıl"  # Shaburidze
+  "şVlš<S¯eıl"  # Tumanisdze
+  "şV^ÀNôu)R"  # Tusishvili
+  "ætGY³uıl"  # Vachnadze
+  "?– RÀNôu)R"  # Agiashvili
+  "‰RågôTıl"  # Anchabadze
+  "?–^úWıl"  # Apakidze
+  "GYZišN"  # Chichua
+  "p`ætıl"  # Chijavadze
+  "GYÑyæt<S"  # Chikovani
+  "GYkOıl"  # Chkheidze
+  "¾‚„‰R<S"  # Dadiani
+  "¾·VÀNÑyÌ‘‰R<S"  # Dadeshkeliani
+  "<hmæt<S"  # Gelovani
+  "äSR)R"  # Gurieli
+  "Å–ÀNôu)R"  # Iashvili
+  "WSyrúW^<Sıl"  # Lortkipanidze
+  "lšågætÌ‘‰R<S"  # Machavariani
+  "›sZiTXıl"  # Machutadze
+  "ÆYKQÑıl"  # Mkheidze
+  "s|KQÉbıl"  # Mikeladze
+  "³uaS^ıl"  # Nakashidze
+  "<SäSÉbıl"  # Nikoladze
+  "<SNbÉbıl"  # Nizharadze
+  "‚SætÀNıl"  # Shervashidze
+  "Ç‘Rwc)R"  # Tsereteli
+  "ZibSúWıl"  # Tsulukidze
+  "?–s|ÉbÑyÌ‘"  # Amilakhori
+  "?–ôu)RÀNôu)R"  # Avilishvili
+  "êšN(„s|ıl"  # Diasamidze
+  " R R<Sıl"  # Gaganidze
+  "bcRôTÀNôu)R"  # Gogibashvili
+  "<h<hÌ‘ÀNôu)R"  # Gogorishvili
+  "GYœêS RÀNôu)R"  # Khildirbegashvili
+  "Ñy^)R¯eıl"  # Kobulisdze
+  "Ñy^¯eıl"  # Kopasdze
+  "^ÉbNêÀNôu)R"  # Palavandishvili
+  "^³uÑySyrÌ‘"  # Panaskerteli
+  "™l)RaSÀNôu)R"  # Shalikashvili
+  "0tWvVÀNôu)R"  # Sologashvili
+  "(„ÆYôT‚„ÀNôu)R"  # Sumbatishvili
+  "TX+Y	T)R·VÇ‘"  # Tavdgiridze
+  "şVaS÷–)R"  # Tukhareli
+}
+ship_names = {
+  "eYZS"  # Abo
+  "?–s|Éb<S"  # Amirani
+  "?–Éb<hôu"  # Aragvi
+  "?–SlšGY"  # Armazi
+  "?–³uKQ®všN"  # Anakopia
+  "?–STX<S"  # Artaani
+  "?–Sb"  # Argo
+  "?–^ÈTyQ"  # Abkhazeti
+  "?–nf(„W¯e"  # Apsaros
+  "?–yr<S ¯eú‹)R"  # Ateni Sioni
+  "?–+YfWcRS"  # Avtandil
+  "ÔkGY)nTX"  # Bichvinta
+  "ôTXbs|"  # Batomi
+  "ôT·VÔk"  # Bodbe
+  "ÑySúW¯e"  # Colchis
+  "·Vlš<S‰"  # Dmanisi
+  "·Vs|yrÌ‘ TX+Y'YkS^Ì‘"  # Demetre Tavdadebuli
+  "4bôu bíp>"  # Davit Gareja
+  ",r—VåTÌ‘"  # Didgori
+  "ú^¾‹w4bôu"  # Davit Aghmashenebeli
+  "êeY¯e“^Ì‘šN¯e"  # Dioscurias
+  "bäSĞc"  # Geguti
+  "pgÉb‚„"  # Gelati
+  "TN»l V jwfw"  # Giorgi V Brtskinvale
+  "åTÌ‘"  # Gori
+  "	Ts|"  # Gremi
+  "kRcR"  # Hereti
+  "OÔk)RšN"  # Iberia
+  "cRætÌ‘"  # Jvari
+  "cRætÌ‘ ætyQ(„"  # Jvari Vazisa
+  "aSSyrW¯e"  # Kartlos
+  "“^TXO‰"  # Kutaisi
+  "Ñy³u^cR"  # Khornabuji
+  "Éb™lÌ‘¯eæt)R"  # Lasharisjvari
+  "mS"  # Lore
+  "ÆY(ƒætÌ‘"  # Mtkvari
+  "ÆY(ƒkTX"  # Mtskheta
+  "³uÌ‘aSÉb"  # Narikala
+  "<Sú‹(ƒf¾"  # Ninotsminda
+  "eYKQW¯e („(ƒs|‰"  # Okros Satsmisi
+  "^S³uætyQ"  # Parnavaz
+  "e‰¯e"  # Phasis
+  "®vĞcšN¯e"  # Pityus
+  "|V—V OÔk)RšNºN"  # Petre Iberi
+  "œO‰"  # Ruisi
+  "Ébåg"  # Racha
+  "Ì‘eY<S"  # Rioni
+  "i‚„"  # Seti
+  "(„ÈTÉbTX"  # Skhalta
+  "¯eæt…mcR"  # Svaneti
+  "¯eôu‚„¯eKQ—ôuÌ‘"  # Svetitskhoveli
+  "ÍuTX œ¯eTXôu)R"  # Shota Rustaveli
+  "TX›sKN"  # Tamar
+  ",rÔk)R¯e"  # Tbilisi
+  "yrÉbôu"  # Telavi
+  "TXÀN)R"  # Tashiri
+  "šNyQf¾ TN»l"  # Tsminda Giorgi
+  "ªcyr…m ¾cR?–<S"  # Tsotne Dadiani
+  "ğlyrÌ‘ TN»l"  # Tetri Giorgi
+  "LNS^<S‰"  # Urbnisi
+  "LNÀNôT"  # Ushba
+  "LNnf)R¯eGYk"  # Uplistsikhe
+  "ætkfW"  # Vakhtang Gorgasali
+  "ætyQšN"  # Vardzia
+  "æt³uQY"  # Venakhi
+}

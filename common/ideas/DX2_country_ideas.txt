@@ -1,0 +1,43 @@
+#northern xio
+DX2_ideas = {
+	start = {
+		discipline = 0.05
+		global_manpower_modifier = 0.2
+	}
+	
+	bonus = {
+		army_tradition = 1
+		infantry_cost = -0.15
+	}
+	
+	trigger = {
+		tag = DX2
+	}
+
+	free = yes
+	
+	guozhijinglu = {
+		land_morale = 0.15
+	}
+	lujunjiangwutang = {
+		cavalry_power = 0.2
+	}
+	huguozhanzheng = {
+		prestige = 1
+		prestige_decay = -0.01
+	}
+	yishounangong = {
+		enemy_core_creation = 0.1
+		defensiveness = 0.2
+	}
+	aiguozhiqijie = {
+		land_forcelimit_modifier = 0.15
+	}
+	buqubunao = {
+		recover_army_morale_speed = 0.1
+	}
+	guozangdiyiren = {
+		improve_relation_modifier = 0.25
+		mil_tech_cost_modifier = -0.1
+	}	
+}

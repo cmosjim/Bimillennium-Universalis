@@ -1,0 +1,340 @@
+graphical_culture = westerngfx
+colonial_parent = GBR
+random_nation_chance = 0
+color = {
+  94
+  117
+  55
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  defensive_ideas
+  religious_ideas
+  trade_ideas
+  economic_ideas
+  plutocracy_ideas
+  diplomatic_ideas
+  offensive_ideas
+  spy_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_longbow
+  gaelic_mercenary
+  gaelic_free_shooter
+  irish_charge
+  anglofrench_line
+  british_redcoat
+  british_hussar
+  british_square
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "ÒR…Q #0" = 0  # René #0
+  "Vg0tæt #0" = 0  # François #0
+  "›s<hKNyr #0" = -1  # Marguerite #0
+  "?–·VÌ‘‰RZ #0" = -1  # Adrienne #0
+  "Ymyr #0" = -1  # Charlotte #0
+  "ôuY)RšN #0" = -1  # Victoria #0
+  "›s)RšN #0" = -1  # Maria #0
+  "³RÉb #0" = -1  # Laura #0
+  "ZÉ^ #0" = 0  # William #0
+  "Ðc«ƒ‰ #0" = 0  # Timothy #0
+  "NbWè• #0" = 0  # Solomon #0
+  "tåg·V #0" = 0  # Richard #0
+  "®vÃWS ïf #0" = 0  # Pierre-Louis #0
+  "òƒ)Rnf #0" = 5  # Philippe #0
+  "|V—V #0" = 0  # Peter #0
+  "^–w #0" = 0  # Parshall #0
+  "<SäSÉb¯e #0" = 0  # Nicolas #0
+  "±TXOS #0" = 0  # Nathaniel #0
+  "lšîO #0" = 0  # Mathew #0
+  "ïf ^âl)Ryr #0" = 0  # Louis-Hippolyte #0
+  "ïf ¦umt+Y #0" = 0  # Louis-Joseph #0
+  "¦uð #0" = 0  # John #0
+  "pgÌ‘s|šN #0" = 0  # Jeremiah #0
+  "ågt s|GkS #0" = 0  # Charles-Michel #0
+  "Žr ôTÐc¯e #0" = 0  # Jean-Baptiste #0
+  "Å–T^ #0" = 0  # Jacob #0
+  "Œ‚(„KQ #0" = 0  # Isaac #0
+  "O<h…Q¯e #0" = 0  # Ignace #0
+  "wmîh #0" = 0  # Hyacinthe #0
+  "O #0" = 0  # Hugh #0
+  "áw=Oyr #0" = 0  # Hubert #0
+  "	TeYÆY #0" = 0  # Guillaume #0
+  " R^ÃWS #0" = 0  # Gabriel #0
+  "O™‚3t #0" = 0  # Ephraim #0
+  "1r·VNS #0" = 0  # Edward #0
+  "4bôu ZÉ^ #0" = 0  # David William #0
+  "4bôu #0" = 0  # David #0
+  "KQÌ‘¯eXbV #0" = 0  # Christopher #0
+  ",gpgf #0" = 0  # Benjamin #0
+  "‰RN #0" = 0  # Antoine #0
+  "Œ‚›s^S #0" = 0  # Amable #0
+  "šN†SqS'Y #0" = 0  # Alexander #0
+  "b‰v #0" = 5  # Gordon #0
+  "s|RS #0" = 5  # Michel #0
+  "WpQ #0" = 5  # Roland #0
+  "Å–KQ #0" = 5  # Jacques #0
+  "¦umt+Y #0" = 5  # Joseph #0
+  "eYäS¯eN #0" = 5  # Augustin #0
+  "9N<SS #0" = 20  # Daniel #0
+  "®vÃWS #0" = 5  # Pierre #0
+  "Žr #0" = 5  # Jean #0
+  "ïf #0" = 20  # Louis #0
+  "ågt #0" = 40  # Charles #0
+  "TN»l #0" = 20  # George #0
+  "Xblš¯e #0" = 20  # Thomas #0
+  "W=Oyr #0" = 20  # Robert #0
+  "V÷–·VÌ‘KQ #0" = 20  # Frederick #0
+  "ÖvO #0" = 20  # Guy #0
+  "yŠÆY¯e #0" = 5  # James #0
+  "^X*S #0" = 40  # Samuel #0
+  "pgVÌ‘ #0" = 5  # Jeffery #0
+}
+leader_names = {
+  "eYS0tnf"  # Allsopp
+  "?–Øž¯eyr"  # Amherst
+  "eYS·VTN"  # Auldjo
+  "Ôk"  # Baby
+  "ôTi`¯e"  # Barnes
+  "Ôk¯e)R"  # Beasley
+  "Bédard"
+  "Bégin"
+  "S"  # Bell
+  "=O<SS"  # Bernier
+  "yrm"  # Berthelot
+  "^±ƒKQ"  # Black
+  "^ætm"  # Boileau
+  "^æt0t"  # Boisseau
+  "^`"  # Booth
+  "^KQ"  # Bouc
+  "^Gk"  # Boucher
+  "^·VW"  # Boudreau
+  "ZS‡e"  # Bowen
+  "^W·V"  # Brodeur
+  "^WKQ"  # Brock
+  "^gîh"  # Bronson
+  "^g"  # Browne
+  "Üb"  # By
+  "w·VZS"  # Caldwell
+  "NWS"  # Campbell
+  "aSS˜"  # Carleton
+  "aS‚„ÃW"  # Cartier
+  "Y‚„ÃW"  # Chartier
+  "0ŒÌ‘6w"  # Cherrier
+  "úhPg"  # Coffin
+  "·^ƒlS"  # Cornwall
+  "KQ÷–<h"  # Craig
+  "KQ÷–	T"  # Craigie
+  "aS¯e=Oyr"  # Cuthbert
+  "¾SjŒ‰"  # Dalhousie
+  "Dambourgés"
+  "Dartigny"
+  "·V ?–‰"  # D'Arcy
+  "·V ¦…Q"  # de Bonne
+  "de Lavaltrie"
+  "de Lorimier"
+  "de Lotbinière"
+  "de Rocheblave"
+  "·V œôuS"  # de Rouville
+  "·V („Éb)R"  # de Salaberry
+  "de Tonnancour"
+  "íb"  # Digé
+  "YÌ‘f"  # Dorion
+  "YpQ"  # Dorland
+  "jg™lÆY"  # Ducharme
+  "Duchesnay"
+  "jgyS"  # Dufour
+  "Y™„"  # Dumont
+  "Dunière"
+  "“i`"  # Dunn
+  "Dupré"
+  "jgnf±ƒ‰¯e"  # Duplessis
+  "jglš"  # Dumas
+  "êW0Œ"  # Durocher
+  "Duvernay"
+  "Éthier"
+  "9SòƒS·V"  # Fairfield
+  "9‚S"  # Fisher
+  "ÌRGk"  # Foucher
+  "VÉbmt"  # Fraser
+  "ÕlpQ‰"  # French
+  "VWÔkGk"  # Frobisher
+  "<hpQyr"  # Grant
+  "<h÷–"  # Gray
+  "b·VVœæt"  # Godefroy
+  "Gouin"
+  "Guerout"
+  "ÖvO"  # Guy
+  "ÈTêîh"  # Hardison
+  "ÈTyr"  # Hart
+  "wmO·V"  # Harwood
+  "Hébert"
+  "¨N)R"  # Henry
+  "k¯hS"  # Hertel
+  "Huot"
+  "ñ‚<h0tS"  # Ingersoll
+  "'k‡e"  # Irvine
+  "pgmtnf"  # Jessup
+  "Jodoin"
+  "TN9N"  # Jordan
+  "<t¯e"  # Jones
+  "ÉbKQœæt"  # Lacroix
+  "Éb¹e9N"  # Lafontaine
+  "ÉbWKQ"  # Larocque
+  "ÒR^÷–˜"  # Lebreton
+  "=O5r"  # le Comte
+  "Ng"  # Lee
+  "Ì‘¯e"  # Lees
+  "±ƒ¯eyr"  # Lester
+  "—g·V"  # Lynd
+  "¦žKQHY·V"  # Macnider
+  "¦ž“^ÆY"  # Macomb
+  "Malhiot"
+  "lšS“^"  # Marcoux
+  "lš‚„ú‹"  # Martineau
+  "¦žKQ`"  # McBeath
+  "¦žKQ÷–"  # McCrae
+  "¦žKQUHY"  # McDonell
+  "¦žKQ	TS"  # McGill
+  "¦ž	T)R+Y÷–"  # McGillivray
+  "¦žúW"  # McKee
+  "¦žKQ³R·V"  # McLeod
+  "…hªRyr"  # Menut
+  "s|Ryr"  # Millet
+  "™„KQ"  # Monk
+  "™„þVS"  # Montour
+  "FzS"  # Moore
+  "Mure"
+  "ØžÌ‘"  # Murray
+  "³uS"  # Nelson
+  "Panet"
+  "^®vú‹"  # Papineau
+  "Paquet"
+  "âlup"  # Pawling
+  "iOW"  # Perrault
+  "Périnault"
+  "iO‚„yr"  # Pettit
+  "®vÃWSôuS"  # Pierreville
+  "Planté"
+  "nf÷–¯eÑyyr"  # Prescott
+  "Prévost"
+  "÷–Ôk"  # Raby
+  "tågîh"  # Richardson
+  "Ì‘ëXán"  # Richmond
+  "^tS"  # Riel
+  "Ì‘æt·V"  # Rivard
+  "W¾R"  # Robinson
+  "Wpg¯e"  # Rogers
+  "WO"  # Roy
+  "1WlšN"  # Saint-Martin
+  "Secord"
+  "O„SS"  # Sewell
+  "–w"  # Shaw
+  "‚^œKQ"  # Sherbrooke
+  "Sirois"
+  "òSÆR¯e"  # Smith
+  "¯eXo^X"  # Spencer
+  "¯efW)R"  # Stanley
+  "¯eþVšNyr"  # Stuart
+  "WˆHS"  # Street
+  "¯eZyQ"  # Swayze
+  "Taché"
+  "TX‚W"  # Taschereau
+  "yrÌ‘"  # Terry
+  "dlnfîh"  # Thompson
+  "Xb·V"  # Tod
+  "Van Alstine"
+  "æt<S6w"  # Vanier
+  "ætO<h"  # Viger
+  "ƒlKQ"  # Walker
+  "`yr"  # White
+  "ZSÑ‘îh"  # Wilkinson
+  "lb"  # Young
+}
+ship_names = {
+  "aS=Oyr"  # Cabot
+  "SnfpQ"  # Champlain
+  "aS‚„ÃW"  # Cartier
+  "?–aSêšN"  # Acadia
+  "eYê–eg	V"  # Hochelaga
+  "¯eTX¾Ñy³u"  # Stadacona
+  "³R&OÐcšN"  # Laurentian
+  "A›SKQ"  # Québec
+  "‰R'Yeu"  # Ontario
+  "?–(„ôT¯eaS"  # Athabaskan
+  "aS2S R"  # Cayuga
+  "O&O"  # Huron
+  "fmA›"  # Iroquois
+  "ÆRKQlšKQ"  # Micmac
+  "?–SˆQf"  # Algonquin
+  "Ï‚Ïe"  # Sioux
+  "eY	T^æt"  # Ojibwa
+  "eYœQ¾ R"  # Onondaga
+  "(„<hHY"  # Saguenay
+  "1W«ƒÌ‘¯e"  # St. Maurice
+  "%n*YNS"  # Ottawa
+  "Chaudière"
+  "Îž^XYu"  # Richelieu
+  "1Wmg"  # St. Laurent
+  " R‚„ú‹"  # Gatineau
+  "›s<hKN"  # Margaree
+  "÷–¯e‚„äSÀN"  # Restigouche
+  "(„¯eŽU‰V)n"  # Saskatchewan
+  "aSiOÒR"  # Qu'Appelle
+  "1WVg‰¯e"  # St. Francis
+  "1WASWR"  # St. Croix
+  "<SšN RÉb"  # Niagara
+  "ZS³u‡eþVS"  # Bonaventure
+  "lš<SþV—g"  # Manitoulin
+  "‰R‚„Ñy¯e‚„"  # Anticosti
+  "ôT¬‚"  # Baffin
+  "s|¯e“^"  # Miscou
+  "Magdalen"
+  " R¯eiO"  # Gaspe
+  "¬‚ê"  # Fundy
+  "Éb^ÉbY"  # Labrador
+  "ípÅ`"  # Chaleur
+  "^<h…QKQXbŒn"  # Chignecto
+  "x^Ð"  # Fortune
+  "s|Ws|GY"  # Miramichi
+  "f‚„"  # Quinte
+  "÷–—"  # Thunder
+  "f Ræt"  # Ungava
+  "^÷–˜Ò‰"  # Cape Breton
+  "’‚V÷–›sb"  # Memphrémagog
+  "Bras d'Or"
+  "<S®v!"  # Nipigon
+  "ˆR²bw"  # Preserver
+  "ÝO²bw"  # Protecteur
+  ",žZž"  # Cormorant
+  "ss"  # Lynx
+  "Œs"  # Badger
+  "aSÌ‘^"  # Caribou
+  "ms"  # Otter
+  "ƒl+Y"  # Wolf
+  "ppŠq"  # Grizzly
+  "cmŠq"  # Raccoon
+  "†–i`"  # Loon
+  "Ý„r‚Í‚mž"  # Blue Heron
+  "Î‘-ž"  # Mallard
+  "Vison"
+  "÷–³u·V"  # Renard
+  "‹žž"  # Elk
+  "wmør"  # Beaver
+  "‰R^ÒR"  # Ambler
+  "ÈTëXGY"  # Husky
+  "ošž"  # Reindeer
+  "Fz¯e"  # Moose
+  "'Y(ž"  # Outarde
+}

@@ -1,0 +1,47 @@
+#northern xio
+XB1_ideas = {
+	start = {
+		global_manpower_modifier = 0.2
+		discipline = 0.05
+	}
+	
+	bonus = {
+		merc_maintenance_modifier = -0.25
+	}
+	
+	trigger = {
+		tag = XB1
+	}
+
+	free = yes
+	
+	zhishu_zaolin = {
+		production_efficiency = 0.1
+	}
+
+	jidu_jiangjun = {
+		inflation_reduction = 0.2
+		core_creation = -0.25
+	}
+
+	sulian_yuanzhu = {
+		discipline = 0.1
+	}
+	
+	heping_minzhu = {
+		diplomatic_upkeep = 2
+	}
+
+	zhongyuan_hui_fu = {
+		religious_unity = 0.25
+		legitimacy = 1
+	}
+
+	buyi_jiangjun = {
+		discipline = 0.05
+	}
+
+	biaolibixing = {
+		no_cost_for_reinforcing = yes
+	}
+}

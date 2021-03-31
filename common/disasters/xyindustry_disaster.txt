@@ -1,0 +1,213 @@
+economy_crisis_disaster = {
+	potential = {
+	   OR = {
+		   has_country_flag = industrial_indexzhi1
+			any_country = {
+				has_country_flag = industrial_indexzhi1   
+			}
+		}
+	}
+	can_start = {
+		has_any_disaster = no
+        any_country = { has_country_modifier = jingjiweiji11 }
+		check_variable = {
+			which = num_of_industrialindex
+			value = 60
+		}
+	}
+
+	can_stop = {
+	NOT = {
+   OR = {
+            AND = {
+                is_year = 1800 NOT = {
+                    is_year = 1900
+                }
+				OR = {
+				ROOT = {
+                NOT = { great_power_rank = 2 }
+                        check_variable = {
+                            which = sum_of_economycrisis
+                            value = 25
+                        }
+				}
+                    any_country = {
+					NOT = { great_power_rank = 2 }
+                        check_variable = {
+                            which = sum_of_economycrisis
+                            value = 25
+                        }
+                    }
+					}
+            }
+            AND = {
+                is_year = 1900 
+				NOT = {
+                    is_year = 1945
+                }
+				OR = {
+				ROOT = {
+                NOT = { great_power_rank = 2 }
+                        check_variable = {
+                            which = sum_of_economycrisis
+                            value = 30
+                        }
+				}
+                    any_country = {
+					NOT = { great_power_rank = 2 }
+                        check_variable = {
+                            which = sum_of_economycrisis
+                            value = 30
+                        }
+                    }
+					}
+            }
+            AND = {
+                is_year = 1945
+				OR = {
+				ROOT = {
+                NOT = { great_power_rank = 2 }
+                        check_variable = {
+                            which = sum_of_economycrisis
+                            value = 25
+                        }
+				}
+                    any_country = {
+					NOT = { great_power_rank = 2 }
+                        check_variable = {
+                            which = sum_of_economycrisis
+                            value = 25
+                        }
+                    }
+					}
+            }
+        }
+		}
+ }
+	progress = {
+			modifier = {
+			factor = 0.5
+			num_of_loans = 2
+		}
+		modifier = {
+			factor = 0.5
+			num_of_loans = 5
+		}
+		modifier = {
+			factor = 1
+			check_variable = {
+				which = num_of_industrialindex
+				value = 60
+			}
+		}
+		modifier = {
+			factor = -1
+			is_at_war = yes
+		}
+	    modifier = {
+			factor = 0.5
+			religion = liberalism
+		}
+	    modifier = {
+			factor = -0.5
+			religion = communism
+		}
+		 modifier = {
+			factor = -0.25
+			check_variable = {
+				which = num_of_industrialindex
+				value = 120
+			}
+		}
+		modifier = {
+			factor = -0.1
+			check_variable = {
+				which = num_of_industrialindex
+				value = 100
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+			check_variable = {
+				which = num_of_industrialindex
+				value = 90
+			}
+			}
+		}
+	}
+
+	can_end = {
+		NOT = {
+			OR = {
+				AND = {  
+					NOT = { is_year = 1900 } 
+					OR = {
+						ROOT = {
+						NOT = { great_power_rank = 2 }
+								check_variable = {
+									which = sum_of_economycrisis
+									value = 25
+								}
+						}
+						any_country = {
+							NOT = { great_power_rank = 2 }
+							check_variable = {
+								which = sum_of_economycrisis
+								value = 25
+							}
+						}
+					}
+				}
+				AND = {
+					is_year = 1900 
+					NOT = { is_year = 1945 } 
+					OR = {
+						ROOT = {
+							NOT = { great_power_rank = 2 }
+								check_variable = {
+									which = sum_of_economycrisis
+									value = 30
+								}
+						}
+						any_country = {
+							NOT = { great_power_rank = 2 }
+							check_variable = {
+								which = sum_of_economycrisis
+								value = 30
+							}
+						}
+					}
+				}
+				AND = {
+					is_year = 1945 
+					OR = {
+					ROOT = {
+					NOT = { great_power_rank = 2 }
+							check_variable = {
+								which = sum_of_economycrisis
+								value = 25
+							}
+					}
+						any_country = {
+						NOT = { great_power_rank = 2 }
+							check_variable = {
+								which = sum_of_economycrisis
+								value = 25
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	modifier = {
+		global_unrest = 10
+		stability_cost_modifier = 1
+		production_efficiency = -0.5
+		trade_efficiency = -0.5
+		technology_cost = 0.5
+	}		
+		on_start = xy_industry.14
+		on_end = xy_industry.15
+}

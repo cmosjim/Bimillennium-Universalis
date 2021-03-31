@@ -1,0 +1,27 @@
+control_southernsea_d_modifier = {
+	potential = {
+		any_owned_province = { 
+				OR = {
+					area = taiwan_north_area 
+					area = taiwan_south_area 
+					area = guangdong_area 
+					area = fujian_area 
+					area = vietnam_area 
+					area = champa_area 
+					area = luzon_area 
+					area = great_moluccas_area 
+					area = mindanao_area
+					area = brunei_area
+					area = sarawak_area
+					area = johor_area
+					area = malaya_area
+				}
+			 	has_port = yes
+		}		
+	}
+	trigger = {
+		check_variable = { which = pop_southernsea_d value = 100 }
+	}
+		land_morale = 0.05
+		global_trade_power = 0.05
+}

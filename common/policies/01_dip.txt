@@ -1,0 +1,42 @@
+#yuanyang_ideas
+#shentou_ideas
+
+policy_dip_1 = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = yuanyang_ideas
+		has_idea_group = shentou_ideas
+	}
+	allow = {
+		full_idea_group = yuanyang_ideas
+		full_idea_group = shentou_ideas
+	}
+	
+	naval_morale = 0.1
+
+	ai_will_do = {
+		factor = 1
+	
+	}
+}
+
+policy_dip_2 = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = zhongqi_ideas
+		has_idea_group = jingying_ideas
+	}
+	allow = {
+		full_idea_group = zhongqi_ideas
+		full_idea_group = jingying_ideas
+	}
+	
+	leader_naval_fire = 1
+
+	ai_will_do = {
+		factor = 1
+	
+	}
+}

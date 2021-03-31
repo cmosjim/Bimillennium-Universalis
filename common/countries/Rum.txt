@@ -1,0 +1,152 @@
+graphical_culture = muslimgfx
+color = {
+  30
+  160
+  203
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  shichen_ideas
+  defensive_ideas
+  offensive_ideas
+  spy_ideas
+  trade_ideas
+  religious_ideas
+  diplomatic_ideas
+  quality_ideas
+  administrative_ideas
+}
+historical_units = {
+  persian_footsoldier
+  persian_cavalry_charge
+  persian_shamshir
+  qizilbash_cavalry
+  tofongchis_musketeer
+  topchis_artillery
+  afsharid_reformed
+  afsharid_reformed_infantry
+  muslim_mass_infantry
+  muslim_dragoon
+  persian_rifle
+}
+monarch_names = {
+  "Taceddin #0" = 10
+  "Dervis #0" = 10
+  "Havva #0" = -1
+  "Gamze #0" = -1
+  "Hanife #0" = -1
+  "VyO·V #0" = -1  # Zübeyde #0
+  "yQ…Qyr #0" = -1  # Ziynet #0
+  "NQ(g #0" = -1  # Umut #0
+  "ƒòƒ6w #0" = -1  # Safiye #0
+  "ÉbÔk6w #0" = -1  # Rabia #0
+  "…hÌ‘¯e #0" = -1  # Melis #0
+  "Fz¯eTXÕl #0" = 10  # Mustafa #0
+  "?–Ì‘ #0" = 10  # Ali #0
+  "fjSÉb1k #0" = 10  # Ibrahim #0
+  "lšÈTƒ·V #0" = 10  # Mahmud #0
+  "aS‰ÆY #0" = 10  # Kasim #0
+  "Œ‚ÈTÈ·V #0" = 10  # Ahmed #0
+  "f¯eÈT<h #0" = 10  # Ishak #0
+  "O(„N #0" = 10  # Izzeddin #0
+  "FzUØ·V #0" = 10  # Muhammed #0
+  "ïQ“^ôT·V #3" = 40  # Kayqubad  #3
+  "ïQw¯e #2" = 20  # Kaykaus  #2
+  "úW)Rpg #3" = 40  # Kilij #3
+  "ïQáw¯e³R #3" = 40  # Kaykhusraw #3
+  "lšÏ‚·V #3" = 40  # Masud #3
+  "Ï‚±ƒüf #2" = 30  # Suleiman #2
+  "“^TXÒR÷1Y #1" = 20  # Qutalmish #1
+}
+leader_names = {
+  "?–egÆY¾S"  # Alemdar
+  "Njt)RN"  # Amasyali
+  "?–šN¯e"  # Ayas
+  "ôTÌ‘"  # Bali
+  "ôTôTW(„"  # Barbaros
+  "ÜbÉbÆY"  # Bayram
+  ">(„S"  # Cezzar
+  "Çandarli"
+  "R±ƒÔk"  # Çelebi
+  "Cerrah"
+  "RSKQ¯e"  # Çerkes
+  "Civan"
+  "Çuhadar"
+  "Damad"
+  "Dervis"
+  "Defterdar"
+  "ÖvêKQ"  # Gedik
+  "<hyQ"  # Gazi
+  "Gümülcineli"
+  "Gürcü"
+  "ÈT·VÆY"  # Hadim
+  "wmúWÆYeYbS"  # Hekimoglu
+  "Hersekli"
+  "ÑynfÉbœ"  # Köprülü
+  "ïQ+gS"  # Kemal
+  "“^ZiKQ"  # Küçük
+  "Koca"
+  "aSÉbüf)R"  # Karamanli
+  "ïg^X"  # Köse
+  "aSÉb"  # Kara
+  "Kanijeli"
+  "ÑyüfKQ¯e"  # Kemankes
+  "Kaymak"
+  "Kavalali"
+  "Ishak"
+  "Izzed"
+  "ÉbLR"  # Lala
+  "Lefkeli"
+  "Malkoç"
+  "Müezzinzade"
+  "Nevsehirli"
+  "Nisanci"
+  "eYœGY"  # Oruç
+  "LNbSGY"  # Uluç
+  "Osmancikli"
+  "Ohrili"
+  "Oflu"
+  "œs|"  # Rumi
+  "®vÌ‘"  # Piri
+  "^S RÒR"  # Pargali
+  "®všNÌ‘"  # Piyale
+  "Pehlivan"
+  "(„)Rk"  # Salih
+  "0t“^œ"  # Sokullu
+  "(„Ì‘"  # Sari
+  "^Éb¾"  # Silahdar
+  "Semiz"
+  "Serdar"
+  "Xb^"  # Topal
+  "Tayyar"
+  "şVSäSyr"  # Turgut
+  "Tarhuncu"
+  "Veli"
+  "Yemisçi"
+}
+ship_names = {
+  "Ï‚òƒ"  # Nure Sufi
+  "Sadaddin"
+  "aSÉbüfT¯O"  # Karaman Bey
+  "Ermenek"
+  "Fzyr"  # Mut
+  "Gülnar"
+  "¾|up"  # Mer
+  "!•)R+YïQ"  # Silifke
+  "GYÌ‘^NšN"  # Cilicia
+  "Larande"
+  "Bunsuz"
+  "Zeynül-Hac"
+  "(„ÆYi‰v …hØyr"  # Semseddin Mehmet
+  "Göksu"
+}
+army_names = {
+  "$PROVINCE$›Q"  # $PROVINCE$ Ordusu
+}
+fleet_names = {
+  "$PROVINCE$0‚–"  # $PROVINCE$ Donanmasî
+}

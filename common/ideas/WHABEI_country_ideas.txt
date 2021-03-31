@@ -1,0 +1,64 @@
+WHABEI_ideas = {
+	start = {
+		land_morale = 0.15
+		discipline = 0.05
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.15
+	}
+
+	trigger = {
+		
+	OR = {
+		tag = LUP
+		tag = LIL
+		tag = LZO
+		tag = DOG
+		tag = COO
+		tag = UAN
+		tag = TS2
+		tag = TOC
+		tag = LUD
+		tag = LB1
+		tag = ZBA
+		tag = LP1
+		tag = ZNS
+		tag = PO1
+		tag = WD1
+		tag = LU3
+		tag = GKD
+		tag = LSD
+		tag = LWZ
+		tag = DJD
+		tag = WSC
+		tag = WGJ
+		tag = WLM
+		tag = ZHG		
+		}		
+	}
+	free = yes
+
+	loess_plateau = {
+		defensiveness = 0.2
+	}
+	peking = {
+		prestige = 2
+	}
+	wheat_area = {
+		production_efficiency = 0.1
+	}
+	birthplace_of_the_chinese = {
+		num_accepted_cultures = 2
+	}
+	coal_and_iron = {
+		infantry_power = 0.1
+	}
+	bohai_bay = {
+		trade_efficiency = 0.1
+	}
+	qilu_culture = {
+		stability_cost_modifier = -0.1
+		culture_conversion_cost = -0.2
+	}
+}

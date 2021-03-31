@@ -1,0 +1,252 @@
+# 2018.12.22 1.28 okay
+#民怨四起
+#2019-09-07 modify UTF8
+#2020-02-29 xy modify
+#2020-05-02 rab add chinese_feudatory_reform
+china_war = {
+	potential = {
+    has_country_flag = tianchaodaguo
+	}
+	can_start = {
+		has_country_flag = tianchaodaguo
+		is_at_war = yes
+	}
+
+	can_stop = {
+		NOT = {  any_country = { war_with = ROOT } }
+	}
+	down_progress = {
+		factor = 0.5
+	}
+
+	progress = {
+		modifier = {
+			factor = 1
+			any_neighbor_country = {
+				is_subject = no 
+				culture_group = east_asian 
+				war_with = ROOT 
+			}
+			hidden_trigger = {
+				NOT = {
+					any_neighbor_country = {
+						is_subject = no
+						war_with = ROOT
+						NOT = {
+							culture_group = east_asian 
+						} 
+					}			
+				}			
+			}
+		}
+	
+		modifier = {
+			factor = 2
+			any_neighbor_country = {
+				is_subject = no 
+				NOT = { culture_group = east_asian }  
+				war_with = ROOT
+			}
+		}
+
+		modifier = {
+			factor = 1
+			any_neighbor_country = {
+				is_subject = no 
+				is_nomad = yes  
+				war_with = ROOT  
+			}
+		}
+		modifier = {
+			factor = -1
+			MIL = 5
+		}
+		modifier = {
+			factor = -1
+			has_reform = dip_develop_2_reform
+		}
+		modifier = {
+			factor = 1
+			is_at_war = yes
+			war_exhaustion = 2
+		}
+		modifier = {
+			factor = 2
+			is_at_war = yes
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = -2
+			has_institution = industrialization
+		}
+		modifier = {
+			factor = -1
+			has_institution = enlightenment		
+		}	
+		modifier = {
+			factor = -1
+			is_at_war = no
+		}	
+	}
+	modifier = {
+	}	
+	can_end = {
+	}
+		on_start = xy_zainan.1
+}
+
+#元帝国的瓦解
+#2019-09-07 modify UTF8
+#2021-01-16 on_start = xy_xymengyuan.21 change to on_start = rab_events
+yuanwajie = {
+	potential = {
+		has_reform = celestial_empire
+		tag = YUA
+	}
+	can_start = {
+		has_any_disaster = no
+		has_reform = celestial_empire
+		tag = YUA
+		NOT = { culture_group = east_asian }
+	}
+
+	can_stop = {
+		culture_group = east_asian
+		NOT = { num_of_loans = 1 }
+		NOT = { corruption = 1 }
+	}
+
+	progress = {
+			modifier = {
+			factor = 0.05
+			NOT = { adm = 5 }
+		}
+		modifier = {
+			factor = 0.05
+			NOT = { mil = 5 }
+		}
+		modifier = {
+			factor = 0.05
+			NOT = { dip = 5 }
+		}
+		modifier = {
+			factor = 35
+			is_year = 1352
+			started_in = 1279.3.19
+		}
+		modifier = {
+			factor = 35
+			has_country_flag = yuanmogeju11
+		}
+	
+	
+	}
+	modifier = {
+		global_unrest = 10
+		land_morale = -0.20
+		land_maintenance_modifier = 0.2
+		shock_damage_received = 0.5
+		fire_damage_received = 0.5
+		imperial_mandate = -1
+	}	
+	can_end = {
+		NOT = { tag = YUA }
+		NOT = { has_reform = celestial_empire }
+	}
+		on_start = TS_rab_YUA_events.1 #rab_ modify 
+		on_end = xy_xymengyuan.22
+}
+#辛亥革命
+xinhaigeming = {
+	potential = {
+		tag = QNG
+		is_year = 1900
+		NOT = { religion_group = ideology }
+		NOT = { is_year = 1930 }
+	}
+	can_start = {
+		is_year = 1900
+		tag = QNG
+		NOT = { culture_group = east_asian }
+		total_development = 2000
+		NOT = { religion_group = ideology }
+		OR = { 
+		calc_true_if = {
+	    all_owned_province = {
+		OR = {
+		region = south_china_region
+		region = xinan_region
+		}
+	  }
+	amount = 50
+     }
+	 has_global_flag = xinhaigemingflag 
+	 }
+	 has_any_disaster = no
+	 NOT = {
+     check_variable = {
+			which = num_of_industrialindex
+			value = 70
+		}
+	}
+	}
+
+	can_stop = {
+	NOT = {
+     check_variable = {
+			which = num_of_industrialindex
+			value = 80
+		}
+	}
+	NOT = { any_province = { is_core = ROOT NOT = { owned_by = ROOT }  } }
+	NOT = { tag = QNG }
+	}
+
+	progress = {
+		modifier = {
+			factor = 100
+			started_in = 1910.1.1
+		}
+		modifier = {
+			factor = 2
+			NOT = { adm = 3 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { dip = 3 }
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+     check_variable = {
+			which = num_of_industrialindex
+			value = 50
+		}
+	}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+     check_variable = {
+			which = num_of_industrialindex
+			value = 30
+		}
+	}
+		}
+	
+	
+	}
+	modifier = {
+		land_morale = -0.20
+		land_maintenance_modifier = 0.5
+		shock_damage_received = 0.5
+		fire_damage_received = 0.5
+		diplomatic_reputation = -10
+	}	
+	can_end = {
+    	NOT = { exists = ROC }
+		NOT = { exists = GJ1 }
+		is_at_war = no 
+	}
+		on_start = xy_rocchn.1
+}

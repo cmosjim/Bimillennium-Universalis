@@ -1,0 +1,118 @@
+prestige100_80 = {
+	potential = {
+        		has_reform = viking_pirate_reform
+    	}
+	trigger = {
+        		prestige = -100
+        		NOT = { prestige = -80 } 
+        	}
+    	army_tradition = -6
+    	navy_tradition = -6
+	ae_impact = 0.25
+	trade_efficiency = -0.3
+}
+
+prestige80_60 = {
+	potential = {
+        		has_reform = viking_pirate_reform
+    	}
+	trigger = {
+        		prestige = -80
+        		NOT = { prestige = -60 } 
+        	}
+    	army_tradition = -5
+    	navy_tradition = -5
+	trade_efficiency = -0.25
+}
+
+prestige60_40 = {
+	potential = {
+        		has_reform = viking_pirate_reform
+    	}
+	trigger = {
+        		prestige = -60
+        		NOT = { prestige = -40 } 
+        	}
+    	army_tradition = -4
+    	navy_tradition = -4
+	trade_efficiency = -0.2
+}
+
+prestige40_20 = {
+	potential = {
+        		has_reform = viking_pirate_reform
+    	}
+	trigger = {
+        		prestige = -40
+        		NOT = { prestige = -20 } 
+        	}
+    	army_tradition = -3
+    	navy_tradition = -3
+	trade_efficiency = -0.15
+}
+
+prestige20_0 = {
+	potential = {
+        		has_reform = viking_pirate_reform
+    	}
+	trigger = {
+        		prestige = -20
+        		NOT = { prestige = 0 } 
+        	}
+    	army_tradition = -2
+    	navy_tradition = -2
+	trade_efficiency = -0.1
+}
+
+prestige0_20 = {
+	potential = {
+        		has_reform = viking_pirate_reform
+    	}
+	trigger = {
+        		prestige = 0
+        		NOT = { prestige = 20 } 
+        	}
+    	army_tradition = -1
+    	navy_tradition = -1
+	trade_efficiency = -0.05
+}
+
+prestige40_60 = {
+	potential = {
+        		has_reform = viking_pirate_reform
+    	}
+	trigger = {
+        		prestige = 40
+        		NOT = { prestige = 60 } 
+        	}
+    	army_tradition = 1
+    	navy_tradition = 1
+	trade_efficiency = 0.05
+}
+
+prestige60_80 = {
+	potential = {
+        		has_reform = viking_pirate_reform
+    	}
+	trigger = {
+        		prestige = 60
+        		NOT = { prestige = 80 } 
+        	}
+    	army_tradition = 2
+    	navy_tradition = 2
+	trade_efficiency = 0.1
+}
+
+prestige80_100 = {
+	potential = {
+        		has_reform = viking_pirate_reform
+    	}
+	trigger = {
+        		prestige = 80
+        		NOT = { prestige = 100 } 
+        	}
+    	army_tradition = 3
+    	navy_tradition = 3
+	ae_impact = -0.25
+	trade_efficiency = 0.15
+}

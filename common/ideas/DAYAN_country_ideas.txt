@@ -1,0 +1,50 @@
+DAYAN_ideas = {
+	start = {
+		army_tradition = 1
+		discipline = 0.05
+	}
+
+	bonus = {
+		infantry_cost = -0.25
+	}
+
+	trigger = {
+	OR = {
+		tag = DAA
+		tag = DAB
+		tag = DAD
+		tag = HY1
+		tag = NYN
+		tag = XYN
+		tag = CCY
+		tag = DY1
+		tag = DY9
+		}
+	}
+	free = yes
+
+	the_north_boss = {
+		improve_relation_modifier = 0.25
+		prestige = 1
+	}
+	swallow_fly = {
+		global_regiment_recruit_speed = -0.10
+	}
+	adjust_to_environment = {
+		leader_land_manuever = 1
+		recover_army_morale_speed = 0.1
+	}
+	daxinganling_trees = {
+		heavy_ship_cost = -0.15
+	}
+	cross_religions_yan = {
+		missionaries = 1
+	}
+	changbai_mountain_yan = {
+		production_efficiency = 0.1
+	}
+	xianbei_appealingness = {
+		stability_cost_modifier = -0.1
+		reinforce_speed = 0.1
+	}
+}

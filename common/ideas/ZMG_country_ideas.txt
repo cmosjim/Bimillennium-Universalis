@@ -1,0 +1,49 @@
+#northern xio
+ZMG_ideas = {
+	start = {
+		global_manpower_modifier = 0.15
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		dip_tech_cost_modifier = -0.15
+		infantry_cost = -0.1
+	}
+	
+	trigger = {
+	   tag = ZMG
+	}
+
+	free = yes
+	
+	imperial_jade_seal = {
+		global_regiment_recruit_speed = -0.15
+	}
+
+	si_shi_san_gong = {
+		prestige = 1 
+	}
+	
+	UAN_and_UAZ = {
+		core_creation = -0.25
+	}
+
+	robbery_UAZ = {
+		global_tax_modifier = 0.1
+	}
+
+	instead_Han = {
+		manpower_recovery_speed = 0.15
+		hostile_attrition = 1.0
+	}
+	
+	yangzhou_fuxing = {
+		range = 0.2
+		diplomatic_upkeep = 1
+	}
+	
+	quick_fix = {
+		heavy_ship_power = 0.1
+		infantry_cost = -0.1
+	}
+}

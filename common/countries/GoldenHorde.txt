@@ -1,0 +1,167 @@
+graphical_culture = muslimgfx
+color = {
+  250
+  182
+  3
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  qianyi_ideas
+  rongren_ideas
+  junqu_ideas
+  expansion_ideas
+  offensive_ideas
+  administrative_ideas
+  trade_ideas
+  economic_ideas
+  defensive_ideas
+  diplomatic_ideas
+  innovativeness_ideas
+}
+historical_units = {
+  steppe_riders
+  steppe_lancers
+  steppe_mounted_raiders
+  steppe_cavalry
+  steppe_uhlans
+  steppe_raiders
+  steppe_footmen
+  steppe_musketeers
+  steppe_infantry
+  steppe_rifles
+  reformed_steppe_rifles
+}
+monarch_names = {
+  "Agalak #0" = 20
+  "Ak Kˆbek #0" = 40
+  "Bek Bulat #0" = 20
+  "Chokra #1" = 20
+  "Darwish #1" = 20
+  "Darwish Ali #0" = 20
+  "Ilham #0" = 20
+  "Ishim #0" = 20
+  "Jalal al-Din #1" = 20
+  "Jan Ali #0" = 20
+  "Janay #0" = 20
+  "Jumaduq #0" = 20
+  "Khalil #0" = 30
+  "Qadir Berdi #1" = 20
+  "Ibtisam #0" = -1
+  "Jalila #0" = -1
+  "Janan #0" = -1
+  "Layla #0" = -1
+  "Sharifa #0" = -1
+  "(Ñ	TZ #0" = -1  # Sakina #0
+  "’lÇÑõs #0" = -1  # Fatima #0
+  "Ôû˝V?Qdç #0" = 20  # Yamghurchi #0
+  "≈ñÍè<hS lö—ûªû #0" = 20  # Yadigar Muhammad #0
+  "NQÅú` lö—ûªû #0" = 20  # Urus Muhammad #0
+  "NQÅú` #1" = 20  # Urus #1
+  "NQÅú lö—ûªû #0" = 40  # Ulugh Muhammad #0
+  "1Å1Å˜è1Y #1" = 20  # Toqtamish #1
+  "^(g?Q ˝V˝êÅú #1" = 20  # Timur Qutlugh #1
+  "^(g?Q #1" = 20  # Timur #1
+  "SN±Ç #0" = 20  # Taibugha #0
+  "fÌs #0" = 20  # Shiban #0
+  "m—û wmTr?Q #0" = 20  # Shaikh Haidar #0
+  "m—û ?ñ>TÈO #0" = 20  # Shaikh Awliar #0
+  "m—û ?ñ—ûªû #0" = 20  # Shaikh Ahmad #0
+  "ôl ?ñÃë #0" = 20  # Shah Ali #0
+  "ídÍè+R #1" = 20  # Shadi Beg #1
+  "iç∑V löT(g #0" = 20  # Sayid Mahmud #0
+  "iç∑V ^?QU #0" = 20  # Sayid Burhan #0
+  "iç∑V ?ñ—ûªû #0" = 60  # Sayid Ahmad #0
+  "ídÑvU #0" = 20  # Satilghan #0
+  "iç‡VNLR #0" = 20  # Sain Bulat #0
+  "aSâ∆Y #0" = 60  # Qasim #0
+  "NLR^(g?Q #0" = 20  # Pulad Timur #0
+  "NLR #1" = 20  # Pulad #1
+  "±êwm #0" = 20  # Nogai #0
+  "FzØeTX’l ?ñÃë #0" = 20  # Mustafa Ali #0
+  "(gTXíd #0" = 20  # Murtaza #0
+  "lö—ûªû #0" = 50  # Muhammad #0
+  "·nê?Q #0" = 20  # Mansur #0
+  "löFzKQ #0" = 30  # Mamuk #0
+  "lö¶û #0" = 20  # Mamai #0
+  "löT(g^KQ #0" = 50  # Mahmudak #0
+  "löTå #0" = 80  # Mahmud #0
+  "ì^Zi #0" = 20  # Kuchum #0
+  "ì^ZiKQ lö—ûªû #0" = 40  # K¸ch¸k Muhammad #0
+  "TU+R #1" = 20  # Khaqan Beg #1
+  "=`+R #1" = 20  # Kebek #1
+  "KQÃë(g +R?QÍè #1" = 20  # Karim Berdi #1
+  "-g<S+R #1" = 20  # Jani Beg #1
+  "-gÙT?Q +R?QÍè #1" = 20  # Jabbar Berdi #1
+  "¶NNLR—ë #0" = 50  # Ibrahim #0
+  "¶N≈VT #0" = 20  # Ibak #0
+  "˝Võè #0" = 30  # Husayn #0
+  "»TÍS lö—ûªû #1" = 20  # Hajji Muhammad #1
+  "mNÍè‰S #0" = 20  # Edigu #0
+  "SêLRyr +R?QÍè #0" = 20  # Devlet Berdi #0
+  "Tr<S“R #0" = 20  # Daniyal #0
+  "âVS¢R` #1" = 20  # Cherkes #1
+  "NLRT #1" = 20  # Bolaq #1
+  "kQLR #1" = 30  # Baraq #1
+  "?ñ?Q`pQ #0" = 20  # Arslan #0
+  "?ñLRjSôl #1" = 20  # Arab Shah #1
+  "?ñÃë+RÂT #0" = 20  # Ali Beg #0
+  "?ñTlö #0" = 50  # Ahmad #0
+  "eY˝êLR #0" = 20  # Abdullah #0
+  "eY˝êLRTÓÜ #0" = 40  # Abdul-Rahman #0
+  "?ñN˝ê LRÍè+u #0" = 20  # Abdul-Latif #0
+  "?ñN˝ê KQÃë(g #0" = 40  # Abdul-Karim #0
+}
+leader_names = {
+  "NÂT^(g?Q"  # Boke Temur
+  "˝V˝êÅú°edç?Q"  # Qutlugh Vachir
+  "œÇ&O dç±ê"  # Suren Chinua
+  "Ìè“R<h?Q ÙTYr?Q"  # Delger Bayar
+  "Shria Gan"
+  "iRLRdç±ê"  # Bora Chinua
+  "Nasange"
+  "^(g?Qdç"  # Temur-chi
+  "dç±ê<hOc"  # Chinuagene
+  "√yÅú&O"  # Toluilun
+  "˝V˝êÅúU"  # Qutughqan
+  "ññ Nﬁè“R	T"  # Koke Burilgi
+  "œÇ&OﬂR?Q"  # Surenchar
+  "ÙTfV<h"  # Bayangge
+}
+ship_names = {
+  "‘b˝ê"  # Batu
+  "ídÃëTr"  # Sartaq
+  "LNLR—ûdç"  # Ulaghchi
+  "+R?QÂT"  # Berke
+  "ôÑÂT^(g?Q"  # Mengu-Timur
+  "Tuda-Mengu"
+  "TXLRN±Ç"  # Talabuga
+  "±êwmWl"  # Nogai Khan
+  "1Å1Å"  # Tokhta
+  "gsS+R"  # ÷z Beg
+  "Íè<S+R"  # Tini Beg
+  "-g<S+R"  # Jani Beg
+  "+R?QÍè+R"  # Berdi Beg
+  "˝VÃë≥u"  # Qulpa
+  "≥uNQÅúØe+R"  # Nawruz Beg
+  "^NÍè?Q"  # Khidr
+  "^(g?Q kpw"  # Timur Khwaja
+  "?ñN˝êLR"  # Abdallah
+  "lö—ûªû iRLRKQ"  # Muhammad Bolak
+  "lö»è Wl"  # Mamai Khan
+  "1Å1Å˜è1Y"  # Toqtamish
+  "^(g?Q ˝V˝êÅú"  # Tem¸r Qutlugh
+  "mNÍè‰S"  # Ediguh
+  "ídÍè+R"  # Shadi Beg
+  "iRW Wl"  # Polad Khan
+  "^(g?Q"  # Tem¸r
+  "NbLR“RN"  # Jalal ad-Din
+  "KQÃë(g +R?QÍè"  # Karim Berdi
+  "=`+R"  # Kebek
+  "-gÙT?Q +R?QÍè"  # Jabbar Berdi
+  "NQÅú lö—ûªû"  # Ulugh Muhammad
+  "SêLRyr +R?QÍè"  # Dawlat Berdi
+  "kQLR"  # Baraq
+  "iç∑V ?ñTlö"  # Sayud Ahmad
+}

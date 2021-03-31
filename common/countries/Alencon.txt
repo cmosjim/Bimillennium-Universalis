@@ -1,0 +1,198 @@
+graphical_culture = westerngfx
+color = {
+  162
+  116
+  225
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  defensive_ideas
+  trade_ideas
+  religious_ideas
+  diplomatic_ideas
+  economic_ideas
+  innovativeness_ideas
+  offensive_ideas
+  spy_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  french_caracolle
+  anglofrench_line
+  french_dragoon
+  french_bluecoat
+  french_carabinier
+  french_impulse
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "©‹Z #0" = -1  # Jeanne #0
+  "›sKN #0" = -1  # Marie #0
+  "›s<hKNyr #0" = -1  # Marguerite #0
+  "ïQmt3t #0" = -1  # Catherine #0
+  "KQ³RN #0" = -10  # Claudine #0
+  "<hNbôuÃW #0" = 0  # Xavier #0
+  "‚„ZS #0" = 0  # Thibaut #0
+  "‰™„ #0" = 0  # Simon #0
+  "ÒR…Q #0" = 0  # René #0
+  "ÉbLNS #0" = 0  # Raoul #0
+  "®vÃWS #0" = 0  # Pierre #0
+  "s|GkS #0" = 0  # Michel #0
+  "lšKQ‰s|Þ #0" = 0  # Maximilien #0
+  "«ƒÌ‘¯e #0" = 0  # Maurice #0
+  "lšKQ #0" = 0  # Marc #0
+  "QÒR #0" = 0  # Jules #0
+  "©‹-òƒ)Rnf #0" = 0  # Jean-Philippe #0
+  "©‹-ôT‚„¯eyr #0" = 0  # Jean-Baptiste #0
+  "Å–KQ #0" = 0  # Jacques #0
+  "¨N)R #0" = 0  # Henri #0
+  "äS¯eTX+Y #0" = 0  # Gustave #0
+  "ªu'SÆY #0" = 0  # Guillaume #0
+  "ESO #0" = 0  # Gui #0
+  "„S·V #0" = 0  # Eudes #0
+  "9N<S¯e #0" = 0  # Denis #0
+  "KQm·V #0" = 0  # Claude #0
+  "=O³u·V #0" = 0  # Bernard #0
+  "ôTðlÒRs| #0" = 0  # Barthélemy #0
+  "?–S’‚ #0" = 0  # Armand #0
+  "‰R^œætyQ #0" = 0  # Ambroise #0
+  "šN†SqS'Y #0" = 0  # Alexandre #0
+  "W=Oyr #1" = 1  # Robert #1
+  "ŽN<h #2" = 1  # Hughes #2
+  "‰RXbN òƒ)Rnf #0" = 5  # Antoine Philippe #0
+  "¦uð #0" = 5  # Jean #0
+  "Vg0tæt #0" = 10  # François #0
+  "šN†SqS'Y-ïf #0" = 10  # Alexandre-Louis #0
+  "<SäSÉb #0" = 20  # Nicolas #0
+  "¨N)R-šN†SqS'Y #0" = 20  # Henri-Alexandre #0
+  " R¯e˜ #0" = 20  # Gaston #0
+  "S›R #0" = 40  # Philippe #0
+  "ïf S›R #0" = 40  # Louis-Philippe #0
+  "ågt #1" = 60  # Charles #1
+  "ïf #0" = 80  # Louis #0
+}
+ship_names = {
+  "g^æt¯e"  # l'Amboise
+  "Ébs|O"  # l'Amilly
+  "ÉbSyrHY"  # l'Artenay
+  "Éb°RÒRÌ‘Y"  # l'Azay-le-Rideau
+  "ÉbZS·‹ÉbWg·V"  # la Beaune-la-Rolande
+  "ÒR ZSÒR RS"  # le Beauregard
+  "ÉbÒR R·V"  # la Bellegarde
+  "ÒR ^bSæt"  # le Blois
+  "Éb^Ì‘šNS"  # la Briare
+  "Éb™l±ƒyr"  # la Chalette
+  "ÒR SZSS"  # le Chambord
+  "ÒR YÆYmÒR"  # le Chamerolles
+  "ÒR ™lXb·‹+Y"  # le Châteauneuf
+  "ÒR ™lXbÒR³uS"  # le Château-Renard
+  "ÒR Y‚„8l-ÑyÌ‘<S"  # le Châtillon-Coligny
+  "ÒR 0Œ‰"  # le Chécy
+  "ÒR ‚œQ0t"  # le Chenonceau
+  "ÒR 0Œæ—S<S"  # le Cheverny
+  "ÒR ‚ôuO"  # le Chevilly
+  "ÒR KQ±ƒÌ‘-1W‰R·VÈp"  # le Cléry-Saint-André
+  "ÒR TR^ÒR"  # le Combleux
+  "ÒR “^yrHY"  # le Courtenay
+  "ÒR êªRæt"  # le Dunois
+  "Éb9'kmåe"  # la Fay-aux-Loges
+  "ÒR VÒR¯e"  # le Ferrières
+  "1W'kís!X"  # la Ferté-Saint-Aubin
+  "ÒR VÒRÌ‘±ƒ0t^V"  # le Fleury-les-Aubrais
+  "ÒR ípSs|<S"  # le Germigny
+  "ÒR åe‰R"  # le Gien
+  "ÒR Å–Så‚"  # le Jargeau
+  "ÉbÔk‰6wS"  # la Bussière
+  "ÒR lšÒR^X^"  # le Malesherbes
+  "ÒR bSætS³lTuØži`"  # le Meung-sur-Loire
+  "ÒR ™„TXåe"  # le Montargis
+  "ÒR ·‹ôuS'k^æt"  # le Neuville-aux-Bois
+  "m)Ræ—"  # l'Olivet
+  "bSTXôuS"  # l'Outarville
+  "bSVyÃW"  # l'Ouzouer
+  "ÒR ^ðl"  # le Patay
+  "ÒR ®v‚„ôu6w"  # le Pithiviers
+  "ÒR ž^yrGk+Y†–"  # le Pontchevron
+  "ÒR ®v0t"  # le Puiseaux
+  "ÒR 1W¦æt"  # le Saint-Benoît
+  "ÒR 1W©‹·V^±ƒ"  # le Saint-Jean-de-Braye
+  "ÒR 1W©‹ÒR^gKQ"  # le Saint-Jean-le-Blanc
+  "ÒR Ï‚Ì‘"  # le Sully
+  "ÒR TXS‰"  # le Talcy
+  "ÒR úeYÆY"  # le Vendôme
+  "ÒR ôuÒR(„‡e"  # le Villesavin
+}
+leader_names = {
+  "¾æt±ƒ"  # d'Avaray
+  "ôTjg"  # Badoux
+  "·V ôTôuS"  # de Barville
+  "·V ZS©‹‰"  # de Beaugency
+  "·V ZS?–S…Q"  # de Beauharnais
+  "·V ZSÒR RS"  # de Beauregard
+  "jg ±ƒ"  # du Bellay
+  "=O³u·V ·V ™„yrÔk¯e"  # Bernard de Montebise
+  "·V ^æt…m"  # de Boigneux
+  "·V ™lZS"  # de Chabot
+  "·V ™l‚„8l"  # de Châtillon
+  "·V ÃW³uÌ‘"  # d'Ennery
+  "·V ØšôuS"  # de Gauville
+  "·V <hÒR¯eÆY"  # de Geresme
+  "	Tôu ·V KQÒR‰"  # Givès de Creusy
+  " RpQY"  # Garandeau
+  "·V  RpQ·V"  # de Garlande
+  "·V Ébåe"  # de Laage
+  "·V Éb^Ì‘(„SêÃWS"  # de La Brisardière
+  "·V ÉbÔk‰6wS"  # de La Bussière
+  "·V Éb™liOÒR"  # de La Chapelle
+  "·V ÉbGk³uO"  # de La Chesnaye
+  "·V Éb æt±ƒyr"  # de La Valette
+  "·V ±ƒ¯eþVætÒR"  # de L'Estoile
+  "ÒR …hyrS"  # Le Maître
+  "ÒR yrKQ‰ÃW"  # Le Texier
+  "·V üfyrœQ"  # de Maintenon
+  "·V lšmÒR"  # de Marolles
+  "·V lšyrS ·V ÒR³uKQ"  # de Martel de Rénac
+  "·V ™„=O0Œ"  # de Montboissier
+  "·V ™„Ðc<S"  # de Montigny
+  "·V ™„KN^t"  # de Montlhéry
+  "·V ·‹+YaSS"  # de Neufcarres
+  "ùWf ·V 1W	TS"  # Péan de Saint-Gilles
+  "·V 9)R·‹"  # de Phéline
+  "·V ž^yrôuS"  # de Pontville
+  "·V nfT…Q±ƒ"  # de Prunelé
+  "·V g“^S"  # de Rancourt
+  "·V ÷–…hf ·V eYSæt"  # de Réméon d'Orval
+  "·V („^ÒRÑyæt"  # de Sabrecois
+  "·V 1WÑyÆY"  # de Saint-Cosme
+  "·V 1WlšSKQ"  # de Saint-Marc
+  "·V 1WlšS"  # de Saint-Mars
+  "·V („ÒR"  # de Salles
+  "¯eÑyyr ·V “^gíp"  # Scott de Coulanges
+  "·V îh³uôuS"  # de Senneville
+  "·V ^XÌ‘	T"  # de Sérizy
+  "^ÉbO„vmtÉb"  # Seurat de La Boullaye
+  "·V ¾ªRæt"  # de Tannoys
+  "·V ôuÌ‘ÃW"  # de Villiers
+}
+army_names = {
+  "^÷–0tæt›Q"  # Armée du Blésois
+  "ZS¯e›Q"  # Armée de la Beauce
+  "êªRæt›Q–"  # Armée du Dunois
+  " Rê…Q›Q"  # Armée du Gâtinais
+  "0tm…m›Q"  # Armée de Sologne
+  "úeYîvæt›Q"  # Armée du Vendômois
+  "bSætS›Q–"  # Armée de la Loire
+  "$PROVINCE$›Q"  # Armée de $PROVINCE$
+}

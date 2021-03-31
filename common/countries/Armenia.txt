@@ -1,0 +1,139 @@
+graphical_culture = easterngfx
+color = {
+  145
+  30
+  75
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  defensive_ideas
+  offensive_ideas
+  trade_ideas
+  spy_ideas
+  maritime_ideas
+  economic_ideas
+  diplomatic_ideas
+  administrative_ideas
+}
+historical_units = {
+  bardiche_infantry
+  eastern_knights
+  slavic_stradioti
+  eastern_militia
+  muscovite_musketeer
+  muscovite_caracolle
+  muscovite_soldaty
+  muscovite_cossack
+  russian_petrine
+  russian_lancer
+  russian_green_coat
+  russian_cuirassier
+  eastern_skirmisher
+  eastern_uhlan
+  eastern_carabinier
+  russian_mass
+}
+monarch_names = {
+  "(„Ì‘i` #0" = -1  # Sarine #0
+  "ÃWS(„iOyr #0" = -1  # Elsapet #0
+  "?–·V—g #0" = -1  # Adrine #0
+  "POÉbN #0" = 0  # Zoravan #0
+  "Nbê<h #0" = 0  # Zadig #0
+  "ætU #0" = 0  # Vahan #0
+  "TX<SS #0" = 0  # Taniel #0
+  "^XáQ #0" = 0  # Sevan #0
+  "HYÌ‘ #0" = 0  # Nairi #0
+  "«ƒLNmt¯e #0" = 0  # Movses #0
+  "RÁ #0" = 0  # Levon #0
+  "KQÌ‘KQS #0" = 0  # Krikor #0
+  "aS R #0" = 0  # Khajag #0
+  "ïQƒlSKQ #0" = 0  # Kevork #0
+  "aSÉblb #0" = 0  # Karayan #0
+  "aSnfÌ‘6w #0" = 0  # Kapriel #0
+  "	TSÉb #0" = 0  # Jirair #0
+  "—+Y^Xnf #0" = 0  # Hovsep #0
+  "—+YIl…Q¯e #0" = 0  # Hovhannes #0
+  "Ñ<h #0" = 0  # Haig #0
+  "ÈTbnf #0" = 0  # Hagop #0
+  " RLNaS¯e #0" = 0  # Ghoukas #0
+  "ZSb #0" = 0  # Boghos #0
+  "STN^ #0" = 0  # Berjouhi #0
+  "·VW¯e #0" = 0  # Bedros #0
+  "ôTjg?–u #0" = 0  # Badouagan #0
+  "?–æ—ê¯e #0" = 0  # Avedis #0
+  "?–™lôuS #0" = 0  # Arshavir #0
+  "?–Sîh #0" = 0  # Arsen #0
+  "?–üf #0" = 0  # Armen #0
+  "?–Ì‘ #0" = 0  # Ari #0
+  "?–ÉbKQS #0" = 0  # Arakel #0
+  "TXågS #0" = 10  # Tachar #0
+  "(„ÈTKQ #0" = 10  # Sahak #0
+  "Fz^X<h #0" = 10  # Musegh #0
+  "æt<hÉbÆY #1" = 10  # Vagram #1
+  "—+YIl…Q¯e ¯eÆYôTyr #1" = 15  # Hovhannes Smbat #1
+  "?–Ôb¯e #1" = 15  # Abbas #1
+  "¯eÆYôTyr #3" = 15  # Smbat #3
+  " R	TKQ #2" = 15  # Gagik #2
+  "?–Íuyr #4" = 15  # Ashot #4
+  "…h^TXS #0" = 20  # Mkhitar #0
+  "'YkS #0" = 20  # David #0
+}
+leader_names = {
+  "?–¾s|‰R"  # Adamian
+  "?–Ys|‰R"  # Adomian
+  "eYØš R<S‰R"  # Aghajanian
+  "?–Sv–lb"  # Altounyan
+  "?–^aSÌ‘‰R"  # Apkarian
+  "ôT	Ti`"  # Bagian
+  "ôTôTlb"  # Babaian
+  "ôTÔkúW‰R"  # Babikian
+  "TNôT<Slb"  # Chobanian
+  "œíslb"  # Bhobanyan
+  "¾lšê‰R"  # Damadian
+  "O¯eNW¾Ì‘‰R"  # Eskandarian
+  "aS®vúW‰R"  # Kapikian
+  "UqScRlb"  # Kazanjian
+  "ïQÜbÔk‰R"  # Kebabian
+  "ïQƒlSúW‰R"  # Kevorkian
+  "ÈTGYúWlb"  # Khachikyan
+  "ÈTp`şVo‚"  # Khatchaturian
+  "úWSÌ‘‰R"  # Kirlian
+  "…hS<ho‚"  # Mergelyan
+  "eYS)R"  # Orbeli
+  "âlbøv"  # Pogosyan
+  "?–(„ê‰R"  # Sadian
+  "›úW‰R"  # Simjian
+  "mtæt<S‰R"  # Sevanian
+  "…hlšÌ‘‰R"  # Meymarian
+  "™l^<S‰R"  # Shahinian
+}
+ship_names = {
+  "?–ÉbFz"  # Aramu
+  "?–S	TÀNĞc"  # Argishtis
+  "?–ÉbÉbyr"  # Ararat
+  "?–<S"  # Ani
+  "?–SNbk"  # Artsakh
+  "·Vôu"  # Dvin
+  "ÃWÌ‘s|³u"  # Erimena
+  "ÈTOKQ"  # Haik
+  "Ã‹WĞc"  # Haldi
+  "OÀNnf<S¯e"  # Ishpuinis
+  "aSS¯e"  # Kars
+  "œ‚„nfÌ‘"  # Lutipri
+  "*(„^S"  # Musasir
+  "üfªR?–¯e"  # Menuas
+  "üfPŸIRSyr"  # Manzikert
+  "^±ƒ0t¯e"  # Parisos
+  "œ(„ II"  # Rusas II
+  "‰Z<S"  # Siwini
+  "^XÉb‚„"  # Selardi
+  "(„SjgÌ‘ I"  # Sarduri I
+  "(„SjgÌ‘ II"  # Sarduris II
+  "æt¯enfÉbNW"  # Vaspurakan
+  "ÃWÌ‘)n"  # Yerevan
+}

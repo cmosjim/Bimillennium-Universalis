@@ -1,0 +1,138 @@
+graphical_culture = indiangfx
+color = {
+  135
+  104
+  85
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  shichen_ideas
+  trade_ideas
+  maritime_ideas
+  religious_ideas
+  economic_ideas
+  offensive_ideas
+  defensive_ideas
+  spy_ideas
+  diplomatic_ideas
+}
+historical_units = {
+  indian_footsoldier
+  rajput_hill_fighters
+  indian_arquebusier
+  mughal_musketeer
+  rajput_musketeer
+  mughal_mansabdar
+  indian_elephant
+  sikh_hit_and_run
+  reformed_mughal_mansabdar
+  bhonsle_cavalry
+  indian_rifle
+  tipu_sultan_rocket
+}
+monarch_names = {
+  "Nizam ad-Din #1" = 20
+  "Furuz Salah ad-Din #0" = 20
+  "Thara #0" = 20
+  "Bhenji #0" = 0
+  "Bhav #0" = 0
+  "Natwar #0" = 0
+  "Sidhraj #0" = 0
+  "Chaguli #0" = -1
+  "wmS #0" = -1  # Khair #0
+  "ªRS #0" = -1  # Noor #0
+  "?–jSjgÉb #0" = 0  # Abdullah #0
+  "¯OiàV #0" = 0  # Hussain #0
+  "äSÉbÆY #0" = 0  # Ghulam #0
+  "Ã‹ÆRW	T #0" = 0  # Hamirji #0
+  "!•NW¾S #0" = 20  # Sikandar #0
+  "ÈTÌ‘S #0" = 0  # Khalil #0
+  "?–Ì‘ #0" = 0  # Ali #0
+  "FzNbÕlS #0" = 0  # Muzzafar #0
+  "FzUØ·V #0" = 0  # Mohammad #0
+  "ªRS FzUØ·V #0" = 20  # Nur Mahammad #0
+  "FzUØ·V ôTúW #0" = 20  # Mohammed Baqi #0
+  "FzUØ·V O(„ #0" = 20  # Mohammed 'Isa #0
+  "s|S Õlyrk ?–Ì‘ #0" = 20  # Mir Fath Ali #0
+  "?–jSjgÉb Wl TXSnfS #0" = 20  # 'Abd Allah Khan Talpur #0
+  "Œ‚ôT·V³uÔk Wl #0" = 20  # 'Abd an-Nabi Khan #0
+  "äSÉbÆY³uÔk Wl #0" = 20  # Gulam Nabi Khan #0
+  "™lSÕlÉbPŸ Wl #0" = 20  # Sarfaraz Khan #0
+  "äSÉbÆY ™l?– #0" = 20  # Gulam Shah #0
+  "FzUØ·V FzÉb·V #0" = 20  # Muhammad Murad #0
+  "6w?– FzUØ·V Wl #0" = 20  # Yar Muhammad Khan #0
+  "s|SNb ><S+R #0" = 20  # Mirza Jani Beg #0
+  "s|SNb FzUØ·V ôTúW #0" = 20  # Mirza Muhammad Baqi #0
+  "s|SNb FzUØ·V O(„ #0" = 20  # Mirza Muhammad 'Isa #0
+  "™l?– ¯OiàV #0" = 20  # Shah Husayn #0
+  "¾–N– #0" = 20  # Nanda #0
+  "Qh>S #0" = 20  # Sanjar #0
+  "™l?– ‚>+R #0" = 20  # Shah Shuja' Beg #0
+  "şV<hœKQ #0" = 20  # Tughluq #0
+  "Õlyrk Wl #0" = 20  # Fath Khan #0
+  "?–¨hËeW #0" = 20  # Ali Sher #0
+}
+leader_names = {
+  "?–œQm"  # Arghun
+  "·Vi"  # Desai
+  "w³u"  # Jinnah
+  "Soomrah"
+  "Golani"
+  "Kalhora"
+  "Bhatia"
+  "lš)RKQ"  # Malik
+  "×kW"  # Bhil
+  "Ï‚9N"  # Sultan
+  "|TWÊs"  # Khorasani
+  "—ÈTS"  # Khokhar
+  "Farooqi"
+  "b	T`"  # Changezi
+  " Rd"  # Ghazi
+  "s|SNb"  # Mirza
+  "±bS"  # Naru
+  "àsYZid"  # Chudasama
+  "Pahore"
+  "ıidW"  # Tomara
+  "Ï‚^i	T"  # Solanki
+  "Begada"
+  "™l?–"  # Shah
+  "mR^"  # Munshi
+  "^Ì‘KQ"  # Parikh
+  "^t"  # Patel
+  "Patidar"
+  "Rushi"
+  "çPid"  # Samma
+  "^Xb"  # Bhutto
+  "çPÃ‹"  # Singh
+  "ôTÈTjgS"  # Bahadur
+  "áO·V"  # Sindhi
+  "TrLRU"  # Tarkhan
+  "Nbs|¾S"  # Zamindar
+}
+ship_names = {
+  "?–KNšN"  # Alia
+  "?–‚Y™l"  # Arusa
+  "ôTÉb"  # Baran
+  "Õl‚„›s"  # Fatimah
+  "Haleji"
+  "pS¦^³l"  # Indus
+  "Kalri"
+  "Wl"  # Khan
+  "Malir"
+  "Manchhar"
+  "án"  # Mol
+  "<SZ¯e"  # Niknaz
+  "<SbSÕl"  # Niloufa
+  "ªRS"  # Noor
+  "(„)Rlš"  # Salima
+  "(„Ì‘"  # Sari
+  "9R…hZ"  # Shameena
+  "(„‰ƒšN"  # Suhalia
+  "È‘"  # Suk
+  "šN¯eüf"  # Yasmine
+  "Nb^Éb"  # Zahira
+}

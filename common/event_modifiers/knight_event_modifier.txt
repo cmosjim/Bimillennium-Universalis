@@ -1,0 +1,15 @@
+md_return_duhufu_HS0 = {
+}
+md_return_duhufu_WSZ = {
+}
+
+#黑水都督府
+md_building_heishuiduhufu = {
+	infantry_cost = -0.1
+	cavalry_flanking = 0.15
+}
+#乌斯藏都司
+md_building_wusizangdusi = {
+	reserves_organisation = 0.1
+	hostile_attrition = 1
+}

@@ -1,0 +1,41 @@
+become_shi_huang = {
+	empire = celestial_empire
+	emperor = {
+		max_absolutism = 25
+	}
+	required_reform = centralizing_top_government_decision
+}
+
+abolish_feudalism = {
+	empire = celestial_empire
+	emperor = {
+		global_autonomy = -0.15
+	}
+	required_reform = become_shi_huang
+}
+
+standard_it = {
+	empire = celestial_empire
+	emperor = {
+		trade_efficiency = 0.05
+		global_tax_modifier = 0.05
+	}
+	required_reform = abolish_feudalism
+}
+
+establish_border_garrisons = {
+	empire = celestial_empire
+	emperor = {
+		fort_maintenance_modifier = -0.1
+		garrison_size = 0.1
+	}
+	required_reform = standard_it
+}
+
+imperial_library = {
+	empire = celestial_empire
+	emperor = {
+		technology_cost = -0.05
+	}
+	required_reform = establish_border_garrisons
+}

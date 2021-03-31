@@ -1,0 +1,47 @@
+DM2_ideas = {
+	start = {
+		all_power_cost = -0.05
+		cavalry_power = 0.1
+	}
+	bonus = {
+		yearly_corruption = -0.25
+	}
+	
+	trigger = {
+	   tag = DM2
+	}
+
+	free = yes
+	#大漠之子
+	dm_fonyen = {
+		technology_cost = -0.1
+		idea_cost = -0.1
+	}
+	#大漠之鷹
+	dm_eagle = {
+		infantry_power = 0.1
+		leader_land_shock = 1
+	}
+	#大漠歷史
+	dm_zenlan = {
+		years_of_nationalism = -5
+	}
+	#大漠雄心
+	dm_goerbe = {
+		land_forcelimit_modifier = 0.15
+		core_creation = -0.1
+	}
+	#大漠英雄
+	dm_heros = {
+		yearly_army_professionalism = 0.1
+		diplomatic_reputation = 1
+	}
+	#大漠之力
+	dm_ballad = {
+		global_unrest = -2
+	}
+	#大漠奇蹟
+	dm_howntuo = {
+		monthly_splendor = 2
+	}
+}

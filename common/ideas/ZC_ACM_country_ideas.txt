@@ -1,0 +1,45 @@
+ACM_ideas = {
+	start = {
+		num_accepted_cultures = 2
+		siege_ability = 0.2
+	}
+	
+	bonus = {
+		leader_land_fire = 1
+	}
+
+	trigger = {
+		tag = ACM
+	}
+
+	free = yes
+
+	elchee = {
+		diplomats = 1
+	}	
+
+	persian_road = {
+		movement_speed = 0.1
+		envoy_travel_time = -0.1
+	}
+
+	asia_africa_europe = {
+		prestige = 1
+	}
+
+	dualism = {
+		warscore_cost_vs_other_religion = -0.1
+	}
+
+       	quota_tax = {
+		global_tax_modifier = 0.2
+	}
+
+	undead_army = {
+		shock_damage_received = -0.2
+	}
+
+	administrative_free = {
+		global_unrest = -3
+	}
+}

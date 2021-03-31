@@ -1,0 +1,49 @@
+DLL_ideas = {
+	start = {
+		discipline = 0.05
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		land_attrition = -0.25
+	}
+	
+	trigger = {
+	   tag = DLL
+	}
+
+	free = yes
+	
+	legend_of_dragon = {
+		global_regiment_recruit_speed = -0.15
+		infantry_power = 0.1
+	}
+
+	dragon_image = {
+		heavy_ship_power = 0.1
+		global_missionary_strength = 0.02
+	}
+	
+	four_auspicious = {
+		cavalry_power = 0.1
+	}
+	
+	coalition_anti_tung = {
+		diplomatic_reputation = 1
+	}
+
+	northern_hebei = {
+		advisor_cost = -0.5
+		prestige = 1
+	}
+
+	importance_spy = {
+		discovered_relations_impact = -0.25
+		spy_offence = 0.2
+	}
+	
+	anti_spirits_divination = {
+		stability_cost_modifier = -0.1
+	}
+
+}

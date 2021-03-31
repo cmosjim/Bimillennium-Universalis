@@ -1,0 +1,147 @@
+graphical_culture = westerngfx
+color = {
+  161
+  139
+  40
+}
+revolutionary_colors = {
+  0
+  4
+  15
+}
+preferred_religion = protestant
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  economic_ideas
+  defensive_ideas
+  diplomatic_ideas
+  offensive_ideas
+  innovativeness_ideas
+  quantity_ideas
+  administrative_ideas
+  religious_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  austrian_white_coat
+  austrian_jaeger
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "?–SyQTX #0" = -1  # Alzbeta #0
+  "bS·Vs|Éb #0" = -1  # Ludmila #0
+  "›sKN #0" = -1  # Marie #0
+  "aSTX3tZ #0" = -1  # Katerina #0
+  "ÃW‰ƒÀNaS #0" = -1  # Eliska #0
+  "?–…QåeaS #0" = -1  # Anezka #0
+  "Å–W¯eÉb+Y #0" = 1  # Jaroslav #0
+  "Å–Ws|S #0" = 5  # Jaromír #0
+  "ôuKQY #0" = 0  # Viktor #0
+  "ôupQ #0" = 5  # Vilém #0
+  "ZS±ƒ¯eÉb+Y #4" = 10  # Boleslav #4
+  "VÉbcR¯eÉb+Y #3" = 5  # Vratislav #3
+  "eYTXaSS #0" = 10  # Otakar #0
+  "eêWS #0" = 5  # Ferdinand #0
+  "›s‚„šN¯e #0" = 0  # Matyáa #0
+  "aS÷–S ¦umt+Y #0" = 0  # Karel Josef #0
+  "¦umt+Y æt(ƒÉb+Y #0" = 0  # Josef Václav #0
+  "lb æt(ƒÉb+Y #0" = 0  # Jan Václav #0
+  "ôuKQXb—g #0" = 0  # Viktorín #0
+  "lb |V—V #0" = 5  # Jan Petr #0
+  "|V—V #0" = 5  # Petr #0
+  "VÉbês|S #0" = 10  # Vladimír #0
+  "VÉbê¯eÉb+Y #0" = 20  # Vladislav #0
+  "bS·VôuKQ #0" = 0  # Ludvík #0
+  "lb Oåe #0" = 5  # Jan Jirí #0
+  "ZSRKQ #0" = 0  # Bocek #0
+  "VpQĞc¯eKQ ¦umt+Y #0" = 0  # Frantisek Josef #0
+  "¦umt+Y #0" = 5  # Josef #0
+  "àV·VÌ‘k #0" = 5  # Jindrich #0
+  "VpQĞc¯eKQ #0" = 0  # Frantisek #0
+  "PŸKQ™„·V #0" = 0  # Zikmund #0
+  "nfíp…h^S eYTXaSS #3" = 25  # Premysl Otakar #3
+  "nfíp…h^S #0" = 10  # Premysl #0
+  "aS÷–S #5" = 40  # Karel #5
+  "Oåe #0" = 25  # Jirí #0
+  "æt(ƒÉb+Y #4" = 50  # Václav #4
+}
+leader_names = {
+  "NbO(ƒ"  # Zajíc
+  "O¯eaSÉb"  # Jiskra
+  "ıl±ƒ¯e<S"  # Zeleznı
+  "p`iOKQ"  # Capek
+  "şVSi`"  # Thurn
+  "ÑyÒRVÉbyr"  # Kolowrat
+  "Ëeæt‘S<h"  # Schwarzenberg
+  "yQ WîhaS"  # z Rozmberka
+  "Z&O"  # Velen
+  "0tÑyS"  # Sokol
+  "ıl POW‚„³u"  # ze Zerotína
+  "yQ áw^"  # z Husi
+  "yQ âl)RPŸ"  # z Polzic
+  "ÈTpQyr"  # Harant
+  "yQ ^pQê™l"  # z Brandısa
+  "²„Ñ‘6w"  # Purkyne
+  "yQ ôuÒR¯eÉb‡ešN"  # z Veleslavína
+  "yQ WPŸs|TXœ"  # z Rozmitálu
+  "SaS"  # Berka
+  "yQ ^SjgÔkÇ‘"  # z Pardubic
+  "ıl )RƒlôuKQ"  # ze Lvovic
+  "aS¯e^"  # Kaspar
+  "±ƒ³u"  # Reiner
+  "ıl ¯eNaS"  # ze Svamberka
+  "yQ ôuÒR¯eÉb‡ešN"  # z Vartemberka
+  "yQ ³uTXæt"  # z Mitrovic
+  "®vaS"  # Píka
+  "üf¯e9S·V"  # Mansfeld
+  "æt)RúW"  # Velikı
+  "^XWæ—"  # Syrovı
+  "yQ eYyrÉbYôu(ƒ"  # z Otradovic
+  "yQ ÕlS¯wËeğlàV"  # z Falkensteina
+}
+ship_names = {
+  "1Wæt(ƒÉb+Y"  # Svatı Vaclav
+  "1Wóg·Vs|Éb"  # Svatá Ludmila
+  "…mZSUa(ƒúW„v1W¦uğ"  # Svatı Jan Nepomuckı
+  "1Ws|“^ÉbÀN"  # Svatı Mikulás
+  "1WOåe"  # Svatı Jirí
+  "1W?–…m¯eaS"  # Svatá Anezká
+  "1W	NN"  # Nejsvetejsí Trojice
+  "aS÷–SıV‹s"  # Král Karel
+  "ZSR¯eÉb+YıV‹s"  # Král Boleslav
+  "nf0Œs|¯eıV‹s"  # Král Premysl
+  "Üw)R1WÍk›s)RšN"  # Panna Maria Vitezná
+  "lb áw¯e"  # Jan Hus
+  "lb pgëXaS"  # Jan Zizka
+  "nfmÑynf —)R"  # Prokop Holı
+  "^RcR¯eÉb+Y'YlQ"  # Kníze Bretislav
+  "œQ+Ynf0Œs|¯e"  # Premysl Orac
+  "(ƒcRÉb·V"  # Ctirad
+  "wcKQ"  # Cechy
+  "idÉbôušN"  # Morava
+  "‰ƒ^0Œ"  # Libuse
+  "RÇR"  # Odváznı
+  "àeLe"  # Neporazitelnı
+  "Åwc"  # Rychlı
+  "Å¾u"  # Bystrı
+  "eYR)R"  # Orel
+  "0tÑyS"  # Sokol
+  "‰Ì‘‰šN"  # Slezsko
+  "­râw"  # Sipka
+  "f°"  # Hvezda
+}

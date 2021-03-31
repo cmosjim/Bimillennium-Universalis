@@ -1,0 +1,127 @@
+graphical_culture = northamericagfx
+color = {
+  102
+  153
+  255
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  religious_ideas
+  defensive_ideas
+  offensive_ideas
+  trade_ideas
+  diplomatic_ideas
+  plutocracy_ideas
+  spy_ideas
+  economic_ideas
+}
+historical_units = {
+  native_indian_archer
+  native_indian_tribal_warfare
+  algonkin_tomahawk_charge
+  native_indian_horsemen
+  commanche_swarm
+  native_indian_mountain_warfare
+  sioux_dragoon
+  american_western_franchise_warfare
+}
+monarch_names = {
+  "TXTXXbOØeÖQ #0" = -1  # Tahtahtoisneh #0
+  "s|ØefWØe˛VS #0" = -1  # Misstanstur #0
+  "√W¶u+YØeTX #0" = -1  # Ehyophsta #0
+  "≥u´ÉÆvâ #0" = -1  # Namopisi #0
+  "?ñKQaSkçnfiçÆv #0" = -1  # Axkahpsaypi #0
+  "?ñmV≥u—y(Ñ‚lnf #0" = 20  # Apenakosapop #0
+  "?ñKQaSlö—y6w #0" = 20  # Akkamakkoye #0
+  "PO?ñyrNbTXÆvTXÆv+Y #0" = 20  # Zoatzetapitapiw #0
+  "(Ñ—y6weYfW #0" = 20  # Sakoyeaotan #0
+  "ÆvTXkçiO˙WØe #0" = 20  # Pitahpekis #0
+  "?ñ–cØeTXkçlöNW #0" = 20  # Attistahmacan #0
+  "?ñaS˙WGYÆvs|ÉlTXØe #0" = 20  # Akkakitcipimiwotas #0
+  "TX—y6wØeTXs|KQØe #0" = 20  # Takoyestamix #0
+  "0tyr≥u #0" = 20  # Sotenah #0
+  "‚laSÆvÉlXbOâR #0" = 20  # Pokapiwotoian #0
+  "≥uXb0t<SØeyrØe #0" = 20  # Natoseonistors #0
+  "ÖhaSØeXb #0" = 20  # Mekasto #0
+  "ØeTXs|Øe—yXbaS #0" = 20  # Stamiscotocar #0
+  "löXb(ÑÆv+Y #0" = 20  # Matoseapiw #0
+  "Âg‚lÖhâ—y #0" = 20  # Chapomexico #0
+  "‚lÊtKQ #0" = 20  # Powahque #0
+  "ì^XblöØe #0" = 20  # Kootomais #0
+}
+leader_names = {
+  "åÇ^KQØe˛V˙WKQØe"  # Aisikstukiks
+  "?ñÆvÔQO˙WØe"  # Apikaiyikis
+  "√Ws|TX^KQiçOKQØe"  # Emitahpahksaiyiks
+  "´ÉTXkçXbâKQØe"  # Motahtosiks
+  "nfkçKQ^≥u»èKQØe"  # Puhksinahmahyiks
+  "içOKQØe"  # Saiyiks
+  "!ïKQâ˙ãaSKQØe"  # Siksinokaks
+  "Pü<SKQ(É0tOKQØe"  # Tsiniktsistsoyiks
+  "?ñÔQœÇs|KQØe"  # Ahkaisumiks
+  "?ñÔQ‚laSKQØe"  # Ahkaipokaks
+  "?ñkç—yTX^KQØe"  # Ahkotahshiks
+  "?ñÖQ‚l"  # Anepo
+  "?ñÆvÔQOKQØe"  # Apikaiyiks
+  "?ñnfXbâÔQ≥u"  # Aputosikainah
+  "O™RKQ0tOØeTXs|KQØe"  # Inuhksoyistamiks
+  "O!ï0taSâs|KQØe"  # Isissokasimiks
+  "OâÔQIl"  # Istsikaihan
+  "löÖheYöN"  # Mameoya
+  "<SÇÑØe˙WKQØe"  # Nitikskiks
+  "(ÑKQâ≥u»èKQØe"  # Saksinahmahyiks
+  "âaSnf<SKQØe"  # Sikahpuniks
+  "â˙W˙ãaSKQØe"  # Sikinokaks
+  "?ñ»TÆvTXiO"  # Ahahpitape
+  "?ñÔQO—yaS˙W<SKQØe"  # Ahkaiyikokakiniks
+  "?ñÆvÔQOKQØe"  # Apikaiyiks
+  "√WØeKQâHY˛VÆvKQØe"  # Esksinaitupiks
+  "‡V™RâaS‚l4TKQØe"  # Inuksikahpowaiks
+  "O™RKQâKQ"  # Inuksiks
+  "O‚lKQâ»èKQØe"  # Ipoksimaiks
+  "aSs|lKQØe"  # Kahmitaiks
+  "˙W6wØe"  # Kiyis
+  "ì^ls|KQØe"  # Kutaiimiks
+  "ì^l0tGY¸f"  # Kutaisotsiman
+  "s|öNÊtÆvGYKQØe"  # Miahwahpitsiks
+  "s|öN˙WHYOKQØe"  # Miawkinaiyiks
+  "´Éì^s|KQØe"  # Mokumiks
+  "´ÉTXkçXbâKQØe"  # Motahtosiks
+  "´Éyr4THYKQØe"  # Motwainaiks
+  "<STX—yØe˙WGYnfÆvKQØe"  # Nitakoskitsipupiks
+  "<SÊóOKQØe"  # Niwayiks
+  "<SÇÑØe˙WKQØe"  # Nitikskiks
+  "<SXbGYKQâØefW<SKQØe"  # Nitotsiksistaniks
+  "â—y˙WGYs|KQØe"  # Sikokitsimiks
+  "â—y‚lKQâ»èKQØe"  # Sikopoksimaiks
+  "âì^GYnf»èKQØe"  # Sikutsipumaiks
+  "œÇØeKQ0tOKQØe"  # Susksoyiks
+  "GY<SKQâØe0tOKQØe"  # Tsiniksistsoyiks
+}
+ship_names = {
+  "eYs|TX"  # Omita
+  "‚l˙ãws|TX"  # Ponokaomitaa
+  "óg<S"  # Iinii
+  "‚l˙ãaS"  # Ponoka
+  "¡lökçaSÆvâ"  # Omahkapi'si
+  "˙WöN2S"  # Kiaayo
+  "≥uTX2S"  # Natayo
+  "löeYaSTXXbO"  # Maohkataatoyi
+  "?ñÊtXbO"  # Awatoyi
+  "ÔQØeaSkç^"  # Kai'skaahpa
+  "?ñyr(ÉØeTX"  # Aaattsistaa
+  "aS<SØe˙W≥u"  # Kaanisskiinaa
+  "ÆvKQâ"  # Pi'kssi
+  "KQâKQ˙Wkç˙W<S"  # Ksikkihkini
+  "?ñnfØeÆv<S"  # Aapspini
+  "âÆvØe˛V"  # Sipistoo
+  "ÆvGYKQâ≥u"  # Pitsiiksiinaa
+  "ªû∆RO"  # Mamii
+  "Øe‚lO"  # Sspoii
+  "≥u?ñ´É"  # Naamoo
+}

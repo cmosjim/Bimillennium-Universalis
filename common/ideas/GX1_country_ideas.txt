@@ -1,0 +1,40 @@
+#northern xio
+GX1_ideas = {
+	start = {
+		land_attrition = -0.25
+		global_regiment_recruit_speed = -0.2
+	}
+	
+	bonus = {
+		infantry_cost = -0.2
+	}
+	
+	trigger = {
+		tag = GX1
+	}
+
+	free = yes
+	
+	chixudezhandouli = {
+		war_exhaustion = -0.1
+	}
+	longtanzhanyi = {
+		prestige = 1
+		diplomatic_reputation = 1
+	}
+	xiao_zhuge = {
+		infantry_power = 0.1	
+	}
+	qianchengxintu = {
+		global_manpower_modifier = 0.15
+	}
+	yishounanagong = {
+		defensiveness = 0.2
+	}
+	yapianzousi = {
+		global_tax_modifier = 0.1
+	}
+	zhanshen = {
+		discipline = 0.1
+	}	
+}

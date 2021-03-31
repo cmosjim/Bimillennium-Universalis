@@ -1,0 +1,40 @@
+ALX_ideas = {
+	start = {
+		infantry_power = 0.1
+		land_morale = 0.2
+	}
+
+	bonus = {
+		legitimacy = 1
+	}
+	
+	trigger = {
+		tag = ALX
+	}
+	
+	free = yes
+	
+	persian_govern = {
+		governing_capacity_modifier = 0.1
+	}
+	endless_expansion = {
+		core_creation = -0.33
+		years_of_nationalism = -5
+	}
+	cultural_exchange = {
+		advisor_cost = -0.1
+	}
+	conquerer = {
+		army_tradition_decay = -0.015
+	}
+	primitive_dragoons = {
+		cavalry_power = 0.15
+		shock_damage = 0.1
+	}
+	one_mind = {
+		global_regiment_recruit_speed = -0.15
+	}
+	end_of_ancient_civilization = {
+		prestige = 1
+	}
+}

@@ -1,0 +1,48 @@
+#northern xio
+ZX1_ideas = {
+	start = {
+		army_tradition = 1
+		global_regiment_cost = -0.2
+		global_ship_cost = -0.15
+	}
+	
+	bonus = {
+		global_tax_modifier = 0.2
+	}
+	
+	trigger = {
+		tag = ZX1
+	}
+
+	free = yes
+	
+	changsheng_jiangjun = {
+		land_morale = 0.1
+	}
+
+	xiucai_chushen = {
+		idea_cost = -0.1
+	}
+
+	aiguo_jiangjun = {
+		prestige = 1
+		legitimacy = 1
+	}
+	
+	muhou_caozong_zhe = {
+		unjustified_demands = -0.25
+		stability_cost_modifier = -0.1
+	}
+
+	jin_shou_jingrui = {
+		army_tradition = 1
+	}
+	zhong_zhong_guo = {
+		infantry_cost = -0.15
+	}
+
+	shidai_nongchao_er = {
+		diplomatic_reputation = 1
+	}
+
+}

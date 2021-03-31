@@ -1,0 +1,60 @@
+#northern xio
+mongolia_ideas = {
+	start = {
+		no_religion_penalty = yes
+		land_morale = 0.15
+	}
+	
+	bonus = {
+		core_creation = -0.5
+		cb_on_overseas = yes
+	}
+
+
+	trigger = {
+	OR = {
+		tag = TT1
+		tag = KE1
+		tag = NE1
+		tag = ZH1
+		tag = QY1
+		tag = ZL1
+		tag = TC1
+		tag = TU1
+		tag = MR1
+		tag = JL1
+		tag = KHA
+		tag = QH2
+	   }
+	}
+
+	free = yes
+	
+	cow_and_sheep = {
+		production_efficiency = 0.15
+	}
+
+	mai_deer_niangnaing = {
+		global_manpower_modifier = 0.15
+	}
+
+	khan_mongolian_horse_2 = {
+		cavalry_power = 0.15 
+	}
+	
+	shizu_texing = {
+		discipline = 0.05
+	}
+
+	hu_li_lei_tai = {
+		global_regiment_cost = -0.15
+	}
+
+	hard_environment = {
+		defensiveness = 0.2
+	}
+
+	like_canis_latrans = {
+		army_tradition = 1
+	}
+}

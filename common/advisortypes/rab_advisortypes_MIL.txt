@@ -1,0 +1,545 @@
+# If you add advisortypes, and use those tags, do not change them without changing everywhere they are used.
+# Uses all 'modifiers' possible that are exported as a Modifier.
+#####################################################
+########Good Advisors list below #####################
+######################################################
+
+
+deng_rang = {
+	monarch_power = MIL
+	# Bonus
+    land_maintenance_modifier = -0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+liu_xin = {
+	monarch_power = MIL
+	# Bonus
+    discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+huang_fu_gui = {
+	monarch_power = MIL
+	# Bonus
+    global_manpower_modifier = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+geng_bing = {
+	monarch_power = MIL
+	# Bonus
+    land_morale = 0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+jia_fu = {
+	monarch_power = MIL
+	# Bonus
+    infantry_cost = -0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+ban_chao = {
+	monarch_power = MIL
+	# Bonus
+    mercenary_cost = -0.2
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+yu_xu = {
+	monarch_power = MIL
+	# Bonus
+    discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+liu_yan = {
+	monarch_power = MIL
+	# Bonus
+    mercenary_cost = -0.2
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+huang_fu_song = {
+	monarch_power = MIL
+	# Bonus
+    army_tradition = 0.5
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+zhu_jun = {
+	monarch_power = MIL
+	# Bonus
+    mil_tech_cost_modifier = -0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+u_fu_ro = {
+	monarch_power = MIL
+	# Bonus
+    discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+pu_nu = {
+	monarch_power = MIL
+	# Bonus
+     land_morale = 0.1
+	chance = {
+		factor = 0
+	}
+}
+
+fon_ho = {
+	monarch_power = MIL
+	# Bonus
+    mil_tech_cost_modifier = -0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+pen_ho = { 
+	monarch_power = MIL
+	# Bonus
+     land_morale = 0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+zhang_bao = { 
+	monarch_power = MIL
+	# Bonus
+     land_morale = 0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+zhang_lian = { 
+	monarch_power = MIL
+	# Bonus
+     land_morale = 0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+mayuan_yi = {
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+guan_hai = {
+	monarch_power = MIL
+	# Bonus
+     land_maintenance_modifier = -0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+}
+
+xia_hou_yuan = {
+	monarch_power = MIL
+	# Bonus
+      discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+xia_hou_dun = {
+	monarch_power = MIL
+	# Bonus
+     land_maintenance_modifier = -0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+guan_yu = {
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+zhang_fei = {
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+gao_shun = {
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+ma_chao = {
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cheng_pu = {
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+}
+
+yan_liang = {
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+wen_chou = {
+	monarch_power = MIL
+	# Bonus
+     land_maintenance_modifier = -0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+lu_bu = {
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+zhang_xun = {
+
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+yang_feng = {
+
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+hoang_chung = {
+
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+hoang_chung = {
+
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+zhao_yun = {
+
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+zhang_liao = {
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+xu_chu = {
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+taishi_ci = {
+	monarch_power = MIL
+	# Bonus
+     discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+

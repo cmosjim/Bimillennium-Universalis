@@ -1,0 +1,127 @@
+graphical_culture = indiangfx
+color = {
+  21
+  50
+  212
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  religious_ideas
+  defensive_ideas
+  quantity_ideas
+  offensive_ideas
+  trade_ideas
+  spy_ideas
+  economic_ideas
+  diplomatic_ideas
+}
+historical_units = {
+  indian_footsoldier
+  indian_archers
+  indian_arquebusier
+  south_indian_musketeer
+  reformed_mughal_musketeer
+  bhonsle_infantry
+  indian_shock_cavalry
+  maharathan_guerilla_warfare
+  indian_rifle
+  tipu_sultan_rocket
+}
+monarch_names = {
+  "nfÉbÌRÉb “^lšÌ‘ Ûôu #0" = -1  # Prafulla Kumari Devi #0
+  "“^Ï‚ÆYÉbTXTX Ûôu #0" = -1  # Kusumlata Devi #0
+  "^·V›sæt‚„ Ûôu #0" = -1  # Padmalaya Devi #0
+  "Ï‚^Éb #0" = -1  # Subra #0
+  "–¦^±Iy #0" = 0  # Jadunath #0
+  "¾idj¨h #0" = 0  # Damodar #0
+  "i–ËY #0" = 0  # Bebarta #0
+  "±W6w± #0" = 0  # Narayana #0
+  "Nb<h³uyr #0" = 0  # Jagannath #0
+  "×kËY #0" = 0  # Biwarta #0
+  "FZWüf #0" = 0  # Barman #0
+  "NY^± #0" = 0  # Krishna #0
+  "YRĞc)R #0" = 0  # Sunder #0
+  "÷– #0" = 0  # Rai #0
+  "×k²RË±Iy #0" = 0  # Bishwanath #0
+  "Ã‹¨h #0" = 0  # Haria #0
+  "Wíc²bLR #0" = 0  # Raghuraj #0
+  "<h®v³u¯e #0" = 0  # Gopinath #0
+  "Ã‹)RÃeN–W #0" = 0  # Harichandra #0
+  "×kWË #0" = 0  # Birabar #0
+  ">FZLR #0" = 0  # Yuvaraj #0
+  "^S™lÉbÆY 0ŒKQS #0" = 0  # Parsharam Shekhar #0
+  "àVN–W 0ŒaSS #0" = 0  # Indra Shekhar #0
+  "ísHYyr 0ŒKQS #0" = 0  # Baijnath Shekhar #0
+  "ÈT± #0" = 0  # Ghana  #0
+  "ÃeN–W #0" = 0  # Chandra #0
+  "nfÉbTXnf #0" = 0  # Pratap #0
+  "ïQ&O·VS #0" = 0  # Kalendra #0
+  "idp‘âlW #0" = 0  # Mahipal #0
+  "?–pgs|S #0" = 0  # Ajmer #0
+  "TrÉb^ ĞcFZ #0" = 20  # Dalpat Deo #0
+  "¾› ›<h #0" = 20  # Dakhin Singh #0
+  "Éb^S ĞcFZ #0" = 20  # Rajpal Deo #0
+  "ĞcLNâl¨h ĞcLN #0" = 30  # Digpal Deo #0
+  "ÉbpgÀN êeY #0" = 20  # Raj Deo #0
+  "nfœ–wfW ĞcLN #0" = 20  # Purushottam Deo #0
+  "Ôk‚„ ĞcLN #0" = 20  # Bhaitai Deo #0
+  "Ã‹%V)R ĞcLN #0" = 20  # Hamir Deo #0
+}
+leader_names = {
+  "çPÃ‹"  # Singh
+  "ĞcLN"  # Deo
+  "ePKOÃiÁy"  # Gangabansi
+  "eˆZâl•^"  # Pusapati
+  "äSÆYÏ‚S"  # Ghumsur
+  "âlWidW"  # Parmar
+  "âlT±6wæ"  # Patnaik
+  "(„è•Y"  # Samant
+  "WY"  # Rawat
+  "·VÔk"  # Deb
+  "Ãi–"  # Bhanja
+  "×kĞc6wN–W"  # Vidyadhar
+  "¢wW–"  # Mangraj
+  "lšÈT^yrÉb"  # Mahapatra
+  "^S"  # Pal
+  ">³uFz<S"  # Janamuni
+  "±pQN–W"  # Narendra
+}
+ship_names = {
+  "?–íc<S"  # Agni
+  "×kid"  # Bhim
+  "µh)Y"  # Brahma
+  "Ğc×k"  # Devi
+  "¾–ÑÍk"  # Durga
+  "aŒ4Y^y"  # Ganesh
+  "íc6wN–¨h"  # Gayatri
+  "ÈTtYüf"  # Hanumaun
+  "àVN–W"  # Indra
+  ">^X³u"  # Jalsena
+  "Ñ9‚"  # Kala Jahazi
+  "æ¨h"  # Kali
+  "ñO×kW"  # Kubera
+  "NY^±"  # Krishna
+  "m²R-V"  # Lakshmi
+  "¢u9‚"  # Lal Jahazi
+  "wm›Q"  # Nausena
+  "°ebëX"  # Nav ka Yudh
+  "İ„9‚"  # Nila Jahazi
+  "ê–qS^ysY"  # Parvati
+  "WN–"  # Radha
+  "YKNsY^y"  # Ratri
+  "(„KOW"  # Sagar
+  "ZW²RO•^"  # Sarasvati
+  "nFZ"  # Shiva
+  "‰`Y"  # Sita
+  "Ï‚id"  # Soma
+  "Ï‚)R6w"  # Surya
+  "O|iÿb"  # Varuna
+  "O1u"  # Vayu
+  "×kntY"  # Vishnu
+  "šNlš"  # Yama
+}

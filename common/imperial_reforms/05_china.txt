@@ -1,0 +1,112 @@
+qianghua_zongfa = {                                 #强化宗法制
+	empire = celestial_empire
+	emperor = {
+		max_absolutism = 5
+	}
+	required_reform = imperial_library
+}
+
+jianruo_fengjian = {                                #减弱封建分权
+	empire = celestial_empire
+	emperor = {
+		global_autonomy = -0.1
+                diplomatic_upkeep = 1               
+	}
+	required_reform = qianghua_zongfa
+}
+
+all_center = {                                      #绝对中央集权                         
+	empire = celestial_empire
+	emperor = {
+                stability_cost_modifier = -0.1
+               governing_capacity = 150
+	}
+	required_reform = jianruo_fengjian
+}
+
+economy_center = {                                      #世界贸易                         
+	empire = celestial_empire
+	emperor = {
+		trade_efficiency = 0.03
+		global_tax_modifier = 0.03
+	}
+	required_reform = all_center
+}
+
+finish_lawswork = {                                 #完善法制      
+	empire = celestial_empire
+	emperor = {
+                global_unrest = -1
+		garrison_size = 0.1
+	}
+	required_reform = economy_center
+}
+
+write_classics = {                                  #编撰经典
+	empire = celestial_empire
+	emperor = {
+		prestige = 1
+                prestige_decay = -0.01
+                prestige_per_development_from_conversion = 0.01
+	}
+	required_reform = finish_lawswork
+}
+
+social_community = {                                #开明言政
+	empire = celestial_empire
+	emperor = {
+                advisor_cost = -0.03
+                advisor_pool = 1
+                female_advisor_chance = 0.1
+             
+	}
+	required_reform = write_classics
+}
+
+xiushan_interests = {                               #修缮圣明建筑
+	empire = celestial_empire
+	emperor = {
+		technology_cost = -0.03
+                dip_tech_cost_modifier = -0.03
+	}
+	required_reform = social_community
+}
+
+keju_xuanxian = {                                   #（选贤举能）科举改革
+	empire = celestial_empire
+	emperor = {
+                meritocracy = 1
+                monarch_diplomatic_power = 1
+	}
+	required_reform = xiushan_interests
+}
+
+explore_the_world = {                               #科技探索
+	empire = celestial_empire
+	emperor = {
+		technology_cost = -0.05
+	}
+	required_reform = keju_xuanxian
+}
+
+attackthem = {                                      #以战养战
+	empire = celestial_empire
+	emperor = {
+		army_tradition = 1
+                army_tradition_decay = -0.01
+                discipline = 0.01
+                land_morale = 0.01
+	}
+	required_reform = explore_the_world
+}
+
+assimilation = {                                    #同化
+	empire = celestial_empire
+	emperor = {
+                enemy_core_creation = 0.05
+                core_creation = -0.03
+                local_core_creation = -0.03
+                core_decay_on_your_own = -0.03
+	}
+	required_reform = attackthem
+}                                                  

@@ -1,0 +1,82 @@
+#Ugáv^âv˙W effect
+TNG_emperor_new_effect = {
+	if = {
+		limit = {
+			tag = TNG
+			has_country_flag = TNG_Emperor_LiYuan
+		}
+		clr_country_flag = TNG_Emperor_LiYuan
+		set_country_flag = TNG_Emperor_LiShimin
+	}
+	else_if = {
+		limit = {
+			tag = TNG
+			has_country_flag = TNG_Emperor_LiShimin
+		}
+		clr_country_flag = TNG_Emperor_LiShimin
+		set_country_flag = TNG_Emperor_Third
+		if = {
+			limit = {
+				check_variable = {
+					which = TNG_Heir_Value
+					value = 1
+				}
+			}
+			country_event = {
+				id = KC_TNG_events.6
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			tag = TNG
+			has_country_flag = TNG_Emperor_Third
+		}
+		clr_country_flag = TNG_Emperor_Third
+		set_country_flag = TNG_Emperor_4th
+	}
+	else_if = {
+		limit = {
+			tag = TNG
+			has_country_flag = TNG_Emperor_4th
+		}
+		clr_country_flag = TNG_Emperor_4th
+	}
+	if = {
+		limit = {
+			tag = WZ1
+			has_country_flag = WuZhou_Build
+			NOT = {
+				has_ruler = "fkÃf"
+			}
+			NOT = {
+				has_ruler = "fkR)Y"
+			}
+		}
+		country_event = {
+			id = KC_TNG_events.7			#ÿè?eéNNg
+		}
+	}
+}
+
+TNG_queen_death_effect = {
+	if = {
+		limit = {
+			has_dlc = "Rights of Man"
+			tag = TNG
+			has_country_flag = TNG_Queen_WuZetian
+			has_country_flag = TNG_Emperor_Third
+		}
+		clr_country_flag = TNG_Queen_WuZetian
+	}
+}
+
+TNG_general_fengang_effect = {
+	define_general = {
+		name = "ØQŒv0SõQ0"
+		fire = 6
+		shock = 6
+		manuever = 4
+		siege = 4
+	}
+}

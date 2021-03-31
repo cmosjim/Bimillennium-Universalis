@@ -1,0 +1,223 @@
+graphical_culture = westerngfx
+color = {
+  156
+  179
+  189
+}
+historical_score = 1000
+preferred_religion = protestant
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  zhongqi_ideas
+  rongren_ideas
+  shenquan_ideas
+  trade_ideas
+  plutocracy_ideas
+  administrative_ideas
+  maritime_ideas
+  naval_ideas
+  innovativeness_ideas
+  economic_ideas
+  quality_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  austrian_white_coat
+  austrian_jaeger
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "2S‰ƒ‰R®Y #0" = -1  # Juliane #0
+  "wm&O®Y #0" = -1  # Helene #0
+  "?–›s‰ƒ #0" = -1  # Amalie #0
+  "ôuSVÌ‘·V #0" = 0  # Wilfried #0
+  "‡eVrS #0" = 0  # Wenzel #0
+  "ôuKQY #0" = 0  # Viktor #0
+  "æt&ON #0" = 0  # Valentin #0
+  "Xblš¯e #0" = 0  # Thomas #0
+  "PŸ<hVÌ‘·V #0" = 0  # Siegfried #0
+  "±ƒàVÈT·V #0" = 0  # Reinhard #0
+  "eY¯eaS #0" = 0  # Oskar #0
+  "<SKQÉb¯e #0" = 0  # Niklas #0
+  "lšN #0" = 0  # Martin #0
+  "lš“^¯e #0" = 0  # Markus #0
+  "Ñyyr #0" = 0  # Kurt #0
+  "“^ú‹ #0" = 0  # Kuno #0
+  "ŽNS9h #0" = 0  # Jürgen #0
+  "2SÌ‘LN¯e #0" = 0  # Julius #0
+  "¦umt+Y #0" = 0  # Joseph #0
+  "pgÌ‘ÈšN¯e #0" = 0  # Jeremias #0
+  "k=Oyr #0" = 0  # Herbert #0
+  "ÈTSyr)n #0" = 0  # Hartwin #0
+  "ÈTu #0" = 0  # Hagan #0
+  "<h÷–bS #0" = 0  # Gregor #0
+  "byr™lSKQ #0" = 0  # Gottschalk #0
+  "VmÌ‘‰R #0" = 0  # Florian #0
+  "ÕlÔk‰R #0" = 0  # Fabian #0
+  "ÃWS)n #0" = 0  # Erwin #0
+  "ÃWKQyr #0" = 0  # Eckbert #0
+  "êyr #0" = 0  # Dieter #0
+  "·VÌ‘KQ #0" = 0  # Diederick #0
+  "^KQÈT·V #0" = 0  # Burkhard #0
+  "ôT³uôT¯e #0" = 0  # Barnabas #0
+  "ôTS·VS #0" = 0  # Baldur #0
+  "šN†SqS'Y #0" = 0  # Alexander #0
+  "?–S^÷–^yr #0" = 0  # Albrecht #0
+  "?–¾S=Oyr  #0" = 0  # Adalbert #0
+  "òƒ)Rnf #0" = 10  # Philipp #0
+  "kSüf #0" = 10  # Hermann #0
+  "eYXb #0" = 15  # Otto #0
+  "·^Éb·V #0" = 15  # Konrad #0
+  "VÌ‘·VÌ‘^ #0" = 20  # Friedrich #0
+  "i`¯eyr #0" = 20  # Ernst #0
+}
+leader_names = {
+  "?–,g·VWyr"  # Abendroth
+  "?–KQüf"  # Ackermann
+  "?–·VÒR"  # Adler
+  "?–ÒR¯e"  # Ahlers
+  "?–SiO¯e"  # Alpers
+  "šNyr"  # Alt
+  "?–gr›KQ"  # Amsinck
+  "Baasch"
+  "ôTKQ"  # Backer
+  "Bagebuhr"
+  "ôT¯eÐcf"  # Bastian
+  "Billing"
+  "Boetefeur"
+  "Dabelstein"
+  "de Greve"
+  "·V±ƒ6w"  # Dreyer
+  "Eggers"
+  "i`<hÒR"  # Engel
+  "von der Fechte"
+  "Framhein"
+  "Gevert"
+  "Gossler"
+  "Grünewaldt"
+  "Hansen"
+  "Heinsohn"
+  "Henckell"
+  "Heuer"
+  "Horwege"
+  "Imbeck"
+  "Jarchow"
+  "Kehrhahn"
+  "Kellinghusen"
+  "Kindt"
+  "von Lengerke"
+  "Lieb"
+  "Merck"
+  "Meyer"
+  "Muhl"
+  "Nanne"
+  "Olbers"
+  "Pape"
+  "Pollnau"
+  "Rosenbaum"
+  "Rosendahl"
+  "Schmerse"
+  "Schmidt"
+  "Schuberth"
+  "Schuemann"
+  "Soltau"
+  "Steetz"
+  "Thelemann"
+  "Tiedemann"
+  "Vick"
+  "Vilter"
+  "Vollmer"
+  "von Düten"
+}
+ship_names = {
+  "Adler von Lübeck"
+  "Admiralität von Hamburg"
+  "Arche Noah"
+  "Brunte Kuh"
+  "Der Große Adler"
+  "i`<hÒR  R^Ì‘ÃW"  # Engel Gabriel
+  "Fliegender Hirsch"
+  "Füchslein"
+  "Gelber Löve"
+  "Goldener Löwe"
+  "<hÉb+Y™l+Yyr lšKQ"  # Grafschaft Mark
+  "Grüner Drache"
+  "KQÌ‘+YlQýV"  # Herzogtum Cleve
+  "Jesus von Lübeck"
+  "Jonge Tobias"
+  "'YkS‹s"  # König David
+  "Leopoldus Primus"
+  "KNŽƒ ¯Q TKQ"  # Lisa von Lübeck
+  "Lybischer Trotz"
+  "Lübscher Adler"
+  "›s)RšN aSTX3tZ"  # Maria Catharina
+  "Nordischer Löwe"
+  "|V—VŒTÝOW"  # Peter und Paul
+  "|V—V ¯Q FOýl"  # Peter von Danzig
+  "ï·Vôu^²N‹s"  # Prinz Ludwig
+  "Prophet Daniel"
+  "Ritter Sankt Georg"
+  "Roter Hirsch"
+  "1W³R&O¯e"  # Sankt Laurens
+  "1W|V—V"  # Sankt Peter
+  "Schwarzer Rabe"
+  "Sieben Provinzien"
+  "Stad Emden"
+  "Vogel Greif"
+  "Wapen von Bremen"
+  "Wapen von Hamburg"
+  "Wappen von Bremen"
+  "Wappen von Cleve"
+  "Weißer Löwe"
+  "Wilhelmina Margaretta"
+  "Zwei Brüder"
+  "Afrikaner"
+  "Anna"
+  "Bersteinfänger"
+  "Bracke"
+  "Clementia"
+  "Colonia"
+  "Derffinger"
+  "Dorothea"
+  "Engel"
+  "Feuerblase"
+  "Fortuna"
+  "Friede"
+  "Fuchs"
+  "Gabriel"
+  "Hoffning"
+  "¦uð…Q¯e!X"  # Johannesburg
+  "Kurprinz"
+  "Makarele"
+  "Meermann"
+  "Meerweib"
+  "Mercurius"
+  "Morian"
+  "ŒTs^"  # Pax
+  "Pierelepomp"
+  "WpQ"  # Roland
+  "Rommelpot"
+  "Rosenfelde"
+  "Œ‡ˆ‡"  # Salamander
+  "Seemoewe"
+  "Seeritter"
+  "Syrig"
+  "Wasserhund"
+  "Windhund"
+  "Wolkensäule"
+}
+army_names = {
+  "$PROVINCE$›Q"  # Armee von $PROVINCE$
+}

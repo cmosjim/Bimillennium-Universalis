@@ -1,0 +1,48 @@
+# Country Ideas for Veritas
+DAIY_ideas = {
+	start = {
+		army_tradition_decay = -0.03
+		land_forcelimit_modifier = 0.33
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.1
+	}
+	
+	trigger = {
+		OR = {
+		tag = DAE
+		tag = DAG
+		}
+	}
+
+	free = yes
+	
+	shu_stack_hard_walk = {
+		defensiveness = 0.2
+	}
+	zhubi_zao_shi = {
+			inflation_reduction = 0.1
+			interest = -1
+	}
+	shu_spinning = {
+		global_trade_power = 0.15
+	}
+
+	chuanjun_han_jiang = {
+		army_tradition = 1
+	}
+
+	daxing_shuili = {
+		production_efficiency = 0.1
+	}
+	
+	dishi_zhi_bian = {
+		infantry_power = 0.1
+		cavalry_power = 0.1
+	}
+
+	nanjin_bei_tao = {
+		core_creation = -0.25
+	}
+}

@@ -1,0 +1,42 @@
+SNS_ideas = {
+	start = {
+		infantry_cost = -0.15
+		discipline = 0.05
+	}
+
+	bonus = {
+		land_morale = 0.1
+	}
+
+	trigger = {
+		OR = {
+			tag = SNS
+			tag = KU1
+		}
+	}
+	free = yes
+
+	oldest_nomads_tribe = {
+		legitimacy = 1
+		improve_relation_modifier = 0.1
+	}
+	su_stone_arrows = {
+		infantry_power = 0.10
+	}
+	northern_cold_area = {
+		defensiveness = 0.2
+	}
+	daxinganling = {
+		manpower_recovery_speed = 0.1
+		cavalry_cost = -0.05
+	}
+	falcon_costin_sign = {
+		enemy_core_creation = 0.25
+	}
+	sushen_fortress_ancient_altar = {
+		religious_unity = 0.3
+	}
+	sushen_calendar = {
+		production_efficiency = 0.1
+	}
+}

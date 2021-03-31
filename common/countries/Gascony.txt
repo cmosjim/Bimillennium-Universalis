@@ -1,0 +1,212 @@
+graphical_culture = westerngfx
+color = {
+  32
+  144
+  204
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  qianyi_ideas
+  rongren_ideas
+  junqu_ideas
+  defensive_ideas
+  trade_ideas
+  religious_ideas
+  diplomatic_ideas
+  economic_ideas
+  innovativeness_ideas
+  offensive_ideas
+  spy_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  french_caracolle
+  anglofrench_line
+  french_dragoon
+  french_bluecoat
+  french_cuirassier
+  french_impulse
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "Edouard #4" = 10
+  "Benedit #0" = 0
+  "Bernat #0" = 0
+  "Bertran #0" = 0
+  "Brun #0" = 0
+  "Carles #0" = 0
+  "Eneco #0" = 0
+  "Enric #0" = 0
+  "Estève #0" = 0
+  "Folquet #0" = 0
+  "Frances #0" = 0
+  "Frédol #0" = 0
+  "Gastó #0" = 0
+  "Gaufré #0" = 0
+  "Guilhem #0" = 0
+  "Hug #0" = 0
+  "Jacme #0" = 0
+  "Jordan #0" = 0
+  "Loys #0" = 0
+  "Matheu #0" = 0
+  "Miqueu #0" = 0
+  "Nicolau #0" = 0
+  "Per #0" = 0
+  "Pol #0" = 0
+  "Pons #0" = 0
+  "Thomas #0" = 10
+  "Vicentz #0" = 0
+  "Vivian #0" = 0
+  "Olivie #0" = -1
+  "Ninette #0" = -1
+  "Rosalie #0" = -1
+  "<hNbôuÃW #0" = 0  # Xavier #0
+  "ôTXbÆRLN #0" = 0  # Bartomiu #0
+  "Œ‚ØžÌ‘KQ #0" = 0  # Aymeric #0
+  "?–ú‹ #0" = 0  # Arnaud #0
+  "?–S’‚ #0" = 0  # Armand #0
+  "IlV±ƒ #0" = 5  # Humphrey #0
+  "ÃW·V™„ #0" = 5  # Edmond #0
+  "¦uð #1" = 5  # Jean #1
+  "tåg·V #2" = 5  # Richard #2
+  "ªu'SÆY #10" = 5  # Guillaume #10
+  "¨N)R #2" = 60  # Henri #2
+}
+leader_names = {
+  "Aller"
+  "Detmold"
+  "Hamelm"
+  "Hildesheim"
+  "Kapp"
+  "Minden"
+  "Oldenburg"
+  "Salzgitter"
+  "Werden"
+  "Wernigerode"
+}
+ship_names = {
+  "Adour"
+  "^—2mºN"  # Africain
+  "Ä–pž"  # Aigle
+  "Ñ‘pž"  # Aigle d'Or
+  "Aimable Nanon"
+  "Aimable Marthe"
+  "Aimable Rose"
+  "šN†SqS'Y"  # Alexandre
+  "âlSY„v1W‰R®Y"  # Ste Anne de Bordeaux
+  "Amitié"
+  "Angélique"
+  "Américain"
+  "Amphitrite"
+  "iVy†"  # Arc en Ciel
+  "ôT¦u·‹ºN"  # Bayonnaise
+  "Belle Poule"
+  "Bienfaisant"
+  "Biscayenne"
+  "Bizarre"
+  "Bonnes Amies"
+  "âlSYºN"  # Bordelais
+  "Brillant"
+  "Caroline"
+  "aS¯eXb3w"  # Castor
+  "Catiche"
+  "Charente"
+  "Charmante Manon"
+  "Charmante Nancy"
+  "Charmante Rachel"
+  "ôT¦u·‹!X"  # Château de Bayonne
+  "Chézine"
+  "âlSYFU9‚"  # Commerce de Bordeaux
+  "þVbSyQ=O5r"  # Comte de Toulouse
+  "Content"
+  "Débonnaire"
+  "Dédaigneuse"
+  "Deux Frères"
+  "Diamant"
+  "Diligente"
+  "Duc d'Aquitaine"
+  "OKNŽƒ‹v"  # Elisabeth
+  "Entreprenante"
+  "Espérance"
+  "Extravagante"
+  "Favori"
+  "Fendant"
+  "Flamand"
+  "Gaillard"
+  "Galant"
+  "Godichon"
+  "Grand Coureur"
+  "'Y)Yürf"  # Grand Sirius
+  "Gros Ventre"
+  "kN)R"  # Hercule
+  "Hermine"
+  "Impérieuse"
+  "Indien"
+  "Intrépide"
+  "Jolie"
+  "¦umt+Y"  # Joseph
+  "Labourt"
+  "Laurence"
+  "Légère"
+  "Licorne"
+  "îr"  # Lion
+  "Machault"
+  "Marchand"
+  "Mars"
+  "Mascarin"
+  "Maure"
+  "Mégère"
+  "Mélampe"
+  "Mignon"
+  "Neptune"
+  "Nouvelle Victoire"
+  "Oiseau"
+  "Opale"
+  "Pélican"
+  "äQðQ"  # Phénix
+  "Pollux"
+  "Quatre Frères"
+  "Rameau"
+  "Reine Marie"
+  "Renommée"
+  "Rostan"
+  "Royal Daim"
+  "Saint Jacques"
+  "Saint Pierre"
+  "Sirène"
+  "Soleil Royal"
+  "Swinton"
+  "Tamponne"
+  "Toison d'Or"
+  "Tourterelle"
+  "Trinité"
+  "Triton"
+  "Utile"
+  "Valeur"
+  "ôu³u¯e"  # Vénus
+  "ôT¦u·‹ÎW"  # Ville de Bayonne
+}
+army_names = {
+  "?–úWfW›Q"  # Armée d'Aquitaine
+  "âlSY›Q"  # Armée du Bordelais
+  "^±ƒO›Q"  # Armée du Blayais
+  "ÔkKQ0WHS›Q"  # Armée du Pays de Buch
+  "ôTNb¯e›Q"  # Armée du Bazadais
+  "ïQg›Q"  # Armée du Queyran
+  "V™Ÿ(„ãN›Q"  # Armée du Fronsadais
+  "Ì‘^HY›Q"  # Armée du Libournais
+  "aS¯e‚„†–›Q"  # Armée de Castillon
+  "?–S^÷–›Q"  # Armée d'Albret
+  " R™Ÿ³l›Q"  # Armée de la Garonne
+  "?–ípHY›Q"  # Armée de l'Agenais
+  "$PROVINCE$›Q"  # Armée de $PROVINCE$
+}

@@ -1,0 +1,75 @@
+new_land = {
+	ae_impact = -0.1
+	core_creation = -0.1
+}
+
+early_feudal_overlord = {
+	prestige = 1
+	governing_capacity = 100
+}
+
+drive_away_visigoth = {
+	land_morale = 0.1
+}
+
+unify_gaul = {
+	prestige = 1
+	global_autonomy = -0.05
+}
+
+frenkish_defender_of_pyrenees = {
+	land_morale = 0.05
+	defensiveness = 0.1
+}
+
+frank_beat_horde = {
+	discipline = 0.05
+	war_exhaustion = -0.03
+}
+
+european_christian = {
+	global_unrest = -2
+}
+
+roman_emperor = {
+	years_of_nationalism = -5
+	province_warscore_cost = -0.05
+}
+
+european_centre = {
+	local_unrest = -3
+	supply_limit = 10
+	local_monthly_devastation = -0.05
+}
+
+welcome_pope = {
+	tolerance_own = 2
+}
+
+aachen_cathedral = {
+	prestige = 0.5
+	legitimacy = 0.5
+}
+
+huge_feudal_empire = {
+	governing_capacity = 100
+	stability_cost_modifier = -0.1
+	nobles_loyalty_modifier = 0.05
+}
+
+experience_of_battle_with_saxon = {
+	army_tradition = 1
+}
+
+salic_feudal_rule = {
+	min_autonomy_in_territories = -0.05
+}
+
+prepare_for_defense = {
+	global_manpower_modifier = 0.5
+}
+
+resist_of_christianity = {
+	prestige_from_land = 0.5
+	army_tradition_from_battle = 0.2
+}

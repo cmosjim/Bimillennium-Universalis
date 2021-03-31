@@ -1,0 +1,215 @@
+graphical_culture = westerngfx
+colonial_parent = GBR
+random_nation_chance = 0
+color = {
+  79
+  37
+  128
+}
+historical_idea_groups = {
+  early_adm_ideas
+  early_mil_ideas
+  early_religious_ideas
+  early_trade_ideas
+  qianyi_ideas
+  kaituo_ideas
+  defensive_ideas
+  offensive_ideas
+  administrative_ideas
+  economic_ideas
+  trade_ideas
+  religious_ideas
+  diplomatic_ideas
+  spy_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  chevauchee
+  western_longbow
+  gaelic_mercenary
+  gaelic_free_shooter
+  french_caracolle
+  irish_charge
+  anglofrench_line
+  french_dragoon
+  british_redcoat
+  british_hussar
+  british_square
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "?ñ±ÉâöN #0" = -10  # Alecia #0
+  "WKQØeWO #0" = 10  # Roxroy #0
+  "löì^Øe #0" = 10  # Marcus #0
+  "pQèy∑V #0" = 10  # Lenford #0
+  "Oi` #0" = 10  # Ian #0
+  "(Ñ*S #0" = 10  # Samuel #0
+  "»èKQS #0" = 10  # Michael #0
+  "≈ñT^ #0" = 10  # Jacob #0
+  "bâv #0" = 10  # Gordon #0
+  "÷vS #0" = 10  # Gail #0
+  "KQÃëØe #0" = 10  # Chris #0
+  "ØeÇÑ¨Ç #0" = 10  # Stephen #0
+  "öNÜSqS'Y #0" = 10  # Alexander #0
+  "Z…^ #0" = 10  # William #0
+  "ZS=O #0" = 10  # Wilbur #0
+  "ÇÑ´Éâ #0" = 10  # Timothy #0
+  "âSÙuØeyr #0" = 10  # Silvester #0
+  "pQSê+Y #0" = 10  # Randolf #0
+  "ÚÉ)Rnf #0" = 10  # Philip #0
+  "›OW #0" = 10  # Paul #0
+  "^yrÃëKQ #0" = 10  # Patrick #0
+  "s|Sò #0" = 10  # Milton #0
+  "bSKQ #0" = 10  # Luke #0
+  "˙WpQ #0" = 10  # Kyran #0
+  "¶umt+Y #0" = 10  # Joseph #0
+  "TN≥uÓh #0" = 10  # Jonathan #0
+  "åÇ(ÑKQ #0" = 10  # Isaac #0
+  "V˜ñ∑VÃëKQ #0" = 10  # Frederick #0
+  "VgâØe #0" = 10  # Francis #0
+  "√WÃëKQ #0" = 10  # Eric #0
+  "√WS^ÃëGY #0" = 10  # Elbridge #0
+  "æè&O #0" = 10  # Darren #0
+  "aSSáe #0" = 10  # Calvin #0
+  ",gpgf #0" = 10  # Benjamin #0
+  "eY‰SØeyr #0" = 10  # August #0
+  "âR<hØe #0" = 10  # Angus #0
+  "öN&O #0" = 10  # Aaron #0
+  "tÂg∑V #0" = 10  # Richard #0
+  "√W)RöNØe #0" = 10  # Elias #0
+  "'YkS #0" = 10  # David #0
+  "^X“RØe #0" = 10  # Cyrus #0
+  "öNmt #0" = 10  # Arthur #0
+  "®N)R #0" = 10  # Henry #0
+  "9N<SS #0" = 10  # Daniel #0
+  "ÂgSØe #0" = 10  # Charles #0
+  "XblöØe #0" = 10  # Thomas #0
+  "¶u #0" = 10  # John #0
+  "yä∆YØe #0" = 10  # James #0
+  "TNªl #0" = 10  # George #0
+}
+leader_names = {
+  "öNSVØe"  # Adams
+  "^S"  # Burr
+  "KQógò"  # Clinton
+  "pgO"  # Jay
+  "pgêeê"  # Jefferson
+  "»TÃëÓh"  # Harrison
+  "—ë"  # King
+  "pQâv"  # Langdon
+  "¶ûÍèê"  # Madison
+  "ËïW"  # Monroe
+  "ÆvKQ<S"  # Pickney
+  "…byr)RGY"  # Rutledge
+  "ØeTXÙTKQ"  # Starbuck
+  "ØeÇÑ∑V"  # Steed
+  "ØeÇW∑V"  # Stryder
+  "(ÑKQ)R+Y"  # Sutcliffe
+  "ØeÊt<hyr"  # Swaggert
+  "ØeXbV"  # Stover
+  "ØeyrÓh"  # Stetson
+  "Øwnfò"  # Kempton
+  "Øw∑VÃëKQ"  # Kendrick
+  "pQi`"  # Lane
+  "ógâv"  # Lindon
+  "±ÉS"  # Lyle
+  "ÖhÃëKQ"  # Merrick
+  "?ñyrÉlØe"  # Atworth
+  "?ñ˙ãyr"  # Arnott
+  "?ñ¿Nò"  # Ashton
+  "ZSóV"  # Boyd
+  "aSYKQ"  # Caddock
+  "∑V…bôÑ∑V"  # Drummond
+  "?ñKQOØe"  # Arkeith
+  "Øw<SÍè"  # Kennedy
+  "yr±Éáe"  # Trevin
+  "Éli`"  # Vaughan
+  "Íè&O"  # Dylan
+  "æèSò"  # Dalton
+  "∑VSáe"  # Dellwin
+  "0åSâv"  # Sheldon
+  "ØeXo^X"  # Spencer
+  "0t)R"  # Thorley
+  "dlnfÓh"  # Thompson
+  "f)n"  # Unwin
+  "ÊtSâv"  # Walden
+  "Êt∑V"  # Ward
+  ")nØeò"  # Winston
+  "Sê<h…bØe"  # Douglas
+  "VmO∑V"  # Floyd
+  "tÂgÓh"  # Richardson
+  "¶ûØwPü"  # McKenzie
+  "(ÑS˙W"  # Salkey
+  "¶ûKQ<SS"  # McNeill
+  "ì^KQ"  # Cooke
+  "˜ñ—y∑V"  # Reckord
+  "s|KQØe"  # Meeks
+  "öN=O…bU"  # Abrahams
+  "ì^=O"  # Cooper
+  "¶ûÔQ"  # McKay
+  "pQ—ë"  # Rankine
+  "±î≥u"  # Channer
+  "Øe—yyr"  # Scott
+  "¸f)R"  # Manley
+  "çúS"  # Baugh
+  "^W∑V=O"  # Brodber
+  "âR∑VÓh"  # Anderson
+  "ÚÉSnf"  # Philp
+  "aSÍè"  # Carty
+  "<tØe"  # Jones
+  "ÚS∆RØe"  # Smith
+  "kçi`"  # Hearne
+  "s|“R"  # Miller
+  "SêØe"  # Dawes
+  "WØe"  # Ross
+  "¶uê"  # Johnson
+  "löÃëeYyr"  # Marriott
+  "õèKQ±ÉS"  # Sinclair
+}
+ship_names = {
+  "öNSVØe"  # Adams
+  "?ñSV˜ñ∑V"  # Alfred
+  "?ñ±Éi`Øe"  # Alliance
+  "âR∑VÅú YÃëöN"  # Andrew Doria
+  "?ñSb"  # Argo
+  "?ñSbØe"  # Argus
+  "aS=Oyr"  # Cabot
+  "R(ÑÆvKQ"  # Chesapeake
+  "†QõQ"  # Champion
+  "ÂT&O^"  # Columbus
+  "YS¨Ç"  # Dolphin
+  "Íèi`"  # Deane
+  "‰RKY"  # Diligent
+  "√W¨ÇIl"  # Effingham
+  "ON"  # Enterprise
+  "ﬁò‘"  # Fly
+  "Ilnfâv"  # Hampden
+  "IlwKQ"  # Hancock
+  "'Yƒûá"  # Hornet
+  "RKQffe"  # Lexington
+  "ôÑÂTlö)R"  # Montgomery
+  "´ÉØe˙WXb"  # Mosquito
+  "fûIû∫á"  # Nautilus
+  "Ævbyr"  # Pigot
+  "pQSê+Y"  # Randolph
+  "içlö"  # Racehorse
+  "8n†O"  # Ranger
+  "Y«N"  # Reprisal
+  "ÕS˚Q"  # Repulse
+  "µbób"  # Resistance
+  "•bY"  # Retaliation
+  "Y«N"  # Revenge
+  "ñôÜò"  # Sachem
+  "(Ñ…bXb†R"  # Saratoga
+  "^X…bÆvØe"  # Serapis
+  "^XÏX"  # Siren
+  "GY≠à"  # Surprise
+  "yrg^S"  # Trumbull
+  "pá«Ü"  # Viper
+  "ç`áY"  # Vixen
+  "Él&O"  # Warren
+  "·wá"  # Wasp
+}

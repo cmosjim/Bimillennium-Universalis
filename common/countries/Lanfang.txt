@@ -1,0 +1,213 @@
+graphical_culture = asiangfx
+color = {
+  43
+  165
+  157
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  zhongqi_ideas
+  rongren_ideas
+  shenquan_ideas
+  trade_ideas
+  maritime_ideas
+  defensive_ideas
+  spy_ideas
+  offensive_ideas
+  diplomatic_ideas
+  religious_ideas
+  economic_ideas
+}
+historical_units = {
+  east_asian_spearmen
+  eastern_bow
+  asian_arquebusier
+  asian_charge_cavalry
+  asian_mass_infantry
+  asian_musketeer
+  reformed_asian_musketeer
+}
+monarch_names = {
+  "Jianjun #0" = 20
+  "Youcheng #0" = 20
+  "Houzhao #0" = 20
+  "Houcong #0" = 20
+  "Zaihou #0" = 20
+  "Yijun #0" = 20
+  "Changluo #0" = 20
+  "Youjian #0" = 20
+  "Yousong #0" = 20
+  "Yujian #0" = 20
+  "Youlang #0" = 20
+  "Chenggong #0" = 10
+  "Kehshuan #0" = 10
+  "Biao #0" = 10
+  "Shuang #0" = 10
+  "Gang #0" = 10
+  "Su #0" = 10
+  "Zhen #0" = 10
+  "Fu #0" = 10
+  "Zi #0" = 10
+  "Qi #0" = 10
+  "Tan #0" = 10
+  "Chun #0" = 10
+  "Bai #0" = 10
+  "Gui #0" = 10
+  "Zhi #0" = 10
+  "Quan #0" = 10
+  "Pian #0" = 10
+  "Hui #0" = 10
+  "Song #0" = 10
+  "Mo #0" = 10
+  "Ying #0" = 10
+  "Jing #0" = 10
+  "Dang #0" = 10
+  "Nan #0" = 10
+  "Gaoxu #0" = 10
+  "Caosui #0" = 10
+  "Gauxi #0" = 10
+  "Youyuan #0" = 10
+  "Youlun #0" = 10
+  "Youbin #0" = 10
+  "Houwei #0" = 10
+  "Youxiao #0" = 10
+  "Youji #0" = 10
+  "Youxue #0" = 10
+  "Youyi #0" = 10
+  "Youshan #0" = 10
+  "Cixuan #0" = 10
+  "Cijiang #0" = 10
+  "Cizhao #0" = 10
+  "Cibuan #0" = 10
+  "Cican #0" = 10
+  "Fangbo #0" = 0
+  "Wubo #0" = 0
+  "Sibo #0" = 0
+  "Wubo #0" = 0
+  "Chabo #0" = 0
+  "Tai'er #0" = 0
+  "Liubo #0" = 0
+  "Guifang #0" = 0
+  "Tenghui #0" = 0
+  "Qianxing #0" = 0
+  "A'sheng #0" = 0
+  "Liangguan #0" = 0
+  "Heying #0" = -20
+  "Chunmei #0" = -20
+  "Tianhui #0" = -20
+  "Kon #0" = -20
+  "Mao #0" = -20
+  "Ay∞î #0" = 20  # Qiyu #0
+  "AyGï #0" = 20  # Qizhen #0
+}
+leader_names = {
+  "Li"
+  "Wang"
+  "Zhang"
+  "Liu"
+  "Zhao"
+  "Chen"
+  "Yang"
+  "Wu"
+  "Huang"
+  "Zhou"
+  "Xu"
+  "Zhu"
+  "Lin"
+  "Sun"
+  "Ma"
+  "Gao"
+  "Hu"
+  "Zheng"
+  "Guodao"
+  "Xie"
+  "He"
+  "Xu"
+  "Song"
+  "Shen"
+  "Luo"
+  "Han"
+  "Deng"
+  "Liang"
+  "Ye"
+  "Peng"
+  "Fang"
+  "Wang"
+  "Cui"
+  "Cai"
+  "Cheng"
+  "Yuan"
+  "Pan"
+  "Lu"
+  "Cao"
+  "Tang"
+  "Feng"
+  "±î"  # Qian
+  "jg"  # Du
+}
+ship_names = {
+  "ÿö^"  # Gaodi
+  "‡`^"  # Huidi
+  "áe^"  # Wendi
+  "-f^"  # Zhaodi
+  "‡z^"  # Zhangdi
+  "'Yf˝V"  # Da Ming Guo
+  "S¨N"  # Beijing
+  "—êåT"  # Zeng He
+  "NmWS"  # Ji'nan
+  "WS¨N"  # Nanjing
+  "mgﬁT"  # Hangzhou
+  "fkf"  # Wuchang
+  "èyﬁT"  # Fuzhou
+  "WSf"  # Nanchang
+  "Bhóg"  # Guilin
+  "^ﬁT"  # Guangzhou
+  "5ç3ñ"  # Guiyang
+  "ëNWS"  # Yunnan
+  "b˝ê"  # Chendo
+  "ââR"  # Xi'an
+  "*YüS"  # Taiyuan
+  "ƒû≥l"  # Huang He
+  "ïml"  # Chang Jiang
+  "âml"  # Xijiang
+  "TR+YPR"  # Kung-fu tzu
+  "mRPR"  # Mencius
+  "NÉPR"  # Xun Zi
+  "úòﬁV"  # Yan Hui
+  "ıïmc"  # Min Sun
+  "âQw"  # Ran Geng
+  "âQÕñ"  # Ran Yong
+  "PR1u"  # Zi-you
+  "PRÔç"  # Zi-lu
+  "PRb"  # Zi-wo
+  "PR!ç"  # Zi-gong
+  "äCP"  # Yan Yan
+  "PRY"  # Zi-xia
+  "PR.V"  # Zi-zhang
+  "˛f¬S"  # Zeng Shen
+  "πoSmpf"  # Dantai Mieming
+  "ìRNPü"  # Fu Buji
+  "üS™R"  # Yuan Xian
+  "lQ∂Qï"  # Gungye Chang
+  "WS´Rê"  # Nangong Guo
+  "lQôv¿T"  # Gongxi Ai
+  "˛fπp"  # Zeng Dian
+  "úò‡eGu"  # Yan Wuyao
+  "FUøw"  # Shang Zhu
+  "ÿöÙg"  # Gao Chai
+  "o’ñV"  # Qidiao Kai
+  "lQ=O-"  # Gongbo Liao
+  "¯Slöw"  # Sima Geng
+  "jâò"  # Fan Xu
+  "	gÂÇ"  # You Ruo
+  "lQâdç"  # Gongxi Chi
+  "ÎTlöÀe"  # Wuma Shi
+  "Åh„ú"  # Liang Zhan
+  "úòx^"  # Yan Xing
+  "âQzR"  # Ran Ru
+  "˘fd`"  # Cao Xu
+  "=OTÜ"  # Bo Qian
+  "lQYRôü"  # Gongsun Long
+}

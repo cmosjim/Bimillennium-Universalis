@@ -1,0 +1,62 @@
+# 目前天朝的派系種類:
+# 2018.12.8 delete all factions in celestial
+# 2019-09-21 add Republican_Party Democratic_Party for american current situation
+###################
+#		TWN		  #
+###################
+TWN_KMT_party = 
+{
+	monarch_power = ADM
+	always = yes
+	modifier = 
+	{
+		global_tax_modifier = 0.25
+		global_manpower_modifier = 0.15
+		infantry_cost = -0.15
+		build_cost = -0.1
+	}
+}
+
+TWN_DPP_party = 
+{
+	monarch_power = DIP
+	always = yes
+	modifier = 
+	{
+		war_exhaustion = -0.15		
+		technology_cost = -0.15
+		global_ship_cost = -0.25
+		diplomatic_reputation = 2
+	}
+}
+#for american 
+Republican_Party = {
+	
+	monarch_power = MIL
+	always = yes	
+	modifier = 
+	{
+		global_manpower_modifier = 0.25
+		land_maintenance_modifier = -0.15
+		leader_land_fire = 1
+		cavalry_fire = 1
+		artillery_power = 0.1
+	}	
+
+}
+
+Democratic_Party = {
+	
+	monarch_power = DIP
+	always = yes	
+	modifier = 
+	{
+		naval_forcelimit_modifier = 0.33
+		land_maintenance_modifier = -0.1
+		global_tax_modifier = 0.25
+		naval_morale = 0.25
+		heavy_ship_cost = -0.1
+
+	}	
+
+}

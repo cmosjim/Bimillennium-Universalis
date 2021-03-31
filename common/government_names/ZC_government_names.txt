@@ -1,0 +1,23 @@
+viking_pirate = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}	
+
+	ruler_male = {
+		1 = KING
+		2 = KING
+		3 = KING
+	}
+
+	ruler_female = {
+		1 = QUEEN
+		2 = QUEEN
+		3 = QUEEN
+	}
+	
+	trigger = {
+		has_reform = viking_pirate_reform
+	}
+}

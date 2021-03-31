@@ -1,0 +1,146 @@
+graphical_culture = asiangfx
+special_unit_culture = south_east_asian_special
+color = {
+  212
+  211
+  151
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  defensive_ideas
+  offensive_ideas
+  trade_ideas
+  diplomatic_ideas
+  spy_ideas
+  quantity_ideas
+  administrative_ideas
+  religious_ideas
+}
+historical_units = {
+  east_asian_spearmen
+  eastern_bow
+  asian_arquebusier
+  asian_charge_cavalry
+  asian_mass_infantry
+  asian_musketeer
+  reformed_asian_musketeer
+  reformed_asian_cavalry
+}
+monarch_names = {
+  "Ï‚àVs| #0" = -1  # Saw Yin Mi #0
+  "Ï‚¾R(„ #0" = -1  # Saw Pyinsa #0
+  "îO š #0" = -1  # Saw Pyauk #0
+  "îOFZtY #0" = -1  # Saw Pu Nyo #0
+  "îO‰` #0" = -1  # Saw Sit #0
+  "ÖNidN– #0" = 20  # Thammada #0
+  "çPN–ÖNĞcN– #0" = 20  # Sanda Thaditha #0
+  "çPN–ıid± #0" = 20  # Sanda Thudhamma #0
+  "?–âl6w #0" = 20  # Apaya #0
+  "¯h)Rı #0" = 20  # Thirithu #0
+  "±W?–âl6w #0" = 20  # Nara Apaya #0
+  "idN–)R #0" = 20  # Madarit #0
+  "±WâlOW #0" = 20  # Narapawara #0
+  "±W•^âl^ #0" = 20  # Naradipadi #0
+  "çPN–×k™l6w #0" = 20  # Sanda Wizaya #0
+  "çPN–×kidW #0" = 20  # Sanda Wimala #0
+  "±WĞcâl^ #0" = 20  # Naradipati #0
+  "æWánN– #0" = 20  # Kalagandat #0
+  "id>Õk6w #0" = 20  # Mayonpiya #0
+  "±WY #0" = 20  # Nawrahta #0
+  "çPN–ı)R6w #0" = 30  # Sanda Thuriya #0
+  "mr<Sfid #0" = 20  # Mani Dhamma #0
+  "OWfid #0" = 20  # Wara Dhamma #0
+  "ÖNÖb #0" = 20  # Thado #0
+  "±Wâl^ #0" = 20  # Narapati #0
+  "Z<S #0" = 20  # Sanay #0
+  "¯h)Rıfid #0" = 20  # Thiri Thudhamma #0
+  "æËƒ #0" = 20  # Khamaung #0
+  "f6wZ›ˆ #0" = 20  # Razagri #0
+  "âl†– #0" = 20  # Hpalaung #0
+  "‰`Y6w #0" = 20  # Sekkya #0
+  "îOW #0" = 20  # Saw Hla #0
+  "Ğcæ #0" = 20  # Dikha #0
+  "fs^ #0" = 20  # Min Bin #0
+  "fm` #0" = 20  # Minkhaung #0
+  "TXNb¾ #0" = 20  # Thazata #0
+  "Ï‚eY #0" = 20  # Saw O #0
+  "æ™lFZĞc #0" = 20  # Gazapati #0
+  "ÉbNb #0" = 20  # Raza #0
+  "™l—gKOı #0" = 20  # Salingathu #0
+  "6wÊV #0" = 20  # Ran Aung O #0
+  "FZîOtY #0" = 20  # Ba Saw Nyo #0
+  "v–S6w #0" = 20  # Dawlya #0
+  "FZîO š #0" = 20  # Ba Saw Phyu #0
+  "±JtY #0" = 20  # Naranu #0
+  "VúWYr #0" = 20  # Letya #0
+  "?–¨h #0" = 20  # Khayi #0
+  "?–tY‹VN– #0" = 20  # Anawrahta #0
+  "îOid #3" = 20  # Saw Mon #3
+  "¯hÃ‹ı #0" = 20  # Thinggathu #0
+  "WıZN– II #2" = 20  # Radzathu #2
+}
+leader_names = {
+  "?–1k"  # Ashin
+  "‘˜6w"  # Binnya
+  "ísšN"  # Banya
+  "‘i"  # Bo
+  "fqS"  # Bogyoke
+  "S"  # Daw
+  "YO"  # Duwa
+  "dW"  # Khun
+  "Âs"  # Ko
+  "lš"  # Ma
+  "lši`"  # Mahn
+  "È"  # Mai
+  "ÆR"  # Me
+  "ŒŒ"  # Maung
+  "s|"  # Mi
+  "Oe"  # Min
+  "f"  # Minh
+  "HY"  # Nai
+  "WS"  # Nang
+  "Yt"  # Naw
+  "i"  # Sai
+  "(„±ƒ"  # Salai
+  "Íu"  # Sao
+  "Ï‚"  # Saw
+  "Ï‚ôT"  # Sawbwa
+  "(„6w"  # Saya
+  "(„šNjg"  # Sayadaw
+  "(„šNlš"  # Sayama
+  "1k"  # Shin
+  "ãN RY"  # Tekkatho
+  "·V¦”"  # Thakin
+  "ãN^ís"  # Theippan
+  U
+}
+ship_names = {
+  "Alaumaphru"
+  "Athinkhara Raza"
+  "Candasuriya"
+  "Datharaza"
+  "Foonthan"
+  "Gandakudi"
+  "Koliya"
+  "Lakkyamunnan"
+  "idÃ‹mr<S"  # Mahamuni
+  "Mong Saw Mon"
+  "™YLN"  # Mrauk U
+  "Mong Khaki"
+  "mRôT"  # Mong Ba
+  "Mong Razagree"
+  "Mahataing Candra"
+  "Ngahnaloon"
+  "Ï‚Ì‘šN"  # Suriya
+  "Ï‚Ì‘šNÃeN–W"  # Suriya Candra
+  "Thiharaza"
+  "Thakyawangree"
+  "Thakyawannge"
+  "Ukkabala"
+  "Waradhamma"
+}

@@ -1,0 +1,144 @@
+graphical_culture = asiangfx
+special_unit_culture = south_east_asian_special
+color = {
+  60
+  152
+  70
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  defensive_ideas
+  offensive_ideas
+  spy_ideas
+  trade_ideas
+  economic_ideas
+  religious_ideas
+  administrative_ideas
+  quantity_ideas
+}
+historical_units = {
+  east_asian_spearmen
+  eastern_bow
+  asian_arquebusier
+  asian_charge_cavalry
+  asian_mass_infantry
+  asian_musketeer
+  reformed_asian_musketeer
+  reformed_asian_cavalry
+}
+monarch_names = {
+  "åT	ƒ #0" = -1  # Komol #0
+  "Xo R^iO #0" = -1  # Panjapapee #0
+  "²R .tÌ‘²wğl #0" = -1  # Sri Suriyothai #0
+  "îTZ¹R #0" = -1  # Chanarong #0
+  "?–âl2— #0" = -1  # Amporn #0
+  "Éb›s #0" = 30  # Rama #0
+  "¾áO #0" = 20  # Taksin #0
+  "LNTY #0" = 20  # Uthumphon #0
+  "âl†–id– #0" = 20  # Boromakot #0
+  "ğl™l #0" = 20  # Thai Sa #0
+  "^-f .t #0" = 20  # Phrachao Suea #0
+  "^µxW– #0" = 20  # Phetracha #0
+  "²R)R .tf›sW– #0" = 20  # Si Suthammaracha #0
+  "±±ƒ #0" = 20  # Narai #0
+  "-fÕls #0" = 20  # Chao Fa Jai #0
+  "ôT™l #0" = 20  # Prasat Thong #0
+  "?–ôn6wúe #0" = 20  # Athittayawong #0
+  "VrN– #0" = 20  # Chettha #0
+  "‚˜f #0" = 20  # Songtham #0
+  "²R-fÇT^ #0" = 20  # Si Saowaphak #0
+  "„SæN–™l‹V #0" = 20  # Ekathotsarot #0
+  "³uÎ1„ #0" = 20  # Naresuen #0
+  "fidW– #0" = 20  # Thammaracha #0
+  "id1k #0" = 20  # Mahin #0
+  "ågKQJ^ #0" = 20  # Chakkraphat #0
+  "dWÇTÉbúe™l #0" = 5  # Bun Si #0
+  "vÕl #0" = 20  # Keo Fa #0
+  "sW– #0" = 20  # Chairacha #0
+  "ûS™l¾ #0" = 20  # Ratsada #0
+  "Éb›sÁ”éƒĞc #1" = 20  # Ramathibodi #1
+  "4b±ƒmæ³u #0" = 20  # Trailokanat #0
+  "âl†–idW– #1" = 40  # Borommaracha #1
+  "àVN–W– #0" = 20  # Intha Racha #0
+  "WidW– #0" = 20  # Ramaracha #0
+}
+leader_names = {
+  "?–2u·V	T"  # Akradej
+  "?–¨h6wªRTXKO"  # Ariyanuntaka
+  "vlÆR"  # Boonmee
+  "s^TX±"  # Chaipatana
+  "ågKOvl(„"  # Chakrabonse
+  "N²R)Rì„"  # Chuasiriporn
+  "ôn™ldW"  # Diskul
+  "„SKO‹V"  # Ekaluck
+  "‰TXéƒĞc"  # Hitapot
+  "àVîTûS"  # Inchareon
+  "É‰†–®’"  # Kawrungruang
+  "dWĞcJœQ"  # Khuntilanont
+  "Ñ‘^<S"  # Klinpraneet
+  "Kriangsak"
+  "mRTRf"  # Monkoltham
+  "<S^ÖN±^X"  # Nitpattanasai
+  "V^s<S"  # Noppachorn
+  "Nut"
+  "Panomyaong"
+  "^Ğc^TX±úe"  # Phatipatanawong
+  "Sitdhirasdr"
+  "Sivaraksa"
+  "Srichure"
+  "Supachai"
+  "Supasawat"
+  "Tantasatityanon"
+  "Thabchumpon"
+  "Tomson"
+  "Wongrutiyan"
+  "Yongchaiyudh"
+  "Na Phayap"
+  "Na Maharat"
+  "Na Isan"
+  "Na Roi Et"
+  "Na Ubon"
+  "Na Udon"
+  "Na Phuket"
+  "Na Kedah"
+  "Na Chumphon"
+  "Na Prachinburi"
+  "Na Burapa"
+  "Na Chanthaburi"
+}
+ship_names = {
+  "Ramithibodi"
+  "Ramesuan"
+  "Borommaracha"
+  "Thong Chan"
+  "Ramaratcha"
+  "Intharatcha"
+  "Boromtrailokanat"
+  "Ratsada"
+  "sW–"  # Chairacha
+  "Yotfa"
+  "Worawongsa"
+  "ågKQJ^"  # Chakkraphat
+  "id1k"  # Mahin
+  "Sanpet"
+  "³uÎ1„"  # Naresuan
+  "„SæN–™l‹V"  # Ekathotsarot
+  "²R-fÇT^"  # Si Saowaphak
+  "‚˜f"  # Songtham
+  "Chehha"
+  "‚˜·V ^"  # Somdet Phra
+  "ôT™l"  # Prasat Thong
+  "s"  # Chai
+  ".tf›sW–"  # Suthammaracha
+  "±±ƒ"  # Narai
+  "^µxW–"  # Petratcha
+  "Süa"
+  "Phumintharacha"
+  "LNTY"  # Uthumpon
+  "„SKON–"  # Ekkathat
+}

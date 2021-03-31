@@ -1,0 +1,43 @@
+HN2_ideas = {
+	start = {
+		technology_cost = -0.15
+		naval_maintenance_modifier = -0.25
+	}
+
+	bonus = {
+		army_tradition = 2
+	}
+
+	trigger = {
+		tag = HN2
+	}
+	free = yes
+
+	hongfutianwang = {
+		land_morale = 0.15
+		prestige = 1
+	}
+	dragon_logo = {
+		army_tradition_decay = -0.02
+		core_creation = -0.25
+	}
+	tuifanmanqing = {
+		ae_impact = -0.10
+		stability_cost_modifier = -0.1
+	}
+	taipingyitong = {
+		global_manpower_modifier = 0.15
+		global_tax_modifier = 0.15
+	}
+	gengzheyouqitian = {
+		production_efficiency = 0.15
+	}
+	xifangjidujiao = {
+		diplomatic_upkeep = 2
+		improve_relation_modifier = 0.5
+	}
+	minzujiefang = {
+		global_manpower_modifier = 0.15
+		range = 0.5
+	}
+}

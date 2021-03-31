@@ -1,0 +1,190 @@
+graphical_culture = muslimgfx
+color = {
+  229
+  57
+  200
+}
+historical_idea_groups = {
+  early_religious_ideas
+  early_trade_ideas
+  early_mil_ideas
+  early_adm_ideas
+  xingjun_ideas
+  zhongqi_ideas
+  qianyi_ideas
+  kaituo_ideas
+  defensive_ideas
+  offensive_ideas
+  administrative_ideas
+  economic_ideas
+  trade_ideas
+  religious_ideas
+  diplomatic_ideas
+  spy_ideas
+}
+historical_units = {
+  persian_footsoldier
+  persian_cavalry_charge
+  persian_shamshir
+  qizilbash_cavalry
+  tofongchis_musketeer
+  topchis_artillery
+  afsharid_reformed
+  afsharid_reformed_infantry
+  muslim_mass_infantry
+  muslim_dragoon
+  persian_rifle
+}
+monarch_names = {
+  "Õlyrk ?–Ì‘ #0" = 10  # Fath Alî #0
+  "?–æ FzUFz·V #0" = 10  # Aga Muhammad #0
+  "m+Yyr ?–Ì‘ #0" = 10  # Loft Ali #0
+  ">ÕlS #0" = 10  # Ja'far #0
+  "?–Ì‘ «ƒÉb·V #0" = 10  # 'Ali Morâd #0
+  "ØUØ·V („·Vk #0" = 10  # Mohammad Sâdiq #0
+  "ØUØ·V ?–Ì‘ #0" = 10  # Mohammad Ali #0
+  "?–^ ÒR Õlyrk #0" = 10  # Abu'l Fath #0
+  "aSÌ‘ÆY #0 Wl" = 10  # Karim #0 Khân
+  "³uêS s|SNb #0" = 5  # Nâder Mirza #0
+  "™lÈTœ #0" = 10  # Shâh Rukh #0
+  "fjSÉb1k #0" = 10  # Ebrâhim #0
+  "?–·VÒR #0 ™l?–" = 10  # 'Âdel #0 Shâh
+  "³u·VS #0 ™l?–" = 10  # Nâder #0 Shâh
+  "áwiàV #0" = 10  # Hosayn #0
+  "Ï‚±ƒüf #0" = 20  # Solaymân #0
+  "(„òƒ #0" = 15  # Safi #0
+  "?–ôT¯e #0" = 30  # 'Abbâs #0
+  "«ƒ?–6w·V #0" = 10  # Mu'ayyed #0
+  "FzêNyQ #0" = 20  # Mu'izz #0
+  "œ“^  #0" = 30  # Rukn #0
+  "^SyQ #0" = 30  # Shirzil #0
+  "?–Ì‘ #0" = 30  # Ali #0
+}
+leader_names = {
+  "(„Ôk)R"  # Sabiri
+  ">)R)R"  # Jalili
+  "?–PŸyQ"  # Azizi
+  "™l^"  # Shahy
+  "ãNO"  # Daei
+  "aS‹e"  # Qazai
+  "¾SN·V"  # Dalwand
+  "?–ÉbÌ‘"  # Ahrari
+  "Õl‚„s|"  # Fatemi
+  "(„Ôkyr"  # Sabet
+  "‰R(„Ì‘"  # Ansari
+}
+ship_names = {
+  "?–ôTşVS"  # Abathur
+  "šNSV aS‰šN"  # Adamn Kasia
+  "Œ‚¯e›s ãNO"  # Aesma Daeva
+  "?– R¯e"  # Agas
+  "?–Ì‘üf"  # Ahriman
+  "?–áwÉb"  # Ahura
+  "?–áwÉb lšyQ¾"  # Ahura Mazda
+  "?–áwÉb<S"  # Ahurani
+  "Å–)R‰Rüf"  # Airyaman
+  "?–aS id±"  # Aka Manah
+  "?–ÉbN"  # Aladdin
+  "?–ÉbşVÆY"  # Allatum
+  "?–lš™l¯eXo"  # Amashaspan
+  "?–…h÷–TXyr"  # Ameratat
+  "?–…h™l0¯emVTX"  # Amesha Spentas
+  "‰RZ^TX"  # Anahita
+  "‰RåTÉbüfËu"  # Angra Mainyu
+  "FyYe•wO"  # Anjuman
+  "?–^ÆY-³uTXyr"  # Apam-natat
+  "?–^eY(„"  # Apaosa
+  "?–÷–·Vôu"  # Aredvi
+  "?–Ì‘ÀNTXyr"  # Arishtat
+  "?–S¦‚„"  # Armaiti
+  "?–S™lKQ"  # Arsaces
+  "?–™l æt‰TX"  # Asha vahista
+  "?–¯eüf"  # Asman
+  "?–¯eXb ôu¾şV"  # Asto Vidatu
+  "?–¯eyrætyr-ÃW÷–TX"  # Astvat-Ereta
+  "?–TXS"  # Atar
+  "?–PŸ ¾ÈTaS"  # Azi Dahaka
+  "ôT R"  # Baga
+  "ôTkÉbÆY"  # Bahram
+  "^Ì‘KO¯e"  # Burijas
+  "^ÀNÅ–¯eTX"  # Bushyasta
+  "^Å–¯eTX"  # Buyasta
+  "aSÆYW¯e"  # Camros
+  "¾ÃW³u"  # Daena
+  "ãNO"  # Daevas
+  "?–ÈTaS"  # Ahaka
+  "¾kÈTKQ"  # Dahhak
+  "‚„Z"  # Dena
+  "ĞcFZ"  # Dev
+  "êôu"  # Diwe
+  "oƒ4l"  # Drug
+  "·Væt¯e^"  # Drvaspa
+  "‰Lq„vR."  # Frashegird
+  "VÉbæt^¯e"  # Fravashis
+  "R·V^tæt"  # Gandarewa
+  " ReY-¯w^t³u"  # Gao-kerena
+  " R¦u›s·V"  # Gayomard
+  " R¦u›syr"  # Gayomart
+  "Geus-Tasan"
+  "Geus-Urvan"
+  "jŒ»"  # Haoma
+  "áwSætTXyr"  # Haurvatat
+  "LNÈ"  # Humay
+  "kætS"  # Hvar
+  "NS<hvQ¯eTX"  # Hvarekhshaeta
+  "àV¾S"  # Indar
+  "àVN–W"  # Indra
+  "Izha"
+  ">ÆY^·V"  # Jamshid
+  "Jeh"
+  "aS^nfTX"  # Karshipta
+  "KO×k"  # Kavi
+  "ÈT‡U"  # Khara
+  "k™lyrÉb ætOÌ‘šN"  # Khshathra vairya
+  "Kundrav"
+  "lšk"  # Mah
+  "Mahre"
+  "Mahrianag"
+  "lšªR"  # Manu
+  "Manuchihir"
+  "mRoS"  # Mao
+  "Mashyane"
+  "Mashye"
+  "Menog"
+  "ÆRyrÉb"  # Mithra
+  "Nairyosangha"
+  "Nanghaithya"
+  "Neriosang"
+  "„U^y"  # Ormazd
+  ">mÌ‘¯e"  # Peris
+  "Peshdadians"
+  "Rapithwin"
+  "ÉbÀNªR"  # Rashnu
+  "œ¯eTXÆY"  # Rustam
+  "Saurva"
+  "Simurgh"
+  "Spenta Mainyu"
+  "Sraosa"
+  "Srosh"
+  "Tawrich"
+  "Thunaupa"
+  "Tistrya"
+  "Tushnamatay"
+  "Vanant"
+  "OÖN"  # Vata
+  "LNœ¯eÉb<h³u"  # Verethragna
+  "ƒláw id±"  # Vohu Manah
+  "Vouruskasha"
+  "Å–ÆY"  # Yam
+  "Yasht"
+  "Yazata"
+  "Yezidi"
+  "Yima"
+  "NbÌ‘"  # Zal
+  "^"  # Zam
+  "Zam-Armatay"
+  "ågÉbşV¯eyrÉb"  # Zarathustra
+  "Zarich"
+  "Zend-Avesta"
+  "ZiSáQ"  # Zurvan
+}

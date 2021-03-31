@@ -1,0 +1,40 @@
+CTG_ideas = {
+	start = {
+		trade_efficiency = 0.1
+		tolerance_own = 2
+	}
+
+	bonus = {
+		colonists = 1
+	}
+	
+	trigger = {
+		tag = CTG
+	}
+	
+	free = yes
+	
+	rebuild_carthage_city = {
+		build_cost = -0.1
+	}
+	hannibal = {
+		army_tradition = 1
+	}
+	dominate_west_mediterranean = {
+		global_ship_trade_power = 0.15
+		global_sailors_modifier = 0.15
+	}
+	north_african_agriculture = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	maritime_tradition = {
+		naval_forcelimit_modifier = 0.2
+		navy_tradition_decay = -0.01
+	}
+	punic_wars_experience = {
+		prestige_from_land = 0.2
+	}
+	phoenician_colonization = {
+		global_colonial_growth = 15
+	}
+}

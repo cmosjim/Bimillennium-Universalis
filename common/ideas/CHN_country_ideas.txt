@@ -1,0 +1,45 @@
+CHN_ideas = {
+	start = {
+	    discipline = 0.05
+		development_cost = -0.2
+	}
+	
+	bonus = {
+	production_efficiency = 0.2
+	}
+	
+	trigger = {
+		tag = CHN
+		#OR = {
+		#	government = communist_dictatorship
+		#	government = socialist_republic
+		#}
+	}
+	free = yes		# will be added at load
+	
+	CHN_1_idea = {
+		manpower_recovery_speed = 0.30
+		fire_damage_received = -0.15
+	}
+	CHN_2_idea = {
+		technology_cost = -0.15
+	}
+	CHN_3_idea = {
+	global_tax_modifier = 0.3
+	}
+	CHN_4_idea = {
+		stability_cost_modifier = -0.50
+		land_morale = 0.3
+	}
+	CHN_5_idea = {
+	build_cost = -0.2
+	}
+	CHN_6_idea = {
+	prestige = 2
+	improve_relation_modifier = 0.2
+	}
+	CHN_7_idea = {
+	leader_land_fire = 1
+	army_tradition = 1
+	}
+}

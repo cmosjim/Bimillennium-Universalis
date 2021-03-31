@@ -1,0 +1,50 @@
+WHAZON_ideas = {
+	start = {
+		land_morale = 0.15
+		discipline = 0.05
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.33
+	}
+
+	trigger = {
+		OR = {
+			tag = LBB
+			tag = TSU
+			tag = WNF
+			tag = TSS
+			tag = DZ1
+			#tag = LT1
+			tag = HS2
+			tag = HH2
+			tag = ZO1
+			tag = GN2
+			tag = XX2
+		}
+	}
+	free = yes
+
+	thousands_of_lakes = {
+		global_manpower_modifier = 0.1
+	}
+	Hunan_food = {
+		land_maintenance_modifier = -0.1
+	}
+	complex_river_sys = {
+		defensiveness = 0.2
+	}
+	battleground = {
+		army_tradition = 0.4
+	}
+	oracle_found = {
+		culture_conversion_cost = -0.1
+	}
+	yuzhou = {
+		war_exhaustion_cost = -0.15
+	}
+	qiu_regulus = {
+		trade_efficiency = 0.1
+		stability_cost_modifier = -0.1
+	}
+}

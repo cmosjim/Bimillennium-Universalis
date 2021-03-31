@@ -1,0 +1,120 @@
+graphical_culture = westerngfx
+color = {
+  173
+  176
+  113
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  zhongqi_ideas
+  rongren_ideas
+  shenquan_ideas
+  trade_ideas
+  defensive_ideas
+  religious_ideas
+  economic_ideas
+  diplomatic_ideas
+  innovativeness_ideas
+  spy_ideas
+  offensive_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  prussian_frederickian
+  prussian_uhlan
+  prussian_drill
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "TNªlZ #0" = -1  # Georgina #0
+  "aS…b #0" = -1  # Carla #0
+  "âRçS #0" = -1  # Amber #0
+  "ÉlSV…b∆Y #0" = 0  # Wolfram #0
+  "ÙuS≥u #0" = 0  # Werner #0
+  "áeVrS #0" = 0  # Wenzel #0
+  "ÉlSyr #0" = 0  # Walter #0
+  "XblöØe #0" = 0  # Thomas #0
+  "Øeyr·Q #0" = 0  # Stefan #0
+  "Pü<hVÃë∑V #0" = 0  # Siegfried #0
+  "˜ñôÑ∑V #0" = 0  # Reimund #0
+  "eYØeaS #0" = 0  # Oskar #0
+  "löÇÑöNØe #0" = 0  # Mathias #0
+  "mTXS #0" = 0  # Lothar #0
+  "KQ±É3u(É #0" = 0  # Kreszenz #0
+  "aSØe^S #0" = 0  # Kaspar #0
+  "¶umt+Y #0" = 0  # Joseph #0
+  "OÉl #0" = 0  # Ivo #0
+  "OâYS #0" = 0  # Isidor #0
+  "O(ÑKQ #0" = 0  # Isaak #0
+  "kç)RçSyr #0" = 0  # Heribert #0
+  "kçSFzyr #0" = 0  # Helmut #0
+  "»Tu #0" = 0  # Hagan #0
+  "<h˜ñbS #0" = 0  # Gregor #0
+  "byr)R^ #0" = 0  # Gottlieb #0
+  "<h»T∑V #0" = 0  # Gerhard #0
+  "√WÃë^ #0" = 0  # Erich #0
+  "åÇSlö #0" = 0  # Elmer #0
+  "√W=O»T∑V #0" = 0  # Eberhard #0
+  "9N<SØe #0" = 0  # Denis #0
+  "^KQ»T∑V #0" = 0  # Burkhard #0
+  "ÙT≥uÙTØe #0" = 0  # Barnabas #0
+  "?ñS^˜ñ^yr #0" = 0  # Albrecht #0
+  "ÚÉ)Rnf #0" = 5  # Philipp #0
+  "i`<hS=Oyr #0" = 5  # Engelbert #0
+  "ÚÉ)Rnf #8" = 5  # Philipp #8
+  "aSS V˜ñ∑VÃë^ #0" = 10  # Karl Friedrich #0
+  "?ñéU	tØe #0" = 10  # Achilles #0
+  "Z…^ #0" = 20  # Wilhelm #0
+  "¶u Z…^ #0" = 20  # Johann Wilhelm #0
+  "¶u?ñ^∆Y #0" = 20  # Joachim #0
+  "?ñSê+Y #0" = 20  # Adolf #0
+  "¶u #0" = 60  # Johann #0
+}
+leader_names = {
+  "âR<hÖQyr"  # Angenendt
+  "çKQS"  # Becker
+  "ç¨N"  # Becking
+  "ØQ∑‹b˙ã∆Y"  # von Beinom
+  "∑^«ë"  # Contze
+  "KQWÈZ!X"  # Cronenberg
+  "∑VÖQÓh"  # Dennessen
+  "∑VKQÓh"  # Derksen
+  "i`<hS^W≥u"  # Engelbronner
+  "ó“RS"  # Holler
+  "ˆ^Øeyr"  # Jenster
+  "Kroeger"
+  "Meurs"
+  "Nagel"
+  "Rundt"
+  "Sinsteden"
+  "Van Gelder"
+  "von Oven"
+}
+ship_names = {
+  "Arnold I von Kleve"
+  "Arnold II von Kleve"
+  "Adolf von Kleve"
+  "¶u I ØQ KQ±ÉÉl"  # Johann I von Kleve
+  "¶u II ØQ KQ±ÉÉl"  # Johann II von Kleve
+  "Margarete"
+  "Agnes"
+  "Elisabeth"
+  "Mathilde"
+  "Dietrich von Kleve"
+  "Gerhard von Kleve"
+}
+army_names = {
+  "$PROVINCE$õQ"  # Armee von $PROVINCE$
+}

@@ -1,0 +1,124 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 28  78  122 }
+
+historical_idea_groups = {
+	early_religious_ideas
+	early_trade_ideas
+	early_mil_ideas
+	early_adm_ideas
+	xingjun_ideas
+	yuanyang_ideas
+	xingshang_ideas
+	defensive_ideas
+	offensive_ideas
+	exploration_ideas
+	administrative_ideas
+	economic_ideas
+	trade_ideas
+	religious_ideas
+	diplomatic_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	italian_condotta
+	spanish_tercio
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+}
+
+monarch_names = {
+	"KQ³Rê #0" = 30
+	"‰RXb<S¯e #0" = 30
+	"lšKQ` #0" = 30
+	"i®vĞc #0" = 30
+	"lšKQÆR¯e #0" = 20
+	"iV^t¯e #0" = 20
+	"ØšS‰v #0" = 20
+	"şVÉbw #0" = 10
+	"ôuÉbÑN #0" = 10
+	"eYÒRo‚ #0" = 10
+	"TëXfWN'Y^ #0" = 10
+	"·^¯efWNl #0" = 10
+	"2S)R‰R #0" = 10
+	"æt&OĞc<S‰R #0" = 10
+	"ôuyrÌ‘LN¯e #0" = 10
+	"^şV¯e #0" = 0
+	"ĞcşV¯e #0" = 10
+	"şVÆR„U #0" = 10
+	"·^ƒ·V #0" = 10
+	"2S)R‰RªR¯e #0" = 10
+	"lšKQÌ‘ªR¯e #0" = 10
+	"—¯e‚„)R‰R #0" = 10
+	" RÌ‘i`ªR¯e #0" = 10
+	"fĞcbS¯e #0" = 10
+	"TX‰N– #0" = 10
+	"ÖvLN¯e #0" = 10
+	"lš“^¯e #0" = 0
+	"aSœ¯e #0" = 0
+	"aSÌ‘ªR¯e #0" = 0
+	"æt±ƒÌ‘LN¯e #0" = 0
+	"aS)RäSÉb #0" = 0
+	"<hHYLN¯e #0" = 0
+	"fşV¯e #0" = 0
+	"ĞcÌ‘LN¯e #0" = 0
+	"bSaSLN¯e #0" = 0
+	"œúWLN¯e #0" = 0
+	"…hyrbS¯e #0" = 0
+	"¦umt+Y¯e #0" = 0
+	"eYTís #0" = 0
+	"1g)R¯e #0" = 0
+	"KQ³RÄr #0" = 0
+}
+
+leader_names = {
+        Maximus Chlorus Gothicus Germanicus Gallus Alexander Pius Barbula Lepidus Macedonicus
+	Domitius Minor Major Corbulo Acilius Aebutius Aegidius Africanus Agricola Aquillius 
+	Arrian Artorius Asinius Aulus Atilius Aureolus Balbus Barbatio Bassus Bonifacius 
+	Bonosus Caelicus Caecinus Calpurnius Carrinas Cassius Cicero Civilis Caudex Clodius
+	Coriolanus Cinna Cornelius Coruncanius Curius Decius Dexippus Didius Domitius
+	Drusus Duilus Fabius Flaminius Fimbria Fufius Fullofaudes Fulvius Furius Fuscus
+	Gabinius Galba Gellius Hosidius Laelius Larcius Licinius Lucullus Ligarius Livius 
+	Lollius Lutatius Mallius Manlius Marcius Mummius Maximianus Norbanus Opimius Ostorius
+	Papirius Paulinus Perperna Petillius Petronius Piso Plautius Pompeius Pomponius
+	Pompillus Postumius Primus Quietus Quintilius Quinticus Roscius Rutilius Salvidienus
+	Scribonius Sejanus Sempronius Sergius Sertorius Servilius Sextus Sisenna Silva Sosius
+	Stilicho Suetonius Sulla Sulpicus Terentius Trebonius Ursicinus Vipsanius
+}
+
+ship_names = {
+	Jupiter Juno Neptunus Minerva Mars Venus Apollon Diana Vulcan Mercurius Ceres
+	Tellus Sol Luna Liber Robigus Flora Libera Fauni Dryad Saturnus Janus Genius Orcus
+	Vesta Lucina Augustus Aurora Aura Bacchus Carmenta Carna Clementia Cloacina Collatina
+	Concordia Cuba Cunina Cupid Cura Cybele Decimata Dea Devera Disciplina Discordia
+	Domiduca Egeria Empanda Epona Fama Fauna Faustitas Febris Fecunditas Felicitas
+	Ferentina Feronia Fessonia Fides Fortuna Fraus Furrina Hercules Hespera Hilaritas
+	Honos Hora Hostilina Honoria Inuus Invidia Iris Justitia Juturna Juventas Larentina
+	Laverna Levana Liberalitas Libertas Libitina Lima Lua Meditrina Mellona Messia Molae
+	Moneta Murcia Muta Necessitas Nemesis Nerio Neverita Nona Nox Orbona Palatua Partula
+	Patelana Pax "Pax Romana" Pellonia Pietas Pluto Pomona Porrima Portunes Postverta
+	Potina Proserpina Providentia Pudicitia Puta Quiritis Roma Rumina Rusina Salacia
+	Salus Sancus Secia Securitas Segetia Semonia Sentia Somnus Sors Spes "Stata Mater"
+	Statina Strentua Suadela Summanus Tempestas Terra Tiberinus Tranquillitas Trivia
+	Uranus Vacuna Vallonia Veritas Victoria Volturnus Virtus "Vica Pota" Virbinus Volumnas
+	Volutina
+}
+
+army_names = {
+	"Legio I" "Legio II" "Legio III" "Legio IV" "Legio V" "Legio VI" "Legio VII" "Legio VIII" "Legio IX" "Legio X" "Legio XI" "Legio XII" "Legio XIII" "Legio XIV" "Legio XV" "Legio XVI" "Legio XVII" "Legio XVIII" "Legio XIX" "Legio XX" "Legio XXI" "Legio XXII" "Legio XXIII" "Legio XXIV" "Legio XXV" "Legio XXVI" "Legio XXVII" "Legio XXVIII" "Legio XXIX" "Legio XXX" "Legio XXXI" "Legio XXXII" "Legio XXXIII" "Legio XXXIV" "Legio XXXV" "Legio XXXVI" "Legio XXXVII" "Legio XXXVIII" "Legio XXXIX" "Legio XL" "Legio XLI" "Legio XLII" "Legio XLIII" "Legio XLIV" "Legio XLV" "Legio XLVI" "Legio XLVII" "Legio XLVIII" "Legio XLIX" "Legio L" 
+}
+
+
+fleet_names = {
+	"Classis I" "Classis II" "Classis III" "Classis IV" "Classis V" "Classis VI" "Classis VII" "Classis VIII" "Classis IX" "Classis X" "Classis XI" "Classis XII" "Classis XIII" "Classis XIV" "Classis XV" "Classis XVI" "Classis XVII" "Classis XVIII" "Classis XIX" "Classis XX" "Classis XXI" "Classis XXII" "Classis XXIII" "Classis XXIV" "Classis XXV" "Classis XXVI" "Classis XXVII" "Classis XXVIII" "Classis XXIX" "Classis XXX" "Classis XXXI" "Classis XXXII" "Classis XXXIII" "Classis XXXIV" "Classis XXXV" "Classis XXXVI" "Classis XXXVII" "Classis XXXVIII" "Classis XXXIX" "Classis XL" "Classis XLI" "Classis XLII" "Classis XLIII" "Classis XLIV" "Classis XLV" "Classis XLVI" "Classis XLVII" "Classis XLVIII" "Classis XLIX" "Classis L"
+}
+
+

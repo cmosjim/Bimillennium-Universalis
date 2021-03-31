@@ -1,0 +1,40 @@
+MGH_ideas = {
+	start = {
+		cavalry_power = 0.1
+		ae_impact = -0.1
+	}
+	
+	bonus = {
+		governing_capacity = 250
+	}
+	
+	trigger = {
+		tag = MGH
+	}
+
+	free = yes
+	
+	shilirong = {
+		administrative_efficiency = 0.10
+	}
+	meitan = {
+		global_spy_defence = 0.15
+		spy_offence = 0.15
+	}
+	auwang_zoushuo = {
+		years_of_nationalism = -5
+	}
+	indo_cilafriend = {
+		global_trade_power = 0.20
+		trade_range_modifier = 0.1
+	}
+	fuojeouci = {
+		missionaries = 1
+	}
+	gumolo = {
+		state_maintenance_modifier = -0.15
+	}
+	morodrrunyir = {
+		land_forcelimit_modifier = 0.15
+	}	
+}

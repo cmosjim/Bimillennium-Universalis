@@ -1,0 +1,134 @@
+graphical_culture = westerngfx
+color = {
+  90
+  90
+  0
+}
+historical_idea_groups = {
+  early_religious_ideas
+  early_mil_ideas
+  early_trade_ideas
+  early_adm_ideas
+  xingjun_ideas
+  kaituo_ideas
+  junqu_ideas
+  naval_ideas
+  exploration_ideas
+  trade_ideas
+  defensive_ideas
+  economic_ideas
+  innovativeness_ideas
+  offensive_ideas
+  quality_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  dutch_maurician
+  austrian_tercio
+  austrian_grenzer
+  french_bluecoat
+  french_dragoon
+  french_impulse
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "0tòƒ #0" = -10  # Sophie #0
+  "aSW3t #0" = -10  # Caroline #0
+  "-^3t #0" = -10  # Céline #0
+  "lš¬O #0" = -10  # Manon #0
+  "1g‰ƒ #0" = -10  # Julie #0
+  "(„Éb #0" = -10  # Sarah #0
+  "³RÉb #0" = -10  # Laura #0
+  "›sKN #0" = -10  # Marie #0
+  "ZÉ^ #0" = 10  # Willem #0
+  "œyr<hS #0" = 10  # Rutger #0
+  "W<h #0" = 10  # Roger #0
+  "W=Oyr #0" = 10  # Robert #0
+  "eYpQY #0" = 10  # Orland #0
+  "s|GkS #0" = 10  # Michel #0
+  "ïf #0" = 10  # Louis #0
+  "ï·VôuKQ #0" = 10  # Lodewijk #0
+  "±ƒf³uS #0" = 10  # Léonard #0
+  "aS¯eÀs #0" = 10  # Kasper #0
+  "aS÷–S #0" = 10  # Karel #0
+  "¦uğ<S¯e #0" = 10  # Johannes #0
+  "å‚?–S #0" = 10  # Joachim #0
+  "©‹ #0" = 10  # Jan #0
+  "N<h #0" = 10  # Hughes #0
+  "b·VVÌ‘·V #0" = 10  # Godfried #0
+  "<hÈT·V #0" = 10  # Gerhard #0
+  "ípÉbS #0" = 10  # Gérard #0
+  "lš‚„„S #0" = 10  # Mathieu #0
+  "Vg0tæt #0" = 10  # Francois #0
+  "‡eîhyr #0" = 10  # Vincent #0
+  "ÃW…Q¯eyr #0" = 10  # Ernest #0
+  "KQÌ‘¯e‚„‰R #0" = 10  # Christian #0
+  "?–³R·V #0" = 10  # Arnaud #0
+  "pQ=Oyr #0" = 10  # Lambert #0
+  "ªu'SÆY #0" = 10  # Guillaume #0
+  "‰RN<S #0" = 10  # Anthony #0
+  "W¾R #0" = 10  # Robin #0
+  "4bôu #0" = 10  # David #0
+  "ïQ‡e #0" = 10  # Kevin #0
+  "lšKQ‰s| #0" = 10  # Maxime #0
+  "<SäSÉb #0" = 10  # Nicolas #0
+  "Xblš¯e #0" = 10  # Thomas #0
+  "1g)R‰R #0" = 10  # Julien #0
+}
+leader_names = {
+  "iOyr¯e"  # Peeters
+  "Å–îh"  # Janssens
+  "…h¯e"  # Maes
+  "Å–T^"  # Jacobs
+  "«ƒÕn¯e"  # Mertens
+  "ZÉ^¯e"  # Willems
+  "KQÉb¯e"  # Claes
+  "ƒlyr¯e"  # Wouters
+  "·V ¯e…h"  # De Smet
+  "æ—SØg"  # Vermeulen
+  "œZS¯e"  # Pauwels
+  "?–S(ƒ"  # Dubois
+  "küf¯e"  # Hermans
+  "?–S(ƒ"  # Aerts
+  "s|GkS¯e"  # Michiels
+  "pQ=Oyr"  # Lambert
+  "·V ƒl¯e"  # De Vos
+  "¯e…h"  # Smets
+  "jg¦"  # Dupont
+  "·V KQ±ƒS"  # De Clercq
+  "·V¯e…h"  # Desmet
+  "¨N·VÌ‘KQ¯e"  # Hendrickx
+  "ƒ ¾Ø"  # Van Damme
+  "òS‚„‡e¯e"  # Stevens
+  "·V ôTKQ"  # De Backer
+  "·Vƒl¯e"  # Devos
+  "lšN"  # Martin
+  "^X<hS¯e"  # Segers
+  "Y™„"  # Dumont
+  "ƒlyr¯e"  # Wauters
+  "ÒRWO"  # Leroy
+  "ÒRKQ±ƒS"  # Leclercq
+  "‰™„"  # Simon
+  "·V ÑyKQ"  # De Cock
+}
+ship_names = {
+  "^œ^XS"  # Brussel
+  "9N·V"  # Dender
+  "jgS<SKQ"  # Doornik
+  "ÃWN9h"  # Edingen
+  "b·VVÌ‘·V"  # Godfried I
+  "¨N·VÌ‘KQ I"  # Hendrik I
+  "¨N·VÌ‘KQ ƒ œvl"  # Hendrik van Leuven
+  "lblQ5r"  # Hertog Jan
+  "¦uğZsYlQ5r"  # Hertogin Johanna
+  "lb I"  # Jan I
+  "…hk&O"  # Mechelen
+  "±Uai`"  # Namen
+  "òƒ)Rnf¯e ƒ 1W-âlS"  # Filips van Saint-Pol
+  "ıli`"  # Zenne
+}

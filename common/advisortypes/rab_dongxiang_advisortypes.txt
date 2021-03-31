@@ -1,0 +1,14 @@
+
+dongxiang = {
+	monarch_power = DIP
+	# Bonus
+    heavy_ship_power = 0.2
+	skill_scaled_modifier = {meritocracy = 0.25 }
+	chance = {
+		factor = 0
+	}
+	ai_will_do = {
+		factor = 1
+	}	
+}
+

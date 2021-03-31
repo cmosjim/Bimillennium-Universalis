@@ -1,0 +1,59 @@
+celestial_empire_guanliao = {
+	icon = "celestial_empire"
+	allow_normal_conversion = no
+	potential = {
+	is_subject_of_type = difang_vassal
+			has_reform = celestial_empire_guanliao		
+	}
+	monarchy = yes
+	heir = no
+	queen = no
+	legacy_equivalent = celestial_empire
+	maintain_dynasty = yes
+	allow_force_tributary = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	valid_for_new_country = no
+	nation_designer_cost = 10
+	royal_marriage = no
+	lock_level_when_selected = yes
+	nation_designer_trigger = {
+		culture_group = east_asian
+		OR = {
+			technology_group = chinese
+			technology_group = early_chinese
+		}	
+		capital_scope = {
+			OR = {
+				region = north_china_region
+				region = xinan_region
+				region = south_china_region
+			}
+		}
+	}
+
+	fixed_rank = 2
+	start_territory_to_estates = 0.9
+
+	modifiers = {
+		church_influence_modifier = -0.1
+		nobles_influence_modifier = -0.1
+		burghers_influence_modifier = -0.1		
+		prestige = 0.5
+	}
+	
+	ai = {
+		factor = 1000 # should always be picked if available
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		has_meritocracy = yes
+		factions = {}
+	}
+}
+

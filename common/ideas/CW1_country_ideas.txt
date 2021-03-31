@@ -1,0 +1,43 @@
+#northern xio
+CW1_ideas = {
+	start = {
+		discipline = 0.05
+		global_manpower_modifier = 0.2
+	}
+	
+	bonus = {
+		army_tradition = 1
+		cavalry_cost = -0.2
+	}
+	
+	trigger = {
+		tag = CW1
+	}
+
+	free = yes
+	
+	weidadelingxiu = {
+		prestige = 1
+		mercenary_cost = -0.2
+	}	
+	dulihuobi = {
+		global_tax_modifier = 0.15
+	}
+	sulianjunshizhichi = {
+		land_morale = 0.15
+	}
+	gun_out_regime = {
+		infantry_power = 0.1
+		artillery_power = 0.1
+	}	
+	constitution_chinese_soviet_republic = {
+		enemy_core_creation = 0.1
+		stability_cost_modifier = -0.1
+	}
+	lilunjichuwengu = {
+		core_creation = -0.25
+	}
+	moshoutudi = {
+		production_efficiency = 0.1
+	}	
+}

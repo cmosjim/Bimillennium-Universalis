@@ -1,0 +1,201 @@
+graphical_culture = africangfx
+color = {
+  135
+  144
+  180
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  defensive_ideas
+  trade_ideas
+  religious_ideas
+  quantity_ideas
+  offensive_ideas
+  spy_ideas
+  economic_ideas
+  quality_ideas
+}
+historical_units = {
+  african_spearmen
+  bantu_tribal_warfare
+  african_hill_warfare
+  adal_gunpowder_warfare
+  westernized_adal
+  adal_guerilla_warfare
+  african_somali_cavalry
+  african_abyssinian_cavalry
+  african_abyssinian_light_cavalry
+  african_hussar
+  african_dragoon
+}
+monarch_names = {
+  "Ï‚ÊsZ #0" = -1  # Susanna #0
+  "s|ÈTÃW‰ƒÑyS #0" = -1  # Michaelikol #0
+  "OKNƒ‹v #0" = -1  # Elisabet #0
+  "‰RZ #0" = -1  # Anna #0
+  "^âlÔk #0" = -1  # Shipopi #0
+  "ÃWWTX	TSúW #0" = -1  # Eirotatoungngilki #0
+  "¦uaS R #0" = -1  # Iôkaja #0
+  "¦uÉb #0" = -1  # Iôla #0
+  "¦uf…Q #0" = -1  # Iôminne #0
+  "i`ú‹ÃWi`b R #0" = -1  # Enoeionngoka #0
+  " R+R…Q #0" = -1  # Kapenê #0
+  "?–S Ryr #0" = -1  # Argate #0
+  "ÃW¯e›sÒR #0" = -1  # Eismalê #0
+  "?–pgpg #0" = -1  # Ajejê #0
+  "›sZ #0" = -1  # Maia #0
+  "ÄraSÉb #0" = -1  # Thekla #0
+  "ôTƒ…Q #0" = -1  # Pasine #0
+  "^^¯e…Q #0" = -1  # Papasinen #0
+  "i`9héZ #0" = -1  # Ngonnen #0
+  "‹Rb RÔkúW #0" = -1  # Songojapiki #0
+  "ÀsSƒ #0" = -1  # Persi #0
+  "Àsƒ #0" = -1  # Pesi #0
+  "O	TTX #0" = -1  # Pongita #0
+  "›s‰ƒ #0" = -1  # Mari #0
+  "›s)RšN #0" = -1  # Maria #0
+  "›sKNÈTÆY #0" = -1  # Mariham #0
+  "›sKNZ…h #0" = -1  # Mariamê #0
+  "ÃWú‹›sKNZ…h #0" = -1  # Enomariamê #0
+  "ôTÆYÔk! #0" = -1  # Pampigon #0
+  "?–…Q®Yb‰ƒ #0" = -1  # Anenikoli #0
+  " RâlÔk #0" = -1  # Kapopi #0
+  "Ëuôu‰ #0" = -1  # Neuesi #0
+  " RĞcäS¾ #0" = 0  # Kattikouda #0
+  "Fz^X¯e ÖveYSúWLN #0" = 0  # Môusês Geôrgiou #0
+  "ôTSXbmÈeY¯e #0" = 0  # Bartholomaios #0
+  "?–³u¯eTXîO¯e #0" = 0  # Anastasios #0
+  "¯ev–W‰SäS¾ #0" = 0  # Staurosilkouda #0
+  "^^›Ñy¾ #0" = 0  # Papasinkouda #0
+  "¯eTXÆYú‹¯eäS¾ #0" = 0  # Stamnoskouda #0
+  "NbÈTóg #0" = 0  # Zachariou #0
+  "’dæ)RšN¯e #0" = 0  # Zacharias #0
+  "ôTÉbKQ #0" = 0  # Barak #0
+  "LNSĞc R‚„ #0" = 0  # Urtigaddi #0
+  "U…Qb #0" = 0  # Taanego #0
+  "İOW #0" = 0  # Paul #0
+  "ÈTlš?Q #0" = 0  # Qamar #0
+  "…h R)R #0" = 0  # Megali #0
+  "ÃWşV #0" = 0  # Eittou #0
+  "0ŒNW¾ #0" = 0  # Shekanda #0
+  "^±ƒÔk #0" = 0  # Shirepi #0
+  "iOyrW #0" = 0  # Petrou #0
+  "›sKNšNªR #0" = 0  # Marianou #0
+  "Ï‚Ñy(„ôT #0" = 0  # Soukousapa #0
+  "NbWè• #0" = 0  # Solomon #0
+  "ïaS‰ #0" = 0  # Loukasi #0
+  "^Xlšè• #0" = 0  # Semamun #0
+  "yr<SÌ‘ #0" = 0  # Tenyri #0
+  "lš^X #0" = 0  # Masê #0
+  "SĞc #0" = 0  # Dauti #0
+  "XbÑ‘±ôu #0" = 0  # Tokinnaue #0
+  "lšeu…h #0" = 0  # Mariomê #0
+  "…hSÖv #0" = 0  # Merkê #0
+  "O¯e÷–S #0" = 0  # Israel #0
+  "O0t›Ñy¾ #0" = 0  # Iêsousinkouda #0
+  "šNÑy^ #0" = 0  # Iakob #0
+  "jgaS‰ #0" = 0  # Doukasi #0
+  "i` Rnf±ƒ #0" = 0  # Ngapre #0
+  "i` RÃWS #0" = 0  # Engngaeil #0
+  "LNTXS #0" = 0  # Outtal #0
+  "eYW^XS #0" = 0  # Orôsel #0
+  "s|—gäS¾ #0" = 0  # Milinkouda #0
+  "lš—gäS¾ #0" = 0  # Marinkouda #0
+  "lšKN6w¦u #0" = 0  # Marieio #0
+  "i`	T‰ĞcÑyS #0" = 0  # Ngissitikol #0
+  "|V—V #0" = 0  # Petri #0
+  "eY—gªRSTX #0" = 0  # Orinourta #0
+  "eYœäS¾ #0" = 0  # Orounkouda #0
+  "LNSªRSTX #0" = 0  # Ournourta #0
+  "‹RbO #0" = 0  # Songoj #0
+  "¦u‚„‰ #0" = 0  # Iôdisi #0
+  "?–TNÉb #0" = 0  # Ajola #0
+  "Ñy¯elš #0" = 0  # Kosma #0
+  "<heYS	T #0" = 0  # Georgios #0
+  "O(„ïQ #0" = 0  # Isakê #0
+  "Fzáw…hĞc #0" = 0  # Mouhoumeti #0
+  "kÌ‘¯eXbyW¯e #0" = 0  # Christophoros #0
+  "ÈTÃWS‹Rb R #0" = 0  # Chaêlsongoja #0
+  "¦u‰R<S¯e #0" = 0  # Ioannes #0
+  "s|ÈTÃWSÑy #0" = 0  # Michaêlko #0
+  "…h“^Ì‘eY¯e #0" = 0  # Merkourios #0
+  "…h³u #0" = 0  # Mena #0
+  "LNœôu #0" = 0  # Ourouwi #0
+  "LNœÃWS #0" = 0  # Ourouel #0
+  "lš‰ #0" = 0  # Masi #0
+  "Xb¯eäSäS¾ #0" = 0  # Toskoukouda #0
+  "¯eyráQú‹¯e #0" = 0  # Stephanos #0
+  "‰™„ #0" = 0  # Simeon #0
+  "îhĞcÑyS #0" = 0  # Sentikol #0
+  "TN?–^X #0" = 0  # Joassê #0
+  "lšSĞcWiOW¯e #0" = 0  # Martyrophoros #0
+  "ôTôT(„ #0" = 0  # Papasa #0
+  "TXôTÉb #0" = 0  # Tapara #0
+  "OÏ‚ #0" = 0  # Isou #0
+  "Ï‚ÃWĞc #0" = 0  # Soueti #0
+  "^Ïg …h³u #0" = 0  # Papo Mena #0
+  "¾ÆY‰ #0" = 0  # Tamsi #0
+  "6wÏ‚àVäS¾ #0" = 0  # Iêsouinkouda #0
+  "¾S…h #0" = 0  # Darme #0
+  "Ğc«ƒîO¯e #0" = 0  # Timotheos #0
+  "Fz^X¯e #0" = 0  # Môusês #0
+  "ÉbeS #0" = 0  # Raphael #0
+  "V·V^ #0" = 0  # Keddi #0
+  "ÖveYÉb Rpg #0" = 0  # Georagajê #0
+  " R^Ì‘ÃWS“^¾ #0" = 0  # Gabrielkouda #0
+  " R^R—gÑy¾ #0" = 0  # Gabrielinkouda #0
+  "<h÷–‰ #0" = 0  # Gourresi #0
+  "«ƒZ #0" = 0  # Mouna #0
+  "üfN–WÑy¾ #0" = 0  # Marturokouda #0
+  "lšÀN–w¾ #0" = 0  # Mashshouda #0
+  "lšaSÌ‘ #0" = 0  # Makari #0
+  "‰R·VÈpšN¯e #0" = 0  # Andreas #0
+  "‰RN<SeY #0" = 0  # Antoniou #0
+  "‰RN #0" = 0  # Anton #0
+  "?–SÕl #0" = 0  # Alpha #0
+  "‰RpgW¯e #0" = 0  # Aggelos #0
+  "‰Rwc¯eXbêS #0" = 0  # Aggestotil #0
+  "?– Râl¯e #0" = 0  # Agapos #0
+  "?–SúWeY¯e #0" = 0  # Aberkios #0
+  "šNSV #0" = 0  # Adama #0
+  "?–&O #0" = 0  # Aron #0
+  "?–=OÉbÆY #0" = 0  # Abraam #0
+  "SÃW·V #0" = 5  # Daueid #0
+  "ôTÔk #0" = 5  # Papi #0
+  "³u¯eÌ‘ #0" = 5  # Nasri #0
+  "ôT‰S #0" = 5  # Basil #0
+  "İOW¯e #0" = 10  # Paulos #0
+  "‰‚„ #0" = 20  # Siti #0
+  "¦uÃWS #1" = 20  # Ioel #1
+  "ÖveYSúWLN  #0" = 30  # Geôrgiou  #0
+}
+leader_names = {
+  "?–^·V"  # Abboud
+  "¯Q"  # Fung
+  " Rg"  # Garang
+  "ïQSÉb"  # Kayra
+  "ïQÉb"  # Keira
+  "ïQeuo‚"  # Kelueljang
+  "bSbS"  # Lugor
+  "ªRÃWS"  # Nuer
+  "–wS"  # Shol
+  "TXÈT"  # Taha
+}
+ship_names = {
+  "?–Ïg·VlšKQ"  # Apedemak
+  "¯e"  # Bes
+  "·Vfe"  # Dedwen
+  "?–&O¯eªR^—¯e"  # Arensnuphis
+  "?–™„"  # Amon
+  "üfjgÌ‘¯e"  # Mandulis
+  "?–è•<SS‚„¯e"  # Amenirdis
+  "TXôuípyr"  # Taweret
+  "Fzyr"  # Mut
+  "ğl™‚ªRyr"  # Tefnut
+  "kªRÆY"  # Khnum
+}

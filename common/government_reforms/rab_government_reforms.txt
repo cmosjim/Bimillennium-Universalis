@@ -1,0 +1,114 @@
+#中華君主立憲制
+chinese_parliament_monarchy = {
+	allow_normal_conversion = no
+	legacy_equivalent = chinese_parliament_monarchy_legacy 
+	icon = "chinese_parliament_monarchy"
+	maintain_dynasty = yes
+	allow_force_tributary = no
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_convert = no
+	lock_level_when_selected = yes  #add
+	start_territory_to_estates = 0.7
+	potential = {
+		has_reform = chinese_parliament_monarchy
+	}	
+	nation_designer_trigger = {
+		OR = {
+			technology_group = chinese
+			technology_group = early_chinese
+			technology_group = modern_chinese
+		}
+	}
+	modifiers = {
+		global_unrest = -2
+		infantry_cost = -0.15
+		cavalry_cost = -0.15
+		war_exhaustion = -0.1		
+		merchants = -1
+		diplomatic_reputation = -1
+
+	}
+
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		has_meritocracy = yes
+		factions = {}
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+#五代十國吳越國等尚未稱帝的國家
+chinese_feudatory_reform = {
+	allow_normal_conversion = no
+	legacy_equivalent = chinese_feudatory_reform_legacy 
+	icon = "chinese_feudatory_reform"
+	maintain_dynasty = yes
+	allow_force_tributary = no
+	valid_for_new_country = no
+	valid_for_nation_designer = no
+	allow_convert = no
+	lock_level_when_selected = yes  #add
+	start_territory_to_estates = 0.7
+	potential = {
+		has_reform = chinese_feudatory_reform
+	}	
+	nation_designer_trigger = {
+		OR = {
+			technology_group = chinese
+			technology_group = early_chinese
+		}
+	}
+	modifiers = {
+		infantry_cost = -0.1
+		cavalry_cost = -0.1
+		merchants = 1
+	}
+
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		has_meritocracy = yes
+		factions = {}
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+eastern_theocracy_reform = {
+	icon = "celestial_empire"
+	allow_normal_conversion = no
+	legacy_equivalent = theocratic_government 
+	queen = yes
+	heir = yes	
+	allow_force_tributary = no
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	allow_convert = no
+	allow_normal_conversion = no
+	lock_level_when_selected = yes 
+	potential = {
+		has_reform = eastern_theocracy_reform
+	}	
+	nation_designer_trigger = {
+		technology_group = chinese
+	}
+	modifiers = {
+		republican_tradition = 0.1
+		max_absolutism = -5
+		diplomatic_reputation = 1
+		diplomats = 1
+	}
+
+	ai = {
+		factor = 0
+	}
+	
+
+	
+}

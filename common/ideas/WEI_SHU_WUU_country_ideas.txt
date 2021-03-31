@@ -1,0 +1,127 @@
+
+WEI_ideas = {
+	start = {
+		tolerance_own = 2
+		land_morale = 0.1
+	}
+
+	bonus = {
+		leader_land_fire = 1
+	}
+
+	trigger = {
+		OR = {
+			tag = WEI
+			tag = TWE
+		}
+	}
+	free = yes
+
+	nine_rank_system_wei = {
+		advisor_pool = 1
+		fabricate_claims_cost = -0.25
+	}
+	cao_cao = {
+		diplomatic_reputation = 1
+	}
+	kaishu_wei = {
+		global_unrest = -1
+	}
+	seven_sages_of_the_bamboo_grove = {
+		culture_conversion_cost = -0.1
+	}
+	powerful_military_wei = {
+		manpower_recovery_speed = 0.20
+	}
+	wei_innovations = {
+		adm_tech_cost_modifier = -0.1
+	}
+	expansionist_policies_wei = {
+		core_creation = -0.25
+	}
+}
+
+SHU_ideas = {
+	start = {
+		diplomats = 1
+		prestige = 1
+	}
+
+	bonus = {
+		siege_ability = 0.2
+	}
+
+	trigger = {
+		OR = {
+			tag = SHU
+			tag = DS2
+		}	
+	}
+	free = yes
+
+	restorers_of_the_han_dynasty = {
+		land_morale = 0.1
+	}
+	shu_han = {
+		num_accepted_cultures = 2
+	}
+	zhuge_liang = {
+		mil_tech_cost_modifier = -0.1
+	}
+	efficient_defensive_army_shu = {
+		defensiveness = 0.25
+		hostile_attrition = 1.0
+	}
+	irrigation_and_road_building_shu = {
+		global_tax_modifier = 0.10
+	}
+	southern_trade_shu = {
+		merchants = 1
+	}
+	northern_expeditions_shu = {
+		army_tradition = 1
+		land_attrition = -0.15
+	}
+}
+
+WUU_ideas = {
+	start = {
+		enemy_core_creation = 0.5
+		global_tax_modifier = 0.10
+	}
+
+	bonus = {
+		merchants = 1
+	}
+
+	trigger = {
+	
+			tag = WUU
+			
+	}
+	free = yes
+
+	yangtze_river_wu = {
+		production_efficiency = 0.1
+	}
+	sun_quan = {
+		stability_cost_modifier = -0.1
+	}
+	warlord_state_wu = {
+		naval_morale = 0.2
+	}
+	trading_power_wu = {
+		discipline = 0.05
+	}
+	agricultural_focus_wu = {
+		global_manpower_modifier = 0.2
+	}
+	controlled_form_of_imperial_government = {
+		dip_tech_cost_modifier = -0.1
+		defensiveness = 0.2
+	}
+	increased_settlement_rate_wu = {
+		colonists = 1
+		global_colonial_growth = 20
+	}	
+}

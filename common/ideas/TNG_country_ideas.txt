@@ -1,0 +1,44 @@
+TNG_ideas = {
+	start = {
+		land_morale = 0.1
+		discipline = 0.05
+	}
+
+	bonus = {
+		mil_tech_cost_modifier = -0.1
+	}
+
+	trigger = {
+		OR = {
+			tag = TNG
+			tag = WZ1
+			tag = HT1
+			tag = NT1
+			tag = LY2
+		}
+	}
+	free = yes
+
+	military_expansionism_tang = {
+		army_tradition = 1
+		prestige = 1
+	}
+	classical_poetry_tang = {
+		land_maintenance_modifier = -0.15
+	}
+	tang_code = {
+		global_unrest = -2
+	}
+	imperial_examinations_tang = {
+		missionaries = 1
+	}
+	silk_road_reopened_tang = {
+		production_efficiency = 0.1
+	}
+	golden_age_of_culture_tang = {
+		cavalry_power = 0.15
+	}
+	woodblock_printing_tang = {
+		adm_tech_cost_modifier = -0.1
+	}
+}

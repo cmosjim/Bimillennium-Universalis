@@ -1,0 +1,176 @@
+graphical_culture = westerngfx
+color = {
+  241
+  252
+  151
+}
+revolutionary_colors = {
+  5
+  13
+  5
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_mil_ideas
+  xingjun_ideas
+  kaituo_ideas
+  junqu_ideas
+  trade_ideas
+  economic_ideas
+  defensive_ideas
+  innovativeness_ideas
+  spy_ideas
+  administrative_ideas
+  offensive_ideas
+  quantity_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  italian_condotta
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  austrian_white_coat
+  austrian_jaeger
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "›sÕlS¾ #0" = -1  # Mafalda #0
+  "&q^XTX #0" = -1  # Giosetta #0
+  "òƒ)R^ #0" = -1  # Filippa #0
+  ")n4tPO #0" = 0  # Vincenzo #0
+  "XbS8YXb #0" = 0  # Torquato #0
+  "÷–³uXb #0" = 0  # Renato #0
+  "nfm¯e|VW #0" = 0  # Prospero #0
+  "<SÑyÉb #0" = 0  # Nicola #0
+  "ÉbNbW #0" = 0  # Lazzaro #0
+  "1g)ReY #0" = 0  # Giulio #0
+  "ÌRSwPŸeY #0" = 0  # Fulgenzio #0
+  "i`<SeY #0" = 0  # Ennio #0
+  "¾ôu·V #0" = 0  # Davide #0
+  "Ñy‰«ƒ #0" = 0  # Cosimo #0
+  "?–b¯e‚„ú‹ #0" = 0  # Agostino #0
+  "?–SY^pQêú‹ #3" = 5  # Aldobrandino #3
+  "?–PO #8" = 5  # Azzo #8
+  "lš‰s|)RšNú‹ #0" = 10  # Massimiliano #0
+  "Oâl)RXb #0" = 10  # Ippolito #0
+  "	T‰R 9ãNÌ‘Ñy #0" = 10  # Gian Federico #0
+  "y÷–¯eXb #0" = 10  # Foresto #0
+  "òƒ)RXb #0" = 10  # Filiberto #0
+  "KQ±ƒè•yr #0" = 10  # Clemente #0
+  "aSm šN†SqS·VW #0" = 10  # Carlo Alessandro #0
+  "aSm #0" = 10  # Carlo #0
+  "ZS<SÕlPŸeY #0" = 10  # Bonifazio #0
+  "…QãNXb #0" = 10  # Benedetto #0
+  "ğlôTSY #0" = 15  # Tebaldo #0
+  "‰	T¯e™„Y #0" = 15  # Sigismondo #0
+  "ïf	T #0" = 15  # Luigi #0
+  "?–S…hÌ‘b #0" = 15  # Almerigo #0
+  "šN†SqS·VW #0" = 15  # Alessandro #0
+  "?–SXb #1 aSm" = 15  # Alberto #1 Carlo
+  "eYÔkPO #3" = 15  # Obizzo #3
+  "±ƒeY…Qm #0" = 20  # Leonello #0
+  "9êWSY #0" = 20  # Ferdinando #0
+  "R(„÷– #0" = 20  # Cesare #0
+  "ZSS0t #0" = 20  # Borso #0
+  "Ì‘³uSY #2" = 20  # Rinaldo #2
+  "<SÑym #2" = 20  # Niccolò #2
+  "ÃWSÑy±ƒ #0" = 60  # Ercole #0
+  "?–¹e0t #0" = 80  # Alfonso #0
+  "VgR¯eÑy #0" = 100  # Francesco #0
+}
+leader_names = {
+  "?–±ƒ<hÌ‘"  # Allegri
+  "ê ?–®všN<S ê ?–Ébb³u"  # d'Appiani d'Aragona
+  "?–ÉbSê<S"  # Araldini
+  "ê ?–SêPO…Q"  # di Ardizzone
+  "?–Ì‘eY¯eXb"  # Ariosto
+  "?–NPŸ<S"  # Avanzini
+  "ôTTNúW"  # Bacciochi
+  "ôTSÌ‘<S"  # Barberini
+  "ôT‚„¯e‚„"  # Battisti
+  "ZSšNSY"  # Boiardo
+  "¦TR^<S"  # Boncompagni
+  "¦TR^<S-bSYôu‰"  # Boncompagni-Ludovisi
+  "aSSaS<S<S"  # Calcagnini
+  "aSğl³u"  # Catena
+  "Ñy†–³u"  # Colonna
+  "·VS Ñy(„"  # del Cossa
+  "·V ÃW¯eyr"  # d'Este
+  "ÕlÌ‘<S"  # Farini
+  "ê ÕlS…Q^X"  # di Farnese
+  "ê 9ÉbÌ‘"  # di Ferrari
+  ">Sê<S"  # Giardini
+  "<hpQê"  # Grandi
+  "<hÉbPŸeY‰"  # Graziosi
+  "ÜtpQ·VÌ‘"  # Gualandelli
+  "äSp`Sê<S"  # Gucciardini
+  "m¯eúW"  # Loschi
+  "lšSÆY‰"  # Malmussi
+  "lš÷–¯eaSSúW"  # Marescalchi
+  "…hú‹‚„"  # Menotti
+  "s|ğl)R"  # Mitelli
+  "™„ğl“^Ñy)R"  # Montecuccoli
+  "™„ğl9SyrW"  # Montefeltro
+  "³uSê"  # Nardi
+  "ú‹Ôk)R"  # Nobili
+  "eYS·VÉbe"  # Ordelaffi
+  "^ôum<SaS"  # Pavironica
+  "iO÷–‚„"  # Peretti
+  "Õkb"  # Pico
+  "®veY"  # Pio
+  "pQb<S"  # Rangoni
+  "·V W‚„"  # de Roberti
+  "W^X‚„"  # Rossetti
+  "1WW(„"  # Santarosa
+  "ê Íu)R"  # di Sauli
+  "TX0t<S"  # Tassoni
+  "·V Xbm…hO"  # de Tolomei
+  "·VÉb Xb÷–"  # della Torre
+  "şVÉb"  # Tura
+  "ôuÌ‘‚„¯e"  # Viridis
+  "PŸ<S"  # Zini
+}
+ship_names = {
+  "?–SôT÷–Xb"  # Albareto
+  "‰R‰S«ƒ ¾ NW®veY…Q"  # Anselmo da Campione
+  "ôT&qætÉb"  # Baggiovara
+  "ZSS0t ·V ÃW¯eyr"  # Borso d'Este
+  "ÌR(„Éb«R"  # Ca'Fusara
+  "GYRW…Q"  # Cicerone
+  "GYTXú‹æt"  # Cittanova
+  "Ñy…mXb"  # Cognento
+  "Ñy±ƒ RÉb"  # Collegara
+  "ÃW¯eyr"  # Este
+  "^³uW³l"  # Fiumi Panaro
+  "^XúWšN³l"  # Fiumi Secchia
+  " R³uRXb"  # Ganaceto
+  "pQVpQÑy"  # Lanfranco
+  "±ƒ‰…m³u"  # Lesignana
+  "±ƒeYYàVú‹"  # Leodoino
+  "lšSNb)RšN"  # Marzaglia
+  "³uôuRm"  # Navicello
+  "ú‹WSXbÉb"  # Nonantola
+  "eYÔkPO ·V ÃW¯eyr"  # Obizzo d'Este
+  "âlS‚„ÒR"  # Portile
+  "i`PO‹s"  # re Enzo
+  "mVâl(„1WÍk"  # Santa Maria della Pomposa
+  "1WeYäS¯eN"  # Sant'Agostino
+  "1W‰R^W&q"  # Sant'Ambrogio
+  "1W‰R‰S«ƒ"  # Santo Anselmo
+  "1W¾lš0t"  # San Damaso
+  "1WU<Sú‹"  # San Donnino
+  "1WVgR¯eÑy"  # San Francesco
+  "1Wpgs|<SšNú‹"  # San Geminiano
+  "yr^teYSs|"  # Tre Olmi
+  "ôuÉbú‹æt"  # Villanova
+}
+army_names = {
+  "$PROVINCE$›Q"  # Armata di $PROVINCE$
+}

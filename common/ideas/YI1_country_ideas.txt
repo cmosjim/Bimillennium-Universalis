@@ -1,0 +1,39 @@
+YI1_ideas = {
+	start = {
+		defensiveness = 0.25
+		siege_ability = 0.1
+	}
+	
+	bonus = {
+		leader_land_fire = 1
+	}
+	
+	trigger = {
+		tag = YI1
+	}
+
+	free = yes
+	
+	notonlyzida = {
+		land_forcelimit_modifier = 0.1
+		global_manpower_modifier = 0.1
+	}
+	izigerchurenjen = {
+		infantry_power = 0.15
+	}
+	yi_guwen = {
+		stability_cost_modifier = -0.1
+	}
+	nulizidu = {
+		mercenary_cost = -0.1
+	}
+	yi_lisiyuju = {
+		land_morale = 0.1
+	}
+	rich_yi_area = {
+		global_tax_modifier = 0.15
+	}
+	junchenshijun = {
+		administrative_efficiency = 0.10
+	}	
+}

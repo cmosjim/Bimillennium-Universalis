@@ -1,0 +1,166 @@
+graphical_culture = easterngfx
+color = {
+  181
+  0
+  20
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  religious_ideas
+  defensive_ideas
+  spy_ideas
+  trade_ideas
+  offensive_ideas
+  economic_ideas
+  diplomatic_ideas
+  innovativeness_ideas
+}
+historical_units = {
+  bardiche_infantry
+  eastern_knights
+  slavic_stradioti
+  eastern_militia
+  ottoman_sekban
+  ottoman_reformed_spahi
+  ottoman_reformed_janissary
+  ottoman_toprakli_hit_and_run
+  ottoman_nizami_cedid
+  ottoman_toprakli_dragoon
+  eastern_skirmisher
+  eastern_uhlan
+  eastern_carabinier
+  ottoman_new_model
+  ottoman_lancer
+}
+monarch_names = {
+  "Õlyrs|S #0" = -1  # Fatmire #0
+  "^ÒRTX #0" = -1  # Blerta #0
+  "ESOW #0" = -1  # Gjylo #0
+  "!••^KQ #0" = 1  # Sadik #0
+  "^X)RÆY #0" = 1  # Selim #0
+  "Ï‚±ƒüf #0" = 10  # Sulejman #0
+  "Éblš9N #0" = 1  # Ramadan #0
+  "÷–pgnf #0" = 1  # Rexhep #0
+  "Ì‘Nb #0" = 1  # Riza #0
+  "i`^“^ #0" = 1  # Nxhiku #0
+  "Ébküf #0" = 1  # Rahman #0
+  "ïgÌ‘Ëe…mKQ #0" = 1  # Kreshnik #0
+  "è•S #0" = 1  # Mensur #0
+  "Ì‘ÀN·VÌ‘ #0" = 1  # Lishëndri #0
+  "ÈTúW #0" = 10  # Haxhi #0
+  "¾aS	T #0" = 10  # Dukagjin #0
+  "Œ‚‰v #0" = 1  # Edon #0
+  "ê›s&t #0" = 1  # Demaci #0
+  "ÃWê #0" = 1  # Edi #0
+  "Ébs|yQ #0" = 1  # Ramiz #0
+  "…hØyr #0" = 1  # Mehmet #0
+  "i`yS #0" = 1  # Enver #0
+  "NYlšS #0" = 1  # Qemal #0
+  "Fz¯eTXÕl #0" = 10  # Mustafa #0
+  "?–Ì‘ #0" = 10  # Ali #0
+  "ÈT)RÒR #0" = 1  # Halil #0
+  "yQ…mS #0" = 1  # Zenel #0
+  "OSÌ‘ #0" = 1  # Ylli #0
+  "‚æt #0" = 1  # Xhevat #0
+  "ôuKQY #0" = 1  # Viktor #0
+  "TX^S #0" = 1  # Tahir #0
+  "mtêÆY #0" = 1  # Shpëtim #0
+  "WKQ #0" = 1  # Rrok #0
+  "|V—V #0" = 5  # Pjetër #0
+  "iOS^Ì‘ÆY #0" = 1  # Përparim #0
+  "Às†–^ #1" = 5  # Pëllumb #1
+  "^¯eaS #0" = 1  # Pashko #0
+  "<SäSÉb #0" = 1  # Nikolla #0
+  "s|±ƒÆY #0" = 1  # Milaim #0
+  "bSåeGY #0" = 1  # Luigj #0
+  "KQm‚„‰R #0" = 1  # Klodian #0
+  "O¯e›sêN #0" = 5  # Ismail #0
+  "ORS #0" = 1  # Ilir #0
+  "k“^pQ #0" = 1  # Hekuran #0
+  "Vm—g #0" = 1  # Florin #0
+  "VÉbÆY #0" = 1  # Flamur #0
+  "Õlyrs| #0" = 1  # Fatmir #0
+  "ÃWlb #0" = 1  # Erjon #0
+  "ÃW˜ #0" = 1  # Elidon #0
+  "·VÌ‘yrm #0" = 1  # Dritëro #0
+  "jg—g #0" = 1  # Dhurim #0
+  "¾FO #0" = 1  # Dardan #0
+  "^šNS #0" = 1  # Bujar #0
+  "Üb…mÑy #0" = 1  # Besnik #0
+  "ôTÀNKQ #0" = 1  # Bashkim #0
+  "?–%m #0" = 1  # Agim #0
+  "?–·VWS #0" = 1  # Adnan #0
+  "S›R #1" = 1  # Filippo #1
+  "ågS¯e #2" = 1  # Karolus #2
+  "šN†SqS'Y #0" = 10  # Aleksandër #0
+  "šNÖN±îO #1" = 10  # Tanush #1
+  "İOW #0" = 0  # Pal #0
+  "bSS%m #0" = 10  # Lulëzim #0
+  "·^¯efWN #0" = 10  # Kostandin #0
+  "¦u³u #0" = 10  # Gjon #0
+  "RÑy #0" = 20  # Lekë #0
+  "TN»l #0" = 20  # Gjergj #0
+}
+leader_names = {
+  "?–pQ<Syr"  # Arianit
+  "ôT·VšN"  # Badera
+  "ôTS™l"  # Balsha
+  "^?–"  # Bua
+  "ïgƒlTX"  # Cervota
+  "·^HY<SšNyr¯e"  # Comneniates
+  "jgaScR<S"  # Dukagjini
+  "OyrR«ƒÌ‘"  # Faqemiri
+  "íThÑ‘"  # Gojcin
+  "íPNÆR"  # Golemi
+  "aS¯eyrÌ‘eY‚„"  # Kastrioti
+  "m™l"  # Losha
+  "Fz(„GY"  # Musaki
+  "¯eäSm¯e"  # Sguros
+  "¯eôT¾¯e"  # Shpata
+  "‰ôT<S"  # Spani
+  "yreYÔkšN"  # Thopia
+  "XbnfTXs|"  # Toptani
+  "ôu™l<SúW"  # Vishanj
+  "ıl…Qôu¯e"  # Zenevisi
+  "POäS"  # Zogu
+  "—KQ¯eÈT"  # Hoxha
+  "´xÉS<S"  # Çarçani
+  "Kd<S"  # Chani
+  "5g¯eĞc"  # Dosti
+  "Œ‚‰ƒyQ"  # Elezi
+  "jgaS"  # Duka
+  "ÕlUúW"  # Fakaj
+  "ÑyôTšNpQ"  # Corbajram
+  "ÈTÌ‘Ì‘"  # Halili
+  "ÈTÆYNb"  # Hamza
+  "¥SaSúW"  # Gecaj
+  "ÈTO¾Éb R"  # Hajdaraga
+  "ã‚SSaSúW"  # Gjokaj
+  " —SSaS"  # Gjika
+  "0Œªl"  # Shehu
+  "?–)RšN"  # Alia
+  "OÖN"  # Vata
+  "ôu^X)R"  # Veseli
+  "SôT"  # Xhumba
+  "YòƒÌ‘"  # Xhaferi
+  "PŸÌ‘"  # Ziberi
+  "LN^X<S"  # Useni
+  "šN…hÌ‘"  # Ymeri
+}
+ship_names = {
+  "^ÀNĞc O iOÒR¯e"  # Bishti i Palles
+  " —úWåe O ·V—gyr"  # Gjiri i Drinit
+  " —úWåe O †–N<Syr"  # Gjiri i Rondonit
+  " —"  # Jube
+  "aSÉb R O yrW¯e"  # Kalaja e Turres
+  "R®v O WN<Syr"  # Kepi i Rodonit
+  "ïQR“^GY"  # Kyrekuq
+  "3u —Ñ‘"  # Shengjin
+  "JTX	T"  # Shetaj
+  "ôuÌ‘1‘6w"  # Velipoje
+}

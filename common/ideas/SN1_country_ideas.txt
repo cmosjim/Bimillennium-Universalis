@@ -1,0 +1,58 @@
+# guxuan_haiwai 孤悬海外 经崖山海战一役，我们已经丢掉了所有的中原领土。如今面对着汪洋大海，船只与水师就比以前更加重要了。
+# woxin_changdan 卧薪尝胆 史记有云：有志者、事竟成，破釜沉舟，百二秦关终属楚；苦心人、天不负，卧薪尝胆，三千越甲可吞吴。尽管被迫逃离中原并居住于此，但我们从没有忘记复仇。今日我们积蓄的每一分力量都将在不久的未来化作复仇的怒火吞噬我们的敌人！
+# haisong_bianfa 海宋变法 事到如今，我们必须承认祖宗之法已不再适合我们。为了子民与社稷，为了将来的复仇，我们必须作出改变。
+# huoqi_fazhan 火器发展 在过去对抗北方民族入侵的过程中，火药武器就曾屡建奇功。如靖康元年的霹雳炮，又如景炎元年的震天雷。但这些还不够。要想夺回家园，我们需要更好的火药，更强的火器，更猛烈的爆炸！唯有这样，才能报这亡国之仇，消这破家之恨！
+# haiwai_maoyi 海外贸易 失去了中原的千里沃土也就失去了中原的巨额税收。唯有大力发展海贸才能撑起我们的财政。
+# lijing_tuzhi 励精图治 面对着巨大的生存压力和国仇家恨，一代代海宋国主们都奋发图强，励精图治。为了早日重返中原，不敢有丝毫懈怠。
+# weizhen_nanyang 威震南洋 为了解决生存空间问题，我们不得不向东南海域诸岛扩张。对于南海诸国，我们可以选择军事征服，也可以选择外交拉拢。无论如何，我们都必须团结所有可以团结的力量，一切为了北伐。
+
+#海宋理念
+SN1_ideas = {
+	start = {
+		land_morale = 0.1
+		war_exhaustion = -0.1
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.20
+	}
+
+	trigger = {
+		tag = SNG
+		has_country_flag = SNG_overseas
+	}
+	free = yes
+
+	guxuan_haiwai = {
+		naval_maintenance_modifier = -0.15
+		navy_tradition = 1
+	}
+	woxin_changdan = {
+		development_cost = -0.1
+		manpower_recovery_speed = 0.2
+		production_efficiency = 0.15
+	}
+	haisong_bianfa = {
+		infantry_power = 0.1
+		army_tradition = 1
+		idea_cost = -0.1
+	}
+	huoqi_fazhan = {
+		fire_damage = 0.10
+		mil_tech_cost_modifier = -0.20
+	}
+	haiwai_maoyi = {
+		trade_efficiency = 0.15
+		global_ship_trade_power = 0.30
+	}
+	lijing_tuzhi = {
+		monarch_military_power = 1
+		infantry_cost = -0.25
+		global_unrest = -1
+	}
+	weizhen_nanyang = {
+		improve_relation_modifier = 0.2
+		province_warscore_cost = -0.1
+		core_creation = -0.1
+	}
+}

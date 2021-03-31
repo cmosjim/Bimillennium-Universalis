@@ -1,0 +1,38 @@
+BNN_ideas = {
+	start = {
+		discipline = 0.05
+		infantry_cost = -0.1
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.33
+	}
+
+	trigger = {
+		tag = BNN
+	}
+	free = yes
+
+	auspicious_clouds = {
+		army_tradition = 1
+		global_manpower_modifier = 0.20
+	}
+	chinese_legal_system = {
+		ae_impact = -0.10
+	}
+	may_fourth_movement = {
+		core_creation = -0.25
+	}
+	beiyang_army = {
+		infantry_power = 0.10
+	}
+	separation_three_powers = {
+		stability_cost_modifier = -0.33
+	}
+	rapid_economic_development = {
+		global_tax_modifier = 0.1
+	}
+	five_color_flag = {
+		land_morale = 0.1
+	}
+}

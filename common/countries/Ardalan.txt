@@ -1,0 +1,203 @@
+graphical_culture = muslimgfx
+color = {
+  162
+  29
+  220
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  defensive_ideas
+  religious_ideas
+  offensive_ideas
+  trade_ideas
+  spy_ideas
+  economic_ideas
+  diplomatic_ideas
+  administrative_ideas
+}
+historical_units = {
+  persian_footsoldier
+  persian_cavalry_charge
+  persian_shamshir
+  qizilbash_cavalry
+  tofongchis_musketeer
+  topchis_artillery
+  afsharid_reformed
+  afsharid_reformed_infantry
+  muslim_mass_infantry
+  muslim_dragoon
+  persian_rifle
+}
+monarch_names = {
+  "s|S Ï‚±ƒüf #0" = -1  # Mir Suliman #0
+  "s|S Ês^·V #0" = -1  # Mir Xanzad #0
+  "?–ĞcÅ– #0" = -1  # Atiya #0
+  "^¾KQ #0" = 10  # Budak #0
+  "iINê #0" = 10  # Saidi #0
+  "s|S iIN9N #0" = 10  # Mir Saifeddin #0
+  "O(„ #0" = 10  # Isa #0
+  "“^mÀN #0" = 10  # Kulos #0
+  "?–jSjgÉbküf #0" = 10  # Abdurrahman #0
+  "fjSÉb1k #0" = 10  # Ibrahim #0
+  "lšÈTƒ·V #0" = 10  # Mahmoud #0
+  "?–jSjgÉb #0 Wl" = 10  # Abdolla #0 Khân
+  "ú‹ætLNjS („)RÆY #0" = 5  # Nawaub Salim #0
+  "ú‹ætLNjS ÈTËz·V #0" = 10  # Nawaub Khalid #0
+  "FzUØ·V #0" = 10  # Mohammad #0
+  "ÕlPŸ Œ‚ÈTÈ·V #0 ™l?–" = 10  # Faqi Ahmad #0 Shâh
+  "?–üf ?–Éb #0 ™l?–" = 10  # Aman-Allah #0 Shâh
+  "áwiàV #0" = 10  # Hosayn #0
+  "ZSPOS<h #0" = 20  # Bozorg #0
+  "—¯e³R #0" = 15  # Khosrow #0
+  "0tísæ—Sê #0" = 30  # Sobhanverdi #0
+  "Ï‚±ƒüf #0" = 10  # Soleiman #0
+  "Œ‚ÈTÈ·V #0" = 20  # Ahmad #0
+  "^(g?Q #0" = 30  # Timur #0
+  "kbS #0" = 30  # Helo #0
+  "ôTæt #0" = 30  # Bawa #0
+}
+leader_names = {
+  "Qh>Ôk"  # Sanjâbi
+  "^kcR"  # Bukhti
+  "òƒœyQ“^k"  # Ferozkohi
+  "ôˆO"  # Feyli
+  "Gewirk"
+  "÷–aS<S"  # Rekani
+  "ÈT·VÈTôT<S"  # Hadhabani
+  "?–Ì‘ ÀNN"  # Ali Sherwan
+  "kSúW"  # Herki
+  ">)RÉbN·V"  # Jalilavand
+  "NbÕlpQbS"  # Zafaranlu
+  "Nb—gaS+YÀN"  # Zarrinkafsh
+  "üfäSS"  # Mangur
+  ">+Y"  # Jaff
+  "0ŒpQ)R"  # Sheylanli
+  "ôTSNb<S"  # Barzani
+}
+ship_names = {
+  "?–ôTşVS"  # Abathur
+  "šNSV aS‰šN"  # Adamn Kasia
+  "Œ‚¯e›s ãNO"  # Aesma Daeva
+  "?–	V¯e"  # Agas
+  "?–kÌ‘üf"  # Ahriman
+  "?–áwÉb"  # Ahura
+  "?–áwÉb lšyQ¾"  # Ahura Mazda
+  "?–áwÉb<S"  # Ahurani
+  "Å–)R‰Rüf"  # Airyaman
+  "?–aS id±"  # Aka Manah
+  "?–ÉbN"  # Aladdin
+  "?–ÉbşVÆY"  # Allatum
+  "?–lš™l¯eXo"  # Amashaspan
+  "N‰k"  # Ameratat
+  "mQ'Y)YO"  # Amesha Spentas
+  "‰RZ^TX"  # Anahita
+  "‰RåTÉbüfËu"  # Angra Mainyu
+  "FyYe•wO"  # Anjuman
+  "?–^ÆY-³uTXyr"  # Apam-natat
+  "Apaosa"
+  "?–÷–·Vôu"  # Aredvi
+  "Arishtat"
+  "?–S¦‚„"  # Armaiti
+  "?–S™lKQ"  # Arsaces
+  "?–™l æt‰TX"  # Asha vahista
+  "Í‚yz"  # Asman
+  "Asto Vidatu"
+  "Astvat-Ereta"
+  "1Wkp"  # Atar
+  "Azi Dahaka"
+  "„…æ"  # Baga
+  "ôTkÉbÆY"  # Bahram
+  "Burijas"
+  "Bushyasta"
+  "Buyasta"
+  "Camros"
+  "ckáO"  # Daena
+  "T›<›"  # Daevas
+  "Ahaka"
+  "Dahhak"
+  "Dena"
+  "ĞcFZ"  # Dev
+  "Diwe"
+  "ªv`"  # Drug
+  "·Væt¯e^"  # Drvaspa
+  "Frashegird"
+  "Fravashis"
+  "Gandarewa"
+  " ReY-¯w^t³u"  # Gao-kerena
+  "Gayomard"
+  "Gayomart"
+  "Geus-Tasan"
+  "Geus-Urvan"
+  "jŒ»"  # Haoma
+  "áwSætTXyr"  # Haurvatat
+  "Humay"
+  "kætS"  # Hvar
+  "Hvarekhshaeta"
+  "àV¾S"  # Indar
+  "àVN–W"  # Indra
+  "Izha"
+  ">ÆY^·V"  # Jamshid
+  "Jeh"
+  "Karshipta"
+  "KO×k"  # Kavi
+  "ÈT‡U"  # Khara
+  "k™lyrÉb ætOÌ‘šN"  # Khshathra vairya
+  "Kundrav"
+  "›sk"  # Mah
+  "Mahre"
+  "Mahrianag"
+  "lšªR"  # Manu
+  "Manuchihir"
+  "Mao"
+  "Mashyane"
+  "Mashye"
+  "Menog"
+  "Mithra"
+  "Nairyosangha"
+  "Nanghaithya"
+  "Neriosang"
+  "Ormazd"
+  "Peris"
+  "Peshdadians"
+  "Rapithwin"
+  "Rashnu"
+  "Rustam"
+  "Saurva"
+  "Simurgh"
+  "Spenta Mainyu"
+  "Sraosa"
+  "Srosh"
+  "Tawrich"
+  "Thunaupa"
+  "Tistrya"
+  "Tushnamatay"
+  "Vanant"
+  "Vata"
+  "Verethragna"
+  "Vohu Manah"
+  "Vouruskasha"
+  "Yam"
+  "Yasht"
+  "Yazata"
+  "Yezidi"
+  "Yima"
+  "Zal"
+  "Zam"
+  "Zam-Armatay"
+  "tWšN¯e·V"  # Zarathustra
+  "Zarich"
+  "Zend-Avesta"
+  "Zurvan"
+}
+army_names = {
+  "Artesa"
+  "$PROVINCE$"
+}
+fleet_names = {
+  "$PROVINCE$0‚–"  # $PROVINCE$ Donanmasî
+}

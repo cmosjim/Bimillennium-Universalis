@@ -1,0 +1,46 @@
+LONGLIFE_ideas = {
+	start = {
+		global_ship_cost = -0.15
+		infantry_power = 0.10
+	}
+	
+	bonus = {
+		infantry_cost = -0.2
+	}
+	
+	trigger = {
+	   tag = CGG
+	}
+
+	free = yes
+	
+	the_final_reasons = {
+		discipline = 0.05
+	}
+	
+	fuxi_congenital_numeral = {
+		idea_cost = -0.10
+	}
+	
+	recycle_rule = {
+		global_colonial_growth = 35
+		transport_cost = -0.25
+	}
+
+	longevity_states = {
+		prestige = 1
+		trade_range_modifier = 0.10
+	}
+	
+	six_bureaucracy_rule = {
+		production_efficiency = 0.15
+	}
+
+	doctrine_of_the_mean = {
+		core_creation = -0.35
+	}
+
+	mil_tech_rule = {
+		army_tradition = 1.0
+	}
+}

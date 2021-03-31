@@ -1,0 +1,325 @@
+# If you add advisortypes, and use those tags, do not change them without changing everywhere they are used.
+# Uses all 'modifiers' possible that are exported as a Modifier.
+#####################################################
+########Good Advisors list below #####################
+######################################################
+
+
+ma_loan = {
+	monarch_power = ADM
+	# Bonus
+    global_tax_modifier = 0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+jiang_ge = {
+	monarch_power = ADM
+	# Bonus
+    adm_tech_cost_modifier = -0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+chou_lan = {
+	monarch_power = ADM
+	# Bonus
+    tolerance_own = 2
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+hu_guang = {
+	monarch_power = ADM
+	# Bonus
+    production_efficiency = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cai_yong = {
+	monarch_power = ADM
+	# Bonus
+    global_unrest = -2
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+he_chang = {
+	monarch_power = ADM
+	# Bonus
+	global_missionary_strength = 0.04
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+ban_zho = {
+	monarch_power = ADM
+	# Bonus
+	global_missionary_strength = 0.04
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+zhang_heng = {
+	monarch_power = ADM
+	# Bonus
+    inflation_reduction = 0.25
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+zhang_jian = {
+	monarch_power = ADM
+	# Bonus
+    global_manpower_modifier = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+yan_chuo = {
+	monarch_power = ADM
+	# Bonus
+    adm_tech_cost_modifier = -0.1 
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+chen_fan = {
+	monarch_power = ADM
+	# Bonus
+    production_efficiency = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+zhang_man_cheng = {
+	monarch_power = ADM
+	# Bonus
+    production_efficiency = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+xun_yu = {
+	monarch_power = ADM
+	# Bonus
+    global_tax_modifier = 0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+jia_xu = {
+	monarch_power = ADM
+	# Bonus
+    global_tax_modifier = 0.14
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+li_lu = {
+	monarch_power = ADM
+	# Bonus
+    production_efficiency = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+cheng_yu = {
+	monarch_power = ADM
+	# Bonus
+    inflation_reduction = 0.25
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+wang_uan = {
+	monarch_power = ADM
+	# Bonus
+    production_efficiency = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+zhuge_liang = {
+	monarch_power = ADM
+	# Bonus
+    production_efficiency = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+zhang_zhao = {
+	monarch_power = ADM
+	# Bonus
+    global_tax_modifier = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#Lu Xun
+lu_xun = {
+
+	monarch_power = ADM
+	# Bonus
+	production_efficiency = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+rab_female_1 = {
+
+	monarch_power = ADM
+	
+	# Bonus
+	global_tax_modifier = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

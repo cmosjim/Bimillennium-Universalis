@@ -1,0 +1,86 @@
+graphical_culture = westerngfx
+color = {
+  248
+  125
+  125
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  qianyi_ideas
+  rongren_ideas
+  junqu_ideas
+  trade_ideas
+  defensive_ideas
+  offensive_ideas
+  economic_ideas
+  diplomatic_ideas
+  aristocracy_ideas
+  spy_ideas
+  religious_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  swedish_gallop
+  swedish_gustavian
+  swedish_caroline
+  swedish_arme_blanche
+  prussian_frederickian
+  prussian_uhlan
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+leader_names = {
+  "ÔkSKQ"  # Bielke
+  "wƒi`"  # Horn
+  "Xbyr"  # Tott
+  "VRf"  # Fleming
+  ">m“^"  # Paijkull
+  "¦·V"  # Bonde
+  "fk÷–·V"  # Wrede
+  "0tnf"  # Soop
+  "üf³uwmÆY"  # Mannerheim
+  "yípSÆY"  # Furuhjelm
+  "?–s|ú‹+Y"  # Aminoff
+  "?–ÆYòƒSyr"  # Armfelt
+  "aSiOpQ"  # Carpelan
+  "÷–¾R·V"  # Rehbinder
+  "‚Süf"  # Schulman
+}
+ship_names = {
+  "RôTS"  # Reval
+  "ÈTnf(„S"  # Hapsal
+  "O›îh¯efWàV"  # Weissenstein
+  "æ—îh"  # Wesenberg
+  "iOSYt"  # Pernau
+  "XbÆYÔkšN"  # Toompea
+  "(„÷–lš"  # Ösel
+  "?–&O¯e!X"  # Arensburg
+  "³uSæt"  # Narva
+  "›sKNšN"  # Maria
+}
+monarch_names = {
+  "2STX #0" = -1  # Juta #0
+  "aSyr—g #0" = -1  # Kätlin #0
+  "Ëe)RšN #0" = -1  # Silja #0
+  "Ì‘ƒl #0" = 0  # Riivo #0
+  "…hÆY #0" = 0  # Meeme #0
+  "aS÷–S #0" = 0  # Kaarel #0
+  "NS9h #0" = 5  # Jürgen #0
+  "šNÑy #0" = 5  # Jaakko #0
+  "eYY #0" = 5  # Otto #0
+  "lšSÕn #0" = 5  # Marten #0
+  "nf^t¦^ #0" = 10  # Priidu #0
+  "wLNÌ‘ #0" = 10  # Kauri #0
+  "šN=OÉbU #0" = 10  # Aabraham #0
+  "OS›s #0" = 20  # Ilmar #0
+  "Å–KQ #0" = 20  # Jaak #0
+  "ÃWÌ‘	T #0" = 20  # Eerikki #0
+}

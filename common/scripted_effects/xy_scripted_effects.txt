@@ -1,0 +1,286 @@
+# 2018.12.22 1.28 okay
+###############################################
+#
+#	Example:
+# 
+#	example_effect = {
+#		treasury = 100
+#		add_adm_power = 50
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+add_wenwu_1_effect = {
+	custom_tooltip = tp_add_wenwu_1_effect
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 100
+				}		
+			}		
+		}
+		change_variable = {
+			which = num_of_wenwuzhi
+			value = 1
+		}		
+	}
+}	
+
+add_wenwu_2_effect = {
+	custom_tooltip = tp_add_wenwu_2_effect
+	
+	change_variable = {
+		which = num_of_wenwuzhi
+		value = 2
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wenwuzhi
+			value = 100
+		}		
+	}
+}	
+
+
+add_wenwu_3_effect = {
+	custom_tooltip = tp_add_wenwu_3_effect
+	
+	change_variable = {
+		which = num_of_wenwuzhi
+		value = 3
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wenwuzhi
+			value = 100
+		}		
+	}
+}	
+
+
+add_wenwu_5_effect = {
+	custom_tooltip = tp_add_wenwu_5_effect
+	
+	change_variable = {
+		which = num_of_wenwuzhi
+		value = 5
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wenwuzhi
+			value = 100
+		}		
+	}
+}	
+
+
+add_wenwu_10_effect = {
+	custom_tooltip = tp_add_wenwu_10_effect
+	change_variable = {
+		which = num_of_wenwuzhi
+		value = 10
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wenwuzhi
+			value = 100
+		}		
+	}
+}	
+
+add_wenwu_50_effect = {
+	custom_tooltip = tp_add_wenwu_50_effect
+	change_variable = {
+		which = num_of_wenwuzhi
+		value = 50
+	}	
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 100
+			}		
+		}		
+		set_variable = {
+			which = num_of_wenwuzhi
+			value = 100
+		}		
+	}
+}	
+
+
+subtract_wenwu_1_effect = {
+	custom_tooltip = tp_subtract_wenwu_1_effect
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 1
+			}		
+		}
+		subtract_variable = {
+			which = num_of_wenwuzhi
+			value = 1
+		}		
+	}
+}	
+
+subtract_wenwu_2_effect = {
+	custom_tooltip = tp_subtract_wenwu_2_effect
+	
+	subtract_variable = {
+		which = num_of_wenwuzhi
+		value = 2
+	}	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 0
+				}		
+			}
+		}		
+		set_variable = {
+			which = num_of_wenwuzhi
+			value = 0
+		}		
+	}
+}	
+
+
+subtract_wenwu_3_effect = {
+	custom_tooltip = tp_subtract_wenwu_3_effect
+	
+	subtract_variable = {
+		which = num_of_wenwuzhi
+		value = 3
+	}	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 0
+				}		
+			}
+		}		
+		set_variable = {
+			which = num_of_wenwuzhi
+			value = 0
+		}		
+	}
+}	
+
+
+subtract_wenwu_5_effect = {
+	custom_tooltip = tp_subtract_wenwu_5_effect
+	
+	subtract_variable = {
+		which = num_of_wenwuzhi
+		value = 5
+	}	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 0
+				}		
+			}
+		}		
+		set_variable = {
+			which = num_of_wenwuzhi
+			value = 0
+		}		
+	}
+}	
+
+
+subtract_wenwu_10_effect = {
+	custom_tooltip = tp_subtract_wenwu_10_effect
+	subtract_variable = {
+		which = num_of_wenwuzhi
+		value = 10
+	}	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 0
+				}		
+			}
+		}		
+		set_variable = {
+			which = num_of_wenwuzhi
+			value = 0
+		}		
+	}
+}	
+
+subtract_wenwu_50_effect = {
+	custom_tooltip = tp_subtract_wenwu_50_effect
+	
+	subtract_variable = {
+		which = num_of_wenwuzhi
+		value = 50
+	}	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num_of_wenwuzhi
+					value = 0
+				}		
+			}
+		}		
+		set_variable = {
+			which = num_of_wenwuzhi
+			value = 0
+		}		
+	}
+}	
+jiesanshenluo_effect = {
+	custom_tooltip = tp_jiesanshenluo_effect
+	
+      every_province = { limit = { NOT = { owned_by = emperor } is_part_of_hre = yes }
+        set_in_empire = no
+		}
+		set_allow_female_emperor = yes
+		set_hre_religion_treaty = yes
+		set_global_flag = shenluojiesanle
+}	
+	

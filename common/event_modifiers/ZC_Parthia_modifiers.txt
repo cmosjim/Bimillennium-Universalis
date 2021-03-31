@@ -1,0 +1,54 @@
+standing_guard = {
+	reinforce_speed = 0.2
+	global_regiment_recruit_speed = -0.3
+}
+
+light_cavalry = {
+	movement_speed = 0.1
+	cav_to_inf_ratio = 0.3
+}
+
+parthian_cavalry = {
+	cavalry_shock = 0.5
+	discipline = 0.05
+}
+
+enforce_management = {
+	global_unrest = -2
+	harsh_treatment_cost = -0.33
+}
+
+benefit_from_silk_roads = {
+	trade_efficiency = 0.2
+	caravan_power = 0.2
+}
+
+mountain_development = {
+	local_development_cost = -0.35
+}
+
+mintage = {
+	inflation_action_cost = -0.2
+	yearly_corruption = -0.05
+}
+
+build_relationship_with_China = {
+	diplomatic_reputation = 3
+}
+
+rule_Armenia_again = {
+	diplomats = 1
+	improve_relation_modifier = 0.2
+}
+
+lord_of_lords = {
+	diplomatic_upkeep = 5
+}
+
+parthia_domination = {
+	reduced_liberty_desire = 10
+}
+
+Parthian_works = {
+	idea_cost = -0.1
+}

@@ -1,0 +1,42 @@
+NEW_ideas = {
+	start = {
+		naval_morale = 0.1
+		core_creation = -0.2
+	}
+
+	bonus = {
+		army_tradition = 0.5
+	}
+
+	trigger = {
+		OR = {
+			tag = NEW
+			tag = WA4
+		}	
+	}
+	
+	free = yes
+
+	wang_mang_character = {
+		prestige = 1
+	}
+	wu_jung = {
+		global_tax_modifier = 0.1
+	}
+	zhou_system = {
+		num_accepted_cultures = 1
+		no_religion_penalty = yes
+	}
+	budao_commandery = {
+		stability_cost_modifier = -0.15
+	}
+	noble_origin = {
+		ae_impact = -0.15
+	}
+	wang_fong_power = {
+		adm_tech_cost_modifier = -0.1
+	}
+	bronze_caliper = {
+		development_cost = -0.1
+	}
+}

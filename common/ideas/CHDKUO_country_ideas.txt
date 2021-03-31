@@ -1,0 +1,87 @@
+#中華帝國
+CHDKUO_ideas = {
+	start = {
+		discipline = 0.05
+		war_exhaustion = -0.2
+	}
+	
+	bonus = {
+		ae_impact = -0.2
+	}
+	
+	trigger = {
+		OR = {
+			tag = AG6
+			tag = AH0
+			tag = AH1
+			tag = AH2
+			tag = AH3
+			tag = AH4
+			tag = AH5
+			tag = AH6
+			tag = AH7
+			tag = AH8
+			tag = AH9
+			tag = AI1
+			tag = AI2
+			tag = AI3
+			tag = AI4
+			tag = AI5
+			tag = AI6
+			tag = AI7
+			tag = AI8
+			tag = AI9
+			tag = AJ0
+			tag = AJ1
+			tag = AJ2
+			tag = AJ3
+			tag = AJ4
+			tag = AJ5
+			tag = AJ6
+			tag = AJ7
+			tag = AJ8
+			tag = AJ9
+			tag = ZZ0
+			tag = ZZ5
+			tag = ZZ6
+			tag = ZZ7			
+			tag = ZZ8			
+			tag = ZZ9			
+		}
+	}
+
+	free = yes
+	
+	tween_kuohwae = {
+		land_morale = 0.1
+	}
+
+	kongheujungzuren = {
+		global_autonomy = -0.05
+	}
+	
+	chungkuohujung = {
+		adm_tech_cost_modifier = -0.1
+		core_creation = -0.1
+	}
+
+	shuntianshibow = {
+		harsh_treatment_cost = -0.5
+		ae_impact = -0.1
+	}
+	#中華雄立宇宙間是我們的國歌，
+	chuwliuuzoug = {
+		stability_cost_modifier = -0.1
+		improve_relation_modifier = 0.2
+	}
+	#國徽來源:嘉禾：一種雙穗禾，為古代吉祥的象徵。國徽上的設計來源於漢代《五瑞圖》石刻上的圖案。
+	kuohuliauang = {
+		infantry_power = 0.1
+		cavalry_power = 0.1
+	}
+	#中華帝國「龍幣」----袁世凱飛龍幣，唯一具備金，銀，銅的古幣
+	#洪憲飛龍銀幣正面為袁世凱九分臉正面及胸像，面部稍左側。袁世凱身著大元帥服，頭戴鷺羽高纓冠，胸前佩戴大勳章。背面上面鐫「中華帝國」4字，下面鐫「洪憲紀元」4字，龍紋為帝王標準，舞爪飛龍，龍鬚悠長，身上鱗片盡顯當時鑄幣的巔峰，栩栩如生，猶如隨時飛去的巨龍。
+	dragon_coins = {
+		governing_capacity_modifier = 0.1
+	}
+}

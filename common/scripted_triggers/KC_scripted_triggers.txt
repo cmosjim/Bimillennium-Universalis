@@ -1,0 +1,189 @@
+
+champa_area_sub_holds = {
+	custom_trigger_tooltip = {
+	tooltip = tp_champa_area_sub_holds #占婆
+	champa_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = XIY XIY = { is_subject_of = ROOT } }
+				AND = { owned_by = XI1 XI1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN3 AN3 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN2 AN2 = { is_subject_of = ROOT } }
+				AND = { owned_by = ND1 ND1 = { is_subject_of = ROOT } }
+				AND = { owned_by = HS0 HS0 = { is_subject_of = ROOT } }
+				AND = { owned_by = WSZ WSZ = { is_subject_of = ROOT } }
+				AND = { owned_by = BT1 BT1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN4 AN4 = { is_subject_of = ROOT } }
+			}
+		}
+	}
+}
+
+north_laos_area_sub_holds = {
+	custom_trigger_tooltip = {
+	tooltip = tp_north_laos_area_sub_holds #老挝
+	north_laos_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = XIY XIY = { is_subject_of = ROOT } }
+				AND = { owned_by = XI1 XI1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN3 AN3 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN2 AN2 = { is_subject_of = ROOT } }
+				AND = { owned_by = ND1 ND1 = { is_subject_of = ROOT } }
+				AND = { owned_by = HS0 HS0 = { is_subject_of = ROOT } }
+				AND = { owned_by = WSZ WSZ = { is_subject_of = ROOT } }
+				AND = { owned_by = BT1 BT1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN4 AN4 = { is_subject_of = ROOT } }
+			}
+		}
+	}
+}
+
+transoxiana_area_sub_holds = {
+	custom_trigger_tooltip = {
+	tooltip = tp_transoxiana_area_sub_holds #河中
+	transoxiana_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = XIY XIY = { is_subject_of = ROOT } }
+				AND = { owned_by = XI1 XI1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN3 AN3 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN2 AN2 = { is_subject_of = ROOT } }
+				AND = { owned_by = ND1 ND1 = { is_subject_of = ROOT } }
+				AND = { owned_by = HS0 HS0 = { is_subject_of = ROOT } }
+				AND = { owned_by = WSZ WSZ = { is_subject_of = ROOT } }
+				AND = { owned_by = BT1 BT1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN4 AN4 = { is_subject_of = ROOT } }
+			}
+		}
+	}
+}
+
+khiva_area_sub_holds = {
+	custom_trigger_tooltip = {
+	tooltip = tp_khiva_area_sub_holds #希瓦
+	khiva_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = XIY XIY = { is_subject_of = ROOT } }
+				AND = { owned_by = XI1 XI1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN3 AN3 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN2 AN2 = { is_subject_of = ROOT } }
+				AND = { owned_by = ND1 ND1 = { is_subject_of = ROOT } }
+				AND = { owned_by = HS0 HS0 = { is_subject_of = ROOT } }
+				AND = { owned_by = WSZ WSZ = { is_subject_of = ROOT } }
+				AND = { owned_by = BT1 BT1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN4 AN4 = { is_subject_of = ROOT } }
+			}
+		}
+	}
+}
+
+syr_darya_area_sub_holds = {
+	custom_trigger_tooltip = {
+	tooltip = tp_syr_darya_area_sub_holds #锡尔河
+	syr_darya_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = XIY XIY = { is_subject_of = ROOT } }
+				AND = { owned_by = XI1 XI1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN3 AN3 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN2 AN2 = { is_subject_of = ROOT } }
+				AND = { owned_by = ND1 ND1 = { is_subject_of = ROOT } }
+				AND = { owned_by = HS0 HS0 = { is_subject_of = ROOT } }
+				AND = { owned_by = WSZ WSZ = { is_subject_of = ROOT } }
+				AND = { owned_by = BT1 BT1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN4 AN4 = { is_subject_of = ROOT } }
+			}
+		}
+	}
+}
+
+arys_area_sub_holds = {
+	custom_trigger_tooltip = {
+	tooltip = tp_arys_area_sub_holds #阿雷西
+	arys_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = XIY XIY = { is_subject_of = ROOT } }
+				AND = { owned_by = XI1 XI1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN3 AN3 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN2 AN2 = { is_subject_of = ROOT } }
+				AND = { owned_by = ND1 ND1 = { is_subject_of = ROOT } }
+				AND = { owned_by = HS0 HS0 = { is_subject_of = ROOT } }
+				AND = { owned_by = WSZ WSZ = { is_subject_of = ROOT } }
+				AND = { owned_by = BT1 BT1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN4 AN4 = { is_subject_of = ROOT } }
+			}
+		}
+	}
+}
+
+ferghana_area_sub_holds = {
+	custom_trigger_tooltip = {
+	tooltip = tp_ferghana_area_sub_holds #费尔干纳
+	ferghana_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = XIY XIY = { is_subject_of = ROOT } }
+				AND = { owned_by = XI1 XI1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN3 AN3 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN2 AN2 = { is_subject_of = ROOT } }
+				AND = { owned_by = ND1 ND1 = { is_subject_of = ROOT } }
+				AND = { owned_by = HS0 HS0 = { is_subject_of = ROOT } }
+				AND = { owned_by = WSZ WSZ = { is_subject_of = ROOT } }
+				AND = { owned_by = BT1 BT1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN4 AN4 = { is_subject_of = ROOT } }
+			}
+		}
+	}
+}
+
+ balchasj_area_sub_holds = {
+	custom_trigger_tooltip = {
+	tooltip = tp_balchasj_area_sub_holds #巴尔喀什
+	balchasj_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = XIY XIY = { is_subject_of = ROOT } }
+				AND = { owned_by = XI1 XI1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN3 AN3 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN2 AN2 = { is_subject_of = ROOT } }
+				AND = { owned_by = ND1 ND1 = { is_subject_of = ROOT } }
+				AND = { owned_by = HS0 HS0 = { is_subject_of = ROOT } }
+				AND = { owned_by = WSZ WSZ = { is_subject_of = ROOT } }
+				AND = { owned_by = BT1 BT1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN4 AN4 = { is_subject_of = ROOT } }
+			}
+		}
+	}
+}
+
+kyzylkum_area_sub_holds = {
+	custom_trigger_tooltip = {
+	tooltip = tp_kyzylkum_area_sub_holds #克孜勒库姆
+	kyzylkum_area = {
+			type = all
+			OR = {
+				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = XIY XIY = { is_subject_of = ROOT } }
+				AND = { owned_by = XI1 XI1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN3 AN3 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN2 AN2 = { is_subject_of = ROOT } }
+				AND = { owned_by = ND1 ND1 = { is_subject_of = ROOT } }
+				AND = { owned_by = HS0 HS0 = { is_subject_of = ROOT } }
+				AND = { owned_by = WSZ WSZ = { is_subject_of = ROOT } }
+				AND = { owned_by = BT1 BT1 = { is_subject_of = ROOT } }
+				AND = { owned_by = AN4 AN4 = { is_subject_of = ROOT } }
+			}
+		}
+	}
+}

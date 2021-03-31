@@ -1,0 +1,35 @@
+southernsea_wargoal = {
+	type = take_capital
+	
+	badboy_factor = 0.25
+	prestige_factor = 1
+	peace_cost_factor = 0.1	
+	
+	allowed_provinces = {
+		always = no
+	}
+	
+	peace_options = {
+
+	}
+	country_desc = ALL_NATIVES
+	prov_desc = ALL_PROVS
+	war_name = HUMILIATE_WAR_NAME	
+}
+
+okinawa_navy_base_wargoal = {
+	type = superiority
+	
+	badboy_factor = 1
+	prestige_factor = 1
+	peace_cost_factor = 0.75
+
+	peace_options = {
+		po_gold
+		po_trade_power
+		po_steer_trade
+		po_demand_provinces
+	}
+
+	war_name = OKINAWA_WAR_NAME
+}

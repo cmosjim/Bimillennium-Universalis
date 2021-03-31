@@ -1,0 +1,52 @@
+#rab_ 
+#2019.02.10 set yes for nation designer 
+mongol_steppe_horde_mechanic = {
+	monarchy = yes
+	heir = yes
+	queen = yes
+	basic_reform = yes 
+	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = yes
+	}
+}
+
+
+
+mongol_steppe_horde_reform = {
+	icon = "mongol_steppe_horde_reform"
+	legacy_equivalent = mongol_steppe_horde_legacy # add 
+	allow_force_tributary = no
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	allow_normal_conversion = no
+	allow_convert = no
+	start_territory_to_estates = 0.5
+	lock_level_when_selected = yes  #add
+	allow_banners = yes
+	nomad = yes
+	potential = {
+		has_reform = mongol_steppe_horde_reform
+	}	
+	nation_designer_trigger = {
+		culture_group = mongolic
+		OR = {
+			technology_group = eastern_nomad_group
+			technology_group = nomad_group
+		}	
+		
+	}
+	modifiers = {
+		siege_ability = 0.1
+		mercenary_cost = -0.1
+		recover_army_morale_speed = 0.1
+		war_exhaustion = -0.25
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+

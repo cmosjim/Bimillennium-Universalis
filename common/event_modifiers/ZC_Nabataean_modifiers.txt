@@ -1,0 +1,85 @@
+cultural_fusion = {
+	num_accepted_cultures = 2
+}
+
+attempt_to_new_route = {
+	leader_naval_manuever = 1
+	diplomatic_reputation = 1
+}
+
+sea_trade = {
+	navy_tradition = 1
+	global_ship_trade_power = 0.1
+}
+
+old_Arab_cavalry = {
+	cavalry_power = 0.1
+	shock_damage = 0.05
+}
+
+prepare_for_war = {
+	defensiveness = 0.2
+	siege_ability = 0.2
+}
+
+adapt_to_dry_land = {
+	hostile_attrition = 1
+}
+
+unify_Arab = {
+	global_unrest = -2
+	religious_unity = 0.25
+}
+
+Nabatean_morach = {
+	global_spy_defence = 0.5
+	trade_steering = 0.25
+	advisor_pool = 1
+}
+
+Phoenician_trade = {
+	trade_efficiency = 0.1
+	global_trade_power = 0.2
+}
+
+explore_Mediterranean = {
+	trade_efficiency = 0.1
+	trade_range_modifier = 0.2
+}
+
+our_Nabatean = {
+	merchants = 1
+	global_prov_trade_power_modifier = 0.2
+}
+
+wonderful_irregation_system = {
+	production_efficiency = 0.1
+}
+
+rebuild_Petra = {
+	province_trade_power_value = 10
+}
+
+clay_pipe = {
+	trade_goods_size_modifier = 0.1
+}
+
+emphasize_on_Greece_decorations = {
+	technology_cost = -0.1
+}
+
+emphasize_on_Egypt_decorations = {
+	improve_relation_modifier = 0.1
+}
+
+emphasize_on_Rome_decorations = {
+	infantry_power = 0.05
+}
+
+repair_sig = {
+	movement_speed = 0.2
+}
+
+remain_nabataean_religion = {
+	tolerance_heathen = 1
+}

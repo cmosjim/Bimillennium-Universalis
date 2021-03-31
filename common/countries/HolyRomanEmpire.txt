@@ -1,0 +1,427 @@
+graphical_culture = westerngfx
+color = {
+  150
+  177
+  161
+}
+random_nation_chance = 0
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  zhongqi_ideas
+  rongren_ideas
+  shenquan_ideas
+  trade_ideas
+  religious_ideas
+  economic_ideas
+  diplomatic_ideas
+  innovativeness_ideas
+  defensive_ideas
+  offensive_ideas
+  spy_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  austrian_white_coat
+  austrian_jaeger
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "³RÉb #0" = -1  # Laura #0
+  "1gêN #0" = -1  # Judith #0
+  "OS(„ #0" = -1  # Ilsa #0
+  "‡eVrS #0" = 10  # Wenzel #0
+  "œnf±ƒ^yr #0" = 10  # Ruprecht #0
+  "lšKQ‰s|)R‰R #0 òƒ)Rnf" = 10  # Maximilian #0 Philipp
+  ")ReYâl·V #0 ¦uğ" = 10  # Leopold #0 Johann
+  ")ReYâl·V #0 eêWS" = 10  # Leopold #0 Ferdinand
+  "¦uğ #0 )ReYâl·V" = 10  # Johann #0 Leopold
+  "¦uğ #0 aSS" = 10  # Johann #0 Karl
+  "kKQXb #0" = 10  # Hektor #0
+  "KQÌ‘¯e‚„‰R #0 ?–S^÷–^yr" = 10  # Christian #0 Albrecht
+  "‰RN #0" = 10  # Anton #0
+  "šN†SqS'Y #0" = 10  # Alexander #0
+  "ZÉ^ #0 SyrÈp" = 10  # Wilhelm #0 Friedrich
+  "eYäS¯eyr #0 ZÉ^" = 10  # August #0 Wilhelm
+  "ï·Vôu^ #4" = 10  # Ludwig #4
+  "aSS #4 ¦umt+Y" = 10  # Karl #4 Joseph
+  "‰<h™„·V #0" = 15  # Siegmund #0
+  "«ƒSĞc(ƒ #0" = 15  # Mortiz #0
+  "lš‚„šN¯e #0" = 15  # Matthias #0
+  ")ReYâl·V  #0" = 15  # Leopold #0
+  "Ébê¯eÉb+Y #0" = 15  # Ladislav #0
+  "¦uğ #0 ‰<h™„·V" = 15  # Johann #0 Siegmund
+  "¦uğ #0 VÌ‘·VÌ‘^" = 15  # Johann #0 Friedrich
+  "¦uğ #0 ‰^XW" = 15  # Johann #0 Cicero
+  "¦uğ #0" = 15  # Johann #0
+  "¦u?–^ÆY #0 …m¯eXb" = 15  # Joachim #0 Nestor
+  "¦u?–^ÆY #0 kKQXb" = 15  # Joachim #0 Hector
+  "<heYS<h #0 ZÉ^" = 15  # Georg #0 Wilhelm
+  "<heYS<h #0" = 15  # Georg #0
+  "Vg(ƒ #0 ¯eyráQ" = 15  # Franz #0 Stefan
+  "eêWS #0 ›sKNšN" = 15  # Ferdinand #0 Maria
+  "'k…Q¯eyr #0" = 15  # Ernest #0
+  "eYäS¯eyr #0" = 15  # August #0
+  "?–S^÷–^yr #1 ?–úWÌ‘¯e" = 15  # Albrecht #1 Achilles
+  "VÌ‘·VÌ‘^ #2 KQÌ‘¯e‚„‰R" = 15  # Friedrich #2 Christian
+  "VÌ‘·VÌ‘^ #2 ?–S^÷–^yr" = 15  # Friedrich #2 Albrecht
+  "aSS #4 ğleYYS" = 15  # Karl #4 Theodor
+  "aSS #4 ?–S^÷–^yr" = 15  # Karl #4 Albrecht
+  "wmàVÌ‘^ #7" = 15  # Heinrich #7
+  "¦umt+Y #0" = 20  # Joseph #0
+  "Vg(ƒ #0" = 20  # Franz #0
+  "lšKQ‰s|)R‰R #0" = 20  # Maximilian #0
+  "¦uğ #0 <heYS<h" = 20  # Johann #0 Georg
+  "KQÌ‘¯e‚„‰R #0" = 20  # Christian #0
+  "aSS #4" = 20  # Karl #4
+  "ZÉ^ #0" = 30  # Wilhelm #0
+  "eêWS #0" = 30  # Ferdinand #0
+  "VÌ‘·VÌ‘^ #2 eYäS¯eyr" = 30  # Friedrich #2 August
+  "VÌ‘·VÌ‘^ #2 ZÉ^" = 40  # Friedrich #2 Wilhelm
+  "?–S^÷–^yr #1" = 50  # Albrecht #1
+  "VÌ‘·VÌ‘^ #2" = 60  # Friedrich #2
+}
+leader_names = {
+  "šNSV"  # Adam
+  "‰RbSüf"  # Angermann
+  "Appelt"
+  "Arndt"
+  "KQ"  # Beck
+  "KQS"  # Becker
+  "Bening"
+  "Blasius"
+  "Brilz"
+  "Bröser"
+  "^YOyr³u"  # Büttner
+  "aSS"  # Carl
+  "¾ÆY"  # Dahm
+  "·V…QKQ"  # Deneke
+  "ö‹KQËefWi`"  # Eckstein
+  "Edelmann"
+  "Elsner"
+  "Feil"
+  "9‚S"  # Fischer
+  "VpQKQ"  # Franke
+  "úWôuS"  # Giewer
+  "Il(„"  # Haase
+  "ÈTV³u"  # Hafner
+  "k¯hS"  # Hertel
+  "Hirsch"
+  "Höhn"
+  "Kammel"
+  "ïQÒR"  # Keller
+  "Kessler"
+  "Koeppe"
+  "Kohn"
+  "KQ÷–Ø"  # Krämer
+  "“^i`"  # Kuhn
+  "—g·V³u"  # Lindner
+  "…hSyr¯eY+Y"  # Mertesdorf
+  "È6w"  # Meyer
+  "s|KQ"  # Mick
+  "FzÒR"  # Müller
+  "…QKQS"  # Necker
+  "ú‹S"  # Noell
+  "Oelgemöller"
+  "W=O"  # Raabe
+  "÷–HY"  # Rainer
+  "™lS+YÔk)R^"  # Scharfbillig
+  "Schave"
+  "‚ÒR"  # Scheler
+  "ËeÆRyr"  # Schmitt
+  "ËeHY·V"  # Schneider
+  "‚üf"  # Schumann
+  "ËeyráQ"  # Stephan
+  "ğl&O"  # Thelen
+  "yrÌ‘Sæ—ÒR"  # Trierweiler
+  "LN)R^"  # Uhlig
+  "¯Q VpQ¯w"  # von Franken
+  "¯Q WÕn!X"  # von Rothenburg
+  "¯Q Ëeæt,g"  # von Schwaben
+  "¯Q ôuVr"  # von Vitzgau
+  "¯Q O››s"  # von Weimar
+  "ætKQ¯eFzyr"  # Wachsmuth
+  "kS¯eÕn"  # Wacht
+  "¯Q ôuS"  # von Werl
+  "ætSyr"  # Walther
+  "ôuKQS"  # Wecker
+}
+ship_names = {
+  "?–·VÒR ¯Q TKQ"  # Adler von Lübeck
+  "Il!Xwm›Q"  # Admiralität von Hamburg
+  "ú‹šN¹e‚"  # Arche Noah
+  "ÃRpQ‰v!X™Ÿ‘šëX"  # Brandenburgischer Dragoner
+  "ÃRgyrlQir"  # Brunte Kuh
+  "Ymyr 2—fN"  # Charlotte Louise
+  "ÃRpQ‰v!X	^¯O"  # Churfürst von Brandenburg
+  "ËS„U„v	^¯O"  # Churfürtstlische Liebjagd
+  "ÃRpQ‰v!X*YPR"  # Churprinz von Brandenburg
+  "KQ±ƒ‡e‚ —g‰vÃRÆY"  # Clevesche Lindenbaum
+  "Der Große Adler"
+  "Der Jungste Prinz von Churlandt"
+  "Der Rote Löve"
+  "Die Drey Heringe"
+  "Die Sieben Provinzien"
+  "Drei Heringe"
+  "i`<hÒR  R^Ì‘ÃW"  # Engel Gabriel
+  "Ş˜™Ÿ"  # Fliegender Drache
+  "oÊl„vk^"  # Fliegender Hirsch
+  "SyrÈp aSS"  # Friedrich Carl
+  "SyrÈp'Y^"  # Friedrich der Große
+  "lšÌwN„vSyrÈp·ZÉ^"  # Friedrich Wilhelm zu Pferde
+  "SyrÈp ZÉ^"  # Friedrich Wilhelm
+  "Füchslein"
+  "Gelber Löve"
+  "Ñ‘îr"  # Goldener Löve
+  "<hÉb+Y™l+Yyr lšKQ"  # Grafschaft Mark
+  "'Y^9‚"  # Große Jacht
+  "'Y	^¯O"  # Großer Kurfürst
+  "ÿu™Ÿ"  # Grüner Drache
+  "KQÌ‘+YlQıV"  # Herzogtum Cleve
+  "'YÅ–T^¯e"  # Jacobus Major
+  "SÅ–T^¯e"  # Jacobus Minor
+  "Jesus von Lübeck"
+  "^Sw ¦uğ<S¯e"  # Johannes de Evangelist
+  "¹R<h XbÔkšN¯e"  # Jonge Tobias
+  "ïQ’dôTôTW(„"  # Kaiser Barbarossa
+  "ïQ’daSS'Y^"  # Kaiser Karl der Große
+  "ïQ’d3teYäS¯eTX"  # Kaiserin Augusta
+  "aS¯eğl ËeXoS"  # Kastell Spandau
+  "nfœëX‹s¨P"  # Kronprinz van Preußen
+  "?–S=OyrıV‹s"  # König Albert
+  "'YkS‹s"  # König David
+  "nfœëXıV‹s"  # König von Preußen
+  "‰ísYrıV‹s"  # König von Spanien
+  "ZÉ^ıV‹s"  # König Wilhelm
+  "Leopoldus Primus"
+  "KNƒ ¯Q TKQ"  # Lisa von Lübeck
+  ")Rv–S œS"  # Littauer Bauer
+  "WO¯e Ymyr"  # Lovise Charlotte
+  "Lybischer Trotz"
+  "Lübscher Adler"
+  "›s)RšN aSTX3tZ"  # Maria Catharina
+  "lšKQ<hÉb+Y ¯Q ÃRpQ‰v!X"  # Markgraf von Brandenburg
+  "Meve von Churlandt"
+  "S'kîr"  # Nordischer Löwe
+  "|V—VŒTİOW"  # Peter und Paul
+  "|V—V ¯Q FOıl"  # Peter von Danzig
+  "Preußischer Adler"
+  "›sKNšNlQIN"  # Princess Maria
+  "?–·VS=Oyr²N‹s"  # Prinz Adalbert
+  "ï·Vôu^²N‹s"  # Prinz Ludwig
+  "òƒ)Rnf²N‹s"  # Prinz Philipp
+  "nfœëX²N‹s"  # Prinz von Preußen
+  "ZÉ^²N‹s"  # Prinz Wilhelm
+  "›s)RšNlQIN"  # Prinzess Maria
+  "Prinzess Wilhelm"
+  "Prinzessin von Churlandt"
+  "Prinzregent Luitpold"
+  "HQåw9N<SS"  # Prophet Daniel
+  "Ì‘yr 1WTN»l"  # Ritter Sankt Georg
+  "¢uKNk^"  # Roter Hirsch
+  "¢uîr"  # Rother Löve
+  "1W¦uğxmáOO"  # Sankt Johannes der Täufer
+  "1W¦umt+Y"  # Sankt Josef
+  "1W³R&O¯e"  # Sankt Laurens
+  "1W|V—V"  # Sankt Peter
+  "eYÉbR!X«R"  # Schloss Oranienburg
+  "Schwarzer Rabe"
+  "Sieben Provinzien"
+  "¯eTX·V ÃWÆY‰v"  # Stad Emden
+  "ôuY)RšN 2—fN"  # Victoria Louise
+  "ƒl<hS <hÌ‘+Y"  # Vogel Greif
+  "Wapen von Bremen"
+  "Wapen von Hamburg"
+  "Wappen des Herzogs Jacobus"
+  "Wappen von Brandenburg"
+  "Wappen von Bremen"
+  "Wappen von Churlandt"
+  "Wappen von Cleve"
+  "Wappen von Herzoginnen Lovise"
+  "Wappen von Hessen Homburg"
+  "Weißer Löwe"
+  "ZÉ^fZ ›s<hKNTX"  # Wilhelmina Margaretta
+  "ZÉ^fZ ›s<hKNyr"  # Wilhelmine Margrethe
+  "2N*NDQV"  # Zwei Brüder
+  "^S"  # Afrikaner
+  "šNlš"  # Amazone
+  "‰RZ"  # Anna
+  "?–s|Ëu¯e"  # Arminius
+  "ôTôTW(„"  # Barbarossa
+  "Ç†*`"  # Basilisk
+  "ôTO)RšN"  # Bayern
+  "eYfk+Y"  # Beowulf
+  "Ïg—g"  # Berlin
+  "Bersteinfänger"
+  "ÔkÒR9S·V"  # Bielefeld
+  "ê•5u"  # Blitz
+  "Blumentopf"
+  "^ÉbKQ"  # Bracke
+  "ÃRpQ‰v!X"  # Brandenburg
+  "^&O^tKQ"  # Braunschweig
+  "NR ˜<SšN"  # Britannia
+  "ÔkÒR"  # Bulle
+  "Ãyp"  # Bussard
+  "ØSr‚™Ÿ"  # Camaeleon
+  "‘šëX"  # Cavalier
+  "*YPR"  # Churprinz
+  "KQ±ƒè•‚„šN"  # Clementia
+  "KQÌ‘+Y"  # Cleve
+  "Ñym<SšN"  # Colonia
+  "WVf"  # Comet
+  "¯wwêZ"  # Concordia
+  "Ãyk"  # Condor
+  "·^¯efWĞcšN"  # Constantia
+  "ÑyS«ƒg"  # Cormoran
+  "Äœ|œ"  # Crokodil
+  "ìr<wèTºN"  # Cyclop
+  "sY‘šëX"  # Dame
+  "FOıl"  # Danzig
+  "wmZŒ"  # Delphin
+  "·Vy—g<h"  # Derffinger
+  "·Va×V"  # Deutschland
+  "Y„‰Z"  # Dorothea
+  "èT™Ÿ"  # Drache
+  "Œ‚Ñyi`"  # Eichhorn
+  "Elent"
+  "?–S(„¯e"  # Elsaß
+  "i`<hÒR"  # Engel
+  "Falke"
+  "Feuerblase"
+  "Fidelitas"
+  "ÇRl"  # Fortitudo
+  "x^Ğ"  # Fortuna
+  "yPNnf"  # Frauenlob
+  "™‚Œ…Å–"  # Freya
+  "™‚‰ƒ·V"  # Friede
+  "Frithjof"
+  "ÌRKQ¯e"  # Fuchs
+  " RŒvR"  # Gabriel
+  "ªwš"  # Gazelle
+  "	Tòƒf"  # Gefion
+  "Geier"
+  "Grille"
+  "<hW¯eSyrÈp=O<h"  # Grossfriedrichburg
+  "Grönlandfahrer"
+  "<hW¯eSyrÈp=O<h"  # Habicht
+  "ÈT9h"  # Hagen
+  "Ilú‹Z"  # Hannover
+  "Il(„"  # Hansa
+  "Hay"
+  "wmÆY¾S"  # Heimdall
+  "wmÉb"  # Hela
+  "kSbpQ"  # Helgoland
+  "kSbpQ"  # Hertha
+  "Ñîh"  # Hessen
+  "^S·V^pQyr"  # Hildebrand
+  "Hoffning"
+  "Hyäne"
+  "Innocentia"
+  "àVôuêZ"  # Invidia
+  "Œ‚3t"  # Irene
+  "Isländer"
+  "¦uğ…Q¯e!X"  # Johannesburg
+  "1g‡^yr"  # Jupiter
+  "<%"  # Jäger
+  "ïQ’d"  # Kaiser
+  "ïQ’d3t"  # Kaiserin
+  "‹s¨P"  # Kronprinz
+  "Kurprinz"
+  "syŒ"  # Leopard
+  "Levitas"
+  "m—g9h"  # Lothringen
+  "IQf"  # Lux
+  "Makarele"
+  "›sKNšN"  # Maria
+  "›sS¯e"  # Mars
+  "…hKQ&O!X"  # Mecklenburg
+  "Meermann"
+  "Meerweib"
+  "¨XN)R"  # Mercurius
+  "ØKQ"  # Merkur
+  "h–ów"  # Meteor
+  "Meve"
+  "Mohr"
+  "Mohrian"
+  "«ƒÌ‘‰R"  # Morian
+  "Mummelpot"
+  "Musquito"
+  "ÿbšš"  # Nassau
+  "ÒkÇ†"  # Natter
+  "…mnf˜"  # Neptun
+  "…mnf˜"  # Neptunus
+  "<SÄO=O"  # Niobe
+  "eYN"  # Odin
+  "eYS‰v!X"  # Oldenburg
+  "ÄO3w+u¯e"  # Orpheus
+  "^Éb¯e"  # Pallas
+  "Parsimonia"
+  "Patienta"
+  "ŒTs^"  # Pax
+  "ÕlOS"  # Pfeil
+  "Pierelepomp"
+  "®vÃWTX¯e"  # Pietas
+  "âlÉb<SšN"  # Pommern
+  "âlîh"  # Posen
+  "Post"
+  "âl(ƒfW"  # Potsdam
+  "nfœëX"  # Preußen
+  "Prosperpina"
+  "Prudentia"
+  "±ƒ5ƒpQ"  # Rheinland
+  "Ringeltaube"
+  "WpQ"  # Roland
+  "Rommelpot"
+  "Wi`"  # Roon
+  "Rosenfelde"
+  "Amjmw"  # Rover
+  "(„KQîh"  # Sachsen
+  "kp%‡4‡"  # Salamander
+  "ËeætS"  # Schwalbe
+  "Ëeúe"  # Schwann
+  "ÑyfR"  # Scientia
+  "Seeadler"
+  "Seemoewe"
+  "Seeritter"
+  "PŸ<hVÌ‘·V"  # Siegfried
+  "ËeXoS"  # Spandau
+  "¯eÀs=O"  # Sperber
+  "ËeyrÉbSŒg·V"  # Stralsund
+  "Syrig"
+  "Temperantia"
+  "ÒVĞcN"  # Thetis
+  "Tiger"
+  ")n‚„®Y"  # Undine
+  "ôuHYTX"  # Vineta
+  "Walfisch"
+  "Wasserhund"
+  "O›îh!X"  # Weissenburg
+  "Wespe"
+  "Z¯eyrÕl&O"  # Westfalen
+  "ôuN"  # Wettin
+  "Windhund"
+  "ôuyrS¯eôTk"  # Wittelsbach
+  "Wolkensäule"
+  "&rŒ!X"  # Württemberg
+  "Wörth"
+  "Nb—g9h"  # Zähringen
+  "Ägir"
+}
+army_names = {
+  "^ıV›Q–"  # Kaiserliche Armee
+  "$PROVINCE$›Q"  # Armee von $PROVINCE$
+}
+fleet_names = {
+  "^ıV0‚–"  # Kaiserliche Flotte
+}

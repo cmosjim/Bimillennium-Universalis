@@ -1,0 +1,148 @@
+graphical_culture = westerngfx
+colonial_parent = SPA
+random_nation_chance = 0
+color = {
+  213
+  82
+  109
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  shichen_ideas
+  defensive_ideas
+  religious_ideas
+  offensive_ideas
+  trade_ideas
+  diplomatic_ideas
+  spy_ideas
+  economic_ideas
+  administrative_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  spanish_tercio
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  austrian_white_coat
+  austrian_jaeger
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "David #0" = 0
+  "Delia #0" = -1
+  "eY)RôuZ #0" = -1  # Olivia #0
+  "<hKN^XS¾ #0" = -1  # Griselda #0
+  "LN)R^X¯e #0" = 0  # Ulíses #0
+  "TX·VeY #0" = 0  # Tadeo #0
+  "1W0WšNåT #0" = 0  # Santiago #0
+  "œòƒú‹ #0" = 0  # Rufino #0
+  "W=OXb #0" = 0  # Roberto #0
+  "iO·VW #0" = 0  # Pedro #0
+  "^yrÌ‘‰eY #0" = 0  # Patricio #0
+  "ôTÃRW #0" = 0  # Pablo #0
+  "eYKQTXôueY #0" = 0  # Octavio #0
+  "³u‰0t #0" = 0  # Narciso #0
+  "s|<hS #0" = 0  # Miguel #0
+  "lšÑy¯e #0" = 0  # Marcos #0
+  "üfªRÃWS #0" = 0  # Manuel #0
+  "±ƒeY³uSY #0" = 0  # Leonardo #0
+  "áw‰R #0" = 0  # Juan #0
+  "UO^X #0" = 0  # José #0
+  " R^Ì‘ÃWS #0" = 0  # Gabriel #0
+  "òƒ·VS #0" = 0  # Fidel #0
+  "9SWSY #0" = 0  # Fernando #0
+  "Õl+YÌ‘‰eY #0" = 0  # Fabricio #0
+  "ÃWætÌ‘¯eXb #0" = 0  # Evaristo #0
+  "i`Ì‘KQ #0" = 0  # Enrique #0
+  "ÃWs|)RšNú‹ #0" = 0  # Emiliano #0
+  "Yfb #0" = 0  # Domingo #0
+  "9N<SS #0" = 0  # Daniel #0
+  "ôTXbm…h #0" = 0  # Bartolomé #0
+  "?–¯e·VœætS #0" = 0  # Asdrúbal #0
+  "‰RN<SeY #0" = 0  # Antonio #0
+  "?–SætW #0" = 0  # Álvaro #0
+  "?–SXb #0" = 0  # Alberto #0
+  "?–äS¯eN #0" = 0  # Agustín #0
+  "?–S #0" = 0  # Abel #0
+  "UO^X #0 ‰RN<SeY" = 10  # José #0 Antonio
+  "aSm¯e #0" = 10  # Carlos #0
+  "‰R·VÈp¯e #0" = 10  # Andrés #0
+  "UO^X #0 TX·VeY" = 15  # José #0 Tadeo
+  "KQÌ‘¯eXbV #0" = 15  # Cristóbal #0
+  "‰™„ #0" = 20  # Simón #0
+  "UO^X #0 ›sKNšN" = 20  # José #0 María
+}
+leader_names = {
+  "Alcantuz"
+  "?–SÕlW"  # Alfaro
+  "Anzoátegui"
+  "m"  # Bello
+  "SyrpQ"  # Beltrán
+  "Berbeo"
+  "fW“^S"  # Betancur
+  "ZS)RætS"  # Bolívar
+  "aS÷–<SeY"  # Carreño
+  "Díaz"
+  "Flores"
+  "ÖvfW"  # Gaitán
+  " RpQ"  # Galán
+  " R‰šN ·V Xb±ƒY"  # García de Toledo
+  "b¦ž¯e"  # Gómez
+  "Gutiérrez de Piñeres"
+  "Marño"
+  "lšKQ¯e"  # Márquez
+  "è•·V¯e"  # Méndez
+  "s|R±ƒ³u"  # Michelena
+  "s|6wS"  # Mier
+  "·V s|pQ¾"  # de Miranda
+  "«ƒ)R³u"  # Molina
+  "«ƒ³u R¯e"  # Monagas
+  "™„(„Sæ—"  # Monsalve
+  "Montúfar"
+  "Nariño"
+  "Narvarte"
+  "O'Baal"
+  "O'Leary"
+  "Ortíz"
+  ">m¯e"  # Páez
+  "Paredo"
+  "^¯eyrÉb³u"  # Pastrana
+  "Pinilla"
+  "Pizarro"
+  "nfÉbTX"  # Plata
+  "Plaza"
+  "WšN"  # Roa
+  "W·VÌ‘<h¯e"  # Rodríguez
+  "WÈT¯e"  # Rojas
+  "™ŸN"  # Rondón
+  "Rosillo"
+  "QhfW·V"  # Santander
+  "Soublette"
+  "Xb÷–¯e"  # Torres
+  "LNæt…QÈT"  # Urbaneja
+  "LNÌ‘æ—"  # Uribe
+  "ôTS R¯e"  # Vargas
+  "Viscardo"
+}
+ship_names = {
+  "Anaco"
+  "Calabozo"
+  "Caracas"
+  "El Tigre"
+  "Vg‰¯eÑy"  # Francisco
+  "Guanare"
+  "Maracaibo"
+  "eYÌ‘ú‹Ñy"  # Orinoco
+  "yrœ^eu"  # Trujillo
+  "ôT&O‰šN"  # Valencia
+}

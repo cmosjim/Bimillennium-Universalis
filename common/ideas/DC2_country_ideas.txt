@@ -1,0 +1,52 @@
+
+DC2_ideas = {
+	start = {
+		army_tradition = 1.0
+		discipline = 0.05
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+	
+	trigger = {
+		OR = {
+			tag = DC2
+			tag = SN1
+			tag = XQX
+		}	
+	}
+	free = yes
+	
+	dc2_first_centrial_power = {
+		monthly_splendor = 1
+		global_unrest = -1
+	}
+
+	dc2_chnhouzhizhu = {
+		imperial_mandate = 0.1
+		yearly_absolutism = 0.1
+	}
+	
+	dc2_gouyulindizhigizhu = {
+		governing_capacity_modifier = 0.1	
+	}
+
+	dc2_threegounnightchin = {
+		advisor_pool = 1
+		yearly_corruption = -0.1
+	}
+
+	dc2_shibengen = {
+		global_colonial_growth = 40
+		stability_cost_modifier = -0.1
+	}
+	
+	dc2_firstgounzhiguo = {
+		land_morale = 0.15
+	}
+
+	dc2_chingenzidou = {
+			administrative_efficiency = 0.2
+	}
+}

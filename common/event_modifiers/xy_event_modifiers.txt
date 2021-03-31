@@ -1,0 +1,428 @@
+#2019.1.5
+wudaigeju = {
+global_unrest = -5
+ae_impact = -0.30
+advisor_cost = 0.50
+development_cost = 1
+land_maintenance_modifier = 0.25
+}
+
+wudaixingqi = {
+land_morale = 0.20
+discipline = 0.10
+siege_ability = 0.20
+land_maintenance_modifier = -0.25
+}
+
+wudaishuailuo = {
+land_morale = -0.20
+discipline = -0.10
+}
+liaoguojueqi11 = { 
+global_unrest = -5
+land_morale = 0.10
+discipline = 0.05
+land_maintenance_modifier = -0.10
+core_creation = -0.15
+}
+
+zhuwenyisi = { 
+land_morale = -0.20
+shock_damage_received = 0.5
+fire_damage_received = 0.5
+}
+
+fanzhengejuyouzhu = {
+land_maintenance_modifier = 0.50
+yearly_corruption = 0.2
+}
+
+wudaishijiansha = {
+
+}
+
+houtangneiluan = { 
+land_morale = -0.30
+discipline = -0.10
+shock_damage_received = 0.8
+fire_damage_received = 0.8
+defensiveness = -0.5
+}
+
+houjinbaojun = { 
+land_morale = -0.20
+discipline = -0.10
+shock_damage_received = 0.5
+fire_damage_received = 0.5
+defensiveness = -0.4
+}
+
+wudaidiguo = { 
+land_morale = 0.10
+discipline = 0.05
+advisor_cost = -0.10
+
+}
+
+wudaiwengai = {
+development_cost = -1
+
+
+}
+
+wudaidfgbm = {
+global_autonomy = 0.20
+}
+
+wudaiwugai = {
+global_unrest = 5
+land_maintenance_modifier = -0.25
+}
+
+wudaijfbm = {
+global_unrest = 2
+land_morale = -0.15
+}
+
+wudaiguangai = {
+advisor_cost = -0.50
+}
+
+wudaigcdd = { 
+yearly_corruption = 0.5
+}
+nanchuneiluan = {
+stability_cost_modifier = 2
+}
+
+zhongwenqingwu = {
+stability_cost_modifier = -0.10
+global_unrest = -1
+development_cost = -0.10
+land_morale = -0.20
+discipline = -0.05
+land_maintenance_modifier = 0.40
+}
+zhulijinsang = {
+discipline = -0.05
+shock_damage_received = 0.5
+fire_damage_received = 0.5
+}
+
+sngtongyijiekou = {
+diplomatic_reputation = -20
+ }
+
+sngshoucai = {
+global_autonomy = -0.03
+global_unrest = -4
+ }
+
+sngfengzhuangku = {
+discipline = 0.05
+land_morale = 0.15
+infantry_power = 0.20
+ }
+sngfanfubai = {
+yearly_corruption = -0.2
+prestige = 1
+
+}
+
+sngshibei = {
+development_cost = -0.15
+global_missionary_strength = 0.03
+culture_conversion_cost = -0.20
+}
+
+sanyihuihe1 = {
+local_production_efficiency = -0.3
+local_manpower_modifier = -0.3
+local_tax_modifier = -0.3
+fort_level = -1
+}
+sanyihuihe2 = {
+local_production_efficiency = -0.3
+local_manpower_modifier = -0.3
+local_tax_modifier = -0.3
+fort_level = -1
+}
+sanyihuihe3 = {
+local_production_efficiency = -0.3
+local_manpower_modifier = -0.3
+local_tax_modifier = -0.3
+fort_level = -1
+}
+
+wwzwurenbuman = {
+land_maintenance_modifier = 0.20
+land_morale = -0.15
+}
+
+wwzwenrenbuman = {
+global_tax_modifier = -0.15
+development_cost = 0.20
+ }
+
+wwzjiayuwuren = { 
+global_unrest = -4
+global_autonomy = -0.05
+production_efficiency = 0.15
+}
+
+wwzwurenjiaoheng = {
+global_unrest = -4
+yearly_corruption = 0.10
+}
+
+wwzwurenfennu = {
+discipline = -0.05
+infantry_power = 0.10
+cavalry_power = -0.10
+land_attrition = 0.15
+global_unrest = 2
+}
+
+wwzwurenlixin = {
+discipline = -0.10
+infantry_power = -0.20
+cavalry_power = -0.20
+land_attrition = 0.30
+core_creation = 0.20
+}
+
+wwzjiayuwwenren = {
+discipline = 0.05
+land_morale = 0.15
+defensiveness = 0.3
+}
+
+wwzwenrenfubai = {
+production_efficiency = -0.50
+global_tax_modifier = -0.20
+yearly_corruption = 0.15
+}
+
+wwzjlzz = {
+local_unrest = -6
+local_tax_modifier = -0.3
+ }
+
+wwzwgzz = {
+local_unrest = -2
+local_institution_spread = 0.20
+ }
+
+caoyuanchengshi1 = {
+local_manpower_modifier = 5
+land_forcelimit = 4
+local_tax_modifier = 12
+province_trade_power_modifier = 2
+local_production_efficiency = 12
+local_unrest = -4
+local_development_cost = 100
+}
+caoyuanchengshi2 = {
+local_tax_modifier = -0.7
+local_production_efficiency = -0.7
+province_trade_power_modifier = -0.7
+local_autonomy = 0.05
+}
+
+dangxiangjueqi1 = {
+global_unrest = -5
+land_morale = 0.30
+discipline = 0.10
+land_maintenance_modifier = -0.20
+core_creation = -0.15
+land_forcelimit_modifier = 1
+}
+
+nvzhenjueqi1 = {
+global_unrest = -5
+land_morale = 0.30
+discipline = 0.10
+land_maintenance_modifier = -0.20
+core_creation = -0.15
+land_forcelimit_modifier = 1
+}
+
+shuiwangjing = {
+global_unrest = 3
+land_morale = -0.15
+cavalry_power = -0.15
+}
+caoyuanchengshicn = {
+culture_conversion_cost = 10
+}
+mglveduo = {
+local_unrest = -100
+land_forcelimit = 1
+local_tax_modifier = -0.7
+local_production_efficiency = -0.7
+}
+
+beigulimeng = {
+diplomatic_reputation = -20
+ }
+mgezaodujie = { 
+land_morale = -0.60
+discipline = -0.10
+}
+gnnshuailuo = {
+discipline = -0.10
+land_morale = -0.30
+shock_damage_received = 0.8
+ }
+yashanyimin = { 
+colonists = 2
+global_colonial_growth = 100
+colonist_placement_chance = 0.4
+culture_conversion_cost = -0.70
+}
+cujinjiaoyu11 = {
+
+}
+baoshouzhuyijueqi = {
+}
+mybhzy_industry = {
+technology_cost = 0.3
+improve_relation_modifier = -0.25
+global_trade_power = -0.2
+}
+wbjl_industry = {
+}
+
+beiguli_neizhan = {
+diplomatic_reputation = -20
+ }
+ 
+socialist_refrom = {
+global_unrest = -10
+}
+roc_neizhanjingong = {
+discipline = 0.15
+land_morale = 0.30
+land_maintenance_modifier = 0.20
+defensiveness = 0.3
+}
+cw1_neizhanfangyu = {
+defensiveness = 0.5
+	artillery_cost = -0.5
+	cavalry_cost = -0.5
+	infantry_cost = -0.5
+	hostile_attrition = 2
+}
+cw1_neizhanfangong = {
+discipline = 0.15
+land_morale = 0.30
+movement_speed = 1
+}
+roc_neizhankuibai = {
+defensiveness = -1
+discipline = -0.15
+land_morale = -0.30
+}
+people_wake_com = {
+discipline = 0.05
+}
+false_communism = { 
+ land_maintenance_modifier = 0.40
+		    stability_cost_modifier = 0.5
+		    global_missionary_strength = -0.05
+			global_manpower_modifier = -1
+			production_efficiency = 0.4
+			global_tax_modifier = 0.2
+			land_morale = -0.60
+			discipline = -0.25
+			stability_cost_modifier = 0.25
+}
+cultural_revolution_md = { 
+	 production_efficiency = -0.5
+     trade_efficiency = -0.5
+	 yearly_corruption = 0.5
+	 land_morale = -0.30
+	 discipline = -0.05
+}
+
+transfer_pdcline = {
+production_efficiency = 0.3
+trade_efficiency = 0.3
+}
+betransfered_pdcline = {
+production_efficiency = -0.5
+trade_efficiency = -0.5
+}
+
+harmonized_ideology = {
+			land_morale = -1
+			discipline = -1
+			production_efficiency = -1
+			global_tax_modifier = -1
+			global_unrest = 100
+	religion = yes
+}
+persia_rebel2s = {
+local_unrest = 8
+local_missionary_strength = -0.10
+}
+shangshanxiaxiangmd = {
+production_efficiency = -0.2
+}
+
+shishenyoudai = {
+global_tax_modifier = -0.7
+production_efficiency = -0.7
+			land_morale = -0.3
+			discipline = -0.1
+    shock_damage_received = 0.5
+    fire_damage_received = 0.5
+}
+shizurangli = {
+trade_efficiency = -0.7
+}
+zuozongtangdf = {
+discipline = 0.1
+land_morale = 0.2
+production_efficiency = 0.4
+development_cost = -0.3
+}
+hanxindf = {
+discipline = 0.1
+land_morale = 0.2
+shock_damage_received = -0.3
+ fire_damage_received = -0.3
+}
+guanzhongdf = {
+global_tax_modifier = 0.7
+production_efficiency = 0.7
+development_cost = -1
+}
+zhugeliangdf = {
+global_tax_modifier = 0.5
+production_efficiency = 0.5
+discipline = 0.1
+land_morale = 0.2
+}
+jiangziyadf = {
+discipline = 0.05
+land_morale = 0.10
+shock_damage_received = -0.15
+ fire_damage_received = -0.15
+ development_cost = -0.3
+ 	global_unrest = -5
+	local_autonomy = -0.05
+}
+lijingdf = {
+discipline = 0.1
+land_morale = 0.2
+infantry_power = 0.33
+cavalry_power = 0.33
+}
+macedonia_kindm = {
+shock_damage_received = -0.3
+ fire_damage_received = -0.3
+}
+macedonia_kindm2 = {
+all_power_cost = -0.05
+}

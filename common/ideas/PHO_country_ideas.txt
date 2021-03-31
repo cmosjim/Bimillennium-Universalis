@@ -1,0 +1,47 @@
+#northern xio
+PHO_ideas = {
+	start = {
+		global_manpower_modifier = 0.1
+		no_cost_for_reinforcing = yes
+	}
+	
+	bonus = {
+		army_tradition = 1
+	}
+	
+	trigger = {
+	   tag = PHO
+	}
+
+	free = yes
+	
+	ruixiang = {
+		global_unrest = -2
+	}
+
+	king_of_birds = {
+		infantry_power = 0.15
+	}
+
+	fire_personal_diety = {
+		land_forcelimit_modifier = 0.15
+	}
+
+	recycle_life_in_fire = {
+		manpower_recovery_speed = 0.20
+	}
+
+	name_of_yan = {
+		core_creation = -0.1
+		prestige = 1
+	}
+
+	sepcial_location_trade = {
+		global_trade_power = 0.15
+	}
+
+	pirate_solve = {
+		naval_morale = 0.15
+		navy_tradition = 1
+	}
+}

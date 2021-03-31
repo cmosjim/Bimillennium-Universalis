@@ -1,0 +1,120 @@
+graphical_culture = westerngfx
+color = {
+  147
+  130
+  118
+}
+historical_idea_groups = {	
+  early_trade_ideas
+  early_adm_ideas
+  early_mil_ideas
+  early_religious_ideas
+  shentou_ideas
+  kaituo_ideas
+  trade_ideas
+  defensive_ideas
+  religious_ideas
+  economic_ideas
+  diplomatic_ideas
+  innovativeness_ideas
+  offensive_ideas
+  spy_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  austrian_white_coat
+  prussian_uhlan
+  austrian_jaeger
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "iOyrÉb #0" = -1  # Petra #0
+  "'k‚„)R #0" = -1  # Odilie #0
+  "3t¾ #0" = -1  # Linda #0
+  "ôuSVÌ‘·V #0" = 0  # Wilfried #0
+  "‡eVrS #0" = 0  # Wenzel #0
+  "ôuKQY #0" = 0  # Viktor #0
+  "æt&ON #0" = 0  # Valentin #0
+  "Xblš¯e #0" = 0  # Thomas #0
+  "PŸ<hVÌ‘·V #0" = 0  # Siegfried #0
+  "±ƒàVÈT·V #0" = 0  # Reinhard #0
+  "<SKQÉb¯e #0" = 0  # Niklas #0
+  "lš“^¯e #0" = 0  # Markus #0
+  "“^Syr #0" = 0  # Kurt #0
+  "“^ú‹ #0" = 0  # Kuno #0
+  "2SÌ‘LN¯e #0" = 0  # Julius #0
+  "¦umt+Y #0" = 0  # Joseph #0
+  "6w)Rs| #0" = 0  # Jeremias #0
+  "k=Oyr #0" = 0  # Herbert #0
+  "ÈTSyr)n #0" = 0  # Hartwin #0
+  "ÈTu #0" = 0  # Hagan #0
+  "<h÷–bS #0" = 0  # Gregor #0
+  "byr™lSKQ #0" = 0  # Gottschalk #0
+  "ÕlÔk‰R #0" = 0  # Fabian #0
+  "ÃWS)n #0" = 0  # Erwin #0
+  "ÃWKQ=Oyr #0" = 0  # Eckbert #0
+  "^KQÈT·V #0" = 0  # Burkhard #0
+  "ôTÿbôT #0" = 0  # Barnabas #0
+  "šN†SqS'Y #0" = 0  # Alexander #0
+  "?–S^÷–^yr #0" = 0  # Albrecht #0
+  "?–¾S=Oyr #0" = 0  # Adalbert #0
+  "¦uğ #13 VÌ‘·VÌ‘^" = 15  # Johann #13 Friedrich
+  "ZÉ^ #0" = 20  # Wilhelm #0
+  "<hÈT·V #0" = 20  # Gerhard #0
+  "<heYS<h #0" = 20  # Georg #0
+  "VÌ‘·VÌ‘^ eYäS¯eyr #0" = 20  # Friedrich August #0
+  "êyrÌ‘^ #0" = 20  # Dietrich #0
+  "KQÌ‘¯eXb+Y #0" = 20  # Christoph #0
+  "‰RN Ñ‘yr #0" = 20  # Anton Günther #0
+  "?–S+Y #0" = 20  # Adolf #0
+  "«ƒÌ‘(ƒ #1" = 20  # Moritz #1
+  "‰RN #0" = 40  # Anton #0
+  "KQÌ‘¯e‚„‰R #2" = 40  # Christian #2
+  "¦uğ #13" = 60  # Johann #13
+}
+leader_names = {
+  "KQS"  # Becker
+  "Süf"  # Behrmann
+  "^mKQËeyr·V"  # Brockstede
+  "Büsing"
+  "Œ‚ÒR¯e"  # Eilers
+  "i`<hÒR"  # Engel
+  "Vg(ƒ"  # Franz
+  "ÈTÆY¯e"  # Harms
+  "1kÌ‘^¯e"  # Hinrichs
+  "KQ÷–i`"  # Kleen
+  "pQ«ƒS¯e"  # Lammers
+  "bSkyr"  # Luchte
+  "È6w"  # Meyer
+  "™„·Vm"  # Munderloh
+  "Prüß"
+  "·QKQ"  # Renke
+  "Wyr"  # Roth
+  "ËeÆRyr"  # Schmitt
+  "ËeXbÒR"  # Stolle
+}
+ship_names = {
+  "KQÌ‘¯e‚„‰R=O5r"  # Graf Christian
+  "Graf Anton Günther"
+  "ÃWS¯e+Y±ƒyr"  # Elsfleth
+  "áw·V"  # Hude
+  "ÈTÕn"  # Hatten
+  "æt‰v!X"  # Wardenburg
+  "ÃW·Væ—k"  # Edewecht
+  "(ƒôu3u‰R"  # Zwischenahn
+  "ôu9S¯eyr·V"  # Weifelstede
+  "Éb¯eyr·V"  # Rastede
+}
+army_names = {
+  "$PROVINCE$›Q"  # Armee von $PROVINCE$
+}

@@ -1,0 +1,50 @@
+#northern xio
+HNH_ideas = {
+	start = {
+		global_manpower_modifier = 0.15
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		navy_tradition = 0.5
+		infantry_cost = -0.1
+	}
+	
+	trigger = {
+	   tag = HNH
+	}
+
+	free = yes
+	
+	huanguan_wei_guan = {
+		adm_tech_cost_modifier = -0.1
+		administrative_efficiency = 0.1
+	}
+
+	business_empire_han = {
+		trade_range_modifier = 0.25
+		merchants = 1
+	}
+
+	Han_ethnic_group = {
+		prestige = 1
+	}
+	
+	Yellow_River_Yangtze_River = {
+		production_efficiency = 0.1
+	}
+
+	money_first_han = {
+		global_tax_modifier = 0.1
+	}
+
+	stay_calm_to_turmoil = {
+		manpower_recovery_speed = 0.2
+		embargo_efficiency = 0.2
+	}
+
+	trade_to_sounthern_area = {
+		trade_efficiency = 0.15
+	}
+
+}

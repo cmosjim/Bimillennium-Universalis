@@ -1,0 +1,265 @@
+graphical_culture = asiangfx
+color = {
+  221
+  93
+  170
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  zhongqi_ideas
+  rongren_ideas
+  shenquan_ideas
+  administrative_ideas
+  religious_ideas
+  trade_ideas
+  quantity_ideas
+  offensive_ideas
+  expansion_ideas
+  economic_ideas
+  defensive_ideas
+}
+historical_units = {
+  steppe_riders
+  steppe_lancers
+  steppe_mounted_raiders
+  steppe_cavalry
+  steppe_uhlans
+  steppe_raiders
+  steppe_footmen
+  steppe_musketeers
+  steppe_infantry
+  steppe_rifles
+  reformed_steppe_rifles
+}
+monarch_names = {
+  "Bek #0" = 20
+  "Bahamu #0" = 20
+  "Bars #0" = 20
+  "Buyan #0" = 20
+  "Biligtü #0" = 10
+  "Dayan #0" = 20
+  "Darayisung #0" = 20
+  "Delbeg #0" = 20
+  "Engke #0" = 10
+  "Oyiradai #0" = 20
+  "Qayshan #0" = 10
+  "Qoshila #0" = 10
+  "Sayn #0" = 20
+  "Suddhipala #0" = 10
+  "Tayisung #0" = 20
+  "Uskhal #0" = 10
+  "Yesün #0" = 10
+  "Batu #0" = 0
+  "Eljigidei #0" = 0
+  "Samar #0" = -1
+  "Zaufishan #0" = -1
+  "ánıwm #0" = -1  # Mandukhai #0
+  "iR?Q^ #0" = -1  # Börte #0
+  "^(gÑN #0" = -1  # Temülen #0
+  "=gd #0" = 0  # Joichi #0
+  "?–Ì‘KQ #0" = 0  # Ariq #0
+  "şVKQ #0" = 10  # Toq #0
+  "Öb÷– #0" = 10  # Tolui #0
+  "şVè• #0" = 10  # Tümen #0
+  "10k #0" = 10  # Toghun #0
+  "^(g?Q #0" = 10  # Temür #0
+  "Á”(gw #0" = 10  # Temujin #0
+  "z–ğS #0" = 10  # Ögödei #0
+  "NQ÷– #0" = 15  # Örüg #0
+  "ŒRw #0" = 20  # Öljei #0
+  "ánıœ #0" = 20  # Manduulun #0
+  "id&O #0" = 20  # Mulan #0
+  "™„åT #0" = 10  # Möngke #0
+  "lš?QäS?Q	T` #0" = 10  # Markörgis #0
+  "—g9N #0" = 20  # Ligdan #0
+  "–– #0" = 10  # Köke #0
+  "ıVÅVÈp #0" = 10  # Kublai #0
+  "SSÌ‘KQşV #0" = 10  # Jorightu #0
+  "ÿa˜t(ís #0" = 10  # Irinchibal #0
+  "<››Rd #0" = 20  # Gulichi #0
+  "äS)n #0" = 20  # Gün #0
+  "51u #0" = 10  # Güyük #0
+  "˜ÒR=OKQ #0" = 10  # Elbeg #0
+  "˜òT #0" = 10  # Ejei #0
+  "ZSê #0" = 20  # Bodi #0
+  "1r²wÎÔb›RkQ¾ #0" = 10  # Ayurparibhadra #0
+  "?–œğS #0" = 10  # Arugtai #0
+  "?–	TkQ #0" = 10  # Arigaba #0
+  "úOTr #0" = 20  # Altan #0
+  "?–±S #0" = 20  # Adai #0
+  "?–vVYSNm #0" = 20  # Agbarjin #0
+}
+leader_names = {
+  "iR?QêS²e"  # Borjigin
+  "Besud"
+  "-gLR¦N?Q"  # Jalair
+  "Hatagin"
+  "Olkhonud"
+  "Harnut"
+  "Eljigin"
+  "Bayaud"
+  "Gorlos"
+  "Darhad"
+  "Sharnud"
+  "Uriankhan"
+  "Chinos"
+  "Onkhod"
+  "Mangud"
+  "Ujeed"
+  "Onniud"
+  "Myangan"
+  "Yunsheebuu"
+  "Tumed"
+  "Sartuul"
+  "Tangud"
+  "Merged"
+  "Barga"
+  "Daguur"
+  "Tsakhar"
+  "Kharchin"
+  "Uuld"
+  "Torguut"
+  "Jongoor"
+  "Khotogoid"
+  "Avga"
+  "Tugchin"
+  "Guchid"
+  "ÑySl"  # Khorchin
+  "Khitad"
+  "Ikh"
+  "Asud"
+  "Baatud"
+  "Barnud"
+  "Khuuchid"
+  "Khalbagad"
+  "Khangad"
+  "Jarangiinkhan"
+  "Togoruutan"
+  "Khar'd"
+  "Khorkhoi-nudten"
+  "Buurluud"
+  "Khavchig"
+  "Bulagachid"
+  "Gozuul"
+  "Uzuun"
+  "Echeed"
+  "Khavkhchin"
+  "Orovgod"
+  "Tavnag"
+  "Khaakhar"
+  "Khunguud"
+  "Burged"
+  "Khuitserleg"
+  "Chutsuut"
+  "Ulanguud"
+  "Ezen"
+  "Undgaa"
+  "Gahan"
+  "Aksagal"
+  "Zuun-shuvuuchin"
+  "Zaaruud"
+  "Dalandaganad"
+  "Tsagaan-zel"
+  "Khar-zel"
+  "Khariad"
+  "Daar'tan"
+  "Barchuul"
+  "Gerchuud"
+  "Baachuud"
+  "Buuchuud"
+  "Khuluud"
+  "Basigid"
+  "Tsookhor"
+  "Khiitluud"
+  "Gal"
+  "Motoi"
+  "Tele"
+  "Sood"
+  "Mankhilag"
+  "Khamnigan"
+  "Taijiud"
+  "CNî†"  # Naiman
+  "Soloon"
+  "‰yr"  # Khoid
+  "Khereed"
+  "Tsoros"
+  "Talas"
+  "Baarin"
+  "Alag-aduun"
+  "Saljud"
+  "Uvashi"
+  "Uneged"
+  "Asan"
+  "Uuhan"
+  "Uush"
+  "Tsoor"
+  "Jalaid"
+  "Zaisanguud"
+  "Zurchid"
+  "Sunid"
+  "Tatar"
+  "Tuuhai"
+  "Usun"
+  "USU"  # Khalkha
+  "Khandgai"
+  "Khangin"
+  "Khiad"
+  "Khoton"
+  "Khurlad"
+  "Tsagaan"
+  "<S&O"  # Nirun
+  "Durved"
+  "Baatar"
+  "Zelme"
+  "Tuved"
+  "Tavuud"
+  "Khoshuud"
+  "Khasag"
+  "Urad"
+  "Yamaat"
+}
+ship_names = {
+  "”^f"  # Yingchang
+  "ÈTLRŒT—g"  # Karakorum
+  "|TŒTimyr"  # Hohhot
+  "ågr^"  # Chagaan
+  "b	T`Wl"  # Ghengis Khan
+  "=gd"  # Jöchi
+  "z–ğS"  # Ögödei
+  "Öb÷–"  # Tolui
+  "Möngke"
+  "ıVÅVÈp"  # Qubilai
+  "íeÈpNQ"  # Hülegü
+  "Böke"
+  "Jinggim"
+  "Kamala"
+  "¾idOW"  # Dharmapala
+  "Örüg Temür"
+  "?–±S"  # Adai
+  "˜ÒR=OKQ"  # Elbeg
+  "Ôbı"  # Batu
+  "(gNSÎ"  # Mugali
+  "ZSS=g"  # Bo'orchu
+  "ZSSıV"  # Borokhula
+  "ZWów"  # Chilaun
+  "ıVÅVÈp"  # Khubilai
+  "wÒR…"  # Jelme
+  "òT+R"  # Jebe
+  "NğS"  # Subutai
+  "6w‹VZiPg"  # Yelü Chucai
+  "1Y	TıVÃyıV"  # Shikhikhutug
+  "•?QU1YLR"  # Sorqan Shira
+  "Khar Khiruge"
+  "Dörben Külü'üd"
+  "Dörben Noyas"
+}
+army_names = {
+  "=`›…"  # Kheshig
+  "Left Wing Tumen"
+  "Right Wing Tumen"
+  "Central Tumen"
+  "Buryat Tumen"
+  "$PROVINCE$ Tumen"
+}

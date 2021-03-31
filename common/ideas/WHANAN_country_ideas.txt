@@ -1,0 +1,58 @@
+WHANAN_ideas = {
+	start = {
+		land_morale = 0.15
+		discipline = 0.05
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.33
+	}
+
+	trigger = {
+	OR = {
+		tag = ZOF
+		tag = SNJ
+		tag = UAZ
+		tag = ZIX
+		tag = LUO
+		tag = WLN
+		tag = YNB
+		tag = CNW
+		tag = SNC
+		tag = DM1
+		tag = DR1
+		tag = TI1
+		tag = CD2
+		tag = FN1
+		tag = HE2
+		tag = DFW
+		tag = FA2
+		tag = LSH
+		tag = SFX		
+		}
+	}
+	free = yes
+
+	trade_developed_well = {
+		trade_efficiency = 0.1
+		naval_forcelimit_modifier = 0.1
+	}
+	whanan_powerful_navy = {
+		navy_tradition = 1.0
+	}
+	whanan_culture = {
+		diplomatic_upkeep = 1
+	}
+	whanan_hilly = {
+		defensiveness = 0.25
+	}
+	whanan_terraces = {
+		land_attrition = -0.1
+	}
+	dense_forests = {
+		global_ship_cost = -0.10
+	}
+	various_culture = {
+		global_unrest = -2
+	}
+}

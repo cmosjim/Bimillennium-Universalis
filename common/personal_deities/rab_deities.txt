@@ -1,0 +1,235 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+
+
+#daoism
+
+san_qing_dao_zu =
+{
+	land_maintenance_modifier = -0.2
+
+	allow = { religion = daoism }
+	sprite = 103
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}
+}
+
+
+donghua_emperor = 
+{
+	
+	land_morale = 0.1
+	infantry_power = 0.1
+	
+	allow = { religion = daoism }
+	sprite = 104
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}			
+	}	
+}
+
+xi_wangmu =
+{
+	heir_chance = 0.5
+	global_manpower_modifier = 0.2
+		
+	allow = { religion = daoism }
+	sprite = 105
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}		
+	}	
+}
+
+jade_emperor = 
+{
+    fabricate_claims_cost = -0.5
+	missionaries = 1
+	
+	allow = { religion = daoism }
+	sprite = 106
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}	
+}
+
+xuantian_emperor = 
+{
+ 	navy_tradition = 0.5
+	blockade_efficiency = 0.25
+	
+	allow = { religion = daoism }
+	sprite = 107
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}
+#三宵娘娘
+
+threeshiuoniannian = 
+{
+
+	infantry_cost = -0.10
+	cavalry_cost = -0.10
+	
+	allow = { religion = satsana_phi }
+	sprite = 108
+	
+	ai_will_do = {
+		factor = 1
+	}	
+}
+  
+ #张五郎 
+  zhangwulang = 
+{
+ 	discipline = 0.05
+	
+	allow = { religion = satsana_phi }
+	sprite = 109
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}
+  
+ #三元将军 
+  threeuangjingjung = 
+{
+ 	cavalry_power = 0.10
+	cavalry_shock = 1
+	
+	allow = { religion = satsana_phi }
+	sprite = 110
+	
+	ai_will_do = {
+		factor = 1	
+	}	
+}
+  
+#法家--重術派(以韓國之申不害為代表)
+#
+zhongshupie = {
+
+	war_exhaustion_cost = -0.25
+	
+	allow = { religion = legalist }
+	sprite = 111
+	ai_will_do = {
+		factor = 1	
+	}	
+}
+#法家--重法派(以商鞅為代表)
+zhongfarpie = {
+
+	global_unrest = -2 
+	
+	allow = { religion = legalist }
+	
+	sprite = 112
+	ai_will_do = {
+		factor = 1	
+	}	
+}
+#法家--重勢派(以慎到為代表)
+zhongshipie = {
+
+	administrative_efficiency = 0.1
+	
+	allow = { religion = legalist }
+	
+	sprite = 113
+	ai_will_do = {
+		factor = 1	
+	}	
+}
+
+
+#1.初期法家的代表
+#
+#a)管仲:認為人君當以政令的督禁,謀求人民的根本利益,辦法則是以重農政策為中心,輔以節用、輸財、濟困等措施。人民必須享有充裕的衣食,但私人的財產不能積聚過多,以免貧富懸殊而發生危機,因此主張工商大利收歸國有。
+#
+#b)子產:改革鄭國內政,聽從輿論,擇賢從政,破除迷信,主張重刑,言行含有濃厚的法家思想,,以嚴刑為治。
+#
+#c)李悝:是律家之祖,著有法經,集諸國刑典的大成,而為魏國有系統的法典,又創行經濟政策,調整賦稅。
+#
+#2.戰國中期法家的派別
+#
+#a)重術派(以韓國之申不害為代表)
+#
+#i)術:「因任而授官,循名而責實,操殺生之柄,課群臣之能者也,此人主之所執也。」
+#
+#ii)術是祕密的統治技巧,駕馭臣下的手段。國君須以權謀操縱臣下,暗別忠奸,君以莫測的賞罰,使臣下悚懼,不敢為非。
+#
+#b)重法派(以商鞅為代表)
+#
+#i)法是政府所定臣民共守的法令,主張規定法條,以嚴刑重賞為手段,促使臣民徹底實行。
+#
+#「法者,憲令著於官府,刑罰必乎民心,賞存乎慎法,而罰加乎奸令者也。」
+#
+#c)重勢派(以慎到為代表)
+#
+#i)勢者,威勢之意,此派特別強調勢位於君主之重要,認為君主需有威勢,君主只要掌握政府的權威,即可號令人民,而人民莫敢不從。所以要國家治平,就必須扶植國君的威勢,只要有權,即使中材或庸劣之主,也可為治,臣民也得效忠,而不容違抗或批評。
+#
+#「桀為天子,能制天下,非賢也,勢重也。堯為匹夫,不能正三家,非不肖也,位卑也....故短之臨高也以位,不肖之制賢也以勢。」
+#
+#「賢人而詘於不肖者,則權輕位卑也。不肖而能服賢者,則權重位尊也。」
+#
+#「尊君卑臣,非計親也,以勢勝也。」
+#
+#3.戰國末期法家的代表:韓非子
+#

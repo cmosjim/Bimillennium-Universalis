@@ -1,0 +1,84 @@
+#2018.11.20 finish check 1.25 to 1.27
+meiji_reform = {
+	potential = {
+		OR = {
+			tag = JAP
+			tag = JA1
+		}
+		is_year = 1840
+		NOT = { is_year = 1900 } #this moment must writting into history files.
+		NOT = { has_country_modifier = md_meiji_reform }
+		NOT = { has_country_flag = flg_meiji_reform_lose }
+	}
+	
+	can_start = {
+		has_any_disaster = no
+		custom_trigger_tooltip = {
+			tooltip = tp_start_meiji_reform
+				has_country_modifier = md_process_meiji_reform #from country_decisions
+		}
+	}
+
+	can_stop = {
+		has_any_disaster = yes
+		is_at_war = yes	
+	}
+
+	progress = {
+		modifier = {
+			factor = -8
+			any_owned_province = {
+				is_capital = yes
+				controlled_by = REB
+			}   		
+		}	
+		modifier = {
+			factor = 1.5
+			MIL = 3
+		}
+		modifier = {
+			factor = 1.5
+			stability = 1
+		}
+		modifier = {
+			factor = 1.2
+			ADM = 3			
+		}
+		modifier = {
+			factor = 1.5
+			DIP = 2			
+		}
+		modifier = {
+			factor = 2
+			any_owned_province = {
+				has_building = university	
+			}	
+		}
+		modifier = {
+			factor = 100
+			has_country_flag = flg_meiji_reform_lose	
+		}		
+	}
+
+	can_end = {			#This end meaning auto detect before start !!
+		#custom_trigger_tooltip = {
+		#	tooltip = tp_end_meiji_reform
+		#		has_country_modifier = md_meiji_reform
+		#		NOT = { has_country_modifier = md_process_meiji_reform }
+		#}		
+			NOT = { num_of_rebel_armies = 1 }
+	}
+	
+	modifier = {
+
+	}	
+
+	#on_start = rab_JAP_events.10 #  delete md_process_meiji_reform
+
+	on_end = rab_JAP_events.10
+	
+	on_monthly = {
+		events = {
+		}
+	}
+}

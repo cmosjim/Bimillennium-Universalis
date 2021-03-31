@@ -1,0 +1,164 @@
+graphical_culture = westerngfx
+color = {
+  112
+  150
+  105
+}
+revolutionary_colors = {
+  10
+  0
+  6
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  zhongqi_ideas
+  rongren_ideas
+  shenquan_ideas
+  maritime_ideas
+  aristocracy_ideas
+  exploration_ideas
+  trade_ideas
+  economic_ideas
+  innovativeness_ideas
+  spy_ideas
+  administrative_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  gaelic_galloglaigh
+  gaelic_mercenary
+  gaelic_free_shooter
+  irish_charge
+  anglofrench_line
+  british_redcoat
+  british_hussar
+  british_square
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+leader_names = {
+  "‰R¯e)R"  # Annesley
+  "šN†SqS'Y"  # Alexander
+  "ôTyrÒR"  # Butler
+  "·V ^S<h"  # de Burgh
+  "=OKQ"  # Burke
+  "ZSOS"  # Boyle
+  "^g"  # Browne
+  "=OKQ"  # Bourke
+  "ôTÌ‘"  # Barry
+  "œSV"  # Balfour
+  "^±ƒ<S"  # Blayney
+  "TNÆY)R"  # Cholmondeley
+  "GYR¯eyr"  # Chichester
+  "“^yr"  # Coote
+  "wSòƒS·V"  # Caulfeild
+  "Är™Ÿ"  # Dillon
+  "U9h"  # Dongan
+  "¾+Y"  # Duff
+  "ê<hÔk"  # Digby
+  "òƒ(ƒpgÉb·V"  # FitzGerald
+  "òƒyQZÉ^"  # FitzWilliam
+  "òƒ(ƒeY)RV"  # FitzOliver
+  "9SN"  # Feilding
+  "òƒ(ƒ«ƒÌ‘¯e"  # FitzMaurice
+  "òƒ(ƒ^yrÌ‘KQ"  # FitzPatrick
+  "y‚„¯eN"  # Fortescue
+  "-WS+Y"  # Guelph
+  " R·V³u"  # Gardiner
+  "<hÌ‘ÆY¯e˜"  # Grimston
+  "IlÆRS˜"  # Hamilton
+  "ÑžS"  # Hare
+  "kôu"  # Hervey
+  "úW÷^"  # Keating
+  "úWi`"  # Keane
+  "aSæt³u"  # Kavanagh
+  "pQôTyr"  # Lambart
+  "lšN"  # Martyn
+  "¦žaS!•"  # McCarthy
+  "FzS"  # Moore
+  "s|·V"  # Meade
+  "¦žaSyr<S"  # Macartney
+  "ËuÑ‘yr"  # Nugent
+  "eY<SS"  # O'Neill
+  "eY^±ƒi`"  # O'Brien
+  "eY·^HYS"  # O'Connell
+  "eYÈTÉb"  # O'Hara
+  "eYlšKN"  # O'Malley
+  "eYUHY"  # O'Donnell
+  "eYaSWS"  # O'Carroll
+  "^îh¯e"  # Parsons
+  "^KQWS"  # Pakenham
+  "nf&OúWyr"  # Plunkett
+  "nf÷–¯e˜"  # Preston
+  "Ì‘GYæ—"  # Ridgeway
+  "¯eyri`"  # Sterne
+  "þV0Œ"  # Touchet
+  "TXV"  # Taaffe
+  "ƒli`"  # Vaughan
+  "ôu)RS¯e"  # Villiers
+  ")nyrƒl`"  # Wentworth
+  "æ—¯e)R"  # Wesley
+}
+monarch_names = {
+  "Maeleachlain #2" = 5
+  "Diarmaid #1" = 5
+  "Flann #1" = 5
+  "Aerdghal #0" = 0
+  "Bearach #0" = 0
+  "Caoímhin #0" = 0
+  "Donnabhain #0" = 0
+  "Eíhmhín #0" = 0
+  "Fearghal #0" = 0
+  "Iarfhlaith #0" = 0
+  "Lorccán #0" = 0
+  "Mathúin #0" = 0
+  "Naomhán #0" = 0
+  "Oisín #0" = 0
+  "Pádraig #0" = 0
+  "Ríagáin #0" = 0
+  "Somhairle #0" = 0
+  "Saraid #0" = -1
+  "Órfhlaith #0" = -1
+  "Fedelma #0" = -1
+  "wætS #2" = 5  # Comhghall #2
+  "‰R	T¯e #2" = 5  # Aonghus #2
+  "eYi` #1" = 10  # Eoghan #1
+  "·^i` #1" = 10  # Conn #1
+  "i`Ì‘ #0" = 15  # Einrí #0
+  "<SS #4" = 15  # Niall #4
+  "S·‹ #0" = 20  # Seán #0
+  "ðl<h #0" = 20  # Tadhg #0
+  "…hRÀN #0" = 20  # Muiris #0
+  " RSmmt #0" = 20  # Gearóid #0
+  "ïQkS #0" = 20  # Cathal #0
+  "?–Syr #1" = 20  # Art #1
+  "NY‡e #2" = 20  # Criomhthann #2
+  "^±ƒi` #2" = 20  # Brian #2
+  "Uú‹k #3" = 20  # Fonnchadh #3
+  "ÃW #6" = 20  # Áed #6
+  "Fzk #0" = 40  # Muchadh #0
+  "aS^Ì‘ #0" = 40  # Cathaoir #0
+  "9·Vs|·V #1" = 40  # Feidlimidh #1
+  "KQWáwÒR #1" = 40  # Conchobhar #1
+  "ØžYKQ #2" = 40  # Muireadhach #2
+  "Y³uS #5" = 40  # Donal #5
+  "yrm #2" = 60  # Turlough #2
+}
+ship_names = {
+  "Aoife"
+  "Ciara"
+  "Connacht"
+  "Eithne"
+  "Emer"
+  "Leinster"
+  "Munster"
+  "Niamh"
+  "Orla"
+  "Roisin"
+  "Ulster"
+}

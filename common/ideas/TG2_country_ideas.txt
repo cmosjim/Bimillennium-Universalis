@@ -1,0 +1,72 @@
+# tang_back 重建大唐 归义军在一片废墟之中重建了大唐，向天下人宣告华夏儿女将再次主宰这片土地。
+# guanzhigexin 官制革新 重建后的大唐沿袭了李唐的三省六部制和科举制，并在其基础上进行了一定程度的革新。革新后的官制不仅节约了大量行政资源，更让政令通行四方，进一步实现中央集权。
+# sichouzhilu 丝绸之路 在归义军崛起的过程中贸易一直扮演了重要的角色。因此，重建大唐后归义军很快就重开了丝绸之路。
+# tang_yifeng 盛唐遗风 与晚唐的保守内敛不同，归义军的大唐文化像盛唐时期一般狂放，张扬且胡风弥漫。其建筑风格，戏曲风流，让人仿佛梦回当年那个李唐盛世。
+# wudechongpei 武德充沛 重建后的大唐秉承李唐时期的军事作风，武德充沛。因为来自西域，也格外重视骑兵建设。
+# daotong 儒学道统 道统这一概念由中唐时期的韩愈正式提出，是唐代儒学复兴运动的重要内容。唐末五代十国时期，儒家道统观有了更为深入的发展，正式确立了自尧舜到韩愈的儒学道统谱系，并正本清源，让正统观念得到了广泛的传播。除此之外还衍生除了诸如师儒道统，融合道统，文章道统等不同的道统谱系。
+# for_datang 为了大唐！ 当唐旗再次在这片土地上冉冉升起之时，无数人痛哭流涕又欣喜若狂。乱世结束，黎明到来。唐人永不为奴！
+
+TG2_ideas = {
+	start = {
+		idea_cost = -0.2
+		leader_land_shock = 1
+	}
+
+	bonus = {
+		army_tradition_from_battle = 0.5
+	}
+
+	trigger = {
+		OR = {
+			tag = TG2
+			tag = TG1
+		}
+	}
+	free = yes
+	
+	#重建大唐
+	tang_back = {
+		land_forcelimit_modifier = 0.15
+		ae_impact = -0.15
+		core_creation = -0.1
+	}
+	
+	#官制革新
+	guanzhigexin = {
+		all_power_cost = -0.1
+		advisor_cost = -0.15
+	}
+	
+	#丝绸之路
+	sichouzhilu = {
+		global_trade_power = 0.15
+		trade_efficiency = 0.15
+	}
+	
+	#盛唐遗风 
+	tang_yifeng = {
+		country_admin_power = 1
+		country_diplomatic_power = 1
+		country_military_power = 1
+	}
+	
+	#武德充沛
+	wudechongpei = {
+		discipline = 0.05
+		cavalry_shock = 0.25
+		free_leader_pool = 1
+	}
+	
+	#儒学道统
+	daotong = {
+		tolerance_own = 3
+		tolerance_heretic = 3
+		harmonization_speed = 0.15
+	}
+	
+	#为了大唐！
+	for_datang = {
+		shock_damage = 0.1
+		land_morale = 0.1
+	}
+}

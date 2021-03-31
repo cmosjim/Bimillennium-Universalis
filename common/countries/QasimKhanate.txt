@@ -1,0 +1,142 @@
+graphical_culture = muslimgfx
+color = {
+  82
+  135
+  124
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_trade_ideas
+  early_adm_ideas
+  early_mil_ideas
+  shenquan_ideas
+  zhongqi_ideas
+  defensive_ideas
+  offensive_ideas
+  trade_ideas
+  spy_ideas
+  economic_ideas
+  diplomatic_ideas
+  religious_ideas
+  innovativeness_ideas
+}
+historical_units = {
+  steppe_riders
+  steppe_lancers
+  steppe_mounted_raiders
+  steppe_cavalry
+  steppe_uhlans
+  steppe_raiders
+  steppe_footmen
+  steppe_musketeers
+  steppe_infantry
+  steppe_rifles
+  reformed_steppe_rifles
+}
+monarch_names = {
+  "Jumaduq #0" = 20
+  "Taibugha #0" = 20
+  "Urus #0" = 20
+  "Urus Muhammad #0" = 20
+  "Yadigar Muhammad #0" = 20
+  "Yamghurchi #0" = 20
+  "Ibtisam #0" = -1
+  "Jalila #0" = -1
+  "Janan #0" = -1
+  "Layla #0" = -1
+  "Sharifa #0" = -1
+  "(Ñ	TZ #0" = -1  # Sakina #0
+  "’lÇÑõs #0" = -1  # Fatima #0
+  "NQÅú lö—ûªû #0" = 40  # Ulugh Muhammad #0
+  "1Å1Å˜è1Y #0" = 20  # Toqtamish #0
+  "^(g?Q ˝V˝êÅú #0" = 20  # Timur Qutlugh #0
+  "^(g?Q #0" = 20  # Timur #0
+  "fÌs #0" = 20  # Shiban #0
+  "m—û wmTr?Q #0" = 20  # Shaikh Haidar #0
+  "m—û ?ñ>TÈO #0" = 20  # Shaikh Awliar #0
+  "m—û ?ñ—ûªû #0" = 20  # Shaikh Ahmad #0
+  "ôl ?ñÃë #0" = 20  # Shah Ali #0
+  "ídÍè+R #0" = 20  # Shadi Beg #0
+  "iç¶N∑V lö»T(g #0" = 20  # Sayid Mahmud #0
+  "iç¶N∑V ^?QU #0" = 20  # Sayid Burhan #0
+  "iç¶N∑V ?ñ—ûªû #0" = 60  # Sayid Ahmad #0
+  "ôlÇÑU #0" = 20  # Satilghan #0
+  "iç‡VNLR #0" = 20  # Sain Bulat #0
+  "aSâ∆Y #0" = 60  # Qasim #0
+  "»TÍè?Q +R?QÍè #0" = 20  # Qadir Berdi #0
+  "NLR^(g?Q #0" = 20  # Pulad Timur #0
+  "NLR #0" = 20  # Pulad #0
+  "˙ã÷v #0" = 20  # Nogai #0
+  "FzØeTX’l ?ñÃë #0" = 20  # Mustafa Ali #0
+  "(gTXíd #0" = 20  # Murtaza #0
+  "FzUÿû∑V #0" = 50  # Muhammad #0
+  "¸fœÇS #0" = 20  # Mansur #0
+  "löFzKQ #0" = 30  # Mamuk #0
+  "lö¶û #0" = 20  # Mamai #0
+  "lökçFz–cKQ #0" = 50  # Mahmudak #0
+  "lö»TÉ∑V #0" = 80  # Mahmud #0
+  "ì^Zi #0" = 20  # Kuchum #0
+  "ì^ZiKQ lö—ûªû #0" = 40  # K¸ch¸k Muhammad #0
+  "TU+R #0" = 20  # Khaqan Beg #0
+  "»T)R“R #0" = 30  # Khalil #0
+  "=`+R #0" = 20  # Kebek #0
+  "KQÃë(g +R?QÍè #0" = 20  # Karim Berdi #0
+  "-g<S+R #0" = 20  # Jani Beg #0
+  ">ç≥uO #0" = 20  # Janay #0
+  ">ç?ñÃë #0" = 20  # Jan Ali #0
+  ">ç…b“RN #0" = 20  # Jalal al-Din #0
+  "NbÙT?Q +R?QÍè #0" = 20  # Jabbar Berdi #0
+  "O^∆Y #0" = 20  # Ishim #0
+  "OS»T(g #0" = 20  # Ilham #0
+  "fjS…b1k #0" = 50  # Ibrahim #0
+  "¶N≈VT #0" = 20  # Ibak #0
+  "ØOiç‡V #0" = 30  # Husayn #0
+  "»TÍS lö—ûªû #0" = 20  # Hajji Muhammad #0
+  "mNÍè‰S #0" = 20  # Edigu #0
+  "SêLRyr +R?QÍè #0" = 20  # Devlet Berdi #0
+  "æèSÙu¿N ?ñÃë #0" = 20  # Darwish Ali #0
+  "æèSÙu¿N #0" = 20  # Darwish #0
+  "æè<S≈ñS #0" = 20  # Daniyal #0
+  "˝VLR #0" = 20  # Chokra #0
+  "âVS¢R` #0" = 20  # Cherkes #0
+  "NLRT #0" = 20  # Bolaq #0
+  "+RKQNLR’` #0" = 20  # Bek Bulat #0
+  "kQLR #0" = 30  # Baraq #0
+  "?ñ?Q`pQ #0" = 20  # Arslan #0
+  "?ñLRjSôl #0" = 20  # Arab Shah #0
+  "?ñÃë+RÂT #0" = 20  # Ali Beg #0
+  "^N+RKQ #0" = 40  # Ak Kˆbek #0
+  "åÇ»T»è∑V #0" = 50  # Ahmad #0
+  "?ñVLR #0" = 20  # Agalak #0
+  "?ñN˝ê…b»T #0" = 20  # Abdullah #0
+  "?ñ^jg“R …bkç¸f #0" = 40  # Abdul-Rahman #0
+  "?ñN˝ê LRÍè+u #0" = 20  # Abdul-Latif #0
+  "?ñN˝ê KQÃë(g #0" = 40  # Abdul-Karim #0
+}
+leader_names = {
+  "?ñLR ÷b˜ñ"  # Al Tolui
+  "ôÑÂTÙT≈ñ?Q"  # Mongke Bayar
+  "»TLR ùòS∑V<S"  # Qara Erdene
+  "ññ T9N"  # Koke Qadan
+  "Qacha-jin"
+  "Oyugungene"
+  "Burilginai"
+  "Qadanteni"
+  "Qutughqai"
+  "Altan Chinua"
+  "Yeke Sube"
+  "?ñÃë ˝V?Qdç"  # Arigh Qorchi
+  "Boke Unegen"
+}
+ship_names = {
+  "Qasim xanligi"
+  "Oka"
+  "Mishar Yurt"
+  "Meshchyora"
+  "Muroma"
+  "Mangit"
+  "Argin"
+  "-gLR¶N?Q"  # Jalair
+  "Qipchaq"
+  "Han-Kirman"
+}

@@ -1,0 +1,38 @@
+CEB_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.1
+		galley_power = 0.2
+	}
+	bonus = {
+		global_trade_power = 0.1
+	}
+	
+	trigger = {
+		tag = CEB
+	}
+	
+	free = yes
+	
+	ceb_lumayas_ambition = {
+		land_morale = 0.1
+	}
+	ceb_chola_legacy = {
+		legitimacy = 1
+	}
+	ceb_protect_against_the_magalos = {
+		navy_tradition = 1
+	}
+	ceb_pacify_the_islands = {
+		global_autonomy = -0.05
+	}
+	ceb_place_for_trading = {
+		embargo_efficiency = 0.1	
+		privateer_efficiency = 0.25
+	}
+	ceb_befriend_the_europeans = {
+		global_institution_spread = 0.1
+	}
+	ceb_expansion_of_the_capital = {
+		development_cost = -0.1
+	}
+}

@@ -1,0 +1,202 @@
+graphical_culture = westerngfx
+color = {
+  187
+  206
+  247
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  defensive_ideas
+  offensive_ideas
+  trade_ideas
+  religious_ideas
+  diplomatic_ideas
+  economic_ideas
+  innovativeness_ideas
+  spy_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  french_caracolle
+  swedish_gustavian
+  anglofrench_line
+  french_dragoon
+  french_bluecoat
+  french_cuirassier
+  french_impulse
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "Ymyr #0" = -1  # Charlotte #0
+  "‰RZ #0" = -1  # Anne #0
+  "WN #0" = -1  # Rose #0
+  "ÃW±ƒeYú‹÷– #0" = -1  # Eléonore #0
+  "›sKN #0" = -1  # Marie #0
+  "OƒS #0" = -1  # Isabelle #0
+  "›s<hKNyr #0" = -10  # Marguerite #0
+  "ôuLN #0" = 0  # Vives #0
+  "ôuQh(ƒ #0" = 0  # Vicentz #0
+  "Xblš¯e #0" = 0  # Thomas #0
+  "WØ #0" = 0  # Romeu #0
+  "ÀsS #0" = 0  # Pol #0
+  "^S #0" = 0  # Per #0
+  "'k¯e #0" = 0  # Oth #0
+  "s|KQ #0" = 0  # Miqueu #0
+  "lšyrLN #0" = 0  # Matheu #0
+  "lš‚„ #0" = 0  # Martí #0
+  "WON #0" = 0  # Loys #0
+  "å‚SSV #0" = 0  # Jordan #0
+  "Å–<hs| #0" = 0  # Jacme #0
+  "	Tlb #0" = 0  # Guilhem #0
+  "bÌRÌ‘ #0" = 0  # Gaufré #0
+  " R¯eXb #0" = 0  # Gastó #0
+  "òƒ)RKQ¯e #0" = 0  # Frix #0
+  "ÌRSÖv #0" = 0  # Folquet #0
+  "9pQ #0" = 0  # Ferrán #0
+  "ÃWîhüf #0" = 0  # Exemen #0
+  "ÃW¯eğl+Y #0" = 0  # Estève #0
+  "ÃW<SÑy #0" = 0  # Eneco #0
+  "Y…h¹R #0" = 0  # Domejon #0
+  "yrg #0" = 0  # Bertrand #0
+  "S³u #0" = 0  # Bernat #0
+  "ôTXbÆRLN #0" = 0  # Bartomiu #0
+  "?–›sÌ‘KQ #0" = 0  # Aymeric #0
+  "?–³R·V #0" = 0  # Arnaud #0
+  "?–S’‚ #0" = 0  # Armand #0
+  "®vÃWS ípW #1" = 1  # Pierre-Géraud #1
+  "ÃW¯eúWæt #1" = 1  # Esquivat #1
+  "lš¯eaSW¯e #1" = 1  # Mascarose #1
+  "?–³R·V =O³u·V #2" = 1  # Arnaud-Bernard #2
+  "ªu'SÆY #1" = 5  # Guillaume #1
+  "ípW #6" = 5  # Géraud #6
+  "¨N)R #0" = 10  # Henri #0
+  "=O³u·V #6" = 20  # Bernard #6
+  "ågt #0" = 40  # Charles #0
+  "¦uğ #3" = 40  # Jean #3
+}
+leader_names = {
+  "¾STX<Sf"  # d'Artagnan
+  "¾¯eyrÉbKQ"  # d'Astarac
+  "¾úe(„KQ"  # d'Avensac
+  "¾æ—Ï…"  # d'Avezan
+  "ôTÌ‘ ·V ®v¦uÒR"  # Barry de Puyol
+  "·V ôTyr"  # de Batz
+  "·V ^WHSÃW"  # de Broque
+  "·V ÔkW¯e"  # de Burosse
+  "·V aSSÔkšNKQ"  # de Calbiac
+  "·V ·^ÜbÉbKQ"  # de Cambairac
+  "·V aS¯eTX…Q"  # de Castanet
+  "·V aS¯eğlSôTÅ–KQ"  # de Castelbajac
+  "·V aSyrg"  # de Catellan
+  "Y¯eyr…Q ·V ®vO^XES"  # Chastenet de Puységur
+  "·V 0Œæ—<S"  # de Cheveny
+  "·V ÑyS…Qg"  # de Corneillan
+  "jg Ñy¯e ·V ÉbOyr"  # du Cos de La Hitte
+  "·V¯eKQÌ‘<SšNKQ"  # d'Esclignac
+  "·V¯e^S"  # d'Esparbez
+  "·V yY?–"  # de Faudoas
+  "·V ySaS·V"  # de Forcade
+  "·V  RÉbS ·V ^Éb(„KQ"  # de Galard de Brassac
+  "·V íp¯eTX"  # de Gestas
+  "·V äSyr"  # de Goth
+  "·V <hW0tS"  # de Grossoles
+  "·V ÉbôTyr"  # de La Barthe
+  "·V Éb^Ì‘+Y"  # de La Briffe
+  "·V ÉbaSyQ"  # de Lacaze
+  "·V Éb^Xg"  # de Lasseran
+  "·V Ébæt¾KQ"  # de Lavardac
+  "·V )RÒR9ƒS9N"  # de L'Isle-Jourdain
+  "·V )RNb÷–"  # de Lizarey
+  "·V mlš<S"  # de Lomagne
+  "·V bS®všNKQ"  # de Loupiac
+  "·V TiO"  # de Luppé
+  "·V «ƒ±ƒÁ"  # de Mauléon
+  "·V «ƒ^"  # de Maupas
+  "·V ™„ÑyS…Q"  # de Montcorneil
+  "·V ™„ğlES"  # de Montégut
+  "·V ™„yrTKQ"  # de Montluc
+  "·V ™„ÀsNb"  # de Montpezat
+  "·V ú‹ R÷–"  # de Nogaret
+  "·V ^S4bg"  # de Pardaillan
+  "·V WHSÃWmS"  # de Roquelaure
+  "·V („ÒR"  # de Salles
+  "·V Qh(„KQ"  # de Sensacq
+  "·V ^XÌ‘<SšNKQ"  # de Sérignac
+  "·V 0tÉbåe"  # de Solages
+  "·V ÉbşVS«ƒ^S"  # de la Tour-Maubourg
+  "·V ætQh"  # de Voisins
+}
+ship_names = {
+  "Œ‚<Sf"  # l'Aignan
+  "'kÀN"  # l'Auch
+  "'kyrÌ‘ƒl"  # l'Auterive
+  "^TÖvi`"  # le Brugnens
+  "aS¯eğlÉbôuSêg"  # le Castera-Verduran
+  "aS¯eyrSÅ–bS"  # le Casteljaloux
+  "aS¯e‚„†–lš(„"  # le Castillon-Massas
+  "TRN"  # le Condom
+  "“^bS…h™„ãNôT"  # le Couloume-Mondebat
+  "jgpQ"  # le Duran
+  "'kyQ"  # l'Eauze
+  "ÃW¯e^ÒR¦"  # leEsparebent
+  "VÒRg¯e"  # le Fleurance
+  "<h±ƒÌ‘"  # le Grailly
+  "?–íp«ƒ"  # le Hagetmau
+  "ípu"  # le Jegun
+  "Ébg"  # le Lalanne
+  "Ébœs|LN?–KQ"  # le Larroumiouac
+  "ÉbmtÉb·V"  # le Lasserade
+  "Ébmt^nfWnfS"  # le Lasseube-Propre
+  "Ébyr¯eğlS"  # le La Testère
+  "WgQh"  # le Laurensan
+  "ÉbætSSV"  # le Lavardens
+  "±ƒKQşVS"  # le Lectoure
+  "T®všNKQ"  # le Lupiac
+  "lšQh"  # le Massin
+  "s|Éb™„ÉbşV"  # le Miramont-Latour
+  "s|g·V"  # le Mirande
+  "s|Snfæt"  # le Mirepoix
+  "™„Xb±ƒKQ÷–ú‹"  # le Montaut-les-Créneaux
+  "mR·V¯e."  # le Montesquiou
+  "™„ğl¯eyrTKQ"  # le Montestruc
+  "ú‹ RW"  # le Nogaro
+  "âlÉbKQ"  # le Pauilhac
+  "iOT¯elš(„"  # le Peyrusse-Massas
+  "nf÷–<Sf"  # le Preignan
+  "gS"  # le Rambert
+  "WKQyS"  # le Roquefort
+  "WHSÃWmS"  # le Roquelaure
+  "1WeY<Sg<hW"  # le Saint-Aunix-Langros
+  "1WKQÉbS"  # le Saint-Clar
+  "1WKQÌ‘¯e‚„6w"  # la Sainte-Christie
+  "1W<hÌ‘6w·V"  # le Saint-Griède
+  "1WÉbÌ‘"  # le Saint-Lary
+  "1W®vO"  # le Saint-Puy
+  "1WÉbãN!·V"  # la Sainte-Radegonde
+  "1Wmtæ—"  # le Saint-Sever
+  "şV·‹“^nf"  # le Tournecoupe
+  "‚„ãNS"  # le Tudelle
+  "ôuKQ9Ï…(„KQ"  # le Vic-Fézensac
+}
+army_names = {
+  "?–S›s…mKQ›Q"  # Armée d'Armagnac
+  "mlš…m›Q"  # Armée de Lomagne
+  "TRYFzæt›Q"  # Armée du Condomois
+  "?–¯eTXÉbKQ›Q"  # Armée de l'Astarac
+  "9Ï…(„<h›Q"  # Armée du Fézensaguet
+  "åeFzæt›Q"  # Armée du Gimois
+  " R¯eÑy<S›Q"  # Armée de Gascogne
+  "$PROVINCE$›Q"  # Armée de $PROVINCE$
+}

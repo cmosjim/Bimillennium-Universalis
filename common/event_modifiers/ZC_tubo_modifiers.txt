@@ -1,0 +1,71 @@
+barley = {
+	production_efficiency = 0.05
+}
+
+zhang_zhung_acquisition = {
+	diplomatic_reputation = 3
+}
+
+south_himalaya_defense = {
+	local_defensiveness = 0.2
+}
+
+south_to_india = {
+	siege_ability = 0.15
+}
+
+highland_yak = {
+	global_trade_goods_size_modifier = 0.025
+	cavalry_power = 0.1
+}
+
+silk_afghanistan_corridor = {
+	merchants = 1
+}
+
+rise_of_highland = {
+	land_morale = 0.05
+	build_cost = -0.1
+	innovativeness_gain = 0.3
+}
+
+tuyuhun_frontier = {
+	defensiveness = 0.3
+}
+
+xiyu_tubo = {
+	global_regiment_cost = -0.1
+	years_of_nationalism = -5
+}
+
+vassalize_nanzhao = {
+	local_unrest = -2
+}
+
+highland_post = {
+	movement_speed = 0.1
+}
+
+isolate_xiyu = {
+	defensiveness = 0.25
+	hostile_attrition = 1
+}
+
+tubo_glory = {
+	army_tradition = 0.25
+	manpower_recovery_speed = 0.15
+	prestige_decay = -0.01
+}
+
+set_zangwen = {
+	embracement_cost = -0.15
+}
+
+highland_vajrayana = {
+	missionaries = 2
+	global_missionary_strength = 0.03
+}
+
+highland_tibetan_bon = {
+	tolerance_heretic = 1
+}

@@ -1,0 +1,53 @@
+#northern xio
+CUU_ideas = {
+	start = {
+		development_cost = -0.1
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		naval_forcelimit_modifier = 0.25
+	}
+	
+	trigger = {
+	OR = {
+	   tag = CUU
+	   tag = DCU
+	   tag = HO4
+	   tag = CH5
+	   tag = BCU	   
+	   }
+	}
+
+	free = yes
+	
+	descendants_huangdi = {
+		prestige = 1
+		leader_land_fire = 1
+	}
+	
+	accept_ideas_revolution = {
+		technology_cost = -0.05
+	}
+	
+	tongchoudikai = {
+		discipline = 0.05
+	}
+
+	culture_mix_chu = {
+		num_accepted_cultures = 1
+		trade_range_modifier = 0.10
+	}
+	
+	zhi_si_buqu = {
+		land_attrition = -0.20
+	}
+
+	tian_ren_he_yi = {
+		global_missionary_strength = 0.02
+	}
+	
+	chu_silk_top = {
+		global_trade_goods_size_modifier = 0.1
+	}
+}

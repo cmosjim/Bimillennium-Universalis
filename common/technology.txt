@@ -1,0 +1,230 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+
+# Armies get a insufficient support penalty when the ratio cav / (inf+cav) is _higher_ than "cav_to_inf_ratio". This applies for the "unit_type" of a country.
+
+# Groups must be defined BEFORE tables.
+# 2019.03.24 add qing_chinese tech 
+
+groups = {
+	western = { #1
+		start_level = 0
+		start_cost_modifier = 0
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	eastern = { #2
+		start_level = 4
+		start_cost_modifier = 0.16
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	ottoman = { #3
+		start_level = 6
+		start_cost_modifier = 0.21
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	muslim = { #4
+		start_level = 6
+		start_cost_modifier = 0.23
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	indian = { #5
+		start_level = 8
+		start_cost_modifier = 0.29
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	chinese = { #6
+		start_level = 9				#rab_ modify
+		start_cost_modifier = 0.30	#rab_ modify
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	nomad_group = { #7
+		start_level = 9
+		start_cost_modifier = 0.30
+	}
+	sub_saharan = { #West African #8
+		start_level = 2
+		start_cost_modifier = 0.4
+	}
+	north_american = { #9
+		start_level = 2
+		start_cost_modifier = 1
+		is_primitive = yes  
+	}
+	mesoamerican = { #10
+		start_level = 2
+		start_cost_modifier = 0.6
+		is_primitive = yes
+	}
+	south_american = { #11
+		start_level = 2
+		start_cost_modifier = 1
+		is_primitive = yes
+	}
+	andean = { #12
+		start_level = 2
+		start_cost_modifier = 0.6
+		nation_designer_unit_type = south_american
+		is_primitive = yes
+	}	
+	roman_group = { #13
+		start_level = 4
+		start_cost_modifier = 0.16
+	}
+	barbarian = {#14
+		start_level = 2
+		start_cost_modifier = 0.3
+	}
+	middle_eastern = { #15
+		start_level = 3
+		start_cost_modifier = 0.26
+	}
+	asian = { #16
+		start_level = 5
+		start_cost_modifier = 0.22
+	}
+	early_indian = { #17
+		start_level = 3
+		start_cost_modifier = 0.32
+	}
+	early_chinese = { #18
+		start_level = 4
+		start_cost_modifier = 0.31
+	}
+	western_nomad_group = { #19
+		start_level = 3
+		start_cost_modifier = 0.4
+	}
+	eastern_nomad_group = { #20
+		start_level = 3
+		start_cost_modifier = 0.4
+	}
+	high_american = { #21
+		start_level = 2
+		start_cost_modifier = 0
+		nation_designer_unit_type = high_american
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	east_african = { #22
+		start_level = 8
+		start_cost_modifier = 0.5
+		nation_designer_unit_type = sub_saharan
+	}
+	central_african = { #23
+		start_level = 10
+		start_cost_modifier = 0.65
+		nation_designer_unit_type = sub_saharan
+	}
+	qing_chinese = { #24
+		start_level = 7					
+		start_cost_modifier = 0.28
+	}	
+	old_estern_asian = { #25
+		start_level = 7				
+		start_cost_modifier = 0.28
+	}	
+	modern_chinese = { #26
+		start_level = 0			
+		start_cost_modifier = 0	
+	}		
+	dummy_group = { #27
+		start_level = 0
+		start_cost_modifier = 0
+		power = -10
+		valid_for_nation_designer = no
+	}
+	special_group = { #28
+		start_level = 1
+		start_cost_modifier = 0.55
+		valid_for_nation_designer = no
+	}	
+}
+
+tables = {
+	adm_tech = "technologies/adm.txt"
+	dip_tech = "technologies/dip.txt"
+	mil_tech = "technologies/mil.txt"
+}

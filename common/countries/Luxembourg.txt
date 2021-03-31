@@ -1,0 +1,139 @@
+graphical_culture = westerngfx
+color = {
+  53
+  140
+  73
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  zhongqi_ideas
+  rongren_ideas
+  shenquan_ideas
+  trade_ideas
+  defensive_ideas
+  diplomatic_ideas
+  economic_ideas
+  innovativeness_ideas
+  offensive_ideas
+  administrative_ideas
+  spy_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  dutch_maurician
+  french_caracolle
+  anglofrench_line
+  french_dragoon
+  french_bluecoat
+  french_cuirassier
+  french_impulse
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "ÚÉâÉ^ #0" = -1  # Philippa #0
+  "OéÉçS #0" = -1  # Isabelle #0
+  "©ãZ #0" = -1  # Jeanne #0
+  "9ç)RâTXØe #0" = -1  # Felicitas #0
+  "õs<hKNyr #0" = -1  # Marguerite #0
+  "õs)RöN #0" = -1  # Maria #0
+  "OKNéÉãv #0" = -15  # Elizabeth #0
+  "ÙuKQY #0" = 0  # Viktor #0
+  "â	TØeôÑ∑V #0" = 0  # Sigismund #0
+  "Åúnf±É^yr #0" = 0  # Ruprecht #0
+  "ÅúSê+Y #0" = 0  # Rudolf #0
+  "ÚÉ)Rnf #0" = 0  # Philipp #0
+  "|VóV #0" = 0  # Peter #0
+  "^ØeaS #0" = 0  # Pascal #0
+  "eYY #0" = 0  # Odo #0
+  "löKQâs|)RâR #0" = 0  # Maximiliam #0
+  "löÇÑöNØe #0" = 0  # Mathias #0
+  "Ôç∑VÙu^ #0" = 0  # Ludwig #0
+  "mlS #0" = 0  # Lothair #0
+  ")ReY‚l∑V #0" = 0  # Leopold #0
+  "∑^ØefWN #0" = 0  # Konstantin #0
+  "KQ˜ñËïØe #0" = 0  # Klemens #0
+  "¶umt+Y #0" = 0  # Joseph #0
+  "¶u?ñ^∆Y #0" = 0  # Joachim #0
+  "≈ñT^ #0" = 0  # Jakob #0
+  "O(ÑKQ #0" = 0  # Isaak #0
+  "IlØe #0" = 0  # Hans #0
+  "<heYS<h #0" = 0  # Georg #0
+  "Vg(É #0" = 0  # Franz #0
+  "êeÍèWS #0" = 0  # Ferdinand #0
+  "i`<hS=Oyr #0" = 0  # Engelbert #0
+  "Íè∑VÃëKQ #0" = 0  # Diederik #0
+  "KQÃëØeXb+Y #0" = 0  # Cristoph #0
+  "KQ≥RƒrLNØe #0" = 0  # Claudius #0
+  "=Oi`»T∑V #0" = 0  # Bernhard #0
+  "âR∑V»pöNØe #0" = 0  # Andreas #0
+  "?ñS^˜ñ^yr #0" = 0  # Albrecht #0
+  "Z…^ #1" = 5  # Wilhelm #1
+  "∑^…b∑V #2" = 5  # Konrad #2
+  "wm‡VÃë^ #7" = 5  # Heinrich #7
+  "aSS #1" = 5  # Karl #1
+  "â<hôÑ∑V #0" = 20  # Sigmund #0
+  "¶u^Øeyr #0" = 20  # Jobst #0
+  "âRN #0" = 20  # Anton #0
+  "áeVrS #1" = 20  # Wenzel #1
+  "¶u #1" = 20  # Johann #1
+}
+leader_names = {
+  "ØQ çyrZSSi`"  # von Bettborn
+  "ØQ  çúØe"  # von Bous
+  "ØQ aSiO&O"  # von Capellen
+  "ØQ <h˜ñáelökç"  # von Grevenmach
+  "ØQ <hWØeçúØe"  # von Grosbous
+  "ØQ mVyrÆv√WS"  # von Pontpierre
+  "ØQ VçØeY+Y"  # von Reisdorf
+  "ØQ ˜ñSVÂe"  # von Redange
+  "ØQ Íè˙W^"  # von Diekirch
+  "ØQ ∏ãyrgÂe"  # von Schuttrange
+  "ZSSGkyr"  # Borchert
+  "^“RyrS"  # B¸ltel
+  "YôÑ"  # Dumont
+  "Ìp˙ã"  # Genot
+  "óØe0å"  # Hoscheit
+  "ÖhSÀe"  # Mersch
+  "<S(ÑS"  # Nissar
+  "Ãë6wÖQ"  # Riener
+  "SÈZ"  # Schannen
+  "s^KQÖQS"  # Pinkernell
+  "Æv–c)ReYyr"  # Petilliot
+  "^<hyr"  # Paguet
+  "ØQ POÿû9çS∑V"  # von Sommerfeld
+  "èy<hyr"  # Voigt
+  "ÊóS"  # Weiler
+  "ÙuÈZ"  # Winen
+  "‘k=OpQ"  # Biberen
+  "KQ)RØe"  # Clees
+  "aSÿû˜ñS"  # Cemmerer
+  "KQW6w"  # Croye
+  "∑VS—ûØe"  # Delhaes
+  "jg aSÖh"  # du Carme
+  "!ç∑Vóg<hS"  # Gonderinger
+  "<h˜ñ+Y"  # Greff
+  "kçÃë^"  # Herrig
+  "€kÓh"  # Maussen
+  "^SôlOyr"  # Bourscheidt
+}
+ship_names = {
+  "KQ±ÉÉl"  # Clervaux
+  "Íè˙W^"  # Diekirch
+  "˜ñSVÂe"  # Redange
+  "ÙuâRâv"  # Vianden
+  "ÙuS(É"  # Wiltz
+  "√W^yr≥ukç"  # Echternach
+  "<h˜ñáelökç"  # Grevenmacher
+  "˜ñs|^"  # Remich
+  "aSiO&O"  # Capellen
+  "ÖhSÀe"  # Mersch
+  "èypQ"  # Feulen
+  "?ñS˝lyr≥lTu√WÀe"  # Esch-sur-Alzette
+}

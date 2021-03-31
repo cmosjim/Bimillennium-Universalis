@@ -1,0 +1,135 @@
+#2019-03-19 fit to 1.28 
+#2019-10-12 from heiljsf
+#改革开放
+
+heiljsf_vic_wangchao = {
+	diplomatic_upkeep = 30
+}
+
+#世界警察	
+heiljsf_usa_wangchao = {
+	production_efficiency = 0.1	#生产效率
+	technology_cost = -0.25		#升级所有科技所需花费的君主力量点数
+	land_morale = 0.1			#陆军士气修正
+	discipline = 0.25 #训练度
+	global_trade_power = 0.05	#全局贸易力量
+	governing_capacity = 20
+	naval_morale = 0.1			#海军士气
+	land_forcelimit_modifier = 0.25
+}
+	
+heiljsf_gaigekaifang = {
+	build_cost = -0.1			#建筑花费
+	build_time = -0.1			#建筑时间
+	development_cost = -0.1		#提升发展度花费
+}
+
+heiljsf_nanxunjianghua = {
+	production_efficiency = 0.1	#生产效率
+	technology_cost = -0.1		#升级所有科技所需花费的君主力量点数
+	idea_cost = -0.1			#开启理念所需花费的君主力量点数
+}
+
+heiljsf_jiaru_WTO = {
+	caravan_power = 0.1			#商队贸易力量
+	merchants = 1				#商人数量
+}
+
+heiljsf_yidaiyilu = {
+	placed_merchant_power = 1	#有商人驻扎的贸易节点获得的额外贸易力量
+	global_trade_power = 0.05	#全局贸易力量
+	merchants = 1				#商人数量
+}
+
+heiljsf_minzudatuanjie = {
+	num_accepted_cultures = 15	#增加可接受文化的最大值
+	global_unrest = -1			#全国叛乱度
+}
+
+heiljsf_zhuquanwanzhen = {
+	republican_tradition = 0.1	#年度共和传统
+	land_morale = 0.1			#陆军士气修正
+	naval_morale = 0.1			#海军士气
+}
+
+heiljsf_lujunqianghua = {		#陆军强化
+	land_morale = 0.1			#陆军士气修正
+	discipline = 0.05 #训练度
+	movement_speed = 0.05		#陆军移动速度
+	siege_ability = 0.05			#围城能力
+}
+
+
+#水网稠密
+heiljsf_shuiwangchoumi_modifier = {
+	province_trade_power_value = 1
+	picture = "estuary_icon"
+}
+
+#钱塘江口
+heiljsf_qiantangjiang_modifier = {
+	province_trade_power_value = 1
+	picture = "estuary_icon"
+}
+
+#时代王者
+heiljsf_shidai_wangzhe = {
+	governing_capacity = 200
+	global_autonomy = -0.05
+	yearly_corruption = -0.05
+	diplomatic_upkeep = 2
+	free_leader_pool = 3
+	land_morale = 0.05
+}
+
+#衰败王朝
+heiljsf_shuaibai_wangchao = {
+	governing_capacity = -200
+	global_unrest = 2
+	global_autonomy = 0.05
+	yearly_corruption = 0.1
+	land_forcelimit_modifier = -0.5
+	diplomatic_upkeep = -3
+	land_morale = -0.1
+}
+
+#都江堰灌溉区
+dujiangyanguangaiqu= {
+	trade_goods_size = 3
+}
+
+#秦法传播中心
+heiljsf_qinfa_chuanbozhongxin= {
+	missionaries = 2
+	global_heretic_missionary_strength = 0.2
+}
+
+#法儒和谐
+heiljsf_faru_hexie = {
+	tolerance_heretic = 2
+}
+
+#秦法的意志
+heiljsf_qinfa_yizhi = {
+	global_unrest = -2
+}
+
+#丝路枢纽
+heiljsf_silu_shuniu_modifier = {
+	province_trade_power_modifier = 0.5
+    tax_income = 5
+    merchants = 1
+    trade_range_modifier = 0.25
+    picture = "trade_range_modifier"
+}
+
+#AI疯狂游牧
+heiljsf_ai_fengkuangyoumu_modifier = {
+	cavalry_shock = 1
+    cavalry_power = 0.5
+    cavalry_cost = -0.5
+    loot_amount = 1
+    available_province_loot = 0.25
+	free_leader_pool = 3
+	leader_land_manuever = 6
+}

@@ -1,0 +1,68 @@
+roman_state_emperor = {
+	potential = {
+		has_reform = rome_15_reform
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		local_unrest = -2
+	}
+	
+	color = { 75 44 101 }
+	
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = {
+				any_province_in_state = {
+					#local_unrest = 0
+					unrest = 0
+				}
+			}
+		}
+	}
+}
+
+roman_state_senate = {
+	potential = {
+		has_reform = rome_15_reform
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		local_governing_cost = -0.25
+	}
+	
+	color = { 134 123 78 }
+	
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+roman_state_local = {
+	potential = {
+		has_reform = rome_15_reform
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		local_hostile_movement_speed = -0.2
+	}
+	
+	color = { 42 22 99 }
+	
+	ai_will_do = {
+		factor = 100
+	}
+}

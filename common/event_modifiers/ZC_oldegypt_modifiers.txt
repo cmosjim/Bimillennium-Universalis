@@ -1,0 +1,33 @@
+rule_nile = {
+	trade_efficiency = 0.1
+	legitimacy = 1
+}
+
+pharaoh = {
+	monarch_lifespan = 0.2
+}
+
+cana_govern = {
+	core_creation = -0.15
+	global_autonomy = -0.05
+}
+
+egyptian_trade = {
+	trade_steering = 0.25
+	global_trade_goods_size_modifier = 0.05
+}
+	
+solve_aksum = {
+	land_morale = 0.1
+	global_unrest = -3
+}
+
+successful_construction = {
+	land_morale = 0.1
+	global_unrest = -4
+}
+
+build_pyramids = {
+	land_morale = 0.05
+	global_unrest = -2
+} 

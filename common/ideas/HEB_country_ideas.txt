@@ -1,0 +1,47 @@
+#northern xio
+HEB_ideas = {
+	start = {
+		leader_land_fire = 2
+		land_morale = 0.2
+	}
+	
+	bonus = {
+		num_accepted_cultures = 5
+	}
+	
+	trigger = {
+	   tag = HEB
+	}
+
+	free = yes
+	
+	geass_power = {
+		diplomatic_reputation = 2		
+		infantry_power = 0.15
+	}
+
+	junzhu_lun = {
+		core_creation = -0.2
+	}
+
+	with_black_Knights = {
+		army_tradition = 1
+		global_manpower_modifier = 0.20
+	}
+
+	huangdi_yizu_xie_qin = {
+		legitimacy = 2
+	}
+
+	sword_of_arcachian = {
+		idea_cost = -0.1
+	}
+
+	shuzi_xingzheng_tequ = {
+		production_efficiency = 0.1
+		global_tax_modifier = 0.1
+	}
+	innocence_days = {
+		global_missionary_strength = 0.10
+	}
+}

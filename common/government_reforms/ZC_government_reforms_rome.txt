@@ -1,0 +1,535 @@
+#罗马化
+rome_1_reform = {
+	icon = rome_1_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		country_diplomatic_power = 1
+	}
+}
+
+#英培拉多
+rome_2_reform = {
+	icon = rome_2_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		army_tradition = 1
+		land_morale = 0.1
+	}
+}
+
+#普林凯普斯
+rome_3_reform = {
+	icon = rome_3_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		legitimacy = 1
+		governing_capacity_modifier = 0.2
+	}
+}
+
+#普林斯制
+rome_4_reform = {
+	icon = rome_4_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		republican_tradition = 0.5
+		prestige = 1
+		fire_damage = 0.15
+		naval_morale = 0.1
+	}
+}
+
+#多米那特制
+rome_5_reform = {
+	icon = rome_5_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		max_absolutism = 20
+		monthly_splendor = 2
+		infantry_power = 0.1
+		cavalry_power = 0.2
+	}
+}
+
+#重整官阶制度
+rome_6_reform = {
+	icon = rome_6_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		republican_tradition = 0.5
+		candidate_random_bonus = 1
+	}
+}
+
+#亚历山大
+rome_7_reform = {
+	icon = rome_7_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		leader_land_shock = 1
+	}
+}
+
+#凯撒
+rome_8_reform = {
+	icon = rome_8_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		leader_land_fire = 1
+	}
+}
+
+#汉尼拔
+rome_9_reform = {
+	icon = rome_9_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		leader_land_manuever = 1
+	}
+}
+
+#戏剧与角斗
+rome_10_reform = {
+	icon = rome_10_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		stability_cost_modifier = -0.1
+		land_morale = 0.05
+	}
+}
+
+#常备军团
+rome_11_reform = {
+	icon = rome_11_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		global_manpower_modifier = 0.1
+		fire_damage = 0.05
+	}
+}
+
+#日耳曼雇佣军
+rome_12_reform = {
+	icon = rome_12_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		mercenary_manpower= 0.33
+		land_forcelimit_modifier = 0.15
+	}
+}
+
+#殉教
+rome_13_reform = {
+	icon = rome_13_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		tolerance_own = 2
+	}
+}
+
+#圣区
+rome_14_reform = {
+	icon = rome_14_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		global_missionary_strength = 0.02
+	}
+}
+
+#罗马行省
+rome_15_reform = {
+	icon = rome_15_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		unjustified_demands = -0.15
+	}
+}
+
+#谨慎扩张
+rome_16_reform = {
+	icon = rome_16_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		ae_impact = -0.1
+	}
+}
+
+#罗马银行
+rome_17_reform = {
+	icon = rome_17_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		inflation_reduction = 0.05
+		free_adm_policy = 1
+	}
+}
+
+#税收-贸易模式
+rome_18_reform = {
+	icon = rome_18_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		global_tax_modifier = 0.05
+		merchants = 1
+	}
+}
+
+#大地产
+rome_19_reform = {
+	icon = rome_19_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		global_trade_goods_size_modifier = 0.05
+	}
+}
+
+#罗马边防
+rome_20_reform = {
+	icon = rome_20_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		spy_offence = 0.3
+		diplomats = 1
+	}
+}
+
+#元首顾问会
+rome_21_reform = {
+	icon = rome_21_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		advisor_pool = 2
+	}
+}
+
+#早期农业和手工业
+rome_22_reform = {
+	icon = rome_22_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		production_efficiency = 0.15
+	}
+}
+
+#农民剥削
+rome_23_reform = {
+	icon = rome_23_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		global_unrest = 1
+		state_maintenance_modifier = -0.3
+	}
+}
+
+#森林战术
+rome_24_reform = {
+	icon = rome_24_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		land_attrition = -0.15
+		recover_army_morale_speed = 0.1
+	}
+}
+
+#高筑城墙
+rome_25_reform = {
+	icon = rome_25_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		defensiveness = 0.25
+		fort_maintenance_modifier = -0.2
+	}
+}
+
+#包税经商
+rome_26_reform = {
+	icon = rome_26_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		caravan_power = 0.2
+		trade_efficiency = 0.1
+	}
+}
+
+#职位担任
+rome_27_reform = {
+	icon = rome_27_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		administrative_efficiency = 0.05
+	}
+}
+
+#十一抽杀率
+rome_28_reform = {
+	icon = rome_28_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		discipline = 0.05
+	}
+}
+
+#蛮族训练
+rome_29_reform = {
+	icon = rome_29_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		infantry_power = 0.15
+	}
+}
+
+#攻城阵型
+rome_30_reform = {
+	icon = rome_30_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		siege_ability = 0.1
+		artillery_bonus_vs_fort = 1
+	}
+}
+
+#三子权
+rome_31_reform = {
+	icon = rome_31_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.1
+		heir_chance = 0.25
+	}
+}
+
+#儿童补助
+rome_32_reform = {
+	icon = rome_32_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		interest = -1
+		global_tax_modifier = 0.05
+	}
+}
+
+#我们的海
+rome_33_reform = {
+	icon = rome_33_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		governing_capacity = 300
+		global_unrest = -4
+		stability_cost_modifier = -0.2
+		diplomatic_reputation = 2
+	}
+}
+
+#欧洲霸主
+rome_34_reform = {
+	icon = rome_34_reform
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = roman_empire_reform
+			has_reform = roman_republic_reform
+		}
+	}
+	modifiers = {
+		province_warscore_cost = -0.15
+		ae_impact = -0.2
+	}
+}

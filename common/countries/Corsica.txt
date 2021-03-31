@@ -1,0 +1,191 @@
+graphical_culture = westerngfx
+color = {
+  106
+  178
+  46
+}
+revolutionary_colors = {
+  15
+  0
+  16
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  qianyi_ideas
+  rongren_ideas
+  junqu_ideas
+  defensive_ideas
+  trade_ideas
+  religious_ideas
+  diplomatic_ideas
+  economic_ideas
+  innovativeness_ideas
+  offensive_ideas
+  spy_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  italian_condotta
+  swiss_landsknechten
+  french_caracolle
+  anglofrench_line
+  french_dragoon
+  french_bluecoat
+  french_cuirassier
+  french_impulse
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "Ericcu Ghjilormu #0" = 15
+  "Basiliu #0" = 0
+  "Carlu #0" = 0
+  "Ernestu #0" = 0
+  "Francescu #0" = 0
+  "Ghjuva #0" = 0
+  "Leandru #0" = 0
+  "Ludovicu #0" = 0
+  "Lurenzu #0" = 0
+  "Patriziu #0" = 0
+  "Paulu #0" = 0
+  "Prosperu #0" = 0
+  "Raimondu #0" = 0
+  "Renatu #0" = 0
+  "Salbadore #0" = 0
+  "Samperu #0" = 0
+  "Savieru #0" = 0
+  "Stefanu #0" = 0
+  "Tristanu #0" = 0
+  "Huguette #0" = -1
+  "Pénélope #0" = -1
+  "›sKNšN #0" = -1  # Maria #0
+  "NbaSÌ‘šN #0" = 0  # Zaccaria #0
+  "LNşV #0" = 0  # Ubertu #0
+  "|V—Vœ #0" = 0  # Petru #0
+  "±ƒf…Q #0" = 0  # Leone #0
+  "9)RR  #0" = 0  # Felice #0
+  "·^Ébjg #0" = 0  # Conradu #0
+  "KQ±ƒè•yr #0" = 0  # Clemente #0
+  "KQ³RêLN #0" = 0  # Claudiu #0
+  "^œªR #0" = 0  # Brunu #0
+  "ZS<SÕlR #0" = 0  # Boniface #0
+  "S³ujg #0" = 0  # Bernardu #0
+  "?–‚„)ReY #0" = 0  # Attilio #0
+  "‰RN #0" = 0  # Antone #0
+  "‰R·VÌ‘šN #0" = 0  # Andria #0
+  "‰R^W¯e #0" = 0  # Ambrosgiu #0
+  "?–›sjg #0" = 0  # Amadeu #0
+  "?–¹e0t #1" = 0  # Alfonsu #1
+  "?–SôTªR #0" = 0  # Albanu #0
+  ")ReYâl·V #0" = 15  # Leopoldu #0
+  "V÷–·VÌ‘KQ #0" = 15  # Federicu #0
+  "‰eYY #0" = 20  # Tiadoru #0
+}
+leader_names = {
+  "?–8Yôuæt"  # Acquaviva
+  "Agostini"
+  "Albertini"
+  "Angeli"
+  "Appietto"
+  "?–¯eXbSy"  # Astolfi
+  "ôTSXb)R"  # Bartoli
+  "Batesti"
+  "Biancchini"
+  "Buonaparte"
+  "Cardi"
+  "Castelli"
+  "Ceccaldi"
+  "Cesari"
+  "Cipriani"
+  "Colonna"
+  "Corsofieru"
+  "Cucchi"
+  "·VÉb WaS"  # Della Rocca
+  "·VÉb ^XÉb"  # Della Serra
+  "Franceschetti"
+  "Franceschini"
+  "Grafferi"
+  "Graziani"
+  "Guidoni"
+  "Leca"
+  "Lucchini"
+  "bSp`<S"  # Luciani
+  "üfGY<S"  # Mancini
+  "Marcaggi"
+  "Mariani"
+  "Mondolini"
+  "Moracchini"
+  "Natalini"
+  "eYS‰<S"  # Orsini
+  "Orsoni"
+  "Palazzo"
+  "ôTeYÌ‘"  # Paoli
+  "iO÷–‚„"  # Peretti
+  "Raffaeli"
+  "Rivarola"
+  "W‰"  # Rossi
+  "Salicetti"
+  "Sampiero"
+  "Sanguinetti"
+  "Santoni"
+  "Scarbonchi"
+  "Torre"
+}
+ship_names = {
+  "wmÎ˜"  # Aria Marina
+  "Attunante"
+  "Ñ‡‚‡"  # Bucarone
+  "Ñy‰	V"  # Corsica
+  "êjŒ„vÑy‰	VºN"  # Corso Fieru
+  "Galleotta"
+  "<h÷–'YÎ˜"  # Gregale
+  "ìrËz"  # Independenzia
+  "NHS"  # Indumevule
+  "N˜b"  # Inflessibile
+  "'YÆw"  # Intraprendente
+  ")RÔk!•eYÎ˜"  # Libecciu
+  "ê1u"  # Libertà
+  "ÎáQyr"  # Livante
+  "¨iAl:g"  # Maria
+  "ÆRòS1ÉbÎ˜"  # Maistrale
+  "ıVÏe"  # Nazione
+  "„š²P"  # Orgugliosu
+  "1rıVw"  # Patriota
+  "FO?a•EN"  # Pruch'ella Duri
+  "‰Î˜"  # Punente
+  "^Yæt1W‰RY<S"  # St'Antonio di Padova
+  "Sant'Abele"
+  "Sant'Apebe"
+  "Santa Brigita"
+  "Santu Briziu"
+  "1WŒ‚zf·V"  # Sant'Egidiu
+  "1WËem¦uğ"  # Santu Ghjambattista
+  "1WpQ·VÌ‘KQ"  # Santu Landericu
+  "Santu Lanfrancu"
+  "Santu Mauru"
+  "Santa Prudenzia"
+  "Santu Prutasiu"
+  "1WyrŒ…ƒ"  # Santa Teresa
+  "1WTX‰ZZ"  # Santa Tassiana
+  "Santu Tavianu"
+  "Santa Zita"
+  "ó1W×SÎw"  # Santissima Concezzione
+  "ÂrÎ˜ûQSb"  # Sbuffulera
+  "ŒTÎ˜"  # Scioru
+  "‰WÑyÎ˜"  # Sciroccu
+  "IQAS¡w"  # Sculapratu
+  "f°"  # Stella
+  "ïS`"  # Terribile
+  "8—‹s"  # Terrore
+  "ïSOu"  # Timevule
+  "´fÎ˜"  # Timpesta
+  "SÎ˜"  # Tramuntana
+  "÷–ûQ"  # Tunizata
+  "'YÎ˜"  # Ventizata
+}

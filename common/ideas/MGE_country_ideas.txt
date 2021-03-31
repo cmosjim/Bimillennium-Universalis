@@ -1,0 +1,41 @@
+MGE_ideas = {
+	start = {  
+		cavalry_cost = -0.2
+		mercenary_cost = -0.1
+	}
+  
+	bonus = {
+		monthly_splendor = 2
+	}
+  
+	trigger = {
+		tag = MGE
+	}
+	free = yes
+  	ouuluu = {
+		global_manpower_modifier = 0.05
+		siege_ability = 0.15
+	}
+	wuanzhunsizlu = {
+		culture_conversion_cost = -0.2
+		num_accepted_cultures = 1
+	}
+	mongoliamuzhung = {
+		land_morale = 0.1
+	}
+	wariscountry = {
+		tolerance_own = 2
+		administrative_efficiency = 0.1
+	}
+	acitvesupport = {
+		leader_land_manuever = 1
+	}
+	gonzhnqiyong = {
+		fire_damage = 0.1
+		shock_damage = 0.1
+	}
+	chanlanbailu = {
+		global_unrest = -1
+		prestige = 1
+	}	
+}

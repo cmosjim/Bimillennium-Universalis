@@ -1,0 +1,110 @@
+ideology = {
+
+	flags_with_emblem_percentage = 0
+	flag_emblem_index_range = { 17 18 }
+
+	liberalism = {
+		color = { 10 10 200 }
+		icon = 59
+		province = {
+			local_missionary_strength = -0.05
+		}
+		country = {
+		    global_missionary_strength = -0.10
+		    global_heretic_missionary_strength = 0.15
+			mercenary_cost = -0.40
+			global_trade_power = 0.20
+			merchants = 1
+			trade_efficiency = 0.2
+			mercenary_manpower = 1
+		    tolerance_own = 8
+			diplomatic_upkeep = 3
+			diplomatic_reputation = 2
+			tolerance_heathen = 8
+			global_unrest = -5
+			stability_cost_modifier = 0.1
+			global_autonomy = 0.10
+			land_morale = 0.20
+			discipline = 0.15
+			free_leader_pool = 1
+		}
+
+		heretic = { ANARCHISM }
+		date = 1820.1.1
+	}
+
+	conservatism = {
+		color = { 100 120 200 }
+		icon = 60
+		country = {
+		    stability_cost_modifier = -0.1
+			global_manpower_modifier = 0.3
+		    global_missionary_strength = 0.05
+		    global_heretic_missionary_strength = -0.10
+		    tolerance_own = 8
+			tolerance_heretic = -10
+		    tolerance_heathen = 8
+			global_tax_modifier = 0.2
+			land_morale = 0.40
+			discipline = 0.20
+			stability_cost_modifier = -0.25
+			production_efficiency = 0.20
+		}
+
+		heretic = { ANARCHISM }
+		date = 1820.1.1
+	}
+	communism = { 
+			color = { 200 50 50 }
+		icon = 61
+		province = {
+			local_missionary_strength = -0.10
+		}
+		country = {
+		    land_maintenance_modifier = -0.40
+		    stability_cost_modifier = -0.5
+		    global_missionary_strength = 0.05
+			global_manpower_modifier = 1
+		    tolerance_own = 8
+			tolerance_heretic = -10
+		    tolerance_heathen = 8
+			production_efficiency = 0.4
+			global_tax_modifier = -0.2
+			land_morale = 0.60
+			discipline = 0.25
+			stability_cost_modifier = -0.25
+		}
+
+		heretic = { ANARCHISM }
+		date = 1820.1.1
+	}
+		fascism = { 
+			color = { 204 204 30 }
+		icon = 62
+		province = {
+			local_missionary_strength = 0.05
+		}
+		country = {
+		    ae_impact = 0.30
+			improve_relation_modifier = -0.3
+		    stability_cost_modifier = -0.5
+		    global_missionary_strength = 0.1
+			global_manpower_modifier = 0.5
+			core_creation = -0.50
+		    tolerance_own = 8
+			tolerance_heretic = -10
+		    tolerance_heathen = 8
+			production_efficiency = 0.3
+			global_tax_modifier = 0.3
+			land_morale = 0.70
+			discipline = 0.35
+			stability_cost_modifier = -0.25
+		}
+
+		heretic = { ANARCHISM }
+		date = 1820.1.1
+	}
+	harmonized_modifier = harmonized_ideology
+
+	crusade_name = CRUSADE
+}

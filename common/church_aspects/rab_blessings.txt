@@ -1,0 +1,96 @@
+#2020-11-25 created for religion : worship_god
+uandowshienshishue = {
+	is_blessing = yes
+
+	modifier = {
+		global_trade_power = 0.15
+		province_warscore_cost = -0.25
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+tianfushi = {
+	is_blessing = yes
+
+	modifier = {
+		diplomatic_upkeep = 1
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+wanquozenzu = {
+	is_blessing = yes
+
+	modifier = {
+		leader_land_shock = 1
+	}
+	ai_will_do = {
+		factor = 10
+	}
+
+}
+
+tiantianmzhidu = {
+	is_blessing = yes
+
+	modifier = {
+		global_manpower_modifier = 0.10
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			overextension_percentage = 0.7
+		}
+		modifier = {
+			factor = 3
+			overextension_percentage = 0.5
+		}
+	}
+}
+
+fontianzuyierzuoshiainminmu = {
+	is_blessing = yes
+
+	modifier = {
+		core_creation = -0.05
+		administrative_efficiency = 0.1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 2
+			overextension_percentage = 0.7
+		}
+		modifier = {
+			factor = 3
+			overextension_percentage = 0.5
+		}
+	}
+}
+
+
+#uandowshienshishue
+#原道醒世训
+#「天下凡间，分言之则有万国，统言之则实一家。」「天下多男人，尽是兄弟之辈，天下多女子，尽是姊妹之群。何得存此疆彼界之私，何可起尔吞我并之念？」进而号召「天下兄弟姊妹」，「相与作中流之底（砥）柱，相与挽已倒之狂澜」，努力奋斗，变「乖漓浇薄之世」为「强不犯弱、众不暴寡、智不诈愚、勇不苦怯之世」
+#
+#tianfushi
+#天父诗
+#其主要内容是天王洪秀全指导和约束宫中后妃的教条，也涉及其它内容比如对太平军官兵的精神控制。太平天国实行政教合一，《天父诗》既是太平天国的官书，也是其宗教经书。在拜上帝教中，天父乩童是杨秀清。
+#
+#wanquozenzu
+#上帝任命了太平天王为万国真主
+#“恭承天父亲之命，下凡辅定真主”。我们的领导曾经上过天界见过“天妈”和“天嫂”。如今他将带领人民走向复兴之道
+#
+#tiantianmzhidu
+#天朝田亩制度
+#小农经济的乌托邦，体现了中国农民的平均主义传统。凡天下田，天下人同耕，此处不足则迁彼处，彼处不足则迁此处。”“务使天下共享皇上帝大福，有田同耕，有饭同吃，有衣同穿，有钱同使，无处不均匀，无处不饱暖。
+#
+#
+#fontianzuyierzuoshiainminmu
+#奉天诛妖救世安民谕
+#今满妖咸丰，原属胡奴，乃我中国世仇。兼之率人类变妖类，拜邪神，逆真神，大叛逆 　皇上帝，天所不容，所必诛者也。嗟尔团勇，不知木本水源，情愿足上首下，瞒高天之大德， 　反颜事仇，受蛇魔之迷缠，忘恩背主，不思己为中国之善士，本属天朝之良民，竞轻举其足 　于亡灭之路，而不知爱惜也耶? 况尔四民人等，原是中国人民，须知天生真主，亟宜同心同 　力以灭妖，孰料良心尽泯，而反北面于仇敌者也!
+#

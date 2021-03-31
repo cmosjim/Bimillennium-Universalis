@@ -1,0 +1,14 @@
+
+jikang = {
+	monarch_power = DIP
+	# Bonus
+    yearly_corruption = -0.25
+	skill_scaled_modifier = {meritocracy = 0.25 }
+	chance = {
+		factor = 0
+	}
+	ai_will_do = {
+		factor = 1
+	}		
+}
+

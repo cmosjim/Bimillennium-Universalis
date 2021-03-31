@@ -1,0 +1,64 @@
+policy_mil_1 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = shenquan_ideas
+		has_idea_group = zhuanzheng_ideas
+	}
+	allow = {
+		full_idea_group = shenquan_ideas
+		full_idea_group = zhuanzheng_ideas
+	}
+	
+	cavalry_shock = 0.1
+
+	ai_will_do = {
+		factor = 1
+	
+	}
+}
+
+
+policy_mil_2 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = rongren_ideas
+		has_idea_group = guanli_ideas
+	}
+	allow = {
+		full_idea_group = rongren_ideas
+		full_idea_group = guanli_ideas
+	}
+	
+	fire_damage = 0.05
+
+	ai_will_do = {
+		factor = 1
+	
+	}
+}
+
+policy_mil_3 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = kaituo_ideas
+		has_idea_group = qianyi_ideas
+	}
+	allow = {
+		full_idea_group = kaituo_ideas
+		full_idea_group = qianyi_ideas
+	}
+	
+	discipline = 0.05
+
+	ai_will_do = {
+		factor = 1
+	
+	}
+}
+
+
+
+

@@ -1,0 +1,96 @@
+DIL_ideas = {
+	start = {
+		land_morale = 0.15
+		discipline = 0.05
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.33
+	}
+
+	trigger = {
+		OR = {
+			tag = DIL
+			tag = DIM
+			tag = DIG
+			tag = DIT
+			tag = QN1
+			tag = BE1
+			tag = NA1
+			tag = HO2
+			tag = DO1
+			tag = CL1
+			tag = CL2
+		}
+	}
+	free = yes
+
+	over_xibei_master = {
+		cavalry_power = 0.2
+		technology_cost = -0.1
+	}
+	religion_start = {
+		missionaries = 1
+	}
+	kazuo_when_customs = {
+		defensiveness = 0.2
+	}
+	good_grazing_land = {
+		land_maintenance_modifier = -0.1
+	}
+	silk_road_saibei = {
+		trade_efficiency = 0.15
+	}
+	saibei_border = {
+		improve_relation_modifier = 0.35
+	}
+	cave_life = {
+		infantry_cost = -0.15
+	}
+}
+
+DL2_ideas = {
+	start = {
+		land_morale = 0.1
+		global_manpower_modifier = 0.2
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+
+	trigger = {
+		OR = {
+			tag = DL2
+			tag = ZU1
+			tag = LNG
+			tag = YU2
+			tag = LN1
+		}
+	}
+	free = yes
+
+	jingtian_shundao = {
+		unjustified_demands = -0.25
+		stability_cost_modifier = -0.1
+	}
+	lishi_youjiu = {
+		prestige = 1
+		ae_impact = -0.10
+	}
+	wanshijubeizhanwubuke = {
+		discipline = 0.1
+	}
+	yindiquyong = {
+		production_efficiency = 0.1
+	}
+	waijiao_linghuo = {
+		diplomatic_reputation = 3
+	}
+	suzhansujue = {
+		global_regiment_recruit_speed = -0.10
+	}
+	carefully_planned_to_win = {
+		core_creation = -0.25
+	}
+}

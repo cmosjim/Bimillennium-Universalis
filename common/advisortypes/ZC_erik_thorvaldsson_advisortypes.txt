@@ -1,0 +1,14 @@
+erik_thorvaldsson = {
+	monarch_power = DIP
+	# Bonus
+    global_colonial_growth = 10
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

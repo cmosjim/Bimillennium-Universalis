@@ -1,0 +1,50 @@
+# Country Ideas for Veritas
+Zhou_ideas = {
+	start = {
+		army_tradition_decay = -0.03
+		no_cost_for_reinforcing = yes
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = WDC
+			tag = HZ1
+			tag = DZ2
+		}
+	}
+
+	free = yes
+	
+	zhilizuole = {
+		missionaries = 1
+	}
+
+	the_longest_dynasty_cha = {
+		tolerance_own = 1
+		technology_cost = -0.1
+	}
+
+	everything_done = {
+		manpower_recovery_speed = 0.1
+	}
+
+	zhou_li = {
+		war_exhaustion_cost = -0.2
+	}
+
+	wu_li = {
+		core_creation = -0.2
+	}
+
+	yongbing_zhi_dao = {
+		land_morale = 0.1
+	}
+
+	nongye_xiugeng_zhi = {
+		production_efficiency = 0.15
+	}
+}

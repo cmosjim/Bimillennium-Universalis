@@ -1,0 +1,44 @@
+first_win = {
+	land_morale = 0.15
+}
+
+crimea_pasture = {
+	production_efficiency = 0.1
+	land_attrition = -0.1
+}
+
+eurasian_horde = {
+	country_military_power = 1
+}
+
+eastern_scourge = {
+	raze_power_gain = 0.1
+	cavalry_power = 0.1
+}
+
+first_scourge_of_god = {
+	discipline = 0.05
+	ae_impact = -0.1
+}
+
+western_scourge = {
+	hostile_attrition = 0.5
+	cavalry_power = 0.1
+}
+
+promise_to_conquer = {
+	prestige_from_land = 0.15
+}
+
+religion_permeation = {
+	prestige_per_development_from_conversion = 0.1
+}
+
+huns_siege = {
+	siege_ability = 0.15
+}
+
+attila_strike = {
+	recover_army_morale_speed = 0.05
+	land_morale = 0.1
+}

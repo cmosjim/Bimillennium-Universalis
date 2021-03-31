@@ -1,0 +1,262 @@
+graphical_culture = westerngfx
+color = {
+  93
+  160
+  163
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_trade_ideas
+  early_adm_ideas
+  early_mil_ideas
+  shenquan_ideas
+  zhongqi_ideas
+  defensive_ideas
+  trade_ideas
+  religious_ideas
+  diplomatic_ideas
+  economic_ideas
+  innovativeness_ideas
+  offensive_ideas
+  spy_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  french_caracolle
+  anglofrench_line
+  french_dragoon
+  french_bluecoat
+  french_cuirassier
+  french_impulse
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "Benedit #0" = 0
+  "Damián #0" = 0
+  "Huc #0" = 0
+  "Jaufre #0" = 0
+  "Sanc #0" = 0
+  "Osanne #0" = -1
+  "¦ug·V #0" = -1  # Yolande #0
+  "³uN #0" = -1  # Nadine #0
+  "<hNbôuÃW #0" = 0  # Xavier #0
+  "ôuKQY #0" = 0  # Victor #0
+  "ôuQh(ƒ #0" = 0  # Vicentz #0
+  "‚„ZS #0" = 0  # Thibaud #0
+  "ž^ #0" = 0  # Pons #0
+  "ÀsS #0" = 0  # Pol #0
+  "^S #0" = 0  # Per #0
+  "s|KQ #0" = 0  # Miqueu #0
+  "lšyrLN #0" = 0  # Matheu #0
+  "lš‚„ #0" = 0  # Martí #0
+  "bSaS¯e #0" = 0  # Lucas #0
+  "WON #0" = 0  # Loys #0
+  "TN9N #0" = 0  # Jordan #0
+  "Å–<hs| #0" = 0  # Jacme #0
+  "	T÷–ÆY #0" = 0  # Guilhem #0
+  " R¯eXb #0" = 0  # Gastó #0
+  "Vg‰¯e #0" = 0  # Frances #0
+  "iOSBhyr #0" = 0  # Folquet #0
+  "9pQ #0" = 0  # Ferrán #0
+  "ÃW¯eðl+Y #0" = 0  # Estève #0
+  "i`Ì‘KQ #0" = 0  # Enric #0
+  "ÃWØžÌ‘KQ #0" = 0  # Emeric #0
+  "SyrpQ #0" = 0  # Bertran #0
+  "S³uyr #0" = 0  # Bernat #0
+  "ôTXbÆRLN #0" = 0  # Bartomiu #0
+  "?–›sÌ‘KQ #0" = 0  # Aymeric #0
+  "ÃW·VlšS #0" = 0  # Adhémar #0
+  "W=Oyr #1" = 1  # Robert #1
+  "?–¹e¯e #2" = 1  # Alphonse #2
+  "÷–™„·V &OKOS #3" = 1  # Raymond Berengar #3
+  "¦uð #0" = 5  # Jean #0
+  "<SäSÉb #0" = 10  # Nicolas #0
+  "ÒR…Q #1" = 20  # René #1
+  "ïf¯e #1" = 40  # Louis #1
+  "ågt #2" = 40  # Charles #2
+}
+leader_names = {
+  "d'Abeille"
+  "d'Adhémar"
+  "·V ?–äSÒR"  # d'Agoult
+  "d'Aiglun"
+  "d'Aiguières"
+  "d'Allemagne"
+  "·V ?–›sÌ‘KQ"  # d'Amalric
+  "d'Audiffredi"
+  "de Bagnols"
+  "de Barberin"
+  "de Barcillon"
+  "de Baschi"
+  "des Baux"
+  "de Bermond"
+  "de Bionneau"
+  "de Brunet"
+  "de Cadenet"
+  "de Cascaris-Castellet"
+  "de Castaing"
+  "de Castellane"
+  "de Castillon"
+  "Coquerel"
+  "de Cordes"
+  "de Cormis"
+  "de Crillon"
+  "d'Entrecasteaux"
+  "d'Espagnet"
+  "Esparron"
+  "d'Espinouze"
+  "de Fargis"
+  "Fauque de Jonquières"
+  "Ferré de la Grange"
+  "de Gassendi"
+  "·V ípƒlSV"  # de Gévaudan
+  "de Gombert"
+  "·V <hS·V¯e"  # de Gordes
+  "·V <hÌ‘<Sf"  # de Grignan
+  "<hÌ‘lšSê"  # Grimaldi
+  "·V <hÌ‘«ƒ"  # de Grimaud
+  "de Guast"
+  "·V O³uk"  # des Isnards
+  "de Lauris"
+  "·V )R=OTX"  # de Libertat
+  "·V W…h<S"  # de Loménie
+  "·V ™„ðl"  # de Monteil
+  "·V ™„ÀsNb"  # de Montpezat
+  "·V âlÒR"  # de Paule
+  "·V iO³u"  # de Pena
+  "iO³u ·V Éb ZS·V"  # Pene de la Borde
+  "de la Pérusse"
+  "·V ì„yrôu"  # de Pontevès
+  "·V ÷–™„ê"  # de Raimondis
+  "·V ÷–æ—¯eyr"  # de Revest
+  "·V Ì‘KQ‚„"  # de Riquetti
+  "·V („^g"  # de Sabran
+  "·V („·V"  # de Sade
+  "·V 1WôuKQY"  # de Saint Victoret
+  "de Séguiran"
+  "de Simiane"
+  "·V ætSS"  # de Valbelle
+}
+ship_names = {
+  "?–úW±ƒ"  # Achille
+  "Agréable"
+  "Å¾uÄ–pž"  # Aigle Volant
+  "àž"  # Alcyon
+  "Alouette"
+  "Øš²P"  # Altier
+  "?–NY†–"  # Aquilon
+  "Ardente"
+  "Assuré"
+  "×S1rw"  # Avenant
+  "’Qi–w"  # Aventurier
+  "¸œ|œ"  # Baleine
+  "Bécasse"
+  "Bienvenu"
+  "GYƒX"  # Bizarre
+  "Borée"
+  "Dj„ig"  # Branche d'Olivier
+  "Brillant"
+  "Bucentaure"
+  "Caché"
+  "Caille"
+  "Lˆ¨Rw"  # Capable
+  "JSºNlš"  # Centaure
+  "^X(„S"  # César
+  "wmlš"  # Cheval Marin
+  "Coche"
+  "lšiFU9‚"  # Commerce de Marseille
+  "™„|V)RÃWFU9‚"  # Commerce de Montpellier
+  "nfWúe¯e=O5r"  # Comte de Provence
+  "Vgw"  # Conquérant
+  "·^¯efWyr"  # Constant
+  "åw³w"  # Content
+  "°eg"  # Croissant
+  "S¬‚"  # Dauphine
+  "Ñ‘R"  # Diamant
+  "Dieppoise"
+  "jgyQ"  # Dur
+  "Dromadaire"
+  "Eclatant"
+  "Î˜^y"  # Eole
+  "Espérance"
+  "Fantasque"
+  "òƒÆY"  # Ferme
+  "Fidèle"
+  "„š²P"  # Fier
+  "Florissant"
+  "àeLe"  # Formidable
+  "‰^X"  # Fort
+  "ïS`"  # Foudroyant
+  "ÖvÉb·V"  # Gaillard
+  "Heureux"
+  "Héros"
+  "pgîh"  # Jason
+  "EsPR"  # Lion
+  "Mignon"
+  "ÆR…mæt"  # Minerve
+  "Océan"
+  "ÄO3w+u¯e"  # Orphée
+  "ŒRŽ"  # Parfait
+  "äQðQ"  # Phénix
+  "âl)R"  # Poli
+  "Pompeux"
+  "Portefaix"
+  "Protecteur"
+  "nfWúe¯e"  # Provençal
+  "nfWúe¯e"  # Provence
+  "(ŒNa"  # Prudent
+  "Puissant"
+  "Réale"
+  "Redoutable"
+  "¨œ|œ"  # Requin
+  "‡v¶Rïf"  # Royal Louis
+  "wzf"  # Sage
+  "SKbµ^"  # Sagittaire
+  "‡v¶RðlŒ…N"  # Royal Thérèse
+  "1WÃW¯enf)Ryr"  # Saint Esprit
+  "1W¦umt+Y"  # Saint Joseph
+  "1Wòƒ)Rnf"  # Saint Philippe
+  "™lN|œ"  # Sardine
+  "CgVg"  # Sceptre
+  "Séduisant"
+  "^X³u"  # Seine
+  "Sérieux"
+  "Solide"
+  "Souverain"
+  "Suffisant"
+  "àeOu"  # Téméraire
+  "Œp„S"  # Terrible
+  "N†"  # Tigre
+  "Tonnant"
+  "W&O"  # Toulon
+  "þVbSyQ"  # Toulouse
+  "	NÉSb"  # Trident
+  "Triomphant"
+  "yr±ƒ˜"  # Triton
+  "Twßv"  # Union
+  "ñ‚ÇR"  # Vaillant
+  "f‹b"  # Vigilant
+  "ê?a"  # Volontaire
+  "T†le"  # Zélé
+}
+army_names = {
+  "lši›Q"  # Armée de Marseille
+  "·V¯eœ¯e›Q"  # Armée des Baux
+  "nfWúe¯eyaSSúW6w›Q"  # Armée de Provence-Forcalquier
+  "ªu'SÆY›Q"  # Armée d'Orange
+  "Armée du Pays d'Arles"
+  "?–SQS¯e›Q"  # Armée des Alpes
+  "W³u›Q"  # Armée du Rhône
+  "5gf`›Q"  # Armée de la Durance
+  "NnfWúe¯e›Q"  # Armée de Haute Provence
+  "NnfWúe¯e›Q"  # Armée de Basse Provence
+  "ôuæt±ƒ›Q"  # Armée du Vivarais
+  "$PROVINCE$›Q"  # Armée de $PROVINCE$
+}

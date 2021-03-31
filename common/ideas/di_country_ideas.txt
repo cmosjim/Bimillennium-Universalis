@@ -1,0 +1,50 @@
+
+di_ideas = {
+	start = {
+		army_tradition = 1.0
+		prestige_from_land = 1.5
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+	
+	trigger = {
+	OR = {
+	   tag = CUC
+	   tag = QIN
+	   }
+	}
+
+	free = yes
+	
+	deep_han = {
+		development_cost = -0.1
+	}
+
+	qiang_culture_relation = {
+		prestige = 1
+		cavalry_power = 0.1
+	}
+	
+	yi_shou_nan_gong = {
+		hostile_attrition = 1	
+	}
+
+	diplomacy_samll_conutry = {
+		unjustified_demands = -0.5
+	}
+
+	firmness_spirit = {
+		ae_impact = -0.10
+		stability_cost_modifier = -0.1
+	}
+	
+	silk_road_saibei = {
+		trade_efficiency = 0.15
+	}
+
+	saibei_border = {
+		improve_relation_modifier = 0.35
+	}
+}

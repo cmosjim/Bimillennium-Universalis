@@ -1,0 +1,49 @@
+TZ1_ideas = {
+	start = {
+		infantry_power = 0.10
+		global_missionary_strength = 0.03
+	}
+	
+	bonus = {
+		infantry_cost = -0.2
+	}
+	
+	trigger = {
+		OR = {
+			tag = DN1
+			tag = TZ1
+		}
+	}
+
+	free = yes
+	
+	taiping_jing = {
+		discipline = 0.05
+	}
+	
+	fuxing = {
+		global_manpower_modifier = 0.25
+	}
+	
+	luxing = {
+		global_colonial_growth = 35
+		production_efficiency = 0.15
+	}
+
+	tian_peng_yuanshuai = {
+		infantry_cost = -0.15
+	}
+	
+	wuwei_er_zhi = {
+		stability_cost_modifier = -0.1
+	}
+
+	nei_dan = {
+		naval_morale = 0.10
+		navy_tradition = 1.0
+	}
+
+	wu_shu = {
+		army_tradition = 1.0
+	}
+}

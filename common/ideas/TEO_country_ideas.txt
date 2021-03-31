@@ -1,0 +1,41 @@
+
+TEO_ideas = {
+	start = {
+		build_cost = -0.10
+		idea_cost = -0.1
+	}
+	
+	bonus = {
+		num_accepted_cultures = 2
+	}
+	
+	trigger = {
+		tag = TTH
+	}
+
+	free = yes
+	
+	zhongshen_zhishen = {
+		prestige = 1
+		core_creation = -0.1
+	}
+	shangren_zhengzhi = {
+		trade_efficiency = 0.20
+	}
+	nawatheism_rab = {
+		global_missionary_strength = 0.02
+	}
+	huorenjisi = {
+		stability_cost_modifier = -0.1
+	}
+	yimin_zhengce = {
+		ae_impact = -0.10
+		advisor_cost = -0.5
+	}
+	shuidao_wang = {
+		global_manpower_modifier = 0.15
+	}
+	banbu_fadian = {
+		global_unrest = -2
+	}	
+}

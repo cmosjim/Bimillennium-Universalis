@@ -1,0 +1,130 @@
+graphical_culture = westerngfx
+color = {
+  190
+  32
+  16
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  qianyi_ideas
+  rongren_ideas
+  junqu_ideas
+  innovativeness_ideas
+  religious_ideas
+  spy_ideas
+  diplomatic_ideas
+  offensive_ideas
+  defensive_ideas
+  trade_ideas
+  economic_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  austrian_white_coat
+  prussian_uhlan
+  austrian_jaeger
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "¦uğZ #0" = -1  # Johanna #0
+  "ƒlSyrœ·V #0" = -1  # Waltrud #0
+  "‰R®Y #0" = -5  # Anne #0
+  "‰¾ #0" = -10  # Theda #0
+  "ZÉ^ #0" = 0  # Wilhelm #0
+  "ôuSVÌ‘·V #0" = 0  # Wilfried #0
+  "ZS^pQ #0" = 0  # Wilbrand #0
+  "æ—ZS #0" = 0  # Wiebe #0
+  "‡eVrS #0" = 0  # Wenzel #0
+  "ĞcšNı+Y #0" = 0  # Thiadulf #0
+  "¯eTNS·V #0" = 0  # Sjoerd #0
+  "‰™„ #0" = 0  # Siemen #0
+  "÷–	T³u·V #0" = 0  # Reginhard #0
+  "è•VÌ‘·V #0" = 0  # Menfrid #0
+  "Éb=Oyr #0" = 0  # Lubbert #0
+  ")R'kXbyr #0" = 0  # Liudgod #0
+  "KQ³R¯e #0" = 0  # Klaus #0
+  "KQÉb¯e #0" = 0  # Klaes #0
+  "pgœS+Y #0" = 0  # Gerulf #0
+  "VÌ‘0t #0" = 0  # Friso #0
+  "yKQ #0" = 0  # Fokke #0
+  "i`ÈT·V #0" = 0  # Enhard #0
+  "Œ‚ÒR #0" = 0  # Eilert #0
+  "ïgÉb·V #0" = 0  # Koenraad #0
+  "ÛkÌ‘(ƒ #0" = 0  # Maurits #0
+  "¦uğ i`¯eyr #0" = 0  # Johan Ernst #0
+  "¨N·VÌ‘KQ #0" = 0  # Hendrik #0
+  "Xblš¯e #0" = 0  # Thomas #0
+  "PŸ<hVÌ‘·V #0" = 0  # Siegfried #0
+  "±ƒàVÈT·V #0" = 0  # Reinhard #0
+  "“^ú‹ #0" = 0  # Kuno #0
+  "2SÌ‘LN¯e #0" = 0  # Julius #0
+  "¦umt+Y #0" = 0  # Joseph #0
+  "byr™lSKQ #0" = 0  # Gottschalk #0
+  "Lk·VKQ #0" = 0  # Gödeke #0
+  "ÃWS)n #0" = 0  # Erwin #0
+  "ÃWKQyr #0" = 0  # Eckbert #0
+  "<hÈT·V #0" = 0  # Gerhard #0
+  "êyrÌ‘^ #0" = 0  # Dietrich #0
+  "«ƒÌ‘(ƒ #0" = 0  # Moritz #0
+  "¦uğ #0" = 0  # Johann #0
+  "^KQÈT·V #0" = 0  # Burkhard #0
+  "?–S^÷–KQyr #0" = 0  # Albrecht #0
+  "?–¾Syr #0" = 0  # Adalbert #0
+  "ÃWVÈT·V #0" = 10  # Everhard #0
+  "?–S=Oyr #0" = 10  # Albert #0
+  "ågS¯e #0" = 10  # Charles #0
+  "TN»l #0" = 10  # George #0
+  "œS+Y #0" = 10  # Rudolf #0
+  "úWú‹ #1" = 20  # Keno #1
+  "'k“^ #1" = 20  # Ocko #1
+  "KQÌ‘¯e‚„‰R #0" = 20  # Christian #0
+  "LNSÌ‘^ #0" = 40  # Ulrich #0
+  "ÃWNbyr #0" = 40  # Edzard #0
+  "i`ú‹ #0" = 40  # Enno #0
+}
+leader_names = {
+  tom
+  "=OKQ"  # Brok
+  "?–·V›s"  # Abdema
+  "Œ‚SyQ³u"  # Aildesna
+  "‰KQ^³u"  # Cirksena
+  ">KQ^³u"  # Tjarksena
+  "eY³u9h"  # Onneken
+  "KQ<SnfjŒîh"  # Knyphausen
+  "üfàV R"  # Manninga
+  "iOPŸ³u"  # Ukena
+  "?–&O±"  # Allena
+  "ôu¯w"  # Wiemken
+  "<S R"  # Beninga
+  "ËeXbyrKQ"  # Störtebeker
+  "s|GkS¯e"  # Michels
+  "ôu^üf"  # Wichmann
+  "Z=OS·V"  # Wigbold
+}
+ship_names = {
+  "ÃWS¯e+Y±ƒ¯e"  # Elsfleth
+  "áw·V"  # Hude
+  "ÈTÕn"  # Hatten
+  "æt‰v!X"  # Wardenburg
+  "ÃW·Væ—k"  # Edewecht
+  "(ƒôuÀN‰R"  # Zwischenahn
+  "ôu9S¯eyr·V"  # Weifelstede
+  "Éb¯e‚„·V"  # Rastede
+  ")RúWêÒR¯e"  # Likedeelers
+  "ôuKQşV)RšN"  # Victualia
+}
+army_names = {
+  "$PROVINCE$›Q"  # Armee von $PROVINCE$
+}

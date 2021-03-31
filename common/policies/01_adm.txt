@@ -1,0 +1,41 @@
+policy_adm_1 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = xingjun_ideas
+		has_idea_group = xingshang_ideas
+	}
+	allow = {
+		full_idea_group = xingjun_ideas
+		full_idea_group = xingshang_ideas
+	}
+	
+	administrative_efficiency = 0.05
+
+	ai_will_do = {
+		factor = 1
+	
+	}
+}
+#junjiang_ideas
+#shichen_ideas
+
+policy_adm_2 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = junjiang_ideas
+		has_idea_group = shichen_ideas
+	}
+	allow = {
+		full_idea_group = junjiang_ideas
+		full_idea_group = shichen_ideas
+	}
+	
+	diplomats = 1
+
+	ai_will_do = {
+		factor = 1
+	
+	}
+}

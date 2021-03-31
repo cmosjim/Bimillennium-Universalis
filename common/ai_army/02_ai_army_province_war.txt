@@ -1,0 +1,13 @@
+province = {
+    war = {
+        active = {
+            is_at_war = no
+        }
+        eval_multiply = {
+            factor = 100
+            modifier = {
+                has_building = factory
+            }
+        }
+    }
+}

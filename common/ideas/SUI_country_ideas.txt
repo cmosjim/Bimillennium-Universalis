@@ -1,0 +1,40 @@
+SUI_ideas = {
+	start = {
+		global_unrest = -3
+		ae_impact = -0.15
+	}
+	bonus = {
+		land_morale = 0.1
+	}
+	trigger = {
+		OR = {
+			tag = SUI
+			tag = SDF
+		}
+	}
+	free = yes
+	equal_field_system_sui = {
+		advisor_cost = -0.05
+		stability_cost_modifier = -0.1
+	}
+	grand_canal_sui = {
+		defensiveness = 0.15
+		num_accepted_cultures = 1
+	}
+	three_departments_and_six_ministries_sui = {
+		global_tax_modifier = 0.1
+	}
+	reunification_of_china_sui = {
+		trade_efficiency = 0.1
+	}
+	cultured_emperors_sui = {
+		diplomatic_reputation = 1
+	}
+	extensive_military_conscription_sui = {
+		global_autonomy = -0.1
+		yearly_corruption = -0.1
+	}
+	nomadic_mercenaries_sui = {
+		production_efficiency = 0.1
+	}
+}

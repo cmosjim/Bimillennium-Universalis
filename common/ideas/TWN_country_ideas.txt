@@ -1,0 +1,40 @@
+TWN_ideas = {
+	start = {
+		naval_morale = 0.33
+		defensiveness = 0.25
+	}
+
+	bonus = {
+		land_maintenance_modifier = -0.20
+	}
+	
+	trigger = {
+		tag = TWN
+	}
+	free = yes		#will be added at load.
+	
+	zhian = {
+ 		stability_cost_modifier = -0.15
+	}
+	American_support_behind = {
+		discipline = 0.05
+	}
+	various_publicopinion = {
+		advisor_cost = -0.75
+		trade_efficiency = 0.1
+	}
+	made_in_Taiwan = {
+		global_tax_modifier = 0.15
+	}
+	taiwan_snacks = {
+		global_manpower_modifier = 0.1
+	}
+	health_care_system = {
+		legitimacy = 1
+		manpower_recovery_speed = 0.25
+	}
+	chinese_language = {
+		merchants = 1
+		trade_range_modifier = 0.20
+	}
+}

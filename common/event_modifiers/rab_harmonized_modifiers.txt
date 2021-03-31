@@ -1,0 +1,49 @@
+#rab_ add 新增的和谐道教
+harmonized_daoism = {
+	infantry_power = 0.1
+	religion = yes
+}
+#rab_ add 新增的
+harmonized_worship_god = {
+	global_tax_modifier = 0.1
+	religion = yes
+}
+
+#rab_ add 新增的藏传佛教和谐
+harmonized_tibetan_buddhism = {
+	land_morale = 0.05
+	religion = yes
+
+}
+#rab_ add manchu_shamanism
+harmonized_manchu_shamanism = {
+	cavalry_power = 0.05
+	cavalry_cost = -0.05
+}
+#
+#rab_ add 以下佛教原本1.22就有的東西 ex把它砍了
+#
+harmonized_vajrayana = {
+	production_efficiency = 0.05
+	religion = yes
+}
+
+harmonized_mahayana = {
+	technology_cost = -0.05 #rab_ modify
+	religion = yes
+}
+
+harmonized_buddhism = { #Theravada
+	advisor_cost = -0.10
+	religion = yes
+}
+
+harmonized_satsana_phi = {
+	tolerance_heretic = 1
+	religion = yes
+}
+
+harmonized_legalist = {
+	discipline = 0.05
+	religion = yes
+}

@@ -1,0 +1,106 @@
+
+celestial_empire_guanliao1 = {
+
+	rank = {
+		1 = EARLYGUANLIAO
+		2 = EARLYGUANLIAO
+		3 = EARLYGUANLIAO
+	}
+
+	ruler_male = {
+		1 = EARLYZM
+		2 = EARLYZM
+		3 = EARLYZM
+	}
+
+	ruler_female = {
+		1 = EARLYZM
+		2 = EARLYZM
+		3 = EARLYZM
+	}
+consort_male = {
+		1 = LORD
+		2 = LORD
+		3 = LORD
+	}
+
+	consort_female = {
+		1 = A_CHINESE_WARLORD_CONSORT
+		2 = A_CHINESE_WARLORD_CONSORT
+		3 = A_CHINESE_WARLORD_CONSORT
+	}
+	
+	trigger = {
+    has_reform = celestial_empire_guanliao
+	overlord = { has_country_flag = chinaglnameearly }
+	}
+}
+gov_ancient_chinese_guanliao = {
+rank = {
+		1 = MIDDLEGUANLIAO
+		2 = MIDDLEGUANLIAO
+		3 = MIDDLEGUANLIAO
+	}
+
+	ruler_male = {
+		1 = MIDDLEJDS
+		2 = MIDDLEJDS
+		3 = MIDDLEJDS
+	}
+
+	ruler_female = {
+		1 = MIDDLEJDS
+		2 = MIDDLEJDS
+		3 = MIDDLEJDS
+	}
+consort_male = {
+		1 = LORD
+		2 = LORD
+		3 = LORD
+	}
+
+	consort_female = {
+		1 = A_CHINESE_WARLORD_CONSORT
+		2 = A_CHINESE_WARLORD_CONSORT
+		3 = A_CHINESE_WARLORD_CONSORT
+	}
+	
+	trigger = {
+    has_reform = celestial_empire_guanliao
+	overlord = { has_country_flag = chinaglnamemiddle }
+	}
+}
+celestial_empire_guanliao3 = {
+rank = {
+		1 = LATEGUANLIAO
+		2 = LATEGUANLIAO
+		3 = LATEGUANLIAO
+	}
+
+	ruler_male = {
+		1 = LATEDF
+		2 = LATEDF
+		3 = LATEDF
+	}
+
+	ruler_female = {
+		1 = LATEDF
+		2 = LATEDF
+		3 = LATEDF
+	}
+consort_male = {
+		1 = LORD
+		2 = LORD
+		3 = LORD
+	}
+
+	consort_female = {
+		1 = A_CHINESE_WARLORD_CONSORT
+		2 = A_CHINESE_WARLORD_CONSORT
+		3 = A_CHINESE_WARLORD_CONSORT
+	}
+	
+	trigger = {
+    overlord = { has_country_flag = chinaglnamelate }
+	}
+}

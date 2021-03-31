@@ -1,0 +1,112 @@
+graphical_culture = westerngfx
+color = {
+  164
+  217
+  127
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  zhongqi_ideas
+  rongren_ideas
+  shenquan_ideas
+  trade_ideas
+  defensive_ideas
+  religious_ideas
+  economic_ideas
+  diplomatic_ideas
+  offensive_ideas
+  spy_ideas
+  innovativeness_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  austrian_white_coat
+  austrian_jaeger
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "·VZSÉb #0" = -1  # Debora #0
+  "šNyr #0" = -1  # Beate #0
+  "?–üf¾ #0" = -1  # Amanda #0
+  "ætS·Vlš #0" = 0  # Waldemar #0
+  "¯eyráQ #0" = 0  # Stefan #0
+  "‰Sôu¯eyr #0" = 0  # Silvester #0
+  "±ƒàVÈT·V #0" = 0  # Reinhard #0
+  "eY¯eaS #0" = 0  # Oskar #0
+  "lšN #0" = 0  # Martin #0
+  "lš“^¯e #0" = 0  # Markus #0
+  "“^ú‹ #0" = 0  # Kuno #0
+  "·^¯efWN #0" = 0  # Konstantin #0
+  "Å–T^ #0" = 0  # Jakob #0
+  "O‰YS #0" = 0  # Isidor #0
+  "O<h³u(ƒ #0" = 0  # Ignatz #0
+  "k=Oyr #0" = 0  # Herbert #0
+  "kSFzyr #0" = 0  # Helmut #0
+  "Ñ‘yr #0" = 0  # Günther #0
+  "byrVÌ‘·V #0" = 0  # Gottfried #0
+  "<hVÌ‘·V #0" = 0  # Gerfried #0
+  "9N<S¯e #0" = 0  # Denis #0
+  "KQ±ƒè•¯e #0" = 0  # Clemens #0
+  "^œú‹ #0" = 0  # Bruno #0
+  "‰RN #0" = 0  # Anton #0
+  "?–mO¯e #0" = 0  # Alois #0
+  "šN†SqS'Y #0" = 0  # Alexander #0
+  "ZÉ^ eYäS¯eyr #0" = 10  # Wilhelm August #0
+  "ZÉ^ #0" = 10  # Wilhelm #0
+  "eYKQTXôu„S¯e #0" = 10  # Octavius #0
+  "lšKQ‰s|)R‰R ZÉ^ #0" = 10  # Maximilian Wilhelm #0
+  "aSS S›R #0" = 10  # Karl Philipp #0
+  "<heYS<h #0 ZÉ^" = 10  # Georg #0 Wilhelm
+  "V÷–·VÌ‘KQ #0 ï·Vôu^" = 10  # Friedrich #0 Ludwig
+  "VÌ‘·VÌ‘^ #0 eYäS¯eyr" = 10  # Friedrich #0 August
+  "1r·VNS eYäS¯eyr #0" = 10  # Eduard August #0
+  "KQÌ‘¯e‚„‰R #0" = 10  # Christian #0
+  "eYäS¯eyr VÌ‘·VÌ‘^ #0" = 10  # August Friedrich #0
+  "?–SV÷–·V #0" = 15  # Alfred #0
+  "?–S+Y VÌ‘·VÌ‘^ #0" = 15  # Adolf Friedrich #0
+  "<heYS<h #0 ï·Vôu^" = 20  # Georg #0 Ludwig
+  "<heYS<h #0 eYäS¯eyr" = 20  # Georg #0 August
+  "<heYS<h #0" = 20  # Georg #0
+  "i`¯eyr eYäS¯eyr #0" = 20  # Ernst August #0
+}
+leader_names = {
+  "?–ÒR"  # Aller
+  "·Vyr«ƒS·V"  # Detmold
+  "ÈT…hS"  # Hamelm
+  "^S·V¯ewmÆY"  # Hildesheim
+  "aSnf"  # Kapp
+  "f‰v"  # Minden
+  "eYS‰v!X"  # Oldenburg
+  "NbS(ƒ	Tyr"  # Salzgitter
+  "æ—‰v"  # Werden
+  "æ—<S<hW·V"  # Wernigerode
+}
+ship_names = {
+  "<heYS<h ¯Q aS&O<h"  # Georg von Calenberg
+  "±ƒ…Q"  # Leine
+  "æ—ıl"  # Weser
+  "4b¯eyr"  # Deister
+  "ESyrS"  # Süntel
+  "æ—·VlšKQ"  # Wedemark
+  "‡e¯eXb+Y"  # Wunstorf
+  "g9hÈT9h"  # Langenhagen
+  "¯eTXyrÈT9h"  # Stadthagen
+  "ÒRSyr"  # Lehrte
+  "^<hY+Y"  # Burgdorf
+  "NbSËeğlyr"  # Sarstedt
+}
+army_names = {
+  "$PROVINCE$›Q"  # Armee von $PROVINCE$
+}

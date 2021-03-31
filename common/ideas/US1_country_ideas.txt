@@ -1,0 +1,46 @@
+US1_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.25
+		free_leader_pool = 5
+	}
+	
+	bonus = {
+		leader_land_fire = 1
+		leader_land_shock = 1
+	}
+
+	trigger = {
+		tag = USA
+		OR = {
+			has_country_flag = win_wii_with_JA1
+			has_country_flag = win_wii_with_NZ1
+		}	
+	}
+	free = yes		#will be added at load.
+	americandream = {
+		land_morale = 0.2
+		fire_damage = 0.15
+	}
+	jungshiduzangshiye = {
+		shock_damage = 0.15
+		discipline = 0.1
+	}
+	deyigeshntsline = {
+		global_tax_modifier = 0.2
+	}
+	yimingulongts = {
+		advisor_cost = -0.25
+		all_power_cost = -0.2
+	}
+	ertsdazjndizts = {
+		core_creation = -0.25
+	}
+	globalfoodcenterfactory = {
+		production_efficiency = 0.2
+	}
+	wuyenlinmong = {
+		ae_impact = -0.2
+		diplomatic_upkeep = 1
+	}
+ }
+ 

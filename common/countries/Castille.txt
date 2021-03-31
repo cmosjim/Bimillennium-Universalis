@@ -1,0 +1,742 @@
+graphical_culture = westerngfx
+color = {
+  193
+  171
+  8
+}
+revolutionary_colors = {
+  5
+  8
+  5
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  exploration_ideas
+  religious_ideas
+  offensive_ideas
+  expansion_ideas
+  influence_ideas
+  maritime_ideas
+  quality_ideas
+  defensive_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  spanish_tercio
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  austrian_white_coat
+  austrian_jaeger
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "ôT±ƒÌ‘šNú‹ #0" = 0  # Valeriano #0
+  "Xblš¯e #0" = 0  # Tomás #0
+  "W·VÌ‘b #0" = 0  # Rodrigo #0
+  "Éb™„ #0" = 0  # Ramón #0
+  "eYN #0" = 0  # Odón #0
+  "ªR<SeY #0" = 0  # Nuño #0
+  "s|<hS #0" = 0  # Miguel #0
+  "miO #0" = 0  # Lope #0
+  "±ƒ5ƒ #0" = 0  # Laín #0
+  "O<h³u‰eY #0" = 0  # Ignacio #0
+  "ÃWSWSY #0" = 0  # Hernando #0
+  "kè•	TY #0" = 0  # Hermenegildo #0
+  "äSÁ”÷–¯e #0" = 0  # Gutierre #0
+  "!(„m #0" = 0  # Gonzalo #0
+  "b¦ž¯e #0" = 0  # Gómez #0
+  " R‰šN #0" = 0  # García #0
+  "Vg‰¯eÑy #0" = 0  # Francisco #0
+  "Õl·VÌ‘KQ #0" = 0  # Fadrique #0
+  "ÃW¯eyrís #0" = 0  # Esteban #0
+  "Yfb #0" = 0  # Domingo #0
+  "íb #0" = 0  # Diego #0
+  "KQÌ‘¯eXbôTS #0" = 0  # Cristobal #0
+  "SyrpQ #0" = 0  # Bertrán #0
+  "S³uY #0" = 0  # Bernardo #0
+  "ôTSTX(„ #0" = 0  # Baltasar #0
+  "?–SætW #0" = 0  # Álvaro #0
+  "?–†–0t #0" = 0  # Alonso #0
+  "iO·VW #1" = 1  # Pedro #1
+  "Ébs|W #2" = 1  # Ramiro #2
+  "QhTN #4" = 1  # Sancho #4
+  "aSTX‰ƒZ #0" = -5  # Catalina #0
+  "›s)RšN #0" = -5  # María #0
+  "áw‰RZ #0" = -10  # Juana #0
+  "OŽƒS #0" = -10  # Isabel #0
+  "aSm¯e #0" = 10  # Carlos #0
+  "?–¹e0t #11" = 10  # Alfonso #11
+  "9)RiO #0" = 20  # Felipe #0
+  "áw‰R #1" = 20  # Juan #1
+  "9êWSY #4" = 20  # Fernando #4
+  "i`Ì‘KQ #2" = 40  # Enrique #2
+}
+leader_names = {
+  "·V ?–	T÷–"  # de Aguirre
+  "·V ?–ÉbSTR"  # de Alarcón
+  "·V Xb±ƒY"  # de Toledo
+  "·V ‰R·V÷–·V"  # de Andrade
+  "·V ?–šNÉb"  # de Ayala
+  "·V ôT^"  # de Bazán
+  "·V ³uôuyQ"  # de Benavides
+  "NWâllš…Q¯e"  # Campomanes
+  "·V aS¯e‚„)RšN"  # de Castilla
+  "·V Éb^XS¾"  # de la Cerda
+  "‰i`ÌRb¯e"  # Cienfuegos
+  "åT&O^"  # Colón
+  "ÑyW³uY"  # Coronado
+  "ÑySyr¯e"  # Cortés
+  "·V Xb±ƒY"  # de Toledo
+  "·V ÑySYæt"  # de Córdoba
+  "·V ÉbNYæt"  # de la Cueva
+  "·V òƒ<hW?–"  # de Figueroa
+  "0N^XaS"  # Fonseca
+  " RSôu¯e"  # Gálvez
+  "b¦ž¯e"  # Gómez
+  "·V äS¯eüf"  # de Guzmán
+  "^è•<S¯e ·V ‰¯e…QW¯e"  # Jiménez de Cisneros
+  "·V ÷–æt"  # de Leiva
+  "miO¯e ·V ÈTW"  # López de Haro
+  "·V 2—±"  # de Luna
+  "·VÉbÉb"  # de Lara
+  "·V Éb¯eÑy"  # de Velasco
+  "·V ÔkR±"  # de Villena
+  "·V è•Y(„"  # de Mendoza
+  "³uSætÃW¯e"  # Narváez
+  "·V …Q^Ì‘ÈT"  # de Nebrija
+  "ªR…m¯e ·V ôTSâlšN"  # Nuñez de Balboa
+  "·V eYk¾"  # de Ojeda
+  "eY÷–)RšN³u"  # Orellana
+  "eY0tÌ‘eY"  # Osorio
+  "®vè•yrS"  # Pimentel
+  "s^Œg"  # Pinzón
+  "®v(„W"  # Pizarro
+  "ž^^X ·V ±ƒf"  # Ponce de León
+  "âlXbaS÷–W"  # Portocarrero
+  "·V WÈT¯e"  # de Rojas
+  "yrR¯e 	T†–"  # Tellez-Girón
+  "·V Ébôu R"  # de la Vega
+  "·V Vy<S R"  # de Zúñiga
+}
+ship_names = {
+  "?–jg³u"  # Aduana
+  "pž"  # Águila
+  "WSyrpž"  # Águila de Nantes
+  "‹YºNUO^XÕl"  # Amable Josefa
+  "‹YºNáw‰R"  # Amable Juana
+  "‹YºNyrŒ…Žƒ"  # Amable Teresa
+  "šN†Smg·VWNN"  # Alejandro I
+  "NaÍ‘w"  # Alerta
+  "?–Sk‰Éb¯e"  # Algeciras
+  "?–œaS0WšN"  # Alucadia
+  "?–…h)RšN"  # Amelia
+  "?–Ž)R R"  # América
+  "Ž2m"  # Americana
+  "‰RòƒyrÌ‘ÒV"  # Anfítrite
+  "TXÌ‘Õlwm›Q'Yã"  # Admiral del Tariffa
+  "?–s|¯eTX·V"  # Amistad
+  "1rýVw"  # Amor de la Patria
+  "‰Ròƒ‰i`"  # Anfión
+  "‰RZ ›s)RšN 	Tnf¯e8Y"  # Ana María Guipúzcoa
+  "‰R¾bS‰šN"  # Andalucía
+  "‰R¾bS‰šNŒn"  # Andalucía Baia
+  "‰R¾bS‰šNºN"  # Andaluz
+  ")YOˆR²bw"  # Ángel de la Guarda
+  "–ëX"  # Anónima
+  "šŠ"  # Antílope
+  ")Ypž"  # Aquila
+  "Þ˜pž"  # Aquila Volante
+  "?–úWÌ‘¯e"  # Aquiles
+  "S¹e"  # Aquilón
+  "Œg.Ÿ"  # Ardilla
+  "?–±ƒþV(„"  # Aretusa
+  "šNSäSñ‚Ä–"  # Argonauta
+  "šNSäS"  # Argos
+  "ÇRbew"  # Arrogante
+  "šN2m"  # Asia
+  "f°SsY"  # Astrea
+  "fØv"  # Astrolabio
+  "?–¯eþVÌ‘šN¯e"  # Asturias
+  "?–¯eþV(„Éb"  # Astuzzana
+  "šNŒgîh"  # Asunción
+  "šNyrpQ'Y"  # Atlante
+  "?–Xbåg"  # Atocha
+  "’Qi–"  # Atrevida
+  "'kå‚Éb"  # Aurora
+  "Ave de Gracia"
+  "’Qi–w"  # Aventurero
+  "ôTÈTlš"  # Bahama
+  "Üb&O"  # Bailen
+  "¢c0tw"  # Baltidore
+  "ôT‚„¯eTX"  # Bautista
+  "ôTTXYS"  # Batador
+  "Éb aSW±ƒ³u"  # Bella Carolina
+  "mZ"  # Bellona
+  "Ôk¯eV"  # Viscaya
+  "ÔkNbW"  # Bizarro
+  "Þ˜Lˆw"  # Voladora
+  "1WºN6w1z"  # Buen Jesús
+  "^ÉbuNb"  # Braganza
+  "^Ébæt"  # Brava
+  "IQ‰"  # Brillante
+  "^Ì‘šNú‹"  # Brilliano
+  "cWSˆ”"  # Brújula
+  "‹YINa"  # Buen Consejo
+  "x^y"  # Buena Dicha
+  "^pQN"  # Burlandín
+  "‹vlš"  # Caballo Blanco
+  "NWÔk"  # Cambi
+  "aS…hÉbÉb"  # Camerara
+  "NWùWf"  # Campeón
+  "NWTX^Ì‘šN"  # Cantabrina
+  "·^TXÉb"  # Cantara
+  "NW·VÉb"  # Cantela
+  "NWTX^W"  # Cántabro
+  "×e0‚"  # Capitana
+  "aSè•"  # Carmen
+  "Carmen del Rosario"
+  "aS¯e‚„)RšN"  # Castilla
+  "Casualidad"
+  "Catalán"
+  "ïQè•"  # Caimán
+  "sºN"  # Cazador
+  "mt‰‰ƒšN"  # Cecilia
+  "Celoso"
+  "ÑvßR˜R"  # Censor
+  "Centinela"
+  "Ceres"
+  "Ciudadanía de Mercia"
+  "Ciervo"
+  "Coccila"
+  "åT&O^"  # Colón
+  "Cometa"
+  "Concepción"
+  "Conde de Chican"
+  "Conde de Regia"
+  "Conde de Tolosa"
+  "Vgw"  # Conquistador
+  "·^¯efWyr"  # Constante
+  "Ñy®Y‰ƒZ"  # Cornelia
+  "Corso"
+  "ÑySyr¯e"  # Cortés
+  "Coruñesa"
+  "Cuervo"
+  "Cuervo Marino"
+  "Dafne"
+  "Damas"
+  "Don Luis Beltrán"
+  "De Bon Vassallo"
+  "De repente Descubierta"
+  "Descuite"
+  "Determinado"
+  "Är‰RZ"  # Diana
+  "Dichoso"
+  "Diligencia"
+  "Diligente"
+  "Divina Pastora"
+  "Divina Providencia"
+  "Dolores"
+  "Dorada"
+  "Dos Amigos"
+  "Dragón"
+  "El Atrevido"
+  "El Espedarte"
+  "El Mestuo la Solidade"
+  "El Neptuno"
+  "El Orely y los Tres Amigos"
+  "El Savador"
+  "Virgen del Carmen"
+  "Elise"
+  "OKNŽƒ‹v"  # Elizabet
+  "ON"  # Empresa
+  "Encantadora"
+  "Encarnación"
+  "Œ‚W"  # Eolo
+  "Escariotte"
+  "VyÍkÿu"  # Esmeralda
+  "Espaciosa"
+  "‰ísYr"  # España
+  "^g"  # Esperanza
+  "Estrella"
+  "Estrella del Mar"
+  "Estrella del Norte"
+  "'kWôT"  # Europa
+  "Experimento"
+  "Extremeña"
+  "Fama"
+  "Fama Volante"
+  "Felicidad"
+  "9)RKQ¯e"  # Félix
+  "äQðQ"  # Fénix
+  "Ferme"
+  "9SWSY VII"  # Fernando VII
+  "Ferrolana"
+  "Fidela"
+  "Finisterre"
+  "Firme"
+  "Firmeza"
+  "Flecha"
+  "Flora"
+  "Fuerte"
+  "Fuerte de Gibraltar"
+  "Furia"
+  "Galera de España"
+  "Galera Victoria"
+  "Galga"
+  "Galgo de Andalucía"
+  " R)R‰šN"  # Galicia
+  "Gallardo"
+  "Gallo Indiano"
+  "Gamo"
+  "Garzota"
+  "Gavilán"
+  "Genovesa"
+  "Gibraltar"
+  "Giganta"
+  "Gineto"
+  "Gitano"
+  "Gloria"
+  "Glorioso"
+  "Golondrina"
+  "Gran Princesa de los Cielos"
+  "Grana"
+  "Griega"
+  "Guerrero"
+  "Guipuscoana"
+  "Gusana"
+  "Halcón"
+  "Héctor"
+  "Hércules"
+  "kOe"  # Hermione
+  "Hermosa Mariana"
+  "Héroe"
+  "Hurón"
+  "Hidra"
+  "OÔk)RšN"  # Iberia
+  "Ibicenco"
+  "Oòƒi—…mšN"  # Ifigenia
+  "Emperador Alejandro"
+  "Impomenes"
+  "Incendio"
+  "Invencible"
+  "Indagadora"
+  "Industria"
+  "Infanta Amalia"
+  "Infanta Carlotta"
+  "²N‹s"  # Infante
+  "c„ aSm¯e²N‹s"  # Infante Don Carlos
+  "c„ iOÉb¦u²N‹s"  # Infante Don Pelayo
+  "àeOu"  # Intrépido
+  "Iris"
+  "OŽƒS"  # Isabel
+  "OŽƒS II"  # Isabel II
+  "OŽƒÉb"  # Isabela
+  "Jardín de Tritón"
+  "O?–‹R"  # Jasón
+  "UO^X"  # José
+  "Juliana"
+  "1gú‹"  # Juno
+  "1g‡^yr"  # Júpiter
+  "ckIN"  # Justica
+  "Justina"
+  "La Ánimas Sola"
+  "La Duquesa"
+  "La Ferme"
+  "àVÚ‹"  # Lealtad
+  "s¬rµ^"  # Lebrel
+  "±ƒf"  # León
+  "±ƒf ÑyW³uY"  # León Coronado
+  "Libra"
+  ")YTQµ^"  # Liebre
+  "Ligera"
+  "León de Oro"
+  "Los Dos Azares"
+  "Los Magalianes"
+  "ïfŽƒ"  # Luisa
+  "Luisa Fernanda"
+  "Ntra. Sra. Del Pueblo"
+  "Mágica"
+  "Magnánimo"
+  "Mahonesa"
+  "Mallorquín"
+  "Malta"
+  "›s)RšN"  # María
+  "›sKNšN Vg‰NaS"  # María Francisca
+  "›sKNšN OŽƒS"  # María Isabel
+  "Marte"
+  "Mazerredo"
+  "ŽÄršN"  # Medea
+  "ŽjgŽƒ"  # Medusa
+  "¨X‰åT"  # Mejicano
+  "Menorquín"
+  "…hi·V¯e"  # Mercedes
+  "¨XN)R"  # Mercurio
+  "ÆR…mæt"  # Minerva
+  "Minno"
+  "ýV‹s"  # Monarca
+  "Montanes"
+  "FzS‰šN"  # Murciano
+  "<Snf˜"  # Neptuno
+  "Neptuno Dios de Las Mares"
+  "wmÙNsY"  # Nereida
+  "Ntra. Sra. de África"
+  "Ntra. Sra. de Aranzazú"
+  "Ntra. Sra. de Asunción"
+  "Ntra. Sra. de Atocha"
+  "Ntra. Sra. de Begonna"
+  "Ntra. Sra. de Belén"
+  "Ntra. Sra. de Bignonia"
+  "Ntra. Sra. de los Buenos Aires"
+  "Ntra. Sra. de Buenos Aires y San Juan Nepumeceno"
+  "Ntra. Sra. de Choro"
+  "Ntra. Sra. de Covadonga"
+  "Ntra. Sra. de Gracia"
+  "Ntra. Sra. de Guadalupe"
+  "Ntra. Sra. de la Almudena"
+  "Ntra. Sra. de la Almudena y San Cayetano"
+  "Ntra. Sra. de la Anunciación"
+  "Ntra. Sra. de la Candelaria"
+  "Ntra. Sra. de la Caridad"
+  "Ntra. Sra. de la Concepción"
+  "Ntra. Sra. de la Concepción y las Ánimas"
+  "Ntra. Sra. de la Esclavitud"
+  "Ntra. Sra. de la Guía"
+  "Ntra. Sra. de la O"
+  "Ntra. Sra. de la Paz"
+  "Ntra. Sra. de la Piedad"
+  "Ntra. Sra. de la Presentación"
+  "Ntra. Sra. de la Soledad"
+  "Ntra. Sra. de las Mercedes"
+  "Ntra. Sra. de las Vinas"
+  "Ntra. Sra. de Loreto"
+  "Ntra. Sra. de los Dolores"
+  "Ntra. Sra. de l'Oves"
+  "Ntra. Sra. de Misericordia"
+  "Ntra. Sra. de Oilar"
+  "Ntra. Sra. de Regia"
+  "Ntra. Sra. del Carmen"
+  "Ntra. Sra. del Carmen la Confianza"
+  "Ntra. Sra. del Carmen y las Ánimas"
+  "Ntra. Sra. del Carmen y San Antonio"
+  "Ntra. Sra. del Carmino"
+  "Ntra. Sra. del Corlylas"
+  "Ntra. Sra. de la Humildad"
+  "Ntra. Sra. del Pilar"
+  "Ntra. Sra. del Pilar y Ánimas"
+  "Ntra. Sra.del Puerto San Buenaventura"
+  "Ntra. Sra. del Pueblo"
+  "Ntra. Sra. del Rosario"
+  "Ntra. Sra. y San José"
+  "°e^—2m"  # Nueva África
+  "°e‰ísYr"  # Nueva España
+  "°eàeLe"  # Nuevo Invencible
+  "ªRüf‰šN"  # Numancia
+  "N¹e"  # Oriente
+  "Orquijo"
+  "Pacto de Familia"
+  "Palas"
+  "Paloma India"
+  "Ä–Kž"  # Palomo
+  "ôTTXåT<SšN"  # Patagón
+  "1rýVw"  # Patriota
+  "Patrona"
+  "ŒTs^"  # Paz
+  "Pena"
+  "Peñada"
+  "Peregrina"
+  "Perfecta"
+  "Perla"
+  "Perla Vizcaína"
+  "Perla de España"
+  "Peruano"
+  "Pezuela"
+  "Pinque Pintado"
+  "Pinque Volante"
+  "Piuma"
+  "Poder"
+  "Poderoso"
+  "Porto Coeli"
+  "Posta de Caraccas"
+  "Postillon"
+  "Potencia"
+  "Preciosa"
+  "Princesa de la Paix"
+  "Principe"
+  "Principe de Asturias"
+  "Principe de la Paz"
+  "Principe Eugenio"
+  "Pronta"
+  "Proserpina"
+  "Providencia"
+  "Prudencia"
+  "Prueba"
+  "Puertorriqueño"
+  "Purísima Concepción"
+  "Quijote"
+  "Raposa"
+  "Rayo"
+  "Real Carlos"
+  "Real Familia"
+  "Real Felipe"
+  "Real Fénix"
+  "Real Jorge"
+  "Real Mari"
+  "Rebeca"
+  "Reina"
+  "Reina Doña Isabel II"
+  "Reina Luisa"
+  "Reina María Cristina"
+  "Reina María Isabel"
+  "Resolución"
+  "Restauración"
+  "Retiro"
+  "Rey Don Francisco de Asís"
+  "Ritta"
+  "Rosario"
+  "Rubí"
+  "Sacra Familia"
+  "Saeta"
+  "Salvador"
+  "Salvador del Mundo"
+  "San Alejandro"
+  "San Andrés"
+  "San Antonio"
+  "San Antonio de Padua"
+  "San Antonio y Ánimas"
+  "San Antonio y Ánimas la Fortuna"
+  "San Augustín"
+  "San Bernando"
+  "San Blas"
+  "San Bruno"
+  "San Carlos"
+  "San Cayetano"
+  "San Cristo"
+  "San Cristo del Paldo"
+  "San Cristo y Portal"
+  "San Christophe"
+  "San Cristobal"
+  "San Dámaso"
+  "San Diego"
+  "San Dimas"
+  "San Elmo"
+  "San Eloy"
+  "San Esteban"
+  "San Esteban Apedrado"
+  "San Eugenio"
+  "San Felipe"
+  "San Felipe Apostol"
+  "San Félix de Cantalicio"
+  "San Félix de Castilla"
+  "San Félix de Socorro"
+  "San Fermín"
+  "San Fernando"
+  "San Fernando el Chico"
+  "San Foit"
+  "San Francisco"
+  "San Francisco de Asís"
+  "San Francisco de Borja"
+  "San Francisco de Paula"
+  "San Francisco Javier"
+  "San Francisco la Panla"
+  "1WVg‰¯eÑy ÈTôuS"  # San Francisco Xavier
+  "San Francisco y San Antonio de Padua"
+  "San Fulgencio"
+  "San Gabriel"
+  "San Genaro"
+  "San Germán"
+  "San Gibilan"
+  "San Giovanni"
+  "San Gregorio"
+  "San Hermenegildo"
+  "San Idefonso"
+  "San Ignacio"
+  "San Isidoro"
+  "San Isidro"
+  "San Jenaro"
+  "San Jerónimo"
+  "San Joaquin"
+  "San Jorge"
+  "1WUO^X"  # San José
+  "?–^—)R R1WUO^X"  # San José el África
+  "1WUO^X"  # San José
+  "San José de Victoria"
+  "San José y Ánimas"
+  "1Wáw‰R"  # San Juan
+  "San Juan Bautista"
+  "San Juan de Pomosana"
+  "San Juan el Chico"
+  "San Juan Evangelista"
+  "San Juan Nepomuceno"
+  "San Julián"
+  "San Justo"
+  "San Lauren"
+  "San Leandro"
+  "San León"
+  "San Lino"
+  "1Wm&OPO"  # San Lorenzo
+  "San Luis"
+  "San Luis Beltrán"
+  "San Luis Gonzaga"
+  "San Marcos"
+  "San Martín"
+  "San Mateo"
+  "San Miguel"
+  "San Miguel el Volante"
+  "San Miguel y Acandoa"
+  "San Narciso"
+  "San Nicolás"
+  "San Nicolás de Bari"
+  "San Noberta"
+  "San Pablo"
+  "San Pacora"
+  "San Pascual Bailón"
+  "San Pedro"
+  "San Pedro Apostol"
+  "San Pedro de Alcántara"
+  "San Pedro y Ánimas"
+  "San Pedro y Fransisco"
+  "San Pío"
+  "San Rafael"
+  "San Raymundo"
+  "1WÉb™„"  # San Ramón
+  "San Rosendo"
+  "San Salvator"
+  "1W^XôT¯e‚„‰R"  # San Sebastián
+  "San Sebastián y las Ánimas"
+  "San Telmo"
+  "San Trinidad y Joroe"
+  "San Vicente Ferrer"
+  "San Vincente"
+  "San Yago a Horcajadas"
+  "San Zenón"
+  "Sancta Justa Rufina"
+  "Sanguineto"
+  "Santa Amalia"
+  "Santa Ana"
+  "Santa Bárbara"
+  "Santa Bibiana"
+  "Santa Brigida"
+  "Santa Casilda"
+  "Santa Catalina"
+  "Santa Cecilia"
+  "Santa Clara"
+  "Santa Cruz"
+  "Santa Dorotea"
+  "Santa Elena"
+  "Santa Escolástica"
+  "Santa Familia"
+  "Santa Florentina"
+  "Santa Gertrudis"
+  "Santa Inés"
+  "1WOŽƒS"  # Santa Isabel
+  "Santa Jose y Ntra. Sra. de Begoyna"
+  "Santa Justa"
+  "Santa Leocadia"
+  "Santa Levivate y Aniiniums"
+  "Santa Lucía"
+  "Santa Magdalena"
+  "Santa Margarita"
+  "Santa María"
+  "Santa María de la Cabeza"
+  "Santa María de Tezanos y las Ánimas"
+  "Santa María Magdalena"
+  "Santa Marta"
+  "Santa Matilda"
+  "Santa Mónica"
+  "Santa Natalia"
+  "Santa Paula"
+  "Santa Perpetua"
+  "Santa Rita"
+  "Santa Rosa"
+  "Santa Rosalía"
+  "Santa Rosalía de Palermo"
+  "Santa Rosalía Golondrina"
+  "Santa Rufina"
+  "Santa Sabina"
+  "Santa Susana"
+  "Santa Tecla"
+  "Santa Teresa"
+  "Santa Teresa"
+  "Santa Teresa de Jesús"
+  "Santa Teresa de Nápoles"
+  "Santa Victoria"
+  "1WOŽƒS"  # Santa Isabel
+  "Santiago"
+  "Santiago Apostol"
+  "Santiago de América"
+  "Santísima Trinidad"
+  "Santísima Trinidad y Ntra. Sra. del Buen Fin"
+  "Santísimo Sacramento"
+  "Cristo de San Román"
+  "Santo Domingo"
+  "Santo Tomás"
+  "Santo Toribio de Mogrobejo"
+  "Sebastiana"
+  "Segunda Amistad"
+  "Selerais"
+  "Señora Sara"
+  "Septentrión"
+  "Serio"
+  "Serpadón"
+  "Severno"
+  "Sevillana"
+  "Sirena"
+  "Soberano"
+  "Soberbio"
+  "Sorpresa"
+  "Susana"
+  "Teresa"
+  "Terrible"
+  "Tetis"
+  "Tigre"
+  "Tomás y María"
+  "Travela"
+  "Tridente"
+  "Trinidad"
+  "Triunfante"
+  "Triunfo"
+  "Unicornio"
+  "Valenciano"
+  "Valiente"
+  "Velasco"
+  "Veloz"
+  "Veloz Pasajero"
+  "Vencendor"
+  "Vengador"
+  "Venganza"
+  "Ventura"
+  "Venus"
+  "Victoria"
+  "Victorioso"
+  "Vigilante"
+  "Villa de Bilbao"
+  "Vincejo"
+  "Virgen de Soledad"
+  "Virgen del Carmen"
+  "Virgen del Rosario"
+  "Viva"
+  "Viváz"
+  "Vivo"
+  "Volador"
+  "Volante"
+  "Volario"
+}
+army_names = {
+  "Guardia Real"
+  "$PROVINCE$›Q"  # Ejército de $PROVINCE$
+}
+fleet_names = {
+  "‡v¶Rwm›Q"  # Armada Real
+  "$PROVINCE$0‚–"  # Flota de $PROVINCE$
+}

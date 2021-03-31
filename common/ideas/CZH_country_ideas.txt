@@ -1,0 +1,46 @@
+#northern xio
+CZH_ideas = {
+	start = {
+		army_tradition_decay = -0.03
+		no_cost_for_reinforcing = yes
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.1
+	}
+	
+	trigger = {
+	   tag = CZH
+	}
+
+	free = yes
+	
+	six_edict = {
+		adm_tech_cost_modifier = -0.1
+	}
+
+	fubing_system = {
+		land_forcelimit_modifier = 0.15
+	}
+
+	eight_zhuguo = {
+		army_tradition = 0.5
+	}
+
+	south_and_north_dip = {
+		diplomatic_upkeep = 1
+	}
+
+	six_bureaucracy = {
+		core_creation = -0.25
+	}
+
+	silk_develop = {
+		global_trade_power = 0.15
+	}
+
+	pick_the_good_guys = {
+		advisor_cost = -0.2
+		inflation_reduction = 0.1
+	}
+}

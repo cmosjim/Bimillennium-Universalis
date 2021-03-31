@@ -1,0 +1,57 @@
+under_seige = {
+	land_morale = 0.1
+	siege_ability = 0.1
+}
+
+destroy_Great_Wall = {
+	fort_level = -2
+}
+
+break_the_Great_Wall = {
+	land_attrition = -0.15
+}
+
+snap_calvary = {
+	land_morale = -0.05
+	discipline = -0.025
+}
+
+restablish_relationship = {
+	improve_relation_modifier = 0.5
+}
+
+China_nightmare = {
+	shock_damage = 0.2
+}
+
+xiongnu_tribal_affiliation = {
+	prestige = 1
+	diplomatic_reputation = 2
+}
+
+brute_power = {
+	horde_unity = 1
+	land_forcelimit_modifier = 0.2
+}
+
+northern_overlord = {
+	reinforce_speed = 0.25
+}
+
+live_stocks = {
+	cavalry_cost = -0.2
+}
+
+study_of_agriculture = {
+	technology_cost = -0.3
+	production_efficiency = 0.1
+}
+
+unfaithful_new = {
+	land_morale = 0.2
+	discipline = 0.05
+}
+
+tribe_taxation = {
+	nomadic_tribes_loyalty_modifier = 0.05
+}

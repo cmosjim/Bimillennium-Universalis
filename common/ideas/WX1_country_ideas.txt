@@ -1,0 +1,43 @@
+#northern xio
+WX1_ideas = {
+	start = {
+		discipline = 0.05
+		global_foreign_trade_power = 0.2
+	}
+	
+	bonus = {
+		naval_maintenance_modifier = -0.25
+		war_exhaustion = -0.1
+	}
+	
+	trigger = {
+		tag = WX1
+	}
+
+	free = yes
+	
+	sanzaogonghe = {
+		diplomatic_reputation = 3
+	}
+	qinglianzongli = {
+		global_tax_modifier = 0.05
+	}
+	qianchengfojiao = {
+		global_missionary_strength = 0.05
+	}
+	junshijiaoyu = {
+		cavalry_power = 0.1
+		infantry_power = 0.1
+	}
+	shoufuwaimeng = {
+		dip_tech_cost_modifier = -0.1
+		prestige = 1
+	}
+	aiguoqijie = {
+		religious_unity = 0.25
+		defensiveness = 0.1
+	}
+	beiyangzhihu = {
+		land_morale = 0.15
+	}	
+}

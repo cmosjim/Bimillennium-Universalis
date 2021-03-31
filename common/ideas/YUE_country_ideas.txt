@@ -1,0 +1,47 @@
+YUE_ideas = {
+	start = {
+		discipline = 0.05
+		global_tariffs = 0.3
+	}
+
+	bonus = {
+		heavy_ship_power = 0.15
+	}
+	
+	trigger = {
+		OR = {
+		tag = YUE
+		tag = NU1
+		tag = NYF
+		}
+	}
+	free = yes		#will be added at load.
+	
+	
+	yue_zhaotuo = {
+		prestige = 1
+		ae_impact = -0.10
+	}
+	yue_gejuelingnan = {
+		defensiveness = 0.15
+		enemy_core_creation = 0.1
+	}
+	yue_tonghuabaiyue = {
+		local_culture_conversion_cost = -0.20
+		global_unrest = -1
+	}
+	yue_tunken = {
+		development_cost = -0.15
+	}
+	yue_nanyangshangmao = {
+		caravan_power = 0.2
+		merchants = 1
+	}
+	yue_xiananyang = {
+		range = 0.3
+		colonist_placement_chance = 0.2
+	}
+	yue_wenhuajiaohuizhidi = {
+		diplomatic_reputation = 2
+	}
+}

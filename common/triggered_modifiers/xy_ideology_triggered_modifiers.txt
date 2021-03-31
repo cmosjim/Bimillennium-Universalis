@@ -1,0 +1,55 @@
+minzudejuexing = {
+	potential = {
+	religion_group = ideology
+	}
+
+	trigger = {
+	religion_group = ideology
+	custom_trigger_tooltip = {
+	tooltip = tp_minzudejuexing_1
+	any_owned_province = { NOT = { culture_group = ROOT }
+    ROOT = { dominant_culture = PREV }
+	}
+	}
+	custom_trigger_tooltip = {
+	tooltip = tp_minzudejuexing_2
+	OR = {
+	AND = {
+	government_rank = 3
+	NOT = {
+	num_of_owned_provinces_with = {
+	value = 100
+	culture_group = ROOT
+	is_state = yes
+	   }
+	}
+	}
+	AND = {
+	NOT = { government_rank = 3 }
+	government_rank = 2
+	NOT = {
+	num_of_owned_provinces_with = {
+	value = 50
+	culture_group = ROOT
+	is_state = yes
+	   }
+	}
+	}
+	AND = {
+	NOT = { government_rank = 2 }
+	government_rank = 1
+	NOT = {
+	num_of_owned_provinces_with = {
+	value = 25
+	culture_group = ROOT
+	is_state = yes
+	   }
+	}
+	}
+	}
+	}
+	}
+	global_unrest = 5
+    land_morale = -0.20
+	discipline = -0.15
+}

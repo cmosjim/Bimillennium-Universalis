@@ -1,0 +1,114 @@
+#northern xio
+CNH_ideas = {
+	start = {
+		discipline = 0.05
+		land_morale = 0.2
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+	
+	trigger = {
+		OR = {
+			has_country_flag = flg_chinese_empire_create
+			tag = AA1
+			tag = AA2
+			tag = AA3
+			tag = AA4
+			tag = AA5
+			tag = AA6
+			tag = AA7
+			tag = AA8
+			tag = AA9
+			tag = AB1
+			tag = AB2
+			tag = AB3
+			tag = AB4
+			tag = AB5
+			tag = AB6
+			tag = AB7
+			tag = AB8
+			tag = AB9
+			tag = AC1
+			tag = AC2
+			tag = AC3
+			tag = AC4
+			tag = AC5
+			tag = AC6
+			tag = AC7
+			tag = AC8
+			tag = AD1
+			tag = AD2
+			tag = AD3
+			tag = AD4
+			tag = AD5
+			tag = AD6
+			tag = AD7
+			tag = AD8
+			tag = AD9
+			tag = AE1
+			tag = AE2
+			tag = AE3
+			tag = AE4
+			tag = AE5
+			tag = AE6
+			tag = AE7
+			tag = AE8
+			tag = AE9
+			tag = AF1
+			tag = AF2
+			tag = AF3
+			tag = AF4
+			tag = AF5
+			tag = AF6
+			tag = AF7
+			tag = AF8
+			tag = AF9
+			tag = AF0
+			tag = AG1
+			tag = AG2
+			tag = AG3
+			tag = AG4
+			tag = AG5
+			
+			#tag = AK1
+			#has_country_flag = flg_CHINESE_EMPIRE_TAG
+		}
+	}
+
+	free = yes
+	
+	zhongyuan_wenhua = {
+		war_exhaustion_cost = -0.15
+		core_creation = -0.25
+	}
+
+	first_words_in_world = {
+		prestige = 2
+		ae_impact = -0.10	
+	}
+	
+	tianwen_lifa = {
+		heir_chance = 0.5
+		adm_tech_cost_modifier = -0.2
+	}
+
+	traditional_chinese_medicine = {
+		land_attrition = -0.15
+	}
+
+	ge_lu_xueshuo = {
+		stability_cost_modifier = -0.2
+	}
+	
+	yejin_zhuzao = {
+		infantry_power = 0.1
+		cavalry_power = 0.1
+	}
+	
+	dragon_logo = {
+		heavy_ship_power = 0.15
+		infantry_cost = -0.1
+	}
+}

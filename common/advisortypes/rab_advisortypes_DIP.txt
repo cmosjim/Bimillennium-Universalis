@@ -1,0 +1,281 @@
+# If you add advisortypes, and use those tags, do not change them without changing everywhere they are used.
+# Uses all 'modifiers' possible that are exported as a Modifier.
+#####################################################
+########Good Advisors list below #####################
+######################################################
+
+cai_lun = {
+	monarch_power = DIP
+	# Bonus
+    global_missionary_strength = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+jiang_shi = {
+	monarch_power = DIP
+	# Bonus
+    naval_morale = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+zhang_rang = {
+	monarch_power = DIP
+	# Bonus
+    trade_efficiency = 0.15
+	spy_offence = 0.10
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+zhen_chong = {
+	monarch_power = DIP
+	# Bonus
+    global_tariffs = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+cao_teng = {
+	monarch_power = DIP
+	# Bonus
+    naval_morale = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+dan_chao = {
+	monarch_power = DIP
+	# Bonus
+    range = 0.4
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+wang_fu = {
+	monarch_power = DIP
+	# Bonus
+    heavy_ship_cost = -0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+#############relationship#############
+
+dou_wu = {
+	monarch_power = DIP
+	# Bonus
+    discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+dou_xian = {
+	monarch_power = DIP
+	# Bonus
+    reinforce_speed = 0.5
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+dou_zhi = {
+	monarch_power = DIP
+	# Bonus
+    global_manpower_modifier = 0.1
+	chance = {
+		factor = 0
+	}
+	ai_will_do = {
+		factor = 0
+	}	
+}
+
+dou_ji = {
+	monarch_power = DIP
+	# Bonus
+    discipline = 0.05
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+deng_zhi = {
+	monarch_power = DIP
+	# Bonus
+    heavy_ship_power = 0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+deng_xun = {
+	monarch_power = DIP
+	# Bonus
+    heavy_ship_cost = -0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+deng_sui = {
+	monarch_power = DIP
+	# Bonus
+    global_trade_goods_size_modifier = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+sun_qian = { 
+
+	monarch_power = DIP
+	# Bonus
+    global_manpower_modifier = 0.1
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+zhou_yu = {
+
+	monarch_power = DIP
+	# Bonus
+    naval_morale = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+
+}
+
+diao_chan = {
+
+	monarch_power = DIP
+	# Bonus
+    global_manpower_modifier = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+
+}
+sima_yi = {
+
+	monarch_power = DIP
+	# Bonus
+    global_manpower_modifier = 0.15
+	skill_scaled_modifier = {meritocracy = 0.25 }
+
+	chance = {
+		factor = 0
+	}
+	
+	ai_will_do = {
+		factor = 0
+	}
+}
+

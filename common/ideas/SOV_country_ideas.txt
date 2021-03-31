@@ -1,0 +1,44 @@
+
+SOV_ideas = {
+	start = {
+		hostile_attrition = 1
+		recover_army_morale_speed = 0.1
+	}
+	bonus = {
+	core_creation = -0.25
+	}
+
+	trigger = {
+		tag = SOV
+	}
+	free = yes		# will be added at load
+	
+	SOV_1_idea = {
+		global_manpower_modifier = 0.5
+		army_tradition = 1
+	}
+	SOV_2_idea = {
+		production_efficiency = 0.3
+	}
+	SOV_3_idea = {
+		discipline = 0.05
+		land_morale = 0.15
+	}
+	SOV_4_idea = {
+		fire_damage_received = -0.15
+		shock_damage_received = -0.15
+		cavalry_cost = -0.3
+	}
+	SOV_5_idea = {
+		trade_efficiency = 0.2
+		global_trade_power = 0.2
+	}
+	SOV_6_idea = {
+		defensiveness = 0.25
+		garrison_size = 0.25
+	}
+	SOV_7_idea = {
+	diplomatic_reputation = 2
+	ae_impact = -0.2
+	}
+}

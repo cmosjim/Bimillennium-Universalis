@@ -1,0 +1,40 @@
+# add legalist by heiljsf 2020-11-30
+
+eastern = {
+
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 58 80 }
+	#rab_ modify , no group = buddhic , buddhic only exist include into eastern group
+	#rab_ add harmonized_vajrayana / harmonized_mahayana / harmonized_buddhism
+	#these 3 modifiers could be found in vanilla 1.22.2
+	
+	##heiljsf 法家思想
+	legalist = {
+		color = { 30 30 30 }
+		icon = 63
+		country = {
+			tolerance_heretic = 3
+		}
+		country = {
+			infantry_power = 0.1
+			governing_capacity = 150
+			max_absolutism = 50
+			global_unrest = 2
+		}
+		country_as_secondary = {
+			infantry_power = 0.05
+			governing_capacity = 100
+		}
+		
+		can_have_secondary_religion = yes
+		personal_deity = yes
+		
+		heretic = { TAOIST }
+		allowed_conversion = {
+			confucianism
+		}
+		harmonized_modifier = harmonized_legalist
+	}
+	
+	crusade_name = CRUSADE
+}

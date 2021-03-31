@@ -1,0 +1,51 @@
+#northern xio
+XA2_ideas = {
+	start = {
+		global_unrest = -1
+		land_morale = 0.15
+	}
+	
+	bonus = {
+		army_tradition = 1
+	}
+	
+	trigger = {
+	OR = {
+	   tag = XA2
+	   }
+	}
+
+	free = yes
+	
+	xia_diyigechaodai = {
+		prestige = 1
+		imperial_mandate = 0.05
+	}
+	
+	xia_dayuzhishui = {
+		production_efficiency = 0.15
+	}
+	
+	xia_shixizhishi = {
+		manpower_recovery_speed = 0.15
+		heir_chance = 0.5
+	}
+
+	xia_jiuzhou = {
+		core_creation = -0.2
+	}
+	
+	xia_lifaqiyuan = {
+		adm_tech_cost_modifier = -0.15
+		development_cost = -0.05
+	}
+
+	xia_zhongyuan = {
+		global_tax_modifier = 0.15
+	}
+	
+	xia_huaxiazhiming = {
+		idea_cost = -0.10
+		stability_cost_modifier = -0.1
+	}
+}

@@ -1,0 +1,125 @@
+#ANY CHINESE NAME : NO
+#num_of_wenwuzhi 文宦值 : 此值越大代表文官升任 反之為宦官
+#num_of_wuqizhi 武戚值 : 此值越大代表武官升任 反之為外戚
+#
+############################################
+#
+# 武戚值
+#
+############################################
+ #num_of_wuqizhi:0 "武將派系影響力"
+ #wuqi_60up:0 "武將派系當權影响"
+ #wuqi_90up:0 "武將派系專權朝廷影响"
+ #wuqi_40lower:0 "武將派系當權影響"
+ #wuqi_10lower:0 "武將派系專權朝廷影响"
+ #2019.01.31 改成只有90up的modifier debuff..
+ 
+
+
+wuqi_90up = {
+	potential = {
+		has_country_flag = wenwuzhi1
+		has_country_flag = wuqizhi1
+		has_reform = celestial_empire
+	}
+	trigger = {
+		NOT = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}
+		}		
+		check_variable = {
+			which = num_of_wuqizhi
+			value = 90
+		}	
+	}
+	global_tax_modifier = -0.5
+	naval_morale = -0.1
+	global_unrest = 15
+}
+
+wuqi_85up = {
+	potential = {
+		has_country_flag = wuqizhi1
+	}
+
+	trigger = {
+		NOT = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}
+		}		
+		check_variable = {
+			which = num_of_wuqizhi
+			value = 85
+		}	
+		NOT = {
+			check_variable = {
+				
+			which = num_of_wuqizhi
+			value = 90
+			}
+		}
+	}
+		
+	global_tax_modifier = -0.05
+	
+}
+
+wuqi_15lower = {
+	potential = {
+		has_country_flag = wuqizhi1 
+	}
+	trigger = {
+		NOT = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}
+		}
+		NOT = {
+			check_variable = {
+			which = num_of_wuqizhi
+			value = 15
+			} 
+		}		
+		check_variable = {
+			which = num_of_wuqizhi
+			value = 10
+		}	
+	}
+	
+	land_morale = -0.05
+	global_unrest = 5
+}
+
+wuqi_10lower = {
+	potential = {
+		has_country_flag = wenwuzhi1
+		has_country_flag = wuqizhi1
+		has_reform = celestial_empire
+	}
+
+	trigger = {
+		NOT = {
+			check_variable = {
+				which = num_of_wenwuzhi
+				value = 50
+			}
+		}		
+		NOT = {
+			check_variable = {
+			which = num_of_wuqizhi
+			value = 10
+			}
+		}
+	}
+
+	ae_impact = -0.05
+	diplomatic_upkeep = 1	
+	discipline = -0.15
+	land_morale = -0.25
+	global_unrest = 15
+}

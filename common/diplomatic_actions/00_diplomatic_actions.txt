@@ -1,0 +1,2099 @@
+# INSTRUCTIONS:
+#
+# condition				A diplomatic action can have any number of condition blocks, each with its own
+#						tooltip, potential and allow section
+#
+# 	tooltip					Sets a custom text string similar to the hardcoded limits
+# 							If no tooltip is scripted, the tooltip for the actual trigger will be shown
+#							Note that the custom tooltip is only shown if the allow trigger is NOT met
+#
+# 	potential				Determines if the trigger is applicable or not
+# 	allow					Determines if the action is valid or not
+#
+# effect				A diplomatic action can only have one effect block
+
+# ROOT					actor
+# FROM					target
+
+########################################
+# DIPLOMATIC ACTIONS
+########################################
+# royal_marriage
+# declarewar
+# requestpeace
+# support_independence_action
+# allianceaction
+# embargoaction
+# annexationaction
+# integrationaction
+# vassalaction
+# guaranteeaction
+# warningaction
+# threaten_war
+# milaccess
+# fleet_access
+# offer_fleet_access
+# offermilaccess
+# insultaction
+# giftaction
+# claimaction
+# callaction
+# offerloan
+# warsubsidy
+# sellprov
+# imperial_relations_action
+# imperial_realm_war_action
+# religious_unity_action
+# grant_electorate
+# remove_electorate
+# grant_freecity
+# remove_freecity
+# demand_unlawful_territory_action
+# call_crusade_action
+# excommunicate_action
+# enforce_peace
+# improve_relation
+# fabricate_claim
+# justify_trade_conflict
+# transfer_trade_power
+# infiltrate_administration
+# sabotage_reputation
+# support_rebels
+# sow_discontent
+# agitate_for_liberty
+# form_coalition
+# request_to_join_federation
+# invite_to_federation
+# support_heir
+# break_marriage
+# designate_march
+# ask_for_march
+# sell_ships_action
+# abandon_union
+# takeondebt
+# influence_nation
+# claim_states
+# steer_trade
+# stealmap
+# spy_network
+# invite_to_trade_league
+# request_to_join_trade_league
+# sharemap
+# intervene_in_war
+# break_alliance
+# tributary_state_action
+# ask_for_tributary_state_action
+# knowledge_sharing
+###############################
+# rab_ add 
+# JMN_NONE = > 阻止杨马延与AI互动
+# has_country_flag = NEVER_PEACE = > requestpeace 剧情需要不能和平
+# SOUTHERN_SEA_WAR_a/b/c/d	= > requestpeace 剧情需要不能和平
+# CELESTIAL_NO_ROYAL		= > royal_marriage 不能联姻
+# 2019-03-15 只有AI都護府在獨立欲望超過50時候 才能和宗主國開戰
+# 2019-03-25 可強迫斷盟
+# 2019-11-04 xy : GNN and SNG , YUA MEG in requestpeace.
+# 2020-07-01 1.30.3 add request_to_join_trade_league and invite_to_trade_league
+# There are 3 points must consider :
+# 1)宗主國不能命令其都護府和自己的附庸國宣戰
+# 2)宗主國不能附庸和都護府宣戰的國家
+# 3)被都護府攻擊的國家不能 遠端/朝貢 自己
+# 4)宗主國和平決議時，必須要先讓都護府停戰
+# 5)threaten_war
+# 2021-02-01 modern_chinese_warlord_reform cant alliance with not east asian 
+intervene_in_war = {
+	condition = {
+		tooltip = duhufu_intervene_in_war_tooltip
+		potential = {
+		}
+		allow = {
+			NOT = {
+				OR = {
+					FROM = { is_subject_of_type = duhufu_state } 
+					FROM = { is_subject_of_type = duhufu_state_color } 
+				}
+			}				
+		}
+	}
+}	
+tributary_state_action = {
+	#建立朝貢關係		
+	condition = {
+		tooltip = tp_warlord_tributary_refuse
+		potential = {
+		}
+		allow = {
+			NOT = {
+				FROM = { has_reform = ancient_chinese_warlord_reform }
+			}			
+		}
+	}
+	condition = {
+		tooltip = war_with_duhufu_tooltip #正在與都護府戰爭不適合進行朝貢外交
+		potential = {
+		}
+		allow = {
+			NOT = {
+				OR = {
+					FROM = { war_with = XIY }
+					FROM = { war_with = XI1 }
+					FROM = { war_with = AN3 }
+					FROM = { war_with = AN2 }
+					FROM = { war_with = ND1 }
+					FROM = { war_with = HS0 }
+					FROM = { war_with = WSZ }
+					FROM = { war_with = BT1 }
+					FROM = { war_with = AN4 }
+				}	
+			}			
+		}
+   }
+}   
+
+ask_for_tributary_state_action = {
+	#成為對方的朝貢國						  
+	condition = {
+		tooltip = tp_warlord_tributary_refuse
+		potential = {
+		}
+		allow = {
+			NOT = {
+				has_reform = ancient_chinese_warlord_reform
+			}			
+		}
+	}
+	condition = {
+		tooltip = tp_war_with_duhufu #正在與都護府戰爭不適合進行朝貢外交
+		potential = {
+		}
+		allow = {
+			NOT = {
+				OR = {
+					war_with = XIY 
+					war_with = XI1 
+					war_with = AN3 
+					war_with = AN2 
+					war_with = ND1
+					war_with = HS0
+					war_with = WSZ 
+					war_with = BT1 
+					war_with = AN4 
+				}	
+			}			
+		}
+	}	
+}
+
+#knowledge_sharing = {
+#	condition = {
+#		potential = {
+#		}
+#		always = no
+#	}	
+#}	
+charter_company = {
+	condition = {
+		tooltip = tp_warlord_tributary_refuse
+		potential = {
+		}
+		allow = {
+			NOT = { is_year = 1940 }		
+		}
+	}
+	condition = {
+		tooltip = duhufu_charter_company_tooltip
+		
+		potential = {
+		}
+		allow = {
+			NOT = {
+				OR = {
+					FROM = { is_subject_of_type = duhufu_state } 
+					FROM = { is_subject_of_type = duhufu_state_color } 
+				}
+			}				
+		}
+	}	
+}	
+annexationaction = {
+	condition = {
+		tooltip = ANNEX_TOO_LOW
+		potential = {
+			FROM = {
+				vassal_of = ROOT
+			}
+		}
+		allow = {
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+		}
+	}
+
+}
+
+#warningaction = {
+#	condition = {
+#		tooltip = JMN_NONE
+#		potential = {
+#
+#		}
+#		allow = {
+#			NOT = {
+#				OR = {
+#					tag = JMN
+#					FROM = { tag = JMN }
+#				}
+#			}			
+#		}
+#	}
+#}
+
+insultaction = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}
+
+designate_march = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+	condition = {
+		tooltip = duhufu_designate_march_tooltip
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					is_subject_of_type = duhufu_state	
+					is_subject_of_type = duhufu_state_color
+					FROM = { is_subject_of_type = duhufu_state	}
+					FROM = { is_subject_of_type = duhufu_state_color	}
+				}
+			}
+		}
+	}	
+
+}
+agitate_for_liberty = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}
+study_technology = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}
+sow_discontent = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}
+sabotage_reputation = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}
+
+warsubsidy = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}
+
+offerloan = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}
+
+embargoaction = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}
+
+
+giftaction = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}
+
+
+sellprov = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}
+
+milaccess = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}
+
+offermilaccess = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}
+
+support_independence_action = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+	condition = {
+		tooltip = duhufu_support_independence_action_tooltip
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					is_subject_of_type = duhufu_state	
+					is_subject_of_type = duhufu_state_color
+					FROM = { is_subject_of_type = duhufu_state	}
+					FROM = { is_subject_of_type = duhufu_state_color	}
+				}
+			}
+		}
+	}
+}
+	
+threaten_war = {
+	condition = {
+		tooltip = duhufu_threaten_war_tooltip
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					is_subject_of_type = duhufu_state	
+					is_subject_of_type = duhufu_state_color
+   
+  
+				}
+			}
+		}
+	}
+}
+
+
+enforce_peace = {
+	condition = {
+		tooltip = duhufu_enforce_peace_tooltip
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					is_subject_of_type = duhufu_state	
+					is_subject_of_type = duhufu_state_color
+				}
+			}
+		}
+	}
+}				 
+infiltrate_administration = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}	
+
+support_rebels = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}
+
+
+
+
+
+improve_relation = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+}
+
+allianceaction = {
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					tag = ZZ3
+					FROM = { tag = JMN }
+					FROM = { tag = ZZ3 }
+				}
+			}			
+		}
+	}	
+	condition = {
+		tooltip = duhufu_allianceaction_tooltip
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					AND = {
+						has_country_flag = flg_overlord_abandon_alliance
+						OR = {
+							is_subject_of_type = duhufu_state
+							is_subject_of_type = duhufu_state_color
+						}	
+					}	
+					FROM = {
+						has_country_flag = flg_overlord_abandon_alliance 
+						OR = {
+							is_subject_of_type = duhufu_state
+							is_subject_of_type = duhufu_state_color
+						}
+					}
+				}
+			}			
+		}
+	}
+	condition = {
+		tooltip = MORDEN_CHINESE_WARLORD_LIMIT
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					AND = {
+						NOT = { tag = GJ1 }
+						has_reform = modern_chinese_warlord_reform
+						FROM = {
+							NOT = { 
+								culture_group = east_asian 
+							} 
+						}
+					}
+					AND = {
+						NOT = {  culture_group = east_asian }
+						FROM = {
+							has_reform = modern_chinese_warlord_reform 
+							NOT = {
+								tag = GJ1 
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+guaranteeaction = {
+	condition = {
+		tooltip = MORDEN_CHINESE_WARLORD_LIMIT
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				AND = {
+					NOT = {
+						has_reform = modern_chinese_warlord_reform 
+					}	
+					FROM = {
+						has_reform = modern_chinese_warlord_reform 
+						NOT = { tag = GJ1 }
+					}
+				}
+			}
+		}
+	}
+}
+
+royal_marriage = {
+	condition = {
+		tooltip = MARWAR
+		potential = {
+			
+		}
+		allow = {
+			NOT = { war_with = FROM }
+		}
+	}
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+	condition = {
+		tooltip = CELESTIAL_NO_ROYAL
+		potential = {
+			
+		}
+		allow = {
+			NOT = {
+				OR = {
+					has_reform = celestial_empire
+					FROM = { has_reform = celestial_empire }
+				}
+			}	
+		}
+	}
+	condition = {
+		tooltip = WARLORD_NO_ROYAL
+		potential = {
+			
+		}
+		allow = {
+			OR = {
+				tag = LU2
+				NOT = {
+					OR = {
+						has_reform = ancient_chinese_warlord_reform
+						has_reform = chinese_feudatory_reform
+						FROM = { has_reform = ancient_chinese_warlord_reform }
+						FROM = { has_reform = chinese_feudatory_reform }
+						tag = TP1
+					}
+				}
+			}			
+		}
+	}	
+	condition = {
+		tooltip = TOGOFU_NO_ROYAL
+		potential = {
+			
+		}
+		allow = {
+			 NOT = {
+				OR = {
+					has_reform = ancient_chinese_togofu_reform 
+					FROM = { has_reform = ancient_chinese_togofu_reform }
+				}
+			}	
+		}
+	}	
+}
+
+requestpeace = {
+	condition = { 
+		tooltip = liaojinzhanyi_tootip
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+					has_global_flag = liaojinzhanyi
+					tag = LIO FROM = { tag = GNN }
+					}
+                    AND = { 
+					has_global_flag = liaojinzhanyi
+					tag = GNN FROM = { tag = LIO }
+					}
+				}	
+            } 
+        } 
+    }
+    condition = { 
+		tooltip = songjinzhanyi_tootip
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+					OR = {
+					has_global_flag = songjinzhanyi
+					has_global_flag = songjinzhanyi222
+					}
+					tag = SNG FROM = { tag = GNN }
+					}
+                    AND = { 
+					OR = {
+					has_global_flag = songjinzhanyi
+					has_global_flag = songjinzhanyi222
+					}
+					tag = GNN FROM = { tag = SNG }
+					}
+				}	
+            } 
+        } 
+    }  	
+	condition = { 
+		tooltip = mengjinzhanyi_tootip
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+					OR = {
+					MGE = { has_country_flag = mengjinerzhanjx }
+					MGE = { has_country_flag = mengjinyizhanjx }
+					}
+					tag = MGE FROM = { tag = GNN }
+					}
+                    AND = { 
+					OR = {
+					MGE = { has_country_flag = mengjinerzhanjx }
+					MGE = { has_country_flag = mengjinyizhanjx }
+					}
+					tag = GNN FROM = { tag = MGE }
+					}
+				}	
+            } 
+        } 
+    }  	
+	condition = { 
+		tooltip = mengsongzhanyi_tootip
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+					YUA = { has_country_flag = mengsngerzhanjx }
+					tag = YUA FROM = { tag = SNG }
+					}
+                    AND = { 
+					YUA = { has_country_flag = mengsngerzhanjx }
+					tag = SNG FROM = { tag = YUA }
+					}
+				}	
+            } 
+        } 
+    }  
+    condition = { 
+		tooltip = jiefangzhanzheng_tootip
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+					has_global_flag = guogongneizhan2
+					tag = CW1 FROM = { tag = ROC }
+					}
+                    AND = { 
+					has_global_flag = guogongneizhan2
+					tag = ROC FROM = { tag = CW1 }
+					}
+				}	
+            } 
+        } 
+    }	
+	condition = { 
+		tooltip = CHAOXIANZHANZHENG_tootip
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+					has_global_flag = kangmeiyuanchao2
+					OR = { tag = CHN tag = NOK } FROM = { OR = { tag = USA tag = SKO } } 
+					}
+                    AND = { 
+					has_global_flag = kangmeiyuanchao2
+					OR = { tag = USA tag = SKO } FROM = { OR = { tag = CHN tag = NOK } }
+					}
+				}	
+            } 
+        } 
+    }	
+	
+	
+	condition = {
+
+		tooltip = TEST_DESC
+		potential = {
+			
+		}
+		allow = {
+			NOT = {
+                OR = { 
+                    FROM = { has_country_modifier = md_fanaticism_war }
+					FROM = { has_country_modifier = md_fanaticism_war_GER }             
+					has_country_modifier = md_fanaticism_war_GER
+					has_country_modifier = md_fanaticism_war
+                }			
+			}
+		}
+	}
+    condition = { 
+    tooltip = TEST_DESC_2 
+        potential = { 
+                
+        } 
+        allow = {
+			NOT = {
+				OR = {
+					AND = { 
+						FROM = { 
+							has_country_flag = NEVER_PEACE
+						}                         
+						OR = {
+							tag = NEW
+							tag = HND
+						}
+					} 				
+					AND = { 
+						FROM = { 
+							OR = {
+								tag = NEW
+								tag = HND
+							}
+						}                         
+							has_country_flag = NEVER_PEACE 
+					}  					
+				}	
+			}
+		}		 
+    }
+    condition = { 
+    tooltip = TEST_DESC_2 
+        potential = { 
+                
+        } 
+        allow = {
+			NOT = {
+				OR = {
+					AND = { 
+						FROM = { 
+							has_country_flag = mengjinyizhanjx
+						}                         
+							tag = GNN
+					} 				
+					AND = { 
+						FROM = { 
+							tag = GNN
+						}                         
+							has_country_flag = mengjinyizhanjx
+					}  					
+				}	
+			}
+		}		 
+    }	
+    condition = { 
+    tooltip = SOUTHERN_SEA_WAR_a 
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+						FROM = {
+							has_country_flag = defense_war_southern_a 
+						}                         
+							has_country_flag = offense_war_southern_a 
+					}
+					AND = { 
+						FROM = {
+							has_country_flag = offense_war_southern_a 
+						}                         
+							has_country_flag = defense_war_southern_a 
+					}
+				}	
+            } 
+        } 
+    }
+    condition = { 
+    tooltip = SOUTHERN_SEA_WAR_b
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+						FROM = {
+							has_country_flag = defense_war_southern_b 
+						}                         
+							has_country_flag = offense_war_southern_b 
+					}
+					AND = { 
+						FROM = {
+							has_country_flag = offense_war_southern_b 
+						}                         
+							has_country_flag = defense_war_southern_b 
+					}
+				}	
+            } 
+        } 
+    }
+    condition = { 
+    tooltip = SOUTHERN_SEA_WAR_c 
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+						FROM = {
+							has_country_flag = defense_war_southern_c 
+						}                         
+							has_country_flag = offense_war_southern_c 
+					}
+					AND = { 
+						FROM = {
+							has_country_flag = offense_war_southern_c 
+						}                         
+							has_country_flag = defense_war_southern_c 
+					}
+				}	
+            } 
+        } 
+    }
+    condition = { 
+    tooltip = SOUTHERN_SEA_WAR_d 
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+						FROM = {
+							has_country_flag = defense_war_southern_d 
+						}                         
+							has_country_flag = offense_war_southern_d 
+					}
+					AND = { 
+						FROM = {
+							has_country_flag = offense_war_southern_d 
+						}                         
+							has_country_flag = defense_war_southern_d 
+					}
+				}	
+            } 
+        } 
+    }
+    condition = { 
+    tooltip = SOUTHERN_SEA_WAR_e 
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+						FROM = {
+							has_country_flag = defense_war_southern_e 
+						}                         
+							has_country_flag = offense_war_southern_e 
+					}
+					AND = { 
+						FROM = {
+							has_country_flag = offense_war_southern_e 
+						}                         
+							has_country_flag = defense_war_southern_e 
+					}
+				}	
+            } 
+        } 
+    }
+    condition = { 
+    tooltip = SOUTHERN_SEA_WAR_f 
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+						FROM = {
+							has_country_flag = defense_war_southern_f 
+						}                         
+							has_country_flag = offense_war_southern_f 
+					}
+					AND = { 
+						FROM = {
+							has_country_flag = offense_war_southern_f 
+						}                         
+							has_country_flag = defense_war_southern_f 
+					}
+				}	
+            } 
+        } 
+    }
+    condition = { 
+    tooltip = SOUTHERN_SEA_WAR_g 
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+						FROM = {
+							has_country_flag = defense_war_southern_g 
+						}                         
+							has_country_flag = offense_war_southern_g 
+					}
+					AND = { 
+						FROM = {
+							has_country_flag = offense_war_southern_g 
+						}                         
+							has_country_flag = defense_war_southern_g 
+					}
+				}	
+            } 
+        } 
+    }
+    condition = { 
+    tooltip = SOUTHERN_SEA_WAR_h 
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+						FROM = {
+							has_country_flag = defense_war_southern_h 
+						}                         
+							has_country_flag = offense_war_southern_h 
+					}
+					AND = { 
+						FROM = {
+							has_country_flag = offense_war_southern_h 
+						}                         
+							has_country_flag = defense_war_southern_h 
+					}
+				}	
+            } 
+        } 
+    }
+    condition = { 
+    tooltip = SOUTHERN_SEA_WAR_i 
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+						FROM = {
+							has_country_flag = defense_war_southern_i 
+						}                         
+							has_country_flag = offense_war_southern_i 
+					}
+					AND = { 
+						FROM = {
+							has_country_flag = offense_war_southern_i 
+						}                         
+							has_country_flag = defense_war_southern_i 
+					}
+				}	
+            } 
+        } 
+    }
+    condition = { 
+    tooltip = SOUTHERN_SEA_WAR_j 
+        potential = { 
+                
+        } 
+        allow = { 
+            NOT = {
+				OR = {			
+					AND = { 
+						FROM = {
+							has_country_flag = defense_war_southern_j 
+						}                         
+							has_country_flag = offense_war_southern_j 
+					}
+					AND = { 
+						FROM = {
+							has_country_flag = offense_war_southern_j 
+						}                         
+							has_country_flag = defense_war_southern_j 
+					}
+				}	
+            } 
+        } 
+    } 	
+	effect = {
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = flg_check_duhufu_att
+				}
+			}
+			FROM = { clr_country_flag = flg_check_duhufu_att }
+		}			
+		if = {
+			limit = {
+				has_country_flag = flg_check_duhufu_att
+			}
+			clr_country_flag = flg_check_duhufu_att
+		}			
+	}	
+}	
+
+
+annexationaction = {
+	condition = {
+		tooltip = ANNEX_TOO_LOW
+		potential = {
+			
+			FROM = {
+				vassal_of = ROOT
+			}
+		}
+		allow = {
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+		}
+	}
+}
+
+integrationaction = {
+	condition = {
+		tooltip = INTEGRATETOOLOWDESC
+		potential = {
+			
+			senior_union_with = FROM
+		}
+		allow = {
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+		}
+	}
+	#condition = {
+	#	tooltip = INTEGRATEINVALID
+	#	potential = {
+	#		senior_union_with = FROM
+	#	}
+	#	allow = {
+	#		FROM = {
+	#			years_in_union_under = {
+	#				who = ROOT
+	#				years = 50
+	#			}
+	#		}
+	#	}
+	#}
+}
+
+vassalaction = {
+	condition = {
+		tooltip = VASSALINVALID
+		potential = {
+			
+		}
+		allow = {
+			alliance_with = FROM
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+			FROM = { is_at_war = no }
+		}
+	}
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}	
+}
+
+abandon_union_action = {
+	condition = {
+		potential = {
+		}
+		allow = {
+			ROOT = {
+				senior_union_with = FROM
+				is_at_war = no
+			}
+		}
+	}
+}
+
+
+
+
+protectorateaction = {
+	condition = {
+		tooltip = HORDENOPROTECTORATE
+		potential = {
+			
+		}
+		allow = {
+			FROM = {
+				is_nomad = no
+			}
+		}
+	}
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}	
+}
+
+ask_for_protection_action = {
+	condition = {
+		tooltip = HORDENOPROTECTORATE
+		potential = {
+			
+		}
+		allow = {
+			is_nomad = no
+		}
+	}
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}	
+}
+
+form_coalition = {
+	condition = {
+		tooltip = MINAGGRESSIVEEXPANSION
+		potential = {
+					
+		}
+		allow = {
+			has_opinion_modifier = {
+				modifier = aggressive_expansion
+				who = FROM
+			}		
+			NOT = {
+				has_opinion_modifier = {
+					modifier = aggressive_expansion
+					who = FROM
+					value = -50
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}	
+}
+
+
+request_to_join_trade_league = {
+	condition = {
+		tooltip = NOT_RELEVANT_TRADE_REGION_FROM
+		potential = {
+		}
+		allow = {
+			home_trade_node = {
+				trade_share = {
+					country = from
+					share = 1
+				}
+			}
+		}
+	}
+}
+
+invite_to_trade_league = {
+	condition = {
+		tooltip = NOT_RELEVANT_TRADE_REGION
+		potential = {
+		}
+		allow = {
+			from = {
+				home_trade_node = {
+					trade_share = {
+						country = root
+						share = 1
+					}
+				}
+			}
+										
+		}
+	}
+}
+
+#deney JMN any war 
+declarewar = {
+	
+	
+	#只要是AI 都護府都不能主動開戰
+	condition = {
+		tooltip = tp_AI_duhufu
+		potential = {
+
+		}
+		allow = {
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					NOT = {
+						OR = {
+							is_subject_of_type = duhufu_state
+							is_subject_of_type = duhufu_state_color
+						}
+					}
+				}					
+			}				
+		}	
+	}
+	#JA1 cant att ZZ3 
+	condition = {
+		tooltip = tp_JA1_VS_ZZ3
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				AND = {
+					ROOT = {
+						tag = JA1
+					}
+					FROM = {
+						tag = ZZ3
+					}
+				}	
+			}      			
+		}	
+	}	
+	#duhufu cant declare war with vassal of overload
+	condition = {
+		tooltip = DUHUFU_CANT_ATT_OVERLORD
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				AND = {
+					ROOT = {
+						OR = {
+							is_subject_of_type = duhufu_state
+							is_subject_of_type = duhufu_state_color
+						}	
+					}
+					FROM = {
+						overlord_of = PREV
+					}
+				}	
+			}      			
+		}	
+	}		
+	condition = {
+		tooltip = KOR_CANT_ATT_MANCHU
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				AND = {
+					ROOT = {
+						tag = KOR
+						is_subject_of = MNG
+					}
+					FROM = {
+						primary_culture = manchu
+						has_global_flag = nuergandusi
+					}
+				}	
+			}
+		}	
+	}	
+	condition = {
+		tooltip = OLDER_GERMANIC_TRIGGER_TOOLTIP1
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				AND = {
+					ROOT = {
+						is_subject_of_type = older_germanic_state
+						any_country = { alliance_with = ROOT is_subject_of_type = older_germanic_state }
+					}
+					FROM = {
+					OR = {
+						is_emperor = yes
+						guaranteed_by = emperor
+						alliance_with = emperor
+						}
+					}
+				}	
+			}
+         
+			
+		}	
+	}
+	condition = {
+		tooltip = OLDER_GERMANIC_TRIGGER_TOOLTIP2
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				AND = {
+					ROOT = {
+                        NOT = { is_subject_of = emperor }
+						any_country = { alliance_with = ROOT is_subject_of_type = older_germanic_state }	
+					}
+					FROM = {
+					OR = {
+						is_emperor = yes
+						is_subject_of_type = older_germanic_state
+						guaranteed_by = emperor
+						alliance_with = emperor
+						AND = { emperor = { is_defender_of_faith = yes }
+						ROOT = { NOT = { religion = emperor } }
+                        FROM = { religion = emperor }
+						}
+					emperor = { is_neighbor_of = FROM }
+					}
+				  }
+				}	
+			}
+         
+			
+		}	
+	}
+	#你仍有海軍基地
+	condition = {
+		tooltip = OKINAWA_NAVY_BASE_FROM
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				AND = {
+					ROOT = {
+						tag = event_target:tag_okinawa_navy_base 
+					}
+					1015 = { has_province_modifier = pov_okinawa_navy_base }
+					FROM = {
+						tag = event_target:tag_okinawa_navy_base_from
+					}
+				}	
+			}			
+		}	
+	}	
+	condition = {
+		tooltip = JMN_NONE
+		potential = {
+
+		}
+		allow = {
+			NOT = {
+				OR = {
+					tag = JMN
+					FROM = { tag = JMN }
+				}
+			}			
+		}
+	}
+	
+	effect = {
+						
+				#	FROM = { war_with = XIY }
+				#	FROM = { war_with = XI1 }
+				#	FROM = { war_with = AN3 }
+				#	FROM = { war_with = AN2 }
+				#	FROM = { war_with = ND1 }
+				#	FROM = { war_with = BT1 }
+				#	FROM = { war_with = AN4 }
+		if = {
+			limit = {
+				is_subject_of_type = duhufu_state
+			}
+			set_country_flag = flg_check_duhufu_att
+		}
+		if = {
+			limit = {
+				FROM = { is_subject_of_type = duhufu_state }
+			}
+			FROM = { set_country_flag = flg_check_duhufu_att }
+		}
+		
+		if = {
+			limit = {
+				NOT = { has_country_flag = flg_no_warning_duhufu }
+				OR = {
+					AND = {
+						overlord_of = XIY
+						XIY = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						}
+							
+						FROM = { war_with = XIY }
+					}
+					AND = {
+						overlord_of = XI1 
+						XI1 = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { war_with = XI1 }
+					}
+					AND = {
+						overlord_of = AN3 
+						AN3 = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { war_with = AN3 }
+					}
+					AND = {
+						overlord_of = AN2 
+						AN2 = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att	
+						} 
+						FROM = { war_with = AN2 }
+					}					
+					AND = {
+						overlord_of = ND1 
+						ND1 = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { war_with = ND1 }
+					}
+					AND = {
+						overlord_of =  HS0
+						HS0 = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { war_with = HS0 }
+					}
+					AND = {
+						overlord_of =  WSZ
+						WSZ = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { war_with = WSZ }
+					}
+					AND = {
+						overlord_of = BT1 
+						BT1 = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { war_with = BT1 }
+					}
+					AND = {
+						overlord_of = AN4 
+						AN4 = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { war_with = AN4 }
+					}					
+				}
+			}
+			set_country_flag = flg_duhufu_warnning_event
+		}
+		if = {
+			limit = {
+				FROM = { NOT = { has_country_flag = flg_no_warning_duhufu } }
+				OR = {
+					AND = {
+						war_with = XIY
+						XIY = { 
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { overlord_of = XIY }
+					}
+					AND = {
+						war_with = XI1
+						XI1 = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { overlord_of = XI1 }
+					}
+					AND = {
+						war_with = AN3
+						AN3 = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { overlord_of = AN3 }
+					}
+					AND = {
+						war_with = AN2
+						AN2 = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { overlord_of = AN2 }
+					}					
+					AND = {
+						war_with = ND1
+						ND1 = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { overlord_of = ND1 }
+					}
+					AND = {
+						war_with = HS0
+						HS0 = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { overlord_of = HS0 }
+					}
+					AND = {
+						war_with = WSZ
+						WSZ = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { overlord_of = WSZ }
+					}
+					AND = {
+						war_with = BT1
+						BT1 = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { overlord_of = BT1 }
+					}
+					AND = {
+						war_with = AN4
+						AN4 = {
+							is_subject_of_type = duhufu_state 
+							has_country_flag = flg_check_duhufu_att
+						} 
+						FROM = { overlord_of = AN4 }
+					}					
+				}
+			}
+			FROM = { set_country_flag = flg_duhufu_warnning_event }
+		}					
+		if = {
+			limit = {
+				ROOT = {
+					is_emperor = yes
+				}
+				any_country = {
+					OR = {
+						alliance_with = FROM
+						FROM = {
+							guaranteed_by = PREV
+						}
+					}
+					is_subject_of_type = older_germanic_state
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						alliance_with = FROM
+						FROM = {
+							guaranteed_by = PREV
+						}
+					}
+					is_subject_of_type = older_germanic_state
+				}
+				add_opinion = {
+					who = FROM
+					modifier = cannot_betray_emperor
+				}
+				set_ai_attitude = {
+					who = FROM
+					attitude = attitude_hostile
+				}
+			}
+	
+		}
+		if = {
+			limit = {
+				OR = {
+					has_casus_belli = { type = cb_spread_communism target = FROM }
+					has_casus_belli = { type = cb_spread_fascism target = FROM }
+					has_casus_belli = { type = cb_spread_democracy target = FROM }
+				}
+			}
+			set_country_flag = forcing_government
+		}
+		#
+		if = {
+			limit = { 
+				has_country_flag = flg_war_section
+			}	
+				clr_country_flag = flg_war_section
+		}	
+		else_if = {
+			limit = {
+				has_global_flag = flg_tag_okinawa_navy_base_done																				 
+				FROM = { guaranteed_by = event_target:tag_okinawa_navy_base }
+				NOT = {
+					FROM = {
+						tag = event_target:tag_okinawa_navy_base
+					}
+				}
+				1015 = {
+					has_province_modifier = pov_okinawa_navy_base
+				}
+				event_target:tag_okinawa_navy_base = {
+					NOT = {
+						owns = 1015 
+					}
+				}
+				NOT = { has_country_flag = flg_war_section }
+			}
+			set_country_flag = flg_war_section
+			
+			declare_war_with_cb = {
+				who = event_target:tag_okinawa_navy_base
+				casus_belli = cb_okinawa_navy_base
+			}
+			
+			1015 = {
+				cede_province = event_target:tag_okinawa_navy_base
+				add_province_modifier = {
+					name = "pov_okinawa_navy_base"
+					duration = -1
+				}	
+					event_target:tag_okinawa_navy_base = {
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						heavy_ship = PREV
+						transport = PREV
+						transport = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV
+						infantry = PREV						
+					}
+			}
+		}
+	
+		#攻打B有且B擁有A的海軍基地
+		
+		else_if = {
+			limit = {
+				FROM = { owns = 1015 }
+				NOT = {
+					FROM = {
+						tag = event_target:tag_okinawa_navy_base
+					}
+				}	
+				1015 = {
+					has_province_modifier = pov_okinawa_navy_base
+				}
+				NOT = { has_country_flag = flg_war_section }				
+			}
+			set_country_flag = flg_war_section
+			declare_war_with_cb = {
+				who = event_target:tag_okinawa_navy_base
+				casus_belli = cb_okinawa_navy_base
+			}
+			
+			1015 = {
+				#owner = {
+				#	save_global_event_target_as = tag_okinawa_navy_base_from	
+				#}				
+				cede_province = event_target:tag_okinawa_navy_base
+				add_province_modifier = {
+					name = "pov_okinawa_navy_base"
+					duration = -1
+				}
+			}
+		}
+		#假如防守方有tag_okinawa_navy_base but wihtout province.
+		else_if = {
+			limit = {
+				FROM = { tag = event_target:tag_okinawa_navy_base }
+				1015 = {
+					has_province_modifier = pov_okinawa_navy_base
+				}	
+				NOT = { FROM = { owns = 1015 } }
+				NOT = { has_country_flag = flg_war_section }		
+			}
+			1015 = {
+			
+				cede_province = FROM
+				add_province_modifier = {
+					name = "pov_okinawa_navy_base"
+					duration = -1
+				}	
+			}
+		}		
+		
+		#假如開戰國就是okinawa_navy_base owner. but without province.
+		
+		else_if = {
+			limit = {
+				ROOT = { tag = event_target:tag_okinawa_navy_base }
+				1015 = {
+					has_province_modifier = pov_okinawa_navy_base
+				}	
+				NOT = { owns = 1015 }
+				NOT = { has_country_flag = flg_war_section }		
+			}
+	
+			1015 = {
+				cede_province = ROOT
+				add_province_modifier = {
+					name = "pov_okinawa_navy_base"
+					duration = -1
+				}					
+			}
+		}		
+	}
+}
+

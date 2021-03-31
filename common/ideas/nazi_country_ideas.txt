@@ -1,0 +1,46 @@
+nazi_ideas = {
+	start = {
+		discipline = 0.075
+		stability_cost_modifier = -0.15
+	}
+
+	bonus = {
+		infantry_power = 0.15
+	}
+
+	trigger = {
+	OR = {
+	    tag = NZ2
+		tag = NZ1
+		}
+	}
+	free = yes
+
+	lebensraum = {
+		core_creation = -0.25
+		land_morale = 0.25
+	}
+	concentration_camps_germany = {
+		stability_cost_modifier = -0.5
+		culture_conversion_cost = -0.20
+	}
+	nazi_3_idea = {
+		global_manpower_modifier = 0.5
+		land_forcelimit_modifier = 0.5
+	}
+	reich_labour_service = {
+		development_cost = -0.2
+	}
+	blitzkreig = {
+		movement_speed = 0.20
+		siege_ability = 0.25
+	}
+	nazi_6_idea = {
+		cavalry_power = 0.60
+	}
+	nazi_7_idea = {
+		leader_land_fire = 1
+		leader_land_shock = 1
+		leader_land_manuever = 1
+	}
+}

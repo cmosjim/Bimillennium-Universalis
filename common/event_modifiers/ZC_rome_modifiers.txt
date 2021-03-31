@@ -1,0 +1,136 @@
+honestiors_and_humiliores = {
+	global_manpower_modifier = 0.15
+}
+
+Caracalla = {
+	global_unrest = -1
+}
+
+emergency_measures = {
+	build_cost = -0.1
+}
+
+recover_from_plague = {
+	manpower_recovery_speed = 0.15
+}
+
+German_wall = {
+	local_defensiveness = 0.2
+}
+	
+persecution_of_Christianity = {
+	missionaries = 1
+}
+
+four_emperor_to_rule = {
+	legitimacy = 1
+}
+
+fake_republican = {
+	prestige = 1
+	legitimacy = 0.5
+}
+
+Roman_peace = {
+	stability_cost_modifier = -0.2
+}
+
+ornamenta_triumphalia = {
+	army_tradition_decay = -0.01
+}
+
+good_governance = {
+	monarch_admin_power = 2
+	monarch_diplomatic_power = 2
+	monarch_military_power = 2
+	yearly_corruption = -0.1
+}
+
+Hadrian_wall = {
+	local_defensiveness = 0.2
+}
+
+Antonian_wall = {
+	local_defensiveness = 0.2
+}
+
+doubt_christian = {
+	global_missionary_strength = 0.01
+}
+
+new_religion = {
+	tolerance_own = 1
+	global_missionary_strength = 0.03
+}
+
+christian_heresy = {
+	global_unrest = 2
+}
+
+trinity = {
+	tolerance_own = 1
+}
+
+the_Edict_of_Milan = {
+	local_unrest = -2
+}	
+
+public_donations = {
+	land_maintenance_modifier = -0.05
+}
+
+food_supply = {
+	trade_goods_size_modifier = 0.1
+}
+
+build_the_garr_bridge = {
+	prestige = 1
+}
+
+celebrations_and_performances = {
+	land_morale = 0.1
+	global_tax_modifier = 0.1
+	global_unrest = -1
+}
+
+wake_up_from_Wallus = {
+	ae_impact = -0.1
+}
+
+solve_frontier_crisis = {
+	religious_unity = 0.2
+	culture_conversion_cost = -0.2
+	discipline = 0.05
+	governing_capacity = 100
+}
+
+Roman_Britain = {
+	local_sailors_modifier = 0.2
+	local_ship_repair = 0.2
+}
+
+hold_Baghdad = {
+	land_morale = 0.1
+}
+
+Roman_Colosseum = {
+	local_manpower_modifier = 0.2
+}
+
+Roman_robbery = {
+	local_unrest = 3
+	local_development_cost = 0.1
+}
+
+remain_Jerusalem = {
+	local_development_cost = -0.1
+	local_production_efficiency = 0.1
+}
+
+nature_economy = {
+	inflation_reduction = -0.1
+}
+
+third_century_crisis = {
+	stability_cost_modifier = -0.2
+}

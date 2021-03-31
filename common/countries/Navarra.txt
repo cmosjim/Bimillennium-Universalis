@@ -1,0 +1,164 @@
+graphical_culture = westerngfx
+color = {
+  252
+  233
+  58
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_mil_ideas
+  xingjun_ideas
+  kaituo_ideas
+  junqu_ideas
+  maritime_ideas
+  religious_ideas
+  defensive_ideas
+  economic_ideas
+  innovativeness_ideas
+  spy_ideas
+  offensive_ideas
+  diplomatic_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  spanish_tercio
+  french_caracolle
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  austrian_white_coat
+  austrian_jaeger
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "‰™„ #0" = 0  # Simón #0
+  "<SÑy³R¯e #0" = 0  # Nicolás #0
+  "…hSTN #0" = 0  # Melchor #0
+  "UO^X #0" = 0  # José #0
+  " R¯e^ #0" = 0  # Gaspar #0
+  "9SWSY #0" = 0  # Fernando #0
+  "ÃW¯eyrís #0" = 0  # Esteban #0
+  "íb #0" = 0  # Diego #0
+  "KQÌ‘¯eXbV #0" = 0  # Cristóbal #0
+  "^X(„S #0" = 0  # César #0
+  "S³uY #0" = 0  # Bernardo #0
+  "‰RN<SeY #0" = 0  # Antonio #0
+  "‰R·VÈp¯e #0" = 0  # Andrés #0
+  "?–SætW #0" = 0  # Álvaro #0
+  "šN†SQh·VW #0" = 0  # Alejandro #0
+  "?–äS¯eN #0" = 0  # Agustín #0
+  "?–¹e0t #1" = 1  # Alfonso #1
+  "ðleYôTSY #2" = 1  # Teobaldo #2
+  "9)RiO #3" = 1  # Felipe #3
+  " R‰šN #5" = 1  # García #5
+  "QhTN #7" = 1  # Sancho #7
+  "lšN #0" = 5  # Martín #0
+  "±ƒf…QS #0" = 5  # Leonel #0
+  "pQ(„Wyr #0" = 5  # Lanzarote #0
+  "yŠÆY #0" = 5  # Jaime #0
+  "bYV÷–Y #0" = 5  # Godofredo #0
+  "Vg‰¯eÑy #0" = 5  # Francisco #0
+  "^ÃW³u‡eþVÉb #0" = 5  # Buenaventura #0
+  "iO·VW #1" = 5  # Pedro #1
+  "^pQaS #1" = -10  # Blanca #1
+  "±ƒfú‹S #0" = -10  # Leonor #0
+  " R¯e #0" = 10  # Gastón #0
+  "aSTX‰ƒZ #0" = -10  # Catalina #0
+  "‰R·VÈp¯e #0 9ZS" = 10  # Andrés #0 Febo
+  "ïf¯e #1" = 10  # Luis #1
+  "áw‰R #1" = 10  # Juan #1
+  "áw‰RZ #2" = -10  # Juana #2
+  "Vg‰¯eÑy #0 9ZS" = 20  # Francisco #0 Febo
+  "aSm¯e #2" = 20  # Carlos #2
+  "i`Ì‘KQ #1" = 40  # Enrique #1
+}
+leader_names = {
+  "·V ?–	T÷–"  # de Aguirre
+  "·V ?–S=Oyr"  # de Albret
+  "de Antillón"
+  "·V ?–pQ¾"  # de Aranda
+  "·V ?–è•¾Ì‘yQ"  # de Armendariz
+  "·V ?–(„<hÉb"  # de Azagra
+  "de Azpilcueta"
+  "·V ZS™„yr"  # de Beaumont
+  "de Beortegui"
+  "SípÉbKQ"  # Bergera
+  "·V âlÁe"  # de Borbón
+  "·V aSpQ(„"  # de Carranza
+  "Elizalde"
+  "·V Øš³RO"  # de Garay
+  "·V bÔk"  # de Goñi
+  "b6w…QR"  # Goyeneche
+  "·V ÃW÷–êšN"  # de Heredia
+  "·V OÈTS"  # de Hijar
+  "·V  R0t"  # de Jaso
+  "^è•<S¯e ·V Éb¾"  # Jiménez de Rada
+  "‰…hú‹"  # Jimeno
+  "de Landívar"
+  "³uætW"  # Navarro
+  "^ÉbyKQ¯e"  # Palafox
+  "iO÷–¯e ·V („SôT(„"  # Pérez de Zabalza
+  "·V („Ébåg"  # de Salazar
+  "·V LNÌ‘æ—"  # de Uribe
+  "·V ÃW³R0t"  # de Ursúa
+  "·V lbÜt¯e"  # de Yanguas
+  "·V ’dÉbyr"  # de Zárate
+}
+ship_names = {
+  "Atlántida"
+  "TRê ·V ÃW+YÒR"  # Conde de Evreux
+  "TRê ·V ÌRæt"  # Conde de Foix
+  "Conde de Guenduláin"
+  "Conde de Lerín"
+  "U ‰…hú‹"  # Don Jimeno
+  "?–S›s…mKQlQ5r"  # Duque de Armagnac
+  "™™ßilQ5r"  # Duque de Champaña
+  "El Agramontés"
+  "El Beaomontés"
+  "El Bearnés"
+  "El Cruzado Navarro"
+  "El Montañés"
+  "³uætW"  # El Navarro
+  "(„SætY"  # El Salvador
+  "El Trobador"
+  "El Viñador"
+  "Emperador Hispánico"
+  "'kWôT"  # Europa
+  "›sS ·V ³uætÉb"  # Mar de Navarra
+  "Nuestra Sra de Leyre"
+  "ôušN³u²N‹s"  # Príncipe de Viana
+  "Reina Juana"
+  "÷–O i`Ì‘KQ"  # Rey Enrique
+  "÷–O  R‰šN"  # Rey García
+  "÷–O QhTN"  # Rey Sancho
+  "÷–šNú‹ ·V ³uætÉb"  # Reyno de Navarra
+  "Reyno de Pamplona"
+  "1W?–äS¯eN"  # San Agustín
+  "1W‰R·VÈp¯e"  # San Andrés
+  "1W‰RN<SeY"  # San Antonio
+  "1WaSm¯e"  # San Carlos
+  "1Wi`Ì‘KQ"  # San Enrique
+  "1WÃW¯eyrís"  # San Esteban
+  "San Fermín"
+  "1WVg‰¯eÑy"  # San Francisco
+  "San Francisco Xabier"
+  "1W<h÷–bÌ‘eY"  # San Gregorio
+  "1Wáw‰R"  # San Juan
+  "1W±ƒf"  # San León
+  "San Miguel Arcángel"
+  "1W÷–™„Y"  # San Raimundo
+  "San Virila"
+  "1W‰RZ"  # Santa Ana
+  "1WaSTX)RZ"  # Santa Catalina
+  "1Wáw‰RZ"  # Santa Juana
+  "1W)ReYú‹"  # Santa Leonor
+  "Santísima Trinidad"
+  "Señor de Tudela"
+  "æt¯eÑy<SšN"  # Vasconia
+}

@@ -1,0 +1,10 @@
+egyptian_pyramids = {
+	ambient_object = egyptian_pyramids
+	province = 361
+	is_canal = no
+	time = 120
+	
+	modifier = {
+		local_tax_modifier = 0.25
+	}
+}

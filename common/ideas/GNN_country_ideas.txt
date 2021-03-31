@@ -1,0 +1,39 @@
+GNN_ideas = {
+	start = {
+		cavalry_power = 0.1
+		leader_land_fire = 1
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.1
+		global_manpower_modifier = 0.1
+	}
+
+	trigger = {
+		tag = GNN
+	}
+	free = yes
+
+	mengan_mouke = {
+		discipline = 0.05
+	}
+	da_dingzhi_zhi = {
+		global_unrest = -1
+		land_morale = 0.1
+	}	
+	baishan_heishui = {
+		production_efficiency = 0.1
+	}
+	lian_song_gong_liao = {
+		diplomats = 1	
+	}
+	jingkang_zhiyi = {
+		core_creation = -0.15
+	}
+	hanhua_gaige = {
+		advisor_pool = 5
+	}
+	wanyan_liang = {
+		army_tradition = 0.5
+	}
+}

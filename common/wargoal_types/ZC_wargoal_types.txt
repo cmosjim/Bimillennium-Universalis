@@ -1,0 +1,37 @@
+force_moving_population = {
+	type = take_province
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 2
+		peace_cost_factor = 0.75	
+		
+		allowed_provinces = {
+			always = yes
+		}
+
+		peace_options = {
+			po_demand_provinces
+			po_become_vassal
+			po_gold
+		}
+		prov_desc = ALL_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1	
+		
+		allowed_provinces = {
+			always = yes
+		}
+
+		peace_options = {
+			po_demand_provinces
+			po_become_vassal
+			po_gold
+		}
+		prov_desc = ALL_PROVS
+	}	
+}

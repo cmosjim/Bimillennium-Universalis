@@ -1,0 +1,218 @@
+graphical_culture = northamericagfx
+color = {
+  172
+  232
+  149
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  qianyi_ideas
+  rongren_ideas
+  junqu_ideas
+  religious_ideas
+  defensive_ideas
+  offensive_ideas
+  maritime_ideas
+  trade_ideas
+  economic_ideas
+  quality_ideas
+  administrative_ideas
+}
+historical_units = {
+  mesoamerican_spearmen
+  central_american_horsemen
+  aztec_tribal_warfare
+  aztec_hill_warfare
+  aztec_gunpowder_warfare
+  westernized_aztec
+  mexican_guerilla_warfare
+}
+monarch_names = {
+  "šN'kyrS #0" = -1  # Yaotl #0
+  "«ƒ¦uÒRæt<S #0" = -1  # Moyolehuani #0
+  "îhyræt #0" = -1  # Centehua #0
+  "0tS˜ #0" = 0  # Zolton #0
+  "šNyQTXPŸlšS #0" = 0  # Yaztachimal #0
+  "OÑy¦uS #0" = 0  # Xocoyol #0
+  "OKQyQaSyrS #0" = 0  # Xiuhcozcatl #0
+  "yrm4t #0" = 0  # Tlotzin #0
+  "yrÉbïQ)RS #0" = 0  # Tlacaelel #0
+  "‚„lš¯e #0" = 0  # Timas #0
+  "yrËeÑy¦u #0" = 0  # Texcoyo #0
+  "NYÆR‰VyrS #0" = 0  # Quimichetl #0
+  "NYNbSüf4t #0" = 0  # Quetzalmantzin #0
+  "^<S4t #0" = 0  # Panitzin #0
+  "'kâlPŸyrÌ‘ #0" = 0  # Opochtli #0
+  "'k—gyrKQ #0" = 0  # Olintecke #0
+  "ú‹^SÑ‘ #0" = 0  # Nopaltzin #0
+  "›sNbyrS #0" = 0  # Mazatl #0
+  "OyQ8YLNÑ‘ #0" = 0  # Itzquautzin #0
+  ")RôuaSs|³u #0" = 0  # Ilhuicamina #0
+  "ôuKQ˜ #0" = 0  # Huicton #0
+  "ÃWÅ–Z #0" = 0  # Eyahue #0
+  "aSaS›syr› #0" = 0  # Cacamatzin #0
+  "?–™laSšN #0" = 0  # Axacaya #0
+  "?–NWôTS #0" = 0  # Ahcambal #0
+  "?–aS‰yr)R #0" = 0  # Acacitli #0
+  "yrú‹GY #1" = 10  # Tenoch #1
+  "GYlšSâlâlaS #1" = 10  # Chimalpopoca #1
+  "?–aSlš®vGYyr)R #1" = 10  # Acamapichtli #1
+  "0tGYKQi`yr› #0" = 15  # Xochiquentzin #0
+  "yrÉbÑyyr› #0" = 15  # Tlacotzin #0
+  "yrôuyQÐcúWÑ‘ #0" = 15  # Tehuetstiquitzin #0
+  "«ƒyrSGYLN #0" = 15  # Motelchiuh #0
+  "æt<SÑ‘ #0" = 15  # Huanitzin #0
+  "ÐcPOKQ #0" = 20  # Tizoc #0
+  "eY^lšSâlâlaS #0" = 20  # Ohimalpopoca #0
+  "OyQïg?–yrS #0" = 20  # Itzcoatl #0
+  "ôuPŸ)RôuyrS #0" = 20  # Huitzilihuitl #0
+  "“^OyrÉbNSKQ #0" = 20  # Cuitlahuac #0
+  "“^eYkyr«ƒKQ #0" = 20  # Cuauhtemoc #0
+  "?–(„šNaSyrS #0" = 20  # Axayacatl #0
+  "?–ôu0tyr #0" = 20  # Auitzotl #0
+  "™„yrVy›s #0" = 40  # Moctezuma #0
+}
+leader_names = {
+  "?–aSyrW¦”"  # Acatlotzin
+  "eYOPOyr"  # Ahuítzotl
+  "?–ÈTÅ–aSyrS"  # Axayacátl
+  "?–ONY¦”"  # Axoquetzin
+  "aSaS›syr›"  # Cacamatzin
+  "p`NXbÉbXb³uKQ"  # Chalchiutlatonac
+  "“^eYkyr«ƒKQ"  # Cuauhtemoc
+  "“^OyrÉbNSKQ"  # Cuitlahuac
+  "NYyrÉbS®vXbKQ"  # Cuitlalpitoc
+  "Œ‚aS¦”"  # Ecatzin
+  "ÃWÅ–Z"  # Eyahue
+  "Om?–NSaSXb"  # Ezhuahuacatl
+  "ZlšKQ"  # Huemac
+  "ôu¯e¦”"  # Huestzin
+  "ôuPŸ)RôuyrS"  # Huitzilihuitl
+  "OyQïg?–yrS"  # Itzcoatl
+  "O‰yrÌ‘›…GYyrS"  # Ixtlilxochitl
+  "O¯eNYÆRyrS"  # Izquemitl
+  "›sNbyrS"  # Mazatl
+  "lšKQ‰KQ¯eaS¦”"  # Maxixcatzin
+  "™„yrVy›s"  # Moctezuma
+  "«ƒyrSGYLN"  # Motelchiuh
+  "³uLN¦uyrS"  # Nauyotl
+  "…Q(„ætS®v)R"  # Nezahualpilli
+  "ú‹^SÑ‘"  # Nopaltzin
+  "'kGYmXo"  # Ocelopan
+  "'k—gyrKQ"  # Olintecke
+  "'kâlPŸyrÌ‘"  # Opochtli
+  "'kNY¦”"  # Oquitzin
+  "^<S4t"  # Panitzin
+  "®v«ƒyrS"  # Pimotl
+  "âlâlâl¦uyrS"  # Popopoyotl
+  "8YKQšNyrS"  # Quahcoatl
+  "8YSâlâlaS"  # Qualpopoca
+  "NYÉbyQyr)R"  # Quilaztli
+  "NYÆR‰VyrS"  # Quimichetl
+  "yrs|myraSyrS"  # Temilotecatl
+  "ÒV0t0t«ƒKQ"  # Tezozomoc
+  "ÐcPOKQ"  # Tizoc
+  "XbXbNYæt¦”"  # Totoquihuatzin
+  "—RXoyrÌ‘"  # Tzompantli
+  "‰Ñyú‹aS¦”"  # Xiconocatzin
+  "OGYXo<S¦”"  # Xochipanitzin
+  "–wmyrS"  # Xolotl
+  "Os|ÆYyr)R"  # Xomimitl
+  "'SlšLNO¦”"  # Yaomauhitzin
+  "šNyQTXPŸlšS"  # Yaztachimal
+  "›PŸp`"  # Zincicha
+  "POšN³uÑyGY¦”"  # Zoanacochtzin
+  "0tS˜"  # Zolton
+}
+ship_names = {
+  "?–“^s|¯eyrÌ‘"  # Acolmiztli
+  "?–ÑyS±ætaSyr"  # Acolnahuacat
+  "?– —šN"  # Ah Hoya
+  "?– !…ªRS"  # Ah Tzenul
+  "?–s|s|yrS"  # Amimitl
+  "?–^…QaSyrS"  # Apanecatl
+  "?–yrS"  # Atl
+  "?–yr³R"  # Atlau
+  "?–KQ0tWšN"  # Axoloa
+  "aSlš^yr)R"  # Camaxtli
+  "¯wyr'kyr"  # Centeot
+  "¯wPOªROyQ±æt"  # Centzonuiznaua
+  "ågSGYLNyrÉbXb³uS"  # Chalchiuhtlatonal
+  "ågSNyrÌ‘A›"  # Chalchiuhtlicue
+  "ågSGYLNXbXb—g"  # Chalchiutotolin
+  "ågS…haSSyr"  # Chalmecalt
+  "ågS…haSLNPŸOSyr"  # Chalmecaucihuilt
+  "±”‚„Ñy"  # Chantico
+  "PŸTN…hOPŸyr)R"  # Chichomexochtli
+  "GY“^…h“^?–yrS"  # Chicomecoatl
+  "GYÑy³u`"  # Chiconahuai
+  "PŸÈTS›s"  # Chihalma
+  "N?–SGYôuyrSNY"  # Chualchihuitlcue
+  "GYætaS'kyrS"  # Cihuacaotyl
+  "¦”yr'kyrS"  # Cinteotl
+  "GYyrÉbÉbXb³uKQ"  # Citlalatonac
+  "GYyrÉbÌ‘NY"  # Citlalicue
+  "GYLNKQšNyrS"  # Ciucoatl
+  "ÑyšNyr)R“^ÃW"  # Coatlicue
+  "ÑyGY…hyrS"  # Cochimetl
+  "Ñy¦u™lLNNY"  # Coyolxauhqui
+  "8YLNKQšNyrS"  # Cuauhcoatl
+  "ÃWÃWaSyrS"  # Ehehcatl
+  "¦u¦uKQ¦uyrS"  # Eueucoyotl
+  "—ZSnf NW"  # Hopop Can
+  "ÍTÍT2XeYXb"  # Huehueteotl
+  "ôuPŸmâlGYyr)R"  # Huitzilopochtli
+  "LNO¯eXb^ætXb"  # Huixtocihuatl
+  "OyQÑy)RNY"  # Itzcoliuhqui
+  "OyQÌ‘"  # Itzli
+  "OyQ^^myr"  # Itzpapalotl
+  "OyQnf¯e^WyrS"  # Itzpzpalotl
+  "O‰yrÌ‘˜"  # Ixtlilton
+  "OyQTXs|‰KQÅ–¦”"  # Iztamixcoatzin
+  "lšNYSOPŸyr)R"  # Macuilxochitl
+  "lš?–gS"  # Mahayuel
+  "lšÌ‘³uSîOPŸ"  # Malinalxochi
+  "›sTXSNY6w"  # Matalcueye
+  "…hyQyrÌ‘"  # Metztli
+  "s|KQyrpQ"  # Mictlan
+  "s|KQyrpQGY)nyrS"  # Mictlancihuntl
+  "s|KQyrpQyrGYyrÒR"  # Mictlantechtle
+  "s|KQyrpQyrN®v"  # Mictlantechupi
+  "s|KQyrpQyrPŸætyrS"  # Mictlantecihuatl
+  "s|‰KQšNyrS"  # Mixcoatl
+  "³u³uæt¦”"  # Nanauatzin
+  "'kÑyaSS¦”"  # Ococaltzin
+  "'k…hGYætyrS"  # Omecihuatl
+  "'k…hyr“^yr)R"  # Ometecuhlti
+  "'k…hyr'kyrS"  # Ometeotl
+  "'k…h¦uNW"  # Omeyocan
+  "^yraSyrÌ‘"  # Patecatli
+  ">m³uS"  # Paynal
+  "A›-gSÑyšNyrS"  # Quetzalcoatl
+  "yrPŸyQyraSÌ‘"  # Tecciztecatl
+  "yr'k'SÆYNY"  # Teoyaomqui
+  "yriO¦uWyrS"  # Tepeyollotl
+  "yryr'kàVWS"  # Teteoinnan
+  "yrNbKQšNyrS"  # Tezacoatl
+  "yr¯eaSyr)RâlaS"  # Tezcatlipoca
+  "ÐcpQyrÉb^pQ"  # Tillan-Tlapallan
+  "yrÉbmKQ"  # Tlaloc
+  "yrÉbmNW"  # Tlalocan
+  "yrÉbSyrPŸyr)R"  # Tlaltechhtlii
+  "yrÉbPO‚„eYXb"  # Tlazolteotl
+  "Xb³uaSyr“^yr)R"  # Tonacatecuhtli
+  "Xb³uÐcLNONW"  # Tonatiuhican
+  "Xb³uÐcLNyr"  # Tonatiuth
+  "GYyrs|…h"  # Tzitmime
+  "‰†–ýw"  # Xilonen
+  "‰iOXb2XKQ"  # Xipe Totec
+  "kp^yÇ†"  # Xiucoatl
+  "kp^y"  # Xiuhtecuhtli
+  "›…GY®vÌ‘"  # Xochipilli
+  "OPŸNYNbS"  # Xochiquetzal
+  "îOmyrS"  # Xolotl
+  "O…mNYÌ‘"  # Xonecuilli
+  "šNaSyrNyrÌ‘"  # Yacatechutli
+}

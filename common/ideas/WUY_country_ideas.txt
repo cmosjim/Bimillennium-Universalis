@@ -1,0 +1,357 @@
+WUY_ideas = {
+	start = {
+		build_cost = -0.10
+		tolerance_own = 1
+	}
+
+	bonus = {
+		land_maintenance_modifier = -0.2
+	}
+	
+	trigger = {
+		tag = WUY
+	}
+	free = yes		#will be added at load.
+	
+	badubing = {
+		infantry_cost = -0.1
+		land_maintenance_modifier = -0.1
+	}
+	kill_tungchang = {
+		years_of_nationalism = -5
+	}
+	hanhaieshtang = {
+		production_efficiency = 0.15
+	}
+	bozunganming = {
+		global_manpower_modifier = 0.1
+	}
+	fushzhidei = {
+		global_tax_modifier = 0.15
+	}
+	respect_the_central_plains = {
+		improve_relation_modifier = 0.2
+	}
+	natuguisong = {
+		num_accepted_cultures = 1
+		ae_impact = -0.2
+	}
+}
+
+QH1_ideas = {
+	start = {
+		land_attrition = -0.1
+		defensiveness = 0.25
+	}
+
+	bonus = {
+		stability_cost_modifier = -0.1	
+		global_autonomy = -0.1
+	}
+	
+	trigger = {
+		tag = QH1
+	}
+	
+	free = yes		#will be added at load.
+		
+	uemingshoci = {
+		land_forcelimit_modifier = 0.15	
+	}
+	
+	chungduplane = {
+		development_cost = -0.1
+	}	
+	
+	hugieyugong = {
+		leader_land_manuever = 1	
+	}
+
+	jintunliangtsuan	= {
+		governing_capacity = 150
+	}
+	
+	lezhichingming = {
+		yearly_corruption = -0.1
+	}
+	chmahushi = {
+		mercenary_cost = -0.2
+		cavalry_cost = -0.1
+	}	
+	
+	tangdieyifung = {
+		administrative_efficiency = 0.2
+	}
+}
+
+KKH_ideas = {
+	start = {
+		cavalry_cost = -0.1
+		yearly_army_professionalism = 0.1
+	}
+
+	bonus = {
+		diplomats = 1
+	}
+
+	trigger = {
+		tag = KKH
+	}
+	
+	free = yes		#will be added at load.
+	
+	multiclutiremergin = {
+		num_accepted_cultures = 2
+	}	
+	multireligionmergin = {
+		tolerance_own	= 1
+		tolerance_heretic = 1
+	}
+	gulaginweijung = {
+		discipline = 0.05
+	}
+	tujlndingju = {
+		global_manpower_modifier = 0.1
+		global_regiment_cost = -0.1
+	}	
+	touflowshihan = {
+		legitimacy = 1
+		horde_unity = 1
+	}	
+	islaminmidasia = {
+		idea_cost = -0.1
+	}	
+	islambuildingin = {
+		build_cost = -0.1
+	}	
+
+}
+
+HOT_ideas = {
+	start = {
+		global_institution_spread = 0.1
+		fort_maintenance_modifier = -0.15
+	}
+	bonus = {
+		global_unrest = -2
+	}
+	
+	trigger = {
+		tag = HOT
+	}
+	
+	free = yes		#will be added at load.
+	
+	dwknmuslim = {
+		army_tradition = 1
+		infantry_power = 0.1
+	}		
+	siluyeoutsun = {
+		global_trade_power = 0.1
+		trade_range_modifier = 0.2
+	}	
+	jingyengciyu = {
+		ae_impact = -0.15
+	}	
+	zhnfuzukou = {
+		diplomatic_reputation = 1
+		vassal_income = 0.1
+	}
+	fujaouzhiban = {
+		tolerance_heretic = 1
+		tolerance_own = 1
+	}	
+	heitainmayyuyu = {
+		production_efficiency = 0.1
+	}	
+	yansainzher = {
+		global_tax_modifier = 0.1
+	}	
+}
+
+#高丽
+#起始理念 -20%轻型船只花费 +5%步兵作战能力
+#野心 科技花费-10%
+#shanhanyeetoung:0 "三韩一统"
+#shanhanyeetoung_desc:0 "高丽从后三国时代脱颖而出，统一朝鲜半岛。"
+#waiwangneidi:0 "外王内帝"
+#waiwangneidi_desc:0 "高丽对外称王，在本国内部称帝，因其低调的姿态在外交上得到了很多实惠。"
+#fantangcuigui:0 "科举制度"
+#fantangcuigui:0 "高丽效仿中原，采取科举制度，广纳贤才。"
+#wulndwochung:0 "武人夺权"
+#wulndwochung_desc:0 "高丽建国之初，文官占据权力上位，后引起武人不满而夺权，国家尚武之风盛行。"
+#sibingtezhi:0 "私兵体制"
+#sibingtezhi_desc:0 "高丽后期，军队多为地方权贵的私兵，因此正规军战斗力较差，而权贵私兵战力精良。"
+#uiyuangheiching:0 "与元和亲"
+#uiyuangheiching_desc:0 "高丽迎娶元朝公主，避免了灭国的命运。"
+
+GOY_ideas = {
+	start = {
+		heavy_ship_cost = -0.1
+		light_ship_cost = -0.1
+	}
+	bonus = {
+		technology_cost = -0.15
+	}
+
+	trigger = {
+		tag = GOY
+	}
+	
+	free = yes		#will be added at load.
+	
+	shanhanyeetoung = {
+		legitimacy = 1
+		prestige = 1
+	}
+	inshuashugoy = {
+		global_institution_spread = 0.1
+	}	
+	waiwangneidi = {
+		improve_relation_modifier = 0.25
+	}
+	fantangcuigui = {
+		advisor_pool = 1
+		advisor_cost = -0.1
+	}	
+	wulndwochung = {
+		land_morale = 0.1
+		leader_land_fire = 1
+	}	
+	sibingtezhi = {
+		mercenary_manpower = 0.1
+		discipline = 0.05
+	}
+	uiyuangheiching = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 1
+	}
+}
+
+
+GO1_ideas = {
+	start = {
+		stability_cost_modifier = -0.15
+		tolerance_heathen = 1
+	}
+	bonus = {
+		discipline = 0.1
+	}
+
+	trigger = {
+		OR = {
+			tag = GO1
+			tag = GA2
+		}	
+	}
+	
+	free = yes		#will be added at load.
+	
+	toungtaienn = {
+		production_efficiency = 0.1
+	}
+	gounchingbi = {
+		defensiveness = 0.25
+	}
+	shunzanfas = {
+		prestige_decay = -0.1
+		missionaries = 1
+	}		
+	hanjingyeeming = {
+		administrative_efficiency = 0.1
+	}
+	centeroftulufan = {
+		global_trade_power = 0.1
+		center_of_trade_upgrade_cost = -0.25
+	}
+	alotofreligioninhere = {
+		tolerance_heathen = 1
+		tolerance_own = 1
+	}	
+	fukouginhuhuln = {
+		cavalry_shock = 1
+		cavalry_power = 0.1
+	}
+}
+
+BH1_ideas = {
+	start = {
+		merc_maintenance_modifier = -0.25
+		infantry_cost = -0.1
+	}
+	bonus = {
+		governing_capacity = 250
+	}
+
+	trigger = {
+		tag = BH1
+	}
+	
+	free = yes		#will be added at load.
+	
+	connecttochidan = {
+		improve_relation_modifier = 0.2
+	}	
+	daibingchingzen = {
+		land_morale = 0.1
+	}	
+	taiuangqingching = {
+		hostile_attrition = 0.1
+		defensiveness = 0.1
+	}	
+	hardtogjeliou = {
+		leader_cost = -0.25
+	}
+	chungbingduwu = {
+		global_manpower_modifier = 0.1
+	}
+	banyueliangjin = {
+		yearly_army_professionalism = 0.1
+		army_tradition = 0.25
+	}
+	finalhanname = {
+		war_taxes_cost_modifier = -0.1
+		prestige = 1
+	}
+}
+	
+YQ1_ideas = {
+	start = {
+		cavalry_power = 0.1
+		shock_damage = 0.1
+	}
+	bonus = {
+		global_ship_cost = -0.15
+	}
+	
+	trigger = {
+		tag = YQ1
+	}
+	
+	free = yes		#will be added at load.
+	
+	chihataidetswutsn = {
+		core_creation = -0.1
+		diplomatic_reputation = 1
+	}	
+	cimeimnshi = {
+		ae_impact = -0.1
+	}	
+	lashider = {
+		technology_cost = -0.1
+	}
+	tainshuanzhishoun = {
+		governing_capacity = 150
+	}
+	chimamouyee = {
+		global_trade_power = 0.1
+	}
+	shufapei = {
+		global_missionary_strength = 0.02
+	}	
+	weiwuerformation = {
+		promote_culture_cost = -0.1
+		culture_conversion_cost = -0.25
+	}
+}	
+	

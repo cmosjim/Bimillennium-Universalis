@@ -1,0 +1,47 @@
+WUUU_ideas = {
+	start = {
+		discipline = 0.05
+		naval_forcelimit_modifier = 0.25
+	}
+
+	bonus = {
+		land_maintenance_modifier = -0.2
+	}
+	
+	trigger = {
+		OR = {
+		tag = WUD
+		tag = YW1
+		tag = WZ2
+		}
+	}
+	free = yes		#will be added at load.
+	
+	
+	wu_qingsiyifa = {
+		land_morale = 0.10
+		leader_land_fire = 1
+	}
+	wu_changjiangxiayou = {
+		production_efficiency = 0.15
+	}
+	wu_jiangzheshangye = {
+		global_trade_power = 0.1
+		trade_efficiency = 0.1
+	}
+	wu_haijun = {
+		naval_morale = 0.15
+		sailors_recovery_speed = 0.10
+	}
+	wu_xiananyang = {
+		range = 0.2
+		global_colonial_growth = 30
+	}
+	wu_nanfangmingcheng = {
+		development_cost = -0.15
+	}
+	wu_jiangnanwenhua = {
+		technology_cost = -0.05
+		global_institution_spread = 0.25
+	}
+}

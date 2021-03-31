@@ -1,0 +1,141 @@
+graphical_culture = muslimgfx
+color = {
+  26
+  27
+  154
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  defensive_ideas
+  offensive_ideas
+  trade_ideas
+  spy_ideas
+  diplomatic_ideas
+  administrative_ideas
+  religious_ideas
+  economic_ideas
+}
+historical_units = {
+  steppe_riders
+  steppe_lancers
+  steppe_mounted_raiders
+  steppe_cavalry
+  steppe_uhlans
+  steppe_raiders
+  steppe_footmen
+  steppe_musketeers
+  steppe_infantry
+  steppe_rifles
+  reformed_steppe_rifles
+}
+monarch_names = {
+  "Janay #0" = 20
+  "Jumaduq #0" = 20
+  "Jalila #0" = -1
+  "Janan #0" = -1
+  "Sharifa #0" = -1
+  "(„	TZ #0" = -1  # Sakina #0
+  "±ƒÉb #0" = -1  # Layla #0
+  "OjS‚„(„ÆY #0" = -1  # Ibtisam #0
+  "Õl‚„›s #0" = -1  # Fatima #0
+  "ïıV?Qd #0" = 20  # Yamghurchi #0
+  "Å–ê<hS lšÑ» #0" = 20  # Yadigar Muhammad #0
+  "NQœ` lšÑ» #0" = 20  # Urus Muhammad #0
+  "NQœ` #0" = 20  # Urus #0
+  "NQœ lšÑ» #0" = 40  # Ulugh Muhammad #0
+  "11÷1Y #0" = 20  # Toqtamish #0
+  "^(g?Q ıVıœ #0" = 20  # Timur Qutlugh #0
+  "^(g?Q #0" = 20  # Timur #0
+  "fís #0" = 20  # Shiban #0
+  "mÑ wmTr?Q #0" = 20  # Shaikh Haidar #0
+  "mÑ ?–>TéO #0" = 20  # Shaikh Awliar #0
+  "mÑ ?–Ñ» #0" = 20  # Shaikh Ahmad #0
+  "™l ?–Ì‘ #0" = 20  # Shah Ali #0
+  "’dê+R #0" = 20  # Shadi Beg #0
+  "i¦N·V lšÈT(g #0" = 20  # Sayid Mahmud #0
+  "i¦N·V ^?QU #0" = 20  # Sayid Burhan #0
+  "i¦N·V ?–Ñ» #0" = 60  # Sayid Ahmad #0
+  "™l‚„U #0" = 20  # Satilghan #0
+  "iàVNLR #0" = 20  # Sain Bulat #0
+  "ÈT¯e(g #0" = 60  # Qasim #0
+  "ÈTê?Q +R?Qê #0" = 20  # Qadir Berdi #0
+  "NLR ^(g?Q #0" = 20  # Pulad Timur #0
+  "NLR #0" = 20  # Pulad #0
+  "±wm #0" = 20  # Nogai #0
+  "Fz¯eTXÕl ?–Ì‘ #0" = 20  # Mustafa Ali #0
+  "FzSTXNb #0" = 20  # Murtaza #0
+  "lšÑ» #0" = 50  # Muhammad #0
+  "án?Q #0" = 20  # Mansur #0
+  "lš(gKQ #0" = 30  # Mamuk #0
+  "lš¦ #0" = 20  # Mamai #0
+  "lšT(g¾KQ #0" = 50  # Mahmudak #0
+  "lšT(g #0" = 80  # Mahmud #0
+  "“^Zi #0" = 20  # Kuchum #0
+  "“^ZiKQ lšÑ» #0" = 40  # Küchük Muhammad #0
+  "TU+R #0" = 20  # Khaqan Beg #0
+  "ÈTÌ‘S #0" = 30  # Khalil #0
+  "=`+R #0" = 20  # Kebek #0
+  "KQÌ‘(g +R?Qê #0" = 20  # Karim Berdi #0
+  "-g<S+R #0" = 20  # Jani Beg #0
+  ">?–Ì‘ #0" = 20  # Jan Ali #0
+  ">ÉbÒRN #0" = 20  # Jalal al-Din #0
+  "Jabbar Berdi #0" = 20  # Jabbar Berdi #0
+  "O^ÆY #0" = 20  # Ishim #0
+  "OSÈT(g #0" = 20  # Ilham #0
+  "fjSÉb1k #0" = 50  # Ibrahim #0
+  "¦NÅVT #0" = 20  # Ibak #0
+  "¯OiàV #0" = 30  # Husayn #0
+  "ÈTêS lšÑ» #0" = 20  # Hajji Muhammad #0
+  "mNêäS #0" = 20  # Edigu #0
+  "SLRyr +R?Qê #0" = 20  # Devlet Berdi #0
+  "¾SôuÀN ?–Ì‘ #0" = 20  # Darwish Ali #0
+  "¾SôuÀN #0" = 20  # Darwish #0
+  "¾<SÅ–S #0" = 20  # Daniyal #0
+  "ıVLR #0" = 20  # Chokra #0
+  "‰VS¢R` #0" = 20  # Cherkes #0
+  "NLRT #0" = 20  # Bolaq #0
+  "+RKQNLRÕ` #0" = 20  # Bek Bulat #0
+  "kQLR #0" = 30  # Baraq #0
+  "?–?Q`pQ #0" = 20  # Arslan #0
+  "?–LRjS™l #0" = 20  # Arab Shah #0
+  "?–Ì‘+RåT #0" = 20  # Ali Beg #0
+  "^N+RKQ #0" = 40  # Ak Köbek #0
+  "Œ‚ÈTÈ·V #0" = 50  # Ahmad #0
+  "?–VLR #0" = 20  # Agalak #0
+  "?–NıÉbÈT #0" = 20  # Abdullah #0
+  "eYıLRTî† #0" = 40  # Abdul-Rahman #0
+  "?–Nı LRê+u #0" = 20  # Abdul-Latif #0
+  "?–Nı KQÌ‘(g #0" = 40  # Abdul-Karim #0
+}
+leader_names = {
+  "ÈTLR 1Yœ?–"  # Qara Chinua
+  "Delger Qyugun"
+  "?–Ì‘ÑåT"  # Arigh Gal
+  "“^“^ ˜S·V<S"  # Koke Erdene
+  "Ï‚ÁNıVOcZW"  # Suren Unegen
+  "^¨š` f¢R"  # Tegus Enq
+  "T9NğS"  # Qadandei
+  "NŞÒR	T<hOc"  # Burilgigene
+  "?–Ì‘åT^<S"  # Arighteni
+  "Yekecher"
+  "Ï‚&Owm"  # Surenqai
+  "ıVœdåT"  # Qorchigge
+}
+ship_names = {
+  "Xacitarxan"
+  "zÒRKO"  # Volga
+  "?–`TXLRU"  # Ästerxan
+  "Khadjitarkhan"
+  "b	T`Wl"  # Chinggis Khan
+  "“^ZiKQ"  # Kuchuk
+  "?–¯eyrÉbU"  # Actarxan
+  "Ôbı(„±ƒ"  # Sarai Batu
+  "Hadzhy-Tarkhan"
+  "Gitorkhan"
+  "Tsitrokhan"
+}

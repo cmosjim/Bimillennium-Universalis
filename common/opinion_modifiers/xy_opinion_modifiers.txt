@@ -1,0 +1,36 @@
+is_germanic_state = {
+	opinion = 100
+}
+is_older_germanic_state = {
+	opinion = 25
+}
+is_ideology_union_state = {
+	opinion = 50
+}
+cannot_betray_emperor = {
+	opinion = -1000
+	yearly_decay = 500
+	min = -1000
+}
+refuse_separation_hre = {
+	opinion = -50
+	yearly_decay = 1
+	min = -200
+}
+refuse_separation_jap = {
+	opinion = -50
+	yearly_decay = 1
+	min = -200
+}
+
+sovlaodage = {
+	opinion = 200
+	yearly_decay = 1
+}
+sovjiaoe = {
+  opinion = -200
+	yearly_decay = 1
+}
+is_guanliao_state = {
+ opinion = 75
+}

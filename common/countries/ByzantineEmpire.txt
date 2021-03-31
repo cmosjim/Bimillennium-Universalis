@@ -1,0 +1,967 @@
+graphical_culture = easterngfx
+color = {
+  149
+  45
+  102
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  maritime_ideas
+  religious_ideas
+  defensive_ideas
+  administrative_ideas
+  trade_ideas
+  quality_ideas
+  innovativeness_ideas
+  diplomatic_ideas
+}
+historical_units = {
+  eastern_medieval_infantry
+  eastern_knights
+  slavic_stradioti
+  eastern_militia
+  ottoman_spahi
+  ottoman_sekban
+  ottoman_reformed_spahi
+  ottoman_reformed_janissary
+  ottoman_toprakli_hit_and_run
+  ottoman_nizami_cedid
+  ottoman_toprakli_dragoon
+  eastern_skirmisher
+  eastern_uhlan
+  eastern_carabinier
+  ottoman_new_model
+  ottoman_lancer
+}
+monarch_names = {
+  "POO #1" = -10  # Zoe #1
+  "ÄreYYÉb #1" = -20  # Theodora #1
+  "O3tZ #1" = -20  # Eirene #1
+  "¯eyráQú‹¯e #0" = 0  # Stephanos #0
+  "nfWÑy®veY¯e #0" = 0  # Prokopios #0
+  "òƒ)R™„ #0" = 0  # Philemon #0
+  "iOyrW¯e #0" = 0  # Petros #0
+  "^³u¦u‚„¯e #0" = 0  # Panagiotis #0
+  "^+Ym¯e #0" = 0  # Pavlos #0
+  "âlòƒ	t¯e #0" = 0  # Porphyrios #0
+  "^XS	TeY¯e #0" = 0  # Sergios #0
+  "<SÑy·V«ƒ¯e #0" = 0  # Nikodemos #0
+  "<SÑy³R¯e #0" = 0  # Nikolaos #0
+  "<SúWTX¯e #0" = 0  # Niketas #0
+  "lš*YeY¯e #0" = 0  # Matthaios #0
+  "ïQ)Rm¯e #0" = 0  # Kyrillos #0
+  "O?–‹R #0" = 0  # Iason #0
+  "kKQXbÌ‘'k¯e #0" = 0  # Hektorios #0
+  "<hÌ‘Øš)R #0" = 0  # Gregorios #0
+  "<heY	T'k¯e #0" = 0  # Georgios #0
+  "ÃWS®vêeY¯e #0" = 0  # Elpidios #0
+  "ÃWS÷–HYeY¯e #0" = 0  # Eirenaios #0
+  "ÄreY<SîO¯e #0" = 0  # Dionysios #0
+  ",r'k9h<S #0" = 0  # Diogenes #0
+  "kÌ‘¯eXbyW¯e #0" = 0  # Christophoros #0
+  "ôTSXbmÈeY¯e #0" = 0  # Bartholomaios #0
+  "‰RN<SeY¯e #0" = 0  # Antonios #0
+  "?–TX³uîO¯e #0" = 0  # Athanasios #0
+  "òƒ)Râl¯e #1" = 5  # Philippos #1
+  "šN†SqS·VW¯e #1" = 5  # Alexandros #1
+  "yrÉbOú‹¯e #1" = 5  # Traianos #1
+  "ĞcÔkeu #3" = 5  # Tiberios #3
+  "ÄreYY‰ #3" = 5  # Theodosios #3
+  "ÄreYòƒm¯e #1" = 5  # Theophilos #1
+  "<SúWVœ¯e #3" = 5  # Nikephoros #3
+  "lšÑy¯e #1" = 5  # Markos #1
+  "TëXfWĞceY¯e #3" = 5  # Konstantios #3
+  "ågëXN #2" = 5  # Ioustinos #2
+  "ågëXN<S #2" = 5  # Ioustinianos #2
+  "2S)RšNú‹¯e #3" = 5  # Ioulianos #3
+  "^ÉbKQeu #1" = 5  # Herakleios #1
+  "?–³u¯eTXîO¯e #2" = 5  # Anastasios #2
+  "?–·VÌ‘šNú‹¯e #1" = 5  # Adrianos #1
+  ")ReY #6" = 10  # Leon #6
+  "ôT‰S #2" = 10  # Basileios #2
+  "O(„KQ #2" = 10  # Isaakios #2
+  "Xblš¯e #0" = 10  # Thomas #0
+  "wm&O®Y #0" = -10  # Helene #0
+  "‰R·VÈpšN¯e #0" = 10  # Andreas #0
+  "s|wmS #9" = 10  # Michael #9
+  "ÄreYY #2" = 15  # Theodoros #2
+  "·Vs|yrÌ‘ #0" = 15  # Demetrios #0
+  "Wüfú‹¯e #4" = 20  # Romanos #4
+  "üfªRÃWS #1" = 20  # Manuel #1
+  "‰R·VW<SÑy¯e #4" = 20  # Andronikos #4
+  "TëXfWN #10" = 20  # Konstantinos #10
+  "?–±ƒKQîO¯e #5" = 30  # Alexios #5
+  "¦u‰R<S¯e #7" = 40  # Ioannes #7
+}
+leader_names = {
+  "?–KQWâl)Ryr"  # Akropolites
+  "‰R	Tm¯e"  # Angelos
+  "eYO<Sú‹"  # Aoinos
+  "?–âlwÇR¯e"  # Apokaukos
+  "?–ESW¯e"  # Argyros
+  "ôT^X	t¯e"  # Basileous
+  "ôTTXıl"  # Batatzes
+  "âlTX<S?–Ğc¯e"  # Botaneiates
+  "^ÆYôTÌ‘¯e"  # Boumbalis
+  "TR<SšNĞc¯e"  # Choniates
+  "KQÆYú‹¯e"  # Choumnos
+  "êšN0t&Oú‹¯e"  # Diasorenos
+  ",r'k9h<S"  # Diogenes
+  "jgaS¯e"  # Doukas
+  "jgaS¯e"  # Gabras
+  "šN RÌ‘¯e"  # Iagaris
+  "NWTX“^PŸú‹¯e"  # Kantakuzenos
+  "waS‰vú‹¯e"  # Kaukadenos
+  "ÑyFzR"  # Komnenos
+  "Éb¯eaSÌ‘¯e"  # Laskaris
+  "…h)R‰ú‹¯e"  # Melissinos
+  "…hKNÏ‚Sß‚¯e"  # Melisurgos
+  "s|KQœÉbKQ¯e"  # Mikrulakes
+  "«ƒ³ulšÑy¯e"  # Monomakos
+  "¨XS†–"  # Mouzalon
+  "…m¯e¬Q<h"  # Nestongos
+  "ôTReYeu"  # Palaiologos
+  "^Éb¯emVım¯e"  # Paraspondylos
+  "—U¯e"  # Phocas
+  "nf¯eaS³uúW"  # Phouskarnaki
+  "VgåTâlW¯e"  # Phrangopoulos
+  "nf^Xm¯e"  # Psellos
+  "Ébêú‹¯e"  # Rhadinos
+  "g R"  # Rhangabe
+  "W9N³uúW¯e"  # Rhodocanakis
+  "Wüfú‹¯e"  # Romanos
+  "êuWnfm¯e"  # Syropoulos
+  "XbS<SKQ¯e"  # Tornikes
+  "NbÌ‘·V¯e"  # Zarides
+  "PŸs|‰¯e"  # Zimisces
+}
+ship_names = {
+  "O·VÉb"  # Ydra
+  "±ƒ¯eƒl¯e"  # Lesvos
+  ")RÆYú‹¯e"  # Limnos
+  "s|Ñyú‹¯e"  # Mikonos
+  "(„Ébs|¯e"  # Salamis
+  "(„id¯e"  # Samos
+  "^Xs|¯eXbKQ)R¯e"  # Themistoklis
+  "ÃW+YÌ‘®vê¯e"  # Evripidis
+  "ÃW¯e“^W¯e"  # Aischylos
+  "?–Ì‘¯eYÕl<S¯e"  # Aristofanis
+  "?–úWs|·V"  # Archimedes
+  "·VŒKQ)Ryr"  # Demokritos
+  "?–³uKQ(„åTÉb¯e"  # Anaxagoras
+  "ÄrÄO¨X—V¯e"  # Diomedes
+  "kÉbKQÒR¯e"  # Herakles
+  "?–yr÷–¯e"  # Atreas
+  "âl‰¯e"  # Perseas
+  "ÃW	TnfXb¯e"  # Aigyptos
+  "Œ‚m¯e"  # Aiolos
+  "âl^X¬Q"  # Poseidon
+  "Å–xQZ"  # Athena
+  "™R¯e"  # Zeus
+  "êšN¯e"  # Dias
+  "KQmú‹¯e"  # Kronos
+  "÷–šN"  # Rea
+  "LNÉbú‹¯e"  # Ouranos
+  "kÉb"  # Hera
+  "?–Y<S¯e"  # Adonis
+  "?–™‚mÄrÒV"  # Afroditi
+  "ÂbSf"  # Charavgi
+  "ÄOÌ‘Á"  # Orion
+  "O?–‹R"  # Iasonas
+  "yrîO¯e"  # Theseus
+  "?–U	t¯e"  # Achilleas
+  "…hSs|˜"  # Mermidon
+  "lšvQ˜"  # Makedon
+  "ÉbKQ·V™„"  # Lakedemon
+  "Å–xQºN"  # Athineos
+  "r‚ú‹¬‚"  # Xenofon
+  "s|Ğc?–·V¯e"  # Miltiades
+  "šN†SqS·VW¯e"  # Alexandros
+  "…h RÒRqS·VW¯e"  # Megalexandros
+  "b3wåT"  # Gorgona
+  "ÄršN"  # Midia
+  "'kÒV3wiO"  # Efterpi
+  "‰R·VÌ‘šNTX¯e"  # Andriantas
+  "·Vs|yrÉb"  # Demetra
+  "ÃW¯e‚„šN"  # Estia
+  "?–âlW"  # Apollon
+  "Œ‚s|¯e"  # Ermis
+  "b3wbZS¾m¯e"  # Gorgopodaros
+  "b3wbnfRV¯eXb¯e"  # Gorgoplefstos
+  "?–SÒV%V¯e"  # Artemis
+  "?–Ì‘¯e"  # Aris
+  "ieYÕl<S¯e"  # Theofanis
+  "ÄreYågÉb"  # Theochara
+  "òƒ)Rnfâl¯e"  # Filippos
+  "ÃW·V(„"  # Edessa
+  "1reY<SšN"  # Ionia
+  "Ñy—g¯e"  # Korinthos
+  "¯eôT¾"  # Sparti
+  "Å–xQ"  # Athenai
+  "¨X‰ÿb"  # Messina
+  "?–0t¯e^‚„"  # Anthosparti
+  "NWâl¯e"  # Kampos
+  "?–äS)R¾"  # Argolida
+  "?–Sb"  # Argo
+  "kòƒ¯eXb¯e"  # Hephestos
+  "kòƒ¯eĞcÁ"  # Hephestion
+  "<SSTN¯e"  # Nearchos
+  "^üfËu"  # Parmenion
+  "ReY<S¾"  # Leonidas
+  "?–æ—W+Y"  # Averof
+  "kÌ‘¯eXb¯e"  # Christos
+  "KQÌ‘¯eXbiOW¯e"  # Christoforos
+  "1WKQÌ‘¯eXbiOW¯e"  # Agios Christoforos
+  "KQÌ‘¯eXbiOW¯e‡v^"  # Vasileus Christoforos
+  "ĞceYYÉb"  # Theodora
+  "1WÄreYYÉb"  # Agia Theodora
+  "1WÄreYYW¯e"  # Agios Theodoros
+  "ÄreYYW¯e‡v^"  # Vasileus Theodoros
+  "S›Q"  # Aftokrator
+  "ÄreYYÉb‡vT"  # Vasillisa Theodora
+  "<SúWVœ¯e"  # Nikephoros
+  "1W<SúWVœ¯e"  # Agios Nikephoros
+  "<SúWVœ¯e‡v^"  # Vasileus Nikephoros
+  "^+Ym¯e"  # Pavlos
+  "O’V^+Ym¯e"  # Apostolos Pavlos
+  "1W^+Ym¯e"  # Osios Pavlos
+  "?–±ƒKQîO¯e"  # Alexios
+  "1W?–±ƒKQîO¯e"  # Agios Alexios
+  "1W?–RKQY"  # Agia Alexia
+  "?–RKQY"  # Alexia
+  "?–±ƒKQîO¯e‡v^"  # Vasileus Alexios
+  "?–RKQY‡vT"  # Vasilissa Alexia
+  "TëXfWN"  # Konstantinos
+  "1WTëXfWN"  # Agios Konstantinos
+  "TëXfWN'Y^"  # Konstantinos o Megas
+  "TëXfWN‡v^"  # Vasileus Konstantinos
+  "TëXfWN'Y^"  # Autokrator Konstantinos
+  "^ÉbKQeu"  # Herakleios
+  "1W^ÉbKQeu"  # Agios Herakleios
+  "^ÉbKQeu‡v^"  # Vasileus Herakleios
+  "1W^ÉbKQRêeY¯e"  # Agios Herakleidios
+  "1W^XS	TeY¯e"  # Agios Sergios
+  "1WlšKQ‰«ƒ¯e"  # Agios Maximos
+  "1W?–TX³uîO¯e"  # Agios Athanasios
+  "1W?–TX³u‰Z"  # Agia Athanasia
+  "1W1rpQ®Y"  # Agia Eleni
+  "1rpQ®Y"  # Eleni
+  "KN„v1rpQ®Y"  # Oraia Eleni
+  "1rpQ®Y‡vT"  # Vasilissa Eleni
+  "?–+YXbKQÉb‚„Éb 1rpQ®Y"  # Aftokrateira Eleni
+  "TëXfWN ïQ 1rpQ®Y"  # Konstantinos kai Eleni
+  "¯eyráQú‹¯e"  # Stephanos
+  "1W¯eyráQú‹¯e"  # Agios Stephanos
+  "1W¯eyráQ<SšN"  # Agia Stephania
+  "¯eyráQú‹¯e‡v^"  # Vasileus Stephanos
+  "¯eyráQú‹¯eS›Q"  # Autokrator Stephanos
+  ")YO•s|æÒR"  # Archangellos Michael
+  ")YO• RŒvR"  # Archangellos Gavriel
+  ")YO•LNR"  # Archangellos Uriel
+  ")YO•"  # Archangellos
+  "‰Rpgm¯e"  # Angelos
+  "^yO"  # Exangelos
+  "mQü)YO"  # Exapterygon
+  "úWï=O"  # Cheruvim
+  "’dÉbV"  # Seraphim
+  "1Ww"  # Osios
+  "eY‰šN"  # Osia
+  "eY¯e‚„šN"  # Ostia
+  "OëX‚„<S‰R<S"  # Ioustiniani
+  "1WågëXN<S"  # Agios Ioustinianos
+  "1WOëX‚„<S‰R<S"  # Agia Ioustiniani
+  "ågëXN<SS›Q"  # Aftokrator Ioustinianos
+  "ågëXN<S‡v^"  # Vasileus Ioustinianos
+  "ågëXN<S'Y^"  # Ioustinianos o Megas
+  "ÈKQS‡v^"  # Vasileus Michael
+  "‰R·VW<S“^¯e"  # Andronikos
+  "‰R·VW<SaS"  # Androniki
+  "1W‰R·Vm<SaS"  # Agios Andronikos
+  "1W‰R·VW<SaS"  # Agia Androniki
+  "‰R·VW<SaS‡v^"  # Vasileus Andronikos
+  "ôT‰S"  # Vasileios
+  "ôT‰Œ…Z"  # Vasileia
+  "1WôT‰S"  # Agios Vasileios
+  "1WôT‰Œ…Z"  # Agia Vasileia
+  "ôT‰S‡v^"  # Vasileus Vasileios
+  "ôT‰S-İO R)RšNºN`S+Y"  # Vasileios o Vulgaroktonos
+  "POO"  # Zoe
+  "1WPOO"  # Agia Zoe
+  "1WPOO"  # Iera Zoe
+  "POO‡vT"  # Vasilissa Zoe
+  ")R’dYu"  # Velissarios
+  "®vÌ‘"  # Piri
+  "÷–¯e"  # Reis
+  "?–ÃWXb¯e"  # Aetos
+  "êúWÕlW¯e ?–ÃWXb¯e"  # Dikephalos Aetos
+  "SêúWÕlW¯e"  # Dikephalos tou Vorra
+  "	NöSIƒ"  # Tryfilli
+  "eY)R9SÄO¯e"  # Olympios
+  "wmZŒ"  # Delphini
+  "·VSòƒ³u"  # Delphina
+  "b‹V"  # Apochis
+  "YÇNw"  # Nemesis
+  "²Pbaw"  # Yvris
+  "v`™Ÿ"  # Drakon
+  "±ƒKQ<h¯e"  # Lykourgos
+  "0t&O"  # Solon
+  "KQmO0t¯e"  # Kroisos
+  ")R‰âl¯e"  # Lysippos
+  "ôˆêšN¯e"  # Phedias
+  "?–·V¯e"  # Ades
+  "¥Q‹s"  # Plutonas
+  "âl^X¬Q„vtm8"  # Mpaniera tou Poseidona
+  "OaSm¯e"  # Ikaros
+  "ãN¾W¯e"  # Daidalos
+  "OaSÌ‘šN"  # Ikaria
+  "àVVW¯e"  # Imvros
+  "äp‰p"  # Fournoi
+  "úWšN"  # Kia
+  "³uKQ0t¯e"  # Naxos
+  "^ÄO¯e"  # Chios
+  "QeNINkÌ‘¯eXb¯e"  # Christos Soter
+  "QeNIN"  # Soter
+  "0tyrÌ‘eY¯e"  # Soterios
+  "0tPOs|ú‹¯e"  # Sozomenos
+  "N6Rw"  # Despotis
+  "N6RwidÌ‘šN"  # Despotis tou Moria
+  "iOWZS<S0t¯e"  # Peloponissos
+  "Éb+YnfÌ‘'k"  # Nafplio
+  "?–0t¯e"  # Athos
+  "1WeYW¯e"  # Agion Oros
+  "ó1Ww"  # Panagia
+  "ó1W›s)RšN"  # Panagia Parthena
+  "ó1WKQÌ‘0tmúWšN‚„(„"  # Panagia Chrysorogiatissa
+  "ó1WnfR…h<S"  # Panagia Pleomeni
+  "ó1W²YïQÏ‚(„"  # Panagia Dakryzousa
+  "ó1WW…hi`"  # Panagia Romaion
+  "ó1Ws|yrÉb"  # Panagia Mitera
+  "ó1WKQÌ‘0t¯eÔkKNeYê(„"  # Panagia Chrysospilliotisa
+  "ó1W‰RiOWaS«ƒ‚„"  # Panagia Ampelokamoti
+  "ó1W®v	VÏ‚(„"  # Panagia Pigazousa
+  "ó1W‰RÏ‚(„"  # Panagia Anthousa
+  "Hektor"
+  "¨X…mÉbÄO¯e"  # Menelaos
+  "?–OšN¯e"  # Aias
+  "?–OšN¯e eY yrÉbid<SeY¯e"  # Aias o Telamonios
+  "eYê‰šN¯e"  # Odysseas
+  "O(„aS"  # Ithaki
+  "‚„ÒRlšÑy¯e"  # Tilemachos
+  "iO…Qmnf"  # Penelopi
+  "s|ú‹šN¯e"  # Minoas
+  "s|ú‹yrym¯e"  # Minotavros
+  "yrÌ‘0N"  # Tryfon
+  "?–KOè•œQ"  # Agamemnon
+  "Oòƒi—…mšN"  # Ifigeneia
+  "'YNÌ‘ëX"  # Tavrida
+  "TX+Ym¯e"  # Tavros
+  "Oòƒ¯e"  # Ichthys
+  "aSÉbKQ^šN"  # Galaxias
+  "?–¯e‚„S"  # Astir
+  "ff"  # Asteras
+  "¢uf"  # Erythros Asteras
+  "=O)RR`KNf"  # Asteri tis Vithleem
+  "1W0W"  # Agioi Topoi
+  "6wï’d·Q"  # Ierosolima
+  "šN†SqS'YÌ‘šN"  # Alexandreia
+  "N^„vcƒw"  # Doxa tou Theou
+  "N^KNœU"  # Chara Theou
+  "Yid"  # Tama
+  "‰kSw"  # Ieromartyras
+  "^Xfmï¯eºN"  # Kyprianos
+  "I`INYe"  # Archiepiskopos
+  "INYe"  # Episkopos
+  "jgaS¯e"  # Doukas
+  "W<Si`"  # Ionion
+  "1r4t"  # Aigaion
+  "KQÌ‘ĞcNW"  # Kritikon
+  "KQÌ‘yr"  # Kriti
+  "PO<S‰RZ"  # Zoniana
+  "kÉbKQ)RšN"  # Herakleia
+  "OÉbKQ)RÁ"  # Herakleion
+  "ÈT<SšN"  # Chania
+  "±ƒ¯eƒl¯e"  # Lesvos
+  "^Xfmï¯e"  # Kypros
+  "W·V"  # Rodos
+  "èTºN"  # Gigantas
+  "âlTeid¯e"  # Polyphimos
+  "Éb¯eÒVTb…m¯e"  # Laistrygona
+  "Ébs|šN"  # Lamia
+  "¯e“^Éb"  # Skylla
+  "aS‹V^Är¯e"  # Charyvdi
+  "„SU·V±"  # Echidna
+  "èTÇ†"  # Ofis
+  "Œ‚Z"  # Eva
+  "kÒR¯eXoY¯e"  # Hellespontos
+  "8eKQ›wm"  # Efxeinos Pontos
+  "nfWÑy®veY¯e"  # Prokopios
+  "nfWÑy®všN"  # Prokopia
+  "1WnfWÑy®veY¯e"  # Agios Prokopios
+  "äRKYw"  # Prokomenos
+  "VRKQ0t¯e"  # Frixos
+  "Œ‚)R"  # Elli
+  "KQúWÉb"  # Kerkyra
+  "Áˆ³Qw"  # Kyriarchos
+  "JSºNlš"  # Kentavros
+  "ïQ’d"  # Kaisar
+  "÷–—"  # Keravnos
+  "Ñ‘Ò‰Œn"  # Keratios
+  "Å– R¾"  # Keraton
+  "TëXfWN!X"  # Konstantinoupolis
+  ")Rf ¯eKQÌ‘m¯e"  # Leon Skleros
+  "TúWšN"  # Lykia
+  "wmNs¬r"  # Thalassolykos
+  "O'Yw"  # Megaleion
+  "cƒw„vlšvQ˜"  # Megaleion tis Makedonias
+  "SšNÆušN"  # Mikra Asia
+  "«ƒSòƒšN¯e"  # Morfeas
+  "eYSòƒšN¯e"  # Orfeas
+  "ÃWVÌ‘êúW"  # Evridiki
+  "ïQÌ‘<SšN"  # Keryneia
+  "ÕllšäS¯eTX"  # Ammochostos
+  "ÒR·VÉb"  # Ledra
+  "^y¯e"  # Pafos
+  "?–aSlš¯e"  # Akamas
+  "?–lšşV¯e"  # Amathous
+  "Œ‚æt<hÉb¯e"  # Evagoras
+  "ågSNWú‹Éb¯e"  # Chalkanoras
+  "<hÌ‘Øš)R"  # Grigorios
+  "ïQ)Rm¯e"  # Kyrillos
+  "…h0têeY¯e"  # Methodios
+  "<SÑy"  # Nike
+  "ÄOIR?–ú‹¯e"  # Okeanos
+  "ĞcÉbú‹¯e"  # Tyranos
+  "eY÷–¯eyr¯e"  # Orestis
+  "N^KN`"  # Orgi Theou
+  "ckßu"  # Orthodoxia
+  "bS‰šN"  # Loukia
+  "bSNW<S"  # Loukiani
+  "1WbSaS¯e"  # Agios Loukas
+  "1WbSaS¯e"  # Osios Loukas
+  "HQåwåN)RšN"  # Profitis Helias
+  "Œ‚Ì‘?–¯e"  # Ai Lias
+  "HQåw"  # Profitis
+  "ÂSYR"  # Sampson
+  "'YkS"  # David
+  "Lk)RšN"  # Goliath
+  "¶RíV"  # Patrida
+  "^J¶RíV"  # Ellas Patrida
+  "^yrÌ‘¯e"  # Patris
+  "s|yrÉb"  # Mitera
+  "^yrÉb¯e"  # Pateras
+  "iOyr"  # Pater
+  "^^¯e"  # Papas
+  "^^êšN"  # Papadia
+  "êšNÑyú‹"  # Diakonos
+  "?–yrÉb¯e"  # Atlas
+  "WkSŒN"  # Egkelados
+  "ğlfW"  # Titanas
+  "¸‹ÀsÌ‘Á"  # Yperion
+  "k)RÄO¯e"  # Helios
+  "*Y3–^yIN°Rw"  # Helios Pantokrator
+  "ÄrÄO¨X—V¯e"  # Diomedes
+  "?–+YpgšN¯e"  # Avgeas
+  "?–‰VW¯e"  # Achellos
+  "?–ïQm¯e"  # Acheros
+  "¯e‚„ÕlKN¾"  # Stymfalida
+  "ÒR+Y<SšN"  # Lernea
+  "ÒR+Y<SšN O·VÉb"  # Lernea Ydra
+  "<Ss|šN"  # Nemea
+  "<Ss|šNKNîr"  # Leon tis Nemeas
+  "aSnfÌ‘"  # Kapros
+  "ÃWÌ‘üfÄršN"  # Erymanthea
+  "«ƒ³u¯e‚„Ì‘"  # Monastiri
+  "LNÉbú‹¯e"  # Ouranos
+  "…mòƒÌ‘"  # Nefeli
+  "	TšN"  # Gea
+  "TXÉb(„"  # Thalassa
+  "0W-Nwm"  # Mesogeios
+  "lQl"  # Politis
+  "ßu»lw"  # Vasilevousa
+  "'YmKNIN"  # Thalassokrator
+  "syŒ"  # Pantheras
+  ")Rf"  # Leon
+  "iOÉb<h¯e"  # Pelargos
+  "…hwaS¯e"  # Mermigkas
+  "eYú‹¯e"  # Onos
+  "^X(„)R"  # Thesallia
+  "^’dW<Sæ"  # Thesalloniki
+  "ÄreYòƒÉbKQXb¯e"  # Theophylaktos
+  "ÆQS"  # Taxiarchos
+  "CQ^"  # Stratilatis
+  "–™†˜"  # Oplarchigos
+  "wm›QNS"  # Navarchos
+  "‰‰Ì‘"  # Sikelia
+  "^J"  # Ellas
+  "(„id¯e"  # Samos
+  "(„«ƒr‚÷–¯e"  # Samothraki
+  "r‚÷–¯e"  # Thraki
+  "WY|V"  # Rodopi
+  "šN†SqS·Vœâl)R¯e"  # Alexandroupoli
+  "?–·VÌ‘‰R!X"  # Andrianoupolis
+  ".OGY"  # Thrylos
+  "yrÌ‘"  # Triton
+  "wmÆw"  # Achinos
+  "ff"  # Asterias
+  "KQ‰òƒšN¯e"  # Xiphias
+  "QRëX"  # Xiphomachos
+  "íwQR"  # Xiphos
+  "–R"  # Spatha
+  "NbÑ‘0t¯e"  # Zakynthos
+  "`<yw"  # Zoodotis
+  "óØšw"  # Ypertatos
+  "?–·VÌ‘‰R"  # Andrianos
+  "‰RĞc«ƒ¯e"  # Anthimos
+  "·VÉbäSüfú‹¯e"  # Dragumanos
+  "?–KQÌ‘¾¯e"  # Akritas
+  ",r9h<S"  # Digenis
+  ",r9h<S ?–KQÌ‘¾¯e"  # Digenis Akritas
+  "lš+YW¯eGYW¯e"  # Mavroskyllos
+  "p`&O"  # Charon
+  "aS—gú‹¯e"  # Kalymnos
+  "KN„vaS—gú‹¯e"  # Oraia Kalymnos
+  "nf(„Éb"  # Psara
+  "nf(„Éb¯e"  # Psaras
+  "æto‚<h"  # Varrangios
+  "<h0t¯e"  # Gothos
+  "^îO¯e"  # Pontios
+  "lš+YWlš¾"  # Mavromata
+  "nfÉb^ú‹lš¾"  # Prasinomata
+  "aS¯e¾ú‹lš¾"  # Kastanomata
+  "S+s"  # Gata
+  "KOXbÀN"  # Gatos
+  "á‹qVw"  # Magkas
+  "´f’V"  # Foneas
+  "¨œ|œ"  # Karcharias
+  "Ò‰¨œ"  # Skyllopsaro
+  "|Vmòƒ¯e"  # Pyrofis
+  "|œp"  # Stavraetos
+  "‚ú‹"  # Zenon
+  "SR"  # Machairas
+  "GYÑy¯e"  # Kykkos
+  "‰R0t¯e"  # Anthos
+  "LN&"  # Korax
+  "oÑLN&"  # Mavros Korax
+  "P`ç`w"  # Phovos
+  "ê«ƒ¯e"  # Dimos
+  "ÄreYYW¯e ÑyWKQyrW<S¯e"  # Theodoros Kolokotronis
+  "eYê‰šN¯e ‰R·Vœ‰V¯e"  # Odysseas Andrutsos
+  "TN»leY¯e aSV¯eaSúW¯e"  # Georgios Karaiskakis
+  "ıV‹sòƒ±ƒeY¯e"  # Rigas Ferraios
+  "ÄreY<S^eY¯e 0tm«ƒ¯e"  # Dionysios Solomos
+  "ÄreY<S^eY¯e"  # Dionysios
+  "ÄrÄO<S0t¯e"  # Dionysos
+  "TXm¯e"  # Talos
+  "'kÒV3wiO"  # Efterpi
+  "^^KNZ"  # Mpoumpoulina
+  "üfşV lšôuW9h¯e"  # Manto Mavrogenous
+  "TëXfWN aS³uÌ‘¯e"  # Konstantinos Kanaris
+  "<SúWTXÉb¯e"  # Nikitaras
+  "şVSÑyÕlb"  # Tourkofagos
+  "<SúWTX¯e"  # Nikitas
+  "İO R)RšNºN`S+Y"  # Vulgaroktonos
+  "È0t†–	TÁ"  # Messologi
+  "ôTReYeu"  # Palaiologos
+  "ÑyFzR"  # Komnenos
+  "O(„KQ ÑyFzR"  # Isaakios Komnenos
+  "ípÅ`w"  # Thalpori
+  "Éb(„W¯e"  # Lazaros
+  "O’V‰R·VÈpšN¯e"  # Apostolos Andreas
+  "O’VôTÿblš"  # Apostolos Varnavas
+  "O’VbSaS¯e"  # Apostolos Loukas
+  "O’VXblš¯e"  # Apostolos Thomas
+  "O’ViOyrW¯e"  # Apostolos Petros
+  "O’VÅ–Ñyƒl¯e"  # Apostolos Iakovos
+  "O’V¯eyráQú‹¯e"  # Apostolos Stephanos
+  "O’V¦u‰R<S¯e"  # Apostolos Ioannis
+  "Apostolos Simonas "Apostolos
+  Vartholomaios" "Apostolos
+  Thaddeos" "12
+  Apostoloi" "Agioi
+  Saranta" "Agioi
+  "XoÒV¯e"  # Pantes
+  "1W<SÑy³R¯e"  # Agios Nikolaos
+  "4lKb"  # Naftikos
+  "RÅk„vnf(„†–"  # O Leventis ton Psaron
+  "±ƒ‡e‚„¯e"  # Leventis
+  "—²˜"  # Tromos
+  "Ì‘å‹³u"  # Rigaina
+  "ıV‹s"  # Rigas
+  "jgïQ³u"  # Doukaina
+  "ÄrÄO¯e“^"  # Dioskouroi
+  "Wlš"  # Romos
+  "WFzbS¯e"  # Romylos
+  "WlšŒTWFzbS¯e"  # Romos kai Romylos
+  "gr^‰R·VÈp"  # Papandreas
+  "gr^s|ïQ)R¯e"  # Papamichalis
+  "gr^TëXfWN"  # Papakonstantinos
+  "1W·Vs|yrÌ‘"  # Agios Demetrios
+  "1WÄreYYW¯e"  # Agios Theodoros
+  "1W›sKNZ"  # Agia Marina
+  "1WŒ‚VpQÔkšN"  # Agia Evlampia
+  "1WÈTÉbpQÔkšN"  # Agia Charalambia
+  "1WÈTÉbpQZS¯e"  # Agios Charalambos
+  "1WågÌ‘³R¯e"  # Agios Charilaos
+  "1W‰RN<SeY¯e"  # Agios Antonios
+  "1W‰RN®YZ"  # Agia Antonia
+  "1W‰RVWîO"  # Agios Amvrosios
+  "ó1W‰Rpgmæt¯eTX+Y‚„"  # Panagia Aggelovastachti
+  "ó1WHa„U"  # Panagia Filoptochi
+  "ó1W(„Éb0tòƒ)R‚„"  # Panagia Thalassofiliti
+  "(„Éb0t›sÑy¯e"  # Thalassomachos
+  "‰RòƒyrÌ‘,r"  # Amfitriti
+  "wmNšlš"  # Thalassios Ippos
+  "wmNÄ–îr"  # Thalassios Leontas
+  "^0tKQXbú‹"  # Persoktonos
+  "OÏ‚Ì‘šNS›Q"  # Autokrator Isavros
+  "lšvQ˜S›Q"  # Autokrato Makedon
+  "ÄraSÉb"  # Thekla
+  "1WÄraSÉb"  # Agia Thekla
+  "gr^V÷–(„¯e"  # Papaflessas
+  "šN†SqS'Y Onf‰pQ‚„¯e"  # Alexandros Ypsilantis
+  "°e1reY<SšN"  # Nea Ionia
+  "?–Ì‘aS³u0t"  # Alikarnassos
+  "^ïQÕlÉb"  # Voukefalas
+  "wmjmN„vál«l"  # Afros tou Kymmatos
+  "wmKN«l"  # Afros tis Thalassas
+  "yrRÌ‘¯e"  # Trieiris
+  "OKNN"  # Iris
+  "¾+Y<S"  # Daphni
+  "(„Ébs|¯e"  # Salamis
+  ")nÉlKN0W"  # Thermopyles
+  "lšÉbŒg"  # Marathon
+  "nfÉbĞcšN"  # Platees
+  "^æt"  # Theva
+  "NÄ–IeÒVÜb"  # Epta Epi Thevas
+  "nfÉbĞcšN"  # Platees
+  "·V‡e<SaS"  # Dervenakia
+  "Œ‚KNòƒm âl)R"  # Elefthero Pouli
+  ">mÌ‘¯eğlÉb"  # Peristera
+  "KN„v>mÌ‘¯eğlÉb"  # Oraia Peristera
+  "„š²Pw"  # Perifanos
+  "„š²P"  # Perifani
+  "cƒw"  # Perifania
+  "?–ÑyÌ‘‚„·^"  # Akritikon
+  "ê1u‚˜"  # Eleftheros Poliorkimenos
+  "ê1u"  # Eleftheros
+  "ÃW±ƒ+Y^XÌ‘Z"  # Eleftheria
+  "Nê1uËkR‰k"  # Eleftheria H Thanatos
+  ",r9h<S ?–KQÌ‘¾¯e‡v^"  # Vasileios Digenis Akritas
+  "nfm¯eòƒåTnfÉb"  # Prosfygopoulla
+  "'Yeh"  # Giofyri
+  "z‚=gKNeh"  # Giofyrin tis Artas
+  "èwmKNeh"  # Gefyra
+  "^X÷–¯e"  # Serres
+  "yrÌ‘“^®v¯e"  # Trikoupis
+  "NKgw"  # Athanatos
+  "NKg"  # Athanati
+  "ˆR“Š³l"  # Styga
+  "1W?–TX³uîO¯e"  # Agios Athanasios
+  "1W?–TX³u‰Z"  # Agia Athanasia
+  "?–TX³u‰Z"  # Athanasia
+  "Øš²Pw"  # Agerochos
+  "Øš²P"  # Agerochi
+  "àeÈaïSûQ"  # Atrotos
+  "àeLe"  # Atroti
+  "^+YšNid¯e"  # Pachyammos
+  "lššN"  # Maa
+  "1W^Éb¯eïQôu"  # Agia Paraskevi
+  "1W^Éb¯eïQæt¯e"  # Agios Paraskevas
+  "Éb³uaS"  # Larnaka
+  "?–lšÏ‚¯e"  # Amathounta
+  "±ƒ…h0t¯e"  # Lemesos
+  "Ñym^"  # Kolossi
+  "èTÏP"  # Kolossos
+  "?–aSlš¯e"  # Akamas
+  "ÉbJ"  # Lara
+  "eY<S‰W¯e"  # Onisilos
+  "lšaSÌ‘eY¯e"  # Makarios
+  "1W<hÌ‘Øš)R"  # Agios Grigorios
+  "iOyrÉb"  # Petra
+  "‡±r"  # Kypseli
+  "…h‰ƒƒ"  # Melissa
+  "Ä‡"  # Sfikas
+  "Ä–ğS"  # Kifinas
+  "…h)R‚„<S"  # Meliteni
+  "NWyr)R"  # Kentri
+  "lš+YÉbeYÌ‘"  # Mavra Ori
+  "aSÉbTN‰¯e"  # Karagkiozis
+  "irËu¯e"  # Nionios
+  "³u+Y^KQXb¯e"  # Nafpaktos
+  "W˜"  # Rodon
+  "‰RZSWnfÉb"  # Emporopoulla
+  "FUºN"  # Emporas
+  "ÖwPR"  # Chontros
+  "0NUx"  # Chontri
+  "1WeYY¯e"  # Iera Odos
+  "ÃW<h³u‚„šN eYY¯e"  # Egnatia Odos
+  "ÃW<h³u‚„šN"  # Egnatia
+  "O<h³uĞc"  # Ignatios
+  "TX)R¯e"  # Thalis
+  "'kàQÌ‘—V"  # Efkleidis
+  "s|m¯e"  # Milos
+  "eYs|m"  # Omiros
+  "OÌ‘šN¾"  # Iliada
+  "eY·Vi"  # Odysseia
+  "òƒšNaS¯e"  # Faiakas
+  "òƒÉbaS¯e"  # Fylakas
+  "ÈTSúW¯e"  # Chalkida
+  "Vi)R¾"  # Psalida
+  "fµ^"  # Zodia
+  "«ƒSy"  # Morfou
+  "àebVv`T›"  # Aeriko
+  "¯eyráQ³u"  # Stefana
+  "¦hó`"  # Oneiro
+  "eY³uS"  # Onar
+  "OÉbÌ‘Á"  # Ilarion
+  "1WOÉbÌ‘Á"  # Agios Ilarion
+  "ÃWV‚„GYšN"  # Eftychia
+  "1WŒ‚V‚„úWeY¯e"  # Agios Eftychios
+  "p`Éb"  # Chara
+  "s|¯eyrÉb¯e"  # Mystras
+  ",r	Någt"  # 3 Charites
+  "ÙNsY"  # Nymfi
+  "Ròƒ¯e"  # Nymfes
+  "?–Ì‘?–·V…m"  # Ariadni
+  "ëXuQ"  # Stratiotis
+  "^Ì‘aSÉb¯e"  # Palikaras
+  "lšÑy¯e âlNb)R¯e"  # Markos Mpotsaris
+  "ÉbÆYnf¯e aSîh<S¯e"  # Lampros Katsonis
+  "™ŸŒ†"  # Karavida
+  "ƒ‡ù‡"  # Kavouri
+  "lšZ ïQƒl3tZ"  # Mana Kavourina
+  "lšZ"  # Mana
+  "lšZ “^Éb	TeY"  # Mana Kouragio
+  "“^Éb	TeY"  # Kouragio
+  "S¹e"  # Voreios
+  "WS¹e"  # Notios
+  "ÄreYYÉb„vİQÆ‰"  # To Vlemma tis Theodoras
+  "Ì‘POaSS^0t"  # Rizokarpaso
+  "÷–mt"  # Lysis
+  "^^XßuN"  # Enosis
+  "òƒ)Râl¯eŒTlšvQ˜"  # Philippos o Makedon
+  "'k2m"  # Evropi
+  "wmôTY"  # Ypatia
+  "?–Ì‘¯eTXKQ¯e"  # Aristarchos
+  "OŠw"  # Aristos
+  "^J"  # Ellada
+  "^JºN"  # Ellinopoulla
+  "WlšºN"  # Romiopoulla
+  "KNw"  # Omorfi
+  "eYidVÉb"  # Omorfoulla
+  "‡YsY"  # Gynaika
+  "kp0qNsYºNNwmm"  # Pyr Gyni kai Thalassa
+  "b1S"  # Athlos
+  "ƒ"  # Mpessa
+  "O’V"  # Apostolos
+  "^y1WKN^"  # Pani tou Osiou
+  "1W^"  # Osio Pani
+  "9‚•"  # Kapetanios
+  "0‚•"  # Kapetaneos
+  "Á”2•"  # Sfyra
+  "wmŸŸ"  # Chelona
+  "uN+t«R"  # Porfyrogennitos
+  "ZSòƒW9h<S¯e"  # Porfyrogenis
+  "ZSòƒW¯e"  # Porfyros
+  "ÑáwPR"  # Mavrogenis
+  "fgmQ"  # Savatogennimenos
+  "fg)Y"  # Kyriaki
+  "šN†SKQ‰¯e‹s"  # Re Alexis
+  "lQIN"  # Prigkipessa
+  "‹sPR"  # Prigkips
+  "grŠºN"  # Voskos
+  "grl"  # Poimenas
+  "TX³uXb¯e"  # Thanatos
+  "ıV¶R"  # Ethnikos
+  "eY—g9SšN"  # Olympia
+  "eY—g9SšNÑy¯e"  # Olympiakos
+  "Ğ¨Rw"  # Athlitis
+  "?–KQîO¯e"  # Axios
+  "‰RTXîO¯e"  # Antaxios
+  "i—‹T"  # Antartis
+  "aSÌ‘<SÑy¯e"  # Kallinikos
+  "nf÷–¯e^"  # Prespa
+  "0tòƒZ"  # Sofia
+  "1W0tòƒšN"  # Agia Sofia
+  "^Ébå‹šN"  # Vlacheia
+  "^ÉbÑynfÉb"  # Vlachopoulla
+  "^ÉbR³u"  # Vlacherna
+  "aSÕl"  # Kaffa
+  "idS¾ôušN"  # Moldavia
+  "İO R)RšN"  # Vulgaria
+  "^XSôušN"  # Servia
+  "lš+YWLN<SeY"  # Mavrovunion
+  "ÉbäS(„"  # Ragusa
+  "ıÉbPŸÁ"  # Dyrrachion
+  "aS¯eXbÌ‘šN"  # Kastoria
+  "wmør"  # Kastoras
+  "(g™X"  # Xylino Toichos
+  "Êsú‹"  # Xoanon
+  "HSßW"  # Zoni
+  "NbW<h¯e"  # Zallogos
+  "^—Õl0W&^"  # O Choros tou Zallogou
+  "šNå‹šN"  # Achaea
+  "ÃWO³u"  # Aigina
+  "?–QSY¯e"  # Avydos
+  "?–NW0t¯e"  # Akanthos
+  "?–<hÌ‘<Si`"  # Agrinion
+  "šN†SqS'YÒRTX"  # Alexandretta
+  "^yr÷–"  # Patra
+  "‰RĞc^yrÉb"  # Antipatra
+  "?–s|0t¯e"  # Amisos
+  "?–lš—gÏ‚¯e"  # Amarinthos
+  "‰RĞcb³u"  # Antigona
+  "‰RĞcb…m"  # Antigoni
+  "‰Ròƒâl)R¯e"  # Amphipolis
+  "‰RagKQ"  # Antiocheia
+  "?–<SS"  # Anir
+  "‰R·VW¯e"  # Andros
+  "?–âlW<SšN"  # Apollonia
+  "?–Sb¯e"  # Argos
+  "O‰ƒšN"  # Elia
+  "Dj„ih"  # Elaion
+  "‰R	Tmâl)R"  # Argyroupoli
+  "•^<hÌ‘¯e"  # Tigris
+  "ğlW¯e"  # Tyros
+  "VàV<SúW"  # Foiniki
+  "?–¯eKQÒR‡^ÄO¯e"  # Asklepios
+  "ì„Xb¯e"  # Pontos
+  "^îO¯e"  # Pontios
+  "ætÌ‘"  # Varis
+  "KO"  # Verga
+  "Ôk^œ¯e"  # Vyvlos
+  "Üb`S­^"  # Vyzantion
+  "ZS¯enfœ¯e"  # Vosporos
+  "k0t<S0t¯e"  # Chersonesos
+  "ÈTSúW¯e"  # Chalkis
+  "KQW˜"  # Kroton
+  "fpQ<S"  # Kyrinea
+  "·VÑy)RšN"  # Dekeleia
+  "Ğcm"  # Delos
+  "¾Sòƒ"  # Delphoi
+  "`SjS^"  # Mantis
+  "ğl^t‰¯e"  # Tiresias
+  "`SjS^ğl^t‰¯e"  # Mantis Tiresias
+  "YY³u"  # Dodona
+  "YÌ‘±ƒLNÆY"  # Doryaion
+  "Y—g"  # Doryn
+  "(„Ì‘™l•Ûw"  # Sarissa
+  "YÌ‘¯eXb&O"  # Dorystolon
+  "0‚–"  # Stolos
+  "ÃWÒRV‰¯e"  # Elefsis
+  "åNVNb"  # Ephesos
+  "ÃW®v¾œ¯e"  # Epidavros
+  "ÃW÷–yrÌ‘šN"  # Eretria
+  "ÃWôušN"  # Efvoia
+  " R™l"  # Gaza
+  "²NºN"  # Gonios
+  "¶RºN"  # Goneas
+  "1WeYú‹VÌ‘ÄO¯e"  # Agios Onoufrios
+  "1WyrÌ‘šN¾"  # Agia Triada
+  "?–Ì‘aS³u0t"  # Alikarnassos
+  "k)ReYâl)R¯e"  # Helioupolis
+  "^J"  # Ellinikon
+  "6wÉbâl)R¯e"  # Ierapolis
+  "6wÉb>myrÉb"  # Ierapetra
+  "GYÉb"  # Chimera
+  "O?–‰Á"  # Iasos
+  "O?–)R0t¯e"  # Ialysos
+  "O(„aS"  # Ithaki
+  " RÌ‘âl)R"  # Kallipolis
+  "ñbè•"  # Kamares
+  "aS…hm¯e"  # Kameiros
+  "±‚íV"  # Kipos
+  "íV—g"  # Kipoi
+  "úW…hÌ‘TR"  # Kimmerikon
+  "<SY¯e"  # Knidos
+  "	TeY¯e"  # Kios
+  "=eñg"  # Kionas
+  "KQú‹0t¯e"  # Knossos
+  "Ñy¯e"  # Kos
+  "“^Ì‘‰R"  # Kourion
+  "³RêúWšN"  # Laodikeia
+  "Ébnf0t¯e"  # Lapithos
+  "÷–HQ"  # Lation
+  "÷–+YaS¾"  # Lefkada
+  ")R0t¯e"  # Lissos
+  "Ì‘àVY¯e"  # Lindos
+  "lš<h<S‰šN"  # Magnesia
+  "lšÉbŒg"  # Marathonas
+  "lš(„Ì‘šN"  # Massalia
+  "¦ RÉb"  # Megara
+  "È0t<S"  # Methoni
+  "s|)Rı"  # Militos
+  "s|Éb(„"  # Mylasa
+  "³u+YKQÉb‚„¯e"  # Nafkratis
+  "<SšNâl)R¯e"  # Neapolis
+  "<S‰šN"  # Nikea
+  "<SÑyâl)R¯e"  # Nikopolis
+  "<S0N"  # Nymfeon
+  "<S(„"  # Nysa
+  "eY·V0t¯e"  # Odessos
+  "eYSÔkšN"  # Olvia
+  "eYS—Èú‹¯e"  # Orchomenos
+  "Œ‚Ñys|ú‹¯e"  # Erchomenos
+  "^±ƒaS¯eyrW"  # Palaikastro
+  "XoY‰šN"  # Pandosia
+  "òƒ¯eXb¯e"  # Festos
+  "Ôk÷–šN¯e"  # Pirreas
+  "iOÉb"  # Pella
+  "Õl³ubÌ‘šN"  # Phanagoria
+  "^+YÉbb<SšN"  # Pamflagonia
+  "Õl³uúWšN"  # Farnakia
+  "ÕlWN"  # Faros
+  "òƒ)Rnf"  # Fillipoi
+  "òƒ)Rnfâl)R¯e"  # Fillipopolis
+  "nfÉbTXú‹¯e"  # Platanos
+  "yúW¾"  # Fokida
+  "V	TšN"  # Fokea
+  "ÃW)R¯e"  # Elis
+  "NW^<SšN"  # Kampania
+  "uâl±"  # Kampana
+  "âl^X¬Q<SšN"  # Poseidonia
+  "‰Vm¯e"  # Psychros
+  "nfiÉb"  # Pseira
+  "®vmëX"  # Pylos
+  "iOÌ‘i`"  # Pylion
+  "‰RiO)RšN¯e"  # Amforeas
+  "KQÉbŒgVÉb"  # Krassoamfora
+  "÷–	Ti`"  # Region
+  "!•ú‹nf"  # Sinopi
+  "0tPOâl)R¯e"  # Sozopolis
+  "®v‰‚„šN"  # Pisidia
+  "TX0t¯e"  # Thassos
+  "Är¯eÔkšN"  # Thespia
+  "yrÉbäSÌ‘‰R"  # Tragurion
+  "yrÉb^—R"  # Trapeza
+  "1WyrÉb^—R"  # Agia Trapeza
+  "yrÌ‘âl)R¯e"  # Tripolis
+  "yrWšN"  # Troia
+  "ğlÌ‘0t¯e"  # Tylissos
+  "ğlÉb"  # Tyra
+  "ôT‰Ì‘úW"  # Vasilliki
+  "NbKQW¯e"  # Zakros
+  "ôTòƒiOyrÉb"  # Vathypetra
+  " RmiOyrÉb"  # Megalopetra
+}
+army_names = {
+  "r‚÷–¯e›QHS"  # Thema Thrakes
+  "lšvQ˜›QHS"  # Thema Makedonikon
+  "^’dW<Sæ›QHS"  # Thema Thessalonikes
+  "kÉb‚„·^›QHS"  # Thema Helladikon
+  "eYnf^Ñ‘›QHS"  # Thema Opsikion
+  "eYnfĞc›s›QHS"  # Thema Optimaton
+  "^+YÉbb<SšN›QHS"  # Thema Paphlagonia
+  "$PROVINCE$›QHS"  # Thema $PROVINCE$
+}
+fleet_names = {
+  "úWÔkÉbeYyr›QHS"  # Thema Cibyrraeoton
+  "^XnfÌ‘šN›QHS"  # Thema Cypriakon
+  "1r4twm›QHS"  # Thema Aigaeou Pelagous
+  "‰‰Ì‘›QHS"  # Thema Sicelias
+}

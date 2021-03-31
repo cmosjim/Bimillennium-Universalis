@@ -1,0 +1,156 @@
+graphical_culture = westerngfx
+colonial_parent = SPA
+random_nation_chance = 0
+color = {
+  19
+  124
+  139
+}
+historical_idea_groups = {
+  early_religious_ideas
+  early_mil_ideas
+  early_trade_ideas
+  early_adm_ideas
+  xingjun_ideas
+  kaituo_ideas
+  junqu_ideas
+  defensive_ideas
+  offensive_ideas
+  administrative_ideas
+  economic_ideas
+  trade_ideas
+  religious_ideas
+  diplomatic_ideas
+  spy_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  spanish_tercio
+  austrian_tercio
+  austrian_grenzer
+  austrian_hussar
+  austrian_white_coat
+  austrian_jaeger
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "’dæ)RšN #0" = 10  # Zacarías #0
+  "ôuKQY #0" = 10  # Víctor #0
+  "ôuîhyr #0" = 10  # Vicente #0
+  "XbÌ‘ôueY #0" = 10  # Toribio #0
+  "Qh¾Ì‘eY #0" = 10  # Sandalio #0
+  "Éb™„ #0" = 10  # Ramón #0
+  "âlSòƒÌ‘eY #0" = 10  # Porfirio #0
+  "eY¯eætSY #0" = 10  # Osvaldo #0
+  "³uTX)ReY #0" = 10  # Natalio #0
+  "…hSTN #0" = 10  # Melchor #0
+  "lšÑy¯e #0" = 10  # Marcos #0
+  "üfªRÃWS #0" = 10  # Manuel #0
+  "bS‰eY #0" = 10  # Lucio #0
+  "UO^X ‰¯eXb #0" = 10  # José Sixto #0
+  "UO^X s|<hS #0" = 10  # José Miguel #0
+  "UO^X ›sKNšN #0" = 10  # José María #0
+  "UO^X üfªRÃWS #0" = 10  # José Manuel #0
+  "yŠÆY #0" = 10  # Jaime #0
+  "O<h³u‰eY #0" = 10  # Ignacio #0
+  "eYÉb‰eY #0" = 10  # Horacio #0
+  "pgÉbSY #0" = 10  # Gerardo #0
+  "Vg‰¯eÑy #0" = 10  # Francisco #0
+  "9)RKQ¯e #0" = 10  # Félix #0
+  "'k¨N<SeY #0" = 10  # Eugenio #0
+  "i`Ì‘KQ #0" = 10  # Enrique #0
+  "ÃWs|)RšNú‹ #0" = 10  # Emiliano #0
+  "åN)RšN #0" = 10  # Elías #0
+  "9N<SS #0" = 10  # Daniel #0
+  "aSm¯e #0" = 10  # Carlos #0
+  "aS)R¯eXb #0" = 10  # Calixto #0
+  "^Éb¯e #0" = 10  # Blas #0
+  "?–şVW #0" = 10  # Arturo #0
+  "?–SüfY #0" = 10  # Armando #0
+  "?–SætW #0" = 10  # Álvaro #0
+  "?–SV÷–Y #0" = 10  # Alfredo #0
+  "(„SætY #0" = 10  # Salvador #0
+  "6w1z #0" = 10  # Jesús #0
+  "9)RiO #0" = 10  # Felipe #0
+  "‰RkS #0" = 10  # Ángel #0
+  "?–äS¯eN #0" = 10  # Agustín #0
+}
+leader_names = {
+  "?–S¾lš"  # Aldama
+  "?–Ş·V"  # Allende
+  "?–Sæt÷–¯e"  # Álvarez
+  "³u‡eyr"  # Benavente
+  "^Ébƒl"  # Bravo
+  "^¯eTXüfyr"  # Bustamante
+  "aS·V³u¯e"  # Cárdenas
+  "aSÉb’d"  # Carranza
+  "Ñy™„yyr"  # Comonfort
+  "êšNëX"  # Díaz
+  "YfåT"  # Domingo
+  "ÃWågætÌ‘"  # Echávarri
+  "O)RšN"  # Elías
+  "ÃW)RŒgY"  # Elizondo
+  " Reg?–³u"  # Galeana
+  " R‰šN"  # García
+  "b¦¯e"  # Gómez
+  "ˆQ(„÷–¯e"  # Gonzalez
+  "<h÷–Y"  # Guerrero
+  "O¾Sb"  # Hidalgo
+  "æ—STX"  # Huerta
+  "O<h±ƒ‰šN¯e"  # Iglesias
+  "OşVSôu·V"  # Itúrbide
+  "áwšN÷–¯e"  # Juárez
+  "±ƒf ·V Éb ôTÉb"  # León de la Barra
+  "±ƒÒRY ·V yrÈT¾"  # Lerdo de Tejada
+  "miOyQ"  # López
+  "lš·VW"  # Madero
+  "lšTX«ƒW¯e"  # Matamoros
+  "…h^šN"  # Mejía
+  "è•Y(„"  # Mendoza
+  "s|³u"  # Mina
+  "s|Éb™„"  # Miramón
+  "«ƒÉb"  # Mora
+  "«ƒ÷–m¯e"  # Morelos
+  "«ƒ÷–ú‹"  # Moreno
+  "…Q<h÷–yr"  # Negrete
+  "eY^÷–!"  # Obregón
+  "eYÌ‘‚„yQ"  # Ortíz
+  "®vú‹"  # Pino
+  "Ébs|÷–yQ ·V ÃW÷–Ébú‹"  # Ramírez de Arellano
+  "Éblb"  # Rayón
+  "œO¯e ·V ?–âl¾aS"  # Ruíz de Apodaca
+  "1W‰RZ"  # Santa Anna
+  "Ï‚šN÷–¯e"  # Suárez
+  "Xb÷–¯e"  # Torres
+  "ôuY)RšN"  # Victoria
+  "ôušN"  # Villa
+  "(„Ébb(„"  # Zaragoza
+  "·V („ætÉb"  # de Zavala
+}
+ship_names = {
+  "?–æt0tW"  # Abasolo
+  "?–Ş·V"  # Allende
+  "^Ébƒl"  # Bravo
+  "jgpQb"  # Durango
+  " Reg?–³u"  # Galeana
+  "Üt³uÔkXb"  # Guanjuato
+  "ObSO>s|±"  # Ilhunicamina
+  "NS÷–¯e"  # Juarez
+  "…Q(„ætSKQPNyrS"  # Netzahualcoyotl
+  "W…hW"  # Romero
+  "iÌ‘šN"  # Serria
+  "0tú‹Éb"  # Sonora
+  "ôuÉbKQœ¯e"  # Veracruz
+  "ôuY)RšN"  # Victoria
+}
+army_names = {
+  "$PROVINCE$›Q"  # Ejército de $PROVINCE$
+}
+fleet_names = {
+  "$PROVINCE$0‚–"  # Flota de $PROVINCE$
+}

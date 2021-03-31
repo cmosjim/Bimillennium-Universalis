@@ -1,0 +1,49 @@
+#northern xio
+DAX_ideas = {
+	start = {
+		global_manpower_modifier = 0.2
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		naval_forcelimit_modifier = 0.25
+	}
+	
+	trigger = {
+	   tag = DAX
+	}
+
+	free = yes
+	
+	kill_dong_zhuo = {
+		prestige = 1
+		leader_land_fire = 1
+	}
+	
+	yanzhou_and_xuzhou = {
+		defensiveness = 0.20
+		land_forcelimit_modifier = 0.1
+	}
+	
+	black_mountain_army = {
+		land_attrition = -0.2
+	}
+
+	yuan_men_she_ji = {
+		diplomatic_reputation = 1
+		trade_range_modifier = 0.10
+	}
+	
+	red_horse = {
+		production_efficiency = 0.1
+		leader_land_manuever = 1
+	}
+
+	meaning_daxing = {
+		adm_tech_cost_modifier = -0.15
+	}
+
+	jiang_huai_base = {
+		diplomats = 1
+	}
+}

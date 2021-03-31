@@ -1,0 +1,120 @@
+graphical_culture = westerngfx
+colonial_parent = SPA
+random_nation_chance = 0
+color = {
+  139
+  179
+  207
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  zhongqi_ideas
+  rongren_ideas
+  shenquan_ideas
+  defensive_ideas
+  spy_ideas
+  trade_ideas
+  offensive_ideas
+  diplomatic_ideas
+  innovativeness_ideas
+  economic_ideas
+  religious_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  swiss_landsknechten
+  dutch_maurician
+  french_caracolle
+  anglofrench_line
+  french_dragoon
+  french_bluecoat
+  french_cuirassier
+  french_impulse
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "VÒRS #0" = -1  # Fleur #0
+  "aSs|S #0" = -1  # Camille #0
+  "S³uÛyr #0" = -1  # Bernadette #0
+  "‡eîhyr #0" = 0  # Vincent #0
+  "‰SN #0" = 0  # Sylvain #0
+  "^XÉb¬‚ #0" = 0  # Séraphin #0
+  "÷–ú‹ #0" = 0  # Renaud #0
+  "S›R #0" = 0  # Philippe #0
+  "^¯eaS #0" = 0  # Pascal #0
+  "eY)Rôu6w #0" = 0  # Olivier #0
+  "«ƒÌ‘¯e #0" = 0  # Maurice #0
+  "lš‚„„S #0" = 0  # Mathieu #0
+  "lšÌ‘LN¯e #0" = 0  # Marius #0
+  "áw‰R #0 ®vÃWS" = 0  # Juan #0 Pierre
+  "©‹ #0 ïf" = 0  # Jean #0 Louis
+  "©‹ #0 Å–KQ" = 0  # Jean #0 Jacques
+  "r #0 ôTĞc¯e" = 0  # Jean #0 Baptiste
+  "eYÉb^X #0" = 0  # Horace #0
+  "eYú‹÷– #0" = 0  # Honoré #0
+  "ípW #0" = 0  # Géraud #0
+  "TN»l #0" = 0  # Georges #0
+  "VmÌ‘‰R #0" = 0  # Florian #0
+  "9)RKQ¯e #0" = 0  # Félix #0
+  "y¯efW #0" = 0  # Faustin #0
+  "ÕlÔkf #0" = 0  # Fabien #0
+  "„S¯eTXÀN #0" = 0  # Eustache #0
+  "OüfËuS #0" = 0  # Emmanuel #0
+  "1r·VNS #0" = 0  # Édouard #0
+  "9N<S¯e #0" = 0  # Denis #0
+  "KQm·V #0" = 0  # Claude #0
+  "ågS¯e #0" = 0  # Charles #0
+  "^œú‹ #0" = 0  # Bruno #0
+  "=O³u·V #0" = 0  # Bernard #0
+  "‰R^œætyQ #0" = 0  # Ambroise #0
+  "šN†SqS'Y #0" = 0  # Alexandre #0
+  "?–S #0" = 0  # Albert #0
+  "?–úW±ƒ #0" = 0  # Achille #0
+  "÷–™„ #0" = 5  # Raymond #0
+  "¦umt+Y #0" = 5  # Joseph #0
+  "ïf #0" = 10  # Louis #0
+  "Å–KQ #0 ôuKQY" = 10  # Jacques #0 Victor
+  "Å–KQ #0" = 20  # Jacques #0
+  "¨N)R #0" = 20  # Henri #0
+}
+leader_names = {
+  "^ætÏ‚"  # Biassou
+  "Vg0tæt"  # François
+  "·V 'kHY"  # d'Aulnay
+  "·V ^æt‰„S"  # de Boissieu
+  "·V ZS³uÌRæt"  # de Bonnefoy
+  "·V S^†–<S"  # de Chambronne
+  "·V SnflšN"  # de Champmartin
+  "·V ÃWHSS"  # des Ecures
+  "·V  RÉbS"  # de Galard
+  "·V ^XÔk6w"  # des Herbiers
+  "·V lšSÖv6w"  # de Marguerye
+  "·V «ƒÒR^"  # de Maurepas
+  "·V eY³uú‹"  # d'Ornano
+  "·V ®vÒR6wy"  # de Pellefort
+  "·V ‰eYÉbKQ"  # de Siorac
+  "·V yr÷–ôuS"  # de Tréville
+  "·V ôuÔk‰R"  # de Vibien
+  "·V ôu<S"  # de Vigny
+  "ÒR ğl)R6w"  # Le Tellier
+}
+ship_names = {
+  "^—2mKNÒ‰"  # la Belle Poule
+  "1WÍk‰kSw"  # le Magnifique
+  "ÛVDQV"  # le Neptune
+  "Wlš‹s"  # l'Océan
+  "nfWúe¯e"  # la Provence
+  "le Robuste"
+  "1WO<SšN¯e"  # le Sceptre
+  "ÏV”`w1Wïf"  # la Superbe
+  "1Wòƒ)Rnf"  # la Trombe
+  "1W®vÃWS"  # le Triton
+  "Üw)RsY^y"  # la Victoire
+}

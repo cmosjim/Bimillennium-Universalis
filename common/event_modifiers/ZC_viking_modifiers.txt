@@ -1,0 +1,42 @@
+west_navigation = {
+	movement_speed_in_fleet_modifier = 0.1
+	naval_attrition = -0.1
+}
+
+way_to_west = {
+	global_colonial_growth = 15
+	colonist_placement_chance = 0.05
+}
+
+northern_pirate = {
+	capture_ship_chance = 0.1
+	light_ship_cost = -0.15
+}
+
+europe_slave_market = {
+	province_trade_power_value = 5
+}
+
+viking_settlement = {
+	global_unrest = -2
+}
+
+invade_frank = {
+	land_morale = 0.1
+	naval_maintenance_modifier = -0.1
+}
+
+empire_of_the_north_sea = {
+	navy_tradition = 0.5
+	prestige = 0.5
+}
+
+nordic_overlord = {
+	infantry_power = 0.1
+	land_morale = 0.1
+}
+
+promote_danelaw = {
+	global_tax_modifier = -0.1
+	global_colonial_growth = 15
+}

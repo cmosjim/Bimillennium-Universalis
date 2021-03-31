@@ -1,0 +1,147 @@
+graphical_culture = indiangfx
+color = {
+  36
+  109
+  194
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  xingjun_ideas
+  shentou_ideas
+  junqu_ideas
+  trade_ideas
+  maritime_ideas
+  humanist_ideas
+  quantity_ideas
+  economic_ideas
+  defensive_ideas
+  diplomatic_ideas
+  quality_ideas
+}
+historical_units = {
+  indian_footsoldier
+  rajput_hill_fighters
+  indian_arquebusier
+  mughal_musketeer
+  rajput_musketeer
+  mughal_mansabdar
+  indian_elephant
+  sikh_hit_and_run
+  bhonsle_cavalry
+  indian_rifle
+  tipu_sultan_rocket
+}
+monarch_names = {
+  "aSõs…b #0" = -1  # Kamala #0
+  "(ÑZyr #0" = -1  # Sharat #0
+  "löKNaS ‘k‘k #0" = -1  # Malika Bibi #0
+  "»T∆YNb #0" = 0  # Hamza #0
+  "Wñ #0" = 0  # Raja #0
+  "s|SNb #0" = 0  # Mirza #0
+  "	TöNœÇN #0" = 0  # Ghiyasuddin #0
+  "≥uâS #0" = 0  # Nasir #0
+  "ÙT6w˙W∑V #0" = 0  # Bayazid #0
+  "’lTXkç #0" = 0  # Fateh #0
+  "≥uØe…byr #0" = 0  # Nasrat #0
+  "ÚÉÅúyQ #0" = 0  # Firuz #0
+  "ØOiç‡V #0" = 0  # Husain #0
+  "O.tèy #0" = 0  # Yusuf #0
+  "’lÃë∑V #0" = 0  # Farid #0
+  "ÙTSÙTKQ #0" = 0  # Barbak #0
+  "?ñ^ ≥u(ÑS #0" = 0  # Abu Nasr #0
+  "åÇ»T»è∑V #0" = 0  # Ahmad #0
+  "?ñNb∆Y #0" = 0  # Azam #0
+  "Ç>çN FzUÿû∑V #0" = 5  # Shuja' ad-Din Muhammad #0
+  "FzS^∑V ì^Ãë #0" = 5  # Murshid Quli #0
+  "œÇ±É¸f #0" = 5  # Sulayman #0
+  "æèLN∑V #0" = 5  # Da'ud #0
+  "	TöNâLNN >ç…b“R #0" = 5  # Ghiyat ad-Din Jalal #0
+  "	TöNâLNN ÙT»TjgS #0" = 5  # Ghiyat ad-Din Bahadur #0
+  "	TöNØeLNN lö»TÉ∑V #0" = 5  # Ghiyasuddin Mahmud #0
+  "	TöNØeLNN ?ñNb∆Y #1" = 5  # Ghiyasuddin Azam #1
+  "içIN+YLNN »T∆YNb #1" = 5  # Sayf-ud-Din Hamza #1
+  "s|S aSâ∆Y ?ñÃë #0" = 5  # Mir Qasim 'Ali #0
+  "^»TjSLNN ÙTöNPü∑V #1" = 5  # Shihab-ud-Din Bayazid #1
+  "s|S FzUÿû∑V >ç’lS #0" = 10  # Mir Muhammad Ja'far #0
+  "ôl∆YØeLNN FzUÿû∑V #0" = 10  # Shams-ud-Din Muhammad #0
+  "ôl∆YØeLNN åÇ»T»è∑V #1" = 10  # Shams-ud-Din Ahmad #1
+  "ôl∆YØeLNN O.tèy #1" = 10  # Shams-ud-Din Yusuf #1
+  "s|SNb FzUÿû∑V #0" = 10  # Mirza Muhammad #0
+  "OØepQ #0" = 10  # Islam #0
+  ">ç…bÅúN FzUÿû∑V #1" = 10  # Jalaluddin Mohammed #1
+  "≥uâSN ≥uØe…byr #0" = 10  # Nasir ad-Din Nasrat #0
+  "≥u^SLNN lö»TÉ∑V #1" = 20  # Nasir-ud-Din Mahmud #1
+  ">ç…b“RN ’lTXkç #0" = 10  # Jalal ad-Din Fateh #0
+  "ÅúKQLNN ÙTSÙTKQ #0" = 10  # Rukn ad-Din Barbak #0
+  "?ñ…bLNN ÚÉÅúyQ #2" = 20  # Ala-ud-Din Firuz #2
+  "ÇS #0" = 20  # Sher #0
+  "!ïNWæèS #1" = 20  # Sikandar #1
+}
+leader_names = {
+  "?ñNb∑V"  # Azad
+  "?ñ∑V Sê…b"  # ad-Daula
+  "KOÖQ¿N"  # Ganesha
+  "jSrÇ"  # Bose
+  "TNjgÃë"  # Chodhury
+  "æèØe"  # Das
+  "∑V^¿NKQæèS"  # Debshikdar
+  "u‰S)R"  # Ganguly
+  "TN¿N"  # Ghosh
+  "aS…b<S"  # Karani
+  "Wl"  # Khan
+  "löESæèS"  # Majumdar
+  "FzKQSpg"  # Mukerjhee
+  "ÙT“R"  # Pal
+  "ÅúO"  # Roy
+  "(Ñ…bÊt–c"  # Saraswoti
+  "(ÑaSS"  # Sarkar
+  "Ç"  # Sen
+  "ôl^"  # Shahi
+  "0åkç"  # Shaikh
+  "œÇS"  # Suri
+  "TXì^S"  # Thakur
+  "Êt∑VæèS"  # Waddedar
+  "Nbs|æèS"  # Zamindar
+}
+ship_names = {
+  "?ñ^ÙTKQS"  # Abu Bakr
+  "?ñÃëWl"  # Ali Khan
+  "^	T…b–c"  # Bhagirathi
+  "^…blönfyr…b"  # Brahmaputra
+  "dç	T…b löPü"  # Chingri Mach
+  "	T'Y=n"  # Chittagong
+  "jgSÙT"  # Durbar
+  "jgSæèôl"  # Durdasha
+  "’l–clö"  # Fatima
+  "R`≥l"  # Ganga
+  "wm“Rôl löPü"  # Hilsa Mach
+  "·w<h)R"  # Hooghly
+  "O)RØe löPü"  # Ilish Mach
+  ">çpQ	T"  # Jalangi
+  "	ÉâÉ±Ç"  # Jasmine
+  "†RSTTr"  # Kolkata
+  "löPüÃë"  # Machli
+  "aSÃë ÖhKQ≥u"  # Kali Meghana
+  "aSÃë YtKQ"  # Kali Nauk
+  "…bS YtKQ"  # Lal Nauk
+  "löSæè"  # Malda
+  "ÖhKQ≥u"  # Meghna
+  "´ÉgS?Q"  # Mongla
+  "FzS¿N^æèÙT∑V"  # Murshidabad
+  "YtKQ O (Ñ)R∆Y"  # Nauk-i-Islam
+  "≥uÊt^ YtKQ"  # Nawaber Nauk
+  "<SS YtKQ"  # Nil Nauk
+  "<SS (Ñ‰SS"  # Nil Sagor
+  "eYØe¸f"  # Osman
+  "^∑Võs"  # Padma
+  "ÅúO löPü"  # Rui Mach
+  "(Ñ‰SS ÙTkç)R"  # Sagorer Bahini
+  "ôlkç∑V"  # Shaheed
+  "ôlWl YtKQ"  # Sheikher Nauk
+  "(Ñ‰SS mR†R…b"  # Sonar Bangladesh
+  "ãRæè=O<SS ÙTkç)R"  # Sunderboner Bahini
+  "ãRæè=O<SS YtKQ"  # Sunderboner Nauk
+  "TXØe“Rõs"  # Tasleema
+}

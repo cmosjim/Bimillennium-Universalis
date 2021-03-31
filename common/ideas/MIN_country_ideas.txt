@@ -1,0 +1,45 @@
+MIN_ideas = {
+	start = {
+		build_cost = -0.10
+		tolerance_own = 1
+	}
+
+	bonus = {
+		land_maintenance_modifier = -0.2
+	}
+	
+	trigger = {
+		OR = {
+			tag = MIN
+			tag = MNN
+			tag = QU1
+			tag = MN1
+		}	
+	}
+	free = yes		#will be added at load.
+	
+	natural_barrier_around = {
+		defensiveness = 0.2
+	}
+	fishery_harvesting = {
+		production_efficiency = 0.10
+	}
+	who_auxiliary_country = {
+		global_tax_modifier = 0.1
+		prestige_decay = -0.01
+	}
+	zongzu_ruler = {
+		stability_cost_modifier = -0.1
+	}
+	dodge_fight = {
+		free_leader_pool = 1
+		discipline = 0.05
+	}
+	excellent_navy_min = {
+		naval_attrition = -0.25
+	}
+	min_yue_wang_cheng = {
+		num_accepted_cultures = 1
+		discovered_relations_impact = -0.25
+	}
+}

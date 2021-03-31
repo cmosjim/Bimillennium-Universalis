@@ -1,0 +1,12 @@
+livius = {
+	monarch_power = ADM
+	# Bonus
+   stability_cost_modifier = -0.25
+	skill_scaled_modifier = {meritocracy = 0.25 }
+	chance = {
+		factor = 0
+	}
+	ai_will_do = {
+		factor = 1
+	}		
+}

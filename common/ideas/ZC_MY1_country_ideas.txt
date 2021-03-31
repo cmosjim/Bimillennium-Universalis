@@ -1,0 +1,48 @@
+MY1_ideas = {
+	start = {
+		infantry_power = 0.15
+		prestige = 1
+	}
+	
+	bonus = {
+		governing_capacity = 100
+	}
+
+	trigger = {
+		tag = MY1
+	}
+
+	free = yes
+
+	conquer_India = {
+		years_of_nationalism = -5
+	}	
+
+	war_and_peace = {
+		land_morale = 0.1
+		global_unrest = -1
+	}
+
+	taxes_and_production = {
+		global_tax_modifier = 0.1
+		production_efficiency = 0.1
+	}
+
+	investigating_mass_condition = {
+		stability_cost_modifier = -0.15
+	}
+
+	religion_tolerance = {
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+	}
+
+	MY1_spread_of_Buddhism = {
+		diplomatic_reputation = 2
+	}
+
+	monarch_the_highest = {
+		legitimacy = 1
+		administrative_efficiency = 0.05
+	}
+}

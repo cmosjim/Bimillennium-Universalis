@@ -1,0 +1,1484 @@
+wenwu55_59 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 55
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 60
+            }
+        }
+    }
+    development_cost = -0.10
+    global_unrest = -1
+
+}
+wenwu60_64 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 60
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 65
+            }
+        }
+    }
+
+    development_cost = -0.15
+    global_unrest = -2
+    advisor_cost = -0.10
+    production_efficiency = 0.10
+    global_tax_modifier = 0.10
+    land_maintenance_modifier = 0.15
+    discipline = -0.025
+	governing_capacity = 400
+}
+
+wenwu65_69 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 65
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 70
+            }
+        }
+    }
+
+    development_cost = -0.20
+    global_unrest = -3
+    advisor_cost = -0.10
+    production_efficiency = 0.15
+    global_tax_modifier = 0.10
+    stability_cost_modifier = -0.15
+    land_maintenance_modifier = 0.20
+    discipline = -0.05
+    land_morale = -0.10
+	governing_capacity = 600
+}
+
+wenwu70_74 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 70
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 75
+            }
+        }
+    }
+
+    development_cost = -0.20
+    global_unrest = -4
+    missionaries = 1
+    diplomatic_reputation = 0.5
+    diplomatic_upkeep = 1
+    diplomats = 1
+    advisor_cost = -0.20
+    production_efficiency = 0.20
+    global_tax_modifier = 0.10
+    stability_cost_modifier = -0.20
+    land_maintenance_modifier = 0.20
+    discipline = -0.075
+    land_morale = -0.15
+    shock_damage_received = 0.1
+    fire_damage_received = 0.1
+    defensiveness = -0.1
+	governing_capacity = 800
+}
+
+wenwu75_79 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 75
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 80
+            }
+        }
+    }
+
+    development_cost = -0.20
+    missionaries = 1
+    diplomatic_reputation = 1
+    diplomats = 1
+    diplomatic_upkeep = 1
+    global_unrest = -5
+    advisor_cost = -0.25
+    production_efficiency = 0.20
+    global_tax_modifier = 0.15
+    stability_cost_modifier = -0.25
+    land_maintenance_modifier = 0.20
+    discipline = -0.10
+    land_morale = -0.20
+    shock_damage_received = 0.2
+    fire_damage_received = 0.2
+    defensiveness = -0.2
+	governing_capacity = 800
+}
+
+wenwu80_84 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 80
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 85
+            }
+        }
+    }
+
+    development_cost = -0.25
+    global_unrest = -6
+    missionaries = 1
+    diplomatic_reputation = 1.5
+    diplomats = 1
+    diplomatic_upkeep = 1
+    advisor_cost = -0.25
+    production_efficiency = 0.20
+    global_tax_modifier = 0.15
+    stability_cost_modifier = -0.25
+    land_maintenance_modifier = 0.30
+    discipline = -0.15
+    land_morale = -0.30
+    shock_damage_received = 0.3
+    fire_damage_received = 0.3
+    defensiveness = -0.3
+	governing_capacity = 800
+}
+
+wenwu85_89 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 85
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 90
+            }
+        }
+    }
+
+    development_cost = -0.25
+    missionaries = 1
+    diplomatic_reputation = 2
+    diplomats = 1
+    diplomatic_upkeep = 2
+    global_unrest = -8
+    advisor_cost = -0.25
+    production_efficiency = 0.25
+    global_tax_modifier = 0.15
+    stability_cost_modifier = -0.25
+    land_maintenance_modifier = 0.30
+    discipline = -0.25
+    land_morale = -0.40
+    shock_damage_received = 0.4
+    fire_damage_received = 0.4
+    defensiveness = -0.4
+	governing_capacity = 800
+}
+
+wenwu90_94 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 90
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 95
+            }
+        }
+    }
+    development_cost = -0.25
+    missionaries = 2
+    diplomatic_reputation = 2
+    diplomats = 2
+    diplomatic_upkeep = 2
+    global_unrest = -9
+    advisor_cost = -0.25
+    production_efficiency = 0.25
+    global_tax_modifier = 0.15
+    stability_cost_modifier = -0.25
+    land_maintenance_modifier = 0.30
+    discipline = -0.50
+    land_morale = -0.60
+    shock_damage_received = 0.8
+    fire_damage_received = 0.8
+    defensiveness = -0.5
+	governing_capacity = 800
+}
+
+wenwu95_100 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 95
+        }
+    }
+
+    development_cost = -0.30
+    missionaries = 2
+    diplomatic_reputation = 2
+    diplomats = 2
+    diplomatic_upkeep = 2
+    global_unrest = -9
+    advisor_cost = -0.40
+    production_efficiency = 0.30
+    global_tax_modifier = 0.20
+    stability_cost_modifier = -0.25
+    land_maintenance_modifier = 0.30
+    discipline = -0.80
+    land_morale = -1
+    shock_damage_received = 1.6
+    fire_damage_received = 1.6
+    defensiveness = -0.6
+	governing_capacity = 800
+}
+
+wenwu41-45 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 40
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 45
+            }
+        }
+    }
+
+    discipline = 0.025
+    infantry_power = 0.10
+	governing_capacity = -50
+
+}
+
+wenwu36-40 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 35
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 40
+            }
+        }
+    }
+
+    discipline = 0.075
+    infantry_power = 0.10
+    land_morale = 0.10
+    land_attrition = -0.10
+    stability_cost_modifier = 0.20
+    global_unrest = 1
+    global_autonomy = 0.025
+	governing_capacity = -100
+}
+
+wenwu31-35 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 30
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 35
+            }
+        }
+    }
+
+    discipline = 0.1
+    core_creation = -0.10
+    infantry_power = 0.20
+    land_morale = 0.20
+    global_unrest = 2
+    land_attrition = -0.120
+    stability_cost_modifier = 0.25
+    global_autonomy = 0.05
+	governing_capacity = -300
+}
+
+wenwu26-30 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 25
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 30
+            }
+        }
+    }
+
+    discipline = 0.125
+    core_creation = -0.15
+    infantry_power = 0.20
+    land_morale = 0.30
+    cavalry_power = 0.20
+    land_attrition = -0.30
+    global_tax_modifier = -0.10
+    production_efficiency = -0.10
+    global_unrest = 3
+    stability_cost_modifier = 0.25
+    global_autonomy = 0.05
+	governing_capacity = -500
+}
+
+wenwu21-25 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 20
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 25
+            }
+        }
+    }
+
+     discipline = 0.15
+    core_creation = -0.15
+    infantry_power = 0.20
+    land_morale = 0.40
+    cavalry_power = 0.20
+    land_attrition = -0.30
+    global_tax_modifier = -0.15
+    production_efficiency = -0.15
+    global_unrest = 4
+    stability_cost_modifier = 0.25
+    global_autonomy = 0.05
+	governing_capacity = -500
+}
+
+wenwu16-20 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 15
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 20
+            }
+        }
+    }
+
+    discipline = 0.175
+    core_creation = -0.15
+    infantry_power = 0.25
+    land_morale = 0.40
+    cavalry_power = 0.25
+    land_attrition = -0.30
+    global_tax_modifier = -0.15
+    production_efficiency = -0.15
+    global_unrest = 4.5
+    stability_cost_modifier = 0.3
+    global_autonomy = 0.05
+	governing_capacity = -500
+}
+
+wenwu11-15 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 10
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 15
+            }
+        }
+    }
+
+    discipline = 0.20
+    core_creation = -0.15
+    infantry_power = 0.25
+    land_morale = 0.40
+    cavalry_power = 0.25
+    land_attrition = -0.30
+    global_tax_modifier = -0.15
+    production_efficiency = -0.15
+    global_unrest = 5
+    stability_cost_modifier = 0.3
+    global_autonomy = 0.05
+	governing_capacity = -500
+}
+
+wenwu6-10 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+
+    trigger = {
+        check_variable = {
+            which = num_of_wenwuzhi
+            value = 5
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 10
+            }
+        }
+    }
+
+     discipline = 0.25
+    core_creation = -0.2
+    infantry_power = 0.3
+    land_morale = 0.40
+    cavalry_power = 0.3
+    land_attrition = -0.30
+    global_tax_modifier = -0.2
+    production_efficiency = -0.2
+    global_unrest = 5.5
+    stability_cost_modifier = 0.3
+    global_autonomy = 0.05
+	governing_capacity = -500
+}
+
+wenwu0-5 = {
+    potential = {
+        has_country_flag = wenwuzhi1
+    }
+
+    trigger = {
+        NOT = {
+            check_variable = {
+                which = num_of_wenwuzhi
+                value = 5
+            }
+        }
+    }
+
+    discipline = 0.3
+    core_creation = -0.2
+    infantry_power = 0.4
+    land_morale = 0.50
+    cavalry_power = 0.4
+    land_attrition = -0.30
+    global_tax_modifier = -0.3
+    production_efficiency = -0.3
+    global_unrest = 6
+    stability_cost_modifier = 0.3
+    global_autonomy = 0.05
+	governing_capacity = -500
+}
+
+gubuzifeng_tri = {
+    trigger = {
+        is_subject_of_type = tributary_state
+        overlord = {
+            is_emperor_of_china = yes
+        }
+    }
+    colonists = -99
+}
+caoyuanbuluotri = {
+    trigger = {
+        has_country_flag = caoyuanbuluo1
+    }
+    culture_conversion_cost = 10
+    cavalry_power = 0.40
+    cav_to_inf_ratio = 0.25
+    cavalry_cost = -0.5
+}
+
+tuanjiebuluo_tri = {
+    potential = {
+        NOT = {
+            culture_group = east_asian
+        }
+        has_reform = celestial_empire
+    }
+    trigger = {
+        has_country_flag = caoyuanbuluo1
+        is_at_war = yes
+    }
+    global_unrest = -5
+    land_morale = 0.15
+    land_maintenance_modifier = -0.25
+    global_autonomy = -0.05
+}
+
+neidoubuluo_tri = {
+    potential = {
+        NOT = {
+            culture_group = east_asian
+        }
+        has_reform = celestial_empire
+    }
+    trigger = {
+        has_country_flag = caoyuanbuluo1
+        is_at_war = no
+    }
+    land_morale = -0.10
+    land_maintenance_modifier = 0.10
+    global_autonomy = 0.025
+}
+
+19th_industiraindex_0-20 = {
+    potential = {
+        is_year = 1800
+        NOT = {
+            is_year = 1885
+        }
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        is_institution_enabled = industrialization
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 20
+            }
+        }
+        is_year = 1800
+        NOT = {
+            is_year = 1885
+        }
+    }
+    discipline = -0.3
+    production_efficiency = -0.70
+    trade_efficiency = -0.60
+    shock_damage_received = 0.3
+    fire_damage_received = 0.3
+    land_forcelimit_modifier = -0.6
+    heavy_ship_power = -0.20
+	governing_capacity = -300
+}
+19th_industiraindex_20-40 = {
+    potential = {
+        is_year = 1800
+        NOT = {
+            is_year = 1885
+        }
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        check_variable = {
+            which = num_of_industrialindex
+            value = 20
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 40
+            }
+        }
+        is_year = 1800
+        NOT = {
+            is_year = 1885
+        }
+    }
+    discipline = -0.2
+    production_efficiency = -0.40
+    trade_efficiency = -0.40
+    shock_damage_received = 0.1
+    fire_damage_received = 0.1
+    land_forcelimit_modifier = -0.3
+    heavy_ship_power = -0.10
+	governing_capacity = -100
+}
+19th_industiraindex_40-60 = {
+    potential = {
+        is_year = 1800
+        NOT = {
+            is_year = 1885
+        }
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        check_variable = {
+            which = num_of_industrialindex
+            value = 40
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 60
+            }
+        }
+        is_year = 1800
+        NOT = {
+            is_year = 1885
+        }
+    }
+    discipline = -0.1
+    production_efficiency = -0.20
+    trade_efficiency = -0.20
+}
+19th_industiraindex_60-80 = {
+    potential = {
+        is_year = 1800
+        NOT = {
+            is_year = 1885
+        }
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        factory = 1
+        check_variable = {
+            which = num_of_industrialindex
+            value = 60
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 80
+            }
+        }
+        is_year = 1800
+        NOT = {
+            is_year = 1885
+        }
+    }
+    production_efficiency = 0.10
+    trade_efficiency = 0.10
+	governing_capacity = 300
+}
+19th_industiraindex_80-100 = {
+    potential = {
+        is_year = 1800
+        NOT = {
+            is_year = 1885
+        }
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        factory = 1
+        check_variable = {
+            which = num_of_industrialindex
+            value = 80
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 100
+            }
+        }
+        is_year = 1800
+        NOT = {
+            is_year = 1885
+        }
+    }
+    discipline = 0.05
+    production_efficiency = 0.20
+    trade_efficiency = 0.20
+    heavy_ship_power = 0.20
+	governing_capacity = 1000
+}
+19th_industiraindex_100-120 = {
+    potential = {
+        is_year = 1800
+        NOT = {
+            is_year = 1885
+        }
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        factory = 1
+        check_variable = {
+            which = num_of_industrialindex
+            value = 100
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 120
+            }
+        }
+        is_year = 1800
+        NOT = {
+            is_year = 1885
+        }
+    }
+    discipline = 0.10
+    production_efficiency = 0.30
+    trade_efficiency = 0.30
+    heavy_ship_power = 0.40
+	governing_capacity = 2000
+}
+19th_industiraindex_mt120 = {
+    potential = {
+        is_year = 1800
+        NOT = {
+            is_year = 1885
+        }
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        factory = 1
+        check_variable = {
+            which = num_of_industrialindex
+            value = 120
+        }
+        is_year = 1800
+        NOT = {
+            is_year = 1885
+        }
+    }
+    discipline = 0.20
+    production_efficiency = 0.50
+    trade_efficiency = 0.50
+    heavy_ship_power = 0.50
+	governing_capacity = 4000
+}
+
+20th_industiraindex_0-20 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        is_institution_enabled = industrialization
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 20
+            }
+        }
+        is_year = 1885
+    }
+    discipline = -0.9
+    production_efficiency = -2.4
+    trade_efficiency = -1.8
+    shock_damage_received = 0.6
+    fire_damage_received = 0.6
+    land_forcelimit_modifier = -1.8
+    heavy_ship_power = -0.80
+	governing_capacity = -500
+}
+20th_industiraindex_20-40 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        check_variable = {
+            which = num_of_industrialindex
+            value = 20
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 40
+            }
+        }
+        is_year = 1885
+    }
+    discipline = -0.5
+    production_efficiency = -1
+    trade_efficiency = -0.90
+    shock_damage_received = 0.3
+    fire_damage_received = 0.3
+    land_forcelimit_modifier = -0.7
+    heavy_ship_power = -0.40
+}
+
+20th_industiraindex_40-60 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        check_variable = {
+            which = num_of_industrialindex
+            value = 40
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 60
+            }
+        }
+        is_year = 1885
+    }
+    discipline = -0.2
+    production_efficiency = -0.6
+    trade_efficiency = -0.6
+    land_forcelimit_modifier = -0.3
+    heavy_ship_power = -0.20
+	governing_capacity = 400
+}
+20th_industiraindex_60-80 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        check_variable = {
+            which = num_of_industrialindex
+            value = 60
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 80
+            }
+        }
+        is_year = 1885
+    }
+    production_efficiency = -0.2
+    trade_efficiency = -0.2
+	governing_capacity = 1500
+}
+20th_industiraindex_80-100 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        factory = 1
+        check_variable = {
+            which = num_of_industrialindex
+            value = 80
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 100
+            }
+        }
+        is_year = 1885
+    }
+    discipline = 0.1
+    infantry_power = 0.2
+    production_efficiency = 0.1
+    trade_efficiency = 0.1
+    heavy_ship_power = 0.40
+	governing_capacity = 3000
+}
+20th_industiraindex_100-120 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        factory = 1
+        check_variable = {
+            which = num_of_industrialindex
+            value = 100
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 120
+            }
+        }
+        is_year = 1885
+    }
+    infantry_power = 0.4
+    discipline = 0.2
+    production_efficiency = 0.2
+    trade_efficiency = 0.2
+    heavy_ship_power = 0.80
+	governing_capacity = 10000
+}
+
+20th_industiraindex_120-140 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        factory = 1
+        check_variable = {
+            which = num_of_industrialindex
+            value = 120
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 140
+            }
+        }
+        is_year = 1885
+    }
+    infantry_power = 0.6
+    discipline = 0.25
+    production_efficiency = 0.2
+    trade_efficiency = 0.2
+    heavy_ship_power = 1
+	governing_capacity = 15000
+}
+
+20th_industiraindex_mt140 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        factory = 1
+        check_variable = {
+            which = num_of_industrialindex
+            value = 140
+        }
+        is_year = 1885
+    }
+    infantry_power = 0.6
+    discipline = 0.3
+    production_efficiency = 0.2
+    trade_efficiency = 0.2
+    heavy_ship_power = 1.20
+	governing_capacity = 999999
+}
+
+jingjiweiji11 = {
+    potential = {
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        check_variable = {
+            which = num_of_industrialindex
+            value = 80
+        }
+        OR = {
+            AND = {
+                is_year = 1800 NOT = {
+                    is_year = 1900
+                }
+				OR = {
+				ROOT = {
+                NOT = { great_power_rank = 2 }
+                        check_variable = {
+                            which = sum_of_economycrisis
+                            value = 30
+                        }
+				}
+                    any_country = {
+					NOT = { great_power_rank = 2 }
+                        check_variable = {
+                            which = sum_of_economycrisis
+                            value = 30
+                        }
+                    }
+					}
+            }
+            AND = {
+                is_year = 1900 
+				NOT = {
+                    is_year = 1945
+                }
+				OR = {
+				ROOT = {
+                NOT = { great_power_rank = 2 }
+                        check_variable = {
+                            which = sum_of_economycrisis
+                            value = 35
+                        }
+				}
+                    any_country = {
+					NOT = { great_power_rank = 2 }
+                        check_variable = {
+                            which = sum_of_economycrisis
+                            value = 35
+                        }
+                    }
+					}
+            }
+            AND = {
+                is_year = 1945
+				OR = {
+				ROOT = {
+                NOT = { great_power_rank = 2 }
+                        check_variable = {
+                            which = sum_of_economycrisis
+                            value = 30
+                        }
+				}
+                    any_country = {
+					NOT = { great_power_rank = 2 }
+                        check_variable = {
+                            which = sum_of_economycrisis
+                            value = 30
+                        }
+                    }
+					}
+            }
+        }
+    }
+    production_efficiency = -0.5
+    trade_efficiency = -0.5
+}
+
+18th_vissal = {
+    potential = {
+        is_year = 1800
+    }
+    trigger = {
+        is_year = 1800
+    }
+    liberty_desire_from_subject_development = -0.50
+
+}
+
+20th_tank_0-20 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        is_institution_enabled = industrialization
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 20
+            }
+        }
+        mil_tech = 83
+    }
+    cavalry_cost = 0.2
+    cavalry_power = 0.2
+    movement_speed = 0.2
+}
+20th_tank_20-40 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        check_variable = {
+            which = num_of_industrialindex
+            value = 20
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 40
+            }
+        }
+        mil_tech = 83
+    }
+    cavalry_cost = 0.4
+    cavalry_power = 0.4
+    movement_speed = 0.4
+}
+20th_tank_40-60 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        check_variable = {
+            which = num_of_industrialindex
+            value = 40
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 60
+            }
+        }
+        mil_tech = 83
+    }
+    cavalry_cost = 0.6
+    cavalry_power = 0.6
+    movement_speed = 0.6
+}
+20th_tank_60-80 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        factory = 1
+        check_variable = {
+            which = num_of_industrialindex
+            value = 60
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 80
+            }
+        }
+        mil_tech = 83
+    }
+    cavalry_cost = 0.8
+    cavalry_power = 0.8
+    movement_speed = 1
+}
+20th_tank_80-100 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        factory = 1
+        check_variable = {
+            which = num_of_industrialindex
+            value = 80
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 100
+            }
+        }
+        mil_tech = 83
+    }
+    cavalry_cost = 1
+    cavalry_power = 1.6
+    movement_speed = 1
+}
+20th_tank_100-120 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        factory = 1
+        check_variable = {
+            which = num_of_industrialindex
+            value = 100
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 120
+            }
+        }
+        mil_tech = 83
+    }
+    cavalry_cost = 1.2
+    cavalry_power = 1.8
+    movement_speed = 1
+}
+20th_tank_120-140 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        factory = 1
+        check_variable = {
+            which = num_of_industrialindex
+            value = 120
+        }
+        NOT = {
+            check_variable = {
+                which = num_of_industrialindex
+                value = 140
+            }
+        }
+        mil_tech = 83
+    }
+    cavalry_cost = 1.4
+    cavalry_power = 2.2
+    movement_speed = 1.1
+}
+20th_tank_mt140 = {
+    potential = {
+        is_year = 1885
+        has_country_flag = industrial_indexzhi1
+    }
+    trigger = {
+        factory = 1
+        check_variable = {
+            which = num_of_industrialindex
+            value = 140
+        }
+        mil_tech = 83
+    }
+    cavalry_cost = 1.6
+    cavalry_power = 2.5
+    movement_speed = 1.2
+}
+quanmiansuhua = {
+    potential = {
+        has_country_flag = sulianyuanzhu2
+	}	
+       trigger = {
+           has_global_flag = zhongsujiaoe
+          NOT = { has_country_modifier = people_wake_com }
+       }
+       discipline = -0.1
+       production_efficiency = 0.25
+       global_unrest = 5
+    
+}
+zongduqumd = {
+potential = {
+ is_subject_of_type = maoyigongsi_asia
+}
+     production_efficiency = 0.6
+    trade_efficiency = 0.6
+	global_unrest = -3
+}
+
+fenquan12 = {
+    potential = {
+        overlord = { has_country_flag = tianchaodaguo }
+	}	
+       trigger = {
+	   is_subject_of_type = difang_vassal
+           overlord = { 
+		   check_variable = {
+			which = num_of_fenquandu
+			value = 12
+	} 
+	NOT = {
+	check_variable = {
+			which = num_of_fenquandu
+			value = 14
+	} 
+	}
+	NOT = { has_country_modifier = shishenyoudai }
+	}
+		   NOT = { has_global_flag = shizushidaixy  }
+       }
+       discipline = 0.025
+       land_morale = 0.05
+    
+}
+fenquan14 = {
+    potential = {
+        overlord = { has_country_flag = tianchaodaguo }
+	}	
+       trigger = {
+	   is_subject_of_type = difang_vassal
+           overlord = { 
+		   check_variable = {
+			which = num_of_fenquandu
+			value = 14
+	} 
+	NOT = {
+	check_variable = {
+			which = num_of_fenquandu
+			value = 16
+	} 
+	}
+	NOT = { has_country_modifier = shishenyoudai }
+	}
+		   NOT = { has_global_flag = shizushidaixy  }
+       }
+       discipline = 0.05
+       land_morale = 0.1
+    
+}
+fenquan16 = {
+    potential = {
+        overlord = { has_country_flag = tianchaodaguo }
+	}	
+       trigger = {
+	   is_subject_of_type = difang_vassal
+           overlord = { 
+		   check_variable = {
+			which = num_of_fenquandu
+			value = 16
+	} 
+	NOT = {
+	check_variable = {
+			which = num_of_fenquandu
+			value = 18
+	} 
+	}
+	NOT = { has_country_modifier = shishenyoudai }
+	}
+		   NOT = { has_global_flag = shizushidaixy  }
+       }
+       discipline = 0.075
+       land_morale = 0.15
+    
+}
+fenquan18 = {
+    potential = {
+        overlord = { has_country_flag = tianchaodaguo }
+	}	
+       trigger = {
+	   is_subject_of_type = difang_vassal
+           overlord = { 
+		   check_variable = {
+			which = num_of_fenquandu
+			value = 18
+	} 
+	NOT = {
+	check_variable = {
+			which = num_of_fenquandu
+			value = 20
+	} 
+	}
+	NOT = { has_country_modifier = shishenyoudai }
+	}
+		   NOT = { has_global_flag = shizushidaixy  }
+       }
+       discipline = 0.10
+       land_morale = 0.20
+    
+}
+
+fenquan10vassal = {
+    potential = {
+        has_country_flag = tianchaodaguo
+    }
+    trigger = {
+	any_subject_country = { is_subject_of_type = difang_vassal }	
+    }
+    liberty_desire_from_subject_development = -0.70
+
+}
+
+shishenyoudaidf = {
+    potential = {
+        overlord = { has_country_flag = tianchaodaguo }
+		OR = {
+	is_subject_of_type = difang_vassal
+	is_subject_of_type = duhufu_state
+	is_subject_of_type = duhufu_state_color
+	}
+	}	
+    trigger = {
+	overlord = { has_country_modifier = shishenyoudai }	
+	OR = {
+	is_subject_of_type = difang_vassal
+	is_subject_of_type = duhufu_state
+	is_subject_of_type = duhufu_state_color
+	}
+    }
+    global_tax_modifier = -0.5
+production_efficiency = -0.5
+			land_morale = -0.4
+			discipline = -0.2
+    shock_damage_received = 0.5
+    fire_damage_received = 0.5
+	land_forcelimit_modifier = -1
+
+}
+
+shizuhaoqiangdf = {
+    potential = {
+        has_global_flag = shizushidaixy
+	is_subject_of_type = difang_vassal
+	}	
+    trigger = {
+	has_global_flag = shizushidaixy
+	is_subject_of_type = difang_vassal
+ overlord = { NOT = { tag = HND }
+			NOT = { tag = SHU } }
+    }
+ global_tax_modifier = -0.7
+production_efficiency = -0.7
+trade_efficiency = -0.7
+land_forcelimit_modifier = -0.5
+}
+
+macedonia_greece = {
+    potential = {
+        tag = ALX
+		NOT = { religion_group = ideology }
+	}	
+    trigger = {
+	religion = hellenism
+    }
+    discipline = 0.15
+    land_morale = 0.3
+	global_manpower_modifier = 1
+}
+
+macedonia_not_greece = {
+    potential = {
+        tag = ALX
+		NOT = { religion_group = ideology }
+	}	
+    trigger = {
+	NOT = {
+	religion = hellenism
+	}
+	NOT = { religion_group = ideology }
+    }
+    discipline = -0.15
+    land_morale = -0.3
+	global_manpower_modifier = -1
+}

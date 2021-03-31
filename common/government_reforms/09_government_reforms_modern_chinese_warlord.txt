@@ -1,0 +1,167 @@
+#rab_ 
+#2019.02.17 fit to modern chinese warlord actullay condition.
+modern_chinese_warlord_mechanic = {
+	basic_reform = yes
+	republican_name = no
+	royal_marriage = no
+	republic = yes
+	heir = yes
+	duration = 100
+	has_term_election = no
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+
+	valid_for_nation_designer = no
+}
+
+modern_chinese_warlord_reform = {
+	icon = "modern_chinese_warlord_reform"
+	allow_normal_conversion = no
+	legacy_equivalent = modern_chinese_warlord_legacy # add 
+	
+	allow_force_tributary = no
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	allow_convert = no
+	allow_normal_conversion = no
+	lock_level_when_selected = yes  #add
+	potential = {
+		has_reform = modern_chinese_warlord_reform
+	}	
+	nation_designer_trigger = {
+		OR = {
+			technology_group = chinese
+			technology_group = modern_chinese
+		}	
+	}
+	modifiers = {
+		republican_tradition = 0.1
+		max_absolutism = -5
+		diplomatic_reputation = 1
+		diplomats = 1
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+ #modern_chinese_warlord_level_0_develop:0 "权力核心"
+ #modern_chinese_warlord_level_1_develop:0 "枪杆子出政权" 
+ #modern_chinese_warlord_level_2_develop:0 "兴办教育"
+ #modern_chinese_warlord_level_3_develop:0 "公平与正义"
+ #modern_chinese_warlord_level_4_develop:0 "外交使节"
+ #modern_chinese_warlord_level_5_develop:0 "鼓励农耕"
+ 
+ #軍隊權力集中化
+ #部隊裡面是否離心離德還是忠心耿耿，取決於主帥的統帥能力
+ modern_chinese_warlord_mil_develop_1_reform = {
+ 	icon = "modern_chinese_mil_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		max_absolutism = 20
+		yearly_army_professionalism = 0.1
+	}
+ }
+ #軍事裝備維護
+ #槍枝的保養與維護，甚至定期上油這種基本維護必須定期定時
+ modern_chinese_warlord_mil_develop_2_reform = {
+ 	icon = "modern_chinese_mil_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		shock_damage = 0.1
+		fire_damage = 0.1
+	}
+ }
+ #軍事技術取得
+ #向西方世界強國取經，派遣技術人員習得相關軍事知識
+  modern_chinese_warlord_mil_develop_3_reform = {
+ 	icon = "modern_chinese_mil_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		cavalry_power = 0.1
+		infantry_power = 0.1
+	}
+ }
+
+
+ #我們解除報禁，百家爭鳴，全民共議國事，相信人民智慧，體現國家自信。
+ modern_chinese_warlord_edu_develop_1_reform = {
+	icon = "modern_chinese_edu_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		num_accepted_cultures = 2
+	}
+ }
+ #充實全民識字率，獨立思考，明辨是非之能力。
+  modern_chinese_warlord_edu_develop_2_reform = {
+	icon = "modern_chinese_edu_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_institution_spread = 0.1
+	}
+ }
+ #徹底去除舊時代的辮子，讓人民有所新思維
+ modern_chinese_warlord_edu_develop_3_reform = {
+	icon = "modern_chinese_edu_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		advisor_cost = -0.2
+		technology_cost = -0.1
+	}
+ }
+  
+ #強化警察局維持地方治安
+  modern_chinese_warlord_adj_develop_1_reform = {
+	icon = "modern_chinese_adj_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_unrest = -2
+	}
+ }
+  #加強法院公正與完整體系
+  modern_chinese_warlord_adj_develop_2_reform = {
+	icon = "modern_chinese_adj_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_corruption = -0.15
+	}
+ }
+ #师夷长技以制夷
+ modern_chinese_warlord_dip_develop_1_reform = {
+	icon = "modern_chinese_dip_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		navy_tradition = 1
+		discipline = 0.05
+	}
+ }
+ #學術交流會議
+ modern_chinese_warlord_dip_develop_2_reform = {
+	icon = "modern_chinese_dip_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		diplomatic_upkeep = 1
+		improve_relation_modifier = 0.2
+	}
+ }
+ #宣扬文化
+  modern_chinese_warlord_adm_develop_1_reform = {
+	icon = "modern_chinese_adm_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		years_of_nationalism = -5
+	}
+ }
+ #三权分立
+  modern_chinese_warlord_adm_develop_2_reform = {
+	icon = "modern_chinese_adm_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		administrative_efficiency = 0.2
+	}
+ }
+  
+

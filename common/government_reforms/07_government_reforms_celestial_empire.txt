@@ -1,0 +1,654 @@
+
+#2018.12.17 create for 1.28
+#2019.02.10 set yes for nation designer 
+#2019.03.23 mil_develop_4_reform = { army_tradition_decay modify
+	
+celestial_empire_mechanic = {
+	monarchy = yes
+	heir = yes
+	queen = yes
+	basic_reform = yes 
+	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = yes
+	}
+	
+}
+
+celestial_empire = {
+	icon = "celestial_empire"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = celestial_empire
+			#這意味著除了開頭指定外的國家均不得自認為天朝，除非程序中add_government_reform = celestial_empire
+			check_gov_celestial_empire = yes
+		}	
+	}
+	legacy_equivalent = celestial_empire_legacy
+	maintain_dynasty = yes
+	allow_force_tributary = no
+	allow_convert = no
+	valid_for_nation_designer = yes
+	valid_for_new_country = no
+	nation_designer_cost = 10
+	royal_marriage = no
+	lock_level_when_selected = yes
+	nation_designer_trigger = {
+		culture_group = east_asian
+		OR = {
+			technology_group = chinese
+			technology_group = early_chinese
+		}	
+		capital_scope = {
+			OR = {
+				region = north_china_region
+				region = xinan_region
+				region = south_china_region
+			}
+		}
+	}
+
+	fixed_rank = 3
+	start_territory_to_estates = 0.9
+
+	modifiers = {
+		church_influence_modifier = -0.1
+		nobles_influence_modifier = -0.1
+		burghers_influence_modifier = -0.1		
+		prestige = 0.5
+		governing_capacity = 350
+	}
+	
+	ai = {
+		factor = 1000 # should always be picked if available
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		has_meritocracy = yes
+		factions = {}
+	}
+}
+
+
+
+
+
+
+#1
+#行政效率
+adm_develop_1_reform = {
+	icon = "chinese_adm_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		administrative_efficiency = 0.1
+	}
+}
+#公文制度改良
+adm_develop_2_reform = {
+	icon = "chinese_adm_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		core_creation = -0.1
+		inflation_reduction = 0.1
+	}
+}
+#行政掌管
+adm_develop_3_reform = {
+	icon = "chinese_adm_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		state_maintenance_modifier = -0.25
+	}
+}
+#清廉立法
+adm_develop_4_reform = {
+	icon = "chinese_adm_4"
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_corruption = -0.1
+	}
+}
+#政清狱简
+adm_develop_5_reform = {
+	icon = "chinese_adm_5"
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_corruption = -0.2
+		global_tax_modifier = 0.1
+	}
+}
+
+
+#敦邻政策
+#
+dip_develop_1_reform = {
+	icon = "chinese_dip_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		ae_impact = -0.2
+	}
+}
+#谈判专家
+#采取天命宿敌论，将有威胁的游牧民族视为民族大敌，将其妖魔化，视其为各种天灾的源头，人民为了维护自身立命，将不再排斥征战【民怨四起】限制将会失效【但只针对游牧民族】
+dip_develop_2_reform = {
+	icon = "chinese_dip_2"
+	allow_normal_conversion = yes
+	#modifiers = {
+	#	province_warscore_cost = -0.1
+	#}
+}
+#外交手腕
+dip_develop_3_reform = {
+	icon = "chinese_dip_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		unjustified_demands = -0.25 
+	}
+}
+#外交使节
+dip_develop_4_reform = {
+	icon = "chinese_dip_4"
+	allow_normal_conversion = yes
+	modifiers = {
+		diplomats = 1
+	}
+}
+#外交协议
+dip_develop_5_reform = {
+	icon = "chinese_dip_5"
+	allow_normal_conversion = yes
+	modifiers = {
+		diplomatic_upkeep = 2
+	}
+}
+
+#器械库藏改良
+mil_develop_1_reform = {
+	icon = "chinese_mil_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		infantry_power = 0.1
+		leader_land_fire = 1
+	}
+}
+#马厩改良
+mil_develop_2_reform = {
+	icon = "chinese_mil_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		cavalry_power = 0.2
+		leader_land_manuever = 1
+	}
+}
+#军纪申令
+mil_develop_3_reform = {
+	icon = "chinese_mil_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		discipline = 0.05
+		manpower_recovery_speed = 0.2
+	}
+}
+
+mil_develop_4_reform = {
+	icon = "chinese_mil_4"
+	allow_normal_conversion = yes
+	modifiers = {
+		leader_land_fire = 1
+		army_tradition_decay = -0.01
+	}
+}
+#部队集训
+mil_develop_5_reform = {
+	icon = "chinese_mil_5"
+	allow_normal_conversion = yes
+	modifiers = {
+		land_attrition = -0.15
+	}
+}
+#军事扩充
+mil_develop_6_reform = {
+	icon = "chinese_mil_6"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_manpower_modifier = 0.1
+		land_forcelimit_modifier = 0.1
+	}
+}
+#精良武器
+mil_develop_7_reform = {
+	icon = "chinese_mil_7"
+	allow_normal_conversion = yes
+	modifiers = {
+		fire_damage = 0.1
+	}
+}
+#军令如山
+mil_develop_8_reform = {
+	icon = "chinese_mil_8"
+	allow_normal_conversion = yes
+	modifiers = {
+		war_taxes_cost_modifier = -0.25
+		discipline = 0.05
+	}
+}
+#放松贸易禁令
+trade_develop_1_reform = {
+	icon = "chinese_trade_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_trade_power = 0.1
+		trade_steering = 0.1
+	}
+}
+#鼓励商流
+trade_develop_2_reform = {
+	icon = "chinese_trade_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		trade_efficiency = 0.2
+	}
+}
+#繁荣政策
+trade_develop_3_reform = {
+	icon = "chinese_trade_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_trade_power = 0.2
+	}
+}
+#奖励商务
+trade_develop_4_reform = {
+	icon = "chinese_trade_4"
+	allow_normal_conversion = yes
+	modifiers = {
+		trade_efficiency = 0.2
+		global_ship_cost = -0.1
+	}
+}
+
+#税务改良
+tax_develop_1_reform = {
+	icon = "chinese_tax_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_tax_modifier = 0.05
+	}
+}
+#产物商流
+tax_develop_2_reform = {
+	icon = "chinese_tax_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		production_efficiency = 0.05
+	}
+}
+#税务机构改造
+tax_develop_3_reform = {
+	icon = "chinese_tax_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_tax_modifier = 0.1
+	}
+}
+#地方税收
+tax_develop_4_reform = {
+	icon = "chinese_tax_4"
+	allow_normal_conversion = yes
+	modifiers = {
+		development_cost = -0.1
+	}
+}
+
+#增加宗教事务
+religion_develop_1_reform = {
+	icon = "chinese_religion_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_missionary_strength = 0.02
+	}
+}
+#异端的传教
+religion_develop_2_reform = {
+	icon = "chinese_religion_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_heretic_missionary_strength = 0.05
+		tolerance_own = 1
+		tolerance_heretic = 1		
+	}
+}
+#增加宗教权重
+religion_develop_3_reform = {
+	icon = "chinese_religion_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		missionaries = 1
+	}
+}
+#改善宗教繁琐禁令
+religion_develop_4_reform = {
+	icon = "chinese_religion_4"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_missionary_strength = 0.02
+	}
+}
+
+#简约建筑
+costdown_develop_1_reform = {
+	icon = "chinese_costdown_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		build_cost = -0.2
+		prestige = 1
+	}
+}
+#发展评估政策
+costdown_develop_2_reform = {
+	icon = "chinese_costdown_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		development_cost = -0.15
+	}
+}
+#广纳兵源
+costdown_develop_3_reform = {
+	icon = "chinese_costdown_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		infantry_cost = -0.2
+	}
+}
+#训练成本控制
+costdown_develop_4_reform = {
+	icon = "chinese_costdown_4"
+	allow_normal_conversion = yes
+	modifiers = {
+		cavalry_cost = -0.15
+		artillery_cost = -0.1
+	}
+}
+
+#广纳海川
+costdown_develop_5_reform = {
+	icon = "chinese_costdown_5"
+	allow_normal_conversion = yes
+	modifiers = {
+		num_accepted_cultures = 2
+	}
+}
+
+#稳邦固本
+unrest_develop_1_reform = {
+	icon = "chinese_unrest_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		stability_cost_modifier = -0.2
+		culture_conversion_cost	= -0.1
+	}
+}
+#民惟邦本
+unrest_develop_2_reform = {
+	icon = "chinese_unrest_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_unrest = -2
+	}
+}
+
+
+#提倡科学
+tech_develop_1_reform = {
+	icon = "chinese_tech_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		technology_cost = -0.1
+	}
+}
+#学以致用
+tech_develop_2_reform = {
+	icon = "chinese_tech_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		idea_cost = -0.15
+	}
+}
+#务实慎用
+tech_develop_3_reform = {
+	icon = "chinese_tech_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		embracement_cost = -0.2
+	}
+}
+#删芜就简
+tech_develop_4_reform = {
+	icon = "chinese_tech_4"
+	allow_normal_conversion = yes
+	modifiers = {
+		all_power_cost = -0.1
+	}
+}
+#议论时事
+tech_develop_5_reform = {
+	icon = "chinese_tech_5"
+	allow_normal_conversion = yes
+	modifiers = {
+		free_mil_policy = 1
+		free_adm_policy = 1
+		free_dip_policy = 1
+	}
+}
+#鼓励船务
+colony_develop_1_reform = {
+	icon = "chinese_colony_1"
+	allow_normal_conversion = yes
+	modifiers = {
+		range = 40
+		dip_advisor_cost = -0.2
+		num_accepted_cultures = 1
+	}
+}
+#增设殖民
+colony_develop_2_reform = {
+	icon = "chinese_colony_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		colonists = 1
+	}
+}
+#天朝日不落
+colony_develop_3_reform = {
+	icon = "chinese_colony_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_colonial_growth = 50
+		vassal_income = 0.2
+	}
+}
+
+###########################################################
+
+
+early_cn_gov_reform_1 = {
+	icon = "cn_generic_people"
+	allow_normal_conversion = yes
+	modifiers = {
+		num_accepted_cultures = 2
+	}
+}
+
+early_cn_gov_reform_2 = {
+	icon = "cn_merchant"
+	allow_normal_conversion = yes
+	modifiers = {
+		stability_cost_modifier = -0.1
+	}
+}
+
+
+early_cn_gov_reform_3 = {
+	icon = "cn_king"
+	allow_normal_conversion = yes
+	modifiers = {
+		governing_capacity = 50
+	}
+}
+
+
+early_cn_gov_reform_4 = {
+	icon = "cn_soldiers_2"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_regiment_cost = -0.05
+	}
+}
+
+early_cn_gov_reform_5 = {
+	icon = "cn_paper_with_seal_3"
+	allow_normal_conversion = yes
+	modifiers = {
+		technology_cost = -0.1
+	}
+}
+
+
+early_cn_gov_reform_6 = {
+	icon = "cn_landscape"
+	allow_normal_conversion = yes
+	modifiers = {
+		development_cost = -0.1
+	}
+}
+
+
+early_cn_gov_reform_7 = {
+	icon = "cn_castle"
+	allow_normal_conversion = yes
+	modifiers = {
+		vassal_income = 0.15
+	}
+}
+
+
+early_cn_gov_reform_8 = {
+	icon = "cn_judge"
+	allow_normal_conversion = yes
+	modifiers = {
+		stability_cost_modifier = -0.1
+	}
+}
+
+
+early_cn_gov_reform_9 = {
+	icon = "cn_queen"
+	allow_normal_conversion = yes
+	modifiers = {
+		stability_cost_modifier = -0.1
+	}
+}
+
+early_cn_gov_reform_10 = {
+	icon = "cn_man_and_children"
+	allow_normal_conversion = yes
+	modifiers = {
+		leader_cost = -0.05
+	}
+}
+
+#################################
+
+early_cn_gov_reform_1b = {
+	icon = "cn_culture"
+	allow_normal_conversion = yes
+	modifiers = {
+		culture_conversion_cost = -0.10
+	}
+}
+
+
+early_cn_gov_reform_2b = {
+	icon = "cn_golden"
+	allow_normal_conversion = yes
+	modifiers = {
+		yearly_corruption = -0.02
+	}
+}
+
+
+early_cn_gov_reform_3b = {
+	icon = "cn_land"
+	allow_normal_conversion = yes
+	modifiers = {
+		core_creation = -0.05
+	}
+}
+
+
+early_cn_gov_reform_4b = {
+	icon = "cn_soldiers"
+	allow_normal_conversion = yes
+	modifiers = {
+		global_regiment_recruit_speed = -0.1
+	}
+}
+
+
+early_cn_gov_reform_5b = {
+	icon = "cn_ideas"
+	allow_normal_conversion = yes
+	modifiers = {
+		idea_cost = -0.1
+	}
+}
+
+early_cn_gov_reform_6b = {
+	icon = "cn_building"
+	allow_normal_conversion = yes
+	modifiers = {
+		build_cost = -0.1
+	}
+}
+
+early_cn_gov_reform_7b = {
+	icon = "cn_vassalmoney"
+	allow_normal_conversion = yes
+	modifiers = {
+		vassal_forcelimit_bonus = 0.5
+	}
+}
+
+
+early_cn_gov_reform_8b = {
+	icon = "cn_advisor"
+	allow_normal_conversion = yes
+	modifiers = {
+		same_culture_advisor_cost = -0.05
+	}
+}
+
+early_cn_gov_reform_9b = {
+	icon = "cn_simpleprocess"
+	allow_normal_conversion = yes
+	modifiers = {
+		state_maintenance_modifier = -0.1
+	}
+}
+
+early_cn_gov_reform_10b = {
+	icon = "cn_general"
+	allow_normal_conversion = yes
+	modifiers = {
+		mil_advisor_cost = -0.04
+	}
+}
+
+

@@ -1,0 +1,66 @@
+#l_english:
+# DN3_ideas:0 "明郑理念"
+# DN3_ideas_start:0 "明郑传统"
+# DN3_ideas_bonus:0 "明郑野心"
+# wuu_guaw:0 "乌鬼"
+# wuu_guaw_desc:0 "郑成功攻台成功后，建立护卫镇，由荷兰时期的尼格罗人种裔佣兵「乌鬼」组成，手持步枪，专门守卫延平王府。"
+# fanming_guanzhi:0 "仿明官制"
+# fanming_guanzhi_desc:0 "效仿明朝中央官制，设六官；府城分为东安、西安、宋南、镇北四坊，各设首领，管理事务；府之下设二县，承天府以北叫天兴县、以南叫万年县。"
+# arise_from_haidow:0 "海盗起家"
+# arise_from_haidow_desc:0 "郑芝龙是海盗起家，即使最后被官府招降，但是一些海面行船操作的技能仍未疏远。"
+# you_ming_shi:0 "优礼明朝宗室"
+# you_ming_shi_desc:0 "为明朝宗亲跟随者建立王府官邸，并供岁禄。每次拜封官员，都请诸位大明皇族遗脉和其他宗室在旁观礼，以示尊重体制。"
+# uebinyunon:0 "寓兵于农"
+# uebinyunon_desc:0 "根据统计，包含承袭荷据已开垦的「王田」、后续开发的营盘田、官田、私田等，明郑时期拓垦的田地超过一万八千四百五十四甲以上。"
+# shanheiwushan:0 "山海五商"
+# shanheiwushan_desc:0 "为了突破大清的海上封锁，郑成功创立山海五商。山海五商分为山五商与海五商。山五商分别以五行「金、木、水、火、土」为商团名，分布于北京、苏州、杭州、山东，采购丝绸等大陆货物商品并运销外洋。海五商则掌管贩运东西两洋之船舶，分别以五常「仁、义、礼、智、信」为其商团名，皆设立于厦门。山海五商下又设有分支行号，遍布中国东南各大城港。"
+# shingjingsernmerow:0 "兴建圣庙"
+# shingjingsernmerow_desc:0 "陈永华认为开辟屯垦略显成果，启奏郑经请求兴建圣庙、普设学校；起初，郑经以「荒服新创，不但地方局促，而且人民稀少，姑暂待之将来」等语推辞，但在听完陈永华以下言论之后，郑经立刻下令择地兴建圣庙。"
+ DN3_ideas = {
+	start = {
+		all_power_cost = -0.05
+		cavalry_power = 0.1
+	}
+	bonus = {
+		leader_land_shock = 2
+	}
+	
+	trigger = {
+	   tag = DN3
+	}
+
+	free = yes
+	#乌鬼
+	wuu_guaw = {
+		fire_damage = 0.1
+	}
+	#仿明官制
+	fanming_guanzhi = {
+		monarch_admin_power = 1
+		discipline = 0.05
+	}
+	#海盗起家
+	arise_from_haidow = {
+		navy_tradition = 1
+		naval_morale = 0.1
+	}
+	#优礼明朝宗室
+	you_ming_shi = {
+		global_unrest = -2
+		core_creation = -0.1
+	}
+	#寓兵于农
+	uebinyunon = {
+		production_efficiency = 0.1
+		infantry_cost = -0.1
+	}
+	#山海五商
+	shanheiwushan = {
+		global_trade_power = 0.15
+	}
+	#兴建圣庙
+	shingjingsernmerow = {
+		tolerance_heathen = 2
+		stability_cost_modifier = -0.1
+	}
+}

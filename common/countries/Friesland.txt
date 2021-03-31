@@ -1,0 +1,160 @@
+graphical_culture = westerngfx
+color = {
+  165
+  89
+  27
+}
+historical_idea_groups = {	
+  early_religious_ideas
+  early_dip_ideas
+  early_adm_ideas
+  qianyi_ideas
+  rongren_ideas
+  junqu_ideas
+  trade_ideas
+  maritime_ideas
+  defensive_ideas
+  exploration_ideas
+  economic_ideas
+  religious_ideas
+  innovativeness_ideas
+  offensive_ideas
+}
+historical_units = {
+  western_medieval_infantry
+  western_medieval_knights
+  western_men_at_arms
+  dutch_maurician
+  french_caracolle
+  anglofrench_line
+  french_dragoon
+  french_bluecoat
+  french_cuirassier
+  french_impulse
+  mixed_order_infantry
+  open_order_cavalry
+  napoleonic_square
+  napoleonic_lancers
+}
+monarch_names = {
+  "¨N·VÌ‘KQ #0" = -1  # Hendrike #0
+  "ZÉ^fZ #0" = -1  # Wilhelmine #0
+  "‰Rm‰ƒZ #0" = -1  # Angelina #0
+  "ôu^pQyr #0" = 0  # Wilbrand #0
+  "æ—ZS #0" = 0  # Wiebe #0
+  "ĞcšNı+Y #0" = 0  # Thiadulf #0
+  "TXY #0" = 0  # Tado #0
+  "¯eTNS·V #0" = 0  # Sjoerd #0
+  "^KQ #0" = 0  # Sikke #0
+  "‰™„ #0" = 0  # Siemen #0
+  "¯e^Ébyr #0" = 0  # Sibraht #0
+  "÷–	T³u·V #0" = 0  # Reginhard #0
+  "Éb·Vk #0" = 0  # Raeddeg #0
+  "âliOyr #0" = 0  # Popetet #0
+  "è•VÌ‘·V #0" = 0  # Menfrid #0
+  "Éb=Oyr #0" = 0  # Lubbert #0
+  ")R'kXbyr #0" = 0  # Liudgod #0
+  "KQÉb¯e #0" = 0  # Klaes #0
+  "ïQ #0" = 0  # Kai #0
+  "pgœS+Y #0" = 0  # Gerulf #0
+  "pgÌ‘yr #0" = 0  # Gerrit #0
+  "bı+Y #0" = 0  # Geldulf #0
+  "VÌ‘0t #0" = 0  # Friso #0
+  "yKQ #0" = 0  # Fokke #0
+  "94b #0" = 0  # Fedde #0
+  "i`ÈT·V #0" = 0  # Enhard #0
+  "Œ‚ÒR #0" = 0  # Eilert #0
+  "^&OÈT·V #0" = 0  # Brunhard #0
+  "‰RZ #0" = 0  # Anne #0
+  "·^Éb·V #1" = 5  # Koenraad #1
+  "iOmÌ‘¯e #4" = 5  # Floris #4
+  "«ƒÌ‘¯e #0" = 10  # Maurits #0
+  "¦uğ i`¯eyr #0" = 10  # Johan Ernst #0
+  "ZÉ^ ¦uÌ‘¯e #0" = 15  # Willem Joris #0
+  "ZÉ^ ï·VôuKQ #0" = 20  # Willem Lodewijk #0
+  "ZÉ^ V÷–·VÌ‘KQ  #0" = 20  # Willem Frederik #0
+  "¦uÌ‘¯e #0" = 20  # Joris #0
+  "¦uğ ZÉ^ #0" = 20  # Johan Willem #0
+  "i`¯eyr aS‰s|S #0" = 20  # Ernst Casimir #0
+  "?–S^÷–^yr #1" = 20  # Albrecht #1
+  "¨N·VÌ‘KQ #2" = 20  # Hendrik #2
+  "ZÉ^ #4" = 20  # Willem #4
+  "¨N·VÌ‘KQ aS‰s|S #0" = 40  # Hendrik Casimir #0
+}
+leader_names = {
+  "ís¾"  # Banda
+  "ôT&O=e"  # Barents
+  "Bergsma"
+  "Bonga"
+  "Donia"
+  "Dykstra"
+  "Eelsma"
+  "Elsinga"
+  "Friso"
+  "Halbertsma"
+  "Galama"
+  "Gauma"
+  "Japisk"
+  "Jongstra"
+  "Jousma"
+  "Kamminga"
+  "Kamstra"
+  "Kiestra"
+  "Kooistra"
+  "Martena"
+  "Riemersma"
+  "Ripperda"
+  "Roorda"
+  "Saakma"
+  "Sems"
+  "Van Schellinkhout"
+  "Stellingwerf"
+  "Stiensma"
+  "Stijl"
+  "Sytstra"
+  "Tjerkstra"
+  "Van Uylenburgh"
+  "De Vries"
+  "Wynja"
+}
+ship_names = {
+  "Bernlef"
+  "Boalsert"
+  "Damwâld"
+  "De Swarte Heap"
+  "Dokkum"
+  "Drylts"
+  "Frede"
+  "Frjentsjer"
+  "Frijheid"
+  "Frisia Magna"
+  "Fryslân"
+  "Fryslân Boppe"
+  "Grut Fryslân"
+  "Grutte Pier"
+  "Harns"
+  "Heitelân"
+  "Hylpen"
+  "It Beaken"
+  "It Frouke"
+  "Kening Poppo"
+  "Kening Redbad"
+  "Kriich"
+  "Lauwers"
+  "Leaver dea as slaaf"
+  "Ljouwert"
+  "Pier Gerlofs Donia"
+  "Sleat"
+  "Snits"
+  "Starum"
+  "Sudersee"
+  "Thiadsvind"
+  "Wapen fan Fryslân"
+  "Warkum"
+}
+army_names = {
+  "$PROVINCE$›Q"  # Leger van $PROVINCE$
+}
+fleet_names = {
+  "$PROVINCE$0‚–"  # Vloot van $PROVINCE$
+}

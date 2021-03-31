@@ -1,0 +1,435 @@
+# If you add advisortypes, and use those tags, do not change them without changing everywhere they are used.
+#
+# Additional arguments: allow_only_male/allow_only_female
+# Contains skill_scaled_modifier for which the effects get multiplied by the advisor's skill level
+# Uses all 'modifiers' possible that are exported as a Modifier.
+
+# Note that ai_will_do calculates a priority.
+# An advisor may be chosen over another if its random priority exceeds it. RandomPriority(advisor) := rand[1, 2[ * Priority(advisor).
+
+
+######################################################
+# Administrative Advisors
+######################################################
+
+######################################################
+#2020-12-25 內政部長(ADM)  教育部(ADM)  法務部(ADM)  經濟部(ADM)  交通部(ADM)  國際傳播司(DIP)  外交發言人(DIP)  海洋事務部(DIP)  外交部長(DIP)-1 
+
+modern_adm_1 = { #經濟部(ADM) 
+	monarch_power = ADM
+	
+	# Bonus
+	global_tax_modifier = 0.1
+
+	skill_scaled_modifier = { meritocracy = 0.25 }
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}		
+		modifier = {
+			factor = 0
+			NOT = {
+				culture_group = east_asian 
+			}
+		}				
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+######################################################
+modern_adm_2 = { #內政部長(ADM) 
+	monarch_power = ADM
+	
+	# Bonus
+	production_efficiency = 0.10
+
+	skill_scaled_modifier = { meritocracy = 0.25 }	
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { culture_group = east_asian }
+		}				
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+######################################################
+modern_adm_3 = { #財政部長
+	monarch_power = ADM
+	
+	# Bonus
+	inflation_reduction = 0.15
+	
+	skill_scaled_modifier = { meritocracy = 0.25 }	
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}	
+		modifier = {
+			factor = 0
+			NOT = { culture_group = east_asian }
+		}				
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+######################################################
+modern_adm_4 = {  #教育部(ADM) 
+	monarch_power = ADM
+	
+	# Bonus
+	global_missionary_strength = 0.02
+	
+	skill_scaled_modifier = { meritocracy = 0.25 }
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}		
+		modifier = {
+			factor = 0
+			NOT = { culture_group = east_asian }
+		}				
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+######################################################
+modern_adm_5 = {  #國內安全事務局(ADM) 
+	monarch_power = ADM
+	
+	# Bonus
+	global_unrest = -2
+	
+	skill_scaled_modifier = { meritocracy = 0.25 }
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}		
+		modifier = {
+			factor = 0
+			NOT = { culture_group = east_asian }
+		}				
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+######################################################
+# Diplomatic Advisors
+######################################################
+
+######################################################
+modern_dip_1 = { #外交部長
+	monarch_power = DIP
+	
+	# Bonus
+	diplomatic_reputation = 1
+	
+	skill_scaled_modifier = { meritocracy = 0.25 }
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}		
+		modifier = {
+			factor = 0
+			NOT = { culture_group = east_asian }
+		}				
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+######################################################
+modern_dip_2 = { #艦隊指揮部長
+	monarch_power = DIP
+	
+	# Bonus
+	
+	naval_morale = 0.1 
+	
+	skill_scaled_modifier = { meritocracy = 0.25 }
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}		
+		modifier = {
+			factor = 0
+			NOT = { culture_group = east_asian }
+		}				
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+######################################################
+modern_dip_3 = { #經貿局長
+	monarch_power = DIP
+	
+	# Bonus
+	trade_efficiency = 0.10
+	
+	skill_scaled_modifier = { meritocracy = 0.25 }
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}		
+		modifier = {
+			factor = 0
+			NOT = { culture_group = east_asian }
+		}				
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+######################################################
+modern_dip_4 = { #情報局長
+	monarch_power = DIP
+	
+	# Bonus
+	spy_offence = 0.25
+	
+	skill_scaled_modifier = { meritocracy = 0.25 }
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}		
+		modifier = {
+			factor = 0
+			NOT = { culture_group = east_asian }
+		}				
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+######################################################
+modern_dip_5 = { #外交領事館
+	monarch_power = DIP
+	
+	# Bonus
+	improve_relation_modifier = 0.2
+
+	skill_scaled_modifier = { meritocracy = 0.25 }	
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}		
+		modifier = {
+			factor = 0
+			NOT = { culture_group = east_asian }
+		}				
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+
+######################################################
+# Military Advisors
+######################################################
+
+######################################################
+modern_mil_1 = { #陸軍總司令
+	monarch_power = MIL
+	
+	# Bonus
+	land_morale = 0.10
+
+	skill_scaled_modifier = { meritocracy = 0.25 }	
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}		
+		modifier = {
+			factor = 0
+			NOT = { culture_group = east_asian }
+		}				
+		
+	}
+	
+	ai_will_do = {
+		factor = 1.8
+	}
+}
+
+######################################################
+modern_mil_2 = { #後備指揮部
+	monarch_power = MIL
+	
+	# Bonus
+	land_forcelimit_modifier = 0.10
+	
+	skill_scaled_modifier = { meritocracy = 0.25 }
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}		
+		modifier = {
+			factor = 0
+			NOT = { culture_group = east_asian }
+		}				
+		
+	}
+	
+	ai_will_do = {
+		factor = 1.5
+	}
+}
+
+######################################################
+modern_mil_3 = { #軍備維護署
+	monarch_power = MIL
+	
+	# Bonus
+	land_maintenance_modifier = -0.10
+	
+	skill_scaled_modifier = { meritocracy = 0.25 }
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}		
+		modifier = {
+			factor = 0
+			NOT = { culture_group = east_asian }
+		}				
+		
+	}
+	
+	ai_will_do = {
+		factor = 1.5
+	}
+}
+######################################################
+modern_mil_4 = { #戰略規劃司
+	monarch_power = MIL
+	
+	# Bonus
+	defensiveness = 0.2
+	
+	skill_scaled_modifier = { meritocracy = 0.25 }
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}		
+		modifier = {
+			factor = 0
+			NOT = { culture_group = east_asian }
+		}				
+		
+	}
+	
+	ai_will_do = {
+		factor = 1.5
+	}
+}
+######################################################
+modern_mil_5 = { #訓練參謀長
+	monarch_power = MIL
+	
+	# Bonus
+	discipline = 0.05
+	
+	skill_scaled_modifier = { meritocracy = 0.25 }
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1910 }
+		}		
+		modifier = {
+			factor = 0
+			NOT = { culture_group = east_asian }
+		}				
+		
+	}
+	
+	ai_will_do = {
+		factor = 1.5
+	}
+}
+
+
+
+
